@@ -1,0 +1,150 @@
+{
+  "sources": [
+    {
+      "id": "beybase",
+      "name": "BeyBase",
+      "type": "website",
+      "provides": "both",
+      "weight": 1,
+      "urls": [
+        "https://beybase.com/beyblade-x-buyers-guide-best-combos/",
+        "https://beybase.com/top-5-best-beyblade-x-combos/"
+      ],
+      "searchQueries": [
+        "site:beybase.com best beyblade x combos"
+      ]
+    },
+    {
+      "id": "wbo-tournament",
+      "name": "WBO Tournament Data",
+      "type": "website",
+      "provides": "combos",
+      "weight": 0.9,
+      "urls": [
+        "https://worldbeyblade.org/"
+      ],
+      "searchQueries": [
+        "site:worldbeyblade.org beyblade x winning combos tournament"
+      ]
+    },
+    {
+      "id": "beybxdb",
+      "name": "BeyXDB",
+      "type": "website",
+      "provides": "both",
+      "weight": 0.8,
+      "urls": [
+        "https://www.beybxdb.com/"
+      ],
+      "searchQueries": [
+        "site:beybxdb.com best beyblade x combos"
+      ]
+    },
+    {
+      "id": "beyblade-wiki",
+      "name": "Beyblade Wiki (Fandom)",
+      "type": "website",
+      "provides": "parts",
+      "weight": 0.9,
+      "urls": [
+        "https://beyblade.fandom.com/wiki/Category:Beyblade_X_Blades",
+        "https://beyblade.fandom.com/wiki/Category:Beyblade_X_Ratchets",
+        "https://beyblade.fandom.com/wiki/Category:Beyblade_X_Bits",
+        "https://beyblade.fandom.com/wiki/List_of_Beyblade_X_products_(Takara_Tomy)",
+        "https://beyblade.fandom.com/wiki/List_of_Beyblade_X_products_(Hasbro)"
+      ],
+      "searchQueries": [
+        "site:beyblade.fandom.com beyblade x parts list"
+      ]
+    },
+    {
+      "id": "reddit",
+      "name": "r/Beyblade",
+      "type": "reddit",
+      "provides": "combos",
+      "weight": 0.5,
+      "urls": [],
+      "searchQueries": [
+        "site:reddit.com/r/Beyblade best beyblade x combos",
+        "site:reddit.com/r/Beyblade top meta combos beyblade x"
+      ]
+    },
+    {
+      "id": "youtube-jacobpomegranate",
+      "name": "JacobPomegranate",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.7,
+      "urls": [
+        "https://www.youtube.com/@jacobpomegranate"
+      ],
+      "searchQueries": [
+        "jacobpomegranate beyblade x best combos"
+      ],
+      "channelId": "UCw6YtsTT6dVpy6mhAQBv8xw"
+    },
+    {
+      "id": "youtube-antiwizardwizardclub",
+      "name": "Anti Wizard Wizard Club",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.7,
+      "urls": [
+        "https://www.youtube.com/@AntiWizardWizardClub"
+      ],
+      "searchQueries": [
+        "Anti Wizard Wizard Club beyblade x best combos"
+      ],
+      "channelId": "UCX7s5fBuyQn5x6BilqOTlDA"
+    },
+    {
+      "id": "youtube-mbbc",
+      "name": "MBBC Monash Beyblade Battling Club",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.7,
+      "urls": [
+        "https://www.youtube.com/@MBBCMonashBeybladeBattlingClub"
+      ],
+      "searchQueries": [
+        "MBBC beyblade x best combos"
+      ],
+      "channelId": "UC82IDHM33vtTOsBPZWN4uJw"
+    },
+    {
+      "id": "youtube-harurenhobbies",
+      "name": "HaruRen Hobbies",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.7,
+      "urls": [
+        "https://www.youtube.com/@HaruRenHobbies"
+      ],
+      "searchQueries": [
+        "HaruRen Hobbies beyblade x best combos"
+      ],
+      "channelId": "UCevPRqPKWyySEkw8Aaz-6Qw"
+    },
+    {
+      "id": "google-sheets-tier-list",
+      "name": "Beyblade X Community Tier List",
+      "type": "spreadsheet",
+      "provides": "combos",
+      "weight": 0.8,
+      "urls": [
+        "https://docs.google.com/spreadsheets/d/15wiNF1pTAUzohfu4mTglFeM1rgfL62C5-8nrp5u3CcQ/edit?gid=494969085#gid=494969085"
+      ],
+      "searchQueries": []
+    }
+  ],
+  "searchSettings": {
+    "maxResultsPerSource": 10,
+    "recencyBonus": {
+      "30days": 10,
+      "60days": 8,
+      "90days": 6,
+      "180days": 4,
+      "older": 2
+    }
+  }
+}

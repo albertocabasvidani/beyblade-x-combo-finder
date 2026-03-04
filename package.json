@@ -1,0 +1,27 @@
+{
+  "name": "beyblade-x-combo-finder",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "scrape:reddit": "npx tsx scripts/scrape-reddit.ts",
+    "fetch:youtube": "npx tsx scripts/fetch-youtube.ts",
+    "fetch:sheets": "npx tsx scripts/fetch-sheets.ts",
+    "fetch:transcripts": "python scripts/fetch-transcripts.py",
+    "collect:sources": "npx tsx scripts/collect-sources.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0"
+  },
+  "dependencies": {
+    "@astrojs/preact": "^4.1.3",
+    "@astrojs/vercel": "^9.0.4",
+    "@tailwindcss/vite": "^4.2.1",
+    "astro": "^5.17.1",
+    "preact": "^10.28.4",
+    "tailwindcss": "^4.2.1"
+  }
+}

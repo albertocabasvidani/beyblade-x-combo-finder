@@ -1,0 +1,15 @@
+---
+import { t } from '../../i18n/ui';
+import type { Locale } from '../../lib/types';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+---
+
+<footer class="border-t border-gray-800 bg-gray-900 px-4 py-6 text-center text-xs text-gray-500">
+  <p class="mb-2">{t(locale, 'footer.disclosure')}</p>
+  <p>&copy; {new Date().getFullYear()} BeyCombo. Data sourced from community recommendations.</p>
+</footer>

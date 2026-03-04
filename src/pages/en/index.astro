@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../../layouts/base-layout.astro';
+import ComboSearch from '../../components/search/combo-search';
+import { t } from '../../i18n/ui';
+import partsData from '../../../data/parts.json';
+import combosData from '../../../data/combos.json';
+import en from '../../i18n/en.json';
+
+const locale = 'en';
+---
+
+<BaseLayout>
+  <div class="mb-8 text-center">
+    <h1 class="mb-2 text-3xl font-bold text-yellow-400">{t(locale, 'search.title')}</h1>
+    <p class="text-sm text-gray-400">{t(locale, 'search.subtitle')}</p>
+  </div>
+
+  <ComboSearch
+    client:load
+    parts={partsData}
+    combos={combosData}
+    locale={locale}
+    translations={en}
+  />
+</BaseLayout>
