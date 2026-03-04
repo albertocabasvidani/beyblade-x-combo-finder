@@ -80,6 +80,23 @@ export default function ComboSearch({ parts, combos, locale, translations, amazo
     return `${getPartName('lockChip', combo.lockChip)} ${getPartName('mainBlade', combo.mainBlade)} ${getPartName('assistBlade', combo.assistBlade)} ${getPartName('ratchet', combo.ratchet)} ${getPartName('bit', combo.bit)}`;
   };
 
+  const amazonBannerUrl = `https://www.amazon.${amazonConfig.tld}/s?k=${encodeURIComponent('Beyblade X')}${amazonConfig.tag ? `&tag=${amazonConfig.tag}` : ''}`;
+
+  const AmazonBanner = () => (
+    <a
+      href={amazonBannerUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="group flex items-center justify-between rounded-xl border border-yellow-500/20 bg-gradient-to-r from-yellow-500/5 to-orange-500/5 px-4 py-3 transition-colors hover:border-yellow-500/40 hover:from-yellow-500/10 hover:to-orange-500/10"
+    >
+      <div>
+        <span class="text-sm font-medium text-yellow-400">{t('amazon.banner')}</span>
+        <span class="ml-2 text-xs text-gray-500">{t('amazon.bannerSub')}</span>
+      </div>
+      <span class="text-yellow-500/60 transition-transform group-hover:translate-x-0.5">{'\u2192'}</span>
+    </a>
+  );
+
   return (
     <div>
       {/* Line tabs + Name variant toggle */}
@@ -206,6 +223,10 @@ export default function ComboSearch({ parts, combos, locale, translations, amazo
         )}
       </div>
 
+      <div class="mb-6">
+        <AmazonBanner />
+      </div>
+
       {/* Results */}
       <div>
         <div class="mb-4 flex items-center justify-between">
@@ -219,20 +240,25 @@ export default function ComboSearch({ parts, combos, locale, translations, amazo
             <p class="text-sm text-gray-500">{t('search.noResults')}</p>
           </div>
         ) : (
-          <div class="flex flex-col gap-3">
-            {results.map((combo, i) => (
-              <ComboCard
-                key={combo.id}
-                combo={combo}
-                displayName={comboDisplayName(combo)}
-                selected={selected}
-                locale={locale}
-                rank={i + 1}
-                amazonConfig={amazonConfig}
-                productLookup={productLookup}
-              />
-            ))}
-          </div>
+          <>
+            <div class="flex flex-col gap-3">
+              {results.map((combo, i) => (
+                <ComboCard
+                  key={combo.id}
+                  combo={combo}
+                  displayName={comboDisplayName(combo)}
+                  selected={selected}
+                  locale={locale}
+                  rank={i + 1}
+                  amazonConfig={amazonConfig}
+                  productLookup={productLookup}
+                />
+              ))}
+            </div>
+            <div class="mt-4">
+              <AmazonBanner />
+            </div>
+          </>
         )}
       </div>
     </div>
