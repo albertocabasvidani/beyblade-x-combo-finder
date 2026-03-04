@@ -4,9 +4,16 @@ import ComboSearch from '../../components/search/combo-search';
 import { t } from '../../i18n/ui';
 import partsData from '../../../data/parts.json';
 import combosData from '../../../data/combos.json';
+import productsData from '../../../data/products.json';
+import { buildProductLookup } from '../../lib/amazon';
 import en from '../../i18n/en.json';
 
 const locale = 'en';
+const productLookup = buildProductLookup(productsData);
+const amazonConfig = {
+  tld: 'com',
+  tag: import.meta.env.AMAZON_TAG_US ?? '',
+};
 ---
 
 <BaseLayout>
@@ -21,5 +28,7 @@ const locale = 'en';
     combos={combosData}
     locale={locale}
     translations={en}
+    amazonConfig={amazonConfig}
+    productLookup={productLookup}
   />
 </BaseLayout>

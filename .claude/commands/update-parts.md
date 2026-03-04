@@ -43,7 +43,15 @@ Aggiorna il database delle parti Beyblade X cercando nuovi prodotti rilasciati.
    - `data/parts.json`: aggiorna `version`, aggiungi parti in ordine alfabetico per `id`
    - `data/scan-history.json`: aggiorna `scannedPages` per le pagine visitate
 
-7. **Verifica**: Esegui `npm run build` per verificare la compilazione.
+7. **Aggiorna catalogo prodotti** (`data/products.json`):
+   - Per ogni set trovato nelle pagine Wiki TT e Hasbro (step 3), estrai le parti contenute
+   - Ogni prodotto: `code` (BX-xx, UX-xx, CX-xx, Fxxxxx/Gxxxxx), `type`, `name`, `blade`/`ratchet`/`bit` (per BX/UX) o `lockChip`/`mainBlade`/`assistBlade`/`ratchet`/`bit` (per CX)
+   - Gli ID parti devono corrispondere a quelli in `parts.json` (kebab-case)
+   - Mantieni la struttura esistente: `products.takaraTomy.{basicLine,uniqueLine,customLine,limitedReleases}` e `products.hasbro.{starterPacks,cxStarterPacks,...}`
+   - Aggiorna `version` con la data corrente
+   - Questo catalogo serve per i link Amazon affiliate (ricerca per codice set)
+
+8. **Verifica**: Esegui `npm run build` per verificare la compilazione.
 
 8. **Report**: Elenca parti aggiunte o "Nessuna nuova parte trovata."
 

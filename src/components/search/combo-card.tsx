@@ -1,5 +1,7 @@
 import type { Combo, SelectedParts, Locale } from '../../lib/types';
+import type { AmazonConfig, ProductLookup } from '../../lib/amazon';
 import { getMatchedParts } from '../../lib/search-engine';
+import { buildAmazonSearchUrl } from '../../lib/amazon';
 import { ScoreBadge } from './score-badge';
 
 interface Props {
@@ -8,6 +10,8 @@ interface Props {
   selected: SelectedParts;
   locale: Locale;
   rank: number;
+  amazonConfig: AmazonConfig;
+  productLookup: ProductLookup;
 }
 
 const typeLabels: Record<string, Record<string, string>> = {
@@ -22,7 +26,7 @@ const typeColors: Record<string, string> = {
   balance: 'text-purple-400',
 };
 
-export function ComboCard({ combo, displayName, selected, locale, rank }: Props) {
+export function ComboCard({ combo, displayName, selected, locale, rank, amazonConfig, productLookup }: Props) {
   const matched = getMatchedParts(combo, selected);
   const hasSelection =
     selected.blades.length > 0 ||
@@ -70,16 +74,27 @@ export function ComboCard({ combo, displayName, selected, locale, rank }: Props)
           {parts.map((part) => {
             const status = matched[part.key]; // 'owned' | 'missing' | 'unset'
             if (status === 'unset') return null;
-            return (
-              <span
+            if (status === 'owned') {
+              return (
+                <span key={part.key} class="inline-flex items-center gap-1 rounded-md bg-green-500/10 px-2 py-0.5 text-xs text-green-400">
+                  {'\u2713'} {part.label}
+                </span>
+              );
+            }
+            const href = part.id ? buildAmazonSearchUrl(part.key, part.id, productLookup, amazonConfig) : null;
+            return href ? (
+              <a
                 key={part.key}
-                class={`inline-flex items-center gap-1 rounded-md px-2 py-0.5 text-xs ${
-                  status === 'owned'
-                    ? 'bg-green-500/10 text-green-400'
-                    : 'bg-orange-500/10 text-orange-400'
-                }`}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-1 rounded-md bg-orange-500/10 px-2 py-0.5 text-xs text-orange-400 transition-colors hover:bg-orange-500/20"
               >
-                {status === 'owned' ? '\u2713' : '!'} {part.label}
+                ! {part.label} {'\u2197'}
+              </a>
+            ) : (
+              <span key={part.key} class="inline-flex items-center gap-1 rounded-md bg-orange-500/10 px-2 py-0.5 text-xs text-orange-400">
+                ! {part.label}
               </span>
             );
           })}

@@ -1,5 +1,6 @@
 import { useState } from 'preact/hooks';
 import type { PartsRegistry, CombosDatabase, ComboLine, Combo, SelectedParts, NameVariant, Locale } from '../../lib/types';
+import type { AmazonConfig, ProductLookup } from '../../lib/amazon';
 import { filterCombos } from '../../lib/search-engine';
 import { PartSelector } from './part-selector';
 import { ComboCard } from './combo-card';
@@ -9,6 +10,8 @@ interface Props {
   combos: CombosDatabase;
   locale: Locale;
   translations: Record<string, string>;
+  amazonConfig: AmazonConfig;
+  productLookup: ProductLookup;
 }
 
 const emptySelection: SelectedParts = {
@@ -20,7 +23,7 @@ const emptySelection: SelectedParts = {
   bits: [],
 };
 
-export default function ComboSearch({ parts, combos, locale, translations }: Props) {
+export default function ComboSearch({ parts, combos, locale, translations, amazonConfig, productLookup }: Props) {
   const [line, setLine] = useState<ComboLine>('bx');
   const [selected, setSelected] = useState<SelectedParts>({ ...emptySelection });
   const [nameVariant, setNameVariant] = useState<NameVariant>('eastern');
@@ -225,6 +228,8 @@ export default function ComboSearch({ parts, combos, locale, translations }: Pro
                 selected={selected}
                 locale={locale}
                 rank={i + 1}
+                amazonConfig={amazonConfig}
+                productLookup={productLookup}
               />
             ))}
           </div>
