@@ -39,19 +39,20 @@ export function filterCombos(
   return filtered.sort((a, b) => b.score - a.score);
 }
 
-export function getMatchedParts(combo: Combo, selected: SelectedParts): Record<string, boolean> {
+// Returns 'owned' | 'missing' | 'unset' for each part
+export function getMatchedParts(combo: Combo, selected: SelectedParts): Record<string, string> {
   if (combo.line === 'bx') {
     return {
-      blade: selected.blades.length === 0 || (combo.blade !== null && selected.blades.includes(combo.blade)),
-      ratchet: selected.ratchets.length === 0 || selected.ratchets.includes(combo.ratchet),
-      bit: selected.bits.length === 0 || selected.bits.includes(combo.bit),
+      blade: selected.blades.length === 0 ? 'unset' : (combo.blade !== null && selected.blades.includes(combo.blade)) ? 'owned' : 'missing',
+      ratchet: selected.ratchets.length === 0 ? 'unset' : selected.ratchets.includes(combo.ratchet) ? 'owned' : 'missing',
+      bit: selected.bits.length === 0 ? 'unset' : selected.bits.includes(combo.bit) ? 'owned' : 'missing',
     };
   }
   return {
-    lockChip: selected.lockChips.length === 0 || (combo.lockChip !== null && selected.lockChips.includes(combo.lockChip)),
-    mainBlade: selected.mainBlades.length === 0 || (combo.mainBlade !== null && selected.mainBlades.includes(combo.mainBlade)),
-    assistBlade: selected.assistBlades.length === 0 || (combo.assistBlade !== null && selected.assistBlades.includes(combo.assistBlade)),
-    ratchet: selected.ratchets.length === 0 || selected.ratchets.includes(combo.ratchet),
-    bit: selected.bits.length === 0 || selected.bits.includes(combo.bit),
+    lockChip: selected.lockChips.length === 0 ? 'unset' : (combo.lockChip !== null && selected.lockChips.includes(combo.lockChip)) ? 'owned' : 'missing',
+    mainBlade: selected.mainBlades.length === 0 ? 'unset' : (combo.mainBlade !== null && selected.mainBlades.includes(combo.mainBlade)) ? 'owned' : 'missing',
+    assistBlade: selected.assistBlades.length === 0 ? 'unset' : (combo.assistBlade !== null && selected.assistBlades.includes(combo.assistBlade)) ? 'owned' : 'missing',
+    ratchet: selected.ratchets.length === 0 ? 'unset' : selected.ratchets.includes(combo.ratchet) ? 'owned' : 'missing',
+    bit: selected.bits.length === 0 ? 'unset' : selected.bits.includes(combo.bit) ? 'owned' : 'missing',
   };
 }

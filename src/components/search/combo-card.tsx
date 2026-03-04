@@ -68,17 +68,18 @@ export function ComboCard({ combo, displayName, selected, locale, rank }: Props)
       {hasSelection && (
         <div class="mb-3 flex flex-wrap gap-2">
           {parts.map((part) => {
-            const isMatched = matched[part.key];
+            const status = matched[part.key]; // 'owned' | 'missing' | 'unset'
+            if (status === 'unset') return null;
             return (
               <span
                 key={part.key}
                 class={`inline-flex items-center gap-1 rounded-md px-2 py-0.5 text-xs ${
-                  isMatched
+                  status === 'owned'
                     ? 'bg-green-500/10 text-green-400'
                     : 'bg-orange-500/10 text-orange-400'
                 }`}
               >
-                {isMatched ? '\u2713' : '!'} {part.label}
+                {status === 'owned' ? '\u2713' : '!'} {part.label}
               </span>
             );
           })}
