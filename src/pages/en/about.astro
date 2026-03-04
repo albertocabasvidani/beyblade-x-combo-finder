@@ -1,0 +1,83 @@
+---
+import BaseLayout from '../../layouts/base-layout.astro';
+import { t } from '../../i18n/ui';
+import sourcesData from '../../../data/sources.json';
+
+const locale = 'en';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const sources = sourcesData.sources;
+
+const typeLabels: Record<string, string> = {
+  website: t(locale, 'about.sources.website'),
+  youtube: t(locale, 'about.sources.youtube'),
+  reddit: t(locale, 'about.sources.reddit'),
+  spreadsheet: t(locale, 'about.sources.spreadsheet'),
+};
+---
+
+<BaseLayout title={`${t(locale, 'about.title')} - BeyCombo`}>
+  <div class="mx-auto max-w-2xl">
+    <a href={`${base}/${locale}/`} class="mb-6 inline-block text-sm text-gray-400 hover:text-yellow-400">&larr; {t(locale, 'nav.home')}</a>
+
+    <h1 class="mb-4 text-2xl font-bold text-yellow-400">{t(locale, 'about.title')}</h1>
+    <p class="mb-8 text-gray-300">{t(locale, 'about.intro')}</p>
+
+    <section class="mb-8">
+      <h2 class="mb-3 text-lg font-semibold text-gray-100">{t(locale, 'about.scoring.title')}</h2>
+      <p class="mb-4 text-sm text-gray-300">{t(locale, 'about.scoring.p1')}</p>
+      <ul class="mb-4 list-inside list-disc space-y-1 text-sm text-gray-400">
+        <li>{t(locale, 'about.scoring.tournament')}</li>
+        <li>{t(locale, 'about.scoring.expert')}</li>
+        <li>{t(locale, 'about.scoring.youtube')}</li>
+        <li>{t(locale, 'about.scoring.community')}</li>
+      </ul>
+      <p class="text-sm text-gray-300">{t(locale, 'about.scoring.p2')}</p>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="mb-3 text-lg font-semibold text-gray-100">{t(locale, 'about.factors.title')}</h2>
+      <ul class="list-inside list-disc space-y-1 text-sm text-gray-400">
+        <li>{t(locale, 'about.factors.mentions')}</li>
+        <li>{t(locale, 'about.factors.weight')}</li>
+        <li>{t(locale, 'about.factors.recency')}</li>
+        <li>{t(locale, 'about.factors.consensus')}</li>
+        <li>{t(locale, 'about.factors.results')}</li>
+      </ul>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="mb-3 text-lg font-semibold text-gray-100">{t(locale, 'about.sources.title')}</h2>
+      <p class="mb-4 text-sm text-gray-300">{t(locale, 'about.sources.intro')}</p>
+      <div class="space-y-3">
+        {sources.filter(s => s.provides !== 'parts').map(source => (
+          <div class="rounded-lg border border-gray-800 bg-gray-900 p-3">
+            <div class="flex items-center justify-between">
+              <div>
+                <span class="font-medium text-gray-100">{source.name}</span>
+                <span class="ml-2 rounded bg-gray-800 px-2 py-0.5 text-xs text-gray-400">
+                  {typeLabels[source.type] ?? source.type}
+                </span>
+              </div>
+              <div class="flex items-center gap-1">
+                <span class="text-xs text-gray-500">weight</span>
+                <span class="rounded bg-yellow-400/10 px-2 py-0.5 text-xs font-medium text-yellow-400">
+                  {source.weight}
+                </span>
+              </div>
+            </div>
+            {source.urls[0] && (
+              <a href={source.urls[0]} target="_blank" rel="noopener" class="mt-1 block truncate text-xs text-gray-500 hover:text-gray-300">
+                {source.urls[0]}
+              </a>
+            )}
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section class="rounded-lg border border-gray-700 bg-gray-900/50 p-4">
+      <h2 class="mb-2 text-lg font-semibold text-gray-100">{t(locale, 'about.disclaimer.title')}</h2>
+      <p class="text-sm text-gray-400">{t(locale, 'about.disclaimer.text')}</p>
+    </section>
+  </div>
+</BaseLayout>

@@ -15,7 +15,9 @@ export function t(locale: Locale, key: string, params?: Record<string, string>):
 }
 
 export function getLocaleFromUrl(url: URL): Locale {
-  const [, lang] = url.pathname.split('/');
+  const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+  const path = url.pathname.replace(base, '');
+  const [, lang] = path.split('/');
   if (lang === 'it') return 'it';
   return 'en';
 }

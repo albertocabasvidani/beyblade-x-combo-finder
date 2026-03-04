@@ -21,6 +21,9 @@ const currentPath = Astro.url.pathname.replace(`${base}/${locale}`, '');
       <a href={`${base}/${locale}/`} class="text-sm text-gray-300 hover:text-white">
         {t(locale, 'nav.home')}
       </a>
+      <a href={`${base}/${locale}/about/`} class="text-sm text-gray-300 hover:text-white">
+        {t(locale, 'nav.about')}
+      </a>
       <a
         href={`${base}/${otherLocale}${currentPath}`}
         class="rounded border border-gray-600 px-2 py-1 text-xs font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
