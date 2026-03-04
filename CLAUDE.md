@@ -8,7 +8,7 @@ Sito web per trovare le migliori combo Beyblade X in base alle parti possedute. 
 
 - **Framework**: Astro (SSG) + Preact (island interattiva)
 - **Styling**: Tailwind CSS v4
-- **Hosting**: Vercel (free tier)
+- **Hosting**: GitHub Pages (deploy automatico via Actions)
 - **i18n**: EN (default) + IT, route-based (`/en/`, `/it/`)
 - **Database**: JSON nel repo (`data/combos.json`, `data/parts.json`)
 - **Pipeline**: Claude Code agentico via comando `/update-combos`
@@ -74,7 +74,8 @@ Sito web per trovare le migliori combo Beyblade X in base alle parti possedute. 
 
 - Repo: https://github.com/albertocabasvidani/beyblade-x-combo-finder
 - Branch: master
-- Deploy: Vercel (collegare repo GitHub)
+- Deploy: GitHub Pages (automatico su push a master)
+- URL: https://albertocabasvidani.github.io/beyblade-x-combo-finder/
 
 ## Convenzioni
 

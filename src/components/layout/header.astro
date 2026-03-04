@@ -8,20 +8,21 @@ interface Props {
 
 const { locale } = Astro.props;
 const otherLocale = locale === 'en' ? 'it' : 'en';
-const currentPath = Astro.url.pathname.replace(`/${locale}`, '');
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const currentPath = Astro.url.pathname.replace(`${base}/${locale}`, '');
 ---
 
 <header class="border-b border-gray-800 bg-gray-900">
   <nav class="mx-auto flex max-w-4xl items-center justify-between px-4 py-3">
-    <a href={`/${locale}/`} class="text-lg font-bold text-yellow-400">
+    <a href={`${base}/${locale}/`} class="text-lg font-bold text-yellow-400">
       BeyCombo
     </a>
     <div class="flex items-center gap-4">
-      <a href={`/${locale}/`} class="text-sm text-gray-300 hover:text-white">
+      <a href={`${base}/${locale}/`} class="text-sm text-gray-300 hover:text-white">
         {t(locale, 'nav.home')}
       </a>
       <a
-        href={`/${otherLocale}${currentPath}`}
+        href={`${base}/${otherLocale}${currentPath}`}
         class="rounded border border-gray-600 px-2 py-1 text-xs font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
       >
         {otherLocale.toUpperCase()}

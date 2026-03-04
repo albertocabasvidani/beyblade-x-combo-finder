@@ -1,13 +1,13 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 
-import vercel from '@astrojs/vercel';
 import preact from '@astrojs/preact';
 import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  adapter: vercel(),
+  site: 'https://albertocabasvidani.github.io',
+  base: '/beyblade-x-combo-finder',
   output: 'static',
   integrations: [preact()],
 
