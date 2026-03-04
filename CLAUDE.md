@@ -64,9 +64,17 @@ Sito web per trovare le migliori combo Beyblade X in base alle parti possedute. 
 
 ## Automazione (Windows Task Scheduler)
 
-- `update-combos.bat` — esegue `/update-combos` via CLI (`claude --dangerously-skip-permissions`)
-- `update-parts.bat` — esegue `/update-parts` via CLI
-- Configurare in Task Scheduler: trigger settimanale, condizione "connesso a internet"
+- `update-combos.bat` — raccolta dati + aggiornamento combo via Claude CLI
+- `update-parts.bat` — aggiornamento parti via Claude CLI
+- `fetch-transcripts.bat` — scarica 1 trascrizione per esecuzione (ogni 5 min)
+- `dev-server.bat` — avvia server di sviluppo Astro
+- Configurare in Task Scheduler: trigger settimanale per combo/parts, ogni 5 min per transcripts
+
+## GitHub
+
+- Repo: https://github.com/albertocabasvidani/beyblade-x-combo-finder
+- Branch: master
+- Deploy: Vercel (collegare repo GitHub)
 
 ## Convenzioni
 
