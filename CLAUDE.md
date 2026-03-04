@@ -87,7 +87,43 @@ Sito web per trovare le migliori combo Beyblade X in base alle parti possedute. 
 
 ## Amazon Affiliate
 
-- Tag attivi: IT, JP
-- Tag da registrare: US e altri
-- Edge Function per geolocalizzazione: `src/pages/api/buy/[...slug].ts`
-- Disclosure obbligatoria in footer
+### Architettura
+
+Il sistema genera link Amazon sulle parti mancanti nelle combo card. Il flusso:
+
+1. **Build time** (Astro frontmatter in `en/index.astro`, `it/index.astro`):
+   - Importa `data/products.json` (catalogo 304 prodotti TT + Hasbro)
+   - `buildProductLookup()` crea una mappa compatta `{ ratchets: { "3-60": "BX-01", ... }, bits: { "flat": "BX-01", ... } }`
+   - Legge tag affiliate da `.env` (`AMAZON_TAG_IT`, `AMAZON_TAG_US`)
+   - Passa `productLookup` + `amazonConfig` come props serializzate al Preact island
+
+2. **Runtime** (Preact, `combo-card.tsx`):
+   - I badge arancioni delle parti mancanti diventano `<a>` cliccabili
+   - `buildAmazonSearchUrl()` costruisce l'URL di ricerca Amazon
+
+### Strategia di ricerca Amazon
+
+| Tipo parte | Metodo ricerca | Esempio query |
+|------------|---------------|---------------|
+| Blade | Nome diretto | `Beyblade X Phoenix Wing` |
+| Lock Chip | Nome diretto | `Beyblade X Dran` |
+| Main Blade | Nome diretto | `Beyblade X Brave` |
+| Assist Blade | Nome diretto | `Beyblade X Slash` |
+| Ratchet | Codice set da products.json | `Beyblade X BX-01` (contiene 3-60) |
+| Bit | Codice set da products.json | `Beyblade X UX-02` (contiene Hexa) |
+
+Ratchet e bit non si trovano su Amazon per nome (es. "Beyblade X Taper" → 0 risultati), quindi si cerca il codice del set che li contiene.
+
+### File coinvolti
+
+- `src/lib/amazon.ts` — `buildAmazonSearchUrl()`, `buildProductLookup()`, logica ricerca
+- `data/products.json` — catalogo prodotti (aggiornato da `/update-parts`)
+- `src/components/search/combo-card.tsx` — rendering link su parti missing
+- `.env` — `AMAZON_TAG_IT`, `AMAZON_TAG_US` (vuoti = link senza tracking)
+
+### Config
+
+- Tag in `.env`: `AMAZON_TAG_IT`, `AMAZON_TAG_US`
+- TLD basato su locale: IT → `amazon.it`, EN → `amazon.com`
+- Disclosure nel footer (`footer.disclosure` in i18n)
+- `products.json` aggiornato automaticamente da `/update-parts` (step 7)
