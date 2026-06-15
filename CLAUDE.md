@@ -62,9 +62,13 @@ accesso/fetch grezzo, dedup (id/revid/hash), derivazione di formato, validazione
   aggiorna via diff `revid`. Script deterministici: `bootstrap-master.ts`, `merge-master.ts`, `build-parts.ts`.
 
 ### Script raccolta combo (`npm run collect:sources`)
-- `scrape:reddit`, `fetch:youtube` (API key), `fetch:sheets`, `fetch:metabeys` (Playwright headless),
+- `scrape:reddit` (Playwright; Reddit blocca l'accesso non autenticato → serve sessione browser loggata:
+  `REDDIT_HEADED=1 npm run scrape:reddit`, login una tantum nel profilo `.playwright-beyblade`, poi riusa
+  la sessione e legge gli endpoint `.json`; headless = no-op non distruttivo, preserva la cache),
+  `fetch:youtube` (API key), `fetch:sheets`, `fetch:metabeys` (Playwright headless),
   `fetch:wbo` (Playwright; Cloudflare blocca headless → `WBO_HEADED=1`, oppure ci si affida a MetaBeys
   che indicizza gli stessi eventi WBO). `fetch:transcripts` gira SEPARATO (ogni 5 min, `--batch 1`).
+- Reddit/WBO girano headed+manuale (lo scheduler headless li lascia no-op): rieseguire a mano quando serve dato fresco.
 - Le cache grezze le interpreta `/update-combos` (estrazione, match multilingua, dedup id-set, scoring).
 
 ### Dipendenze
