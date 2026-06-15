@@ -39,25 +39,25 @@ async function main() {
   const page = ctx.pages()[0] ?? (await ctx.newPage());
 
   try {
+    const CHALLENGE = /just a moment|attention required|cloudflare|verify you are human|checking your browser/i;
+    // Headless: attesa breve (probabile blocco). Headed: attesa lunga per la risoluzione MANUALE del captcha.
+    const maxWaitMs = HEADLESS ? 12_000 : 180_000;
     for (const t of THREADS) {
       try {
         await page.goto(t.url, { waitUntil: 'domcontentloaded', timeout: 60_000 });
-        // attesa per superare l'eventuale challenge Cloudflare
-        await page.waitForTimeout(6_000);
-        const title = await page.title();
-        if (/just a moment|attention required/i.test(title)) {
-          await page.waitForTimeout(8_000); // secondo tentativo di clearance
+        if (!HEADLESS) console.log(`WBO ${t.key}: risolvi l'eventuale captcha Cloudflare nella finestra del browser (attendo fino a 3 min, NON chiudo)...`);
+        const start = Date.now();
+        let cleared = false;
+        while (Date.now() - start < maxWaitMs) {
+          await page.waitForTimeout(3_000);
+          const title = (await page.title().catch(() => '')) || '';
+          const head = (await page.locator('body').innerText().catch(() => '')).slice(0, 400);
+          if (!CHALLENGE.test(title + ' ' + head)) { cleared = true; break; }
         }
-        // raccogli il testo dei post visibili (ultima pagina del thread)
         const raw = await page.locator('body').innerText().catch(() => '');
-        const blocked = /just a moment|cloudflare|attention required/i.test(raw.slice(0, 400));
-        cache.threads[t.key] = {
-          url: t.url,
-          fetchedAt: today(),
-          blocked,
-          raw: blocked ? '' : raw,
-        };
-        console.log(`WBO ${t.key}: ${blocked ? 'BLOCCATO da Cloudflare' : `${raw.length} char salvati`}.`);
+        const blocked = !cleared || CHALLENGE.test(raw.slice(0, 400));
+        cache.threads[t.key] = { url: t.url, fetchedAt: today(), blocked, raw: blocked ? '' : raw };
+        console.log(`WBO ${t.key}: ${blocked ? 'BLOCCATO da Cloudflare (timeout o challenge non risolto)' : `${raw.length} char salvati`}.`);
       } catch (e) {
         console.warn(`WBO ${t.key} fallito: ${(e as Error).message}`);
         cache.threads[t.key] = { url: t.url, fetchedAt: today(), blocked: true, raw: '', error: (e as Error).message };
