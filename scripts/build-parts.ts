@@ -1,0 +1,188 @@
+/**
+ * build-parts.ts — Derivazione deterministica del database parti.
+ *
+ * Input:  data/parts-master.json  (file canonico multilingua, popolato da /scrape-parts-master)
+ * Output: data/parts.json         (schema consumato dal sito, vedi src/lib/types.ts)
+ *
+ * Guardrail: prima di scrivere parts.json, verifica che OGNI id parte referenziato
+ * da data/combos.json e data/products.json esista nel nuovo parts.json. Se trova
+ * riferimenti penzolanti, ABORTA senza scrivere (protegge i dati a valle).
+ *
+ * Questo è codice puramente deterministico (trasformazione di formato): nessuna
+ * interpretazione di pagine o match di nomi (quelli li fa l'IA in /scrape-parts-master).
+ */
+import { readFileSync, writeFileSync } from 'fs';
+import { join } from 'path';
+
+const ROOT = join(import.meta.dirname, '..');
+const DATA = join(ROOT, 'data');
+const masterPath = join(DATA, 'parts-master.json');
+const partsPath = join(DATA, 'parts.json');
+const combosPath = join(DATA, 'combos.json');
+const productsPath = join(DATA, 'products.json');
+
+type Names = { tt: string; ttRaw?: string; hasbro?: string | null; ja?: string; romaji?: string };
+interface MasterPart {
+  id: string;
+  category?: string;
+  line?: string;
+  type?: string;
+  names: Names;
+  shortName?: string;
+  short?: string;
+  firstReleaseSet?: string;
+}
+interface Master {
+  version?: string;
+  blades?: MasterPart[];
+  lockChips?: MasterPart[];
+  mainBlades?: MasterPart[];
+  assistBlades?: MasterPart[];
+  ratchets?: MasterPart[];
+  bits?: MasterPart[];
+}
+
+function today(): string {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+}
+
+const byId = (a: { id: string }, b: { id: string }) => a.id.localeCompare(b.id);
+const withWestern = (n: Names) => (n.hasbro ? { nameWestern: n.hasbro } : {});
+
+function deriveParts(master: Master) {
+  const blades = (master.blades ?? []).slice().sort(byId).map((p) => ({
+    id: p.id,
+    name: p.names.tt,
+    ...withWestern(p.names),
+    type: p.type,
+    line: p.line ?? 'bx',
+    ...(p.firstReleaseSet ? { releaseSet: p.firstReleaseSet } : {}),
+  }));
+
+  const lockChips = (master.lockChips ?? []).slice().sort(byId).map((p) => ({
+    id: p.id,
+    name: p.names.tt,
+    ...withWestern(p.names),
+    line: 'cx',
+  }));
+
+  const mainBlades = (master.mainBlades ?? []).slice().sort(byId).map((p) => ({
+    id: p.id,
+    name: p.names.tt,
+    ...withWestern(p.names),
+    line: 'cx',
+  }));
+
+  const assistBlades = (master.assistBlades ?? []).slice().sort(byId).map((p) => {
+    const short = p.shortName ?? p.short ?? '';
+    return {
+      id: p.id,
+      name: short ? `${short} (${p.names.tt})` : p.names.tt,
+      ...withWestern(p.names),
+      shortName: short,
+      line: 'cx',
+    };
+  });
+
+  const ratchets = (master.ratchets ?? []).slice().sort(byId).map((p) => {
+    const [s, h] = p.id.split('-');
+    return { id: p.id, name: p.names.tt ?? p.id, sides: Number(s), height: Number(h) };
+  });
+
+  const bits = (master.bits ?? []).slice().sort(byId).map((p) => ({
+    id: p.id,
+    name: p.names.tt,
+    type: p.type,
+  }));
+
+  return { version: today(), blades, lockChips, mainBlades, assistBlades, ratchets, bits };
+}
+
+type IdSets = Record<string, Set<string>>;
+
+function collectIds(parts: ReturnType<typeof deriveParts>): IdSets {
+  return {
+    blade: new Set(parts.blades.map((p) => p.id)),
+    lockChip: new Set(parts.lockChips.map((p) => p.id)),
+    mainBlade: new Set(parts.mainBlades.map((p) => p.id)),
+    assistBlade: new Set(parts.assistBlades.map((p) => p.id)),
+    ratchet: new Set(parts.ratchets.map((p) => p.id)),
+    bit: new Set(parts.bits.map((p) => p.id)),
+  };
+}
+
+function flattenProducts(products: any): any[] {
+  const out: any[] = [];
+  const root = products.products ?? products;
+  for (const brand of Object.keys(root)) {
+    const group = root[brand];
+    if (!group || typeof group !== 'object') continue;
+    for (const k of Object.keys(group)) {
+      if (Array.isArray(group[k])) out.push(...group[k]);
+    }
+  }
+  return out;
+}
+
+const FIELDS: [string, string][] = [
+  ['blade', 'blade'], ['ratchet', 'ratchet'], ['bit', 'bit'],
+  ['lockChip', 'lockChip'], ['mainBlade', 'mainBlade'], ['assistBlade', 'assistBlade'],
+];
+
+/**
+ * Riferimenti penzolanti separati per fonte:
+ *  - combos: dati mostrati all'utente → ogni parte DEVE esistere (abort se mancano).
+ *  - products: catalogo (link Amazon), storicamente più ampio del registro parti →
+ *    warning non bloccante; le mancanti sono lavoro per l'import parti.
+ */
+function checkRefs(parts: ReturnType<typeof deriveParts>, combos: any, products: any) {
+  const ids = collectIds(parts);
+  const combosDangling: string[] = [];
+  const productsDangling = new Set<string>();
+
+  for (const c of combos.combos ?? []) {
+    for (const [cat, key] of FIELDS) {
+      const id = c[key];
+      if (id && !ids[cat].has(id)) combosDangling.push(`combos.json / ${c.id}: ${cat} '${id}'`);
+    }
+  }
+  for (const p of flattenProducts(products)) {
+    for (const [cat, key] of FIELDS) {
+      const id = p[key];
+      if (id && !ids[cat].has(id)) productsDangling.add(`${cat}:${id}`);
+    }
+  }
+  return { combosDangling, productsDangling: [...productsDangling].sort() };
+}
+
+function main() {
+  const master: Master = JSON.parse(readFileSync(masterPath, 'utf8'));
+  const combos = JSON.parse(readFileSync(combosPath, 'utf8'));
+  const products = JSON.parse(readFileSync(productsPath, 'utf8'));
+
+  const newParts = deriveParts(master);
+  const { combosDangling, productsDangling } = checkRefs(newParts, combos, products);
+
+  if (combosDangling.length > 0) {
+    console.error(`\nGUARDRAIL FALLITO: ${combosDangling.length} riferimenti penzolanti in combos.json. parts.json NON è stato scritto.\n`);
+    for (const d of combosDangling) console.error('  - ' + d);
+    console.error('\nIl master non copre tutte le parti usate dalle combo. Correggi parts-master.json e riprova.');
+    process.exit(1);
+  }
+
+  writeFileSync(partsPath, JSON.stringify(newParts, null, 2) + '\n');
+  console.log(
+    `parts.json rigenerato (${newParts.version}): ` +
+    `${newParts.blades.length} blade, ${newParts.lockChips.length} lock chip, ` +
+    `${newParts.mainBlades.length} main blade, ${newParts.assistBlades.length} assist blade, ` +
+    `${newParts.ratchets.length} ratchet, ${newParts.bits.length} bit. Guardrail combos OK.`
+  );
+
+  if (productsDangling.length > 0) {
+    console.warn(`\n⚠️  ${productsDangling.length} parti referenziate da products.json NON sono ancora nel master (da completare con /scrape-parts-master):`);
+    console.warn('  ' + productsDangling.join(', '));
+  }
+}
+
+main();

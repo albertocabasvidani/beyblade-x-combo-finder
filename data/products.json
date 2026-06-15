@@ -27,7 +27,7 @@
     "LF": "low-flat",
     "LO": "low-orb",
     "LR": "low-rush",
-    "M": "metal-coat",
+    "M": "merge",
     "MN": "metal-needle",
     "N": "needle",
     "O": "orb",
@@ -45,12 +45,12 @@
     "UF": "under-flat",
     "UN": "under-needle",
     "U": "unite",
-    "V": "variable",
+    "V": "vortex",
     "W": "wedge",
     "WB": "wall-ball",
     "WW": "wall-wedge",
     "Y": "yielding",
-    "Z": "zone"
+    "Z": "zap"
   },
   "products": {
     "takaraTomy": {
@@ -119,7 +119,7 @@
         { "code": "BX-39", "type": "Random Booster ShelterDrake Select", "name": "ShelterDrake 5-70O", "blade": "shelter-drake", "ratchet": "5-70", "bit": "orb" },
         { "code": "BX-39", "type": "Random Booster ShelterDrake Select", "name": "ShelterDrake 3-60D", "blade": "shelter-drake", "ratchet": "3-60", "bit": "dot" },
         { "code": "BX-44", "type": "Booster", "name": "TriceraPress M-85BS", "blade": "tricera-press", "ratchet": "M-85", "bit": "bound-spike", "note": "M-85 is a special ratchet" },
-        { "code": "BX-45", "type": "Booster", "name": "SamuraiCalibur 6-70M", "blade": "samurai-calibur", "ratchet": "6-70", "bit": "metal-coat", "note": "M bit is a new bit type" },
+        { "code": "BX-45", "type": "Booster", "name": "SamuraiCalibur 6-70M", "blade": "samurai-calibur", "ratchet": "6-70", "bit": "merge", "note": "M bit is a new bit type" },
         { "code": "BX-46", "type": "Battle Entry Set Infinity", "name": "CobaltDrake 9-60R", "blade": "cobalt-drake", "ratchet": "9-60", "bit": "rush", "note": "Metal Coat: Red" },
         { "code": "BX-46", "type": "Battle Entry Set Infinity", "name": "GoatTackle 7-70T", "blade": "tackle-goat", "ratchet": "7-70", "bit": "taper" },
         { "code": "BX-48", "type": "Random Booster Vol. 9", "name": "CobaltDragoon 9-80F", "blade": "cobalt-dragoon", "ratchet": "9-80", "bit": "flat", "note": "Metal Coat: Black" },
@@ -152,7 +152,7 @@
         { "code": "UX-12", "type": "Random Booster Vol. 5", "name": "PhoenixFeather 2-60N", "blade": "phoenix-feather", "ratchet": "2-60", "bit": "needle" },
         { "code": "UX-12", "type": "Random Booster Vol. 5", "name": "WyvernGale 0-80C", "blade": "wyvern-gale", "ratchet": "0-80", "bit": "cyclone" },
         { "code": "UX-13", "type": "Booster", "name": "GolemRock 1-60UN", "blade": "golem-rock", "ratchet": "1-60", "bit": "under-needle" },
-        { "code": "UX-14", "type": "Starter", "name": "ScorpioSpear 0-70Z", "blade": "scorpio-spear", "ratchet": "0-70", "bit": "zone" },
+        { "code": "UX-14", "type": "Starter", "name": "ScorpioSpear 0-70Z", "blade": "scorpio-spear", "ratchet": "0-70", "bit": "zap" },
         { "code": "UX-15", "type": "SharkScale Deck Set", "name": "SharkScale 4-50UF", "blade": "shark-scale", "ratchet": "4-50", "bit": "under-flat" },
         { "code": "UX-15", "type": "SharkScale Deck Set", "name": "TyrannoRoar 1-70L", "blade": "tyranno-roar", "ratchet": "1-70", "bit": "level" },
         { "code": "UX-15", "type": "SharkScale Deck Set", "name": "HellsBrave J3-60GF", "line": "cx", "lockChip": "hells", "mainBlade": "brave", "assistBlade": "jaggy", "ratchet": "3-60", "bit": "gear-flat" },
@@ -166,10 +166,10 @@
         { "code": "UX-18", "type": "Random Booster Vol. 8", "name": "WeissTiger 4-80LR", "blade": "weiss-tiger", "ratchet": "4-80", "bit": "low-rush" }
       ],
       "customLine": [
-        { "code": "CX-01", "type": "Starter", "name": "DranBrave S6-60V", "line": "cx", "lockChip": "dran", "mainBlade": "brave", "assistBlade": "slash", "ratchet": "6-60", "bit": "variable" },
+        { "code": "CX-01", "type": "Starter", "name": "DranBrave S6-60V", "line": "cx", "lockChip": "dran", "mainBlade": "brave", "assistBlade": "slash", "ratchet": "6-60", "bit": "vortex" },
         { "code": "CX-02", "type": "Starter", "name": "WizardArc R4-55LO", "line": "cx", "lockChip": "wizard", "mainBlade": "arc", "assistBlade": "round", "ratchet": "4-55", "bit": "low-orb" },
         { "code": "CX-03", "type": "Booster", "name": "PerseusDark B6-80W", "line": "cx", "lockChip": "perseus", "mainBlade": "dark", "assistBlade": "bumper", "ratchet": "6-80", "bit": "wedge" },
-        { "code": "CX-04", "type": "Battle Entry Set C", "name": "DranBrave S6-60V", "line": "cx", "lockChip": "dran", "mainBlade": "brave", "assistBlade": "slash", "ratchet": "6-60", "bit": "variable", "note": "Special Ver." },
+        { "code": "CX-04", "type": "Battle Entry Set C", "name": "DranBrave S6-60V", "line": "cx", "lockChip": "dran", "mainBlade": "brave", "assistBlade": "slash", "ratchet": "6-60", "bit": "vortex", "note": "Special Ver." },
         { "code": "CX-04", "type": "Battle Entry Set C", "name": "PerseusDark B6-80W", "line": "cx", "lockChip": "perseus", "mainBlade": "dark", "assistBlade": "bumper", "ratchet": "6-80", "bit": "wedge", "note": "Special Ver." },
         { "code": "CX-05", "type": "Random Booster Vol. 6", "name": "HellsReaper T4-70K", "line": "cx", "lockChip": "hells", "mainBlade": "reaper", "assistBlade": "turn", "ratchet": "4-70", "bit": "kick" },
         { "code": "CX-05", "type": "Random Booster Vol. 6", "name": "RhinoReaper C4-55D", "line": "cx", "lockChip": "rhino", "mainBlade": "reaper", "assistBlade": "charge", "ratchet": "4-55", "bit": "dot" },
@@ -234,13 +234,13 @@
         { "code": "UX-00", "type": "Booster", "name": "KnightMail 3-85BS", "blade": "knight-mail", "ratchet": "3-85", "bit": "bound-spike", "note": "Metal Coat: Navy" },
         { "code": "UX-00", "type": "Booster", "name": "OrochiCluster 6-60LF", "blade": "orochi-cluster", "ratchet": "6-60", "bit": "low-flat" },
         { "code": "UX-00", "type": "Booster", "name": "AeroPegasus 3-70A", "blade": "aero-pegasus", "ratchet": "3-70", "bit": "accel", "note": "Red Ver." },
-        { "code": "BX-00", "type": "Starter", "name": "DranSword 1-60V", "blade": "dran-sword", "ratchet": "1-60", "bit": "variable", "note": "Metal Coat: Black J.League Ver." },
+        { "code": "BX-00", "type": "Starter", "name": "DranSword 1-60V", "blade": "dran-sword", "ratchet": "1-60", "bit": "vortex", "note": "Metal Coat: Black J.League Ver." },
         { "code": "BX-00", "type": "Starter", "name": "CobaltDragoon 9-60F", "blade": "cobalt-dragoon", "ratchet": "9-60", "bit": "flat", "note": "Metal Coat: White J.League Ver." },
-        { "code": "CX-00", "type": "Booster", "name": "ValkyrieVolt S4-70V", "line": "cx", "lockChip": "valkyrie", "mainBlade": "volt", "assistBlade": "slash", "ratchet": "4-70", "bit": "variable", "note": "Metal Coat: Gold" },
+        { "code": "CX-00", "type": "Booster", "name": "ValkyrieVolt S4-70V", "line": "cx", "lockChip": "valkyrie", "mainBlade": "volt", "assistBlade": "slash", "ratchet": "4-70", "bit": "vortex", "note": "Metal Coat: Gold" },
         { "code": "CX-00", "type": "Booster", "name": "PegasusBlast ATr", "line": "cx", "lockChip": "pegasus", "mainBlade": "blast", "assistBlade": "assault", "ratchetIntegratedBit": "turbo", "note": "Metal Coat: Red" },
         { "code": "CX-00", "type": "Booster", "name": "WizardArc R4-55LO", "line": "cx", "lockChip": "wizard", "mainBlade": "arc", "assistBlade": "round", "ratchet": "4-55", "bit": "low-orb", "note": "Metal Coat: Black" },
         { "code": "CX-00", "type": "Booster", "name": "LeonFang T4-60A", "line": "cx", "lockChip": "leon", "mainBlade": "fang", "assistBlade": "turn", "ratchet": "4-60", "bit": "accel", "note": "Red Ver." },
-        { "code": "CX-00", "type": "Booster", "name": "DranBrave S6-60V", "line": "cx", "lockChip": "dran", "mainBlade": "brave", "assistBlade": "slash", "ratchet": "6-60", "bit": "variable", "note": "Metal Coat: Black" }
+        { "code": "CX-00", "type": "Booster", "name": "DranBrave S6-60V", "line": "cx", "lockChip": "dran", "mainBlade": "brave", "assistBlade": "slash", "ratchet": "6-60", "bit": "vortex", "note": "Metal Coat: Black" }
       ]
     },
     "hasbro": {
@@ -266,7 +266,7 @@
         { "code": "G2740", "type": "Starter Pack", "name": "Feather Phoenix 2-60N", "blade": "phoenix-feather", "ratchet": "2-60", "bit": "needle" }
       ],
       "cxStarterPacks": [
-        { "code": "G1677", "type": "CX Starter Pack", "name": "Courage Dran S 6-60V", "line": "cx", "lockChip": "dran", "mainBlade": "brave", "assistBlade": "slash", "ratchet": "6-60", "bit": "variable" },
+        { "code": "G1677", "type": "CX Starter Pack", "name": "Courage Dran S 6-60V", "line": "cx", "lockChip": "dran", "mainBlade": "brave", "assistBlade": "slash", "ratchet": "6-60", "bit": "vortex" },
         { "code": "G1678", "type": "CX Starter Pack", "name": "Reaper Incendio T 4-70K", "line": "cx", "lockChip": "hells", "mainBlade": "reaper", "assistBlade": "turn", "ratchet": "4-70", "bit": "kick" },
         { "code": "G1679", "type": "CX Starter Pack", "name": "Arc Wizard R 4-55LO", "line": "cx", "lockChip": "wizard", "mainBlade": "arc", "assistBlade": "round", "ratchet": "4-55", "bit": "low-orb" },
         { "code": "G1680", "type": "CX Starter Pack", "name": "Dark Perseus B 6-80W", "line": "cx", "lockChip": "perseus", "mainBlade": "dark", "assistBlade": "bumper", "ratchet": "6-80", "bit": "wedge" },
@@ -281,10 +281,10 @@
       "infinityStarterPacks": [
         { "code": "G2742", "type": "Infinity Starter Pack", "name": "Strike Dran 4-50FF", "blade": "dran-strike", "ratchet": "4-50", "bit": "free-flat" },
         { "code": "G3497", "type": "Infinity Starter Pack", "name": "Valor Bison FB", "blade": "valor-bison", "ratchetIntegratedBlade": true, "bit": "free-ball", "note": "Ratchet-Integrated Blade - no separate ratchet" },
-        { "code": "G4561", "type": "Infinity Starter Pack", "name": "Rocket Griffon H", "blade": "bullet-gryphon", "ratchetIntegratedBlade": true, "bit": "hexa", "note": "Ratchet-Integrated Blade - no separate ratchet" },
+        { "code": "G4561", "type": "Infinity Starter Pack", "name": "Rocket Griffon H", "blade": "bullet-griffon", "ratchetIntegratedBlade": true, "bit": "hexa", "note": "Ratchet-Integrated Blade - no separate ratchet" },
         { "code": "G4562", "type": "Infinity Starter Pack", "name": "Rage Ragna FE 4-55Y", "line": "cx", "lockChip": "ragna", "mainBlade": "rage", "assistBlade": "erase", "ratchet": "4-55", "bit": "yielding", "note": "Over Blade: Flow" },
         { "code": "G4563", "type": "Infinity Starter Pack", "name": "Armor Knight GV 8-70UN", "line": "cx", "lockChip": "knight", "mainBlade": "fortress", "assistBlade": "vertical", "ratchet": "8-70", "bit": "under-needle", "note": "Over Blade: Guard" },
-        { "code": "G4571", "type": "Infinity Starter Pack", "name": "Ring Aether 0-80DS", "blade": "ring-aether", "ratchet": "0-80", "bit": "disk-spike" },
+        { "code": "G4571", "type": "Infinity Starter Pack", "name": "Ring Aether 0-80DS", "blade": "heavens-ring", "ratchet": "0-80", "bit": "disk-spike" },
         { "code": "G4572", "type": "Infinity Starter Pack", "name": "Blitz Bahamut BK 1-50I", "line": "cx", "lockChip": "bahamut", "mainBlade": "blitz", "assistBlade": "knuckle", "ratchet": "1-50", "bit": "ignition", "note": "Over Blade: Break" }
       ],
       "boosterPacks": [
@@ -337,11 +337,11 @@
         { "code": "G1687", "type": "Dual Pack", "name": "Chain Incendio 9-80O", "blade": "hells-chain", "ratchet": "9-80", "bit": "orb" },
         { "code": "G1688", "type": "Dual Pack", "name": "Tackle Goat 7-70T", "blade": "tackle-goat", "ratchet": "7-70", "bit": "taper" },
         { "code": "G1688", "type": "Dual Pack", "name": "Sword Dran 4-80DB", "blade": "dran-sword", "ratchet": "4-80", "bit": "disk-ball" },
-        { "code": "G2754", "type": "Dual Pack", "name": "Calibur Samurai 6-70M", "blade": "samurai-calibur", "ratchet": "6-70", "bit": "metal-coat" },
+        { "code": "G2754", "type": "Dual Pack", "name": "Calibur Samurai 6-70M", "blade": "samurai-calibur", "ratchet": "6-70", "bit": "merge" },
         { "code": "G2754", "type": "Dual Pack", "name": "Obsidian Shell 4-60D", "blade": "black-shell", "ratchet": "4-60", "bit": "dot" },
         { "code": "G2755", "type": "Dual Pack", "name": "Circle Ghost 4-60H", "blade": "ghost-circle", "ratchet": "4-60", "bit": "hexa" },
-        { "code": "G2755", "type": "Dual Pack", "name": "Hack Viking 7-70WB", "blade": "hack-viking", "ratchet": "7-70", "bit": "wall-ball" },
-        { "code": "G2758", "type": "Dual Pack", "name": "Spear Scorpio 0-70Z", "blade": "scorpio-spear", "ratchet": "0-70", "bit": "zone" },
+        { "code": "G2755", "type": "Dual Pack", "name": "Hack Viking 7-70WB", "blade": "viking-hack", "ratchet": "7-70", "bit": "wall-ball" },
+        { "code": "G2758", "type": "Dual Pack", "name": "Spear Scorpio 0-70Z", "blade": "scorpio-spear", "ratchet": "0-70", "bit": "zap" },
         { "code": "G2758", "type": "Dual Pack", "name": "Tail Viper 5-70D", "blade": "viper-tail", "ratchet": "5-70", "bit": "dot" }
       ],
       "teamPacks": [

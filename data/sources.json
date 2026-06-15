@@ -1,44 +1,84 @@
 {
   "sources": [
     {
-      "id": "beybase",
-      "name": "BeyBase",
-      "type": "website",
-      "provides": "both",
-      "weight": 1,
+      "id": "metabeys",
+      "name": "MetaBeys",
+      "type": "metabeys",
+      "provides": "combos",
+      "weight": 1.0,
+      "lang": "en",
       "urls": [
-        "https://beybase.com/beyblade-x-buyers-guide-best-combos/",
-        "https://beybase.com/top-5-best-beyblade-x-combos/"
+        "https://www.metabeys.com/events/completed",
+        "https://www.metabeys.com/leaderboard"
       ],
-      "searchQueries": [
-        "site:beybase.com best beyblade x combos"
-      ]
+      "notes": "Database tornei competitivi: podio + deck (Blade/Ratchet/Bit) dei top-cut + usage %. Fetch via Playwright headless (scripts/fetch-metabeys.ts)."
     },
     {
-      "id": "wbo-tournament",
-      "name": "WBO Tournament Data",
+      "id": "wbo-winning-combos",
+      "name": "WBO Winning Combinations (Beyblade X BBX)",
+      "type": "wbo",
+      "provides": "combos",
+      "weight": 0.95,
+      "lang": "en",
+      "urls": [
+        "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+      ],
+      "notes": "Primary source: 1°/2°/3° posto con combo esatte per ogni evento WBO. Fetch via Playwright headless (scripts/fetch-wbo.ts, Cloudflare)."
+    },
+    {
+      "id": "wbo-overseas-note",
+      "name": "WBO Overseas Meta Report (note.com/kamen_a)",
       "type": "website",
       "provides": "combos",
-      "weight": 0.9,
-      "urls": [
-        "https://worldbeyblade.org/"
-      ],
-      "searchQueries": [
-        "site:worldbeyblade.org beyblade x winning combos tournament"
-      ]
+      "weight": 0.7,
+      "lang": "ja",
+      "urls": ["https://note.com/kamen_a"],
+      "searchQueries": ["note.com kamen_a WBO overseas beyblade x"]
     },
     {
-      "id": "beybxdb",
-      "name": "BeyXDB",
+      "id": "sbbl",
+      "name": "SBBL - Spanish BeyBattle League",
       "type": "website",
-      "provides": "both",
+      "provides": "combos",
       "weight": 0.8,
-      "urls": [
-        "https://www.beybxdb.com/"
-      ],
-      "searchQueries": [
-        "site:beybxdb.com best beyblade x combos"
-      ]
+      "lang": "es",
+      "urls": ["https://sbbl.es/beyblade-stats", "https://sbbl.es/resumen-semanal"]
+    },
+    {
+      "id": "probladers",
+      "name": "Pro Bladers Italia (PBI)",
+      "type": "website",
+      "provides": "combos",
+      "weight": 0.7,
+      "lang": "it",
+      "urls": ["https://www.probladers.it/ranking/"]
+    },
+    {
+      "id": "polishbladers",
+      "name": "Polish Bladers",
+      "type": "website",
+      "provides": "combos",
+      "weight": 0.6,
+      "lang": "pl",
+      "urls": ["https://polishbladers.pl/turnieje"]
+    },
+    {
+      "id": "okuyama3093",
+      "name": "おくろぐ (okuyama3093)",
+      "type": "website",
+      "provides": "combos",
+      "weight": 0.7,
+      "lang": "ja",
+      "urls": ["https://okuyama3093.com/beyblade-x-matome/"]
+    },
+    {
+      "id": "note-bey-bee",
+      "name": "bey_bee (note.com)",
+      "type": "website",
+      "provides": "combos",
+      "weight": 0.6,
+      "lang": "ja",
+      "urls": ["https://note.com/bey_bee"]
     },
     {
       "id": "beyblade-wiki",
@@ -46,16 +86,12 @@
       "type": "website",
       "provides": "parts",
       "weight": 0.9,
+      "lang": "en",
       "urls": [
-        "https://beyblade.fandom.com/wiki/Category:Beyblade_X_Blades",
-        "https://beyblade.fandom.com/wiki/Category:Beyblade_X_Ratchets",
-        "https://beyblade.fandom.com/wiki/Category:Beyblade_X_Bits",
         "https://beyblade.fandom.com/wiki/List_of_Beyblade_X_products_(Takara_Tomy)",
         "https://beyblade.fandom.com/wiki/List_of_Beyblade_X_products_(Hasbro)"
       ],
-      "searchQueries": [
-        "site:beyblade.fandom.com beyblade x parts list"
-      ]
+      "notes": "Fonte parti (via API MediaWiki). Gestita da /scrape-parts-master e /update-parts."
     },
     {
       "id": "reddit",
@@ -63,6 +99,7 @@
       "type": "reddit",
       "provides": "combos",
       "weight": 0.5,
+      "lang": "en",
       "urls": [],
       "searchQueries": [
         "site:reddit.com/r/Beyblade best beyblade x combos",
@@ -70,32 +107,139 @@
       ]
     },
     {
-      "id": "youtube-jacobpomegranate",
-      "name": "JacobPomegranate",
+      "id": "youtube-bulgari-cult-bistrot",
+      "name": "Bulgari Cult Bistrot (PBI Italia)",
       "type": "youtube",
       "provides": "combos",
       "weight": 0.7,
-      "urls": [
-        "https://www.youtube.com/@jacobpomegranate"
-      ],
-      "searchQueries": [
-        "jacobpomegranate beyblade x best combos"
-      ],
-      "channelId": "UCw6YtsTT6dVpy6mhAQBv8xw"
+      "lang": "it",
+      "channelId": "UC8PIurfaL63dEURT5uPw8-Q"
     },
     {
-      "id": "youtube-antiwizardwizardclub",
-      "name": "Anti Wizard Wizard Club",
+      "id": "youtube-beymac",
+      "name": "BeyMac",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.8,
+      "lang": "en",
+      "channelId": "UCSDttocBCF-y5LZDTb5XBqg"
+    },
+    {
+      "id": "youtube-beybreakr",
+      "name": "Beybreakr",
       "type": "youtube",
       "provides": "combos",
       "weight": 0.7,
-      "urls": [
-        "https://www.youtube.com/@AntiWizardWizardClub"
-      ],
-      "searchQueries": [
-        "Anti Wizard Wizard Club beyblade x best combos"
-      ],
-      "channelId": "UCX7s5fBuyQn5x6BilqOTlDA"
+      "lang": "en",
+      "channelId": "UC92A-8yJcPXpFbYQREer_KA"
+    },
+    {
+      "id": "youtube-casual-beyblader-x",
+      "name": "Casual Beyblader X",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.7,
+      "lang": "en",
+      "channelId": "UCRtIbt76u9jOiIMlg-BsEog"
+    },
+    {
+      "id": "youtube-lbp-brasile",
+      "name": "LBP - Liga de Beyblade Paulista",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.7,
+      "lang": "pt",
+      "channelId": "UCYYMDxyTfva4RNlhZ0UGUGg"
+    },
+    {
+      "id": "youtube-beyblade-galaxy-br",
+      "name": "Beyblade Galaxy (BR)",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.6,
+      "lang": "pt",
+      "channelId": "UCnuvnJD6Ofk2RyCHmnVCxNw"
+    },
+    {
+      "id": "youtube-flowbeyblade-mx",
+      "name": "Flowbeyblade (MX)",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.6,
+      "lang": "es",
+      "channelId": "UC_Pr0ZY3YzMTe5HJcB-BTyA"
+    },
+    {
+      "id": "youtube-hiram108gamer-mx",
+      "name": "Hiram108GAMER (Liga Vortex MX)",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.6,
+      "lang": "es",
+      "channelId": "UCaRbTzLD2BuHEqTUuHw5GrQ"
+    },
+    {
+      "id": "youtube-daniel-beys-z-ar",
+      "name": "Daniel Beys Z (AR)",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.6,
+      "lang": "es",
+      "channelId": "UCUyzeIVHmsTVDKMVJ3xlJig"
+    },
+    {
+      "id": "youtube-bladerulis1-mx",
+      "name": "BladerUlis1 (Liga GDL MX)",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.6,
+      "lang": "es",
+      "channelId": "UCorNe-wyKgnGScgIfQZLKsg"
+    },
+    {
+      "id": "youtube-poksmon-id",
+      "name": "PoKSmon (Road to SEA Cup, ID)",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.6,
+      "lang": "id",
+      "channelId": "UCesNCODVH9B8eh0AlLw3_3Q"
+    },
+    {
+      "id": "youtube-leonerd-kr",
+      "name": "레너드 / Leonerd (KR)",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.7,
+      "lang": "ko",
+      "channelId": "UCkpofzaMN3R6GSyb9mKSwzA"
+    },
+    {
+      "id": "youtube-beyblade-x-korea",
+      "name": "BEYBLADE X KOREA (ufficiale)",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.6,
+      "lang": "ko",
+      "channelId": "UCb9QeMUewbmQ0Qzvmg6af1w"
+    },
+    {
+      "id": "youtube-namaste-atu-tw",
+      "name": "namaste 阿土 (TW, campione G2)",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.7,
+      "lang": "zh",
+      "channelId": "UCkCNXUcgsDKYt0KoPMurB4Q"
+    },
+    {
+      "id": "youtube-beyblade-network-india",
+      "name": "Beyblade Network India",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.6,
+      "lang": "en",
+      "channelId": "UCXO6kmhFqnSWmcXN3ldzc6g"
     },
     {
       "id": "youtube-mbbc",
@@ -103,39 +247,72 @@
       "type": "youtube",
       "provides": "combos",
       "weight": 0.7,
-      "urls": [
-        "https://www.youtube.com/@MBBCMonashBeybladeBattlingClub"
-      ],
-      "searchQueries": [
-        "MBBC beyblade x best combos"
-      ],
+      "lang": "en",
       "channelId": "UC82IDHM33vtTOsBPZWN4uJw"
     },
     {
-      "id": "youtube-harurenhobbies",
-      "name": "HaruRen Hobbies",
+      "id": "youtube-jacobpomegranate",
+      "name": "JacobPomegranate",
       "type": "youtube",
       "provides": "combos",
       "weight": 0.7,
-      "urls": [
-        "https://www.youtube.com/@HaruRenHobbies"
-      ],
-      "searchQueries": [
-        "HaruRen Hobbies beyblade x best combos"
-      ],
+      "lang": "en",
+      "channelId": "UCw6YtsTT6dVpy6mhAQBv8xw"
+    },
+    {
+      "id": "youtube-harurenhobbies",
+      "name": "HobbyTalk Haru Ren",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.7,
+      "lang": "en",
       "channelId": "UCevPRqPKWyySEkw8Aaz-6Qw"
     },
     {
       "id": "google-sheets-tier-list",
-      "name": "Beyblade X Community Tier List",
+      "name": "Beyblade X Community Tier List (WBO)",
       "type": "spreadsheet",
       "provides": "combos",
       "weight": 0.8,
+      "lang": "en",
       "urls": [
         "https://docs.google.com/spreadsheets/d/15wiNF1pTAUzohfu4mTglFeM1rgfL62C5-8nrp5u3CcQ/edit?gid=494969085#gid=494969085"
       ],
       "searchQueries": []
+    },
+    {
+      "id": "beybase",
+      "name": "BeyBase",
+      "type": "website",
+      "provides": "parts-theory",
+      "weight": 0.3,
+      "lang": "en",
+      "tags": ["tier-list-theoretical"],
+      "urls": ["https://beybase.com/top-5-best-beyblade-x-combos/"],
+      "notes": "Tier list teorica, non dati torneo. Declassata: cross-reference nomi, esclusa dallo scoring meta."
+    },
+    {
+      "id": "beybxdb",
+      "name": "BeyXDB",
+      "type": "website",
+      "provides": "parts-theory",
+      "weight": 0.3,
+      "lang": "en",
+      "tags": ["tier-list-theoretical"],
+      "urls": ["https://www.beybxdb.com/"],
+      "notes": "Test personali su parti, non dati torneo. Declassata."
     }
+  ],
+  "manualVerification": [
+    { "platform": "facebook", "handle": "wbbamy", "url": "https://www.facebook.com/wbbamy", "lang": "en", "region": "MY" },
+    { "platform": "facebook", "handle": "Beyblademy", "url": "https://www.facebook.com/Beyblademy", "lang": "en", "region": "MY" },
+    { "platform": "facebook", "handle": "beybladephilippines", "url": "https://www.facebook.com/groups/beybladephilippines", "lang": "en", "region": "PH" },
+    { "platform": "instagram", "handle": "sbbl_oficial", "url": "https://www.instagram.com/sbbl_oficial/", "lang": "es", "region": "ES" },
+    { "platform": "instagram", "handle": "probladersitalia", "url": "https://www.instagram.com/probladersitalia", "lang": "it", "region": "IT" },
+    { "platform": "instagram", "handle": "xleague_germany", "url": "https://www.instagram.com/xleague_germany/", "lang": "de", "region": "DE" },
+    { "platform": "discord", "handle": "blader-league-germany", "url": "https://bladerleague.de", "lang": "de", "region": "DE" },
+    { "platform": "instagram", "handle": "lbpofc", "url": "https://www.instagram.com/lbpofc/", "lang": "pt", "region": "BR" },
+    { "platform": "forum", "handle": "arca.live beyblade", "url": "https://arca.live/b/beyblade", "lang": "ko", "region": "KR" }
   ],
   "searchSettings": {
     "maxResultsPerSource": 10,

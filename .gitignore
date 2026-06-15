@@ -22,6 +22,12 @@ data/reddit-cache.json
 data/youtube-cache.json
 data/sheets-cache.json
 data/youtube-transcripts.json
+data/metabeys-cache.json
+data/wbo-cache.json
+
+# temp / working files
+tmp/
+.playwright-cli/
 
 # plans (local only)
 plans/

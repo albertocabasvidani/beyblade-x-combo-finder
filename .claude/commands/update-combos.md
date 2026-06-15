@@ -1,82 +1,59 @@
-Aggiorna il database combo Beyblade X cercando le migliori combo raccomandate dalle fonti configurate.
+Aggiorna `data/combos.json` estraendo le combo competitive da tutte le fonti raccolte, riconoscendo i
+nomi delle parti in qualunque lingua tramite `data/parts-master.json`. Eseguito da Claude: l'estrazione,
+il match dei nomi e il dedup semantico li fa l'IA; il codice (fetcher, build) fa solo accesso e
+derivazione. Solo Beyblade X.
 
-## Istruzioni
+## Prerequisiti
 
-1. **Leggi configurazione**: Leggi `data/sources.json`, `data/combos.json`, `data/parts.json` e `data/scan-history.json`.
+- `npm run collect:sources` ha già prodotto le cache grezze: `data/reddit-cache.json`,
+  `data/youtube-cache.json`, `data/youtube-transcripts.json`, `data/sheets-cache.json`,
+  `data/metabeys-cache.json` (eventi + leaderboard), `data/wbo-cache.json` (thread).
+- `data/parts-master.json` è il dizionario nomi multilingua (names.tt/hasbro/ja/romaji + aliases).
 
-2. **Determina modalità scansione**:
-   - Se `scan-history.json` → `lastFullScan` è null: esegui **scansione iniziale** (ultimi 12 mesi)
-   - Altrimenti: esegui **scansione incrementale** (solo contenuti nuovi)
+## Flusso
 
----
+1. **Carica**: `data/sources.json` (pesi, lang), `data/combos.json`, `data/parts-master.json`,
+   `data/scan-history.json` e tutte le cache grezze. Inoltre leggi via WebFetch le fonti web dirette
+   (type `website` con `provides:"combos"`): SBBL, note.com (kamen_a, bey_bee), okuyama3093, probladers,
+   polishbladers. Per ognuna: se `scannedPages[url].contentHash` non è cambiato, salta.
+2. **Riconoscimento parti (IA, multilingua)**: per ogni combo citata in una fonte, risolvi i nomi agli
+   `id` del master usando `names` (tt/hasbro/ja/romaji) e `aliases` di OGNI lingua. Esempi: "Wizard Rod"
+   (en) / "ウィザードロッド" (ja) / "Vara del Mago" → `wizard-rod`. Le parti TT/Hasbro coprono EN; per le
+   fonti JP usa i campi ja/romaji; per ES/PT/KR/CN usa gli aliases `community` già presenti.
+   - Quando trovi un nome ricorrente non mappato che denota chiaramente una parte NOTA (es. resa coreana
+     di un blade esistente), aggiungilo come `aliases: {value, lang, kind:"community"}` alla voce del
+     master, poi esegui `npm run build:parts`.
+   - Un nome che denota una parte SCONOSCIUTA non si inventa: segnalalo per `/update-parts`.
+3. **X-filter**: scarta ogni combo il cui blade/mainBlade non risolve a un id del master (toglie
+   contaminazioni Burst/Metal dalle fonti multilingua).
+4. **Estrazione per fonte**:
+   - MetaBeys (`metabeys-cache.json`): da `events[].raw` estrai podio e deck (Blade/Ratchet/Bit) dei
+     top-cut; da `leaderboard` ricava il segnale di usage. Aggiorna `scannedEvents[id].combosFound`.
+   - WBO (`wbo-cache.json`): se `threads.bbx-winning.blocked` è false, estrai dai post 1°/2°/3° + combo;
+     registra i post processati in `scannedPosts`. Se `blocked`, segnalalo nel report.
+   - YouTube: combo da titoli/descrizioni (`youtube-cache.json`) e dai transcript
+     (`youtube-transcripts.json`). Reddit: body + commenti. Sheets: tabelle WBO.
+5. **Combo BX/UX** = blade+ratchet+bit; **CX** = lockChip+mainBlade+assistBlade+ratchet+bit.
+6. **Dedup** per chiave id-set ordinata (`blade|ratchet|bit` oppure il quintetto CX): stessa chiave →
+   merge (aggiorna score, sources, notes, dateUpdated); MAI duplicare. Non rimuovere combo esistenti.
+7. **Scoring**: `score = sourceReliability*0.4 + frequency*0.35 + recency*0.25`.
+   - sourceReliability = media pesata dei `weight` (sources.json). Le fonti `provides:"parts-theory"`
+     (BeyBase/BeyXDB, weight 0.3) pesano poco: priorità ai dati torneo (MetaBeys/WBO/SBBL/PBI/YouTube tornei).
+   - frequency = 0-10 da quante fonti indipendenti la riportano. recency dal contenuto più recente.
+   - Tag: "meta" se ≥9.0, "top-tier" se ≥8.0, "tournament-proven" se da fonte torneo (metabeys/wbo/sbbl/
+     ranking nazionali). Registra in `sources` URL+data+lang di ogni fonte.
+8. **Finalizza**: scrivi `data/combos.json`; aggiorna `scan-history.json` (`scannedVideos`,
+   `scannedSheets`, `scannedRedditPosts`, `scannedPages` con contentHash, `scannedEvents`, `scannedPosts`).
+   `npm run build`. Report: nuove/aggiornate combo, nuove parti segnalate, alias community aggiunti,
+   fonti `manualVerification` da controllare a mano (non scrappate). Git: `git add data/` →
+   commit "update combos database [data]" → push.
 
-### Fase 1 — Cache files (raccolti dagli script automatici)
+## Note
 
-Prima di iniziare l'analisi, leggi i file cache prodotti dagli script di raccolta dati:
-- `data/reddit-cache.json` — Post e commenti da r/Beyblade (scraper dedicato)
-- `data/youtube-cache.json` — Video recenti dai canali YouTube monitorati (YouTube API v3)
-- `data/sheets-cache.json` — Dati dalle tab del Google Sheet tier list (Sheets API v4)
-
-Se un file cache non esiste o è vuoto, salta quella fonte (lo script potrebbe non essere ancora stato eseguito).
-
-Analizza il contenuto di ogni cache file per estrarre combo. I video YouTube contengono combo nei titoli e nelle descrizioni. I post Reddit contengono combo nei body e nei commenti.
-
-### Fase 2 — Fonti website (beybase, wbo, beybxdb)
-
-Per ogni fonte con `type: "website"` che ha `provides: "combos"` o `provides: "both"`:
-- Usa WebSearch con le `searchQueries` configurate
-- Usa WebFetch sugli `urls` specifici
-- Cerca anche query generiche: `best beyblade x combos`, `beyblade x tier list`, `beyblade x meta combos`, `beyblade x tournament winning combos`
-- Confronta con `scannedPages` in scan-history: se l'URL è già stato scansionato e il contenuto non è cambiato, salta
-- Aggiorna `scannedPages[url]` con `lastScannedDate` e `contentHash` (primi 100 char del contenuto)
-
----
-
-## Estrazione combo
-
-Per ogni fonte analizzata:
-- **BX/UX**: Estrai blade + ratchet + bit (es. "Shark Edge 3-60 Ball")
-- **CX**: Estrai lockChip + mainBlade + assistBlade + ratchet + bit (es. "Dran Brave S 6-60 Ball")
-- Normalizza i nomi parti agli ID presenti in `data/parts.json`
-- Se una parte menzionata non esiste in parts.json, **aggiungila** (con `name` e `nameWestern` se noto)
-
-## Calcola score
-
-Per ogni combo trovata:
-```
-score = (sourceReliability × 0.4) + (frequency × 0.35) + (recency × 0.25)
-```
-- **sourceReliability**: media pesata dei `weight` delle fonti (da sources.json)
-- **frequency**: normalizzato 0-10 in base a quante fonti indipendenti la raccomandano
-- **recency**: basato sulla data della fonte più recente (30gg=10, 60gg=8, 90gg=6, 180gg=4, oltre=2)
-
-## Tipo e tags
-
-- **Tipo**: attack/defense/stamina/balance basato sul tipo del blade
-- **Tags**: "meta" se score ≥ 9.0, "top-tier" se ≥ 8.0, "tournament-proven" se fonte torneo
-
-## Merge
-
-- Combo esistente (stesso ID parti) → aggiorna score, fonti, note, dateUpdated
-- Combo nuova → aggiungi con ID univoco (formato: blade-ratchet-bit)
-- NON rimuovere combo esistenti
-- Aggiorna `lastUpdated` nel file
-
-## Finalizzazione
-
-1. Scrivi `data/combos.json` e `data/parts.json` (se nuove parti)
-2. Aggiorna `data/scan-history.json`:
-   - Imposta `lastFullScan` alla data odierna (se era scansione iniziale)
-   - Aggiorna `scannedVideos`, `scannedSheets`, `scannedPages`
-3. Esegui `npm run build` per verificare la compilazione
-4. Report: nuove combo, combo aggiornate, nuove parti, fonti consultate, video scansionati (nuovi vs già noti)
-5. Git: `git add data/` → commit "update combos database [data]" → push
-
-## Note importanti
-
-- **MAI inventare combo**: Solo combo effettivamente raccomandate da almeno una fonte
-- **MAI includere l'anno nelle query di ricerca** (es. NO "2026")
-- **Normalizzazione**: I nomi devono corrispondere ESATTAMENTE agli ID in parts.json
-- **Fonti**: Registra sempre URL e data della fonte nel campo `sources` della combo
-- **Incrementale**: La scansione incrementale è il caso normale. La scansione iniziale avviene solo la prima volta
-- **Ignora fonti `provides: "parts"`**: Questo comando si occupa solo delle combo
+- **MAI inventare combo**: solo combo effettivamente riportate da ≥1 fonte.
+- **MAI includere l'anno nelle query** di ricerca.
+- **Solo Beyblade X**: l'X-filter sul master è la garanzia finale.
+- I nomi devono risolvere ESATTAMENTE a id del master. Se un nome non risolve, prima cerca tra gli
+  aliases di tutte le lingue, poi valuta se è una parte nuova (→ /update-parts) o un alias da aggiungere.
+- Schedulato giornalmente alle 22:00 via `analyze-combos.bat` (dopo collect-combos delle 03:30 e i
+  transcript del giorno).

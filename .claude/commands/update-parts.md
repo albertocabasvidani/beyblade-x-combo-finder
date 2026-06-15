@@ -1,58 +1,42 @@
-Aggiorna il database delle parti Beyblade X cercando nuovi prodotti rilasciati.
+Aggiornamento giornaliero del database parti Beyblade X da Beyblade Fandom Wiki. Rileva SOLO le
+modifiche (diff per revid), aggiorna `data/parts-master.json`, rigenera `data/parts.json` con
+`npm run build:parts`. Eseguito da Claude (la lettura/interpretazione delle pagine e il match dei nomi
+li fa l'IA; il codice fa solo derivazione e validazione). Solo Beyblade X.
 
-## Istruzioni
+## Accesso
 
-1. **Leggi lo stato attuale**: Leggi `data/parts.json` e `data/scan-history.json`.
+API MediaWiki (la `/wiki/` dà 403): `https://beyblade.fandom.com/api.php?action=parse&page=TITLE&format=json&prop=wikitext` (spazi→`_`).
+Revisioni in batch: `action=query&titles=A|B|...&prop=revisions&rvprop=ids|timestamp` (fino a 50 titoli/chiamata).
 
-2. **Cerca nuovi prodotti**: Usa WebSearch con queste query:
-   - `"beyblade x" new release blade`
-   - `"beyblade x" new product ratchet bit`
-   - `"beyblade x" CX new lock chip main blade assist blade`
-   - `site:beyblade.fandom.com beyblade x parts list`
-   - `site:beybxdb.com parts`
-   - `"beyblade x" BX- new set`
-   - `"beyblade x" UX- new set`
-   - `"beyblade x" CX- new set`
+## Flusso (evita lavoro inutile)
 
-3. **Consulta fonti dirette**: Usa WebFetch su queste pagine (solo se non già scansionate di recente in `scannedPages`):
-   - https://beyblade.fandom.com/wiki/List_of_Beyblade_X_products_(Takara_Tomy)
-   - https://beyblade.fandom.com/wiki/List_of_Beyblade_X_products_(Hasbro)
-   - https://beyblade.fandom.com/wiki/Category:Beyblade_X_Blades
-   - https://beyblade.fandom.com/wiki/Category:Beyblade_X_Ratchets
-   - https://beyblade.fandom.com/wiki/Category:Beyblade_X_Bits
-   - https://www.beybxdb.com/
+1. **Carica stato**: `data/parts-master.json` (ogni voce ha `source.page` e `source.revid`),
+   `data/scan-history.json` (`scannedPages[url].revid`).
+2. **Nuovi prodotti**: leggi le 2 liste
+   (`List_of_Beyblade_X_products_(Takara_Tomy)` sezioni 1-4, `..._(Hasbro)`), estrai i link
+   `[[Pagina]]`, confronta con i `source.page` già nel master → titoli nuovi = worklist iniziale.
+3. **Pagine cambiate**: per tutte le pagine note (i `source.page` del master), una/poche chiamate batch
+   `prop=revisions&rvprop=ids` → confronta `revid` attuale con quello salvato. Diverso → aggiungi alla
+   worklist; uguale → **skip** (nessun fetch del wikitext). Se una pagina non ha `revid` salvato
+   (prima esecuzione dopo l'import), trattala come da verificare una volta, poi salva il revid.
+4. **Estrai solo la worklist**: per ogni pagina cambiata/nuova applica le regole di `/scrape-parts-master`
+   (BX/UX 1:1 dalla pagina prodotto; CX dalle pagine parte `Main Blade - X`/`Lock Chip - X`/`Assist Blade - X`;
+   `tt` = nome parte mai codice; `{{Ruby}}`→base; `AKA (Hasbro)`→hasbro senza tag; type blade = Type
+   prodotto, type bit = Type pagina Bit; Expand Blade → MetalBlade+overBlade; X-filter su `Series`).
+   Scrivi i record flat in `tmp/parts-extract-update.json` (stesso schema dei batch).
+5. **Merge**: `npx tsx scripts/merge-master.ts` (idempotente: arricchisce le voci, aggiunge le nuove,
+   pulisce i tag, aggiorna i conflitti). Poi aggiorna `source.revid`/`lastVerified` delle voci toccate
+   e i `scannedPages[url].revid` in `scan-history.json`.
+6. **Derivazione**: `npm run build:parts` (guardrail combos deve restare verde; il ⚠️ delle parti
+   products mancanti deve restare a 0). Poi `npm run build`.
+7. **Verifica delta**: esegui `/verify-parts-master` sulle voci nuove/cambiate; rivedi i conflitti
+   rilevanti in `data/parts-master-conflicts.json`.
+8. **Report + Git**: elenca parti nuove/cambiate, conflitti; `git add data/ && commit "update parts database [data]" && push`.
+9. **Worklist vuota** → "Nessuna nuova parte" e stop prima di qualsiasi fetch del wikitext.
 
-4. **Identifica parti nuove**: Confronta con `data/parts.json`. Per ogni parte nuova:
-   - **Blades (BX/UX)**: `id` (kebab-case), `name` (TT), `nameWestern` (Hasbro, se diverso), `type`, `line: "bx"`, `releaseSet`
-   - **Lock Chips (CX)**: `id`, `name`, `nameWestern` (se diverso), `line: "cx"`
-   - **Main Blades (CX)**: `id`, `name`, `nameWestern` (se diverso), `line: "cx"`
-   - **Assist Blades (CX)**: `id`, `name`, `shortName` (lettera), `line: "cx"`
-   - **Ratchets**: `id` (es. "3-60"), `name`, `sides`, `height`
-   - **Bits**: `id` (kebab-case), `name`, `type`
+## Note
 
-5. **Regole di normalizzazione**:
-   - `id`: kebab-case basato sul nome TT (es. "shark-edge", "hells-scythe")
-   - `name`: nome TT/Eastern con spazi (es. "Shark Edge", "Hells Scythe")
-   - `nameWestern`: nome Hasbro solo se diverso dal TT (es. "Keel Shark", "Scythe Incendio")
-   - Ratchet: `sides` = primo numero, `height` = secondo (3-60 → sides:3, height:60)
-   - Assist Blades: `shortName` = lettera singola (es. "S" per Slash)
-   - Non aggiungere parti non verificate — meglio meno parti ma corrette
-   - **MAI includere l'anno nelle query di ricerca**
-
-6. **Aggiorna files**:
-   - `data/parts.json`: aggiorna `version`, aggiungi parti in ordine alfabetico per `id`
-   - `data/scan-history.json`: aggiorna `scannedPages` per le pagine visitate
-
-7. **Aggiorna catalogo prodotti** (`data/products.json`):
-   - Per ogni set trovato nelle pagine Wiki TT e Hasbro (step 3), estrai le parti contenute
-   - Ogni prodotto: `code` (BX-xx, UX-xx, CX-xx, Fxxxxx/Gxxxxx), `type`, `name`, `blade`/`ratchet`/`bit` (per BX/UX) o `lockChip`/`mainBlade`/`assistBlade`/`ratchet`/`bit` (per CX)
-   - Gli ID parti devono corrispondere a quelli in `parts.json` (kebab-case)
-   - Mantieni la struttura esistente: `products.takaraTomy.{basicLine,uniqueLine,customLine,limitedReleases}` e `products.hasbro.{starterPacks,cxStarterPacks,...}`
-   - Aggiorna `version` con la data corrente
-   - Questo catalogo serve per i link Amazon affiliate (ricerca per codice set)
-
-8. **Verifica**: Esegui `npm run build` per verificare la compilazione.
-
-8. **Report**: Elenca parti aggiunte o "Nessuna nuova parte trovata."
-
-9. **Git**: Se ci sono modifiche: `git add data/` → commit "update parts database [data]" → push
+- **Solo Beyblade X**: scarta ogni pagina con `Series ≠ "Beyblade X"`.
+- **Mai inventare**: nome non derivabile → `null`; parte non confermata → `status:"unverified"`.
+- I nomi non-EN (KR/CN/ES/PT) NON sono su Fandom: li aggiunge `/update-combos` come `aliases{kind:"community"}`.
+- Schedulato giornalmente alle 03:00 via `update-parts.bat` (Task Scheduler).

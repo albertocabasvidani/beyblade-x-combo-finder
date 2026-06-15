@@ -1,0 +1,361 @@
+{
+  "generated": "2026-06-15",
+  "count": 52,
+  "conflicts": [
+    {
+      "type": "type_mismatch",
+      "id": "captain-america",
+      "existing": "attack",
+      "found": "stamina",
+      "from": "Captain America 4-70GB"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "miles-morales",
+      "existing": "stamina",
+      "found": "defense",
+      "from": "Miles Morales 1-60GN"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "green-goblin",
+      "existing": "stamina",
+      "found": "balance",
+      "from": "Green Goblin 9-80HT"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "bumblebee",
+      "existing": "defense",
+      "found": "balance",
+      "from": "Bumblebee 3-60GP"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "obi-wan-kenobi",
+      "existing": "defense",
+      "found": "balance",
+      "from": "Obi-Wan Kenobi 4-60P"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "chewbacca",
+      "existing": "stamina",
+      "found": "attack",
+      "from": "Chewbacca 4-80LF"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "stormtrooper",
+      "existing": "defense",
+      "found": "stamina",
+      "from": "Stormtrooper 5-70B"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "samurai-calibur",
+      "existing": "attack",
+      "found": "balance",
+      "from": "SamuraiCalibur 6-70M"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "phoenix-rudder",
+      "existing": "balance",
+      "found": "stamina",
+      "from": "PhoenixRudder Deck Set"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "scorpio-spear",
+      "existing": "stamina",
+      "found": "balance",
+      "from": "ScorpioSpear 0-70Z"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "shinobi-shadow",
+      "existing": "defense",
+      "found": "attack",
+      "from": "Random Booster Vol. 5"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "phoenix-feather",
+      "existing": "attack",
+      "found": "defense",
+      "from": "Random Booster Vol. 5"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "wyvern-gale",
+      "existing": "stamina",
+      "found": "attack",
+      "from": "Random Booster Vol. 5"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "dran-dagger",
+      "existing": "attack",
+      "found": "stamina",
+      "from": "Random Booster Vol. 8"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "weiss-tiger",
+      "existing": "balance",
+      "found": "attack",
+      "from": "Random Booster Vol. 8"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "leon-crest",
+      "existing": "defense",
+      "found": "balance",
+      "from": "Random Booster Vol. 6"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "phoenix-rudder",
+      "existing": "balance",
+      "found": "attack",
+      "from": "Random Booster Vol. 6"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "dran-buster",
+      "existing": "attack",
+      "found": "defense",
+      "from": "Random Booster Vol. 7"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "black-shell",
+      "existing": "defense",
+      "found": "stamina",
+      "from": "Random Booster Vol. 7"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "cobalt-dragoon",
+      "existing": "attack",
+      "found": "stamina",
+      "from": "Random Booster Vol. 7"
+    },
+    {
+      "type": "over_blade",
+      "value": "Break",
+      "from": "BahamutBlitz BK1-50I",
+      "detail": "Expand Blade OverBlade: non modellato come categoria separata"
+    },
+    {
+      "type": "over_blade",
+      "value": "Guard",
+      "from": "KnightFortress GV8-70UN",
+      "detail": "Expand Blade OverBlade: non modellato come categoria separata"
+    },
+    {
+      "type": "over_blade",
+      "value": "Flow",
+      "from": "RagnaRage FE4-55Y",
+      "detail": "Expand Blade OverBlade: non modellato come categoria separata"
+    },
+    {
+      "type": "over_blade",
+      "value": "Break",
+      "from": "BahamutBlitz BK1-50I (Special Ver.)",
+      "detail": "Expand Blade OverBlade: non modellato come categoria separata"
+    },
+    {
+      "type": "over_blade",
+      "value": "Peak",
+      "from": "UnicornDelta PO3-60GU",
+      "detail": "Expand Blade OverBlade: non modellato come categoria separata"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "samurai-saber",
+      "existing": "attack",
+      "found": "stamina",
+      "from": "SamuraiSaber 9-65LO"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "tyranno-beat",
+      "existing": "attack",
+      "found": "defense",
+      "from": "TyrannoBeat 3-60N"
+    },
+    {
+      "type": "over_blade",
+      "value": "Outer",
+      "from": "BrachioWhip OW5-70Nr",
+      "detail": "Expand Blade OverBlade: non modellato come categoria separata"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "hells-scythe",
+      "existing": "balance",
+      "found": "attack",
+      "from": "HellsScythe 3-80F"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "dran-dagger",
+      "existing": "attack",
+      "found": "balance",
+      "from": "DranDagger 2-80GP"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "iron-man",
+      "existing": "defense",
+      "found": "stamina",
+      "from": "Iron Man 4-80B"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "thanos",
+      "existing": "defense",
+      "found": "balance",
+      "from": "Thanos 4-60P"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "spider-man",
+      "existing": "stamina",
+      "found": "attack",
+      "from": "Spider-Man 3-60F"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "venom",
+      "existing": "attack",
+      "found": "defense",
+      "from": "Venom 3-80N"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "luke-skywalker",
+      "existing": "defense",
+      "found": "stamina",
+      "from": "Luke Skywalker 4-80B"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "darth-vader",
+      "existing": "defense",
+      "found": "balance",
+      "from": "Darth Vader 4-60P"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "moff-gideon",
+      "existing": "balance",
+      "found": "defense",
+      "from": "Moff Gideon 3-80N"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "starscream",
+      "existing": "stamina",
+      "found": "defense",
+      "from": "Starscream 3-80N"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "megatron",
+      "existing": "balance",
+      "found": "stamina",
+      "from": "Megatron 4-80B"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "samurai-steel",
+      "existing": "balance",
+      "found": "attack",
+      "from": "SamuraiSteel 5-70GF"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "samurai-saber",
+      "existing": "attack",
+      "found": "balance",
+      "from": "SamuraiSaber 5-60K"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "samurai-saber",
+      "existing": "attack",
+      "found": "balance",
+      "from": "SamuraiSaber 5-60K"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "captain-america",
+      "existing": "attack",
+      "found": "stamina",
+      "from": "Captain America 4-70GB"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "miles-morales",
+      "existing": "stamina",
+      "found": "defense",
+      "from": "Miles Morales 1-60GN"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "green-goblin",
+      "existing": "stamina",
+      "found": "balance",
+      "from": "Green Goblin 9-80HT"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "bumblebee",
+      "existing": "defense",
+      "found": "balance",
+      "from": "Bumblebee 3-60GP"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "obi-wan-kenobi",
+      "existing": "defense",
+      "found": "balance",
+      "from": "Obi-Wan Kenobi 4-60P"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "chewbacca",
+      "existing": "stamina",
+      "found": "attack",
+      "from": "Chewbacca 4-80LF"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "stormtrooper",
+      "existing": "defense",
+      "found": "stamina",
+      "from": "Stormtrooper 5-70B"
+    },
+    {
+      "type": "over_blade",
+      "value": "Break",
+      "from": "BahamutBlitz BK1-50I",
+      "detail": "Expand Blade OverBlade: non modellato come categoria separata"
+    },
+    {
+      "type": "over_blade",
+      "value": "Guard",
+      "from": "KnightFortress GV8-70UN",
+      "detail": "Expand Blade OverBlade: non modellato come categoria separata"
+    },
+    {
+      "type": "over_blade",
+      "value": "Flow",
+      "from": "RagnaRage FE4-55Y",
+      "detail": "Expand Blade OverBlade: non modellato come categoria separata"
+    }
+  ]
+}

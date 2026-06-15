@@ -11,9 +11,13 @@
     "fetch:youtube": "npx tsx scripts/fetch-youtube.ts",
     "fetch:sheets": "npx tsx scripts/fetch-sheets.ts",
     "fetch:transcripts": "python scripts/fetch-transcripts.py",
-    "collect:sources": "npx tsx scripts/collect-sources.ts"
+    "collect:sources": "npx tsx scripts/collect-sources.ts",
+    "build:parts": "npx tsx scripts/build-parts.ts",
+    "fetch:metabeys": "npx tsx scripts/fetch-metabeys.ts",
+    "fetch:wbo": "npx tsx scripts/fetch-wbo.ts"
   },
   "devDependencies": {
+    "playwright-core": "^1.48.0",
     "tsx": "^4.19.0"
   },
   "dependencies": {

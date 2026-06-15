@@ -21,54 +21,77 @@ Sito web per trovare le migliori combo Beyblade X in base alle parti possedute. 
 - Ratchet e Bit sono condivisi tra le linee
 
 ### File Dati
-- `data/parts.json` — registro parti (blade, lockChip, mainBlade, assistBlade, ratchet, bit)
-- `data/combos.json` — database combo con score e fonti (77 combo: 66 BX + 11 CX)
-- `data/sources.json` — fonti configurabili per la pipeline (editabile dall'utente)
-- `data/youtube-cache.json` — cache metadati video YouTube (titolo, descrizione)
-- `data/youtube-transcripts.json` — trascrizioni auto-generate dei video YouTube
-- `data/reddit-cache.json` — cache post Reddit r/Beyblade
-- `data/sheets-cache.json` — cache Google Sheets (WBO tournament data)
-- `data/scan-history.json` — tracking video/post/sheets già scansionati
+- `data/parts-master.json` — **file canonico** parti multilingua (names.tt/hasbro/ja/romaji + aliases per lingua, stats, products, source). Fonte di verità del registro parti.
+- `data/parts.json` — **derivato** da parts-master via `npm run build:parts` (schema consumato dal sito). NON editare a mano: si rigenera.
+- `data/parts-master-conflicts.json` — casi ambigui dell'import per revisione umana (type_mismatch = rumore, over_blade = Expand Blade)
+- `data/combos.json` — database combo con score e fonti
+- `data/products.json` — catalogo prodotti TT+Hasbro (link Amazon); referenzia gli id parte
+- `data/sources.json` — fonti configurabili (con `lang`, `manualVerification`); editabile dall'utente
+- `data/youtube-cache.json`, `data/youtube-transcripts.json`, `data/reddit-cache.json`, `data/sheets-cache.json` — cache grezze fonti
+- `data/metabeys-cache.json` — cache eventi+leaderboard MetaBeys (Playwright headless)
+- `data/wbo-cache.json` — cache thread WBO (Playwright; Cloudflare può bloccare headless)
+- `data/scan-history.json` — dedup: scannedVideos/Sheets/RedditPosts/Pages(+revid)/Events/Posts
 
 ## Comandi
 
 - `npm run dev` — server sviluppo
 - `npm run build` — build produzione
-- `/update-combos` — aggiorna database combo (comando Claude Code locale)
-- `/update-parts` — cerca e aggiunge nuove parti Beyblade X
+- `npm run build:parts` — rigenera `parts.json` da `parts-master.json` (guardrail: aborta se rompe i riferimenti di combos.json)
+- `npm run collect:sources` — raccoglie le cache grezze (Reddit, YouTube, Sheets, MetaBeys, WBO)
+- `/scrape-parts-master` — import iniziale parti da Fandom (one-shot, subagent)
+- `/verify-parts-master` — verifica qualità del master parti
+- `/update-parts` — aggiornamento giornaliero parti (diff revid)
+- `/update-combos` — aggiorna database combo dalle cache (master multilingua, X-filter, dedup id-set)
 
 ## Pipeline Dati
 
-### Script raccolta (eseguiti da `npm run collect:sources`)
-- `npm run scrape:reddit` — scrapa r/Beyblade via Reddit JSON API (no auth)
-- `npm run fetch:youtube` — fetcha metadati video via YouTube Data API v3 (richiede API key)
-- `npm run fetch:sheets` — fetcha Google Sheets WBO tournament data
-- `npm run fetch:transcripts` — scarica trascrizioni video via Python `youtube_transcript_api`
+### Confine IA / codice (principio architetturale)
+Le routine (import parti, update giornalieri, analisi combo) le esegue **Claude**. Tutto ciò che è
+**non deterministico — leggere/interpretare pagine, riconoscere e matchare i nomi delle parti in
+qualsiasi lingua — lo fa l'IA** (comandi + subagent). Il **codice** fa solo ciò che è deterministico:
+accesso/fetch grezzo, dedup (id/revid/hash), derivazione di formato, validazione referenziale.
 
-### Dipendenze script
-- **Node.js**: tsx (devDep)
-- **Python**: `youtube_transcript_api` (`pip install youtube-transcript-api`)
-- **API key**: `YOUTUBE_API_KEY` in `.env` (YouTube Data API v3 + Google Sheets API v4)
+### Database parti (master multilingua → derivati)
+- Fonte: pagine prodotto Beyblade Fandom Wiki via **API MediaWiki** (`api.php?action=parse&...&prop=wikitext`;
+  la pagina `/wiki/` dà 403). Corrispondenze TT↔Hasbro dall'AKA; per CX leggere le pagine parte
+  (`Main Blade - X`, `Lock Chip - X`, `Assist Blade - X`); nomi JP da JPName/RomajiName.
+- `/scrape-parts-master` (one-shot, subagent) popola `parts-master.json`; `scripts/build-parts.ts`
+  deriva `parts.json` e valida i riferimenti (guardrail combos: aborta se rotti). `/update-parts`
+  aggiorna via diff `revid`. Script deterministici: `bootstrap-master.ts`, `merge-master.ts`, `build-parts.ts`.
 
-### Fonti dati e affidabilità
-| Fonte | Tipo | Peso |
-|-------|------|------|
-| WBO Tournament Data (Google Sheets) | Dati torneo con punti e vittorie | 1.0 |
-| World Championship 2025 | Combo vincenti evento ufficiale | 0.9 |
-| MBBC Theory Crafting | Video test benchmark (6+ video) | 0.9 |
-| BeyBase | Articoli tier list curati | 1.0 |
-| HobbyTalk Haru Ren | Video "My Favorite" con capitoli | 0.8 |
-| AWWC TOP 3 COMBOS | Video top 3 per blade (solo trascrizioni) | 0.8 |
-| Jacob Pomegranate | Video combo review/analisi | 0.8 |
-| Reddit r/Beyblade | Post community, tier list utenti | 0.5-0.7 |
+### Script raccolta combo (`npm run collect:sources`)
+- `scrape:reddit`, `fetch:youtube` (API key), `fetch:sheets`, `fetch:metabeys` (Playwright headless),
+  `fetch:wbo` (Playwright; Cloudflare blocca headless → `WBO_HEADED=1`, oppure ci si affida a MetaBeys
+  che indicizza gli stessi eventi WBO). `fetch:transcripts` gira SEPARATO (ogni 5 min, `--batch 1`).
+- Le cache grezze le interpreta `/update-combos` (estrazione, match multilingua, dedup id-set, scoring).
+
+### Dipendenze
+- Node: `tsx`, `playwright-core` (usa il Chrome di sistema). Python: `youtube_transcript_api`.
+- `.env`: `YOUTUBE_API_KEY` (YouTube Data API v3 + Sheets API v4), `AMAZON_TAG_IT/US`.
+
+### Fonti torneo (in `data/sources.json`, con `lang`)
+Strutturate: **MetaBeys** (1.0, podio+deck+usage%), **WBO Winning Combos** (0.95). Web: **SBBL** (es,
+win-rate), **PBI/probladers** (it), **okuyama3093**/**note** (ja), **polishbladers** (pl). YouTube
+multilingua: Bulgari Cult Bistrot (it), BeyMac/Beybreakr/Casual Beyblader X (en), LBP/Galaxy (pt),
+Flowbeyblade/BladerUlis (es), PoKSmon (id), Leonerd/BEYBLADE X KOREA (ko), namaste 阿土 (zh), MBBC (en).
+**Declassate** a `parts-theory` (0.3): BeyBase, BeyXDB (tier list teoriche, non dati torneo).
+Social login-walled in `manualVerification` (non scrappati, solo elencati nel report).
 
 ## Automazione (Windows Task Scheduler)
 
-- `update-combos.bat` — raccolta dati + aggiornamento combo via Claude CLI
-- `update-parts.bat` — aggiornamento parti via Claude CLI
-- `fetch-transcripts.bat` — scarica 1 trascrizione per esecuzione (ogni 5 min)
-- `dev-server.bat` — avvia server di sviluppo Astro
-- Configurare in Task Scheduler: trigger settimanale per combo/parts, ogni 5 min per transcripts
+Sequenza giornaliera (i `.bat` invocano `claude --dangerously-skip-permissions -p`):
+- **03:00** `update-parts.bat` → `/update-parts` (diff revid, di solito no-op da ~30s)
+- **03:30** `collect-combos.bat` → `npm run collect:sources` (cache grezze, incl. MetaBeys/WBO)
+- **03:45 → tutto il giorno, ogni 5 min** `fetch-transcripts.bat` (`--batch 1`, rate-limit YouTube)
+- **22:00** `analyze-combos.bat` → `/update-combos`
+- `update-combos.bat` resta come esecuzione manuale tutto-in-uno; `dev-server.bat` avvia Astro.
+
+Registrazione task (eseguire una volta; attivare consapevolmente — fanno commit/push autonomi):
+
+    schtasks /create /tn "Beyblade Update Parts" /tr "c:\claude-code\Personale\beyblade combos\update-parts.bat" /sc daily /st 03:00
+    schtasks /create /tn "Beyblade Collect Combos" /tr "c:\claude-code\Personale\beyblade combos\collect-combos.bat" /sc daily /st 03:30
+    schtasks /create /tn "Beyblade Transcripts" /tr "c:\claude-code\Personale\beyblade combos\fetch-transcripts.bat" /sc minute /mo 5
+    schtasks /create /tn "Beyblade Analyze Combos" /tr "c:\claude-code\Personale\beyblade combos\analyze-combos.bat" /sc daily /st 22:00
 
 ## GitHub
 
