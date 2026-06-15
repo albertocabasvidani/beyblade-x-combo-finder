@@ -58,7 +58,7 @@ export function buildAmazonSearchUrl(
 ): string {
   let query: string;
 
-  if (partType === 'blade' || partType === 'lockChip' || partType === 'mainBlade' || partType === 'assistBlade') {
+  if (partType === 'blade' || partType === 'lockChip' || partType === 'mainBlade' || partType === 'assistBlade' || partType === 'overBlade') {
     query = `Beyblade X ${partNameForSearch(partType, partId)}`;
   } else if (partType === 'ratchet') {
     const code = productLookup.ratchets[partId];

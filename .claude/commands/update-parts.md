@@ -20,9 +20,10 @@ Revisioni in batch: `action=query&titles=A|B|...&prop=revisions&rvprop=ids|times
    worklist; uguale → **skip** (nessun fetch del wikitext). Se una pagina non ha `revid` salvato
    (prima esecuzione dopo l'import), trattala come da verificare una volta, poi salva il revid.
 4. **Estrai solo la worklist**: per ogni pagina cambiata/nuova applica le regole di `/scrape-parts-master`
-   (BX/UX 1:1 dalla pagina prodotto; CX dalle pagine parte `Main Blade - X`/`Lock Chip - X`/`Assist Blade - X`;
-   `tt` = nome parte mai codice; `{{Ruby}}`→base; `AKA (Hasbro)`→hasbro senza tag; type blade = Type
-   prodotto, type bit = Type pagina Bit; Expand Blade → MetalBlade+overBlade; X-filter su `Series`).
+   (BX/UX 1:1 dalla pagina prodotto; CX dalle pagine parte `Main Blade - X`/`Lock Chip - X`/`Assist Blade - X`,
+   e per i CX Expand anche `Over Blade - X`; `tt` = nome parte mai codice; `{{Ruby}}`→base; `AKA (Hasbro)`→hasbro
+   senza tag; type blade = Type prodotto, type bit = Type pagina Bit; Expand Blade → mainBlade=MetalBlade +
+   categoria `overBlade`; X-filter su `Series`).
    Scrivi i record flat in `tmp/parts-extract-update.json` (stesso schema dei batch).
 5. **Merge**: `npx tsx scripts/merge-master.ts` (idempotente: arricchisce le voci, aggiunge le nuove,
    pulisce i tag, aggiorna i conflitti). Poi aggiorna `source.revid`/`lastVerified` delle voci toccate

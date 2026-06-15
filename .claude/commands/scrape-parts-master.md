@@ -34,15 +34,16 @@ parallelo**, con QUESTO prompt (validato su DranSword BX e DranBrave CX):
 > Per ogni pagina, dall'infobox `{{Beyblade Infobox}}`:
 > - `ProductCode` → codice TT (`BX-/UX-/CX-`) **e** codice Hasbro (`F####/G####`).
 > - `Type`; `System`→line (Basic→bx, Unique→ux, Custom→cx); `Series` → se ≠ "Beyblade X" SCARTA.
-> - Componenti: BX/UX = `BladeX`+`Ratchet`+`Bit`; CX = `LockChip`+`MainBlade`+`AssistBlade`+`Ratchet`+`Bit`.
+> - Componenti: BX/UX = `BladeX`+`Ratchet`+`Bit`; CX = `LockChip`+`MainBlade`+`AssistBlade`+`Ratchet`+`Bit`; CX Expand aggiunge `OverBlade`.
 > - **BX/UX** (1 blade, mappatura 1:1): TT = `BladeX` spaziato; Hasbro = segmento `AKA (Hasbro)` senza
 >   ratchet/bit; JP = porzione di `JPName` PRIMA del primo `{{Ruby}}`; romaji = prima parola di `RomajiName`.
 > - **CX**: NON derivare i nomi Hasbro dal nome prodotto (ordine non corrispondente). Per ogni parte CX
->   LEGGI la pagina dedicata: `Main Blade - {MainBlade}`, `Lock Chip - {LockChip}`, `Assist Blade - {AssistBlade}`;
+>   LEGGI la pagina dedicata: `Main Blade - {MainBlade}`, `Lock Chip - {LockChip}`, `Assist Blade - {AssistBlade}`,
+>   e per i CX Expand anche `Over Blade - {OverBlade}` (vedi `Category:Over Blades`);
 >   prendi TT/JP/romaji e Hasbro SOLO dal suo `AKA (Hasbro)`; se la pagina parte non ha `AKA`, Hasbro = null.
 > - `{{Ruby|base|reading}}`→tieni `base`; rimuovi `[[...]]` (tieni testo), `'' ''`.
 > Restituisci JSON: un oggetto per prodotto con `pageTitle, isBeybladeX, line, type, productCodes{tt,hasbro},
-> parts{ blade?, lockChip?, mainBlade?, assistBlade?(+short), ratchet, bit }` dove ogni parte ha
+> parts{ blade?, lockChip?, overBlade?, mainBlade?, assistBlade?(+short), ratchet, bit }` dove ogni parte ha
 > `{ tt, hasbro|null, ja, romaji }` (ratchet/bit: almeno `tt`; hasbro/ja null se non presenti). Riporta
 > per ogni pagina parte CX letta l'URL API usato. Non inventare: campo assente → null.
 
@@ -55,10 +56,11 @@ rileggerle (la cache di WebFetch dedup entro 15 min) oppure assegnale a un lotto
   `JPName` della pagina parte (ウルフ = Wolf). Un subagent che mette "CX-10" in `tt` ha sbagliato.
 - **Tipo per-parte**: `parts.json` richiede `type` (attack/defense/stamina/balance) per blade e bit.
   Non è il `Type` del prodotto: leggi il campo `Type` dall'infobox della **pagina parte** (blade/bit).
-- **Sistema Expand Blade** (CX recenti, `System2=Expand Blade`, es. CX-13/14/15): l'infobox NON ha
-  `MainBlade` ma `OverBlade` + `MetalBlade`. Mappa `mainBlade = MetalBlade` (coerente con products.json)
-  e registra l'`OverBlade` (Break/Guard/Flow) come `aliases{kind:"variant"}`/nota; non è (ancora) un
-  campo separato del modello.
+- **Sistema Expand Blade** (CX recenti, `System2=Expand Blade`, es. CX-13/14/15/17/18): l'infobox ha
+  `OverBlade` + `MetalBlade` al posto di `MainBlade`. Il **Metal Blade è un Main Blade**: mappa
+  `mainBlade = MetalBlade`. L'**Over Blade è una categoria a sé** (`overBlade`): leggi `Over Blade - {OverBlade}`
+  ed estrai tt/ja/romaji/type come per le altre parti CX. Struttura CX Expand = LockChip + OverBlade +
+  MainBlade + AssistBlade + Ratchet + Bit.
 - **RatchetBit integrato** (es. PegasusBlast `Turbo`, campo `RatchetBit`): `ratchet = null`, `bit` = il valore.
 - **ja/romaji di ratchet e bit**: dalle pagine `Ratchet - {X}` / `Bit - {X}` se esistono; l'`AKA` di
   quelle pagine è spesso solo l'abbreviazione (V, LO, DB), NON un nome Hasbro → `hasbro = null`.

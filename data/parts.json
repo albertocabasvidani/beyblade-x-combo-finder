@@ -96,6 +96,13 @@
       "releaseSet": "BX-00"
     },
     {
+      "id": "cutter-shinobi",
+      "name": "Cutter Shinobi",
+      "type": "balance",
+      "line": "ux",
+      "releaseSet": "G1940"
+    },
+    {
       "id": "darth-vader",
       "name": "Darth Vader",
       "type": "defense",
@@ -182,6 +189,14 @@
       "releaseSet": "UX-12"
     },
     {
+      "id": "glory-valkyrie",
+      "name": "Glory Valkyrie",
+      "nameWestern": "Glory Valkerion",
+      "type": "attack",
+      "line": "ux",
+      "releaseSet": "UX-20"
+    },
+    {
       "id": "goat-tackle",
       "name": "Goat Tackle",
       "nameWestern": "Tackle Goat",
@@ -212,6 +227,13 @@
       "type": "balance",
       "line": "bx",
       "releaseSet": "G3061"
+    },
+    {
+      "id": "gust-bat",
+      "name": "Gust Bat",
+      "type": "balance",
+      "line": "bx",
+      "releaseSet": "G2733"
     },
     {
       "id": "heavens-ring",
@@ -316,34 +338,6 @@
       "releaseSet": "UX-06"
     },
     {
-      "id": "lightning-l-drago-rapid",
-      "name": "Lightning L-Drago (Rapid)",
-      "type": "attack",
-      "line": "bx",
-      "releaseSet": "BX-00"
-    },
-    {
-      "id": "lightning-l-drago-rapid-hit-type",
-      "name": "Lightning L-Drago (Rapid-Hit Type)",
-      "type": "attack",
-      "line": "bx",
-      "releaseSet": "Random Booster Lightning L-Drago 1-60F"
-    },
-    {
-      "id": "lightning-l-drago-upper",
-      "name": "Lightning L-Drago (Upper)",
-      "type": "attack",
-      "line": "bx",
-      "releaseSet": "BX-00"
-    },
-    {
-      "id": "lightning-l-drago-upper-type",
-      "name": "Lightning L-Drago (Upper Type)",
-      "type": "attack",
-      "line": "bx",
-      "releaseSet": "Random Booster Lightning L-Drago 1-60F"
-    },
-    {
       "id": "luke-skywalker",
       "name": "Luke Skywalker",
       "type": "defense",
@@ -387,13 +381,6 @@
       "type": "balance",
       "line": "bx",
       "releaseSet": "F9589"
-    },
-    {
-      "id": "mosasaurus",
-      "name": "Mosasaurus",
-      "type": "balance",
-      "line": "bx",
-      "releaseSet": "G1898"
     },
     {
       "id": "mummy-curse",
@@ -466,11 +453,11 @@
       "releaseSet": "BX-00"
     },
     {
-      "id": "quetzalcoatlus",
-      "name": "Quetzalcoatlus",
+      "id": "rampart-aegis",
+      "name": "Rampart Aegis",
       "type": "defense",
-      "line": "bx",
-      "releaseSet": "G1899"
+      "line": "ux",
+      "releaseSet": "G1940"
     },
     {
       "id": "red-hulk",
@@ -599,14 +586,6 @@
       "releaseSet": "UX-08"
     },
     {
-      "id": "snowtrooper",
-      "name": "Snowtrooper",
-      "nameWestern": "Snowtrooper",
-      "type": "stamina",
-      "line": "bx",
-      "releaseSet": "G3061"
-    },
-    {
       "id": "sphinx-cowl",
       "name": "Sphinx Cowl",
       "nameWestern": "Cowl Sphinx",
@@ -620,13 +599,6 @@
       "type": "stamina",
       "line": "bx",
       "releaseSet": "G0288"
-    },
-    {
-      "id": "spinosaurus",
-      "name": "Spinosaurus",
-      "type": "attack",
-      "line": "bx",
-      "releaseSet": "G1899"
     },
     {
       "id": "starscream",
@@ -665,13 +637,6 @@
       "type": "stamina",
       "line": "ux",
       "releaseSet": "G2738"
-    },
-    {
-      "id": "t-rex",
-      "name": "T. Rex",
-      "type": "stamina",
-      "line": "bx",
-      "releaseSet": "G1898"
     },
     {
       "id": "tackle-goat",
@@ -838,6 +803,11 @@
     {
       "id": "cerberus",
       "name": "Cerberus",
+      "line": "cx"
+    },
+    {
+      "id": "drake",
+      "name": "Drake",
       "line": "cx"
     },
     {
@@ -1057,11 +1027,6 @@
       "line": "cx"
     },
     {
-      "id": "rudder",
-      "name": "Rudder",
-      "line": "cx"
-    },
-    {
       "id": "volt",
       "name": "Volt",
       "line": "cx"
@@ -1116,6 +1081,12 @@
       "line": "cx"
     },
     {
+      "id": "gravity",
+      "name": "G (Gravity)",
+      "shortName": "G",
+      "line": "cx"
+    },
+    {
       "id": "heavy",
       "name": "H (Heavy)",
       "shortName": "H",
@@ -1125,12 +1096,6 @@
       "id": "jaggy",
       "name": "J (Jaggy)",
       "shortName": "J",
-      "line": "cx"
-    },
-    {
-      "id": "kick",
-      "name": "K (Kick)",
-      "shortName": "K",
       "line": "cx"
     },
     {
@@ -1191,6 +1156,33 @@
       "id": "zillion",
       "name": "Z (Zillion)",
       "shortName": "Z",
+      "line": "cx"
+    }
+  ],
+  "overBlades": [
+    {
+      "id": "break",
+      "name": "Break",
+      "line": "cx"
+    },
+    {
+      "id": "flow",
+      "name": "Flow",
+      "line": "cx"
+    },
+    {
+      "id": "guard",
+      "name": "Guard",
+      "line": "cx"
+    },
+    {
+      "id": "outer",
+      "name": "Outer",
+      "line": "cx"
+    },
+    {
+      "id": "peak",
+      "name": "Peak",
       "line": "cx"
     }
   ],

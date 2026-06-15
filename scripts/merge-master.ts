@@ -10,7 +10,7 @@
  * Record flat atteso (un oggetto per parte):
  *   { category, tt, hasbro?, ja?, romaji?, short?, type?, line?, fromProduct?, fromUrl?,
  *     productCodes?: string[], firstSet?: string }
- *   category ∈ blade|lockChip|mainBlade|assistBlade|ratchet|bit  (overBlade → alias variant, vedi sotto)
+ *   category ∈ blade|lockChip|mainBlade|assistBlade|overBlade|ratchet|bit
  */
 import { readFileSync, writeFileSync, readdirSync } from 'fs';
 import { join } from 'path';
@@ -20,10 +20,10 @@ const DATA = join(ROOT, 'data');
 const TMP = join(ROOT, 'tmp');
 const masterPath = join(DATA, 'parts-master.json');
 
-const CATS = ['blades', 'lockChips', 'mainBlades', 'assistBlades', 'ratchets', 'bits'] as const;
+const CATS = ['blades', 'lockChips', 'mainBlades', 'assistBlades', 'overBlades', 'ratchets', 'bits'] as const;
 const CAT_OF: Record<string, typeof CATS[number]> = {
   blade: 'blades', lockChip: 'lockChips', mainBlade: 'mainBlades',
-  assistBlade: 'assistBlades', ratchet: 'ratchets', bit: 'bits',
+  assistBlade: 'assistBlades', overBlade: 'overBlades', ratchet: 'ratchets', bit: 'bits',
 };
 
 const norm = (s: string) => (s || '').toLowerCase().replace(/[^a-z0-9]/g, '');
@@ -136,19 +136,12 @@ function loadRecords(): any[] {
 }
 
 const records = loadRecords();
-let enriched = 0, created = 0, overblades = 0;
+let enriched = 0, created = 0;
 
 for (const r of records) {
   if (!r || !r.tt) continue;
   r.hasbro = cleanTag(r.hasbro);
   if (r.type) r.type = String(r.type).toLowerCase();
-  // overBlade: non è una categoria del modello → registra come alias variant sul mainBlade omonimo se esiste,
-  // altrimenti ignora (annotato nei conflitti per decisione futura).
-  if (r.category === 'overBlade') {
-    overblades++;
-    conflicts.push({ type: 'over_blade', value: r.tt, from: r.fromProduct, detail: 'Expand Blade OverBlade: non modellato come categoria separata' });
-    continue;
-  }
   const cat = CAT_OF[r.category];
   if (!cat) { conflicts.push({ type: 'unknown_category', record: r }); continue; }
 
@@ -203,6 +196,6 @@ for (const c of CATS) master[c] = byCat[c].slice().sort((a: Entry, b: Entry) => 
 writeFileSync(masterPath, JSON.stringify(master, null, 2) + '\n');
 writeFileSync(join(DATA, 'parts-master-conflicts.json'), JSON.stringify({ generated: today(), count: conflicts.length, conflicts }, null, 2) + '\n');
 
-console.log(`Merge completato: ${records.length} record processati → ${enriched} arricchimenti, ${created} parti nuove, ${overblades} overBlade annotati.`);
-console.log(`Totali master: ${master.blades.length} blade, ${master.lockChips.length} lock chip, ${master.mainBlades.length} main blade, ${master.assistBlades.length} assist blade, ${master.ratchets.length} ratchet, ${master.bits.length} bit.`);
+console.log(`Merge completato: ${records.length} record processati → ${enriched} arricchimenti, ${created} parti nuove.`);
+console.log(`Totali master: ${master.blades.length} blade, ${master.lockChips.length} lock chip, ${master.mainBlades.length} main blade, ${master.assistBlades.length} assist blade, ${master.overBlades.length} over blade, ${master.ratchets.length} ratchet, ${master.bits.length} bit.`);
 console.log(`Conflitti: ${conflicts.length} (vedi data/parts-master-conflicts.json).`);

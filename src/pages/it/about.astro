@@ -65,9 +65,9 @@ const typeLabels: Record<string, string> = {
                 </span>
               </div>
             </div>
-            {source.urls[0] && (
-              <a href={source.urls[0]} target="_blank" rel="noopener" class="mt-1 block truncate text-xs text-gray-500 hover:text-gray-300">
-                {source.urls[0]}
+            {source.urls?.[0] && (
+              <a href={source.urls?.[0]} target="_blank" rel="noopener" class="mt-1 block truncate text-xs text-gray-500 hover:text-gray-300">
+                {source.urls?.[0]}
               </a>
             )}
           </div>

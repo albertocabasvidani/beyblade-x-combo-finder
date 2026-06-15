@@ -19,6 +19,7 @@ const emptySelection: SelectedParts = {
   lockChips: [],
   mainBlades: [],
   assistBlades: [],
+  overBlades: [],
   ratchets: [],
   bits: [],
 };
@@ -63,6 +64,7 @@ export default function ComboSearch({ parts, combos, locale, translations, amazo
       lockChip: parts.lockChips,
       mainBlade: parts.mainBlades,
       assistBlade: parts.assistBlades,
+      overBlade: parts.overBlades,
       ratchet: parts.ratchets,
       bit: parts.bits,
     };
@@ -77,7 +79,14 @@ export default function ComboSearch({ parts, combos, locale, translations, amazo
     if (combo.line === 'bx') {
       return `${getPartName('blade', combo.blade)} ${getPartName('ratchet', combo.ratchet)} ${getPartName('bit', combo.bit)}`;
     }
-    return `${getPartName('lockChip', combo.lockChip)} ${getPartName('mainBlade', combo.mainBlade)} ${getPartName('assistBlade', combo.assistBlade)} ${getPartName('ratchet', combo.ratchet)} ${getPartName('bit', combo.bit)}`;
+    return [
+      getPartName('lockChip', combo.lockChip),
+      getPartName('overBlade', combo.overBlade ?? null),
+      getPartName('mainBlade', combo.mainBlade),
+      getPartName('assistBlade', combo.assistBlade),
+      getPartName('ratchet', combo.ratchet),
+      getPartName('bit', combo.bit),
+    ].filter(Boolean).join(' ');
   };
 
   const amazonBannerUrl = `https://www.amazon.${amazonConfig.tld}/s?k=${encodeURIComponent('Beyblade X')}${amazonConfig.tag ? `&tag=${amazonConfig.tag}` : ''}`;
@@ -186,6 +195,14 @@ export default function ComboSearch({ parts, combos, locale, translations, amazo
               selected={selected.lockChips}
               onSelect={(id) => toggle('lockChips', id)}
               onRemove={(id) => remove('lockChips', id)}
+            />
+            <PartSelector
+              label={t('search.overBlades')}
+              placeholder={t('search.placeholder')}
+              options={parts.overBlades.map((b) => ({ id: b.id, name: dn(b) }))}
+              selected={selected.overBlades}
+              onSelect={(id) => toggle('overBlades', id)}
+              onRemove={(id) => remove('overBlades', id)}
             />
             <PartSelector
               label={t('search.mainBlades')}

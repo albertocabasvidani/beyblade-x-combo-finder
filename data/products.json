@@ -193,10 +193,10 @@
         { "code": "CX-11", "type": "EmperorMight Deck Set", "name": "GolemRock M-85HN", "blade": "golem-rock", "ratchet": "M-85", "bit": "high-needle", "note": "Metal Coat: Green" },
         { "code": "CX-11", "type": "EmperorMight Deck Set", "name": "SharkGill 5-60FB", "blade": "shark-gill", "ratchet": "5-60", "bit": "free-ball" },
         { "code": "CX-12", "type": "Booster", "name": "PhoenixFlare Z9-80WW", "line": "cx", "lockChip": "phoenix", "mainBlade": "flare", "assistBlade": "zillion", "ratchet": "9-80", "bit": "wall-wedge" },
-        { "code": "CX-13", "type": "Starter", "name": "BahamutBlitz BK1-50I", "line": "cx", "lockChip": "bahamut", "mainBlade": "blitz", "assistBlade": "knuckle", "ratchet": "1-50", "bit": "ignition", "note": "Over Blade: Break, Metal Blade: Blitz" },
-        { "code": "CX-14", "type": "Starter", "name": "KnightFortress GV8-70UN", "line": "cx", "lockChip": "knight", "mainBlade": "fortress", "assistBlade": "vertical", "ratchet": "8-70", "bit": "under-needle", "note": "Over Blade: Guard, Metal Blade: Fortress" },
-        { "code": "CX-15", "type": "Booster", "name": "RagnaRage FE4-55Y", "line": "cx", "lockChip": "ragna", "mainBlade": "rage", "assistBlade": "erase", "ratchet": "4-55", "bit": "yielding", "note": "Over Blade: Flow, Metal Blade: Rage" },
-        { "code": "CX-16", "type": "Start Dash Set C", "name": "BahamutBlitz BK1-50I", "line": "cx", "lockChip": "bahamut", "mainBlade": "blitz", "assistBlade": "knuckle", "ratchet": "1-50", "bit": "ignition", "note": "Special Ver." }
+        { "code": "CX-13", "type": "Starter", "name": "BahamutBlitz BK1-50I", "line": "cx", "lockChip": "bahamut", "overBlade": "break", "mainBlade": "blitz", "assistBlade": "knuckle", "ratchet": "1-50", "bit": "ignition" },
+        { "code": "CX-14", "type": "Starter", "name": "KnightFortress GV8-70UN", "line": "cx", "lockChip": "knight", "overBlade": "guard", "mainBlade": "fortress", "assistBlade": "vertical", "ratchet": "8-70", "bit": "under-needle" },
+        { "code": "CX-15", "type": "Booster", "name": "RagnaRage FE4-55Y", "line": "cx", "lockChip": "ragna", "overBlade": "flow", "mainBlade": "rage", "assistBlade": "erase", "ratchet": "4-55", "bit": "yielding" },
+        { "code": "CX-16", "type": "Start Dash Set C", "name": "BahamutBlitz BK1-50I", "line": "cx", "lockChip": "bahamut", "overBlade": "break", "mainBlade": "blitz", "assistBlade": "knuckle", "ratchet": "1-50", "bit": "ignition", "note": "Special Ver." }
       ],
       "limitedReleases": [
         { "code": "BX-00", "type": "Booster", "name": "DranzerSpiral 3-80T", "blade": "dranzer-spiral", "ratchet": "3-80", "bit": "taper" },
@@ -213,8 +213,6 @@
         { "code": "UX-00", "type": "Booster", "name": "AeroPegasus 3-70A", "blade": "aero-pegasus", "ratchet": "3-70", "bit": "accel" },
         { "code": "BX-00", "type": "Starter", "name": "DranDagger 2-80GP", "blade": "dran-dagger", "ratchet": "2-80", "bit": "gear-point", "note": "Metal Coat: Black Giants" },
         { "code": "BX-00", "type": "Starter", "name": "CobaltDragoon 2-60C", "blade": "cobalt-dragoon", "ratchet": "2-60", "bit": "cyclone", "note": "Metal Coat: Black" },
-        { "code": "BX-00", "type": "Random Booster", "name": "Lightning L-Drago 1-60F (Upper)", "blade": "lightning-l-drago-upper", "ratchet": "1-60", "bit": "flat" },
-        { "code": "BX-00", "type": "Random Booster", "name": "Lightning L-Drago 1-60F (Rapid)", "blade": "lightning-l-drago-rapid", "ratchet": "1-60", "bit": "flat" },
         { "code": "UX-00", "type": "Dran Deck Starter", "name": "DranSword 4-80DB", "blade": "dran-sword", "ratchet": "4-80", "bit": "disk-ball", "note": "Metal Coat: White" },
         { "code": "UX-00", "type": "Dran Deck Starter", "name": "DranDagger 9-60LF", "blade": "dran-dagger", "ratchet": "9-60", "bit": "low-flat", "note": "Metal Coat: White" },
         { "code": "UX-00", "type": "Dran Deck Starter", "name": "DranBuster 3-70N", "blade": "dran-buster", "ratchet": "3-70", "bit": "needle", "note": "Metal Coat: White" },
@@ -282,10 +280,10 @@
         { "code": "G2742", "type": "Infinity Starter Pack", "name": "Strike Dran 4-50FF", "blade": "dran-strike", "ratchet": "4-50", "bit": "free-flat" },
         { "code": "G3497", "type": "Infinity Starter Pack", "name": "Valor Bison FB", "blade": "valor-bison", "ratchetIntegratedBlade": true, "bit": "free-ball", "note": "Ratchet-Integrated Blade - no separate ratchet" },
         { "code": "G4561", "type": "Infinity Starter Pack", "name": "Rocket Griffon H", "blade": "bullet-griffon", "ratchetIntegratedBlade": true, "bit": "hexa", "note": "Ratchet-Integrated Blade - no separate ratchet" },
-        { "code": "G4562", "type": "Infinity Starter Pack", "name": "Rage Ragna FE 4-55Y", "line": "cx", "lockChip": "ragna", "mainBlade": "rage", "assistBlade": "erase", "ratchet": "4-55", "bit": "yielding", "note": "Over Blade: Flow" },
-        { "code": "G4563", "type": "Infinity Starter Pack", "name": "Armor Knight GV 8-70UN", "line": "cx", "lockChip": "knight", "mainBlade": "fortress", "assistBlade": "vertical", "ratchet": "8-70", "bit": "under-needle", "note": "Over Blade: Guard" },
+        { "code": "G4562", "type": "Infinity Starter Pack", "name": "Rage Ragna FE 4-55Y", "line": "cx", "lockChip": "ragna", "overBlade": "flow", "mainBlade": "rage", "assistBlade": "erase", "ratchet": "4-55", "bit": "yielding" },
+        { "code": "G4563", "type": "Infinity Starter Pack", "name": "Armor Knight GV 8-70UN", "line": "cx", "lockChip": "knight", "overBlade": "guard", "mainBlade": "fortress", "assistBlade": "vertical", "ratchet": "8-70", "bit": "under-needle" },
         { "code": "G4571", "type": "Infinity Starter Pack", "name": "Ring Aether 0-80DS", "blade": "heavens-ring", "ratchet": "0-80", "bit": "disk-spike" },
-        { "code": "G4572", "type": "Infinity Starter Pack", "name": "Blitz Bahamut BK 1-50I", "line": "cx", "lockChip": "bahamut", "mainBlade": "blitz", "assistBlade": "knuckle", "ratchet": "1-50", "bit": "ignition", "note": "Over Blade: Break" }
+        { "code": "G4572", "type": "Infinity Starter Pack", "name": "Blitz Bahamut BK 1-50I", "line": "cx", "lockChip": "bahamut", "overBlade": "break", "mainBlade": "blitz", "assistBlade": "knuckle", "ratchet": "1-50", "bit": "ignition" }
       ],
       "boosterPacks": [
         { "code": "G0188", "type": "Booster Pack", "name": "Steel Samurai 4-80T", "blade": "samurai-steel", "ratchet": "4-80", "bit": "taper" },
@@ -379,10 +377,7 @@
         { "code": "G1694", "type": "Multipack Set", "name": "General Grievous", "blade": "general-grievous", "note": "Star Wars - specific ratchet/bit unknown" },
         { "code": "G1695", "type": "Multipack Set", "name": "Chewbacca", "blade": "chewbacca", "note": "Star Wars - specific ratchet/bit unknown" },
         { "code": "G1695", "type": "Multipack Set", "name": "Stormtrooper", "blade": "stormtrooper", "note": "Star Wars - specific ratchet/bit unknown" },
-        { "code": "G1898", "type": "Multipack Set", "name": "T. Rex", "blade": "tricera-spiky", "note": "Dinosaur - specific ratchet/bit unknown" },
-        { "code": "G1898", "type": "Multipack Set", "name": "Mosasaurus", "blade": "mosasaurus", "note": "Dinosaur - specific ratchet/bit unknown" },
-        { "code": "G1899", "type": "Multipack Set", "name": "Spinosaurus", "blade": "spinosaurus", "note": "Dinosaur - specific ratchet/bit unknown" },
-        { "code": "G1899", "type": "Multipack Set", "name": "Quetzalcoatlus", "blade": "quetzalcoatlus", "note": "Dinosaur - specific ratchet/bit unknown" }
+        { "code": "G1898", "type": "Multipack Set", "name": "T. Rex", "blade": "tricera-spiky", "note": "Dinosaur - specific ratchet/bit unknown" }
       ]
     }
   }

@@ -381,6 +381,45 @@
       "status": "unverified"
     },
     {
+      "id": "cutter-shinobi",
+      "category": "blade",
+      "line": "ux",
+      "type": "balance",
+      "names": {
+        "tt": "Cutter Shinobi",
+        "hasbro": null,
+        "ja": "",
+        "romaji": ""
+      },
+      "aliases": [
+        {
+          "value": "Shinobi Shuriken",
+          "lang": "en",
+          "kind": "variant"
+        },
+        {
+          "value": "シノビシュリケン",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "ShinobiShuriken",
+          "lang": "ja",
+          "kind": "romaji"
+        }
+      ],
+      "products": [
+        "G1940"
+      ],
+      "firstReleaseSet": "G1940",
+      "source": {
+        "page": "Ratchet-Integrated Blade - Cutter Shinobi",
+        "url": "https://beyblade.fandom.com/wiki/Ratchet-Integrated_Blade_-_Cutter_Shinobi"
+      },
+      "lastVerified": "2026-06-15",
+      "status": "unverified"
+    },
+    {
       "id": "darth-vader",
       "category": "blade",
       "line": "bx",
@@ -767,6 +806,45 @@
       "lastVerified": "2026-06-15"
     },
     {
+      "id": "glory-valkyrie",
+      "category": "blade",
+      "line": "ux",
+      "type": "attack",
+      "names": {
+        "tt": "Glory Valkyrie",
+        "hasbro": "Glory Valkerion",
+        "ja": "グローリーワルキューレ",
+        "romaji": "GurōrīWarukyūre"
+      },
+      "aliases": [
+        {
+          "value": "Glory Valkerion",
+          "lang": "en",
+          "kind": "hasbro"
+        },
+        {
+          "value": "グローリーワルキューレ",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "GurōrīWarukyūre",
+          "lang": "ja",
+          "kind": "romaji"
+        }
+      ],
+      "products": [
+        "UX-20"
+      ],
+      "firstReleaseSet": "UX-20",
+      "source": {
+        "page": "Ratchet-Integrated Blade - GloryValkyrie",
+        "url": "https://beyblade.fandom.com/wiki/Ratchet-Integrated_Blade_-_GloryValkyrie"
+      },
+      "lastVerified": "2026-06-15",
+      "status": "verified"
+    },
+    {
       "id": "goat-tackle",
       "category": "blade",
       "line": "bx",
@@ -888,6 +966,45 @@
       "lastVerified": "2026-06-15",
       "status": "verified",
       "type": "balance"
+    },
+    {
+      "id": "gust-bat",
+      "category": "blade",
+      "line": "bx",
+      "type": "balance",
+      "names": {
+        "tt": "Gust Bat",
+        "hasbro": null,
+        "ja": "",
+        "romaji": ""
+      },
+      "aliases": [
+        {
+          "value": "Bat Gust",
+          "lang": "en",
+          "kind": "variant"
+        },
+        {
+          "value": "バットガスト",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "BattoGasuto",
+          "lang": "ja",
+          "kind": "romaji"
+        }
+      ],
+      "products": [
+        "G2733"
+      ],
+      "firstReleaseSet": "G2733",
+      "source": {
+        "page": "Blade - Gust Bat",
+        "url": "https://beyblade.fandom.com/wiki/Blade_-_Gust_Bat"
+      },
+      "lastVerified": "2026-06-15",
+      "status": "unverified"
     },
     {
       "id": "heavens-ring",
@@ -1358,108 +1475,6 @@
       "lastVerified": "2026-06-15"
     },
     {
-      "id": "lightning-l-drago-rapid",
-      "category": "blade",
-      "line": "bx",
-      "type": "attack",
-      "names": {
-        "tt": "Lightning L-Drago (Rapid)",
-        "hasbro": null,
-        "ja": "",
-        "romaji": ""
-      },
-      "aliases": [],
-      "firstReleaseSet": "BX-00",
-      "products": [],
-      "source": null,
-      "status": "unverified"
-    },
-    {
-      "id": "lightning-l-drago-rapid-hit-type",
-      "category": "blade",
-      "line": "bx",
-      "names": {
-        "tt": "Lightning L-Drago (Rapid-Hit Type)",
-        "ja": "ライトニングエルドラゴ",
-        "romaji": "Raitoningu",
-        "hasbro": null
-      },
-      "aliases": [
-        {
-          "value": "ライトニングエルドラゴ",
-          "lang": "ja",
-          "kind": "native"
-        },
-        {
-          "value": "Raitoningu",
-          "lang": "ja",
-          "kind": "romaji"
-        }
-      ],
-      "products": [
-        "BX-00"
-      ],
-      "firstReleaseSet": "Random Booster Lightning L-Drago 1-60F",
-      "source": {
-        "page": "Lightning L-Drago 1-60F (Rapid-Hit Type)",
-        "url": "https://beyblade.fandom.com/wiki/Lightning_L-Drago_1-60F_(Rapid-Hit_Type)"
-      },
-      "lastVerified": "2026-06-15",
-      "status": "verified",
-      "type": "attack"
-    },
-    {
-      "id": "lightning-l-drago-upper",
-      "category": "blade",
-      "line": "bx",
-      "type": "attack",
-      "names": {
-        "tt": "Lightning L-Drago (Upper)",
-        "hasbro": null,
-        "ja": "",
-        "romaji": ""
-      },
-      "aliases": [],
-      "firstReleaseSet": "BX-00",
-      "products": [],
-      "source": null,
-      "status": "unverified"
-    },
-    {
-      "id": "lightning-l-drago-upper-type",
-      "category": "blade",
-      "line": "bx",
-      "names": {
-        "tt": "Lightning L-Drago (Upper Type)",
-        "ja": "ライトニングエルドラゴ",
-        "romaji": "Raitoningu",
-        "hasbro": null
-      },
-      "aliases": [
-        {
-          "value": "ライトニングエルドラゴ",
-          "lang": "ja",
-          "kind": "native"
-        },
-        {
-          "value": "Raitoningu",
-          "lang": "ja",
-          "kind": "romaji"
-        }
-      ],
-      "products": [
-        "BX-00"
-      ],
-      "firstReleaseSet": "Random Booster Lightning L-Drago 1-60F",
-      "source": {
-        "page": "Lightning L-Drago 1-60F (Upper Type)",
-        "url": "https://beyblade.fandom.com/wiki/Lightning_L-Drago_1-60F_(Upper_Type)"
-      },
-      "lastVerified": "2026-06-15",
-      "status": "verified",
-      "type": "attack"
-    },
-    {
       "id": "luke-skywalker",
       "category": "blade",
       "line": "bx",
@@ -1664,41 +1679,6 @@
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
-    },
-    {
-      "id": "mosasaurus",
-      "category": "blade",
-      "line": "bx",
-      "names": {
-        "tt": "Mosasaurus",
-        "ja": "モササウルス",
-        "romaji": "Mosasaurusu",
-        "hasbro": null
-      },
-      "aliases": [
-        {
-          "value": "モササウルス",
-          "lang": "ja",
-          "kind": "native"
-        },
-        {
-          "value": "Mosasaurusu",
-          "lang": "ja",
-          "kind": "romaji"
-        }
-      ],
-      "products": [
-        "G1898",
-        "BX-00"
-      ],
-      "firstReleaseSet": "G1898",
-      "source": {
-        "page": "Mosasaurus 9-60U",
-        "url": "https://beyblade.fandom.com/wiki/Mosasaurus_9-60U"
-      },
-      "lastVerified": "2026-06-15",
-      "status": "verified",
-      "type": "balance"
     },
     {
       "id": "mummy-curse",
@@ -2031,39 +2011,43 @@
       "lastVerified": "2026-06-15"
     },
     {
-      "id": "quetzalcoatlus",
+      "id": "rampart-aegis",
       "category": "blade",
-      "line": "bx",
+      "line": "ux",
+      "type": "defense",
       "names": {
-        "tt": "Quetzalcoatlus",
-        "ja": "ケツァルコアトルス",
-        "romaji": "Ketsuarukoatorusu",
-        "hasbro": null
+        "tt": "Rampart Aegis",
+        "hasbro": null,
+        "ja": "",
+        "romaji": ""
       },
       "aliases": [
         {
-          "value": "ケツァルコアトルス",
+          "value": "Aegis Rampart",
+          "lang": "en",
+          "kind": "variant"
+        },
+        {
+          "value": "イージスランパート",
           "lang": "ja",
           "kind": "native"
         },
         {
-          "value": "Ketsuarukoatorusu",
+          "value": "ĪjisuRanpāto",
           "lang": "ja",
           "kind": "romaji"
         }
       ],
       "products": [
-        "G1899",
-        "BX-00"
+        "G1940"
       ],
-      "firstReleaseSet": "G1899",
+      "firstReleaseSet": "G1940",
       "source": {
-        "page": "Quetzalcoatlus 4-55D",
-        "url": "https://beyblade.fandom.com/wiki/Quetzalcoatlus_4-55D"
+        "page": "Ratchet-Integrated Blade - Rampart Aegis",
+        "url": "https://beyblade.fandom.com/wiki/Ratchet-Integrated_Blade_-_Rampart_Aegis"
       },
       "lastVerified": "2026-06-15",
-      "status": "verified",
-      "type": "defense"
+      "status": "unverified"
     },
     {
       "id": "red-hulk",
@@ -2618,27 +2602,6 @@
       "lastVerified": "2026-06-15"
     },
     {
-      "id": "snowtrooper",
-      "category": "blade",
-      "line": "bx",
-      "names": {
-        "tt": "Snowtrooper",
-        "hasbro": "Snowtrooper"
-      },
-      "aliases": [],
-      "products": [
-        "G3061"
-      ],
-      "firstReleaseSet": "G3061",
-      "source": {
-        "page": "Snowtrooper 7-60O",
-        "url": "https://beyblade.fandom.com/wiki/Snowtrooper_7-60O"
-      },
-      "lastVerified": "2026-06-15",
-      "status": "verified",
-      "type": "stamina"
-    },
-    {
       "id": "sphinx-cowl",
       "category": "blade",
       "line": "bx",
@@ -2712,41 +2675,6 @@
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
-    },
-    {
-      "id": "spinosaurus",
-      "category": "blade",
-      "line": "bx",
-      "names": {
-        "tt": "Spinosaurus",
-        "ja": "スピノサウルス",
-        "romaji": "Supinosaurusu",
-        "hasbro": null
-      },
-      "aliases": [
-        {
-          "value": "スピノサウルス",
-          "lang": "ja",
-          "kind": "native"
-        },
-        {
-          "value": "Supinosaurusu",
-          "lang": "ja",
-          "kind": "romaji"
-        }
-      ],
-      "products": [
-        "G1899",
-        "BX-00"
-      ],
-      "firstReleaseSet": "G1899",
-      "source": {
-        "page": "Spinosaurus 3-85A",
-        "url": "https://beyblade.fandom.com/wiki/Spinosaurus_3-85A"
-      },
-      "lastVerified": "2026-06-15",
-      "status": "verified",
-      "type": "attack"
     },
     {
       "id": "starscream",
@@ -2883,41 +2811,6 @@
       "source": {
         "page": "Stun Medusa 9-60GB",
         "url": "https://beyblade.fandom.com/wiki/Stun_Medusa_9-60GB"
-      },
-      "lastVerified": "2026-06-15",
-      "status": "verified",
-      "type": "stamina"
-    },
-    {
-      "id": "t-rex",
-      "category": "blade",
-      "line": "bx",
-      "names": {
-        "tt": "T. Rex",
-        "ja": "T-レックス",
-        "romaji": "T-Rekkusu",
-        "hasbro": null
-      },
-      "aliases": [
-        {
-          "value": "T-レックス",
-          "lang": "ja",
-          "kind": "native"
-        },
-        {
-          "value": "T-Rekkusu",
-          "lang": "ja",
-          "kind": "romaji"
-        }
-      ],
-      "products": [
-        "G1898",
-        "BX-00"
-      ],
-      "firstReleaseSet": "G1898",
-      "source": {
-        "page": "T. Rex 1-80GB",
-        "url": "https://beyblade.fandom.com/wiki/T._Rex_1-80GB"
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
@@ -3706,6 +3599,39 @@
       },
       "lastVerified": "2026-06-15",
       "status": "verified"
+    },
+    {
+      "id": "drake",
+      "category": "lockChip",
+      "line": "cx",
+      "names": {
+        "tt": "Drake",
+        "hasbro": null,
+        "ja": "ドレイク",
+        "romaji": "Doreiku"
+      },
+      "aliases": [
+        {
+          "value": "ドレイク",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "Doreiku",
+          "lang": "ja",
+          "kind": "romaji"
+        }
+      ],
+      "products": [
+        "CX-00"
+      ],
+      "firstReleaseSet": "CX-00",
+      "source": {
+        "page": "Lock Chip - Drake",
+        "url": "https://beyblade.fandom.com/wiki/Lock_Chip_-_Drake"
+      },
+      "lastVerified": "2026-06-15",
+      "status": "unverified"
     },
     {
       "id": "dran",
@@ -5015,20 +4941,6 @@
       "firstReleaseSet": "Random Booster Vol. 6"
     },
     {
-      "id": "rudder",
-      "category": "mainBlade",
-      "line": "cx",
-      "names": {
-        "tt": "Rudder",
-        "hasbro": null,
-        "ja": "",
-        "romaji": ""
-      },
-      "aliases": [],
-      "source": null,
-      "status": "unverified"
-    },
-    {
       "id": "volt",
       "category": "mainBlade",
       "line": "cx",
@@ -5318,6 +5230,41 @@
       "firstReleaseSet": "CX-10"
     },
     {
+      "id": "gravity",
+      "category": "assistBlade",
+      "line": "cx",
+      "type": "attack",
+      "shortName": "G",
+      "names": {
+        "tt": "Gravity",
+        "hasbro": null,
+        "ja": "グラビティ",
+        "romaji": "Gurabiti"
+      },
+      "aliases": [
+        {
+          "value": "グラビティ",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "Gurabiti",
+          "lang": "ja",
+          "kind": "romaji"
+        }
+      ],
+      "products": [
+        "CX-00"
+      ],
+      "firstReleaseSet": "CX-00",
+      "source": {
+        "page": "Assist Blade - Gravity",
+        "url": "https://beyblade.fandom.com/wiki/Assist_Blade_-_Gravity"
+      },
+      "lastVerified": "2026-06-15",
+      "status": "unverified"
+    },
+    {
       "id": "heavy",
       "category": "assistBlade",
       "line": "cx",
@@ -5385,21 +5332,6 @@
         "CX-06"
       ],
       "firstReleaseSet": "SharkScale Deck Set"
-    },
-    {
-      "id": "kick",
-      "category": "assistBlade",
-      "line": "cx",
-      "shortName": "K",
-      "names": {
-        "tt": "Kick",
-        "hasbro": null,
-        "ja": "",
-        "romaji": ""
-      },
-      "aliases": [],
-      "source": null,
-      "status": "unverified"
     },
     {
       "id": "knuckle",
@@ -5733,6 +5665,182 @@
         "CX-12"
       ],
       "firstReleaseSet": "CX-12"
+    }
+  ],
+  "overBlades": [
+    {
+      "id": "break",
+      "category": "overBlade",
+      "line": "cx",
+      "type": "attack",
+      "names": {
+        "tt": "Break",
+        "hasbro": null,
+        "ja": "ブレイク",
+        "romaji": "Bureiku"
+      },
+      "aliases": [
+        {
+          "value": "ブレイク",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "Bureiku",
+          "lang": "ja",
+          "kind": "romaji"
+        }
+      ],
+      "products": [
+        "CX-13",
+        "CX-16",
+        "G4572"
+      ],
+      "firstReleaseSet": "CX-13",
+      "source": {
+        "page": "Over Blade - Break",
+        "url": "https://beyblade.fandom.com/wiki/Over_Blade_-_Break"
+      },
+      "lastVerified": "2026-06-15",
+      "status": "verified"
+    },
+    {
+      "id": "flow",
+      "category": "overBlade",
+      "line": "cx",
+      "type": "stamina",
+      "names": {
+        "tt": "Flow",
+        "hasbro": null,
+        "ja": "フロー",
+        "romaji": "Furō"
+      },
+      "aliases": [
+        {
+          "value": "フロー",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "Furō",
+          "lang": "ja",
+          "kind": "romaji"
+        }
+      ],
+      "products": [
+        "CX-15",
+        "G4562"
+      ],
+      "firstReleaseSet": "CX-15",
+      "source": {
+        "page": "Over Blade - Flow",
+        "url": "https://beyblade.fandom.com/wiki/Over_Blade_-_Flow"
+      },
+      "lastVerified": "2026-06-15",
+      "status": "verified"
+    },
+    {
+      "id": "guard",
+      "category": "overBlade",
+      "line": "cx",
+      "type": "defense",
+      "names": {
+        "tt": "Guard",
+        "hasbro": null,
+        "ja": "ガード",
+        "romaji": "Gādo"
+      },
+      "aliases": [
+        {
+          "value": "ガード",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "Gādo",
+          "lang": "ja",
+          "kind": "romaji"
+        }
+      ],
+      "products": [
+        "CX-14",
+        "G4563"
+      ],
+      "firstReleaseSet": "CX-14",
+      "source": {
+        "page": "Over Blade - Guard",
+        "url": "https://beyblade.fandom.com/wiki/Over_Blade_-_Guard"
+      },
+      "lastVerified": "2026-06-15",
+      "status": "verified"
+    },
+    {
+      "id": "outer",
+      "category": "overBlade",
+      "line": "cx",
+      "type": "stamina",
+      "names": {
+        "tt": "Outer",
+        "hasbro": null,
+        "ja": "アウター",
+        "romaji": "Autā"
+      },
+      "aliases": [
+        {
+          "value": "アウター",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "Autā",
+          "lang": "ja",
+          "kind": "romaji"
+        }
+      ],
+      "products": [
+        "CX-18"
+      ],
+      "firstReleaseSet": "CX-18",
+      "source": {
+        "page": "Over Blade - Outer",
+        "url": "https://beyblade.fandom.com/wiki/Over_Blade_-_Outer"
+      },
+      "lastVerified": "2026-06-15",
+      "status": "verified"
+    },
+    {
+      "id": "peak",
+      "category": "overBlade",
+      "line": "cx",
+      "type": "balance",
+      "names": {
+        "tt": "Peak",
+        "hasbro": null,
+        "ja": "ピーク",
+        "romaji": "Pīku"
+      },
+      "aliases": [
+        {
+          "value": "ピーク",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "Pīku",
+          "lang": "ja",
+          "kind": "romaji"
+        }
+      ],
+      "products": [
+        "CX-17"
+      ],
+      "firstReleaseSet": "CX-17",
+      "source": {
+        "page": "Over Blade - Peak",
+        "url": "https://beyblade.fandom.com/wiki/Over_Blade_-_Peak"
+      },
+      "lastVerified": "2026-06-15",
+      "status": "verified"
     }
   ],
   "ratchets": [

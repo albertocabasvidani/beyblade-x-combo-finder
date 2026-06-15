@@ -38,6 +38,7 @@ interface Master {
   lockChips?: MasterPart[];
   mainBlades?: MasterPart[];
   assistBlades?: MasterPart[];
+  overBlades?: MasterPart[];
   ratchets?: MasterPart[];
   bits?: MasterPart[];
 }
@@ -85,6 +86,13 @@ function deriveParts(master: Master) {
     };
   });
 
+  const overBlades = (master.overBlades ?? []).slice().sort(byId).map((p) => ({
+    id: p.id,
+    name: p.names.tt,
+    ...withWestern(p.names),
+    line: 'cx',
+  }));
+
   const ratchets = (master.ratchets ?? []).slice().sort(byId).map((p) => {
     const [s, h] = p.id.split('-');
     return { id: p.id, name: p.names.tt ?? p.id, sides: Number(s), height: Number(h) };
@@ -96,7 +104,7 @@ function deriveParts(master: Master) {
     type: p.type,
   }));
 
-  return { version: today(), blades, lockChips, mainBlades, assistBlades, ratchets, bits };
+  return { version: today(), blades, lockChips, mainBlades, assistBlades, overBlades, ratchets, bits };
 }
 
 type IdSets = Record<string, Set<string>>;
@@ -107,6 +115,7 @@ function collectIds(parts: ReturnType<typeof deriveParts>): IdSets {
     lockChip: new Set(parts.lockChips.map((p) => p.id)),
     mainBlade: new Set(parts.mainBlades.map((p) => p.id)),
     assistBlade: new Set(parts.assistBlades.map((p) => p.id)),
+    overBlade: new Set(parts.overBlades.map((p) => p.id)),
     ratchet: new Set(parts.ratchets.map((p) => p.id)),
     bit: new Set(parts.bits.map((p) => p.id)),
   };
@@ -128,6 +137,7 @@ function flattenProducts(products: any): any[] {
 const FIELDS: [string, string][] = [
   ['blade', 'blade'], ['ratchet', 'ratchet'], ['bit', 'bit'],
   ['lockChip', 'lockChip'], ['mainBlade', 'mainBlade'], ['assistBlade', 'assistBlade'],
+  ['overBlade', 'overBlade'],
 ];
 
 /**
@@ -176,7 +186,7 @@ function main() {
     `parts.json rigenerato (${newParts.version}): ` +
     `${newParts.blades.length} blade, ${newParts.lockChips.length} lock chip, ` +
     `${newParts.mainBlades.length} main blade, ${newParts.assistBlades.length} assist blade, ` +
-    `${newParts.ratchets.length} ratchet, ${newParts.bits.length} bit. Guardrail combos OK.`
+    `${newParts.overBlades.length} over blade, ${newParts.ratchets.length} ratchet, ${newParts.bits.length} bit. Guardrail combos OK.`
   );
 
   if (productsDangling.length > 0) {

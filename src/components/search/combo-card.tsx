@@ -33,6 +33,7 @@ export function ComboCard({ combo, displayName, selected, locale, rank, amazonCo
     selected.lockChips.length > 0 ||
     selected.mainBlades.length > 0 ||
     selected.assistBlades.length > 0 ||
+    selected.overBlades.length > 0 ||
     selected.ratchets.length > 0 ||
     selected.bits.length > 0;
 
@@ -44,6 +45,7 @@ export function ComboCard({ combo, displayName, selected, locale, rank, amazonCo
       ]
     : [
         { key: 'lockChip', label: 'Lock Chip', id: combo.lockChip },
+        { key: 'overBlade', label: 'Over Blade', id: combo.overBlade ?? null },
         { key: 'mainBlade', label: 'Main Blade', id: combo.mainBlade },
         { key: 'assistBlade', label: 'Assist Blade', id: combo.assistBlade },
         { key: 'ratchet', label: 'Ratchet', id: combo.ratchet },

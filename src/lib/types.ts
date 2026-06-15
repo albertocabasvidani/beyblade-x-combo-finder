@@ -36,6 +36,13 @@ export interface AssistBlade {
   line: 'cx';
 }
 
+export interface OverBlade {
+  id: string;
+  name: string;
+  nameWestern?: string;
+  line: 'cx';
+}
+
 export interface Ratchet {
   id: string;
   name: string;
@@ -55,6 +62,7 @@ export interface PartsRegistry {
   lockChips: LockChip[];
   mainBlades: MainBlade[];
   assistBlades: AssistBlade[];
+  overBlades: OverBlade[];
   ratchets: Ratchet[];
   bits: Bit[];
 }
@@ -86,6 +94,7 @@ export interface Combo {
   lockChip: string | null;
   mainBlade: string | null;
   assistBlade: string | null;
+  overBlade?: string | null;
   displayName: string;
   type: BladeType;
   score: number;
@@ -113,6 +122,7 @@ export interface SelectedParts {
   lockChips: string[];
   mainBlades: string[];
   assistBlades: string[];
+  overBlades: string[];
   ratchets: string[];
   bits: string[];
 }

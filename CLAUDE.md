@@ -18,12 +18,13 @@ Sito web per trovare le migliori combo Beyblade X in base alle parti possedute. 
 ### Combo Beyblade X
 - **BX/UX Line** (3 parti): Blade + Ratchet + Bit
 - **CX Line** (5 parti): Lock Chip + Main Blade + Assist Blade + Ratchet + Bit
+- **CX Expand** (6 parti): Lock Chip + **Over Blade** + Main Blade + Assist Blade + Ratchet + Bit. Il "Metal Blade" del wiki È modellato come Main Blade; l'Over Blade (Break/Guard/Flow/Peak/Outer) è la categoria `overBlade` a sé (combo `overBlade` nullable, opzionale).
 - Ratchet e Bit sono condivisi tra le linee
 
 ### File Dati
 - `data/parts-master.json` — **file canonico** parti multilingua (names.tt/hasbro/ja/romaji + aliases per lingua, stats, products, source). Fonte di verità del registro parti.
 - `data/parts.json` — **derivato** da parts-master via `npm run build:parts` (schema consumato dal sito). NON editare a mano: si rigenera.
-- `data/parts-master-conflicts.json` — casi ambigui dell'import per revisione umana (type_mismatch = rumore, over_blade = Expand Blade)
+- `data/parts-master-conflicts.json` — casi ambigui dell'import per revisione umana (type_mismatch = rumore; gli over_blade ora sono categoria `overBlades` a sé, non più conflitti)
 - `data/combos.json` — database combo con score e fonti
 - `data/products.json` — catalogo prodotti TT+Hasbro (link Amazon); referenzia gli id parte
 - `data/sources.json` — fonti configurabili (con `lang`, `manualVerification`); editabile dall'utente

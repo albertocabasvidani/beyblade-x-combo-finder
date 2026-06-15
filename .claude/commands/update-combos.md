@@ -33,8 +33,12 @@ derivazione. Solo Beyblade X.
      registra i post processati in `scannedPosts`. Se `blocked`, segnalalo nel report.
    - YouTube: combo da titoli/descrizioni (`youtube-cache.json`) e dai transcript
      (`youtube-transcripts.json`). Reddit: body + commenti. Sheets: tabelle WBO.
-5. **Combo BX/UX** = blade+ratchet+bit; **CX** = lockChip+mainBlade+assistBlade+ratchet+bit.
-6. **Dedup** per chiave id-set ordinata (`blade|ratchet|bit` oppure il quintetto CX): stessa chiave →
+5. **Combo BX/UX** = blade+ratchet+bit; **CX** = lockChip+mainBlade+assistBlade+ratchet+bit; **CX Expand**
+   aggiunge `overBlade` tra lockChip e mainBlade (es. BahamutBlitz = lockChip Bahamut + overBlade Break +
+   mainBlade Blitz + assistBlade Knuckle + ratchet 1-50 + bit Ignition). Il "Metal Blade" È il main blade;
+   l'Over Blade (Break/Guard/Flow/Peak/Outer) è la categoria `overBlade` a sé.
+6. **Dedup** per chiave id-set ordinata (`blade|ratchet|bit` per BX/UX; `lockChip|overBlade|mainBlade|assistBlade|ratchet|bit`
+   per CX, con `overBlade` vuoto per le CX non-Expand): stessa chiave →
    merge (aggiorna score, sources, notes, dateUpdated); MAI duplicare. Non rimuovere combo esistenti.
 7. **Scoring**: `score = sourceReliability*0.4 + frequency*0.35 + recency*0.25`.
    - sourceReliability = media pesata dei `weight` (sources.json). Le fonti `provides:"parts-theory"`
