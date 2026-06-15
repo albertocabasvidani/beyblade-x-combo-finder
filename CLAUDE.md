@@ -38,6 +38,7 @@ Sito web per trovare le migliori combo Beyblade X in base alle parti possedute. 
 - `npm run dev` — server sviluppo
 - `npm run build` — build produzione
 - `npm run build:parts` — rigenera `parts.json` da `parts-master.json` (guardrail: aborta se rompe i riferimenti di combos.json)
+- `npm run verify:wiki` — verifica completezza del master contro la fonte affidabile (category per-tipo del Fandom Wiki, X-pure; blade filtrati su `Category:Beyblade X` perché `Category:Blades` è mista X+Burst). Riporta mancanti/extra. Obiettivo: 0 mancanti.
 - `npm run collect:sources` — raccoglie le cache grezze (Reddit, YouTube, Sheets, MetaBeys, WBO)
 - `/scrape-parts-master` — import iniziale parti da Fandom (one-shot, subagent)
 - `/verify-parts-master` — verifica qualità del master parti

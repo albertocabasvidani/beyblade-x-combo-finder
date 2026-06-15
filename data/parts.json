@@ -338,6 +338,20 @@
       "releaseSet": "UX-06"
     },
     {
+      "id": "lightning-l-drago-rapid-hit-type",
+      "name": "Lightning L-Drago (Rapid-Hit Type)",
+      "type": "attack",
+      "line": "bx",
+      "releaseSet": "BX-00"
+    },
+    {
+      "id": "lightning-l-drago-upper-type",
+      "name": "Lightning L-Drago (Upper Type)",
+      "type": "attack",
+      "line": "bx",
+      "releaseSet": "BX-00"
+    },
+    {
       "id": "luke-skywalker",
       "name": "Luke Skywalker",
       "type": "defense",

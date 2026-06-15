@@ -14,7 +14,8 @@
     "collect:sources": "npx tsx scripts/collect-sources.ts",
     "build:parts": "npx tsx scripts/build-parts.ts",
     "fetch:metabeys": "npx tsx scripts/fetch-metabeys.ts",
-    "fetch:wbo": "npx tsx scripts/fetch-wbo.ts"
+    "fetch:wbo": "npx tsx scripts/fetch-wbo.ts",
+    "verify:wiki": "npx tsx scripts/verify-against-wiki.ts"
   },
   "devDependencies": {
     "playwright-core": "^1.48.0",

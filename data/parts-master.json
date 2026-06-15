@@ -1475,6 +1475,74 @@
       "lastVerified": "2026-06-15"
     },
     {
+      "id": "lightning-l-drago-rapid-hit-type",
+      "category": "blade",
+      "line": "bx",
+      "type": "attack",
+      "names": {
+        "tt": "Lightning L-Drago (Rapid-Hit Type)",
+        "hasbro": null,
+        "ja": "ライトニングエルドラゴ (連打型)",
+        "romaji": "Raitoningu Erudorago (Renda Gata)"
+      },
+      "aliases": [
+        {
+          "value": "ライトニングエルドラゴ (連打型)",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "Raitoningu Erudorago (Renda Gata)",
+          "lang": "ja",
+          "kind": "romaji"
+        }
+      ],
+      "products": [
+        "BX-00"
+      ],
+      "firstReleaseSet": "BX-00",
+      "source": {
+        "page": "Blade - Lightning L-Drago (Rapid-Hit Type)",
+        "url": "https://beyblade.fandom.com/wiki/Blade_-_Lightning_L-Drago_(Rapid-Hit_Type)"
+      },
+      "lastVerified": "2026-06-15",
+      "status": "verified"
+    },
+    {
+      "id": "lightning-l-drago-upper-type",
+      "category": "blade",
+      "line": "bx",
+      "type": "attack",
+      "names": {
+        "tt": "Lightning L-Drago (Upper Type)",
+        "hasbro": null,
+        "ja": "ライトニングエルドラゴ (アッパー型)",
+        "romaji": "Raitoningu Erudorago (Appā Gata)"
+      },
+      "aliases": [
+        {
+          "value": "ライトニングエルドラゴ (アッパー型)",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "Raitoningu Erudorago (Appā Gata)",
+          "lang": "ja",
+          "kind": "romaji"
+        }
+      ],
+      "products": [
+        "BX-00"
+      ],
+      "firstReleaseSet": "BX-00",
+      "source": {
+        "page": "Blade - Lightning L-Drago (Upper Type)",
+        "url": "https://beyblade.fandom.com/wiki/Blade_-_Lightning_L-Drago_(Upper_Type)"
+      },
+      "lastVerified": "2026-06-15",
+      "status": "verified"
+    },
+    {
       "id": "luke-skywalker",
       "category": "blade",
       "line": "bx",

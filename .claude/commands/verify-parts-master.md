@@ -23,6 +23,17 @@ Una voce difettosa = **un solo issue per il difetto primario** (non sommare dife
 - Round-trip id: ogni id presente nel vecchio `data/parts.json` deve esistere nel master, oppure essere
   elencato nei conflitti come orfano intenzionale. **Mai** perdere un id usato dalle combo.
 
+## Completezza contro la fonte affidabile — `npm run verify:wiki`
+
+Esegui `npm run verify:wiki`: confronta il master con le **category per-tipo del Fandom Wiki** (fonte
+X-pura e completa — i termini Lock Chip/Main Blade/Metal Blade/Assist Blade/Over Blade/Ratchet/Bit sono
+esclusivi di X; la `Category:Blades` è mista X+Burst quindi i blade vengono filtrati su `Category:Beyblade X`).
+Riporta MANCANTI (parti X sul wiki assenti dal master → aggiungerle via `/update-parts`) ed EXTRA (parti
+nel master non a catalogo wiki: RatchetBit, varianti community, dati podio — verificare caso per caso,
+**non** rimuovere se usate da `combos.json`). Obiettivo: **0 mancanti**. È il riferimento affidabile
+contro cui validare il registro parti, e di conseguenza le estrazioni combo dai vari siti (che risolvono
+i nomi sul master).
+
 ## Spot-check sulle fonti (IA, a campione)
 
 Scegli ~5 parti `verified` a caso (mix BX e CX) e rileggi la loro `source.url` via API MediaWiki
