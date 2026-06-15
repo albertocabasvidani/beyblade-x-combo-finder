@@ -16,7 +16,6 @@ const ROOT = join(import.meta.dirname, '..');
 const DATA = join(ROOT, 'data');
 const cachePath = join(DATA, 'wbo-cache.json');
 const USER_DIR = 'C:/Users/cinqu/.playwright-beyblade';
-const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36';
 
 const THREADS = [
   { key: 'bbx-winning', url: 'https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX?action=lastpost' },
@@ -35,7 +34,17 @@ async function main() {
   // headed (richiede un desktop attivo): il profilo persistente conserva poi la clearance.
   // In headless bloccato, /update-combos usa MetaBeys, che indicizza gli stessi eventi WBO.
   const HEADLESS = process.env.WBO_HEADED !== '1';
-  const ctx = await chromium.launchPersistentContext(USER_DIR, { channel: 'chrome', headless: HEADLESS, userAgent: UA });
+  // Niente UA fittizio né flag di automazione: Cloudflare Turnstile flagga il mismatch UA, il
+  // --no-sandbox (default di launchPersistentContext) e --enable-automation/navigator.webdriver, e
+  // ripresenta il captcha all'infinito. Con il Chrome reale (channel) e senza queste impronte la
+  // risoluzione manuale "tiene".
+  const ctx = await chromium.launchPersistentContext(USER_DIR, {
+    channel: 'chrome',
+    headless: HEADLESS,
+    chromiumSandbox: true,
+    ignoreDefaultArgs: ['--enable-automation'],
+    args: ['--disable-blink-features=AutomationControlled'],
+  });
   const page = ctx.pages()[0] ?? (await ctx.newPage());
 
   try {
