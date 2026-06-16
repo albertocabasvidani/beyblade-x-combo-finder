@@ -12,6 +12,7 @@ interface Props {
   rank: number;
   amazonConfig: AmazonConfig;
   productLookup: ProductLookup;
+  t: (key: string) => string;
 }
 
 const typeLabels: Record<string, Record<string, string>> = {
@@ -26,8 +27,13 @@ const typeColors: Record<string, string> = {
   balance: 'text-purple-400',
 };
 
-export function ComboCard({ combo, displayName, selected, locale, rank, amazonConfig, productLookup }: Props) {
+export function ComboCard({ combo, displayName, selected, locale, rank, amazonConfig, productLookup, t }: Props) {
   const matched = getMatchedParts(combo, selected);
+  const b = combo.scoreBreakdown;
+  const tags = combo.tags ?? [];
+  const breakdownTooltip = b
+    ? `${t('combo.perf')} ${b.performance} · ${t('combo.pres')} ${b.presence} · ${t('combo.corr')} ${b.corroboration}`
+    : undefined;
   const hasSelection =
     selected.blades.length > 0 ||
     selected.lockChips.length > 0 ||
@@ -59,15 +65,29 @@ export function ComboCard({ combo, displayName, selected, locale, rank, amazonCo
           <span class="text-xs font-medium text-gray-500">#{rank}</span>
           <h3 class="font-bold text-white">{displayName}</h3>
         </div>
-        <ScoreBadge score={combo.score} />
+        <ScoreBadge score={combo.score} title={breakdownTooltip} />
       </div>
 
-      <div class="mb-3 flex items-center gap-3 text-xs">
+      <div class="mb-3 flex flex-wrap items-center gap-2 text-xs">
         <span class={typeColors[combo.type] ?? 'text-gray-400'}>
           {typeLabels[locale]?.[combo.type] ?? combo.type}
         </span>
+        {b && b.tournamentEvents > 0 && (
+          <span class="text-gray-300" title={breakdownTooltip}>
+            {'\u{1F3C6}'} {b.wins} {t('combo.wins')} · {b.tournamentEvents} {t('combo.events')}
+          </span>
+        )}
+        {b && b.metaSharePct != null && (
+          <span class="text-gray-300">{b.metaSharePct}% {t('combo.metaShare')}</span>
+        )}
+        {tags.includes('tournament-proven') && (
+          <span class="rounded-md bg-green-500/10 px-2 py-0.5 text-green-400">{t('combo.tournamentProven')}</span>
+        )}
+        {tags.includes('theory-only') && (
+          <span class="rounded-md bg-gray-500/10 px-2 py-0.5 text-gray-400">{t('combo.theoryOnly')}</span>
+        )}
         <span class="text-gray-500">
-          {combo.sources.length} {locale === 'it' ? 'fonti' : 'sources'}
+          {combo.sources.length} {t('search.sources')}
         </span>
       </div>
 

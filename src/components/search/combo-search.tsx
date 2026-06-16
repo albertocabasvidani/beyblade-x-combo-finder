@@ -28,6 +28,8 @@ export default function ComboSearch({ parts, combos, locale, translations, amazo
   const [line, setLine] = useState<ComboLine>('bx');
   const [selected, setSelected] = useState<SelectedParts>({ ...emptySelection });
   const [nameVariant, setNameVariant] = useState<NameVariant>('eastern');
+  const [tournamentOnly, setTournamentOnly] = useState(false);
+  const [metaOnly, setMetaOnly] = useState(false);
 
   const t = (key: string) => translations[key] ?? key;
 
@@ -47,7 +49,9 @@ export default function ComboSearch({ parts, combos, locale, translations, amazo
     }));
   };
 
-  const results = filterCombos(combos.combos, line, selected);
+  let results = filterCombos(combos.combos, line, selected);
+  if (tournamentOnly) results = results.filter((c) => (c.tags ?? []).includes('tournament-proven'));
+  if (metaOnly) results = results.filter((c) => (c.tags ?? []).some((t) => t === 'meta' || t === 'top-tier'));
 
   const switchLine = (newLine: ComboLine) => {
     setLine(newLine);
@@ -246,10 +250,32 @@ export default function ComboSearch({ parts, combos, locale, translations, amazo
 
       {/* Results */}
       <div>
-        <div class="mb-4 flex items-center justify-between">
+        <div class="mb-4 flex flex-wrap items-center justify-between gap-2">
           <h2 class="text-sm font-medium text-gray-400">
             {t('search.results')} ({results.length})
           </h2>
+          <div class="flex gap-2">
+            <button
+              onClick={() => setTournamentOnly((v) => !v)}
+              class={`rounded-md border px-2.5 py-1 text-xs font-medium transition-colors ${
+                tournamentOnly
+                  ? 'border-green-400/40 bg-green-400/10 text-green-400'
+                  : 'border-gray-700 bg-gray-800 text-gray-400 hover:text-white'
+              }`}
+            >
+              {t('filter.tournamentProven')}
+            </button>
+            <button
+              onClick={() => setMetaOnly((v) => !v)}
+              class={`rounded-md border px-2.5 py-1 text-xs font-medium transition-colors ${
+                metaOnly
+                  ? 'border-yellow-400/40 bg-yellow-400/10 text-yellow-400'
+                  : 'border-gray-700 bg-gray-800 text-gray-400 hover:text-white'
+              }`}
+            >
+              {t('filter.metaOnly')}
+            </button>
+          </div>
         </div>
 
         {results.length === 0 ? (
@@ -269,6 +295,7 @@ export default function ComboSearch({ parts, combos, locale, translations, amazo
                   rank={i + 1}
                   amazonConfig={amazonConfig}
                   productLookup={productLookup}
+                  t={t}
                 />
               ))}
             </div>
