@@ -1,1 +1,210 @@
 @import "tailwindcss";
+
+/* Dark mode class-based: attivo quando un antenato ha [data-theme="dark"] */
+@custom-variant dark (&:where([data-theme="dark"] *));
+
+/* ------------------------------------------------------------------ *
+ * Design tokens "Arena" — mappati alle CSS vars runtime (--c-*)       *
+ * I valori cambiano per tema in :root / [data-theme="light"] sotto.   *
+ * ------------------------------------------------------------------ */
+@theme inline {
+  --font-display: 'Anton', sans-serif;
+  --font-sans: 'Saira', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-bg: var(--c-bg);
+  --color-surface: var(--c-surface);
+  --color-surface-2: var(--c-surface-2);
+  --color-border: var(--c-border);
+  --color-border-strong: var(--c-border-strong);
+  --color-hairline: var(--c-hairline);
+
+  --color-text: var(--c-text);
+  --color-text-2: var(--c-text-2);
+  --color-muted: var(--c-muted);
+  --color-muted-2: var(--c-muted-2);
+
+  --color-gold: var(--c-gold);
+  --color-gold-ink: var(--c-gold-ink);
+  --color-scarlet: var(--c-scarlet);
+  --color-scarlet-text: var(--c-scarlet-text);
+
+  --color-attack: var(--c-attack);
+  --color-defense: var(--c-defense);
+  --color-stamina: var(--c-stamina);
+  --color-balance: var(--c-balance);
+
+  --color-owned-bg: var(--c-owned-bg);
+  --color-owned-border: var(--c-owned-border);
+  --color-owned-text: var(--c-owned-text);
+  --color-missing-bg: var(--c-missing-bg);
+  --color-missing-border: var(--c-missing-border);
+  --color-missing-text: var(--c-missing-text);
+
+  --color-cx-bg: var(--c-cx-bg);
+  --color-cx-border: var(--c-cx-border);
+  --color-cx-text: var(--c-cx-text);
+
+  --color-rank-1: var(--c-rank-1);
+  --color-rank-other: var(--c-rank-other);
+  --color-track: var(--c-track);
+}
+
+/* ------------------------------------------------------------------ *
+ * Tema SCURO (default, anche fallback senza JS)                       *
+ * ------------------------------------------------------------------ */
+:root,
+[data-theme="dark"] {
+  --c-bg: #0c0a0d;
+  --c-surface: #141014;
+  --c-surface-2: #16131a;
+  --c-border: #2a2430;
+  --c-border-strong: #1c1620;
+  --c-hairline: rgba(255, 255, 255, 0.06);
+
+  --c-text: #ffffff;
+  --c-text-2: #c9bfc4;
+  --c-muted: #8a7f86;
+  --c-muted-2: #6f6570;
+
+  --c-gold: #ffb01f;
+  --c-gold-ink: #1a1100;
+  --c-scarlet: #ff4332;
+  --c-scarlet-text: #ff7a6e;
+
+  --c-attack: #d23b34;
+  --c-defense: #3b82c4;
+  --c-stamina: #1f9d5b;
+  --c-balance: #a855f7;
+
+  --c-owned-bg: rgba(31, 157, 91, 0.13);
+  --c-owned-border: rgba(31, 157, 91, 0.4);
+  --c-owned-text: #5fe0a0;
+  --c-missing-bg: rgba(255, 67, 50, 0.08);
+  --c-missing-border: rgba(255, 67, 50, 0.33);
+  --c-missing-text: #ff7a6e;
+
+  --c-cx-bg: transparent;
+  --c-cx-border: rgba(176, 124, 240, 0.4);
+  --c-cx-text: #c79bf5;
+
+  --c-rank-1: #ffb01f;
+  --c-rank-other: #8a7f86;
+  --c-track: #2a2430;
+  --c-knob: #e8e2e6;
+
+  /* gradienti per fascia CAS (notch) + ink */
+  --grad-tier-meta: linear-gradient(180deg, #3bdc86, #1f9d5b);
+  --ink-tier-meta: #052413;
+  --grad-tier-top: linear-gradient(180deg, #f1c64a, #d99c1f);
+  --ink-tier-top: #2a2103;
+  --grad-tier-solid: linear-gradient(180deg, #f0a050, #e07a22);
+  --ink-tier-solid: #2a1603;
+  --grad-tier-base: linear-gradient(180deg, #5a5258, #3a3340);
+  --ink-tier-base: #ffffff;
+
+  /* strisce laterali per posizione */
+  --rail-1: linear-gradient(180deg, #ffb01f, #ff4332);
+  --rail-2: #4a4350;
+  --rail-cx: #b07cf0;
+
+  /* fill barra meta-share */
+  --fill-1: linear-gradient(90deg, #ffb01f, #ff4332);
+  --fill-2: #d99c1f;
+  --fill-3: #e07a22;
+
+  /* barra "RANKING" */
+  --grad-ranking: linear-gradient(90deg, #ffb01f, transparent);
+
+  /* ombre */
+  --shadow-card1: 0 0 0 1px rgba(255, 176, 31, 0.1), 0 12px 32px -18px rgba(255, 176, 31, 0.5);
+  --shadow-card: none;
+  --card1-bg: linear-gradient(135deg, #1d1410, #120e10);
+  --card1-border: rgba(255, 176, 31, 0.27);
+}
+
+/* ------------------------------------------------------------------ *
+ * Tema CHIARO                                                         *
+ * ------------------------------------------------------------------ */
+[data-theme="light"] {
+  --c-bg: #f6f1ea;
+  --c-surface: #ffffff;
+  --c-surface-2: #faf6ef;
+  --c-border: #e7ded2;
+  --c-border-strong: #ece3d4;
+  --c-hairline: #f0e7d9;
+
+  --c-text: #1b1410;
+  --c-text-2: #54504a;
+  --c-muted: #8a7f70;
+  --c-muted-2: #a89c8b;
+
+  --c-gold: #f59e0b;
+  --c-gold-ink: #2a1a00;
+  --c-scarlet: #e0392c;
+  --c-scarlet-text: #cf3022;
+
+  --c-attack: #e0392c;
+  --c-defense: #2f6fae;
+  --c-stamina: #15914f;
+  --c-balance: #8b5cf6;
+
+  --c-owned-bg: #e7f6ee;
+  --c-owned-border: transparent;
+  --c-owned-text: #15914f;
+  --c-missing-bg: #fdecea;
+  --c-missing-border: transparent;
+  --c-missing-text: #cf3022;
+
+  --c-cx-bg: #f1ecfe;
+  --c-cx-border: transparent;
+  --c-cx-text: #8b5cf6;
+
+  --c-rank-1: #e07d00;
+  --c-rank-other: #b0a594;
+  --c-track: #e0d8ca;
+  --c-knob: #ffffff;
+
+  --grad-tier-meta: linear-gradient(180deg, #34c87f, #15914f);
+  --ink-tier-meta: #ffffff;
+  --grad-tier-top: linear-gradient(180deg, #f5c542, #d99008);
+  --ink-tier-top: #2a2103;
+  --grad-tier-solid: linear-gradient(180deg, #f0a050, #e07a22);
+  --ink-tier-solid: #2a1603;
+  --grad-tier-base: linear-gradient(180deg, #cdc4b4, #b0a594);
+  --ink-tier-base: #2a2103;
+
+  --rail-1: linear-gradient(180deg, #f59e0b, #e0392c);
+  --rail-2: #cdc4b4;
+  --rail-cx: #b07cf0;
+
+  --fill-1: linear-gradient(90deg, #f59e0b, #e0392c);
+  --fill-2: #d99008;
+  --fill-3: #e07a22;
+
+  --grad-ranking: linear-gradient(90deg, #f59e0b, transparent);
+
+  --shadow-card1: 0 12px 30px -18px rgba(245, 158, 11, 0.48);
+  --shadow-card: 0 6px 18px -12px rgba(60, 55, 48, 0.18);
+  --card1-bg: #ffffff;
+  --card1-border: #f3c98a;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+  }
+}
+
+/* Icona del toggle tema: luna nel chiaro (→ passa a scuro), sole nello scuro (→ passa a chiaro) */
+.theme-icon-light {
+  display: none;
+}
+[data-theme="dark"] .theme-icon-light {
+  display: inline;
+}
+[data-theme="dark"] .theme-icon-dark {
+  display: none;
+}

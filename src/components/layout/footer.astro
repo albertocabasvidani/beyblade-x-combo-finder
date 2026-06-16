@@ -9,7 +9,7 @@ interface Props {
 const { locale } = Astro.props;
 ---
 
-<footer class="border-t border-gray-800 bg-gray-900 px-4 py-6 text-center text-xs text-gray-500">
-  <p class="mb-2">{t(locale, 'footer.disclosure')}</p>
-  <p>&copy; {new Date().getFullYear()} BeyCombo. Data sourced from community recommendations.</p>
+<footer class="border-t border-border bg-surface px-4 py-6 text-center text-xs text-muted-2">
+  <p class="mb-2">{t(locale, 'footer.dataNote')}</p>
+  <p>&copy; {new Date().getFullYear()} Beyblade X Combo Finder</p>
 </footer>

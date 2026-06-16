@@ -12,12 +12,14 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
 |---|---|
 | [parts-database](projects/parts-database.md) | DB parti master multilingua: scrape wiki, derivazione, update, verify, Over Blade |
 | [combo-pipeline](projects/combo-pipeline.md) | Raccolta fonti → estrazione IA → scoring CAS → scheduling |
-| [web-frontend](projects/web-frontend.md) | Sito Astro/Preact: ricerca, i18n, badge CAS, Amazon |
+| [web-frontend](projects/web-frontend.md) | Sito Astro/Preact (redesign "Arena"): ricerca unica parti, ranking unico BX+CX, temi chiaro/scuro, i18n, badge CAS |
 
 ## Tech Stack
 
 - **Framework**: Astro (SSG) + Preact (island interattiva)
-- **Styling**: Tailwind CSS v4
+- **Styling**: Tailwind CSS v4 — design system "Arena" a doppio tema (token CSS in `src/styles/global.css`,
+  toggle chiaro/scuro persistito in `localStorage`, anti-FOUC inline in `base-layout.astro`). Spec design
+  in `docs/redesign-arena.md`. Font: Anton (display) / Saira (body) / JetBrains Mono (mono).
 - **Hosting**: GitHub Pages (deploy automatico via Actions)
 - **i18n**: EN (default) + IT, route-based (`/en/`, `/it/`)
 - **Database**: JSON nel repo (`data/combos.json`, `data/parts.json`)
@@ -172,16 +174,18 @@ necessario per i browser headed). Path con spazi quotati dentro `/tr`:
 - Interfacce TypeScript in `src/lib/types.ts`
 - Traduzioni in `src/i18n/en.json` e `src/i18n/it.json`
 
-## Amazon Affiliate
+## Amazon Affiliate (disattivato nella UI dal redesign "Arena")
 
-I badge delle parti mancanti nelle combo card diventano link di ricerca Amazon. Logica in
-`src/lib/amazon.ts` (`buildAmazonSearchUrl`, `buildProductLookup`), rendering in
-`src/components/search/combo-card.tsx`; `data/products.json` (aggiornato da `/update-parts`, step 7)
-mappa parte→codice set.
+Il redesign "Arena" ha **rimosso i link Amazon dalla UI** (niente badge link sulle parti mancanti, niente
+banner, niente disclosure nel footer). I chip delle parti mancanti ora sono solo informativi (`! Nome`).
 
-Gotcha di ricerca: blade / lock chip / main blade / assist blade si cercano per **nome diretto**
-(`Beyblade X Phoenix Wing`); ratchet e bit su Amazon **per nome danno 0 risultati**, quindi si cerca
-il **codice del set** che li contiene (`3-60` → `Beyblade X BX-01`, `Hexa` → `Beyblade X UX-02`).
+La logica resta in repo per un eventuale ripristino, ma **non è più importata dal frontend**:
+`src/lib/amazon.ts` (`buildAmazonSearchUrl`, `buildProductLookup`) e `data/products.json` (ancora
+rigenerato da `/update-parts`, step 7) non vengono più usati da `combo-card.tsx`/`combo-search.tsx`.
 
-Config in `.env`: `AMAZON_TAG_IT`, `AMAZON_TAG_US` (vuoti = link senza tracking). TLD per locale
-(IT → `amazon.it`, EN → `amazon.com`). Disclosure nel footer (`footer.disclosure` in i18n).
+Per riattivarli servirebbe: ripassare `amazonConfig`/`productLookup` da `pages/{en,it}/index.astro` a
+`ComboSearch`, rifare il rendering dei link nei chip mancanti, e reintrodurre la disclosure nel footer.
+Gotcha storico (se si riattiva): blade/lock chip/main blade/assist blade si cercano per **nome diretto**
+(`Beyblade X Phoenix Wing`); ratchet e bit **per nome danno 0 risultati**, quindi si cerca il **codice del
+set** che li contiene (`3-60` → `Beyblade X BX-01`, `Hexa` → `Beyblade X UX-02`). Config in `.env`:
+`AMAZON_TAG_IT`, `AMAZON_TAG_US`; TLD per locale (IT → `amazon.it`, EN → `amazon.com`).

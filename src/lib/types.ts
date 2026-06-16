@@ -3,7 +3,6 @@
 export type BladeType = 'attack' | 'defense' | 'stamina' | 'balance';
 export type BitType = 'attack' | 'defense' | 'stamina' | 'balance';
 export type ComboLine = 'bx' | 'cx';
-export type NameVariant = 'western' | 'eastern';
 
 export interface Blade {
   id: string;

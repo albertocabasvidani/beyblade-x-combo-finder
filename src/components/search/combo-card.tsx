@@ -1,17 +1,15 @@
 import type { Combo, SelectedParts, Locale } from '../../lib/types';
-import type { AmazonConfig, ProductLookup } from '../../lib/amazon';
-import { getMatchedParts } from '../../lib/search-engine';
-import { buildAmazonSearchUrl } from '../../lib/amazon';
-import { ScoreBadge } from './score-badge';
+import { getMatchedParts, hasAnySelection } from '../../lib/search-engine';
+import { ScoreBadge, scoreTier } from './score-badge';
 
 interface Props {
   combo: Combo;
   displayName: string;
   selected: SelectedParts;
+  compare: boolean;
   locale: Locale;
   rank: number;
-  amazonConfig: AmazonConfig;
-  productLookup: ProductLookup;
+  partName: (category: string, id: string | null) => string;
   t: (key: string) => string;
 }
 
@@ -20,112 +18,172 @@ const typeLabels: Record<string, Record<string, string>> = {
   it: { attack: 'Attacco', defense: 'Difesa', stamina: 'Resistenza', balance: 'Equilibrio' },
 };
 
-const typeColors: Record<string, string> = {
-  attack: 'text-red-400',
-  defense: 'text-blue-400',
-  stamina: 'text-green-400',
-  balance: 'text-purple-400',
+const typeBg: Record<string, string> = {
+  attack: 'bg-attack',
+  defense: 'bg-defense',
+  stamina: 'bg-stamina',
+  balance: 'bg-balance',
 };
 
-export function ComboCard({ combo, displayName, selected, locale, rank, amazonConfig, productLookup, t }: Props) {
+export function ComboCard({ combo, displayName, selected, compare, locale, rank, partName, t }: Props) {
   const matched = getMatchedParts(combo, selected);
   const b = combo.scoreBreakdown;
-  const tags = combo.tags ?? [];
+  const tier = scoreTier(combo);
+  const isTop = rank === 1;
+  const showChips = compare && hasAnySelection(selected);
+
   const breakdownTooltip = b
     ? `${t('combo.perf')} ${b.performance} · ${t('combo.pres')} ${b.presence} · ${t('combo.corr')} ${b.corroboration}`
     : undefined;
-  const hasSelection =
-    selected.blades.length > 0 ||
-    selected.lockChips.length > 0 ||
-    selected.mainBlades.length > 0 ||
-    selected.assistBlades.length > 0 ||
-    selected.overBlades.length > 0 ||
-    selected.ratchets.length > 0 ||
-    selected.bits.length > 0;
 
   const parts = combo.line === 'bx'
     ? [
-        { key: 'blade', label: 'Blade', id: combo.blade },
-        { key: 'ratchet', label: 'Ratchet', id: combo.ratchet },
-        { key: 'bit', label: 'Bit', id: combo.bit },
+        { key: 'blade', id: combo.blade },
+        { key: 'ratchet', id: combo.ratchet },
+        { key: 'bit', id: combo.bit },
       ]
     : [
-        { key: 'lockChip', label: 'Lock Chip', id: combo.lockChip },
-        { key: 'overBlade', label: 'Over Blade', id: combo.overBlade ?? null },
-        { key: 'mainBlade', label: 'Main Blade', id: combo.mainBlade },
-        { key: 'assistBlade', label: 'Assist Blade', id: combo.assistBlade },
-        { key: 'ratchet', label: 'Ratchet', id: combo.ratchet },
-        { key: 'bit', label: 'Bit', id: combo.bit },
+        { key: 'lockChip', id: combo.lockChip },
+        { key: 'overBlade', id: combo.overBlade ?? null },
+        { key: 'mainBlade', id: combo.mainBlade },
+        { key: 'assistBlade', id: combo.assistBlade },
+        { key: 'ratchet', id: combo.ratchet },
+        { key: 'bit', id: combo.bit },
       ];
 
+  // striscia laterale: #1 oro→scarlatto, CX viola, altrimenti neutro
+  const railBg = isTop ? 'var(--rail-1)' : combo.line === 'cx' ? 'var(--rail-cx)' : 'var(--rail-2)';
+  const cardStyle = isTop
+    ? { background: 'var(--card1-bg)', borderColor: 'var(--card1-border)', boxShadow: 'var(--shadow-card1)' }
+    : { boxShadow: 'var(--shadow-card)' };
+  const cardClass = isTop ? 'border' : 'border border-border bg-surface';
+
+  const CxBadge = () =>
+    combo.line === 'cx' ? (
+      <span class="shrink-0 rounded-[4px] border border-cx-border bg-cx-bg px-1.5 py-0.5 font-mono text-[8.5px] font-bold text-cx-text">
+        CX
+      </span>
+    ) : null;
+
+  const TypeBadge = () => (
+    <span class={`shrink-0 rounded-[4px] px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-[0.05em] text-white ${typeBg[combo.type] ?? 'bg-muted'}`}>
+      {typeLabels[locale]?.[combo.type] ?? combo.type}
+    </span>
+  );
+
+  const Sources = () => (
+    <span class="text-[10.5px] text-muted-2">
+      {combo.sources.length} {t('search.sources')}
+    </span>
+  );
+
+  const PartChips = ({ dense = false }: { dense?: boolean }) =>
+    !showChips ? null : (
+      <div class={`flex flex-wrap ${dense ? 'gap-1.5' : 'gap-2'}`}>
+        {parts.map((p) => {
+          const status = matched[p.key];
+          if (status === 'unset') return null;
+          const owned = status === 'owned';
+          const label = partName(p.key, p.id) || p.key;
+          return (
+            <span
+              key={p.key}
+              class={`inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-[11px] font-bold ${
+                owned ? 'border-owned-border bg-owned-bg text-owned-text' : 'border-missing-border bg-missing-bg text-missing-text'
+              }`}
+            >
+              {owned ? '✓' : '!'} {label}
+            </span>
+          );
+        })}
+      </div>
+    );
+
+  const EvidenceInline = () =>
+    b && (b.tournamentEvents > 0 || b.metaSharePct != null) ? (
+      <div class="flex flex-wrap items-center gap-x-2 gap-y-1 text-[11.5px] font-semibold text-text-2" title={breakdownTooltip}>
+        {b.wins > 0 && <span class="text-gold">{'\u{1F3C6}'} {b.wins} {t('combo.wins')}</span>}
+        {b.tournamentEvents > 0 && <span>{b.tournamentEvents} {t('combo.events')}</span>}
+        {b.metaSharePct != null && <span class="text-scarlet">{b.metaSharePct}% {t('combo.metaShare')}</span>}
+      </div>
+    ) : null;
+
   return (
-    <div class="rounded-xl border border-gray-800 bg-gray-900 p-4 transition-colors hover:border-gray-700">
-      <div class="mb-2 flex items-start justify-between">
-        <div class="flex items-center gap-2">
-          <span class="text-xs font-medium text-gray-500">#{rank}</span>
-          <h3 class="font-bold text-white">{displayName}</h3>
+    <>
+      {/* ---------- MOBILE: card verticale ---------- */}
+      <article class={`relative overflow-hidden rounded-[14px] lg:hidden ${cardClass}`} style={cardStyle}>
+        <span class="absolute inset-y-0 left-0 w-1" style={{ background: railBg }} aria-hidden="true" />
+        <div class="py-[13px] pl-[18px] pr-[14px]">
+          <div class="flex items-start justify-between gap-2.5">
+            <div class="flex min-w-0 items-start gap-2.5">
+              <span class={`font-display text-[26px] italic leading-none ${isTop ? 'text-rank-1' : 'text-rank-other'}`}>{rank}</span>
+              <div class="min-w-0">
+                <div class="flex items-center gap-2">
+                  <CxBadge />
+                  <h3 class="font-display text-[17px] uppercase leading-tight text-text">{displayName}</h3>
+                </div>
+                <div class="mt-1.5 flex items-center gap-2">
+                  <TypeBadge />
+                  <Sources />
+                </div>
+              </div>
+            </div>
+            <ScoreBadge combo={combo} t={t} size="sm" title={breakdownTooltip} />
+          </div>
+
+          {b && (b.tournamentEvents > 0 || b.metaSharePct != null) && (
+            <div class="mt-[11px] border-t border-hairline pt-[11px]">
+              <EvidenceInline />
+            </div>
+          )}
+
+          {showChips && (
+            <div class="mt-2.5">
+              <PartChips />
+            </div>
+          )}
+
+          {combo.notes && <p class="mt-2 text-[11px] leading-snug text-muted-2">{combo.notes}</p>}
         </div>
-        <ScoreBadge score={combo.score} title={breakdownTooltip} />
-      </div>
+      </article>
 
-      <div class="mb-3 flex flex-wrap items-center gap-2 text-xs">
-        <span class={typeColors[combo.type] ?? 'text-gray-400'}>
-          {typeLabels[locale]?.[combo.type] ?? combo.type}
-        </span>
-        {b && b.tournamentEvents > 0 && (
-          <span class="text-gray-300" title={breakdownTooltip}>
-            {'\u{1F3C6}'} {b.wins} {t('combo.wins')} · {b.tournamentEvents} {t('combo.events')}
-          </span>
-        )}
-        {b && b.metaSharePct != null && (
-          <span class="text-gray-300">{b.metaSharePct}% {t('combo.metaShare')}</span>
-        )}
-        {tags.includes('tournament-proven') && (
-          <span class="rounded-md bg-green-500/10 px-2 py-0.5 text-green-400">{t('combo.tournamentProven')}</span>
-        )}
-        {tags.includes('theory-only') && (
-          <span class="rounded-md bg-gray-500/10 px-2 py-0.5 text-gray-400">{t('combo.theoryOnly')}</span>
-        )}
-        <span class="text-gray-500">
-          {combo.sources.length} {t('search.sources')}
-        </span>
-      </div>
+      {/* ---------- DESKTOP: riga orizzontale ---------- */}
+      <article class={`relative hidden overflow-hidden rounded-[14px] lg:block ${cardClass}`} style={cardStyle}>
+        <span class="absolute inset-y-0 left-0 w-[5px]" style={{ background: railBg }} aria-hidden="true" />
+        <div class="flex items-center gap-[18px] py-4 pl-[26px] pr-5">
+          <span class={`font-display text-[38px] italic leading-none ${isTop ? 'text-rank-1' : 'text-rank-other'}`}>{rank}</span>
 
-      {hasSelection && (
-        <div class="mb-3 flex flex-wrap gap-2">
-          {parts.map((part) => {
-            const status = matched[part.key]; // 'owned' | 'missing' | 'unset'
-            if (status === 'unset') return null;
-            if (status === 'owned') {
-              return (
-                <span key={part.key} class="inline-flex items-center gap-1 rounded-md bg-green-500/10 px-2 py-0.5 text-xs text-green-400">
-                  {'\u2713'} {part.label}
-                </span>
-              );
-            }
-            const href = part.id ? buildAmazonSearchUrl(part.key, part.id, productLookup, amazonConfig) : null;
-            return href ? (
-              <a
-                key={part.key}
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-flex items-center gap-1 rounded-md bg-orange-500/10 px-2 py-0.5 text-xs text-orange-400 transition-colors hover:bg-orange-500/20"
-              >
-                ! {part.label} {'\u2197'}
-              </a>
-            ) : (
-              <span key={part.key} class="inline-flex items-center gap-1 rounded-md bg-orange-500/10 px-2 py-0.5 text-xs text-orange-400">
-                ! {part.label}
-              </span>
-            );
-          })}
+          <div class="min-w-0 flex-1">
+            <div class="flex items-center gap-2">
+              <CxBadge />
+              <h3 class="font-display text-[22px] uppercase leading-tight text-text">{displayName}</h3>
+            </div>
+            <div class="mt-2 flex flex-wrap items-center gap-2">
+              <TypeBadge />
+              {showChips ? <PartChips dense /> : <Sources />}
+            </div>
+          </div>
+
+          {b && (b.tournamentEvents > 0 || b.metaSharePct != null) && (
+            <div class="w-[188px] shrink-0 border-l border-hairline pl-[18px] text-[12.5px]">
+              <div class="font-semibold text-text-2">
+                {b.wins > 0 && <span class="text-gold">{'\u{1F3C6}'} {b.wins} {t('combo.wins')}</span>}
+                {b.tournamentEvents > 0 && <span> {'·'} {b.tournamentEvents} {t('combo.events')}</span>}
+              </div>
+              {b.metaSharePct != null && (
+                <>
+                  <div class="mt-0.5 font-semibold text-scarlet">{b.metaSharePct}% {t('combo.metaShare')}</div>
+                  <div class="mt-1.5 h-[5px] overflow-hidden rounded-[3px]" style={{ background: 'var(--c-track)' }}>
+                    <div class="h-full" style={{ width: `${Math.max(b.metaSharePct, 3)}%`, background: `var(${tier.fillVar})` }} />
+                  </div>
+                </>
+              )}
+            </div>
+          )}
+
+          <ScoreBadge combo={combo} t={t} size="lg" title={breakdownTooltip} />
         </div>
-      )}
-
-      {combo.notes && (
-        <p class="text-xs text-gray-500">{combo.notes}</p>
-      )}
-    </div>
+      </article>
+    </>
   );
 }
