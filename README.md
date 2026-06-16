@@ -27,6 +27,9 @@ Richiede inoltre (per la pipeline dati):
 | `npm run build` | Build produzione in `./dist/` |
 | `npm run build:parts` | Rigenera `data/parts.json` da `data/parts-master.json` (con guardrail) |
 | `npm run collect:sources` | Raccoglie le cache grezze (Reddit, YouTube, Sheets, MetaBeys, WBO) |
+| `npm run parse:metabeys` | Parser deterministico MetaBeys (eventi+leaderboard) → `data/metabeys-evidence.json` |
+| `npm run score:combos` | Ricalcola lo score CAS (deterministico) da `evidence`, scrive `combos.json` |
+| `npm run test:scoring` | Golden test dell'algoritmo di scoring |
 
 Comandi Claude Code (in `.claude/commands/`):
 - `/scrape-parts-master` — import iniziale del database parti da Beyblade Fandom Wiki (one-shot)
@@ -38,15 +41,26 @@ Comandi Claude Code (in `.claude/commands/`):
 - **`data/parts-master.json`** — file canonico delle parti, multilingua (nomi Takara Tomy / Hasbro /
   giapponese + alias per lingua). Da qui `build:parts` deriva `data/parts.json` (consumato dal sito),
   preservando gli id e con un guardrail che aborta se romperebbe i riferimenti di `combos.json`.
-- **`data/combos.json`** — combo con score, tag e fonti.
+- **`data/combos.json`** — combo con `evidence` (placements/usage/mentions), `scoreBreakdown` CAS, tag e fonti.
+- **`data/metabeys-evidence.json`** — evidenza torneo parsata in modo deterministico da MetaBeys (input dello scoring).
 - **`data/products.json`** — catalogo prodotti TT+Hasbro per i link Amazon.
 - **`data/sources.json`** — fonti configurabili (con `lang`); social non scrappabili in `manualVerification`.
 
+## Scoring (Competitive Authority Score)
+
+Lo score (0–10) misura l'**autorevolezza competitiva** di una combo ed è calcolato **dal codice** in
+modo deterministico (`src/lib/scoring.ts`), non stimato dall'IA. Combina tre pilastri con rendimenti
+decrescenti: **performance** nei tornei (piazzamento × dimensione evento × affidabilità fonte ×
+decadimento temporale), **presenza** nel meta (usage share + eventi indipendenti) e **corroborazione**
+(fonti distinte). L'IA estrae l'`evidence` dalle fonti; il codice la trasforma in numero. Algoritmo,
+pesi e costanti documentati in [`docs/scoring-algorithm.md`](docs/scoring-algorithm.md).
+
 ## Pipeline (confine IA / codice)
 
-Le routine le esegue Claude. La parte **non deterministica** (leggere le pagine, riconoscere/matchare i
-nomi delle parti in qualsiasi lingua) la fa l'**IA**; il **codice** fa solo accesso/fetch grezzo, dedup,
-derivazione e validazione. Le pagine wiki si leggono via **API MediaWiki** (`api.php`, la `/wiki/` dà 403);
+Le routine le esegue Claude. La parte **non deterministica** (leggere le pagine narrative, riconoscere/
+matchare i nomi delle parti in qualsiasi lingua) la fa l'**IA**; il **codice** fa accesso/fetch grezzo,
+**parsing delle fonti strutturate** (MetaBeys), dedup, derivazione, validazione e il **calcolo dello
+score CAS**. Le pagine wiki si leggono via **API MediaWiki** (`api.php`, la `/wiki/` dà 403);
 MetaBeys e WBO via **Playwright headless** (WBO è dietro Cloudflare: usare `WBO_HEADED=1` o affidarsi a
 MetaBeys, che indicizza gli stessi eventi). Dettagli completi e scheduling in `CLAUDE.md`.
 

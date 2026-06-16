@@ -100,19 +100,22 @@ Social login-walled in `manualVerification` (non scrappati, solo elencati nel re
 
 ## Automazione (Windows Task Scheduler)
 
-Sequenza giornaliera (i `.bat` invocano `claude --dangerously-skip-permissions -p`):
-- **03:00** `update-parts.bat` → `/update-parts` (diff revid, di solito no-op da ~30s)
-- **03:30** `collect-combos.bat` → `npm run collect:sources` (cache grezze, incl. MetaBeys/WBO)
-- **03:45 → tutto il giorno, ogni 5 min** `fetch-transcripts.bat` (`--batch 1`, rate-limit YouTube)
-- **22:00** `analyze-combos.bat` → `/update-combos`
-- `update-combos.bat` resta come esecuzione manuale tutto-in-uno; `dev-server.bat` avvia Astro.
+Il PC è spento di notte → tutta la pipeline gira in **un'unica sequenza alle 08:00** (utente loggato).
+`daily-pipeline.bat` esegue in ordine: `/update-parts` → `collect:sources` (con Reddit/WBO **headed**
+via `REDDIT_HEADED=1`/`WBO_HEADED=1`, lette da collect:sources) → `/update-combos`. Reddit riusa il
+login del profilo `.playwright-beyblade`; WBO può chiedere il captcha Cloudflare (mattina = utente al
+PC per risolverlo). I transcript YouTube girano a parte ogni 5 min (`--batch 1`, rate-limit): i video
+nuovi scoperti oggi vengono trascritti nelle ore successive e raccolti dai run seguenti
+(eventually-consistent). `/update-parts` e `/update-combos` fanno **commit/push autonomi su master**.
 
-Registrazione task (eseguire una volta; attivare consapevolmente — fanno commit/push autonomi):
+Bat manuali: `collect-social.bat` (solo Reddit+WBO headed), `collect-combos.bat` (solo collect
+headless), `update-combos.bat` (collect+analyze), `dev-server.bat` (Astro).
 
-    schtasks /create /tn "Beyblade Update Parts" /tr "c:\claude-code\Personale\beyblade combos\update-parts.bat" /sc daily /st 03:00
-    schtasks /create /tn "Beyblade Collect Combos" /tr "c:\claude-code\Personale\beyblade combos\collect-combos.bat" /sc daily /st 03:30
-    schtasks /create /tn "Beyblade Transcripts" /tr "c:\claude-code\Personale\beyblade combos\fetch-transcripts.bat" /sc minute /mo 5
-    schtasks /create /tn "Beyblade Analyze Combos" /tr "c:\claude-code\Personale\beyblade combos\analyze-combos.bat" /sc daily /st 22:00
+Registrazione task (eseguire una volta; il task pipeline ha `/it` = gira solo se l'utente è loggato,
+necessario per i browser headed). Path con spazi quotati dentro `/tr`:
+
+    schtasks /create /tn "Beyblade Daily Pipeline" /tr "\"c:\claude-code\Personale\beyblade combos\daily-pipeline.bat\"" /sc daily /st 08:00 /it /f
+    schtasks /create /tn "Beyblade Transcripts" /tr "\"c:\claude-code\Personale\beyblade combos\fetch-transcripts.bat\"" /sc minute /mo 5 /f
 
 ## GitHub
 
