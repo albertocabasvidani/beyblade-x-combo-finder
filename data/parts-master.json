@@ -1179,7 +1179,13 @@
         "ja": "",
         "romaji": ""
       },
-      "aliases": [],
+      "aliases": [
+        {
+          "value": "Wyvern Hover",
+          "lang": "en",
+          "kind": "community"
+        }
+      ],
       "firstReleaseSet": "UX-00",
       "products": [],
       "source": null,
@@ -7263,7 +7269,8 @@
         "BX-00",
         "CX-00"
       ],
-      "firstReleaseSet": "UX-01"
+      "firstReleaseSet": "UX-01",
+      "shortName": "A"
     },
     {
       "id": "ball",
@@ -7304,7 +7311,8 @@
         "G0353",
         "G0195"
       ],
-      "firstReleaseSet": "BX-03"
+      "firstReleaseSet": "BX-03",
+      "shortName": "B"
     },
     {
       "id": "bound-spike",
@@ -7339,7 +7347,8 @@
         "UX-10",
         "G3195"
       ],
-      "firstReleaseSet": "BX-44"
+      "firstReleaseSet": "BX-44",
+      "shortName": "BS"
     },
     {
       "id": "cyclone",
@@ -7373,7 +7382,8 @@
         "BX-34",
         "UX-12"
       ],
-      "firstReleaseSet": "BX-34"
+      "firstReleaseSet": "BX-34",
+      "shortName": "C"
     },
     {
       "id": "disk-ball",
@@ -7413,7 +7423,8 @@
         "CX-06",
         "CX-10"
       ],
-      "firstReleaseSet": "UX-03"
+      "firstReleaseSet": "UX-03",
+      "shortName": "DB"
     },
     {
       "id": "disk-spike",
@@ -7447,7 +7458,8 @@
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
-      "type": "stamina"
+      "type": "stamina",
+      "shortName": "DS"
     },
     {
       "id": "dot",
@@ -7484,7 +7496,8 @@
         "CX-05",
         "G1899"
       ],
-      "firstReleaseSet": "BX-00"
+      "firstReleaseSet": "BX-00",
+      "shortName": "D"
     },
     {
       "id": "elevate",
@@ -7520,7 +7533,8 @@
         "UX-12",
         "CX-00"
       ],
-      "firstReleaseSet": "G3061"
+      "firstReleaseSet": "G3061",
+      "shortName": "E"
     },
     {
       "id": "flat",
@@ -7560,7 +7574,8 @@
         "F9589",
         "G0352"
       ],
-      "firstReleaseSet": "BX-01"
+      "firstReleaseSet": "BX-01",
+      "shortName": "F"
     },
     {
       "id": "free-ball",
@@ -7595,7 +7610,8 @@
         "CX-11",
         "G3497"
       ],
-      "firstReleaseSet": "UX-08"
+      "firstReleaseSet": "UX-08",
+      "shortName": "FB"
     },
     {
       "id": "free-flat",
@@ -7629,7 +7645,8 @@
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
-      "type": "attack"
+      "type": "attack",
+      "shortName": "FF"
     },
     {
       "id": "gear-ball",
@@ -7674,7 +7691,8 @@
         "G2738",
         "G4567"
       ],
-      "firstReleaseSet": "BX-24"
+      "firstReleaseSet": "BX-24",
+      "shortName": "GB"
     },
     {
       "id": "gear-flat",
@@ -7716,7 +7734,8 @@
         "BX-00",
         "G0284"
       ],
-      "firstReleaseSet": "BX-23"
+      "firstReleaseSet": "BX-23",
+      "shortName": "GF"
     },
     {
       "id": "gear-needle",
@@ -7757,7 +7776,8 @@
         "UX-06",
         "BX-00"
       ],
-      "firstReleaseSet": "BX-27"
+      "firstReleaseSet": "BX-27",
+      "shortName": "GN"
     },
     {
       "id": "gear-point",
@@ -7799,7 +7819,8 @@
         "UX-05",
         "BX-00"
       ],
-      "firstReleaseSet": "BX-26"
+      "firstReleaseSet": "BX-26",
+      "shortName": "GP"
     },
     {
       "id": "gear-rush",
@@ -7838,7 +7859,8 @@
         "CX-06",
         "CX-17"
       ],
-      "firstReleaseSet": "Random Booster FoxBrush Select"
+      "firstReleaseSet": "Random Booster FoxBrush Select",
+      "shortName": "GR"
     },
     {
       "id": "gear-unite",
@@ -7872,7 +7894,8 @@
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
-      "type": "balance"
+      "type": "balance",
+      "shortName": "GU"
     },
     {
       "id": "glide",
@@ -7907,7 +7930,8 @@
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
-      "type": "stamina"
+      "type": "stamina",
+      "shortName": "G"
     },
     {
       "id": "hexa",
@@ -7941,7 +7965,8 @@
         "UX-02",
         "UX-19"
       ],
-      "firstReleaseSet": "UX-02"
+      "firstReleaseSet": "UX-02",
+      "shortName": "H"
     },
     {
       "id": "high-needle",
@@ -7983,7 +8008,8 @@
         "CX-11",
         "G1684"
       ],
-      "firstReleaseSet": "BX-13"
+      "firstReleaseSet": "BX-13",
+      "shortName": "HN"
     },
     {
       "id": "high-taper",
@@ -8024,7 +8050,8 @@
         "CX-08",
         "G0196"
       ],
-      "firstReleaseSet": "BX-21"
+      "firstReleaseSet": "BX-21",
+      "shortName": "HT"
     },
     {
       "id": "ignition",
@@ -8060,7 +8087,8 @@
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
-      "type": "attack"
+      "type": "attack",
+      "shortName": "I"
     },
     {
       "id": "jolt",
@@ -8094,7 +8122,8 @@
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
-      "type": "attack"
+      "type": "attack",
+      "shortName": "J"
     },
     {
       "id": "kick",
@@ -8128,7 +8157,8 @@
         "CX-05",
         "UX-00"
       ],
-      "firstReleaseSet": "Random Booster Vol. 6"
+      "firstReleaseSet": "Random Booster Vol. 6",
+      "shortName": "K"
     },
     {
       "id": "level",
@@ -8161,7 +8191,8 @@
       "products": [
         "UX-15"
       ],
-      "firstReleaseSet": "SharkScale Deck Set"
+      "firstReleaseSet": "SharkScale Deck Set",
+      "shortName": "L"
     },
     {
       "id": "low-flat",
@@ -8203,7 +8234,8 @@
         "CX-05",
         "UX-00"
       ],
-      "firstReleaseSet": "BX-14"
+      "firstReleaseSet": "BX-14",
+      "shortName": "LF"
     },
     {
       "id": "low-orb",
@@ -8243,7 +8275,8 @@
         "CX-17",
         "G1679"
       ],
-      "firstReleaseSet": "WizardArc R4-55LO"
+      "firstReleaseSet": "WizardArc R4-55LO",
+      "shortName": "LO"
     },
     {
       "id": "low-rush",
@@ -8276,7 +8309,8 @@
       "products": [
         "UX-11"
       ],
-      "firstReleaseSet": "ImpactDrake 9-60LR"
+      "firstReleaseSet": "ImpactDrake 9-60LR",
+      "shortName": "LR"
     },
     {
       "id": "merge",
@@ -8311,7 +8345,8 @@
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
-      "type": "balance"
+      "type": "balance",
+      "shortName": "M"
     },
     {
       "id": "metal-needle",
@@ -8351,7 +8386,8 @@
         "UX-10",
         "CX-08"
       ],
-      "firstReleaseSet": "UX-05"
+      "firstReleaseSet": "UX-05",
+      "shortName": "MN"
     },
     {
       "id": "narrow",
@@ -8385,7 +8421,8 @@
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
-      "type": "stamina"
+      "type": "stamina",
+      "shortName": "Nr"
     },
     {
       "id": "needle",
@@ -8424,7 +8461,8 @@
         "F9589",
         "G0352"
       ],
-      "firstReleaseSet": "BX-04"
+      "firstReleaseSet": "BX-04",
+      "shortName": "N"
     },
     {
       "id": "operate",
@@ -8444,7 +8482,8 @@
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp"
       },
       "lastVerified": "2026-06-15",
-      "status": "verified"
+      "status": "verified",
+      "shortName": "Op"
     },
     {
       "id": "orb",
@@ -8482,7 +8521,8 @@
         "CX-05",
         "G1683"
       ],
-      "firstReleaseSet": "BX-16"
+      "firstReleaseSet": "BX-16",
+      "shortName": "O"
     },
     {
       "id": "orbit",
@@ -8536,7 +8576,8 @@
         "G0290",
         "G0353"
       ],
-      "firstReleaseSet": "BX-15"
+      "firstReleaseSet": "BX-15",
+      "shortName": "P"
     },
     {
       "id": "quake",
@@ -8571,7 +8612,8 @@
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
-      "type": "attack"
+      "type": "attack",
+      "shortName": "Q"
     },
     {
       "id": "rubber-accel",
@@ -8604,7 +8646,8 @@
       "products": [
         "UX-10"
       ],
-      "firstReleaseSet": "Customize Set U"
+      "firstReleaseSet": "Customize Set U",
+      "shortName": "RA"
     },
     {
       "id": "rush",
@@ -8641,7 +8684,8 @@
         "BX-46",
         "UX-10"
       ],
-      "firstReleaseSet": "BX-20"
+      "firstReleaseSet": "BX-20",
+      "shortName": "R"
     },
     {
       "id": "spike",
@@ -8677,7 +8721,8 @@
         "UX-07",
         "G0286"
       ],
-      "firstReleaseSet": "BX-19"
+      "firstReleaseSet": "BX-19",
+      "shortName": "S"
     },
     {
       "id": "taper",
@@ -8718,7 +8763,8 @@
         "G2750",
         "G0188"
       ],
-      "firstReleaseSet": "BX-02"
+      "firstReleaseSet": "BX-02",
+      "shortName": "T"
     },
     {
       "id": "trans-kick",
@@ -8756,7 +8802,8 @@
       "products": [
         "CX-09"
       ],
-      "firstReleaseSet": "SolEclipse D5-70TK"
+      "firstReleaseSet": "SolEclipse D5-70TK",
+      "shortName": "TK"
     },
     {
       "id": "trans-point",
@@ -8795,7 +8842,8 @@
         "BX-38",
         "UX-18"
       ],
-      "firstReleaseSet": "BX-38"
+      "firstReleaseSet": "BX-38",
+      "shortName": "TP"
     },
     {
       "id": "turbo",
@@ -8830,7 +8878,8 @@
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
-      "type": "attack"
+      "type": "attack",
+      "shortName": "Tr"
     },
     {
       "id": "under-flat",
@@ -8864,7 +8913,8 @@
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
-      "type": "attack"
+      "type": "attack",
+      "shortName": "UF"
     },
     {
       "id": "under-needle",
@@ -8904,7 +8954,8 @@
         "CX-14",
         "G4563"
       ],
-      "firstReleaseSet": "GolemRock 1-60UN"
+      "firstReleaseSet": "GolemRock 1-60UN",
+      "shortName": "UN"
     },
     {
       "id": "unite",
@@ -8940,7 +8991,8 @@
         "G1898",
         "BX-00"
       ],
-      "firstReleaseSet": "BX-33"
+      "firstReleaseSet": "BX-33",
+      "shortName": "U"
     },
     {
       "id": "vortex",
@@ -8977,7 +9029,8 @@
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
-      "type": "attack"
+      "type": "attack",
+      "shortName": "V"
     },
     {
       "id": "wall-ball",
@@ -9011,7 +9064,8 @@
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
-      "type": "stamina"
+      "type": "stamina",
+      "shortName": "WB"
     },
     {
       "id": "wall-wedge",
@@ -9045,7 +9099,8 @@
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
-      "type": "defense"
+      "type": "defense",
+      "shortName": "WW"
     },
     {
       "id": "wedge",
@@ -9080,7 +9135,8 @@
         "UX-18",
         "G1680"
       ],
-      "firstReleaseSet": "PerseusDark B6-80W"
+      "firstReleaseSet": "PerseusDark B6-80W",
+      "shortName": "W"
     },
     {
       "id": "yielding",
@@ -9115,7 +9171,8 @@
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
-      "type": "stamina"
+      "type": "stamina",
+      "shortName": "Y"
     },
     {
       "id": "zap",
@@ -9149,7 +9206,8 @@
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
-      "type": "balance"
+      "type": "balance",
+      "shortName": "Z"
     }
   ]
 }

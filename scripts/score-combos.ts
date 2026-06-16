@@ -14,12 +14,13 @@
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { join } from 'path';
 import { scoreCombo } from '../src/lib/scoring';
-import type { Combo, CombosDatabase, ComboEvidence, MentionEvidence } from '../src/lib/types';
+import type { Combo, CombosDatabase, ComboEvidence, MentionEvidence, PlacementEvidence } from '../src/lib/types';
 
 const ROOT = join(import.meta.dirname, '..');
 const DATA = join(ROOT, 'data');
 const combosPath = join(DATA, 'combos.json');
 const evidencePath = join(DATA, 'metabeys-evidence.json');
+const wboPath = join(DATA, 'wbo-evidence.json');
 
 const today = () => new Date().toISOString().slice(0, 10);
 const slug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
@@ -44,13 +45,18 @@ function main() {
   if (!existsSync(combosPath)) { console.error('combos.json mancante.'); process.exit(1); }
   const db: CombosDatabase = JSON.parse(readFileSync(combosPath, 'utf8'));
   const evidence = existsSync(evidencePath) ? JSON.parse(readFileSync(evidencePath, 'utf8')) : { combos: {} };
+  const wboEvidence = existsSync(wboPath) ? JSON.parse(readFileSync(wboPath, 'utf8')) : { combos: {} };
   const parsed: Record<string, any> = evidence.combos ?? {};
+  const wboParsed: Record<string, any> = wboEvidence.combos ?? {};
 
   const byId = new Map<string, Combo>(db.combos.map((c) => [c.id, c]));
 
-  // 1) Crea i combo nuovi trovati dal parser (non ancora in combos.json).
+  // 1) Crea i combo nuovi trovati dai parser (non ancora in combos.json). I record MetaBeys e WBO
+  //    hanno la stessa forma (line/blade/ratchet/bit/displayName/type); MetaBeys ha priorità sui
+  //    metadati quando un id è in entrambe le evidenze.
+  const allParsed: Record<string, any> = { ...wboParsed, ...parsed };
   let created = 0;
-  for (const [id, ev] of Object.entries(parsed)) {
+  for (const [id, ev] of Object.entries(allParsed)) {
     if (byId.has(id)) continue;
     const c: Combo = {
       id, line: ev.line, blade: ev.blade, ratchet: ev.ratchet, bit: ev.bit,
@@ -70,10 +76,17 @@ function main() {
   let rescored = 0;
   for (const combo of db.combos) {
     const p = parsed[combo.id];
+    const w = wboParsed[combo.id];
+    const hasFresh = !!(p || w);
     const prevMentions = combo.evidence?.mentions ?? [];
     const ev: ComboEvidence = {
-      placements: p?.placements ?? combo.evidence?.placements ?? [],
-      usage: p?.usage ?? combo.evidence?.usage ?? [],
+      // Unione dei placement MetaBeys + WBO, deduplicati per evento fisico (data + posizione + nome
+      // evento): evita il doppio conteggio quando MetaBeys indicizza lo stesso evento WBO. Se nessuna
+      // fonte fresca copre il combo, si tengono i placement salvati in combos.json.
+      placements: hasFresh
+        ? dedupPlacements([...(p?.placements ?? []), ...(w?.placements ?? [])])
+        : (combo.evidence?.placements ?? []),
+      usage: p?.usage ?? (hasFresh ? [] : (combo.evidence?.usage ?? [])),   // WBO non fornisce usage
       mentions: dedupMentions([...prevMentions, ...legacyMentions(combo)]),
     };
     combo.evidence = ev;
@@ -109,6 +122,24 @@ function dedupMentions(ms: MentionEvidence[]): MentionEvidence[] {
   return out;
 }
 
+const normName = (s: string) => (s ?? '').toLowerCase().replace(/\s+/g, ' ').trim();
+
+// Deduplica i placement per evento fisico: MetaBeys e WBO assegnano eventId diversi allo stesso
+// torneo, quindi la chiave è (data, posizione, nome evento normalizzato). MetaBeys, passato per
+// primo, vince (porta deckScore/topCutSize). Limite noto: nomi evento testualmente diversi tra le
+// due fonti non vengono uniti → restano doppi (caso raro, documentato).
+function dedupPlacements(ps: PlacementEvidence[]): PlacementEvidence[] {
+  const seen = new Set<string>();
+  const out: PlacementEvidence[] = [];
+  for (const p of ps) {
+    const key = `${p.date}|${p.placement}|${normName(p.eventName)}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    out.push(p);
+  }
+  return out;
+}
+
 function sourcesFromEvidence(ev: ComboEvidence) {
   const out: { name: string; url: string; weight: number; date: string }[] = [];
   const seen = new Set<string>();
@@ -116,7 +147,15 @@ function sourcesFromEvidence(ev: ComboEvidence) {
     if (seen.has(name)) return; seen.add(name); out.push({ name, url, weight, date });
   };
   for (const u of ev.usage) push('MetaBeys Leaderboard', 'https://www.metabeys.com/leaderboard', 1, u.date);
-  for (const p of ev.placements) push(`MetaBeys — ${p.eventName}`, p.url ?? 'https://www.metabeys.com', 1, p.date);
+  for (const p of ev.placements) {
+    const isWbo = p.source === 'wbo-winning-combos';
+    push(
+      `${isWbo ? 'WBO' : 'MetaBeys'} — ${p.eventName}`,
+      p.url ?? (isWbo ? 'https://worldbeyblade.org/' : 'https://www.metabeys.com'),
+      isWbo ? 0.95 : 1,
+      p.date,
+    );
+  }
   return out.slice(0, 12);
 }
 

@@ -9,6 +9,7 @@ export interface Blade {
   id: string;
   name: string;
   nameWestern?: string;
+  aliases?: string[];
   type: BladeType;
   line: 'bx';
   releaseSet?: string;
@@ -54,6 +55,8 @@ export interface Bit {
   id: string;
   name: string;
   type: BitType;
+  shortName?: string;   // codice ufficiale stampato sui prodotti (es. "H" = Hexa, "FB" = Free Ball)
+  aliases?: string[];
 }
 
 export interface PartsRegistry {

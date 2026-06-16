@@ -22,12 +22,14 @@ const combosPath = join(DATA, 'combos.json');
 const productsPath = join(DATA, 'products.json');
 
 type Names = { tt: string; ttRaw?: string; hasbro?: string | null; ja?: string; romaji?: string };
+type Alias = { value: string; lang?: string; kind?: string };
 interface MasterPart {
   id: string;
   category?: string;
   line?: string;
   type?: string;
   names: Names;
+  aliases?: Alias[];
   shortName?: string;
   short?: string;
   firstReleaseSet?: string;
@@ -51,11 +53,35 @@ function today(): string {
 const byId = (a: { id: string }, b: { id: string }) => a.id.localeCompare(b.id);
 const withWestern = (n: Names) => (n.hasbro ? { nameWestern: n.hasbro } : {});
 
+// Alias in forma latina (no scritture native ja/ko/zh): utili al match dei nomi nelle fonti EN
+// come WBO. Il resolver scarta quelli che contengono un ratchet (es. "Impact Drake 9-60LR").
+const latinAliases = (p: MasterPart): string[] => {
+  const seen = new Set<string>();
+  const out: string[] = [];
+  for (const a of p.aliases ?? []) {
+    if (a.kind === 'native' || !a.value) continue;
+    if (a.value === p.names.tt || a.value === p.names.hasbro) continue;
+    if (seen.has(a.value)) continue;
+    seen.add(a.value);
+    out.push(a.value);
+  }
+  return out;
+};
+const withAliases = (p: MasterPart) => {
+  const a = latinAliases(p);
+  return a.length ? { aliases: a } : {};
+};
+const withShort = (p: MasterPart) => {
+  const s = p.shortName ?? p.short;
+  return s ? { shortName: s } : {};
+};
+
 function deriveParts(master: Master) {
   const blades = (master.blades ?? []).slice().sort(byId).map((p) => ({
     id: p.id,
     name: p.names.tt,
     ...withWestern(p.names),
+    ...withAliases(p),
     type: p.type,
     line: p.line ?? 'bx',
     ...(p.firstReleaseSet ? { releaseSet: p.firstReleaseSet } : {}),
@@ -102,6 +128,8 @@ function deriveParts(master: Master) {
     id: p.id,
     name: p.names.tt,
     type: p.type,
+    ...withShort(p),
+    ...withAliases(p),
   }));
 
   return { version: today(), blades, lockChips, mainBlades, assistBlades, overBlades, ratchets, bits };

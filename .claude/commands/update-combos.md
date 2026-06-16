@@ -32,8 +32,14 @@ derivazione. Solo Beyblade X.
      mano/IA solo la lista `unresolved` (combo CX a 4 segmenti, righe incomplete, typo nei nomi):
      se è un alias mancante aggiungilo al master ed esegui `build:parts`; se è una CX, aggiungila a
      `combos.json` con la sua `evidence`. NON ri-estrarre a mano ciò che il parser ha già risolto.
-   - WBO (`wbo-cache.json`): se `threads.bbx-winning.blocked` è false, estrai dai post 1°/2°/3° + combo;
-     registra i post processati in `scannedPosts`. Se `blocked`, segnalalo nel report.
+   - WBO (`wbo-cache.json`): esegui `npm run parse:wbo` (parser IBRIDO: la segmentazione del thread
+     evento→podio→righe-combo la fa Haiku via `ANTHROPIC_API_KEY`, con fallback deterministico; la
+     risoluzione parti/sigle/id è DETERMINISTICA) che scrive i placements in `data/wbo-evidence.json`.
+     Poi gestisci solo gli `unresolved`: le CX aggiungile a `combos.json` con la loro `evidence`; un
+     nome/sigla che denota una parte NOTA non risolta si aggiunge al master (alias di scrittura o
+     `shortName` del bit) seguito da `npm run build:parts`. Se `threads.bbx-winning.blocked` è true o
+     `raw` è vuoto, il parser scrive evidence vuota (no-op): segnalalo. NON ri-estrarre a mano ciò che
+     il parser ha già risolto.
    - YouTube: combo da titoli/descrizioni (`youtube-cache.json`) e dai transcript
      (`youtube-transcripts.json`). Reddit: body + commenti. Sheets: tabelle WBO.
 5. **Combo BX/UX** = blade+ratchet+bit; **CX** = lockChip+mainBlade+assistBlade+ratchet+bit; **CX Expand**
@@ -48,9 +54,11 @@ derivazione. Solo Beyblade X.
      `players`, `eventId`, `date`, `tier:"structured"`.
    - `usage[]`: da leaderboard/usage (MetaBeys via parser) — `sharePct`, `uniqueEvents`, `uniquePlayers`.
    - `mentions[]`: da fonti narrative (YouTube/Reddit/blog) e tier-list — `tier` narrative/theory.
-7. **Scoring**: DETERMINISTICO, lo fa il codice. Esegui `npm run score:combos`: legge l'`evidence` di
-   ogni combo e calcola `score` + `scoreBreakdown` (CAS) e i tag. Algoritmo e costanti in
-   `src/lib/scoring.ts`; spec in `docs/scoring-algorithm.md`. NON scrivere score/tag a mano.
+7. **Scoring**: DETERMINISTICO, lo fa il codice. Esegui `npm run score:combos`: unisce
+   `metabeys-evidence.json` + `wbo-evidence.json` (placements deduplicati per evento fisico:
+   data+posizione+nome evento) con l'`evidence` di ogni combo, e calcola `score` + `scoreBreakdown`
+   (CAS) e i tag. Algoritmo e costanti in `src/lib/scoring.ts`; spec in `docs/scoring-algorithm.md`.
+   NON scrivere score/tag a mano.
 8. **Finalizza**: aggiorna `scan-history.json` (`scannedVideos`, `scannedSheets`, `scannedRedditPosts`,
    `scannedPages` con contentHash, `scannedEvents`, `scannedPosts`). `npm run score:combos` poi
    `npm run build`. Report: nuove/aggiornate combo, combo `unresolved` dal parser, nuove parti
@@ -64,5 +72,6 @@ derivazione. Solo Beyblade X.
 - **Solo Beyblade X**: l'X-filter sul master è la garanzia finale.
 - I nomi devono risolvere ESATTAMENTE a id del master. Se un nome non risolve, prima cerca tra gli
   aliases di tutte le lingue, poi valuta se è una parte nuova (→ /update-parts) o un alias da aggiungere.
-- Schedulato giornalmente alle 22:00 via `analyze-combos.bat` (dopo collect-combos delle 03:30 e i
-  transcript del giorno).
+- Eseguito ogni giorno alle 08:00 come ultimo passo di `daily-pipeline.bat` (dopo `/update-parts` e
+  `collect:sources`); i transcript YouTube arrivano via `fetch-transcripts.bat` (ogni 5 min) e sono
+  raccolti dai run successivi.

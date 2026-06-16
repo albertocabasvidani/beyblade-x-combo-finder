@@ -38,11 +38,20 @@ dove le fonti lo permettono:
 - **Estrazione strutturata → codice (deterministico).** MetaBeys eventi e leaderboard hanno formato
   tabellare costante (`33 players`, `1st — Nome`, `Blade / Ratchet / Bit`, colonne
   `Appearances/Share/Unique Events/Unique Players`). Si parsano con parser dedicato (regex/split),
-  senza IA. Stesso discorso per le tabelle Sheets e i post WBO a struttura fissa.
+  senza IA. Stesso discorso per le tabelle Sheets.
+- **Estrazione ibrida (WBO) → IA per il layout, codice per la risoluzione.** Il thread WBO è
+  eterogeneo (token incollati, marcatori di piazzamento misti, quote/ads): la segmentazione del layout
+  (evento→podio→righe-combo) la fa Haiku (`scripts/lib/wbo-segment.ts`, con fallback regex), la
+  risoluzione parti/sigle ufficiali/id resta codice (`scripts/lib/wbo-parse.ts`).
 - **Estrazione narrativa → IA.** Solo fonti in prosa (transcript YouTube, commenti Reddit, blog
   JP/ES/PT/…) e il **match nomi parti multilingua** sugli id del master restano all'IA.
 - **Calcolo score → codice (deterministico).** Da `evidence` a `score`, riproducibile, tunabile,
   testabile. Lo scoring esce dallo step 7 (stima inline dell'IA) e va in `scripts/score-combos.ts`.
+- **Merge multi-fonte → codice.** `score:combos` unisce i placement di `metabeys-evidence.json` e
+  `wbo-evidence.json`, deduplicandoli per evento fisico (data + posizione + nome evento normalizzato):
+  MetaBeys indicizza anche eventi WBO, quindi senza dedup lo stesso torneo conterebbe due volte.
+  Limite: nomi evento testualmente diversi tra le fonti non si uniscono; WBO pesa come `structured`
+  (1.0), non 0.95.
 
 L'`evidence` viene **persistito** in `combos.json`: serve sia al ricalcolo deterministico dello
 score, sia a mostrare la prova in UI (sezione 7).

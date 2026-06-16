@@ -1,9 +1,12 @@
 {
-  "version": "2026-06-15",
+  "version": "2026-06-16",
   "blades": [
     {
       "id": "aero-pegasus",
       "name": "Aero Pegasus",
+      "aliases": [
+        "EaroPegasasu"
+      ],
       "type": "attack",
       "line": "bx",
       "releaseSet": "UX-00"
@@ -20,6 +23,9 @@
       "id": "black-shell",
       "name": "Black Shell",
       "nameWestern": "Obsidian Shell",
+      "aliases": [
+        "BurakkuSheru"
+      ],
       "type": "defense",
       "line": "bx",
       "releaseSet": "BX-35"
@@ -28,6 +34,9 @@
       "id": "bullet-griffon",
       "name": "Bullet Griffon",
       "nameWestern": "Rocket Griffon H",
+      "aliases": [
+        "BarettoGurifon"
+      ],
       "type": "balance",
       "line": "ux",
       "releaseSet": "BulletGriffon H"
@@ -60,6 +69,9 @@
       "id": "clock-mirage",
       "name": "Clock Mirage",
       "nameWestern": "Mirage Clock",
+      "aliases": [
+        "KurokkuMirāju"
+      ],
       "type": "stamina",
       "line": "bx",
       "releaseSet": "UX-16"
@@ -68,6 +80,9 @@
       "id": "cobalt-dragoon",
       "name": "Cobalt Dragoon",
       "nameWestern": "Cobalt Dragoon",
+      "aliases": [
+        "KobarutoDoragūn"
+      ],
       "type": "attack",
       "line": "bx",
       "releaseSet": "BX-34"
@@ -75,6 +90,9 @@
     {
       "id": "cobalt-drake",
       "name": "Cobalt Drake",
+      "aliases": [
+        "KobarutoDoreiku"
+      ],
       "type": "attack",
       "line": "bx",
       "releaseSet": "BX-00"
@@ -83,6 +101,9 @@
       "id": "crimson-garuda",
       "name": "Crimson Garuda",
       "nameWestern": "Scarlet Garuda",
+      "aliases": [
+        "KurimuzonGarūda"
+      ],
       "type": "balance",
       "line": "bx",
       "releaseSet": "BX-38"
@@ -98,6 +119,10 @@
     {
       "id": "cutter-shinobi",
       "name": "Cutter Shinobi",
+      "aliases": [
+        "Shinobi Shuriken",
+        "ShinobiShuriken"
+      ],
       "type": "balance",
       "line": "ux",
       "releaseSet": "G1940"
@@ -105,6 +130,9 @@
     {
       "id": "darth-vader",
       "name": "Darth Vader",
+      "aliases": [
+        "Dāsu"
+      ],
       "type": "defense",
       "line": "bx",
       "releaseSet": "G0290"
@@ -113,6 +141,9 @@
       "id": "draciel-shield",
       "name": "Draciel Shield",
       "nameWestern": "Draciel Shield",
+      "aliases": [
+        "DorashieruShīrudo"
+      ],
       "type": "defense",
       "line": "bx",
       "releaseSet": "BX-00"
@@ -128,6 +159,9 @@
       "id": "dran-buster",
       "name": "Dran Buster",
       "nameWestern": "Buster Dran",
+      "aliases": [
+        "DoranBasutā"
+      ],
       "type": "attack",
       "line": "bx",
       "releaseSet": "UX-01"
@@ -136,6 +170,9 @@
       "id": "dran-dagger",
       "name": "Dran Dagger",
       "nameWestern": "Dagger Dran",
+      "aliases": [
+        "DoranDagā"
+      ],
       "type": "attack",
       "line": "bx",
       "releaseSet": "BX-20"
@@ -144,6 +181,9 @@
       "id": "dran-strike",
       "name": "Dran Strike",
       "nameWestern": "Strike Dran",
+      "aliases": [
+        "DoranSutoraiku"
+      ],
       "type": "attack",
       "line": "bx",
       "releaseSet": "BX-49"
@@ -152,6 +192,9 @@
       "id": "dran-sword",
       "name": "Dran Sword",
       "nameWestern": "Sword Dran",
+      "aliases": [
+        "DoranSōdo"
+      ],
       "type": "attack",
       "line": "bx",
       "releaseSet": "BX-01"
@@ -160,6 +203,10 @@
       "id": "dranzer-spiral",
       "name": "Dranzer Spiral",
       "nameWestern": "Dranzer Spiral",
+      "aliases": [
+        "Doranzā",
+        "DoranzāSupairaru"
+      ],
       "type": "balance",
       "line": "bx",
       "releaseSet": "BX-00"
@@ -168,6 +215,9 @@
       "id": "driger-slash",
       "name": "Driger Slash",
       "nameWestern": "Driger Slash",
+      "aliases": [
+        "DoraigāSurasshu"
+      ],
       "type": "balance",
       "line": "bx",
       "releaseSet": "BX-00"
@@ -184,6 +234,9 @@
       "id": "ghost-circle",
       "name": "Ghost Circle",
       "nameWestern": "Circle Ghost",
+      "aliases": [
+        "GōsutoSākuru"
+      ],
       "type": "stamina",
       "line": "bx",
       "releaseSet": "UX-12"
@@ -192,6 +245,9 @@
       "id": "glory-valkyrie",
       "name": "Glory Valkyrie",
       "nameWestern": "Glory Valkerion",
+      "aliases": [
+        "GurōrīWarukyūre"
+      ],
       "type": "attack",
       "line": "ux",
       "releaseSet": "UX-20"
@@ -200,6 +256,9 @@
       "id": "goat-tackle",
       "name": "Goat Tackle",
       "nameWestern": "Tackle Goat",
+      "aliases": [
+        "GōtoTakkuru"
+      ],
       "type": "defense",
       "line": "bx",
       "releaseSet": "BX-46"
@@ -208,6 +267,9 @@
       "id": "golem-rock",
       "name": "Golem Rock",
       "nameWestern": "Rock Golem 1-60UN",
+      "aliases": [
+        "GōremuRokku"
+      ],
       "type": "defense",
       "line": "bx",
       "releaseSet": "UX-13"
@@ -231,6 +293,10 @@
     {
       "id": "gust-bat",
       "name": "Gust Bat",
+      "aliases": [
+        "Bat Gust",
+        "BattoGasuto"
+      ],
       "type": "balance",
       "line": "bx",
       "releaseSet": "G2733"
@@ -239,6 +305,9 @@
       "id": "heavens-ring",
       "name": "Heavens Ring",
       "nameWestern": "Ring Aether",
+      "aliases": [
+        "Hebunzu Ringu"
+      ],
       "type": "defense",
       "line": "bx",
       "releaseSet": "BX-50"
@@ -247,6 +316,9 @@
       "id": "hells-chain",
       "name": "Hells Chain",
       "nameWestern": "Chain Incendio",
+      "aliases": [
+        "HeruzuChein"
+      ],
       "type": "balance",
       "line": "bx",
       "releaseSet": "BX-21"
@@ -255,6 +327,9 @@
       "id": "hells-hammer",
       "name": "Hells Hammer",
       "nameWestern": "Hammer Incendio",
+      "aliases": [
+        "HeruzuHanmā"
+      ],
       "type": "balance",
       "line": "bx",
       "releaseSet": "UX-02"
@@ -263,6 +338,9 @@
       "id": "hells-scythe",
       "name": "Hells Scythe",
       "nameWestern": "Scythe Incendio",
+      "aliases": [
+        "HeruzuSaizu"
+      ],
       "type": "balance",
       "line": "bx",
       "releaseSet": "BX-02"
@@ -270,6 +348,9 @@
     {
       "id": "hover-wyvern",
       "name": "Hover Wyvern",
+      "aliases": [
+        "Wyvern Hover"
+      ],
       "type": "defense",
       "line": "bx",
       "releaseSet": "UX-00"
@@ -278,6 +359,9 @@
       "id": "impact-drake",
       "name": "Impact Drake",
       "nameWestern": "Impact Drake 9-60LR",
+      "aliases": [
+        "InpakutoDoreiku"
+      ],
       "type": "attack",
       "line": "bx",
       "releaseSet": "UX-11"
@@ -285,6 +369,9 @@
     {
       "id": "iron-man",
       "name": "Iron Man",
+      "aliases": [
+        "Aian"
+      ],
       "type": "defense",
       "line": "bx",
       "releaseSet": "G0287"
@@ -293,6 +380,9 @@
       "id": "knight-lance",
       "name": "Knight Lance",
       "nameWestern": "Lance Knight",
+      "aliases": [
+        "NaitoRansu"
+      ],
       "type": "defense",
       "line": "bx",
       "releaseSet": "BX-13"
@@ -301,6 +391,9 @@
       "id": "knight-mail",
       "name": "Knight Mail",
       "nameWestern": "Mail Knight",
+      "aliases": [
+        "NaitoMeiru"
+      ],
       "type": "defense",
       "line": "bx",
       "releaseSet": "UX-10"
@@ -309,6 +402,9 @@
       "id": "knight-shield",
       "name": "Knight Shield",
       "nameWestern": "Helm Knight",
+      "aliases": [
+        "NaitoShīrudo"
+      ],
       "type": "defense",
       "line": "bx",
       "releaseSet": "BX-04"
@@ -325,6 +421,9 @@
       "id": "leon-claw",
       "name": "Leon Claw",
       "nameWestern": "Claw Leon",
+      "aliases": [
+        "ReonKurō"
+      ],
       "type": "balance",
       "line": "bx",
       "releaseSet": "BX-15"
@@ -333,6 +432,9 @@
       "id": "leon-crest",
       "name": "Leon Crest",
       "nameWestern": "Crest Leon",
+      "aliases": [
+        "ReonKuresuto"
+      ],
       "type": "defense",
       "line": "bx",
       "releaseSet": "UX-06"
@@ -340,6 +442,9 @@
     {
       "id": "lightning-l-drago-rapid-hit-type",
       "name": "Lightning L-Drago (Rapid-Hit Type)",
+      "aliases": [
+        "Raitoningu Erudorago (Renda Gata)"
+      ],
       "type": "attack",
       "line": "bx",
       "releaseSet": "BX-00"
@@ -347,6 +452,9 @@
     {
       "id": "lightning-l-drago-upper-type",
       "name": "Lightning L-Drago (Upper Type)",
+      "aliases": [
+        "Raitoningu Erudorago (Appā Gata)"
+      ],
       "type": "attack",
       "line": "bx",
       "releaseSet": "BX-00"
@@ -354,6 +462,9 @@
     {
       "id": "luke-skywalker",
       "name": "Luke Skywalker",
+      "aliases": [
+        "Rūku"
+      ],
       "type": "defense",
       "line": "bx",
       "releaseSet": "G0290"
@@ -362,6 +473,9 @@
       "id": "mammoth-tusk",
       "name": "Mammoth Tusk",
       "nameWestern": "Tusk Mammoth",
+      "aliases": [
+        "ManmosuTasuku"
+      ],
       "type": "balance",
       "line": "bx",
       "releaseSet": "BX-17"
@@ -369,6 +483,9 @@
     {
       "id": "megatron",
       "name": "Megatron",
+      "aliases": [
+        "Megatoron"
+      ],
       "type": "balance",
       "line": "bx",
       "releaseSet": "G0353"
@@ -377,6 +494,9 @@
       "id": "meteor-dragoon",
       "name": "Meteor Dragoon",
       "nameWestern": "Meteoroid Dragoon 3-70J",
+      "aliases": [
+        "Meteo"
+      ],
       "type": "attack",
       "line": "bx",
       "releaseSet": "BX-00"
@@ -392,6 +512,9 @@
     {
       "id": "moff-gideon",
       "name": "Moff Gideon",
+      "aliases": [
+        "Mofu"
+      ],
       "type": "balance",
       "line": "bx",
       "releaseSet": "F9589"
@@ -400,6 +523,9 @@
       "id": "mummy-curse",
       "name": "Mummy Curse",
       "nameWestern": "Curse Mummy",
+      "aliases": [
+        "MamīKāsu"
+      ],
       "type": "defense",
       "line": "bx",
       "releaseSet": "BX-00"
@@ -415,6 +541,9 @@
     {
       "id": "optimus-primal",
       "name": "Optimus Primal",
+      "aliases": [
+        "Oputimasu"
+      ],
       "type": "attack",
       "line": "bx",
       "releaseSet": "G0352"
@@ -422,6 +551,9 @@
     {
       "id": "optimus-prime",
       "name": "Optimus Prime",
+      "aliases": [
+        "Oputimasu"
+      ],
       "type": "balance",
       "line": "bx",
       "releaseSet": "G0353"
@@ -430,6 +562,9 @@
       "id": "orochi-cluster",
       "name": "Orochi Cluster",
       "nameWestern": "Coil Orochi",
+      "aliases": [
+        "OrochiKurasuta"
+      ],
       "type": "attack",
       "line": "ux",
       "releaseSet": "UX-00"
@@ -438,6 +573,9 @@
       "id": "phoenix-feather",
       "name": "Phoenix Feather",
       "nameWestern": "Feather Phoenix",
+      "aliases": [
+        "FenikkusuFezā"
+      ],
       "type": "attack",
       "line": "bx",
       "releaseSet": "BX-00"
@@ -446,6 +584,9 @@
       "id": "phoenix-rudder",
       "name": "Phoenix Rudder",
       "nameWestern": "Rudder Phoenix",
+      "aliases": [
+        "FenikkusuRadā"
+      ],
       "type": "balance",
       "line": "bx",
       "releaseSet": "UX-07"
@@ -454,6 +595,9 @@
       "id": "phoenix-wing",
       "name": "Phoenix Wing",
       "nameWestern": "Soar Phoenix",
+      "aliases": [
+        "FenikkusuUingu"
+      ],
       "type": "attack",
       "line": "bx",
       "releaseSet": "BX-23"
@@ -462,6 +606,9 @@
       "id": "ptera-swing",
       "name": "Ptera Swing",
       "nameWestern": "Talon Ptera",
+      "aliases": [
+        "Putera"
+      ],
       "type": "stamina",
       "line": "bx",
       "releaseSet": "BX-00"
@@ -469,6 +616,10 @@
     {
       "id": "rampart-aegis",
       "name": "Rampart Aegis",
+      "aliases": [
+        "Aegis Rampart",
+        "ĪjisuRanpāto"
+      ],
       "type": "defense",
       "line": "ux",
       "releaseSet": "G1940"
@@ -485,6 +636,9 @@
       "id": "rhino-horn",
       "name": "Rhino Horn",
       "nameWestern": "Horn Rhino",
+      "aliases": [
+        "RainoHōn"
+      ],
       "type": "defense",
       "line": "bx",
       "releaseSet": "BX-19"
@@ -492,6 +646,9 @@
     {
       "id": "rock-leone",
       "name": "Rock Leone",
+      "aliases": [
+        "Rokku"
+      ],
       "type": "defense",
       "line": "bx",
       "releaseSet": "BX-00"
@@ -500,6 +657,9 @@
       "id": "samurai-calibur",
       "name": "Samurai Calibur",
       "nameWestern": "Calibur Samurai",
+      "aliases": [
+        "SamuraiKaribā"
+      ],
       "type": "attack",
       "line": "bx",
       "releaseSet": "BX-45"
@@ -508,6 +668,9 @@
       "id": "samurai-saber",
       "name": "Samurai Saber",
       "nameWestern": "Saber Samurai",
+      "aliases": [
+        "SamuraiSeibā"
+      ],
       "type": "attack",
       "line": "bx",
       "releaseSet": "UX-09"
@@ -516,6 +679,9 @@
       "id": "samurai-steel",
       "name": "Samurai Steel",
       "nameWestern": "Steel Samurai",
+      "aliases": [
+        "SamuraiSuchīru"
+      ],
       "type": "balance",
       "line": "bx",
       "releaseSet": "BX-00"
@@ -524,6 +690,9 @@
       "id": "scorpio-spear",
       "name": "Scorpio Spear",
       "nameWestern": "Spear Scorpio 0-70Z",
+      "aliases": [
+        "SukōpioSupia"
+      ],
       "type": "stamina",
       "line": "bx",
       "releaseSet": "BX-00"
@@ -532,6 +701,10 @@
       "id": "shark-edge",
       "name": "Shark Edge",
       "nameWestern": "Keel Shark",
+      "aliases": [
+        "ShākuEjji",
+        "ShārkuEjji"
+      ],
       "type": "attack",
       "line": "bx",
       "releaseSet": "BX-14"
@@ -540,6 +713,9 @@
       "id": "shark-gill",
       "name": "Shark Gill",
       "nameWestern": "Gill Shark",
+      "aliases": [
+        "ShākuGiru"
+      ],
       "type": "stamina",
       "line": "bx",
       "releaseSet": "UX-05"
@@ -548,6 +724,9 @@
       "id": "shark-scale",
       "name": "Shark Scale",
       "nameWestern": "Scale Shark",
+      "aliases": [
+        "ShākuSukeiru"
+      ],
       "type": "attack",
       "line": "bx",
       "releaseSet": "UX-15"
@@ -563,6 +742,9 @@
       "id": "shelter-drake",
       "name": "Shelter Drake",
       "nameWestern": "Shelter Drake",
+      "aliases": [
+        "SherutāDoreiku"
+      ],
       "type": "balance",
       "line": "bx",
       "releaseSet": "BX-39"
@@ -579,6 +761,9 @@
       "id": "shinobi-shadow",
       "name": "Shinobi Shadow",
       "nameWestern": "Shadow Shinobi",
+      "aliases": [
+        "ShinobiShadou"
+      ],
       "type": "defense",
       "line": "bx",
       "releaseSet": "UX-05"
@@ -595,6 +780,9 @@
       "id": "silver-wolf",
       "name": "Silver Wolf",
       "nameWestern": "Sterling Wolf",
+      "aliases": [
+        "ShirubāUrufu"
+      ],
       "type": "stamina",
       "line": "bx",
       "releaseSet": "UX-08"
@@ -603,6 +791,9 @@
       "id": "sphinx-cowl",
       "name": "Sphinx Cowl",
       "nameWestern": "Cowl Sphinx",
+      "aliases": [
+        "SufinkusuKauru"
+      ],
       "type": "defense",
       "line": "bx",
       "releaseSet": "BX-27"
@@ -610,6 +801,9 @@
     {
       "id": "spider-man",
       "name": "Spider-Man",
+      "aliases": [
+        "Supaidā-Man"
+      ],
       "type": "stamina",
       "line": "bx",
       "releaseSet": "G0288"
@@ -617,6 +811,9 @@
     {
       "id": "starscream",
       "name": "Starscream",
+      "aliases": [
+        "Sutāsukurīmu"
+      ],
       "type": "stamina",
       "line": "bx",
       "releaseSet": "G0352"
@@ -632,6 +829,10 @@
       "id": "stormspriggan",
       "name": "StormSpriggan",
       "nameWestern": "Storm Spryzen",
+      "aliases": [
+        "SutōmuSupurigan",
+        "Sutōmusuprigan"
+      ],
       "type": "balance",
       "line": "bx",
       "releaseSet": "BX-00"
@@ -662,6 +863,9 @@
     {
       "id": "thanos",
       "name": "Thanos",
+      "aliases": [
+        "Sanosu"
+      ],
       "type": "defense",
       "line": "bx",
       "releaseSet": "G0287"
@@ -669,6 +873,9 @@
     {
       "id": "the-mandalorian",
       "name": "The Mandalorian",
+      "aliases": [
+        "Mandarorian"
+      ],
       "type": "attack",
       "line": "bx",
       "releaseSet": "F9589"
@@ -677,6 +884,9 @@
       "id": "tricera-press",
       "name": "Tricera Press",
       "nameWestern": "Brace Triceratops",
+      "aliases": [
+        "TorikeraPuresu"
+      ],
       "type": "defense",
       "line": "bx",
       "releaseSet": "BX-44"
@@ -698,6 +908,9 @@
       "id": "tyranno-beat",
       "name": "Tyranno Beat",
       "nameWestern": "Beat Tyranno",
+      "aliases": [
+        "TiranoBīto"
+      ],
       "type": "attack",
       "line": "bx",
       "releaseSet": "BX-31"
@@ -706,6 +919,9 @@
       "id": "tyranno-roar",
       "name": "Tyranno Roar",
       "nameWestern": "Roar Tyranno",
+      "aliases": [
+        "TiranoRoa"
+      ],
       "type": "attack",
       "line": "bx",
       "releaseSet": "BX-00"
@@ -714,6 +930,9 @@
       "id": "unicorn-sting",
       "name": "Unicorn Sting",
       "nameWestern": "Sting Unicorn",
+      "aliases": [
+        "YunikōnSutingu"
+      ],
       "type": "balance",
       "line": "bx",
       "releaseSet": "BX-26"
@@ -728,6 +947,9 @@
     {
       "id": "venom",
       "name": "Venom",
+      "aliases": [
+        "Vuenomu"
+      ],
       "type": "attack",
       "line": "bx",
       "releaseSet": "G0288"
@@ -743,6 +965,9 @@
       "id": "viking-hack",
       "name": "Viking Hack",
       "nameWestern": "Hack Viking",
+      "aliases": [
+        "Vaikingu Hakku"
+      ],
       "type": "balance",
       "line": "ux",
       "releaseSet": "G2755"
@@ -751,6 +976,10 @@
       "id": "viper-tail",
       "name": "Viper Tail",
       "nameWestern": "Tail Viper",
+      "aliases": [
+        "VaipāTeiru",
+        "VaipāTēru"
+      ],
       "type": "stamina",
       "line": "bx",
       "releaseSet": "BX-16"
@@ -759,6 +988,9 @@
       "id": "weiss-tiger",
       "name": "Weiss Tiger",
       "nameWestern": "Pearl Tiger",
+      "aliases": [
+        "VaisuTaigā"
+      ],
       "type": "balance",
       "line": "bx",
       "releaseSet": "BX-33"
@@ -767,6 +999,10 @@
       "id": "whale-wave",
       "name": "Whale Wave",
       "nameWestern": "Tide Whale",
+      "aliases": [
+        "HōeruUēbu",
+        "HoēruUēbu"
+      ],
       "type": "balance",
       "line": "bx",
       "releaseSet": "BX-36"
@@ -775,6 +1011,9 @@
       "id": "wizard-arrow",
       "name": "Wizard Arrow",
       "nameWestern": "Arrow Wizard",
+      "aliases": [
+        "WizārdoArō"
+      ],
       "type": "stamina",
       "line": "bx",
       "releaseSet": "BX-03"
@@ -783,6 +1022,9 @@
       "id": "wizard-rod",
       "name": "Wizard Rod",
       "nameWestern": "Wand Wizard",
+      "aliases": [
+        "WizārdoRoddo"
+      ],
       "type": "stamina",
       "line": "bx",
       "releaseSet": "UX-03"
@@ -791,6 +1033,10 @@
       "id": "wyvern-gale",
       "name": "Wyvern Gale",
       "nameWestern": "Gale Wyvern",
+      "aliases": [
+        "WaibānGeiru",
+        "WaibārnGeiru"
+      ],
       "type": "stamina",
       "line": "bx",
       "releaseSet": "BX-24"
@@ -798,6 +1044,9 @@
     {
       "id": "xeno-xcalibur",
       "name": "Xeno Xcalibur",
+      "aliases": [
+        "ZenoEkusukaribā"
+      ],
       "type": "attack",
       "line": "bx",
       "releaseSet": "BX-00"
@@ -1416,171 +1665,315 @@
     {
       "id": "accel",
       "name": "Accel",
-      "type": "attack"
+      "type": "attack",
+      "shortName": "A",
+      "aliases": [
+        "Akuseru"
+      ]
     },
     {
       "id": "ball",
       "name": "Ball",
-      "type": "stamina"
+      "type": "stamina",
+      "shortName": "B",
+      "aliases": [
+        "Bōru"
+      ]
     },
     {
       "id": "bound-spike",
       "name": "Bound Spike",
-      "type": "defense"
+      "type": "defense",
+      "shortName": "BS",
+      "aliases": [
+        "Baundo Supaiku"
+      ]
     },
     {
       "id": "cyclone",
       "name": "Cyclone",
-      "type": "attack"
+      "type": "attack",
+      "shortName": "C",
+      "aliases": [
+        "Saikuron"
+      ]
     },
     {
       "id": "disk-ball",
       "name": "Disk Ball",
-      "type": "stamina"
+      "type": "stamina",
+      "shortName": "DB",
+      "aliases": [
+        "Disuku Bōru",
+        "Disuku"
+      ]
     },
     {
       "id": "disk-spike",
       "name": "Disk Spike",
-      "type": "stamina"
+      "type": "stamina",
+      "shortName": "DS",
+      "aliases": [
+        "Disuku Supaiku"
+      ]
     },
     {
       "id": "dot",
       "name": "Dot",
-      "type": "defense"
+      "type": "defense",
+      "shortName": "D",
+      "aliases": [
+        "Dotto"
+      ]
     },
     {
       "id": "elevate",
       "name": "Elevate",
-      "type": "balance"
+      "type": "balance",
+      "shortName": "E",
+      "aliases": [
+        "Erebēto"
+      ]
     },
     {
       "id": "flat",
       "name": "Flat",
-      "type": "attack"
+      "type": "attack",
+      "shortName": "F",
+      "aliases": [
+        "Furatto"
+      ]
     },
     {
       "id": "free-ball",
       "name": "Free Ball",
-      "type": "stamina"
+      "type": "stamina",
+      "shortName": "FB",
+      "aliases": [
+        "Furī Bōru"
+      ]
     },
     {
       "id": "free-flat",
       "name": "Free Flat",
-      "type": "attack"
+      "type": "attack",
+      "shortName": "FF",
+      "aliases": [
+        "Furī Furatto"
+      ]
     },
     {
       "id": "gear-ball",
       "name": "Gear Ball",
-      "type": "stamina"
+      "type": "stamina",
+      "shortName": "GB",
+      "aliases": [
+        "Giya Bōru",
+        "Giya"
+      ]
     },
     {
       "id": "gear-flat",
       "name": "Gear Flat",
-      "type": "attack"
+      "type": "attack",
+      "shortName": "GF",
+      "aliases": [
+        "Giya Furatto",
+        "Giya"
+      ]
     },
     {
       "id": "gear-needle",
       "name": "Gear Needle",
-      "type": "defense"
+      "type": "defense",
+      "shortName": "GN",
+      "aliases": [
+        "Giya Nīdoru",
+        "Giya"
+      ]
     },
     {
       "id": "gear-point",
       "name": "Gear Point",
-      "type": "balance"
+      "type": "balance",
+      "shortName": "GP",
+      "aliases": [
+        "Giya Pointo",
+        "Giya"
+      ]
     },
     {
       "id": "gear-rush",
       "name": "Gear Rush",
-      "type": "attack"
+      "type": "attack",
+      "shortName": "GR",
+      "aliases": [
+        "Giya",
+        "Giya Rasshu"
+      ]
     },
     {
       "id": "gear-unite",
       "name": "Gear Unite",
-      "type": "balance"
+      "type": "balance",
+      "shortName": "GU",
+      "aliases": [
+        "Gia Yunaito"
+      ]
     },
     {
       "id": "glide",
       "name": "Glide",
-      "type": "stamina"
+      "type": "stamina",
+      "shortName": "G",
+      "aliases": [
+        "Guraido"
+      ]
     },
     {
       "id": "hexa",
       "name": "Hexa",
-      "type": "balance"
+      "type": "balance",
+      "shortName": "H",
+      "aliases": [
+        "Hekisa"
+      ]
     },
     {
       "id": "high-needle",
       "name": "High Needle",
-      "type": "defense"
+      "type": "defense",
+      "shortName": "HN",
+      "aliases": [
+        "Hai Nīdoru",
+        "Hai"
+      ]
     },
     {
       "id": "high-taper",
       "name": "High Taper",
-      "type": "balance"
+      "type": "balance",
+      "shortName": "HT",
+      "aliases": [
+        "Hai Tēpā",
+        "Hai"
+      ]
     },
     {
       "id": "ignition",
       "name": "Ignition",
-      "type": "attack"
+      "type": "attack",
+      "shortName": "I",
+      "aliases": [
+        "Igunisshon"
+      ]
     },
     {
       "id": "jolt",
       "name": "Jolt",
-      "type": "attack"
+      "type": "attack",
+      "shortName": "J",
+      "aliases": [
+        "Joruto"
+      ]
     },
     {
       "id": "kick",
       "name": "Kick",
-      "type": "balance"
+      "type": "balance",
+      "shortName": "K",
+      "aliases": [
+        "Kikku"
+      ]
     },
     {
       "id": "level",
       "name": "Level",
-      "type": "attack"
+      "type": "attack",
+      "shortName": "L",
+      "aliases": [
+        "Reberu"
+      ]
     },
     {
       "id": "low-flat",
       "name": "Low Flat",
-      "type": "attack"
+      "type": "attack",
+      "shortName": "LF",
+      "aliases": [
+        "Rō Furatto",
+        "Rō"
+      ]
     },
     {
       "id": "low-orb",
       "name": "Low Orb",
-      "type": "stamina"
+      "type": "stamina",
+      "shortName": "LO",
+      "aliases": [
+        "Rō",
+        "Rō Ōbu"
+      ]
     },
     {
       "id": "low-rush",
       "name": "Low Rush",
-      "type": "attack"
+      "type": "attack",
+      "shortName": "LR",
+      "aliases": [
+        "Rō"
+      ]
     },
     {
       "id": "merge",
       "name": "Merge",
-      "type": "balance"
+      "type": "balance",
+      "shortName": "M",
+      "aliases": [
+        "Māji"
+      ]
     },
     {
       "id": "metal-needle",
       "name": "Metal Needle",
-      "type": "defense"
+      "type": "defense",
+      "shortName": "MN",
+      "aliases": [
+        "Metaru Nīdoru",
+        "Metaru"
+      ]
     },
     {
       "id": "narrow",
       "name": "Narrow",
-      "type": "stamina"
+      "type": "stamina",
+      "shortName": "Nr",
+      "aliases": [
+        "Narō"
+      ]
     },
     {
       "id": "needle",
       "name": "Needle",
-      "type": "defense"
+      "type": "defense",
+      "shortName": "N",
+      "aliases": [
+        "Nīdoru"
+      ]
     },
     {
       "id": "operate",
-      "name": "Operate"
+      "name": "Operate",
+      "shortName": "Op"
     },
     {
       "id": "orb",
       "name": "Orb",
-      "type": "stamina"
+      "type": "stamina",
+      "shortName": "O",
+      "aliases": [
+        "Ōbu"
+      ]
     },
     {
       "id": "orbit",
@@ -1590,92 +1983,167 @@
     {
       "id": "point",
       "name": "Point",
-      "type": "balance"
+      "type": "balance",
+      "shortName": "P",
+      "aliases": [
+        "Pointo"
+      ]
     },
     {
       "id": "quake",
       "name": "Quake",
-      "type": "attack"
+      "type": "attack",
+      "shortName": "Q",
+      "aliases": [
+        "Kueiku"
+      ]
     },
     {
       "id": "rubber-accel",
       "name": "Rubber Accel",
-      "type": "attack"
+      "type": "attack",
+      "shortName": "RA",
+      "aliases": [
+        "Rabā"
+      ]
     },
     {
       "id": "rush",
       "name": "Rush",
-      "type": "attack"
+      "type": "attack",
+      "shortName": "R",
+      "aliases": [
+        "Rasshu"
+      ]
     },
     {
       "id": "spike",
       "name": "Spike",
-      "type": "defense"
+      "type": "defense",
+      "shortName": "S",
+      "aliases": [
+        "Supaiku"
+      ]
     },
     {
       "id": "taper",
       "name": "Taper",
-      "type": "balance"
+      "type": "balance",
+      "shortName": "T",
+      "aliases": [
+        "Tēpā"
+      ]
     },
     {
       "id": "trans-kick",
       "name": "Trans Kick",
-      "type": "balance"
+      "type": "balance",
+      "shortName": "TK",
+      "aliases": [
+        "Toransu",
+        "Toransu Kikku"
+      ]
     },
     {
       "id": "trans-point",
       "name": "Trans Point",
-      "type": "balance"
+      "type": "balance",
+      "shortName": "TP",
+      "aliases": [
+        "Toransu Pointo",
+        "Toransu"
+      ]
     },
     {
       "id": "turbo",
       "name": "Turbo",
-      "type": "attack"
+      "type": "attack",
+      "shortName": "Tr",
+      "aliases": [
+        "Tābo"
+      ]
     },
     {
       "id": "under-flat",
       "name": "Under Flat",
-      "type": "attack"
+      "type": "attack",
+      "shortName": "UF",
+      "aliases": [
+        "Andā"
+      ]
     },
     {
       "id": "under-needle",
       "name": "Under Needle",
-      "type": "defense"
+      "type": "defense",
+      "shortName": "UN",
+      "aliases": [
+        "Andā",
+        "Andā Nīdoru"
+      ]
     },
     {
       "id": "unite",
       "name": "Unite",
-      "type": "balance"
+      "type": "balance",
+      "shortName": "U",
+      "aliases": [
+        "Yunaito"
+      ]
     },
     {
       "id": "vortex",
       "name": "Vortex",
-      "type": "attack"
+      "type": "attack",
+      "shortName": "V",
+      "aliases": [
+        "Borutekkusu"
+      ]
     },
     {
       "id": "wall-ball",
       "name": "Wall Ball",
-      "type": "stamina"
+      "type": "stamina",
+      "shortName": "WB",
+      "aliases": [
+        "Uōru"
+      ]
     },
     {
       "id": "wall-wedge",
       "name": "Wall Wedge",
-      "type": "defense"
+      "type": "defense",
+      "shortName": "WW",
+      "aliases": [
+        "Uōru Wejji"
+      ]
     },
     {
       "id": "wedge",
       "name": "Wedge",
-      "type": "defense"
+      "type": "defense",
+      "shortName": "W",
+      "aliases": [
+        "Wejji"
+      ]
     },
     {
       "id": "yielding",
       "name": "Yielding",
-      "type": "stamina"
+      "type": "stamina",
+      "shortName": "Y",
+      "aliases": [
+        "Īrudingu"
+      ]
     },
     {
       "id": "zap",
       "name": "Zap",
-      "type": "balance"
+      "type": "balance",
+      "shortName": "Z",
+      "aliases": [
+        "Zappu"
+      ]
     }
   ]
 }

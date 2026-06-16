@@ -17,8 +17,10 @@
     "fetch:wbo": "npx tsx scripts/fetch-wbo.ts",
     "verify:wiki": "npx tsx scripts/verify-against-wiki.ts",
     "parse:metabeys": "npx tsx scripts/parse-metabeys.ts",
+    "parse:wbo": "npx tsx scripts/parse-wbo.ts",
     "score:combos": "npx tsx scripts/score-combos.ts",
-    "test:scoring": "npx tsx scripts/test-scoring.ts"
+    "test:scoring": "npx tsx scripts/test-scoring.ts",
+    "test:wbo": "npx tsx scripts/test-parse-wbo.ts"
   },
   "devDependencies": {
     "playwright-core": "^1.48.0",
