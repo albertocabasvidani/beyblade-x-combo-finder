@@ -15,7 +15,10 @@
     "build:parts": "npx tsx scripts/build-parts.ts",
     "fetch:metabeys": "npx tsx scripts/fetch-metabeys.ts",
     "fetch:wbo": "npx tsx scripts/fetch-wbo.ts",
-    "verify:wiki": "npx tsx scripts/verify-against-wiki.ts"
+    "verify:wiki": "npx tsx scripts/verify-against-wiki.ts",
+    "parse:metabeys": "npx tsx scripts/parse-metabeys.ts",
+    "score:combos": "npx tsx scripts/score-combos.ts",
+    "test:scoring": "npx tsx scripts/test-scoring.ts"
   },
   "devDependencies": {
     "playwright-core": "^1.48.0",

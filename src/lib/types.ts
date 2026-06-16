@@ -74,10 +74,62 @@ export interface ComboSource {
   date: string;
 }
 
+// Tier della fonte: structured = DB torneo parsabili deterministicamente (MetaBeys/WBO/Sheets);
+// narrative = prosa (YouTube/Reddit/blog); theory = tier-list teoriche (BeyBase/BeyXDB).
+export type SourceTier = 'structured' | 'narrative' | 'theory';
+
+// Evidenza grezza persistita: alimenta il ricalcolo deterministico dello score E i badge in UI.
+// placements/usage = risultati torneo; mentions = opinioni (pesano poco, vedi scoring.ts).
+export interface PlacementEvidence {
+  source: string;        // id fonte (sources.json), es. "metabeys"
+  tier: SourceTier;
+  eventId: string;
+  eventName: string;
+  date: string;          // yyyy-mm-dd
+  placement: number;     // 1 = primo, 2 = secondo, ...
+  topCutSize?: number;
+  players?: number;      // dimensione evento (prestigio)
+  deckScore?: string;    // S/A/B/C/D (MetaBeys)
+  lang: string;
+  url?: string;
+}
+
+export interface UsageEvidence {
+  source: string;        // es. "metabeys-leaderboard"
+  date: string;          // data snapshot
+  window: string;        // finestra, es. "30d"
+  appearances?: number;
+  sharePct?: number;
+  uniqueEvents?: number;
+  uniquePlayers?: number;
+  lang?: string;
+}
+
+export interface MentionEvidence {
+  source: string;
+  date: string;
+  kind: string;          // "recommendation" | "tier-list" | ...
+  lang: string;
+  url?: string;
+}
+
+export interface ComboEvidence {
+  placements: PlacementEvidence[];
+  usage: UsageEvidence[];
+  mentions: MentionEvidence[];
+}
+
+// Breakdown del Competitive Authority Score (CAS): tre pilastri 0-1 + meta per i badge.
+// Vedi docs/scoring-algorithm.md.
 export interface ScoreBreakdown {
-  sourceReliability: number;
-  frequency: number;
-  recency: number;
+  performance: number;     // 0-1, piazzamenti pesati (vittorie/finali)
+  presence: number;        // 0-1, usage/meta share + ampiezza
+  corroboration: number;   // 0-1, fonti indipendenti distinte
+  // Meta osservabile (per i badge "18 eventi, 4 vittorie")
+  tournamentEvents: number;
+  wins: number;
+  topCutAppearances: number;
+  metaSharePct?: number;
 }
 
 export interface AmazonProduct {
@@ -99,6 +151,7 @@ export interface Combo {
   type: BladeType;
   score: number;
   scoreBreakdown: ScoreBreakdown;
+  evidence?: ComboEvidence;
   tags: string[];
   notes: string;
   sources: ComboSource[];

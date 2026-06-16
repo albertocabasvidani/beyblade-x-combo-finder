@@ -27,8 +27,11 @@ derivazione. Solo Beyblade X.
 3. **X-filter**: scarta ogni combo il cui blade/mainBlade non risolve a un id del master (toglie
    contaminazioni Burst/Metal dalle fonti multilingua).
 4. **Estrazione per fonte**:
-   - MetaBeys (`metabeys-cache.json`): da `events[].raw` estrai podio e deck (Blade/Ratchet/Bit) dei
-     top-cut; da `leaderboard` ricava il segnale di usage. Aggiorna `scannedEvents[id].combosFound`.
+   - MetaBeys (`metabeys-cache.json`): **prima** esegui `npm run parse:metabeys` (parser
+     DETERMINISTICO) che estrae placements + usage in `data/metabeys-evidence.json`. Poi gestisci a
+     mano/IA solo la lista `unresolved` (combo CX a 4 segmenti, righe incomplete, typo nei nomi):
+     se è un alias mancante aggiungilo al master ed esegui `build:parts`; se è una CX, aggiungila a
+     `combos.json` con la sua `evidence`. NON ri-estrarre a mano ciò che il parser ha già risolto.
    - WBO (`wbo-cache.json`): se `threads.bbx-winning.blocked` è false, estrai dai post 1°/2°/3° + combo;
      registra i post processati in `scannedPosts`. Se `blocked`, segnalalo nel report.
    - YouTube: combo da titoli/descrizioni (`youtube-cache.json`) e dai transcript
@@ -40,17 +43,19 @@ derivazione. Solo Beyblade X.
 6. **Dedup** per chiave id-set ordinata (`blade|ratchet|bit` per BX/UX; `lockChip|overBlade|mainBlade|assistBlade|ratchet|bit`
    per CX, con `overBlade` vuoto per le CX non-Expand): stessa chiave →
    merge (aggiorna score, sources, notes, dateUpdated); MAI duplicare. Non rimuovere combo esistenti.
-7. **Scoring**: `score = sourceReliability*0.4 + frequency*0.35 + recency*0.25`.
-   - sourceReliability = media pesata dei `weight` (sources.json). Le fonti `provides:"parts-theory"`
-     (BeyBase/BeyXDB, weight 0.3) pesano poco: priorità ai dati torneo (MetaBeys/WBO/SBBL/PBI/YouTube tornei).
-   - frequency = 0-10 da quante fonti indipendenti la riportano. recency dal contenuto più recente.
-   - Tag: "meta" se ≥9.0, "top-tier" se ≥8.0, "tournament-proven" se da fonte torneo (metabeys/wbo/sbbl/
-     ranking nazionali). Registra in `sources` URL+data+lang di ogni fonte.
-8. **Finalizza**: scrivi `data/combos.json`; aggiorna `scan-history.json` (`scannedVideos`,
-   `scannedSheets`, `scannedRedditPosts`, `scannedPages` con contentHash, `scannedEvents`, `scannedPosts`).
-   `npm run build`. Report: nuove/aggiornate combo, nuove parti segnalate, alias community aggiunti,
-   fonti `manualVerification` da controllare a mano (non scrappate). Git: `git add data/` →
-   commit "update combos database [data]" → push.
+   Per ogni combo popola il blocco `evidence` (NON calcolare lo score a mano):
+   - `placements[]`: dai risultati torneo (MetaBeys via parser, WBO, ranking) — `placement`,
+     `players`, `eventId`, `date`, `tier:"structured"`.
+   - `usage[]`: da leaderboard/usage (MetaBeys via parser) — `sharePct`, `uniqueEvents`, `uniquePlayers`.
+   - `mentions[]`: da fonti narrative (YouTube/Reddit/blog) e tier-list — `tier` narrative/theory.
+7. **Scoring**: DETERMINISTICO, lo fa il codice. Esegui `npm run score:combos`: legge l'`evidence` di
+   ogni combo e calcola `score` + `scoreBreakdown` (CAS) e i tag. Algoritmo e costanti in
+   `src/lib/scoring.ts`; spec in `docs/scoring-algorithm.md`. NON scrivere score/tag a mano.
+8. **Finalizza**: aggiorna `scan-history.json` (`scannedVideos`, `scannedSheets`, `scannedRedditPosts`,
+   `scannedPages` con contentHash, `scannedEvents`, `scannedPosts`). `npm run score:combos` poi
+   `npm run build`. Report: nuove/aggiornate combo, combo `unresolved` dal parser, nuove parti
+   segnalate, alias community aggiunti, fonti `manualVerification` da controllare a mano. Git:
+   `git add data/` → commit "update combos database [data]" → push.
 
 ## Note
 

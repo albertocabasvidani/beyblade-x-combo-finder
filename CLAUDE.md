@@ -25,7 +25,8 @@ Sito web per trovare le migliori combo Beyblade X in base alle parti possedute. 
 - `data/parts-master.json` — **file canonico** parti multilingua (names.tt/hasbro/ja/romaji + aliases per lingua, stats, products, source). Fonte di verità del registro parti.
 - `data/parts.json` — **derivato** da parts-master via `npm run build:parts` (schema consumato dal sito). NON editare a mano: si rigenera.
 - `data/parts-master-conflicts.json` — casi ambigui dell'import per revisione umana (type_mismatch = rumore; gli over_blade ora sono categoria `overBlades` a sé, non più conflitti)
-- `data/combos.json` — database combo con score e fonti
+- `data/combos.json` — database combo con `evidence` (placements/usage/mentions), `scoreBreakdown` CAS e fonti
+- `data/metabeys-evidence.json` — evidenza torneo parsata in modo deterministico da MetaBeys (placements + usage), input dello scoring
 - `data/products.json` — catalogo prodotti TT+Hasbro (link Amazon); referenzia gli id parte
 - `data/sources.json` — fonti configurabili (con `lang`, `manualVerification`); editabile dall'utente
 - `data/youtube-cache.json`, `data/youtube-transcripts.json`, `data/reddit-cache.json`, `data/sheets-cache.json` — cache grezze fonti
@@ -44,6 +45,9 @@ Sito web per trovare le migliori combo Beyblade X in base alle parti possedute. 
 - `/verify-parts-master` — verifica qualità del master parti
 - `/update-parts` — aggiornamento giornaliero parti (diff revid)
 - `/update-combos` — aggiorna database combo dalle cache (master multilingua, X-filter, dedup id-set)
+- `npm run parse:metabeys` — parser deterministico MetaBeys (eventi+leaderboard) → `metabeys-evidence.json` (placements+usage; ambigui in `unresolved`)
+- `npm run score:combos` — ricalcola gli score CAS deterministici da `evidence` (algoritmo in `src/lib/scoring.ts`, spec in `docs/scoring-algorithm.md`)
+- `npm run test:scoring` — golden test dell'algoritmo CAS
 
 ## Pipeline Dati
 
@@ -51,7 +55,10 @@ Sito web per trovare le migliori combo Beyblade X in base alle parti possedute. 
 Le routine (import parti, update giornalieri, analisi combo) le esegue **Claude**. Tutto ciò che è
 **non deterministico — leggere/interpretare pagine, riconoscere e matchare i nomi delle parti in
 qualsiasi lingua — lo fa l'IA** (comandi + subagent). Il **codice** fa solo ciò che è deterministico:
-accesso/fetch grezzo, dedup (id/revid/hash), derivazione di formato, validazione referenziale.
+accesso/fetch grezzo, **parsing delle fonti strutturate** (MetaBeys eventi+leaderboard), dedup
+(id/revid/hash), derivazione di formato, validazione referenziale, e il **calcolo dello score CAS**
+(da `evidence` a numero — `src/lib/scoring.ts`). L'IA estrae l'evidenza dalle fonti narrative e dai
+casi `unresolved`; non calcola mai lo score né ri-parsa ciò che il parser deterministico ha risolto.
 
 ### Database parti (master multilingua → derivati)
 - Fonte: pagine prodotto Beyblade Fandom Wiki via **API MediaWiki** (`api.php?action=parse&...&prop=wikitext`;
@@ -70,6 +77,14 @@ accesso/fetch grezzo, dedup (id/revid/hash), derivazione di formato, validazione
   che indicizza gli stessi eventi WBO). `fetch:transcripts` gira SEPARATO (ogni 5 min, `--batch 1`).
 - Reddit/WBO girano headed+manuale (lo scheduler headless li lascia no-op): rieseguire a mano quando serve dato fresco.
 - Le cache grezze le interpreta `/update-combos` (estrazione, match multilingua, dedup id-set, scoring).
+
+### Scoring combo (CAS, deterministico)
+Lo scoring NON è più una stima inline dell'IA: è il **Competitive Authority Score** calcolato dal
+codice. `/update-combos` (IA) popola il blocco `evidence` di ogni combo distinguendo **risultati**
+(`placements`/`usage`) da **opinioni** (`mentions`); `parse:metabeys` produce l'evidenza torneo
+strutturata in `metabeys-evidence.json`; `score:combos` applica `src/lib/scoring.ts` e scrive
+`scoreBreakdown` + tag gestiti (`meta`, `top-tier`, `tournament-proven`, `theory-only`, `rising`).
+Algoritmo, pesi e costanti in `docs/scoring-algorithm.md`.
 
 ### Dipendenze
 - Node: `tsx`, `playwright-core` (usa il Chrome di sistema). Python: `youtube_transcript_api`.
@@ -116,43 +131,14 @@ Registrazione task (eseguire una volta; attivare consapevolmente — fanno commi
 
 ## Amazon Affiliate
 
-### Architettura
+I badge delle parti mancanti nelle combo card diventano link di ricerca Amazon. Logica in
+`src/lib/amazon.ts` (`buildAmazonSearchUrl`, `buildProductLookup`), rendering in
+`src/components/search/combo-card.tsx`; `data/products.json` (aggiornato da `/update-parts`, step 7)
+mappa parte→codice set.
 
-Il sistema genera link Amazon sulle parti mancanti nelle combo card. Il flusso:
+Gotcha di ricerca: blade / lock chip / main blade / assist blade si cercano per **nome diretto**
+(`Beyblade X Phoenix Wing`); ratchet e bit su Amazon **per nome danno 0 risultati**, quindi si cerca
+il **codice del set** che li contiene (`3-60` → `Beyblade X BX-01`, `Hexa` → `Beyblade X UX-02`).
 
-1. **Build time** (Astro frontmatter in `en/index.astro`, `it/index.astro`):
-   - Importa `data/products.json` (catalogo 304 prodotti TT + Hasbro)
-   - `buildProductLookup()` crea una mappa compatta `{ ratchets: { "3-60": "BX-01", ... }, bits: { "flat": "BX-01", ... } }`
-   - Legge tag affiliate da `.env` (`AMAZON_TAG_IT`, `AMAZON_TAG_US`)
-   - Passa `productLookup` + `amazonConfig` come props serializzate al Preact island
-
-2. **Runtime** (Preact, `combo-card.tsx`):
-   - I badge arancioni delle parti mancanti diventano `<a>` cliccabili
-   - `buildAmazonSearchUrl()` costruisce l'URL di ricerca Amazon
-
-### Strategia di ricerca Amazon
-
-| Tipo parte | Metodo ricerca | Esempio query |
-|------------|---------------|---------------|
-| Blade | Nome diretto | `Beyblade X Phoenix Wing` |
-| Lock Chip | Nome diretto | `Beyblade X Dran` |
-| Main Blade | Nome diretto | `Beyblade X Brave` |
-| Assist Blade | Nome diretto | `Beyblade X Slash` |
-| Ratchet | Codice set da products.json | `Beyblade X BX-01` (contiene 3-60) |
-| Bit | Codice set da products.json | `Beyblade X UX-02` (contiene Hexa) |
-
-Ratchet e bit non si trovano su Amazon per nome (es. "Beyblade X Taper" → 0 risultati), quindi si cerca il codice del set che li contiene.
-
-### File coinvolti
-
-- `src/lib/amazon.ts` — `buildAmazonSearchUrl()`, `buildProductLookup()`, logica ricerca
-- `data/products.json` — catalogo prodotti (aggiornato da `/update-parts`)
-- `src/components/search/combo-card.tsx` — rendering link su parti missing
-- `.env` — `AMAZON_TAG_IT`, `AMAZON_TAG_US` (vuoti = link senza tracking)
-
-### Config
-
-- Tag in `.env`: `AMAZON_TAG_IT`, `AMAZON_TAG_US`
-- TLD basato su locale: IT → `amazon.it`, EN → `amazon.com`
-- Disclosure nel footer (`footer.disclosure` in i18n)
-- `products.json` aggiornato automaticamente da `/update-parts` (step 7)
+Config in `.env`: `AMAZON_TAG_IT`, `AMAZON_TAG_US` (vuoti = link senza tracking). TLD per locale
+(IT → `amazon.it`, EN → `amazon.com`). Disclosure nel footer (`footer.disclosure` in i18n).
