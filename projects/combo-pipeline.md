@@ -38,6 +38,7 @@ tutto in sequenza giornaliera.
 ## Changelog
 
 <!-- Cose completate, dalla più recente. Formato: `- gg/mm/aaaa — testo` -->
+- 16/06/2026 — backfill storico Reddit (`REDDIT_BACKFILL`) + robustezza scraper (skip post falliti, no crash)
 - 16/06/2026 — Competitive Authority Score (CAS) deterministico per le combo
 - 16/06/2026 — Reddit orientato ai risultati torneo + automazione headed
 - 15/06/2026 — primo run `/update-combos` sui tornei (`update combos database 2026-06-15`)

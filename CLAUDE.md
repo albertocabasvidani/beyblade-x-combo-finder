@@ -96,6 +96,9 @@ via API a pagamento (regola: non pagare due volte ciò che l'abbonamento già co
   `fetch:wbo` (Playwright; Cloudflare blocca headless → `WBO_HEADED=1`, oppure ci si affida a MetaBeys
   che indicizza gli stessi eventi WBO). `fetch:transcripts` gira SEPARATO (ogni 5 min, `--batch 1`).
 - Reddit/WBO girano headed+manuale (lo scheduler headless li lascia no-op): rieseguire a mano quando serve dato fresco.
+- Reddit backfill storico (one-off): `REDDIT_BACKFILL=1` (con `REDDIT_HEADED=1`) pagina a fondo ogni query
+  (cursore `after`, ~1000/query) e NON pota la cache (no `KEEP_TOP`). Seguire SUBITO con `/update-combos`,
+  prima che un run normale (che applica `KEEP_TOP`) la poti.
 - Le cache grezze le interpreta `/update-combos` (estrazione, match multilingua, dedup id-set, scoring).
 
 ### Scoring combo (CAS, deterministico)
