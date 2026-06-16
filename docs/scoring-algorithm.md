@@ -136,12 +136,18 @@ decrescenti. Qui vivono YouTube/Reddit/tier-list. Distinte per **fonte**, non pe
 10 video di un canale = 1 fonte.
 
 ```
-C_raw = Σ_fontiDistinte ( sourceWeight ) + langDiversityBonus
-corroboration = sat(C_raw, K_corr)         // K_corr ≈ 2.5
+C_raw = Σ_fontiDistinte ( tierWeight ) + langDiversityBonus
+corroboration = sat(C_raw, K_corr)         // K_corr = 2.0
 ```
 
 `langDiversityBonus`: piccolo bonus (es. +0.2 per lingua oltre la prima) — una combo confermata in
 EN+JA+ES è meta globale, non locale.
+
+> **Peso per TIPOLOGIA, non per fonte.** Il codice pesa per `tier` (`structured` 1.0, `narrative`
+> 0.6, `theory` 0.3 — `CONST.TIER_WEIGHT`), **non** per il `weight` fine di ogni fonte in
+> `sources.json`: quel campo serve solo ai link mostrati in UI. Conseguenza voluta: WBO è scorato
+> come `structured` = **1.0** (non 0.95). Se in futuro servisse il peso per-fonte, va aggiunto un
+> campo numerico all'evidence e moltiplicato in `scoring.ts`.
 
 ### Combinazione
 
@@ -150,28 +156,34 @@ base = 0.55*performance + 0.30*presence + 0.15*corroboration
 score = round( 10 * base, 1 )
 ```
 
-### Confidence (opzionale — leva, non default)
+### Confidence (ATTIVO — shrinkage low-sample)
 
-La saturazione già scoraggia il basso campione. Se la distribuzione risulta troppo piatta, si può
-aggiungere uno shrinkage esplicito verso il basso:
+Shrinkage esplicito verso il basso per l'evidenza da campione unico:
 
 ```
-n = uniqueEvents (usage) oppure n° eventi distinti in placements
-confidence = n / (n + K_conf)              // K_conf ≈ 4
+n = max( n° eventi distinti in placements, uniqueEvents della usage )
+confidence = n / (n + K_conf)              // K_conf = 4
 score = round( 10 * base * (0.5 + 0.5*confidence), 1 )
 ```
 
-Raccomandazione: partire **senza** confidence multiplier (la saturazione basta), e usare `n` come
-**badge** in UI ("18 eventi, 4 vittorie") invece che come penalità. Attivare il multiplier solo se
-combo da singolo micro-evento risultano sopravvalutate.
+**Attivo in produzione** (`score-combos.ts` chiama `scoreCombo(ev, { ref, useConfidence: true })`):
+la condizione documentata si è verificata — ~117/148 combo con placement poggiano su **un solo
+evento**, e la sola saturazione non li distingueva da combo provate su più eventi. Il multiplier
+(0.6 per n=1, ~0.83 per n=8) li declassa proporzionalmente. `n` resta esposto come badge in UI
+("18 eventi, 4 vittorie").
 
 ## 5. Tag derivati
 
-- `meta` se score ≥ 9.0
-- `top-tier` se score ≥ 8.0
+- `meta` se score ≥ 8.5
+- `top-tier` se score ≥ 7.0
 - `tournament-proven` se ≥1 `placement` da fonte strutturata (metabeys/wbo/sbbl/ranking nazionale)
 - `theory-only` se **nessun** placement/usage, solo `mentions` → flag di onestà, cap in display
-- `rising` (opzionale) se performance decay-pesata recente > storica → momentum
+- `rising` (implementato) se la performance grezza dei placement nella finestra recente
+  (≤ `RISING_WINDOW_DAYS` = 30g) supera quella storica per un fattore `RISING_RATIO` (1.15) → momentum
+
+> Soglie `meta`/`top-tier` **ricalibrate sulla distribuzione reale** (il combo dominante tocca ~8.7,
+> non 10): a 9.0/8.0 nessuna combo sarebbe `meta`. I valori canonici sono quelli del codice
+> (`scoring.ts` / golden test), questo doc li rispecchia.
 
 ## 6. Perché è meglio
 
@@ -179,7 +191,9 @@ combo da singolo micro-evento risultano sopravvalutate.
 2. **Pesa la dimensione evento** — vittoria a 71 player > vittoria a 12.
 3. **Indipendenza-aware** — uniqueEvents/uniquePlayers + conteggio fonti distinte impediscono che
    un singolo YouTuber prolifico o un solo grande evento dominino.
-4. **Pesi fonti preservati e affilati** — i DB torneo dominano; le opinioni sono confinate e capate.
+4. **Tier fonti netti** — i DB torneo (`structured`) dominano, le opinioni (`narrative`/`theory`)
+   sono confinate al pilastro corroboration e capate. Il peso è per tipologia di fonte, non per
+   singola fonte (vedi nota al Pilastro 3).
 5. **Decadimento temporale** — riflette il turnover rapido del meta X: "autorevole **ora**".
 6. **Deterministico e tunabile** — costanti nominate in un punto, A/B-testabili, con golden test.
 
@@ -197,13 +211,16 @@ Lo score da solo non comunica fiducia. Esporre l'evidenza accanto al numero:
 ```
 HALF_LIFE = 75 giorni
 pesi pilastri = 0.55 / 0.30 / 0.15
-K_perf = 6 ; K_pres = 3 ; K_corr = 2.5 ; K_conf = 4 (se attivo)
+K_perf = 6 ; K_pres = 3 ; K_corr = 2.0 ; K_conf = 4 (ATTIVO)
 placementWeight = {1:1.0, 2:0.65, 3:0.45, 4:0.30, 5-8:0.20, topcut:0.12}
 eventWeight = clamp(sqrt(players/16), 0.5, 3)
 langDiversityBonus = +0.2 per lingua oltre la prima
+tag: meta ≥ 8.5 ; top-tier ≥ 7.0
+rising: RISING_WINDOW_DAYS = 30 ; RISING_RATIO = 1.15
 ```
 
-Da ricalibrare empiricamente sulla distribuzione reale dopo il primo run completo.
+Costanti tarate sulla distribuzione reale dopo il primo run. Fonte canonica: `src/lib/scoring.ts`
+(`CONST`), coperta dai golden test `scripts/test-scoring.ts`.
 
 ## 9. Migrazione
 

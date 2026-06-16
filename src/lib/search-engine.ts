@@ -1,4 +1,4 @@
-import type { Combo, SelectedParts } from './types';
+import type { Combo, SelectedParts, ComboLine, Stadium } from './types';
 
 export function hasAnySelection(selected: SelectedParts): boolean {
   return (
@@ -16,19 +16,33 @@ interface FilterOptions {
   // Se true, tiene solo le combo le cui parti note non contraddicono le selezioni
   // (combo costruibili/parziali con le parti possedute). Default: mostra tutte.
   onlyBuildable?: boolean;
+  // Filtro per linea (BX/UX/CX): vuoto/assente = tutte. NON separa il ranking, lo restringe soltanto.
+  lineFilter?: ComboLine[];
+  // Filtro per stadio (xtreme/infinity): vuoto/assente = tutti. Tiene le combo con ≥1 placement
+  // del piatto scelto (lo stadio è noto solo per i placement WBO).
+  stadiumFilter?: Stadium[];
 }
 
-// Ranking unico BX + CX, ordinato per score desc.
+// Ranking unico BX + UX + CX, ordinato per score desc. La linea è solo un filtro/etichetta: la
+// domanda dell'utente è "la miglior combo per la lama X", non "la miglior combo della linea Y".
 export function filterCombos(
   combos: Combo[],
   selected: SelectedParts,
-  { onlyBuildable = false }: FilterOptions = {},
+  { onlyBuildable = false, lineFilter, stadiumFilter }: FilterOptions = {},
 ): Combo[] {
-  const base = onlyBuildable && hasAnySelection(selected)
-    ? combos.filter((combo) => isBuildable(combo, selected))
-    : combos;
-
+  let base = combos;
+  if (lineFilter && lineFilter.length) base = base.filter((c) => lineFilter.includes(c.line));
+  if (stadiumFilter && stadiumFilter.length) {
+    base = base.filter((c) => (c.scoreBreakdown?.stadiums ?? []).some((s) => stadiumFilter.includes(s)));
+  }
+  if (onlyBuildable && hasAnySelection(selected)) base = base.filter((c) => isBuildable(c, selected));
   return [...base].sort((a, b) => b.score - a.score);
+}
+
+// Migliori combo che usano una blade specifica (BX/UX), ordinate per score. Serve il flusso
+// "la miglior combo per la lama X": selezionata una sola blade, il ranking si concentra su di essa.
+export function topCombosForBlade(combos: Combo[], bladeId: string): Combo[] {
+  return combos.filter((c) => c.blade === bladeId).sort((a, b) => b.score - a.score);
 }
 
 // Una combo passa se, per ogni categoria in cui ho selezionato qualcosa, la sua

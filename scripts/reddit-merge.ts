@@ -75,6 +75,25 @@ function deriveType(c: any): string {
   return blades.get(c.blade)?.type ?? 'balance';
 }
 
+// ---- guardrail anti-allucinazione IA ----
+// I placement estratti da Reddit (fonte narrativa) NON possono spacciarsi per dati torneo
+// strutturati: forziamo tier='narrative' (mai 'tournament-proven', che richiede tier 'structured')
+// e validiamo lo schema minimo, scartando le entry malformate. La veridicità del testo resta non
+// verificabile a codice, ma il tier basso confina l'impatto (niente pilastro performance pieno,
+// niente badge tournament-proven).
+function sanitizePlacements(places: any[]): any[] {
+  const out: any[] = [];
+  for (const p of places ?? []) {
+    if (!p || typeof p !== 'object') continue;
+    if (typeof p.placement !== 'number' || !p.date) {
+      console.warn(`SKIP placement Reddit malformato (placement/date mancanti): ${JSON.stringify(p)}`);
+      continue;
+    }
+    out.push({ ...p, tier: 'narrative', source: p.source || 'reddit', lang: p.lang || 'en' });
+  }
+  return out;
+}
+
 // ---- chiavi di dedup per l'evidence ----
 const plKey = (p: any) => `${p.source}|${p.eventId ?? p.eventName ?? ''}|${p.date}|${p.placement ?? ''}`;
 const usKey = (u: any) => `${u.source}|${u.date}|${u.window ?? ''}`;
@@ -135,6 +154,7 @@ function main() {
     const key = comboKey(raw);
     let combo = index.get(key);
     const ev = raw.evidence ?? {};
+    ev.placements = sanitizePlacements(ev.placements);   // guardrail: forza tier narrative + valida
 
     if (!combo) {
       combo = {

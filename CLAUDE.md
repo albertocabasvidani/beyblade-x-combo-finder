@@ -37,9 +37,11 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
 - `data/parts-master.json` — **file canonico** parti multilingua (names.tt/hasbro/ja/romaji + aliases per lingua, **`shortName` = codice ufficiale dei bit** es. H/FB/LR, stats, products, source). Fonte di verità del registro parti.
 - `data/parts.json` — **derivato** da parts-master via `npm run build:parts` (schema consumato dal sito). NON editare a mano: si rigenera.
 - `data/parts-master-conflicts.json` — casi ambigui dell'import per revisione umana (type_mismatch = rumore; gli over_blade ora sono categoria `overBlades` a sé, non più conflitti)
-- `data/combos.json` — database combo con `evidence` (placements/usage/mentions), `scoreBreakdown` CAS e fonti
+- `data/combos.json` — database combo con `evidence` (placements/usage/mentions; `usage` è uno **storico** di snapshot per il trend), `scoreBreakdown` CAS (con `lastPlacementDate`, `stadiums`, `usageTrend`) e fonti
 - `data/metabeys-evidence.json` — evidenza torneo parsata in modo deterministico da MetaBeys (placements + usage), input dello scoring
-- `data/wbo-evidence.json` — evidenza torneo da WBO (placements), parser deterministico; input dello scoring
+- `data/wbo-evidence.json` — evidenza torneo da WBO (placements, con `stadium` xtreme/infinity), parser deterministico; input dello scoring
+- `data/arca-cache.json` — cache post arca.live KR (Playwright; estrazione combo via IA in `/update-combos`)
+- `data/bbx-weekly-cache.json` / `data/bbx-weekly-evidence.json` — BBX Weekly: raw + usage per-parte. **Cross-check, NON entra nel CAS**
 - `data/products.json` — catalogo prodotti TT+Hasbro (link Amazon); referenzia gli id parte
 - `data/sources.json` — fonti configurabili (con `lang`, `manualVerification`); editabile dall'utente
 - `data/youtube-cache.json`, `data/youtube-transcripts.json`, `data/reddit-cache.json`, `data/sheets-cache.json` — cache grezze fonti
@@ -53,7 +55,9 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
 - `npm run build` — build produzione
 - `npm run build:parts` — rigenera `parts.json` da `parts-master.json` (guardrail: aborta se rompe i riferimenti di combos.json)
 - `npm run verify:wiki` — verifica completezza del master contro la fonte affidabile (category per-tipo del Fandom Wiki, X-pure; blade filtrati su `Category:Beyblade X` perché `Category:Blades` è mista X+Burst). Riporta mancanti/extra. Obiettivo: 0 mancanti.
-- `npm run collect:sources` — raccoglie le cache grezze (Reddit, YouTube, Sheets, MetaBeys, WBO)
+- `npm run collect:sources` — raccoglie le cache grezze (Reddit, arca.live, YouTube, Sheets, MetaBeys, WBO, BBX Weekly)
+- `npm run scrape:arca` — scraper arca.live KR (`ARCA_HEADED=1` se Cloudflare; headless = no-op non distruttivo)
+- `npm run fetch:bbx-weekly` + `npm run parse:bbx-weekly` — BBX Weekly: cattura raw + estrae usage per-parte (ancorato al registro). Cross-check di freschezza/usage, **fuori dal CAS** (no doppioni)
 - `/scrape-parts-master` — import iniziale parti da Fandom (one-shot, subagent)
 - `/verify-parts-master` — verifica qualità del master parti
 - `/update-parts` — aggiornamento giornaliero parti (diff revid)
@@ -112,11 +116,18 @@ codice. `/update-combos` (IA) popola il blocco `evidence` di ogni combo distingu
 (`placements`/`usage`) da **opinioni** (`mentions`); `parse:metabeys` e `parse:wbo` producono
 l'evidenza torneo in `metabeys-evidence.json` e `wbo-evidence.json` (entrambi parser deterministici);
 `score:combos` le **unisce** (placements deduplicati per evento fisico — data+posizione+nome evento —
-per non doppiare gli eventi che MetaBeys e WBO indicizzano entrambi), applica `src/lib/scoring.ts` e
-scrive `scoreBreakdown` + tag gestiti (`meta`, `top-tier`, `tournament-proven`, `theory-only`,
-`rising`). Algoritmo, pesi e costanti in `docs/scoring-algorithm.md`. Limite noto: nomi evento
-testualmente diversi tra le due fonti non vengono uniti (restano doppi); WBO pesa come `structured`
-(1.0) nello scoring, non 0.95.
+per non doppiare gli eventi che MetaBeys e WBO indicizzano entrambi; preserva anche i placement
+narrative già raccolti, es. Reddit), applica `src/lib/scoring.ts` e scrive `scoreBreakdown` + tag
+gestiti (`meta` ≥8.5, `top-tier` ≥7.0, `tournament-proven`, `theory-only`, `rising` implementato:
+momentum recente>storico). Algoritmo, pesi e costanti in `docs/scoring-algorithm.md`.
+- **`useConfidence` ATTIVO**: shrinkage low-sample (≈117/148 combo a evento singolo) — `score:combos`
+  chiama `scoreCombo(ev, { ref, useConfidence: true })`.
+- **Stadio**: i placement WBO portano `stadium` (xtreme/infinity, da `Stadium:` del thread); MetaBeys no.
+  Esposto come filtro/badge UI, NON pesato nello score. Lo storico `usage` alimenta il `usageTrend`.
+- Peso per **tipologia** di fonte (`TIER_WEIGHT`: structured 1.0 / narrative 0.6 / theory 0.3), non
+  per singola fonte: WBO è scorato 1.0, il `weight` di sources.json serve solo ai link UI.
+- Limite residuo dedup: senza id-evento condiviso cross-fonte, nomi del tutto diversi restano doppi
+  (mitigato: eventName WBO ora è il titolo torneo, non lo username; `normName` togle date/parentesi).
 
 ### Dipendenze
 - Node: `tsx`, `playwright-core` (usa il Chrome di sistema). Python: `youtube_transcript_api`.
@@ -124,19 +135,24 @@ testualmente diversi tra le due fonti non vengono uniti (restano doppi); WBO pes
 
 ### Fonti torneo (in `data/sources.json`, con `lang`)
 Strutturate: **MetaBeys** (1.0, podio+deck+usage%), **WBO Winning Combos** (0.95). Web: **SBBL** (es,
-win-rate), **PBI/probladers** (it), **okuyama3093**/**note** (ja), **polishbladers** (pl). YouTube
-multilingua: Bulgari Cult Bistrot (it), BeyMac/Beybreakr/Casual Beyblader X (en), LBP/Galaxy (pt),
-Flowbeyblade/BladerUlis (es), PoKSmon (id), Leonerd/BEYBLADE X KOREA (ko), namaste 阿土 (zh), MBBC (en).
-**Declassate** a `parts-theory` (0.3): BeyBase, BeyXDB (tier list teoriche, non dati torneo).
-Social login-walled in `manualVerification` (non scrappati, solo elencati nel report).
+win-rate), **PBI/probladers** (it), **okuyama3093** (ja), **arca.live** (ko, forum pubblico scrappato
+via Playwright). **kamen_a** (`wbo-overseas-note`, ja): prize-score WBO **aggregato per-parte**, usato
+come segnale soft/mention — MAI promosso a placements (duplicherebbe WBO). YouTube multilingua: Bulgari
+Cult Bistrot (it), BeyMac/Beybreakr/Casual Beyblader X (en), LBP/Galaxy (pt), Flowbeyblade/BladerUlis
+(es), PoKSmon (id), Leonerd/BEYBLADE X KOREA (ko), namaste 阿土 (zh), MBBC (en).
+**Declassate** a `parts-theory` (0.3): BeyBase, BeyXDB (tier list teoriche). **Cross-check fuori dal
+CAS**: BBX Weekly (`parts-usage`, ranking per-parte). **BBX.gg escluso** (championship/belt + eventi
+sovrapposti a WBO senza id condiviso → rischio doppioni). Facebook PH/MY e Instagram restano in
+`manualVerification` (non automatizzabili senza login/API).
 
 ## Automazione (Windows Task Scheduler)
 
 Il PC è spento di notte → tutta la pipeline gira in **un'unica sequenza alle 08:00** (utente loggato).
-`daily-pipeline.bat` esegue in ordine: `/update-parts` → `collect:sources` (con Reddit/WBO **headed**
-via `REDDIT_HEADED=1`/`WBO_HEADED=1`, lette da collect:sources) → `/update-combos` (fonti strutturate)
-→ `/mine-reddit` (Reddit a blocchi). Reddit riusa il login del profilo `.playwright-beyblade`; WBO può
-chiedere il captcha Cloudflare (mattina = utente al PC per risolverlo). I transcript YouTube girano a
+`daily-pipeline.bat` esegue in ordine: `/update-parts` → `collect:sources` (con Reddit/WBO/arca **headed**
+via `REDDIT_HEADED=1`/`WBO_HEADED=1`/`ARCA_HEADED=1`, lette da collect:sources; BBX Weekly headless) →
+`/update-combos` (fonti strutturate) → `/mine-reddit` (Reddit a blocchi). Reddit riusa il login del
+profilo `.playwright-beyblade`; WBO/arca possono chiedere il captcha Cloudflare (mattina = utente al PC
+per risolverlo). I transcript YouTube girano a
 parte ogni 5 min (`--batch 1`, rate-limit): i video nuovi scoperti oggi vengono trascritti nelle ore
 successive e raccolti dai run seguenti (eventually-consistent). `/update-parts`, `/update-combos` e
 `/mine-reddit` fanno **commit/push autonomi su master**.

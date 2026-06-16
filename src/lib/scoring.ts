@@ -7,7 +7,7 @@
  * Funzioni pure, nessun side-effect: testabili in isolamento (scripts/test-scoring.ts).
  * L'IA NON calcola lo score: estrae l'evidenza, questo codice la trasforma in numero.
  */
-import type { ComboEvidence, ScoreBreakdown, PlacementEvidence } from './types';
+import type { ComboEvidence, ScoreBreakdown, PlacementEvidence, UsageEvidence, Stadium } from './types';
 
 // ---- Costanti tarabili (un punto solo). Ricalibrare sulla distribuzione reale. ----
 export const CONST = {
@@ -26,7 +26,12 @@ export const CONST = {
   // peso del piazzamento: 1°..8° + top-cut generico
   PLACEMENT: { 1: 1.0, 2: 0.65, 3: 0.45, 4: 0.30, 5: 0.2, 6: 0.2, 7: 0.2, 8: 0.2 } as Record<number, number>,
   PLACEMENT_TOPCUT: 0.12,    // top-cut oltre l'8° o senza posizione nota
+  // Pesi per TIPOLOGIA di fonte (non per singola fonte). Scelta deliberata: il `weight` per-fonte
+  // in sources.json serve solo ai link UI, NON al calcolo. WBO è scorato come structured=1.0 (non
+  // 0.95). Vedi docs/scoring-algorithm.md.
   TIER_WEIGHT: { structured: 1.0, narrative: 0.6, theory: 0.3 } as Record<string, number>,
+  RISING_WINDOW_DAYS: 30,    // finestra "recente" per il momentum (tag rising)
+  RISING_RATIO: 1.15,        // recente > storica * RISING_RATIO → rising
 };
 
 /** Mappa saturante: [0,∞) → [0,1), crescente, con rendimenti decrescenti. sat(K)=0.5. */
@@ -57,6 +62,27 @@ function eventWeight(players?: number): number {
   return Math.min(CONST.EVENT_WEIGHT_MAX, Math.max(CONST.EVENT_WEIGHT_MIN, w));
 }
 
+/** Contributo grezzo (senza decadimento) di un singolo placement: posizione × evento × tier. */
+function placementRaw(pl: PlacementEvidence): number {
+  return placementWeight(pl.placement) * eventWeight(pl.players) * (CONST.TIER_WEIGHT[pl.tier] ?? 0.6);
+}
+
+/**
+ * Trend del meta-share dallo storico usage: confronta lo snapshot più vecchio col più recente.
+ * Richiede ≥2 snapshot con sharePct; altrimenti undefined (nessun trend mostrabile).
+ */
+export function usageTrend(usage: UsageEvidence[]): 'up' | 'down' | 'stable' | undefined {
+  const withShare = (usage ?? [])
+    .filter((u) => u.sharePct != null)
+    .sort((a, b) => a.date.localeCompare(b.date));
+  if (withShare.length < 2) return undefined;
+  const oldest = withShare[0].sharePct as number;
+  const newest = withShare[withShare.length - 1].sharePct as number;
+  if (newest > oldest + 1) return 'up';
+  if (newest < oldest - 1) return 'down';
+  return 'stable';
+}
+
 export interface ScoreResult {
   score: number;             // 0-10 (1 decimale)
   breakdown: ScoreBreakdown;
@@ -80,22 +106,21 @@ export function scoreCombo(ev: ComboEvidence, opts: ScoreOptions = {}): ScoreRes
 
   // --- Pilastro 1: Tournament Performance ---
   let pRaw = 0;
-  for (const pl of placements) {
-    pRaw += placementWeight(pl.placement)
-      * eventWeight(pl.players)
-      * (CONST.TIER_WEIGHT[pl.tier] ?? 0.6)
-      * decay(pl.date, ref);
-  }
+  for (const pl of placements) pRaw += placementRaw(pl) * decay(pl.date, ref);
   const performance = sat(pRaw, CONST.K_PERF);
 
   // --- Pilastro 2: Meta Presence / Usage ---
-  // Usa lo snapshot usage più "forte" (max share*ampiezza), decaduto per età.
+  // `usage` può ora essere uno storico di snapshot (vedi score-combos.ts): usa il PIÙ RECENTE per
+  // data, col suo decadimento. Così un vecchio picco di share non resta gonfiato (gli snapshot
+  // storici servono solo al trend, non al pilastro).
+  const latestUsage = usage.length > 0
+    ? usage.reduce((a, b) => (a.date >= b.date ? a : b))
+    : undefined;
   let presence = 0;
-  for (const u of usage) {
-    const s = u.sharePct ?? 0;
-    const breadth = Math.log1p(u.uniqueEvents ?? 0);
-    const p = sat(s * breadth, CONST.K_PRES) * decay(u.date, ref);
-    if (p > presence) presence = p;
+  if (latestUsage) {
+    const s = latestUsage.sharePct ?? 0;
+    const breadth = Math.log1p(latestUsage.uniqueEvents ?? 0);
+    presence = sat(s * breadth, CONST.K_PRES) * decay(latestUsage.date, ref);
   }
 
   // --- Pilastro 3: Source Corroboration ---
@@ -133,7 +158,11 @@ export function scoreCombo(ev: ComboEvidence, opts: ScoreOptions = {}): ScoreRes
   // --- Meta osservabile per i badge ---
   const distinctEventIds = new Set(placements.map((p) => p.eventId));
   const wins = placements.filter((p) => p.placement === 1).length;
-  const metaShare = Math.max(0, ...usage.map((u) => u.sharePct ?? 0));
+  const metaShare = latestUsage?.sharePct ?? 0;   // share dello snapshot più recente
+  const lastPlacementDate = placements.length > 0
+    ? placements.reduce((a, b) => (a.date >= b.date ? a : b)).date
+    : undefined;
+  const stadiums = [...new Set(placements.map((p) => p.stadium).filter((s): s is Stadium => !!s))];
   const breakdown: ScoreBreakdown = {
     performance: round3(performance),
     presence: round3(presence),
@@ -142,12 +171,20 @@ export function scoreCombo(ev: ComboEvidence, opts: ScoreOptions = {}): ScoreRes
     wins,
     topCutAppearances: placements.length,
     metaSharePct: metaShare > 0 ? metaShare : undefined,
+    lastPlacementDate,
+    stadiums: stadiums.length > 0 ? stadiums : undefined,
+    usageTrend: usageTrend(usage),
   };
 
-  return { score, breakdown, tags: deriveTags(score, placements, usage) };
+  return { score, breakdown, tags: deriveTags(score, placements, usage, ref) };
 }
 
-function deriveTags(score: number, placements: PlacementEvidence[], usage: ComboEvidence['usage']): string[] {
+function deriveTags(
+  score: number,
+  placements: PlacementEvidence[],
+  usage: ComboEvidence['usage'],
+  ref: Date,
+): string[] {
   // Soglie calibrate sulla scala assoluta (il combo dominante tocca ~8.9, non 10).
   const tags: string[] = [];
   if (score >= 8.5) tags.push('meta');
@@ -156,6 +193,20 @@ function deriveTags(score: number, placements: PlacementEvidence[], usage: Combo
     || (usage ?? []).some((u) => CONST.TIER_WEIGHT['structured'] && u.source.includes('metabeys'));
   if (hasStructured && placements.length > 0) tags.push('tournament-proven');
   if (placements.length === 0 && (usage ?? []).length === 0) tags.push('theory-only');
+
+  // rising: momentum positivo — performance grezza recente > storica * RISING_RATIO.
+  // Usa i placement (datati e accumulati), quindi è disponibile subito. Senza decadimento qui:
+  // le due finestre temporali già separano recente da storico.
+  let recentRaw = 0;
+  let olderRaw = 0;
+  for (const pl of placements) {
+    if (daysBetween(pl.date, ref) <= CONST.RISING_WINDOW_DAYS) recentRaw += placementRaw(pl);
+    else olderRaw += placementRaw(pl);
+  }
+  if (recentRaw > 0 && olderRaw > 0
+    && sat(recentRaw, CONST.K_PERF) > sat(olderRaw, CONST.K_PERF) * CONST.RISING_RATIO) {
+    tags.push('rising');
+  }
   return tags;
 }
 

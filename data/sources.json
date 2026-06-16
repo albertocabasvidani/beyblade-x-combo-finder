@@ -27,13 +27,37 @@
     },
     {
       "id": "wbo-overseas-note",
-      "name": "WBO Overseas Meta Report (note.com/kamen_a)",
+      "name": "WBO Tournament Prize Score Report (note.com/kamen_a)",
       "type": "website",
       "provides": "combos",
-      "weight": 0.7,
+      "weight": 0.6,
       "lang": "ja",
       "urls": ["https://note.com/kamen_a"],
-      "searchQueries": ["note.com kamen_a WBO overseas beyblade x"]
+      "searchQueries": [
+        "note.com kamen_a WBO Tournament Prize Score Report",
+        "note.com kamen_a 海外 メタ beyblade x"
+      ],
+      "notes": "Report settimanali di PRIZE SCORE AGGREGATO PER-PARTE (blade/bit/ratchet) dai record WBO overseas, NON placement per-evento. Usare come segnale usage-per-parte / mention: MAI promosso a evidence.placements (duplicherebbe WBO). searchQueries puntano ai singoli report, non al solo profilo radice."
+    },
+    {
+      "id": "arca-live-kr",
+      "name": "arca.live 베이블레이드 채널 (KR)",
+      "type": "arca",
+      "provides": "combos",
+      "weight": 0.6,
+      "lang": "ko",
+      "urls": ["https://arca.live/b/beyblade"],
+      "notes": "Forum coreano pubblico (polso del meta KR). Fetch via Playwright (scripts/scrape-arca.ts, headless con fallback headed se Cloudflare). L'estrazione delle combo dai post in coreano la fa l'IA in /update-combos (match nomi parti multilingua), coerente col confine IA/codice."
+    },
+    {
+      "id": "bbx-weekly",
+      "name": "BBX Weekly (ranking per-parte)",
+      "type": "bbx",
+      "provides": "parts-usage",
+      "weight": 0.8,
+      "lang": "en",
+      "urls": ["https://bbxweekly.com/4weeks", "https://bbxweekly.com/2weeks"],
+      "notes": "Ranking PER-PARTE (Lock Chip/Ratchet/Blade) aggiornato ogni venerdì. Cross-check INDIPENDENTE di freschezza/usage-parte: NON alimenta lo score CAS (è per-parte, non per-combo/evento → nessun doppio conteggio con MetaBeys/WBO). Fetch scripts/fetch-bbx-weekly.ts, parse scripts/parse-bbx-weekly.ts → data/bbx-weekly-evidence.json. BBX.gg NON aggiunto: championship/belt + eventi sovrapposti a WBO senza id-evento condiviso (rischio doppioni)."
     },
     {
       "id": "sbbl",
@@ -311,8 +335,7 @@
     { "platform": "instagram", "handle": "probladersitalia", "url": "https://www.instagram.com/probladersitalia", "lang": "it", "region": "IT" },
     { "platform": "instagram", "handle": "xleague_germany", "url": "https://www.instagram.com/xleague_germany/", "lang": "de", "region": "DE" },
     { "platform": "discord", "handle": "blader-league-germany", "url": "https://bladerleague.de", "lang": "de", "region": "DE" },
-    { "platform": "instagram", "handle": "lbpofc", "url": "https://www.instagram.com/lbpofc/", "lang": "pt", "region": "BR" },
-    { "platform": "forum", "handle": "arca.live beyblade", "url": "https://arca.live/b/beyblade", "lang": "ko", "region": "KR" }
+    { "platform": "instagram", "handle": "lbpofc", "url": "https://www.instagram.com/lbpofc/", "lang": "pt", "region": "BR" }
   ],
   "searchSettings": {
     "maxResultsPerSource": 10,

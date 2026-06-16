@@ -1,0 +1,663 @@
+{
+  "generatedAt": "2026-06-16",
+  "parts": [
+    {
+      "partId": "cobalt-dragoon",
+      "category": "blade",
+      "name": "Cobalt Dragoon",
+      "score": 53,
+      "window": "4w"
+    },
+    {
+      "partId": "meteor-dragoon",
+      "category": "blade",
+      "name": "Meteor Dragoon",
+      "score": 52,
+      "window": "4w"
+    },
+    {
+      "partId": "scorpio-spear",
+      "category": "blade",
+      "name": "Scorpio Spear",
+      "score": 33,
+      "window": "4w"
+    },
+    {
+      "partId": "aero-pegasus",
+      "category": "blade",
+      "name": "Aero Pegasus",
+      "score": 65,
+      "window": "4w"
+    },
+    {
+      "partId": "clock-mirage",
+      "category": "blade",
+      "name": "Clock Mirage",
+      "score": 34,
+      "window": "4w"
+    },
+    {
+      "partId": "hover-wyvern",
+      "category": "blade",
+      "name": "Wyvern Hover",
+      "score": 50,
+      "window": "4w"
+    },
+    {
+      "partId": "phoenix-wing",
+      "category": "blade",
+      "name": "Phoenix Wing",
+      "score": 41,
+      "window": "4w"
+    },
+    {
+      "partId": "tyranno-beat",
+      "category": "blade",
+      "name": "Tyranno Beat",
+      "score": 36,
+      "window": "4w"
+    },
+    {
+      "partId": "under-needle",
+      "category": "bit",
+      "name": "Under Needle",
+      "score": 29,
+      "window": "4w"
+    },
+    {
+      "partId": "knight-mail",
+      "category": "blade",
+      "name": "Knight Mail",
+      "score": 50,
+      "window": "4w"
+    },
+    {
+      "partId": "mummy-curse",
+      "category": "blade",
+      "name": "Mummy Curse",
+      "score": 34,
+      "window": "4w"
+    },
+    {
+      "partId": "shark-scale",
+      "category": "blade",
+      "name": "Shark Scale",
+      "score": 92,
+      "window": "4w"
+    },
+    {
+      "partId": "silver-wolf",
+      "category": "blade",
+      "name": "Silver Wolf",
+      "score": 44,
+      "window": "4w"
+    },
+    {
+      "partId": "golem-rock",
+      "category": "blade",
+      "name": "Golem Rock",
+      "score": 31,
+      "window": "4w"
+    },
+    {
+      "partId": "wizard-rod",
+      "category": "blade",
+      "name": "Wizard Rod",
+      "score": 90,
+      "window": "4w"
+    },
+    {
+      "partId": "free-ball",
+      "category": "bit",
+      "name": "Free Ball",
+      "score": 58,
+      "window": "4w"
+    },
+    {
+      "partId": "low-rush",
+      "category": "bit",
+      "name": "Low Rush",
+      "score": 75,
+      "window": "4w"
+    },
+    {
+      "partId": "elevate",
+      "category": "bit",
+      "name": "Elevate",
+      "score": 54,
+      "window": "4w"
+    },
+    {
+      "partId": "low-orb",
+      "category": "bit",
+      "name": "Low Orb",
+      "score": 42,
+      "window": "4w"
+    },
+    {
+      "partId": "level",
+      "category": "bit",
+      "name": "Level",
+      "score": 52,
+      "window": "4w"
+    },
+    {
+      "partId": "point",
+      "category": "bit",
+      "name": "Point",
+      "score": 41,
+      "window": "4w"
+    },
+    {
+      "partId": "taper",
+      "category": "bit",
+      "name": "Taper",
+      "score": 40,
+      "window": "4w"
+    },
+    {
+      "partId": "unite",
+      "category": "bit",
+      "name": "Unite",
+      "score": 40,
+      "window": "4w"
+    },
+    {
+      "partId": "wedge",
+      "category": "bit",
+      "name": "Wedge",
+      "score": 42,
+      "window": "4w"
+    },
+    {
+      "partId": "blast",
+      "category": "mainBlade",
+      "name": "Blast",
+      "score": 47,
+      "window": "4w"
+    },
+    {
+      "partId": "blitz",
+      "category": "mainBlade",
+      "name": "Blitz",
+      "score": 36,
+      "window": "4w"
+    },
+    {
+      "partId": "break",
+      "category": "overBlade",
+      "name": "Break",
+      "score": 32,
+      "window": "4w"
+    },
+    {
+      "partId": "1-50",
+      "category": "ratchet",
+      "name": "1-50",
+      "score": 56,
+      "window": "4w"
+    },
+    {
+      "partId": "1-60",
+      "category": "ratchet",
+      "name": "1-60",
+      "score": 100,
+      "window": "4w"
+    },
+    {
+      "partId": "1-70",
+      "category": "ratchet",
+      "name": "1-70",
+      "score": 56,
+      "window": "4w"
+    },
+    {
+      "partId": "1-80",
+      "category": "ratchet",
+      "name": "1-80",
+      "score": 34,
+      "window": "4w"
+    },
+    {
+      "partId": "3-60",
+      "category": "ratchet",
+      "name": "3-60",
+      "score": 57,
+      "window": "4w"
+    },
+    {
+      "partId": "3-70",
+      "category": "ratchet",
+      "name": "3-70",
+      "score": 55,
+      "window": "4w"
+    },
+    {
+      "partId": "4-50",
+      "category": "ratchet",
+      "name": "4-50",
+      "score": 46,
+      "window": "4w"
+    },
+    {
+      "partId": "4-55",
+      "category": "ratchet",
+      "name": "4-55",
+      "score": 34,
+      "window": "4w"
+    },
+    {
+      "partId": "5-60",
+      "category": "ratchet",
+      "name": "5-60",
+      "score": 44,
+      "window": "4w"
+    },
+    {
+      "partId": "6-60",
+      "category": "ratchet",
+      "name": "6-60",
+      "score": 41,
+      "window": "4w"
+    },
+    {
+      "partId": "7-55",
+      "category": "ratchet",
+      "name": "7-55",
+      "score": 33,
+      "window": "4w"
+    },
+    {
+      "partId": "7-60",
+      "category": "ratchet",
+      "name": "7-60",
+      "score": 50,
+      "window": "4w"
+    },
+    {
+      "partId": "7-70",
+      "category": "ratchet",
+      "name": "7-70",
+      "score": 49,
+      "window": "4w"
+    },
+    {
+      "partId": "8-70",
+      "category": "ratchet",
+      "name": "8-70",
+      "score": 32,
+      "window": "4w"
+    },
+    {
+      "partId": "9-60",
+      "category": "ratchet",
+      "name": "9-60",
+      "score": 76,
+      "window": "4w"
+    },
+    {
+      "partId": "9-70",
+      "category": "ratchet",
+      "name": "9-70",
+      "score": 34,
+      "window": "4w"
+    },
+    {
+      "partId": "ball",
+      "category": "bit",
+      "name": "Ball",
+      "score": 43,
+      "window": "4w"
+    },
+    {
+      "partId": "hexa",
+      "category": "bit",
+      "name": "Hexa",
+      "score": 78,
+      "window": "4w"
+    },
+    {
+      "partId": "jolt",
+      "category": "bit",
+      "name": "Jolt",
+      "score": 45,
+      "window": "4w"
+    },
+    {
+      "partId": "kick",
+      "category": "bit",
+      "name": "Kick",
+      "score": 51,
+      "window": "4w"
+    },
+    {
+      "partId": "rush",
+      "category": "bit",
+      "name": "Rush",
+      "score": 67,
+      "window": "4w"
+    },
+    {
+      "partId": "fort",
+      "category": "mainBlade",
+      "name": "Fort",
+      "score": 29,
+      "window": "4w"
+    },
+    {
+      "partId": "rage",
+      "category": "mainBlade",
+      "name": "Rage",
+      "score": 49,
+      "window": "4w"
+    },
+    {
+      "partId": "flow",
+      "category": "overBlade",
+      "name": "Flow",
+      "score": 48,
+      "window": "4w"
+    },
+    {
+      "partId": "cobalt-dragoon",
+      "category": "blade",
+      "name": "Cobalt Dragoon",
+      "score": 47,
+      "window": "2w"
+    },
+    {
+      "partId": "meteor-dragoon",
+      "category": "blade",
+      "name": "Meteor Dragoon",
+      "score": 57,
+      "window": "2w"
+    },
+    {
+      "partId": "scorpio-spear",
+      "category": "blade",
+      "name": "Scorpio Spear",
+      "score": 34,
+      "window": "2w"
+    },
+    {
+      "partId": "aero-pegasus",
+      "category": "blade",
+      "name": "Aero Pegasus",
+      "score": 66,
+      "window": "2w"
+    },
+    {
+      "partId": "clock-mirage",
+      "category": "blade",
+      "name": "Clock Mirage",
+      "score": 33,
+      "window": "2w"
+    },
+    {
+      "partId": "hover-wyvern",
+      "category": "blade",
+      "name": "Wyvern Hover",
+      "score": 51,
+      "window": "2w"
+    },
+    {
+      "partId": "phoenix-wing",
+      "category": "blade",
+      "name": "Phoenix Wing",
+      "score": 44,
+      "window": "2w"
+    },
+    {
+      "partId": "tyranno-beat",
+      "category": "blade",
+      "name": "Tyranno Beat",
+      "score": 41,
+      "window": "2w"
+    },
+    {
+      "partId": "shark-scale",
+      "category": "blade",
+      "name": "Shark Scale",
+      "score": 90,
+      "window": "2w"
+    },
+    {
+      "partId": "silver-wolf",
+      "category": "blade",
+      "name": "Silver Wolf",
+      "score": 44,
+      "window": "2w"
+    },
+    {
+      "partId": "golem-rock",
+      "category": "blade",
+      "name": "Golem Rock",
+      "score": 35,
+      "window": "2w"
+    },
+    {
+      "partId": "wizard-rod",
+      "category": "blade",
+      "name": "Wizard Rod",
+      "score": 84,
+      "window": "2w"
+    },
+    {
+      "partId": "free-ball",
+      "category": "bit",
+      "name": "Free Ball",
+      "score": 57,
+      "window": "2w"
+    },
+    {
+      "partId": "low-rush",
+      "category": "bit",
+      "name": "Low Rush",
+      "score": 76,
+      "window": "2w"
+    },
+    {
+      "partId": "elevate",
+      "category": "bit",
+      "name": "Elevate",
+      "score": 50,
+      "window": "2w"
+    },
+    {
+      "partId": "low-orb",
+      "category": "bit",
+      "name": "Low Orb",
+      "score": 39,
+      "window": "2w"
+    },
+    {
+      "partId": "level",
+      "category": "bit",
+      "name": "Level",
+      "score": 57,
+      "window": "2w"
+    },
+    {
+      "partId": "point",
+      "category": "bit",
+      "name": "Point",
+      "score": 40,
+      "window": "2w"
+    },
+    {
+      "partId": "taper",
+      "category": "bit",
+      "name": "Taper",
+      "score": 33,
+      "window": "2w"
+    },
+    {
+      "partId": "unite",
+      "category": "bit",
+      "name": "Unite",
+      "score": 41,
+      "window": "2w"
+    },
+    {
+      "partId": "wedge",
+      "category": "bit",
+      "name": "Wedge",
+      "score": 39,
+      "window": "2w"
+    },
+    {
+      "partId": "blast",
+      "category": "mainBlade",
+      "name": "Blast",
+      "score": 43,
+      "window": "2w"
+    },
+    {
+      "partId": "blitz",
+      "category": "mainBlade",
+      "name": "Blitz",
+      "score": 50,
+      "window": "2w"
+    },
+    {
+      "partId": "1-50",
+      "category": "ratchet",
+      "name": "1-50",
+      "score": 57,
+      "window": "2w"
+    },
+    {
+      "partId": "1-60",
+      "category": "ratchet",
+      "name": "1-60",
+      "score": 100,
+      "window": "2w"
+    },
+    {
+      "partId": "1-70",
+      "category": "ratchet",
+      "name": "1-70",
+      "score": 55,
+      "window": "2w"
+    },
+    {
+      "partId": "1-80",
+      "category": "ratchet",
+      "name": "1-80",
+      "score": 36,
+      "window": "2w"
+    },
+    {
+      "partId": "3-60",
+      "category": "ratchet",
+      "name": "3-60",
+      "score": 57,
+      "window": "2w"
+    },
+    {
+      "partId": "3-70",
+      "category": "ratchet",
+      "name": "3-70",
+      "score": 56,
+      "window": "2w"
+    },
+    {
+      "partId": "4-50",
+      "category": "ratchet",
+      "name": "4-50",
+      "score": 51,
+      "window": "2w"
+    },
+    {
+      "partId": "5-60",
+      "category": "ratchet",
+      "name": "5-60",
+      "score": 41,
+      "window": "2w"
+    },
+    {
+      "partId": "6-60",
+      "category": "ratchet",
+      "name": "6-60",
+      "score": 42,
+      "window": "2w"
+    },
+    {
+      "partId": "7-60",
+      "category": "ratchet",
+      "name": "7-60",
+      "score": 51,
+      "window": "2w"
+    },
+    {
+      "partId": "7-70",
+      "category": "ratchet",
+      "name": "7-70",
+      "score": 55,
+      "window": "2w"
+    },
+    {
+      "partId": "9-60",
+      "category": "ratchet",
+      "name": "9-60",
+      "score": 75,
+      "window": "2w"
+    },
+    {
+      "partId": "9-70",
+      "category": "ratchet",
+      "name": "9-70",
+      "score": 40,
+      "window": "2w"
+    },
+    {
+      "partId": "ball",
+      "category": "bit",
+      "name": "Ball",
+      "score": 45,
+      "window": "2w"
+    },
+    {
+      "partId": "hexa",
+      "category": "bit",
+      "name": "Hexa",
+      "score": 74,
+      "window": "2w"
+    },
+    {
+      "partId": "jolt",
+      "category": "bit",
+      "name": "Jolt",
+      "score": 44,
+      "window": "2w"
+    },
+    {
+      "partId": "kick",
+      "category": "bit",
+      "name": "Kick",
+      "score": 55,
+      "window": "2w"
+    },
+    {
+      "partId": "rush",
+      "category": "bit",
+      "name": "Rush",
+      "score": 66,
+      "window": "2w"
+    },
+    {
+      "partId": "rage",
+      "category": "mainBlade",
+      "name": "Rage",
+      "score": 50,
+      "window": "2w"
+    },
+    {
+      "partId": "flow",
+      "category": "overBlade",
+      "name": "Flow",
+      "score": 51,
+      "window": "2w"
+    }
+  ]
+}

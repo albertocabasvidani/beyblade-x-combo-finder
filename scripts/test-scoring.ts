@@ -5,7 +5,7 @@
  * non valori esatti: i numeri assoluti dipendono dalla taratura delle costanti.
  * Esegui: npx tsx scripts/test-scoring.ts  (esce 1 se un assert fallisce).
  */
-import { scoreCombo, sat, decay, CONST } from '../src/lib/scoring';
+import { scoreCombo, sat, decay, usageTrend, CONST } from '../src/lib/scoring';
 import type { ComboEvidence, PlacementEvidence } from '../src/lib/types';
 
 const REF = new Date('2026-06-15T00:00:00Z');
@@ -90,6 +90,60 @@ check('risultati recenti ⇒ score maggiore', recentWin > oldWin, `(${oldWin} vs
 const winVsThird = scoreCombo(ev(placements(5, 1, 25)), { ref: REF }).score;
 const thirdOnly = scoreCombo(ev(placements(5, 3, 25)), { ref: REF }).score;
 check('1° posto pesa più del 3°', winVsThird > thirdOnly, `(${thirdOnly} vs ${winVsThird})`);
+
+console.log('Soglie tag (boundary)');
+// La combo dominante tocca la soglia "meta" (≥8.5); fringe resta sotto "top-tier" (<7.0).
+check('dominant ha "top-tier"', dominant.tags.includes('top-tier'));
+check('fringe NON ha "top-tier"', !fringe.tags.includes('top-tier'), `=${fringe.score}`);
+
+console.log('useConfidence — shrinkage low-sample');
+const single = ev(placements(1, 1, 33));            // 1 evento distinto
+const singleNo = scoreCombo(single, { ref: REF }).score;
+const singleYes = scoreCombo(single, { ref: REF, useConfidence: true }).score;
+check('useConfidence abbassa lo score da campione unico', singleYes < singleNo, `(${singleYes} vs ${singleNo})`);
+const many = ev(placements(8, 1, 33));               // 8 eventi distinti
+const manyNo = scoreCombo(many, { ref: REF }).score;
+const manyYes = scoreCombo(many, { ref: REF, useConfidence: true }).score;
+check('useConfidence penalizza meno con molti eventi', (manyYes / manyNo) > (singleYes / singleNo), `(${manyYes / manyNo} vs ${singleYes / singleNo})`);
+
+console.log('Tag rising (momentum)');
+const rising = scoreCombo(ev([
+  ...placements(5, 1, 25, 5),     // recente, forte
+  ...placements(1, 3, 25, 120),   // storico, debole
+]), { ref: REF });
+check('combo con momentum recente ha "rising"', rising.tags.includes('rising'), JSON.stringify(rising.tags));
+const declining = scoreCombo(ev([
+  ...placements(1, 3, 25, 5),      // recente, debole
+  ...placements(6, 1, 25, 120),    // storico, forte
+]), { ref: REF });
+check('combo in declino NON ha "rising"', !declining.tags.includes('rising'), JSON.stringify(declining.tags));
+const onlyRecent = scoreCombo(ev(placements(5, 1, 25, 5)), { ref: REF });
+check('senza storico (solo finestra recente) NON ha "rising"', !onlyRecent.tags.includes('rising'));
+
+console.log('usageTrend');
+check('trend up (share cresce)', usageTrend([
+  { source: 'metabeys-leaderboard', date: '2026-04-01', window: '30d', sharePct: 5 },
+  { source: 'metabeys-leaderboard', date: '2026-06-01', window: '30d', sharePct: 12 },
+]) === 'up');
+check('trend down (share cala)', usageTrend([
+  { source: 'metabeys-leaderboard', date: '2026-04-01', window: '30d', sharePct: 14 },
+  { source: 'metabeys-leaderboard', date: '2026-06-01', window: '30d', sharePct: 6 },
+]) === 'down');
+check('trend stable (variazione ≤1pt)', usageTrend([
+  { source: 'metabeys-leaderboard', date: '2026-04-01', window: '30d', sharePct: 10 },
+  { source: 'metabeys-leaderboard', date: '2026-06-01', window: '30d', sharePct: 10.5 },
+]) === 'stable');
+check('trend undefined con <2 snapshot', usageTrend([
+  { source: 'metabeys-leaderboard', date: '2026-06-01', window: '30d', sharePct: 10 },
+]) === undefined);
+
+console.log('lastPlacementDate / stadiums (breakdown)');
+const withStadium = scoreCombo(ev([
+  { source: 'wbo-winning-combos', tier: 'structured', eventId: 'e1', eventName: 'X', date: '2026-06-10', placement: 1, players: 30, stadium: 'xtreme', lang: 'en' },
+  { source: 'wbo-winning-combos', tier: 'structured', eventId: 'e2', eventName: 'Y', date: '2026-05-01', placement: 2, players: 30, stadium: 'infinity', lang: 'en' },
+]), { ref: REF });
+check('lastPlacementDate = placement più recente', withStadium.breakdown.lastPlacementDate === '2026-06-10', `=${withStadium.breakdown.lastPlacementDate}`);
+check('stadiums raccoglie i piatti distinti', !!withStadium.breakdown.stadiums && withStadium.breakdown.stadiums.length === 2);
 
 console.log(failed === 0 ? '\nTutti i test passati.' : `\n${failed} test FALLITI.`);
 process.exit(failed === 0 ? 0 : 1);

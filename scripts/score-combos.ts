@@ -14,7 +14,7 @@
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { join } from 'path';
 import { scoreCombo } from '../src/lib/scoring';
-import type { Combo, CombosDatabase, ComboEvidence, MentionEvidence, PlacementEvidence } from '../src/lib/types';
+import type { Combo, CombosDatabase, ComboEvidence, MentionEvidence, PlacementEvidence, UsageEvidence } from '../src/lib/types';
 
 const ROOT = join(import.meta.dirname, '..');
 const DATA = join(ROOT, 'data');
@@ -79,19 +79,32 @@ function main() {
     const w = wboParsed[combo.id];
     const hasFresh = !!(p || w);
     const prevMentions = combo.evidence?.mentions ?? [];
+    const prevPlacements = combo.evidence?.placements ?? [];
+    const prevUsage = combo.evidence?.usage ?? [];
     const ev: ComboEvidence = {
       // Unione dei placement MetaBeys + WBO, deduplicati per evento fisico (data + posizione + nome
-      // evento): evita il doppio conteggio quando MetaBeys indicizza lo stesso evento WBO. Se nessuna
-      // fonte fresca copre il combo, si tengono i placement salvati in combos.json.
+      // evento): evita il doppio conteggio quando MetaBeys indicizza lo stesso evento WBO. Si
+      // preservano anche i placement narrative già raccolti (es. report Reddit, tier ≠ structured),
+      // che le sole fonti strutturate non riproducono. Se nessuna fonte fresca copre il combo, si
+      // tengono i placement salvati in combos.json.
       placements: hasFresh
-        ? dedupPlacements([...(p?.placements ?? []), ...(w?.placements ?? [])])
-        : (combo.evidence?.placements ?? []),
-      usage: p?.usage ?? (hasFresh ? [] : (combo.evidence?.usage ?? [])),   // WBO non fornisce usage
+        ? dedupPlacements([
+            ...prevPlacements.filter((pl) => pl.tier !== 'structured'),
+            ...(p?.placements ?? []),
+            ...(w?.placements ?? []),
+          ])
+        : prevPlacements,
+      // Storico usage: accumula gli snapshot datati (per il trend), dedup per (source|date|window),
+      // tieni gli ultimi N. Lo scoring usa comunque solo lo snapshot più recente (vedi scoring.ts);
+      // lo storico serve unicamente al calcolo del trend.
+      usage: hasFresh ? mergeUsageHistory(prevUsage, p?.usage ?? []) : prevUsage,
       mentions: dedupMentions([...prevMentions, ...legacyMentions(combo)]),
     };
     combo.evidence = ev;
 
-    const { score, breakdown, tags } = scoreCombo(ev, { ref });
+    // useConfidence attivo: 117/148 combo poggiano su un solo evento; lo shrinkage low-sample
+    // penalizza l'evidenza da campione unico (condizione documentata in scoring-algorithm.md).
+    const { score, breakdown, tags } = scoreCombo(ev, { ref, useConfidence: true });
     const manualTags = (combo.tags ?? []).filter((t) => !MANAGED_TAGS.has(t));
     combo.score = score;
     combo.scoreBreakdown = breakdown;
@@ -122,12 +135,41 @@ function dedupMentions(ms: MentionEvidence[]): MentionEvidence[] {
   return out;
 }
 
-const normName = (s: string) => (s ?? '').toLowerCase().replace(/\s+/g, ' ').trim();
+const USAGE_HISTORY_MAX = 12;   // snapshot usage conservati per il trend
+
+// Accumula lo storico degli snapshot usage: dedup per (source|date|window), ordinati per data,
+// tenuti gli ultimi N. Serve al trend del meta-share (lo scoring usa solo il più recente).
+function mergeUsageHistory(prev: UsageEvidence[], fresh: UsageEvidence[]): UsageEvidence[] {
+  const seen = new Set<string>();
+  const out: UsageEvidence[] = [];
+  for (const u of [...prev, ...fresh]) {
+    const key = `${u.source}|${u.date}|${u.window}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    out.push(u);
+  }
+  out.sort((a, b) => a.date.localeCompare(b.date));
+  return out.slice(-USAGE_HISTORY_MAX);
+}
+
+// Normalizza il nome evento per il confronto cross-fonte: minuscole, via parentetiche
+// ("(June 13th)"), ordinali di data, punteggiatura → spazio. Così "Untouchables Locals (June 13th)"
+// (MetaBeys) e "Untouchables Locals June 13th" (titolo thread WBO) collassano sulla stessa chiave.
+const normName = (s: string) => (s ?? '')
+  .toLowerCase()
+  .replace(/\([^)]*\)/g, ' ')
+  .replace(/\b\d{1,2}(st|nd|rd|th)\b/g, ' ')
+  .replace(/[^a-z0-9]+/g, ' ')
+  .replace(/\s+/g, ' ')
+  .trim();
 
 // Deduplica i placement per evento fisico: MetaBeys e WBO assegnano eventId diversi allo stesso
 // torneo, quindi la chiave è (data, posizione, nome evento normalizzato). MetaBeys, passato per
-// primo, vince (porta deckScore/topCutSize). Limite noto: nomi evento testualmente diversi tra le
-// due fonti non vengono uniti → restano doppi (caso raro, documentato).
+// primo, vince (porta deckScore/topCutSize).
+// Limite residuo (documentato): non esiste un id-evento condiviso tra le due fonti, quindi il merge
+// cross-fonte si appoggia al nome. Con l'estrazione corretta del nome evento WBO (non più lo
+// username del poster) e questa normalizzazione i casi comuni si uniscono; nomi del tutto diversi
+// tra le fonti restano doppi (caso raro, impatto bounded per la saturazione del pilastro).
 function dedupPlacements(ps: PlacementEvidence[]): PlacementEvidence[] {
   const seen = new Set<string>();
   const out: PlacementEvidence[] = [];

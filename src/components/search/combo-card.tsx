@@ -25,6 +25,17 @@ const typeBg: Record<string, string> = {
   balance: 'bg-balance',
 };
 
+const STALE_DAYS = 45;   // oltre, l'evidenza più recente è considerata "datata"
+
+function fmtDate(iso: string, locale: Locale): string {
+  const d = new Date(iso + 'T00:00:00');
+  return d.toLocaleDateString(locale === 'it' ? 'it-IT' : 'en-US', { day: '2-digit', month: 'short' });
+}
+
+function daysSince(iso: string): number {
+  return (Date.now() - new Date(iso + 'T00:00:00Z').getTime()) / 86_400_000;
+}
+
 export function ComboCard({ combo, displayName, selected, compare, locale, rank, partName, t }: Props) {
   const matched = getMatchedParts(combo, selected);
   const b = combo.scoreBreakdown;
@@ -77,6 +88,24 @@ export function ComboCard({ combo, displayName, selected, compare, locale, rank,
     </span>
   );
 
+  const StadiumBadge = () =>
+    b?.stadiums && b.stadiums.length > 0 ? (
+      <span class="shrink-0 rounded-[4px] border border-border px-1.5 py-0.5 font-mono text-[9px] font-bold uppercase text-muted">
+        {b.stadiums.map((s) => t(`stadium.${s}`)).join(' / ')}
+      </span>
+    ) : null;
+
+  // Freschezza (data ultimo podio) + trend del meta-share. Il trend appare solo con ≥2 snapshot
+  // usage accumulati; finché manca lo storico resta nascosto.
+  const Freshness = () =>
+    b?.lastPlacementDate ? (
+      <span class={`inline-flex items-center gap-1 ${daysSince(b.lastPlacementDate) > STALE_DAYS ? 'text-muted-2' : 'text-muted'}`}>
+        {t('combo.lastSeen')} {fmtDate(b.lastPlacementDate, locale)}
+        {b.usageTrend === 'up' && <span class="text-owned-text" title={t('combo.trendUp')}>▲</span>}
+        {b.usageTrend === 'down' && <span class="text-missing-text" title={t('combo.trendDown')}>▼</span>}
+      </span>
+    ) : null;
+
   const PartChips = ({ dense = false }: { dense?: boolean }) =>
     !showChips ? null : (
       <div class={`flex flex-wrap ${dense ? 'gap-1.5' : 'gap-2'}`}>
@@ -105,6 +134,7 @@ export function ComboCard({ combo, displayName, selected, compare, locale, rank,
         {b.wins > 0 && <span class="text-gold">{'\u{1F3C6}'} {b.wins} {t('combo.wins')}</span>}
         {b.tournamentEvents > 0 && <span>{b.tournamentEvents} {t('combo.events')}</span>}
         {b.metaSharePct != null && <span class="text-scarlet">{b.metaSharePct}% {t('combo.metaShare')}</span>}
+        <Freshness />
       </div>
     ) : null;
 
@@ -122,8 +152,9 @@ export function ComboCard({ combo, displayName, selected, compare, locale, rank,
                   <CxBadge />
                   <h3 class="font-display text-[17px] uppercase leading-tight text-text">{displayName}</h3>
                 </div>
-                <div class="mt-1.5 flex items-center gap-2">
+                <div class="mt-1.5 flex flex-wrap items-center gap-2">
                   <TypeBadge />
+                  <StadiumBadge />
                   <Sources />
                 </div>
               </div>
@@ -160,6 +191,7 @@ export function ComboCard({ combo, displayName, selected, compare, locale, rank,
             </div>
             <div class="mt-2 flex flex-wrap items-center gap-2">
               <TypeBadge />
+              <StadiumBadge />
               {showChips ? <PartChips dense /> : <Sources />}
             </div>
           </div>
@@ -177,6 +209,9 @@ export function ComboCard({ combo, displayName, selected, compare, locale, rank,
                     <div class="h-full" style={{ width: `${Math.max(b.metaSharePct, 3)}%`, background: `var(${tier.fillVar})` }} />
                   </div>
                 </>
+              )}
+              {b.lastPlacementDate && (
+                <div class="mt-1.5 text-[10.5px] font-medium"><Freshness /></div>
               )}
             </div>
           )}

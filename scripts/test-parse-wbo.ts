@@ -5,7 +5,7 @@
  *
  * Esegui: npx tsx scripts/test-parse-wbo.ts
  */
-import { buildResolver, parseComboLine, parseEventId, parseDate, parsePlayers, segmentThread } from './lib/wbo-parse';
+import { buildResolver, parseComboLine, parseEventId, parseDate, parsePlayers, parseStadium, parseEventName, segmentThread } from './lib/wbo-parse';
 
 let pass = 0;
 let fail = 0;
@@ -67,6 +67,21 @@ check('players Participants', parsePlayers('32 Participants') === 32);
 check('players player tournament', parsePlayers('115 player tournament in Turkiye') === 115);
 check('players assente → undefined', parsePlayers('no count here') === undefined);
 
+// --- stadium ---
+check('stadium Xtreme (TAKARA TOMY)', parseStadium('Stadium: Xtreme Stadium (TAKARA TOMY)') === 'xtreme');
+check('stadium BX-10 Xtreme', parseStadium('Stadium: BX-10 Xtreme Stadium') === 'xtreme');
+check('stadium Extreme (variante)', parseStadium('Stadium: Extreme Stadium') === 'xtreme');
+check('stadium Infinity', parseStadium('Stadium: Infinity Stadium') === 'infinity');
+check('stadium assente → undefined', parseStadium('Optional Rules: none') === undefined);
+
+// --- eventName: deve preferire il titolo del torneo, NON lo username del poster ---
+check('eventName da slug thread', parseEventName('Event Page Link: https://worldbeyblade.org/Thread-Untouchables-Locals-June-13th--126198', []) === 'Untouchables Locals June 13th');
+check('eventName scarta username (token unico) e prende la riga-titolo',
+  parseEventName('', ['Shawn514', '115 player tournament in Turkiye']) === '115 player tournament in Turkiye');
+check('eventName ripulisce URL dalla riga-titolo',
+  parseEventName('', ['derincanleylek', '115 player tournament in Turkiye: https://challonge.com/tr/mptzhn5t']) === '115 player tournament in Turkiye');
+check('eventName vuoto se solo username', parseEventName('', ['Shawn514']) === '');
+
 // --- Segmentazione deterministica: medaglie emoji (surrogate pair) ---
 const emojiRaw = [
   'ORGANIZER',
@@ -88,6 +103,8 @@ check('segment: evento emoji riconosciuto', segEvents.length === 1);
 check('segment: due posizioni 🥇🥈', segEvents[0]?.placements.length === 2, JSON.stringify(segEvents[0]?.placements?.map((p) => p.rank)));
 check('segment: 🥇 = rank 1', segEvents[0]?.placements[0]?.rank === 1);
 check('segment: combo sotto 🥇 raccolte', (segEvents[0]?.placements[0]?.comboLinesRaw.length ?? 0) === 2);
+check('segment: eventName = titolo torneo, non username "derincanleylek"',
+  segEvents[0]?.eventName === '115 player tournament in Turkiye', JSON.stringify(segEvents[0]?.eventName));
 
 console.log(`\n${pass} passed, ${fail} failed.`);
 if (fail > 0) process.exit(1);

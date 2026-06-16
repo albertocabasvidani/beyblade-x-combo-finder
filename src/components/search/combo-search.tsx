@@ -1,5 +1,5 @@
 import { useState } from 'preact/hooks';
-import type { PartsRegistry, CombosDatabase, Combo, SelectedParts, Locale } from '../../lib/types';
+import type { PartsRegistry, CombosDatabase, Combo, SelectedParts, Locale, ComboLine, Stadium } from '../../lib/types';
 import { filterCombos } from '../../lib/search-engine';
 import { PartSearch, type PartRef, type PartCategory } from './part-search';
 import { ComboCard } from './combo-card';
@@ -53,6 +53,10 @@ export default function ComboSearch({ parts, combos, locale, translations }: Pro
   const [onlyBuildable, setOnlyBuildable] = useState(false);
   const [tournamentOnly, setTournamentOnly] = useState(false);
   const [metaOnly, setMetaOnly] = useState(false);
+  const [lineFilter, setLineFilter] = useState<ComboLine[]>([]);
+  const [stadiumFilter, setStadiumFilter] = useState<Stadium[]>([]);
+
+  const toggleIn = <T,>(arr: T[], v: T): T[] => (arr.includes(v) ? arr.filter((x) => x !== v) : [...arr, v]);
 
   const t = (key: string) => translations[key] ?? key;
 
@@ -62,7 +66,16 @@ export default function ComboSearch({ parts, combos, locale, translations }: Pro
   const remove = (category: PartCategory, id: string) =>
     setSelected((prev) => ({ ...prev, [category]: prev[category].filter((x) => x !== id) }));
 
-  let results = filterCombos(combos.combos, selected, { onlyBuildable });
+  // Ricerca blade-centrica: una sola blade selezionata (e nient'altro) = "la miglior combo per la
+  // lama X". Restringe il ranking a quella blade e cambia l'intestazione.
+  const onlyBlade =
+    selected.blades.length === 1 &&
+    selected.lockChips.length === 0 && selected.mainBlades.length === 0 &&
+    selected.assistBlades.length === 0 && selected.overBlades.length === 0 &&
+    selected.ratchets.length === 0 && selected.bits.length === 0;
+
+  let results = filterCombos(combos.combos, selected, { onlyBuildable, lineFilter, stadiumFilter });
+  if (onlyBlade) results = results.filter((c) => c.blade === selected.blades[0]);
   if (tournamentOnly) results = results.filter((c) => (c.tags ?? []).includes('tournament-proven'));
   if (metaOnly) results = results.filter((c) => (c.tags ?? []).some((tag) => tag === 'meta' || tag === 'top-tier'));
 
@@ -70,6 +83,10 @@ export default function ComboSearch({ parts, combos, locale, translations }: Pro
     const arr = parts[category] as Array<{ id: string; name: string }>;
     return arr.find((p) => p.id === id)?.name ?? id;
   };
+
+  const rankingTitle = onlyBlade
+    ? `${t('search.bestForBlade')} ${resolveName('blades', selected.blades[0])}`
+    : t('search.ranking');
 
   // nome di una parte combo (chiavi singolari: blade/ratchet/...)
   const partName = (category: string, id: string | null): string => {
@@ -162,13 +179,22 @@ export default function ComboSearch({ parts, combos, locale, translations }: Pro
             <Pill active={metaOnly} onToggle={() => setMetaOnly((v) => !v)} label={t('filter.metaOnly')} accentVar="--c-gold" />
             <Pill active={onlyBuildable} onToggle={() => setOnlyBuildable((v) => !v)} label={t('search.onlyBuildable')} accentVar="--c-gold" />
           </div>
+          {/* Linea (BX/UX/CX) e stadio: solo filtro/etichetta, non separano il ranking. */}
+          <div class="mt-2 flex flex-wrap gap-2">
+            {(['bx', 'ux', 'cx'] as ComboLine[]).map((ln) => (
+              <Pill key={ln} active={lineFilter.includes(ln)} onToggle={() => setLineFilter((f) => toggleIn(f, ln))} label={ln.toUpperCase()} accentVar="--c-cx-text" />
+            ))}
+            {(['xtreme', 'infinity'] as Stadium[]).map((st) => (
+              <Pill key={st} active={stadiumFilter.includes(st)} onToggle={() => setStadiumFilter((f) => toggleIn(f, st))} label={t(`stadium.${st}`)} accentVar="--c-scarlet" />
+            ))}
+          </div>
         </div>
       </section>
 
       {/* ---------- Ranking ---------- */}
       <section>
         <div class="mb-4 flex items-center gap-3">
-          <h2 class="font-display text-[18px] uppercase text-text lg:text-[24px]">{t('search.ranking')}</h2>
+          <h2 class="font-display text-[18px] uppercase text-text lg:text-[24px]">{rankingTitle}</h2>
           <span class="h-0.5 flex-1 rounded-full" style={{ background: 'var(--grad-ranking)' }} aria-hidden="true" />
           <span class="shrink-0 font-mono text-[11px] text-muted-2">
             {results.length} {t('search.combosUnit')}

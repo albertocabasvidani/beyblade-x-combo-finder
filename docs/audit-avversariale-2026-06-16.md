@@ -9,6 +9,15 @@ fonti). 54 rilievi grezzi → 47 confermati/parziali, 7 refutati. Le severità q
 **dopo** la verifica (molti "critical/high" iniziali sono stati declassati perché veri come
 meccanismo ma innocui sui dati reali).
 
+> **Stato implementazione (16/06/2026)** — piano `aggiungi-la-distinzione-dello-…`:
+> **Fatto**: ① stadio (estratto da WBO, filtro+badge), ⑤ freschezza+trend (`lastPlacementDate`,
+> `usageTrend`, tag `rising`), filtro linea BX/UX/CX + ricerca blade-centrica, e tutta la §3
+> (useConfidence attivo, eventName WBO corretto + dedup, placement Reddit preservati, guardrail
+> anti-allucinazione, doc allineata, peso fonte chiarito). Fonti: `note.com/kamen_a` corretto,
+> arca.live (KR) e BBX Weekly (cross-check, fuori dal CAS) aggiunti; BBX.gg escluso (doppioni).
+> **Escluso per scelta**: ② deck builder 3-on-3 e ④ modellazione legalità/ban — non implementati
+> (BX/UX/CX restano un ranking unico filtrabile; legalità non modellata).
+
 ---
 
 ## Verdetto
@@ -50,10 +59,12 @@ globale del meta, ma archetipi/formati JP‑specifici restano sotto‑pesati.
 ### ④ Legalità / ban list / Hall of Fame non modellate — **alta**
 Il modello ha solo `line: 'bx' | 'cx'`, nessun `legalIn`/`banned`/`era`. Conseguenza verificata:
 la combo **#1 attuale (Wizard Rod 1‑60 Hexa) contiene una parte oggi *ristretta* nel formato
-WBO X**, e il bit Metal Needle è bandito — ma viene comunque mostrata senza avviso. BX/UX/CX (con
-tornei di formato separati) finiscono nello stesso ranking `bx`.
-**Fix**: `legalIn`/`restrictedFrom`/`restrictedUntil` su parti/combo; badge "WBO‑banned"; allineare
-`types.ts` alle ere reali già presenti in `parts.json` (esistono parti `line: 'ux'`).
+WBO X**, e il bit Metal Needle è bandito — ma viene comunque mostrata senza avviso. Le combo di
+linee diverse (BX, UX, CX) sono **interlacciate in un unico ranking senza distinzione di formato**;
+il tipo `ComboLine` non contemplava `'ux'` pur essendo già nei dati.
+**Fix**: `legalIn`/`restrictedFrom`/`restrictedUntil` su parti/combo; badge "WBO‑banned".
+*(Escluso dall'implementazione su scelta dell'utente: la legalità resta non modellata. Fatto solo il
+contorno: tipo `ComboLine` esteso a `'ux'` e filtro linea opzionale — il ranking resta unico.)*
 
 ### ⑤ La freschezza non è mai visibile — **alta**
 Il decay (half‑life 75g) è cotto nello score ma la card non mostra nessuna data

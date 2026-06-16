@@ -160,6 +160,19 @@ export function parsePlayers(headerText: string): number | undefined {
   return undefined;
 }
 
+/**
+ * Stadio del torneo (piatto). Beyblade X overseas gira quasi solo su Xtreme; i tornei ufficiali JP
+ * usano l'Infinity. Si legge dalla riga "Stadium: ..." dell'header. undefined = sconosciuto
+ * (MetaBeys non lo espone). Esposto come filtro/badge in UI, NON usato nel calcolo dello score.
+ */
+export function parseStadium(headerText: string): 'xtreme' | 'infinity' | undefined {
+  const m = headerText.match(/Stadium:\s*([^\n]+)/i);
+  const hay = m ? m[1] : '';
+  if (/infinity/i.test(hay)) return 'infinity';
+  if (/x-?treme|extreme/i.test(hay)) return 'xtreme';
+  return undefined;
+}
+
 // ---- Segmentazione deterministica del thread -----------------------------
 
 export interface SegPlacement { rank: number; comboLinesRaw: string[] }
@@ -176,6 +189,34 @@ function medalRank(l: string): number | undefined {
 }
 const HEADER_NOISE_RE =
   /^(Optional Rules|Stadium|First Stage|Final Stage|Second Stage|Date:|Event Page|Bracket Link|Location|Discord|Match Type|Stage \d|RANKED|UNRANKED|WBO Ranked)/i;
+
+/**
+ * Nome evento dall'header del post. Strategia (in ordine):
+ *  1) titolo dal link al thread dell'evento (slug prima di `--N`) — il nome "ufficiale" WBO;
+ *  2) prima riga-titolo: con spazi e non un handle/metadato utente (i nomi utente sono token unici).
+ * Fix: l'euristica precedente prendeva la PRIMA riga utile dell'header, che spesso è lo username del
+ * poster (es. "Shawn514", "anon7437"), non il nome del torneo. Restituisce '' se nulla è adatto
+ * (assembleEvidence ripiega su eventId).
+ */
+export function parseEventName(headerText: string, headerLines: string[]): string {
+  const thread = headerText.match(/worldbeyblade\.org\/Thread-([A-Za-z0-9-]+?)--\d+/i);
+  if (thread) {
+    const title = thread[1].replace(/-+/g, ' ').trim();
+    if (title.length > 2) return title;
+  }
+  const ch = headerText.match(/challonge\.com\/(?:[a-z]{2}\/)?([a-z0-9]+)/i);
+  const titleLine = headerLines.find(
+    (l) =>
+      /\s/.test(l) &&                                  // i titoli hanno spazi, gli username no
+      !/^(Today|Yesterday|\d+\s+(hours?|minutes?|days?|weeks?)\s+ago)/i.test(l) &&
+      !/(METAL|BURST)\s+[\d,]+\s+BR/.test(l) &&
+      !/^(Login|Join Now|Tournaments|Prev|Posts?:|Threads?:|Reputation|Joined|\(current\))/i.test(l) &&
+      !HEADER_NOISE_RE.test(l),
+  );
+  if (titleLine) return titleLine.replace(/https?:\/\/\S+/g, '').replace(/[\s:]+$/, '').trim();
+  if (ch) return ch[1];
+  return '';
+}
 
 /**
  * Segmentatore deterministico (regex): spezza i post sulle righe-ruolo, scarta le citazioni
@@ -199,13 +240,7 @@ export function segmentThread(raw: string): SegEvent[] {
     const firstP = trimmed.findIndex((l) => PLACEMENT_RE.test(l) || medalRank(l) !== undefined);
     const headerLines = (firstP >= 0 ? trimmed.slice(0, firstP) : trimmed).filter(Boolean);
     const headerRaw = headerLines.join('\n');
-    const eventName =
-      headerLines.find(
-        (l) =>
-          !/^(Today|Yesterday|\d+\s+(hours?|minutes?|days?)\s+ago)/i.test(l) &&
-          !/(METAL|BURST)\s+[\d,]+\s+BR/.test(l) &&
-          !/^(Login|Join Now|Tournaments|Prev|\d+$|\(current\))/i.test(l),
-      ) ?? '';
+    const eventName = parseEventName(headerRaw, headerLines);
 
     const placements: SegPlacement[] = [];
     if (firstP >= 0) {
@@ -263,6 +298,7 @@ export function assembleEvidence(
   for (const ev of events) {
     const date = parseDate(ev.headerRaw, fetchedAt);
     const players = parsePlayers(ev.headerRaw);
+    const stadium = parseStadium(ev.headerRaw);
     const eventId = parseEventId(ev.headerRaw, ev.eventName || 'wbo-event', date);
     const eventName = ev.eventName || eventId;
 
@@ -293,7 +329,7 @@ export function assembleEvidence(
         placementKeys.add(key);
         acc.placements.push({
           source: SOURCE_ID, tier: 'structured', eventId, eventName, date,
-          placement: p.rank, players, lang: 'en', url: sourceUrl,
+          placement: p.rank, players, stadium, lang: 'en', url: sourceUrl,
         });
       }
     }

@@ -2,7 +2,12 @@
 
 export type BladeType = 'attack' | 'defense' | 'stamina' | 'balance';
 export type BitType = 'attack' | 'defense' | 'stamina' | 'balance';
-export type ComboLine = 'bx' | 'cx';
+export type ComboLine = 'bx' | 'ux' | 'cx';
+
+// Piatto/formato di gioco. Recuperabile dai placement WBO (Xtreme overseas vs Infinity, soprattutto
+// tornei ufficiali JP); MetaBeys non lo espone → resta undefined ("unknown"). Esposto come
+// filtro/badge in UI, NON usato nel calcolo dello score (vedi scoring.ts).
+export type Stadium = 'xtreme' | 'infinity';
 
 export interface Blade {
   id: string;
@@ -10,7 +15,7 @@ export interface Blade {
   nameWestern?: string;
   aliases?: string[];
   type: BladeType;
-  line: 'bx';
+  line: 'bx' | 'ux';
   releaseSet?: string;
 }
 
@@ -92,6 +97,7 @@ export interface PlacementEvidence {
   topCutSize?: number;
   players?: number;      // dimensione evento (prestigio)
   deckScore?: string;    // S/A/B/C/D (MetaBeys)
+  stadium?: Stadium;     // piatto del torneo (da WBO); undefined = sconosciuto
   lang: string;
   url?: string;
 }
@@ -132,6 +138,9 @@ export interface ScoreBreakdown {
   wins: number;
   topCutAppearances: number;
   metaSharePct?: number;
+  lastPlacementDate?: string;   // data del placement più recente (freschezza), yyyy-mm-dd
+  stadiums?: Stadium[];         // piatti distinti tra i placement (badge/filtro UI)
+  usageTrend?: 'up' | 'down' | 'stable';  // trend meta-share da storico usage (≥2 snapshot)
 }
 
 export interface AmazonProduct {
