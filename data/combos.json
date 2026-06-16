@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-16T09:17:47.177Z",
+  "lastUpdated": "2026-06-16T10:03:06.767Z",
   "combos": [
     {
       "id": "wizard-rod-1-60-hexa",
@@ -12,11 +12,11 @@
       "assistBlade": null,
       "displayName": "Wizard Rod 1-60 Hexa",
       "type": "stamina",
-      "score": 8.63,
+      "score": 8.67,
       "scoreBreakdown": {
         "performance": 0.852,
         "presence": 0.95,
-        "corroboration": 0.73,
+        "corroboration": 0.756,
         "tournamentEvents": 19,
         "wins": 13,
         "topCutAppearances": 45,
@@ -759,6 +759,13 @@
             "kind": "recommendation",
             "lang": "en",
             "url": "https://worldbeyblade.org/Thread-NEBO-X--pid1928493"
+          },
+          {
+            "source": "sbbl",
+            "date": "2026-06-16",
+            "kind": "recommendation",
+            "lang": "es",
+            "url": "https://sbbl.es/beyblade-stats"
           }
         ]
       }
@@ -1300,7 +1307,7 @@
       "score": 5.66,
       "scoreBreakdown": {
         "performance": 0.47,
-        "presence": 0.686,
+        "presence": 0.685,
         "corroboration": 0.677,
         "tournamentEvents": 6,
         "wins": 2,
@@ -1820,7 +1827,7 @@
       "score": 4.38,
       "scoreBreakdown": {
         "performance": 0.345,
-        "presence": 0.577,
+        "presence": 0.576,
         "corroboration": 0.5,
         "tournamentEvents": 4,
         "wins": 2,
@@ -1927,6 +1934,139 @@
           }
         ],
         "mentions": []
+      }
+    },
+    {
+      "id": "cobalt-dragoon-5-60-elevate",
+      "line": "bx",
+      "blade": "cobalt-dragoon",
+      "ratchet": "5-60",
+      "bit": "elevate",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "displayName": "Cobalt Dragoon 5-60 Elevate",
+      "type": "attack",
+      "score": 4.04,
+      "scoreBreakdown": {
+        "performance": 0.107,
+        "presence": 0.789,
+        "corroboration": 0.722,
+        "tournamentEvents": 1,
+        "wins": 1,
+        "topCutAppearances": 1,
+        "metaSharePct": 2.6
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "WBO #3 all-time (818pts, 717 wins). World Championship 2025 Silver medalist (Balya). Left-spin stealer, only blade that defeats Wizard Rod in pure endurance.",
+      "sources": [
+        {
+          "name": "WBO Tournament Data",
+          "url": "https://docs.google.com/spreadsheets/d/1m1dHOabGkGMEODGwPFDx6VFWB3ohAIAcSRTpB7mbFOs",
+          "weight": 1,
+          "date": "2026-03-01"
+        },
+        {
+          "name": "World Championship 2025",
+          "url": "https://malloftoys.com/blogs/news/beyblade-x-world-championship-2025-winners-and-winning-combos",
+          "weight": 0.9,
+          "date": "2025-11-01"
+        },
+        {
+          "name": "BeyBase",
+          "url": "https://beybase.com/top-5-best-beyblade-x-combos-up-to-ux-13-bx-39/",
+          "weight": 1,
+          "date": "2026-02-01"
+        },
+        {
+          "name": "MetaBeys",
+          "url": "https://www.metabeys.com/events/1781128494701",
+          "weight": 1,
+          "date": "2026-05-27"
+        },
+        {
+          "name": "MetaBeys Leaderboard",
+          "url": "https://www.metabeys.com/leaderboard",
+          "weight": 1,
+          "date": "2026-06-15"
+        },
+        {
+          "name": "WBO Winning Combinations",
+          "url": "https://worldbeyblade.org/Thread-Summits-Crown-SBC-2026",
+          "weight": 0.95,
+          "date": "2026-06-13"
+        }
+      ],
+      "amazon": {},
+      "dateAdded": "2026-03-04",
+      "dateUpdated": "2026-06-16",
+      "evidence": {
+        "placements": [
+          {
+            "source": "metabeys",
+            "tier": "structured",
+            "eventId": "1781128494701",
+            "eventName": "Jester's Gallery Round Robin",
+            "date": "2026-05-27",
+            "placement": 1,
+            "topCutSize": 3,
+            "players": 12,
+            "deckScore": "B",
+            "lang": "en",
+            "url": "https://www.metabeys.com/events/1781128494701"
+          }
+        ],
+        "usage": [
+          {
+            "source": "metabeys-leaderboard",
+            "date": "2026-06-15",
+            "window": "30d",
+            "appearances": 138,
+            "sharePct": 2.6,
+            "uniqueEvents": 99,
+            "uniquePlayers": 88,
+            "lang": "en"
+          }
+        ],
+        "mentions": [
+          {
+            "source": "wbo-tournament-data",
+            "date": "2026-03-01",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://docs.google.com/spreadsheets/d/1m1dHOabGkGMEODGwPFDx6VFWB3ohAIAcSRTpB7mbFOs"
+          },
+          {
+            "source": "world-championship-2025",
+            "date": "2025-11-01",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://malloftoys.com/blogs/news/beyblade-x-world-championship-2025-winners-and-winning-combos"
+          },
+          {
+            "source": "beybase",
+            "date": "2026-02-01",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://beybase.com/top-5-best-beyblade-x-combos-up-to-ux-13-bx-39/"
+          },
+          {
+            "source": "wbo-winning-combinations",
+            "date": "2026-06-13",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Summits-Crown-SBC-2026"
+          },
+          {
+            "source": "sbbl",
+            "date": "2026-06-16",
+            "kind": "recommendation",
+            "lang": "es",
+            "url": "https://sbbl.es/beyblade-stats"
+          }
+        ]
       }
     },
     {
@@ -2065,132 +2205,6 @@
       }
     },
     {
-      "id": "cobalt-dragoon-5-60-elevate",
-      "line": "bx",
-      "blade": "cobalt-dragoon",
-      "ratchet": "5-60",
-      "bit": "elevate",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "displayName": "Cobalt Dragoon 5-60 Elevate",
-      "type": "attack",
-      "score": 3.99,
-      "scoreBreakdown": {
-        "performance": 0.107,
-        "presence": 0.789,
-        "corroboration": 0.688,
-        "tournamentEvents": 1,
-        "wins": 1,
-        "topCutAppearances": 1,
-        "metaSharePct": 2.6
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "WBO #3 all-time (818pts, 717 wins). World Championship 2025 Silver medalist (Balya). Left-spin stealer, only blade that defeats Wizard Rod in pure endurance.",
-      "sources": [
-        {
-          "name": "WBO Tournament Data",
-          "url": "https://docs.google.com/spreadsheets/d/1m1dHOabGkGMEODGwPFDx6VFWB3ohAIAcSRTpB7mbFOs",
-          "weight": 1,
-          "date": "2026-03-01"
-        },
-        {
-          "name": "World Championship 2025",
-          "url": "https://malloftoys.com/blogs/news/beyblade-x-world-championship-2025-winners-and-winning-combos",
-          "weight": 0.9,
-          "date": "2025-11-01"
-        },
-        {
-          "name": "BeyBase",
-          "url": "https://beybase.com/top-5-best-beyblade-x-combos-up-to-ux-13-bx-39/",
-          "weight": 1,
-          "date": "2026-02-01"
-        },
-        {
-          "name": "MetaBeys",
-          "url": "https://www.metabeys.com/events/1781128494701",
-          "weight": 1,
-          "date": "2026-05-27"
-        },
-        {
-          "name": "MetaBeys Leaderboard",
-          "url": "https://www.metabeys.com/leaderboard",
-          "weight": 1,
-          "date": "2026-06-15"
-        },
-        {
-          "name": "WBO Winning Combinations",
-          "url": "https://worldbeyblade.org/Thread-Summits-Crown-SBC-2026",
-          "weight": 0.95,
-          "date": "2026-06-13"
-        }
-      ],
-      "amazon": {},
-      "dateAdded": "2026-03-04",
-      "dateUpdated": "2026-06-16",
-      "evidence": {
-        "placements": [
-          {
-            "source": "metabeys",
-            "tier": "structured",
-            "eventId": "1781128494701",
-            "eventName": "Jester's Gallery Round Robin",
-            "date": "2026-05-27",
-            "placement": 1,
-            "topCutSize": 3,
-            "players": 12,
-            "deckScore": "B",
-            "lang": "en",
-            "url": "https://www.metabeys.com/events/1781128494701"
-          }
-        ],
-        "usage": [
-          {
-            "source": "metabeys-leaderboard",
-            "date": "2026-06-15",
-            "window": "30d",
-            "appearances": 138,
-            "sharePct": 2.6,
-            "uniqueEvents": 99,
-            "uniquePlayers": 88,
-            "lang": "en"
-          }
-        ],
-        "mentions": [
-          {
-            "source": "wbo-tournament-data",
-            "date": "2026-03-01",
-            "kind": "recommendation",
-            "lang": "en",
-            "url": "https://docs.google.com/spreadsheets/d/1m1dHOabGkGMEODGwPFDx6VFWB3ohAIAcSRTpB7mbFOs"
-          },
-          {
-            "source": "world-championship-2025",
-            "date": "2025-11-01",
-            "kind": "recommendation",
-            "lang": "en",
-            "url": "https://malloftoys.com/blogs/news/beyblade-x-world-championship-2025-winners-and-winning-combos"
-          },
-          {
-            "source": "beybase",
-            "date": "2026-02-01",
-            "kind": "recommendation",
-            "lang": "en",
-            "url": "https://beybase.com/top-5-best-beyblade-x-combos-up-to-ux-13-bx-39/"
-          },
-          {
-            "source": "wbo-winning-combinations",
-            "date": "2026-06-13",
-            "kind": "recommendation",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Summits-Crown-SBC-2026"
-          }
-        ]
-      }
-    },
-    {
       "id": "silver-wolf-9-60-free-ball",
       "line": "bx",
       "blade": "silver-wolf",
@@ -2201,11 +2215,11 @@
       "assistBlade": null,
       "displayName": "Silver Wolf 9-60 Free Ball",
       "type": "stamina",
-      "score": 3.88,
+      "score": 3.98,
       "scoreBreakdown": {
         "performance": 0.394,
         "presence": 0.29,
-        "corroboration": 0.565,
+        "corroboration": 0.63,
         "tournamentEvents": 4,
         "wins": 2,
         "topCutAppearances": 4,
@@ -2316,6 +2330,13 @@
             "kind": "recommendation",
             "lang": "en",
             "url": "https://worldbeyblade.org/Thread-Waffles--nt--126198"
+          },
+          {
+            "source": "sbbl",
+            "date": "2026-06-16",
+            "kind": "recommendation",
+            "lang": "es",
+            "url": "https://sbbl.es/beyblade-stats"
           }
         ]
       }
@@ -2426,7 +2447,7 @@
       "score": 3.65,
       "scoreBreakdown": {
         "performance": 0.107,
-        "presence": 0.715,
+        "presence": 0.714,
         "corroboration": 0.615,
         "tournamentEvents": 1,
         "wins": 1,
@@ -2526,7 +2547,7 @@
       "score": 3.46,
       "scoreBreakdown": {
         "performance": 0.223,
-        "presence": 0.439,
+        "presence": 0.438,
         "corroboration": 0.615,
         "tournamentEvents": 1,
         "wins": 0,
@@ -3364,7 +3385,7 @@
       "score": 2.89,
       "scoreBreakdown": {
         "performance": 0.178,
-        "presence": 0.388,
+        "presence": 0.387,
         "corroboration": 0.5,
         "tournamentEvents": 2,
         "wins": 0,
@@ -3453,7 +3474,7 @@
       "assistBlade": null,
       "displayName": "Wizard Rod 1-60 Free Ball",
       "type": "stamina",
-      "score": 2.83,
+      "score": 2.82,
       "scoreBreakdown": {
         "performance": 0.346,
         "presence": 0,
@@ -3690,7 +3711,7 @@
       "score": 2.67,
       "scoreBreakdown": {
         "performance": 0,
-        "presence": 0.629,
+        "presence": 0.628,
         "corroboration": 0.524,
         "tournamentEvents": 0,
         "wins": 0,
@@ -3952,7 +3973,7 @@
       "score": 2.54,
       "scoreBreakdown": {
         "performance": 0,
-        "presence": 0.68,
+        "presence": 0.679,
         "corroboration": 0.333,
         "tournamentEvents": 0,
         "wins": 0,
@@ -4499,7 +4520,7 @@
       "score": 2.23,
       "scoreBreakdown": {
         "performance": 0,
-        "presence": 0.577,
+        "presence": 0.576,
         "corroboration": 0.333,
         "tournamentEvents": 0,
         "wins": 0,
@@ -4550,7 +4571,7 @@
       "score": 2.22,
       "scoreBreakdown": {
         "performance": 0.088,
-        "presence": 0.27,
+        "presence": 0.269,
         "corroboration": 0.615,
         "tournamentEvents": 1,
         "wins": 0,
@@ -4726,7 +4747,7 @@
       "type": "attack",
       "score": 2.19,
       "scoreBreakdown": {
-        "performance": 0.245,
+        "performance": 0.244,
         "presence": 0,
         "corroboration": 0.565,
         "tournamentEvents": 3,
@@ -5027,7 +5048,7 @@
       "score": 2.1,
       "scoreBreakdown": {
         "performance": 0,
-        "presence": 0.439,
+        "presence": 0.438,
         "corroboration": 0.524,
         "tournamentEvents": 0,
         "wins": 0,
@@ -5472,6 +5493,79 @@
       }
     },
     {
+      "id": "emperor-blast-wheel-9-60-hexa",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "hexa",
+      "lockChip": "emperor",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Emperor Blast Wh 9-60 Hexa",
+      "type": "balance",
+      "score": 1.93,
+      "scoreBreakdown": {
+        "performance": 0.214,
+        "presence": 0,
+        "corroboration": 0.5,
+        "tournamentEvents": 2,
+        "wins": 1,
+        "topCutAppearances": 2
+      },
+      "tags": [
+        "tournament-proven",
+        "cx"
+      ],
+      "notes": "Tournament results: 6th at AN Qualifier - Untouch Vol 2 (May 2nd) (MetaBeys, 71p); 1st at Shawn514 (WBO, 33p).",
+      "sources": [
+        {
+          "name": "MetaBeys — AN Qualifier - Untouch Vol 2 (May 2nd)",
+          "url": "https://www.metabeys.com/events/1778096725141",
+          "weight": 1,
+          "date": "2026-05-02"
+        },
+        {
+          "name": "WBO — Shawn514",
+          "url": "https://worldbeyblade.org/Thread-Dave-an--18--126362",
+          "weight": 0.95,
+          "date": "2026-06-10"
+        }
+      ],
+      "amazon": {},
+      "dateAdded": "2026-06-15",
+      "dateUpdated": "2026-06-16",
+      "evidence": {
+        "placements": [
+          {
+            "source": "metabeys",
+            "tier": "structured",
+            "eventId": "1778096725141",
+            "eventName": "AN Qualifier - Untouch Vol 2 (May 2nd)",
+            "date": "2026-05-02",
+            "placement": 6,
+            "topCutSize": 8,
+            "players": 71,
+            "lang": "en",
+            "url": "https://www.metabeys.com/events/1778096725141"
+          },
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-126362",
+            "eventName": "Shawn514",
+            "date": "2026-06-10",
+            "placement": 1,
+            "players": 33,
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Dave-an--18--126362"
+          }
+        ],
+        "usage": [],
+        "mentions": []
+      }
+    },
+    {
       "id": "hover-wyvern-3-60-rush",
       "line": "bx",
       "blade": "hover-wyvern",
@@ -5695,7 +5789,7 @@
       "type": "stamina",
       "score": 1.81,
       "scoreBreakdown": {
-        "performance": 0.208,
+        "performance": 0.207,
         "presence": 0,
         "corroboration": 0.444,
         "tournamentEvents": 1,
@@ -5750,6 +5844,74 @@
             "kind": "recommendation",
             "lang": "en",
             "url": "https://worldbeyblade.org/Thread-CenCal--2--125983"
+          }
+        ]
+      }
+    },
+    {
+      "id": "silver-wolf-9-70-free-ball",
+      "line": "bx",
+      "blade": "silver-wolf",
+      "ratchet": "9-70",
+      "bit": "free-ball",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "displayName": "Silver Wolf 9-70 Free Ball",
+      "type": "stamina",
+      "score": 1.79,
+      "scoreBreakdown": {
+        "performance": 0.177,
+        "presence": 0,
+        "corroboration": 0.545,
+        "tournamentEvents": 1,
+        "wins": 1,
+        "topCutAppearances": 1
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "1 WBO winning-combo placement across 1 event.",
+      "sources": [
+        {
+          "name": "WBO Winning Combinations",
+          "url": "https://worldbeyblade.org/Thread-Chesape--and-Eats-2",
+          "weight": 0.95,
+          "date": "2026-06-14"
+        }
+      ],
+      "amazon": {},
+      "dateAdded": "2026-06-15",
+      "dateUpdated": "2026-06-16",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-challonge-4fzj9918",
+            "eventName": "Krillin",
+            "date": "2026-06-14",
+            "placement": 1,
+            "players": 28,
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX?action=lastpost"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-winning-combinations",
+            "date": "2026-06-14",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Chesape--and-Eats-2"
+          },
+          {
+            "source": "sbbl",
+            "date": "2026-06-16",
+            "kind": "recommendation",
+            "lang": "es",
+            "url": "https://sbbl.es/beyblade-stats"
           }
         ]
       }
@@ -6362,67 +6524,6 @@
       }
     },
     {
-      "id": "silver-wolf-9-70-free-ball",
-      "line": "bx",
-      "blade": "silver-wolf",
-      "ratchet": "9-70",
-      "bit": "free-ball",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "displayName": "Silver Wolf 9-70 Free Ball",
-      "type": "stamina",
-      "score": 1.64,
-      "scoreBreakdown": {
-        "performance": 0.177,
-        "presence": 0,
-        "corroboration": 0.444,
-        "tournamentEvents": 1,
-        "wins": 1,
-        "topCutAppearances": 1
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "1 WBO winning-combo placement across 1 event.",
-      "sources": [
-        {
-          "name": "WBO Winning Combinations",
-          "url": "https://worldbeyblade.org/Thread-Chesape--and-Eats-2",
-          "weight": 0.95,
-          "date": "2026-06-14"
-        }
-      ],
-      "amazon": {},
-      "dateAdded": "2026-06-15",
-      "dateUpdated": "2026-06-16",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-challonge-4fzj9918",
-            "eventName": "Krillin",
-            "date": "2026-06-14",
-            "placement": 1,
-            "players": 28,
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX?action=lastpost"
-          }
-        ],
-        "usage": [],
-        "mentions": [
-          {
-            "source": "wbo-winning-combinations",
-            "date": "2026-06-14",
-            "kind": "recommendation",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Chesape--and-Eats-2"
-          }
-        ]
-      }
-    },
-    {
       "id": "dran-strike-3-60-jolt",
       "line": "bx",
       "blade": "dran-strike",
@@ -6484,6 +6585,65 @@
       }
     },
     {
+      "id": "wizard-rod-9-60-low-orb",
+      "line": "bx",
+      "blade": "wizard-rod",
+      "ratchet": "9-60",
+      "bit": "low-orb",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "displayName": "Wizard Rod 9-60 Low Orb",
+      "type": "stamina",
+      "score": 1.6,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0.296,
+        "corroboration": 0.474,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0,
+        "metaSharePct": 0.41
+      },
+      "tags": [],
+      "notes": "MetaBeys leaderboard #37 (22 appearances, 0.41% share over 228+ events).",
+      "sources": [
+        {
+          "name": "MetaBeys Leaderboard",
+          "url": "https://www.metabeys.com/leaderboard",
+          "weight": 1,
+          "date": "2026-06-15"
+        }
+      ],
+      "amazon": {},
+      "dateAdded": "2026-06-15",
+      "dateUpdated": "2026-06-16",
+      "evidence": {
+        "placements": [],
+        "usage": [
+          {
+            "source": "metabeys-leaderboard",
+            "date": "2026-06-15",
+            "window": "30d",
+            "appearances": 22,
+            "sharePct": 0.41,
+            "uniqueEvents": 22,
+            "uniquePlayers": 15,
+            "lang": "en"
+          }
+        ],
+        "mentions": [
+          {
+            "source": "sbbl",
+            "date": "2026-06-16",
+            "kind": "recommendation",
+            "lang": "es",
+            "url": "https://sbbl.es/beyblade-stats"
+          }
+        ]
+      }
+    },
+    {
       "id": "hover-wyvern-1-60-kick",
       "line": "bx",
       "blade": "hover-wyvern",
@@ -6494,7 +6654,7 @@
       "assistBlade": null,
       "displayName": "Hover Wyvern 1-60 Kick",
       "type": "defense",
-      "score": 1.59,
+      "score": 1.58,
       "scoreBreakdown": {
         "performance": 0,
         "presence": 0.306,
@@ -6650,6 +6810,117 @@
             "deckScore": "B",
             "lang": "en",
             "url": "https://www.metabeys.com/events/1781464572675"
+          }
+        ],
+        "usage": [],
+        "mentions": []
+      }
+    },
+    {
+      "id": "unicorn-blast-heavy-3-60-kick",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "3-60",
+      "bit": "kick",
+      "lockChip": "unicorn",
+      "mainBlade": "blast",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Unicorn Blast H 3-60 Kick",
+      "type": "balance",
+      "score": 1.53,
+      "scoreBreakdown": {
+        "performance": 0.187,
+        "presence": 0,
+        "corroboration": 0.333,
+        "tournamentEvents": 1,
+        "wins": 1,
+        "topCutAppearances": 1
+      },
+      "tags": [
+        "tournament-proven",
+        "cx"
+      ],
+      "notes": "Tournament results: 1st at Beetlepenny (WBO, 32p).",
+      "sources": [
+        {
+          "name": "WBO — Beetlepenny",
+          "url": "https://worldbeyblade.org/Thread-X-Masters-51--126195",
+          "weight": 0.95,
+          "date": "2026-06-14"
+        }
+      ],
+      "amazon": {},
+      "dateAdded": "2026-06-15",
+      "dateUpdated": "2026-06-16",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-126195",
+            "eventName": "Beetlepenny",
+            "date": "2026-06-14",
+            "placement": 1,
+            "players": 32,
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-X-Masters-51--126195"
+          }
+        ],
+        "usage": [],
+        "mentions": []
+      }
+    },
+    {
+      "id": "emperor-blast-heavy-9-60-low-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "low-rush",
+      "lockChip": "emperor",
+      "mainBlade": "blast",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Emperor Blast H 9-60 Low Rush",
+      "type": "balance",
+      "score": 1.53,
+      "scoreBreakdown": {
+        "performance": 0.187,
+        "presence": 0,
+        "corroboration": 0.333,
+        "tournamentEvents": 1,
+        "wins": 1,
+        "topCutAppearances": 1
+      },
+      "tags": [
+        "tournament-proven",
+        "cx"
+      ],
+      "notes": "Tournament results: 1st at AN Qualifier - Untouch Vol 2 (May 2nd) (MetaBeys, 71p).",
+      "sources": [
+        {
+          "name": "MetaBeys — AN Qualifier - Untouch Vol 2 (May 2nd)",
+          "url": "https://www.metabeys.com/events/1778096725141",
+          "weight": 1,
+          "date": "2026-05-02"
+        }
+      ],
+      "amazon": {},
+      "dateAdded": "2026-06-15",
+      "dateUpdated": "2026-06-16",
+      "evidence": {
+        "placements": [
+          {
+            "source": "metabeys",
+            "tier": "structured",
+            "eventId": "1778096725141",
+            "eventName": "AN Qualifier - Untouch Vol 2 (May 2nd)",
+            "date": "2026-05-02",
+            "placement": 1,
+            "topCutSize": 8,
+            "players": 71,
+            "lang": "en",
+            "url": "https://www.metabeys.com/events/1778096725141"
           }
         ],
         "usage": [],
@@ -7251,57 +7522,6 @@
             "url": "https://worldbeyblade.org/Thread-Xtreme--5--125068"
           }
         ]
-      }
-    },
-    {
-      "id": "wizard-rod-9-60-low-orb",
-      "line": "bx",
-      "blade": "wizard-rod",
-      "ratchet": "9-60",
-      "bit": "low-orb",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "displayName": "Wizard Rod 9-60 Low Orb",
-      "type": "stamina",
-      "score": 1.39,
-      "scoreBreakdown": {
-        "performance": 0,
-        "presence": 0.296,
-        "corroboration": 0.333,
-        "tournamentEvents": 0,
-        "wins": 0,
-        "topCutAppearances": 0,
-        "metaSharePct": 0.41
-      },
-      "tags": [],
-      "notes": "MetaBeys leaderboard #37 (22 appearances, 0.41% share over 228+ events).",
-      "sources": [
-        {
-          "name": "MetaBeys Leaderboard",
-          "url": "https://www.metabeys.com/leaderboard",
-          "weight": 1,
-          "date": "2026-06-15"
-        }
-      ],
-      "amazon": {},
-      "dateAdded": "2026-06-15",
-      "dateUpdated": "2026-06-16",
-      "evidence": {
-        "placements": [],
-        "usage": [
-          {
-            "source": "metabeys-leaderboard",
-            "date": "2026-06-15",
-            "window": "30d",
-            "appearances": 22,
-            "sharePct": 0.41,
-            "uniqueEvents": 22,
-            "uniquePlayers": 15,
-            "lang": "en"
-          }
-        ],
-        "mentions": []
       }
     },
     {
@@ -8065,7 +8285,7 @@
       "score": 1.25,
       "scoreBreakdown": {
         "performance": 0,
-        "presence": 0.252,
+        "presence": 0.251,
         "corroboration": 0.333,
         "tournamentEvents": 0,
         "wins": 0,
@@ -8281,6 +8501,61 @@
             "url": "https://worldbeyblade.org/Thread-CenCal--2--125983"
           }
         ]
+      }
+    },
+    {
+      "id": "valkyrie-blast-wheel-6-60-hexa",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "6-60",
+      "bit": "hexa",
+      "lockChip": "valkyrie",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Valkyrie Blast Wh 6-60 Hexa",
+      "type": "attack",
+      "score": 1.24,
+      "scoreBreakdown": {
+        "performance": 0.134,
+        "presence": 0,
+        "corroboration": 0.333,
+        "tournamentEvents": 1,
+        "wins": 0,
+        "topCutAppearances": 1
+      },
+      "tags": [
+        "tournament-proven",
+        "cx"
+      ],
+      "notes": "Tournament results: 2nd at anon7437 (WBO, 35p).",
+      "sources": [
+        {
+          "name": "WBO — anon7437",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX?action=lastpost",
+          "weight": 0.95,
+          "date": "2026-06-13"
+        }
+      ],
+      "amazon": {},
+      "dateAdded": "2026-06-16",
+      "dateUpdated": "2026-06-16",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-125068",
+            "eventName": "anon7437",
+            "date": "2026-06-13",
+            "placement": 2,
+            "players": 35,
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX?action=lastpost"
+          }
+        ],
+        "usage": [],
+        "mentions": []
       }
     },
     {
@@ -8848,6 +9123,61 @@
       }
     },
     {
+      "id": "emperor-fortress-wheel-9-70-orb",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-70",
+      "bit": "orb",
+      "lockChip": "emperor",
+      "mainBlade": "fortress",
+      "assistBlade": "wheel",
+      "overBlade": "flow",
+      "displayName": "Emperor Fortress Flow Wh 9-70 Orb",
+      "type": "balance",
+      "score": 1.18,
+      "scoreBreakdown": {
+        "performance": 0.123,
+        "presence": 0,
+        "corroboration": 0.333,
+        "tournamentEvents": 1,
+        "wins": 0,
+        "topCutAppearances": 1
+      },
+      "tags": [
+        "tournament-proven",
+        "cx"
+      ],
+      "notes": "Tournament results: 2nd at Krillin (WBO, 28p).",
+      "sources": [
+        {
+          "name": "WBO — Krillin",
+          "url": "https://worldbeyblade.org/Thread-Chesape--and-Eats-2",
+          "weight": 0.95,
+          "date": "2026-06-14"
+        }
+      ],
+      "amazon": {},
+      "dateAdded": "2026-06-15",
+      "dateUpdated": "2026-06-16",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-challonge-4fzj9918",
+            "eventName": "Krillin",
+            "date": "2026-06-14",
+            "placement": 2,
+            "players": 28,
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Chesape--and-Eats-2"
+          }
+        ],
+        "usage": [],
+        "mentions": []
+      }
+    },
+    {
       "id": "phoenix-wing-9-60-kick",
       "line": "bx",
       "blade": "phoenix-wing",
@@ -9138,6 +9468,61 @@
             "url": "https://worldbeyblade.org/Thread-Waffles--nt--126198"
           }
         ]
+      }
+    },
+    {
+      "id": "bahamut-blitz-knuckle-1-50-bound-spike",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "1-50",
+      "bit": "bound-spike",
+      "lockChip": "bahamut",
+      "mainBlade": "blitz",
+      "assistBlade": "knuckle",
+      "overBlade": "flow",
+      "displayName": "Bahamut Blitz Flow K 1-50 Bound Spike",
+      "type": "balance",
+      "score": 1.08,
+      "scoreBreakdown": {
+        "performance": 0.105,
+        "presence": 0,
+        "corroboration": 0.333,
+        "tournamentEvents": 1,
+        "wins": 0,
+        "topCutAppearances": 1
+      },
+      "tags": [
+        "tournament-proven",
+        "cx"
+      ],
+      "notes": "Tournament results: 2nd at Boyf (WBO, 20p).",
+      "sources": [
+        {
+          "name": "WBO — Boyf",
+          "url": "https://worldbeyblade.org/Thread-CenCal--2--125983",
+          "weight": 0.95,
+          "date": "2026-06-13"
+        }
+      ],
+      "amazon": {},
+      "dateAdded": "2026-06-15",
+      "dateUpdated": "2026-06-16",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-125983",
+            "eventName": "Boyf",
+            "date": "2026-06-13",
+            "placement": 2,
+            "players": 20,
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-CenCal--2--125983"
+          }
+        ],
+        "usage": [],
+        "mentions": []
       }
     },
     {
@@ -9434,6 +9819,61 @@
       }
     },
     {
+      "id": "pegasus-blast-wheel-1-50-hexa",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "1-50",
+      "bit": "hexa",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Pegasus Blast Wh 1-50 Hexa",
+      "type": "balance",
+      "score": 1.04,
+      "scoreBreakdown": {
+        "performance": 0.098,
+        "presence": 0,
+        "corroboration": 0.333,
+        "tournamentEvents": 1,
+        "wins": 0,
+        "topCutAppearances": 1
+      },
+      "tags": [
+        "tournament-proven",
+        "cx"
+      ],
+      "notes": "Tournament results: 2nd at Devii.7 (WBO, 17p).",
+      "sources": [
+        {
+          "name": "WBO — Devii.7",
+          "url": "https://worldbeyblade.org/Thread-Beyblad--4--126030",
+          "weight": 0.95,
+          "date": "2026-06-14"
+        }
+      ],
+      "amazon": {},
+      "dateAdded": "2026-06-15",
+      "dateUpdated": "2026-06-16",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-126030",
+            "eventName": "Devii.7",
+            "date": "2026-06-14",
+            "placement": 2,
+            "players": 17,
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Beyblad--4--126030"
+          }
+        ],
+        "usage": [],
+        "mentions": []
+      }
+    },
+    {
       "id": "phoenix-wing-1-50-rush",
       "line": "bx",
       "blade": "phoenix-wing",
@@ -9492,6 +9932,117 @@
             "url": "https://worldbeyblade.org/Thread-NEBO-X--pid1928493"
           }
         ]
+      }
+    },
+    {
+      "id": "kraken-wriggle-heavy-9-60-orb",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "orb",
+      "lockChip": "kraken",
+      "mainBlade": "wriggle",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Kraken Wriggle H 9-60 Orb",
+      "type": "balance",
+      "score": 1.01,
+      "scoreBreakdown": {
+        "performance": 0.093,
+        "presence": 0,
+        "corroboration": 0.333,
+        "tournamentEvents": 1,
+        "wins": 0,
+        "topCutAppearances": 1
+      },
+      "tags": [
+        "tournament-proven",
+        "cx"
+      ],
+      "notes": "Tournament results: 2nd at NEBO X THIRD SPACE #5 (WBO, 15p).",
+      "sources": [
+        {
+          "name": "WBO — NEBO X THIRD SPACE #5",
+          "url": "https://worldbeyblade.org/Thread-NEBO-X--pid1928493",
+          "weight": 0.95,
+          "date": "2026-06-14"
+        }
+      ],
+      "amazon": {},
+      "dateAdded": "2026-06-15",
+      "dateUpdated": "2026-06-16",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-pid-1928493",
+            "eventName": "NEBO X THIRD SPACE #5",
+            "date": "2026-06-14",
+            "placement": 2,
+            "players": 15,
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-NEBO-X--pid1928493"
+          }
+        ],
+        "usage": [],
+        "mentions": []
+      }
+    },
+    {
+      "id": "emperor-blast-heavy-9-60-kick",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "kick",
+      "lockChip": "emperor",
+      "mainBlade": "blast",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Emperor Blast H 9-60 Kick",
+      "type": "balance",
+      "score": 0.92,
+      "scoreBreakdown": {
+        "performance": 0.076,
+        "presence": 0,
+        "corroboration": 0.333,
+        "tournamentEvents": 1,
+        "wins": 0,
+        "topCutAppearances": 1
+      },
+      "tags": [
+        "tournament-proven",
+        "cx"
+      ],
+      "notes": "Tournament results: 2nd at NRG S4 Week 5 (April 30th) (MetaBeys, 22p).",
+      "sources": [
+        {
+          "name": "MetaBeys — NRG S4 Week 5 (April 30th)",
+          "url": "https://www.metabeys.com/events/1778096394500",
+          "weight": 1,
+          "date": "2026-04-30"
+        }
+      ],
+      "amazon": {},
+      "dateAdded": "2026-06-15",
+      "dateUpdated": "2026-06-16",
+      "evidence": {
+        "placements": [
+          {
+            "source": "metabeys",
+            "tier": "structured",
+            "eventId": "1778096394500",
+            "eventName": "NRG S4 Week 5 (April 30th)",
+            "date": "2026-04-30",
+            "placement": 2,
+            "topCutSize": 4,
+            "players": 22,
+            "lang": "en",
+            "url": "https://www.metabeys.com/events/1778096394500"
+          }
+        ],
+        "usage": [],
+        "mentions": []
       }
     },
     {
@@ -9598,6 +10149,62 @@
             "deckScore": "C",
             "lang": "en",
             "url": "https://www.metabeys.com/events/1781128493142"
+          }
+        ],
+        "usage": [],
+        "mentions": []
+      }
+    },
+    {
+      "id": "sol-blast-heavy-3-60-kick",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "3-60",
+      "bit": "kick",
+      "lockChip": "sol",
+      "mainBlade": "blast",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Sol Blast H 3-60 Kick",
+      "type": "balance",
+      "score": 0.84,
+      "scoreBreakdown": {
+        "performance": 0.061,
+        "presence": 0,
+        "corroboration": 0.333,
+        "tournamentEvents": 1,
+        "wins": 0,
+        "topCutAppearances": 1
+      },
+      "tags": [
+        "tournament-proven",
+        "cx"
+      ],
+      "notes": "Tournament results: 3rd at Gotta Gacha Locals 5/15 (MetaBeys, 22p).",
+      "sources": [
+        {
+          "name": "MetaBeys — Gotta Gacha Locals 5/15",
+          "url": "https://www.metabeys.com/events/1779324447254",
+          "weight": 1,
+          "date": "2026-05-15"
+        }
+      ],
+      "amazon": {},
+      "dateAdded": "2026-06-15",
+      "dateUpdated": "2026-06-16",
+      "evidence": {
+        "placements": [
+          {
+            "source": "metabeys",
+            "tier": "structured",
+            "eventId": "1779324447254",
+            "eventName": "Gotta Gacha Locals 5/15",
+            "date": "2026-05-15",
+            "placement": 3,
+            "topCutSize": 3,
+            "players": 22,
+            "lang": "en",
+            "url": "https://www.metabeys.com/events/1779324447254"
           }
         ],
         "usage": [],
@@ -10045,6 +10652,62 @@
       }
     },
     {
+      "id": "bahamut-blitz-heavy-3-60-trans-kick",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "3-60",
+      "bit": "trans-kick",
+      "lockChip": "bahamut",
+      "mainBlade": "blitz",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Bahamut Blitz H 3-60 Trans Kick",
+      "type": "balance",
+      "score": 0.74,
+      "scoreBreakdown": {
+        "performance": 0.044,
+        "presence": 0,
+        "corroboration": 0.333,
+        "tournamentEvents": 1,
+        "wins": 0,
+        "topCutAppearances": 1
+      },
+      "tags": [
+        "tournament-proven",
+        "cx"
+      ],
+      "notes": "Tournament results: 6th at AN Qualifier - Untouch Vol 2 (May 2nd) (MetaBeys, 71p).",
+      "sources": [
+        {
+          "name": "MetaBeys — AN Qualifier - Untouch Vol 2 (May 2nd)",
+          "url": "https://www.metabeys.com/events/1778096725141",
+          "weight": 1,
+          "date": "2026-05-02"
+        }
+      ],
+      "amazon": {},
+      "dateAdded": "2026-06-15",
+      "dateUpdated": "2026-06-16",
+      "evidence": {
+        "placements": [
+          {
+            "source": "metabeys",
+            "tier": "structured",
+            "eventId": "1778096725141",
+            "eventName": "AN Qualifier - Untouch Vol 2 (May 2nd)",
+            "date": "2026-05-02",
+            "placement": 6,
+            "topCutSize": 8,
+            "players": 71,
+            "lang": "en",
+            "url": "https://www.metabeys.com/events/1778096725141"
+          }
+        ],
+        "usage": [],
+        "mentions": []
+      }
+    },
+    {
       "id": "cobalt-dragoon-1-60-elevate",
       "line": "bx",
       "blade": "cobalt-dragoon",
@@ -10117,6 +10780,60 @@
             "url": "https://beybase.com/top-5-best-beyblade-x-combos-up-to-ux-13-bx-39/"
           }
         ]
+      }
+    },
+    {
+      "id": "bullet-griffon-7-60-rush",
+      "line": "ux",
+      "blade": "bullet-griffon",
+      "ratchet": "7-60",
+      "bit": "rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "displayName": "Bullet Griffon 7-60 Rush",
+      "type": "balance",
+      "score": 0.7,
+      "scoreBreakdown": {
+        "performance": 0.036,
+        "presence": 0,
+        "corroboration": 0.333,
+        "tournamentEvents": 1,
+        "wins": 0,
+        "topCutAppearances": 1
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "Tournament results: 4th at NRG S4 Week 5 (April 30th) (MetaBeys, 22p).",
+      "sources": [
+        {
+          "name": "MetaBeys — NRG S4 Week 5 (April 30th)",
+          "url": "https://www.metabeys.com/events/1778096394500",
+          "weight": 1,
+          "date": "2026-04-30"
+        }
+      ],
+      "amazon": {},
+      "dateAdded": "2026-06-15",
+      "dateUpdated": "2026-06-16",
+      "evidence": {
+        "placements": [
+          {
+            "source": "metabeys",
+            "tier": "structured",
+            "eventId": "1778096394500",
+            "eventName": "NRG S4 Week 5 (April 30th)",
+            "date": "2026-04-30",
+            "placement": 4,
+            "topCutSize": 4,
+            "players": 22,
+            "lang": "en",
+            "url": "https://www.metabeys.com/events/1778096394500"
+          }
+        ],
+        "usage": [],
+        "mentions": []
       }
     },
     {
@@ -12469,63 +13186,6 @@
       }
     },
     {
-      "id": "emperor-blast-wheel-9-60-hexa",
-      "line": "cx",
-      "blade": null,
-      "ratchet": "9-60",
-      "bit": "hexa",
-      "lockChip": "emperor",
-      "mainBlade": "blast",
-      "assistBlade": "wheel",
-      "overBlade": null,
-      "displayName": "Emperor Blast Wh 9-60 Hexa",
-      "type": "balance",
-      "score": 0.35,
-      "scoreBreakdown": {
-        "performance": 0,
-        "presence": 0,
-        "corroboration": 0.231,
-        "tournamentEvents": 0,
-        "wins": 0,
-        "topCutAppearances": 0
-      },
-      "tags": [
-        "theory-only",
-        "cx"
-      ],
-      "notes": "1 MetaBeys top-cut deck appearance. 1 WBO winning-combo placement across 1 event.",
-      "sources": [
-        {
-          "name": "MetaBeys",
-          "url": "https://www.metabeys.com/events/1778096725141",
-          "weight": 1,
-          "date": "2026-05-02"
-        },
-        {
-          "name": "WBO Winning Combinations",
-          "url": "https://worldbeyblade.org/Thread-Dave-an--18--126362",
-          "weight": 0.95,
-          "date": "2026-06-10"
-        }
-      ],
-      "amazon": {},
-      "dateAdded": "2026-06-15",
-      "dateUpdated": "2026-06-16",
-      "evidence": {
-        "placements": [],
-        "usage": [],
-        "mentions": [
-          {
-            "source": "wbo-winning-combinations",
-            "date": "2026-06-10",
-            "kind": "recommendation",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Dave-an--18--126362"
-          }
-        ]
-      }
-    },
-    {
       "id": "ghost-circle-9-70-kick",
       "line": "bx",
       "blade": "ghost-circle",
@@ -12826,57 +13486,6 @@
       }
     },
     {
-      "id": "bahamut-blitz-knuckle-1-50-bound-spike",
-      "line": "cx",
-      "blade": null,
-      "ratchet": "1-50",
-      "bit": "bound-spike",
-      "lockChip": "bahamut",
-      "mainBlade": "blitz",
-      "assistBlade": "knuckle",
-      "overBlade": "flow",
-      "displayName": "Bahamut Blitz Flow K 1-50 Bound Spike",
-      "type": "balance",
-      "score": 0.35,
-      "scoreBreakdown": {
-        "performance": 0,
-        "presence": 0,
-        "corroboration": 0.231,
-        "tournamentEvents": 0,
-        "wins": 0,
-        "topCutAppearances": 0
-      },
-      "tags": [
-        "theory-only",
-        "cx"
-      ],
-      "notes": "1 WBO winning-combo placement across 1 event.",
-      "sources": [
-        {
-          "name": "WBO Winning Combinations",
-          "url": "https://worldbeyblade.org/Thread-CenCal--2--125983",
-          "weight": 0.95,
-          "date": "2026-06-13"
-        }
-      ],
-      "amazon": {},
-      "dateAdded": "2026-06-15",
-      "dateUpdated": "2026-06-16",
-      "evidence": {
-        "placements": [],
-        "usage": [],
-        "mentions": [
-          {
-            "source": "wbo-winning-combinations",
-            "date": "2026-06-13",
-            "kind": "recommendation",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-CenCal--2--125983"
-          }
-        ]
-      }
-    },
-    {
       "id": "emperor-blast-heavy-9-60-hexa",
       "line": "cx",
       "blade": null,
@@ -12923,57 +13532,6 @@
             "kind": "recommendation",
             "lang": "en",
             "url": "https://worldbeyblade.org/Thread-Summits-Crown-SBC-2026"
-          }
-        ]
-      }
-    },
-    {
-      "id": "emperor-fortress-wheel-9-70-orb",
-      "line": "cx",
-      "blade": null,
-      "ratchet": "9-70",
-      "bit": "orb",
-      "lockChip": "emperor",
-      "mainBlade": "fortress",
-      "assistBlade": "wheel",
-      "overBlade": "flow",
-      "displayName": "Emperor Fortress Flow Wh 9-70 Orb",
-      "type": "balance",
-      "score": 0.35,
-      "scoreBreakdown": {
-        "performance": 0,
-        "presence": 0,
-        "corroboration": 0.231,
-        "tournamentEvents": 0,
-        "wins": 0,
-        "topCutAppearances": 0
-      },
-      "tags": [
-        "theory-only",
-        "cx"
-      ],
-      "notes": "1 WBO winning-combo placement across 1 event.",
-      "sources": [
-        {
-          "name": "WBO Winning Combinations",
-          "url": "https://worldbeyblade.org/Thread-Chesape--and-Eats-2",
-          "weight": 0.95,
-          "date": "2026-06-14"
-        }
-      ],
-      "amazon": {},
-      "dateAdded": "2026-06-15",
-      "dateUpdated": "2026-06-16",
-      "evidence": {
-        "placements": [],
-        "usage": [],
-        "mentions": [
-          {
-            "source": "wbo-winning-combinations",
-            "date": "2026-06-14",
-            "kind": "recommendation",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Chesape--and-Eats-2"
           }
         ]
       }
@@ -13123,57 +13681,6 @@
             "kind": "recommendation",
             "lang": "en",
             "url": "https://www.youtube.com/@HobbyTalkHaruRen"
-          }
-        ]
-      }
-    },
-    {
-      "id": "kraken-wriggle-heavy-9-60-orb",
-      "line": "cx",
-      "blade": null,
-      "ratchet": "9-60",
-      "bit": "orb",
-      "lockChip": "kraken",
-      "mainBlade": "wriggle",
-      "assistBlade": "heavy",
-      "overBlade": null,
-      "displayName": "Kraken Wriggle H 9-60 Orb",
-      "type": "balance",
-      "score": 0.35,
-      "scoreBreakdown": {
-        "performance": 0,
-        "presence": 0,
-        "corroboration": 0.231,
-        "tournamentEvents": 0,
-        "wins": 0,
-        "topCutAppearances": 0
-      },
-      "tags": [
-        "theory-only",
-        "cx"
-      ],
-      "notes": "1 WBO winning-combo placement across 1 event.",
-      "sources": [
-        {
-          "name": "WBO Winning Combinations",
-          "url": "https://worldbeyblade.org/Thread-NEBO-X--pid1928493",
-          "weight": 0.95,
-          "date": "2026-06-14"
-        }
-      ],
-      "amazon": {},
-      "dateAdded": "2026-06-15",
-      "dateUpdated": "2026-06-16",
-      "evidence": {
-        "placements": [],
-        "usage": [],
-        "mentions": [
-          {
-            "source": "wbo-winning-combinations",
-            "date": "2026-06-14",
-            "kind": "recommendation",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-NEBO-X--pid1928493"
           }
         ]
       }
@@ -13371,57 +13878,6 @@
             "kind": "recommendation",
             "lang": "en",
             "url": "https://worldbeyblade.org/Thread-X-Masters-51--126195"
-          }
-        ]
-      }
-    },
-    {
-      "id": "pegasus-blast-wheel-1-50-hexa",
-      "line": "cx",
-      "blade": null,
-      "ratchet": "1-50",
-      "bit": "hexa",
-      "lockChip": "pegasus",
-      "mainBlade": "blast",
-      "assistBlade": "wheel",
-      "overBlade": null,
-      "displayName": "Pegasus Blast Wh 1-50 Hexa",
-      "type": "balance",
-      "score": 0.35,
-      "scoreBreakdown": {
-        "performance": 0,
-        "presence": 0,
-        "corroboration": 0.231,
-        "tournamentEvents": 0,
-        "wins": 0,
-        "topCutAppearances": 0
-      },
-      "tags": [
-        "theory-only",
-        "cx"
-      ],
-      "notes": "1 WBO winning-combo placement across 1 event.",
-      "sources": [
-        {
-          "name": "WBO Winning Combinations",
-          "url": "https://worldbeyblade.org/Thread-Beyblad--4--126030",
-          "weight": 0.95,
-          "date": "2026-06-14"
-        }
-      ],
-      "amazon": {},
-      "dateAdded": "2026-06-15",
-      "dateUpdated": "2026-06-16",
-      "evidence": {
-        "placements": [],
-        "usage": [],
-        "mentions": [
-          {
-            "source": "wbo-winning-combinations",
-            "date": "2026-06-14",
-            "kind": "recommendation",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Beyblad--4--126030"
           }
         ]
       }
@@ -13822,57 +14278,6 @@
       }
     },
     {
-      "id": "unicorn-blast-heavy-3-60-kick",
-      "line": "cx",
-      "blade": null,
-      "ratchet": "3-60",
-      "bit": "kick",
-      "lockChip": "unicorn",
-      "mainBlade": "blast",
-      "assistBlade": "heavy",
-      "overBlade": null,
-      "displayName": "Unicorn Blast H 3-60 Kick",
-      "type": "balance",
-      "score": 0.35,
-      "scoreBreakdown": {
-        "performance": 0,
-        "presence": 0,
-        "corroboration": 0.231,
-        "tournamentEvents": 0,
-        "wins": 0,
-        "topCutAppearances": 0
-      },
-      "tags": [
-        "theory-only",
-        "cx"
-      ],
-      "notes": "1 WBO winning-combo placement across 1 event.",
-      "sources": [
-        {
-          "name": "WBO Winning Combinations",
-          "url": "https://worldbeyblade.org/Thread-X-Masters-51--126195",
-          "weight": 0.95,
-          "date": "2026-06-14"
-        }
-      ],
-      "amazon": {},
-      "dateAdded": "2026-06-15",
-      "dateUpdated": "2026-06-16",
-      "evidence": {
-        "placements": [],
-        "usage": [],
-        "mentions": [
-          {
-            "source": "wbo-winning-combinations",
-            "date": "2026-06-14",
-            "kind": "recommendation",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-X-Masters-51--126195"
-          }
-        ]
-      }
-    },
-    {
       "id": "rhino-horn-9-80-point",
       "line": "bx",
       "blade": "rhino-horn",
@@ -13919,219 +14324,6 @@
             "url": "https://reddit.com/r/Beyblade"
           }
         ]
-      }
-    },
-    {
-      "id": "sol-blast-heavy-3-60-kick",
-      "line": "cx",
-      "blade": null,
-      "ratchet": "3-60",
-      "bit": "kick",
-      "lockChip": "sol",
-      "mainBlade": "blast",
-      "assistBlade": "heavy",
-      "overBlade": null,
-      "displayName": "Sol Blast H 3-60 Kick",
-      "type": "balance",
-      "score": 0,
-      "scoreBreakdown": {
-        "performance": 0,
-        "presence": 0,
-        "corroboration": 0,
-        "tournamentEvents": 0,
-        "wins": 0,
-        "topCutAppearances": 0
-      },
-      "tags": [
-        "theory-only",
-        "cx"
-      ],
-      "notes": "1 MetaBeys top-cut deck appearance.",
-      "sources": [
-        {
-          "name": "MetaBeys",
-          "url": "https://www.metabeys.com/events/1779324447254",
-          "weight": 1,
-          "date": "2026-05-15"
-        }
-      ],
-      "amazon": {},
-      "dateAdded": "2026-06-15",
-      "dateUpdated": "2026-06-16",
-      "evidence": {
-        "placements": [],
-        "usage": [],
-        "mentions": []
-      }
-    },
-    {
-      "id": "bahamut-blitz-heavy-3-60-trans-kick",
-      "line": "cx",
-      "blade": null,
-      "ratchet": "3-60",
-      "bit": "trans-kick",
-      "lockChip": "bahamut",
-      "mainBlade": "blitz",
-      "assistBlade": "heavy",
-      "overBlade": null,
-      "displayName": "Bahamut Blitz H 3-60 Trans Kick",
-      "type": "balance",
-      "score": 0,
-      "scoreBreakdown": {
-        "performance": 0,
-        "presence": 0,
-        "corroboration": 0,
-        "tournamentEvents": 0,
-        "wins": 0,
-        "topCutAppearances": 0
-      },
-      "tags": [
-        "theory-only",
-        "cx"
-      ],
-      "notes": "1 MetaBeys top-cut deck appearance.",
-      "sources": [
-        {
-          "name": "MetaBeys",
-          "url": "https://www.metabeys.com/events/1778096725141",
-          "weight": 1,
-          "date": "2026-05-02"
-        }
-      ],
-      "amazon": {},
-      "dateAdded": "2026-06-15",
-      "dateUpdated": "2026-06-16",
-      "evidence": {
-        "placements": [],
-        "usage": [],
-        "mentions": []
-      }
-    },
-    {
-      "id": "bullet-griffon-7-60-rush",
-      "line": "ux",
-      "blade": "bullet-griffon",
-      "ratchet": "7-60",
-      "bit": "rush",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "displayName": "Bullet Griffon 7-60 Rush",
-      "type": "balance",
-      "score": 0,
-      "scoreBreakdown": {
-        "performance": 0,
-        "presence": 0,
-        "corroboration": 0,
-        "tournamentEvents": 0,
-        "wins": 0,
-        "topCutAppearances": 0
-      },
-      "tags": [
-        "theory-only"
-      ],
-      "notes": "1 MetaBeys top-cut deck appearance.",
-      "sources": [
-        {
-          "name": "MetaBeys",
-          "url": "https://www.metabeys.com/events/1778096394500",
-          "weight": 1,
-          "date": "2026-04-30"
-        }
-      ],
-      "amazon": {},
-      "dateAdded": "2026-06-15",
-      "dateUpdated": "2026-06-16",
-      "evidence": {
-        "placements": [],
-        "usage": [],
-        "mentions": []
-      }
-    },
-    {
-      "id": "emperor-blast-heavy-9-60-kick",
-      "line": "cx",
-      "blade": null,
-      "ratchet": "9-60",
-      "bit": "kick",
-      "lockChip": "emperor",
-      "mainBlade": "blast",
-      "assistBlade": "heavy",
-      "overBlade": null,
-      "displayName": "Emperor Blast H 9-60 Kick",
-      "type": "balance",
-      "score": 0,
-      "scoreBreakdown": {
-        "performance": 0,
-        "presence": 0,
-        "corroboration": 0,
-        "tournamentEvents": 0,
-        "wins": 0,
-        "topCutAppearances": 0
-      },
-      "tags": [
-        "theory-only",
-        "cx"
-      ],
-      "notes": "1 MetaBeys top-cut deck appearance.",
-      "sources": [
-        {
-          "name": "MetaBeys",
-          "url": "https://www.metabeys.com/events/1778096394500",
-          "weight": 1,
-          "date": "2026-04-30"
-        }
-      ],
-      "amazon": {},
-      "dateAdded": "2026-06-15",
-      "dateUpdated": "2026-06-16",
-      "evidence": {
-        "placements": [],
-        "usage": [],
-        "mentions": []
-      }
-    },
-    {
-      "id": "emperor-blast-heavy-9-60-low-rush",
-      "line": "cx",
-      "blade": null,
-      "ratchet": "9-60",
-      "bit": "low-rush",
-      "lockChip": "emperor",
-      "mainBlade": "blast",
-      "assistBlade": "heavy",
-      "overBlade": null,
-      "displayName": "Emperor Blast H 9-60 Low Rush",
-      "type": "balance",
-      "score": 0,
-      "scoreBreakdown": {
-        "performance": 0,
-        "presence": 0,
-        "corroboration": 0,
-        "tournamentEvents": 0,
-        "wins": 0,
-        "topCutAppearances": 0
-      },
-      "tags": [
-        "theory-only",
-        "cx"
-      ],
-      "notes": "1 MetaBeys top-cut deck appearance.",
-      "sources": [
-        {
-          "name": "MetaBeys",
-          "url": "https://www.metabeys.com/events/1778096725141",
-          "weight": 1,
-          "date": "2026-05-02"
-        }
-      ],
-      "amazon": {},
-      "dateAdded": "2026-06-15",
-      "dateUpdated": "2026-06-16",
-      "evidence": {
-        "placements": [],
-        "usage": [],
-        "mentions": []
       }
     }
   ]
