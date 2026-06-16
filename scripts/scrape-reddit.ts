@@ -24,9 +24,12 @@ const ROOT = join(import.meta.dirname, '..');
 const CACHE_PATH = join(ROOT, 'data', 'reddit-cache.json');
 const USER_DIR = 'C:/Users/cinqu/.playwright-beyblade';
 const HEADED = process.env.REDDIT_HEADED === '1';
-const KEEP_TOP = 30;
+const KEEP_TOP = 150;
 const BLOCK = /blocked by network security|whoa there|too many requests|just a moment/i;
-const QUERIES = ['best combos', 'meta combos', 'competitive deck', 'tournament winning', 'top tier combo'];
+// Query orientate ai risultati di torneo. Il giudizio "ha davvero vinto / è in top cut" lo fa l'IA
+// in /update-combos: qui si raccoglie grezzo, ampio e non filtrato. `tourney` è incluso in via
+// sperimentale (verificarne la resa dopo il primo run headed; rimuoverlo se pesca poco).
+const QUERIES = ['tournament', 'tourney', 'won', 'winning', 'top cut'];
 
 interface RedditPost { id: string; title: string; body: string; url: string; score: number; date: string; comments: string[]; }
 interface RedditCache { lastScraped: string; posts: RedditPost[]; }
@@ -86,7 +89,7 @@ async function main() {
     const found = new Map<string, RedditPost>();
     let blockedFirst = false, anyOk = false;
     for (const q of QUERIES) {
-      const params = new URLSearchParams({ q, restrict_sr: 'on', sort: 'top', t: 'year', limit: '10' });
+      const params = new URLSearchParams({ q, restrict_sr: 'on', sort: 'new', limit: '100' });
       console.log(`  Cerco: "${q}"`);
       const data = await getJson(page, `https://www.reddit.com/r/Beyblade/search.json?${params}`);
       if (data?.__blocked) { if (!anyOk) blockedFirst = true; break; }
@@ -117,15 +120,25 @@ async function main() {
     const merged = new Map<string, RedditPost>();
     for (const p of existing.posts) merged.set(p.id, p);
     for (const [id, p] of found) merged.set(id, p);
-    const top = [...merged.values()].sort((a, b) => b.score - a.score).slice(0, KEEP_TOP);
+    const top = [...merged.values()].sort((a, b) => (a.date < b.date ? 1 : -1)).slice(0, KEEP_TOP);
 
     console.log(`\n${found.size} post trovati, ${top.length} in cache. Recupero commenti dei nuovi...`);
     for (const p of top) {
       if (p.comments.length || !found.has(p.id)) continue;
-      const c = await getJson(page, `https://www.reddit.com/r/Beyblade/comments/${p.id}.json?sort=top&limit=5`);
-      const listing = c?.[1]?.data?.children ?? [];
-      p.comments = listing.filter((x: any) => x.kind === 't1' && (x.data?.body ?? '').length > 20)
-        .map((x: any) => x.data.body.slice(0, 500));
+      const c = await getJson(page, `https://www.reddit.com/r/Beyblade/comments/${p.id}.json?sort=top&limit=100`);
+      // Tutti i commenti, anche annidati (flatten ricorsivo): un torneo si discute nelle risposte.
+      const flat: string[] = [];
+      const walk = (nodes: any[]) => {
+        for (const x of nodes ?? []) {
+          if (x.kind !== 't1') continue;
+          const body = x.data?.body ?? '';
+          if (body.length > 20) flat.push(body.slice(0, 500));
+          const replies = x.data?.replies;
+          if (replies && typeof replies === 'object') walk(replies.data?.children ?? []);
+        }
+      };
+      walk(c?.[1]?.data?.children ?? []);
+      p.comments = flat.slice(0, 80);
       await sleep(2000);
     }
 
