@@ -145,6 +145,8 @@ cache Reddit a fondo: la cache (`reddit-cache.json`, migliaia di righe) eccede u
 `/update-combos` ne vede solo una fetta. Reddit lo mina `/mine-reddit`, che la legge **a blocchi**
 (`reddit:batch`) marcando ogni post in `scan-history` — idempotente, riprende dove era rimasto, e
 copre sia un backfill (~900 post → molti blocchi) sia i pochi post nuovi del giorno (1 blocco).
+Durata `/mine-reddit`: **~39 min** per un backfill da 934 post (16 blocchi da 60; misurato 16/06/2026,
+ha portato i combo da 204 a 457). Nella marcia normale è 1 blocco → pochi minuti.
 
 Bat manuali: `collect-social.bat` (solo Reddit+WBO headed), `collect-combos.bat` (solo collect
 headless), `update-combos.bat` (collect+analyze), `dev-server.bat` (Astro).
