@@ -1,11 +1,11 @@
 /**
- * test-parse-wbo.ts — Golden test della PARTE DETERMINISTICA del parser WBO (la segmentazione Haiku
- * non è testata qui: dipende dalla rete). Verifica resolver, parseComboLine (BX/CX/no-ratchet/sigla/
- * bit a 2 parole/alias/guard landmine) e il parsing di eventId/date/players.
+ * test-parse-wbo.ts — Golden test del parser WBO deterministico. Verifica resolver, parseComboLine
+ * (BX/CX/no-ratchet/sigla/bit a 2 parole/alias/guard landmine), il parsing di eventId/date/players e
+ * la segmentazione del thread (incluse le medaglie emoji, che sono surrogate pair).
  *
  * Esegui: npx tsx scripts/test-parse-wbo.ts
  */
-import { buildResolver, parseComboLine, parseEventId, parseDate, parsePlayers, deterministicSegment } from './lib/wbo-parse';
+import { buildResolver, parseComboLine, parseEventId, parseDate, parsePlayers, segmentThread } from './lib/wbo-parse';
 
 let pass = 0;
 let fail = 0;
@@ -83,7 +83,7 @@ const emojiRaw = [
   '',
   'WizardRod 9-60 Free Ball',
 ].join('\n');
-const segEvents = deterministicSegment(emojiRaw);
+const segEvents = segmentThread(emojiRaw);
 check('segment: evento emoji riconosciuto', segEvents.length === 1);
 check('segment: due posizioni 🥇🥈', segEvents[0]?.placements.length === 2, JSON.stringify(segEvents[0]?.placements?.map((p) => p.rank)));
 check('segment: 🥇 = rank 1', segEvents[0]?.placements[0]?.rank === 1);

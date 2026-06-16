@@ -1,21 +1,19 @@
 /**
- * parse-wbo.ts — Entry-point del parser WBO (ibrido: segmentazione Haiku + risoluzione deterministica).
+ * parse-wbo.ts — Entry-point del parser WBO deterministico (nessuna IA, nessuna API).
  *
- * Legge data/wbo-cache.json (raw del thread "Winning Combinations"), segmenta il layout via Haiku
- * (fallback deterministico), risolve le combo BX in modo deterministico e scrive
- * data/wbo-evidence.json (placements per comboId), nello stesso schema di metabeys-evidence.json.
+ * Legge data/wbo-cache.json (raw del thread "Winning Combinations"), segmenta il thread e risolve le
+ * combo BX in modo deterministico, e scrive data/wbo-evidence.json (placements per comboId), nello
+ * stesso schema di metabeys-evidence.json.
  *
  * Esegui: npx tsx scripts/parse-wbo.ts
  */
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { join } from 'path';
-import { buildResolver, assembleEvidence, SOURCE_ID, type WboEvidence } from './lib/wbo-parse';
-import { segment } from './lib/wbo-segment';
+import { buildResolver, assembleEvidence, segmentThread, SOURCE_ID, type WboEvidence } from './lib/wbo-parse';
 
 const ROOT = join(import.meta.dirname, '..');
 const DATA = join(ROOT, 'data');
 const cachePath = join(DATA, 'wbo-cache.json');
-const segCachePath = join(DATA, 'wbo-segmentation-cache.json');
 const outPath = join(DATA, 'wbo-evidence.json');
 
 function writeEvidence(evidence: WboEvidence, generatedAt: string) {
@@ -53,14 +51,14 @@ async function main() {
     return;
   }
 
-  const { events, source } = await segment(raw, segCachePath);
+  const events = segmentThread(raw);
   const resolver = buildResolver();
   const evidence = assembleEvidence(events, resolver, fetchedAt, sourceUrl);
   writeEvidence(evidence, fetchedAt);
 
   const s = evidence.stats;
   console.log(
-    `parse-wbo (segmentazione: ${source}): ${s.combosResolved} combo, ${s.placements} piazzamenti, ` +
+    `parse-wbo: ${s.combosResolved} combo, ${s.placements} piazzamenti, ` +
     `${s.eventsWithPodium}/${s.events} eventi con podio, ${s.unresolved} non risolte.`,
   );
   console.log(`→ ${outPath}`);

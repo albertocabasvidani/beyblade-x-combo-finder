@@ -39,10 +39,10 @@ dove le fonti lo permettono:
   tabellare costante (`33 players`, `1st — Nome`, `Blade / Ratchet / Bit`, colonne
   `Appearances/Share/Unique Events/Unique Players`). Si parsano con parser dedicato (regex/split),
   senza IA. Stesso discorso per le tabelle Sheets.
-- **Estrazione ibrida (WBO) → IA per il layout, codice per la risoluzione.** Il thread WBO è
-  eterogeneo (token incollati, marcatori di piazzamento misti, quote/ads): la segmentazione del layout
-  (evento→podio→righe-combo) la fa Haiku (`scripts/lib/wbo-segment.ts`, con fallback regex), la
-  risoluzione parti/sigle ufficiali/id resta codice (`scripts/lib/wbo-parse.ts`).
+- **WBO → codice (deterministico).** Il thread WBO è eterogeneo (token incollati, marcatori di
+  piazzamento misti, quote/ads), ma `parse:wbo` lo gestisce interamente a codice
+  (`scripts/lib/wbo-parse.ts`): segmentazione via regex + risoluzione parti/sigle ufficiali/id. I casi
+  non segmentabili restano `unresolved` e li rifinisce l'IA in `/update-combos` (abbonamento Claude Code).
 - **Estrazione narrativa → IA.** Solo fonti in prosa (transcript YouTube, commenti Reddit, blog
   JP/ES/PT/…) e il **match nomi parti multilingua** sugli id del master restano all'IA.
 - **Calcolo score → codice (deterministico).** Da `evidence` a `score`, riproducibile, tunabile,

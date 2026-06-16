@@ -32,14 +32,14 @@ derivazione. Solo Beyblade X.
      mano/IA solo la lista `unresolved` (combo CX a 4 segmenti, righe incomplete, typo nei nomi):
      se è un alias mancante aggiungilo al master ed esegui `build:parts`; se è una CX, aggiungila a
      `combos.json` con la sua `evidence`. NON ri-estrarre a mano ciò che il parser ha già risolto.
-   - WBO (`wbo-cache.json`): esegui `npm run parse:wbo` (parser IBRIDO: la segmentazione del thread
-     evento→podio→righe-combo la fa Haiku via `ANTHROPIC_API_KEY`, con fallback deterministico; la
-     risoluzione parti/sigle/id è DETERMINISTICA) che scrive i placements in `data/wbo-evidence.json`.
-     Poi gestisci solo gli `unresolved`: le CX aggiungile a `combos.json` con la loro `evidence`; un
-     nome/sigla che denota una parte NOTA non risolta si aggiunge al master (alias di scrittura o
-     `shortName` del bit) seguito da `npm run build:parts`. Se `threads.bbx-winning.blocked` è true o
-     `raw` è vuoto, il parser scrive evidence vuota (no-op): segnalalo. NON ri-estrarre a mano ciò che
-     il parser ha già risolto.
+   - WBO (`wbo-cache.json`): esegui `npm run parse:wbo` (parser DETERMINISTICO: segmentazione del
+     thread evento→podio→righe-combo via regex + risoluzione parti/sigle/id) che scrive i placements
+     in `data/wbo-evidence.json`. Poi gestisci gli `unresolved` — **qui interviene l'IA, su questo
+     abbonamento** (nessuna API a pagamento): le CX aggiungile a `combos.json` con la loro `evidence`;
+     gli eventi-ladder o i layout insoliti reinterpretali a mano; un nome/sigla che denota una parte
+     NOTA non risolta si aggiunge al master (alias di scrittura o `shortName` del bit) seguito da
+     `npm run build:parts`. Se `threads.bbx-winning.blocked` è true o `raw` è vuoto, il parser scrive
+     evidence vuota (no-op): segnalalo. NON ri-estrarre a mano ciò che il parser ha già risolto.
    - YouTube: combo da titoli/descrizioni (`youtube-cache.json`) e dai transcript
      (`youtube-transcripts.json`). Reddit: body + commenti. Sheets: tabelle WBO.
 5. **Combo BX/UX** = blade+ratchet+bit; **CX** = lockChip+mainBlade+assistBlade+ratchet+bit; **CX Expand**

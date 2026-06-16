@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-16T07:46:24.297Z",
+  "lastUpdated": "2026-06-16T09:17:47.177Z",
   "combos": [
     {
       "id": "wizard-rod-1-60-hexa",
@@ -777,7 +777,7 @@
       "score": 6.99,
       "scoreBreakdown": {
         "performance": 0.632,
-        "presence": 0.819,
+        "presence": 0.818,
         "corroboration": 0.706,
         "tournamentEvents": 11,
         "wins": 3,
@@ -1075,8 +1075,8 @@
       "type": "defense",
       "score": 5.96,
       "scoreBreakdown": {
-        "performance": 0.476,
-        "presence": 0.763,
+        "performance": 0.475,
+        "presence": 0.762,
         "corroboration": 0.706,
         "tournamentEvents": 6,
         "wins": 2,
@@ -1299,7 +1299,7 @@
       "type": "attack",
       "score": 5.66,
       "scoreBreakdown": {
-        "performance": 0.471,
+        "performance": 0.47,
         "presence": 0.686,
         "corroboration": 0.677,
         "tournamentEvents": 6,
@@ -1940,10 +1940,10 @@
       "assistBlade": null,
       "displayName": "Aero Pegasus 7-60 Rush",
       "type": "attack",
-      "score": 4.02,
+      "score": 4.01,
       "scoreBreakdown": {
-        "performance": 0.358,
-        "presence": 0.362,
+        "performance": 0.357,
+        "presence": 0.361,
         "corroboration": 0.643,
         "tournamentEvents": 4,
         "wins": 1,
@@ -2078,7 +2078,7 @@
       "score": 3.99,
       "scoreBreakdown": {
         "performance": 0.107,
-        "presence": 0.79,
+        "presence": 0.789,
         "corroboration": 0.688,
         "tournamentEvents": 1,
         "wins": 1,
@@ -2334,7 +2334,7 @@
       "score": 3.83,
       "scoreBreakdown": {
         "performance": 0.132,
-        "presence": 0.787,
+        "presence": 0.786,
         "corroboration": 0.5,
         "tournamentEvents": 2,
         "wins": 0,
@@ -2423,7 +2423,7 @@
       "assistBlade": null,
       "displayName": "Wizard Rod 9-60 Ball",
       "type": "stamina",
-      "score": 3.66,
+      "score": 3.65,
       "scoreBreakdown": {
         "performance": 0.107,
         "presence": 0.715,
@@ -2523,7 +2523,7 @@
       "assistBlade": null,
       "displayName": "Shark Scale 1-60 Low Rush",
       "type": "attack",
-      "score": 3.47,
+      "score": 3.46,
       "scoreBreakdown": {
         "performance": 0.223,
         "presence": 0.439,
@@ -2617,7 +2617,7 @@
       "type": "attack",
       "score": 3.32,
       "scoreBreakdown": {
-        "performance": 0.461,
+        "performance": 0.46,
         "presence": 0,
         "corroboration": 0.524,
         "tournamentEvents": 4,
@@ -2754,7 +2754,7 @@
       "score": 3.31,
       "scoreBreakdown": {
         "performance": 0.302,
-        "presence": 0.267,
+        "presence": 0.266,
         "corroboration": 0.565,
         "tournamentEvents": 2,
         "wins": 0,
@@ -2968,7 +2968,7 @@
       "assistBlade": null,
       "displayName": "Aero Pegasus 3-60 Rush",
       "type": "attack",
-      "score": 3.08,
+      "score": 3.07,
       "scoreBreakdown": {
         "performance": 0.207,
         "presence": 0.306,
@@ -3161,7 +3161,7 @@
       "type": "attack",
       "score": 2.98,
       "scoreBreakdown": {
-        "performance": 0.389,
+        "performance": 0.388,
         "presence": 0,
         "corroboration": 0.565,
         "tournamentEvents": 3,
@@ -3361,9 +3361,9 @@
       "assistBlade": null,
       "displayName": "Shark Scale 1-70 Rush",
       "type": "attack",
-      "score": 2.9,
+      "score": 2.89,
       "scoreBreakdown": {
-        "performance": 0.179,
+        "performance": 0.178,
         "presence": 0.388,
         "corroboration": 0.5,
         "tournamentEvents": 2,
@@ -4000,7 +4000,7 @@
       "assistBlade": null,
       "displayName": "Wizard Rod 1-60 Ball",
       "type": "stamina",
-      "score": 2.48,
+      "score": 2.47,
       "scoreBreakdown": {
         "performance": 0.296,
         "presence": 0,
@@ -4099,7 +4099,7 @@
       "type": "attack",
       "score": 2.46,
       "scoreBreakdown": {
-        "performance": 0.326,
+        "performance": 0.325,
         "presence": 0,
         "corroboration": 0.444,
         "tournamentEvents": 2,
@@ -4189,7 +4189,7 @@
       "score": 2.44,
       "scoreBreakdown": {
         "performance": 0,
-        "presence": 0.646,
+        "presence": 0.645,
         "corroboration": 0.333,
         "tournamentEvents": 0,
         "wins": 0,
@@ -4240,7 +4240,7 @@
       "score": 2.39,
       "scoreBreakdown": {
         "performance": 0,
-        "presence": 0.63,
+        "presence": 0.629,
         "corroboration": 0.333,
         "tournamentEvents": 0,
         "wins": 0,
@@ -4291,7 +4291,7 @@
       "score": 2.31,
       "scoreBreakdown": {
         "performance": 0.12,
-        "presence": 0.267,
+        "presence": 0.266,
         "corroboration": 0.565,
         "tournamentEvents": 1,
         "wins": 0,
@@ -4448,7 +4448,7 @@
       "score": 2.26,
       "scoreBreakdown": {
         "performance": 0,
-        "presence": 0.588,
+        "presence": 0.587,
         "corroboration": 0.333,
         "tournamentEvents": 0,
         "wins": 0,
@@ -4549,7 +4549,7 @@
       "type": "attack",
       "score": 2.22,
       "scoreBreakdown": {
-        "performance": 0.089,
+        "performance": 0.088,
         "presence": 0.27,
         "corroboration": 0.615,
         "tournamentEvents": 1,
@@ -4648,7 +4648,7 @@
       "score": 2.22,
       "scoreBreakdown": {
         "performance": 0.107,
-        "presence": 0.26,
+        "presence": 0.259,
         "corroboration": 0.565,
         "tournamentEvents": 1,
         "wins": 0,
@@ -4821,7 +4821,7 @@
       "assistBlade": null,
       "displayName": "Shark Scale 3-60 Level",
       "type": "attack",
-      "score": 2.18,
+      "score": 2.17,
       "scoreBreakdown": {
         "performance": 0.065,
         "presence": 0.356,
@@ -5183,7 +5183,7 @@
       "score": 2.03,
       "scoreBreakdown": {
         "performance": 0,
-        "presence": 0.51,
+        "presence": 0.509,
         "corroboration": 0.333,
         "tournamentEvents": 0,
         "wins": 0,
@@ -5546,7 +5546,7 @@
       "score": 1.87,
       "scoreBreakdown": {
         "performance": 0,
-        "presence": 0.457,
+        "presence": 0.456,
         "corroboration": 0.333,
         "tournamentEvents": 0,
         "wins": 0,
@@ -5594,7 +5594,7 @@
       "assistBlade": null,
       "displayName": "Shark Scale 1-50 Low Rush",
       "type": "attack",
-      "score": 1.82,
+      "score": 1.81,
       "scoreBreakdown": {
         "performance": 0.176,
         "presence": 0,
@@ -6564,7 +6564,7 @@
       "score": 1.57,
       "scoreBreakdown": {
         "performance": 0,
-        "presence": 0.357,
+        "presence": 0.356,
         "corroboration": 0.333,
         "tournamentEvents": 0,
         "wins": 0,
@@ -6809,7 +6809,7 @@
       "score": 1.47,
       "scoreBreakdown": {
         "performance": 0,
-        "presence": 0.324,
+        "presence": 0.323,
         "corroboration": 0.333,
         "tournamentEvents": 0,
         "wins": 0,
@@ -7361,6 +7361,67 @@
             "kind": "recommendation",
             "lang": "en",
             "url": "https://worldbeyblade.org/Thread-X-Masters-51--126195"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mummy-curse-8-70-rubber-accel",
+      "line": "bx",
+      "blade": "mummy-curse",
+      "ratchet": "8-70",
+      "bit": "rubber-accel",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Mummy Curse 8-70 Rubber Accel",
+      "type": "defense",
+      "score": 1.38,
+      "scoreBreakdown": {
+        "performance": 0.13,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 0,
+        "topCutAppearances": 1
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Beetlepenny",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX?action=lastpost",
+          "weight": 0.95,
+          "date": "2026-06-14"
+        }
+      ],
+      "dateAdded": "2026-06-16",
+      "dateUpdated": "2026-06-16",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-126195",
+            "eventName": "Beetlepenny",
+            "date": "2026-06-14",
+            "placement": 2,
+            "players": 32,
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX?action=lastpost"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-beetlepenny",
+            "date": "2026-06-14",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX?action=lastpost"
           }
         ]
       }
@@ -8001,7 +8062,7 @@
       "assistBlade": null,
       "displayName": "Scorpio Spear 9-60 Kick",
       "type": "stamina",
-      "score": 1.26,
+      "score": 1.25,
       "scoreBreakdown": {
         "performance": 0,
         "presence": 0.252,
@@ -8235,7 +8296,7 @@
       "type": "attack",
       "score": 1.22,
       "scoreBreakdown": {
-        "performance": 0.131,
+        "performance": 0.13,
         "presence": 0,
         "corroboration": 0.333,
         "tournamentEvents": 1,
@@ -8278,59 +8339,6 @@
       }
     },
     {
-      "id": "mummy-curse-8-70-rubber-accel",
-      "line": "bx",
-      "blade": "mummy-curse",
-      "ratchet": "8-70",
-      "bit": "rubber-accel",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Mummy Curse 8-70 Rubber Accel",
-      "type": "defense",
-      "score": 1.22,
-      "scoreBreakdown": {
-        "performance": 0.13,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 0,
-        "topCutAppearances": 1
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — Beetlepenny",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX?action=lastpost",
-          "weight": 0.95,
-          "date": "2026-06-14"
-        }
-      ],
-      "dateAdded": "2026-06-16",
-      "dateUpdated": "2026-06-16",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-126195",
-            "eventName": "Beetlepenny",
-            "date": "2026-06-14",
-            "placement": 2,
-            "players": 32,
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX?action=lastpost"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      }
-    },
-    {
       "id": "phoenix-wing-9-60-low-rush",
       "line": "bx",
       "blade": "phoenix-wing",
@@ -8343,7 +8351,7 @@
       "type": "attack",
       "score": 1.21,
       "scoreBreakdown": {
-        "performance": 0.099,
+        "performance": 0.098,
         "presence": 0,
         "corroboration": 0.444,
         "tournamentEvents": 1,
@@ -8718,6 +8726,128 @@
       }
     },
     {
+      "id": "clock-mirage-7-55-free-ball",
+      "line": "bx",
+      "blade": "clock-mirage",
+      "ratchet": "7-55",
+      "bit": "free-ball",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Clock Mirage 7-55 Free Ball",
+      "type": "stamina",
+      "score": 1.18,
+      "scoreBreakdown": {
+        "performance": 0.093,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 0,
+        "topCutAppearances": 1
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — NEBO X THIRD SPACE #5",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX?action=lastpost",
+          "weight": 0.95,
+          "date": "2026-06-14"
+        }
+      ],
+      "dateAdded": "2026-06-16",
+      "dateUpdated": "2026-06-16",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-pid-1928493",
+            "eventName": "NEBO X THIRD SPACE #5",
+            "date": "2026-06-14",
+            "placement": 2,
+            "players": 15,
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX?action=lastpost"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-nebo-x-third-space-5",
+            "date": "2026-06-14",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX?action=lastpost"
+          }
+        ]
+      }
+    },
+    {
+      "id": "whale-wave-5-60-kick",
+      "line": "bx",
+      "blade": "whale-wave",
+      "ratchet": "5-60",
+      "bit": "kick",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Whale Wave 5-60 Kick",
+      "type": "balance",
+      "score": 1.18,
+      "scoreBreakdown": {
+        "performance": 0.093,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 0,
+        "topCutAppearances": 1
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — NEBO X THIRD SPACE #5",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX?action=lastpost",
+          "weight": 0.95,
+          "date": "2026-06-14"
+        }
+      ],
+      "dateAdded": "2026-06-16",
+      "dateUpdated": "2026-06-16",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-pid-1928493",
+            "eventName": "NEBO X THIRD SPACE #5",
+            "date": "2026-06-14",
+            "placement": 2,
+            "players": 15,
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX?action=lastpost"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-nebo-x-third-space-5",
+            "date": "2026-06-14",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX?action=lastpost"
+          }
+        ]
+      }
+    },
+    {
       "id": "phoenix-wing-9-60-kick",
       "line": "bx",
       "blade": "phoenix-wing",
@@ -8785,7 +8915,7 @@
       "type": "attack",
       "score": 1.15,
       "scoreBreakdown": {
-        "performance": 0.089,
+        "performance": 0.088,
         "presence": 0,
         "corroboration": 0.444,
         "tournamentEvents": 1,
@@ -8846,7 +8976,7 @@
       "type": "defense",
       "score": 1.15,
       "scoreBreakdown": {
-        "performance": 0.089,
+        "performance": 0.088,
         "presence": 0,
         "corroboration": 0.444,
         "tournamentEvents": 1,
@@ -9362,112 +9492,6 @@
             "url": "https://worldbeyblade.org/Thread-NEBO-X--pid1928493"
           }
         ]
-      }
-    },
-    {
-      "id": "clock-mirage-7-55-free-ball",
-      "line": "bx",
-      "blade": "clock-mirage",
-      "ratchet": "7-55",
-      "bit": "free-ball",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Clock Mirage 7-55 Free Ball",
-      "type": "stamina",
-      "score": 1.01,
-      "scoreBreakdown": {
-        "performance": 0.093,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 0,
-        "topCutAppearances": 1
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — NEBO X THIRD SPACE #5",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX?action=lastpost",
-          "weight": 0.95,
-          "date": "2026-06-14"
-        }
-      ],
-      "dateAdded": "2026-06-16",
-      "dateUpdated": "2026-06-16",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-pid-1928493",
-            "eventName": "NEBO X THIRD SPACE #5",
-            "date": "2026-06-14",
-            "placement": 2,
-            "players": 15,
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX?action=lastpost"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      }
-    },
-    {
-      "id": "whale-wave-5-60-kick",
-      "line": "bx",
-      "blade": "whale-wave",
-      "ratchet": "5-60",
-      "bit": "kick",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Whale Wave 5-60 Kick",
-      "type": "balance",
-      "score": 1.01,
-      "scoreBreakdown": {
-        "performance": 0.093,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 0,
-        "topCutAppearances": 1
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — NEBO X THIRD SPACE #5",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX?action=lastpost",
-          "weight": 0.95,
-          "date": "2026-06-14"
-        }
-      ],
-      "dateAdded": "2026-06-16",
-      "dateUpdated": "2026-06-16",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-pid-1928493",
-            "eventName": "NEBO X THIRD SPACE #5",
-            "date": "2026-06-14",
-            "placement": 2,
-            "players": 15,
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX?action=lastpost"
-          }
-        ],
-        "usage": [],
-        "mentions": []
       }
     },
     {

@@ -1,10 +1,11 @@
 /**
- * wbo-parse.ts — Logica DETERMINISTICA del parser WBO (la parte "codice" del confine IA/codice).
+ * wbo-parse.ts — Parser WBO 100% DETERMINISTICO (nessuna IA, nessuna API a pagamento).
  *
- * La segmentazione del thread-forum (evento → podio → righe-combo grezze) è interpretazione di
- * layout e la fa l'IA (Haiku, scripts/lib/wbo-segment.ts). Qui si fa solo il deterministico:
- * risoluzione parti/sigle ufficiali, parsing eventId/data/players, accumulo combo (id-set), dedup
- * e stats. Lo schema di output replica parse-metabeys.ts: { combos, unresolved, stats }.
+ * Fa tutto a codice: segmentazione del thread (evento → podio → righe-combo) via regex, risoluzione
+ * parti/sigle ufficiali, parsing eventId/data/players, accumulo combo (id-set), dedup e stats. Lo
+ * schema di output replica parse-metabeys.ts: { combos, unresolved, stats }. I casi che la
+ * segmentazione non risolve (eventi-ladder, layout insoliti) restano in `unresolved`: li rifinisce
+ * l'IA in /update-combos, che gira sull'abbonamento Claude Code (NON via API Anthropic).
  *
  * Funzioni pure ed esportate (niente I/O di pipeline qui) per essere testabili nel golden test.
  */
@@ -159,7 +160,7 @@ export function parsePlayers(headerText: string): number | undefined {
   return undefined;
 }
 
-// ---- Segmentazione deterministica (fallback se Haiku non disponibile) -----
+// ---- Segmentazione deterministica del thread -----------------------------
 
 export interface SegPlacement { rank: number; comboLinesRaw: string[] }
 export interface SegEvent { eventName: string; headerRaw: string; placements: SegPlacement[] }
@@ -177,11 +178,11 @@ const HEADER_NOISE_RE =
   /^(Optional Rules|Stadium|First Stage|Final Stage|Second Stage|Date:|Event Page|Bracket Link|Location|Discord|Match Type|Stage \d|RANKED|UNRANKED|WBO Ranked)/i;
 
 /**
- * Segmentatore di riserva basato su regex: spezza i post sulle righe-ruolo, scarta le citazioni
+ * Segmentatore deterministico (regex): spezza i post sulle righe-ruolo, scarta le citazioni
  * ("Wrote:") e l'header/footer di pagina (i blocchi prima del primo ORGANIZER sono esclusi), e
  * raccoglie sotto ogni marcatore (1st / 1st Place: / 🥇🥈🥉) le righe che contengono un ratchet.
  */
-export function deterministicSegment(raw: string): SegEvent[] {
+export function segmentThread(raw: string): SegEvent[] {
   const lines = raw.split('\n');
   const blocks: string[][] = [];
   let cur: string[] | null = null;
@@ -243,7 +244,7 @@ export interface WboEvidence {
 }
 
 /**
- * Trasforma gli eventi segmentati (da Haiku o dal fallback) in evidenza: risolve ogni riga-combo,
+ * Trasforma gli eventi segmentati in evidenza: risolve ogni riga-combo,
  * accumula i combo per id-set, deduplica i placement per (eventId, posizione, comboId) — così la
  * stessa combo usata in "First Stage" e "Final Stage" non conta due volte — e ordina l'output per
  * diff git stabili (l'ordine del raw cambia a ogni fetch).

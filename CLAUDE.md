@@ -37,8 +37,7 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
 - `data/parts-master-conflicts.json` — casi ambigui dell'import per revisione umana (type_mismatch = rumore; gli over_blade ora sono categoria `overBlades` a sé, non più conflitti)
 - `data/combos.json` — database combo con `evidence` (placements/usage/mentions), `scoreBreakdown` CAS e fonti
 - `data/metabeys-evidence.json` — evidenza torneo parsata in modo deterministico da MetaBeys (placements + usage), input dello scoring
-- `data/wbo-evidence.json` — evidenza torneo da WBO (placements), parser ibrido (segmentazione Haiku + risoluzione deterministica); input dello scoring
-- `data/wbo-segmentation-cache.json` — cache della segmentazione Haiku per hash del raw (riproducibilità + costo)
+- `data/wbo-evidence.json` — evidenza torneo da WBO (placements), parser deterministico; input dello scoring
 - `data/products.json` — catalogo prodotti TT+Hasbro (link Amazon); referenzia gli id parte
 - `data/sources.json` — fonti configurabili (con `lang`, `manualVerification`); editabile dall'utente
 - `data/youtube-cache.json`, `data/youtube-transcripts.json`, `data/reddit-cache.json`, `data/sheets-cache.json` — cache grezze fonti
@@ -58,7 +57,7 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
 - `/update-parts` — aggiornamento giornaliero parti (diff revid)
 - `/update-combos` — aggiorna database combo dalle cache (master multilingua, X-filter, dedup id-set)
 - `npm run parse:metabeys` — parser deterministico MetaBeys (eventi+leaderboard) → `metabeys-evidence.json` (placements+usage; ambigui in `unresolved`)
-- `npm run parse:wbo` — parser ibrido WBO (segmentazione Haiku + risoluzione deterministica) → `wbo-evidence.json` (placements; CX/sigle ignote/eventi senza podio in `unresolved`)
+- `npm run parse:wbo` — parser deterministico WBO (segmentazione regex + risoluzione) → `wbo-evidence.json` (placements; CX/sigle ignote/eventi senza podio in `unresolved`)
 - `npm run score:combos` — ricalcola gli score CAS deterministici da `evidence` (algoritmo in `src/lib/scoring.ts`, spec in `docs/scoring-algorithm.md`)
 - `npm run test:scoring` — golden test dell'algoritmo CAS
 - `npm run test:wbo` — golden test della parte deterministica del parser WBO
@@ -74,11 +73,12 @@ accesso/fetch grezzo, **parsing delle fonti strutturate** (MetaBeys eventi+leade
 (da `evidence` a numero — `src/lib/scoring.ts`). L'IA estrae l'evidenza dalle fonti narrative e dai
 casi `unresolved`; non calcola mai lo score né ri-parsa ciò che il parser deterministico ha risolto.
 
-**Caso ibrido WBO**: il thread-forum WBO è troppo eterogeneo (token incollati, marcatori di
-piazzamento misti, quote/ads da scartare) per una segmentazione deterministica affidabile, quindi il
-*layout* (evento→podio→righe-combo grezze) lo interpreta Haiku (`scripts/lib/wbo-segment.ts`, con
-fallback regex se manca `ANTHROPIC_API_KEY`), mentre la risoluzione parti/sigle/id, dedup e stats
-restano codice deterministico (`scripts/lib/wbo-parse.ts`). Haiku non risolve mai le parti.
+**WBO**: il thread-forum è eterogeneo (token incollati, marcatori di piazzamento misti, quote/ads da
+scartare), ma `parse:wbo` lo gestisce **interamente a codice deterministico**
+(`scripts/lib/wbo-parse.ts`): segmentazione del layout via regex + risoluzione parti/sigle/id, dedup,
+stats. I casi che la segmentazione non risolve (eventi-ladder, layout insoliti) restano in
+`unresolved` e li rifinisce l'IA in `/update-combos`, che gira **sull'abbonamento Claude Code** — mai
+via API a pagamento (regola: non pagare due volte ciò che l'abbonamento già copre).
 
 ### Database parti (master multilingua → derivati)
 - Fonte: pagine prodotto Beyblade Fandom Wiki via **API MediaWiki** (`api.php?action=parse&...&prop=wikitext`;
@@ -102,18 +102,17 @@ restano codice deterministico (`scripts/lib/wbo-parse.ts`). Haiku non risolve ma
 Lo scoring NON è più una stima inline dell'IA: è il **Competitive Authority Score** calcolato dal
 codice. `/update-combos` (IA) popola il blocco `evidence` di ogni combo distinguendo **risultati**
 (`placements`/`usage`) da **opinioni** (`mentions`); `parse:metabeys` e `parse:wbo` producono
-l'evidenza torneo in `metabeys-evidence.json` e `wbo-evidence.json`; `score:combos` le **unisce**
-(placements deduplicati per evento fisico — data+posizione+nome evento — per non doppiare gli eventi
-che MetaBeys e WBO indicizzano entrambi), applica `src/lib/scoring.ts` e scrive `scoreBreakdown` + tag
-gestiti (`meta`, `top-tier`, `tournament-proven`, `theory-only`, `rising`). Algoritmo, pesi e costanti
-in `docs/scoring-algorithm.md`. Limite noto: nomi evento testualmente diversi tra le due fonti non
-vengono uniti (restano doppi); WBO pesa come `structured` (1.0) nello scoring, non 0.95.
+l'evidenza torneo in `metabeys-evidence.json` e `wbo-evidence.json` (entrambi parser deterministici);
+`score:combos` le **unisce** (placements deduplicati per evento fisico — data+posizione+nome evento —
+per non doppiare gli eventi che MetaBeys e WBO indicizzano entrambi), applica `src/lib/scoring.ts` e
+scrive `scoreBreakdown` + tag gestiti (`meta`, `top-tier`, `tournament-proven`, `theory-only`,
+`rising`). Algoritmo, pesi e costanti in `docs/scoring-algorithm.md`. Limite noto: nomi evento
+testualmente diversi tra le due fonti non vengono uniti (restano doppi); WBO pesa come `structured`
+(1.0) nello scoring, non 0.95.
 
 ### Dipendenze
 - Node: `tsx`, `playwright-core` (usa il Chrome di sistema). Python: `youtube_transcript_api`.
-- `.env`: `YOUTUBE_API_KEY` (YouTube Data API v3 + Sheets API v4), `AMAZON_TAG_IT/US`,
-  `ANTHROPIC_API_KEY` (Haiku per la segmentazione WBO; **opzionale** — senza, `parse:wbo` usa il
-  fallback deterministico). La chiamata Haiku gira in automazione unattended (Task Scheduler).
+- `.env`: `YOUTUBE_API_KEY` (YouTube Data API v3 + Sheets API v4), `AMAZON_TAG_IT/US`.
 
 ### Fonti torneo (in `data/sources.json`, con `lang`)
 Strutturate: **MetaBeys** (1.0, podio+deck+usage%), **WBO Winning Combos** (0.95). Web: **SBBL** (es,
