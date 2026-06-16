@@ -9,6 +9,9 @@ export interface PartRef {
   name: string;
 }
 
+// Normalizza per il match: piega gli accenti (es. romaji "Bōru" → "boru") e abbassa il case.
+const norm = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+
 interface Props {
   parts: PartsRegistry;
   selected: SelectedParts;
@@ -45,18 +48,28 @@ export function PartSearch({ parts, selected, suggestions, onAdd, onRemove, t }:
   const inputRef = useRef<HTMLInputElement>(null);
 
   // Indice piatto di tutte le parti, una sola lista per tutte le categorie/linee.
-  const index: (PartRef & { catLabel: string })[] = CATEGORIES.flatMap((c) =>
-    (parts[c.category] as Array<{ id: string; name: string }>).map((p) => ({
+  // `variants` raccoglie ogni nome che il database associa alla parte (TT, Hasbro, romaji,
+  // codice bit), in ordine di priorità per il display del match.
+  const index: (PartRef & { catLabel: string; variants: string[] })[] = CATEGORIES.flatMap((c) =>
+    (parts[c.category] as Array<{ id: string; name: string; nameWestern?: string; aliases?: string[]; shortName?: string }>).map((p) => ({
       category: c.category,
       id: p.id,
       name: p.name,
       catLabel: t(c.labelKey),
+      variants: [p.name, p.nameWestern, ...(p.aliases ?? []), p.shortName].filter(Boolean) as string[],
     })),
   );
 
-  const q = query.trim().toLowerCase();
+  const q = norm(query.trim());
   const available = index
-    .filter((o) => !selected[o.category].includes(o.id) && (q === '' || o.name.toLowerCase().includes(q)))
+    .filter((o) => !selected[o.category].includes(o.id))
+    .map((o) => {
+      if (q === '') return { ...o, matchedAlt: null as string | null };
+      const hit = o.variants.find((v) => norm(v).includes(q));
+      if (!hit) return null;
+      return { ...o, matchedAlt: norm(hit) === norm(o.name) ? null : hit };
+    })
+    .filter((o): o is (typeof index)[number] & { matchedAlt: string | null } => o !== null)
     .slice(0, 50);
 
   const owned: PartRef[] = CATEGORIES.flatMap((c) =>
@@ -106,7 +119,12 @@ export function PartSearch({ parts, selected, suggestions, onAdd, onRemove, t }:
                     setIsOpen(false);
                   }}
                 >
-                  <span>{opt.name}</span>
+                  <span class="flex min-w-0 flex-col">
+                    <span class="truncate">{opt.name}</span>
+                    {opt.matchedAlt && (
+                      <span class="truncate text-[11px] text-muted-2">{opt.matchedAlt}</span>
+                    )}
+                  </span>
                   <span class="shrink-0 font-mono text-[10px] uppercase tracking-[0.1em] text-muted-2">{opt.catLabel}</span>
                 </button>
               </li>
