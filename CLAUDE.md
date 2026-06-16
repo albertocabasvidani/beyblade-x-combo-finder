@@ -56,6 +56,8 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
 - `/verify-parts-master` — verifica qualità del master parti
 - `/update-parts` — aggiornamento giornaliero parti (diff revid)
 - `/update-combos` — aggiorna database combo dalle cache (master multilingua, X-filter, dedup id-set)
+- `/mine-reddit` — mina la cache Reddit **a blocchi** (idempotente via scan-history): legge tutta la cache, non la skimma. Per backfill e marcia normale
+- `npm run reddit:batch -- next|done` — batcher deterministico per `/mine-reddit` (serve/marca blocchi)
 - `npm run parse:metabeys` — parser deterministico MetaBeys (eventi+leaderboard) → `metabeys-evidence.json` (placements+usage; ambigui in `unresolved`)
 - `npm run parse:wbo` — parser deterministico WBO (segmentazione regex + risoluzione) → `wbo-evidence.json` (placements; CX/sigle ignote/eventi senza podio in `unresolved`)
 - `npm run score:combos` — ricalcola gli score CAS deterministici da `evidence` (algoritmo in `src/lib/scoring.ts`, spec in `docs/scoring-algorithm.md`)
@@ -129,16 +131,19 @@ Social login-walled in `manualVerification` (non scrappati, solo elencati nel re
 
 Il PC è spento di notte → tutta la pipeline gira in **un'unica sequenza alle 08:00** (utente loggato).
 `daily-pipeline.bat` esegue in ordine: `/update-parts` → `collect:sources` (con Reddit/WBO **headed**
-via `REDDIT_HEADED=1`/`WBO_HEADED=1`, lette da collect:sources) → `/update-combos`. Reddit riusa il
-login del profilo `.playwright-beyblade`; WBO può chiedere il captcha Cloudflare (mattina = utente al
-PC per risolverlo). I transcript YouTube girano a parte ogni 5 min (`--batch 1`, rate-limit): i video
-nuovi scoperti oggi vengono trascritti nelle ore successive e raccolti dai run seguenti
-(eventually-consistent). `/update-parts` e `/update-combos` fanno **commit/push autonomi su master**.
+via `REDDIT_HEADED=1`/`WBO_HEADED=1`, lette da collect:sources) → `/update-combos` (fonti strutturate)
+→ `/mine-reddit` (Reddit a blocchi). Reddit riusa il login del profilo `.playwright-beyblade`; WBO può
+chiedere il captcha Cloudflare (mattina = utente al PC per risolverlo). I transcript YouTube girano a
+parte ogni 5 min (`--batch 1`, rate-limit): i video nuovi scoperti oggi vengono trascritti nelle ore
+successive e raccolti dai run seguenti (eventually-consistent). `/update-parts`, `/update-combos` e
+`/mine-reddit` fanno **commit/push autonomi su master**.
 
 Durata `/update-combos`: **~20-22 min** a run (misurato 16/06/2026 via `claude -p`: parser
-MetaBeys/WBO + scoring CAS + estrazione fonti + build + commit/push). Un singolo run **non mina
-esaustivamente cache Reddit molto ampie** (es. backfill da ~900 post): legge a fondo le fonti
-strutturate e Reddit a campione. Per ingerire un backfill storico serve una passata dedicata.
+MetaBeys/WBO + scoring CAS + estrazione fonti strutturate + build + commit/push). **Non** mina la
+cache Reddit a fondo: la cache (`reddit-cache.json`, migliaia di righe) eccede un singolo Read, quindi
+`/update-combos` ne vede solo una fetta. Reddit lo mina `/mine-reddit`, che la legge **a blocchi**
+(`reddit:batch`) marcando ogni post in `scan-history` — idempotente, riprende dove era rimasto, e
+copre sia un backfill (~900 post → molti blocchi) sia i pochi post nuovi del giorno (1 blocco).
 
 Bat manuali: `collect-social.bat` (solo Reddit+WBO headed), `collect-combos.bat` (solo collect
 headless), `update-combos.bat` (collect+analyze), `dev-server.bat` (Astro).

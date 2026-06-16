@@ -8,6 +8,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "scrape:reddit": "npx tsx scripts/scrape-reddit.ts",
+    "reddit:batch": "npx tsx scripts/reddit-batch.ts",
     "fetch:youtube": "npx tsx scripts/fetch-youtube.ts",
     "fetch:sheets": "npx tsx scripts/fetch-sheets.ts",
     "fetch:transcripts": "python scripts/fetch-transcripts.py",
