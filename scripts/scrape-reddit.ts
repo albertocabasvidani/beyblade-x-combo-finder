@@ -24,11 +24,17 @@ const ROOT = join(import.meta.dirname, '..');
 const CACHE_PATH = join(ROOT, 'data', 'reddit-cache.json');
 const USER_DIR = 'C:/Users/cinqu/.playwright-beyblade';
 const HEADED = process.env.REDDIT_HEADED === '1';
+// Backfill storico (one-off): pagina a fondo tutte le query (cursore `after`, fino a ~1000/query, il
+// limite di Reddit) e NON applica KEEP_TOP (tiene tutto). Va seguito SUBITO da /update-combos, prima
+// che un run normale (KEEP_TOP) poti la cache. Marcia normale: REDDIT_BACKFILL non settato.
+const BACKFILL = process.env.REDDIT_BACKFILL === '1';
 const KEEP_TOP = 150;
+const MAX_PAGES = BACKFILL ? 15 : 1;
 const BLOCK = /blocked by network security|whoa there|too many requests|just a moment/i;
 // Query orientate ai risultati di torneo. Il giudizio "ha davvero vinto / è in top cut" lo fa l'IA
-// in /update-combos: qui si raccoglie grezzo, ampio e non filtrato. `tourney` è incluso in via
-// sperimentale (verificarne la resa dopo il primo run headed; rimuoverlo se pesca poco).
+// in /update-combos: qui si raccoglie grezzo, ampio e non filtrato. Recall misurato (16/06/2026):
+// le 5 query danno 401 post distinti; `tourney` da solo ne porta 97 unici (~24%), quasi disgiunto
+// dalle altre → tenuto. Ogni query (tranne `top cut`) satura il cap Reddit di 100.
 const QUERIES = ['tournament', 'tourney', 'won', 'winning', 'top cut'];
 
 interface RedditPost { id: string; title: string; body: string; url: string; score: number; date: string; comments: string[]; }
@@ -42,7 +48,13 @@ function loadCache(): RedditCache {
 
 // Naviga a un endpoint .json e ne fa il parse dal body. {__blocked:true} se WAF, null se non-JSON.
 async function getJson(page: any, url: string): Promise<any> {
-  await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 45000 });
+  // page.goto lancia su HTTP 4xx/5xx (post rimossi/locked, 403, timeout): NON deve abbattere l'intero
+  // run — un singolo post problematico va saltato (return null), non far perdere l'harvest già raccolto.
+  try {
+    await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 45000 });
+  } catch {
+    return null;
+  }
   const text = (await page.locator('body').innerText().catch(() => '')) || '';
   if (BLOCK.test(text.slice(0, 400))) return { __blocked: true };
   try { return JSON.parse(text); } catch { return null; }
@@ -88,17 +100,27 @@ async function main() {
 
     const found = new Map<string, RedditPost>();
     let blockedFirst = false, anyOk = false;
+    outer:
     for (const q of QUERIES) {
-      const params = new URLSearchParams({ q, restrict_sr: 'on', sort: 'new', limit: '100' });
       console.log(`  Cerco: "${q}"`);
-      const data = await getJson(page, `https://www.reddit.com/r/Beyblade/search.json?${params}`);
-      if (data?.__blocked) { if (!anyOk) blockedFirst = true; break; }
-      if (data?.data?.children) {
-        anyOk = true;
-        for (const c of data.data.children) {
-          const d = c.data;
-          if (d && (d.selftext || d.title) && !found.has(d.id)) found.set(d.id, toPost(d));
+      let after = '';
+      for (let p = 0; p < MAX_PAGES; p++) {
+        const params = new URLSearchParams({ q, restrict_sr: 'on', sort: 'new', limit: '100' });
+        if (after) params.set('after', after);
+        const data = await getJson(page, `https://www.reddit.com/r/Beyblade/search.json?${params}`);
+        if (data?.__blocked) { if (!anyOk) blockedFirst = true; break outer; }
+        const children = data?.data?.children ?? [];
+        if (children.length) {
+          anyOk = true;
+          for (const c of children) {
+            const d = c.data;
+            if (d && (d.selftext || d.title) && !found.has(d.id)) found.set(d.id, toPost(d));
+          }
         }
+        after = data?.data?.after ?? '';
+        if (BACKFILL) console.log(`    pagina ${p + 1}: +${children.length} (tot ${found.size})`);
+        if (!after || !children.length) break;
+        await sleep(2000);
       }
       await sleep(2000);
     }
@@ -120,9 +142,12 @@ async function main() {
     const merged = new Map<string, RedditPost>();
     for (const p of existing.posts) merged.set(p.id, p);
     for (const [id, p] of found) merged.set(id, p);
-    const top = [...merged.values()].sort((a, b) => (a.date < b.date ? 1 : -1)).slice(0, KEEP_TOP);
+    const sorted = [...merged.values()].sort((a, b) => (a.date < b.date ? 1 : -1));
+    const top = BACKFILL ? sorted : sorted.slice(0, KEEP_TOP);
 
-    console.log(`\n${found.size} post trovati, ${top.length} in cache. Recupero commenti dei nuovi...`);
+    const toFetch = top.filter((p) => !p.comments.length && found.has(p.id));
+    console.log(`\n${found.size} post trovati, ${top.length} in cache. Recupero commenti per ${toFetch.length}...`);
+    let done = 0;
     for (const p of top) {
       if (p.comments.length || !found.has(p.id)) continue;
       const c = await getJson(page, `https://www.reddit.com/r/Beyblade/comments/${p.id}.json?sort=top&limit=100`);
@@ -139,6 +164,7 @@ async function main() {
       };
       walk(c?.[1]?.data?.children ?? []);
       p.comments = flat.slice(0, 80);
+      if (BACKFILL && ++done % 25 === 0) console.log(`    commenti ${done}/${toFetch.length}`);
       await sleep(2000);
     }
 

@@ -40,4 +40,4 @@ Revisioni in batch: `action=query&titles=A|B|...&prop=revisions&rvprop=ids|times
 - **Solo Beyblade X**: scarta ogni pagina con `Series ≠ "Beyblade X"`.
 - **Mai inventare**: nome non derivabile → `null`; parte non confermata → `status:"unverified"`.
 - I nomi non-EN (KR/CN/ES/PT) NON sono su Fandom: li aggiunge `/update-combos` come `aliases{kind:"community"}`.
-- Schedulato giornalmente alle 03:00 via `update-parts.bat` (Task Scheduler).
+- Eseguito ogni giorno alle 08:00 come primo passo di `daily-pipeline.bat` (Task Scheduler).
