@@ -16,8 +16,7 @@ npm install
 Richiede inoltre (per la pipeline dati):
 - Python con `youtube-transcript-api` (`pip install youtube-transcript-api`)
 - `.env` con `YOUTUBE_API_KEY` (YouTube Data API v3 + Google Sheets API v4) e, opzionali,
-  `AMAZON_TAG_IT` / `AMAZON_TAG_US` per i link affiliate e `ANTHROPIC_API_KEY` (Haiku per la
-  segmentazione WBO; senza, `parse:wbo` usa il fallback regex deterministico).
+  `AMAZON_TAG_IT` / `AMAZON_TAG_US` per i link affiliate.
 - `playwright-core` usa il Chrome di sistema (nessun download browser).
 
 ## Comandi
@@ -29,7 +28,7 @@ Richiede inoltre (per la pipeline dati):
 | `npm run build:parts` | Rigenera `data/parts.json` da `data/parts-master.json` (con guardrail) |
 | `npm run collect:sources` | Raccoglie le cache grezze (Reddit, YouTube, Sheets, MetaBeys, WBO) |
 | `npm run parse:metabeys` | Parser deterministico MetaBeys (eventi+leaderboard) → `data/metabeys-evidence.json` |
-| `npm run parse:wbo` | Parser ibrido WBO (segmentazione Haiku + risoluzione deterministica) → `data/wbo-evidence.json` |
+| `npm run parse:wbo` | Parser deterministico WBO (segmentazione regex + risoluzione) → `data/wbo-evidence.json` |
 | `npm run score:combos` | Ricalcola lo score CAS (deterministico) da `evidence`, scrive `combos.json` |
 | `npm run test:scoring` | Golden test dell'algoritmo di scoring |
 | `npm run test:wbo` | Golden test della parte deterministica del parser WBO |
@@ -46,7 +45,7 @@ Comandi Claude Code (in `.claude/commands/`):
   preservando gli id e con un guardrail che aborta se romperebbe i riferimenti di `combos.json`.
 - **`data/combos.json`** — combo con `evidence` (placements/usage/mentions), `scoreBreakdown` CAS, tag e fonti.
 - **`data/metabeys-evidence.json`** — evidenza torneo parsata in modo deterministico da MetaBeys (input dello scoring).
-- **`data/wbo-evidence.json`** — evidenza torneo da WBO (parser ibrido: segmentazione Haiku + risoluzione deterministica).
+- **`data/wbo-evidence.json`** — evidenza torneo da WBO (parser deterministico).
 - **`data/products.json`** — catalogo prodotti TT+Hasbro per i link Amazon.
 - **`data/sources.json`** — fonti configurabili (con `lang`); social non scrappabili in `manualVerification`.
 
@@ -66,10 +65,10 @@ matchare i nomi delle parti in qualsiasi lingua) la fa l'**IA**; il **codice** f
 **parsing delle fonti strutturate** (MetaBeys), dedup, derivazione, validazione e il **calcolo dello
 score CAS**. Le pagine wiki si leggono via **API MediaWiki** (`api.php`, la `/wiki/` dà 403);
 MetaBeys e WBO via **Playwright headless** (WBO è dietro Cloudflare: usare `WBO_HEADED=1` o affidarsi a
-MetaBeys, che indicizza gli stessi eventi). Il thread WBO usa un parser **ibrido**: la segmentazione del
-layout (evento→podio→righe combo) la fa **Haiku** (`scripts/lib/wbo-segment.ts`, con fallback regex se
-manca `ANTHROPIC_API_KEY`), mentre la risoluzione parti/sigle/id, dedup e stats restano **codice
-deterministico**. Haiku non risolve mai le parti. Dettagli completi e scheduling in `CLAUDE.md`.
+MetaBeys, che indicizza gli stessi eventi). Il thread WBO usa un parser **deterministico**
+(segmentazione regex + risoluzione parti/sigle/id, dedup, stats); i casi non segmentabili li rifinisce
+l'IA in `/update-combos` (abbonamento Claude Code, mai via API a pagamento). Dettagli completi e
+scheduling in `CLAUDE.md`.
 
 ## Deploy
 
