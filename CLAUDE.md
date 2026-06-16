@@ -135,6 +135,11 @@ PC per risolverlo). I transcript YouTube girano a parte ogni 5 min (`--batch 1`,
 nuovi scoperti oggi vengono trascritti nelle ore successive e raccolti dai run seguenti
 (eventually-consistent). `/update-parts` e `/update-combos` fanno **commit/push autonomi su master**.
 
+Durata `/update-combos`: **~20-22 min** a run (misurato 16/06/2026 via `claude -p`: parser
+MetaBeys/WBO + scoring CAS + estrazione fonti + build + commit/push). Un singolo run **non mina
+esaustivamente cache Reddit molto ampie** (es. backfill da ~900 post): legge a fondo le fonti
+strutturate e Reddit a campione. Per ingerire un backfill storico serve una passata dedicata.
+
 Bat manuali: `collect-social.bat` (solo Reddit+WBO headed), `collect-combos.bat` (solo collect
 headless), `update-combos.bat` (collect+analyze), `dev-server.bat` (Astro).
 
