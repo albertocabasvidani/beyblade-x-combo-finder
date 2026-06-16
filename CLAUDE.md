@@ -58,6 +58,7 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
 - `/update-combos` — aggiorna database combo dalle cache (master multilingua, X-filter, dedup id-set)
 - `/mine-reddit` — mina la cache Reddit **a blocchi** (idempotente via scan-history): legge tutta la cache, non la skimma. Per backfill e marcia normale
 - `npm run reddit:batch -- next|done` — batcher deterministico per `/mine-reddit` (serve/marca blocchi)
+- `npx tsx scripts/reddit-merge.ts` — merge deterministico dei combo estratti da `/mine-reddit` (`tmp/reddit-extracted.json`, prodotto dall'IA) in `combos.json`: deriva id/line/type/displayName da `parts.json`, X-filter su blade/mainBlade, dedup dell'evidence per chiave stabile (idempotente). Lo score lo ricalcola poi `score:combos`
 - `npm run parse:metabeys` — parser deterministico MetaBeys (eventi+leaderboard) → `metabeys-evidence.json` (placements+usage; ambigui in `unresolved`)
 - `npm run parse:wbo` — parser deterministico WBO (segmentazione regex + risoluzione) → `wbo-evidence.json` (placements; CX/sigle ignote/eventi senza podio in `unresolved`)
 - `npm run score:combos` — ricalcola gli score CAS deterministici da `evidence` (algoritmo in `src/lib/scoring.ts`, spec in `docs/scoring-algorithm.md`)
