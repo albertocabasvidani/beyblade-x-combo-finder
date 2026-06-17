@@ -1,5 +1,5 @@
 {
-  "version": "2026-06-15",
+  "version": "2026-06-17",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -31,7 +31,8 @@
       ],
       "source": {
         "page": "AeroPegasus 3-70A",
-        "url": "https://beyblade.fandom.com/wiki/AeroPegasus_3-70A"
+        "url": "https://beyblade.fandom.com/wiki/AeroPegasus_3-70A",
+        "revid": 640396
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -60,7 +61,8 @@
       ],
       "source": {
         "page": "Savage Bear 3-60S",
-        "url": "https://beyblade.fandom.com/wiki/Savage_Bear_3-60S"
+        "url": "https://beyblade.fandom.com/wiki/Savage_Bear_3-60S",
+        "revid": 590065
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -100,7 +102,8 @@
       ],
       "source": {
         "page": "Random Booster Vol. 4",
-        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._4"
+        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._4",
+        "revid": 613776
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -138,7 +141,8 @@
       "firstReleaseSet": "BulletGriffon H",
       "source": {
         "page": "BulletGriffon H",
-        "url": "https://beyblade.fandom.com/wiki/BulletGriffon_H"
+        "url": "https://beyblade.fandom.com/wiki/BulletGriffon_H",
+        "revid": 640459
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
@@ -162,7 +166,8 @@
       ],
       "source": {
         "page": "Bumblebee 3-60GP",
-        "url": "https://beyblade.fandom.com/wiki/Bumblebee_3-60GP"
+        "url": "https://beyblade.fandom.com/wiki/Bumblebee_3-60GP",
+        "revid": 639473
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -185,7 +190,8 @@
       ],
       "source": {
         "page": "Captain America 4-70GB",
-        "url": "https://beyblade.fandom.com/wiki/Captain_America_4-70GB"
+        "url": "https://beyblade.fandom.com/wiki/Captain_America_4-70GB",
+        "revid": 636517
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -208,10 +214,33 @@
       ],
       "source": {
         "page": "Chewbacca 4-80LF",
-        "url": "https://beyblade.fandom.com/wiki/Chewbacca_4-80LF"
+        "url": "https://beyblade.fandom.com/wiki/Chewbacca_4-80LF",
+        "revid": 637379
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
+    },
+    {
+      "id": "clamp-crab",
+      "category": "blade",
+      "line": "bx",
+      "names": {
+        "tt": "Clamp Crab",
+        "hasbro": "Clamp Crab"
+      },
+      "aliases": [],
+      "products": [
+        "G2759"
+      ],
+      "firstReleaseSet": "G2759",
+      "source": {
+        "page": "Blade - Clamp Crab",
+        "url": "https://beyblade.fandom.com/wiki/Blade_-_Clamp_Crab",
+        "revid": 641214
+      },
+      "lastVerified": "2026-06-17",
+      "status": "unverified",
+      "type": "stamina"
     },
     {
       "id": "clock-mirage",
@@ -247,7 +276,8 @@
       ],
       "source": {
         "page": "Random Booster ClockMirage Select",
-        "url": "https://beyblade.fandom.com/wiki/Random_Booster_ClockMirage_Select"
+        "url": "https://beyblade.fandom.com/wiki/Random_Booster_ClockMirage_Select",
+        "revid": 638061
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -283,7 +313,8 @@
       ],
       "source": {
         "page": "CobaltDragoon 2-60C",
-        "url": "https://beyblade.fandom.com/wiki/CobaltDragoon_2-60C"
+        "url": "https://beyblade.fandom.com/wiki/CobaltDragoon_2-60C",
+        "revid": 640385
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -318,7 +349,8 @@
       ],
       "source": {
         "page": "Battle Entry Set Infinity",
-        "url": "https://beyblade.fandom.com/wiki/Battle_Entry_Set_Infinity"
+        "url": "https://beyblade.fandom.com/wiki/Battle_Entry_Set_Infinity",
+        "revid": 634353
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -358,7 +390,8 @@
       ],
       "source": {
         "page": "CrimsonGaruda 4-70TP",
-        "url": "https://beyblade.fandom.com/wiki/CrimsonGaruda_4-70TP"
+        "url": "https://beyblade.fandom.com/wiki/CrimsonGaruda_4-70TP",
+        "revid": 639774
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -414,7 +447,8 @@
       "firstReleaseSet": "G1940",
       "source": {
         "page": "Ratchet-Integrated Blade - Cutter Shinobi",
-        "url": "https://beyblade.fandom.com/wiki/Ratchet-Integrated_Blade_-_Cutter_Shinobi"
+        "url": "https://beyblade.fandom.com/wiki/Ratchet-Integrated_Blade_-_Cutter_Shinobi",
+        "revid": 638655
       },
       "lastVerified": "2026-06-15",
       "status": "unverified"
@@ -449,7 +483,8 @@
       ],
       "source": {
         "page": "Darth Vader 4-60P",
-        "url": "https://beyblade.fandom.com/wiki/Darth_Vader_4-60P"
+        "url": "https://beyblade.fandom.com/wiki/Darth_Vader_4-60P",
+        "revid": 610266
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -484,7 +519,8 @@
       ],
       "source": {
         "page": "DracielShield 7-60D",
-        "url": "https://beyblade.fandom.com/wiki/DracielShield_7-60D"
+        "url": "https://beyblade.fandom.com/wiki/DracielShield_7-60D",
+        "revid": 632004
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -541,7 +577,8 @@
       ],
       "source": {
         "page": "DranBuster 1-60A",
-        "url": "https://beyblade.fandom.com/wiki/DranBuster_1-60A"
+        "url": "https://beyblade.fandom.com/wiki/DranBuster_1-60A",
+        "revid": 640811
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -582,7 +619,8 @@
       ],
       "source": {
         "page": "DranDagger 4-60R",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=DranDagger_4-60R&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=DranDagger_4-60R&format=json&prop=wikitext",
+        "revid": 639515
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -620,7 +658,8 @@
       "firstReleaseSet": "BX-49",
       "source": {
         "page": "DranStrike 4-50FF",
-        "url": "https://beyblade.fandom.com/wiki/DranStrike_4-50FF"
+        "url": "https://beyblade.fandom.com/wiki/DranStrike_4-50FF",
+        "revid": 639628
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
@@ -661,7 +700,8 @@
       ],
       "source": {
         "page": "DranSword 3-60F",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=DranSword_3-60F&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=DranSword_3-60F&format=json&prop=wikitext",
+        "revid": 639513
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -703,7 +743,8 @@
       ],
       "source": {
         "page": "DranzerSpiral 3-80T",
-        "url": "https://beyblade.fandom.com/wiki/DranzerSpiral_3-80T"
+        "url": "https://beyblade.fandom.com/wiki/DranzerSpiral_3-80T",
+        "revid": 632001
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -738,7 +779,8 @@
       ],
       "source": {
         "page": "DrigerSlash 4-80P",
-        "url": "https://beyblade.fandom.com/wiki/DrigerSlash_4-80P"
+        "url": "https://beyblade.fandom.com/wiki/DrigerSlash_4-80P",
+        "revid": 632002
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -761,7 +803,8 @@
       ],
       "source": {
         "page": "General Grievous 3-80HN",
-        "url": "https://beyblade.fandom.com/wiki/General_Grievous_3-80HN"
+        "url": "https://beyblade.fandom.com/wiki/General_Grievous_3-80HN",
+        "revid": 636189
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -800,7 +843,8 @@
       ],
       "source": {
         "page": "Random Booster Vol. 5",
-        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._5"
+        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._5",
+        "revid": 636787
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -839,7 +883,8 @@
       "firstReleaseSet": "UX-20",
       "source": {
         "page": "Ratchet-Integrated Blade - GloryValkyrie",
-        "url": "https://beyblade.fandom.com/wiki/Ratchet-Integrated_Blade_-_GloryValkyrie"
+        "url": "https://beyblade.fandom.com/wiki/Ratchet-Integrated_Blade_-_GloryValkyrie",
+        "revid": 640561
       },
       "lastVerified": "2026-06-15",
       "status": "verified"
@@ -877,7 +922,8 @@
       "firstReleaseSet": "BX-46",
       "source": {
         "page": "Battle Entry Set Infinity",
-        "url": "https://beyblade.fandom.com/wiki/Battle_Entry_Set_Infinity"
+        "url": "https://beyblade.fandom.com/wiki/Battle_Entry_Set_Infinity",
+        "revid": 634353
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
@@ -918,7 +964,8 @@
       ],
       "source": {
         "page": "GolemRock 1-60UN",
-        "url": "https://beyblade.fandom.com/wiki/GolemRock_1-60UN"
+        "url": "https://beyblade.fandom.com/wiki/GolemRock_1-60UN",
+        "revid": 640758
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -941,7 +988,8 @@
       ],
       "source": {
         "page": "Green Goblin 9-80HT",
-        "url": "https://beyblade.fandom.com/wiki/Green_Goblin_9-80HT"
+        "url": "https://beyblade.fandom.com/wiki/Green_Goblin_9-80HT",
+        "revid": 637375
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -961,7 +1009,8 @@
       "firstReleaseSet": "G3061",
       "source": {
         "page": "Grogu 3-85E",
-        "url": "https://beyblade.fandom.com/wiki/Grogu_3-85E"
+        "url": "https://beyblade.fandom.com/wiki/Grogu_3-85E",
+        "revid": 639479
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
@@ -1001,7 +1050,8 @@
       "firstReleaseSet": "G2733",
       "source": {
         "page": "Blade - Gust Bat",
-        "url": "https://beyblade.fandom.com/wiki/Blade_-_Gust_Bat"
+        "url": "https://beyblade.fandom.com/wiki/Blade_-_Gust_Bat",
+        "revid": 638868
       },
       "lastVerified": "2026-06-15",
       "status": "unverified"
@@ -1040,7 +1090,8 @@
       "firstReleaseSet": "BX-50",
       "source": {
         "page": "HeavensRing 0-80DS",
-        "url": "https://beyblade.fandom.com/wiki/HeavensRing_0-80DS"
+        "url": "https://beyblade.fandom.com/wiki/HeavensRing_0-80DS",
+        "revid": 641191
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
@@ -1081,7 +1132,8 @@
       ],
       "source": {
         "page": "HellsChain 5-60HT",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=HellsChain_5-60HT&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=HellsChain_5-60HT&format=json&prop=wikitext",
+        "revid": 640392
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -1122,7 +1174,8 @@
       ],
       "source": {
         "page": "HellsHammer 3-70H",
-        "url": "https://beyblade.fandom.com/wiki/HellsHammer_3-70H"
+        "url": "https://beyblade.fandom.com/wiki/HellsHammer_3-70H",
+        "revid": 633705
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -1163,7 +1216,8 @@
       ],
       "source": {
         "page": "HellsScythe 4-60T",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=HellsScythe_4-60T&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=HellsScythe_4-60T&format=json&prop=wikitext",
+        "revid": 640400
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -1225,7 +1279,8 @@
       ],
       "source": {
         "page": "ImpactDrake 9-60LR",
-        "url": "https://beyblade.fandom.com/wiki/ImpactDrake_9-60LR"
+        "url": "https://beyblade.fandom.com/wiki/ImpactDrake_9-60LR",
+        "revid": 640598
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -1260,7 +1315,8 @@
       ],
       "source": {
         "page": "Iron Man 4-80B",
-        "url": "https://beyblade.fandom.com/wiki/Iron_Man_4-80B"
+        "url": "https://beyblade.fandom.com/wiki/Iron_Man_4-80B",
+        "revid": 610184
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -1299,7 +1355,8 @@
       ],
       "source": {
         "page": "KnightLance 4-80HN",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=KnightLance_4-80HN&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=KnightLance_4-80HN&format=json&prop=wikitext",
+        "revid": 632917
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -1339,7 +1396,8 @@
       ],
       "source": {
         "page": "KnightMail 3-85BS",
-        "url": "https://beyblade.fandom.com/wiki/KnightMail_3-85BS"
+        "url": "https://beyblade.fandom.com/wiki/KnightMail_3-85BS",
+        "revid": 640394
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -1378,7 +1436,8 @@
       ],
       "source": {
         "page": "KnightShield 3-80N",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=KnightShield_3-80N&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=KnightShield_3-80N&format=json&prop=wikitext",
+        "revid": 632915
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -1435,7 +1494,8 @@
       ],
       "source": {
         "page": "LeonClaw 5-60P",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=LeonClaw_5-60P&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=LeonClaw_5-60P&format=json&prop=wikitext",
+        "revid": 640368
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -1475,7 +1535,8 @@
       ],
       "source": {
         "page": "LeonCrest 7-60GN",
-        "url": "https://beyblade.fandom.com/wiki/LeonCrest_7-60GN"
+        "url": "https://beyblade.fandom.com/wiki/LeonCrest_7-60GN",
+        "revid": 640745
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -1509,7 +1570,8 @@
       "firstReleaseSet": "BX-00",
       "source": {
         "page": "Blade - Lightning L-Drago (Rapid-Hit Type)",
-        "url": "https://beyblade.fandom.com/wiki/Blade_-_Lightning_L-Drago_(Rapid-Hit_Type)"
+        "url": "https://beyblade.fandom.com/wiki/Blade_-_Lightning_L-Drago_(Rapid-Hit_Type)",
+        "revid": 632018
       },
       "lastVerified": "2026-06-15",
       "status": "verified"
@@ -1543,7 +1605,8 @@
       "firstReleaseSet": "BX-00",
       "source": {
         "page": "Blade - Lightning L-Drago (Upper Type)",
-        "url": "https://beyblade.fandom.com/wiki/Blade_-_Lightning_L-Drago_(Upper_Type)"
+        "url": "https://beyblade.fandom.com/wiki/Blade_-_Lightning_L-Drago_(Upper_Type)",
+        "revid": 632017
       },
       "lastVerified": "2026-06-15",
       "status": "verified"
@@ -1578,7 +1641,8 @@
       ],
       "source": {
         "page": "Luke Skywalker 4-80B",
-        "url": "https://beyblade.fandom.com/wiki/Luke_Skywalker_4-80B"
+        "url": "https://beyblade.fandom.com/wiki/Luke_Skywalker_4-80B",
+        "revid": 610223
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -1617,7 +1681,8 @@
       ],
       "source": {
         "page": "Random Booster Vol. 9",
-        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._9"
+        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._9",
+        "revid": 635147
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -1652,7 +1717,8 @@
       ],
       "source": {
         "page": "Megatron 4-80B",
-        "url": "https://beyblade.fandom.com/wiki/Megatron_4-80B"
+        "url": "https://beyblade.fandom.com/wiki/Megatron_4-80B",
+        "revid": 603644
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -1691,7 +1757,8 @@
       ],
       "source": {
         "page": "MeteorDragoon 3-70J",
-        "url": "https://beyblade.fandom.com/wiki/MeteorDragoon_3-70J"
+        "url": "https://beyblade.fandom.com/wiki/MeteorDragoon_3-70J",
+        "revid": 640389
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -1714,7 +1781,8 @@
       ],
       "source": {
         "page": "Miles Morales 1-60GN",
-        "url": "https://beyblade.fandom.com/wiki/Miles_Morales_1-60GN"
+        "url": "https://beyblade.fandom.com/wiki/Miles_Morales_1-60GN",
+        "revid": 637374
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -1749,7 +1817,8 @@
       ],
       "source": {
         "page": "Moff Gideon 3-80N",
-        "url": "https://beyblade.fandom.com/wiki/Moff_Gideon_3-80N"
+        "url": "https://beyblade.fandom.com/wiki/Moff_Gideon_3-80N",
+        "revid": 603642
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -1788,7 +1857,8 @@
       ],
       "source": {
         "page": "Random Booster Vol. 8",
-        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._8"
+        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._8",
+        "revid": 636784
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -1811,7 +1881,8 @@
       ],
       "source": {
         "page": "Obi-Wan Kenobi 4-60P",
-        "url": "https://beyblade.fandom.com/wiki/Obi-Wan_Kenobi_4-60P"
+        "url": "https://beyblade.fandom.com/wiki/Obi-Wan_Kenobi_4-60P",
+        "revid": 636196
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -1846,7 +1917,8 @@
       ],
       "source": {
         "page": "Optimus Primal 3-60F",
-        "url": "https://beyblade.fandom.com/wiki/Optimus_Primal_3-60F"
+        "url": "https://beyblade.fandom.com/wiki/Optimus_Primal_3-60F",
+        "revid": 610258
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -1881,7 +1953,8 @@
       ],
       "source": {
         "page": "Optimus Prime 4-60P",
-        "url": "https://beyblade.fandom.com/wiki/Optimus_Prime_4-60P"
+        "url": "https://beyblade.fandom.com/wiki/Optimus_Prime_4-60P",
+        "revid": 610267
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -1919,7 +1992,8 @@
       "firstReleaseSet": "UX-00",
       "source": {
         "page": "OrochiCluster 6-60LF",
-        "url": "https://beyblade.fandom.com/wiki/OrochiCluster_6-60LF"
+        "url": "https://beyblade.fandom.com/wiki/OrochiCluster_6-60LF",
+        "revid": 639623
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
@@ -1959,7 +2033,8 @@
       ],
       "source": {
         "page": "Random Booster Vol. 5",
-        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._5"
+        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._5",
+        "revid": 636787
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -1999,7 +2074,8 @@
       ],
       "source": {
         "page": "PhoenixRudder Deck Set",
-        "url": "https://beyblade.fandom.com/wiki/PhoenixRudder_Deck_Set"
+        "url": "https://beyblade.fandom.com/wiki/PhoenixRudder_Deck_Set",
+        "revid": 600830
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -2039,7 +2115,8 @@
       ],
       "source": {
         "page": "PhoenixWing 9-60GF",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=PhoenixWing_9-60GF&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=PhoenixWing_9-60GF&format=json&prop=wikitext",
+        "revid": 640446
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -2079,7 +2156,8 @@
       ],
       "source": {
         "page": "Customize Set U",
-        "url": "https://beyblade.fandom.com/wiki/Customize_Set_U"
+        "url": "https://beyblade.fandom.com/wiki/Customize_Set_U",
+        "revid": 618301
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -2118,7 +2196,8 @@
       "firstReleaseSet": "G1940",
       "source": {
         "page": "Ratchet-Integrated Blade - Rampart Aegis",
-        "url": "https://beyblade.fandom.com/wiki/Ratchet-Integrated_Blade_-_Rampart_Aegis"
+        "url": "https://beyblade.fandom.com/wiki/Ratchet-Integrated_Blade_-_Rampart_Aegis",
+        "revid": 638657
       },
       "lastVerified": "2026-06-15",
       "status": "unverified"
@@ -2141,7 +2220,8 @@
       ],
       "source": {
         "page": "Red Hulk 1-80R",
-        "url": "https://beyblade.fandom.com/wiki/Red_Hulk_1-80R"
+        "url": "https://beyblade.fandom.com/wiki/Red_Hulk_1-80R",
+        "revid": 636518
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -2180,7 +2260,8 @@
       ],
       "source": {
         "page": "RhinoHorn 3-80S",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=RhinoHorn_3-80S&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=RhinoHorn_3-80S&format=json&prop=wikitext",
+        "revid": 640950
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -2214,7 +2295,8 @@
       ],
       "source": {
         "page": "Rock Leone 6-80GN",
-        "url": "https://beyblade.fandom.com/wiki/Rock_Leone_6-80GN"
+        "url": "https://beyblade.fandom.com/wiki/Rock_Leone_6-80GN",
+        "revid": 634339
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -2253,7 +2335,8 @@
       ],
       "source": {
         "page": "SamuraiCalibur 6-70M",
-        "url": "https://beyblade.fandom.com/wiki/SamuraiCalibur_6-70M"
+        "url": "https://beyblade.fandom.com/wiki/SamuraiCalibur_6-70M",
+        "revid": 640830
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -2293,7 +2376,8 @@
       ],
       "source": {
         "page": "SamuraiSaber 9-65LO",
-        "url": "https://beyblade.fandom.com/wiki/SamuraiSaber_9-65LO"
+        "url": "https://beyblade.fandom.com/wiki/SamuraiSaber_9-65LO",
+        "revid": 636391
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -2333,7 +2417,8 @@
       ],
       "source": {
         "page": "SamuraiSteel 5-70GF",
-        "url": "https://beyblade.fandom.com/wiki/SamuraiSteel_5-70GF"
+        "url": "https://beyblade.fandom.com/wiki/SamuraiSteel_5-70GF",
+        "revid": 634530
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -2372,7 +2457,8 @@
       ],
       "source": {
         "page": "ScorpioSpear 0-70Z",
-        "url": "https://beyblade.fandom.com/wiki/ScorpioSpear_0-70Z"
+        "url": "https://beyblade.fandom.com/wiki/ScorpioSpear_0-70Z",
+        "revid": 640755
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -2418,7 +2504,8 @@
       ],
       "source": {
         "page": "SharkEdge 3-60LF",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=SharkEdge_3-60LF&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=SharkEdge_3-60LF&format=json&prop=wikitext",
+        "revid": 640388
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -2457,7 +2544,8 @@
       ],
       "source": {
         "page": "SharkGill 5-60FB",
-        "url": "https://beyblade.fandom.com/wiki/SharkGill_5-60FB"
+        "url": "https://beyblade.fandom.com/wiki/SharkGill_5-60FB",
+        "revid": 634360
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -2496,7 +2584,8 @@
       ],
       "source": {
         "page": "SharkScale Deck Set",
-        "url": "https://beyblade.fandom.com/wiki/SharkScale_Deck_Set"
+        "url": "https://beyblade.fandom.com/wiki/SharkScale_Deck_Set",
+        "revid": 634335
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -2516,7 +2605,8 @@
       "firstReleaseSet": "G4567",
       "source": {
         "page": "Shatter Horus 9-65GB",
-        "url": "https://beyblade.fandom.com/wiki/Shatter_Horus_9-65GB"
+        "url": "https://beyblade.fandom.com/wiki/Shatter_Horus_9-65GB",
+        "revid": 639807
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
@@ -2551,7 +2641,8 @@
       ],
       "source": {
         "page": "Random Booster ShelterDrake Select",
-        "url": "https://beyblade.fandom.com/wiki/Random_Booster_ShelterDrake_Select"
+        "url": "https://beyblade.fandom.com/wiki/Random_Booster_ShelterDrake_Select",
+        "revid": 634298
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -2608,7 +2699,8 @@
       ],
       "source": {
         "page": "Random Booster ShinobiShadow Select",
-        "url": "https://beyblade.fandom.com/wiki/Random_Booster_ShinobiShadow_Select"
+        "url": "https://beyblade.fandom.com/wiki/Random_Booster_ShinobiShadow_Select",
+        "revid": 599619
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -2631,7 +2723,8 @@
       ],
       "source": {
         "page": "Shockwave 5-80O",
-        "url": "https://beyblade.fandom.com/wiki/Shockwave_5-80O"
+        "url": "https://beyblade.fandom.com/wiki/Shockwave_5-80O",
+        "revid": 618995
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -2670,7 +2763,8 @@
       ],
       "source": {
         "page": "SilverWolf 3-80FB",
-        "url": "https://beyblade.fandom.com/wiki/SilverWolf_3-80FB"
+        "url": "https://beyblade.fandom.com/wiki/SilverWolf_3-80FB",
+        "revid": 640865
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -2710,7 +2804,8 @@
       ],
       "source": {
         "page": "SphinxCowl 9-80GN",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=SphinxCowl_9-80GN&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=SphinxCowl_9-80GN&format=json&prop=wikitext",
+        "revid": 640362
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -2745,7 +2840,8 @@
       ],
       "source": {
         "page": "Spider-Man 3-60F",
-        "url": "https://beyblade.fandom.com/wiki/Spider-Man_3-60F"
+        "url": "https://beyblade.fandom.com/wiki/Spider-Man_3-60F",
+        "revid": 603635
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -2780,7 +2876,8 @@
       ],
       "source": {
         "page": "Starscream 3-80N",
-        "url": "https://beyblade.fandom.com/wiki/Starscream_3-80N"
+        "url": "https://beyblade.fandom.com/wiki/Starscream_3-80N",
+        "revid": 603646
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -2840,7 +2937,8 @@
       "firstReleaseSet": "BX-00",
       "source": {
         "page": "StormSpriggan 2-70M",
-        "url": "https://beyblade.fandom.com/wiki/StormSpriggan_2-70M"
+        "url": "https://beyblade.fandom.com/wiki/StormSpriggan_2-70M",
+        "revid": 636236
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
@@ -2864,7 +2962,8 @@
       ],
       "source": {
         "page": "Stormtrooper 5-70B",
-        "url": "https://beyblade.fandom.com/wiki/Stormtrooper_5-70B"
+        "url": "https://beyblade.fandom.com/wiki/Stormtrooper_5-70B",
+        "revid": 637380
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -2884,7 +2983,8 @@
       "firstReleaseSet": "G2738",
       "source": {
         "page": "Stun Medusa 9-60GB",
-        "url": "https://beyblade.fandom.com/wiki/Stun_Medusa_9-60GB"
+        "url": "https://beyblade.fandom.com/wiki/Stun_Medusa_9-60GB",
+        "revid": 629583
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
@@ -2937,7 +3037,8 @@
       ],
       "source": {
         "page": "Thanos 4-60P",
-        "url": "https://beyblade.fandom.com/wiki/Thanos_4-60P"
+        "url": "https://beyblade.fandom.com/wiki/Thanos_4-60P",
+        "revid": 603634
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -2972,7 +3073,8 @@
       ],
       "source": {
         "page": "The Mandalorian 3-60F",
-        "url": "https://beyblade.fandom.com/wiki/The_Mandalorian_3-60F"
+        "url": "https://beyblade.fandom.com/wiki/The_Mandalorian_3-60F",
+        "revid": 610257
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -3011,7 +3113,8 @@
       ],
       "source": {
         "page": "TriceraPress M-85BS",
-        "url": "https://beyblade.fandom.com/wiki/TriceraPress_M-85BS"
+        "url": "https://beyblade.fandom.com/wiki/TriceraPress_M-85BS",
+        "revid": 640833
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -3086,7 +3189,8 @@
       ],
       "source": {
         "page": "TyrannoBeat 4-70Q",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=TyrannoBeat_4-70Q&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=TyrannoBeat_4-70Q&format=json&prop=wikitext",
+        "revid": 640361
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -3126,7 +3230,8 @@
       ],
       "source": {
         "page": "SharkScale Deck Set",
-        "url": "https://beyblade.fandom.com/wiki/SharkScale_Deck_Set"
+        "url": "https://beyblade.fandom.com/wiki/SharkScale_Deck_Set",
+        "revid": 634335
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -3166,7 +3271,8 @@
       ],
       "source": {
         "page": "UnicornSting 5-60GP",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=UnicornSting_5-60GP&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=UnicornSting_5-60GP&format=json&prop=wikitext",
+        "revid": 640359
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -3186,7 +3292,8 @@
       "firstReleaseSet": "G3497",
       "source": {
         "page": "Valor Bison FB",
-        "url": "https://beyblade.fandom.com/wiki/Valor_Bison_FB"
+        "url": "https://beyblade.fandom.com/wiki/Valor_Bison_FB",
+        "revid": 638881
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
@@ -3222,7 +3329,8 @@
       ],
       "source": {
         "page": "Venom 3-80N",
-        "url": "https://beyblade.fandom.com/wiki/Venom_3-80N"
+        "url": "https://beyblade.fandom.com/wiki/Venom_3-80N",
+        "revid": 603636
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -3276,10 +3384,11 @@
       ],
       "firstReleaseSet": "G2755",
       "source": {
-        "page": "VikingHack",
-        "url": "https://beyblade.fandom.com/wiki/VikingHack"
+        "page": "Hack Viking 4-55O",
+        "url": "https://beyblade.fandom.com/wiki/Hack_Viking_4-55O",
+        "revid": 629580
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-17",
       "status": "verified",
       "type": "balance"
     },
@@ -3323,7 +3432,8 @@
       ],
       "source": {
         "page": "ViperTail 5-80O",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=ViperTail_5-80O&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=ViperTail_5-80O&format=json&prop=wikitext",
+        "revid": 640350
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -3363,7 +3473,8 @@
       ],
       "source": {
         "page": "WeissTiger 3-60U",
-        "url": "https://beyblade.fandom.com/wiki/WeissTiger_3-60U"
+        "url": "https://beyblade.fandom.com/wiki/WeissTiger_3-60U",
+        "revid": 639825
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -3408,7 +3519,8 @@
       ],
       "source": {
         "page": "Random Booster WhaleWave Select",
-        "url": "https://beyblade.fandom.com/wiki/Random_Booster_WhaleWave_Select"
+        "url": "https://beyblade.fandom.com/wiki/Random_Booster_WhaleWave_Select",
+        "revid": 599603
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -3447,7 +3559,8 @@
       ],
       "source": {
         "page": "WizardArrow 4-80B",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=WizardArrow_4-80B&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=WizardArrow_4-80B&format=json&prop=wikitext",
+        "revid": 639649
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -3486,7 +3599,8 @@
       ],
       "source": {
         "page": "WizardRod 5-70DB",
-        "url": "https://beyblade.fandom.com/wiki/WizardRod_5-70DB"
+        "url": "https://beyblade.fandom.com/wiki/WizardRod_5-70DB",
+        "revid": 633671
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -3532,7 +3646,8 @@
       ],
       "source": {
         "page": "WyvernGale 5-80GB",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=WyvernGale_5-80GB&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=WyvernGale_5-80GB&format=json&prop=wikitext",
+        "revid": 638226
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -3566,7 +3681,8 @@
       ],
       "source": {
         "page": "XenoXcalibur 3-60GF",
-        "url": "https://beyblade.fandom.com/wiki/XenoXcalibur_3-60GF"
+        "url": "https://beyblade.fandom.com/wiki/XenoXcalibur_3-60GF",
+        "revid": 636237
       },
       "status": "verified",
       "lastVerified": "2026-06-15"
@@ -3597,7 +3713,8 @@
       ],
       "source": {
         "page": "BahamutBlitz BK1-50I",
-        "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I"
+        "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
+        "revid": 640057
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -3636,7 +3753,8 @@
       "firstReleaseSet": "Random Booster BrachioWhip Select",
       "source": {
         "page": "BrachioWhip OW5-70Nr",
-        "url": "https://beyblade.fandom.com/wiki/BrachioWhip_OW5-70Nr"
+        "url": "https://beyblade.fandom.com/wiki/BrachioWhip_OW5-70Nr",
+        "revid": 640463
       },
       "lastVerified": "2026-06-15",
       "status": "verified"
@@ -3669,7 +3787,8 @@
       "firstReleaseSet": "Random Booster Vol. 7",
       "source": {
         "page": "Random Booster Vol. 7",
-        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._7"
+        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._7",
+        "revid": 636788
       },
       "lastVerified": "2026-06-15",
       "status": "verified"
@@ -3702,7 +3821,8 @@
       "firstReleaseSet": "CX-00",
       "source": {
         "page": "Lock Chip - Drake",
-        "url": "https://beyblade.fandom.com/wiki/Lock_Chip_-_Drake"
+        "url": "https://beyblade.fandom.com/wiki/Lock_Chip_-_Drake",
+        "revid": 640617
       },
       "lastVerified": "2026-06-15",
       "status": "unverified"
@@ -3731,7 +3851,8 @@
       ],
       "source": {
         "page": "DranBrave S6-60V",
-        "url": "https://beyblade.fandom.com/wiki/DranBrave_S6-60V"
+        "url": "https://beyblade.fandom.com/wiki/DranBrave_S6-60V",
+        "revid": 634303
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -3765,7 +3886,8 @@
       ],
       "source": {
         "page": "EmperorMight HOp",
-        "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp"
+        "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
+        "revid": 640212
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -3789,7 +3911,8 @@
       "firstReleaseSet": "G2750",
       "source": {
         "page": "Hurricane Enlil IS 7-55T",
-        "url": "https://beyblade.fandom.com/wiki/Hurricane_Enlil_IS_7-55T"
+        "url": "https://beyblade.fandom.com/wiki/Hurricane_Enlil_IS_7-55T",
+        "revid": 638880
       },
       "lastVerified": "2026-06-15",
       "status": "verified"
@@ -3817,7 +3940,8 @@
       "firstReleaseSet": "CX-00",
       "source": {
         "page": "Evangelion Deck Set",
-        "url": "https://beyblade.fandom.com/wiki/EvaArc_B0-70E"
+        "url": "https://beyblade.fandom.com/wiki/EvaArc_B0-70E",
+        "revid": 634457
       },
       "lastVerified": "2026-06-15",
       "status": "verified"
@@ -3846,7 +3970,8 @@
       ],
       "source": {
         "page": "Random Booster FoxBrush Select",
-        "url": "https://beyblade.fandom.com/wiki/Random_Booster_FoxBrush_Select"
+        "url": "https://beyblade.fandom.com/wiki/Random_Booster_FoxBrush_Select",
+        "revid": 634319
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -3884,7 +4009,8 @@
       ],
       "source": {
         "page": "SharkScale Deck Set",
-        "url": "https://beyblade.fandom.com/wiki/SharkScale_Deck_Set"
+        "url": "https://beyblade.fandom.com/wiki/SharkScale_Deck_Set",
+        "revid": 634335
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -3909,7 +4035,8 @@
       "firstReleaseSet": "G1682",
       "source": {
         "page": "Fort Hornet R 7-60T",
-        "url": "https://beyblade.fandom.com/wiki/Fort_Hornet_R_7-60T"
+        "url": "https://beyblade.fandom.com/wiki/Fort_Hornet_R_7-60T",
+        "revid": 641131
       },
       "lastVerified": "2026-06-15",
       "status": "verified"
@@ -3938,7 +4065,8 @@
       ],
       "source": {
         "page": "KnightFortress GV8-70UN",
-        "url": "https://beyblade.fandom.com/wiki/KnightFortress_GV8-70UN"
+        "url": "https://beyblade.fandom.com/wiki/KnightFortress_GV8-70UN",
+        "revid": 639626
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -3963,7 +4091,8 @@
       "firstReleaseSet": "G1683",
       "source": {
         "page": "Wriggle Kraken S 3-85O",
-        "url": "https://beyblade.fandom.com/wiki/Wriggle_Kraken_S_3-85O"
+        "url": "https://beyblade.fandom.com/wiki/Wriggle_Kraken_S_3-85O",
+        "revid": 624324
       },
       "lastVerified": "2026-06-15",
       "status": "verified"
@@ -4001,7 +4130,8 @@
       "firstReleaseSet": "CX-00",
       "source": {
         "page": "LeonFang T4-60A",
-        "url": "https://beyblade.fandom.com/wiki/LeonFang_T4-60A"
+        "url": "https://beyblade.fandom.com/wiki/LeonFang_T4-60A",
+        "revid": 624993
       },
       "lastVerified": "2026-06-15",
       "status": "verified"
@@ -4030,7 +4160,8 @@
       ],
       "source": {
         "page": "PegasusBlast ATr",
-        "url": "https://beyblade.fandom.com/wiki/PegasusBlast_ATr"
+        "url": "https://beyblade.fandom.com/wiki/PegasusBlast_ATr",
+        "revid": 640682
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -4065,7 +4196,8 @@
       ],
       "source": {
         "page": "PerseusDark B6-80W",
-        "url": "https://beyblade.fandom.com/wiki/PerseusDark_B6-80W"
+        "url": "https://beyblade.fandom.com/wiki/PerseusDark_B6-80W",
+        "revid": 634307
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -4099,7 +4231,8 @@
       ],
       "source": {
         "page": "PhoenixFlare Z9-80WW",
-        "url": "https://beyblade.fandom.com/wiki/PhoenixFlare_Z9-80WW"
+        "url": "https://beyblade.fandom.com/wiki/PhoenixFlare_Z9-80WW",
+        "revid": 638434
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -4132,7 +4265,8 @@
       ],
       "source": {
         "page": "RagnaRage FE4-55Y",
-        "url": "https://beyblade.fandom.com/wiki/RagnaRage_FE4-55Y"
+        "url": "https://beyblade.fandom.com/wiki/RagnaRage_FE4-55Y",
+        "revid": 641017
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -4166,7 +4300,8 @@
       ],
       "source": {
         "page": "Random Booster Vol. 6",
-        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._6"
+        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._6",
+        "revid": 634309
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -4199,7 +4334,8 @@
       ],
       "source": {
         "page": "SolEclipse D5-70TK",
-        "url": "https://beyblade.fandom.com/wiki/SolEclipse_D5-70TK"
+        "url": "https://beyblade.fandom.com/wiki/SolEclipse_D5-70TK",
+        "revid": 640170
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -4224,7 +4360,8 @@
       "firstReleaseSet": "G1684",
       "source": {
         "page": "Antler Stag B 2-60HN",
-        "url": "https://beyblade.fandom.com/wiki/Antler_Stag_B_2-60HN"
+        "url": "https://beyblade.fandom.com/wiki/Antler_Stag_B_2-60HN",
+        "revid": 624321
       },
       "lastVerified": "2026-06-15",
       "status": "verified"
@@ -4257,7 +4394,8 @@
       "firstReleaseSet": "Random Booster Vol. 10",
       "source": {
         "page": "UnicornDelta PO3-60GU",
-        "url": "https://beyblade.fandom.com/wiki/UnicornDelta_PO3-60GU"
+        "url": "https://beyblade.fandom.com/wiki/UnicornDelta_PO3-60GU",
+        "revid": 639975
       },
       "lastVerified": "2026-06-15",
       "status": "verified"
@@ -4286,7 +4424,8 @@
       ],
       "source": {
         "page": "ValkyrieVolt S4-70V",
-        "url": "https://beyblade.fandom.com/wiki/ValkyrieVolt_S4-70V"
+        "url": "https://beyblade.fandom.com/wiki/ValkyrieVolt_S4-70V",
+        "revid": 639622
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -4319,7 +4458,8 @@
       ],
       "source": {
         "page": "Random Booster Vol. 7",
-        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._7"
+        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._7",
+        "revid": 636788
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -4352,7 +4492,8 @@
       ],
       "source": {
         "page": "WizardArc R4-55LO",
-        "url": "https://beyblade.fandom.com/wiki/WizardArc_R4-55LO"
+        "url": "https://beyblade.fandom.com/wiki/WizardArc_R4-55LO",
+        "revid": 640395
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -4386,7 +4527,8 @@
       ],
       "source": {
         "page": "WolfHunt F0-60DB",
-        "url": "https://beyblade.fandom.com/wiki/WolfHunt_F0-60DB"
+        "url": "https://beyblade.fandom.com/wiki/WolfHunt_F0-60DB",
+        "revid": 640171
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -4412,7 +4554,8 @@
       "firstReleaseSet": "G1684",
       "source": {
         "page": "Antler Stag B 2-60HN",
-        "url": "https://beyblade.fandom.com/wiki/Antler_Stag_B_2-60HN"
+        "url": "https://beyblade.fandom.com/wiki/Antler_Stag_B_2-60HN",
+        "revid": 624321
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
@@ -4442,7 +4585,8 @@
       ],
       "source": {
         "page": "WizardArc R4-55LO",
-        "url": "https://beyblade.fandom.com/wiki/WizardArc_R4-55LO"
+        "url": "https://beyblade.fandom.com/wiki/WizardArc_R4-55LO",
+        "revid": 640395
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -4479,7 +4623,8 @@
       ],
       "source": {
         "page": "PegasusBlast ATr",
-        "url": "https://beyblade.fandom.com/wiki/PegasusBlast_ATr"
+        "url": "https://beyblade.fandom.com/wiki/PegasusBlast_ATr",
+        "revid": 640682
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -4519,7 +4664,8 @@
       "firstReleaseSet": "CX-13",
       "source": {
         "page": "BahamutBlitz BK1-50I",
-        "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I"
+        "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
+        "revid": 640057
       },
       "lastVerified": "2026-06-15",
       "status": "verified"
@@ -4553,7 +4699,8 @@
       ],
       "source": {
         "page": "DranBrave S6-60V",
-        "url": "https://beyblade.fandom.com/wiki/DranBrave_S6-60V"
+        "url": "https://beyblade.fandom.com/wiki/DranBrave_S6-60V",
+        "revid": 634303
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -4589,7 +4736,8 @@
       ],
       "source": {
         "page": "Random Booster Vol. 8",
-        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._8"
+        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._8",
+        "revid": 636784
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -4625,7 +4773,8 @@
       ],
       "source": {
         "page": "PerseusDark B6-80W",
-        "url": "https://beyblade.fandom.com/wiki/PerseusDark_B6-80W"
+        "url": "https://beyblade.fandom.com/wiki/PerseusDark_B6-80W",
+        "revid": 634307
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -4664,7 +4813,8 @@
       "firstReleaseSet": "Random Booster Vol. 10",
       "source": {
         "page": "UnicornDelta PO3-60GU",
-        "url": "https://beyblade.fandom.com/wiki/UnicornDelta_PO3-60GU"
+        "url": "https://beyblade.fandom.com/wiki/UnicornDelta_PO3-60GU",
+        "revid": 639975
       },
       "lastVerified": "2026-06-15",
       "status": "verified"
@@ -4693,7 +4843,8 @@
       ],
       "source": {
         "page": "SolEclipse D5-70TK",
-        "url": "https://beyblade.fandom.com/wiki/SolEclipse_D5-70TK"
+        "url": "https://beyblade.fandom.com/wiki/SolEclipse_D5-70TK",
+        "revid": 640170
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -4730,7 +4881,8 @@
       "firstReleaseSet": "CX-00",
       "source": {
         "page": "LeonFang T4-60A",
-        "url": "https://beyblade.fandom.com/wiki/LeonFang_T4-60A"
+        "url": "https://beyblade.fandom.com/wiki/LeonFang_T4-60A",
+        "revid": 624993
       },
       "lastVerified": "2026-06-15",
       "status": "verified"
@@ -4763,7 +4915,8 @@
       "firstReleaseSet": "Random Booster Vol. 7",
       "source": {
         "page": "Random Booster Vol. 7",
-        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._7"
+        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._7",
+        "revid": 636788
       },
       "lastVerified": "2026-06-15",
       "status": "verified"
@@ -4792,7 +4945,8 @@
       ],
       "source": {
         "page": "PhoenixFlare Z9-80WW",
-        "url": "https://beyblade.fandom.com/wiki/PhoenixFlare_Z9-80WW"
+        "url": "https://beyblade.fandom.com/wiki/PhoenixFlare_Z9-80WW",
+        "revid": 638434
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -4816,7 +4970,8 @@
       "firstReleaseSet": "G1682",
       "source": {
         "page": "Fort Hornet R 7-60T",
-        "url": "https://beyblade.fandom.com/wiki/Fort_Hornet_R_7-60T"
+        "url": "https://beyblade.fandom.com/wiki/Fort_Hornet_R_7-60T",
+        "revid": 641131
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
@@ -4856,7 +5011,8 @@
       "firstReleaseSet": "CX-14",
       "source": {
         "page": "KnightFortress GV8-70UN",
-        "url": "https://beyblade.fandom.com/wiki/KnightFortress_GV8-70UN"
+        "url": "https://beyblade.fandom.com/wiki/KnightFortress_GV8-70UN",
+        "revid": 639626
       },
       "lastVerified": "2026-06-15",
       "status": "verified"
@@ -4885,7 +5041,8 @@
       ],
       "source": {
         "page": "WolfHunt F0-60DB",
-        "url": "https://beyblade.fandom.com/wiki/WolfHunt_F0-60DB"
+        "url": "https://beyblade.fandom.com/wiki/WolfHunt_F0-60DB",
+        "revid": 640171
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -4909,7 +5066,8 @@
       "firstReleaseSet": "G2750",
       "source": {
         "page": "Hurricane Enlil IS 7-55T",
-        "url": "https://beyblade.fandom.com/wiki/Hurricane_Enlil_IS_7-55T"
+        "url": "https://beyblade.fandom.com/wiki/Hurricane_Enlil_IS_7-55T",
+        "revid": 638880
       },
       "lastVerified": "2026-06-15",
       "status": "verified"
@@ -4938,7 +5096,8 @@
       ],
       "source": {
         "page": "EmperorMight HOp",
-        "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp"
+        "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
+        "revid": 640212
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -4976,7 +5135,8 @@
       "firstReleaseSet": "CX-15",
       "source": {
         "page": "RagnaRage FE4-55Y",
-        "url": "https://beyblade.fandom.com/wiki/RagnaRage_FE4-55Y"
+        "url": "https://beyblade.fandom.com/wiki/RagnaRage_FE4-55Y",
+        "revid": 641017
       },
       "lastVerified": "2026-06-15",
       "status": "verified"
@@ -5005,7 +5165,8 @@
       ],
       "source": {
         "page": "Random Booster Vol. 6",
-        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._6"
+        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._6",
+        "revid": 634309
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -5027,7 +5188,8 @@
       "aliases": [],
       "source": {
         "page": "ValkyrieVolt S4-70V",
-        "url": "https://beyblade.fandom.com/wiki/ValkyrieVolt_S4-70V"
+        "url": "https://beyblade.fandom.com/wiki/ValkyrieVolt_S4-70V",
+        "revid": 639622
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -5064,7 +5226,8 @@
       "firstReleaseSet": "Random Booster BrachioWhip Select",
       "source": {
         "page": "BrachioWhip OW5-70Nr",
-        "url": "https://beyblade.fandom.com/wiki/BrachioWhip_OW5-70Nr"
+        "url": "https://beyblade.fandom.com/wiki/BrachioWhip_OW5-70Nr",
+        "revid": 640463
       },
       "lastVerified": "2026-06-15",
       "status": "verified"
@@ -5084,7 +5247,8 @@
       "firstReleaseSet": "G1683",
       "source": {
         "page": "Wriggle Kraken S 3-85O",
-        "url": "https://beyblade.fandom.com/wiki/Wriggle_Kraken_S_3-85O"
+        "url": "https://beyblade.fandom.com/wiki/Wriggle_Kraken_S_3-85O",
+        "revid": 624324
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
@@ -5117,7 +5281,8 @@
       ],
       "source": {
         "page": "PegasusBlast ATr",
-        "url": "https://beyblade.fandom.com/wiki/PegasusBlast_ATr"
+        "url": "https://beyblade.fandom.com/wiki/PegasusBlast_ATr",
+        "revid": 640682
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -5153,7 +5318,8 @@
       ],
       "source": {
         "page": "PerseusDark B6-80W",
-        "url": "https://beyblade.fandom.com/wiki/PerseusDark_B6-80W"
+        "url": "https://beyblade.fandom.com/wiki/PerseusDark_B6-80W",
+        "revid": 634307
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -5190,7 +5356,8 @@
       ],
       "source": {
         "page": "Random Booster Vol. 8",
-        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._8"
+        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._8",
+        "revid": 636784
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -5225,7 +5392,8 @@
       ],
       "source": {
         "page": "SolEclipse D5-70TK",
-        "url": "https://beyblade.fandom.com/wiki/SolEclipse_D5-70TK"
+        "url": "https://beyblade.fandom.com/wiki/SolEclipse_D5-70TK",
+        "revid": 640170
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -5263,7 +5431,8 @@
       "firstReleaseSet": "CX-15",
       "source": {
         "page": "RagnaRage FE4-55Y",
-        "url": "https://beyblade.fandom.com/wiki/RagnaRage_FE4-55Y"
+        "url": "https://beyblade.fandom.com/wiki/RagnaRage_FE4-55Y",
+        "revid": 641017
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
@@ -5294,7 +5463,8 @@
       ],
       "source": {
         "page": "WolfHunt F0-60DB",
-        "url": "https://beyblade.fandom.com/wiki/WolfHunt_F0-60DB"
+        "url": "https://beyblade.fandom.com/wiki/WolfHunt_F0-60DB",
+        "revid": 640171
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -5333,7 +5503,8 @@
       "firstReleaseSet": "CX-00",
       "source": {
         "page": "Assist Blade - Gravity",
-        "url": "https://beyblade.fandom.com/wiki/Assist_Blade_-_Gravity"
+        "url": "https://beyblade.fandom.com/wiki/Assist_Blade_-_Gravity",
+        "revid": 640619
       },
       "lastVerified": "2026-06-15",
       "status": "unverified"
@@ -5363,7 +5534,8 @@
       ],
       "source": {
         "page": "EmperorMight HOp",
-        "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp"
+        "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
+        "revid": 640212
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -5397,7 +5569,8 @@
       ],
       "source": {
         "page": "SharkScale Deck Set",
-        "url": "https://beyblade.fandom.com/wiki/SharkScale_Deck_Set"
+        "url": "https://beyblade.fandom.com/wiki/SharkScale_Deck_Set",
+        "revid": 634335
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -5437,7 +5610,8 @@
       "firstReleaseSet": "CX-13",
       "source": {
         "page": "BahamutBlitz BK1-50I",
-        "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I"
+        "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
+        "revid": 640057
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
@@ -5468,7 +5642,8 @@
       ],
       "source": {
         "page": "Random Booster Vol. 8",
-        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._8"
+        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._8",
+        "revid": 636784
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -5506,7 +5681,8 @@
       "firstReleaseSet": "Random Booster Vol. 10",
       "source": {
         "page": "UnicornDelta PO3-60GU",
-        "url": "https://beyblade.fandom.com/wiki/UnicornDelta_PO3-60GU"
+        "url": "https://beyblade.fandom.com/wiki/UnicornDelta_PO3-60GU",
+        "revid": 639975
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
@@ -5537,7 +5713,8 @@
       ],
       "source": {
         "page": "WizardArc R4-55LO",
-        "url": "https://beyblade.fandom.com/wiki/WizardArc_R4-55LO"
+        "url": "https://beyblade.fandom.com/wiki/WizardArc_R4-55LO",
+        "revid": 640395
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -5573,7 +5750,8 @@
       ],
       "source": {
         "page": "DranBrave S6-60V",
-        "url": "https://beyblade.fandom.com/wiki/DranBrave_S6-60V"
+        "url": "https://beyblade.fandom.com/wiki/DranBrave_S6-60V",
+        "revid": 634303
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -5611,7 +5789,8 @@
       ],
       "source": {
         "page": "Random Booster Vol. 6",
-        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._6"
+        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._6",
+        "revid": 634309
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -5650,7 +5829,8 @@
       "firstReleaseSet": "CX-14",
       "source": {
         "page": "KnightFortress GV8-70UN",
-        "url": "https://beyblade.fandom.com/wiki/KnightFortress_GV8-70UN"
+        "url": "https://beyblade.fandom.com/wiki/KnightFortress_GV8-70UN",
+        "revid": 639626
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
@@ -5696,7 +5876,8 @@
       ],
       "source": {
         "page": "Random Booster Vol. 7",
-        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._7"
+        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._7",
+        "revid": 636788
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -5731,7 +5912,8 @@
       ],
       "source": {
         "page": "PhoenixFlare Z9-80WW",
-        "url": "https://beyblade.fandom.com/wiki/PhoenixFlare_Z9-80WW"
+        "url": "https://beyblade.fandom.com/wiki/PhoenixFlare_Z9-80WW",
+        "revid": 638434
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -5773,7 +5955,8 @@
       "firstReleaseSet": "CX-13",
       "source": {
         "page": "Over Blade - Break",
-        "url": "https://beyblade.fandom.com/wiki/Over_Blade_-_Break"
+        "url": "https://beyblade.fandom.com/wiki/Over_Blade_-_Break",
+        "revid": 638759
       },
       "lastVerified": "2026-06-15",
       "status": "verified"
@@ -5808,7 +5991,8 @@
       "firstReleaseSet": "CX-15",
       "source": {
         "page": "Over Blade - Flow",
-        "url": "https://beyblade.fandom.com/wiki/Over_Blade_-_Flow"
+        "url": "https://beyblade.fandom.com/wiki/Over_Blade_-_Flow",
+        "revid": 633937
       },
       "lastVerified": "2026-06-15",
       "status": "verified"
@@ -5843,7 +6027,8 @@
       "firstReleaseSet": "CX-14",
       "source": {
         "page": "Over Blade - Guard",
-        "url": "https://beyblade.fandom.com/wiki/Over_Blade_-_Guard"
+        "url": "https://beyblade.fandom.com/wiki/Over_Blade_-_Guard",
+        "revid": 635495
       },
       "lastVerified": "2026-06-15",
       "status": "verified"
@@ -5877,7 +6062,8 @@
       "firstReleaseSet": "CX-18",
       "source": {
         "page": "Over Blade - Outer",
-        "url": "https://beyblade.fandom.com/wiki/Over_Blade_-_Outer"
+        "url": "https://beyblade.fandom.com/wiki/Over_Blade_-_Outer",
+        "revid": 638072
       },
       "lastVerified": "2026-06-15",
       "status": "verified"
@@ -5911,7 +6097,8 @@
       "firstReleaseSet": "CX-17",
       "source": {
         "page": "Over Blade - Peak",
-        "url": "https://beyblade.fandom.com/wiki/Over_Blade_-_Peak"
+        "url": "https://beyblade.fandom.com/wiki/Over_Blade_-_Peak",
+        "revid": 636383
       },
       "lastVerified": "2026-06-15",
       "status": "verified"
@@ -5946,7 +6133,8 @@
       "firstReleaseSet": "CX-10",
       "source": {
         "page": "WolfHunt F0-60DB",
-        "url": "https://beyblade.fandom.com/wiki/WolfHunt_F0-60DB"
+        "url": "https://beyblade.fandom.com/wiki/WolfHunt_F0-60DB",
+        "revid": 640171
       },
       "lastVerified": "2026-06-15",
       "status": "verified"
@@ -5974,7 +6162,8 @@
       "firstReleaseSet": "ScorpioSpear 0-70Z",
       "source": {
         "page": "ScorpioSpear 0-70Z",
-        "url": "https://beyblade.fandom.com/wiki/ScorpioSpear_0-70Z"
+        "url": "https://beyblade.fandom.com/wiki/ScorpioSpear_0-70Z",
+        "revid": 640755
       },
       "lastVerified": "2026-06-15",
       "status": "verified"
@@ -6002,7 +6191,8 @@
       ],
       "source": {
         "page": "Random Booster Vol. 5",
-        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._5"
+        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._5",
+        "revid": 636787
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -6042,7 +6232,8 @@
       "firstReleaseSet": "CX-13",
       "source": {
         "page": "BahamutBlitz BK1-50I",
-        "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I"
+        "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
+        "revid": 640057
       },
       "lastVerified": "2026-06-15",
       "status": "verified"
@@ -6075,7 +6266,8 @@
       ],
       "source": {
         "page": "Ratchet - 1-60",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Ratchet_-_1-60&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Ratchet_-_1-60&format=json&prop=wikitext",
+        "revid": 636223
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -6118,7 +6310,8 @@
       ],
       "source": {
         "page": "SharkScale Deck Set",
-        "url": "https://beyblade.fandom.com/wiki/SharkScale_Deck_Set"
+        "url": "https://beyblade.fandom.com/wiki/SharkScale_Deck_Set",
+        "revid": 634335
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -6151,7 +6344,8 @@
       ],
       "source": {
         "page": "Red Hulk 1-80R",
-        "url": "https://beyblade.fandom.com/wiki/Red_Hulk_1-80R"
+        "url": "https://beyblade.fandom.com/wiki/Red_Hulk_1-80R",
+        "revid": 636518
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -6193,7 +6387,8 @@
       ],
       "source": {
         "page": "CobaltDragoon 2-60C",
-        "url": "https://beyblade.fandom.com/wiki/CobaltDragoon_2-60C"
+        "url": "https://beyblade.fandom.com/wiki/CobaltDragoon_2-60C",
+        "revid": 640385
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -6224,7 +6419,8 @@
       ],
       "source": {
         "page": "StormSpriggan 2-70M",
-        "url": "https://beyblade.fandom.com/wiki/StormSpriggan_2-70M"
+        "url": "https://beyblade.fandom.com/wiki/StormSpriggan_2-70M",
+        "revid": 636236
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -6257,7 +6453,8 @@
       ],
       "source": {
         "page": "Random Booster Vol. 9",
-        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._9"
+        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._9",
+        "revid": 635147
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -6295,7 +6492,8 @@
       ],
       "source": {
         "page": "Ratchet - 3-60",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Ratchet_-_3-60&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Ratchet_-_3-60&format=json&prop=wikitext",
+        "revid": 635190
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -6336,7 +6534,8 @@
       ],
       "source": {
         "page": "HellsHammer 3-70H",
-        "url": "https://beyblade.fandom.com/wiki/HellsHammer_3-70H"
+        "url": "https://beyblade.fandom.com/wiki/HellsHammer_3-70H",
+        "revid": 633705
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -6371,7 +6570,8 @@
       ],
       "source": {
         "page": "Ratchet - 3-80",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Ratchet_-_3-80&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Ratchet_-_3-80&format=json&prop=wikitext",
+        "revid": 636213
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -6418,7 +6618,8 @@
       ],
       "source": {
         "page": "Grogu 3-85E",
-        "url": "https://beyblade.fandom.com/wiki/Grogu_3-85E"
+        "url": "https://beyblade.fandom.com/wiki/Grogu_3-85E",
+        "revid": 639479
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -6465,7 +6666,8 @@
       ],
       "source": {
         "page": "DranStrike 4-50FF",
-        "url": "https://beyblade.fandom.com/wiki/DranStrike_4-50FF"
+        "url": "https://beyblade.fandom.com/wiki/DranStrike_4-50FF",
+        "revid": 639628
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -6503,7 +6705,8 @@
       ],
       "source": {
         "page": "WizardArc R4-55LO",
-        "url": "https://beyblade.fandom.com/wiki/WizardArc_R4-55LO"
+        "url": "https://beyblade.fandom.com/wiki/WizardArc_R4-55LO",
+        "revid": 640395
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -6547,7 +6750,8 @@
       ],
       "source": {
         "page": "Ratchet - 4-60",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Ratchet_-_4-60&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Ratchet_-_4-60&format=json&prop=wikitext",
+        "revid": 636211
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -6591,7 +6795,8 @@
       ],
       "source": {
         "page": "Ratchet - 4-70",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Ratchet_-_4-70&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Ratchet_-_4-70&format=json&prop=wikitext",
+        "revid": 636219
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -6632,7 +6837,8 @@
       ],
       "source": {
         "page": "Ratchet - 4-80",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Ratchet_-_4-80&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Ratchet_-_4-80&format=json&prop=wikitext",
+        "revid": 636215
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -6672,7 +6878,8 @@
       ],
       "source": {
         "page": "Ratchet - 5-60",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Ratchet_-_5-60&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Ratchet_-_5-60&format=json&prop=wikitext",
+        "revid": 635198
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -6709,7 +6916,8 @@
       ],
       "source": {
         "page": "Stormtrooper 5-70B",
-        "url": "https://beyblade.fandom.com/wiki/Stormtrooper_5-70B"
+        "url": "https://beyblade.fandom.com/wiki/Stormtrooper_5-70B",
+        "revid": 637380
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -6750,7 +6958,8 @@
       ],
       "source": {
         "page": "Ratchet - 5-80",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Ratchet_-_5-80&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Ratchet_-_5-80&format=json&prop=wikitext",
+        "revid": 634026
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -6785,7 +6994,8 @@
       ],
       "source": {
         "page": "DranBrave S6-60V",
-        "url": "https://beyblade.fandom.com/wiki/DranBrave_S6-60V"
+        "url": "https://beyblade.fandom.com/wiki/DranBrave_S6-60V",
+        "revid": 634303
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -6824,7 +7034,8 @@
       "firstReleaseSet": "BX-45",
       "source": {
         "page": "SamuraiCalibur 6-70M",
-        "url": "https://beyblade.fandom.com/wiki/SamuraiCalibur_6-70M"
+        "url": "https://beyblade.fandom.com/wiki/SamuraiCalibur_6-70M",
+        "revid": 640830
       },
       "lastVerified": "2026-06-15",
       "status": "verified"
@@ -6852,7 +7063,8 @@
       ],
       "source": {
         "page": "PerseusDark B6-80W",
-        "url": "https://beyblade.fandom.com/wiki/PerseusDark_B6-80W"
+        "url": "https://beyblade.fandom.com/wiki/PerseusDark_B6-80W",
+        "revid": 634307
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -6886,7 +7098,8 @@
       ],
       "source": {
         "page": "Random Booster Vol. 8",
-        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._8"
+        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._8",
+        "revid": 636784
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -6924,7 +7137,8 @@
       ],
       "source": {
         "page": "Snowtrooper 7-60O",
-        "url": "https://beyblade.fandom.com/wiki/Snowtrooper_7-60O"
+        "url": "https://beyblade.fandom.com/wiki/Snowtrooper_7-60O",
+        "revid": 639476
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -6966,7 +7180,8 @@
       ],
       "source": {
         "page": "Battle Entry Set Infinity",
-        "url": "https://beyblade.fandom.com/wiki/Battle_Entry_Set_Infinity"
+        "url": "https://beyblade.fandom.com/wiki/Battle_Entry_Set_Infinity",
+        "revid": 634353
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -7000,7 +7215,8 @@
       ],
       "source": {
         "page": "Random Booster ShelterDrake Select",
-        "url": "https://beyblade.fandom.com/wiki/Random_Booster_ShelterDrake_Select"
+        "url": "https://beyblade.fandom.com/wiki/Random_Booster_ShelterDrake_Select",
+        "revid": 634298
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -7039,7 +7255,8 @@
       "firstReleaseSet": "CX-14",
       "source": {
         "page": "KnightFortress GV8-70UN",
-        "url": "https://beyblade.fandom.com/wiki/KnightFortress_GV8-70UN"
+        "url": "https://beyblade.fandom.com/wiki/KnightFortress_GV8-70UN",
+        "revid": 639626
       },
       "lastVerified": "2026-06-15",
       "status": "verified"
@@ -7067,7 +7284,8 @@
       ],
       "source": {
         "page": "Ratchet - 9-60",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Ratchet_-_9-60&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Ratchet_-_9-60&format=json&prop=wikitext",
+        "revid": 623180
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -7106,7 +7324,8 @@
       ],
       "source": {
         "page": "Random Booster ClockMirage Select",
-        "url": "https://beyblade.fandom.com/wiki/Random_Booster_ClockMirage_Select"
+        "url": "https://beyblade.fandom.com/wiki/Random_Booster_ClockMirage_Select",
+        "revid": 638061
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -7145,7 +7364,8 @@
       ],
       "source": {
         "page": "PhoenixRudder Deck Set",
-        "url": "https://beyblade.fandom.com/wiki/PhoenixRudder_Deck_Set"
+        "url": "https://beyblade.fandom.com/wiki/PhoenixRudder_Deck_Set",
+        "revid": 600830
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -7184,7 +7404,8 @@
       ],
       "source": {
         "page": "Ratchet - 9-80",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Ratchet_-_9-80&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Ratchet_-_9-80&format=json&prop=wikitext",
+        "revid": 636225
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -7227,7 +7448,8 @@
       "firstReleaseSet": "BX-44",
       "source": {
         "page": "TriceraPress M-85BS",
-        "url": "https://beyblade.fandom.com/wiki/TriceraPress_M-85BS"
+        "url": "https://beyblade.fandom.com/wiki/TriceraPress_M-85BS",
+        "revid": 640833
       },
       "lastVerified": "2026-06-15",
       "status": "verified"
@@ -7258,7 +7480,8 @@
       ],
       "source": {
         "page": "DranBuster 1-60A",
-        "url": "https://beyblade.fandom.com/wiki/DranBuster_1-60A"
+        "url": "https://beyblade.fandom.com/wiki/DranBuster_1-60A",
+        "revid": 640811
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -7296,7 +7519,8 @@
       ],
       "source": {
         "page": "Bit - Ball",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Ball&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Ball&format=json&prop=wikitext",
+        "revid": 636218
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -7338,7 +7562,8 @@
       ],
       "source": {
         "page": "TriceraPress M-85BS",
-        "url": "https://beyblade.fandom.com/wiki/TriceraPress_M-85BS"
+        "url": "https://beyblade.fandom.com/wiki/TriceraPress_M-85BS",
+        "revid": 640833
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -7374,7 +7599,8 @@
       ],
       "source": {
         "page": "CobaltDragoon 2-60C",
-        "url": "https://beyblade.fandom.com/wiki/CobaltDragoon_2-60C"
+        "url": "https://beyblade.fandom.com/wiki/CobaltDragoon_2-60C",
+        "revid": 640385
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -7414,7 +7640,8 @@
       ],
       "source": {
         "page": "WizardRod 5-70DB",
-        "url": "https://beyblade.fandom.com/wiki/WizardRod_5-70DB"
+        "url": "https://beyblade.fandom.com/wiki/WizardRod_5-70DB",
+        "revid": 633671
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -7433,7 +7660,8 @@
       "names": {
         "tt": "Disk Spike",
         "ja": "ディスクスパイク",
-        "romaji": "Disuku Supaiku"
+        "romaji": "Disuku Supaiku",
+        "hasbro": null
       },
       "aliases": [
         {
@@ -7454,7 +7682,8 @@
       "firstReleaseSet": "BX-50",
       "source": {
         "page": "HeavensRing 0-80DS",
-        "url": "https://beyblade.fandom.com/wiki/HeavensRing_0-80DS"
+        "url": "https://beyblade.fandom.com/wiki/HeavensRing_0-80DS",
+        "revid": 641191
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
@@ -7485,7 +7714,8 @@
       ],
       "source": {
         "page": "DracielShield 7-60D",
-        "url": "https://beyblade.fandom.com/wiki/DracielShield_7-60D"
+        "url": "https://beyblade.fandom.com/wiki/DracielShield_7-60D",
+        "revid": 632004
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -7523,7 +7753,8 @@
       ],
       "source": {
         "page": "Grogu 3-85E",
-        "url": "https://beyblade.fandom.com/wiki/Grogu_3-85E"
+        "url": "https://beyblade.fandom.com/wiki/Grogu_3-85E",
+        "revid": 639479
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -7560,7 +7791,8 @@
       ],
       "source": {
         "page": "Bit - Flat",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Flat&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Flat&format=json&prop=wikitext",
+        "revid": 630483
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -7601,7 +7833,8 @@
       ],
       "source": {
         "page": "SilverWolf 3-80FB",
-        "url": "https://beyblade.fandom.com/wiki/SilverWolf_3-80FB"
+        "url": "https://beyblade.fandom.com/wiki/SilverWolf_3-80FB",
+        "revid": 640865
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -7641,7 +7874,8 @@
       "firstReleaseSet": "BX-49",
       "source": {
         "page": "DranStrike 4-50FF",
-        "url": "https://beyblade.fandom.com/wiki/DranStrike_4-50FF"
+        "url": "https://beyblade.fandom.com/wiki/DranStrike_4-50FF",
+        "revid": 639628
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
@@ -7677,7 +7911,8 @@
       ],
       "source": {
         "page": "Bit - Gear Ball",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Gear_Ball&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Gear_Ball&format=json&prop=wikitext",
+        "revid": 639811
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -7723,7 +7958,8 @@
       ],
       "source": {
         "page": "Bit - Gear Flat",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Gear_Flat&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Gear_Flat&format=json&prop=wikitext",
+        "revid": 629257
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -7766,7 +8002,8 @@
       ],
       "source": {
         "page": "Bit - Gear Needle",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Gear_Needle&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Gear_Needle&format=json&prop=wikitext",
+        "revid": 636224
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -7808,7 +8045,8 @@
       ],
       "source": {
         "page": "Bit - Gear Point",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Gear_Point&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Gear_Point&format=json&prop=wikitext",
+        "revid": 636930
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -7851,7 +8089,8 @@
       ],
       "source": {
         "page": "Random Booster FoxBrush Select",
-        "url": "https://beyblade.fandom.com/wiki/Random_Booster_FoxBrush_Select"
+        "url": "https://beyblade.fandom.com/wiki/Random_Booster_FoxBrush_Select",
+        "revid": 634319
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -7890,7 +8129,8 @@
       "firstReleaseSet": "Random Booster Vol. 10",
       "source": {
         "page": "UnicornDelta PO3-60GU",
-        "url": "https://beyblade.fandom.com/wiki/UnicornDelta_PO3-60GU"
+        "url": "https://beyblade.fandom.com/wiki/UnicornDelta_PO3-60GU",
+        "revid": 639975
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
@@ -7926,7 +8166,8 @@
       "firstReleaseSet": "UX-07",
       "source": {
         "page": "PhoenixRudder Deck Set",
-        "url": "https://beyblade.fandom.com/wiki/PhoenixRudder_Deck_Set"
+        "url": "https://beyblade.fandom.com/wiki/PhoenixRudder_Deck_Set",
+        "revid": 600830
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
@@ -7957,7 +8198,8 @@
       ],
       "source": {
         "page": "HellsHammer 3-70H",
-        "url": "https://beyblade.fandom.com/wiki/HellsHammer_3-70H"
+        "url": "https://beyblade.fandom.com/wiki/HellsHammer_3-70H",
+        "revid": 633705
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -7997,7 +8239,8 @@
       ],
       "source": {
         "page": "Bit - High Needle",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_High_Needle&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_High_Needle&format=json&prop=wikitext",
+        "revid": 636214
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -8040,7 +8283,8 @@
       ],
       "source": {
         "page": "Bit - High Taper",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_High_Taper&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_High_Taper&format=json&prop=wikitext",
+        "revid": 636226
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -8083,7 +8327,8 @@
       "firstReleaseSet": "CX-13",
       "source": {
         "page": "BahamutBlitz BK1-50I",
-        "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I"
+        "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
+        "revid": 640057
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
@@ -8118,7 +8363,8 @@
       "firstReleaseSet": "MeteorDragoon 3-70J",
       "source": {
         "page": "MeteorDragoon 3-70J",
-        "url": "https://beyblade.fandom.com/wiki/MeteorDragoon_3-70J"
+        "url": "https://beyblade.fandom.com/wiki/MeteorDragoon_3-70J",
+        "revid": 640389
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
@@ -8149,7 +8395,8 @@
       ],
       "source": {
         "page": "Random Booster Vol. 6",
-        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._6"
+        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._6",
+        "revid": 634309
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -8184,7 +8431,8 @@
       ],
       "source": {
         "page": "SharkScale Deck Set",
-        "url": "https://beyblade.fandom.com/wiki/SharkScale_Deck_Set"
+        "url": "https://beyblade.fandom.com/wiki/SharkScale_Deck_Set",
+        "revid": 634335
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -8223,7 +8471,8 @@
       ],
       "source": {
         "page": "Bit - Low Flat",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Low_Flat&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Low_Flat&format=json&prop=wikitext",
+        "revid": 639801
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -8266,7 +8515,8 @@
       ],
       "source": {
         "page": "WizardArc R4-55LO",
-        "url": "https://beyblade.fandom.com/wiki/WizardArc_R4-55LO"
+        "url": "https://beyblade.fandom.com/wiki/WizardArc_R4-55LO",
+        "revid": 640395
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -8302,7 +8552,8 @@
       ],
       "source": {
         "page": "ImpactDrake 9-60LR",
-        "url": "https://beyblade.fandom.com/wiki/ImpactDrake_9-60LR"
+        "url": "https://beyblade.fandom.com/wiki/ImpactDrake_9-60LR",
+        "revid": 640598
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -8341,7 +8592,8 @@
       "firstReleaseSet": "BX-45",
       "source": {
         "page": "SamuraiCalibur 6-70M",
-        "url": "https://beyblade.fandom.com/wiki/SamuraiCalibur_6-70M"
+        "url": "https://beyblade.fandom.com/wiki/SamuraiCalibur_6-70M",
+        "revid": 640830
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
@@ -8377,7 +8629,8 @@
       ],
       "source": {
         "page": "Random Booster ShinobiShadow Select",
-        "url": "https://beyblade.fandom.com/wiki/Random_Booster_ShinobiShadow_Select"
+        "url": "https://beyblade.fandom.com/wiki/Random_Booster_ShinobiShadow_Select",
+        "revid": 599619
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -8417,7 +8670,8 @@
       "firstReleaseSet": "Random Booster BrachioWhip Select",
       "source": {
         "page": "BrachioWhip OW5-70Nr",
-        "url": "https://beyblade.fandom.com/wiki/BrachioWhip_OW5-70Nr"
+        "url": "https://beyblade.fandom.com/wiki/BrachioWhip_OW5-70Nr",
+        "revid": 640463
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
@@ -8448,7 +8702,8 @@
       ],
       "source": {
         "page": "Bit - Needle",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Needle&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Needle&format=json&prop=wikitext",
+        "revid": 635191
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -8479,7 +8734,8 @@
       "firstReleaseSet": "EmperorMight Deck Set",
       "source": {
         "page": "EmperorMight HOp",
-        "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp"
+        "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
+        "revid": 640212
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
@@ -8509,7 +8765,8 @@
       ],
       "source": {
         "page": "Bit - Orb",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Orb&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Orb&format=json&prop=wikitext",
+        "revid": 628717
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -8562,7 +8819,8 @@
       ],
       "source": {
         "page": "Bit - Point",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Point&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Point&format=json&prop=wikitext",
+        "revid": 636212
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -8608,7 +8866,8 @@
       "firstReleaseSet": "BX-31",
       "source": {
         "page": "Bit - Quake",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Quake&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Quake&format=json&prop=wikitext",
+        "revid": 628462
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
@@ -8639,7 +8898,8 @@
       ],
       "source": {
         "page": "Customize Set U",
-        "url": "https://beyblade.fandom.com/wiki/Customize_Set_U"
+        "url": "https://beyblade.fandom.com/wiki/Customize_Set_U",
+        "revid": 618301
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -8673,7 +8933,8 @@
       ],
       "source": {
         "page": "Bit - Rush",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Rush&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Rush&format=json&prop=wikitext",
+        "revid": 636222
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -8711,7 +8972,8 @@
       ],
       "source": {
         "page": "Bit - Spike",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Spike&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Spike&format=json&prop=wikitext",
+        "revid": 641216
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -8748,7 +9010,8 @@
       ],
       "source": {
         "page": "Bit - Taper",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Taper&format=json&prop=wikitext"
+        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Taper&format=json&prop=wikitext",
+        "revid": 638867
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -8795,7 +9058,8 @@
       ],
       "source": {
         "page": "SolEclipse D5-70TK",
-        "url": "https://beyblade.fandom.com/wiki/SolEclipse_D5-70TK"
+        "url": "https://beyblade.fandom.com/wiki/SolEclipse_D5-70TK",
+        "revid": 640170
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -8834,7 +9098,8 @@
       ],
       "source": {
         "page": "CrimsonGaruda 4-70TP",
-        "url": "https://beyblade.fandom.com/wiki/CrimsonGaruda_4-70TP"
+        "url": "https://beyblade.fandom.com/wiki/CrimsonGaruda_4-70TP",
+        "revid": 639774
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -8874,7 +9139,8 @@
       "firstReleaseSet": "PegasusBlast ATr",
       "source": {
         "page": "PegasusBlast ATr",
-        "url": "https://beyblade.fandom.com/wiki/PegasusBlast_ATr"
+        "url": "https://beyblade.fandom.com/wiki/PegasusBlast_ATr",
+        "revid": 640682
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
@@ -8909,7 +9175,8 @@
       "firstReleaseSet": "SharkScale Deck Set",
       "source": {
         "page": "SharkScale Deck Set",
-        "url": "https://beyblade.fandom.com/wiki/SharkScale_Deck_Set"
+        "url": "https://beyblade.fandom.com/wiki/SharkScale_Deck_Set",
+        "revid": 634335
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
@@ -8945,7 +9212,8 @@
       ],
       "source": {
         "page": "GolemRock 1-60UN",
-        "url": "https://beyblade.fandom.com/wiki/GolemRock_1-60UN"
+        "url": "https://beyblade.fandom.com/wiki/GolemRock_1-60UN",
+        "revid": 640758
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -8981,7 +9249,8 @@
       ],
       "source": {
         "page": "WeissTiger 3-60U",
-        "url": "https://beyblade.fandom.com/wiki/WeissTiger_3-60U"
+        "url": "https://beyblade.fandom.com/wiki/WeissTiger_3-60U",
+        "revid": 639825
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -9025,7 +9294,8 @@
       "firstReleaseSet": "DranBrave S6-60V",
       "source": {
         "page": "DranBrave S6-60V",
-        "url": "https://beyblade.fandom.com/wiki/DranBrave_S6-60V"
+        "url": "https://beyblade.fandom.com/wiki/DranBrave_S6-60V",
+        "revid": 634303
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
@@ -9060,7 +9330,8 @@
       "firstReleaseSet": "Random Booster Vol. 7",
       "source": {
         "page": "Random Booster Vol. 7",
-        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._7"
+        "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._7",
+        "revid": 636788
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
@@ -9095,7 +9366,8 @@
       "firstReleaseSet": "CX-12",
       "source": {
         "page": "PhoenixFlare Z9-80WW",
-        "url": "https://beyblade.fandom.com/wiki/PhoenixFlare_Z9-80WW"
+        "url": "https://beyblade.fandom.com/wiki/PhoenixFlare_Z9-80WW",
+        "revid": 638434
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
@@ -9126,7 +9398,8 @@
       ],
       "source": {
         "page": "PerseusDark B6-80W",
-        "url": "https://beyblade.fandom.com/wiki/PerseusDark_B6-80W"
+        "url": "https://beyblade.fandom.com/wiki/PerseusDark_B6-80W",
+        "revid": 634307
       },
       "status": "verified",
       "lastVerified": "2026-06-15",
@@ -9167,7 +9440,8 @@
       "firstReleaseSet": "CX-15",
       "source": {
         "page": "RagnaRage FE4-55Y",
-        "url": "https://beyblade.fandom.com/wiki/RagnaRage_FE4-55Y"
+        "url": "https://beyblade.fandom.com/wiki/RagnaRage_FE4-55Y",
+        "revid": 641017
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
@@ -9202,7 +9476,8 @@
       "firstReleaseSet": "ScorpioSpear 0-70Z",
       "source": {
         "page": "ScorpioSpear 0-70Z",
-        "url": "https://beyblade.fandom.com/wiki/ScorpioSpear_0-70Z"
+        "url": "https://beyblade.fandom.com/wiki/ScorpioSpear_0-70Z",
+        "revid": 640755
       },
       "lastVerified": "2026-06-15",
       "status": "verified",

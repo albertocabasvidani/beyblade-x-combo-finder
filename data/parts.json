@@ -1,5 +1,5 @@
 {
-  "version": "2026-06-16",
+  "version": "2026-06-17",
   "blades": [
     {
       "id": "aero-pegasus",
@@ -64,6 +64,14 @@
       "type": "stamina",
       "line": "bx",
       "releaseSet": "G1695"
+    },
+    {
+      "id": "clamp-crab",
+      "name": "Clamp Crab",
+      "nameWestern": "Clamp Crab",
+      "type": "stamina",
+      "line": "bx",
+      "releaseSet": "G2759"
     },
     {
       "id": "clock-mirage",
