@@ -5,7 +5,8 @@ da **risultati di tornei reali** raccolti da fonti competitive multilingua e agg
 agentica Claude Code.
 
 - **Sito**: https://albertocabasvidani.github.io/beyblade-x-combo-finder/
-- **Stack**: Astro (SSG) + Preact island, Tailwind CSS v4, GitHub Pages. i18n EN/IT.
+- **Stack**: Astro (SSG) + Preact island, Tailwind CSS v4, GitHub Pages. Monolingua inglese servito
+  dalla root (`/`, `/about/`); infrastruttura i18n IT in standby nel repo.
 
 ## Installazione
 

@@ -12,7 +12,7 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
 |---|---|
 | [parts-database](projects/parts-database.md) | DB parti master multilingua: scrape wiki, derivazione, update, verify, Over Blade |
 | [combo-pipeline](projects/combo-pipeline.md) | Raccolta fonti → estrazione IA → scoring CAS → scheduling |
-| [web-frontend](projects/web-frontend.md) | Sito Astro/Preact (redesign "Arena"): ricerca unica parti, ranking unico BX+CX, temi chiaro/scuro, i18n, badge CAS |
+| [web-frontend](projects/web-frontend.md) | Sito Astro/Preact (redesign "Arena"): ricerca unica parti, ranking unico BX+CX, temi chiaro/scuro, badge CAS. Monolingua EN su root |
 
 ## Tech Stack
 
@@ -21,7 +21,9 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
   toggle chiaro/scuro persistito in `localStorage`, anti-FOUC inline in `base-layout.astro`). Spec design
   in `docs/redesign-arena.md`. Font: Anton (display) / Saira (body) / JetBrains Mono (mono).
 - **Hosting**: GitHub Pages (deploy automatico via Actions)
-- **i18n**: EN (default) + IT, route-based (`/en/`, `/it/`)
+- **i18n**: sito **monolingua inglese** servito dalla root (`/`, `/about/`), nessun redirect.
+  L'infrastruttura i18n resta in repo (`src/i18n/{en,it}.json`, `ui.ts`, tipo `Locale`): `it.json` è
+  dormiente, riattivabile ricreando le route `/it/` e il selettore lingua nell'header.
 - **Database**: JSON nel repo (`data/combos.json`, `data/parts.json`)
 - **Pipeline**: Claude Code agentico via comando `/update-combos`
 
@@ -193,7 +195,7 @@ perché ogni 5 min altrimenti compariva una finestra cmd nella sessione utente. 
 - Componenti Preact in `.tsx`
 - Componenti Astro in `.astro`
 - Interfacce TypeScript in `src/lib/types.ts`
-- Traduzioni in `src/i18n/en.json` e `src/i18n/it.json`
+- Traduzioni in `src/i18n/en.json` (attiva) e `src/i18n/it.json` (dormiente, vedi i18n in Tech Stack)
 
 ## Amazon Affiliate (disattivato nella UI dal redesign "Arena")
 

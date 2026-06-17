@@ -1,7 +1,7 @@
 ---
 name: web-frontend
 status: active
-updated: 16/06/2026
+updated: 17/06/2026
 health: green
 next-step: ""
 blocked-by: null
@@ -13,10 +13,10 @@ main-doc: CLAUDE.md
 
 ## Scope
 
-Il sito statico (Astro SSG + island Preact, Tailwind v4, i18n EN/IT route-based) che consuma
-`data/combos.json` e `data/parts.json` per la ricerca combo client-side. Include i selettori parte
-per linea (BX/UX e CX), i badge di autorevolezza CAS, i filtri torneo, e i link Amazon affiliate sui
-badge delle parti mancanti. Deploy su GitHub Pages via Actions.
+Il sito statico (Astro SSG + island Preact, Tailwind v4, **monolingua inglese** servito dalla root)
+che consuma `data/combos.json` e `data/parts.json` per la ricerca combo client-side. Include i
+selettori parte per linea (BX/UX e CX), i badge di autorevolezza CAS e i filtri torneo. Deploy su
+GitHub Pages via Actions. L'infrastruttura i18n IT resta in repo (dormiente), riattivabile in futuro.
 
 ## Backlog
 
@@ -36,4 +36,5 @@ badge delle parti mancanti. Deploy su GitHub Pages via Actions.
 ## Changelog
 
 <!-- Cose completate, dalla più recente. Formato: `- gg/mm/aaaa — testo` -->
+- 17/06/2026 — sito monolingua EN su root (rimosso redirect a `/en/`, eliminate route `/en/` e `/it/`, about su `/about/`, header senza selettore lingua); pagina about: fonti ridotte a nome+link (tolti weight e chip type), filtrate alle fonti del CAS
 - 16/06/2026 — badge di autorevolezza (CAS) + filtri torneo nella ricerca
