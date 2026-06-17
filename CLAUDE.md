@@ -67,7 +67,7 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
 - `/update-parts` — aggiornamento giornaliero parti (diff revid)
 - `/update-combos` — aggiorna database combo dalle cache (master multilingua, X-filter, dedup id-set)
 - `/mine-reddit` — mina la cache Reddit **a blocchi** (idempotente via scan-history): legge tutta la cache, non la skimma. Per backfill e marcia normale
-- `/discover-sources` — cerca NUOVE fonti tornei (YouTube/siti/blog/forum/social), le valuta, esclude le note (dedup vs `sources.json` + `source-candidates.json`) e manda una proposta motivata via email. Staging in `data/source-candidates.json`; NON tocca `sources.json` (promozione manuale)
+- `/discover-sources` — cerca NUOVE fonti tornei (YouTube/siti/blog/forum/social), le valuta, esclude le note (dedup vs `sources.json` + `source-candidates.json`) e manda una proposta motivata via email (corpo leggibile, no allegati). Loop di feedback: rispondi all'email in linguaggio naturale (approva/scarta) e il **run successivo** promuove gli approvati in `sources.json` (o `manualVerification` per i social) e marca i rifiutati. Staging in `data/source-candidates.json` (campo `lastProposal` per ritrovare il thread del feedback)
 - `npm run reddit:batch -- next|done` — batcher deterministico per `/mine-reddit` (serve/marca blocchi)
 - `npx tsx scripts/reddit-merge.ts` — merge deterministico dei combo estratti da `/mine-reddit` (`tmp/reddit-extracted.json`, prodotto dall'IA) in `combos.json`: deriva id/line/type/displayName da `parts.json`, X-filter su blade/mainBlade, dedup dell'evidence per chiave stabile (idempotente). Lo score lo ricalcola poi `score:combos`
 - `npm run parse:metabeys` — parser deterministico MetaBeys (eventi+leaderboard) → `metabeys-evidence.json` (placements+usage; ambigui in `unresolved`)
@@ -172,10 +172,12 @@ Durata `/mine-reddit`: **~39 min** per un backfill da 934 post (16 blocchi da 60
 ha portato i combo da 204 a 457). Nella marcia normale è 1 blocco → pochi minuti.
 
 Scoperta nuove fonti — task SEPARATO, **settimanale** (lunedì 09:00): `discover-sources.bat` esegue
-`/discover-sources` (ricerca YouTube/siti/forum/social, valutazione, dedup vs fonti note). Si ferma allo
-staging in `data/source-candidates.json` + **email** della proposta a `cinquequarti@gmail.com` (via gws);
-NON aggiunge nulla a `sources.json`. Gira a finestra nascosta via `run-discover-hidden.vbs` e fa
-commit/push autonomo del solo `source-candidates.json`. Per passare a giornaliero: `/sc daily`.
+`/discover-sources` (ricerca YouTube/siti/forum/social, valutazione, dedup vs fonti note). Manda una **email**
+di proposta a `cinquequarti@gmail.com` (via gws, corpo leggibile senza allegati). Loop di feedback: si
+risponde all'email in linguaggio naturale e il run successivo legge la risposta e promuove gli approvati
+in `sources.json` (social → `manualVerification`), marca i rifiutati. Gira a finestra nascosta via
+`run-discover-hidden.vbs` e committa `source-candidates.json` (+ `sources.json` quando applica feedback).
+Per passare a giornaliero: `/sc daily`.
 
 Bat manuali: `collect-social.bat` (solo Reddit+WBO headed), `collect-combos.bat` (solo collect
 headless), `update-combos.bat` (collect+analyze), `dev-server.bat` (Astro).
