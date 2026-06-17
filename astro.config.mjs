@@ -15,8 +15,9 @@ export default defineConfig({
     defaultLocale: 'en',
     locales: ['en', 'it'],
     routing: {
-      prefixDefaultLocale: true,
-      redirectToDefaultLocale: true,
+      // Sito monolingua EN servito dalla root: niente prefisso /en/ né redirect.
+      prefixDefaultLocale: false,
+      redirectToDefaultLocale: false,
     },
   },
 
