@@ -40,9 +40,11 @@ export function sat(x: number, k: number): number {
   return x / (x + k);
 }
 
-/** Giorni tra `date` (yyyy-mm-dd) e `ref`; negativi (date future) trattati come 0. */
+/** Giorni tra `date` (yyyy-mm-dd) e `ref`; negativi (date future) trattati come 0. Una data non
+ * valida è trattata come "oggi" (0 giorni): mai NaN, così un singolo dato sporco non azzera lo score. */
 export function daysBetween(date: string, ref: Date): number {
   const d = new Date(date + 'T00:00:00Z').getTime();
+  if (Number.isNaN(d)) return 0;
   const r = ref.getTime();
   return Math.max(0, (r - d) / 86_400_000);
 }

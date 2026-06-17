@@ -88,16 +88,25 @@ async function main() {
   const CHALLENGE = /just a moment|attention required|cloudflare|verify you are human|checking your browser/i;
   const maxWaitMs = HEADLESS ? 12_000 : 180_000;
 
+  // WBO è HTML server-side (MyBB), non una SPA: serve Chrome solo per passare Cloudflare (la clearance
+  // è legata al fingerprint del browser, non riusabile via fetch). Quindi NIENTE attesa fissa: si
+  // controlla subito se la pagina è sfidata e si aspetta SOLO in quel caso. Pagine già "clear" tornano
+  // in ~istante (una sola lettura), non più 3s a pagina.
+  const challenged = async () => {
+    const title = (await page.title().catch(() => '')) || '';
+    const head = (await page.locator('body').innerText().catch(() => '')).slice(0, 400);
+    return CHALLENGE.test(title + ' ' + head);
+  };
   /** Naviga e attende l'eventuale clearance Cloudflare. Ritorna { ok, raw } (ok=false se bloccato). */
   async function load(url: string): Promise<{ ok: boolean; raw: string; html: string }> {
     await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60_000 });
-    const start = Date.now();
-    let cleared = false;
-    while (Date.now() - start < maxWaitMs) {
-      await page.waitForTimeout(3_000);
-      const title = (await page.title().catch(() => '')) || '';
-      const head = (await page.locator('body').innerText().catch(() => '')).slice(0, 400);
-      if (!CHALLENGE.test(title + ' ' + head)) { cleared = true; break; }
+    let cleared = !(await challenged());
+    if (!cleared) {
+      const start = Date.now();
+      while (Date.now() - start < maxWaitMs) {
+        await page.waitForTimeout(3_000);
+        if (!(await challenged())) { cleared = true; break; }
+      }
     }
     const raw = await page.locator('body').innerText().catch(() => '');
     const html = await page.content().catch(() => '');

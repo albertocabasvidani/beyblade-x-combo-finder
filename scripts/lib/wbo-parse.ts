@@ -136,18 +136,34 @@ export function parseEventId(headerText: string, title: string, date: string): s
   return `wbo-${slugify(title)}-${date}`;
 }
 
+const MONTH_ABBR: Record<string, string> = {
+  jan: '01', feb: '02', mar: '03', apr: '04', may: '05', jun: '06',
+  jul: '07', aug: '08', sep: '09', oct: '10', nov: '11', dec: '12',
+};
+
+/** Ritorna 'YYYY-MM-DD' solo se è una data di calendario reale (no mese>12, no rollover tipo 06-31). */
+function isoIfValid(yyyy: string, mm: string, dd: string): string | null {
+  const y = +yyyy, m = +mm, d = +dd;
+  if (m < 1 || m > 12 || d < 1 || d > 31) return null;
+  const iso = `${yyyy}-${String(m).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
+  const t = new Date(iso + 'T00:00:00Z');
+  if (isNaN(t.getTime()) || t.getUTCMonth() + 1 !== m || t.getUTCDate() !== d) return null;
+  return iso;
+}
+
 /**
- * Data evento: "Date: MM/DD/YYYY" → qualsiasi MM/DD/YYYY nell'header → fallback al fetchedAt della
- * cache (alcuni eventi, es. "115 player tournament in Turkiye", non hanno data: senza fallback si
- * perderebbe l'intero podio, e lo scoring ha bisogno di una data per il decay).
+ * Data evento, in ordine di preferenza: "Date: MM/DD/YYYY" → timestamp del post "Mon. GG, AAAA"
+ * (formato MyBB, es. "Jun. 09, 2026") → qualsiasi MM/DD/YYYY nell'header → fallback al fetchedAt
+ * (alcuni eventi non riportano data: senza fallback si perderebbe l'intero podio, e lo scoring ha
+ * bisogno di una data per il decay). Ogni candidato è validato: una data non di calendario è scartata.
  */
 export function parseDate(headerText: string, fetchedAt: string): string {
   const labeled = headerText.match(/Date:\s*(\d{1,2})\/(\d{1,2})\/(\d{4})/i);
-  const any = labeled ?? headerText.match(/\b(\d{1,2})\/(\d{1,2})\/(\d{4})\b/);
-  if (any) {
-    const [, mm, dd, yyyy] = any;
-    return `${yyyy}-${mm.padStart(2, '0')}-${dd.padStart(2, '0')}`;
-  }
+  if (labeled) { const iso = isoIfValid(labeled[3], labeled[1], labeled[2]); if (iso) return iso; }
+  const abbr = headerText.match(/\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+(\d{1,2}),\s*(\d{4})\b/);
+  if (abbr) { const iso = isoIfValid(abbr[3], MONTH_ABBR[abbr[1].toLowerCase()], abbr[2]); if (iso) return iso; }
+  const any = headerText.match(/\b(\d{1,2})\/(\d{1,2})\/(\d{4})\b/);
+  if (any) { const iso = isoIfValid(any[3], any[1], any[2]); if (iso) return iso; }
   return fetchedAt;
 }
 
