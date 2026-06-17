@@ -10,11 +10,24 @@
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { join } from 'path';
 import { buildResolver, assembleEvidence, segmentThread, SOURCE_ID, type WboEvidence } from './lib/wbo-parse';
+import { loadLedger, mergeUnresolved, writeLedger } from './lib/wbo-unresolved';
 
 const ROOT = join(import.meta.dirname, '..');
 const DATA = join(ROOT, 'data');
 const cachePath = join(DATA, 'wbo-cache.json');
 const outPath = join(DATA, 'wbo-evidence.json');
+const ledgerPath = join(DATA, 'wbo-unresolved.json');
+const correctionsPath = join(DATA, 'wbo-corrections.json');
+const today = () => new Date().toISOString().slice(0, 10);
+
+/** Mappa correzioni typo (norm(riga) → riga corretta), curata dal subagent di /update-combos. */
+function loadCorrections(): Record<string, string> {
+  if (!existsSync(correctionsPath)) return {};
+  try {
+    const c = JSON.parse(readFileSync(correctionsPath, 'utf8'));
+    return c.corrections ?? {};
+  } catch { return {}; }
+}
 
 function writeEvidence(evidence: WboEvidence, generatedAt: string) {
   const out = {
@@ -53,13 +66,22 @@ async function main() {
 
   const events = segmentThread(raw);
   const resolver = buildResolver();
-  const evidence = assembleEvidence(events, resolver, fetchedAt, sourceUrl);
+  const evidence = assembleEvidence(events, resolver, fetchedAt, sourceUrl, loadCorrections());
   writeEvidence(evidence, fetchedAt);
+
+  // Ledger persistente degli unresolved: aggiorna lo stato e segnala solo il delta nuovo mai visto.
+  const stamp = today();
+  const { ledger, added } = mergeUnresolved(loadLedger(ledgerPath, SOURCE_ID), evidence.unresolved, stamp);
+  writeLedger(ledgerPath, ledger);
 
   const s = evidence.stats;
   console.log(
     `parse-wbo: ${s.combosResolved} combo, ${s.placements} piazzamenti, ` +
     `${s.eventsWithPodium}/${s.events} eventi con podio, ${s.unresolved} non risolte.`,
+  );
+  console.log(
+    `ledger unresolved: ${ledger.stats.total} totali ` +
+    `(${added} nuovi mai visti, ${ledger.stats.triaged} triaged, ${ledger.stats.ignored} ignored). → ${ledgerPath}`,
   );
   console.log(`→ ${outPath}`);
 }

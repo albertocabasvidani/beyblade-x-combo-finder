@@ -33,13 +33,21 @@ derivazione. Solo Beyblade X.
      se è un alias mancante aggiungilo al master ed esegui `build:parts`; se è una CX, aggiungila a
      `combos.json` con la sua `evidence`. NON ri-estrarre a mano ciò che il parser ha già risolto.
    - WBO (`wbo-cache.json`): esegui `npm run parse:wbo` (parser DETERMINISTICO: segmentazione del
-     thread evento→podio→righe-combo via regex + risoluzione parti/sigle/id) che scrive i placements
-     in `data/wbo-evidence.json`. Poi gestisci gli `unresolved` — **qui interviene l'IA, su questo
-     abbonamento** (nessuna API a pagamento): le CX aggiungile a `combos.json` con la loro `evidence`;
-     gli eventi-ladder o i layout insoliti reinterpretali a mano; un nome/sigla che denota una parte
-     NOTA non risolta si aggiunge al master (alias di scrittura o `shortName` del bit) seguito da
-     `npm run build:parts`. Se `threads.bbx-winning.blocked` è true o `raw` è vuoto, il parser scrive
-     evidence vuota (no-op): segnalalo. NON ri-estrarre a mano ciò che il parser ha già risolto.
+     thread + risoluzione **BX e CX**) che scrive i placements in `data/wbo-evidence.json` e aggiorna
+     il **ledger** `data/wbo-unresolved.json` (idempotente). Il parser ora risolve da solo la grande
+     maggioranza delle CX (~87%): **NON aggiungere a mano le CX** — lo fa `score:combos`. L'IA lavora
+     SOLO sul **delta nuovo** del ledger, su questo abbonamento (mai API a pagamento):
+     - **refusi** (`category: typo`/`blade-unresolved`/`bit-unresolved`): esegui `npm run typo:candidates`
+       (dump in `tmp/typo-candidates.json`), poi — come **subagent economico** (Haiku) — proponi per
+       ogni riga la versione corretta usando la lista nomi del registro, scrivila in
+       `tmp/typo-corrected.json` (`[{line, correctedLine}]`); un **secondo subagent giudice** conferma i
+       match dubbi. Esegui `npm run typo:apply` (gate: la riga corretta DEVE risolvere → merge in
+       `wbo-corrections.json`) e ri-esegui `npm run parse:wbo`: i refusi spariscono dal ledger.
+     - parte realmente NUOVA non nel master: aggiungila a `parts-master.json` + `npm run build:parts`.
+     - resto (`missing-data` "?", `cx-ambiguous`, varianti ambigue): lascialo nel ledger, segnalalo nel
+       report. Non forzare combo inventate.
+     Se `threads.bbx-winning.blocked` è true o `raw` è vuoto, il parser scrive evidence vuota (no-op).
+     NON ri-estrarre a mano ciò che il parser ha già risolto.
    - YouTube: combo da titoli/descrizioni (`youtube-cache.json`) e dai transcript
      (`youtube-transcripts.json`). Reddit: body + commenti. Sheets: tabelle WBO.
 5. **Combo BX/UX** = blade+ratchet+bit; **CX** = lockChip+mainBlade+assistBlade+ratchet+bit; **CX Expand**
@@ -64,8 +72,9 @@ derivazione. Solo Beyblade X.
    `npm run prune:combos -- --apply` (archivia in `data/combos-archive.json` le combo rimaste senza
    evidenza fresca entro il cutoff di 12 mesi; senza `--apply` è un dry-run da ispezionare prima — il
    guardrail aborta se le orfane superano il 60% o se l'evidenza torneo è a zero), poi `npm run build`.
-   Report: nuove/aggiornate combo, combo archiviate, combo `unresolved` dal parser, nuove parti
-   segnalate, alias community aggiunti, fonti `manualVerification` da controllare a mano. Git:
+   Report: nuove/aggiornate combo, combo archiviate, **delta nuovo del ledger** `wbo-unresolved.json`
+   (refusi corretti, residuo lasciato), nuove parti segnalate, alias community aggiunti, fonti
+   `manualVerification` da controllare a mano. Git:
    `git add data/` → commit "update combos database [data]" → push.
 
 ## Note

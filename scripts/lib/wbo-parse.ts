@@ -13,6 +13,7 @@ import { readFileSync } from 'fs';
 import { join } from 'path';
 import type { PlacementEvidence, UsageEvidence, BladeType } from '../../src/lib/types';
 import { isFresh } from './freshness';
+import { buildCxResolver, resolveCxBladePart, cxComboId, cxDisplayName, type CxResolver } from './cx-resolve';
 
 const ROOT = join(import.meta.dirname, '..', '..');
 const partsPath = join(ROOT, 'data', 'parts.json');
@@ -33,13 +34,14 @@ const STAGE_RE = /\s*\([^)]*\)\s*$/;  // " (First Stage & Final Stage)", " (Both
 
 // ---- Resolver -------------------------------------------------------------
 
-interface BladeRef { id: string; name: string; type: BladeType }
+interface BladeRef { id: string; name: string; type: BladeType; integratedRatchet?: boolean }
 interface BitRef { id: string; name: string }
 export interface Resolver {
   blade: Map<string, BladeRef>;
   bit: Map<string, BitRef>;        // per nome/alias (chiave squash)
   bitByCode: Map<string, BitRef>;  // per codice ufficiale (chiave uppercase, es. "H", "FB", "LR")
   ratchet: Set<string>;
+  cx: CxResolver;                  // risolutore del lato sinistro CX (lockChip+mainBlade+assist[+over])
 }
 
 /**
@@ -59,12 +61,22 @@ export function buildResolver(partsArg?: any): Resolver {
     if (!k || RATCHET_RE.test(k)) return;   // scarta le forme che incorporano un ratchet
     if (!map.has(k)) map.set(k, v);
   };
+  // HARDENING: i nomi Hasbro/occidentali inglobano spesso ratchet+bit (es. "Rock Golem 1-60UN",
+  // "Spear Scorpio 0-70Z"); addKey li scarterebbe per la guard sul ratchet, e la forma nuda
+  // ("Rock Golem") non verrebbe mai indicizzata. Qui strippiamo il suffisso ratchet+resto e
+  // indicizziamo anche il nome nudo, così le forme Western invertite risolvono.
+  const stripRatchetSuffix = (s: string) => s.replace(/\s*\d-\d{2}.*$/, '').trim();
+  const addBlade = (key: string | undefined, v: BladeRef) => {
+    if (!key) return;
+    addKey(blade, key, v);
+    addKey(blade, stripRatchetSuffix(key), v);
+  };
 
   for (const b of parts.blades ?? []) {
-    const v: BladeRef = { id: b.id, name: b.name, type: b.type as BladeType };
+    const v: BladeRef = { id: b.id, name: b.name, type: b.type as BladeType, ...(b.integratedRatchet ? { integratedRatchet: true } : {}) };
     addKey(blade, b.name, v);
-    if (b.nameWestern) addKey(blade, b.nameWestern, v);
-    for (const a of b.aliases ?? []) addKey(blade, a, v);
+    addBlade(b.nameWestern, v);
+    for (const a of b.aliases ?? []) addBlade(a, v);
   }
   for (const b of parts.bits ?? []) {
     const v: BitRef = { id: b.id, name: b.name };
@@ -77,43 +89,113 @@ export function buildResolver(partsArg?: any): Resolver {
     }
   }
   const ratchet = new Set<string>((parts.ratchets ?? []).map((r: any) => r.id));
-  return { blade, bit, bitByCode, ratchet };
+  return { blade, bit, bitByCode, ratchet, cx: buildCxResolver(parts) };
 }
 
 // ---- Risoluzione di una riga combo ---------------------------------------
 
 export interface ResolvedCombo {
-  id: string; blade: string; ratchet: string; bit: string; displayName: string; type: BladeType;
+  id: string; line: 'bx' | 'cx';
+  blade: string | null; ratchet: string; bit: string;
+  lockChip?: string | null; mainBlade?: string | null; assistBlade?: string | null; overBlade?: string | null;
+  displayName: string; type: BladeType;
 }
 export type ComboLineResult = { ok: true; combo: ResolvedCombo } | { ok: false; reason: string };
 
+/** Risolve un bit per nome/alias (squash) o sigla ufficiale (uppercase). */
+function resolveBit(r: Resolver, bitPart: string) {
+  return r.bit.get(squash(bitPart)) ?? r.bitByCode.get(bitPart.toUpperCase());
+}
+
 /**
- * Risolve una riga combo BX (es. "WizardRod 1-60Hexa", "SharkScale 1-70H"). Strategia: stacca il
- * primo ratchet \d-\d{2}; tutto ciò che precede è il blade, ciò che segue è il bit (per nome o
- * sigla ufficiale). Le CX (parole extra prima del ratchet) e le righe senza ratchet finiscono in
- * unresolved con reason, esattamente come parse-metabeys per i casi non a 3 parti.
+ * Risolve una riga combo. Copre tre forme, nell'ordine:
+ *  1) BX a 3 parti (blade / ratchet / bit), incl. nomi Western e prefisso-username conservativo;
+ *  2) CX (lockChip+mainBlade[+over]+assist / ratchet / bit) via cx-resolve (order-agnostic, Western);
+ *  3) bey a ratchet integrato (blade `integratedRatchet` + bit, senza ratchet).
+ * Ciò che non risolve univocamente resta unresolved con reason (poi → ledger), niente combo inventate.
  */
 export function parseComboLine(r: Resolver, rawLine: string): ComboLineResult {
   const line = rawLine.trim().replace(/^[-••]\s*/, '').replace(STAGE_RE, '').trim();
   if (!line) return { ok: false, reason: 'riga vuota' };
   const m = line.match(RATCHET_RE);
-  if (!m) return { ok: false, reason: 'nessun ratchet (bey integrato come Bullet Griffon, o riga non-combo)' };
+  if (!m) return parseIntegratedLine(r, line);
+
   const ratchet = m[0];
   const idx = m.index ?? 0;
   const bladePart = line.slice(0, idx).trim();
   const bitPart = line.slice(idx + ratchet.length).trim();
   if (!bladePart) return { ok: false, reason: 'blade mancante prima del ratchet' };
   if (!r.ratchet.has(ratchet)) return { ok: false, reason: `ratchet non riconosciuto: ${ratchet}` };
-  const b = r.blade.get(squash(bladePart));
-  if (!b) return { ok: false, reason: `blade non risolto: "${bladePart}" (CX o nome ignoto)` };
   if (!bitPart) return { ok: false, reason: 'bit mancante dopo il ratchet' };
-  const bit = r.bit.get(squash(bitPart)) ?? r.bitByCode.get(bitPart.toUpperCase());
+  const bit = resolveBit(r, bitPart);
   if (!bit) return { ok: false, reason: `bit/sigla non risolto: "${bitPart}"` };
-  const id = `${b.id}-${ratchet}-${bit.id}`;
-  return {
-    ok: true,
-    combo: { id, blade: b.id, ratchet, bit: bit.id, displayName: `${b.name} ${ratchet} ${bit.name}`, type: b.type },
-  };
+
+  // 1) BX diretto
+  const b = r.blade.get(squash(bladePart));
+  if (b) {
+    return {
+      ok: true,
+      combo: {
+        id: `${b.id}-${ratchet}-${bit.id}`, line: 'bx', blade: b.id, ratchet, bit: bit.id,
+        lockChip: null, mainBlade: null, assistBlade: null, overBlade: null,
+        displayName: `${b.name} ${ratchet} ${bit.name}`, type: b.type,
+      },
+    };
+  }
+
+  // 2) CX
+  const cxr = resolveCxBladePart(r.cx, bladePart);
+  if (cxr.ok) {
+    const cx = cxr.cx;
+    const type = (cx.mainBlade.type as BladeType) ?? 'balance';
+    return {
+      ok: true,
+      combo: {
+        id: cxComboId(cx, ratchet, bit.id), line: 'cx', blade: null, ratchet, bit: bit.id,
+        lockChip: cx.lockChip.id, mainBlade: cx.mainBlade.id, assistBlade: cx.assistBlade.id,
+        overBlade: cx.overBlade ? cx.overBlade.id : null,
+        displayName: cxDisplayName(cx, ratchet, bit.name), type,
+      },
+    };
+  }
+  if (cxr.ambiguous) return { ok: false, reason: `blade CX ambiguo: "${bladePart}" (split multiplo)` };
+
+  // 3) BX con prefisso-username: togli il 1° token se il resto è un blade BX noto e t0 no
+  const toks = bladePart.split(/\s+/).filter(Boolean);
+  if (toks.length >= 2) {
+    const tail = r.blade.get(squash(toks.slice(1).join(' ')));
+    if (tail && !r.blade.get(squash(toks[0]))) {
+      return {
+        ok: true,
+        combo: {
+          id: `${tail.id}-${ratchet}-${bit.id}`, line: 'bx', blade: tail.id, ratchet, bit: bit.id,
+          lockChip: null, mainBlade: null, assistBlade: null, overBlade: null,
+          displayName: `${tail.name} ${ratchet} ${bit.name}`, type: tail.type,
+        },
+      };
+    }
+  }
+
+  return { ok: false, reason: `blade non risolto: "${bladePart}" (CX o nome ignoto)` };
+}
+
+/**
+ * Riga senza ratchet. Può essere un bey a ratchet integrato (Cutter Shinobi, Bullet Griffon, ...),
+ * scritto come "[blade integrato] [bit]". Non viene materializzato come combo (la pipeline a valle e
+ * la UI assumono un ratchet a 3 parti), ma se riconosciuto si dà un reason chiaro per il ledger; il
+ * flag `integratedRatchet` del registro distingue il bey integrato legittimo dalla riga-rumore.
+ */
+function parseIntegratedLine(r: Resolver, line: string): ComboLineResult {
+  const toks = line.split(/\s+/).filter(Boolean);
+  for (let cut = toks.length - 1; cut >= 1; cut--) {
+    const bit = resolveBit(r, toks.slice(cut).join(' '));
+    if (!bit) continue;
+    const b = r.blade.get(squash(toks.slice(0, cut).join(' ')));
+    if (b && b.integratedRatchet) {
+      return { ok: false, reason: `bey a ratchet integrato (${b.name}, fuori scope combo a 3 parti)` };
+    }
+  }
+  return { ok: false, reason: 'nessun ratchet (bey integrato come Bullet Griffon, o riga non-combo)' };
 }
 
 // ---- Parsing dei campi header (deterministico) ---------------------------
@@ -281,7 +363,9 @@ export function segmentThread(raw: string): SegEvent[] {
 // ---- Assemblaggio dell'evidenza ------------------------------------------
 
 export interface ComboAcc {
-  id: string; line: 'bx'; blade: string; ratchet: string; bit: string;
+  id: string; line: 'bx' | 'cx';
+  blade: string | null; ratchet: string; bit: string;
+  lockChip?: string | null; mainBlade?: string | null; assistBlade?: string | null; overBlade?: string | null;
   displayName: string; type: BladeType;
   placements: PlacementEvidence[]; usage: UsageEvidence[];
 }
@@ -301,11 +385,18 @@ export interface WboEvidence {
  * stessa combo usata in "First Stage" e "Final Stage" non conta due volte — e ordina l'output per
  * diff git stabili (l'ordine del raw cambia a ogni fetch).
  */
+/**
+ * `corrections`: mappa opzionale `norm(riga) → riga corretta`, popolata fuori banda dal subagent typo
+ * di /update-combos (proposte già passate per il gate "ri-parsa e risolve" + giudice). Applicata PRIMA
+ * di parseComboLine, così un refuso ("SliverWolf" → "Silver Wolf") risolve IN CONTESTO (data/evento) e
+ * sparisce dal ledger. Codice deterministico: si limita a sostituire e ri-parsare; non indovina nulla.
+ */
 export function assembleEvidence(
   events: SegEvent[],
   r: Resolver,
   fetchedAt: string,
   sourceUrl: string,
+  corrections?: Record<string, string>,
 ): WboEvidence {
   const combos = new Map<string, ComboAcc>();
   const unresolved: UnresolvedItem[] = [];
@@ -334,7 +425,8 @@ export function assembleEvidence(
 
     for (const p of ev.placements) {
       for (const rawLine of p.comboLinesRaw) {
-        const res = parseComboLine(r, rawLine);
+        const fixed = corrections?.[norm(rawLine)];
+        const res = parseComboLine(r, fixed ?? rawLine);
         if (!res.ok) {
           unresolved.push({ line: rawLine.trim(), reason: res.reason, ctx: `${eventId} ${p.rank}°` });
           continue;
@@ -343,7 +435,9 @@ export function assembleEvidence(
         let acc = combos.get(c.id);
         if (!acc) {
           acc = {
-            id: c.id, line: 'bx', blade: c.blade, ratchet: c.ratchet, bit: c.bit,
+            id: c.id, line: c.line, blade: c.blade, ratchet: c.ratchet, bit: c.bit,
+            lockChip: c.lockChip ?? null, mainBlade: c.mainBlade ?? null,
+            assistBlade: c.assistBlade ?? null, overBlade: c.overBlade ?? null,
             displayName: c.displayName, type: c.type, placements: [], usage: [],
           };
           combos.set(c.id, acc);

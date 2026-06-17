@@ -60,8 +60,10 @@ function main() {
   for (const [id, ev] of Object.entries(allParsed)) {
     if (byId.has(id)) continue;
     const c: Combo = {
-      id, line: ev.line, blade: ev.blade, ratchet: ev.ratchet, bit: ev.bit,
-      lockChip: null, mainBlade: null, assistBlade: null, overBlade: null,
+      id, line: ev.line, blade: ev.blade ?? null, ratchet: ev.ratchet, bit: ev.bit,
+      // Campi CX dall'evidenza (il parser WBO ora risolve anche le CX). Per le BX restano null.
+      lockChip: ev.lockChip ?? null, mainBlade: ev.mainBlade ?? null,
+      assistBlade: ev.assistBlade ?? null, overBlade: ev.overBlade ?? null,
       displayName: ev.displayName, type: ev.type,
       score: 0, scoreBreakdown: { performance: 0, presence: 0, corroboration: 0, tournamentEvents: 0, wins: 0, topCutAppearances: 0 },
       tags: [], notes: '', sources: [],

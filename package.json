@@ -26,8 +26,11 @@
     "parse:wbo": "npx tsx scripts/parse-wbo.ts",
     "score:combos": "npx tsx scripts/score-combos.ts",
     "prune:combos": "npx tsx scripts/prune-combos.ts",
+    "typo:candidates": "npx tsx scripts/typo-candidates.ts",
+    "typo:apply": "npx tsx scripts/typo-apply.ts",
     "test:scoring": "npx tsx scripts/test-scoring.ts",
     "test:wbo": "npx tsx scripts/test-parse-wbo.ts",
+    "test:wbo-unresolved": "npx tsx scripts/test-wbo-unresolved.ts",
     "test:freshness": "npx tsx scripts/test-freshness.ts",
     "test:prune": "npx tsx scripts/test-prune.ts"
   },

@@ -42,7 +42,9 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
 - `data/combos.json` — database combo con `evidence` (placements/usage/mentions; `usage` è uno **storico** di snapshot per il trend), `scoreBreakdown` CAS (con `lastPlacementDate`, `stadiums`, `usageTrend`) e fonti. Contiene **solo evidenza entro il cutoff di 12 mesi** (filtrata da `score:combos`)
 - `data/combos-archive.json` — combo rimaste **senza evidenza fresca** dopo il pruning (`prune:combos`): archiviate (non eliminate) con `archivedReason`/`archivedDate`, fuori dal sito e dal ranking. Reversibile: se la combo ri-piazza, `score:combos` la ricrea e `prune:combos` la toglie dall'archivio
 - `data/metabeys-evidence.json` — evidenza torneo parsata in modo deterministico da MetaBeys (placements + usage), input dello scoring
-- `data/wbo-evidence.json` — evidenza torneo da WBO (placements, con `stadium` xtreme/infinity), parser deterministico; input dello scoring
+- `data/wbo-evidence.json` — evidenza torneo da WBO (placements BX **e CX**, con `stadium` xtreme/infinity), parser deterministico; input dello scoring. Le CX portano `lockChip/mainBlade/assistBlade/overBlade`
+- `data/wbo-unresolved.json` — **ledger persistente** delle righe-combo WBO non risolte (chiave stabile = hash della forma normalizzata, `status` new/triaged/ignored, `category`, `occurrences`). Idempotente: ogni run di `parse:wbo` aggiorna lo stato e segnala solo il **delta nuovo**; nessun unresolved si perde. Esclude gli avvisi a livello evento (oltre-cutoff, no-podio)
+- `data/wbo-corrections.json` — mappa `norm(riga) → riga corretta` per i refusi, curata dal subagent typo di `/update-combos` (proposte gated: la riga corretta DEVE risolvere). `parse:wbo` la applica PRIMA del parsing, così i refusi risolvono in contesto e spariscono dal ledger
 - `data/arca-cache.json` — cache post arca.live KR (Playwright; estrazione combo via IA in `/update-combos`)
 - `data/bbx-weekly-cache.json` / `data/bbx-weekly-evidence.json` — BBX Weekly: raw + usage per-parte. **Cross-check, NON entra nel CAS**
 - `data/products.json` — catalogo prodotti TT+Hasbro (link Amazon); referenzia gli id parte
@@ -74,11 +76,13 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
 - `npm run reddit:batch -- next|done` — batcher deterministico per `/mine-reddit` (serve/marca blocchi)
 - `npx tsx scripts/reddit-merge.ts` — merge deterministico dei combo estratti da `/mine-reddit` (`tmp/reddit-extracted.json`, prodotto dall'IA) in `combos.json`: deriva id/line/type/displayName da `parts.json`, X-filter su blade/mainBlade, dedup dell'evidence per chiave stabile (idempotente). Lo score lo ricalcola poi `score:combos`
 - `npm run parse:metabeys` — parser deterministico MetaBeys (eventi+leaderboard) → `metabeys-evidence.json` (placements+usage; ambigui in `unresolved`)
-- `npm run parse:wbo` — parser deterministico WBO (segmentazione regex + risoluzione) → `wbo-evidence.json` (placements; CX/sigle ignote/eventi senza podio in `unresolved`)
-- `npm run score:combos` — ricalcola gli score CAS deterministici da `evidence` (algoritmo in `src/lib/scoring.ts`, spec in `docs/scoring-algorithm.md`); filtra l'evidenza per il **cutoff 12 mesi** (`scripts/lib/freshness.ts`)
+- `npm run parse:wbo` — parser deterministico WBO (segmentazione regex + risoluzione **BX e CX**) → `wbo-evidence.json`. Risolve le CX (lockChip+mainBlade+assist[+over], order-agnostic + Western) via `scripts/lib/cx-resolve.ts`; il residuo va nel ledger `wbo-unresolved.json` (delta nuovo segnalato). Applica `wbo-corrections.json` (refusi) prima del parsing
+- `npm run score:combos` — ricalcola gli score CAS deterministici da `evidence` (algoritmo in `src/lib/scoring.ts`, spec in `docs/scoring-algorithm.md`); filtra l'evidenza per il **cutoff 12 mesi** (`scripts/lib/freshness.ts`). Materializza anche le **combo CX** dall'evidenza WBO (copia `lockChip/mainBlade/assistBlade/overBlade`)
+- `npm run typo:candidates` / `npm run typo:apply` — bordo deterministico del recupero typo: dump del sottoinsieme `typo` del ledger + nomi registro (`tmp/typo-candidates.json`) per il subagent; gate (ri-parsa) + merge delle correzioni accettate in `wbo-corrections.json`
 - `npm run prune:combos` — pruning deterministico: archivia in `combos-archive.json` le combo senza evidenza fresca (cutoff 12 mesi). **Default dry-run**; `-- --apply` scrive. Guardrail: aborta se le orfane superano `PRUNE_GUARD_PCT` (60%) o se l'evidenza torneo è a 0
 - `npm run test:scoring` — golden test dell'algoritmo CAS
-- `npm run test:wbo` — golden test della parte deterministica del parser WBO
+- `npm run test:wbo` — golden test del parser WBO (BX, CX order-agnostic/Western, hardening BX, casi che restano unresolved)
+- `npm run test:wbo-unresolved` — golden test del ledger (idempotenza, preservazione `status`, categorizzazione)
 - `npm run test:freshness` / `npm run test:prune` — golden test del cutoff condiviso e della partizione del pruning
 
 ## Pipeline Dati
@@ -97,11 +101,22 @@ scartare), ma `parse:wbo` lo gestisce **interamente a codice deterministico**
 (`scripts/lib/wbo-parse.ts`): segmentazione del layout via regex + risoluzione parti/sigle/id, dedup,
 stats. La **data** evento: "Date: MM/DD/YYYY" → timestamp del post "Mon. GG, AAAA" (formato MyBB, es.
 "Jun. 09, 2026") → MM/DD/YYYY → fallback `fetchedAt`, ogni candidato **validato** (scarta non-date di
-calendario tipo `2026-06-31`). I casi che la segmentazione non risolve restano in `unresolved`: per lo
-più **combo CX** (4-5 parti, fuori dallo scope del parser BX) e righe con dato mancante alla fonte; li
-rifinisce l'IA in `/update-combos`, che gira **sull'abbonamento Claude Code** — mai via API a pagamento
-(regola: non pagare due volte ciò che l'abbonamento già copre). NON entrano nello scoring finché non
-risolti.
+calendario tipo `2026-06-31`).
+
+Il parser risolve **sia BX sia CX** in modo deterministico. Le **CX** (lockChip+mainBlade glued CamelCase,
+assist come sigla/nome, eventuale over-blade gluato all'assist) le scompone `scripts/lib/cx-resolve.ts`:
+**order-agnostic** (lockChip/mainBlade in qualsiasi ordine) e **Western-aware** (match anche sui nomi
+Hasbro, es. "Courage"=Brave), **conservativo** (risolve solo su assegnazione univoca; ambiguo → ledger,
+niente combo inventate). Hardening BX: i nomi Western che inglobano ratchet+bit ("Rock Golem 1-60UN")
+vengono indicizzati anche nudi; prefisso-username ("Beezo PhoenixWing") strippato se la coda risolve.
+Recupero misurato: ~87% delle righe prima `unresolved`. Le CX entrano nello scoring come le BX (id-set
+`lockChip-[overBlade]-mainBlade-assistBlade-ratchet-bit`).
+
+Il **residuo irrisolvibile** (refusi, dato mancante "?", BK/OW senza assist, varianti ambigue) non si
+perde né ricompare come lavoro nuovo: vive nel **ledger** `wbo-unresolved.json` (idempotente, delta
+nuovo segnalato). I **refusi** li recupera un subagent economico in `/update-combos` (proposte gated +
+giudice → `wbo-corrections.json`, applicate al parsing successivo), **sull'abbonamento Claude Code** —
+mai via API a pagamento. L'IA non calcola mai lo score né ri-parsa ciò che il parser ha già risolto.
 
 ### Database parti (master multilingua → derivati)
 - Fonte: pagine prodotto Beyblade Fandom Wiki via **API MediaWiki** (`api.php?action=parse&...&prop=wikitext`;

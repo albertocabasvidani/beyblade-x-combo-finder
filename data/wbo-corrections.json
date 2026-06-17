@@ -1,0 +1,5 @@
+{
+  "generatedAt": "",
+  "note": "Mappa norm(riga-combo WBO) -> riga corretta. Curata dal subagent typo di /update-combos: per ogni riga refuso del ledger (categoria blade-unresolved/bit-unresolved) propone la riga corretta usando la lista nomi del registro; ogni proposta passa il gate deterministico (la riga corretta DEVE risolvere con parseComboLine) ed e' confermata dal subagent giudice. parse-wbo applica questa mappa PRIMA del parsing, cosi' i refusi risolvono in contesto (data/evento) e spariscono dal ledger. Vuota = nessuna correzione attiva.",
+  "corrections": {}
+}

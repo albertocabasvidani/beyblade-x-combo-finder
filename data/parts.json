@@ -40,6 +40,7 @@
       ],
       "type": "balance",
       "line": "ux",
+      "integratedRatchet": true,
       "releaseSet": "BulletGriffon H"
     },
     {
@@ -134,6 +135,7 @@
       ],
       "type": "balance",
       "line": "ux",
+      "integratedRatchet": true,
       "releaseSet": "G1940"
     },
     {
@@ -259,6 +261,7 @@
       ],
       "type": "attack",
       "line": "ux",
+      "integratedRatchet": true,
       "releaseSet": "UX-20"
     },
     {
@@ -631,6 +634,7 @@
       ],
       "type": "defense",
       "line": "ux",
+      "integratedRatchet": true,
       "releaseSet": "G1940"
     },
     {
@@ -1203,11 +1207,13 @@
       "id": "antler",
       "name": "Antler",
       "nameWestern": "Antler",
+      "type": "stamina",
       "line": "cx"
     },
     {
       "id": "arc",
       "name": "Arc",
+      "type": "balance",
       "line": "cx"
     },
     {
@@ -1224,11 +1230,13 @@
       "id": "brave",
       "name": "Brave",
       "nameWestern": "Courage",
+      "type": "attack",
       "line": "cx"
     },
     {
       "id": "brush",
       "name": "Brush",
+      "type": "attack",
       "line": "cx"
     },
     {
@@ -1265,6 +1273,7 @@
       "id": "fort",
       "name": "Fort",
       "nameWestern": "Fort",
+      "type": "balance",
       "line": "cx"
     },
     {
@@ -1312,6 +1321,7 @@
       "id": "wriggle",
       "name": "Wriggle",
       "nameWestern": "Wriggle",
+      "type": "stamina",
       "line": "cx"
     }
   ],

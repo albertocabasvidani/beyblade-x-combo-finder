@@ -29,11 +29,12 @@ Richiede inoltre (per la pipeline dati):
 | `npm run build:parts` | Rigenera `data/parts.json` da `data/parts-master.json` (con guardrail) |
 | `npm run collect:sources` | Raccoglie le cache grezze (Reddit, YouTube, Sheets, MetaBeys, WBO) |
 | `npm run parse:metabeys` | Parser deterministico MetaBeys (eventi+leaderboard) → `data/metabeys-evidence.json` |
-| `npm run parse:wbo` | Parser deterministico WBO (segmentazione regex + risoluzione) → `data/wbo-evidence.json` |
-| `npm run score:combos` | Ricalcola lo score CAS (deterministico) da `evidence`, scrive `combos.json` (filtra il cutoff 12 mesi) |
+| `npm run parse:wbo` | Parser deterministico WBO (segmentazione regex + risoluzione **BX e CX**) → `data/wbo-evidence.json`; residuo nel ledger `data/wbo-unresolved.json` |
+| `npm run score:combos` | Ricalcola lo score CAS (deterministico) da `evidence`, scrive `combos.json` (materializza anche le CX; filtra il cutoff 12 mesi) |
 | `npm run prune:combos` | Pruning: archivia in `combos-archive.json` le combo senza evidenza fresca. **Dry-run** di default; `-- --apply` scrive |
+| `npm run typo:candidates` / `npm run typo:apply` | Bordo deterministico del recupero typo dal ledger (dump candidati per il subagent; gate + merge in `wbo-corrections.json`) |
 | `npm run test:scoring` | Golden test dell'algoritmo di scoring |
-| `npm run test:wbo` | Golden test della parte deterministica del parser WBO |
+| `npm run test:wbo` / `npm run test:wbo-unresolved` | Golden test del parser WBO (BX/CX) e del ledger |
 | `npm run test:freshness` | Golden test del cutoff condiviso (`scripts/lib/freshness.ts`) |
 | `npm run test:prune` | Golden test della partizione del pruning |
 
@@ -50,7 +51,9 @@ Comandi Claude Code (in `.claude/commands/`):
 - **`data/combos.json`** — combo con `evidence` (placements/usage/mentions), `scoreBreakdown` CAS, tag e fonti. Solo evidenza entro il **cutoff di 12 mesi**.
 - **`data/combos-archive.json`** — combo archiviate dal pruning (senza evidenza fresca): fuori dal sito, reversibili.
 - **`data/metabeys-evidence.json`** — evidenza torneo parsata in modo deterministico da MetaBeys (input dello scoring).
-- **`data/wbo-evidence.json`** — evidenza torneo da WBO (parser deterministico).
+- **`data/wbo-evidence.json`** — evidenza torneo da WBO (parser deterministico, BX **e CX** con campi `lockChip/mainBlade/assistBlade/overBlade`).
+- **`data/wbo-unresolved.json`** — ledger persistente delle righe WBO non risolte (chiave stabile, `status`, `category`): idempotente, segnala solo il delta nuovo, nulla si perde.
+- **`data/wbo-corrections.json`** — mappa refuso→riga corretta (curata dal subagent typo, applicata da `parse:wbo`).
 - **`data/products.json`** — catalogo prodotti TT+Hasbro per i link Amazon.
 - **`data/sources.json`** — fonti configurabili (con `lang`); social non scrappabili in `manualVerification`.
 

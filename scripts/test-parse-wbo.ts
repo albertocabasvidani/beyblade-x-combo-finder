@@ -42,11 +42,33 @@ check('Hover Wyvern 7-60J → hover-wyvern', comboId(r, 'Hover Wyvern 7-60J') ==
 // --- Guard landmine: il nameWestern "Meteoroid Dragoon 3-70J" NON deve sviare il match ---
 check('MeteorDragoon 3-70J risolve al blade giusto', comboId(r, 'MeteorDragoon 3-70J') === 'meteor-dragoon-3-70-jolt');
 
-// --- CX e righe non risolvibili → unresolved ---
-check('CX "PegasusBlast Wheel1-50Hexa" → unresolved', isUnresolved(r, 'PegasusBlast Wheel1-50Hexa'));
-check('CX "BahamutBlitz FlowKnuckle1-50Bound Spike" → unresolved', isUnresolved(r, 'BahamutBlitz FlowKnuckle1-50Bound Spike'));
-check('CX "KrakenWriggle Heavy9-60Orb" → unresolved', isUnresolved(r, 'KrakenWriggle Heavy9-60Orb'));
-check('No-ratchet "BulletGriffon TK" → unresolved', isUnresolved(r, 'BulletGriffon TK (Both Stages)'));
+// --- CX risolte (deterministico, order-agnostic + Western) ---
+check('CX "PegasusBlast Wheel1-50Hexa"', comboId(r, 'PegasusBlast Wheel1-50Hexa') === 'pegasus-blast-wheel-1-50-hexa');
+check('CX assist a nome intero "KrakenWriggle Heavy9-60Orb"', comboId(r, 'KrakenWriggle Heavy9-60Orb') === 'kraken-wriggle-heavy-9-60-orb');
+check('CX Expand over+assist gluati "BahamutBlitz FlowKnuckle1-50Bound Spike"',
+  comboId(r, 'BahamutBlitz FlowKnuckle1-50Bound Spike') === 'bahamut-flow-blitz-knuckle-1-50-bound-spike');
+check('CX Expand over+assist gluati "ValkyrieBlitz BreakHeavy 9-60 Orb"',
+  comboId(r, 'ValkyrieBlitz BreakHeavy 9-60 Orb') === 'valkyrie-break-blitz-heavy-9-60-orb');
+check('CX order-agnostic: "Dran Brave S" e "Courage Dran S" (Western) → stesso id',
+  comboId(r, 'Dran Brave S 9-60 Hexa') === 'dran-brave-slash-9-60-hexa' &&
+  comboId(r, 'Courage Dran S 9-60 Hexa') === 'dran-brave-slash-9-60-hexa');
+check('CX gluato order-agnostic "HellsArc Bumper 9-60 Hexa"', comboId(r, 'HellsArc Bumper 9-60 Hexa') === 'hells-arc-bumper-9-60-hexa');
+const cxLine = parseComboLine(r, 'BahamutBlitz FlowKnuckle1-50Bound Spike');
+check('CX emette i campi giusti (line/lockChip/overBlade/assistBlade)',
+  cxLine.ok && cxLine.combo.line === 'cx' && cxLine.combo.lockChip === 'bahamut' &&
+  cxLine.combo.overBlade === 'flow' && cxLine.combo.assistBlade === 'knuckle' && cxLine.combo.blade === null);
+
+// --- BX hardening: nome Western che ingloba ratchet+bit (oggi scartato dalla guard) ---
+check('BX Western "Rock Golem 9-60 Hexa" → golem-rock', comboId(r, 'Rock Golem 9-60 Hexa') === 'golem-rock-9-60-hexa');
+check('BX Western "Spear Scorpio 0-70 Hexa" → scorpio-spear', comboId(r, 'Spear Scorpio 0-70 Hexa') === 'scorpio-spear-0-70-hexa');
+check('BX prefisso-username "Beezo PhoenixWing 3-60 Rush" → phoenix-wing', comboId(r, 'Beezo PhoenixWing 3-60 Rush') === 'phoenix-wing-3-60-rush');
+
+// --- Devono restare unresolved (conservativo: niente combo inventate) ---
+check('Refuso "SliverWolf 9-60 Hexa" → unresolved', isUnresolved(r, 'SliverWolf 9-60 Hexa'));
+check('CX senza assist "BahamutBlitz BK1-50I" → unresolved', isUnresolved(r, 'BahamutBlitz BK1-50I'));
+check('BX ambiguo per variante "Lightning L-Drago 5-60 Rush" → unresolved', isUnresolved(r, 'Lightning L-Drago 5-60 Rush'));
+check('Dato mancante "Courage Dran ?3-60Low Flat" → unresolved', isUnresolved(r, 'Courage Dran ?3-60Low Flat'));
+check('Bey a ratchet integrato "BulletGriffon TK" → unresolved', isUnresolved(r, 'BulletGriffon TK (Both Stages)'));
 check('Quote noise "SS 3-60 LR" → unresolved', isUnresolved(r, 'SS 3-60 LR'));
 
 // --- eventId ---

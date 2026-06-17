@@ -41,8 +41,11 @@ dove le fonti lo permettono:
   senza IA. Stesso discorso per le tabelle Sheets.
 - **WBO → codice (deterministico).** Il thread WBO è eterogeneo (token incollati, marcatori di
   piazzamento misti, quote/ads), ma `parse:wbo` lo gestisce interamente a codice
-  (`scripts/lib/wbo-parse.ts`): segmentazione via regex + risoluzione parti/sigle ufficiali/id. I casi
-  non segmentabili restano `unresolved` e li rifinisce l'IA in `/update-combos` (abbonamento Claude Code).
+  (`scripts/lib/wbo-parse.ts`): segmentazione via regex + risoluzione parti/sigle ufficiali/id. Risolve
+  **sia BX sia CX** (le CX via `scripts/lib/cx-resolve.ts`, order-agnostic + Western); **nessun cambio
+  alla formula CAS** — le CX entrano nel CAS con lo stesso schema placement delle BX (id-set
+  `lockChip-[overBlade]-mainBlade-assistBlade-ratchet-bit`). Il residuo va nel ledger
+  `wbo-unresolved.json` (idempotente); i refusi li recupera il subagent typo di `/update-combos`.
 - **Estrazione narrativa → IA.** Solo fonti in prosa (transcript YouTube, commenti Reddit, blog
   JP/ES/PT/…) e il **match nomi parti multilingua** sugli id del master restano all'IA.
 - **Calcolo score → codice (deterministico).** Da `evidence` a `score`, riproducibile, tunabile,

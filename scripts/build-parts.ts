@@ -33,6 +33,8 @@ interface MasterPart {
   shortName?: string;
   short?: string;
   firstReleaseSet?: string;
+  integratedRatchet?: boolean;
+  source?: { page?: string; url?: string; revid?: number };
 }
 interface Master {
   version?: string;
@@ -76,6 +78,13 @@ const withShort = (p: MasterPart) => {
   return s ? { shortName: s } : {};
 };
 
+// Bey a ratchet integrato (no ratchet separato, es. Cutter Shinobi, Bullet Griffon): segnalato dalla
+// pagina wiki "Ratchet-Integrated Blade - ..." o da un flag esplicito nel master (per i casi la cui
+// pagina non ha il prefisso, es. Bullet Griffon). Esposto in parts.json così il parser combo sa che una
+// riga senza ratchet può essere un combo valido [blade integrato] + [bit].
+const isIntegratedRatchet = (p: MasterPart): boolean =>
+  p.integratedRatchet === true || /^Ratchet-Integrated Blade\b/i.test(p.source?.page ?? '');
+
 function deriveParts(master: Master) {
   const blades = (master.blades ?? []).slice().sort(byId).map((p) => ({
     id: p.id,
@@ -84,6 +93,7 @@ function deriveParts(master: Master) {
     ...withAliases(p),
     type: p.type,
     line: p.line ?? 'bx',
+    ...(isIntegratedRatchet(p) ? { integratedRatchet: true } : {}),
     ...(p.firstReleaseSet ? { releaseSet: p.firstReleaseSet } : {}),
   }));
 
@@ -98,6 +108,7 @@ function deriveParts(master: Master) {
     id: p.id,
     name: p.names.tt,
     ...withWestern(p.names),
+    ...(p.type ? { type: p.type } : {}),  // usato come type del combo CX (fallback 'balance' nel resolver)
     line: 'cx',
   }));
 
