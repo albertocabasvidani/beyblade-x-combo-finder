@@ -33,11 +33,13 @@ tutto in sequenza giornaliera.
 ## In progress
 
 <!-- Lavori in corso. Se collegati a un piano in plans/, linkalo. -->
+- 17/06/2026 — verifica headed WBO + backfill profondo one-off (Cloudflare): validare `?page=N` reale, `printthread` vs vista forum, classificare gli altri thread BBX (es. "National Tournament 2025"), confermare `parse:wbo` sul raw multi-pagina. Codice pronto, serve un run con captcha manuale (`WBO_HEADED=1 WBO_MAX_PAGES=30 npm run fetch:wbo`)
 - 16/06/2026 — attivazione scheduling Task Scheduler deferita: i 4 task fanno commit/push autonomi, da abilitare con consenso esplicito (Fase 6, vedi [piano ripresa](plans/ripresa-pipeline-beyblade-x-over-blade-bonifica-pa-2026-06-15-1731.md))
 
 ## Changelog
 
 <!-- Cose completate, dalla più recente. Formato: `- gg/mm/aaaa — testo` -->
+- 17/06/2026 — paginazione storica fonti torneo + cutoff 12 mesi condiviso + pruning: `scripts/lib/freshness.ts` (cutoff unico, applicato in fetch/parse/score), paginazione capped+resumable di MetaBeys (`?page=N`, cursore `metabeysBackfill`) e WBO (all'indietro, cursore `wboBackfill`, `printthread` opzionale), `prune:combos` (archivia in `combos-archive.json` le combo senza evidenza fresca, dry-run + guardrail). Eventi distinti da ~23 → in crescita (MetaBeys 79→175 combo in 3 pagine). Golden test `test:freshness`/`test:prune`
 - 17/06/2026 — agente `/discover-sources`: scoperta automatica di nuove fonti tornei (YouTube via API, siti/blog/forum/social via WebSearch+WebFetch), valutazione + dedup vs fonti note, proposta motivata via email; staging in `source-candidates.json`, task settimanale nascosto. Attacca il gap d'audit "Discord/social/JP mai mappati"
 - 16/06/2026 — task "Beyblade Transcripts" a finestra nascosta (wrapper `run-transcripts-hidden.vbs` via `wscript.exe`): non apre più la console ogni 5 min, intervallo invariato
 - 16/06/2026 — backfill storico Reddit (`REDDIT_BACKFILL`) + robustezza scraper (skip post falliti, no crash)

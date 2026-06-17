@@ -60,8 +60,11 @@ derivazione. Solo Beyblade X.
    (CAS) e i tag. Algoritmo e costanti in `src/lib/scoring.ts`; spec in `docs/scoring-algorithm.md`.
    NON scrivere score/tag a mano.
 8. **Finalizza**: aggiorna `scan-history.json` (`scannedVideos`, `scannedSheets`, `scannedRedditPosts`,
-   `scannedPages` con contentHash, `scannedEvents`, `scannedPosts`). `npm run score:combos` poi
-   `npm run build`. Report: nuove/aggiornate combo, combo `unresolved` dal parser, nuove parti
+   `scannedPages` con contentHash, `scannedEvents`, `scannedPosts`). `npm run score:combos`, poi
+   `npm run prune:combos -- --apply` (archivia in `data/combos-archive.json` le combo rimaste senza
+   evidenza fresca entro il cutoff di 12 mesi; senza `--apply` è un dry-run da ispezionare prima — il
+   guardrail aborta se le orfane superano il 60% o se l'evidenza torneo è a zero), poi `npm run build`.
+   Report: nuove/aggiornate combo, combo archiviate, combo `unresolved` dal parser, nuove parti
    segnalate, alias community aggiunti, fonti `manualVerification` da controllare a mano. Git:
    `git add data/` → commit "update combos database [data]" → push.
 

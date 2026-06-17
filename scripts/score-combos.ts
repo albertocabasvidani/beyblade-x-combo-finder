@@ -14,6 +14,7 @@
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { join } from 'path';
 import { scoreCombo } from '../src/lib/scoring';
+import { isFresh } from './lib/freshness';
 import type { Combo, CombosDatabase, ComboEvidence, MentionEvidence, PlacementEvidence, UsageEvidence } from '../src/lib/types';
 
 const ROOT = join(import.meta.dirname, '..');
@@ -73,6 +74,11 @@ function main() {
 
   // 2) Costruisci evidence per OGNI combo e ricalcola lo score.
   const ref = new Date();
+  // Cutoff condiviso: filtra l'evidenza unita per freschezza (12 mesi). Copre anche i placement
+  // narrative preservati da combos.json e le usage/mentions storiche. Così combos.json contiene solo
+  // evidenza fresca e i breakdown (conteggi eventi) sono coerenti. Le combo che restano a evidenza
+  // vuota (score 0) le archivia poi `prune:combos`.
+  const fresh = <T extends { date: string }>(arr: T[]): T[] => arr.filter((x) => isFresh(x.date, ref));
   let rescored = 0;
   for (const combo of db.combos) {
     const p = parsed[combo.id];
@@ -87,18 +93,18 @@ function main() {
       // preservano anche i placement narrative già raccolti (es. report Reddit, tier ≠ structured),
       // che le sole fonti strutturate non riproducono. Se nessuna fonte fresca copre il combo, si
       // tengono i placement salvati in combos.json.
-      placements: hasFresh
+      placements: fresh(hasFresh
         ? dedupPlacements([
             ...prevPlacements.filter((pl) => pl.tier !== 'structured'),
             ...(p?.placements ?? []),
             ...(w?.placements ?? []),
           ])
-        : prevPlacements,
+        : prevPlacements),
       // Storico usage: accumula gli snapshot datati (per il trend), dedup per (source|date|window),
       // tieni gli ultimi N. Lo scoring usa comunque solo lo snapshot più recente (vedi scoring.ts);
       // lo storico serve unicamente al calcolo del trend.
-      usage: hasFresh ? mergeUsageHistory(prevUsage, p?.usage ?? []) : prevUsage,
-      mentions: dedupMentions([...prevMentions, ...legacyMentions(combo)]),
+      usage: fresh(hasFresh ? mergeUsageHistory(prevUsage, p?.usage ?? []) : prevUsage),
+      mentions: fresh(dedupMentions([...prevMentions, ...legacyMentions(combo)])),
     };
     combo.evidence = ev;
 

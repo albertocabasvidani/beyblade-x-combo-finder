@@ -12,6 +12,7 @@
 import { readFileSync } from 'fs';
 import { join } from 'path';
 import type { PlacementEvidence, UsageEvidence, BladeType } from '../../src/lib/types';
+import { isFresh } from './freshness';
 
 const ROOT = join(import.meta.dirname, '..', '..');
 const partsPath = join(ROOT, 'data', 'parts.json');
@@ -301,6 +302,13 @@ export function assembleEvidence(
     const stadium = parseStadium(ev.headerRaw);
     const eventId = parseEventId(ev.headerRaw, ev.eventName || 'wbo-event', date);
     const eventName = ev.eventName || eventId;
+
+    // Cutoff condiviso: scarta l'intero evento se più vecchio di 12 mesi (tutti i suoi placement
+    // condividono la stessa data). Il backfill storico paginerà oltre, ma l'evidenza si ferma qui.
+    if (!isFresh(date)) {
+      unresolved.push({ line: eventName, reason: `oltre-cutoff (${date})`, ctx: eventId });
+      continue;
+    }
 
     if (!ev.placements.length) {
       unresolved.push({ line: eventName, reason: 'nessun marcatore di piazzamento (deck list senza podio)', ctx: eventId });

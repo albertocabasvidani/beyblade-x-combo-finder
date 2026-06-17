@@ -12,6 +12,7 @@
     "fetch:bbx-weekly": "npx tsx scripts/fetch-bbx-weekly.ts",
     "parse:bbx-weekly": "npx tsx scripts/parse-bbx-weekly.ts",
     "reddit:batch": "npx tsx scripts/reddit-batch.ts",
+    "youtube:judge": "npx tsx scripts/youtube-judge-batch.ts",
     "fetch:youtube": "npx tsx scripts/fetch-youtube.ts",
     "discover:youtube": "npx tsx scripts/discover-youtube.ts",
     "fetch:sheets": "npx tsx scripts/fetch-sheets.ts",
@@ -24,8 +25,11 @@
     "parse:metabeys": "npx tsx scripts/parse-metabeys.ts",
     "parse:wbo": "npx tsx scripts/parse-wbo.ts",
     "score:combos": "npx tsx scripts/score-combos.ts",
+    "prune:combos": "npx tsx scripts/prune-combos.ts",
     "test:scoring": "npx tsx scripts/test-scoring.ts",
-    "test:wbo": "npx tsx scripts/test-parse-wbo.ts"
+    "test:wbo": "npx tsx scripts/test-parse-wbo.ts",
+    "test:freshness": "npx tsx scripts/test-freshness.ts",
+    "test:prune": "npx tsx scripts/test-prune.ts"
   },
   "devDependencies": {
     "playwright-core": "^1.48.0",

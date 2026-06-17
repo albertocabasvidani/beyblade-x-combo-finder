@@ -39,7 +39,8 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
 - `data/parts-master.json` — **file canonico** parti multilingua (names.tt/hasbro/ja/romaji + aliases per lingua, **`shortName` = codice ufficiale dei bit** es. H/FB/LR, stats, products, source). Fonte di verità del registro parti.
 - `data/parts.json` — **derivato** da parts-master via `npm run build:parts` (schema consumato dal sito). NON editare a mano: si rigenera.
 - `data/parts-master-conflicts.json` — casi ambigui dell'import per revisione umana (type_mismatch = rumore; gli over_blade ora sono categoria `overBlades` a sé, non più conflitti)
-- `data/combos.json` — database combo con `evidence` (placements/usage/mentions; `usage` è uno **storico** di snapshot per il trend), `scoreBreakdown` CAS (con `lastPlacementDate`, `stadiums`, `usageTrend`) e fonti
+- `data/combos.json` — database combo con `evidence` (placements/usage/mentions; `usage` è uno **storico** di snapshot per il trend), `scoreBreakdown` CAS (con `lastPlacementDate`, `stadiums`, `usageTrend`) e fonti. Contiene **solo evidenza entro il cutoff di 12 mesi** (filtrata da `score:combos`)
+- `data/combos-archive.json` — combo rimaste **senza evidenza fresca** dopo il pruning (`prune:combos`): archiviate (non eliminate) con `archivedReason`/`archivedDate`, fuori dal sito e dal ranking. Reversibile: se la combo ri-piazza, `score:combos` la ricrea e `prune:combos` la toglie dall'archivio
 - `data/metabeys-evidence.json` — evidenza torneo parsata in modo deterministico da MetaBeys (placements + usage), input dello scoring
 - `data/wbo-evidence.json` — evidenza torneo da WBO (placements, con `stadium` xtreme/infinity), parser deterministico; input dello scoring
 - `data/arca-cache.json` — cache post arca.live KR (Playwright; estrazione combo via IA in `/update-combos`)
@@ -48,9 +49,9 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
 - `data/sources.json` — fonti configurabili (con `lang`, `manualVerification`); editabile dall'utente
 - `data/source-candidates.json` — staging dei candidati-fonte scoperti da `/discover-sources` (`status` proposed/accepted/rejected + `knownNegatives`): dedup persistente tra run. NON è una fonte attiva — la promozione a `sources.json` è manuale
 - `data/youtube-cache.json`, `data/youtube-transcripts.json`, `data/reddit-cache.json`, `data/sheets-cache.json` — cache grezze fonti
-- `data/metabeys-cache.json` — cache eventi+leaderboard MetaBeys (Playwright headless)
-- `data/wbo-cache.json` — cache thread WBO (Playwright; Cloudflare può bloccare headless)
-- `data/scan-history.json` — dedup: scannedVideos/Sheets/RedditPosts/Pages(+revid)/Events/Posts
+- `data/metabeys-cache.json` — cache eventi+leaderboard MetaBeys (Playwright headless); eventi potati per data (entro 12 mesi)
+- `data/wbo-cache.json` — cache thread WBO (Playwright; Cloudflare può bloccare headless); `threads[key].pages` per pagina + `raw` concatenato (entro 12 mesi)
+- `data/scan-history.json` — dedup: scannedVideos/Sheets/RedditPosts/Pages(+revid)/Events(+`eventDate`)/Posts; cursori di backfill `metabeysBackfill`/`wboBackfill` (`nextPage`/`done`)
 
 ## Comandi
 
@@ -67,14 +68,18 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
 - `/update-parts` — aggiornamento giornaliero parti (diff revid)
 - `/update-combos` — aggiorna database combo dalle cache (master multilingua, X-filter, dedup id-set)
 - `/mine-reddit` — mina la cache Reddit **a blocchi** (idempotente via scan-history): legge tutta la cache, non la skimma. Per backfill e marcia normale
+- `/judge-youtube` — giudica la rilevanza dei video YouTube **a blocchi** (idempotente, flag in cache): per ogni video `prefilter:"pass"` decide `relevant` (combo/meta/torneo competitivo Beyblade X? Burst/unboxing/casual → false) e `lang` (lingua reale del parlato), leggendo titolo+descrizione+tag multilingua. I transcript si scaricano solo dei `relevant`
+- `npm run youtube:judge -- next|done` — batcher deterministico per `/judge-youtube` (serve un blocco / fonde i verdetti IA da `tmp/youtube-judge-extracted.json` nella cache)
 - `/discover-sources` — cerca NUOVE fonti tornei (YouTube/siti/blog/forum/social), le valuta, esclude le note (dedup vs `sources.json` + `source-candidates.json`) e manda una proposta motivata via email (corpo leggibile, no allegati). Loop di feedback: rispondi all'email in linguaggio naturale (approva/scarta) e il **run successivo** promuove gli approvati in `sources.json` (o `manualVerification` per i social) e marca i rifiutati. Staging in `data/source-candidates.json` (campo `lastProposal` per ritrovare il thread del feedback)
 - `npm run reddit:batch -- next|done` — batcher deterministico per `/mine-reddit` (serve/marca blocchi)
 - `npx tsx scripts/reddit-merge.ts` — merge deterministico dei combo estratti da `/mine-reddit` (`tmp/reddit-extracted.json`, prodotto dall'IA) in `combos.json`: deriva id/line/type/displayName da `parts.json`, X-filter su blade/mainBlade, dedup dell'evidence per chiave stabile (idempotente). Lo score lo ricalcola poi `score:combos`
 - `npm run parse:metabeys` — parser deterministico MetaBeys (eventi+leaderboard) → `metabeys-evidence.json` (placements+usage; ambigui in `unresolved`)
 - `npm run parse:wbo` — parser deterministico WBO (segmentazione regex + risoluzione) → `wbo-evidence.json` (placements; CX/sigle ignote/eventi senza podio in `unresolved`)
-- `npm run score:combos` — ricalcola gli score CAS deterministici da `evidence` (algoritmo in `src/lib/scoring.ts`, spec in `docs/scoring-algorithm.md`)
+- `npm run score:combos` — ricalcola gli score CAS deterministici da `evidence` (algoritmo in `src/lib/scoring.ts`, spec in `docs/scoring-algorithm.md`); filtra l'evidenza per il **cutoff 12 mesi** (`scripts/lib/freshness.ts`)
+- `npm run prune:combos` — pruning deterministico: archivia in `combos-archive.json` le combo senza evidenza fresca (cutoff 12 mesi). **Default dry-run**; `-- --apply` scrive. Guardrail: aborta se le orfane superano `PRUNE_GUARD_PCT` (60%) o se l'evidenza torneo è a 0
 - `npm run test:scoring` — golden test dell'algoritmo CAS
 - `npm run test:wbo` — golden test della parte deterministica del parser WBO
+- `npm run test:freshness` / `npm run test:prune` — golden test del cutoff condiviso e della partizione del pruning
 
 ## Pipeline Dati
 
@@ -106,14 +111,33 @@ via API a pagamento (regola: non pagare due volte ciò che l'abbonamento già co
 - `scrape:reddit` (Playwright; Reddit blocca l'accesso non autenticato → serve sessione browser loggata:
   `REDDIT_HEADED=1 npm run scrape:reddit`, login una tantum nel profilo `.playwright-beyblade`, poi riusa
   la sessione e legge gli endpoint `.json`; headless = no-op non distruttivo, preserva la cache),
-  `fetch:youtube` (API key), `fetch:sheets`, `fetch:metabeys` (Playwright headless),
+  `fetch:youtube` (API key; discovery + **arricchimento** via `videos?part=snippet`: tags, descrizione
+  completa, `defaultAudioLanguage` → cache **cumulativa** + **pre-filtro deterministico**
+  `scripts/lib/youtube-relevance.ts` che scarta off-topic/franchise estranei), `fetch:sheets`,
+  `fetch:metabeys` (Playwright headless; **paginazione storica** `?page=N`, ~9 eventi/pagina, capped a
+  `META_MAX_PAGES`/run, cursore `metabeysBackfill`, stop al cutoff),
   `fetch:wbo` (Playwright; Cloudflare blocca headless → `WBO_HEADED=1`, oppure ci si affida a MetaBeys
-  che indicizza gli stessi eventi WBO). `fetch:transcripts` gira SEPARATO (ogni 5 min, `--batch 1`).
+  che indicizza gli stessi eventi WBO; **paginazione all'indietro** del thread `?page=N`, capped a
+  `WBO_MAX_PAGES`/run, cursore `wboBackfill`, canale `printthread` opzionale via `WBO_PRINTTHREAD=1`).
+  `fetch:transcripts` gira SEPARATO (ogni 5 min, `--batch 1`):
+  scarica solo i video `relevant:true` (giudicati da `/judge-youtube`), nella lingua reale del video
+  (`youtube_transcript_api.list()` + `.translate('en')` se non-EN e traducibile).
 - Reddit/WBO girano headed+manuale (lo scheduler headless li lascia no-op): rieseguire a mano quando serve dato fresco.
 - Reddit backfill storico (one-off): `REDDIT_BACKFILL=1` (con `REDDIT_HEADED=1`) pagina a fondo ogni query
   (cursore `after`, ~1000/query) e NON pota la cache (no `KEEP_TOP`). Seguire SUBITO con `/update-combos`,
   prima che un run normale (che applica `KEEP_TOP`) la poti.
 - Le cache grezze le interpreta `/update-combos` (estrazione, match multilingua, dedup id-set, scoring).
+
+### Cutoff temporale e pruning (deterministici)
+Cutoff condiviso **12 mesi** in `scripts/lib/freshness.ts` (`CUTOFF_MONTHS`, override `COMBO_CUTOFF_MONTHS`):
+unica fonte di verità applicata in **fetch** (stop paginazione storica), **parse** (scarto dei placement
+oltre cutoff) e **score** (filtro dell'evidenza unita). Coerente col decay (emivita 75gg: a 12 mesi il
+peso è già ~0.03). I fetcher paginano lo storico in modo **capped + resumable** (cursori in
+`scan-history.json`; default 3 pagine/run, backfill profondo one-off con `META_MAX_PAGES`/`WBO_MAX_PAGES`
+alti). Il **pruning** (`prune:combos`) archivia in `combos-archive.json` le combo senza evidenza fresca:
+deterministico, **dry-run di default** (`-- --apply` scrive), guardrail (aborta se orfane > `PRUNE_GUARD_PCT`
+60% o evidenza torneo a 0), idempotente, riconcilia gli id tornati attivi. Gira dentro `/update-combos`
+dopo `score:combos`, prima di `build`.
 
 ### Scoring combo (CAS, deterministico)
 Lo scoring NON è più una stima inline dell'IA: è il **Competitive Authority Score** calcolato dal
@@ -155,12 +179,13 @@ sovrapposti a WBO senza id condiviso → rischio doppioni). Facebook PH/MY e Ins
 Il PC è spento di notte → tutta la pipeline gira in **un'unica sequenza alle 08:00** (utente loggato).
 `daily-pipeline.bat` esegue in ordine: `/update-parts` → `collect:sources` (con Reddit/WBO/arca **headed**
 via `REDDIT_HEADED=1`/`WBO_HEADED=1`/`ARCA_HEADED=1`, lette da collect:sources; BBX Weekly headless) →
-`/update-combos` (fonti strutturate) → `/mine-reddit` (Reddit a blocchi). Reddit riusa il login del
+`/judge-youtube` (rilevanza + lingua dei video raccolti, a blocchi) → `/update-combos` (fonti strutturate)
+→ `/mine-reddit` (Reddit a blocchi). Reddit riusa il login del
 profilo `.playwright-beyblade`; WBO/arca possono chiedere il captcha Cloudflare (mattina = utente al PC
 per risolverlo). I transcript YouTube girano a
-parte ogni 5 min (`--batch 1`, rate-limit): i video nuovi scoperti oggi vengono trascritti nelle ore
-successive e raccolti dai run seguenti (eventually-consistent). `/update-parts`, `/update-combos` e
-`/mine-reddit` fanno **commit/push autonomi su master**.
+parte ogni 5 min (`--batch 1`, rate-limit): scaricano solo i video `relevant:true` (decisi da
+`/judge-youtube`), nella lingua reale del video, nelle ore successive (eventually-consistent).
+`/update-parts`, `/update-combos` e `/mine-reddit` fanno **commit/push autonomi su master**.
 
 Durata `/update-combos`: **~20-22 min** a run (misurato 16/06/2026 via `claude -p`: parser
 MetaBeys/WBO + scoring CAS + estrazione fonti strutturate + build + commit/push). **Non** mina la

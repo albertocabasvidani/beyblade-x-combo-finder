@@ -210,6 +210,7 @@ Lo score da solo non comunica fiducia. Esporre l'evidenza accanto al numero:
 
 ```
 HALF_LIFE = 75 giorni
+CUTOFF = 12 mesi (confine duro, scripts/lib/freshness.ts)
 pesi pilastri = 0.55 / 0.30 / 0.15
 K_perf = 6 ; K_pres = 3 ; K_corr = 2.0 ; K_conf = 4 (ATTIVO)
 placementWeight = {1:1.0, 2:0.65, 3:0.45, 4:0.30, 5-8:0.20, topcut:0.12}
@@ -221,6 +222,16 @@ rising: RISING_WINDOW_DAYS = 30 ; RISING_RATIO = 1.15
 
 Costanti tarate sulla distribuzione reale dopo il primo run. Fonte canonica: `src/lib/scoring.ts`
 (`CONST`), coperta dai golden test `scripts/test-scoring.ts`.
+
+### Cutoff temporale (12 mesi) vs decadimento
+
+Il `decay` (emivita 75g) è una rampa continua: un evento di 12 mesi pesa già ~0.034 (`0.5^(365/75)`),
+contributo trascurabile. Il **cutoff a 12 mesi** è invece un confine **duro** che taglia la coda di
+rumore a monte dello score, in tre punti coerenti (unica costante in `scripts/lib/freshness.ts`):
+fetch (stop della paginazione storica), parse (scarto dei placement oltre cutoff) e score (filtro
+dell'evidenza unita). Le combo che restano senza alcuna evidenza fresca le archivia `prune:combos` in
+`combos-archive.json` (deterministico, dry-run + guardrail). Override per test/tuning:
+`COMBO_CUTOFF_MONTHS`.
 
 ## 9. Migrazione
 

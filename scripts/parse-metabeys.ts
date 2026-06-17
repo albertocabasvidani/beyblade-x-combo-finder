@@ -14,6 +14,7 @@
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { join } from 'path';
 import type { PlacementEvidence, UsageEvidence, BladeType } from '../src/lib/types';
+import { isFresh, parseLongDate } from './lib/freshness';
 
 const ROOT = join(import.meta.dirname, '..');
 const DATA = join(ROOT, 'data');
@@ -22,17 +23,6 @@ const partsPath = join(DATA, 'parts.json');
 const outPath = join(DATA, 'metabeys-evidence.json');
 
 const norm = (s: string) => s.toLowerCase().normalize('NFKD').replace(/\s+/g, ' ').trim();
-
-const MONTHS: Record<string, string> = {
-  january: '01', february: '02', march: '03', april: '04', may: '05', june: '06',
-  july: '07', august: '08', september: '09', october: '10', november: '11', december: '12',
-};
-
-function parseDate(raw: string): string | null {
-  const m = raw.match(/(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2}),\s+(\d{4})/i);
-  if (!m) return null;
-  return `${m[3]}-${MONTHS[m[1].toLowerCase()]}-${m[2].padStart(2, '0')}`;
-}
 
 interface Resolver {
   blade: Map<string, { id: string; name: string; type: BladeType }>;
@@ -93,8 +83,10 @@ const PLACEMENT_RE = /^(\d+)(?:st|nd|rd|th)\s*[—–-]\s*(.+)$/;
 
 function parseEvent(r: Resolver, evt: { id: string; url: string; raw: string }) {
   const raw = evt.raw;
-  const date = parseDate(raw);
+  const date = parseLongDate(raw);
   if (!date) { unresolved.push({ line: `event ${evt.id}`, reason: 'data non parsata' }); return; }
+  // Cutoff condiviso: gli eventi più vecchi di 12 mesi non entrano nell'evidenza (decay già ~0).
+  if (!isFresh(date)) { unresolved.push({ line: `event ${evt.id}`, reason: `oltre-cutoff (${date})` }); return; }
   const lines = raw.split('\n').map((l) => l.trim()).filter(Boolean);
 
   const playersIdx = lines.findIndex((l) => /^\d+\s+players$/i.test(l));

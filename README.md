@@ -30,9 +30,12 @@ Richiede inoltre (per la pipeline dati):
 | `npm run collect:sources` | Raccoglie le cache grezze (Reddit, YouTube, Sheets, MetaBeys, WBO) |
 | `npm run parse:metabeys` | Parser deterministico MetaBeys (eventi+leaderboard) → `data/metabeys-evidence.json` |
 | `npm run parse:wbo` | Parser deterministico WBO (segmentazione regex + risoluzione) → `data/wbo-evidence.json` |
-| `npm run score:combos` | Ricalcola lo score CAS (deterministico) da `evidence`, scrive `combos.json` |
+| `npm run score:combos` | Ricalcola lo score CAS (deterministico) da `evidence`, scrive `combos.json` (filtra il cutoff 12 mesi) |
+| `npm run prune:combos` | Pruning: archivia in `combos-archive.json` le combo senza evidenza fresca. **Dry-run** di default; `-- --apply` scrive |
 | `npm run test:scoring` | Golden test dell'algoritmo di scoring |
 | `npm run test:wbo` | Golden test della parte deterministica del parser WBO |
+| `npm run test:freshness` | Golden test del cutoff condiviso (`scripts/lib/freshness.ts`) |
+| `npm run test:prune` | Golden test della partizione del pruning |
 
 Comandi Claude Code (in `.claude/commands/`):
 - `/scrape-parts-master` — import iniziale del database parti da Beyblade Fandom Wiki (one-shot)
@@ -44,7 +47,8 @@ Comandi Claude Code (in `.claude/commands/`):
 - **`data/parts-master.json`** — file canonico delle parti, multilingua (nomi Takara Tomy / Hasbro /
   giapponese + alias per lingua). Da qui `build:parts` deriva `data/parts.json` (consumato dal sito),
   preservando gli id e con un guardrail che aborta se romperebbe i riferimenti di `combos.json`.
-- **`data/combos.json`** — combo con `evidence` (placements/usage/mentions), `scoreBreakdown` CAS, tag e fonti.
+- **`data/combos.json`** — combo con `evidence` (placements/usage/mentions), `scoreBreakdown` CAS, tag e fonti. Solo evidenza entro il **cutoff di 12 mesi**.
+- **`data/combos-archive.json`** — combo archiviate dal pruning (senza evidenza fresca): fuori dal sito, reversibili.
 - **`data/metabeys-evidence.json`** — evidenza torneo parsata in modo deterministico da MetaBeys (input dello scoring).
 - **`data/wbo-evidence.json`** — evidenza torneo da WBO (parser deterministico).
 - **`data/products.json`** — catalogo prodotti TT+Hasbro per i link Amazon.
@@ -68,8 +72,10 @@ score CAS**. Le pagine wiki si leggono via **API MediaWiki** (`api.php`, la `/wi
 MetaBeys e WBO via **Playwright headless** (WBO è dietro Cloudflare: usare `WBO_HEADED=1` o affidarsi a
 MetaBeys, che indicizza gli stessi eventi). Il thread WBO usa un parser **deterministico**
 (segmentazione regex + risoluzione parti/sigle/id, dedup, stats); i casi non segmentabili li rifinisce
-l'IA in `/update-combos` (abbonamento Claude Code, mai via API a pagamento). Dettagli completi e
-scheduling in `CLAUDE.md`.
+l'IA in `/update-combos` (abbonamento Claude Code, mai via API a pagamento). MetaBeys e WBO **paginano
+lo storico fino a un cutoff di 12 mesi** (capped + resumable via cursori in `scan-history.json`); un
+**pruning** deterministico (`prune:combos`, dry-run di default + guardrail) archivia le combo senza
+evidenza fresca in `combos-archive.json`. Dettagli completi e scheduling in `CLAUDE.md`.
 
 ## Deploy
 
