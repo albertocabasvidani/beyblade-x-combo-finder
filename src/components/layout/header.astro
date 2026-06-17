@@ -7,14 +7,12 @@ interface Props {
 }
 
 const { locale } = Astro.props;
-const otherLocale = locale === 'en' ? 'it' : 'en';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const currentPath = Astro.url.pathname.replace(`${base}/${locale}`, '');
 ---
 
 <header class="border-b border-border-strong bg-surface">
   <nav class="mx-auto flex max-w-[1180px] items-center justify-between px-4 py-3 lg:px-10">
-    <a href={`${base}/${locale}/`} class="flex items-center gap-2">
+    <a href={`${base}/`} class="flex items-center gap-2">
       <span
         class="grid h-7 w-7 place-items-center bg-gold font-display text-[19px] leading-none text-gold-ink"
         style="transform: skewX(-10deg)"
@@ -26,13 +24,13 @@ const currentPath = Astro.url.pathname.replace(`${base}/${locale}`, '');
 
     <div class="flex items-center gap-3 lg:gap-6">
       <a
-        href={`${base}/${locale}/`}
+        href={`${base}/`}
         class="font-mono text-[11px] uppercase tracking-[0.08em] text-gold lg:text-xs"
       >
         {t(locale, 'nav.home')}
       </a>
       <a
-        href={`${base}/${locale}/about/`}
+        href={`${base}/about/`}
         class="font-mono text-[11px] uppercase tracking-[0.08em] text-muted transition-colors hover:text-text lg:text-xs"
       >
         {t(locale, 'nav.howScoring')}
@@ -52,13 +50,6 @@ const currentPath = Astro.url.pathname.replace(`${base}/${locale}`, '');
           <path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M5 19l1.5-1.5M17.5 6.5 19 5" />
         </svg>
       </button>
-
-      <a
-        href={`${base}/${otherLocale}${currentPath}`}
-        class="rounded-lg border border-border px-2 py-1 font-mono text-[11px] font-semibold uppercase text-muted transition-colors hover:text-text"
-      >
-        {otherLocale.toUpperCase()}
-      </a>
     </div>
   </nav>
 </header>
