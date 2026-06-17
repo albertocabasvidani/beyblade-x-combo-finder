@@ -87,7 +87,9 @@ naturale e promuovere lo fa l'IA. Solo Beyblade X.
    Il mittente è l'alias send-as **`alberto@sosautomazioni.com`** (verificato sull'account gws
    `info@sosautomazioni.com`; le risposte tornano nella casella di `info@`, quindi lo step 1 le legge).
 
-   Corpo HTML (link cliccabili, niente `;` nel testo — il validator lo blocca):
+   Corpo HTML su **UNA SOLA RIGA** (niente a-capo nel `--body`: un newline lo tronca al primo
+   paragrafo; l'HTML non ha bisogno di a-capo, usa i tag). Link cliccabili, niente `;` nel testo (il
+   validator lo blocca):
    - se è stato applicato feedback: una riga in cima "Feedback applicato: promossi A, B; scartati C";
    - elenco ordinato per `recommendation` (prima `propose`, poi `manual-verify`), con per ogni candidato:
      **nome con link**, piattaforma/`type`, lingua/regione, **motivazione di una frase** e `dedupCheck`;
