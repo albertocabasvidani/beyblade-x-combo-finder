@@ -82,8 +82,10 @@ naturale e promuovere lo fa l'IA. Solo Beyblade X.
    SENZA allegati** (tutto leggibile nel corpo):
 
    ```
-   "/c/Users/cinqu/AppData/Roaming/npm/gws.cmd" gmail +send --to "cinquequarti@gmail.com" --html --subject "Beyblade — N nuove fonti candidate (settimana gg/mm)" --body "<corpo HTML>"
+   "/c/Users/cinqu/AppData/Roaming/npm/gws.cmd" gmail +send --from "alberto@sosautomazioni.com" --to "cinquequarti@gmail.com" --html --subject "Beyblade — N nuove fonti candidate (settimana gg/mm)" --body "<corpo HTML>"
    ```
+   Il mittente è l'alias send-as **`alberto@sosautomazioni.com`** (verificato sull'account gws
+   `info@sosautomazioni.com`; le risposte tornano nella casella di `info@`, quindi lo step 1 le legge).
 
    Corpo HTML (link cliccabili, niente `;` nel testo — il validator lo blocca):
    - se è stato applicato feedback: una riga in cima "Feedback applicato: promossi A, B; scartati C";
