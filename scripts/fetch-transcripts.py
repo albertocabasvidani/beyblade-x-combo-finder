@@ -51,8 +51,49 @@ COMBO_KEYWORDS = [
 
 
 def is_combo_related(title: str) -> bool:
+    # Legacy: il filtro di rilevanza ora è il flag `relevant` deciso dall'IA in /judge-youtube
+    # (multilingua, su titolo+descrizione+tag). Mantenuta solo come fallback storico, non più nel
+    # percorso principale.
     lower = title.lower()
     return any(kw in lower for kw in COMBO_KEYWORDS)
+
+
+def fetch_transcript_text(ytt, video_id, preferred_lang):
+    """Scarica il transcript nella lingua reale del video e lo uniforma in inglese se traducibile.
+
+    Ritorna (text, final_lang, source_lang). Solleva eccezione se nessun transcript è disponibile.
+    `preferred_lang` = lingua reale del parlato (da relevant/lang IA, defaultAudioLanguage o sourceLang).
+    """
+    tlist = ytt.list(video_id)
+
+    candidates = []
+    if preferred_lang:
+        candidates.append(preferred_lang)
+        # normalizza 'pt-BR' → 'pt' come ulteriore candidato
+        base = preferred_lang.split('-')[0]
+        if base != preferred_lang:
+            candidates.append(base)
+    candidates.append('en')
+
+    transcript = None
+    try:
+        transcript = tlist.find_transcript(candidates)
+    except Exception:
+        transcript = next(iter(tlist), None)  # primo disponibile, qualunque lingua
+    if transcript is None:
+        raise Exception('No transcript available')
+
+    source_lang = transcript.language_code
+    if not source_lang.startswith('en') and getattr(transcript, 'is_translatable', False):
+        try:
+            transcript = transcript.translate('en')
+        except Exception:
+            pass  # non traducibile: si tiene l'originale (l'IA gestisce il multilingua a valle)
+
+    fetched = transcript.fetch()
+    text = ' '.join(s.text for s in fetched)
+    final_lang = getattr(fetched, 'language_code', None) or getattr(transcript, 'language_code', source_lang)
+    return text, final_lang, source_lang
 
 
 def load_existing():
@@ -101,18 +142,18 @@ def main():
     # Also track permanently failed videos (no captions available)
     failed_ids = {t['videoId'] for t in existing.get('failed', [])}
 
-    # Filter combo-related videos without transcripts yet
+    # Filtra i video GIUDICATI RILEVANTI dall'IA (/judge-youtube) e ancora senza transcript.
     target_videos = [
         v for v in yt_cache['videos']
         if v['videoId'] not in existing_ids
         and v['videoId'] not in failed_ids
-        and is_combo_related(v['title'])
+        and v.get('relevant') is True
     ]
 
     print(f'Total videos in cache: {len(yt_cache["videos"])}')
     print(f'Already have transcripts: {len(existing_ids)}')
     print(f'Permanently failed: {len(failed_ids)}')
-    print(f'Combo-related to fetch: {len(target_videos)}')
+    print(f'Relevant to fetch: {len(target_videos)}')
     print()
 
     if not target_videos:
@@ -139,20 +180,22 @@ def main():
         sys.stdout.flush()
 
         try:
-            transcript = ytt.fetch(video['videoId'], languages=['en'])
-            text = ' '.join(s.text for s in transcript.snippets)
+            preferred_lang = video.get('lang') or video.get('defaultAudioLanguage') or video.get('sourceLang')
+            text, final_lang, source_lang = fetch_transcript_text(ytt, video['videoId'], preferred_lang)
 
             all_transcripts.append({
                 'videoId': video['videoId'],
                 'title': video['title'],
                 'channel': video['channel'],
                 'transcript': text,
-                'language': transcript.language,
+                'language': final_lang,
+                'sourceLanguage': source_lang,
                 'fetchedDate': today,
             })
             new_count += 1
             consecutive_failures = 0
-            print(f'OK ({len(text)} chars)')
+            translated = '' if final_lang == source_lang else f', {source_lang}->{final_lang}'
+            print(f'OK ({len(text)} chars{translated})')
 
             # Save after every success in batch mode, every SAVE_INTERVAL otherwise
             if batch_mode or new_count % SAVE_INTERVAL == 0:
@@ -163,13 +206,20 @@ def main():
         except Exception as e:
             failures += 1
             consecutive_failures += 1
-            err_msg = str(e).split('\n')[0]
-            if len(err_msg) > 60:
-                err_msg = err_msg[:60] + '...'
-            print(f'SKIP ({err_msg})')
+            etype = type(e).__name__
+            err_msg = (str(e).strip().split('\n')[0] or etype)[:80]
+            print(f'SKIP [{etype}] ({err_msg})')
 
-            # Track "no transcript" as permanent failure (won't retry)
-            if 'Could not retrieve' in str(e) or 'disabled' in str(e).lower():
+            # IP block / rate-limit = TEMPORANEO: NON marcare permanent (verrebbe perso un video
+            # valido), ferma e riprova al prossimo run. Il messaggio di IpBlocked contiene anch'esso
+            # "Could not retrieve", quindi distinguere per TIPO dell'eccezione, non per testo.
+            is_rate_limited = etype in ('IpBlocked', 'RequestBlocked', 'TooManyRequests') \
+                or 'blocking requests from your ip' in str(e).lower()
+
+            # Captions assenti/disabilitati/video non disponibile = PERMANENTE (non riprovare).
+            if not is_rate_limited and etype in (
+                'TranscriptsDisabled', 'NoTranscriptFound', 'VideoUnavailable', 'VideoUnplayable',
+            ):
                 all_failed.append({
                     'videoId': video['videoId'],
                     'title': video['title'],
@@ -177,9 +227,13 @@ def main():
                     'date': today,
                 })
 
+            if is_rate_limited:
+                print('\n*** YouTube ha bloccato l\'IP (rate-limit): stop. Riprovare tra 30-60 min. ***')
+                break
+
             # If 10+ consecutive failures, likely rate-limited. Stop early.
             if consecutive_failures >= 10:
-                print(f'\n*** Rate limited: {consecutive_failures} consecutive failures. Stopping. ***')
+                print(f'\n*** {consecutive_failures} fallimenti consecutivi. Stopping. ***')
                 print('*** Wait 30-60 minutes and run again to continue. ***')
                 break
 

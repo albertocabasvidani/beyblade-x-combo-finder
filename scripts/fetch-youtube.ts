@@ -1,5 +1,6 @@
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { join } from 'path';
+import { prefilter } from './lib/youtube-relevance';
 
 const DATA_DIR = join(import.meta.dirname, '..', 'data');
 const API_BASE = 'https://www.googleapis.com/youtube/v3';
@@ -10,6 +11,20 @@ interface VideoEntry {
   description: string;
   publishedAt: string;
   channel: string;
+  channelId: string;
+  sourceId: string;
+  sourceLang: string;
+  // popolati da enrichVideos (videos?part=snippet)
+  tags: string[];
+  defaultAudioLanguage: string | null;
+  defaultLanguage: string | null;
+  // popolato dal pre-filtro deterministico (lib/youtube-relevance)
+  prefilter?: 'pass' | 'drop';
+  prefilterReason?: string;
+  // popolati dal giudizio IA (/judge-youtube → youtube-judge-batch.ts done)
+  relevant?: boolean;
+  relevanceReason?: string;
+  lang?: string;
 }
 
 interface YouTubeCache {
@@ -85,6 +100,7 @@ async function resolveChannelId(apiKey: string, handle: string): Promise<{ chann
 async function fetchUploadedVideos(
   apiKey: string,
   playlistId: string,
+  source: { id: string; lang: string; channelId: string },
   maxResults: number = 50,
 ): Promise<VideoEntry[]> {
   const videos: VideoEntry[] = [];
@@ -125,6 +141,12 @@ async function fetchUploadedVideos(
         description: snippet.description ?? '',
         publishedAt: publishedAt.slice(0, 10),
         channel: snippet.channelTitle ?? '',
+        channelId: source.channelId,
+        sourceId: source.id,
+        sourceLang: source.lang,
+        tags: [],
+        defaultAudioLanguage: null,
+        defaultLanguage: null,
       });
 
       if (videos.length >= maxResults) {
@@ -136,6 +158,40 @@ async function fetchUploadedVideos(
   } while (pageToken);
 
   return videos;
+}
+
+/**
+ * Arricchisce i video con `videos?part=snippet` (batch da 50): tags, descrizione completa
+ * (playlistItems la tronca), defaultAudioLanguage/defaultLanguage. Mutazione in-place.
+ * Costo quota: 1 unità per batch di 50 id.
+ */
+async function enrichVideos(apiKey: string, videos: VideoEntry[]): Promise<void> {
+  const byId = new Map(videos.map((v) => [v.videoId, v]));
+  const ids = videos.map((v) => v.videoId).filter(Boolean);
+
+  for (let i = 0; i < ids.length; i += 50) {
+    const chunk = ids.slice(i, i + 50);
+    const url = `${API_BASE}/videos?part=snippet&id=${chunk.join(',')}&key=${apiKey}`;
+    try {
+      const res = await fetch(url);
+      const data = await res.json();
+      if (data.error) {
+        console.error(`  Enrich API error: ${data.error.message}`);
+        continue;
+      }
+      for (const item of data.items ?? []) {
+        const v = byId.get(item.id);
+        if (!v) continue;
+        const s = item.snippet ?? {};
+        v.tags = s.tags ?? [];
+        if (s.description) v.description = s.description; // completa, sovrascrive la troncata
+        v.defaultAudioLanguage = s.defaultAudioLanguage ?? null;
+        v.defaultLanguage = s.defaultLanguage ?? null;
+      }
+    } catch (e) {
+      console.error(`  Enrich fetch failed: ${(e as Error).message}`);
+    }
+  }
 }
 
 async function main() {
@@ -156,11 +212,11 @@ async function main() {
     console.log(`Channel: ${source.name}`);
 
     try {
-      const handle = source.urls[0];
       let channelId = source.channelId;
       let uploadsPlaylistId: string;
 
       if (!channelId) {
+        const handle = source.urls?.[0] ?? source.name;
         console.log('  Resolving channel ID...');
         const resolved = await resolveChannelId(apiKey, handle);
         channelId = resolved.channelId;
@@ -183,7 +239,12 @@ async function main() {
       }
 
       console.log('  Fetching videos...');
-      const videos = await fetchUploadedVideos(apiKey, uploadsPlaylistId, isInitialScan ? 100 : 50);
+      const videos = await fetchUploadedVideos(
+        apiKey,
+        uploadsPlaylistId,
+        { id: source.id, lang: source.lang ?? '', channelId },
+        isInitialScan ? 100 : 50,
+      );
 
       const newVideos = videos.filter((v) => !scanHistory.scannedVideos[v.videoId]);
       console.log(`  Found ${videos.length} videos, ${newVideos.length} new\n`);
@@ -205,14 +266,44 @@ async function main() {
   writeFileSync(join(DATA_DIR, 'sources.json'), JSON.stringify(sourcesData, null, 2));
   saveScanHistory(scanHistory);
 
-  const cache: YouTubeCache = {
-    lastFetched: new Date().toISOString().slice(0, 10),
-    videos: allNewVideos,
-  };
+  // Arricchimento (tags/desc completa/lingua) + pre-filtro deterministico sui nuovi video.
+  console.log('\nEnriching new videos (tags + language)...');
+  await enrichVideos(apiKey, allNewVideos);
+  const dropCounts: Record<string, number> = {};
+  for (const v of allNewVideos) {
+    const r = prefilter(v);
+    v.prefilter = r.verdict;
+    v.prefilterReason = r.reason;
+    if (r.verdict === 'drop') {
+      const key = r.reason.split(':')[0];
+      dropCounts[key] = (dropCounts[key] ?? 0) + 1;
+    }
+  }
 
   const outPath = join(DATA_DIR, 'youtube-cache.json');
+
+  // Merge CUMULATIVO: la cache è la worklist di /judge-youtube e fetch-transcripts. I nuovi si
+  // aggiungono ai pendenti, preservando i flag relevant/lang già decisi per i video esistenti, così
+  // un backfill (745 video) non viene perso da un fetch successivo che troverebbe pochi nuovi.
+  const prevCache: YouTubeCache = existsSync(outPath)
+    ? JSON.parse(readFileSync(outPath, 'utf-8'))
+    : { lastFetched: '', videos: [] };
+  const newIds = new Set(allNewVideos.map((v) => v.videoId));
+  const mergedVideos = [
+    ...allNewVideos,
+    ...(prevCache.videos ?? []).filter((v) => !newIds.has(v.videoId)),
+  ];
+
+  const cache: YouTubeCache = {
+    lastFetched: new Date().toISOString().slice(0, 10),
+    videos: mergedVideos,
+  };
   writeFileSync(outPath, JSON.stringify(cache, null, 2));
-  console.log(`Saved ${allNewVideos.length} new videos to ${outPath}`);
+
+  const passCount = allNewVideos.filter((v) => v.prefilter === 'pass').length;
+  console.log(
+    `Saved ${allNewVideos.length} new videos (${passCount} pass, ${allNewVideos.length - passCount} drop: ${JSON.stringify(dropCounts)}). Cache total: ${mergedVideos.length}.`,
+  );
 }
 
 main().catch(console.error);
