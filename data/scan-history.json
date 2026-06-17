@@ -1222,11 +1222,9 @@
   },
   "scannedSheets": {
     "15wiNF1pTAUzohfu4mTglFeM1rgfL62C5-8nrp5u3CcQ": {
-      "lastScannedDate": "2026-03-04",
-      "totalRows": 9760,
-      "tabCount": 12,
-      "combosExtracted": 24,
-      "notes": "AWWC WBO Tournament Data. Full Thread Data + February 2026 Data analyzed for combo rankings."
+      "lastScannedDate": "2026-06-17",
+      "totalRows": 12589,
+      "tabCount": 15
     },
     "1m1dHOabGkGMEODGwPFDx6VFWB3ohAIAcSRTpB7mbFOs": {
       "lastScannedDate": "2026-03-04",
@@ -5985,6 +5983,21 @@
       "lastScannedDate": "2026-06-16",
       "contentHash": "sbbl-winrate-leaderboard-2026-06-16",
       "notes": "Win-rate leaderboard ES via WebFetch. Corrobora 5 combo meta esistenti (Wizard Rod, Silver Wolf, Cobalt Dragoon) con mention es. 3 combo elencate non in DB non create (riassunto non verificabile alla lettera)."
+    },
+    "https://okuyama3093.com/beyblade-x-matome/": {
+      "lastScannedDate": "2026-06-17",
+      "contentHash": "okuyama-matome-index-hub",
+      "notes": "Pagina indice/hub (まとめ): nessuna combo con parti sulla pagina stessa, solo link ad articoli per-parte. NO COMBO LIST."
+    },
+    "https://www.probladers.it/ranking/": {
+      "lastScannedDate": "2026-06-17",
+      "contentHash": "probladers-ranking-players-only",
+      "notes": "Ranking giocatori (punti + n° tornei), nessuna parte combo. NO COMBO LIST."
+    },
+    "https://polishbladers.pl/turnieje": {
+      "lastScannedDate": "2026-06-17",
+      "contentHash": "polishbladers-schedule-rules",
+      "notes": "Calendario tornei + regolamento, non archivio risultati. NO COMBO LIST."
     }
   },
   "scannedEvents": {
