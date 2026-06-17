@@ -15,6 +15,7 @@ import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { join } from 'path';
 import type { PlacementEvidence, UsageEvidence, BladeType } from '../src/lib/types';
 import { isFresh, parseLongDate } from './lib/freshness';
+import { buildCxResolver, resolveCxBladePart, cxComboId, cxDisplayName, type CxResolver } from './lib/cx-resolve';
 
 const ROOT = join(import.meta.dirname, '..');
 const DATA = join(ROOT, 'data');
@@ -28,6 +29,7 @@ interface Resolver {
   blade: Map<string, { id: string; name: string; type: BladeType }>;
   bit: Map<string, { id: string; name: string }>;
   ratchet: Set<string>;
+  cx: CxResolver;  // risolutore del lato sinistro CX (lockChip+mainBlade+assist[+over])
 }
 
 function buildResolver(): Resolver {
@@ -41,11 +43,13 @@ function buildResolver(): Resolver {
   const bit = new Map<string, { id: string; name: string }>();
   for (const b of parts.bits) bit.set(norm(b.name), { id: b.id, name: b.name });
   const ratchet = new Set<string>(parts.ratchets.map((r: any) => r.id));
-  return { blade, bit, ratchet };
+  return { blade, bit, ratchet, cx: buildCxResolver(parts) };
 }
 
 interface ComboAcc {
-  id: string; line: 'bx'; blade: string; ratchet: string; bit: string;
+  id: string; line: 'bx' | 'cx';
+  blade: string | null; ratchet: string; bit: string;
+  lockChip?: string | null; mainBlade?: string | null; assistBlade?: string | null; overBlade?: string | null;
   displayName: string; type: BladeType;
   placements: PlacementEvidence[]; usage: UsageEvidence[];
 }
@@ -63,20 +67,57 @@ function ensure(r: Resolver, bladeName: string, ratchet: string, bitName: string
   let acc = combos.get(id);
   if (!acc) {
     acc = { id, line: 'bx', blade: b.id, ratchet, bit: bit.id,
+      lockChip: null, mainBlade: null, assistBlade: null, overBlade: null,
       displayName: `${b.name} ${ratchet} ${bit.name}`, type: b.type, placements: [], usage: [] };
     combos.set(id, acc);
   }
   return acc;
 }
 
-/** Prova a risolvere una riga deck "Blade / Ratchet / Bit". Ritorna l'acc o null (+ logga unresolved). */
+/**
+ * CX a 4 segmenti MetaBeys: "lockChip mainBlade [overBlade] / assist / ratchet / bit"
+ * (es. "Pegasus Blast / Heavy / 9-60 / Low Rush", "Hells Rage Flow / Heavy / 1-50 / Rush").
+ * Riusa cx-resolve componendo `seg[0] + ' ' + seg[1]` come lato sinistro CX (order-agnostic, Western).
+ */
+function ensureCx(r: Resolver, core: string, assist: string, ratchet: string, bitName: string): ComboAcc | null {
+  if (!r.ratchet.has(ratchet)) return null;
+  const bit = r.bit.get(norm(bitName));
+  if (!bit) return null;
+  const res = resolveCxBladePart(r.cx, `${core} ${assist}`);
+  if (!res.ok) return null;
+  const cx = res.cx;
+  const id = cxComboId(cx, ratchet, bit.id);
+  let acc = combos.get(id);
+  if (!acc) {
+    acc = {
+      id, line: 'cx', blade: null, ratchet, bit: bit.id,
+      lockChip: cx.lockChip.id, mainBlade: cx.mainBlade.id, assistBlade: cx.assistBlade.id,
+      overBlade: cx.overBlade ? cx.overBlade.id : null,
+      displayName: cxDisplayName(cx, ratchet, bit.name), type: (cx.mainBlade.type as BladeType) ?? 'balance',
+      placements: [], usage: [],
+    };
+    combos.set(id, acc);
+  }
+  return acc;
+}
+
+/** Risolve una riga deck: BX "Blade / Ratchet / Bit" (3 seg) o CX "core / assist / ratchet / bit" (4 seg). */
 function resolveDeckLine(r: Resolver, line: string, ctx: string): ComboAcc | null {
   const seg = line.split('/').map((s) => s.trim());
-  if (seg.length !== 3) { unresolved.push({ line, reason: `segmenti=${seg.length} (CX o malformato)`, ctx }); return null; }
-  if (!seg[0] || !seg[1] || !seg[2]) { unresolved.push({ line, reason: 'segmento vuoto (incompleto)', ctx }); return null; }
-  const acc = ensure(r, seg[0], seg[1], seg[2]);
-  if (!acc) { unresolved.push({ line, reason: 'nome parte non risolto', ctx }); }
-  return acc;
+  if (seg.length === 3) {
+    if (!seg[0] || !seg[1] || !seg[2]) { unresolved.push({ line, reason: 'segmento vuoto (incompleto)', ctx }); return null; }
+    const acc = ensure(r, seg[0], seg[1], seg[2]);
+    if (!acc) unresolved.push({ line, reason: 'nome parte non risolto', ctx });
+    return acc;
+  }
+  if (seg.length === 4) {
+    if (seg.some((s) => !s)) { unresolved.push({ line, reason: 'segmento vuoto (incompleto)', ctx }); return null; }
+    const acc = ensureCx(r, seg[0], seg[1], seg[2], seg[3]);
+    if (!acc) unresolved.push({ line, reason: 'CX non risolta (nome/sigla non nel registro o ambigua)', ctx });
+    return acc;
+  }
+  unresolved.push({ line, reason: `segmenti=${seg.length} (malformato)`, ctx });
+  return null;
 }
 
 const PLACEMENT_RE = /^(\d+)(?:st|nd|rd|th)\s*[—–-]\s*(.+)$/;

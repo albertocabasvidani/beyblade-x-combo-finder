@@ -38,7 +38,8 @@ dove le fonti lo permettono:
 - **Estrazione strutturata → codice (deterministico).** MetaBeys eventi e leaderboard hanno formato
   tabellare costante (`33 players`, `1st — Nome`, `Blade / Ratchet / Bit`, colonne
   `Appearances/Share/Unique Events/Unique Players`). Si parsano con parser dedicato (regex/split),
-  senza IA. Stesso discorso per le tabelle Sheets.
+  senza IA — incluse le **CX a 4 segmenti** (`core / assist / ratchet / bit`) via `cx-resolve.ts`
+  (condiviso con WBO). Stesso discorso per le tabelle Sheets.
 - **WBO → codice (deterministico).** Il thread WBO è eterogeneo (token incollati, marcatori di
   piazzamento misti, quote/ads), ma `parse:wbo` lo gestisce interamente a codice
   (`scripts/lib/wbo-parse.ts`): segmentazione via regex + risoluzione parti/sigle ufficiali/id. Risolve

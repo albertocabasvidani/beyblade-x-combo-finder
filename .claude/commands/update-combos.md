@@ -28,10 +28,11 @@ derivazione. Solo Beyblade X.
    contaminazioni Burst/Metal dalle fonti multilingua).
 4. **Estrazione per fonte**:
    - MetaBeys (`metabeys-cache.json`): **prima** esegui `npm run parse:metabeys` (parser
-     DETERMINISTICO) che estrae placements + usage in `data/metabeys-evidence.json`. Poi gestisci a
-     mano/IA solo la lista `unresolved` (combo CX a 4 segmenti, righe incomplete, typo nei nomi):
-     se è un alias mancante aggiungilo al master ed esegui `build:parts`; se è una CX, aggiungila a
-     `combos.json` con la sua `evidence`. NON ri-estrarre a mano ciò che il parser ha già risolto.
+     DETERMINISTICO) che estrae placements + usage in `data/metabeys-evidence.json`, risolvendo **BX
+     (3 segmenti) e CX (4 segmenti** `core / assist / ratchet / bit`, via `cx-resolve.ts`). Poi gestisci
+     a mano/IA solo la lista `unresolved`, ormai ridotta (typo, righe incomplete, core senza lockChip):
+     se è un alias mancante aggiungilo al master ed esegui `build:parts`. **NON aggiungere a mano le CX**
+     che il parser già risolve né ri-estrarre ciò che ha già risolto.
    - WBO (`wbo-cache.json`): esegui `npm run parse:wbo` (parser DETERMINISTICO: segmentazione del
      thread + risoluzione **BX e CX**) che scrive i placements in `data/wbo-evidence.json` e aggiorna
      il **ledger** `data/wbo-unresolved.json` (idempotente). Il parser ora risolve da solo la grande

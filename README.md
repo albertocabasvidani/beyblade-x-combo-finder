@@ -28,7 +28,7 @@ Richiede inoltre (per la pipeline dati):
 | `npm run build` | Build produzione in `./dist/` |
 | `npm run build:parts` | Rigenera `data/parts.json` da `data/parts-master.json` (con guardrail) |
 | `npm run collect:sources` | Raccoglie le cache grezze (Reddit, YouTube, Sheets, MetaBeys, WBO) |
-| `npm run parse:metabeys` | Parser deterministico MetaBeys (eventi+leaderboard) → `data/metabeys-evidence.json` |
+| `npm run parse:metabeys` | Parser deterministico MetaBeys (eventi+leaderboard, **BX e CX**) → `data/metabeys-evidence.json` |
 | `npm run parse:wbo` | Parser deterministico WBO (segmentazione regex + risoluzione **BX e CX**) → `data/wbo-evidence.json`; residuo nel ledger `data/wbo-unresolved.json` |
 | `npm run score:combos` | Ricalcola lo score CAS (deterministico) da `evidence`, scrive `combos.json` (materializza anche le CX; filtra il cutoff 12 mesi) |
 | `npm run prune:combos` | Pruning: archivia in `combos-archive.json` le combo senza evidenza fresca. **Dry-run** di default; `-- --apply` scrive |

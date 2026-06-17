@@ -8,6 +8,10 @@
       "blade": "wizard-rod",
       "ratchet": "1-60",
       "bit": "hexa",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Wizard Rod 1-60 Hexa",
       "type": "stamina",
       "placements": [
@@ -1485,6 +1489,10 @@
       "blade": "shark-scale",
       "ratchet": "3-60",
       "bit": "point",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 3-60 Point",
       "type": "attack",
       "placements": [
@@ -1510,6 +1518,10 @@
       "blade": "meteor-dragoon",
       "ratchet": "7-60",
       "bit": "level",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Meteor Dragoon 7-60 Level",
       "type": "attack",
       "placements": [
@@ -1574,6 +1586,10 @@
       "blade": "cobalt-dragoon",
       "ratchet": "9-60",
       "bit": "elevate",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Cobalt Dragoon 9-60 Elevate",
       "type": "attack",
       "placements": [
@@ -1714,6 +1730,10 @@
       "blade": "mummy-curse",
       "ratchet": "1-60",
       "bit": "needle",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Mummy Curse 1-60 Needle",
       "type": "defense",
       "placements": [
@@ -1739,6 +1759,10 @@
       "blade": "hover-wyvern",
       "ratchet": "9-60",
       "bit": "kick",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Hover Wyvern 9-60 Kick",
       "type": "defense",
       "placements": [
@@ -1918,6 +1942,10 @@
       "blade": "shark-scale",
       "ratchet": "1-50",
       "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 1-50 Low Rush",
       "type": "attack",
       "placements": [
@@ -2021,6 +2049,10 @@
       "blade": "wizard-rod",
       "ratchet": "1-60",
       "bit": "free-ball",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Wizard Rod 1-60 Free Ball",
       "type": "stamina",
       "placements": [
@@ -2111,6 +2143,10 @@
       "blade": "hells-hammer",
       "ratchet": "7-60",
       "bit": "level",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Hells Hammer 7-60 Level",
       "type": "balance",
       "placements": [
@@ -2136,6 +2172,10 @@
       "blade": "aero-pegasus",
       "ratchet": "1-60",
       "bit": "kick",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Aero Pegasus 1-60 Kick",
       "type": "attack",
       "placements": [
@@ -2161,6 +2201,10 @@
       "blade": "hover-wyvern",
       "ratchet": "9-60",
       "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Hover Wyvern 9-60 Low Rush",
       "type": "defense",
       "placements": [
@@ -2204,12 +2248,74 @@
         }
       ]
     },
+    "pegasus-blast-heavy-4-50-level": {
+      "id": "pegasus-blast-heavy-4-50-level",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "4-50",
+      "bit": "level",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Pegasus Blast H 4-50 Level",
+      "type": "balance",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1778096216787",
+          "eventName": "Untouchables Locals (April 27th)",
+          "date": "2026-04-27",
+          "placement": 5,
+          "topCutSize": 8,
+          "players": 35,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1778096216787"
+        }
+      ],
+      "usage": []
+    },
+    "emperor-blast-free-9-60-yielding": {
+      "id": "emperor-blast-free-9-60-yielding",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "yielding",
+      "lockChip": "emperor",
+      "mainBlade": "blast",
+      "assistBlade": "free",
+      "overBlade": null,
+      "displayName": "Emperor Blast F 9-60 Yielding",
+      "type": "balance",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1778096216787",
+          "eventName": "Untouchables Locals (April 27th)",
+          "date": "2026-04-27",
+          "placement": 6,
+          "topCutSize": 8,
+          "players": 35,
+          "deckScore": "C",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1778096216787"
+        }
+      ],
+      "usage": []
+    },
     "cobalt-dragoon-5-60-elevate": {
       "id": "cobalt-dragoon-5-60-elevate",
       "line": "bx",
       "blade": "cobalt-dragoon",
       "ratchet": "5-60",
       "bit": "elevate",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Cobalt Dragoon 5-60 Elevate",
       "type": "attack",
       "placements": [
@@ -2311,6 +2417,10 @@
       "blade": "cobalt-dragoon",
       "ratchet": "5-60",
       "bit": "level",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Cobalt Dragoon 5-60 Level",
       "type": "attack",
       "placements": [
@@ -2336,6 +2446,10 @@
       "blade": "aero-pegasus",
       "ratchet": "1-80",
       "bit": "rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Aero Pegasus 1-80 Rush",
       "type": "attack",
       "placements": [
@@ -2387,6 +2501,10 @@
       "blade": "shark-scale",
       "ratchet": "1-60",
       "bit": "kick",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 1-60 Kick",
       "type": "attack",
       "placements": [
@@ -2425,6 +2543,10 @@
       "blade": "shark-scale",
       "ratchet": "5-60",
       "bit": "unite",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 5-60 Unite",
       "type": "attack",
       "placements": [
@@ -2450,6 +2572,10 @@
       "blade": "aero-pegasus",
       "ratchet": "9-60",
       "bit": "kick",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Aero Pegasus 9-60 Kick",
       "type": "attack",
       "placements": [
@@ -2488,6 +2614,10 @@
       "blade": "phoenix-wing",
       "ratchet": "1-50",
       "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Phoenix Wing 1-50 Low Rush",
       "type": "attack",
       "placements": [
@@ -2513,6 +2643,10 @@
       "blade": "wizard-rod",
       "ratchet": "1-60",
       "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Wizard Rod 1-60 Low Rush",
       "type": "stamina",
       "placements": [
@@ -2575,6 +2709,10 @@
       "blade": "shark-scale",
       "ratchet": "3-60",
       "bit": "rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 3-60 Rush",
       "type": "attack",
       "placements": [
@@ -2792,6 +2930,10 @@
       "blade": "shark-scale",
       "ratchet": "9-60",
       "bit": "kick",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 9-60 Kick",
       "type": "attack",
       "placements": [
@@ -2824,12 +2966,87 @@
       ],
       "usage": []
     },
+    "hells-flow-rage-heavy-1-50-rush": {
+      "id": "hells-flow-rage-heavy-1-50-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "1-50",
+      "bit": "rush",
+      "lockChip": "hells",
+      "mainBlade": "rage",
+      "assistBlade": "heavy",
+      "overBlade": "flow",
+      "displayName": "Hells Rage Flow H 1-50 Rush",
+      "type": "balance",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1777326654807",
+          "eventName": "InBEYsion Beyblade North Qualifier #2",
+          "date": "2026-04-25",
+          "placement": 2,
+          "topCutSize": 8,
+          "players": 36,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1777326654807"
+        }
+      ],
+      "usage": []
+    },
+    "pegasus-blast-heavy-9-60-low-rush": {
+      "id": "pegasus-blast-heavy-9-60-low-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "low-rush",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Pegasus Blast H 9-60 Low Rush",
+      "type": "balance",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1777326654807",
+          "eventName": "InBEYsion Beyblade North Qualifier #2",
+          "date": "2026-04-25",
+          "placement": 3,
+          "topCutSize": 8,
+          "players": 36,
+          "deckScore": "A",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1777326654807"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1777161248681",
+          "eventName": "New Realm Games April 23rd",
+          "date": "2026-04-23",
+          "placement": 3,
+          "topCutSize": 4,
+          "players": 22,
+          "deckScore": "C",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1777161248681"
+        }
+      ],
+      "usage": []
+    },
     "samurai-saber-1-70-jolt": {
       "id": "samurai-saber-1-70-jolt",
       "line": "bx",
       "blade": "samurai-saber",
       "ratchet": "1-70",
       "bit": "jolt",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Samurai Saber 1-70 Jolt",
       "type": "attack",
       "placements": [
@@ -2855,6 +3072,10 @@
       "blade": "aero-pegasus",
       "ratchet": "7-60",
       "bit": "point",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Aero Pegasus 7-60 Point",
       "type": "attack",
       "placements": [
@@ -2880,6 +3101,10 @@
       "blade": "aero-pegasus",
       "ratchet": "1-70",
       "bit": "level",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Aero Pegasus 1-70 Level",
       "type": "attack",
       "placements": [
@@ -2918,6 +3143,10 @@
       "blade": "aero-pegasus",
       "ratchet": "7-60",
       "bit": "rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Aero Pegasus 7-60 Rush",
       "type": "attack",
       "placements": [
@@ -3096,6 +3325,10 @@
       "blade": "shark-scale",
       "ratchet": "3-60",
       "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 3-60 Low Rush",
       "type": "attack",
       "placements": [
@@ -3243,12 +3476,58 @@
         }
       ]
     },
+    "emperor-blast-heavy-9-60-kick": {
+      "id": "emperor-blast-heavy-9-60-kick",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "kick",
+      "lockChip": "emperor",
+      "mainBlade": "blast",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Emperor Blast H 9-60 Kick",
+      "type": "balance",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1777326654807",
+          "eventName": "InBEYsion Beyblade North Qualifier #2",
+          "date": "2026-04-25",
+          "placement": 7,
+          "topCutSize": 8,
+          "players": 36,
+          "deckScore": "C",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1777326654807"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1778096394500",
+          "eventName": "NRG S4 Week 5 (April 30th)",
+          "date": "2026-04-30",
+          "placement": 2,
+          "topCutSize": 4,
+          "players": 22,
+          "deckScore": "C",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1778096394500"
+        }
+      ],
+      "usage": []
+    },
     "aero-pegasus-7-60-low-rush": {
       "id": "aero-pegasus-7-60-low-rush",
       "line": "bx",
       "blade": "aero-pegasus",
       "ratchet": "7-60",
       "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Aero Pegasus 7-60 Low Rush",
       "type": "attack",
       "placements": [
@@ -3313,6 +3592,10 @@
       "blade": "meteor-dragoon",
       "ratchet": "7-70",
       "bit": "level",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Meteor Dragoon 7-70 Level",
       "type": "attack",
       "placements": [
@@ -3377,6 +3660,10 @@
       "blade": "wizard-rod",
       "ratchet": "1-60",
       "bit": "low-orb",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Wizard Rod 1-60 Low Orb",
       "type": "stamina",
       "placements": [
@@ -3478,6 +3765,10 @@
       "blade": "shark-scale",
       "ratchet": "3-60",
       "bit": "taper",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 3-60 Taper",
       "type": "attack",
       "placements": [
@@ -3503,6 +3794,10 @@
       "blade": "wizard-rod",
       "ratchet": "7-60",
       "bit": "hexa",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Wizard Rod 7-60 Hexa",
       "type": "stamina",
       "placements": [
@@ -3565,6 +3860,10 @@
       "blade": "aero-pegasus",
       "ratchet": "3-60",
       "bit": "rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Aero Pegasus 3-60 Rush",
       "type": "attack",
       "placements": [
@@ -3621,12 +3920,45 @@
         }
       ]
     },
+    "pegasus-rage-heavy-1-50-kick": {
+      "id": "pegasus-rage-heavy-1-50-kick",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "1-50",
+      "bit": "kick",
+      "lockChip": "pegasus",
+      "mainBlade": "rage",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Pegasus Rage H 1-50 Kick",
+      "type": "balance",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1777161248681",
+          "eventName": "New Realm Games April 23rd",
+          "date": "2026-04-23",
+          "placement": 3,
+          "topCutSize": 4,
+          "players": 22,
+          "deckScore": "C",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1777161248681"
+        }
+      ],
+      "usage": []
+    },
     "shark-scale-1-70-rush": {
       "id": "shark-scale-1-70-rush",
       "line": "bx",
       "blade": "shark-scale",
       "ratchet": "1-70",
       "bit": "rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 1-70 Rush",
       "type": "attack",
       "placements": [
@@ -3715,6 +4047,10 @@
       "blade": "tyranno-beat",
       "ratchet": "7-60",
       "bit": "point",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Tyranno Beat 7-60 Point",
       "type": "attack",
       "placements": [
@@ -3740,8 +4076,41 @@
       "blade": "aero-pegasus",
       "ratchet": "3-70",
       "bit": "level",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Aero Pegasus 3-70 Level",
       "type": "attack",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1777161015828",
+          "eventName": "Korekuta Games Locals April 22nd",
+          "date": "2026-04-22",
+          "placement": 3,
+          "topCutSize": 4,
+          "players": 23,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1777161015828"
+        }
+      ],
+      "usage": []
+    },
+    "emperor-arc-heavy-9-60-kick": {
+      "id": "emperor-arc-heavy-9-60-kick",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "kick",
+      "lockChip": "emperor",
+      "mainBlade": "arc",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Emperor Arc H 9-60 Kick",
+      "type": "balance",
       "placements": [
         {
           "source": "metabeys",
@@ -3765,6 +4134,10 @@
       "blade": "wizard-rod",
       "ratchet": "7-70",
       "bit": "hexa",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Wizard Rod 7-70 Hexa",
       "type": "stamina",
       "placements": [
@@ -3790,6 +4163,10 @@
       "blade": "shark-scale",
       "ratchet": "3-60",
       "bit": "kick",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 3-60 Kick",
       "type": "attack",
       "placements": [
@@ -3865,6 +4242,10 @@
       "blade": "phoenix-wing",
       "ratchet": "9-60",
       "bit": "rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Phoenix Wing 9-60 Rush",
       "type": "attack",
       "placements": [
@@ -3992,6 +4373,10 @@
       "blade": "aero-pegasus",
       "ratchet": "1-50",
       "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Aero Pegasus 1-50 Low Rush",
       "type": "attack",
       "placements": [
@@ -4030,6 +4415,10 @@
       "blade": "shark-scale",
       "ratchet": "7-60",
       "bit": "rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 7-60 Rush",
       "type": "attack",
       "placements": [
@@ -4079,6 +4468,10 @@
       "blade": "shark-scale",
       "ratchet": "1-70",
       "bit": "kick",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 1-70 Kick",
       "type": "attack",
       "placements": [
@@ -4154,6 +4547,10 @@
       "blade": "silver-wolf",
       "ratchet": "9-60",
       "bit": "low-orb",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Silver Wolf 9-60 Low Orb",
       "type": "stamina",
       "placements": [
@@ -4229,6 +4626,10 @@
       "blade": "shark-scale",
       "ratchet": "7-60",
       "bit": "unite",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 7-60 Unite",
       "type": "attack",
       "placements": [
@@ -4254,6 +4655,10 @@
       "blade": "phoenix-wing",
       "ratchet": "9-60",
       "bit": "low-orb",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Phoenix Wing 9-60 Low Orb",
       "type": "attack",
       "placements": [
@@ -4273,12 +4678,45 @@
       ],
       "usage": []
     },
+    "hells-flare-heavy-7-60-kick": {
+      "id": "hells-flare-heavy-7-60-kick",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "7-60",
+      "bit": "kick",
+      "lockChip": "hells",
+      "mainBlade": "flare",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Hells Flare H 7-60 Kick",
+      "type": "balance",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1776824866438",
+          "eventName": "Untouchables April 20th",
+          "date": "2026-04-20",
+          "placement": 6,
+          "topCutSize": 8,
+          "players": 41,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1776824866438"
+        }
+      ],
+      "usage": []
+    },
     "phoenix-wing-1-70-low-rush": {
       "id": "phoenix-wing-1-70-low-rush",
       "line": "bx",
       "blade": "phoenix-wing",
       "ratchet": "1-70",
       "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Phoenix Wing 1-70 Low Rush",
       "type": "attack",
       "placements": [
@@ -4330,6 +4768,10 @@
       "blade": "ghost-circle",
       "ratchet": "6-80",
       "bit": "wedge",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Ghost Circle 6-80 Wedge",
       "type": "stamina",
       "placements": [
@@ -4355,6 +4797,10 @@
       "blade": "impact-drake",
       "ratchet": "1-50",
       "bit": "kick",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Impact Drake 1-50 Kick",
       "type": "attack",
       "placements": [
@@ -4380,6 +4826,10 @@
       "blade": "aero-pegasus",
       "ratchet": "1-70",
       "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Aero Pegasus 1-70 Low Rush",
       "type": "attack",
       "placements": [
@@ -4483,6 +4933,10 @@
       "blade": "wizard-rod",
       "ratchet": "9-70",
       "bit": "rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Wizard Rod 9-70 Rush",
       "type": "stamina",
       "placements": [
@@ -4508,6 +4962,10 @@
       "blade": "shark-scale",
       "ratchet": "9-60",
       "bit": "hexa",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 9-60 Hexa",
       "type": "attack",
       "placements": [
@@ -4533,6 +4991,10 @@
       "blade": "hover-wyvern",
       "ratchet": "7-60",
       "bit": "level",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Hover Wyvern 7-60 Level",
       "type": "defense",
       "placements": [
@@ -4569,6 +5031,10 @@
       "blade": "shark-scale",
       "ratchet": "9-60",
       "bit": "free-ball",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 9-60 Free Ball",
       "type": "attack",
       "placements": [
@@ -4607,6 +5073,10 @@
       "blade": "wizard-rod",
       "ratchet": "9-60",
       "bit": "elevate",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Wizard Rod 9-60 Elevate",
       "type": "stamina",
       "placements": [
@@ -4632,6 +5102,10 @@
       "blade": "shark-scale",
       "ratchet": "1-60",
       "bit": "hexa",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 1-60 Hexa",
       "type": "attack",
       "placements": [
@@ -4657,6 +5131,10 @@
       "blade": "shark-scale",
       "ratchet": "1-70",
       "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 1-70 Low Rush",
       "type": "attack",
       "placements": [
@@ -5095,6 +5573,10 @@
       "blade": "shark-scale",
       "ratchet": "1-60",
       "bit": "free-ball",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 1-60 Free Ball",
       "type": "attack",
       "placements": [
@@ -5133,6 +5615,10 @@
       "blade": "dran-buster",
       "ratchet": "1-50",
       "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Dran Buster 1-50 Low Rush",
       "type": "attack",
       "placements": [
@@ -5158,6 +5644,10 @@
       "blade": "cobalt-dragoon",
       "ratchet": "9-60",
       "bit": "rubber-accel",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Cobalt Dragoon 9-60 Rubber Accel",
       "type": "attack",
       "placements": [
@@ -5183,6 +5673,10 @@
       "blade": "aero-pegasus",
       "ratchet": "1-50",
       "bit": "rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Aero Pegasus 1-50 Rush",
       "type": "attack",
       "placements": [
@@ -5234,6 +5728,10 @@
       "blade": "hover-wyvern",
       "ratchet": "1-60",
       "bit": "jolt",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Hover Wyvern 1-60 Jolt",
       "type": "defense",
       "placements": [
@@ -5272,6 +5770,10 @@
       "blade": "silver-wolf",
       "ratchet": "9-60",
       "bit": "free-ball",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Silver Wolf 9-60 Free Ball",
       "type": "stamina",
       "placements": [
@@ -5399,6 +5901,10 @@
       "blade": "shark-scale",
       "ratchet": "1-50",
       "bit": "kick",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 1-50 Kick",
       "type": "attack",
       "placements": [
@@ -5437,6 +5943,10 @@
       "blade": "shark-scale",
       "ratchet": "9-60",
       "bit": "rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 9-60 Rush",
       "type": "attack",
       "placements": [
@@ -5482,12 +5992,45 @@
       ],
       "usage": []
     },
+    "bahamut-blitz-heavy-7-60-low-rush": {
+      "id": "bahamut-blitz-heavy-7-60-low-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "7-60",
+      "bit": "low-rush",
+      "lockChip": "bahamut",
+      "mainBlade": "blitz",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Bahamut Blitz H 7-60 Low Rush",
+      "type": "balance",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1776824082695",
+          "eventName": "LGHS Ranked Season 2 #7",
+          "date": "2026-04-12",
+          "placement": 2,
+          "topCutSize": 16,
+          "players": 57,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1776824082695"
+        }
+      ],
+      "usage": []
+    },
     "shark-scale-3-60-free-ball": {
       "id": "shark-scale-3-60-free-ball",
       "line": "bx",
       "blade": "shark-scale",
       "ratchet": "3-60",
       "bit": "free-ball",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 3-60 Free Ball",
       "type": "attack",
       "placements": [
@@ -5526,6 +6069,10 @@
       "blade": "phoenix-wing",
       "ratchet": "5-60",
       "bit": "rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Phoenix Wing 5-60 Rush",
       "type": "attack",
       "placements": [
@@ -5551,6 +6098,10 @@
       "blade": "shark-scale",
       "ratchet": "7-60",
       "bit": "rubber-accel",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 7-60 Rubber Accel",
       "type": "attack",
       "placements": [
@@ -5602,6 +6153,10 @@
       "blade": "phoenix-wing",
       "ratchet": "3-60",
       "bit": "rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Phoenix Wing 3-60 Rush",
       "type": "attack",
       "placements": [
@@ -5677,6 +6232,10 @@
       "blade": "phoenix-wing",
       "ratchet": "1-50",
       "bit": "rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Phoenix Wing 1-50 Rush",
       "type": "attack",
       "placements": [
@@ -5715,6 +6274,10 @@
       "blade": "shark-scale",
       "ratchet": "1-60",
       "bit": "rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 1-60 Rush",
       "type": "attack",
       "placements": [
@@ -5751,6 +6314,10 @@
       "blade": "hover-wyvern",
       "ratchet": "3-60",
       "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Hover Wyvern 3-60 Low Rush",
       "type": "defense",
       "placements": [
@@ -5794,12 +6361,45 @@
         }
       ]
     },
+    "pegasus-blast-heavy-9-60-taper": {
+      "id": "pegasus-blast-heavy-9-60-taper",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "taper",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Pegasus Blast H 9-60 Taper",
+      "type": "balance",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1776824082695",
+          "eventName": "LGHS Ranked Season 2 #7",
+          "date": "2026-04-12",
+          "placement": 9,
+          "topCutSize": 16,
+          "players": 57,
+          "deckScore": "C",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1776824082695"
+        }
+      ],
+      "usage": []
+    },
     "silver-wolf-9-70-free-ball": {
       "id": "silver-wolf-9-70-free-ball",
       "line": "bx",
       "blade": "silver-wolf",
       "ratchet": "9-70",
       "bit": "free-ball",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Silver Wolf 9-70 Free Ball",
       "type": "stamina",
       "placements": [
@@ -5825,6 +6425,10 @@
       "blade": "cobalt-dragoon",
       "ratchet": "4-55",
       "bit": "elevate",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Cobalt Dragoon 4-55 Elevate",
       "type": "attack",
       "placements": [
@@ -5850,6 +6454,10 @@
       "blade": "wizard-rod",
       "ratchet": "9-60",
       "bit": "ball",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Wizard Rod 9-60 Ball",
       "type": "stamina",
       "placements": [
@@ -5899,6 +6507,10 @@
       "blade": "shark-scale",
       "ratchet": "3-60",
       "bit": "low-orb",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 3-60 Low Orb",
       "type": "attack",
       "placements": [
@@ -5918,12 +6530,74 @@
       ],
       "usage": []
     },
+    "pegasus-blast-wheel-6-60-hexa": {
+      "id": "pegasus-blast-wheel-6-60-hexa",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "6-60",
+      "bit": "hexa",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Pegasus Blast Wh 6-60 Hexa",
+      "type": "balance",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1776824082695",
+          "eventName": "LGHS Ranked Season 2 #7",
+          "date": "2026-04-12",
+          "placement": 12,
+          "topCutSize": 16,
+          "players": 57,
+          "deckScore": "C",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1776824082695"
+        }
+      ],
+      "usage": []
+    },
+    "ragna-rage-heavy-9-60-rush": {
+      "id": "ragna-rage-heavy-9-60-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "rush",
+      "lockChip": "ragna",
+      "mainBlade": "rage",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Ragna Rage H 9-60 Rush",
+      "type": "balance",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1776824082695",
+          "eventName": "LGHS Ranked Season 2 #7",
+          "date": "2026-04-12",
+          "placement": 14,
+          "topCutSize": 16,
+          "players": 57,
+          "deckScore": "C",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1776824082695"
+        }
+      ],
+      "usage": []
+    },
     "shark-scale-9-70-low-rush": {
       "id": "shark-scale-9-70-low-rush",
       "line": "bx",
       "blade": "shark-scale",
       "ratchet": "9-70",
       "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 9-70 Low Rush",
       "type": "attack",
       "placements": [
@@ -5975,6 +6649,10 @@
       "blade": "aero-pegasus",
       "ratchet": "3-60",
       "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Aero Pegasus 3-60 Low Rush",
       "type": "attack",
       "placements": [
@@ -6013,6 +6691,10 @@
       "blade": "aero-pegasus",
       "ratchet": "1-60",
       "bit": "rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Aero Pegasus 1-60 Rush",
       "type": "attack",
       "placements": [
@@ -6043,12 +6725,45 @@
         }
       ]
     },
+    "valkyrie-blitz-heavy-1-50-low-rush": {
+      "id": "valkyrie-blitz-heavy-1-50-low-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "1-50",
+      "bit": "low-rush",
+      "lockChip": "valkyrie",
+      "mainBlade": "blitz",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Valkyrie Blitz H 1-50 Low Rush",
+      "type": "balance",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1775883214638",
+          "eventName": "New Realm Games S1",
+          "date": "2026-04-09",
+          "placement": 2,
+          "topCutSize": 8,
+          "players": 17,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1775883214638"
+        }
+      ],
+      "usage": []
+    },
     "aero-pegasus-9-60-low-orb": {
       "id": "aero-pegasus-9-60-low-orb",
       "line": "bx",
       "blade": "aero-pegasus",
       "ratchet": "9-60",
       "bit": "low-orb",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Aero Pegasus 9-60 Low Orb",
       "type": "attack",
       "placements": [
@@ -6074,6 +6789,10 @@
       "blade": "shark-scale",
       "ratchet": "3-60",
       "bit": "level",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 3-60 Level",
       "type": "attack",
       "placements": [
@@ -6162,6 +6881,10 @@
       "blade": "aero-pegasus",
       "ratchet": "3-60",
       "bit": "level",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Aero Pegasus 3-60 Level",
       "type": "attack",
       "placements": [
@@ -6200,6 +6923,10 @@
       "blade": "shark-scale",
       "ratchet": "1-50",
       "bit": "rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 1-50 Rush",
       "type": "attack",
       "placements": [
@@ -6225,6 +6952,10 @@
       "blade": "shark-scale",
       "ratchet": "7-60",
       "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 7-60 Low Rush",
       "type": "attack",
       "placements": [
@@ -6313,6 +7044,10 @@
       "blade": "wizard-rod",
       "ratchet": "1-50",
       "bit": "hexa",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Wizard Rod 1-50 Hexa",
       "type": "stamina",
       "placements": [
@@ -6338,6 +7073,10 @@
       "blade": "dran-buster",
       "ratchet": "1-60",
       "bit": "low-flat",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Dran Buster 1-60 Low Flat",
       "type": "attack",
       "placements": [
@@ -6363,6 +7102,10 @@
       "blade": "knight-mail",
       "ratchet": "3-70",
       "bit": "level",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Knight Mail 3-70 Level",
       "type": "defense",
       "placements": [
@@ -6388,6 +7131,10 @@
       "blade": "cobalt-dragoon",
       "ratchet": "5-60",
       "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Cobalt Dragoon 5-60 Low Rush",
       "type": "attack",
       "placements": [
@@ -6407,12 +7154,74 @@
       ],
       "usage": []
     },
+    "emperor-blast-heavy-1-60-level": {
+      "id": "emperor-blast-heavy-1-60-level",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "1-60",
+      "bit": "level",
+      "lockChip": "emperor",
+      "mainBlade": "blast",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Emperor Blast H 1-60 Level",
+      "type": "balance",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1775882913966",
+          "eventName": "Korekuta Games (FIRST!) Locals",
+          "date": "2026-04-08",
+          "placement": 5,
+          "topCutSize": 8,
+          "players": 0,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1775882913966"
+        }
+      ],
+      "usage": []
+    },
+    "emperor-blast-heavy-9-60-level": {
+      "id": "emperor-blast-heavy-9-60-level",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "level",
+      "lockChip": "emperor",
+      "mainBlade": "blast",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Emperor Blast H 9-60 Level",
+      "type": "balance",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1775882913966",
+          "eventName": "Korekuta Games (FIRST!) Locals",
+          "date": "2026-04-08",
+          "placement": 8,
+          "topCutSize": 8,
+          "players": 0,
+          "deckScore": "C",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1775882913966"
+        }
+      ],
+      "usage": []
+    },
     "aero-pegasus-7-60-level": {
       "id": "aero-pegasus-7-60-level",
       "line": "bx",
       "blade": "aero-pegasus",
       "ratchet": "7-60",
       "bit": "level",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Aero Pegasus 7-60 Level",
       "type": "attack",
       "placements": [
@@ -6462,6 +7271,10 @@
       "blade": "red-hulk",
       "ratchet": "5-60",
       "bit": "rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Red Hulk 5-60 Rush",
       "type": "attack",
       "placements": [
@@ -6487,6 +7300,10 @@
       "blade": "hover-wyvern",
       "ratchet": "3-60",
       "bit": "rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Hover Wyvern 3-60 Rush",
       "type": "defense",
       "placements": [
@@ -6525,6 +7342,10 @@
       "blade": "dran-buster",
       "ratchet": "1-50",
       "bit": "low-flat",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Dran Buster 1-50 Low Flat",
       "type": "attack",
       "placements": [
@@ -6550,6 +7371,10 @@
       "blade": "shark-scale",
       "ratchet": "7-70",
       "bit": "rubber-accel",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 7-70 Rubber Accel",
       "type": "attack",
       "placements": [
@@ -6575,6 +7400,10 @@
       "blade": "cobalt-dragoon",
       "ratchet": "1-60",
       "bit": "elevate",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Cobalt Dragoon 1-60 Elevate",
       "type": "attack",
       "placements": [
@@ -6600,6 +7429,10 @@
       "blade": "knight-mail",
       "ratchet": "1-70",
       "bit": "hexa",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Knight Mail 1-70 Hexa",
       "type": "defense",
       "placements": [
@@ -6625,6 +7458,10 @@
       "blade": "meteor-dragoon",
       "ratchet": "1-50",
       "bit": "level",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Meteor Dragoon 1-50 Level",
       "type": "attack",
       "placements": [
@@ -6644,12 +7481,45 @@
       ],
       "usage": []
     },
+    "wizard-arc-heavy-9-60-rush": {
+      "id": "wizard-arc-heavy-9-60-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "rush",
+      "lockChip": "wizard",
+      "mainBlade": "arc",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Wizard Arc H 9-60 Rush",
+      "type": "balance",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1775004102800",
+          "eventName": "LGHS Ranked Season 2 #6",
+          "date": "2026-03-29",
+          "placement": 9,
+          "topCutSize": 16,
+          "players": 60,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1775004102800"
+        }
+      ],
+      "usage": []
+    },
     "hover-wyvern-1-60-low-rush": {
       "id": "hover-wyvern-1-60-low-rush",
       "line": "bx",
       "blade": "hover-wyvern",
       "ratchet": "1-60",
       "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Hover Wyvern 1-60 Low Rush",
       "type": "defense",
       "placements": [
@@ -6680,12 +7550,45 @@
         }
       ]
     },
+    "pegasus-blast-wheel-9-60-low-rush": {
+      "id": "pegasus-blast-wheel-9-60-low-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "low-rush",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Pegasus Blast Wh 9-60 Low Rush",
+      "type": "balance",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1775004102800",
+          "eventName": "LGHS Ranked Season 2 #6",
+          "date": "2026-03-29",
+          "placement": 11,
+          "topCutSize": 16,
+          "players": 60,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1775004102800"
+        }
+      ],
+      "usage": []
+    },
     "shark-scale-1-50-free-ball": {
       "id": "shark-scale-1-50-free-ball",
       "line": "bx",
       "blade": "shark-scale",
       "ratchet": "1-50",
       "bit": "free-ball",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 1-50 Free Ball",
       "type": "attack",
       "placements": [
@@ -6711,6 +7614,10 @@
       "blade": "hover-wyvern",
       "ratchet": "0-60",
       "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Hover Wyvern 0-60 Low Rush",
       "type": "defense",
       "placements": [
@@ -6736,6 +7643,10 @@
       "blade": "knight-mail",
       "ratchet": "3-60",
       "bit": "rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Knight Mail 3-60 Rush",
       "type": "defense",
       "placements": [
@@ -6761,6 +7672,10 @@
       "blade": "tyranno-beat",
       "ratchet": "9-60",
       "bit": "kick",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Tyranno Beat 9-60 Kick",
       "type": "attack",
       "placements": [
@@ -6799,6 +7714,10 @@
       "blade": "golem-rock",
       "ratchet": "4-50",
       "bit": "low-orb",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Golem Rock 4-50 Low Orb",
       "type": "defense",
       "placements": [
@@ -6824,6 +7743,10 @@
       "blade": "golem-rock",
       "ratchet": "3-60",
       "bit": "rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Golem Rock 3-60 Rush",
       "type": "defense",
       "placements": [
@@ -6849,6 +7772,10 @@
       "blade": "wizard-rod",
       "ratchet": "9-60",
       "bit": "free-ball",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Wizard Rod 9-60 Free Ball",
       "type": "stamina",
       "placements": [
@@ -6898,6 +7825,10 @@
       "blade": "silver-wolf",
       "ratchet": "1-60",
       "bit": "hexa",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Silver Wolf 1-60 Hexa",
       "type": "stamina",
       "placements": [
@@ -6930,12 +7861,45 @@
       ],
       "usage": []
     },
+    "emperor-blast-wheel-7-60-taper": {
+      "id": "emperor-blast-wheel-7-60-taper",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "7-60",
+      "bit": "taper",
+      "lockChip": "emperor",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Emperor Blast Wh 7-60 Taper",
+      "type": "balance",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1775004102800",
+          "eventName": "LGHS Ranked Season 2 #6",
+          "date": "2026-03-29",
+          "placement": 16,
+          "topCutSize": 16,
+          "players": 60,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1775004102800"
+        }
+      ],
+      "usage": []
+    },
     "shark-scale-9-60-low-orb": {
       "id": "shark-scale-9-60-low-orb",
       "line": "bx",
       "blade": "shark-scale",
       "ratchet": "9-60",
       "bit": "low-orb",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 9-60 Low Orb",
       "type": "attack",
       "placements": [
@@ -6987,6 +7951,10 @@
       "blade": "knight-mail",
       "ratchet": "1-60",
       "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Knight Mail 1-60 Low Rush",
       "type": "defense",
       "placements": [
@@ -7012,6 +7980,10 @@
       "blade": "aero-pegasus",
       "ratchet": "1-70",
       "bit": "kick",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Aero Pegasus 1-70 Kick",
       "type": "attack",
       "placements": [
@@ -7063,6 +8035,10 @@
       "blade": "phoenix-wing",
       "ratchet": "9-60",
       "bit": "taper",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Phoenix Wing 9-60 Taper",
       "type": "attack",
       "placements": [
@@ -7088,6 +8064,10 @@
       "blade": "scorpio-spear",
       "ratchet": "3-60",
       "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Scorpio Spear 3-60 Low Rush",
       "type": "stamina",
       "placements": [
@@ -7113,8 +8093,41 @@
       "blade": "wizard-rod",
       "ratchet": "1-60",
       "bit": "kick",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Wizard Rod 1-60 Kick",
       "type": "stamina",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1773712047404",
+          "eventName": "Banana Games Prize Bey (March 13th 2026)",
+          "date": "2026-03-13",
+          "placement": 1,
+          "topCutSize": 4,
+          "players": 94,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1773712047404"
+        }
+      ],
+      "usage": []
+    },
+    "valkyrie-blast-heavy-7-60-taper": {
+      "id": "valkyrie-blast-heavy-7-60-taper",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "7-60",
+      "bit": "taper",
+      "lockChip": "valkyrie",
+      "mainBlade": "blast",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Valkyrie Blast H 7-60 Taper",
+      "type": "balance",
       "placements": [
         {
           "source": "metabeys",
@@ -7138,6 +8151,10 @@
       "blade": "golem-rock",
       "ratchet": "9-60",
       "bit": "free-ball",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Golem Rock 9-60 Free Ball",
       "type": "defense",
       "placements": [
@@ -7162,6 +8179,10 @@
       "blade": "wizard-rod",
       "ratchet": "9-60",
       "bit": "hexa",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Wizard Rod 9-60 Hexa",
       "type": "stamina",
       "placements": [
@@ -7205,12 +8226,45 @@
         }
       ]
     },
+    "pegasus-blast-heavy-1-60-rush": {
+      "id": "pegasus-blast-heavy-1-60-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "1-60",
+      "bit": "rush",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Pegasus Blast H 1-60 Rush",
+      "type": "balance",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1773081328148",
+          "eventName": "LGHS Ranked Season 2 #5",
+          "date": "2026-03-08",
+          "placement": 2,
+          "topCutSize": 16,
+          "players": 60,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1773081328148"
+        }
+      ],
+      "usage": []
+    },
     "wizard-rod-6-60-hexa": {
       "id": "wizard-rod-6-60-hexa",
       "line": "bx",
       "blade": "wizard-rod",
       "ratchet": "6-60",
       "bit": "hexa",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Wizard Rod 6-60 Hexa",
       "type": "stamina",
       "placements": [
@@ -7236,6 +8290,10 @@
       "blade": "hover-wyvern",
       "ratchet": "1-60",
       "bit": "rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Hover Wyvern 1-60 Rush",
       "type": "defense",
       "placements": [
@@ -7272,6 +8330,10 @@
       "blade": "shark-scale",
       "ratchet": "1-70",
       "bit": "rubber-accel",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 1-70 Rubber Accel",
       "type": "attack",
       "placements": [
@@ -7297,6 +8359,10 @@
       "blade": "hover-wyvern",
       "ratchet": "1-60",
       "bit": "kick",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Hover Wyvern 1-60 Kick",
       "type": "defense",
       "placements": [
@@ -7333,6 +8399,10 @@
       "blade": "scorpio-spear",
       "ratchet": "9-60",
       "bit": "elevate",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Scorpio Spear 9-60 Elevate",
       "type": "stamina",
       "placements": [
@@ -7358,6 +8428,10 @@
       "blade": "clock-mirage",
       "ratchet": "7-55",
       "bit": "low-orb",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Clock Mirage 7-55 Low Orb",
       "type": "stamina",
       "placements": [
@@ -7377,12 +8451,74 @@
       ],
       "usage": []
     },
+    "wizard-arc-heavy-5-60-rush": {
+      "id": "wizard-arc-heavy-5-60-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "5-60",
+      "bit": "rush",
+      "lockChip": "wizard",
+      "mainBlade": "arc",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Wizard Arc H 5-60 Rush",
+      "type": "balance",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1773081328148",
+          "eventName": "LGHS Ranked Season 2 #5",
+          "date": "2026-03-08",
+          "placement": 8,
+          "topCutSize": 16,
+          "players": 60,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1773081328148"
+        }
+      ],
+      "usage": []
+    },
+    "emperor-blast-heavy-7-60-kick": {
+      "id": "emperor-blast-heavy-7-60-kick",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "7-60",
+      "bit": "kick",
+      "lockChip": "emperor",
+      "mainBlade": "blast",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Emperor Blast H 7-60 Kick",
+      "type": "balance",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1773081328148",
+          "eventName": "LGHS Ranked Season 2 #5",
+          "date": "2026-03-08",
+          "placement": 9,
+          "topCutSize": 16,
+          "players": 60,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1773081328148"
+        }
+      ],
+      "usage": []
+    },
     "meteor-dragoon-3-60-level": {
       "id": "meteor-dragoon-3-60-level",
       "line": "bx",
       "blade": "meteor-dragoon",
       "ratchet": "3-60",
       "bit": "level",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Meteor Dragoon 3-60 Level",
       "type": "attack",
       "placements": [
@@ -7402,12 +8538,45 @@
       ],
       "usage": []
     },
+    "valkyrie-blast-heavy-9-60-kick": {
+      "id": "valkyrie-blast-heavy-9-60-kick",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "kick",
+      "lockChip": "valkyrie",
+      "mainBlade": "blast",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Valkyrie Blast H 9-60 Kick",
+      "type": "balance",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1773081328148",
+          "eventName": "LGHS Ranked Season 2 #5",
+          "date": "2026-03-08",
+          "placement": 11,
+          "topCutSize": 16,
+          "players": 60,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1773081328148"
+        }
+      ],
+      "usage": []
+    },
     "orochi-cluster-1-60-low-rush": {
       "id": "orochi-cluster-1-60-low-rush",
       "line": "bx",
       "blade": "orochi-cluster",
       "ratchet": "1-60",
       "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Orochi Cluster 1-60 Low Rush",
       "type": "attack",
       "placements": [
@@ -7427,12 +8596,103 @@
       ],
       "usage": []
     },
+    "emperor-blast-heavy-9-60-taper": {
+      "id": "emperor-blast-heavy-9-60-taper",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "taper",
+      "lockChip": "emperor",
+      "mainBlade": "blast",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Emperor Blast H 9-60 Taper",
+      "type": "balance",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1773081328148",
+          "eventName": "LGHS Ranked Season 2 #5",
+          "date": "2026-03-08",
+          "placement": 12,
+          "topCutSize": 16,
+          "players": 60,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1773081328148"
+        }
+      ],
+      "usage": []
+    },
+    "pegasus-blast-heavy-6-60-kick": {
+      "id": "pegasus-blast-heavy-6-60-kick",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "6-60",
+      "bit": "kick",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Pegasus Blast H 6-60 Kick",
+      "type": "balance",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1773081328148",
+          "eventName": "LGHS Ranked Season 2 #5",
+          "date": "2026-03-08",
+          "placement": 14,
+          "topCutSize": 16,
+          "players": 60,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1773081328148"
+        }
+      ],
+      "usage": []
+    },
+    "emperor-flare-bumper-9-60-unite": {
+      "id": "emperor-flare-bumper-9-60-unite",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "unite",
+      "lockChip": "emperor",
+      "mainBlade": "flare",
+      "assistBlade": "bumper",
+      "overBlade": null,
+      "displayName": "Emperor Flare B 9-60 Unite",
+      "type": "balance",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1773081328148",
+          "eventName": "LGHS Ranked Season 2 #5",
+          "date": "2026-03-08",
+          "placement": 14,
+          "topCutSize": 16,
+          "players": 60,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1773081328148"
+        }
+      ],
+      "usage": []
+    },
     "golem-rock-9-60-wedge": {
       "id": "golem-rock-9-60-wedge",
       "line": "bx",
       "blade": "golem-rock",
       "ratchet": "9-60",
       "bit": "wedge",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Golem Rock 9-60 Wedge",
       "type": "defense",
       "placements": [
@@ -7458,6 +8718,10 @@
       "blade": "shark-scale",
       "ratchet": "9-60",
       "bit": "wedge",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 9-60 Wedge",
       "type": "attack",
       "placements": [
@@ -7483,6 +8747,10 @@
       "blade": "mummy-curse",
       "ratchet": "9-60",
       "bit": "wedge",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Mummy Curse 9-60 Wedge",
       "type": "defense",
       "placements": [
@@ -7508,6 +8776,10 @@
       "blade": "aero-pegasus",
       "ratchet": "5-60",
       "bit": "jolt",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Aero Pegasus 5-60 Jolt",
       "type": "attack",
       "placements": [
@@ -7527,12 +8799,45 @@
       ],
       "usage": []
     },
+    "emperor-blast-wheel-9-60-free-ball": {
+      "id": "emperor-blast-wheel-9-60-free-ball",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "free-ball",
+      "lockChip": "emperor",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Emperor Blast Wh 9-60 Free Ball",
+      "type": "balance",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1772755338697",
+          "eventName": "InBEYsion Anime North Qualifier",
+          "date": "2026-02-28",
+          "placement": 4,
+          "topCutSize": 4,
+          "players": 35,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1772755338697"
+        }
+      ],
+      "usage": []
+    },
     "hover-wyvern-9-60-rush": {
       "id": "hover-wyvern-9-60-rush",
       "line": "bx",
       "blade": "hover-wyvern",
       "ratchet": "9-60",
       "bit": "rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Hover Wyvern 9-60 Rush",
       "type": "defense",
       "placements": [
@@ -7569,8 +8874,41 @@
       "blade": "shark-scale",
       "ratchet": "7-70",
       "bit": "kick",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 7-70 Kick",
       "type": "attack",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1772755340067",
+          "eventName": "LGHS Ranked Season 2 #4",
+          "date": "2026-02-22",
+          "placement": 4,
+          "topCutSize": 16,
+          "players": 75,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1772755340067"
+        }
+      ],
+      "usage": []
+    },
+    "sol-eclipse-heavy-9-60-jolt": {
+      "id": "sol-eclipse-heavy-9-60-jolt",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "jolt",
+      "lockChip": "sol",
+      "mainBlade": "eclipse",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Sol Eclipse H 9-60 Jolt",
+      "type": "balance",
       "placements": [
         {
           "source": "metabeys",
@@ -7594,6 +8932,10 @@
       "blade": "phoenix-wing",
       "ratchet": "1-60",
       "bit": "rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Phoenix Wing 1-60 Rush",
       "type": "attack",
       "placements": [
@@ -7624,12 +8966,45 @@
         }
       ]
     },
+    "pegasus-blast-jaggy-9-60-low-rush": {
+      "id": "pegasus-blast-jaggy-9-60-low-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "low-rush",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "jaggy",
+      "overBlade": null,
+      "displayName": "Pegasus Blast J 9-60 Low Rush",
+      "type": "balance",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1772755340067",
+          "eventName": "LGHS Ranked Season 2 #4",
+          "date": "2026-02-22",
+          "placement": 8,
+          "topCutSize": 16,
+          "players": 75,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1772755340067"
+        }
+      ],
+      "usage": []
+    },
     "hover-wyvern-3-60-jolt": {
       "id": "hover-wyvern-3-60-jolt",
       "line": "bx",
       "blade": "hover-wyvern",
       "ratchet": "3-60",
       "bit": "jolt",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Hover Wyvern 3-60 Jolt",
       "type": "defense",
       "placements": [
@@ -7655,6 +9030,10 @@
       "blade": "clock-mirage",
       "ratchet": "7-55",
       "bit": "under-needle",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Clock Mirage 7-55 Under Needle",
       "type": "stamina",
       "placements": [
@@ -7680,6 +9059,10 @@
       "blade": "phoenix-wing",
       "ratchet": "7-60",
       "bit": "point",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Phoenix Wing 7-60 Point",
       "type": "attack",
       "placements": [
@@ -7705,6 +9088,10 @@
       "blade": "mummy-curse",
       "ratchet": "5-60",
       "bit": "ball",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Mummy Curse 5-60 Ball",
       "type": "defense",
       "placements": [
@@ -7730,6 +9117,10 @@
       "blade": "shark-scale",
       "ratchet": "7-70",
       "bit": "wedge",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 7-70 Wedge",
       "type": "attack",
       "placements": [
@@ -7755,6 +9146,10 @@
       "blade": "meteor-dragoon",
       "ratchet": "5-60",
       "bit": "level",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Meteor Dragoon 5-60 Level",
       "type": "attack",
       "placements": [
@@ -7780,6 +9175,10 @@
       "blade": "shark-scale",
       "ratchet": "9-60",
       "bit": "rubber-accel",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 9-60 Rubber Accel",
       "type": "attack",
       "placements": [
@@ -7799,12 +9198,45 @@
       ],
       "usage": []
     },
+    "pegasus-blast-heavy-3-60-taper": {
+      "id": "pegasus-blast-heavy-3-60-taper",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "3-60",
+      "bit": "taper",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Pegasus Blast H 3-60 Taper",
+      "type": "balance",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1772755340067",
+          "eventName": "LGHS Ranked Season 2 #4",
+          "date": "2026-02-22",
+          "placement": 13,
+          "topCutSize": 16,
+          "players": 75,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1772755340067"
+        }
+      ],
+      "usage": []
+    },
     "shark-scale-7-80-low-rush": {
       "id": "shark-scale-7-80-low-rush",
       "line": "bx",
       "blade": "shark-scale",
       "ratchet": "7-80",
       "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 7-80 Low Rush",
       "type": "attack",
       "placements": [
@@ -7830,6 +9262,10 @@
       "blade": "wizard-rod",
       "ratchet": "9-60",
       "bit": "wedge",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Wizard Rod 9-60 Wedge",
       "type": "stamina",
       "placements": [
@@ -7855,6 +9291,10 @@
       "blade": "samurai-saber",
       "ratchet": "1-60",
       "bit": "hexa",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Samurai Saber 1-60 Hexa",
       "type": "attack",
       "placements": [
@@ -7880,6 +9320,10 @@
       "blade": "scorpio-spear",
       "ratchet": "1-70",
       "bit": "level",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Scorpio Spear 1-70 Level",
       "type": "stamina",
       "placements": [
@@ -7905,6 +9349,10 @@
       "blade": "shark-scale",
       "ratchet": "4-50",
       "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 4-50 Low Rush",
       "type": "attack",
       "placements": [
@@ -7930,6 +9378,10 @@
       "blade": "golem-rock",
       "ratchet": "7-60",
       "bit": "kick",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Golem Rock 7-60 Kick",
       "type": "defense",
       "placements": [
@@ -7949,12 +9401,45 @@
       ],
       "usage": []
     },
+    "pegasus-blast-heavy-5-60-low-rush": {
+      "id": "pegasus-blast-heavy-5-60-low-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "5-60",
+      "bit": "low-rush",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Pegasus Blast H 5-60 Low Rush",
+      "type": "balance",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1771903465982",
+          "eventName": "Xtreme Dash To Burning Rage!",
+          "date": "2026-02-22",
+          "placement": 1,
+          "topCutSize": 3,
+          "players": 46,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1771903465982"
+        }
+      ],
+      "usage": []
+    },
     "wizard-rod-1-60-rush": {
       "id": "wizard-rod-1-60-rush",
       "line": "bx",
       "blade": "wizard-rod",
       "ratchet": "1-60",
       "bit": "rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Wizard Rod 1-60 Rush",
       "type": "stamina",
       "placements": [
@@ -7974,12 +9459,58 @@
       ],
       "usage": []
     },
+    "emperor-blast-heavy-9-60-low-rush": {
+      "id": "emperor-blast-heavy-9-60-low-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "low-rush",
+      "lockChip": "emperor",
+      "mainBlade": "blast",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Emperor Blast H 9-60 Low Rush",
+      "type": "balance",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1771903465982",
+          "eventName": "Xtreme Dash To Burning Rage!",
+          "date": "2026-02-22",
+          "placement": 3,
+          "topCutSize": 3,
+          "players": 46,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1771903465982"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1778096725141",
+          "eventName": "AN Qualifier - Untouch Vol 2 (May 2nd)",
+          "date": "2026-05-02",
+          "placement": 1,
+          "topCutSize": 8,
+          "players": 71,
+          "deckScore": "C",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1778096725141"
+        }
+      ],
+      "usage": []
+    },
     "aero-pegasus-1-70-rush": {
       "id": "aero-pegasus-1-70-rush",
       "line": "bx",
       "blade": "aero-pegasus",
       "ratchet": "1-70",
       "bit": "rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Aero Pegasus 1-70 Rush",
       "type": "attack",
       "placements": [
@@ -8018,6 +9549,10 @@
       "blade": "meteor-dragoon",
       "ratchet": "9-60",
       "bit": "elevate",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Meteor Dragoon 9-60 Elevate",
       "type": "attack",
       "placements": [
@@ -8043,6 +9578,10 @@
       "blade": "dran-strike",
       "ratchet": "1-50",
       "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Dran Strike 1-50 Low Rush",
       "type": "attack",
       "placements": [
@@ -8068,6 +9607,10 @@
       "blade": "dran-strike",
       "ratchet": "3-60",
       "bit": "level",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Dran Strike 3-60 Level",
       "type": "attack",
       "placements": [
@@ -8093,6 +9636,10 @@
       "blade": "aero-pegasus",
       "ratchet": "1-50",
       "bit": "kick",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Aero Pegasus 1-50 Kick",
       "type": "attack",
       "placements": [
@@ -8118,6 +9665,10 @@
       "blade": "shark-scale",
       "ratchet": "4-50",
       "bit": "taper",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 4-50 Taper",
       "type": "attack",
       "placements": [
@@ -8143,6 +9694,10 @@
       "blade": "cobalt-dragoon",
       "ratchet": "1-50",
       "bit": "elevate",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Cobalt Dragoon 1-50 Elevate",
       "type": "attack",
       "placements": [
@@ -8168,6 +9723,10 @@
       "blade": "silver-wolf",
       "ratchet": "9-60",
       "bit": "under-needle",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Silver Wolf 9-60 Under Needle",
       "type": "stamina",
       "placements": [
@@ -8193,6 +9752,10 @@
       "blade": "phoenix-wing",
       "ratchet": "3-60",
       "bit": "wedge",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Phoenix Wing 3-60 Wedge",
       "type": "attack",
       "placements": [
@@ -8218,6 +9781,10 @@
       "blade": "golem-rock",
       "ratchet": "7-60",
       "bit": "free-ball",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Golem Rock 7-60 Free Ball",
       "type": "defense",
       "placements": [
@@ -8243,6 +9810,10 @@
       "blade": "shark-scale",
       "ratchet": "7-80",
       "bit": "level",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 7-80 Level",
       "type": "attack",
       "placements": [
@@ -8268,6 +9839,10 @@
       "blade": "shark-scale",
       "ratchet": "1-70",
       "bit": "level",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 1-70 Level",
       "type": "attack",
       "placements": [
@@ -8306,6 +9881,10 @@
       "blade": "silver-wolf",
       "ratchet": "9-60",
       "bit": "hexa",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Silver Wolf 9-60 Hexa",
       "type": "stamina",
       "placements": [
@@ -8325,12 +9904,45 @@
       ],
       "usage": []
     },
+    "sol-blast-heavy-3-60-kick": {
+      "id": "sol-blast-heavy-3-60-kick",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "3-60",
+      "bit": "kick",
+      "lockChip": "sol",
+      "mainBlade": "blast",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Sol Blast H 3-60 Kick",
+      "type": "balance",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1779324447254",
+          "eventName": "Gotta Gacha Locals 5/15",
+          "date": "2026-05-15",
+          "placement": 3,
+          "topCutSize": 3,
+          "players": 22,
+          "deckScore": "C",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1779324447254"
+        }
+      ],
+      "usage": []
+    },
     "phoenix-wing-9-60-kick": {
       "id": "phoenix-wing-9-60-kick",
       "line": "bx",
       "blade": "phoenix-wing",
       "ratchet": "9-60",
       "bit": "kick",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Phoenix Wing 9-60 Kick",
       "type": "attack",
       "placements": [
@@ -8356,6 +9968,10 @@
       "blade": "hover-wyvern",
       "ratchet": "1-70",
       "bit": "kick",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Hover Wyvern 1-70 Kick",
       "type": "defense",
       "placements": [
@@ -8381,6 +9997,10 @@
       "blade": "mummy-curse",
       "ratchet": "4-50",
       "bit": "wedge",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Mummy Curse 4-50 Wedge",
       "type": "defense",
       "placements": [
@@ -8406,6 +10026,10 @@
       "blade": "wizard-rod",
       "ratchet": "1-60",
       "bit": "ball",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Wizard Rod 1-60 Ball",
       "type": "stamina",
       "placements": [
@@ -8431,6 +10055,10 @@
       "blade": "silver-wolf",
       "ratchet": "9-80",
       "bit": "free-ball",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Silver Wolf 9-80 Free Ball",
       "type": "stamina",
       "placements": [
@@ -8450,12 +10078,74 @@
       ],
       "usage": []
     },
+    "emperor-blast-wheel-9-60-hexa": {
+      "id": "emperor-blast-wheel-9-60-hexa",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "hexa",
+      "lockChip": "emperor",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Emperor Blast Wh 9-60 Hexa",
+      "type": "balance",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1778096725141",
+          "eventName": "AN Qualifier - Untouch Vol 2 (May 2nd)",
+          "date": "2026-05-02",
+          "placement": 6,
+          "topCutSize": 8,
+          "players": 71,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1778096725141"
+        }
+      ],
+      "usage": []
+    },
+    "bahamut-blitz-heavy-3-60-trans-kick": {
+      "id": "bahamut-blitz-heavy-3-60-trans-kick",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "3-60",
+      "bit": "trans-kick",
+      "lockChip": "bahamut",
+      "mainBlade": "blitz",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Bahamut Blitz H 3-60 Trans Kick",
+      "type": "balance",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1778096725141",
+          "eventName": "AN Qualifier - Untouch Vol 2 (May 2nd)",
+          "date": "2026-05-02",
+          "placement": 6,
+          "topCutSize": 8,
+          "players": 71,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1778096725141"
+        }
+      ],
+      "usage": []
+    },
     "aero-pegasus-7-60-kick": {
       "id": "aero-pegasus-7-60-kick",
       "line": "bx",
       "blade": "aero-pegasus",
       "ratchet": "7-60",
       "bit": "kick",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Aero Pegasus 7-60 Kick",
       "type": "attack",
       "placements": [
@@ -8494,6 +10184,10 @@
       "blade": "aero-pegasus",
       "ratchet": "1-70",
       "bit": "point",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Aero Pegasus 1-70 Point",
       "type": "attack",
       "placements": [
@@ -8519,6 +10213,10 @@
       "blade": "shark-scale",
       "ratchet": "3-70",
       "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 3-70 Low Rush",
       "type": "attack",
       "placements": [
@@ -8544,6 +10242,10 @@
       "blade": "phoenix-wing",
       "ratchet": "3-60",
       "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Phoenix Wing 3-60 Low Rush",
       "type": "attack",
       "placements": [],
@@ -8566,6 +10268,10 @@
       "blade": "shark-scale",
       "ratchet": "1-60",
       "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 1-60 Low Rush",
       "type": "attack",
       "placements": [],
@@ -8588,6 +10294,10 @@
       "blade": "phoenix-wing",
       "ratchet": "1-60",
       "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Phoenix Wing 1-60 Low Rush",
       "type": "attack",
       "placements": [],
@@ -8610,6 +10320,10 @@
       "blade": "wizard-rod",
       "ratchet": "3-60",
       "bit": "hexa",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Wizard Rod 3-60 Hexa",
       "type": "stamina",
       "placements": [],
@@ -8632,6 +10346,10 @@
       "blade": "hover-wyvern",
       "ratchet": "1-70",
       "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Hover Wyvern 1-70 Low Rush",
       "type": "defense",
       "placements": [],
@@ -8654,6 +10372,10 @@
       "blade": "tyranno-beat",
       "ratchet": "1-70",
       "bit": "rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Tyranno Beat 1-70 Rush",
       "type": "attack",
       "placements": [],
@@ -8676,6 +10398,10 @@
       "blade": "wizard-rod",
       "ratchet": "9-60",
       "bit": "low-orb",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Wizard Rod 9-60 Low Orb",
       "type": "stamina",
       "placements": [],
@@ -8698,6 +10424,10 @@
       "blade": "aero-pegasus",
       "ratchet": "1-60",
       "bit": "level",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Aero Pegasus 1-60 Level",
       "type": "attack",
       "placements": [],
@@ -8720,6 +10450,10 @@
       "blade": "shark-scale",
       "ratchet": "9-60",
       "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 9-60 Low Rush",
       "type": "attack",
       "placements": [],
@@ -8742,6 +10476,10 @@
       "blade": "shark-scale",
       "ratchet": "1-80",
       "bit": "kick",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Shark Scale 1-80 Kick",
       "type": "attack",
       "placements": [],
@@ -8764,6 +10502,10 @@
       "blade": "wizard-rod",
       "ratchet": "1-60",
       "bit": "level",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Wizard Rod 1-60 Level",
       "type": "stamina",
       "placements": [],
@@ -8786,6 +10528,10 @@
       "blade": "hover-wyvern",
       "ratchet": "7-60",
       "bit": "kick",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Hover Wyvern 7-60 Kick",
       "type": "defense",
       "placements": [],
@@ -8808,6 +10554,10 @@
       "blade": "scorpio-spear",
       "ratchet": "9-60",
       "bit": "kick",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Scorpio Spear 9-60 Kick",
       "type": "stamina",
       "placements": [],
@@ -8830,6 +10580,10 @@
       "blade": "phoenix-wing",
       "ratchet": "3-60",
       "bit": "point",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
       "displayName": "Phoenix Wing 3-60 Point",
       "type": "attack",
       "placements": [],
@@ -8850,7 +10604,7 @@
   "unresolved": [
     {
       "line": "Bahama Blitz / Heavy / 1-50 / Low Rush",
-      "reason": "segmenti=4 (CX o malformato)",
+      "reason": "CX non risolta (nome/sigla non nel registro o ambigua)",
       "ctx": "1778096216787 1°"
     },
     {
@@ -8859,34 +10613,9 @@
       "ctx": "1778096216787 4°"
     },
     {
-      "line": "Pegasus Blast / Heavy / 4-50 / Level",
-      "reason": "segmenti=4 (CX o malformato)",
-      "ctx": "1778096216787 5°"
-    },
-    {
-      "line": "Emperor Blast / Free / 9-60 / Yielding",
-      "reason": "segmenti=4 (CX o malformato)",
-      "ctx": "1778096216787 6°"
-    },
-    {
-      "line": "Hells Rage Flow / Heavy / 1-50 / Rush",
-      "reason": "segmenti=4 (CX o malformato)",
-      "ctx": "1777326654807 2°"
-    },
-    {
-      "line": "Pegasus Blast / Heavy / 9-60 / Low Rush",
-      "reason": "segmenti=4 (CX o malformato)",
-      "ctx": "1777326654807 3°"
-    },
-    {
       "line": "/ /",
       "reason": "segmento vuoto (incompleto)",
       "ctx": "1777326654807 4°"
-    },
-    {
-      "line": "Emperor Blast / Heavy / 9-60 / Kick",
-      "reason": "segmenti=4 (CX o malformato)",
-      "ctx": "1777326654807 7°"
     },
     {
       "line": "Aero Pegasus / 1-60 / Jaggy",
@@ -8894,54 +10623,9 @@
       "ctx": "1777161248681 2°"
     },
     {
-      "line": "Pegasus Blast / Heavy / 9-60 / Low Rush",
-      "reason": "segmenti=4 (CX o malformato)",
-      "ctx": "1777161248681 3°"
-    },
-    {
-      "line": "Pegasus Rage / Heavy / 1-50 / Kick",
-      "reason": "segmenti=4 (CX o malformato)",
-      "ctx": "1777161248681 3°"
-    },
-    {
-      "line": "Emperor Arc / Heavy / 9-60 / Kick",
-      "reason": "segmenti=4 (CX o malformato)",
-      "ctx": "1777161015828 3°"
-    },
-    {
-      "line": "Hells Flare / Heavy / 7-60 / Kick",
-      "reason": "segmenti=4 (CX o malformato)",
-      "ctx": "1776824866438 6°"
-    },
-    {
-      "line": "Bahamut Blitz / Heavy / 7-60 / Low Rush",
-      "reason": "segmenti=4 (CX o malformato)",
-      "ctx": "1776824082695 2°"
-    },
-    {
-      "line": "Pegasus Blast / Heavy / 9-60 / Taper",
-      "reason": "segmenti=4 (CX o malformato)",
-      "ctx": "1776824082695 9°"
-    },
-    {
-      "line": "Pegasus Blast / Wheel / 6-60 / Hexa",
-      "reason": "segmenti=4 (CX o malformato)",
-      "ctx": "1776824082695 12°"
-    },
-    {
-      "line": "Ragna Rage / Heavy / 9-60 / Rush",
-      "reason": "segmenti=4 (CX o malformato)",
-      "ctx": "1776824082695 14°"
-    },
-    {
       "line": "Blast / Heavy / 9-60 / Taper",
-      "reason": "segmenti=4 (CX o malformato)",
+      "reason": "CX non risolta (nome/sigla non nel registro o ambigua)",
       "ctx": "1776824082695 16°"
-    },
-    {
-      "line": "Valkyrie Blitz / Heavy / 1-50 / Low Rush",
-      "reason": "segmenti=4 (CX o malformato)",
-      "ctx": "1775883214638 2°"
     },
     {
       "line": "Wizard Rod / 8-60 / Hexa",
@@ -8964,36 +10648,6 @@
       "ctx": "1775882913966 1°"
     },
     {
-      "line": "Emperor Blast / Heavy / 1-60 / Level",
-      "reason": "segmenti=4 (CX o malformato)",
-      "ctx": "1775882913966 5°"
-    },
-    {
-      "line": "Emperor Blast / Heavy / 9-60 / Level",
-      "reason": "segmenti=4 (CX o malformato)",
-      "ctx": "1775882913966 8°"
-    },
-    {
-      "line": "Wizard Arc / Heavy / 9-60 / Rush",
-      "reason": "segmenti=4 (CX o malformato)",
-      "ctx": "1775004102800 9°"
-    },
-    {
-      "line": "Pegasus Blast / Wheel / 9-60 / Low Rush",
-      "reason": "segmenti=4 (CX o malformato)",
-      "ctx": "1775004102800 11°"
-    },
-    {
-      "line": "Emperor Blast / Wheel / 7-60 / Taper",
-      "reason": "segmenti=4 (CX o malformato)",
-      "ctx": "1775004102800 16°"
-    },
-    {
-      "line": "Valkyrie Blast / Heavy / 7-60 / Taper",
-      "reason": "segmenti=4 (CX o malformato)",
-      "ctx": "1773712047404 1°"
-    },
-    {
       "line": "Tricerapress / 7-60 / Jolt",
       "reason": "nome parte non risolto",
       "ctx": "1773712047404 3°"
@@ -9004,74 +10658,9 @@
       "ctx": "1773081328148 1°"
     },
     {
-      "line": "Pegasus Blast / Heavy / 1-60 / Rush",
-      "reason": "segmenti=4 (CX o malformato)",
-      "ctx": "1773081328148 2°"
-    },
-    {
-      "line": "Wizard Arc / Heavy / 5-60 / Rush",
-      "reason": "segmenti=4 (CX o malformato)",
-      "ctx": "1773081328148 8°"
-    },
-    {
-      "line": "Emperor Blast / Heavy / 7-60 / Kick",
-      "reason": "segmenti=4 (CX o malformato)",
-      "ctx": "1773081328148 9°"
-    },
-    {
-      "line": "Valkyrie Blast / Heavy / 9-60 / Kick",
-      "reason": "segmenti=4 (CX o malformato)",
-      "ctx": "1773081328148 11°"
-    },
-    {
-      "line": "Emperor Blast / Heavy / 9-60 / Taper",
-      "reason": "segmenti=4 (CX o malformato)",
-      "ctx": "1773081328148 12°"
-    },
-    {
-      "line": "Pegasus Blast / Heavy / 6-60 / Kick",
-      "reason": "segmenti=4 (CX o malformato)",
-      "ctx": "1773081328148 14°"
-    },
-    {
-      "line": "Emperor Flare / Bumper / 9-60 / Unite",
-      "reason": "segmenti=4 (CX o malformato)",
-      "ctx": "1773081328148 14°"
-    },
-    {
-      "line": "Emperor Blast / Wheel / 9-60 / Free Ball",
-      "reason": "segmenti=4 (CX o malformato)",
-      "ctx": "1772755338697 4°"
-    },
-    {
-      "line": "Sol Eclipse / Heavy / 9-60 / Jolt",
-      "reason": "segmenti=4 (CX o malformato)",
-      "ctx": "1772755340067 4°"
-    },
-    {
-      "line": "Pegasus Blast / Jaggy / 9-60 / Low Rush",
-      "reason": "segmenti=4 (CX o malformato)",
-      "ctx": "1772755340067 8°"
-    },
-    {
       "line": "Rock Golem / 9-60 / Wedge",
       "reason": "nome parte non risolto",
       "ctx": "1772755340067 10°"
-    },
-    {
-      "line": "Pegasus Blast / Heavy / 3-60 / Taper",
-      "reason": "segmenti=4 (CX o malformato)",
-      "ctx": "1772755340067 13°"
-    },
-    {
-      "line": "Pegasus Blast / Heavy / 5-60 / Low Rush",
-      "reason": "segmenti=4 (CX o malformato)",
-      "ctx": "1771903465982 1°"
-    },
-    {
-      "line": "Emperor Blast / Heavy / 9-60 / Low Rush",
-      "reason": "segmenti=4 (CX o malformato)",
-      "ctx": "1771903465982 3°"
     },
     {
       "line": "Tyranno Beat / 7-70 /",
@@ -9084,34 +10673,9 @@
       "ctx": "1781128489676 1°"
     },
     {
-      "line": "Sol Blast / Heavy / 3-60 / Kick",
-      "reason": "segmenti=4 (CX o malformato)",
-      "ctx": "1779324447254 3°"
-    },
-    {
       "line": "/ /",
       "reason": "segmento vuoto (incompleto)",
       "ctx": "1778768319670 4°"
-    },
-    {
-      "line": "Emperor Blast / Heavy / 9-60 / Low Rush",
-      "reason": "segmenti=4 (CX o malformato)",
-      "ctx": "1778096725141 1°"
-    },
-    {
-      "line": "Emperor Blast / Wheel / 9-60 / Hexa",
-      "reason": "segmenti=4 (CX o malformato)",
-      "ctx": "1778096725141 6°"
-    },
-    {
-      "line": "Bahamut Blitz / Heavy / 3-60 / Trans Kick",
-      "reason": "segmenti=4 (CX o malformato)",
-      "ctx": "1778096725141 6°"
-    },
-    {
-      "line": "Emperor Blast / Heavy / 9-60 / Kick",
-      "reason": "segmenti=4 (CX o malformato)",
-      "ctx": "1778096394500 2°"
     },
     {
       "line": "Bullet Gryphon / 7-60 / Rush",
@@ -9121,9 +10685,9 @@
   ],
   "stats": {
     "events": 27,
-    "combosResolved": 175,
-    "placements": 478,
+    "combosResolved": 210,
+    "placements": 516,
     "usageRows": 50,
-    "unresolved": 54
+    "unresolved": 16
   }
 }
