@@ -22,7 +22,7 @@
       "dedupCheck": "Nessuna fonte TH/SEA tra le attive (PoKSmon è ID). Non duplica nulla.",
       "proposedWeight": 0.7,
       "recommendation": "propose",
-      "status": "proposed",
+      "status": "accepted",
       "dateFound": "2026-06-17",
       "lastSeen": "2026-06-17"
     },
@@ -41,7 +41,7 @@
       "dedupCheck": "Le fonti JP attive sono blog (okuyama3093, bey_bee, kamen_a): nessun canale YouTube JP. Non duplica.",
       "proposedWeight": 0.7,
       "recommendation": "propose",
-      "status": "proposed",
+      "status": "accepted",
       "dateFound": "2026-06-17",
       "lastSeen": "2026-06-17"
     },
@@ -60,7 +60,7 @@
       "dedupCheck": "Gap JP (le altre JP sono blog). Affianca touka/talker_bey ma profilo diverso.",
       "proposedWeight": 0.7,
       "recommendation": "propose",
-      "status": "proposed",
+      "status": "accepted",
       "dateFound": "2026-06-17",
       "lastSeen": "2026-06-17"
     },
@@ -79,7 +79,7 @@
       "dedupCheck": "namaste 阿土 copre TW (zh); HK è scena separata. Non duplica.",
       "proposedWeight": 0.6,
       "recommendation": "propose",
-      "status": "proposed",
+      "status": "accepted",
       "dateFound": "2026-06-17",
       "lastSeen": "2026-06-17"
     },
@@ -98,7 +98,7 @@
       "dedupCheck": "Gap JP. Canale piccolo, complementare a touka/luca.",
       "proposedWeight": 0.5,
       "recommendation": "propose",
-      "status": "proposed",
+      "status": "accepted",
       "dateFound": "2026-06-17",
       "lastSeen": "2026-06-17"
     },
@@ -117,7 +117,7 @@
       "dedupCheck": "Gap JP. Taglio analisi/meta più che placement: verificare quanti risultati reali porta.",
       "proposedWeight": 0.6,
       "recommendation": "propose",
-      "status": "proposed",
+      "status": "accepted",
       "dateFound": "2026-06-17",
       "lastSeen": "2026-06-17"
     },
@@ -136,7 +136,7 @@
       "dedupCheck": "Affianca BeyMac/Beybreakr/Casual (en) con taglio meta dedicato. Verificare risultati vs teoria.",
       "proposedWeight": 0.6,
       "recommendation": "propose",
-      "status": "proposed",
+      "status": "accepted",
       "dateFound": "2026-06-17",
       "lastSeen": "2026-06-17"
     },
@@ -155,7 +155,7 @@
       "dedupCheck": "Nessuna fonte NZ/Oceania. Freschezza al limite (~3 mesi): monitorare.",
       "proposedWeight": 0.6,
       "recommendation": "propose",
-      "status": "proposed",
+      "status": "accepted",
       "dateFound": "2026-06-17",
       "lastSeen": "2026-06-17"
     },
@@ -174,7 +174,7 @@
       "dedupCheck": "Nessuna lega regionale US tra le fonti (solo creator). Granularità locale utile.",
       "proposedWeight": 0.5,
       "recommendation": "propose",
-      "status": "proposed",
+      "status": "accepted",
       "dateFound": "2026-06-17",
       "lastSeen": "2026-06-17"
     },
@@ -193,7 +193,7 @@
       "dedupCheck": "Nessuna lega UK tra le fonti. Piccola ma organizzatore diretto.",
       "proposedWeight": 0.5,
       "recommendation": "propose",
-      "status": "proposed",
+      "status": "accepted",
       "dateFound": "2026-06-17",
       "lastSeen": "2026-06-17"
     },

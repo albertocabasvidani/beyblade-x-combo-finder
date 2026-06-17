@@ -5,7 +5,7 @@
       "name": "MetaBeys",
       "type": "metabeys",
       "provides": "combos",
-      "weight": 1.0,
+      "weight": 1,
       "lang": "en",
       "urls": [
         "https://www.metabeys.com/events/completed",
@@ -32,7 +32,9 @@
       "provides": "combos",
       "weight": 0.6,
       "lang": "ja",
-      "urls": ["https://note.com/kamen_a"],
+      "urls": [
+        "https://note.com/kamen_a"
+      ],
       "searchQueries": [
         "note.com kamen_a WBO Tournament Prize Score Report",
         "note.com kamen_a 海外 メタ beyblade x"
@@ -46,7 +48,9 @@
       "provides": "combos",
       "weight": 0.6,
       "lang": "ko",
-      "urls": ["https://arca.live/b/beyblade"],
+      "urls": [
+        "https://arca.live/b/beyblade"
+      ],
       "notes": "Forum coreano pubblico (polso del meta KR). Fetch via Playwright (scripts/scrape-arca.ts, headless con fallback headed se Cloudflare). L'estrazione delle combo dai post in coreano la fa l'IA in /update-combos (match nomi parti multilingua), coerente col confine IA/codice."
     },
     {
@@ -56,7 +60,10 @@
       "provides": "parts-usage",
       "weight": 0.8,
       "lang": "en",
-      "urls": ["https://bbxweekly.com/4weeks", "https://bbxweekly.com/2weeks"],
+      "urls": [
+        "https://bbxweekly.com/4weeks",
+        "https://bbxweekly.com/2weeks"
+      ],
       "notes": "Ranking PER-PARTE (Lock Chip/Ratchet/Blade) aggiornato ogni venerdì. Cross-check INDIPENDENTE di freschezza/usage-parte: NON alimenta lo score CAS (è per-parte, non per-combo/evento → nessun doppio conteggio con MetaBeys/WBO). Fetch scripts/fetch-bbx-weekly.ts, parse scripts/parse-bbx-weekly.ts → data/bbx-weekly-evidence.json. BBX.gg NON aggiunto: championship/belt + eventi sovrapposti a WBO senza id-evento condiviso (rischio doppioni)."
     },
     {
@@ -66,7 +73,10 @@
       "provides": "combos",
       "weight": 0.8,
       "lang": "es",
-      "urls": ["https://sbbl.es/beyblade-stats", "https://sbbl.es/resumen-semanal"]
+      "urls": [
+        "https://sbbl.es/beyblade-stats",
+        "https://sbbl.es/resumen-semanal"
+      ]
     },
     {
       "id": "probladers",
@@ -75,7 +85,9 @@
       "provides": "combos",
       "weight": 0.7,
       "lang": "it",
-      "urls": ["https://www.probladers.it/ranking/"]
+      "urls": [
+        "https://www.probladers.it/ranking/"
+      ]
     },
     {
       "id": "polishbladers",
@@ -84,7 +96,9 @@
       "provides": "combos",
       "weight": 0.6,
       "lang": "pl",
-      "urls": ["https://polishbladers.pl/turnieje"]
+      "urls": [
+        "https://polishbladers.pl/turnieje"
+      ]
     },
     {
       "id": "okuyama3093",
@@ -93,7 +107,9 @@
       "provides": "combos",
       "weight": 0.7,
       "lang": "ja",
-      "urls": ["https://okuyama3093.com/beyblade-x-matome/"]
+      "urls": [
+        "https://okuyama3093.com/beyblade-x-matome/"
+      ]
     },
     {
       "id": "note-bey-bee",
@@ -102,7 +118,9 @@
       "provides": "combos",
       "weight": 0.6,
       "lang": "ja",
-      "urls": ["https://note.com/bey_bee"]
+      "urls": [
+        "https://note.com/bey_bee"
+      ]
     },
     {
       "id": "beyblade-wiki",
@@ -293,6 +311,96 @@
       "channelId": "UCevPRqPKWyySEkw8Aaz-6Qw"
     },
     {
+      "id": "youtube-blade-bey-x",
+      "name": "Blade Bey X",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.7,
+      "lang": "en",
+      "channelId": "UChoqQJdbVone_woF-57Pwtw"
+    },
+    {
+      "id": "youtube-touka-talker-bey",
+      "name": "トウカのベイブレードチャンネル",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.7,
+      "lang": "ja",
+      "channelId": "UCnm2Q3nNGfIHchRHZG2fOqA"
+    },
+    {
+      "id": "youtube-luca-channel",
+      "name": "ルカちゃんねる / LUCA CHANNEL",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.7,
+      "lang": "ja",
+      "channelId": "UC89bJSkRSqhExrQ7OCzwtwA"
+    },
+    {
+      "id": "youtube-bengor1106",
+      "name": "Ben哥1106",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.6,
+      "lang": "zh",
+      "channelId": "UCterNTbPVNB2HAcNTF0V6Bw"
+    },
+    {
+      "id": "youtube-dame-beyblade",
+      "name": "だめりーまん【BEYBLADEX】",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.5,
+      "lang": "ja",
+      "channelId": "UCqqoitYKhcuvvSlhHPs7kKQ"
+    },
+    {
+      "id": "youtube-yuki-youtubech",
+      "name": "ゆうき/Yuki",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.6,
+      "lang": "ja",
+      "channelId": "UCLt1tG6laEj0rG4DqM_qRWg"
+    },
+    {
+      "id": "youtube-antiwizardwizardclub",
+      "name": "Anti Wizard Wizard Club",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.6,
+      "lang": "en",
+      "channelId": "UCX7s5fBuyQn5x6BilqOTlDA"
+    },
+    {
+      "id": "youtube-beyblade-new-zealand",
+      "name": "Beyblade New Zealand",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.6,
+      "lang": "en",
+      "channelId": "UCGyFoim08NG0492nNBuhwdw"
+    },
+    {
+      "id": "youtube-maryland-beyblade-league",
+      "name": "Maryland Beyblade League",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.5,
+      "lang": "en",
+      "channelId": "UCsEUlGQUuNbqyAkG1ku_STg"
+    },
+    {
+      "id": "youtube-devon-beyblade",
+      "name": "Devon Beyblade Association",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.5,
+      "lang": "en",
+      "channelId": "UCgHl0jg3cQKvVFwzJxK5C-w"
+    },
+    {
       "id": "google-sheets-tier-list",
       "name": "Beyblade X Community Tier List (WBO)",
       "type": "spreadsheet",
@@ -311,8 +419,12 @@
       "provides": "parts-theory",
       "weight": 0.3,
       "lang": "en",
-      "tags": ["tier-list-theoretical"],
-      "urls": ["https://beybase.com/top-5-best-beyblade-x-combos/"],
+      "tags": [
+        "tier-list-theoretical"
+      ],
+      "urls": [
+        "https://beybase.com/top-5-best-beyblade-x-combos/"
+      ],
       "notes": "Tier list teorica, non dati torneo. Declassata: cross-reference nomi, esclusa dallo scoring meta."
     },
     {
@@ -322,20 +434,72 @@
       "provides": "parts-theory",
       "weight": 0.3,
       "lang": "en",
-      "tags": ["tier-list-theoretical"],
-      "urls": ["https://www.beybxdb.com/"],
+      "tags": [
+        "tier-list-theoretical"
+      ],
+      "urls": [
+        "https://www.beybxdb.com/"
+      ],
       "notes": "Test personali su parti, non dati torneo. Declassata."
     }
   ],
   "manualVerification": [
-    { "platform": "facebook", "handle": "wbbamy", "url": "https://www.facebook.com/wbbamy", "lang": "en", "region": "MY" },
-    { "platform": "facebook", "handle": "Beyblademy", "url": "https://www.facebook.com/Beyblademy", "lang": "en", "region": "MY" },
-    { "platform": "facebook", "handle": "beybladephilippines", "url": "https://www.facebook.com/groups/beybladephilippines", "lang": "en", "region": "PH" },
-    { "platform": "instagram", "handle": "sbbl_oficial", "url": "https://www.instagram.com/sbbl_oficial/", "lang": "es", "region": "ES" },
-    { "platform": "instagram", "handle": "probladersitalia", "url": "https://www.instagram.com/probladersitalia", "lang": "it", "region": "IT" },
-    { "platform": "instagram", "handle": "xleague_germany", "url": "https://www.instagram.com/xleague_germany/", "lang": "de", "region": "DE" },
-    { "platform": "discord", "handle": "blader-league-germany", "url": "https://bladerleague.de", "lang": "de", "region": "DE" },
-    { "platform": "instagram", "handle": "lbpofc", "url": "https://www.instagram.com/lbpofc/", "lang": "pt", "region": "BR" }
+    {
+      "platform": "facebook",
+      "handle": "wbbamy",
+      "url": "https://www.facebook.com/wbbamy",
+      "lang": "en",
+      "region": "MY"
+    },
+    {
+      "platform": "facebook",
+      "handle": "Beyblademy",
+      "url": "https://www.facebook.com/Beyblademy",
+      "lang": "en",
+      "region": "MY"
+    },
+    {
+      "platform": "facebook",
+      "handle": "beybladephilippines",
+      "url": "https://www.facebook.com/groups/beybladephilippines",
+      "lang": "en",
+      "region": "PH"
+    },
+    {
+      "platform": "instagram",
+      "handle": "sbbl_oficial",
+      "url": "https://www.instagram.com/sbbl_oficial/",
+      "lang": "es",
+      "region": "ES"
+    },
+    {
+      "platform": "instagram",
+      "handle": "probladersitalia",
+      "url": "https://www.instagram.com/probladersitalia",
+      "lang": "it",
+      "region": "IT"
+    },
+    {
+      "platform": "instagram",
+      "handle": "xleague_germany",
+      "url": "https://www.instagram.com/xleague_germany/",
+      "lang": "de",
+      "region": "DE"
+    },
+    {
+      "platform": "discord",
+      "handle": "blader-league-germany",
+      "url": "https://bladerleague.de",
+      "lang": "de",
+      "region": "DE"
+    },
+    {
+      "platform": "instagram",
+      "handle": "lbpofc",
+      "url": "https://www.instagram.com/lbpofc/",
+      "lang": "pt",
+      "region": "BR"
+    }
   ],
   "searchSettings": {
     "maxResultsPerSource": 10,
