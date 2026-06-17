@@ -46,6 +46,7 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
 - `data/bbx-weekly-cache.json` / `data/bbx-weekly-evidence.json` — BBX Weekly: raw + usage per-parte. **Cross-check, NON entra nel CAS**
 - `data/products.json` — catalogo prodotti TT+Hasbro (link Amazon); referenzia gli id parte
 - `data/sources.json` — fonti configurabili (con `lang`, `manualVerification`); editabile dall'utente
+- `data/source-candidates.json` — staging dei candidati-fonte scoperti da `/discover-sources` (`status` proposed/accepted/rejected + `knownNegatives`): dedup persistente tra run. NON è una fonte attiva — la promozione a `sources.json` è manuale
 - `data/youtube-cache.json`, `data/youtube-transcripts.json`, `data/reddit-cache.json`, `data/sheets-cache.json` — cache grezze fonti
 - `data/metabeys-cache.json` — cache eventi+leaderboard MetaBeys (Playwright headless)
 - `data/wbo-cache.json` — cache thread WBO (Playwright; Cloudflare può bloccare headless)
@@ -58,6 +59,7 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
 - `npm run build:parts` — rigenera `parts.json` da `parts-master.json` (guardrail: aborta se rompe i riferimenti di combos.json)
 - `npm run verify:wiki` — verifica completezza del master contro la fonte affidabile (category per-tipo del Fandom Wiki, X-pure; blade filtrati su `Category:Beyblade X` perché `Category:Blades` è mista X+Burst). Riporta mancanti/extra. Obiettivo: 0 mancanti.
 - `npm run collect:sources` — raccoglie le cache grezze (Reddit, arca.live, YouTube, Sheets, MetaBeys, WBO, BBX Weekly)
+- `npm run discover:youtube` — ricerca deterministica di NUOVI canali YouTube (search API multilingua, dedup vs `sources.json` + `source-candidates.json`) → `tmp/discover-youtube.json`; input di `/discover-sources`
 - `npm run scrape:arca` — scraper arca.live KR (`ARCA_HEADED=1` se Cloudflare; headless = no-op non distruttivo)
 - `npm run fetch:bbx-weekly` + `npm run parse:bbx-weekly` — BBX Weekly: cattura raw + estrae usage per-parte (ancorato al registro). Cross-check di freschezza/usage, **fuori dal CAS** (no doppioni)
 - `/scrape-parts-master` — import iniziale parti da Fandom (one-shot, subagent)
@@ -65,6 +67,7 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
 - `/update-parts` — aggiornamento giornaliero parti (diff revid)
 - `/update-combos` — aggiorna database combo dalle cache (master multilingua, X-filter, dedup id-set)
 - `/mine-reddit` — mina la cache Reddit **a blocchi** (idempotente via scan-history): legge tutta la cache, non la skimma. Per backfill e marcia normale
+- `/discover-sources` — cerca NUOVE fonti tornei (YouTube/siti/blog/forum/social), le valuta, esclude le note (dedup vs `sources.json` + `source-candidates.json`) e manda una proposta motivata via email. Staging in `data/source-candidates.json`; NON tocca `sources.json` (promozione manuale)
 - `npm run reddit:batch -- next|done` — batcher deterministico per `/mine-reddit` (serve/marca blocchi)
 - `npx tsx scripts/reddit-merge.ts` — merge deterministico dei combo estratti da `/mine-reddit` (`tmp/reddit-extracted.json`, prodotto dall'IA) in `combos.json`: deriva id/line/type/displayName da `parts.json`, X-filter su blade/mainBlade, dedup dell'evidence per chiave stabile (idempotente). Lo score lo ricalcola poi `score:combos`
 - `npm run parse:metabeys` — parser deterministico MetaBeys (eventi+leaderboard) → `metabeys-evidence.json` (placements+usage; ambigui in `unresolved`)
@@ -168,6 +171,12 @@ copre sia un backfill (~900 post → molti blocchi) sia i pochi post nuovi del g
 Durata `/mine-reddit`: **~39 min** per un backfill da 934 post (16 blocchi da 60; misurato 16/06/2026,
 ha portato i combo da 204 a 457). Nella marcia normale è 1 blocco → pochi minuti.
 
+Scoperta nuove fonti — task SEPARATO, **settimanale** (lunedì 09:00): `discover-sources.bat` esegue
+`/discover-sources` (ricerca YouTube/siti/forum/social, valutazione, dedup vs fonti note). Si ferma allo
+staging in `data/source-candidates.json` + **email** della proposta a `cinquequarti@gmail.com` (via gws);
+NON aggiunge nulla a `sources.json`. Gira a finestra nascosta via `run-discover-hidden.vbs` e fa
+commit/push autonomo del solo `source-candidates.json`. Per passare a giornaliero: `/sc daily`.
+
 Bat manuali: `collect-social.bat` (solo Reddit+WBO headed), `collect-combos.bat` (solo collect
 headless), `update-combos.bat` (collect+analyze), `dev-server.bat` (Astro).
 
@@ -176,6 +185,7 @@ necessario per i browser headed). Path con spazi quotati dentro `/tr`:
 
     schtasks /create /tn "Beyblade Daily Pipeline" /tr "\"c:\claude-code\Personale\beyblade combos\daily-pipeline.bat\"" /sc daily /st 08:00 /it /f
     schtasks /create /tn "Beyblade Transcripts" /tr "wscript.exe \"c:\claude-code\Personale\beyblade combos\run-transcripts-hidden.vbs\"" /sc minute /mo 5 /f
+    schtasks /create /tn "Beyblade Discover Sources" /tr "wscript.exe \"c:\claude-code\Personale\beyblade combos\run-discover-hidden.vbs\"" /sc weekly /d MON /st 09:00 /it /f
 
 Il task transcripts gira **a finestra nascosta**: l'azione lancia `wscript.exe run-transcripts-hidden.vbs`,
 che a sua volta avvia `fetch-transcripts.bat` con console nascosta (`WScript.Shell.Run ..., 0`). Necessario

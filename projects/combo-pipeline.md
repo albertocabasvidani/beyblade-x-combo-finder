@@ -1,7 +1,7 @@
 ---
 name: combo-pipeline
 status: active
-updated: 16/06/2026
+updated: 17/06/2026
 health: yellow
 next-step: "attivare lo scheduling Task Scheduler con consenso esplicito"
 blocked-by: null
@@ -38,6 +38,7 @@ tutto in sequenza giornaliera.
 ## Changelog
 
 <!-- Cose completate, dalla più recente. Formato: `- gg/mm/aaaa — testo` -->
+- 17/06/2026 — agente `/discover-sources`: scoperta automatica di nuove fonti tornei (YouTube via API, siti/blog/forum/social via WebSearch+WebFetch), valutazione + dedup vs fonti note, proposta motivata via email; staging in `source-candidates.json`, task settimanale nascosto. Attacca il gap d'audit "Discord/social/JP mai mappati"
 - 16/06/2026 — task "Beyblade Transcripts" a finestra nascosta (wrapper `run-transcripts-hidden.vbs` via `wscript.exe`): non apre più la console ogni 5 min, intervallo invariato
 - 16/06/2026 — backfill storico Reddit (`REDDIT_BACKFILL`) + robustezza scraper (skip post falliti, no crash)
 - 16/06/2026 — Competitive Authority Score (CAS) deterministico per le combo
