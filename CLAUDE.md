@@ -95,9 +95,13 @@ casi `unresolved`; non calcola mai lo score né ri-parsa ciò che il parser dete
 **WBO**: il thread-forum è eterogeneo (token incollati, marcatori di piazzamento misti, quote/ads da
 scartare), ma `parse:wbo` lo gestisce **interamente a codice deterministico**
 (`scripts/lib/wbo-parse.ts`): segmentazione del layout via regex + risoluzione parti/sigle/id, dedup,
-stats. I casi che la segmentazione non risolve (eventi-ladder, layout insoliti) restano in
-`unresolved` e li rifinisce l'IA in `/update-combos`, che gira **sull'abbonamento Claude Code** — mai
-via API a pagamento (regola: non pagare due volte ciò che l'abbonamento già copre).
+stats. La **data** evento: "Date: MM/DD/YYYY" → timestamp del post "Mon. GG, AAAA" (formato MyBB, es.
+"Jun. 09, 2026") → MM/DD/YYYY → fallback `fetchedAt`, ogni candidato **validato** (scarta non-date di
+calendario tipo `2026-06-31`). I casi che la segmentazione non risolve restano in `unresolved`: per lo
+più **combo CX** (4-5 parti, fuori dallo scope del parser BX) e righe con dato mancante alla fonte; li
+rifinisce l'IA in `/update-combos`, che gira **sull'abbonamento Claude Code** — mai via API a pagamento
+(regola: non pagare due volte ciò che l'abbonamento già copre). NON entrano nello scoring finché non
+risolti.
 
 ### Database parti (master multilingua → derivati)
 - Fonte: pagine prodotto Beyblade Fandom Wiki via **API MediaWiki** (`api.php?action=parse&...&prop=wikitext`;
@@ -149,8 +153,9 @@ per non doppiare gli eventi che MetaBeys e WBO indicizzano entrambi; preserva an
 narrative già raccolti, es. Reddit), applica `src/lib/scoring.ts` e scrive `scoreBreakdown` + tag
 gestiti (`meta` ≥8.5, `top-tier` ≥7.0, `tournament-proven`, `theory-only`, `rising` implementato:
 momentum recente>storico). Algoritmo, pesi e costanti in `docs/scoring-algorithm.md`.
-- **`useConfidence` ATTIVO**: shrinkage low-sample (≈117/148 combo a evento singolo) — `score:combos`
-  chiama `scoreCombo(ev, { ref, useConfidence: true })`.
+- **`useConfidence` ATTIVO**: shrinkage low-sample — col backfill 12 mesi (~2027 eventi, ~3285 combo)
+  la coda è dominata da combo a evento singolo, penalizzate dal confidence. `score:combos` chiama
+  `scoreCombo(ev, { ref, useConfidence: true })`.
 - **Stadio**: i placement WBO portano `stadium` (xtreme/infinity, da `Stadium:` del thread); MetaBeys no.
   Esposto come filtro/badge UI, NON pesato nello score. Lo storico `usage` alimenta il `usageTrend`.
 - Peso per **tipologia** di fonte (`TIER_WEIGHT`: structured 1.0 / narrative 0.6 / theory 0.3), non

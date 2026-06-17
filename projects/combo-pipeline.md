@@ -2,8 +2,8 @@
 name: combo-pipeline
 status: active
 updated: 17/06/2026
-health: yellow
-next-step: "attivare lo scheduling Task Scheduler con consenso esplicito"
+health: green
+next-step: "valutare un filtro UI per la coda di combo a evento singolo (3285 attive) + rifinire le CX unresolved via /update-combos"
 blocked-by: null
 current-plan: plans/pipeline-dati-beyblade-x-combo-da-tornei-db-parti--2026-06-15-1107.md
 main-doc: docs/scoring-algorithm.md
@@ -33,13 +33,14 @@ tutto in sequenza giornaliera.
 ## In progress
 
 <!-- Lavori in corso. Se collegati a un piano in plans/, linkalo. -->
-- 17/06/2026 — verifica headed WBO + backfill profondo one-off (Cloudflare): validare `?page=N` reale, `printthread` vs vista forum, classificare gli altri thread BBX (es. "National Tournament 2025"), confermare `parse:wbo` sul raw multi-pagina. Codice pronto, serve un run con captcha manuale (`WBO_HEADED=1 WBO_MAX_PAGES=30 npm run fetch:wbo`)
-- 16/06/2026 — attivazione scheduling Task Scheduler deferita: i 4 task fanno commit/push autonomi, da abilitare con consenso esplicito (Fase 6, vedi [piano ripresa](plans/ripresa-pipeline-beyblade-x-over-blade-bonifica-pa-2026-06-15-1731.md))
 
 ## Changelog
 
 <!-- Cose completate, dalla più recente. Formato: `- gg/mm/aaaa — testo` -->
-- 17/06/2026 — paginazione storica fonti torneo + cutoff 12 mesi condiviso + pruning: `scripts/lib/freshness.ts` (cutoff unico, applicato in fetch/parse/score), paginazione capped+resumable di MetaBeys (`?page=N`, cursore `metabeysBackfill`) e WBO (all'indietro, cursore `wboBackfill`, `printthread` opzionale), `prune:combos` (archivia in `combos-archive.json` le combo senza evidenza fresca, dry-run + guardrail). Eventi distinti da ~23 → in crescita (MetaBeys 79→175 combo in 3 pagine). Golden test `test:freshness`/`test:prune`
+- 17/06/2026 — backfill WBO 12 mesi eseguito (headed, Cloudflare): thread `tid=110113` paginato all'indietro fino al cutoff (pagina 48, 2025-05-24), 87 pagine in cache. `?page=N` reale confermato. **Dataset combo da ~23 a ~2027 eventi distinti, 3285 combo attive**; archivio riconciliato a 18. Top CAS coerente col meta reale (Wizard Rod 1-60 Hexa 9.6). `printthread`/altri thread BBX non promossi (vista forum sufficiente, approccio curato)
+- 17/06/2026 — fix WBO date + scoring NaN-safe + fetch più veloce: `parse:wbo` riconosce il timestamp dei post ("Mon. GG, AAAA") e valida la data (scarta non-date di calendario), prima ripiegava quasi sempre su `fetchedAt`; `scoring.ts` `daysBetween` NaN-safe (una data invalida non azzera più lo score); `fetch-wbo` senza attesa fissa di 3s/pagina (controllo Cloudflare immediato, attesa solo se sfidato)
+- 17/06/2026 — scheduling Task Scheduler ATTIVO e verificato: "Beyblade Daily Pipeline" (08:00 giornaliero) Ready, ultimo run 17/06 esito 0. `/update-combos` ora esegue anche `prune:combos --apply`
+- 17/06/2026 — paginazione storica fonti torneo + cutoff 12 mesi condiviso + pruning: `scripts/lib/freshness.ts` (cutoff unico, applicato in fetch/parse/score), paginazione capped+resumable di MetaBeys (`?page=N`, cursore `metabeysBackfill`) e WBO (all'indietro, cursore `wboBackfill`, `printthread` opzionale), `prune:combos` (archivia in `combos-archive.json` le combo senza evidenza fresca, dry-run + guardrail). Golden test `test:freshness`/`test:prune`
 - 17/06/2026 — agente `/discover-sources`: scoperta automatica di nuove fonti tornei (YouTube via API, siti/blog/forum/social via WebSearch+WebFetch), valutazione + dedup vs fonti note, proposta motivata via email; staging in `source-candidates.json`, task settimanale nascosto. Attacca il gap d'audit "Discord/social/JP mai mappati"
 - 16/06/2026 — task "Beyblade Transcripts" a finestra nascosta (wrapper `run-transcripts-hidden.vbs` via `wscript.exe`): non apre più la console ogni 5 min, intervallo invariato
 - 16/06/2026 — backfill storico Reddit (`REDDIT_BACKFILL`) + robustezza scraper (skip post falliti, no crash)

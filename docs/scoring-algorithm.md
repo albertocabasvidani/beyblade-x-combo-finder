@@ -233,6 +233,11 @@ dell'evidenza unita). Le combo che restano senza alcuna evidenza fresca le archi
 `combos-archive.json` (deterministico, dry-run + guardrail). Override per test/tuning:
 `COMBO_CUTOFF_MONTHS`.
 
+**Robustezza date**: `daysBetween` è NaN-safe — una data non valida è trattata come "oggi" (0 giorni),
+così un singolo dato sporco non azzera lo score dell'intera combo (regressione vista col backfill WBO,
+dove date fuori-range producevano `NaN`). I parser emettono solo date di calendario reali (validazione
+in `parse:wbo`/`parse:metabeys`).
+
 ## 9. Migrazione
 
 Le combo esistenti non hanno `evidence`. Le cache grezze sono conservate → al prossimo
