@@ -1,5 +1,5 @@
 {
-  "version": "2026-06-17",
+  "version": "2026-06-18",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -408,16 +408,50 @@
       "line": "bx",
       "type": "attack",
       "names": {
-        "tt": "Croc Bite",
+        "tt": "Croc Crunch",
         "hasbro": "Bite Croc",
-        "ja": "",
-        "romaji": ""
+        "ja": "クロコクランチ",
+        "romaji": "KurokoKuranchi"
       },
-      "aliases": [],
+      "aliases": [
+        {
+          "value": "クロコクランチ",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "KurokoKuranchi",
+          "lang": "ja",
+          "kind": "romaji"
+        },
+        {
+          "value": "Bite Croc",
+          "lang": "en",
+          "kind": "hasbro"
+        },
+        {
+          "value": "CrocCrunch",
+          "lang": "en",
+          "kind": "variant"
+        },
+        {
+          "value": "CrocoCrunch",
+          "lang": "en",
+          "kind": "variant"
+        }
+      ],
       "firstReleaseSet": "BX-00",
-      "products": [],
-      "source": null,
-      "status": "unverified"
+      "products": [
+        "BX-00",
+        "G3083"
+      ],
+      "source": {
+        "page": "CrocCrunch 2-60Q",
+        "url": "https://beyblade.fandom.com/wiki/CrocCrunch_2-60Q",
+        "revid": 633576
+      },
+      "status": "verified",
+      "lastVerified": "2026-06-18"
     },
     {
       "id": "cutter-shinobi",
@@ -1999,9 +2033,9 @@
       "source": {
         "page": "OrochiCluster 6-60LF",
         "url": "https://beyblade.fandom.com/wiki/OrochiCluster_6-60LF",
-        "revid": 639623
+        "revid": 641459
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-18",
       "status": "verified",
       "type": "attack"
     },
@@ -3893,10 +3927,10 @@
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 640212
+        "revid": 641462
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-18",
       "products": [
         "CX-11"
       ],
@@ -4341,10 +4375,10 @@
       "source": {
         "page": "SolEclipse D5-70TK",
         "url": "https://beyblade.fandom.com/wiki/SolEclipse_D5-70TK",
-        "revid": 640170
+        "revid": 641446
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-18",
       "products": [
         "CX-09",
         "UX-18"
@@ -4850,10 +4884,10 @@
       "source": {
         "page": "SolEclipse D5-70TK",
         "url": "https://beyblade.fandom.com/wiki/SolEclipse_D5-70TK",
-        "revid": 640170
+        "revid": 641446
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-18",
       "products": [
         "CX-09"
       ],
@@ -5103,10 +5137,10 @@
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 640212
+        "revid": 641462
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-18",
       "products": [
         "CX-11"
       ],
@@ -5399,10 +5433,10 @@
       "source": {
         "page": "SolEclipse D5-70TK",
         "url": "https://beyblade.fandom.com/wiki/SolEclipse_D5-70TK",
-        "revid": 640170
+        "revid": 641446
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-18",
       "products": [
         "CX-09"
       ],
@@ -5541,10 +5575,10 @@
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 640212
+        "revid": 641462
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-18",
       "products": [
         "CX-11"
       ],
@@ -8709,10 +8743,10 @@
       "source": {
         "page": "Bit - Needle",
         "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Needle&format=json&prop=wikitext",
-        "revid": 635191
+        "revid": 641431
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-18",
       "products": [
         "BX-04",
         "UX-12",
@@ -8741,9 +8775,9 @@
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 640212
+        "revid": 641462
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-18",
       "status": "verified",
       "shortName": "Op"
     },
@@ -8940,10 +8974,10 @@
       "source": {
         "page": "Bit - Rush",
         "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Rush&format=json&prop=wikitext",
-        "revid": 636222
+        "revid": 641427
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-18",
       "products": [
         "BX-20",
         "G1690",
@@ -9065,10 +9099,10 @@
       "source": {
         "page": "SolEclipse D5-70TK",
         "url": "https://beyblade.fandom.com/wiki/SolEclipse_D5-70TK",
-        "revid": 640170
+        "revid": 641446
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-18",
       "products": [
         "CX-09"
       ],

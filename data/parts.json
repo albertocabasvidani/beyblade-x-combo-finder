@@ -1,5 +1,5 @@
 {
-  "version": "2026-06-17",
+  "version": "2026-06-18",
   "blades": [
     {
       "id": "aero-pegasus",
@@ -120,8 +120,13 @@
     },
     {
       "id": "croc-bite",
-      "name": "Croc Bite",
+      "name": "Croc Crunch",
       "nameWestern": "Bite Croc",
+      "aliases": [
+        "KurokoKuranchi",
+        "CrocCrunch",
+        "CrocoCrunch"
+      ],
       "type": "attack",
       "line": "bx",
       "releaseSet": "BX-00"
