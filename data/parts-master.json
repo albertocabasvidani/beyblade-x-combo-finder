@@ -1,5 +1,5 @@
 {
-  "version": "2026-06-18",
+  "version": "2026-06-19",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -242,10 +242,10 @@
       "source": {
         "page": "Blade - Clamp Crab",
         "url": "https://beyblade.fandom.com/wiki/Blade_-_Clamp_Crab",
-        "revid": 641214
+        "revid": 641470
       },
-      "lastVerified": "2026-06-17",
-      "status": "unverified",
+      "lastVerified": "2026-06-19",
+      "status": "verified",
       "type": "stamina"
     },
     {
@@ -3794,9 +3794,9 @@
       "source": {
         "page": "BrachioWhip OW5-70Nr",
         "url": "https://beyblade.fandom.com/wiki/BrachioWhip_OW5-70Nr",
-        "revid": 640463
+        "revid": 641472
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-19",
       "status": "verified"
     },
     {
@@ -3927,10 +3927,10 @@
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 641462
+        "revid": 641506
       },
       "status": "verified",
-      "lastVerified": "2026-06-18",
+      "lastVerified": "2026-06-19",
       "products": [
         "CX-11"
       ],
@@ -5137,10 +5137,10 @@
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 641462
+        "revid": 641506
       },
       "status": "verified",
-      "lastVerified": "2026-06-18",
+      "lastVerified": "2026-06-19",
       "products": [
         "CX-11"
       ],
@@ -5267,9 +5267,9 @@
       "source": {
         "page": "BrachioWhip OW5-70Nr",
         "url": "https://beyblade.fandom.com/wiki/BrachioWhip_OW5-70Nr",
-        "revid": 640463
+        "revid": 641472
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-19",
       "status": "verified"
     },
     {
@@ -5575,10 +5575,10 @@
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 641462
+        "revid": 641506
       },
       "status": "verified",
-      "lastVerified": "2026-06-18",
+      "lastVerified": "2026-06-19",
       "products": [
         "CX-11"
       ],
@@ -6103,9 +6103,9 @@
       "source": {
         "page": "Over Blade - Outer",
         "url": "https://beyblade.fandom.com/wiki/Over_Blade_-_Outer",
-        "revid": 638072
+        "revid": 641475
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-19",
       "status": "verified"
     },
     {
@@ -8711,9 +8711,9 @@
       "source": {
         "page": "BrachioWhip OW5-70Nr",
         "url": "https://beyblade.fandom.com/wiki/BrachioWhip_OW5-70Nr",
-        "revid": 640463
+        "revid": 641472
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-19",
       "status": "verified",
       "type": "stamina",
       "shortName": "Nr"
@@ -8765,9 +8765,22 @@
       "line": "cx",
       "names": {
         "tt": "Operate",
-        "hasbro": null
+        "hasbro": null,
+        "ja": "オペレート",
+        "romaji": "Operēto"
       },
-      "aliases": [],
+      "aliases": [
+        {
+          "value": "オペレート",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "Operēto",
+          "lang": "ja",
+          "kind": "romaji"
+        }
+      ],
       "products": [
         "CX-11"
       ],
@@ -8775,9 +8788,9 @@
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 641462
+        "revid": 641506
       },
-      "lastVerified": "2026-06-18",
+      "lastVerified": "2026-06-19",
       "status": "verified",
       "shortName": "Op"
     },
@@ -8974,10 +8987,10 @@
       "source": {
         "page": "Bit - Rush",
         "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Rush&format=json&prop=wikitext",
-        "revid": 641427
+        "revid": 641503
       },
       "status": "verified",
-      "lastVerified": "2026-06-18",
+      "lastVerified": "2026-06-19",
       "products": [
         "BX-20",
         "G1690",

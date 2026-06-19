@@ -1,5 +1,5 @@
 {
-  "version": "2026-06-18",
+  "version": "2026-06-19",
   "blades": [
     {
       "id": "aero-pegasus",
@@ -1988,7 +1988,10 @@
     {
       "id": "operate",
       "name": "Operate",
-      "shortName": "Op"
+      "shortName": "Op",
+      "aliases": [
+        "Operēto"
+      ]
     },
     {
       "id": "orb",
