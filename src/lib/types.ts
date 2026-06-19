@@ -4,6 +4,16 @@ export type BladeType = 'attack' | 'defense' | 'stamina' | 'balance';
 export type BitType = 'attack' | 'defense' | 'stamina' | 'balance';
 export type ComboLine = 'bx' | 'ux' | 'cx';
 
+// Stat di gioco a 3 assi (Attack/Defense/Stamina, 0-100), prese dall'infobox della pagina Fandom
+// DEDICATA della parte (es. "Blade - DranSword", "Bit - Accel"), NON dalla pagina prodotto.
+// Opzionale: molte parti non le hanno (ratchet quasi sempre vuoti, parti nuove/S2) → resta
+// undefined e i consumatori degradano (niente radar). Vedi /scrape-parts-master.
+export interface PartStats {
+  atk: number;
+  def: number;
+  sta: number;
+}
+
 // Piatto/formato di gioco. Recuperabile dai placement WBO (Xtreme overseas vs Infinity, soprattutto
 // tornei ufficiali JP); MetaBeys non lo espone → resta undefined ("unknown"). Esposto come
 // filtro/badge in UI, NON usato nel calcolo dello score (vedi scoring.ts).
@@ -17,6 +27,7 @@ export interface Blade {
   type: BladeType;
   line: 'bx' | 'ux';
   releaseSet?: string;
+  stats?: PartStats;
 }
 
 export interface LockChip {
@@ -31,6 +42,7 @@ export interface MainBlade {
   name: string;
   nameWestern?: string;
   line: 'cx';
+  stats?: PartStats;
 }
 
 export interface AssistBlade {
@@ -53,6 +65,7 @@ export interface Ratchet {
   name: string;
   sides: number;
   height: number;
+  stats?: PartStats;
 }
 
 export interface Bit {
@@ -61,6 +74,7 @@ export interface Bit {
   type: BitType;
   shortName?: string;   // codice ufficiale stampato sui prodotti (es. "H" = Hexa, "FB" = Free Ball)
   aliases?: string[];
+  stats?: PartStats;
 }
 
 export interface PartsRegistry {

@@ -23,6 +23,7 @@ const productsPath = join(DATA, 'products.json');
 
 type Names = { tt: string; ttRaw?: string; hasbro?: string | null; ja?: string; romaji?: string };
 type Alias = { value: string; lang?: string; kind?: string };
+type Stats = { atk: number; def: number; sta: number };
 interface MasterPart {
   id: string;
   category?: string;
@@ -34,6 +35,7 @@ interface MasterPart {
   short?: string;
   firstReleaseSet?: string;
   integratedRatchet?: boolean;
+  stats?: Stats;
   source?: { page?: string; url?: string; revid?: number };
 }
 interface Master {
@@ -77,6 +79,9 @@ const withShort = (p: MasterPart) => {
   const s = p.shortName ?? p.short;
   return s ? { shortName: s } : {};
 };
+// Stat 3 assi dall'infobox Fandom (pagina dedicata della parte). Pass-through verbatim: se il
+// master non le ha (caso attuale per quasi tutte) il campo resta assente e parts.json non cambia.
+const withStats = (p: MasterPart) => (p.stats ? { stats: p.stats } : {});
 
 // Bey a ratchet integrato (no ratchet separato, es. Cutter Shinobi, Bullet Griffon): segnalato dalla
 // pagina wiki "Ratchet-Integrated Blade - ..." o da un flag esplicito nel master (per i casi la cui
@@ -95,6 +100,7 @@ function deriveParts(master: Master) {
     line: p.line ?? 'bx',
     ...(isIntegratedRatchet(p) ? { integratedRatchet: true } : {}),
     ...(p.firstReleaseSet ? { releaseSet: p.firstReleaseSet } : {}),
+    ...withStats(p),
   }));
 
   const lockChips = (master.lockChips ?? []).slice().sort(byId).map((p) => ({
@@ -110,6 +116,7 @@ function deriveParts(master: Master) {
     ...withWestern(p.names),
     ...(p.type ? { type: p.type } : {}),  // usato come type del combo CX (fallback 'balance' nel resolver)
     line: 'cx',
+    ...withStats(p),
   }));
 
   const assistBlades = (master.assistBlades ?? []).slice().sort(byId).map((p) => {
@@ -132,7 +139,7 @@ function deriveParts(master: Master) {
 
   const ratchets = (master.ratchets ?? []).slice().sort(byId).map((p) => {
     const [s, h] = p.id.split('-');
-    return { id: p.id, name: p.names.tt ?? p.id, sides: Number(s), height: Number(h) };
+    return { id: p.id, name: p.names.tt ?? p.id, sides: Number(s), height: Number(h), ...withStats(p) };
   });
 
   const bits = (master.bits ?? []).slice().sort(byId).map((p) => ({
@@ -141,6 +148,7 @@ function deriveParts(master: Master) {
     type: p.type,
     ...withShort(p),
     ...withAliases(p),
+    ...withStats(p),
   }));
 
   return { version: today(), blades, lockChips, mainBlades, assistBlades, overBlades, ratchets, bits };
