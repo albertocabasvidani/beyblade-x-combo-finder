@@ -9,7 +9,12 @@
       ],
       "type": "attack",
       "line": "bx",
-      "releaseSet": "UX-00"
+      "releaseSet": "UX-00",
+      "stats": {
+        "atk": 60,
+        "def": 25,
+        "sta": 30
+      }
     },
     {
       "id": "bear-scratch",
@@ -17,7 +22,12 @@
       "nameWestern": "Savage Bear",
       "type": "defense",
       "line": "bx",
-      "releaseSet": "BX-37"
+      "releaseSet": "BX-37",
+      "stats": {
+        "atk": 25,
+        "def": 45,
+        "sta": 30
+      }
     },
     {
       "id": "black-shell",
@@ -28,7 +38,12 @@
       ],
       "type": "defense",
       "line": "bx",
-      "releaseSet": "BX-35"
+      "releaseSet": "BX-35",
+      "stats": {
+        "atk": 10,
+        "def": 65,
+        "sta": 25
+      }
     },
     {
       "id": "bullet-griffon",
@@ -49,7 +64,12 @@
       "nameWestern": "Bumblebee",
       "type": "defense",
       "line": "bx",
-      "releaseSet": "G1692"
+      "releaseSet": "G1692",
+      "stats": {
+        "atk": 21,
+        "def": 55,
+        "sta": 24
+      }
     },
     {
       "id": "captain-america",
@@ -57,7 +77,12 @@
       "nameWestern": "Captain America",
       "type": "attack",
       "line": "bx",
-      "releaseSet": "G1690"
+      "releaseSet": "G1690",
+      "stats": {
+        "atk": 55,
+        "def": 28,
+        "sta": 17
+      }
     },
     {
       "id": "chewbacca",
@@ -65,7 +90,12 @@
       "nameWestern": "Chewbacca",
       "type": "stamina",
       "line": "bx",
-      "releaseSet": "G1695"
+      "releaseSet": "G1695",
+      "stats": {
+        "atk": 22,
+        "def": 23,
+        "sta": 55
+      }
     },
     {
       "id": "clamp-crab",
@@ -84,7 +114,12 @@
       ],
       "type": "stamina",
       "line": "bx",
-      "releaseSet": "UX-16"
+      "releaseSet": "UX-16",
+      "stats": {
+        "atk": 10,
+        "def": 10,
+        "sta": 80
+      }
     },
     {
       "id": "cobalt-dragoon",
@@ -95,7 +130,12 @@
       ],
       "type": "attack",
       "line": "bx",
-      "releaseSet": "BX-34"
+      "releaseSet": "BX-34",
+      "stats": {
+        "atk": 60,
+        "def": 15,
+        "sta": 25
+      }
     },
     {
       "id": "cobalt-drake",
@@ -105,7 +145,12 @@
       ],
       "type": "attack",
       "line": "bx",
-      "releaseSet": "BX-00"
+      "releaseSet": "BX-00",
+      "stats": {
+        "atk": 65,
+        "def": 30,
+        "sta": 20
+      }
     },
     {
       "id": "crimson-garuda",
@@ -116,7 +161,12 @@
       ],
       "type": "balance",
       "line": "bx",
-      "releaseSet": "BX-38"
+      "releaseSet": "BX-38",
+      "stats": {
+        "atk": 45,
+        "def": 25,
+        "sta": 30
+      }
     },
     {
       "id": "croc-bite",
@@ -129,7 +179,12 @@
       ],
       "type": "attack",
       "line": "bx",
-      "releaseSet": "BX-00"
+      "releaseSet": "BX-00",
+      "stats": {
+        "atk": 60,
+        "def": 22,
+        "sta": 18
+      }
     },
     {
       "id": "cutter-shinobi",
@@ -151,7 +206,12 @@
       ],
       "type": "defense",
       "line": "bx",
-      "releaseSet": "G0290"
+      "releaseSet": "G0290",
+      "stats": {
+        "atk": 28,
+        "def": 60,
+        "sta": 12
+      }
     },
     {
       "id": "draciel-shield",
@@ -162,14 +222,24 @@
       ],
       "type": "defense",
       "line": "bx",
-      "releaseSet": "BX-00"
+      "releaseSet": "BX-00",
+      "stats": {
+        "atk": 30,
+        "def": 50,
+        "sta": 20
+      }
     },
     {
       "id": "dragoon-storm",
       "name": "Dragoon Storm",
       "type": "attack",
       "line": "bx",
-      "releaseSet": "BX-00"
+      "releaseSet": "BX-00",
+      "stats": {
+        "atk": 55,
+        "def": 30,
+        "sta": 15
+      }
     },
     {
       "id": "dran-buster",
@@ -180,7 +250,12 @@
       ],
       "type": "attack",
       "line": "bx",
-      "releaseSet": "UX-01"
+      "releaseSet": "UX-01",
+      "stats": {
+        "atk": 70,
+        "def": 20,
+        "sta": 10
+      }
     },
     {
       "id": "dran-dagger",
@@ -191,7 +266,12 @@
       ],
       "type": "attack",
       "line": "bx",
-      "releaseSet": "BX-20"
+      "releaseSet": "BX-20",
+      "stats": {
+        "atk": 50,
+        "def": 25,
+        "sta": 25
+      }
     },
     {
       "id": "dran-strike",
@@ -202,7 +282,12 @@
       ],
       "type": "attack",
       "line": "bx",
-      "releaseSet": "BX-49"
+      "releaseSet": "BX-49",
+      "stats": {
+        "atk": 58,
+        "def": 25,
+        "sta": 17
+      }
     },
     {
       "id": "dran-sword",
@@ -213,7 +298,12 @@
       ],
       "type": "attack",
       "line": "bx",
-      "releaseSet": "BX-01"
+      "releaseSet": "BX-01",
+      "stats": {
+        "atk": 55,
+        "def": 25,
+        "sta": 20
+      }
     },
     {
       "id": "dranzer-spiral",
@@ -225,7 +315,12 @@
       ],
       "type": "balance",
       "line": "bx",
-      "releaseSet": "BX-00"
+      "releaseSet": "BX-00",
+      "stats": {
+        "atk": 35,
+        "def": 30,
+        "sta": 35
+      }
     },
     {
       "id": "driger-slash",
@@ -236,7 +331,12 @@
       ],
       "type": "balance",
       "line": "bx",
-      "releaseSet": "BX-00"
+      "releaseSet": "BX-00",
+      "stats": {
+        "atk": 40,
+        "def": 35,
+        "sta": 25
+      }
     },
     {
       "id": "general-grievous",
@@ -244,7 +344,12 @@
       "nameWestern": "General Grievous",
       "type": "defense",
       "line": "bx",
-      "releaseSet": "G1694"
+      "releaseSet": "G1694",
+      "stats": {
+        "atk": 22,
+        "def": 50,
+        "sta": 28
+      }
     },
     {
       "id": "ghost-circle",
@@ -255,7 +360,12 @@
       ],
       "type": "stamina",
       "line": "bx",
-      "releaseSet": "UX-12"
+      "releaseSet": "UX-12",
+      "stats": {
+        "atk": 5,
+        "def": 40,
+        "sta": 55
+      }
     },
     {
       "id": "glory-valkyrie",
@@ -278,7 +388,12 @@
       ],
       "type": "defense",
       "line": "bx",
-      "releaseSet": "BX-46"
+      "releaseSet": "BX-46",
+      "stats": {
+        "atk": 13,
+        "def": 65,
+        "sta": 22
+      }
     },
     {
       "id": "golem-rock",
@@ -289,7 +404,12 @@
       ],
       "type": "defense",
       "line": "bx",
-      "releaseSet": "UX-13"
+      "releaseSet": "UX-13",
+      "stats": {
+        "atk": 30,
+        "def": 60,
+        "sta": 10
+      }
     },
     {
       "id": "green-goblin",
@@ -297,7 +417,12 @@
       "nameWestern": "Green Goblin",
       "type": "stamina",
       "line": "bx",
-      "releaseSet": "G1691"
+      "releaseSet": "G1691",
+      "stats": {
+        "atk": 17,
+        "def": 28,
+        "sta": 55
+      }
     },
     {
       "id": "grogu",
@@ -305,7 +430,12 @@
       "nameWestern": "Grogu",
       "type": "balance",
       "line": "bx",
-      "releaseSet": "G3061"
+      "releaseSet": "G3061",
+      "stats": {
+        "atk": 21,
+        "def": 50,
+        "sta": 29
+      }
     },
     {
       "id": "gust-bat",
@@ -316,7 +446,12 @@
       ],
       "type": "balance",
       "line": "bx",
-      "releaseSet": "G2733"
+      "releaseSet": "G2733",
+      "stats": {
+        "atk": 42,
+        "def": 38,
+        "sta": 20
+      }
     },
     {
       "id": "heavens-ring",
@@ -327,7 +462,12 @@
       ],
       "type": "defense",
       "line": "bx",
-      "releaseSet": "BX-50"
+      "releaseSet": "BX-50",
+      "stats": {
+        "atk": 10,
+        "def": 60,
+        "sta": 30
+      }
     },
     {
       "id": "hells-chain",
@@ -338,7 +478,12 @@
       ],
       "type": "balance",
       "line": "bx",
-      "releaseSet": "BX-21"
+      "releaseSet": "BX-21",
+      "stats": {
+        "atk": 35,
+        "def": 40,
+        "sta": 25
+      }
     },
     {
       "id": "hells-hammer",
@@ -349,7 +494,12 @@
       ],
       "type": "balance",
       "line": "bx",
-      "releaseSet": "UX-02"
+      "releaseSet": "UX-02",
+      "stats": {
+        "atk": 50,
+        "def": 25,
+        "sta": 25
+      }
     },
     {
       "id": "hells-scythe",
@@ -360,7 +510,12 @@
       ],
       "type": "balance",
       "line": "bx",
-      "releaseSet": "BX-02"
+      "releaseSet": "BX-02",
+      "stats": {
+        "atk": 30,
+        "def": 35,
+        "sta": 35
+      }
     },
     {
       "id": "hover-wyvern",
@@ -370,7 +525,12 @@
       ],
       "type": "defense",
       "line": "bx",
-      "releaseSet": "UX-00"
+      "releaseSet": "UX-00",
+      "stats": {
+        "atk": 13,
+        "def": 60,
+        "sta": 27
+      }
     },
     {
       "id": "impact-drake",
@@ -381,7 +541,12 @@
       ],
       "type": "attack",
       "line": "bx",
-      "releaseSet": "UX-11"
+      "releaseSet": "UX-11",
+      "stats": {
+        "atk": 75,
+        "def": 25,
+        "sta": 10
+      }
     },
     {
       "id": "iron-man",
@@ -391,7 +556,12 @@
       ],
       "type": "defense",
       "line": "bx",
-      "releaseSet": "G0287"
+      "releaseSet": "G0287",
+      "stats": {
+        "atk": 17,
+        "def": 55,
+        "sta": 28
+      }
     },
     {
       "id": "knight-lance",
@@ -402,7 +572,12 @@
       ],
       "type": "defense",
       "line": "bx",
-      "releaseSet": "BX-13"
+      "releaseSet": "BX-13",
+      "stats": {
+        "atk": 25,
+        "def": 60,
+        "sta": 15
+      }
     },
     {
       "id": "knight-mail",
@@ -413,7 +588,12 @@
       ],
       "type": "defense",
       "line": "bx",
-      "releaseSet": "UX-10"
+      "releaseSet": "UX-10",
+      "stats": {
+        "atk": 10,
+        "def": 65,
+        "sta": 35
+      }
     },
     {
       "id": "knight-shield",
@@ -424,7 +604,12 @@
       ],
       "type": "defense",
       "line": "bx",
-      "releaseSet": "BX-04"
+      "releaseSet": "BX-04",
+      "stats": {
+        "atk": 20,
+        "def": 55,
+        "sta": 25
+      }
     },
     {
       "id": "kong-yell",
@@ -432,7 +617,12 @@
       "nameWestern": "Yell Kong",
       "type": "stamina",
       "line": "bx",
-      "releaseSet": "BX-17"
+      "releaseSet": "BX-17",
+      "stats": {
+        "atk": 13,
+        "def": 37,
+        "sta": 50
+      }
     },
     {
       "id": "leon-claw",
@@ -443,7 +633,12 @@
       ],
       "type": "balance",
       "line": "bx",
-      "releaseSet": "BX-15"
+      "releaseSet": "BX-15",
+      "stats": {
+        "atk": 40,
+        "def": 40,
+        "sta": 20
+      }
     },
     {
       "id": "leon-crest",
@@ -454,7 +649,12 @@
       ],
       "type": "defense",
       "line": "bx",
-      "releaseSet": "UX-06"
+      "releaseSet": "UX-06",
+      "stats": {
+        "atk": 15,
+        "def": 70,
+        "sta": 15
+      }
     },
     {
       "id": "lightning-l-drago-rapid-hit-type",
@@ -464,7 +664,12 @@
       ],
       "type": "attack",
       "line": "bx",
-      "releaseSet": "BX-00"
+      "releaseSet": "BX-00",
+      "stats": {
+        "atk": 50,
+        "def": 30,
+        "sta": 20
+      }
     },
     {
       "id": "lightning-l-drago-upper-type",
@@ -474,7 +679,12 @@
       ],
       "type": "attack",
       "line": "bx",
-      "releaseSet": "BX-00"
+      "releaseSet": "BX-00",
+      "stats": {
+        "atk": 55,
+        "def": 25,
+        "sta": 20
+      }
     },
     {
       "id": "luke-skywalker",
@@ -484,7 +694,12 @@
       ],
       "type": "defense",
       "line": "bx",
-      "releaseSet": "G0290"
+      "releaseSet": "G0290",
+      "stats": {
+        "atk": 23,
+        "def": 55,
+        "sta": 22
+      }
     },
     {
       "id": "mammoth-tusk",
@@ -495,7 +710,12 @@
       ],
       "type": "balance",
       "line": "bx",
-      "releaseSet": "BX-17"
+      "releaseSet": "BX-17",
+      "stats": {
+        "atk": 33,
+        "def": 35,
+        "sta": 32
+      }
     },
     {
       "id": "megatron",
@@ -505,7 +725,12 @@
       ],
       "type": "balance",
       "line": "bx",
-      "releaseSet": "G0353"
+      "releaseSet": "G0353",
+      "stats": {
+        "atk": 27,
+        "def": 35,
+        "sta": 38
+      }
     },
     {
       "id": "meteor-dragoon",
@@ -516,7 +741,12 @@
       ],
       "type": "attack",
       "line": "bx",
-      "releaseSet": "BX-00"
+      "releaseSet": "BX-00",
+      "stats": {
+        "atk": 75,
+        "def": 15,
+        "sta": 35
+      }
     },
     {
       "id": "miles-morales",
@@ -524,7 +754,12 @@
       "nameWestern": "Miles Morales",
       "type": "stamina",
       "line": "bx",
-      "releaseSet": "G1691"
+      "releaseSet": "G1691",
+      "stats": {
+        "atk": 12,
+        "def": 33,
+        "sta": 55
+      }
     },
     {
       "id": "moff-gideon",
@@ -534,7 +769,12 @@
       ],
       "type": "balance",
       "line": "bx",
-      "releaseSet": "F9589"
+      "releaseSet": "F9589",
+      "stats": {
+        "atk": 32,
+        "def": 35,
+        "sta": 33
+      }
     },
     {
       "id": "mummy-curse",
@@ -545,7 +785,12 @@
       ],
       "type": "defense",
       "line": "bx",
-      "releaseSet": "BX-00"
+      "releaseSet": "BX-00",
+      "stats": {
+        "atk": 30,
+        "def": 60,
+        "sta": 20
+      }
     },
     {
       "id": "obi-wan-kenobi",
@@ -553,7 +798,12 @@
       "nameWestern": "Obi-Wan Kenobi",
       "type": "defense",
       "line": "bx",
-      "releaseSet": "G1694"
+      "releaseSet": "G1694",
+      "stats": {
+        "atk": 23,
+        "def": 60,
+        "sta": 17
+      }
     },
     {
       "id": "optimus-primal",
@@ -563,7 +813,12 @@
       ],
       "type": "attack",
       "line": "bx",
-      "releaseSet": "G0352"
+      "releaseSet": "G0352",
+      "stats": {
+        "atk": 60,
+        "def": 27,
+        "sta": 13
+      }
     },
     {
       "id": "optimus-prime",
@@ -573,7 +828,12 @@
       ],
       "type": "balance",
       "line": "bx",
-      "releaseSet": "G0353"
+      "releaseSet": "G0353",
+      "stats": {
+        "atk": 22,
+        "def": 55,
+        "sta": 23
+      }
     },
     {
       "id": "orochi-cluster",
@@ -595,7 +855,12 @@
       ],
       "type": "attack",
       "line": "bx",
-      "releaseSet": "BX-00"
+      "releaseSet": "BX-00",
+      "stats": {
+        "atk": 50,
+        "def": 20,
+        "sta": 30
+      }
     },
     {
       "id": "phoenix-rudder",
@@ -606,7 +871,12 @@
       ],
       "type": "balance",
       "line": "bx",
-      "releaseSet": "UX-07"
+      "releaseSet": "UX-07",
+      "stats": {
+        "atk": 10,
+        "def": 35,
+        "sta": 55
+      }
     },
     {
       "id": "phoenix-wing",
@@ -617,7 +887,12 @@
       ],
       "type": "attack",
       "line": "bx",
-      "releaseSet": "BX-23"
+      "releaseSet": "BX-23",
+      "stats": {
+        "atk": 60,
+        "def": 25,
+        "sta": 15
+      }
     },
     {
       "id": "ptera-swing",
@@ -628,7 +903,12 @@
       ],
       "type": "stamina",
       "line": "bx",
-      "releaseSet": "BX-00"
+      "releaseSet": "BX-00",
+      "stats": {
+        "atk": 27,
+        "def": 23,
+        "sta": 50
+      }
     },
     {
       "id": "rampart-aegis",
@@ -648,7 +928,12 @@
       "nameWestern": "Red Hulk",
       "type": "attack",
       "line": "bx",
-      "releaseSet": "G1690"
+      "releaseSet": "G1690",
+      "stats": {
+        "atk": 65,
+        "def": 27,
+        "sta": 8
+      }
     },
     {
       "id": "rhino-horn",
@@ -659,7 +944,12 @@
       ],
       "type": "defense",
       "line": "bx",
-      "releaseSet": "BX-19"
+      "releaseSet": "BX-19",
+      "stats": {
+        "atk": 20,
+        "def": 50,
+        "sta": 30
+      }
     },
     {
       "id": "rock-leone",
@@ -669,7 +959,12 @@
       ],
       "type": "defense",
       "line": "bx",
-      "releaseSet": "BX-00"
+      "releaseSet": "BX-00",
+      "stats": {
+        "atk": 30,
+        "def": 55,
+        "sta": 15
+      }
     },
     {
       "id": "samurai-calibur",
@@ -680,7 +975,12 @@
       ],
       "type": "attack",
       "line": "bx",
-      "releaseSet": "BX-45"
+      "releaseSet": "BX-45",
+      "stats": {
+        "atk": 40,
+        "def": 30,
+        "sta": 30
+      }
     },
     {
       "id": "samurai-saber",
@@ -691,7 +991,12 @@
       ],
       "type": "attack",
       "line": "bx",
-      "releaseSet": "UX-09"
+      "releaseSet": "UX-09",
+      "stats": {
+        "atk": 65,
+        "def": 20,
+        "sta": 25
+      }
     },
     {
       "id": "samurai-steel",
@@ -702,7 +1007,12 @@
       ],
       "type": "balance",
       "line": "bx",
-      "releaseSet": "BX-00"
+      "releaseSet": "BX-00",
+      "stats": {
+        "atk": 40,
+        "def": 37,
+        "sta": 23
+      }
     },
     {
       "id": "scorpio-spear",
@@ -713,7 +1023,12 @@
       ],
       "type": "stamina",
       "line": "bx",
-      "releaseSet": "BX-00"
+      "releaseSet": "BX-00",
+      "stats": {
+        "atk": 25,
+        "def": 55,
+        "sta": 30
+      }
     },
     {
       "id": "shark-edge",
@@ -725,7 +1040,12 @@
       ],
       "type": "attack",
       "line": "bx",
-      "releaseSet": "BX-14"
+      "releaseSet": "BX-14",
+      "stats": {
+        "atk": 60,
+        "def": 25,
+        "sta": 15
+      }
     },
     {
       "id": "shark-gill",
@@ -736,7 +1056,12 @@
       ],
       "type": "stamina",
       "line": "bx",
-      "releaseSet": "UX-05"
+      "releaseSet": "UX-05",
+      "stats": {
+        "atk": 20,
+        "def": 25,
+        "sta": 55
+      }
     },
     {
       "id": "shark-scale",
@@ -747,14 +1072,24 @@
       ],
       "type": "attack",
       "line": "bx",
-      "releaseSet": "UX-15"
+      "releaseSet": "UX-15",
+      "stats": {
+        "atk": 70,
+        "def": 15,
+        "sta": 15
+      }
     },
     {
       "id": "shatter-horus",
       "name": "Shatter Horus",
       "type": "stamina",
       "line": "bx",
-      "releaseSet": "G4567"
+      "releaseSet": "G4567",
+      "stats": {
+        "atk": 15,
+        "def": 35,
+        "sta": 50
+      }
     },
     {
       "id": "shelter-drake",
@@ -765,7 +1100,12 @@
       ],
       "type": "balance",
       "line": "bx",
-      "releaseSet": "BX-39"
+      "releaseSet": "BX-39",
+      "stats": {
+        "atk": 25,
+        "def": 40,
+        "sta": 35
+      }
     },
     {
       "id": "shinobi-knife",
@@ -773,7 +1113,12 @@
       "nameWestern": "Knife Shinobi",
       "type": "defense",
       "line": "bx",
-      "releaseSet": "BX-14"
+      "releaseSet": "BX-14",
+      "stats": {
+        "atk": 23,
+        "def": 50,
+        "sta": 27
+      }
     },
     {
       "id": "shinobi-shadow",
@@ -784,7 +1129,12 @@
       ],
       "type": "defense",
       "line": "bx",
-      "releaseSet": "UX-05"
+      "releaseSet": "UX-05",
+      "stats": {
+        "atk": 10,
+        "def": 70,
+        "sta": 20
+      }
     },
     {
       "id": "shockwave",
@@ -792,7 +1142,12 @@
       "nameWestern": "Shockwave",
       "type": "stamina",
       "line": "bx",
-      "releaseSet": "G1692"
+      "releaseSet": "G1692",
+      "stats": {
+        "atk": 32,
+        "def": 18,
+        "sta": 50
+      }
     },
     {
       "id": "silver-wolf",
@@ -803,7 +1158,12 @@
       ],
       "type": "stamina",
       "line": "bx",
-      "releaseSet": "UX-08"
+      "releaseSet": "UX-08",
+      "stats": {
+        "atk": 15,
+        "def": 30,
+        "sta": 65
+      }
     },
     {
       "id": "sphinx-cowl",
@@ -814,7 +1174,12 @@
       ],
       "type": "defense",
       "line": "bx",
-      "releaseSet": "BX-27"
+      "releaseSet": "BX-27",
+      "stats": {
+        "atk": 35,
+        "def": 55,
+        "sta": 10
+      }
     },
     {
       "id": "spider-man",
@@ -824,7 +1189,12 @@
       ],
       "type": "stamina",
       "line": "bx",
-      "releaseSet": "G0288"
+      "releaseSet": "G0288",
+      "stats": {
+        "atk": 33,
+        "def": 17,
+        "sta": 50
+      }
     },
     {
       "id": "starscream",
@@ -834,14 +1204,24 @@
       ],
       "type": "stamina",
       "line": "bx",
-      "releaseSet": "G0352"
+      "releaseSet": "G0352",
+      "stats": {
+        "atk": 18,
+        "def": 27,
+        "sta": 55
+      }
     },
     {
       "id": "storm-pegasis",
       "name": "Storm Pegasis",
       "type": "attack",
       "line": "bx",
-      "releaseSet": "BX-00"
+      "releaseSet": "BX-00",
+      "stats": {
+        "atk": 55,
+        "def": 15,
+        "sta": 30
+      }
     },
     {
       "id": "stormspriggan",
@@ -853,7 +1233,12 @@
       ],
       "type": "balance",
       "line": "bx",
-      "releaseSet": "BX-00"
+      "releaseSet": "BX-00",
+      "stats": {
+        "atk": 30,
+        "def": 40,
+        "sta": 30
+      }
     },
     {
       "id": "stormtrooper",
@@ -861,7 +1246,12 @@
       "nameWestern": "Stormtrooper",
       "type": "defense",
       "line": "bx",
-      "releaseSet": "G1695"
+      "releaseSet": "G1695",
+      "stats": {
+        "atk": 18,
+        "def": 50,
+        "sta": 32
+      }
     },
     {
       "id": "stun-medusa",
@@ -869,14 +1259,24 @@
       "nameWestern": "Stun Medusa",
       "type": "stamina",
       "line": "ux",
-      "releaseSet": "G2738"
+      "releaseSet": "G2738",
+      "stats": {
+        "atk": 13,
+        "def": 70,
+        "sta": 17
+      }
     },
     {
       "id": "tackle-goat",
       "name": "Tackle Goat",
       "type": "defense",
       "line": "bx",
-      "releaseSet": "G1688"
+      "releaseSet": "G1688",
+      "stats": {
+        "atk": 13,
+        "def": 65,
+        "sta": 22
+      }
     },
     {
       "id": "thanos",
@@ -886,7 +1286,12 @@
       ],
       "type": "defense",
       "line": "bx",
-      "releaseSet": "G0287"
+      "releaseSet": "G0287",
+      "stats": {
+        "atk": 22,
+        "def": 60,
+        "sta": 18
+      }
     },
     {
       "id": "the-mandalorian",
@@ -896,7 +1301,12 @@
       ],
       "type": "attack",
       "line": "bx",
-      "releaseSet": "F9589"
+      "releaseSet": "F9589",
+      "stats": {
+        "atk": 40,
+        "def": 43,
+        "sta": 17
+      }
     },
     {
       "id": "tricera-press",
@@ -907,14 +1317,24 @@
       ],
       "type": "defense",
       "line": "bx",
-      "releaseSet": "BX-44"
+      "releaseSet": "BX-44",
+      "stats": {
+        "atk": 20,
+        "def": 65,
+        "sta": 15
+      }
     },
     {
       "id": "tricera-spiky",
       "name": "Tricera Spiky",
       "type": "defense",
       "line": "bx",
-      "releaseSet": "G1898"
+      "releaseSet": "G1898",
+      "stats": {
+        "atk": 32,
+        "def": 55,
+        "sta": 13
+      }
     },
     {
       "id": "trypio",
@@ -931,7 +1351,12 @@
       ],
       "type": "attack",
       "line": "bx",
-      "releaseSet": "BX-31"
+      "releaseSet": "BX-31",
+      "stats": {
+        "atk": 65,
+        "def": 30,
+        "sta": 5
+      }
     },
     {
       "id": "tyranno-roar",
@@ -942,7 +1367,12 @@
       ],
       "type": "attack",
       "line": "bx",
-      "releaseSet": "BX-00"
+      "releaseSet": "BX-00",
+      "stats": {
+        "atk": 60,
+        "def": 28,
+        "sta": 12
+      }
     },
     {
       "id": "unicorn-sting",
@@ -953,7 +1383,12 @@
       ],
       "type": "balance",
       "line": "bx",
-      "releaseSet": "BX-26"
+      "releaseSet": "BX-26",
+      "stats": {
+        "atk": 35,
+        "def": 35,
+        "sta": 30
+      }
     },
     {
       "id": "valor-bison",
@@ -970,14 +1405,24 @@
       ],
       "type": "attack",
       "line": "bx",
-      "releaseSet": "G0288"
+      "releaseSet": "G0288",
+      "stats": {
+        "atk": 55,
+        "def": 22,
+        "sta": 23
+      }
     },
     {
       "id": "victory-valkyrie",
       "name": "Victory Valkyrie",
       "type": "attack",
       "line": "bx",
-      "releaseSet": "BX-00"
+      "releaseSet": "BX-00",
+      "stats": {
+        "atk": 55,
+        "def": 20,
+        "sta": 25
+      }
     },
     {
       "id": "viking-hack",
@@ -988,7 +1433,12 @@
       ],
       "type": "balance",
       "line": "ux",
-      "releaseSet": "G2755"
+      "releaseSet": "G2755",
+      "stats": {
+        "atk": 47,
+        "def": 28,
+        "sta": 25
+      }
     },
     {
       "id": "viper-tail",
@@ -1000,7 +1450,12 @@
       ],
       "type": "stamina",
       "line": "bx",
-      "releaseSet": "BX-16"
+      "releaseSet": "BX-16",
+      "stats": {
+        "atk": 30,
+        "def": 20,
+        "sta": 50
+      }
     },
     {
       "id": "weiss-tiger",
@@ -1011,7 +1466,12 @@
       ],
       "type": "balance",
       "line": "bx",
-      "releaseSet": "BX-33"
+      "releaseSet": "BX-33",
+      "stats": {
+        "atk": 45,
+        "def": 30,
+        "sta": 25
+      }
     },
     {
       "id": "whale-wave",
@@ -1023,7 +1483,12 @@
       ],
       "type": "balance",
       "line": "bx",
-      "releaseSet": "BX-36"
+      "releaseSet": "BX-36",
+      "stats": {
+        "atk": 45,
+        "def": 35,
+        "sta": 20
+      }
     },
     {
       "id": "wizard-arrow",
@@ -1034,7 +1499,12 @@
       ],
       "type": "stamina",
       "line": "bx",
-      "releaseSet": "BX-03"
+      "releaseSet": "BX-03",
+      "stats": {
+        "atk": 15,
+        "def": 30,
+        "sta": 55
+      }
     },
     {
       "id": "wizard-rod",
@@ -1045,7 +1515,12 @@
       ],
       "type": "stamina",
       "line": "bx",
-      "releaseSet": "UX-03"
+      "releaseSet": "UX-03",
+      "stats": {
+        "atk": 15,
+        "def": 25,
+        "sta": 60
+      }
     },
     {
       "id": "wyvern-gale",
@@ -1057,7 +1532,12 @@
       ],
       "type": "stamina",
       "line": "bx",
-      "releaseSet": "BX-24"
+      "releaseSet": "BX-24",
+      "stats": {
+        "atk": 10,
+        "def": 40,
+        "sta": 50
+      }
     },
     {
       "id": "xeno-xcalibur",
@@ -1067,7 +1547,12 @@
       ],
       "type": "attack",
       "line": "bx",
-      "releaseSet": "BX-00"
+      "releaseSet": "BX-00",
+      "stats": {
+        "atk": 65,
+        "def": 25,
+        "sta": 10
+      }
     }
   ],
   "lockChips": [
@@ -1213,18 +1698,33 @@
       "name": "Antler",
       "nameWestern": "Antler",
       "type": "stamina",
-      "line": "cx"
+      "line": "cx",
+      "stats": {
+        "atk": 8,
+        "def": 15,
+        "sta": 37
+      }
     },
     {
       "id": "arc",
       "name": "Arc",
       "type": "balance",
-      "line": "cx"
+      "line": "cx",
+      "stats": {
+        "atk": 10,
+        "def": 10,
+        "sta": 40
+      }
     },
     {
       "id": "blast",
       "name": "Blast",
-      "line": "cx"
+      "line": "cx",
+      "stats": {
+        "atk": 50,
+        "def": 10,
+        "sta": 15
+      }
     },
     {
       "id": "blitz",
@@ -1236,18 +1736,33 @@
       "name": "Brave",
       "nameWestern": "Courage",
       "type": "attack",
-      "line": "cx"
+      "line": "cx",
+      "stats": {
+        "atk": 40,
+        "def": 10,
+        "sta": 10
+      }
     },
     {
       "id": "brush",
       "name": "Brush",
       "type": "attack",
-      "line": "cx"
+      "line": "cx",
+      "stats": {
+        "atk": 40,
+        "def": 15,
+        "sta": 5
+      }
     },
     {
       "id": "dark",
       "name": "Dark",
-      "line": "cx"
+      "line": "cx",
+      "stats": {
+        "atk": 10,
+        "def": 40,
+        "sta": 10
+      }
     },
     {
       "id": "delta",
@@ -1262,24 +1777,44 @@
     {
       "id": "fang",
       "name": "Fang",
-      "line": "cx"
+      "line": "cx",
+      "stats": {
+        "atk": 35,
+        "def": 10,
+        "sta": 15
+      }
     },
     {
       "id": "flame",
       "name": "Flame",
-      "line": "cx"
+      "line": "cx",
+      "stats": {
+        "atk": 5,
+        "def": 15,
+        "sta": 40
+      }
     },
     {
       "id": "flare",
       "name": "Flare",
-      "line": "cx"
+      "line": "cx",
+      "stats": {
+        "atk": 25,
+        "def": 40,
+        "sta": 10
+      }
     },
     {
       "id": "fort",
       "name": "Fort",
       "nameWestern": "Fort",
       "type": "balance",
-      "line": "cx"
+      "line": "cx",
+      "stats": {
+        "atk": 24,
+        "def": 12,
+        "sta": 24
+      }
     },
     {
       "id": "fortress",
@@ -1290,7 +1825,12 @@
     {
       "id": "hunt",
       "name": "Hunt",
-      "line": "cx"
+      "line": "cx",
+      "stats": {
+        "atk": 20,
+        "def": 10,
+        "sta": 30
+      }
     },
     {
       "id": "hurricane",
@@ -1300,7 +1840,12 @@
     {
       "id": "might",
       "name": "Might",
-      "line": "cx"
+      "line": "cx",
+      "stats": {
+        "atk": 25,
+        "def": 25,
+        "sta": 25
+      }
     },
     {
       "id": "rage",
@@ -1310,12 +1855,22 @@
     {
       "id": "reaper",
       "name": "Reaper",
-      "line": "cx"
+      "line": "cx",
+      "stats": {
+        "atk": 25,
+        "def": 10,
+        "sta": 25
+      }
     },
     {
       "id": "volt",
       "name": "Volt",
-      "line": "cx"
+      "line": "cx",
+      "stats": {
+        "atk": 45,
+        "def": 15,
+        "sta": 15
+      }
     },
     {
       "id": "whip",
@@ -1327,7 +1882,12 @@
       "name": "Wriggle",
       "nameWestern": "Wriggle",
       "type": "stamina",
-      "line": "cx"
+      "line": "cx",
+      "stats": {
+        "atk": 8,
+        "def": 12,
+        "sta": 40
+      }
     }
   ],
   "assistBlades": [
@@ -1478,7 +2038,12 @@
       "id": "0-60",
       "name": "0-60",
       "sides": 0,
-      "height": 60
+      "height": 60,
+      "stats": {
+        "atk": 3,
+        "def": 14,
+        "sta": 13
+      }
     },
     {
       "id": "0-70",
@@ -1490,13 +2055,23 @@
       "id": "0-80",
       "name": "0-80",
       "sides": 0,
-      "height": 80
+      "height": 80,
+      "stats": {
+        "atk": 3,
+        "def": 12,
+        "sta": 15
+      }
     },
     {
       "id": "1-50",
       "name": "1-50",
       "sides": 1,
-      "height": 50
+      "height": 50,
+      "stats": {
+        "atk": 18,
+        "def": 9,
+        "sta": 3
+      }
     },
     {
       "id": "1-60",
@@ -1508,7 +2083,12 @@
       "id": "1-70",
       "name": "1-70",
       "sides": 1,
-      "height": 70
+      "height": 70,
+      "stats": {
+        "atk": 17,
+        "def": 6,
+        "sta": 7
+      }
     },
     {
       "id": "1-80",
@@ -1526,55 +2106,100 @@
       "id": "2-70",
       "name": "2-70",
       "sides": 2,
-      "height": 70
+      "height": 70,
+      "stats": {
+        "atk": 10,
+        "def": 12,
+        "sta": 8
+      }
     },
     {
       "id": "2-80",
       "name": "2-80",
       "sides": 2,
-      "height": 80
+      "height": 80,
+      "stats": {
+        "atk": 10,
+        "def": 11,
+        "sta": 9
+      }
     },
     {
       "id": "3-60",
       "name": "3-60",
       "sides": 3,
-      "height": 60
+      "height": 60,
+      "stats": {
+        "atk": 15,
+        "def": 9,
+        "sta": 6
+      }
     },
     {
       "id": "3-70",
       "name": "3-70",
       "sides": 3,
-      "height": 70
+      "height": 70,
+      "stats": {
+        "atk": 15,
+        "def": 8,
+        "sta": 7
+      }
     },
     {
       "id": "3-80",
       "name": "3-80",
       "sides": 3,
-      "height": 80
+      "height": 80,
+      "stats": {
+        "atk": 15,
+        "def": 7,
+        "sta": 8
+      }
     },
     {
       "id": "3-85",
       "name": "3-85",
       "sides": 3,
-      "height": 85
+      "height": 85,
+      "stats": {
+        "atk": 5,
+        "def": 15,
+        "sta": 10
+      }
     },
     {
       "id": "4-50",
       "name": "4-50",
       "sides": 4,
-      "height": 50
+      "height": 50,
+      "stats": {
+        "atk": 12,
+        "def": 13,
+        "sta": 5
+      }
     },
     {
       "id": "4-55",
       "name": "4-55",
       "sides": 4,
-      "height": 55
+      "height": 55,
+      "stats": {
+        "atk": 7,
+        "def": 11,
+        "sta": 12
+      }
     },
     {
       "id": "4-60",
       "name": "4-60",
       "sides": 4,
-      "height": 60
+      "height": 60,
+      "stats": {
+        "atk": 11,
+        "def": 13,
+        "sta": 6
+      }
     },
     {
       "id": "4-70",
@@ -1586,49 +2211,89 @@
       "id": "4-80",
       "name": "4-80",
       "sides": 4,
-      "height": 80
+      "height": 80,
+      "stats": {
+        "atk": 11,
+        "def": 11,
+        "sta": 8
+      }
     },
     {
       "id": "5-60",
       "name": "5-60",
       "sides": 5,
-      "height": 60
+      "height": 60,
+      "stats": {
+        "atk": 12,
+        "def": 9,
+        "sta": 9
+      }
     },
     {
       "id": "5-70",
       "name": "5-70",
       "sides": 5,
-      "height": 70
+      "height": 70,
+      "stats": {
+        "atk": 12,
+        "def": 8,
+        "sta": 10
+      }
     },
     {
       "id": "5-80",
       "name": "5-80",
       "sides": 5,
-      "height": 80
+      "height": 80,
+      "stats": {
+        "atk": 12,
+        "def": 8,
+        "sta": 10
+      }
     },
     {
       "id": "6-60",
       "name": "6-60",
       "sides": 6,
-      "height": 60
+      "height": 60,
+      "stats": {
+        "atk": 14,
+        "def": 8,
+        "sta": 8
+      }
     },
     {
       "id": "6-70",
       "name": "6-70",
       "sides": 6,
-      "height": 70
+      "height": 70,
+      "stats": {
+        "atk": 14,
+        "def": 7,
+        "sta": 9
+      }
     },
     {
       "id": "6-80",
       "name": "6-80",
       "sides": 6,
-      "height": 80
+      "height": 80,
+      "stats": {
+        "atk": 14,
+        "def": 6,
+        "sta": 10
+      }
     },
     {
       "id": "7-55",
       "name": "7-55",
       "sides": 7,
-      "height": 55
+      "height": 55,
+      "stats": {
+        "atk": 6,
+        "def": 14,
+        "sta": 10
+      }
     },
     {
       "id": "7-60",
@@ -1640,19 +2305,34 @@
       "id": "7-70",
       "name": "7-70",
       "sides": 7,
-      "height": 70
+      "height": 70,
+      "stats": {
+        "atk": 8,
+        "def": 12,
+        "sta": 10
+      }
     },
     {
       "id": "7-80",
       "name": "7-80",
       "sides": 7,
-      "height": 80
+      "height": 80,
+      "stats": {
+        "atk": 7,
+        "def": 14,
+        "sta": 9
+      }
     },
     {
       "id": "8-70",
       "name": "8-70",
       "sides": 8,
-      "height": 70
+      "height": 70,
+      "stats": {
+        "atk": 8,
+        "def": 10,
+        "sta": 12
+      }
     },
     {
       "id": "9-60",
@@ -1664,7 +2344,12 @@
       "id": "9-65",
       "name": "9-65",
       "sides": 9,
-      "height": 65
+      "height": 65,
+      "stats": {
+        "atk": 13,
+        "def": 10,
+        "sta": 7
+      }
     },
     {
       "id": "9-70",
@@ -1676,13 +2361,23 @@
       "id": "9-80",
       "name": "9-80",
       "sides": 9,
-      "height": 80
+      "height": 80,
+      "stats": {
+        "atk": 13,
+        "def": 10,
+        "sta": 7
+      }
     },
     {
       "id": "M-85",
       "name": "M-85",
       "sides": null,
-      "height": 85
+      "height": 85,
+      "stats": {
+        "atk": 8,
+        "def": 19,
+        "sta": 13
+      }
     }
   ],
   "bits": [
@@ -1693,7 +2388,12 @@
       "shortName": "A",
       "aliases": [
         "Akuseru"
-      ]
+      ],
+      "stats": {
+        "atk": 40,
+        "def": 10,
+        "sta": 10
+      }
     },
     {
       "id": "ball",
@@ -1702,7 +2402,12 @@
       "shortName": "B",
       "aliases": [
         "Bōru"
-      ]
+      ],
+      "stats": {
+        "atk": 15,
+        "def": 25,
+        "sta": 50
+      }
     },
     {
       "id": "bound-spike",
@@ -1711,7 +2416,12 @@
       "shortName": "BS",
       "aliases": [
         "Baundo Supaiku"
-      ]
+      ],
+      "stats": {
+        "atk": 5,
+        "def": 60,
+        "sta": 30
+      }
     },
     {
       "id": "cyclone",
@@ -1720,7 +2430,12 @@
       "shortName": "C",
       "aliases": [
         "Saikuron"
-      ]
+      ],
+      "stats": {
+        "atk": 40,
+        "def": 5,
+        "sta": 10
+      }
     },
     {
       "id": "disk-ball",
@@ -1730,7 +2445,12 @@
       "aliases": [
         "Disuku Bōru",
         "Disuku"
-      ]
+      ],
+      "stats": {
+        "atk": 15,
+        "def": 20,
+        "sta": 55
+      }
     },
     {
       "id": "disk-spike",
@@ -1739,7 +2459,12 @@
       "shortName": "DS",
       "aliases": [
         "Disuku Supaiku"
-      ]
+      ],
+      "stats": {
+        "atk": 5,
+        "def": 55,
+        "sta": 40
+      }
     },
     {
       "id": "dot",
@@ -1757,7 +2482,12 @@
       "shortName": "E",
       "aliases": [
         "Erebēto"
-      ]
+      ],
+      "stats": {
+        "atk": 30,
+        "def": 15,
+        "sta": 20
+      }
     },
     {
       "id": "flat",
@@ -1766,7 +2496,12 @@
       "shortName": "F",
       "aliases": [
         "Furatto"
-      ]
+      ],
+      "stats": {
+        "atk": 40,
+        "def": 15,
+        "sta": 10
+      }
     },
     {
       "id": "free-ball",
@@ -1775,7 +2510,12 @@
       "shortName": "FB",
       "aliases": [
         "Furī Bōru"
-      ]
+      ],
+      "stats": {
+        "atk": 10,
+        "def": 25,
+        "sta": 60
+      }
     },
     {
       "id": "free-flat",
@@ -1784,7 +2524,12 @@
       "shortName": "FF",
       "aliases": [
         "Furī Furatto"
-      ]
+      ],
+      "stats": {
+        "atk": 40,
+        "def": 15,
+        "sta": 15
+      }
     },
     {
       "id": "gear-ball",
@@ -1794,7 +2539,12 @@
       "aliases": [
         "Giya Bōru",
         "Giya"
-      ]
+      ],
+      "stats": {
+        "atk": 10,
+        "def": 15,
+        "sta": 45
+      }
     },
     {
       "id": "gear-flat",
@@ -1804,7 +2554,12 @@
       "aliases": [
         "Giya Furatto",
         "Giya"
-      ]
+      ],
+      "stats": {
+        "atk": 50,
+        "def": 5,
+        "sta": 5
+      }
     },
     {
       "id": "gear-needle",
@@ -1814,7 +2569,12 @@
       "aliases": [
         "Giya Nīdoru",
         "Giya"
-      ]
+      ],
+      "stats": {
+        "atk": 20,
+        "def": 40,
+        "sta": 10
+      }
     },
     {
       "id": "gear-point",
@@ -1824,7 +2584,12 @@
       "aliases": [
         "Giya Pointo",
         "Giya"
-      ]
+      ],
+      "stats": {
+        "atk": 30,
+        "def": 25,
+        "sta": 15
+      }
     },
     {
       "id": "gear-rush",
@@ -1834,7 +2599,12 @@
       "aliases": [
         "Giya",
         "Giya Rasshu"
-      ]
+      ],
+      "stats": {
+        "atk": 45,
+        "def": 10,
+        "sta": 10
+      }
     },
     {
       "id": "gear-unite",
@@ -1843,7 +2613,12 @@
       "shortName": "GU",
       "aliases": [
         "Gia Yunaito"
-      ]
+      ],
+      "stats": {
+        "atk": 30,
+        "def": 20,
+        "sta": 20
+      }
     },
     {
       "id": "glide",
@@ -1852,7 +2627,12 @@
       "shortName": "G",
       "aliases": [
         "Guraido"
-      ]
+      ],
+      "stats": {
+        "atk": 20,
+        "def": 10,
+        "sta": 55
+      }
     },
     {
       "id": "hexa",
@@ -1861,7 +2641,12 @@
       "shortName": "H",
       "aliases": [
         "Hekisa"
-      ]
+      ],
+      "stats": {
+        "atk": 30,
+        "def": 35,
+        "sta": 20
+      }
     },
     {
       "id": "high-needle",
@@ -1871,7 +2656,12 @@
       "aliases": [
         "Hai Nīdoru",
         "Hai"
-      ]
+      ],
+      "stats": {
+        "atk": 15,
+        "def": 55,
+        "sta": 20
+      }
     },
     {
       "id": "high-taper",
@@ -1881,7 +2671,12 @@
       "aliases": [
         "Hai Tēpā",
         "Hai"
-      ]
+      ],
+      "stats": {
+        "atk": 30,
+        "def": 25,
+        "sta": 20
+      }
     },
     {
       "id": "ignition",
@@ -1890,7 +2685,12 @@
       "shortName": "I",
       "aliases": [
         "Igunisshon"
-      ]
+      ],
+      "stats": {
+        "atk": 50,
+        "def": 15,
+        "sta": 5
+      }
     },
     {
       "id": "jolt",
@@ -1899,7 +2699,12 @@
       "shortName": "J",
       "aliases": [
         "Joruto"
-      ]
+      ],
+      "stats": {
+        "atk": 35,
+        "def": 10,
+        "sta": 15
+      }
     },
     {
       "id": "kick",
@@ -1908,7 +2713,12 @@
       "shortName": "K",
       "aliases": [
         "Kikku"
-      ]
+      ],
+      "stats": {
+        "atk": 35,
+        "def": 25,
+        "sta": 15
+      }
     },
     {
       "id": "level",
@@ -1917,7 +2727,12 @@
       "shortName": "L",
       "aliases": [
         "Reberu"
-      ]
+      ],
+      "stats": {
+        "atk": 40,
+        "def": 5,
+        "sta": 15
+      }
     },
     {
       "id": "low-flat",
@@ -1927,7 +2742,12 @@
       "aliases": [
         "Rō Furatto",
         "Rō"
-      ]
+      ],
+      "stats": {
+        "atk": 45,
+        "def": 5,
+        "sta": 10
+      }
     },
     {
       "id": "low-orb",
@@ -1937,7 +2757,12 @@
       "aliases": [
         "Rō",
         "Rō Ōbu"
-      ]
+      ],
+      "stats": {
+        "atk": 5,
+        "def": 25,
+        "sta": 55
+      }
     },
     {
       "id": "low-rush",
@@ -1946,7 +2771,12 @@
       "shortName": "LR",
       "aliases": [
         "Rō"
-      ]
+      ],
+      "stats": {
+        "atk": 45,
+        "def": 5,
+        "sta": 15
+      }
     },
     {
       "id": "merge",
@@ -1955,7 +2785,12 @@
       "shortName": "M",
       "aliases": [
         "Māji"
-      ]
+      ],
+      "stats": {
+        "atk": 50,
+        "def": 20,
+        "sta": 10
+      }
     },
     {
       "id": "metal-needle",
@@ -1965,7 +2800,12 @@
       "aliases": [
         "Metaru Nīdoru",
         "Metaru"
-      ]
+      ],
+      "stats": {
+        "atk": 8,
+        "def": 57,
+        "sta": 30
+      }
     },
     {
       "id": "narrow",
@@ -1983,7 +2823,12 @@
       "shortName": "N",
       "aliases": [
         "Nīdoru"
-      ]
+      ],
+      "stats": {
+        "atk": 10,
+        "def": 50,
+        "sta": 30
+      }
     },
     {
       "id": "operate",
@@ -2000,7 +2845,12 @@
       "shortName": "O",
       "aliases": [
         "Ōbu"
-      ]
+      ],
+      "stats": {
+        "atk": 10,
+        "def": 30,
+        "sta": 50
+      }
     },
     {
       "id": "orbit",
@@ -2014,7 +2864,12 @@
       "shortName": "P",
       "aliases": [
         "Pointo"
-      ]
+      ],
+      "stats": {
+        "atk": 25,
+        "def": 25,
+        "sta": 25
+      }
     },
     {
       "id": "quake",
@@ -2023,7 +2878,12 @@
       "shortName": "Q",
       "aliases": [
         "Kueiku"
-      ]
+      ],
+      "stats": {
+        "atk": 55,
+        "def": 15,
+        "sta": 5
+      }
     },
     {
       "id": "rubber-accel",
@@ -2041,7 +2901,12 @@
       "shortName": "R",
       "aliases": [
         "Rasshu"
-      ]
+      ],
+      "stats": {
+        "atk": 40,
+        "def": 10,
+        "sta": 20
+      }
     },
     {
       "id": "spike",
@@ -2059,7 +2924,12 @@
       "shortName": "T",
       "aliases": [
         "Tēpā"
-      ]
+      ],
+      "stats": {
+        "atk": 35,
+        "def": 20,
+        "sta": 20
+      }
     },
     {
       "id": "trans-kick",
@@ -2079,7 +2949,12 @@
       "aliases": [
         "Toransu Pointo",
         "Toransu"
-      ]
+      ],
+      "stats": {
+        "atk": 35,
+        "def": 25,
+        "sta": 25
+      }
     },
     {
       "id": "turbo",
@@ -2097,7 +2972,12 @@
       "shortName": "UF",
       "aliases": [
         "Andā"
-      ]
+      ],
+      "stats": {
+        "atk": 55,
+        "def": 5,
+        "sta": 5
+      }
     },
     {
       "id": "under-needle",
@@ -2107,7 +2987,12 @@
       "aliases": [
         "Andā",
         "Andā Nīdoru"
-      ]
+      ],
+      "stats": {
+        "atk": 10,
+        "def": 60,
+        "sta": 20
+      }
     },
     {
       "id": "unite",
@@ -2116,7 +3001,12 @@
       "shortName": "U",
       "aliases": [
         "Yunaito"
-      ]
+      ],
+      "stats": {
+        "atk": 25,
+        "def": 25,
+        "sta": 30
+      }
     },
     {
       "id": "vortex",
@@ -2125,7 +3015,12 @@
       "shortName": "V",
       "aliases": [
         "Borutekkusu"
-      ]
+      ],
+      "stats": {
+        "atk": 45,
+        "def": 10,
+        "sta": 5
+      }
     },
     {
       "id": "wall-ball",
@@ -2134,7 +3029,12 @@
       "shortName": "WB",
       "aliases": [
         "Uōru"
-      ]
+      ],
+      "stats": {
+        "atk": 15,
+        "def": 30,
+        "sta": 45
+      }
     },
     {
       "id": "wall-wedge",
@@ -2143,7 +3043,12 @@
       "shortName": "WW",
       "aliases": [
         "Uōru Wejji"
-      ]
+      ],
+      "stats": {
+        "atk": 5,
+        "def": 60,
+        "sta": 25
+      }
     },
     {
       "id": "wedge",
@@ -2152,7 +3057,12 @@
       "shortName": "W",
       "aliases": [
         "Wejji"
-      ]
+      ],
+      "stats": {
+        "atk": 5,
+        "def": 55,
+        "sta": 30
+      }
     },
     {
       "id": "yielding",
@@ -2161,7 +3071,12 @@
       "shortName": "Y",
       "aliases": [
         "Īrudingu"
-      ]
+      ],
+      "stats": {
+        "atk": 10,
+        "def": 15,
+        "sta": 65
+      }
     },
     {
       "id": "zap",
@@ -2170,7 +3085,12 @@
       "shortName": "Z",
       "aliases": [
         "Zappu"
-      ]
+      ],
+      "stats": {
+        "atk": 30,
+        "def": 20,
+        "sta": 15
+      }
     }
   ]
 }

@@ -35,7 +35,12 @@
         "revid": 640396
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 60,
+        "def": 25,
+        "sta": 30
+      }
     },
     {
       "id": "bear-scratch",
@@ -65,7 +70,12 @@
         "revid": 590065
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 25,
+        "def": 45,
+        "sta": 30
+      }
     },
     {
       "id": "black-shell",
@@ -106,7 +116,12 @@
         "revid": 613776
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 10,
+        "def": 65,
+        "sta": 25
+      }
     },
     {
       "id": "bullet-griffon",
@@ -176,7 +191,12 @@
         "revid": 639473
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 21,
+        "def": 55,
+        "sta": 24
+      }
     },
     {
       "id": "captain-america",
@@ -200,7 +220,12 @@
         "revid": 636517
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 55,
+        "def": 28,
+        "sta": 17
+      }
     },
     {
       "id": "chewbacca",
@@ -224,7 +249,12 @@
         "revid": 637379
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 22,
+        "def": 23,
+        "sta": 55
+      }
     },
     {
       "id": "clamp-crab",
@@ -286,7 +316,12 @@
         "revid": 638061
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 10,
+        "def": 10,
+        "sta": 80
+      }
     },
     {
       "id": "cobalt-dragoon",
@@ -323,7 +358,12 @@
         "revid": 640385
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 60,
+        "def": 15,
+        "sta": 25
+      }
     },
     {
       "id": "cobalt-drake",
@@ -359,7 +399,12 @@
         "revid": 634353
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 65,
+        "def": 30,
+        "sta": 20
+      }
     },
     {
       "id": "crimson-garuda",
@@ -400,7 +445,12 @@
         "revid": 639774
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 45,
+        "def": 25,
+        "sta": 30
+      }
     },
     {
       "id": "croc-bite",
@@ -451,7 +501,12 @@
         "revid": 633576
       },
       "status": "verified",
-      "lastVerified": "2026-06-18"
+      "lastVerified": "2026-06-18",
+      "stats": {
+        "atk": 60,
+        "def": 22,
+        "sta": 18
+      }
     },
     {
       "id": "cutter-shinobi",
@@ -527,7 +582,12 @@
         "revid": 610266
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 28,
+        "def": 60,
+        "sta": 12
+      }
     },
     {
       "id": "draciel-shield",
@@ -563,7 +623,12 @@
         "revid": 632004
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 30,
+        "def": 50,
+        "sta": 20
+      }
     },
     {
       "id": "dragoon-storm",
@@ -580,7 +645,12 @@
       "firstReleaseSet": "BX-00",
       "products": [],
       "source": null,
-      "status": "unverified"
+      "status": "unverified",
+      "stats": {
+        "atk": 55,
+        "def": 30,
+        "sta": 15
+      }
     },
     {
       "id": "dran-buster",
@@ -621,7 +691,12 @@
         "revid": 640811
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 70,
+        "def": 20,
+        "sta": 10
+      }
     },
     {
       "id": "dran-dagger",
@@ -663,7 +738,12 @@
         "revid": 639515
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 50,
+        "def": 25,
+        "sta": 25
+      }
     },
     {
       "id": "dran-strike",
@@ -703,7 +783,12 @@
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
-      "type": "attack"
+      "type": "attack",
+      "stats": {
+        "atk": 58,
+        "def": 25,
+        "sta": 17
+      }
     },
     {
       "id": "dran-sword",
@@ -744,7 +829,12 @@
         "revid": 639513
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 55,
+        "def": 25,
+        "sta": 20
+      }
     },
     {
       "id": "dranzer-spiral",
@@ -787,7 +877,12 @@
         "revid": 632001
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 35,
+        "def": 30,
+        "sta": 35
+      }
     },
     {
       "id": "driger-slash",
@@ -823,7 +918,12 @@
         "revid": 632002
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 40,
+        "def": 35,
+        "sta": 25
+      }
     },
     {
       "id": "general-grievous",
@@ -847,7 +947,12 @@
         "revid": 636189
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 22,
+        "def": 50,
+        "sta": 28
+      }
     },
     {
       "id": "ghost-circle",
@@ -887,7 +992,12 @@
         "revid": 636787
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 5,
+        "def": 40,
+        "sta": 55
+      }
     },
     {
       "id": "glory-valkyrie",
@@ -967,7 +1077,12 @@
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
-      "type": "defense"
+      "type": "defense",
+      "stats": {
+        "atk": 13,
+        "def": 65,
+        "sta": 22
+      }
     },
     {
       "id": "golem-rock",
@@ -1008,7 +1123,12 @@
         "revid": 640758
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 30,
+        "def": 60,
+        "sta": 10
+      }
     },
     {
       "id": "green-goblin",
@@ -1032,7 +1152,12 @@
         "revid": 637375
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 17,
+        "def": 28,
+        "sta": 55
+      }
     },
     {
       "id": "grogu",
@@ -1054,7 +1179,12 @@
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
-      "type": "balance"
+      "type": "balance",
+      "stats": {
+        "atk": 21,
+        "def": 50,
+        "sta": 29
+      }
     },
     {
       "id": "gust-bat",
@@ -1094,7 +1224,12 @@
         "revid": 638868
       },
       "lastVerified": "2026-06-15",
-      "status": "unverified"
+      "status": "unverified",
+      "stats": {
+        "atk": 42,
+        "def": 38,
+        "sta": 20
+      }
     },
     {
       "id": "heavens-ring",
@@ -1135,7 +1270,12 @@
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
-      "type": "defense"
+      "type": "defense",
+      "stats": {
+        "atk": 10,
+        "def": 60,
+        "sta": 30
+      }
     },
     {
       "id": "hells-chain",
@@ -1176,7 +1316,12 @@
         "revid": 640392
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 35,
+        "def": 40,
+        "sta": 25
+      }
     },
     {
       "id": "hells-hammer",
@@ -1218,7 +1363,12 @@
         "revid": 633705
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 50,
+        "def": 25,
+        "sta": 25
+      }
     },
     {
       "id": "hells-scythe",
@@ -1260,7 +1410,12 @@
         "revid": 640400
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 30,
+        "def": 35,
+        "sta": 35
+      }
     },
     {
       "id": "hover-wyvern",
@@ -1283,7 +1438,12 @@
       "firstReleaseSet": "UX-00",
       "products": [],
       "source": null,
-      "status": "unverified"
+      "status": "unverified",
+      "stats": {
+        "atk": 13,
+        "def": 60,
+        "sta": 27
+      }
     },
     {
       "id": "impact-drake",
@@ -1323,7 +1483,12 @@
         "revid": 640598
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 75,
+        "def": 25,
+        "sta": 10
+      }
     },
     {
       "id": "iron-man",
@@ -1359,7 +1524,12 @@
         "revid": 610184
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 17,
+        "def": 55,
+        "sta": 28
+      }
     },
     {
       "id": "knight-lance",
@@ -1399,7 +1569,12 @@
         "revid": 632917
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 25,
+        "def": 60,
+        "sta": 15
+      }
     },
     {
       "id": "knight-mail",
@@ -1440,7 +1615,12 @@
         "revid": 640394
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 10,
+        "def": 65,
+        "sta": 35
+      }
     },
     {
       "id": "knight-shield",
@@ -1480,7 +1660,12 @@
         "revid": 632915
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 20,
+        "def": 55,
+        "sta": 25
+      }
     },
     {
       "id": "kong-yell",
@@ -1497,7 +1682,12 @@
       "firstReleaseSet": "BX-17",
       "products": [],
       "source": null,
-      "status": "unverified"
+      "status": "unverified",
+      "stats": {
+        "atk": 13,
+        "def": 37,
+        "sta": 50
+      }
     },
     {
       "id": "leon-claw",
@@ -1538,7 +1728,12 @@
         "revid": 640368
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 40,
+        "def": 40,
+        "sta": 20
+      }
     },
     {
       "id": "leon-crest",
@@ -1579,7 +1774,12 @@
         "revid": 640745
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 15,
+        "def": 70,
+        "sta": 15
+      }
     },
     {
       "id": "lightning-l-drago-rapid-hit-type",
@@ -1614,7 +1814,12 @@
         "revid": 632018
       },
       "lastVerified": "2026-06-15",
-      "status": "verified"
+      "status": "verified",
+      "stats": {
+        "atk": 50,
+        "def": 30,
+        "sta": 20
+      }
     },
     {
       "id": "lightning-l-drago-upper-type",
@@ -1649,7 +1854,12 @@
         "revid": 632017
       },
       "lastVerified": "2026-06-15",
-      "status": "verified"
+      "status": "verified",
+      "stats": {
+        "atk": 55,
+        "def": 25,
+        "sta": 20
+      }
     },
     {
       "id": "luke-skywalker",
@@ -1685,7 +1895,12 @@
         "revid": 610223
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 23,
+        "def": 55,
+        "sta": 22
+      }
     },
     {
       "id": "mammoth-tusk",
@@ -1725,7 +1940,12 @@
         "revid": 635147
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 33,
+        "def": 35,
+        "sta": 32
+      }
     },
     {
       "id": "megatron",
@@ -1761,7 +1981,12 @@
         "revid": 603644
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 27,
+        "def": 35,
+        "sta": 38
+      }
     },
     {
       "id": "meteor-dragoon",
@@ -1801,7 +2026,12 @@
         "revid": 640389
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 75,
+        "def": 15,
+        "sta": 35
+      }
     },
     {
       "id": "miles-morales",
@@ -1825,7 +2055,12 @@
         "revid": 637374
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 12,
+        "def": 33,
+        "sta": 55
+      }
     },
     {
       "id": "moff-gideon",
@@ -1861,7 +2096,12 @@
         "revid": 603642
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 32,
+        "def": 35,
+        "sta": 33
+      }
     },
     {
       "id": "mummy-curse",
@@ -1901,7 +2141,12 @@
         "revid": 636784
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 30,
+        "def": 60,
+        "sta": 20
+      }
     },
     {
       "id": "obi-wan-kenobi",
@@ -1925,7 +2170,12 @@
         "revid": 636196
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 23,
+        "def": 60,
+        "sta": 17
+      }
     },
     {
       "id": "optimus-primal",
@@ -1961,7 +2211,12 @@
         "revid": 610258
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 60,
+        "def": 27,
+        "sta": 13
+      }
     },
     {
       "id": "optimus-prime",
@@ -1997,7 +2252,12 @@
         "revid": 610267
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 22,
+        "def": 55,
+        "sta": 23
+      }
     },
     {
       "id": "orochi-cluster",
@@ -2077,7 +2337,12 @@
         "revid": 636787
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 50,
+        "def": 20,
+        "sta": 30
+      }
     },
     {
       "id": "phoenix-rudder",
@@ -2118,7 +2383,12 @@
         "revid": 600830
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 10,
+        "def": 35,
+        "sta": 55
+      }
     },
     {
       "id": "phoenix-wing",
@@ -2159,7 +2429,12 @@
         "revid": 640446
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 60,
+        "def": 25,
+        "sta": 15
+      }
     },
     {
       "id": "ptera-swing",
@@ -2200,7 +2475,12 @@
         "revid": 618301
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 27,
+        "def": 23,
+        "sta": 50
+      }
     },
     {
       "id": "rampart-aegis",
@@ -2264,7 +2544,12 @@
         "revid": 636518
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 65,
+        "def": 27,
+        "sta": 8
+      }
     },
     {
       "id": "rhino-horn",
@@ -2304,7 +2589,12 @@
         "revid": 640950
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 20,
+        "def": 50,
+        "sta": 30
+      }
     },
     {
       "id": "rock-leone",
@@ -2339,7 +2629,12 @@
         "revid": 634339
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 30,
+        "def": 55,
+        "sta": 15
+      }
     },
     {
       "id": "samurai-calibur",
@@ -2379,7 +2674,12 @@
         "revid": 640830
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 40,
+        "def": 30,
+        "sta": 30
+      }
     },
     {
       "id": "samurai-saber",
@@ -2420,7 +2720,12 @@
         "revid": 636391
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 65,
+        "def": 20,
+        "sta": 25
+      }
     },
     {
       "id": "samurai-steel",
@@ -2461,7 +2766,12 @@
         "revid": 634530
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 40,
+        "def": 37,
+        "sta": 23
+      }
     },
     {
       "id": "scorpio-spear",
@@ -2501,7 +2811,12 @@
         "revid": 640755
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 25,
+        "def": 55,
+        "sta": 30
+      }
     },
     {
       "id": "shark-edge",
@@ -2548,7 +2863,12 @@
         "revid": 640388
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 60,
+        "def": 25,
+        "sta": 15
+      }
     },
     {
       "id": "shark-gill",
@@ -2588,7 +2908,12 @@
         "revid": 634360
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 20,
+        "def": 25,
+        "sta": 55
+      }
     },
     {
       "id": "shark-scale",
@@ -2628,7 +2953,12 @@
         "revid": 634335
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 70,
+        "def": 15,
+        "sta": 15
+      }
     },
     {
       "id": "shatter-horus",
@@ -2650,7 +2980,12 @@
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
-      "type": "stamina"
+      "type": "stamina",
+      "stats": {
+        "atk": 15,
+        "def": 35,
+        "sta": 50
+      }
     },
     {
       "id": "shelter-drake",
@@ -2685,7 +3020,12 @@
         "revid": 634298
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 25,
+        "def": 40,
+        "sta": 35
+      }
     },
     {
       "id": "shinobi-knife",
@@ -2702,7 +3042,12 @@
       "firstReleaseSet": "BX-14",
       "products": [],
       "source": null,
-      "status": "unverified"
+      "status": "unverified",
+      "stats": {
+        "atk": 23,
+        "def": 50,
+        "sta": 27
+      }
     },
     {
       "id": "shinobi-shadow",
@@ -2743,7 +3088,12 @@
         "revid": 599619
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 10,
+        "def": 70,
+        "sta": 20
+      }
     },
     {
       "id": "shockwave",
@@ -2767,7 +3117,12 @@
         "revid": 618995
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 32,
+        "def": 18,
+        "sta": 50
+      }
     },
     {
       "id": "silver-wolf",
@@ -2807,7 +3162,12 @@
         "revid": 640865
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 15,
+        "def": 30,
+        "sta": 65
+      }
     },
     {
       "id": "sphinx-cowl",
@@ -2848,7 +3208,12 @@
         "revid": 640362
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 35,
+        "def": 55,
+        "sta": 10
+      }
     },
     {
       "id": "spider-man",
@@ -2884,7 +3249,12 @@
         "revid": 603635
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 33,
+        "def": 17,
+        "sta": 50
+      }
     },
     {
       "id": "starscream",
@@ -2920,7 +3290,12 @@
         "revid": 603646
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 18,
+        "def": 27,
+        "sta": 55
+      }
     },
     {
       "id": "storm-pegasis",
@@ -2937,7 +3312,12 @@
       "firstReleaseSet": "BX-00",
       "products": [],
       "source": null,
-      "status": "unverified"
+      "status": "unverified",
+      "stats": {
+        "atk": 55,
+        "def": 15,
+        "sta": 30
+      }
     },
     {
       "id": "stormspriggan",
@@ -2982,7 +3362,12 @@
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
-      "type": "balance"
+      "type": "balance",
+      "stats": {
+        "atk": 30,
+        "def": 40,
+        "sta": 30
+      }
     },
     {
       "id": "stormtrooper",
@@ -3006,7 +3391,12 @@
         "revid": 637380
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 18,
+        "def": 50,
+        "sta": 32
+      }
     },
     {
       "id": "stun-medusa",
@@ -3028,7 +3418,12 @@
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
-      "type": "stamina"
+      "type": "stamina",
+      "stats": {
+        "atk": 13,
+        "def": 70,
+        "sta": 17
+      }
     },
     {
       "id": "tackle-goat",
@@ -3045,7 +3440,12 @@
       "firstReleaseSet": "G1688",
       "products": [],
       "source": null,
-      "status": "unverified"
+      "status": "unverified",
+      "stats": {
+        "atk": 13,
+        "def": 65,
+        "sta": 22
+      }
     },
     {
       "id": "thanos",
@@ -3081,7 +3481,12 @@
         "revid": 603634
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 22,
+        "def": 60,
+        "sta": 18
+      }
     },
     {
       "id": "the-mandalorian",
@@ -3117,7 +3522,12 @@
         "revid": 610257
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 40,
+        "def": 43,
+        "sta": 17
+      }
     },
     {
       "id": "tricera-press",
@@ -3157,7 +3567,12 @@
         "revid": 640833
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 20,
+        "def": 65,
+        "sta": 15
+      }
     },
     {
       "id": "tricera-spiky",
@@ -3174,7 +3589,12 @@
       "firstReleaseSet": "G1898",
       "products": [],
       "source": null,
-      "status": "unverified"
+      "status": "unverified",
+      "stats": {
+        "atk": 32,
+        "def": 55,
+        "sta": 13
+      }
     },
     {
       "id": "trypio",
@@ -3233,7 +3653,12 @@
         "revid": 640361
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 65,
+        "def": 30,
+        "sta": 5
+      }
     },
     {
       "id": "tyranno-roar",
@@ -3274,7 +3699,12 @@
         "revid": 634335
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 60,
+        "def": 28,
+        "sta": 12
+      }
     },
     {
       "id": "unicorn-sting",
@@ -3315,7 +3745,12 @@
         "revid": 640359
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 35,
+        "def": 35,
+        "sta": 30
+      }
     },
     {
       "id": "valor-bison",
@@ -3373,7 +3808,12 @@
         "revid": 603636
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 55,
+        "def": 22,
+        "sta": 23
+      }
     },
     {
       "id": "victory-valkyrie",
@@ -3390,7 +3830,12 @@
       "firstReleaseSet": "BX-00",
       "products": [],
       "source": null,
-      "status": "unverified"
+      "status": "unverified",
+      "stats": {
+        "atk": 55,
+        "def": 20,
+        "sta": 25
+      }
     },
     {
       "id": "viking-hack",
@@ -3430,7 +3875,12 @@
       },
       "lastVerified": "2026-06-17",
       "status": "verified",
-      "type": "balance"
+      "type": "balance",
+      "stats": {
+        "atk": 47,
+        "def": 28,
+        "sta": 25
+      }
     },
     {
       "id": "viper-tail",
@@ -3476,7 +3926,12 @@
         "revid": 640350
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 30,
+        "def": 20,
+        "sta": 50
+      }
     },
     {
       "id": "weiss-tiger",
@@ -3517,7 +3972,12 @@
         "revid": 639825
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 45,
+        "def": 30,
+        "sta": 25
+      }
     },
     {
       "id": "whale-wave",
@@ -3563,7 +4023,12 @@
         "revid": 599603
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 45,
+        "def": 35,
+        "sta": 20
+      }
     },
     {
       "id": "wizard-arrow",
@@ -3603,7 +4068,12 @@
         "revid": 639649
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 15,
+        "def": 30,
+        "sta": 55
+      }
     },
     {
       "id": "wizard-rod",
@@ -3643,7 +4113,12 @@
         "revid": 633671
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 15,
+        "def": 25,
+        "sta": 60
+      }
     },
     {
       "id": "wyvern-gale",
@@ -3690,7 +4165,12 @@
         "revid": 638226
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 10,
+        "def": 40,
+        "sta": 50
+      }
     },
     {
       "id": "xeno-xcalibur",
@@ -3725,7 +4205,12 @@
         "revid": 636237
       },
       "status": "verified",
-      "lastVerified": "2026-06-15"
+      "lastVerified": "2026-06-15",
+      "stats": {
+        "atk": 65,
+        "def": 25,
+        "sta": 10
+      }
     }
   ],
   "lockChips": [
@@ -4599,7 +5084,12 @@
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
-      "type": "stamina"
+      "type": "stamina",
+      "stats": {
+        "atk": 8,
+        "def": 15,
+        "sta": 37
+      }
     },
     {
       "id": "arc",
@@ -4637,7 +5127,12 @@
         "G1679"
       ],
       "firstReleaseSet": "WizardArc R4-55LO",
-      "type": "balance"
+      "type": "balance",
+      "stats": {
+        "atk": 10,
+        "def": 10,
+        "sta": 40
+      }
     },
     {
       "id": "blast",
@@ -4672,7 +5167,12 @@
         "CX-07",
         "G2350"
       ],
-      "firstReleaseSet": "PegasusBlast ATr"
+      "firstReleaseSet": "PegasusBlast ATr",
+      "stats": {
+        "atk": 50,
+        "def": 10,
+        "sta": 15
+      }
     },
     {
       "id": "blitz",
@@ -4750,7 +5250,12 @@
         "G1677"
       ],
       "firstReleaseSet": "DranBrave S6-60V",
-      "type": "attack"
+      "type": "attack",
+      "stats": {
+        "atk": 40,
+        "def": 10,
+        "sta": 10
+      }
     },
     {
       "id": "brush",
@@ -4787,7 +5292,12 @@
         "CX-00"
       ],
       "firstReleaseSet": "Random Booster Vol. 8",
-      "type": "attack"
+      "type": "attack",
+      "stats": {
+        "atk": 40,
+        "def": 15,
+        "sta": 5
+      }
     },
     {
       "id": "dark",
@@ -4823,7 +5333,12 @@
         "CX-08",
         "G1680"
       ],
-      "firstReleaseSet": "PerseusDark B6-80W"
+      "firstReleaseSet": "PerseusDark B6-80W",
+      "stats": {
+        "atk": 10,
+        "def": 40,
+        "sta": 10
+      }
     },
     {
       "id": "delta",
@@ -4925,7 +5440,12 @@
         "revid": 624993
       },
       "lastVerified": "2026-06-15",
-      "status": "verified"
+      "status": "verified",
+      "stats": {
+        "atk": 35,
+        "def": 10,
+        "sta": 15
+      }
     },
     {
       "id": "flame",
@@ -4959,7 +5479,12 @@
         "revid": 636788
       },
       "lastVerified": "2026-06-15",
-      "status": "verified"
+      "status": "verified",
+      "stats": {
+        "atk": 5,
+        "def": 15,
+        "sta": 40
+      }
     },
     {
       "id": "flare",
@@ -4993,7 +5518,12 @@
       "products": [
         "CX-12"
       ],
-      "firstReleaseSet": "CX-12"
+      "firstReleaseSet": "CX-12",
+      "stats": {
+        "atk": 25,
+        "def": 40,
+        "sta": 10
+      }
     },
     {
       "id": "fort",
@@ -5015,7 +5545,12 @@
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
-      "type": "balance"
+      "type": "balance",
+      "stats": {
+        "atk": 24,
+        "def": 12,
+        "sta": 24
+      }
     },
     {
       "id": "fortress",
@@ -5089,7 +5624,12 @@
       "products": [
         "CX-10"
       ],
-      "firstReleaseSet": "CX-10"
+      "firstReleaseSet": "CX-10",
+      "stats": {
+        "atk": 20,
+        "def": 10,
+        "sta": 30
+      }
     },
     {
       "id": "hurricane",
@@ -5144,7 +5684,12 @@
       "products": [
         "CX-11"
       ],
-      "firstReleaseSet": "EmperorMight Deck Set"
+      "firstReleaseSet": "EmperorMight Deck Set",
+      "stats": {
+        "atk": 25,
+        "def": 25,
+        "sta": 25
+      }
     },
     {
       "id": "rage",
@@ -5213,7 +5758,12 @@
       "products": [
         "CX-05"
       ],
-      "firstReleaseSet": "Random Booster Vol. 6"
+      "firstReleaseSet": "Random Booster Vol. 6",
+      "stats": {
+        "atk": 25,
+        "def": 10,
+        "sta": 25
+      }
     },
     {
       "id": "volt",
@@ -5236,7 +5786,12 @@
       "products": [
         "CX-00"
       ],
-      "firstReleaseSet": "CX-00"
+      "firstReleaseSet": "CX-00",
+      "stats": {
+        "atk": 45,
+        "def": 15,
+        "sta": 15
+      }
     },
     {
       "id": "whip",
@@ -5292,7 +5847,12 @@
       },
       "lastVerified": "2026-06-15",
       "status": "verified",
-      "type": "stamina"
+      "type": "stamina",
+      "stats": {
+        "atk": 8,
+        "def": 12,
+        "sta": 40
+      }
     }
   ],
   "assistBlades": [
@@ -6177,7 +6737,12 @@
         "revid": 640171
       },
       "lastVerified": "2026-06-15",
-      "status": "verified"
+      "status": "verified",
+      "stats": {
+        "atk": 3,
+        "def": 14,
+        "sta": 13
+      }
     },
     {
       "id": "0-70",
@@ -6240,7 +6805,12 @@
         "UX-12",
         "CX-06"
       ],
-      "firstReleaseSet": "Random Booster Vol. 5"
+      "firstReleaseSet": "Random Booster Vol. 5",
+      "stats": {
+        "atk": 3,
+        "def": 12,
+        "sta": 15
+      }
     },
     {
       "id": "1-50",
@@ -6276,7 +6846,12 @@
         "revid": 640057
       },
       "lastVerified": "2026-06-15",
-      "status": "verified"
+      "status": "verified",
+      "stats": {
+        "atk": 18,
+        "def": 9,
+        "sta": 3
+      }
     },
     {
       "id": "1-60",
@@ -6359,7 +6934,12 @@
         "UX-15",
         "CX-00"
       ],
-      "firstReleaseSet": "SharkScale Deck Set"
+      "firstReleaseSet": "SharkScale Deck Set",
+      "stats": {
+        "atk": 17,
+        "def": 6,
+        "sta": 7
+      }
     },
     {
       "id": "1-80",
@@ -6468,7 +7048,12 @@
         "BX-00",
         "CX-00"
       ],
-      "firstReleaseSet": "BX-00"
+      "firstReleaseSet": "BX-00",
+      "stats": {
+        "atk": 10,
+        "def": 12,
+        "sta": 8
+      }
     },
     {
       "id": "2-80",
@@ -6502,7 +7087,12 @@
         "BX-48",
         "BX-00"
       ],
-      "firstReleaseSet": "BX-48"
+      "firstReleaseSet": "BX-48",
+      "stats": {
+        "atk": 10,
+        "def": 11,
+        "sta": 9
+      }
     },
     {
       "id": "3-60",
@@ -6549,7 +7139,12 @@
         "G0352",
         "G0286"
       ],
-      "firstReleaseSet": "BX-01"
+      "firstReleaseSet": "BX-01",
+      "stats": {
+        "atk": 15,
+        "def": 9,
+        "sta": 6
+      }
     },
     {
       "id": "3-70",
@@ -6585,7 +7180,12 @@
         "UX-17",
         "UX-00"
       ],
-      "firstReleaseSet": "UX-02"
+      "firstReleaseSet": "UX-02",
+      "stats": {
+        "atk": 15,
+        "def": 8,
+        "sta": 7
+      }
     },
     {
       "id": "3-80",
@@ -6628,7 +7228,12 @@
         "G0352",
         "G0195"
       ],
-      "firstReleaseSet": "BX-04"
+      "firstReleaseSet": "BX-04",
+      "stats": {
+        "atk": 15,
+        "def": 7,
+        "sta": 8
+      }
     },
     {
       "id": "3-85",
@@ -6676,7 +7281,12 @@
         "BX-00",
         "G1683"
       ],
-      "firstReleaseSet": "G3061"
+      "firstReleaseSet": "G3061",
+      "stats": {
+        "atk": 5,
+        "def": 15,
+        "sta": 10
+      }
     },
     {
       "id": "4-50",
@@ -6715,7 +7325,12 @@
         "BX-49",
         "UX-15"
       ],
-      "firstReleaseSet": "BX-49"
+      "firstReleaseSet": "BX-49",
+      "stats": {
+        "atk": 12,
+        "def": 13,
+        "sta": 5
+      }
     },
     {
       "id": "4-55",
@@ -6760,7 +7375,12 @@
         "BX-00",
         "G1679"
       ],
-      "firstReleaseSet": "WizardArc R4-55LO"
+      "firstReleaseSet": "WizardArc R4-55LO",
+      "stats": {
+        "atk": 7,
+        "def": 11,
+        "sta": 12
+      }
     },
     {
       "id": "4-60",
@@ -6805,7 +7425,12 @@
         "G0353",
         "CX-00"
       ],
-      "firstReleaseSet": "BX-02"
+      "firstReleaseSet": "BX-02",
+      "stats": {
+        "atk": 11,
+        "def": 13,
+        "sta": 6
+      }
     },
     {
       "id": "4-70",
@@ -6893,7 +7518,12 @@
         "G0353",
         "G0188"
       ],
-      "firstReleaseSet": "BX-03"
+      "firstReleaseSet": "BX-03",
+      "stats": {
+        "atk": 11,
+        "def": 11,
+        "sta": 8
+      }
     },
     {
       "id": "5-60",
@@ -6931,7 +7561,12 @@
         "G0196",
         "UX-00"
       ],
-      "firstReleaseSet": "BX-15"
+      "firstReleaseSet": "BX-15",
+      "stats": {
+        "atk": 12,
+        "def": 9,
+        "sta": 9
+      }
     },
     {
       "id": "5-70",
@@ -6968,7 +7603,12 @@
         "CX-18",
         "BX-00"
       ],
-      "firstReleaseSet": "G1695"
+      "firstReleaseSet": "G1695",
+      "stats": {
+        "atk": 12,
+        "def": 8,
+        "sta": 10
+      }
     },
     {
       "id": "5-80",
@@ -7009,7 +7649,12 @@
         "BX-36",
         "CX-08"
       ],
-      "firstReleaseSet": "BX-16"
+      "firstReleaseSet": "BX-16",
+      "stats": {
+        "atk": 12,
+        "def": 8,
+        "sta": 10
+      }
     },
     {
       "id": "6-60",
@@ -7044,7 +7689,12 @@
         "UX-00",
         "G1677"
       ],
-      "firstReleaseSet": "DranBrave S6-60V"
+      "firstReleaseSet": "DranBrave S6-60V",
+      "stats": {
+        "atk": 14,
+        "def": 8,
+        "sta": 8
+      }
     },
     {
       "id": "6-70",
@@ -7078,7 +7728,12 @@
         "revid": 640830
       },
       "lastVerified": "2026-06-15",
-      "status": "verified"
+      "status": "verified",
+      "stats": {
+        "atk": 14,
+        "def": 7,
+        "sta": 9
+      }
     },
     {
       "id": "6-80",
@@ -7113,7 +7768,12 @@
         "BX-00",
         "G1680"
       ],
-      "firstReleaseSet": "PerseusDark B6-80W"
+      "firstReleaseSet": "PerseusDark B6-80W",
+      "stats": {
+        "atk": 14,
+        "def": 6,
+        "sta": 10
+      }
     },
     {
       "id": "7-55",
@@ -7147,7 +7807,12 @@
         "UX-18",
         "G2750"
       ],
-      "firstReleaseSet": "Random Booster Vol. 8"
+      "firstReleaseSet": "Random Booster Vol. 8",
+      "stats": {
+        "atk": 6,
+        "def": 14,
+        "sta": 10
+      }
     },
     {
       "id": "7-60",
@@ -7230,7 +7895,12 @@
         "UX-10",
         "CX-08"
       ],
-      "firstReleaseSet": "BX-46"
+      "firstReleaseSet": "BX-46",
+      "stats": {
+        "atk": 8,
+        "def": 12,
+        "sta": 10
+      }
     },
     {
       "id": "7-80",
@@ -7264,7 +7934,12 @@
         "BX-39",
         "CX-17"
       ],
-      "firstReleaseSet": "BX-39"
+      "firstReleaseSet": "BX-39",
+      "stats": {
+        "atk": 7,
+        "def": 14,
+        "sta": 9
+      }
     },
     {
       "id": "8-70",
@@ -7299,7 +7974,12 @@
         "revid": 639626
       },
       "lastVerified": "2026-06-15",
-      "status": "verified"
+      "status": "verified",
+      "stats": {
+        "atk": 8,
+        "def": 10,
+        "sta": 12
+      }
     },
     {
       "id": "9-60",
@@ -7374,7 +8054,12 @@
         "CX-17",
         "G4567"
       ],
-      "firstReleaseSet": "Random Booster ClockMirage Select"
+      "firstReleaseSet": "Random Booster ClockMirage Select",
+      "stats": {
+        "atk": 13,
+        "def": 10,
+        "sta": 7
+      }
     },
     {
       "id": "9-70",
@@ -7457,7 +8142,12 @@
         "CX-05",
         "CX-12"
       ],
-      "firstReleaseSet": "BX-27"
+      "firstReleaseSet": "BX-27",
+      "stats": {
+        "atk": 13,
+        "def": 10,
+        "sta": 7
+      }
     },
     {
       "id": "M-85",
@@ -7492,7 +8182,12 @@
         "revid": 640833
       },
       "lastVerified": "2026-06-15",
-      "status": "verified"
+      "status": "verified",
+      "stats": {
+        "atk": 8,
+        "def": 19,
+        "sta": 13
+      }
     }
   ],
   "bits": [
@@ -7533,7 +8228,12 @@
         "CX-00"
       ],
       "firstReleaseSet": "UX-01",
-      "shortName": "A"
+      "shortName": "A",
+      "stats": {
+        "atk": 40,
+        "def": 10,
+        "sta": 10
+      }
     },
     {
       "id": "ball",
@@ -7576,7 +8276,12 @@
         "G0195"
       ],
       "firstReleaseSet": "BX-03",
-      "shortName": "B"
+      "shortName": "B",
+      "stats": {
+        "atk": 15,
+        "def": 25,
+        "sta": 50
+      }
     },
     {
       "id": "bound-spike",
@@ -7613,7 +8318,12 @@
         "G3195"
       ],
       "firstReleaseSet": "BX-44",
-      "shortName": "BS"
+      "shortName": "BS",
+      "stats": {
+        "atk": 5,
+        "def": 60,
+        "sta": 30
+      }
     },
     {
       "id": "cyclone",
@@ -7649,7 +8359,12 @@
         "UX-12"
       ],
       "firstReleaseSet": "BX-34",
-      "shortName": "C"
+      "shortName": "C",
+      "stats": {
+        "atk": 40,
+        "def": 5,
+        "sta": 10
+      }
     },
     {
       "id": "disk-ball",
@@ -7691,7 +8406,12 @@
         "CX-10"
       ],
       "firstReleaseSet": "UX-03",
-      "shortName": "DB"
+      "shortName": "DB",
+      "stats": {
+        "atk": 15,
+        "def": 20,
+        "sta": 55
+      }
     },
     {
       "id": "disk-spike",
@@ -7728,7 +8448,12 @@
       "lastVerified": "2026-06-15",
       "status": "verified",
       "type": "stamina",
-      "shortName": "DS"
+      "shortName": "DS",
+      "stats": {
+        "atk": 5,
+        "def": 55,
+        "sta": 40
+      }
     },
     {
       "id": "dot",
@@ -7805,7 +8530,12 @@
         "CX-00"
       ],
       "firstReleaseSet": "G3061",
-      "shortName": "E"
+      "shortName": "E",
+      "stats": {
+        "atk": 30,
+        "def": 15,
+        "sta": 20
+      }
     },
     {
       "id": "flat",
@@ -7847,7 +8577,12 @@
         "G0352"
       ],
       "firstReleaseSet": "BX-01",
-      "shortName": "F"
+      "shortName": "F",
+      "stats": {
+        "atk": 40,
+        "def": 15,
+        "sta": 10
+      }
     },
     {
       "id": "free-ball",
@@ -7884,7 +8619,12 @@
         "G3497"
       ],
       "firstReleaseSet": "UX-08",
-      "shortName": "FB"
+      "shortName": "FB",
+      "stats": {
+        "atk": 10,
+        "def": 25,
+        "sta": 60
+      }
     },
     {
       "id": "free-flat",
@@ -7920,7 +8660,12 @@
       "lastVerified": "2026-06-15",
       "status": "verified",
       "type": "attack",
-      "shortName": "FF"
+      "shortName": "FF",
+      "stats": {
+        "atk": 40,
+        "def": 15,
+        "sta": 15
+      }
     },
     {
       "id": "gear-ball",
@@ -7967,7 +8712,12 @@
         "G4567"
       ],
       "firstReleaseSet": "BX-24",
-      "shortName": "GB"
+      "shortName": "GB",
+      "stats": {
+        "atk": 10,
+        "def": 15,
+        "sta": 45
+      }
     },
     {
       "id": "gear-flat",
@@ -8011,7 +8761,12 @@
         "G0284"
       ],
       "firstReleaseSet": "BX-23",
-      "shortName": "GF"
+      "shortName": "GF",
+      "stats": {
+        "atk": 50,
+        "def": 5,
+        "sta": 5
+      }
     },
     {
       "id": "gear-needle",
@@ -8054,7 +8809,12 @@
         "BX-00"
       ],
       "firstReleaseSet": "BX-27",
-      "shortName": "GN"
+      "shortName": "GN",
+      "stats": {
+        "atk": 20,
+        "def": 40,
+        "sta": 10
+      }
     },
     {
       "id": "gear-point",
@@ -8098,7 +8858,12 @@
         "BX-00"
       ],
       "firstReleaseSet": "BX-26",
-      "shortName": "GP"
+      "shortName": "GP",
+      "stats": {
+        "atk": 30,
+        "def": 25,
+        "sta": 15
+      }
     },
     {
       "id": "gear-rush",
@@ -8139,7 +8904,12 @@
         "CX-17"
       ],
       "firstReleaseSet": "Random Booster FoxBrush Select",
-      "shortName": "GR"
+      "shortName": "GR",
+      "stats": {
+        "atk": 45,
+        "def": 10,
+        "sta": 10
+      }
     },
     {
       "id": "gear-unite",
@@ -8175,7 +8945,12 @@
       "lastVerified": "2026-06-15",
       "status": "verified",
       "type": "balance",
-      "shortName": "GU"
+      "shortName": "GU",
+      "stats": {
+        "atk": 30,
+        "def": 20,
+        "sta": 20
+      }
     },
     {
       "id": "glide",
@@ -8212,7 +8987,12 @@
       "lastVerified": "2026-06-15",
       "status": "verified",
       "type": "stamina",
-      "shortName": "G"
+      "shortName": "G",
+      "stats": {
+        "atk": 20,
+        "def": 10,
+        "sta": 55
+      }
     },
     {
       "id": "hexa",
@@ -8248,7 +9028,12 @@
         "UX-19"
       ],
       "firstReleaseSet": "UX-02",
-      "shortName": "H"
+      "shortName": "H",
+      "stats": {
+        "atk": 30,
+        "def": 35,
+        "sta": 20
+      }
     },
     {
       "id": "high-needle",
@@ -8292,7 +9077,12 @@
         "G1684"
       ],
       "firstReleaseSet": "BX-13",
-      "shortName": "HN"
+      "shortName": "HN",
+      "stats": {
+        "atk": 15,
+        "def": 55,
+        "sta": 20
+      }
     },
     {
       "id": "high-taper",
@@ -8335,7 +9125,12 @@
         "G0196"
       ],
       "firstReleaseSet": "BX-21",
-      "shortName": "HT"
+      "shortName": "HT",
+      "stats": {
+        "atk": 30,
+        "def": 25,
+        "sta": 20
+      }
     },
     {
       "id": "ignition",
@@ -8373,7 +9168,12 @@
       "lastVerified": "2026-06-15",
       "status": "verified",
       "type": "attack",
-      "shortName": "I"
+      "shortName": "I",
+      "stats": {
+        "atk": 50,
+        "def": 15,
+        "sta": 5
+      }
     },
     {
       "id": "jolt",
@@ -8409,7 +9209,12 @@
       "lastVerified": "2026-06-15",
       "status": "verified",
       "type": "attack",
-      "shortName": "J"
+      "shortName": "J",
+      "stats": {
+        "atk": 35,
+        "def": 10,
+        "sta": 15
+      }
     },
     {
       "id": "kick",
@@ -8445,7 +9250,12 @@
         "UX-00"
       ],
       "firstReleaseSet": "Random Booster Vol. 6",
-      "shortName": "K"
+      "shortName": "K",
+      "stats": {
+        "atk": 35,
+        "def": 25,
+        "sta": 15
+      }
     },
     {
       "id": "level",
@@ -8480,7 +9290,12 @@
         "UX-15"
       ],
       "firstReleaseSet": "SharkScale Deck Set",
-      "shortName": "L"
+      "shortName": "L",
+      "stats": {
+        "atk": 40,
+        "def": 5,
+        "sta": 15
+      }
     },
     {
       "id": "low-flat",
@@ -8524,7 +9339,12 @@
         "UX-00"
       ],
       "firstReleaseSet": "BX-14",
-      "shortName": "LF"
+      "shortName": "LF",
+      "stats": {
+        "atk": 45,
+        "def": 5,
+        "sta": 10
+      }
     },
     {
       "id": "low-orb",
@@ -8566,7 +9386,12 @@
         "G1679"
       ],
       "firstReleaseSet": "WizardArc R4-55LO",
-      "shortName": "LO"
+      "shortName": "LO",
+      "stats": {
+        "atk": 5,
+        "def": 25,
+        "sta": 55
+      }
     },
     {
       "id": "low-rush",
@@ -8601,7 +9426,12 @@
         "UX-11"
       ],
       "firstReleaseSet": "ImpactDrake 9-60LR",
-      "shortName": "LR"
+      "shortName": "LR",
+      "stats": {
+        "atk": 45,
+        "def": 5,
+        "sta": 15
+      }
     },
     {
       "id": "merge",
@@ -8638,7 +9468,12 @@
       "lastVerified": "2026-06-15",
       "status": "verified",
       "type": "balance",
-      "shortName": "M"
+      "shortName": "M",
+      "stats": {
+        "atk": 50,
+        "def": 20,
+        "sta": 10
+      }
     },
     {
       "id": "metal-needle",
@@ -8680,7 +9515,12 @@
         "CX-08"
       ],
       "firstReleaseSet": "UX-05",
-      "shortName": "MN"
+      "shortName": "MN",
+      "stats": {
+        "atk": 8,
+        "def": 57,
+        "sta": 30
+      }
     },
     {
       "id": "narrow",
@@ -8757,7 +9597,12 @@
         "G0352"
       ],
       "firstReleaseSet": "BX-04",
-      "shortName": "N"
+      "shortName": "N",
+      "stats": {
+        "atk": 10,
+        "def": 50,
+        "sta": 30
+      }
     },
     {
       "id": "operate",
@@ -8832,7 +9677,12 @@
         "G1683"
       ],
       "firstReleaseSet": "BX-16",
-      "shortName": "O"
+      "shortName": "O",
+      "stats": {
+        "atk": 10,
+        "def": 30,
+        "sta": 50
+      }
     },
     {
       "id": "orbit",
@@ -8888,7 +9738,12 @@
         "G0353"
       ],
       "firstReleaseSet": "BX-15",
-      "shortName": "P"
+      "shortName": "P",
+      "stats": {
+        "atk": 25,
+        "def": 25,
+        "sta": 25
+      }
     },
     {
       "id": "quake",
@@ -8925,7 +9780,12 @@
       "lastVerified": "2026-06-15",
       "status": "verified",
       "type": "attack",
-      "shortName": "Q"
+      "shortName": "Q",
+      "stats": {
+        "atk": 55,
+        "def": 15,
+        "sta": 5
+      }
     },
     {
       "id": "rubber-accel",
@@ -8999,7 +9859,12 @@
         "UX-10"
       ],
       "firstReleaseSet": "BX-20",
-      "shortName": "R"
+      "shortName": "R",
+      "stats": {
+        "atk": 40,
+        "def": 10,
+        "sta": 20
+      }
     },
     {
       "id": "spike",
@@ -9080,7 +9945,12 @@
         "G0188"
       ],
       "firstReleaseSet": "BX-02",
-      "shortName": "T"
+      "shortName": "T",
+      "stats": {
+        "atk": 35,
+        "def": 20,
+        "sta": 20
+      }
     },
     {
       "id": "trans-kick",
@@ -9161,7 +10031,12 @@
         "UX-18"
       ],
       "firstReleaseSet": "BX-38",
-      "shortName": "TP"
+      "shortName": "TP",
+      "stats": {
+        "atk": 35,
+        "def": 25,
+        "sta": 25
+      }
     },
     {
       "id": "turbo",
@@ -9234,7 +10109,12 @@
       "lastVerified": "2026-06-15",
       "status": "verified",
       "type": "attack",
-      "shortName": "UF"
+      "shortName": "UF",
+      "stats": {
+        "atk": 55,
+        "def": 5,
+        "sta": 5
+      }
     },
     {
       "id": "under-needle",
@@ -9276,7 +10156,12 @@
         "G4563"
       ],
       "firstReleaseSet": "GolemRock 1-60UN",
-      "shortName": "UN"
+      "shortName": "UN",
+      "stats": {
+        "atk": 10,
+        "def": 60,
+        "sta": 20
+      }
     },
     {
       "id": "unite",
@@ -9314,7 +10199,12 @@
         "BX-00"
       ],
       "firstReleaseSet": "BX-33",
-      "shortName": "U"
+      "shortName": "U",
+      "stats": {
+        "atk": 25,
+        "def": 25,
+        "sta": 30
+      }
     },
     {
       "id": "vortex",
@@ -9353,7 +10243,12 @@
       "lastVerified": "2026-06-15",
       "status": "verified",
       "type": "attack",
-      "shortName": "V"
+      "shortName": "V",
+      "stats": {
+        "atk": 45,
+        "def": 10,
+        "sta": 5
+      }
     },
     {
       "id": "wall-ball",
@@ -9389,7 +10284,12 @@
       "lastVerified": "2026-06-15",
       "status": "verified",
       "type": "stamina",
-      "shortName": "WB"
+      "shortName": "WB",
+      "stats": {
+        "atk": 15,
+        "def": 30,
+        "sta": 45
+      }
     },
     {
       "id": "wall-wedge",
@@ -9425,7 +10325,12 @@
       "lastVerified": "2026-06-15",
       "status": "verified",
       "type": "defense",
-      "shortName": "WW"
+      "shortName": "WW",
+      "stats": {
+        "atk": 5,
+        "def": 60,
+        "sta": 25
+      }
     },
     {
       "id": "wedge",
@@ -9462,7 +10367,12 @@
         "G1680"
       ],
       "firstReleaseSet": "PerseusDark B6-80W",
-      "shortName": "W"
+      "shortName": "W",
+      "stats": {
+        "atk": 5,
+        "def": 55,
+        "sta": 30
+      }
     },
     {
       "id": "yielding",
@@ -9499,7 +10409,12 @@
       "lastVerified": "2026-06-15",
       "status": "verified",
       "type": "stamina",
-      "shortName": "Y"
+      "shortName": "Y",
+      "stats": {
+        "atk": 10,
+        "def": 15,
+        "sta": 65
+      }
     },
     {
       "id": "zap",
@@ -9535,7 +10450,12 @@
       "lastVerified": "2026-06-15",
       "status": "verified",
       "type": "balance",
-      "shortName": "Z"
+      "shortName": "Z",
+      "stats": {
+        "atk": 30,
+        "def": 20,
+        "sta": 15
+      }
     }
   ]
 }
