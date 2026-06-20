@@ -1,5 +1,5 @@
 {
-  "version": "2026-06-19",
+  "version": "2026-06-20",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -1221,7 +1221,7 @@
       "source": {
         "page": "Blade - Gust Bat",
         "url": "https://beyblade.fandom.com/wiki/Blade_-_Gust_Bat",
-        "revid": 638868
+        "revid": 641672
       },
       "lastVerified": "2026-06-15",
       "status": "unverified",
@@ -1443,6 +1443,34 @@
         "atk": 13,
         "def": 60,
         "sta": 27
+      }
+    },
+    {
+      "id": "hulk",
+      "category": "blade",
+      "line": "bx",
+      "type": "defense",
+      "names": {
+        "tt": "Hulk",
+        "hasbro": null,
+        "ja": "",
+        "romaji": ""
+      },
+      "aliases": [],
+      "firstReleaseSet": "G3064",
+      "products": [
+        "G3064"
+      ],
+      "source": {
+        "page": "Blade - Hulk",
+        "url": "https://beyblade.fandom.com/wiki/Blade_-_Hulk",
+        "revid": 641465
+      },
+      "status": "unverified",
+      "stats": {
+        "atk": 12,
+        "def": 65,
+        "sta": 23
       }
     },
     {
@@ -2138,10 +2166,10 @@
       "source": {
         "page": "Random Booster Vol. 8",
         "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._8",
-        "revid": 636784
+        "revid": 641582
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-20",
       "stats": {
         "atk": 30,
         "def": 60,
@@ -2808,10 +2836,10 @@
       "source": {
         "page": "ScorpioSpear 0-70Z",
         "url": "https://beyblade.fandom.com/wiki/ScorpioSpear_0-70Z",
-        "revid": 640755
+        "revid": 641559
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-20",
       "stats": {
         "atk": 25,
         "def": 55,
@@ -2976,9 +3004,9 @@
       "source": {
         "page": "Shatter Horus 9-65GB",
         "url": "https://beyblade.fandom.com/wiki/Shatter_Horus_9-65GB",
-        "revid": 639807
+        "revid": 641590
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-20",
       "status": "verified",
       "type": "stamina",
       "stats": {
@@ -3581,20 +3609,49 @@
       "type": "defense",
       "names": {
         "tt": "Tricera Spiky",
-        "hasbro": null,
-        "ja": "",
-        "romaji": ""
+        "hasbro": "Ridge Triceratops",
+        "ja": "トリケラスパイキー",
+        "romaji": "TorikeraSupaikī"
       },
-      "aliases": [],
+      "aliases": [
+        {
+          "value": "トリケラスパイキー",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "TorikeraSupaikī",
+          "lang": "ja",
+          "kind": "romaji"
+        },
+        {
+          "value": "Ridge Triceratops",
+          "lang": "en",
+          "kind": "hasbro"
+        },
+        {
+          "value": "Mosasaurus",
+          "lang": "en",
+          "kind": "community"
+        }
+      ],
       "firstReleaseSet": "G1898",
-      "products": [],
-      "source": null,
-      "status": "unverified",
+      "products": [
+        "G3392",
+        "G1898"
+      ],
+      "source": {
+        "page": "Blade - TriceraSpiky",
+        "url": "https://beyblade.fandom.com/wiki/Blade_-_TriceraSpiky",
+        "revid": 624897
+      },
+      "status": "verified",
       "stats": {
         "atk": 32,
         "def": 55,
         "sta": 13
-      }
+      },
+      "lastVerified": "2026-06-20"
     },
     {
       "id": "trypio",
@@ -4279,9 +4336,9 @@
       "source": {
         "page": "BrachioWhip OW5-70Nr",
         "url": "https://beyblade.fandom.com/wiki/BrachioWhip_OW5-70Nr",
-        "revid": 641472
+        "revid": 641629
       },
-      "lastVerified": "2026-06-19",
+      "lastVerified": "2026-06-20",
       "status": "verified"
     },
     {
@@ -4826,10 +4883,10 @@
       "source": {
         "page": "Random Booster Vol. 6",
         "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._6",
-        "revid": 634309
+        "revid": 641562
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-20",
       "products": [
         "CX-05"
       ],
@@ -5282,10 +5339,10 @@
       "source": {
         "page": "Random Booster Vol. 8",
         "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._8",
-        "revid": 636784
+        "revid": 641582
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-20",
       "products": [
         "UX-18",
         "CX-06",
@@ -5751,10 +5808,10 @@
       "source": {
         "page": "Random Booster Vol. 6",
         "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._6",
-        "revid": 634309
+        "revid": 641562
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-20",
       "products": [
         "CX-05"
       ],
@@ -5822,9 +5879,9 @@
       "source": {
         "page": "BrachioWhip OW5-70Nr",
         "url": "https://beyblade.fandom.com/wiki/BrachioWhip_OW5-70Nr",
-        "revid": 641472
+        "revid": 641629
       },
-      "lastVerified": "2026-06-19",
+      "lastVerified": "2026-06-20",
       "status": "verified"
     },
     {
@@ -5957,10 +6014,10 @@
       "source": {
         "page": "Random Booster Vol. 8",
         "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._8",
-        "revid": 636784
+        "revid": 641582
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-20",
       "products": [
         "UX-18",
         "CX-05"
@@ -6243,10 +6300,10 @@
       "source": {
         "page": "Random Booster Vol. 8",
         "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._8",
-        "revid": 636784
+        "revid": 641582
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-20",
       "products": [
         "UX-18",
         "CX-08"
@@ -6390,10 +6447,10 @@
       "source": {
         "page": "Random Booster Vol. 6",
         "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._6",
-        "revid": 634309
+        "revid": 641562
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-20",
       "products": [
         "CX-05",
         "CX-00"
@@ -6768,9 +6825,9 @@
       "source": {
         "page": "ScorpioSpear 0-70Z",
         "url": "https://beyblade.fandom.com/wiki/ScorpioSpear_0-70Z",
-        "revid": 640755
+        "revid": 641559
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-20",
       "status": "verified"
     },
     {
@@ -7799,10 +7856,10 @@
       "source": {
         "page": "Random Booster Vol. 8",
         "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._8",
-        "revid": 636784
+        "revid": 641582
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-20",
       "products": [
         "UX-18",
         "G2750"
@@ -9241,10 +9298,10 @@
       "source": {
         "page": "Random Booster Vol. 6",
         "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._6",
-        "revid": 634309
+        "revid": 641562
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-20",
       "products": [
         "CX-05",
         "UX-00"
@@ -9551,9 +9608,9 @@
       "source": {
         "page": "BrachioWhip OW5-70Nr",
         "url": "https://beyblade.fandom.com/wiki/BrachioWhip_OW5-70Nr",
-        "revid": 641472
+        "revid": 641629
       },
-      "lastVerified": "2026-06-19",
+      "lastVerified": "2026-06-20",
       "status": "verified",
       "type": "stamina",
       "shortName": "Nr"
@@ -10445,9 +10502,9 @@
       "source": {
         "page": "ScorpioSpear 0-70Z",
         "url": "https://beyblade.fandom.com/wiki/ScorpioSpear_0-70Z",
-        "revid": 640755
+        "revid": 641559
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-20",
       "status": "verified",
       "type": "balance",
       "shortName": "Z",

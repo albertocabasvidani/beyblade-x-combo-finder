@@ -1,5 +1,5 @@
 {
-  "version": "2026-06-19",
+  "version": "2026-06-20",
   "blades": [
     {
       "id": "aero-pegasus",
@@ -530,6 +530,18 @@
         "atk": 13,
         "def": 60,
         "sta": 27
+      }
+    },
+    {
+      "id": "hulk",
+      "name": "Hulk",
+      "type": "defense",
+      "line": "bx",
+      "releaseSet": "G3064",
+      "stats": {
+        "atk": 12,
+        "def": 65,
+        "sta": 23
       }
     },
     {
@@ -1327,6 +1339,11 @@
     {
       "id": "tricera-spiky",
       "name": "Tricera Spiky",
+      "nameWestern": "Ridge Triceratops",
+      "aliases": [
+        "TorikeraSupaikī",
+        "Mosasaurus"
+      ],
       "type": "defense",
       "line": "bx",
       "releaseSet": "G1898",
