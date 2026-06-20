@@ -9694,7 +9694,8 @@
       },
       "lastVerified": "2026-06-19",
       "status": "verified",
-      "shortName": "Op"
+      "shortName": "Op",
+      "integratedRatchet": true
     },
     {
       "id": "orb",
@@ -10130,7 +10131,8 @@
       "lastVerified": "2026-06-15",
       "status": "verified",
       "type": "attack",
-      "shortName": "Tr"
+      "shortName": "Tr",
+      "integratedRatchet": true
     },
     {
       "id": "under-flat",

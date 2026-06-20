@@ -170,15 +170,20 @@ export function resolveCxBladePart(r: CxResolver, bladePart: string): CxResult {
   return { ok: false };
 }
 
-/** id-set CX canonico (con overBlade se presente): lockChip-[overBlade]-mainBlade-assistBlade-ratchet-bit. */
-export function cxComboId(cx: CxResolution, ratchet: string, bitId: string): string {
+/**
+ * id-set CX canonico (con overBlade se presente): lockChip-[overBlade]-mainBlade-assistBlade-ratchet-bit.
+ * `ratchet` null per le CX con Ratchet Integrated Bit (Operate/Turbo): il segmento ratchet è omesso.
+ */
+export function cxComboId(cx: CxResolution, ratchet: string | null, bitId: string): string {
   const over = cx.overBlade ? `${cx.overBlade.id}-` : '';
-  return `${cx.lockChip.id}-${over}${cx.mainBlade.id}-${cx.assistBlade.id}-${ratchet}-${bitId}`;
+  const rt = ratchet ? `${ratchet}-` : '';
+  return `${cx.lockChip.id}-${over}${cx.mainBlade.id}-${cx.assistBlade.id}-${rt}${bitId}`;
 }
 
-/** displayName CX: "Lock Main [Over] AssistShort ratchet Bit" (coerente con le CX già in combos.json). */
-export function cxDisplayName(cx: CxResolution, ratchet: string, bitName: string): string {
+/** displayName CX: "Lock Main [Over] AssistShort [ratchet] Bit" (ratchet omesso se null). */
+export function cxDisplayName(cx: CxResolution, ratchet: string | null, bitName: string): string {
   const over = cx.overBlade ? `${cx.overBlade.name} ` : '';
   const assistShort = cx.assistBlade.shortName ?? cx.assistBlade.name;
-  return `${cx.lockChip.name} ${cx.mainBlade.name} ${over}${assistShort} ${ratchet} ${bitName}`.replace(/\s+/g, ' ').trim();
+  const rt = ratchet ? `${ratchet} ` : '';
+  return `${cx.lockChip.name} ${cx.mainBlade.name} ${over}${assistShort} ${rt}${bitName}`.replace(/\s+/g, ' ').trim();
 }

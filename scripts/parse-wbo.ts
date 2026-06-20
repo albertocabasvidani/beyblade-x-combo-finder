@@ -64,8 +64,8 @@ async function main() {
     return;
   }
 
-  const events = segmentThread(raw);
   const resolver = buildResolver();
+  const events = segmentThread(raw, resolver);
   const evidence = assembleEvidence(events, resolver, fetchedAt, sourceUrl, loadCorrections());
   writeEvidence(evidence, fetchedAt);
 

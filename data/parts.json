@@ -2853,7 +2853,8 @@
       "shortName": "Op",
       "aliases": [
         "Operēto"
-      ]
+      ],
+      "integratedRatchet": true
     },
     {
       "id": "orb",
@@ -2980,7 +2981,8 @@
       "shortName": "Tr",
       "aliases": [
         "Tābo"
-      ]
+      ],
+      "integratedRatchet": true
     },
     {
       "id": "under-flat",

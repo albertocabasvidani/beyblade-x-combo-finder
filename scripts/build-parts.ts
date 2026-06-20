@@ -83,12 +83,13 @@ const withShort = (p: MasterPart) => {
 // master non le ha (caso attuale per quasi tutte) il campo resta assente e parts.json non cambia.
 const withStats = (p: MasterPart) => (p.stats ? { stats: p.stats } : {});
 
-// Bey a ratchet integrato (no ratchet separato, es. Cutter Shinobi, Bullet Griffon): segnalato dalla
-// pagina wiki "Ratchet-Integrated Blade - ..." o da un flag esplicito nel master (per i casi la cui
-// pagina non ha il prefisso, es. Bullet Griffon). Esposto in parts.json così il parser combo sa che una
-// riga senza ratchet può essere un combo valido [blade integrato] + [bit].
+// Parte che ingloba il ratchet (no ratchet separato): vale sia per i blade UX (Cutter Shinobi,
+// Bullet Griffon) sia per i "Ratchet Integrated Bit" (Operate, Turbo). Segnalata dalla pagina wiki
+// "Ratchet-Integrated Blade - ..." / "Ratchet Integrated Bit - ..." o da un flag esplicito nel master
+// (per i casi la cui pagina di provenienza è il set, es. Bullet Griffon, Operate). Esposto in
+// parts.json così il parser combo sa che una riga senza ratchet può essere un combo valido.
 const isIntegratedRatchet = (p: MasterPart): boolean =>
-  p.integratedRatchet === true || /^Ratchet-Integrated Blade\b/i.test(p.source?.page ?? '');
+  p.integratedRatchet === true || /^Ratchet[ -]Integrated (Blade|Bit)\b/i.test(p.source?.page ?? '');
 
 function deriveParts(master: Master) {
   const blades = (master.blades ?? []).slice().sort(byId).map((p) => ({
@@ -148,6 +149,7 @@ function deriveParts(master: Master) {
     type: p.type,
     ...withShort(p),
     ...withAliases(p),
+    ...(isIntegratedRatchet(p) ? { integratedRatchet: true } : {}),
     ...withStats(p),
   }));
 

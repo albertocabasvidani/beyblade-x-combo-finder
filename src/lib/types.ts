@@ -28,6 +28,8 @@ export interface Blade {
   line: 'bx' | 'ux';
   releaseSet?: string;
   stats?: PartStats;
+  /** Blade UX col ratchet fuso nella lama (es. Bullet Griffon): combo senza slot ratchet. */
+  integratedRatchet?: boolean;
 }
 
 export interface LockChip {
@@ -75,6 +77,8 @@ export interface Bit {
   shortName?: string;   // codice ufficiale stampato sui prodotti (es. "H" = Hexa, "FB" = Free Ball)
   aliases?: string[];
   stats?: PartStats;
+  /** Ratchet Integrated Bit (es. Operate, Turbo): ratchet+bit in un'unica parte → combo senza slot ratchet. */
+  integratedRatchet?: boolean;
 }
 
 export interface PartsRegistry {
@@ -166,7 +170,8 @@ export interface Combo {
   id: string;
   line: ComboLine;
   blade: string | null;
-  ratchet: string;
+  /** null per le combo a parte integrata (blade UX a ratchet integrato o Ratchet Integrated Bit). */
+  ratchet: string | null;
   bit: string;
   lockChip: string | null;
   mainBlade: string | null;

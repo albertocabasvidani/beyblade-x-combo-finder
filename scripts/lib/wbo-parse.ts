@@ -34,8 +34,8 @@ const STAGE_RE = /\s*\([^)]*\)\s*$/;  // " (First Stage & Final Stage)", " (Both
 
 // ---- Resolver -------------------------------------------------------------
 
-interface BladeRef { id: string; name: string; type: BladeType; integratedRatchet?: boolean }
-interface BitRef { id: string; name: string }
+interface BladeRef { id: string; name: string; type: BladeType; line: 'bx' | 'ux'; integratedRatchet?: boolean }
+interface BitRef { id: string; name: string; integratedRatchet?: boolean }
 export interface Resolver {
   blade: Map<string, BladeRef>;
   bit: Map<string, BitRef>;        // per nome/alias (chiave squash)
@@ -73,13 +73,13 @@ export function buildResolver(partsArg?: any): Resolver {
   };
 
   for (const b of parts.blades ?? []) {
-    const v: BladeRef = { id: b.id, name: b.name, type: b.type as BladeType, ...(b.integratedRatchet ? { integratedRatchet: true } : {}) };
+    const v: BladeRef = { id: b.id, name: b.name, type: b.type as BladeType, line: (b.line as 'bx' | 'ux') ?? 'bx', ...(b.integratedRatchet ? { integratedRatchet: true } : {}) };
     addKey(blade, b.name, v);
     addBlade(b.nameWestern, v);
     for (const a of b.aliases ?? []) addBlade(a, v);
   }
   for (const b of parts.bits ?? []) {
-    const v: BitRef = { id: b.id, name: b.name };
+    const v: BitRef = { id: b.id, name: b.name, ...(b.integratedRatchet ? { integratedRatchet: true } : {}) };
     addKey(bit, b.name, v);
     if (b.nameWestern) addKey(bit, b.nameWestern, v);
     for (const a of b.aliases ?? []) addKey(bit, a, v);
@@ -95,8 +95,8 @@ export function buildResolver(partsArg?: any): Resolver {
 // ---- Risoluzione di una riga combo ---------------------------------------
 
 export interface ResolvedCombo {
-  id: string; line: 'bx' | 'cx';
-  blade: string | null; ratchet: string; bit: string;
+  id: string; line: 'bx' | 'ux' | 'cx';
+  blade: string | null; ratchet: string | null; bit: string;
   lockChip?: string | null; mainBlade?: string | null; assistBlade?: string | null; overBlade?: string | null;
   displayName: string; type: BladeType;
 }
@@ -129,6 +129,9 @@ export function parseComboLine(r: Resolver, rawLine: string): ComboLineResult {
   if (!bitPart) return { ok: false, reason: 'bit mancante dopo il ratchet' };
   const bit = resolveBit(r, bitPart);
   if (!bit) return { ok: false, reason: `bit/sigla non risolto: "${bitPart}"` };
+  // Un Ratchet Integrated Bit (Operate/Turbo) ingloba il ratchet: non può comparire dopo un ratchet
+  // N-MM. La riga è incoerente (es. "Shark Scale 7-60 Operate", tipico mis-parse) → unresolved.
+  if (bit.integratedRatchet) return { ok: false, reason: `Ratchet Integrated Bit "${bit.name}" con ratchet separato (${ratchet}): incoerente` };
 
   // 1) BX diretto
   const b = r.blade.get(squash(bladePart));
@@ -180,22 +183,66 @@ export function parseComboLine(r: Resolver, rawLine: string): ComboLineResult {
 }
 
 /**
- * Riga senza ratchet. Può essere un bey a ratchet integrato (Cutter Shinobi, Bullet Griffon, ...),
- * scritto come "[blade integrato] [bit]". Non viene materializzato come combo (la pipeline a valle e
- * la UI assumono un ratchet a 3 parti), ma se riconosciuto si dà un reason chiaro per il ledger; il
- * flag `integratedRatchet` del registro distingue il bey integrato legittimo dalla riga-rumore.
+ * Riga senza ratchet in notazione N-MM. È una combo a parte integrata (ratchet incluso, quindi
+ * ratchet=null) in una di queste forme:
+ *  1) blade UX a ratchet integrato (Bullet Griffon, Cutter Shinobi, ...) + bit normale;
+ *  2) bit a ratchet integrato (Operate, Turbo) + blade BX/UX;
+ *  3) bit a ratchet integrato + lama CX (lockChip+mainBlade+assist[+over]).
+ * Il flag `integratedRatchet` del registro distingue la combo integrata legittima dalla riga-rumore:
+ * ciò che non risolve a una di queste forme resta unresolved (niente combo inventate).
  */
 function parseIntegratedLine(r: Resolver, line: string): ComboLineResult {
   const toks = line.split(/\s+/).filter(Boolean);
   for (let cut = toks.length - 1; cut >= 1; cut--) {
     const bit = resolveBit(r, toks.slice(cut).join(' '));
     if (!bit) continue;
-    const b = r.blade.get(squash(toks.slice(0, cut).join(' ')));
+    const bladePart = toks.slice(0, cut).join(' ');
+    const b = r.blade.get(squash(bladePart));
+
+    // 1) blade a ratchet integrato + bit normale  → combo a 2 parti
     if (b && b.integratedRatchet) {
-      return { ok: false, reason: `bey a ratchet integrato (${b.name}, fuori scope combo a 3 parti)` };
+      return {
+        ok: true,
+        combo: {
+          id: `${b.id}-${bit.id}`, line: b.line, blade: b.id, ratchet: null, bit: bit.id,
+          lockChip: null, mainBlade: null, assistBlade: null, overBlade: null,
+          displayName: `${b.name} ${bit.name}`, type: b.type,
+        },
+      };
+    }
+
+    // 2) bit a ratchet integrato (Operate/Turbo) + lama
+    if (bit.integratedRatchet) {
+      // 2a) blade BX/UX
+      if (b) {
+        return {
+          ok: true,
+          combo: {
+            id: `${b.id}-${bit.id}`, line: b.line, blade: b.id, ratchet: null, bit: bit.id,
+            lockChip: null, mainBlade: null, assistBlade: null, overBlade: null,
+            displayName: `${b.name} ${bit.name}`, type: b.type,
+          },
+        };
+      }
+      // 2b) lama CX (lockChip+mainBlade+assist[+over])
+      const cxr = resolveCxBladePart(r.cx, bladePart);
+      if (cxr.ok) {
+        const cx = cxr.cx;
+        const type = (cx.mainBlade.type as BladeType) ?? 'balance';
+        return {
+          ok: true,
+          combo: {
+            id: cxComboId(cx, null, bit.id), line: 'cx', blade: null, ratchet: null, bit: bit.id,
+            lockChip: cx.lockChip.id, mainBlade: cx.mainBlade.id, assistBlade: cx.assistBlade.id,
+            overBlade: cx.overBlade ? cx.overBlade.id : null,
+            displayName: cxDisplayName(cx, null, bit.name), type,
+          },
+        };
+      }
+      if (cxr.ambiguous) return { ok: false, reason: `blade CX ambiguo: "${bladePart}" (con bit integrato)` };
     }
   }
-  return { ok: false, reason: 'nessun ratchet (bey integrato come Bullet Griffon, o riga non-combo)' };
+  return { ok: false, reason: 'nessun ratchet e nessuna parte integrata riconosciuta (riga non-combo?)' };
 }
 
 // ---- Parsing dei campi header (deterministico) ---------------------------
@@ -322,7 +369,16 @@ export function parseEventName(headerText: string, headerLines: string[]): strin
  * ("Wrote:") e l'header/footer di pagina (i blocchi prima del primo ORGANIZER sono esclusi), e
  * raccoglie sotto ogni marcatore (1st / 1st Place: / 🥇🥈🥉) le righe che contengono un ratchet.
  */
-export function segmentThread(raw: string): SegEvent[] {
+export function segmentThread(raw: string, r?: Resolver): SegEvent[] {
+  // Raccoglie una riga se ha un ratchet N-MM (comportamento storico, invariato) oppure — col resolver
+  // disponibile — se risolve a una combo a parte integrata (ratchet null): blade UX integrato o
+  // Ratchet Integrated Bit. Additivo: non cambia il trattamento delle righe con ratchet.
+  const isComboLine = (l: string): boolean => {
+    if (RATCHET_RE.test(l)) return true;
+    if (!r) return false;
+    const res = parseComboLine(r, l);
+    return res.ok && res.combo.ratchet === null;
+  };
   const lines = raw.split('\n');
   const blocks: string[][] = [];
   let cur: string[] | null = null;
@@ -352,7 +408,7 @@ export function segmentThread(raw: string): SegEvent[] {
         const pm = l.match(PLACEMENT_RE);
         if (medal !== undefined) { curP = { rank: medal, comboLinesRaw: [] }; placements.push(curP); continue; }
         if (pm) { curP = { rank: parseInt(pm[1], 10), comboLinesRaw: [] }; placements.push(curP); continue; }
-        if (curP && RATCHET_RE.test(l)) curP.comboLinesRaw.push(l);
+        if (curP && isComboLine(l)) curP.comboLinesRaw.push(l);
       }
     }
     events.push({ eventName, headerRaw, placements });
@@ -363,8 +419,8 @@ export function segmentThread(raw: string): SegEvent[] {
 // ---- Assemblaggio dell'evidenza ------------------------------------------
 
 export interface ComboAcc {
-  id: string; line: 'bx' | 'cx';
-  blade: string | null; ratchet: string; bit: string;
+  id: string; line: 'bx' | 'ux' | 'cx';
+  blade: string | null; ratchet: string | null; bit: string;
   lockChip?: string | null; mainBlade?: string | null; assistBlade?: string | null; overBlade?: string | null;
   displayName: string; type: BladeType;
   placements: PlacementEvidence[]; usage: UsageEvidence[];

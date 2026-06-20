@@ -58,6 +58,19 @@ check('CX emette i campi giusti (line/lockChip/overBlade/assistBlade)',
   cxLine.ok && cxLine.combo.line === 'cx' && cxLine.combo.lockChip === 'bahamut' &&
   cxLine.combo.overBlade === 'flow' && cxLine.combo.assistBlade === 'knuckle' && cxLine.combo.blade === null);
 
+// --- Combo a parte integrata (ratchet incluso → ratchet null) ---
+const intg1 = parseComboLine(r, 'BulletGriffon Hexa');
+check('Integrata: blade UX a ratchet integrato "BulletGriffon Hexa" (line ux, ratchet null)',
+  intg1.ok && intg1.combo.blade === 'bullet-griffon' && intg1.combo.bit === 'hexa' &&
+  intg1.combo.ratchet === null && intg1.combo.line === 'ux');
+const intg2 = parseComboLine(r, 'SharkScale Operate');
+check('Integrata: Ratchet Integrated Bit + blade BX "SharkScale Operate" (ratchet null)',
+  intg2.ok && intg2.combo.blade === 'shark-scale' && intg2.combo.bit === 'operate' && intg2.combo.ratchet === null);
+const intg3 = parseComboLine(r, 'PegasusBlast Wheel Operate');
+check('Integrata: Ratchet Integrated Bit + lama CX "PegasusBlast Wheel Operate" (cx, ratchet null)',
+  intg3.ok && intg3.combo.line === 'cx' && intg3.combo.lockChip === 'pegasus' &&
+  intg3.combo.bit === 'operate' && intg3.combo.ratchet === null);
+
 // --- BX hardening: nome Western che ingloba ratchet+bit (oggi scartato dalla guard) ---
 check('BX Western "Rock Golem 9-60 Hexa" → golem-rock', comboId(r, 'Rock Golem 9-60 Hexa') === 'golem-rock-9-60-hexa');
 check('BX Western "Spear Scorpio 0-70 Hexa" → scorpio-spear', comboId(r, 'Spear Scorpio 0-70 Hexa') === 'scorpio-spear-0-70-hexa');
@@ -68,8 +81,11 @@ check('Refuso "SliverWolf 9-60 Hexa" → unresolved', isUnresolved(r, 'SliverWol
 check('CX senza assist "BahamutBlitz BK1-50I" → unresolved', isUnresolved(r, 'BahamutBlitz BK1-50I'));
 check('BX ambiguo per variante "Lightning L-Drago 5-60 Rush" → unresolved', isUnresolved(r, 'Lightning L-Drago 5-60 Rush'));
 check('Dato mancante "Courage Dran ?3-60Low Flat" → unresolved', isUnresolved(r, 'Courage Dran ?3-60Low Flat'));
-check('Bey a ratchet integrato "BulletGriffon TK" → unresolved', isUnresolved(r, 'BulletGriffon TK (Both Stages)'));
+const bgTk = parseComboLine(r, 'BulletGriffon TK (Both Stages)');
+check('Combo a parte integrata "BulletGriffon TK" → materializzata (ratchet null, line ux)',
+  bgTk.ok && bgTk.combo.blade === 'bullet-griffon' && bgTk.combo.ratchet === null && bgTk.combo.line === 'ux');
 check('Quote noise "SS 3-60 LR" → unresolved', isUnresolved(r, 'SS 3-60 LR'));
+check('Ratchet Integrated Bit con ratchet N-MM "SharkScale 7-60 Operate" → unresolved (incoerente)', isUnresolved(r, 'SharkScale 7-60 Operate'));
 
 // --- eventId ---
 check('eventId pid', parseEventId('Event Page Link: https://worldbeyblade.org/Thread-NEBO-X-...pid1928493', 'NEBO', '2026-06-14') === 'wbo-pid-1928493');
@@ -127,6 +143,13 @@ check('segment: 🥇 = rank 1', segEvents[0]?.placements[0]?.rank === 1);
 check('segment: combo sotto 🥇 raccolte', (segEvents[0]?.placements[0]?.comboLinesRaw.length ?? 0) === 2);
 check('segment: eventName = titolo torneo, non username "derincanleylek"',
   segEvents[0]?.eventName === '115 player tournament in Turkiye', JSON.stringify(segEvents[0]?.eventName));
+
+// --- Segmentazione: col resolver raccoglie anche le righe a parte integrata (no ratchet N-MM) ---
+const intgRaw = ['ORGANIZER', '  Today  12:23 AM', 'poster', 'Test Event', '', '🥇Winner', '', 'BulletGriffon Hexa', 'SharkScale Operate', ''].join('\n');
+check('segment col resolver: raccoglie le righe integrate',
+  (segmentThread(intgRaw, r)[0]?.placements[0]?.comboLinesRaw.length ?? 0) === 2);
+check('segment senza resolver: NON raccoglie le righe integrate (comportamento storico invariato)',
+  (segmentThread(intgRaw)[0]?.placements[0]?.comboLinesRaw.length ?? 0) === 0);
 
 console.log(`\n${pass} passed, ${fail} failed.`);
 if (fail > 0) process.exit(1);
