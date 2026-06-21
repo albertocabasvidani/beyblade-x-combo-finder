@@ -1,5 +1,5 @@
 {
-  "version": "2026-06-20",
+  "version": "2026-06-21",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -2928,15 +2928,16 @@
       ],
       "firstReleaseSet": "UX-05",
       "products": [
-        "CX-11"
+        "CX-11",
+        "G3028"
       ],
       "source": {
         "page": "SharkGill 5-60FB",
         "url": "https://beyblade.fandom.com/wiki/SharkGill_5-60FB",
-        "revid": 634360
+        "revid": 641728
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-21",
       "stats": {
         "atk": 20,
         "def": 25,
@@ -4469,12 +4470,13 @@
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 641506
+        "revid": 641726
       },
       "status": "verified",
-      "lastVerified": "2026-06-19",
+      "lastVerified": "2026-06-21",
       "products": [
-        "CX-11"
+        "CX-11",
+        "G3028"
       ],
       "firstReleaseSet": "EmperorMight Deck Set"
     },
@@ -4612,15 +4614,16 @@
       },
       "aliases": [],
       "products": [
-        "G1682"
+        "G1682",
+        "CX-00"
       ],
       "firstReleaseSet": "G1682",
       "source": {
         "page": "Fort Hornet R 7-60T",
         "url": "https://beyblade.fandom.com/wiki/Fort_Hornet_R_7-60T",
-        "revid": 641131
+        "revid": 641736
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-21",
       "status": "verified"
     },
     {
@@ -4674,9 +4677,9 @@
       "source": {
         "page": "Wriggle Kraken S 3-85O",
         "url": "https://beyblade.fandom.com/wiki/Wriggle_Kraken_S_3-85O",
-        "revid": 624324
+        "revid": 641746
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-21",
       "status": "verified"
     },
     {
@@ -4943,9 +4946,9 @@
       "source": {
         "page": "Antler Stag B 2-60HN",
         "url": "https://beyblade.fandom.com/wiki/Antler_Stag_B_2-60HN",
-        "revid": 624321
+        "revid": 641745
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-21",
       "status": "verified"
     },
     {
@@ -5137,9 +5140,9 @@
       "source": {
         "page": "Antler Stag B 2-60HN",
         "url": "https://beyblade.fandom.com/wiki/Antler_Stag_B_2-60HN",
-        "revid": 624321
+        "revid": 641745
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-21",
       "status": "verified",
       "type": "stamina",
       "stats": {
@@ -5592,15 +5595,16 @@
       },
       "aliases": [],
       "products": [
-        "G1682"
+        "G1682",
+        "CX-00"
       ],
       "firstReleaseSet": "G1682",
       "source": {
         "page": "Fort Hornet R 7-60T",
         "url": "https://beyblade.fandom.com/wiki/Fort_Hornet_R_7-60T",
-        "revid": 641131
+        "revid": 641736
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-21",
       "status": "verified",
       "type": "balance",
       "stats": {
@@ -5734,12 +5738,13 @@
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 641506
+        "revid": 641726
       },
       "status": "verified",
-      "lastVerified": "2026-06-19",
+      "lastVerified": "2026-06-21",
       "products": [
-        "CX-11"
+        "CX-11",
+        "G3028"
       ],
       "firstReleaseSet": "EmperorMight Deck Set",
       "stats": {
@@ -5900,9 +5905,9 @@
       "source": {
         "page": "Wriggle Kraken S 3-85O",
         "url": "https://beyblade.fandom.com/wiki/Wriggle_Kraken_S_3-85O",
-        "revid": 624324
+        "revid": 641746
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-21",
       "status": "verified",
       "type": "stamina",
       "stats": {
@@ -5979,7 +5984,7 @@
         "revid": 634307
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-21",
       "products": [
         "CX-03",
         "CX-00",
@@ -6192,12 +6197,13 @@
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 641506
+        "revid": 641726
       },
       "status": "verified",
-      "lastVerified": "2026-06-19",
+      "lastVerified": "2026-06-21",
       "products": [
-        "CX-11"
+        "CX-11",
+        "G3028"
       ],
       "firstReleaseSet": "EmperorMight Deck Set"
     },
@@ -6374,11 +6380,12 @@
         "revid": 640395
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-21",
       "products": [
         "CX-02",
         "G1682",
-        "G1679"
+        "G1679",
+        "CX-00"
       ],
       "firstReleaseSet": "WizardArc R4-55LO"
     },
@@ -6411,7 +6418,7 @@
         "revid": 634303
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-21",
       "products": [
         "CX-01",
         "CX-00",
@@ -7068,7 +7075,7 @@
         "revid": 640385
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-21",
       "products": [
         "BX-34",
         "UX-07",
@@ -7324,7 +7331,7 @@
         "revid": 639479
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-21",
       "products": [
         "G3061",
         "BX-48",
@@ -7609,14 +7616,15 @@
         "revid": 635198
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-21",
       "products": [
         "BX-15",
         "CX-11",
         "BX-00",
         "BX-21",
         "G0196",
-        "UX-00"
+        "UX-00",
+        "G3028"
       ],
       "firstReleaseSet": "BX-15",
       "stats": {
@@ -7903,14 +7911,15 @@
         "revid": 639476
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-21",
       "products": [
         "G3061",
         "BX-00",
         "G2218",
         "UX-06",
         "CX-05",
-        "G1682"
+        "G1682",
+        "CX-00"
       ],
       "firstReleaseSet": "G3061"
     },
@@ -8669,11 +8678,12 @@
         "revid": 640865
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-21",
       "products": [
         "UX-08",
         "CX-11",
-        "G3497"
+        "G3497",
+        "G3028"
       ],
       "firstReleaseSet": "UX-08",
       "shortName": "FB",
@@ -9125,7 +9135,7 @@
         "revid": 636214
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-21",
       "products": [
         "BX-13",
         "G1694",
@@ -9684,15 +9694,16 @@
         }
       ],
       "products": [
-        "CX-11"
+        "CX-11",
+        "G3028"
       ],
       "firstReleaseSet": "EmperorMight Deck Set",
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 641506
+        "revid": 641726
       },
-      "lastVerified": "2026-06-19",
+      "lastVerified": "2026-06-21",
       "status": "verified",
       "shortName": "Op",
       "integratedRatchet": true
@@ -9725,7 +9736,7 @@
         "revid": 628717
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-21",
       "products": [
         "BX-16",
         "G1692",
@@ -9990,7 +10001,7 @@
         "revid": 638867
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-21",
       "products": [
         "BX-02",
         "BX-00",
@@ -10000,7 +10011,8 @@
         "BX-46",
         "G1682",
         "G2750",
-        "G0188"
+        "G0188",
+        "CX-00"
       ],
       "firstReleaseSet": "BX-02",
       "shortName": "T",
