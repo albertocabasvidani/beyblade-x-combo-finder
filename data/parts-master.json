@@ -1,5 +1,5 @@
 {
-  "version": "2026-06-21",
+  "version": "2026-06-22",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -32,10 +32,10 @@
       "source": {
         "page": "AeroPegasus 3-70A",
         "url": "https://beyblade.fandom.com/wiki/AeroPegasus_3-70A",
-        "revid": 640396
+        "revid": 641766
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-22",
       "stats": {
         "atk": 60,
         "def": 25,
@@ -272,9 +272,9 @@
       "source": {
         "page": "Blade - Clamp Crab",
         "url": "https://beyblade.fandom.com/wiki/Blade_-_Clamp_Crab",
-        "revid": 641470
+        "revid": 641779
       },
-      "lastVerified": "2026-06-19",
+      "lastVerified": "2026-06-22",
       "status": "verified",
       "type": "stamina"
     },
