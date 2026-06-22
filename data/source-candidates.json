@@ -1,10 +1,10 @@
 {
-  "lastRun": "2026-06-17",
+  "lastRun": "2026-06-22",
   "lastProposal": {
-    "messageId": "19ed5b2659282b7a",
-    "threadId": "19ed5b2659282b7a",
-    "date": "2026-06-17",
-    "subject": "Beyblade — 18 nuove fonti candidate (settimana 17/06)"
+    "messageId": "19eee4f2a6cb32fb",
+    "threadId": "19eee4f2a6cb32fb",
+    "date": "2026-06-22",
+    "subject": "Beyblade — 5 nuove fonti candidate (settimana 22/06)"
   },
   "candidates": [
     {
@@ -283,12 +283,12 @@
       "url": "https://beybladeperu.com/",
       "signals": { "lastActivity": "2026", "publishesResults": false },
       "rationale": "Comunità ufficiale del Perù con Ranking nazionale e tornei Beyblade X dedicati.",
-      "dedupCheck": "Nessuna fonte PE (SBBL è ES, Liga Vortex è MX). Ma la pagina Ranking è ancora vuota (beta 1.0): ricontrollare quando si popola.",
+      "dedupCheck": "Nessuna fonte PE (SBBL è ES, Liga Vortex è MX). Ora ha pagina /sistema-de-puntos; il Ranking nazionale resta da popolare: ricontrollare quando si riempie.",
       "proposedWeight": 0.6,
       "recommendation": "manual-verify",
       "status": "proposed",
       "dateFound": "2026-06-17",
-      "lastSeen": "2026-06-17"
+      "lastSeen": "2026-06-22"
     },
     {
       "candidateId": "website-campeonato-beybladex",
@@ -301,12 +301,12 @@
       "url": "https://campeonatobeybladex.com/",
       "signals": { "lastActivity": "2026", "publishesResults": false },
       "rationale": "Campionato ufficiale Hasbro LATAM (calendario, regolamento, consigli competitivi).",
-      "dedupCheck": "Non duplica fonti esistenti, ma non pubblica ancora risultati/combo: sorgente 'rising' da monitorare.",
+      "dedupCheck": "Non duplica fonti esistenti. Ora ha pagina /finalistas (nomi finalisti) ma non ancora combo per-piazzamento: sorgente 'rising' da monitorare.",
       "proposedWeight": 0.5,
       "recommendation": "manual-verify",
       "status": "proposed",
       "dateFound": "2026-06-17",
-      "lastSeen": "2026-06-17"
+      "lastSeen": "2026-06-22"
     },
     {
       "candidateId": "social-michigan-beyblade-league",
@@ -343,6 +343,101 @@
       "status": "proposed",
       "dateFound": "2026-06-17",
       "lastSeen": "2026-06-17"
+    },
+    {
+      "candidateId": "youtube-beyblade-lafayette-louisiana",
+      "name": "Beyblade Lafayette Louisiana",
+      "type": "youtube",
+      "platform": "youtube",
+      "provides": "combos",
+      "lang": "en",
+      "region": "US-LA",
+      "url": "https://www.youtube.com/@beybladelafayettelouisiana",
+      "channelId": "UCewJh1q3WxTQaixNLyZGWyg",
+      "signals": { "subscribers": 210, "lastActivity": "2026-06-19", "videoCount": 111, "publishesResults": true },
+      "rationale": "Comunità/lega regionale USA (Lafayette, Louisiana) che organizza meetup e tornei e ne documenta i match. Attiva, 111 video.",
+      "dedupCheck": "Stesso profilo di Maryland/Devon (leghe regionali già accettate): nuova area US (Louisiana), non duplica. Granularità locale utile.",
+      "proposedWeight": 0.5,
+      "recommendation": "propose",
+      "status": "proposed",
+      "dateFound": "2026-06-22",
+      "lastSeen": "2026-06-22"
+    },
+    {
+      "candidateId": "youtube-abubeyblade",
+      "name": "AbuBeyblade",
+      "type": "youtube",
+      "platform": "youtube",
+      "provides": "combos",
+      "lang": "de",
+      "region": "DE",
+      "url": "https://www.youtube.com/@abubeyblade",
+      "channelId": "UC9q89u2vlQEZM2YoxBcfagg",
+      "signals": { "subscribers": 2020, "lastActivity": "2026-06-21", "videoCount": 94, "publishesResults": true },
+      "rationale": "Canale tedesco di 'Turnier-Vlogs mit echten Highlights' (vlog di tornei con highlight reali) e battaglie Beyblade X. Attivo quotidianamente.",
+      "dedupCheck": "Nessun canale YouTube DE tra le fonti (la scena DE è solo IG xleague_germany + Discord blader-league). Colma il gap DE automatizzabile.",
+      "proposedWeight": 0.5,
+      "recommendation": "propose",
+      "status": "proposed",
+      "dateFound": "2026-06-22",
+      "lastSeen": "2026-06-22"
+    },
+    {
+      "candidateId": "youtube-national-beyblade-league",
+      "name": "NationalBeybladeLeague (Houston TX)",
+      "type": "youtube",
+      "platform": "youtube",
+      "provides": "combos",
+      "lang": "en",
+      "region": "US-TX",
+      "url": "https://www.youtube.com/@officialbeybladeleague",
+      "channelId": "UCwzWdxeu2F-_X63Fe2_Iu6Q",
+      "signals": { "subscribers": 80, "lastActivity": "2026-04-01", "videoCount": 343, "publishesResults": true },
+      "rationale": "Tornei Ranked ufficiali settimanali a Houston TX con Championship Belt; 343 video, forte orientamento ai risultati.",
+      "dedupCheck": "Nuova area US (Houston, TX), non duplica Maryland. Freschezza al limite: ultimo upload 01/04/2026 (~2,5 mesi) — verificare se ancora attivo.",
+      "proposedWeight": 0.5,
+      "recommendation": "manual-verify",
+      "status": "proposed",
+      "dateFound": "2026-06-22",
+      "lastSeen": "2026-06-22"
+    },
+    {
+      "candidateId": "youtube-321goshoot-tv",
+      "name": "321GoShoot-TV (Beyblade X)",
+      "type": "youtube",
+      "platform": "youtube",
+      "provides": "combos",
+      "lang": "en",
+      "region": "US",
+      "url": "https://www.youtube.com/@321goshoot-tv",
+      "channelId": "UCxO9JEDikhzGmKiYMG-N2ZQ",
+      "signals": { "subscribers": 135, "lastActivity": "2026-06-17", "videoCount": 34, "publishesResults": true },
+      "rationale": "Copertura live di tornei ed eventi Beyblade X con commento in tempo reale, oltre a sfide e giveaway. Attivo.",
+      "dedupCheck": "Affianca le altre fonti creator US (BeyMac/Beybreakr/Casual). Piccolo e con contenuto misto (tornei + sfide/giveaway): verificare quota effettiva di piazzamenti/combo.",
+      "proposedWeight": 0.4,
+      "recommendation": "manual-verify",
+      "status": "proposed",
+      "dateFound": "2026-06-22",
+      "lastSeen": "2026-06-22"
+    },
+    {
+      "candidateId": "youtube-wari84",
+      "name": "wari84 (ワリバシ道場)",
+      "type": "youtube",
+      "platform": "youtube",
+      "provides": "combos",
+      "lang": "ja",
+      "region": "JP",
+      "url": "https://www.youtube.com/@wari84doujou",
+      "channelId": "UCy4By42-B23CKu6vMk3f7NA",
+      "signals": { "subscribers": 3680, "lastActivity": "2026-06-21", "videoCount": 737, "publishesResults": true },
+      "rationale": "Diario JP di partecipazione a tornei ufficiali con piazzamenti documentati nella bio (G3 3° posto, GP vicecampione). Attivo, 737 video.",
+      "dedupCheck": "Gap JP coperto in parte da touka/luca/dame: profilo 'family/diario' diverso. Verificare se mostra le combo (non solo i match).",
+      "proposedWeight": 0.4,
+      "recommendation": "manual-verify",
+      "status": "proposed",
+      "dateFound": "2026-06-22",
+      "lastSeen": "2026-06-22"
     }
   ],
   "knownNegatives": [
@@ -355,6 +450,18 @@
     "https://www.youtube.com/@burstlabsx (test/dati personali, teoria stile BeyXDB)",
     "https://www.youtube.com/@worldbeybladeorganization (BeyChannel ufficiale WBO: inattivo dal 2025-08 e duplica la fonte WBO)",
     "https://beyblade.takaratomy.co.jp/beyblade-x/event/ (pagine evento ufficiali TT: solo annunci/regolamento, nessuna combo dei vincitori)",
-    "https://beybase.com/category/tournament-report/ (BeyBase già fonte declassata parts-theory)"
+    "https://beybase.com/category/tournament-report/ (BeyBase già fonte declassata parts-theory)",
+    "https://www.youtube.com/@leftburst (entertainment, ~1M iscritti, battle/limit-testing, non risultati torneo)",
+    "https://www.youtube.com/@beybladegeeks (entertainment, ~2M, how-to/battle, non risultati)",
+    "https://www.youtube.com/@superbeybladefamily (family entertainment GB, non risultati)",
+    "https://www.youtube.com/@spintoy (KR unboxing/battle/entertainment)",
+    "https://www.youtube.com/@cyprusbeyblade (BR collector/QR codes/entertainment)",
+    "https://www.youtube.com/@leftspinbeys (combo-testing/teoria + entertainment, non placement)",
+    "https://www.youtube.com/@combochallengers (MY battle entertainment, nessun piazzamento)",
+    "https://www.youtube.com/@daashr (Dash Roblox, off-topic)",
+    "https://www.youtube.com/@indianbeybladeassociation (org tornei IN ma inattivo dal 2024-06)",
+    "https://www.youtube.com/@beybladexutah (org tornei US ma inattivo dal 2025-09)",
+    "https://www.youtube.com/@kcn (KENCHANNEL, canale kids/UUUM promozionale JP)",
+    "https://www.youtube.com/@danblader (BR beyblade caseira/entertainment)"
   ]
 }
