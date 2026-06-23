@@ -40,6 +40,14 @@ function buildResolver(): Resolver {
     blade.set(norm(b.name), v);
     if (b.nameWestern) blade.set(norm(b.nameWestern), v);
   }
+  // Alias (community/hasbro/native/romaji) in seconda passata: non clobberano mai name/nameWestern.
+  for (const b of parts.blades) {
+    const v = { id: b.id, name: b.name, type: b.type as BladeType };
+    for (const a of b.aliases ?? []) {
+      const k = norm(a);
+      if (k && !blade.has(k)) blade.set(k, v);
+    }
+  }
   const bit = new Map<string, { id: string; name: string }>();
   for (const b of parts.bits) bit.set(norm(b.name), { id: b.id, name: b.name });
   const ratchet = new Set<string>(parts.ratchets.map((r: any) => r.id));
