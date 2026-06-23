@@ -1,5 +1,5 @@
 {
-  "version": "2026-06-22",
+  "version": "2026-06-23",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -4022,15 +4022,16 @@
       "firstReleaseSet": "BX-33",
       "products": [
         "BX-33",
-        "UX-18"
+        "UX-18",
+        "G1686"
       ],
       "source": {
         "page": "WeissTiger 3-60U",
         "url": "https://beyblade.fandom.com/wiki/WeissTiger_3-60U",
-        "revid": 639825
+        "revid": 641798
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-23",
       "stats": {
         "atk": 45,
         "def": 30,
@@ -4470,10 +4471,10 @@
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 641726
+        "revid": 641794
       },
       "status": "verified",
-      "lastVerified": "2026-06-21",
+      "lastVerified": "2026-06-23",
       "products": [
         "CX-11",
         "G3028"
@@ -5738,10 +5739,10 @@
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 641726
+        "revid": 641794
       },
       "status": "verified",
-      "lastVerified": "2026-06-21",
+      "lastVerified": "2026-06-23",
       "products": [
         "CX-11",
         "G3028"
@@ -6197,10 +6198,10 @@
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 641726
+        "revid": 641794
       },
       "status": "verified",
-      "lastVerified": "2026-06-21",
+      "lastVerified": "2026-06-23",
       "products": [
         "CX-11",
         "G3028"
@@ -9701,9 +9702,9 @@
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 641726
+        "revid": 641794
       },
-      "lastVerified": "2026-06-21",
+      "lastVerified": "2026-06-23",
       "status": "verified",
       "shortName": "Op",
       "integratedRatchet": true
@@ -10259,10 +10260,10 @@
       "source": {
         "page": "WeissTiger 3-60U",
         "url": "https://beyblade.fandom.com/wiki/WeissTiger_3-60U",
-        "revid": 639825
+        "revid": 641798
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-23",
       "products": [
         "BX-33",
         "CX-06",
