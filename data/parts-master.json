@@ -1,5 +1,5 @@
 {
-  "version": "2026-06-23",
+  "version": "2026-06-24",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -261,10 +261,28 @@
       "category": "blade",
       "line": "bx",
       "names": {
-        "tt": "Clamp Crab",
-        "hasbro": "Clamp Crab"
+        "tt": "CrabClamp",
+        "hasbro": "Clamp Crab",
+        "ja": "クラブクランプ",
+        "romaji": "Kurabu Kuranpu"
       },
-      "aliases": [],
+      "aliases": [
+        {
+          "value": "Clamp Crab",
+          "lang": "en",
+          "kind": "hasbro"
+        },
+        {
+          "value": "クラブクランプ",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "Kurabu Kuranpu",
+          "lang": "ja",
+          "kind": "romaji"
+        }
+      ],
       "products": [
         "G2759"
       ],
@@ -272,11 +290,16 @@
       "source": {
         "page": "Blade - Clamp Crab",
         "url": "https://beyblade.fandom.com/wiki/Blade_-_Clamp_Crab",
-        "revid": 641779
+        "revid": 641837
       },
-      "lastVerified": "2026-06-22",
+      "lastVerified": "2026-06-24",
       "status": "verified",
-      "type": "stamina"
+      "type": "stamina",
+      "stats": {
+        "atk": 10,
+        "def": 43,
+        "sta": 47
+      }
     },
     {
       "id": "clock-mirage",
@@ -2841,10 +2864,10 @@
       "source": {
         "page": "ScorpioSpear 0-70Z",
         "url": "https://beyblade.fandom.com/wiki/ScorpioSpear_0-70Z",
-        "revid": 641559
+        "revid": 641838
       },
       "status": "verified",
-      "lastVerified": "2026-06-20",
+      "lastVerified": "2026-06-24",
       "stats": {
         "atk": 25,
         "def": 55,
@@ -6838,9 +6861,9 @@
       "source": {
         "page": "ScorpioSpear 0-70Z",
         "url": "https://beyblade.fandom.com/wiki/ScorpioSpear_0-70Z",
-        "revid": 641559
+        "revid": 641838
       },
-      "lastVerified": "2026-06-20",
+      "lastVerified": "2026-06-24",
       "status": "verified"
     },
     {
@@ -10522,9 +10545,9 @@
       "source": {
         "page": "ScorpioSpear 0-70Z",
         "url": "https://beyblade.fandom.com/wiki/ScorpioSpear_0-70Z",
-        "revid": 641559
+        "revid": 641838
       },
-      "lastVerified": "2026-06-20",
+      "lastVerified": "2026-06-24",
       "status": "verified",
       "type": "balance",
       "shortName": "Z",

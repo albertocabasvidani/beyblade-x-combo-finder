@@ -1,5 +1,5 @@
 {
-  "version": "2026-06-23",
+  "version": "2026-06-24",
   "blades": [
     {
       "id": "aero-pegasus",
@@ -99,11 +99,19 @@
     },
     {
       "id": "clamp-crab",
-      "name": "Clamp Crab",
+      "name": "CrabClamp",
       "nameWestern": "Clamp Crab",
+      "aliases": [
+        "Kurabu Kuranpu"
+      ],
       "type": "stamina",
       "line": "bx",
-      "releaseSet": "G2759"
+      "releaseSet": "G2759",
+      "stats": {
+        "atk": 10,
+        "def": 43,
+        "sta": 47
+      }
     },
     {
       "id": "clock-mirage",
