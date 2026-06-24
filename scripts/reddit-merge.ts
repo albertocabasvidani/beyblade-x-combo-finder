@@ -49,7 +49,7 @@ function buildId(c: any): string {
     const segs = [c.lockChip, c.overBlade, c.mainBlade, c.assistBlade, c.ratchet, c.bit].filter(Boolean);
     return segs.join('-');
   }
-  return [c.blade, c.ratchet, c.bit].join('-');
+  return [c.blade, c.ratchet, c.bit].filter(Boolean).join('-');
 }
 
 function buildDisplayName(c: any): string {
@@ -61,7 +61,7 @@ function buildDisplayName(c: any): string {
     return `${lc} ${ob}${mb} ${ab} ${c.ratchet} ${bitName(c.bit)}`.replace(/\s+/g, ' ').trim();
   }
   const b = blades.get(c.blade)?.name ?? c.blade;
-  return `${b} ${c.ratchet} ${bitName(c.bit)}`;
+  return [b, c.ratchet, bitName(c.bit)].filter(Boolean).join(' ');
 }
 
 function deriveLine(c: any): string {
@@ -148,7 +148,16 @@ function main() {
     } else {
       if (!raw.blade || !blades.has(raw.blade)) { console.warn(`SKIP (blade ignota): ${raw.blade}`); skipped++; continue; }
     }
-    if (!raw.ratchet || !ratchets.has(raw.ratchet)) { console.warn(`SKIP (ratchet ignoto): ${raw.ratchet}`); skipped++; continue; }
+    // Ratchet: i blade UX a ratchet integrato (integratedRatchet, es. Bullet Griffon, Cutter Shinobi,
+    // Rampart Aegis) NON hanno ratchet separato — la combo è blade+bit e il ratchet è null. Per loro
+    // si normalizza ratchet=null e si salta il check. Per tutti gli altri il ratchet resta obbligatorio
+    // e deve risolvere al master (guardrail anti-allucinazione IA).
+    const integrated = !isCx && !!blades.get(raw.blade)?.integratedRatchet;
+    if (integrated) {
+      raw.ratchet = null;
+    } else if (!raw.ratchet || !ratchets.has(raw.ratchet)) {
+      console.warn(`SKIP (ratchet ignoto): ${raw.ratchet}`); skipped++; continue;
+    }
     if (!raw.bit || !bits.has(raw.bit)) { console.warn(`SKIP (bit ignoto): ${raw.bit}`); skipped++; continue; }
 
     const key = comboKey(raw);
