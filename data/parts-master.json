@@ -1,5 +1,5 @@
 {
-  "version": "2026-06-24",
+  "version": "2026-06-25",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -1781,10 +1781,10 @@
       "source": {
         "page": "LeonClaw 5-60P",
         "url": "https://beyblade.fandom.com/api.php?action=parse&page=LeonClaw_5-60P&format=json&prop=wikitext",
-        "revid": 640368
+        "revid": 641843
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-25",
       "stats": {
         "atk": 40,
         "def": 40,
@@ -1827,10 +1827,10 @@
       "source": {
         "page": "LeonCrest 7-60GN",
         "url": "https://beyblade.fandom.com/wiki/LeonCrest_7-60GN",
-        "revid": 640745
+        "revid": 641845
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-25",
       "stats": {
         "atk": 15,
         "def": 70,
