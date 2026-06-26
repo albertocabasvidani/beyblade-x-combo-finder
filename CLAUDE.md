@@ -208,6 +208,11 @@ per risolverlo). I transcript YouTube girano a
 parte ogni 5 min (`--batch 1`, rate-limit): scaricano solo i video `relevant:true` (decisi da
 `/judge-youtube`), nella lingua reale del video, nelle ore successive (eventually-consistent).
 `/update-parts`, `/update-combos` e `/mine-reddit` fanno **commit/push autonomi su master**.
+Ogni step scrive su `logs/pipeline-YYYY-MM-DD.log` (marker `START`/`END` + exit code): se la sequenza si
+interrompe (PC sospeso, browser headed appeso, processo abortito), l'ultimo marker dice **dove** è morta.
+La pipeline è interattiva (`/it`) e dura ~1h: se il PC viene sospeso/spento a metà, gli step combo che
+committano non completano e `combos.json` resta indietro — per questo c'è il task di recupero (sotto).
+`logs/` è gitignorato. All'avvio il bat pulisce i lock del profilo `.playwright-beyblade`.
 
 Durata `/update-combos`: **~20-22 min** a run (misurato 16/06/2026 via `claude -p`: parser
 MetaBeys/WBO + scoring CAS + estrazione fonti strutturate + build + commit/push). **Non** mina la
@@ -217,6 +222,13 @@ cache Reddit a fondo: la cache (`reddit-cache.json`, migliaia di righe) eccede u
 copre sia un backfill (~900 post → molti blocchi) sia i pochi post nuovi del giorno (1 blocco).
 Durata `/mine-reddit`: **~39 min** per un backfill da 934 post (16 blocchi da 60; misurato 16/06/2026,
 ha portato i combo da 204 a 457). Nella marcia normale è 1 blocco → pochi minuti.
+
+Recupero combo — task SEPARATO, **giornaliero nel pomeriggio** (utente al PC): `recover-combos.bat`
+controlla via `git log --since=midnight` se gli step che committano sono già passati **oggi**; se
+`update combos database` manca rifà `collect:sources` → `/judge-youtube` → `/update-combos`, se
+`mine reddit combos` manca rifà `/mine-reddit`. **Idempotente**: se la mattina è andata, non fa nulla
+(solo log in `logs/recover-YYYY-MM-DD.log`). Rete di sicurezza per le interruzioni della sequenza
+mattutina interattiva (caso 25-26/06/2026: pipeline morta a metà, `combos.json` fermo 2 giorni).
 
 Scoperta nuove fonti — task SEPARATO, **settimanale** (lunedì 09:00): `discover-sources.bat` esegue
 `/discover-sources` (ricerca YouTube/siti/forum/social, valutazione, dedup vs fonti note). Manda una **email**
@@ -235,6 +247,7 @@ necessario per i browser headed). Path con spazi quotati dentro `/tr`:
     schtasks /create /tn "Beyblade Daily Pipeline" /tr "\"c:\claude-code\Personale\beyblade combos\daily-pipeline.bat\"" /sc daily /st 08:00 /it /f
     schtasks /create /tn "Beyblade Transcripts" /tr "wscript.exe \"c:\claude-code\Personale\beyblade combos\run-transcripts-hidden.vbs\"" /sc minute /mo 5 /f
     schtasks /create /tn "Beyblade Discover Sources" /tr "wscript.exe \"c:\claude-code\Personale\beyblade combos\run-discover-hidden.vbs\"" /sc weekly /d MON /st 09:00 /it /f
+    schtasks /create /tn "Beyblade Recover Combos" /tr "\"c:\claude-code\Personale\beyblade combos\recover-combos.bat\"" /sc daily /st 14:00 /it /f
 
 Il task transcripts gira **a finestra nascosta**: l'azione lancia `wscript.exe run-transcripts-hidden.vbs`,
 che a sua volta avvia `fetch-transcripts.bat` con console nascosta (`WScript.Shell.Run ..., 0`). Necessario

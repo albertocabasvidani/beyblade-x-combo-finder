@@ -29,6 +29,9 @@ data/wbo-cache.json
 tmp/
 .playwright-cli/
 
+# pipeline logs (local only)
+logs/
+
 # plans (local only)
 plans/
 
