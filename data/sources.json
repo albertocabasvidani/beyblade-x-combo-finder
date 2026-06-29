@@ -392,6 +392,33 @@
       "channelId": "UCgHl0jg3cQKvVFwzJxK5C-w"
     },
     {
+      "id": "youtube-beyblade-lafayette-louisiana",
+      "name": "Beyblade Lafayette Louisiana",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.5,
+      "lang": "en",
+      "channelId": "UCewJh1q3WxTQaixNLyZGWyg"
+    },
+    {
+      "id": "youtube-abubeyblade",
+      "name": "AbuBeyblade",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.5,
+      "lang": "de",
+      "channelId": "UC9q89u2vlQEZM2YoxBcfagg"
+    },
+    {
+      "id": "youtube-321goshoot-tv",
+      "name": "321GoShoot-TV (Beyblade X)",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.4,
+      "lang": "en",
+      "channelId": "UCxO9JEDikhzGmKiYMG-N2ZQ"
+    },
+    {
       "id": "google-sheets-tier-list",
       "name": "Beyblade X Community Tier List (WBO)",
       "type": "spreadsheet",
@@ -490,6 +517,20 @@
       "url": "https://www.instagram.com/lbpofc/",
       "lang": "pt",
       "region": "BR"
+    },
+    {
+      "platform": "discord",
+      "handle": "michigan-beyblade-league",
+      "url": "https://disboard.org/servers/tag/beyblade-x",
+      "lang": "en",
+      "region": "US-MI"
+    },
+    {
+      "platform": "facebook",
+      "handle": "beymasterleague",
+      "url": "https://www.facebook.com/beymasterleague/",
+      "lang": "es",
+      "region": "PE"
     }
   ],
   "searchSettings": {

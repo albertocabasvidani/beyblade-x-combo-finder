@@ -1,10 +1,10 @@
 {
-  "lastRun": "2026-06-22",
+  "lastRun": "2026-06-29",
   "lastProposal": {
-    "messageId": "19eee4f2a6cb32fb",
-    "threadId": "19eee4f2a6cb32fb",
-    "date": "2026-06-22",
-    "subject": "Beyblade — 5 nuove fonti candidate (settimana 22/06)"
+    "messageId": "19f1238c164ab4d3",
+    "threadId": "19f1238c164ab4d3",
+    "date": "2026-06-29",
+    "subject": "Beyblade — 1 nuova fonte candidata + feedback applicato (settimana 29/06)"
   },
   "candidates": [
     {
@@ -212,9 +212,11 @@
       "dedupCheck": "Sarebbe il primo aggregatore-statistiche stile MetaBeys via YouTube. MA inattivo dal 08/07/2025: verificare se ancora attivo o migrato altrove prima di aggiungerlo.",
       "proposedWeight": 0.7,
       "recommendation": "manual-verify",
-      "status": "proposed",
+      "status": "rejected",
+      "verifiedOn": "2026-06-29",
+      "verifyNote": "Verificato via API: 0 video ritornati (canale svuotato/terminato), inattivo dal 08/07/2025. Morto.",
       "dateFound": "2026-06-17",
-      "lastSeen": "2026-06-17"
+      "lastSeen": "2026-06-29"
     },
     {
       "candidateId": "youtube-kinketsubey",
@@ -226,14 +228,16 @@
       "region": "JP",
       "url": "https://www.youtube.com/@kinketsubey",
       "channelId": "UCPs2qwHlIap68sgJtbF98HA",
-      "signals": { "subscribers": 34200, "lastActivity": "2026-06-16", "videoCount": 1001, "publishesResults": false },
+      "signals": { "subscribers": 34200, "lastActivity": "2026-06-28", "videoCount": 1001, "publishesResults": false },
       "rationale": "Grande canale JP molto attivo (rare bey, custom). Volume e copertura alti.",
       "dedupCheck": "Gap JP, ma focus collezione/modding: verificare se copre risultati di tornei o solo recensioni.",
       "proposedWeight": 0.5,
       "recommendation": "manual-verify",
-      "status": "proposed",
+      "status": "rejected",
+      "verifiedOn": "2026-06-29",
+      "verifyNote": "Verificato via API: upload quotidiani ma contenuto = ranking-opinione/hype nuove parti/rare bey (ビットランキング, 新パーツ強すぎ). Nessun risultato di torneo. Teoria/entertainment.",
       "dateFound": "2026-06-17",
-      "lastSeen": "2026-06-17"
+      "lastSeen": "2026-06-29"
     },
     {
       "candidateId": "youtube-beytube-official-tt",
@@ -250,9 +254,11 @@
       "dedupCheck": "Nessuna fonte ufficiale TT. Ma la pagina eventi TT pubblica solo annunci, non combo: verificare se il canale mostra configurazioni dei vincitori prima di aggiungerlo.",
       "proposedWeight": 0.6,
       "recommendation": "manual-verify",
-      "status": "proposed",
+      "status": "rejected",
+      "verifiedOn": "2026-06-29",
+      "verifyNote": "Canale ufficiale Takara Tomy: anime/promo prodotti/annunci eventi (publishesResults:false). Non pubblica configurazioni-vincitori parsabili, coerente con la pagina eventi TT già in knownNegatives. Non utilizzabile come fonte placement.",
       "dateFound": "2026-06-17",
-      "lastSeen": "2026-06-17"
+      "lastSeen": "2026-06-29"
     },
     {
       "candidateId": "website-note-nakomo",
@@ -263,14 +269,16 @@
       "lang": "ja",
       "region": "JP",
       "url": "https://note.com/why_kntturnout",
-      "signals": { "lastActivity": "2026", "publishesResults": true },
+      "signals": { "lastActivity": "2024", "publishesResults": true },
       "rationale": "Report JP di tornei su note.com (es. cronaca di una vittoria a un torneo fan), stile bey_bee/kamen_a; narrativo con combo.",
       "dedupCheck": "Stesso modello dei note.com già usati (bey_bee, kamen_a) ma autore diverso. Verificare continuità (non un post isolato).",
       "proposedWeight": 0.5,
       "recommendation": "manual-verify",
-      "status": "proposed",
+      "status": "rejected",
+      "verifiedOn": "2026-06-29",
+      "verifyNote": "Verificato: ultimi articoli risalgono a 2+ anni fa (BEY-1 GP 2024); autore occasionale, non attivo. Fuori dal cutoff di freschezza.",
       "dateFound": "2026-06-17",
-      "lastSeen": "2026-06-17"
+      "lastSeen": "2026-06-29"
     },
     {
       "candidateId": "website-beyblade-peru",
@@ -283,12 +291,14 @@
       "url": "https://beybladeperu.com/",
       "signals": { "lastActivity": "2026", "publishesResults": false },
       "rationale": "Comunità ufficiale del Perù con Ranking nazionale e tornei Beyblade X dedicati.",
-      "dedupCheck": "Nessuna fonte PE (SBBL è ES, Liga Vortex è MX). Ora ha pagina /sistema-de-puntos; il Ranking nazionale resta da popolare: ricontrollare quando si riempie.",
+      "dedupCheck": "Nessuna fonte PE (SBBL è ES, Liga Vortex è MX). Ranking nazionale ancora da popolare.",
+      "verifiedOn": "2026-06-29",
+      "verifyNote": "Verificato: sito 'VERSION BETA 1.0', pagine ranking (Estandar/Kids) ancora vuote (solo intestazioni). Nessun piazzamento/combo. Monitorare quando si riempie.",
       "proposedWeight": 0.6,
       "recommendation": "manual-verify",
       "status": "proposed",
       "dateFound": "2026-06-17",
-      "lastSeen": "2026-06-22"
+      "lastSeen": "2026-06-29"
     },
     {
       "candidateId": "website-campeonato-beybladex",
@@ -301,12 +311,14 @@
       "url": "https://campeonatobeybladex.com/",
       "signals": { "lastActivity": "2026", "publishesResults": false },
       "rationale": "Campionato ufficiale Hasbro LATAM (calendario, regolamento, consigli competitivi).",
-      "dedupCheck": "Non duplica fonti esistenti. Ora ha pagina /finalistas (nomi finalisti) ma non ancora combo per-piazzamento: sorgente 'rising' da monitorare.",
+      "dedupCheck": "Non duplica fonti esistenti. Hub informativo/promozionale.",
+      "verifiedOn": "2026-06-29",
+      "verifyNote": "Verificato: solo nuovi prodotti, Demo Tour, consigli competitivi, regolamento/calendario e nomi finalisti. Nessuna configurazione di parti per-piazzamento. Monitorare.",
       "proposedWeight": 0.5,
       "recommendation": "manual-verify",
       "status": "proposed",
       "dateFound": "2026-06-17",
-      "lastSeen": "2026-06-22"
+      "lastSeen": "2026-06-29"
     },
     {
       "candidateId": "social-michigan-beyblade-league",
@@ -322,9 +334,11 @@
       "dedupCheck": "Nessuna lega US tra le fonti. Discord non automatizzabile senza accesso → verifica manuale.",
       "proposedWeight": 0.5,
       "recommendation": "manual-verify",
-      "status": "proposed",
+      "status": "accepted",
+      "verifiedOn": "2026-06-29",
+      "verifyNote": "Approvato dall'utente. Discord non auto-collezionabile → spostato in manualVerification (zona parcheggio).",
       "dateFound": "2026-06-17",
-      "lastSeen": "2026-06-17"
+      "lastSeen": "2026-06-29"
     },
     {
       "candidateId": "social-bey-master-league-pe",
@@ -340,9 +354,11 @@
       "dedupCheck": "Affianca website-beyblade-peru per la scena PE. FB non automatizzabile → verifica manuale (come gli altri FB).",
       "proposedWeight": 0.5,
       "recommendation": "manual-verify",
-      "status": "proposed",
+      "status": "accepted",
+      "verifiedOn": "2026-06-29",
+      "verifyNote": "Approvato dall'utente. Facebook non auto-collezionabile → spostato in manualVerification.",
       "dateFound": "2026-06-17",
-      "lastSeen": "2026-06-17"
+      "lastSeen": "2026-06-29"
     },
     {
       "candidateId": "youtube-beyblade-lafayette-louisiana",
@@ -359,9 +375,10 @@
       "dedupCheck": "Stesso profilo di Maryland/Devon (leghe regionali già accettate): nuova area US (Louisiana), non duplica. Granularità locale utile.",
       "proposedWeight": 0.5,
       "recommendation": "propose",
-      "status": "proposed",
+      "status": "accepted",
+      "promotedOn": "2026-06-29",
       "dateFound": "2026-06-22",
-      "lastSeen": "2026-06-22"
+      "lastSeen": "2026-06-29"
     },
     {
       "candidateId": "youtube-abubeyblade",
@@ -378,9 +395,10 @@
       "dedupCheck": "Nessun canale YouTube DE tra le fonti (la scena DE è solo IG xleague_germany + Discord blader-league). Colma il gap DE automatizzabile.",
       "proposedWeight": 0.5,
       "recommendation": "propose",
-      "status": "proposed",
+      "status": "accepted",
+      "promotedOn": "2026-06-29",
       "dateFound": "2026-06-22",
-      "lastSeen": "2026-06-22"
+      "lastSeen": "2026-06-29"
     },
     {
       "candidateId": "youtube-national-beyblade-league",
@@ -397,9 +415,11 @@
       "dedupCheck": "Nuova area US (Houston, TX), non duplica Maryland. Freschezza al limite: ultimo upload 01/04/2026 (~2,5 mesi) — verificare se ancora attivo.",
       "proposedWeight": 0.5,
       "recommendation": "manual-verify",
-      "status": "proposed",
+      "status": "rejected",
+      "verifiedOn": "2026-06-29",
+      "verifyNote": "Verificato via API: upload recenti = solo promo/annunci eventi (Nintendo Switch prize, 'TAMPA ARE YOU READY', '$200 CASH BATTLE'), nessun piazzamento/combo. Inattivo dal 01/04/2026 (~3 mesi). Promo, non risultati.",
       "dateFound": "2026-06-22",
-      "lastSeen": "2026-06-22"
+      "lastSeen": "2026-06-29"
     },
     {
       "candidateId": "youtube-321goshoot-tv",
@@ -411,14 +431,17 @@
       "region": "US",
       "url": "https://www.youtube.com/@321goshoot-tv",
       "channelId": "UCxO9JEDikhzGmKiYMG-N2ZQ",
-      "signals": { "subscribers": 135, "lastActivity": "2026-06-17", "videoCount": 34, "publishesResults": true },
+      "signals": { "subscribers": 135, "lastActivity": "2026-06-25", "videoCount": 35, "publishesResults": true },
       "rationale": "Copertura live di tornei ed eventi Beyblade X con commento in tempo reale, oltre a sfide e giveaway. Attivo.",
       "dedupCheck": "Affianca le altre fonti creator US (BeyMac/Beybreakr/Casual). Piccolo e con contenuto misto (tornei + sfide/giveaway): verificare quota effettiva di piazzamenti/combo.",
       "proposedWeight": 0.4,
       "recommendation": "manual-verify",
-      "status": "proposed",
+      "status": "accepted",
+      "verifiedOn": "2026-06-29",
+      "verifyNote": "Verificato via API: documenta le finali ricorrenti dei tornei Wolfpack Wednesday @ Lobo Cards con bladers e combo nominate (Cobalt Dragoon 9-60E, Shark Scale 1-60L, ecc.); mescola battle-highlight. Attivo (2026-06-25). Promosso a sources.json (w 0.4).",
+      "promotedOn": "2026-06-29",
       "dateFound": "2026-06-22",
-      "lastSeen": "2026-06-22"
+      "lastSeen": "2026-06-29"
     },
     {
       "candidateId": "youtube-wari84",
@@ -430,14 +453,35 @@
       "region": "JP",
       "url": "https://www.youtube.com/@wari84doujou",
       "channelId": "UCy4By42-B23CKu6vMk3f7NA",
-      "signals": { "subscribers": 3680, "lastActivity": "2026-06-21", "videoCount": 737, "publishesResults": true },
+      "signals": { "subscribers": 3680, "lastActivity": "2026-06-28", "videoCount": 737, "publishesResults": true },
       "rationale": "Diario JP di partecipazione a tornei ufficiali con piazzamenti documentati nella bio (G3 3° posto, GP vicecampione). Attivo, 737 video.",
       "dedupCheck": "Gap JP coperto in parte da touka/luca/dame: profilo 'family/diario' diverso. Verificare se mostra le combo (non solo i match).",
       "proposedWeight": 0.4,
       "recommendation": "manual-verify",
-      "status": "proposed",
+      "status": "rejected",
+      "verifiedOn": "2026-06-29",
+      "verifyNote": "Verificato via API: contenuto = combo-testing/カスタム検証 (analisi e custom build, matchup di prova), non report di piazzamenti di tornei. Stesso profilo dei già esclusi (leftspinbeys). Teoria.",
       "dateFound": "2026-06-22",
-      "lastSeen": "2026-06-22"
+      "lastSeen": "2026-06-29"
+    },
+    {
+      "candidateId": "youtube-ryzo",
+      "name": "Ryzo",
+      "type": "youtube",
+      "platform": "youtube",
+      "provides": "combos",
+      "lang": "en",
+      "region": "GB",
+      "url": "https://www.youtube.com/@ryzoblades",
+      "channelId": "UC3r-MM1u63cu1kur2Qop_gQ",
+      "signals": { "subscribers": 825, "lastActivity": "2026-06-07", "videoCount": 25, "publishesResults": true },
+      "rationale": "Giocatore competitivo Beyblade X (UK & tornei internazionali) che viaggia, gareggia e documenta il proprio percorso competitivo. Attivo.",
+      "dedupCheck": "Scena UK coperta solo dalla piccola Devon Beyblade Association: Ryzo è un competitor che porta anche tornei internazionali. Non duplica. Profilo 'journey-vlog': verificare quota di combo/piazzamenti reali.",
+      "proposedWeight": 0.5,
+      "recommendation": "propose",
+      "status": "proposed",
+      "dateFound": "2026-06-29",
+      "lastSeen": "2026-06-29"
     }
   ],
   "knownNegatives": [
@@ -462,6 +506,12 @@
     "https://www.youtube.com/@indianbeybladeassociation (org tornei IN ma inattivo dal 2024-06)",
     "https://www.youtube.com/@beybladexutah (org tornei US ma inattivo dal 2025-09)",
     "https://www.youtube.com/@kcn (KENCHANNEL, canale kids/UUUM promozionale JP)",
-    "https://www.youtube.com/@danblader (BR beyblade caseira/entertainment)"
+    "https://www.youtube.com/@danblader (BR beyblade caseira/entertainment)",
+    "https://www.youtube.com/@endev (versusENDEV: canale svuotato, 0 video via API, morto)",
+    "https://www.youtube.com/@kinketsubey (JP hype/ranking-opinione/rare bey, non risultati di torneo)",
+    "https://www.youtube.com/@beybladeofficialyoutube (BeyTube ufficiale Takara Tomy: anime/promo/annunci, nessuna combo-vincitori parsabile)",
+    "https://www.youtube.com/@officialbeybladeleague (National Beyblade League Houston: solo promo/annunci eventi, no piazzamenti/combo, inattivo dal 2026-04)",
+    "https://www.youtube.com/@wari84doujou (combo-testing/カスタム検証 teoria, non placement)",
+    "https://note.com/why_kntturnout (なこも: ultimo report 2+ anni fa, inattivo)"
   ]
 }
