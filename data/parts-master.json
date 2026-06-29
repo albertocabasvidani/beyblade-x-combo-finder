@@ -1,5 +1,5 @@
 {
-  "version": "2026-06-26",
+  "version": "2026-06-29",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -163,9 +163,9 @@
       "source": {
         "page": "BulletGriffon H",
         "url": "https://beyblade.fandom.com/wiki/BulletGriffon_H",
-        "revid": 640459
+        "revid": 642301
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-29",
       "status": "verified",
       "type": "balance"
     },
@@ -802,9 +802,9 @@
       "source": {
         "page": "DranStrike 4-50FF",
         "url": "https://beyblade.fandom.com/wiki/DranStrike_4-50FF",
-        "revid": 639628
+        "revid": 642157
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-29",
       "status": "verified",
       "type": "attack",
       "stats": {
@@ -1294,9 +1294,9 @@
       "source": {
         "page": "HeavensRing 0-80DS",
         "url": "https://beyblade.fandom.com/wiki/HeavensRing_0-80DS",
-        "revid": 641191
+        "revid": 642209
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-29",
       "status": "verified",
       "type": "defense",
       "stats": {
@@ -1388,10 +1388,10 @@
       "source": {
         "page": "HellsHammer 3-70H",
         "url": "https://beyblade.fandom.com/wiki/HellsHammer_3-70H",
-        "revid": 633705
+        "revid": 642110
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-29",
       "stats": {
         "atk": 50,
         "def": 25,
@@ -2864,10 +2864,10 @@
       "source": {
         "page": "ScorpioSpear 0-70Z",
         "url": "https://beyblade.fandom.com/wiki/ScorpioSpear_0-70Z",
-        "revid": 641838
+        "revid": 642005
       },
       "status": "verified",
-      "lastVerified": "2026-06-24",
+      "lastVerified": "2026-06-29",
       "stats": {
         "atk": 25,
         "def": 55,
@@ -4326,10 +4326,10 @@
       "source": {
         "page": "BahamutBlitz BK1-50I",
         "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
-        "revid": 640057
+        "revid": 642150
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-29",
       "products": [
         "CX-13",
         "G4572",
@@ -4366,9 +4366,9 @@
       "source": {
         "page": "BrachioWhip OW5-70Nr",
         "url": "https://beyblade.fandom.com/wiki/BrachioWhip_OW5-70Nr",
-        "revid": 641989
+        "revid": 642089
       },
-      "lastVerified": "2026-06-26",
+      "lastVerified": "2026-06-29",
       "status": "verified"
     },
     {
@@ -4464,10 +4464,10 @@
       "source": {
         "page": "DranBrave S6-60V",
         "url": "https://beyblade.fandom.com/wiki/DranBrave_S6-60V",
-        "revid": 634303
+        "revid": 642186
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-29",
       "products": [
         "CX-01",
         "G1677"
@@ -4650,9 +4650,9 @@
       "source": {
         "page": "Fort Hornet R 7-60T",
         "url": "https://beyblade.fandom.com/wiki/Fort_Hornet_R_7-60T",
-        "revid": 641736
+        "revid": 641992
       },
-      "lastVerified": "2026-06-21",
+      "lastVerified": "2026-06-29",
       "status": "verified"
     },
     {
@@ -4680,10 +4680,10 @@
       "source": {
         "page": "KnightFortress GV8-70UN",
         "url": "https://beyblade.fandom.com/wiki/KnightFortress_GV8-70UN",
-        "revid": 639626
+        "revid": 642303
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-29",
       "products": [
         "CX-14",
         "G4563"
@@ -4811,10 +4811,10 @@
       "source": {
         "page": "PerseusDark B6-80W",
         "url": "https://beyblade.fandom.com/wiki/PerseusDark_B6-80W",
-        "revid": 634307
+        "revid": 642257
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-29",
       "products": [
         "CX-03",
         "G1680"
@@ -4846,10 +4846,10 @@
       "source": {
         "page": "PhoenixFlare Z9-80WW",
         "url": "https://beyblade.fandom.com/wiki/PhoenixFlare_Z9-80WW",
-        "revid": 638434
+        "revid": 642144
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-29",
       "products": [
         "CX-12"
       ],
@@ -4880,10 +4880,10 @@
       "source": {
         "page": "RagnaRage FE4-55Y",
         "url": "https://beyblade.fandom.com/wiki/RagnaRage_FE4-55Y",
-        "revid": 641017
+        "revid": 642304
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-29",
       "products": [
         "CX-15",
         "G4562"
@@ -4949,10 +4949,10 @@
       "source": {
         "page": "SolEclipse D5-70TK",
         "url": "https://beyblade.fandom.com/wiki/SolEclipse_D5-70TK",
-        "revid": 641446
+        "revid": 642305
       },
       "status": "verified",
-      "lastVerified": "2026-06-18",
+      "lastVerified": "2026-06-29",
       "products": [
         "CX-09",
         "UX-18"
@@ -5009,9 +5009,9 @@
       "source": {
         "page": "UnicornDelta PO3-60GU",
         "url": "https://beyblade.fandom.com/wiki/UnicornDelta_PO3-60GU",
-        "revid": 639975
+        "revid": 642296
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-29",
       "status": "verified"
     },
     {
@@ -5294,9 +5294,9 @@
       "source": {
         "page": "BahamutBlitz BK1-50I",
         "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
-        "revid": 640057
+        "revid": 642150
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-29",
       "status": "verified"
     },
     {
@@ -5329,10 +5329,10 @@
       "source": {
         "page": "DranBrave S6-60V",
         "url": "https://beyblade.fandom.com/wiki/DranBrave_S6-60V",
-        "revid": 634303
+        "revid": 642186
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-29",
       "products": [
         "CX-01",
         "CX-00",
@@ -5413,10 +5413,10 @@
       "source": {
         "page": "PerseusDark B6-80W",
         "url": "https://beyblade.fandom.com/wiki/PerseusDark_B6-80W",
-        "revid": 634307
+        "revid": 642257
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-29",
       "products": [
         "CX-03",
         "CX-08",
@@ -5458,9 +5458,9 @@
       "source": {
         "page": "UnicornDelta PO3-60GU",
         "url": "https://beyblade.fandom.com/wiki/UnicornDelta_PO3-60GU",
-        "revid": 639975
+        "revid": 642296
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-29",
       "status": "verified"
     },
     {
@@ -5488,10 +5488,10 @@
       "source": {
         "page": "SolEclipse D5-70TK",
         "url": "https://beyblade.fandom.com/wiki/SolEclipse_D5-70TK",
-        "revid": 641446
+        "revid": 642305
       },
       "status": "verified",
-      "lastVerified": "2026-06-18",
+      "lastVerified": "2026-06-29",
       "products": [
         "CX-09"
       ],
@@ -5600,10 +5600,10 @@
       "source": {
         "page": "PhoenixFlare Z9-80WW",
         "url": "https://beyblade.fandom.com/wiki/PhoenixFlare_Z9-80WW",
-        "revid": 638434
+        "revid": 642144
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-29",
       "products": [
         "CX-12"
       ],
@@ -5631,9 +5631,9 @@
       "source": {
         "page": "Fort Hornet R 7-60T",
         "url": "https://beyblade.fandom.com/wiki/Fort_Hornet_R_7-60T",
-        "revid": 641736
+        "revid": 641992
       },
-      "lastVerified": "2026-06-21",
+      "lastVerified": "2026-06-29",
       "status": "verified",
       "type": "balance",
       "stats": {
@@ -5677,9 +5677,9 @@
       "source": {
         "page": "KnightFortress GV8-70UN",
         "url": "https://beyblade.fandom.com/wiki/KnightFortress_GV8-70UN",
-        "revid": 639626
+        "revid": 642303
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-29",
       "status": "verified"
     },
     {
@@ -5812,9 +5812,9 @@
       "source": {
         "page": "RagnaRage FE4-55Y",
         "url": "https://beyblade.fandom.com/wiki/RagnaRage_FE4-55Y",
-        "revid": 641017
+        "revid": 642304
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-29",
       "status": "verified"
     },
     {
@@ -5913,9 +5913,9 @@
       "source": {
         "page": "BrachioWhip OW5-70Nr",
         "url": "https://beyblade.fandom.com/wiki/BrachioWhip_OW5-70Nr",
-        "revid": 641989
+        "revid": 642089
       },
-      "lastVerified": "2026-06-26",
+      "lastVerified": "2026-06-29",
       "status": "verified"
     },
     {
@@ -6010,10 +6010,10 @@
       "source": {
         "page": "PerseusDark B6-80W",
         "url": "https://beyblade.fandom.com/wiki/PerseusDark_B6-80W",
-        "revid": 634307
+        "revid": 642257
       },
       "status": "verified",
-      "lastVerified": "2026-06-21",
+      "lastVerified": "2026-06-29",
       "products": [
         "CX-03",
         "CX-00",
@@ -6084,10 +6084,10 @@
       "source": {
         "page": "SolEclipse D5-70TK",
         "url": "https://beyblade.fandom.com/wiki/SolEclipse_D5-70TK",
-        "revid": 641446
+        "revid": 642305
       },
       "status": "verified",
-      "lastVerified": "2026-06-18",
+      "lastVerified": "2026-06-29",
       "products": [
         "CX-09"
       ],
@@ -6123,9 +6123,9 @@
       "source": {
         "page": "RagnaRage FE4-55Y",
         "url": "https://beyblade.fandom.com/wiki/RagnaRage_FE4-55Y",
-        "revid": 641017
+        "revid": 642304
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-29",
       "status": "verified",
       "shortName": "E"
     },
@@ -6303,9 +6303,9 @@
       "source": {
         "page": "BahamutBlitz BK1-50I",
         "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
-        "revid": 640057
+        "revid": 642150
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-29",
       "status": "verified",
       "shortName": "K"
     },
@@ -6374,9 +6374,9 @@
       "source": {
         "page": "UnicornDelta PO3-60GU",
         "url": "https://beyblade.fandom.com/wiki/UnicornDelta_PO3-60GU",
-        "revid": 639975
+        "revid": 642296
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-29",
       "status": "verified",
       "shortName": "O"
     },
@@ -6444,10 +6444,10 @@
       "source": {
         "page": "DranBrave S6-60V",
         "url": "https://beyblade.fandom.com/wiki/DranBrave_S6-60V",
-        "revid": 634303
+        "revid": 642186
       },
       "status": "verified",
-      "lastVerified": "2026-06-21",
+      "lastVerified": "2026-06-29",
       "products": [
         "CX-01",
         "CX-00",
@@ -6523,9 +6523,9 @@
       "source": {
         "page": "KnightFortress GV8-70UN",
         "url": "https://beyblade.fandom.com/wiki/KnightFortress_GV8-70UN",
-        "revid": 639626
+        "revid": 642303
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-29",
       "status": "verified",
       "shortName": "V"
     },
@@ -6606,10 +6606,10 @@
       "source": {
         "page": "PhoenixFlare Z9-80WW",
         "url": "https://beyblade.fandom.com/wiki/PhoenixFlare_Z9-80WW",
-        "revid": 638434
+        "revid": 642144
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-29",
       "products": [
         "CX-12"
       ],
@@ -6721,9 +6721,9 @@
       "source": {
         "page": "Over Blade - Guard",
         "url": "https://beyblade.fandom.com/wiki/Over_Blade_-_Guard",
-        "revid": 635495
+        "revid": 642229
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-29",
       "status": "verified"
     },
     {
@@ -6756,9 +6756,9 @@
       "source": {
         "page": "Over Blade - Outer",
         "url": "https://beyblade.fandom.com/wiki/Over_Blade_-_Outer",
-        "revid": 641988
+        "revid": 642091
       },
-      "lastVerified": "2026-06-26",
+      "lastVerified": "2026-06-29",
       "status": "verified"
     },
     {
@@ -6861,9 +6861,9 @@
       "source": {
         "page": "ScorpioSpear 0-70Z",
         "url": "https://beyblade.fandom.com/wiki/ScorpioSpear_0-70Z",
-        "revid": 641838
+        "revid": 642005
       },
-      "lastVerified": "2026-06-24",
+      "lastVerified": "2026-06-29",
       "status": "verified"
     },
     {
@@ -6936,9 +6936,9 @@
       "source": {
         "page": "BahamutBlitz BK1-50I",
         "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
-        "revid": 640057
+        "revid": 642150
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-29",
       "status": "verified",
       "stats": {
         "atk": 18,
@@ -7263,10 +7263,10 @@
       "source": {
         "page": "HellsHammer 3-70H",
         "url": "https://beyblade.fandom.com/wiki/HellsHammer_3-70H",
-        "revid": 633705
+        "revid": 642110
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-29",
       "products": [
         "UX-02",
         "UX-05",
@@ -7410,10 +7410,10 @@
       "source": {
         "page": "DranStrike 4-50FF",
         "url": "https://beyblade.fandom.com/wiki/DranStrike_4-50FF",
-        "revid": 639628
+        "revid": 642157
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-29",
       "products": [
         "BX-49",
         "UX-15"
@@ -7774,10 +7774,10 @@
       "source": {
         "page": "DranBrave S6-60V",
         "url": "https://beyblade.fandom.com/wiki/DranBrave_S6-60V",
-        "revid": 634303
+        "revid": 642186
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-29",
       "products": [
         "CX-01",
         "UX-00",
@@ -7853,10 +7853,10 @@
       "source": {
         "page": "PerseusDark B6-80W",
         "url": "https://beyblade.fandom.com/wiki/PerseusDark_B6-80W",
-        "revid": 634307
+        "revid": 642257
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-29",
       "products": [
         "CX-03",
         "BX-00",
@@ -8066,9 +8066,9 @@
       "source": {
         "page": "KnightFortress GV8-70UN",
         "url": "https://beyblade.fandom.com/wiki/KnightFortress_GV8-70UN",
-        "revid": 639626
+        "revid": 642303
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-29",
       "status": "verified",
       "stats": {
         "atk": 8,
@@ -8538,9 +8538,9 @@
       "source": {
         "page": "HeavensRing 0-80DS",
         "url": "https://beyblade.fandom.com/wiki/HeavensRing_0-80DS",
-        "revid": 641191
+        "revid": 642209
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-29",
       "status": "verified",
       "type": "stamina",
       "shortName": "DS",
@@ -8751,9 +8751,9 @@
       "source": {
         "page": "DranStrike 4-50FF",
         "url": "https://beyblade.fandom.com/wiki/DranStrike_4-50FF",
-        "revid": 639628
+        "revid": 642157
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-29",
       "status": "verified",
       "type": "attack",
       "shortName": "FF",
@@ -9036,9 +9036,9 @@
       "source": {
         "page": "UnicornDelta PO3-60GU",
         "url": "https://beyblade.fandom.com/wiki/UnicornDelta_PO3-60GU",
-        "revid": 639975
+        "revid": 642296
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-29",
       "status": "verified",
       "type": "balance",
       "shortName": "GU",
@@ -9115,10 +9115,10 @@
       "source": {
         "page": "HellsHammer 3-70H",
         "url": "https://beyblade.fandom.com/wiki/HellsHammer_3-70H",
-        "revid": 633705
+        "revid": 642110
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-29",
       "products": [
         "UX-02",
         "UX-19"
@@ -9259,9 +9259,9 @@
       "source": {
         "page": "BahamutBlitz BK1-50I",
         "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
-        "revid": 640057
+        "revid": 642150
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-29",
       "status": "verified",
       "type": "attack",
       "shortName": "I",
@@ -9647,9 +9647,9 @@
       "source": {
         "page": "BrachioWhip OW5-70Nr",
         "url": "https://beyblade.fandom.com/wiki/BrachioWhip_OW5-70Nr",
-        "revid": 641989
+        "revid": 642089
       },
-      "lastVerified": "2026-06-26",
+      "lastVerified": "2026-06-29",
       "status": "verified",
       "type": "stamina",
       "shortName": "Nr"
@@ -10081,10 +10081,10 @@
       "source": {
         "page": "SolEclipse D5-70TK",
         "url": "https://beyblade.fandom.com/wiki/SolEclipse_D5-70TK",
-        "revid": 641446
+        "revid": 642305
       },
       "status": "verified",
-      "lastVerified": "2026-06-18",
+      "lastVerified": "2026-06-29",
       "products": [
         "CX-09"
       ],
@@ -10338,9 +10338,9 @@
       "source": {
         "page": "DranBrave S6-60V",
         "url": "https://beyblade.fandom.com/wiki/DranBrave_S6-60V",
-        "revid": 634303
+        "revid": 642186
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-29",
       "status": "verified",
       "type": "attack",
       "shortName": "V",
@@ -10420,9 +10420,9 @@
       "source": {
         "page": "PhoenixFlare Z9-80WW",
         "url": "https://beyblade.fandom.com/wiki/PhoenixFlare_Z9-80WW",
-        "revid": 638434
+        "revid": 642144
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-29",
       "status": "verified",
       "type": "defense",
       "shortName": "WW",
@@ -10457,10 +10457,10 @@
       "source": {
         "page": "PerseusDark B6-80W",
         "url": "https://beyblade.fandom.com/wiki/PerseusDark_B6-80W",
-        "revid": 634307
+        "revid": 642257
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-29",
       "products": [
         "CX-03",
         "UX-18",
@@ -10504,9 +10504,9 @@
       "source": {
         "page": "RagnaRage FE4-55Y",
         "url": "https://beyblade.fandom.com/wiki/RagnaRage_FE4-55Y",
-        "revid": 641017
+        "revid": 642304
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-06-29",
       "status": "verified",
       "type": "stamina",
       "shortName": "Y",
@@ -10545,9 +10545,9 @@
       "source": {
         "page": "ScorpioSpear 0-70Z",
         "url": "https://beyblade.fandom.com/wiki/ScorpioSpear_0-70Z",
-        "revid": 641838
+        "revid": 642005
       },
-      "lastVerified": "2026-06-24",
+      "lastVerified": "2026-06-29",
       "status": "verified",
       "type": "balance",
       "shortName": "Z",
