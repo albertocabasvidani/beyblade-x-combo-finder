@@ -1,5 +1,5 @@
 {
-  "version": "2026-06-29",
+  "version": "2026-06-30",
   "blades": [
     {
       "id": "aero-pegasus",
@@ -1026,7 +1026,7 @@
       "aliases": [
         "SamuraiSuchīru"
       ],
-      "type": "balance",
+      "type": "attack",
       "line": "bx",
       "releaseSet": "BX-00",
       "stats": {
