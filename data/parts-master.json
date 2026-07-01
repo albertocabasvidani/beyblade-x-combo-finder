@@ -1,5 +1,5 @@
 {
-  "version": "2026-06-30",
+  "version": "2026-07-01",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -520,12 +520,12 @@
         "G3083"
       ],
       "source": {
-        "page": "CrocoCrunch 2-60Q",
-        "url": "https://beyblade.fandom.com/wiki/CrocoCrunch_2-60Q",
-        "revid": 642378
+        "page": "CrocCrunch 2-60Q",
+        "url": "https://beyblade.fandom.com/wiki/CrocCrunch_2-60Q",
+        "revid": 642402
       },
       "status": "verified",
-      "lastVerified": "2026-06-30",
+      "lastVerified": "2026-07-01",
       "stats": {
         "atk": 60,
         "def": 22,
@@ -1713,11 +1713,11 @@
       ],
       "source": {
         "page": "KnightShield 3-80N",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=KnightShield_3-80N&format=json&prop=wikitext",
-        "revid": 632915
+        "url": "https://beyblade.fandom.com/wiki/KnightShield_3-80N",
+        "revid": 642425
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-01",
       "stats": {
         "atk": 20,
         "def": 55,
@@ -2820,10 +2820,10 @@
       "source": {
         "page": "SamuraiSteel 5-70GF",
         "url": "https://beyblade.fandom.com/wiki/SamuraiSteel_5-70GF",
-        "revid": 642328
+        "revid": 642416
       },
       "status": "verified",
-      "lastVerified": "2026-06-30",
+      "lastVerified": "2026-07-01",
       "stats": {
         "atk": 40,
         "def": 37,
@@ -4367,9 +4367,9 @@
       "source": {
         "page": "BrachioWhip OW5-70Nr",
         "url": "https://beyblade.fandom.com/wiki/BrachioWhip_OW5-70Nr",
-        "revid": 642089
+        "revid": 642419
       },
-      "lastVerified": "2026-06-29",
+      "lastVerified": "2026-07-01",
       "status": "verified"
     },
     {
@@ -4500,10 +4500,10 @@
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 641794
+        "revid": 642448
       },
       "status": "verified",
-      "lastVerified": "2026-06-23",
+      "lastVerified": "2026-07-01",
       "products": [
         "CX-11",
         "G3028"
@@ -5010,9 +5010,9 @@
       "source": {
         "page": "UnicornDelta PO3-60GU",
         "url": "https://beyblade.fandom.com/wiki/UnicornDelta_PO3-60GU",
-        "revid": 642330
+        "revid": 642434
       },
-      "lastVerified": "2026-06-30",
+      "lastVerified": "2026-07-01",
       "status": "verified"
     },
     {
@@ -5459,9 +5459,9 @@
       "source": {
         "page": "UnicornDelta PO3-60GU",
         "url": "https://beyblade.fandom.com/wiki/UnicornDelta_PO3-60GU",
-        "revid": 642330
+        "revid": 642434
       },
-      "lastVerified": "2026-06-30",
+      "lastVerified": "2026-07-01",
       "status": "verified"
     },
     {
@@ -5768,10 +5768,10 @@
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 641794
+        "revid": 642448
       },
       "status": "verified",
-      "lastVerified": "2026-06-23",
+      "lastVerified": "2026-07-01",
       "products": [
         "CX-11",
         "G3028"
@@ -5914,9 +5914,9 @@
       "source": {
         "page": "BrachioWhip OW5-70Nr",
         "url": "https://beyblade.fandom.com/wiki/BrachioWhip_OW5-70Nr",
-        "revid": 642089
+        "revid": 642419
       },
-      "lastVerified": "2026-06-29",
+      "lastVerified": "2026-07-01",
       "status": "verified"
     },
     {
@@ -6227,10 +6227,10 @@
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 641794
+        "revid": 642448
       },
       "status": "verified",
-      "lastVerified": "2026-06-23",
+      "lastVerified": "2026-07-01",
       "products": [
         "CX-11",
         "G3028"
@@ -6375,9 +6375,9 @@
       "source": {
         "page": "UnicornDelta PO3-60GU",
         "url": "https://beyblade.fandom.com/wiki/UnicornDelta_PO3-60GU",
-        "revid": 642330
+        "revid": 642434
       },
-      "lastVerified": "2026-06-30",
+      "lastVerified": "2026-07-01",
       "status": "verified",
       "shortName": "O"
     },
@@ -9037,9 +9037,9 @@
       "source": {
         "page": "UnicornDelta PO3-60GU",
         "url": "https://beyblade.fandom.com/wiki/UnicornDelta_PO3-60GU",
-        "revid": 642330
+        "revid": 642434
       },
-      "lastVerified": "2026-06-30",
+      "lastVerified": "2026-07-01",
       "status": "verified",
       "type": "balance",
       "shortName": "GU",
@@ -9648,9 +9648,9 @@
       "source": {
         "page": "BrachioWhip OW5-70Nr",
         "url": "https://beyblade.fandom.com/wiki/BrachioWhip_OW5-70Nr",
-        "revid": 642089
+        "revid": 642419
       },
-      "lastVerified": "2026-06-29",
+      "lastVerified": "2026-07-01",
       "status": "verified",
       "type": "stamina",
       "shortName": "Nr"
@@ -9731,9 +9731,9 @@
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 641794
+        "revid": 642448
       },
-      "lastVerified": "2026-06-23",
+      "lastVerified": "2026-07-01",
       "status": "verified",
       "shortName": "Op",
       "integratedRatchet": true
