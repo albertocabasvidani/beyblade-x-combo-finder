@@ -1,5 +1,5 @@
 {
-  "version": "2026-07-01",
+  "version": "2026-07-03",
   "blades": [
     {
       "id": "aero-pegasus",
@@ -385,7 +385,12 @@
       "type": "attack",
       "line": "ux",
       "integratedRatchet": true,
-      "releaseSet": "UX-20"
+      "releaseSet": "UX-20",
+      "stats": {
+        "atk": 85,
+        "def": 35,
+        "sta": 25
+      }
     },
     {
       "id": "goat-tackle",

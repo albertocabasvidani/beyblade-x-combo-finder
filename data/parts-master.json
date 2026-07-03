@@ -1,5 +1,5 @@
 {
-  "version": "2026-07-01",
+  "version": "2026-07-03",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -1058,10 +1058,15 @@
       "source": {
         "page": "Ratchet-Integrated Blade - GloryValkyrie",
         "url": "https://beyblade.fandom.com/wiki/Ratchet-Integrated_Blade_-_GloryValkyrie",
-        "revid": 640561
+        "revid": 642564
       },
-      "lastVerified": "2026-06-15",
-      "status": "verified"
+      "lastVerified": "2026-07-03",
+      "status": "verified",
+      "stats": {
+        "atk": 85,
+        "def": 35,
+        "sta": 25
+      }
     },
     {
       "id": "goat-tackle",
@@ -4500,10 +4505,10 @@
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 642448
+        "revid": 642577
       },
       "status": "verified",
-      "lastVerified": "2026-07-01",
+      "lastVerified": "2026-07-03",
       "products": [
         "CX-11",
         "G3028"
@@ -4847,10 +4852,10 @@
       "source": {
         "page": "PhoenixFlare Z9-80WW",
         "url": "https://beyblade.fandom.com/wiki/PhoenixFlare_Z9-80WW",
-        "revid": 642144
+        "revid": 642576
       },
       "status": "verified",
-      "lastVerified": "2026-06-29",
+      "lastVerified": "2026-07-03",
       "products": [
         "CX-12"
       ],
@@ -5601,10 +5606,10 @@
       "source": {
         "page": "PhoenixFlare Z9-80WW",
         "url": "https://beyblade.fandom.com/wiki/PhoenixFlare_Z9-80WW",
-        "revid": 642144
+        "revid": 642576
       },
       "status": "verified",
-      "lastVerified": "2026-06-29",
+      "lastVerified": "2026-07-03",
       "products": [
         "CX-12"
       ],
@@ -5768,10 +5773,10 @@
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 642448
+        "revid": 642577
       },
       "status": "verified",
-      "lastVerified": "2026-07-01",
+      "lastVerified": "2026-07-03",
       "products": [
         "CX-11",
         "G3028"
@@ -6227,10 +6232,10 @@
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 642448
+        "revid": 642577
       },
       "status": "verified",
-      "lastVerified": "2026-07-01",
+      "lastVerified": "2026-07-03",
       "products": [
         "CX-11",
         "G3028"
@@ -6607,10 +6612,10 @@
       "source": {
         "page": "PhoenixFlare Z9-80WW",
         "url": "https://beyblade.fandom.com/wiki/PhoenixFlare_Z9-80WW",
-        "revid": 642144
+        "revid": 642576
       },
       "status": "verified",
-      "lastVerified": "2026-06-29",
+      "lastVerified": "2026-07-03",
       "products": [
         "CX-12"
       ],
@@ -9731,9 +9736,9 @@
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 642448
+        "revid": 642577
       },
-      "lastVerified": "2026-07-01",
+      "lastVerified": "2026-07-03",
       "status": "verified",
       "shortName": "Op",
       "integratedRatchet": true
@@ -10421,9 +10426,9 @@
       "source": {
         "page": "PhoenixFlare Z9-80WW",
         "url": "https://beyblade.fandom.com/wiki/PhoenixFlare_Z9-80WW",
-        "revid": 642144
+        "revid": 642576
       },
-      "lastVerified": "2026-06-29",
+      "lastVerified": "2026-07-03",
       "status": "verified",
       "type": "defense",
       "shortName": "WW",
