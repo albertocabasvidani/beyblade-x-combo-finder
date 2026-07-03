@@ -5,7 +5,8 @@
       "id": "aero-pegasus",
       "name": "Aero Pegasus",
       "aliases": [
-        "EaroPegasasu"
+        "EaroPegasasu",
+        "AeroPegasus"
       ],
       "type": "attack",
       "line": "bx",
@@ -1013,7 +1014,8 @@
       "name": "Samurai Saber",
       "nameWestern": "Saber Samurai",
       "aliases": [
-        "SamuraiSeibā"
+        "SamuraiSeibā",
+        "Samurai Sabre"
       ],
       "type": "attack",
       "line": "bx",
@@ -2475,7 +2477,8 @@
       "shortName": "DB",
       "aliases": [
         "Disuku Bōru",
-        "Disuku"
+        "Disuku",
+        "Disc Ball"
       ],
       "stats": {
         "atk": 15,
@@ -2489,7 +2492,8 @@
       "type": "stamina",
       "shortName": "DS",
       "aliases": [
-        "Disuku Supaiku"
+        "Disuku Supaiku",
+        "Disc Spike"
       ],
       "stats": {
         "atk": 5,

@@ -1,6 +1,92 @@
 {
-  "lastUpdated": "2026-06-26T14:27:25.303Z",
+  "lastUpdated": "2026-07-03T12:33:02.213Z",
   "combos": [
+    {
+      "id": "aero-pegasus-7-70-point",
+      "line": "bx",
+      "blade": "aero-pegasus",
+      "ratchet": "7-70",
+      "bit": "point",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Aero Pegasus 7-70 Point",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Untouchables Locals",
+          "url": "https://www.metabeys.com/events/1751162037601",
+          "weight": 1,
+          "date": "2025-06-28"
+        }
+      ],
+      "dateAdded": "2026-06-26",
+      "dateUpdated": "2026-07-03",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-07-03"
+    },
+    {
+      "id": "aero-pegasus-7-70-vortex",
+      "line": "bx",
+      "blade": "aero-pegasus",
+      "ratchet": "7-70",
+      "bit": "vortex",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Aero Pegasus 7-70 Vortex",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — New Realm Games Circuit Week 4",
+          "url": "https://www.metabeys.com/events/1751078241936",
+          "weight": 1,
+          "date": "2025-06-27"
+        }
+      ],
+      "dateAdded": "2026-06-26",
+      "dateUpdated": "2026-07-03",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-07-03"
+    },
     {
       "id": "cobalt-dragoon-4-60-hexa",
       "line": "bx",
@@ -134,6 +220,92 @@
       "archivedDate": "2026-06-17"
     },
     {
+      "id": "golem-rock-6-80-under-needle",
+      "line": "bx",
+      "blade": "golem-rock",
+      "ratchet": "6-80",
+      "bit": "under-needle",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Golem Rock 6-80 Under Needle",
+      "type": "defense",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — New Realm Games Circuit Week 4",
+          "url": "https://www.metabeys.com/events/1751078241936",
+          "weight": 1,
+          "date": "2025-06-27"
+        }
+      ],
+      "dateAdded": "2026-06-26",
+      "dateUpdated": "2026-07-03",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-07-03"
+    },
+    {
+      "id": "hells-brave-jaggy-9-60-point",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "point",
+      "lockChip": "hells",
+      "mainBlade": "brave",
+      "assistBlade": "jaggy",
+      "overBlade": null,
+      "displayName": "Hells Brave J 9-60 Point",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Jun. 29, 2025  12:30 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-06-29"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-07-03",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-07-03"
+    },
+    {
       "id": "hells-hammer-9-60-low-rush",
       "line": "bx",
       "blade": "hells-hammer",
@@ -220,6 +392,49 @@
       },
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-06-17"
+    },
+    {
+      "id": "hover-wyvern-5-60-low-flat",
+      "line": "bx",
+      "blade": "hover-wyvern",
+      "ratchet": "5-60",
+      "bit": "low-flat",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Hover Wyvern 5-60 Low Flat",
+      "type": "defense",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — New Realm Games Stadium Prize ( July 2, 2025 )",
+          "url": "https://www.metabeys.com/events/1751525818908",
+          "weight": 1,
+          "date": "2025-07-02"
+        }
+      ],
+      "dateAdded": "2026-06-26",
+      "dateUpdated": "2026-07-03",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-07-03"
     },
     {
       "id": "knight-shield-7-60-point",
@@ -487,6 +702,55 @@
       "archivedDate": "2026-06-17"
     },
     {
+      "id": "phoenix-wing-5-60-level",
+      "line": "bx",
+      "blade": "phoenix-wing",
+      "ratchet": "5-60",
+      "bit": "level",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Phoenix Wing 5-60 Level",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — New Realm Games Stadium Prize ( July 2, 2025 )",
+          "url": "https://www.metabeys.com/events/1751525818908",
+          "weight": 1,
+          "date": "2025-07-02"
+        },
+        {
+          "name": "MetaBeys — New Realm Games Circuit Week 4",
+          "url": "https://www.metabeys.com/events/1751078241936",
+          "weight": 1,
+          "date": "2025-06-27"
+        }
+      ],
+      "dateAdded": "2026-06-26",
+      "dateUpdated": "2026-07-03",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-07-03"
+    },
+    {
       "id": "scorpio-spear-7-60-dot",
       "line": "bx",
       "blade": "scorpio-spear",
@@ -529,6 +793,92 @@
       },
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-06-17"
+    },
+    {
+      "id": "scorpio-spear-7-70-point",
+      "line": "bx",
+      "blade": "scorpio-spear",
+      "ratchet": "7-70",
+      "bit": "point",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Scorpio Spear 7-70 Point",
+      "type": "stamina",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Beyblade Summer League",
+          "url": "https://www.metabeys.com/events/1751764661497",
+          "weight": 1,
+          "date": "2025-06-28"
+        }
+      ],
+      "dateAdded": "2026-06-26",
+      "dateUpdated": "2026-07-03",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-07-03"
+    },
+    {
+      "id": "shark-edge-1-80-hexa",
+      "line": "bx",
+      "blade": "shark-edge",
+      "ratchet": "1-80",
+      "bit": "hexa",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Shark Edge 1-80 Hexa",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Jun. 30, 2025  12:18 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-06-28"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-07-03",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-07-03"
     },
     {
       "id": "shelter-drake-6-60-low-rush",
@@ -705,6 +1055,92 @@
       },
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-06-17"
+    },
+    {
+      "id": "whale-wave-1-60-level",
+      "line": "bx",
+      "blade": "whale-wave",
+      "ratchet": "1-60",
+      "bit": "level",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Whale Wave 1-60 Level",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — View All Faces",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-07-01"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-07-03",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-07-03"
+    },
+    {
+      "id": "wizard-arc-bumper-1-60-low-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "1-60",
+      "bit": "low-rush",
+      "lockChip": "wizard",
+      "mainBlade": "arc",
+      "assistBlade": "bumper",
+      "overBlade": null,
+      "displayName": "Wizard Arc B 1-60 Low Rush",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Jun. 30, 2025  10:58 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-06-30"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-07-03",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-07-03"
     },
     {
       "id": "wizard-arc-slash-1-60-low-rush",
