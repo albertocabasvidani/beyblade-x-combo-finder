@@ -1,5 +1,5 @@
 {
-  "version": "2026-07-05",
+  "version": "2026-07-08",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -1399,10 +1399,10 @@
       "source": {
         "page": "HellsHammer 3-70H",
         "url": "https://beyblade.fandom.com/wiki/HellsHammer_3-70H",
-        "revid": 642110
+        "revid": 642937
       },
       "status": "verified",
-      "lastVerified": "2026-06-29",
+      "lastVerified": "2026-07-08",
       "stats": {
         "atk": 50,
         "def": 25,
@@ -4265,10 +4265,10 @@
       "source": {
         "page": "WyvernGale 5-80GB",
         "url": "https://beyblade.fandom.com/api.php?action=parse&page=WyvernGale_5-80GB&format=json&prop=wikitext",
-        "revid": 638226
+        "revid": 643015
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-08",
       "stats": {
         "atk": 10,
         "def": 40,
@@ -4314,6 +4314,30 @@
         "def": 25,
         "sta": 10
       }
+    },
+    {
+      "id": "suppress-superion",
+      "category": "blade",
+      "line": "bx",
+      "type": "balance",
+      "names": {
+        "tt": "Suppress Superion",
+        "hasbro": "Suppress Superion",
+        "ja": "",
+        "romaji": ""
+      },
+      "aliases": [],
+      "products": [
+        "G2745"
+      ],
+      "firstReleaseSet": "G2745",
+      "source": {
+        "page": "Blade - Suppress Superion",
+        "url": "https://beyblade.fandom.com/wiki/Blade_-_Suppress_Superion",
+        "revid": 642986
+      },
+      "status": "unverified",
+      "lastVerified": "2026-07-08"
     }
   ],
   "lockChips": [
@@ -4382,9 +4406,9 @@
       "source": {
         "page": "BrachioWhip OW5-70Nr",
         "url": "https://beyblade.fandom.com/wiki/BrachioWhip_OW5-70Nr",
-        "revid": 642689
+        "revid": 642948
       },
-      "lastVerified": "2026-07-04",
+      "lastVerified": "2026-07-08",
       "status": "verified"
     },
     {
@@ -5166,6 +5190,29 @@
         "CX-10"
       ],
       "firstReleaseSet": "CX-10"
+    },
+    {
+      "id": "croc",
+      "category": "lockChip",
+      "line": "cx",
+      "names": {
+        "tt": "Croc",
+        "hasbro": "Croc",
+        "ja": "",
+        "romaji": ""
+      },
+      "aliases": [],
+      "products": [
+        "G4565"
+      ],
+      "firstReleaseSet": "G4565",
+      "source": {
+        "page": "Lock Chip - Croc",
+        "url": "https://beyblade.fandom.com/wiki/Lock_Chip_-_Croc",
+        "revid": 642969
+      },
+      "status": "unverified",
+      "lastVerified": "2026-07-08"
     }
   ],
   "mainBlades": [
@@ -5934,9 +5981,9 @@
       "source": {
         "page": "BrachioWhip OW5-70Nr",
         "url": "https://beyblade.fandom.com/wiki/BrachioWhip_OW5-70Nr",
-        "revid": 642689
+        "revid": 642948
       },
-      "lastVerified": "2026-07-04",
+      "lastVerified": "2026-07-08",
       "status": "verified"
     },
     {
@@ -5965,6 +6012,29 @@
         "def": 12,
         "sta": 40
       }
+    },
+    {
+      "id": "tread",
+      "category": "mainBlade",
+      "line": "cx",
+      "names": {
+        "tt": "Tread",
+        "hasbro": "Tread",
+        "ja": "",
+        "romaji": ""
+      },
+      "aliases": [],
+      "products": [
+        "G4565"
+      ],
+      "firstReleaseSet": "G4565",
+      "source": {
+        "page": "Metal Blade - Tread",
+        "url": "https://beyblade.fandom.com/wiki/Metal_Blade_-_Tread",
+        "revid": 642971
+      },
+      "status": "unverified",
+      "lastVerified": "2026-07-08"
     }
   ],
   "assistBlades": [
@@ -6777,9 +6847,9 @@
       "source": {
         "page": "Over Blade - Outer",
         "url": "https://beyblade.fandom.com/wiki/Over_Blade_-_Outer",
-        "revid": 642091
+        "revid": 642956
       },
-      "lastVerified": "2026-06-29",
+      "lastVerified": "2026-07-08",
       "status": "verified"
     },
     {
@@ -7284,10 +7354,10 @@
       "source": {
         "page": "HellsHammer 3-70H",
         "url": "https://beyblade.fandom.com/wiki/HellsHammer_3-70H",
-        "revid": 642110
+        "revid": 642937
       },
       "status": "verified",
-      "lastVerified": "2026-06-29",
+      "lastVerified": "2026-07-08",
       "products": [
         "UX-02",
         "UX-05",
@@ -8304,6 +8374,40 @@
         "def": 19,
         "sta": 13
       }
+    },
+    {
+      "id": "5-50",
+      "category": "ratchet",
+      "line": "cx",
+      "names": {
+        "tt": "5-50",
+        "hasbro": null,
+        "ja": "ファイブフィフティ",
+        "romaji": "Faibu Fifuti"
+      },
+      "aliases": [
+        {
+          "value": "ファイブフィフティ",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "Faibu Fifuti",
+          "lang": "ja",
+          "kind": "romaji"
+        }
+      ],
+      "products": [
+        "G4565"
+      ],
+      "firstReleaseSet": "G4565",
+      "source": {
+        "page": "Ratchet - 5-50",
+        "url": "https://beyblade.fandom.com/wiki/Ratchet_-_5-50",
+        "revid": 642974
+      },
+      "status": "unverified",
+      "lastVerified": "2026-07-08"
     }
   ],
   "bits": [
@@ -8925,10 +9029,10 @@
       "source": {
         "page": "Bit - Gear Needle",
         "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Gear_Needle&format=json&prop=wikitext",
-        "revid": 636224
+        "revid": 642975
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-08",
       "products": [
         "BX-27",
         "G1691",
@@ -9146,10 +9250,10 @@
       "source": {
         "page": "HellsHammer 3-70H",
         "url": "https://beyblade.fandom.com/wiki/HellsHammer_3-70H",
-        "revid": 642110
+        "revid": 642937
       },
       "status": "verified",
-      "lastVerified": "2026-06-29",
+      "lastVerified": "2026-07-08",
       "products": [
         "UX-02",
         "UX-19"
@@ -9678,9 +9782,9 @@
       "source": {
         "page": "BrachioWhip OW5-70Nr",
         "url": "https://beyblade.fandom.com/wiki/BrachioWhip_OW5-70Nr",
-        "revid": 642689
+        "revid": 642948
       },
-      "lastVerified": "2026-07-04",
+      "lastVerified": "2026-07-08",
       "status": "verified",
       "type": "stamina",
       "shortName": "Nr"
@@ -10587,6 +10691,41 @@
         "def": 20,
         "sta": 15
       }
+    },
+    {
+      "id": "low-point",
+      "category": "bit",
+      "type": "balance",
+      "names": {
+        "tt": "Low Point",
+        "hasbro": "Low Point",
+        "ja": "ローポイント",
+        "romaji": "Rō Pointo"
+      },
+      "aliases": [
+        {
+          "value": "ローポイント",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "Rō Pointo",
+          "lang": "ja",
+          "kind": "romaji"
+        }
+      ],
+      "shortName": "LP",
+      "products": [
+        "G2745"
+      ],
+      "firstReleaseSet": "G2745",
+      "source": {
+        "page": "Bit - Low Point",
+        "url": "https://beyblade.fandom.com/wiki/Bit_-_Low_Point",
+        "revid": 642965
+      },
+      "status": "unverified",
+      "lastVerified": "2026-07-08"
     }
   ]
 }

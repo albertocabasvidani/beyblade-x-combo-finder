@@ -1,5 +1,5 @@
 {
-  "version": "2026-07-07",
+  "version": "2026-07-08",
   "blades": [
     {
       "id": "aero-pegasus",
@@ -1295,6 +1295,14 @@
       }
     },
     {
+      "id": "suppress-superion",
+      "name": "Suppress Superion",
+      "nameWestern": "Suppress Superion",
+      "type": "balance",
+      "line": "bx",
+      "releaseSet": "G2745"
+    },
+    {
       "id": "tackle-goat",
       "name": "Tackle Goat",
       "type": "defense",
@@ -1605,6 +1613,12 @@
       "line": "cx"
     },
     {
+      "id": "croc",
+      "name": "Croc",
+      "nameWestern": "Croc",
+      "line": "cx"
+    },
+    {
       "id": "drake",
       "name": "Drake",
       "line": "cx"
@@ -1894,6 +1908,12 @@
         "def": 10,
         "sta": 25
       }
+    },
+    {
+      "id": "tread",
+      "name": "Tread",
+      "nameWestern": "Tread",
+      "line": "cx"
     },
     {
       "id": "volt",
@@ -2250,6 +2270,12 @@
         "def": 11,
         "sta": 8
       }
+    },
+    {
+      "id": "5-50",
+      "name": "5-50",
+      "sides": 5,
+      "height": 50
     },
     {
       "id": "5-60",
@@ -2798,6 +2824,15 @@
         "def": 25,
         "sta": 55
       }
+    },
+    {
+      "id": "low-point",
+      "name": "Low Point",
+      "type": "balance",
+      "shortName": "LP",
+      "aliases": [
+        "Rō Pointo"
+      ]
     },
     {
       "id": "low-rush",
