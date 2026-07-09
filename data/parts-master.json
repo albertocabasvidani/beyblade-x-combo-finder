@@ -1,5 +1,5 @@
 {
-  "version": "2026-07-08",
+  "version": "2026-07-09",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -808,9 +808,9 @@
       "source": {
         "page": "DranStrike 4-50FF",
         "url": "https://beyblade.fandom.com/wiki/DranStrike_4-50FF",
-        "revid": 642814
+        "revid": 643050
       },
-      "lastVerified": "2026-07-07",
+      "lastVerified": "2026-07-09",
       "status": "verified",
       "type": "attack",
       "stats": {
@@ -4366,10 +4366,10 @@
       "source": {
         "page": "BahamutBlitz BK1-50I",
         "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
-        "revid": 642358
+        "revid": 643032
       },
       "status": "verified",
-      "lastVerified": "2026-06-30",
+      "lastVerified": "2026-07-09",
       "products": [
         "CX-13",
         "G4572",
@@ -4406,9 +4406,9 @@
       "source": {
         "page": "BrachioWhip OW5-70Nr",
         "url": "https://beyblade.fandom.com/wiki/BrachioWhip_OW5-70Nr",
-        "revid": 642948
+        "revid": 643073
       },
-      "lastVerified": "2026-07-08",
+      "lastVerified": "2026-07-09",
       "status": "verified"
     },
     {
@@ -4504,10 +4504,10 @@
       "source": {
         "page": "DranBrave S6-60V",
         "url": "https://beyblade.fandom.com/wiki/DranBrave_S6-60V",
-        "revid": 642809
+        "revid": 643044
       },
       "status": "verified",
-      "lastVerified": "2026-07-07",
+      "lastVerified": "2026-07-09",
       "products": [
         "CX-01",
         "G1677"
@@ -4594,9 +4594,9 @@
       "source": {
         "page": "Evangelion Deck Set",
         "url": "https://beyblade.fandom.com/wiki/EvaArc_B0-70E",
-        "revid": 634458
+        "revid": 634457
       },
-      "lastVerified": "2026-07-07",
+      "lastVerified": "2026-07-09",
       "status": "verified"
     },
     {
@@ -4886,10 +4886,10 @@
       "source": {
         "page": "PhoenixFlare Z9-80WW",
         "url": "https://beyblade.fandom.com/wiki/PhoenixFlare_Z9-80WW",
-        "revid": 642747
+        "revid": 643063
       },
       "status": "verified",
-      "lastVerified": "2026-07-05",
+      "lastVerified": "2026-07-09",
       "products": [
         "CX-12"
       ],
@@ -5147,10 +5147,10 @@
       "source": {
         "page": "WizardArc R4-55LO",
         "url": "https://beyblade.fandom.com/wiki/WizardArc_R4-55LO",
-        "revid": 640395
+        "revid": 643067
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-09",
       "products": [
         "CX-02",
         "G1679"
@@ -5182,10 +5182,10 @@
       "source": {
         "page": "WolfHunt F0-60DB",
         "url": "https://beyblade.fandom.com/wiki/WolfHunt_F0-60DB",
-        "revid": 640171
+        "revid": 643064
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-09",
       "products": [
         "CX-10"
       ],
@@ -5268,10 +5268,10 @@
       "source": {
         "page": "WizardArc R4-55LO",
         "url": "https://beyblade.fandom.com/wiki/WizardArc_R4-55LO",
-        "revid": 640395
+        "revid": 643067
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-09",
       "products": [
         "CX-02",
         "CX-05",
@@ -5357,9 +5357,9 @@
       "source": {
         "page": "BahamutBlitz BK1-50I",
         "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
-        "revid": 642358
+        "revid": 643032
       },
-      "lastVerified": "2026-06-30",
+      "lastVerified": "2026-07-09",
       "status": "verified"
     },
     {
@@ -5392,10 +5392,10 @@
       "source": {
         "page": "DranBrave S6-60V",
         "url": "https://beyblade.fandom.com/wiki/DranBrave_S6-60V",
-        "revid": 642809
+        "revid": 643044
       },
       "status": "verified",
-      "lastVerified": "2026-07-07",
+      "lastVerified": "2026-07-09",
       "products": [
         "CX-01",
         "CX-00",
@@ -5668,10 +5668,10 @@
       "source": {
         "page": "PhoenixFlare Z9-80WW",
         "url": "https://beyblade.fandom.com/wiki/PhoenixFlare_Z9-80WW",
-        "revid": 642747
+        "revid": 643063
       },
       "status": "verified",
-      "lastVerified": "2026-07-05",
+      "lastVerified": "2026-07-09",
       "products": [
         "CX-12"
       ],
@@ -5775,10 +5775,10 @@
       "source": {
         "page": "WolfHunt F0-60DB",
         "url": "https://beyblade.fandom.com/wiki/WolfHunt_F0-60DB",
-        "revid": 640171
+        "revid": 643064
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-09",
       "products": [
         "CX-10"
       ],
@@ -5981,9 +5981,9 @@
       "source": {
         "page": "BrachioWhip OW5-70Nr",
         "url": "https://beyblade.fandom.com/wiki/BrachioWhip_OW5-70Nr",
-        "revid": 642948
+        "revid": 643073
       },
-      "lastVerified": "2026-07-08",
+      "lastVerified": "2026-07-09",
       "status": "verified"
     },
     {
@@ -6246,10 +6246,10 @@
       "source": {
         "page": "WolfHunt F0-60DB",
         "url": "https://beyblade.fandom.com/wiki/WolfHunt_F0-60DB",
-        "revid": 640171
+        "revid": 643064
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-09",
       "products": [
         "CX-10"
       ],
@@ -6394,9 +6394,9 @@
       "source": {
         "page": "BahamutBlitz BK1-50I",
         "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
-        "revid": 642358
+        "revid": 643032
       },
-      "lastVerified": "2026-06-30",
+      "lastVerified": "2026-07-09",
       "status": "verified",
       "shortName": "K"
     },
@@ -6497,10 +6497,10 @@
       "source": {
         "page": "WizardArc R4-55LO",
         "url": "https://beyblade.fandom.com/wiki/WizardArc_R4-55LO",
-        "revid": 640395
+        "revid": 643067
       },
       "status": "verified",
-      "lastVerified": "2026-06-21",
+      "lastVerified": "2026-07-09",
       "products": [
         "CX-02",
         "G1682",
@@ -6535,10 +6535,10 @@
       "source": {
         "page": "DranBrave S6-60V",
         "url": "https://beyblade.fandom.com/wiki/DranBrave_S6-60V",
-        "revid": 642809
+        "revid": 643044
       },
       "status": "verified",
-      "lastVerified": "2026-07-07",
+      "lastVerified": "2026-07-09",
       "products": [
         "CX-01",
         "CX-00",
@@ -6697,10 +6697,10 @@
       "source": {
         "page": "PhoenixFlare Z9-80WW",
         "url": "https://beyblade.fandom.com/wiki/PhoenixFlare_Z9-80WW",
-        "revid": 642747
+        "revid": 643063
       },
       "status": "verified",
-      "lastVerified": "2026-07-05",
+      "lastVerified": "2026-07-09",
       "products": [
         "CX-12"
       ],
@@ -6918,9 +6918,9 @@
       "source": {
         "page": "WolfHunt F0-60DB",
         "url": "https://beyblade.fandom.com/wiki/WolfHunt_F0-60DB",
-        "revid": 640171
+        "revid": 643064
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-09",
       "status": "verified",
       "stats": {
         "atk": 3,
@@ -7027,9 +7027,9 @@
       "source": {
         "page": "BahamutBlitz BK1-50I",
         "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
-        "revid": 642358
+        "revid": 643032
       },
-      "lastVerified": "2026-06-30",
+      "lastVerified": "2026-07-09",
       "status": "verified",
       "stats": {
         "atk": 18,
@@ -7501,10 +7501,10 @@
       "source": {
         "page": "DranStrike 4-50FF",
         "url": "https://beyblade.fandom.com/wiki/DranStrike_4-50FF",
-        "revid": 642814
+        "revid": 643050
       },
       "status": "verified",
-      "lastVerified": "2026-07-07",
+      "lastVerified": "2026-07-09",
       "products": [
         "BX-49",
         "UX-15"
@@ -7545,10 +7545,10 @@
       "source": {
         "page": "WizardArc R4-55LO",
         "url": "https://beyblade.fandom.com/wiki/WizardArc_R4-55LO",
-        "revid": 640395
+        "revid": 643067
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-09",
       "products": [
         "CX-02",
         "CX-05",
@@ -7865,10 +7865,10 @@
       "source": {
         "page": "DranBrave S6-60V",
         "url": "https://beyblade.fandom.com/wiki/DranBrave_S6-60V",
-        "revid": 642809
+        "revid": 643044
       },
       "status": "verified",
-      "lastVerified": "2026-07-07",
+      "lastVerified": "2026-07-09",
       "products": [
         "CX-01",
         "UX-00",
@@ -8886,9 +8886,9 @@
       "source": {
         "page": "DranStrike 4-50FF",
         "url": "https://beyblade.fandom.com/wiki/DranStrike_4-50FF",
-        "revid": 642814
+        "revid": 643050
       },
-      "lastVerified": "2026-07-07",
+      "lastVerified": "2026-07-09",
       "status": "verified",
       "type": "attack",
       "shortName": "FF",
@@ -9394,9 +9394,9 @@
       "source": {
         "page": "BahamutBlitz BK1-50I",
         "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
-        "revid": 642358
+        "revid": 643032
       },
-      "lastVerified": "2026-06-30",
+      "lastVerified": "2026-07-09",
       "status": "verified",
       "type": "attack",
       "shortName": "I",
@@ -9607,10 +9607,10 @@
       "source": {
         "page": "WizardArc R4-55LO",
         "url": "https://beyblade.fandom.com/wiki/WizardArc_R4-55LO",
-        "revid": 640395
+        "revid": 643067
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-09",
       "products": [
         "CX-02",
         "CX-17",
@@ -9782,9 +9782,9 @@
       "source": {
         "page": "BrachioWhip OW5-70Nr",
         "url": "https://beyblade.fandom.com/wiki/BrachioWhip_OW5-70Nr",
-        "revid": 642948
+        "revid": 643073
       },
-      "lastVerified": "2026-07-08",
+      "lastVerified": "2026-07-09",
       "status": "verified",
       "type": "stamina",
       "shortName": "Nr"
@@ -10473,9 +10473,9 @@
       "source": {
         "page": "DranBrave S6-60V",
         "url": "https://beyblade.fandom.com/wiki/DranBrave_S6-60V",
-        "revid": 642809
+        "revid": 643044
       },
-      "lastVerified": "2026-07-07",
+      "lastVerified": "2026-07-09",
       "status": "verified",
       "type": "attack",
       "shortName": "V",
@@ -10555,9 +10555,9 @@
       "source": {
         "page": "PhoenixFlare Z9-80WW",
         "url": "https://beyblade.fandom.com/wiki/PhoenixFlare_Z9-80WW",
-        "revid": 642747
+        "revid": 643063
       },
-      "lastVerified": "2026-07-05",
+      "lastVerified": "2026-07-09",
       "status": "verified",
       "type": "defense",
       "shortName": "WW",
