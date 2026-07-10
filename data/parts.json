@@ -1,5 +1,5 @@
 {
-  "version": "2026-07-09",
+  "version": "2026-07-10",
   "blades": [
     {
       "id": "aero-pegasus",
@@ -1711,6 +1711,11 @@
       "id": "stag",
       "name": "Stag",
       "nameWestern": "Stag",
+      "line": "cx"
+    },
+    {
+      "id": "tiga",
+      "name": "Tiga",
       "line": "cx"
     },
     {

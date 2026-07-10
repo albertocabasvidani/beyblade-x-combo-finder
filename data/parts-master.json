@@ -1,5 +1,5 @@
 {
-  "version": "2026-07-09",
+  "version": "2026-07-10",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -2932,10 +2932,10 @@
       "source": {
         "page": "SharkEdge 3-60LF",
         "url": "https://beyblade.fandom.com/api.php?action=parse&page=SharkEdge_3-60LF&format=json&prop=wikitext",
-        "revid": 640388
+        "revid": 643158
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-10",
       "stats": {
         "atk": 60,
         "def": 25,
@@ -4366,10 +4366,10 @@
       "source": {
         "page": "BahamutBlitz BK1-50I",
         "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
-        "revid": 643032
+        "revid": 643195
       },
       "status": "verified",
-      "lastVerified": "2026-07-09",
+      "lastVerified": "2026-07-10",
       "products": [
         "CX-13",
         "G4572",
@@ -4446,6 +4446,29 @@
       "status": "verified"
     },
     {
+      "id": "croc",
+      "category": "lockChip",
+      "line": "cx",
+      "names": {
+        "tt": "Croc",
+        "hasbro": "Croc",
+        "ja": "",
+        "romaji": ""
+      },
+      "aliases": [],
+      "products": [
+        "G4565"
+      ],
+      "firstReleaseSet": "G4565",
+      "source": {
+        "page": "Lock Chip - Croc",
+        "url": "https://beyblade.fandom.com/wiki/Lock_Chip_-_Croc",
+        "revid": 642969
+      },
+      "status": "unverified",
+      "lastVerified": "2026-07-08"
+    },
+    {
       "id": "drake",
       "category": "lockChip",
       "line": "cx",
@@ -4474,10 +4497,10 @@
       "source": {
         "page": "Lock Chip - Drake",
         "url": "https://beyblade.fandom.com/wiki/Lock_Chip_-_Drake",
-        "revid": 640617
+        "revid": 643142
       },
-      "lastVerified": "2026-06-15",
-      "status": "unverified"
+      "lastVerified": "2026-07-10",
+      "status": "verified"
     },
     {
       "id": "dran",
@@ -4539,10 +4562,10 @@
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 642577
+        "revid": 643136
       },
       "status": "verified",
-      "lastVerified": "2026-07-03",
+      "lastVerified": "2026-07-10",
       "products": [
         "CX-11",
         "G3028"
@@ -4815,10 +4838,10 @@
       "source": {
         "page": "PegasusBlast ATr",
         "url": "https://beyblade.fandom.com/wiki/PegasusBlast_ATr",
-        "revid": 640682
+        "revid": 643138
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-10",
       "products": [
         "CX-07",
         "UX-18",
@@ -5021,6 +5044,35 @@
       "status": "verified"
     },
     {
+      "id": "tiga",
+      "category": "lockChip",
+      "line": "cx",
+      "names": {
+        "tt": "Tiga",
+        "hasbro": null,
+        "ja": "ティガ",
+        "romaji": "Tiga"
+      },
+      "aliases": [
+        {
+          "value": "ティガ",
+          "lang": "ja",
+          "kind": "native"
+        }
+      ],
+      "products": [
+        "CX-00"
+      ],
+      "firstReleaseSet": "CX-00",
+      "source": {
+        "page": "Lock Chip - Tiga",
+        "url": "https://beyblade.fandom.com/wiki/Lock_Chip_-_Tiga",
+        "revid": 643179
+      },
+      "lastVerified": "2026-07-10",
+      "status": "unverified"
+    },
+    {
       "id": "unicorn",
       "category": "lockChip",
       "line": "cx",
@@ -5190,29 +5242,6 @@
         "CX-10"
       ],
       "firstReleaseSet": "CX-10"
-    },
-    {
-      "id": "croc",
-      "category": "lockChip",
-      "line": "cx",
-      "names": {
-        "tt": "Croc",
-        "hasbro": "Croc",
-        "ja": "",
-        "romaji": ""
-      },
-      "aliases": [],
-      "products": [
-        "G4565"
-      ],
-      "firstReleaseSet": "G4565",
-      "source": {
-        "page": "Lock Chip - Croc",
-        "url": "https://beyblade.fandom.com/wiki/Lock_Chip_-_Croc",
-        "revid": 642969
-      },
-      "status": "unverified",
-      "lastVerified": "2026-07-08"
     }
   ],
   "mainBlades": [
@@ -5311,10 +5340,10 @@
       "source": {
         "page": "PegasusBlast ATr",
         "url": "https://beyblade.fandom.com/wiki/PegasusBlast_ATr",
-        "revid": 640682
+        "revid": 643138
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-10",
       "products": [
         "CX-07",
         "G2350"
@@ -5357,9 +5386,9 @@
       "source": {
         "page": "BahamutBlitz BK1-50I",
         "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
-        "revid": 643032
+        "revid": 643195
       },
-      "lastVerified": "2026-07-09",
+      "lastVerified": "2026-07-10",
       "status": "verified"
     },
     {
@@ -5835,10 +5864,10 @@
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 642577
+        "revid": 643136
       },
       "status": "verified",
-      "lastVerified": "2026-07-03",
+      "lastVerified": "2026-07-10",
       "products": [
         "CX-11",
         "G3028"
@@ -6064,10 +6093,10 @@
       "source": {
         "page": "PegasusBlast ATr",
         "url": "https://beyblade.fandom.com/wiki/PegasusBlast_ATr",
-        "revid": 640682
+        "revid": 643138
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-10",
       "products": [
         "CX-07",
         "CX-00",
@@ -6286,10 +6315,15 @@
       "source": {
         "page": "Assist Blade - Gravity",
         "url": "https://beyblade.fandom.com/wiki/Assist_Blade_-_Gravity",
-        "revid": 640619
+        "revid": 643143
       },
-      "lastVerified": "2026-06-15",
-      "status": "unverified"
+      "lastVerified": "2026-07-10",
+      "status": "verified",
+      "stats": {
+        "atk": 37,
+        "def": 9,
+        "sta": 4
+      }
     },
     {
       "id": "heavy",
@@ -6317,10 +6351,10 @@
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 642577
+        "revid": 643136
       },
       "status": "verified",
-      "lastVerified": "2026-07-03",
+      "lastVerified": "2026-07-10",
       "products": [
         "CX-11",
         "G3028"
@@ -6394,9 +6428,9 @@
       "source": {
         "page": "BahamutBlitz BK1-50I",
         "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
-        "revid": 643032
+        "revid": 643195
       },
-      "lastVerified": "2026-07-09",
+      "lastVerified": "2026-07-10",
       "status": "verified",
       "shortName": "K"
     },
@@ -6776,10 +6810,15 @@
       "source": {
         "page": "Over Blade - Flow",
         "url": "https://beyblade.fandom.com/wiki/Over_Blade_-_Flow",
-        "revid": 633937
+        "revid": 643180
       },
-      "lastVerified": "2026-06-15",
-      "status": "verified"
+      "lastVerified": "2026-07-10",
+      "status": "verified",
+      "stats": {
+        "atk": 5,
+        "def": 5,
+        "sta": 10
+      }
     },
     {
       "id": "guard",
@@ -7027,9 +7066,9 @@
       "source": {
         "page": "BahamutBlitz BK1-50I",
         "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
-        "revid": 643032
+        "revid": 643195
       },
-      "lastVerified": "2026-07-09",
+      "lastVerified": "2026-07-10",
       "status": "verified",
       "stats": {
         "atk": 18,
@@ -7307,10 +7346,10 @@
       "source": {
         "page": "Ratchet - 3-60",
         "url": "https://beyblade.fandom.com/api.php?action=parse&page=Ratchet_-_3-60&format=json&prop=wikitext",
-        "revid": 635190
+        "revid": 643183
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-10",
       "products": [
         "BX-01",
         "G1692",
@@ -9394,9 +9433,9 @@
       "source": {
         "page": "BahamutBlitz BK1-50I",
         "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
-        "revid": 643032
+        "revid": 643195
       },
-      "lastVerified": "2026-07-09",
+      "lastVerified": "2026-07-10",
       "status": "verified",
       "type": "attack",
       "shortName": "I",
@@ -9865,9 +9904,9 @@
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 642577
+        "revid": 643136
       },
-      "lastVerified": "2026-07-03",
+      "lastVerified": "2026-07-10",
       "status": "verified",
       "shortName": "Op",
       "integratedRatchet": true
@@ -10162,10 +10201,10 @@
       "source": {
         "page": "Bit - Taper",
         "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Taper&format=json&prop=wikitext",
-        "revid": 638867
+        "revid": 643184
       },
       "status": "verified",
-      "lastVerified": "2026-06-21",
+      "lastVerified": "2026-07-10",
       "products": [
         "BX-02",
         "BX-00",
@@ -10302,9 +10341,9 @@
       "source": {
         "page": "PegasusBlast ATr",
         "url": "https://beyblade.fandom.com/wiki/PegasusBlast_ATr",
-        "revid": 640682
+        "revid": 643138
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-10",
       "status": "verified",
       "type": "attack",
       "shortName": "Tr",
