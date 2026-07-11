@@ -1,5 +1,5 @@
 {
-  "version": "2026-07-10",
+  "version": "2026-07-11",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -855,10 +855,10 @@
       "source": {
         "page": "DranSword 3-60F",
         "url": "https://beyblade.fandom.com/api.php?action=parse&page=DranSword_3-60F&format=json&prop=wikitext",
-        "revid": 639513
+        "revid": 643367
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-11",
       "stats": {
         "atk": 55,
         "def": 25,
@@ -1063,9 +1063,9 @@
       "source": {
         "page": "Ratchet-Integrated Blade - GloryValkyrie",
         "url": "https://beyblade.fandom.com/wiki/Ratchet-Integrated_Blade_-_GloryValkyrie",
-        "revid": 642564
+        "revid": 643370
       },
-      "lastVerified": "2026-07-03",
+      "lastVerified": "2026-07-11",
       "status": "verified",
       "stats": {
         "atk": 85,
@@ -10047,9 +10047,9 @@
       "source": {
         "page": "Bit - Quake",
         "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Quake&format=json&prop=wikitext",
-        "revid": 628462
+        "revid": 643258
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-11",
       "status": "verified",
       "type": "attack",
       "shortName": "Q",
