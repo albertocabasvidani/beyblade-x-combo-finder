@@ -1,5 +1,5 @@
 {
-  "version": "2026-07-11",
+  "version": "2026-07-12",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -37,10 +37,10 @@
       "source": {
         "page": "AeroPegasus 3-70A",
         "url": "https://beyblade.fandom.com/wiki/AeroPegasus_3-70A",
-        "revid": 641766
+        "revid": 643432
       },
       "status": "verified",
-      "lastVerified": "2026-06-22",
+      "lastVerified": "2026-07-12",
       "stats": {
         "atk": 60,
         "def": 25,
@@ -384,10 +384,10 @@
       "source": {
         "page": "CobaltDragoon 2-60C",
         "url": "https://beyblade.fandom.com/wiki/CobaltDragoon_2-60C",
-        "revid": 640385
+        "revid": 643435
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-12",
       "stats": {
         "atk": 60,
         "def": 15,
@@ -1063,9 +1063,9 @@
       "source": {
         "page": "Ratchet-Integrated Blade - GloryValkyrie",
         "url": "https://beyblade.fandom.com/wiki/Ratchet-Integrated_Blade_-_GloryValkyrie",
-        "revid": 643370
+        "revid": 643406
       },
-      "lastVerified": "2026-07-11",
+      "lastVerified": "2026-07-12",
       "status": "verified",
       "stats": {
         "atk": 85,
@@ -1547,10 +1547,10 @@
       "source": {
         "page": "ImpactDrake 9-60LR",
         "url": "https://beyblade.fandom.com/wiki/ImpactDrake_9-60LR",
-        "revid": 640598
+        "revid": 643437
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-12",
       "stats": {
         "atk": 75,
         "def": 25,
@@ -2492,11 +2492,11 @@
       ],
       "source": {
         "page": "PhoenixWing 9-60GF",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=PhoenixWing_9-60GF&format=json&prop=wikitext",
-        "revid": 640446
+        "url": "https://beyblade.fandom.com/wiki/PhoenixWing_9-60GF",
+        "revid": 643379
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-12",
       "stats": {
         "atk": 60,
         "def": 25,
@@ -3637,10 +3637,10 @@
       "source": {
         "page": "TriceraPress M-85BS",
         "url": "https://beyblade.fandom.com/wiki/TriceraPress_M-85BS",
-        "revid": 640833
+        "revid": 643424
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-12",
       "stats": {
         "atk": 20,
         "def": 65,
@@ -3870,9 +3870,9 @@
       "source": {
         "page": "Valor Bison FB",
         "url": "https://beyblade.fandom.com/wiki/Valor_Bison_FB",
-        "revid": 642351
+        "revid": 643395
       },
-      "lastVerified": "2026-06-30",
+      "lastVerified": "2026-07-12",
       "status": "verified",
       "type": "stamina"
     },
@@ -4562,10 +4562,10 @@
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 643136
+        "revid": 643378
       },
       "status": "verified",
-      "lastVerified": "2026-07-10",
+      "lastVerified": "2026-07-12",
       "products": [
         "CX-11",
         "G3028"
@@ -4588,9 +4588,9 @@
       "source": {
         "page": "Hurricane Enlil IS 7-55T",
         "url": "https://beyblade.fandom.com/wiki/Hurricane_Enlil_IS_7-55T",
-        "revid": 642709
+        "revid": 643408
       },
-      "lastVerified": "2026-07-04",
+      "lastVerified": "2026-07-12",
       "status": "verified"
     },
     {
@@ -5834,9 +5834,9 @@
       "source": {
         "page": "Hurricane Enlil IS 7-55T",
         "url": "https://beyblade.fandom.com/wiki/Hurricane_Enlil_IS_7-55T",
-        "revid": 642709
+        "revid": 643408
       },
-      "lastVerified": "2026-07-04",
+      "lastVerified": "2026-07-12",
       "status": "verified"
     },
     {
@@ -5864,10 +5864,10 @@
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 643136
+        "revid": 643378
       },
       "status": "verified",
-      "lastVerified": "2026-07-10",
+      "lastVerified": "2026-07-12",
       "products": [
         "CX-11",
         "G3028"
@@ -6351,10 +6351,10 @@
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 643136
+        "revid": 643378
       },
       "status": "verified",
-      "lastVerified": "2026-07-10",
+      "lastVerified": "2026-07-12",
       "products": [
         "CX-11",
         "G3028"
@@ -7231,10 +7231,10 @@
       "source": {
         "page": "CobaltDragoon 2-60C",
         "url": "https://beyblade.fandom.com/wiki/CobaltDragoon_2-60C",
-        "revid": 640385
+        "revid": 643435
       },
       "status": "verified",
-      "lastVerified": "2026-06-21",
+      "lastVerified": "2026-07-12",
       "products": [
         "BX-34",
         "UX-07",
@@ -8404,9 +8404,9 @@
       "source": {
         "page": "TriceraPress M-85BS",
         "url": "https://beyblade.fandom.com/wiki/TriceraPress_M-85BS",
-        "revid": 640833
+        "revid": 643424
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-12",
       "status": "verified",
       "stats": {
         "atk": 8,
@@ -8567,10 +8567,10 @@
       "source": {
         "page": "TriceraPress M-85BS",
         "url": "https://beyblade.fandom.com/wiki/TriceraPress_M-85BS",
-        "revid": 640833
+        "revid": 643424
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-12",
       "products": [
         "BX-44",
         "UX-10",
@@ -8609,10 +8609,10 @@
       "source": {
         "page": "CobaltDragoon 2-60C",
         "url": "https://beyblade.fandom.com/wiki/CobaltDragoon_2-60C",
-        "revid": 640385
+        "revid": 643435
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-12",
       "products": [
         "BX-34",
         "UX-12"
@@ -9688,10 +9688,10 @@
       "source": {
         "page": "ImpactDrake 9-60LR",
         "url": "https://beyblade.fandom.com/wiki/ImpactDrake_9-60LR",
-        "revid": 640598
+        "revid": 643437
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-12",
       "products": [
         "UX-11"
       ],
@@ -9904,9 +9904,9 @@
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 643136
+        "revid": 643378
       },
-      "lastVerified": "2026-07-10",
+      "lastVerified": "2026-07-12",
       "status": "verified",
       "shortName": "Op",
       "integratedRatchet": true
