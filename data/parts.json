@@ -1,5 +1,5 @@
 {
-  "version": "2026-07-13",
+  "version": "2026-07-14",
   "blades": [
     {
       "id": "aero-pegasus",
@@ -531,6 +531,18 @@
         "def": 35,
         "sta": 35
       }
+    },
+    {
+      "id": "hellsnether",
+      "name": "HellsNether",
+      "nameWestern": "Nether Incendio",
+      "aliases": [
+        "HeruzuNezā"
+      ],
+      "type": "balance",
+      "line": "ux",
+      "integratedRatchet": true,
+      "releaseSet": "UX-21"
     },
     {
       "id": "hover-wyvern",
@@ -2081,6 +2093,11 @@
       "line": "cx"
     },
     {
+      "id": "i",
+      "name": "I",
+      "line": "cx"
+    },
+    {
       "id": "outer",
       "name": "Outer",
       "line": "cx"
@@ -2397,6 +2414,12 @@
         "def": 10,
         "sta": 12
       }
+    },
+    {
+      "id": "8-80",
+      "name": "8-80",
+      "sides": 8,
+      "height": 80
     },
     {
       "id": "9-60",

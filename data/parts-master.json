@@ -1,5 +1,5 @@
 {
-  "version": "2026-07-12",
+  "version": "2026-07-14",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -384,10 +384,10 @@
       "source": {
         "page": "CobaltDragoon 2-60C",
         "url": "https://beyblade.fandom.com/wiki/CobaltDragoon_2-60C",
-        "revid": 643483
+        "revid": 643546
       },
       "status": "verified",
-      "lastVerified": "2026-07-13",
+      "lastVerified": "2026-07-14",
       "stats": {
         "atk": 60,
         "def": 15,
@@ -1455,6 +1455,46 @@
         "def": 35,
         "sta": 35
       }
+    },
+    {
+      "id": "hellsnether",
+      "category": "blade",
+      "line": "ux",
+      "names": {
+        "tt": "HellsNether",
+        "ja": "ヘルズネザー",
+        "romaji": "HeruzuNezā",
+        "hasbro": "Nether Incendio"
+      },
+      "aliases": [
+        {
+          "value": "Nether Incendio",
+          "lang": "en",
+          "kind": "hasbro"
+        },
+        {
+          "value": "ヘルズネザー",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "HeruzuNezā",
+          "lang": "ja",
+          "kind": "romaji"
+        }
+      ],
+      "products": [
+        "UX-21"
+      ],
+      "firstReleaseSet": "UX-21",
+      "source": {
+        "page": "Ratchet-Integrated Blade - HellsNether",
+        "url": "https://beyblade.fandom.com/wiki/Ratchet-Integrated_Blade_-_HellsNether",
+        "revid": 643568
+      },
+      "lastVerified": "2026-07-14",
+      "status": "unverified",
+      "type": "balance"
     },
     {
       "id": "hover-wyvern",
@@ -3499,6 +3539,30 @@
       }
     },
     {
+      "id": "suppress-superion",
+      "category": "blade",
+      "line": "bx",
+      "type": "balance",
+      "names": {
+        "tt": "Suppress Superion",
+        "hasbro": "Suppress Superion",
+        "ja": "",
+        "romaji": ""
+      },
+      "aliases": [],
+      "products": [
+        "G2745"
+      ],
+      "firstReleaseSet": "G2745",
+      "source": {
+        "page": "Blade - Suppress Superion",
+        "url": "https://beyblade.fandom.com/wiki/Blade_-_Suppress_Superion",
+        "revid": 642986
+      },
+      "status": "unverified",
+      "lastVerified": "2026-07-08"
+    },
+    {
       "id": "tackle-goat",
       "category": "blade",
       "line": "bx",
@@ -4314,30 +4378,6 @@
         "def": 25,
         "sta": 10
       }
-    },
-    {
-      "id": "suppress-superion",
-      "category": "blade",
-      "line": "bx",
-      "type": "balance",
-      "names": {
-        "tt": "Suppress Superion",
-        "hasbro": "Suppress Superion",
-        "ja": "",
-        "romaji": ""
-      },
-      "aliases": [],
-      "products": [
-        "G2745"
-      ],
-      "firstReleaseSet": "G2745",
-      "source": {
-        "page": "Blade - Suppress Superion",
-        "url": "https://beyblade.fandom.com/wiki/Blade_-_Suppress_Superion",
-        "revid": 642986
-      },
-      "status": "unverified",
-      "lastVerified": "2026-07-08"
     }
   ],
   "lockChips": [
@@ -5954,6 +5994,29 @@
       }
     },
     {
+      "id": "tread",
+      "category": "mainBlade",
+      "line": "cx",
+      "names": {
+        "tt": "Tread",
+        "hasbro": "Tread",
+        "ja": "",
+        "romaji": ""
+      },
+      "aliases": [],
+      "products": [
+        "G4565"
+      ],
+      "firstReleaseSet": "G4565",
+      "source": {
+        "page": "Metal Blade - Tread",
+        "url": "https://beyblade.fandom.com/wiki/Metal_Blade_-_Tread",
+        "revid": 642971
+      },
+      "status": "unverified",
+      "lastVerified": "2026-07-08"
+    },
+    {
       "id": "volt",
       "category": "mainBlade",
       "line": "cx",
@@ -6041,29 +6104,6 @@
         "def": 12,
         "sta": 40
       }
-    },
-    {
-      "id": "tread",
-      "category": "mainBlade",
-      "line": "cx",
-      "names": {
-        "tt": "Tread",
-        "hasbro": "Tread",
-        "ja": "",
-        "romaji": ""
-      },
-      "aliases": [],
-      "products": [
-        "G4565"
-      ],
-      "firstReleaseSet": "G4565",
-      "source": {
-        "page": "Metal Blade - Tread",
-        "url": "https://beyblade.fandom.com/wiki/Metal_Blade_-_Tread",
-        "revid": 642971
-      },
-      "status": "unverified",
-      "lastVerified": "2026-07-08"
     }
   ],
   "assistBlades": [
@@ -6857,6 +6897,27 @@
       "status": "verified"
     },
     {
+      "id": "i",
+      "category": "overBlade",
+      "line": "cx",
+      "names": {
+        "tt": "I"
+      },
+      "aliases": [],
+      "products": [
+        "G2750"
+      ],
+      "firstReleaseSet": "G2750",
+      "source": {
+        "page": "Over Blade - I",
+        "url": "https://beyblade.fandom.com/wiki/Over_Blade_-_I",
+        "revid": 643575
+      },
+      "lastVerified": "2026-07-14",
+      "status": "unverified",
+      "type": "balance"
+    },
+    {
       "id": "outer",
       "category": "overBlade",
       "line": "cx",
@@ -7231,10 +7292,10 @@
       "source": {
         "page": "CobaltDragoon 2-60C",
         "url": "https://beyblade.fandom.com/wiki/CobaltDragoon_2-60C",
-        "revid": 643483
+        "revid": 643546
       },
       "status": "verified",
-      "lastVerified": "2026-07-13",
+      "lastVerified": "2026-07-14",
       "products": [
         "BX-34",
         "UX-07",
@@ -7749,6 +7810,40 @@
       }
     },
     {
+      "id": "5-50",
+      "category": "ratchet",
+      "line": "cx",
+      "names": {
+        "tt": "5-50",
+        "hasbro": null,
+        "ja": "ファイブフィフティ",
+        "romaji": "Faibu Fifuti"
+      },
+      "aliases": [
+        {
+          "value": "ファイブフィフティ",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "Faibu Fifuti",
+          "lang": "ja",
+          "kind": "romaji"
+        }
+      ],
+      "products": [
+        "G4565"
+      ],
+      "firstReleaseSet": "G4565",
+      "source": {
+        "page": "Ratchet - 5-50",
+        "url": "https://beyblade.fandom.com/wiki/Ratchet_-_5-50",
+        "revid": 642974
+      },
+      "status": "unverified",
+      "lastVerified": "2026-07-08"
+    },
+    {
       "id": "5-60",
       "category": "ratchet",
       "names": {
@@ -8207,6 +8302,39 @@
       }
     },
     {
+      "id": "8-80",
+      "category": "ratchet",
+      "line": "ux",
+      "names": {
+        "tt": "8-80",
+        "ja": "エイトエイティ",
+        "romaji": "Eito Eiti"
+      },
+      "aliases": [
+        {
+          "value": "エイトエイティ",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "Eito Eiti",
+          "lang": "ja",
+          "kind": "romaji"
+        }
+      ],
+      "products": [
+        "UX-21"
+      ],
+      "firstReleaseSet": "UX-21",
+      "source": {
+        "page": "Ratchet - 8-80",
+        "url": "https://beyblade.fandom.com/wiki/Ratchet_-_8-80",
+        "revid": 643577
+      },
+      "lastVerified": "2026-07-14",
+      "status": "unverified"
+    },
+    {
       "id": "9-60",
       "category": "ratchet",
       "names": {
@@ -8413,40 +8541,6 @@
         "def": 19,
         "sta": 13
       }
-    },
-    {
-      "id": "5-50",
-      "category": "ratchet",
-      "line": "cx",
-      "names": {
-        "tt": "5-50",
-        "hasbro": null,
-        "ja": "ファイブフィフティ",
-        "romaji": "Faibu Fifuti"
-      },
-      "aliases": [
-        {
-          "value": "ファイブフィフティ",
-          "lang": "ja",
-          "kind": "native"
-        },
-        {
-          "value": "Faibu Fifuti",
-          "lang": "ja",
-          "kind": "romaji"
-        }
-      ],
-      "products": [
-        "G4565"
-      ],
-      "firstReleaseSet": "G4565",
-      "source": {
-        "page": "Ratchet - 5-50",
-        "url": "https://beyblade.fandom.com/wiki/Ratchet_-_5-50",
-        "revid": 642974
-      },
-      "status": "unverified",
-      "lastVerified": "2026-07-08"
     }
   ],
   "bits": [
@@ -8519,10 +8613,10 @@
       "source": {
         "page": "Bit - Ball",
         "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Ball&format=json&prop=wikitext",
-        "revid": 636218
+        "revid": 643578
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-14",
       "products": [
         "BX-03",
         "G1695",
@@ -8609,10 +8703,10 @@
       "source": {
         "page": "CobaltDragoon 2-60C",
         "url": "https://beyblade.fandom.com/wiki/CobaltDragoon_2-60C",
-        "revid": 643483
+        "revid": 643546
       },
       "status": "verified",
-      "lastVerified": "2026-07-13",
+      "lastVerified": "2026-07-14",
       "products": [
         "BX-34",
         "UX-12"
@@ -9664,6 +9758,41 @@
       }
     },
     {
+      "id": "low-point",
+      "category": "bit",
+      "type": "balance",
+      "names": {
+        "tt": "Low Point",
+        "hasbro": "Low Point",
+        "ja": "ローポイント",
+        "romaji": "Rō Pointo"
+      },
+      "aliases": [
+        {
+          "value": "ローポイント",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "Rō Pointo",
+          "lang": "ja",
+          "kind": "romaji"
+        }
+      ],
+      "shortName": "LP",
+      "products": [
+        "G2745"
+      ],
+      "firstReleaseSet": "G2745",
+      "source": {
+        "page": "Bit - Low Point",
+        "url": "https://beyblade.fandom.com/wiki/Bit_-_Low_Point",
+        "revid": 642965
+      },
+      "status": "unverified",
+      "lastVerified": "2026-07-08"
+    },
+    {
       "id": "low-rush",
       "category": "bit",
       "type": "attack",
@@ -10119,10 +10248,10 @@
       "source": {
         "page": "Bit - Rush",
         "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Rush&format=json&prop=wikitext",
-        "revid": 641503
+        "revid": 643572
       },
       "status": "verified",
-      "lastVerified": "2026-06-19",
+      "lastVerified": "2026-07-14",
       "products": [
         "BX-20",
         "G1690",
@@ -10730,41 +10859,6 @@
         "def": 20,
         "sta": 15
       }
-    },
-    {
-      "id": "low-point",
-      "category": "bit",
-      "type": "balance",
-      "names": {
-        "tt": "Low Point",
-        "hasbro": "Low Point",
-        "ja": "ローポイント",
-        "romaji": "Rō Pointo"
-      },
-      "aliases": [
-        {
-          "value": "ローポイント",
-          "lang": "ja",
-          "kind": "native"
-        },
-        {
-          "value": "Rō Pointo",
-          "lang": "ja",
-          "kind": "romaji"
-        }
-      ],
-      "shortName": "LP",
-      "products": [
-        "G2745"
-      ],
-      "firstReleaseSet": "G2745",
-      "source": {
-        "page": "Bit - Low Point",
-        "url": "https://beyblade.fandom.com/wiki/Bit_-_Low_Point",
-        "revid": 642965
-      },
-      "status": "unverified",
-      "lastVerified": "2026-07-08"
     }
   ]
 }
