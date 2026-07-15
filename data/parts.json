@@ -1,5 +1,5 @@
 {
-  "version": "2026-07-14",
+  "version": "2026-07-15",
   "blades": [
     {
       "id": "aero-pegasus",
@@ -2419,7 +2419,12 @@
       "id": "8-80",
       "name": "8-80",
       "sides": 8,
-      "height": 80
+      "height": 80,
+      "stats": {
+        "atk": 8,
+        "def": 9,
+        "sta": 13
+      }
     },
     {
       "id": "9-60",

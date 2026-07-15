@@ -1,5 +1,5 @@
 {
-  "version": "2026-07-14",
+  "version": "2026-07-15",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -855,10 +855,10 @@
       "source": {
         "page": "DranSword 3-60F",
         "url": "https://beyblade.fandom.com/api.php?action=parse&page=DranSword_3-60F&format=json&prop=wikitext",
-        "revid": 643367
+        "revid": 643706
       },
       "status": "verified",
-      "lastVerified": "2026-07-11",
+      "lastVerified": "2026-07-15",
       "stats": {
         "atk": 55,
         "def": 25,
@@ -1063,9 +1063,9 @@
       "source": {
         "page": "Ratchet-Integrated Blade - GloryValkyrie",
         "url": "https://beyblade.fandom.com/wiki/Ratchet-Integrated_Blade_-_GloryValkyrie",
-        "revid": 643406
+        "revid": 643730
       },
-      "lastVerified": "2026-07-12",
+      "lastVerified": "2026-07-15",
       "status": "verified",
       "stats": {
         "atk": 85,
@@ -1490,9 +1490,9 @@
       "source": {
         "page": "Ratchet-Integrated Blade - HellsNether",
         "url": "https://beyblade.fandom.com/wiki/Ratchet-Integrated_Blade_-_HellsNether",
-        "revid": 643568
+        "revid": 643601
       },
-      "lastVerified": "2026-07-14",
+      "lastVerified": "2026-07-15",
       "status": "unverified",
       "type": "balance"
     },
@@ -4329,10 +4329,10 @@
       "source": {
         "page": "WyvernGale 5-80GB",
         "url": "https://beyblade.fandom.com/api.php?action=parse&page=WyvernGale_5-80GB&format=json&prop=wikitext",
-        "revid": 643015
+        "revid": 643669
       },
       "status": "verified",
-      "lastVerified": "2026-07-08",
+      "lastVerified": "2026-07-15",
       "stats": {
         "atk": 10,
         "def": 40,
@@ -6911,9 +6911,9 @@
       "source": {
         "page": "Over Blade - I",
         "url": "https://beyblade.fandom.com/wiki/Over_Blade_-_I",
-        "revid": 643575
+        "revid": 643584
       },
-      "lastVerified": "2026-07-14",
+      "lastVerified": "2026-07-15",
       "status": "unverified",
       "type": "balance"
     },
@@ -8329,10 +8329,15 @@
       "source": {
         "page": "Ratchet - 8-80",
         "url": "https://beyblade.fandom.com/wiki/Ratchet_-_8-80",
-        "revid": 643577
+        "revid": 643602
       },
-      "lastVerified": "2026-07-14",
-      "status": "unverified"
+      "lastVerified": "2026-07-15",
+      "status": "unverified",
+      "stats": {
+        "atk": 8,
+        "def": 9,
+        "sta": 13
+      }
     },
     {
       "id": "9-60",
