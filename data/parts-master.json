@@ -1,5 +1,5 @@
 {
-  "version": "2026-07-15",
+  "version": "2026-07-16",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -169,9 +169,9 @@
       "source": {
         "page": "BulletGriffon H",
         "url": "https://beyblade.fandom.com/wiki/BulletGriffon_H",
-        "revid": 642331
+        "revid": 643843
       },
-      "lastVerified": "2026-06-30",
+      "lastVerified": "2026-07-16",
       "status": "verified",
       "type": "balance"
     },
@@ -855,10 +855,10 @@
       "source": {
         "page": "DranSword 3-60F",
         "url": "https://beyblade.fandom.com/api.php?action=parse&page=DranSword_3-60F&format=json&prop=wikitext",
-        "revid": 643706
+        "revid": 643815
       },
       "status": "verified",
-      "lastVerified": "2026-07-15",
+      "lastVerified": "2026-07-16",
       "stats": {
         "atk": 55,
         "def": 25,
@@ -1063,9 +1063,9 @@
       "source": {
         "page": "Ratchet-Integrated Blade - GloryValkyrie",
         "url": "https://beyblade.fandom.com/wiki/Ratchet-Integrated_Blade_-_GloryValkyrie",
-        "revid": 643730
+        "revid": 643857
       },
-      "lastVerified": "2026-07-15",
+      "lastVerified": "2026-07-16",
       "status": "verified",
       "stats": {
         "atk": 85,
@@ -1878,10 +1878,10 @@
       "source": {
         "page": "LeonCrest 7-60GN",
         "url": "https://beyblade.fandom.com/wiki/LeonCrest_7-60GN",
-        "revid": 641845
+        "revid": 643838
       },
       "status": "verified",
-      "lastVerified": "2026-06-25",
+      "lastVerified": "2026-07-16",
       "stats": {
         "atk": 15,
         "def": 70,
@@ -4406,10 +4406,10 @@
       "source": {
         "page": "BahamutBlitz BK1-50I",
         "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
-        "revid": 643195
+        "revid": 643854
       },
       "status": "verified",
-      "lastVerified": "2026-07-10",
+      "lastVerified": "2026-07-16",
       "products": [
         "CX-13",
         "G4572",
@@ -5141,9 +5141,9 @@
       "source": {
         "page": "UnicornDelta PO3-60GU",
         "url": "https://beyblade.fandom.com/wiki/UnicornDelta_PO3-60GU",
-        "revid": 642434
+        "revid": 643844
       },
-      "lastVerified": "2026-07-01",
+      "lastVerified": "2026-07-16",
       "status": "verified"
     },
     {
@@ -5171,10 +5171,10 @@
       "source": {
         "page": "ValkyrieVolt S4-70V",
         "url": "https://beyblade.fandom.com/wiki/ValkyrieVolt_S4-70V",
-        "revid": 639622
+        "revid": 643863
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-16",
       "products": [
         "CX-00"
       ],
@@ -5426,9 +5426,9 @@
       "source": {
         "page": "BahamutBlitz BK1-50I",
         "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
-        "revid": 643195
+        "revid": 643854
       },
-      "lastVerified": "2026-07-10",
+      "lastVerified": "2026-07-16",
       "status": "verified"
     },
     {
@@ -5590,9 +5590,9 @@
       "source": {
         "page": "UnicornDelta PO3-60GU",
         "url": "https://beyblade.fandom.com/wiki/UnicornDelta_PO3-60GU",
-        "revid": 642434
+        "revid": 643844
       },
-      "lastVerified": "2026-07-01",
+      "lastVerified": "2026-07-16",
       "status": "verified"
     },
     {
@@ -6030,10 +6030,10 @@
       "source": {
         "page": "ValkyrieVolt S4-70V",
         "url": "https://beyblade.fandom.com/wiki/ValkyrieVolt_S4-70V",
-        "revid": 639622
+        "revid": 643863
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-16",
       "products": [
         "CX-00"
       ],
@@ -6468,9 +6468,9 @@
       "source": {
         "page": "BahamutBlitz BK1-50I",
         "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
-        "revid": 643195
+        "revid": 643854
       },
-      "lastVerified": "2026-07-10",
+      "lastVerified": "2026-07-16",
       "status": "verified",
       "shortName": "K"
     },
@@ -6539,9 +6539,9 @@
       "source": {
         "page": "UnicornDelta PO3-60GU",
         "url": "https://beyblade.fandom.com/wiki/UnicornDelta_PO3-60GU",
-        "revid": 642434
+        "revid": 643844
       },
-      "lastVerified": "2026-07-01",
+      "lastVerified": "2026-07-16",
       "status": "verified",
       "shortName": "O"
     },
@@ -7127,9 +7127,9 @@
       "source": {
         "page": "BahamutBlitz BK1-50I",
         "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
-        "revid": 643195
+        "revid": 643854
       },
-      "lastVerified": "2026-07-10",
+      "lastVerified": "2026-07-16",
       "status": "verified",
       "stats": {
         "atk": 18,
@@ -7407,10 +7407,10 @@
       "source": {
         "page": "Ratchet - 3-60",
         "url": "https://beyblade.fandom.com/api.php?action=parse&page=Ratchet_-_3-60&format=json&prop=wikitext",
-        "revid": 643183
+        "revid": 643855
       },
       "status": "verified",
-      "lastVerified": "2026-07-10",
+      "lastVerified": "2026-07-16",
       "products": [
         "BX-01",
         "G1692",
@@ -8329,9 +8329,9 @@
       "source": {
         "page": "Ratchet - 8-80",
         "url": "https://beyblade.fandom.com/wiki/Ratchet_-_8-80",
-        "revid": 643602
+        "revid": 643849
       },
-      "lastVerified": "2026-07-15",
+      "lastVerified": "2026-07-16",
       "status": "unverified",
       "stats": {
         "atk": 8,
@@ -8930,10 +8930,10 @@
       "source": {
         "page": "Bit - Flat",
         "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Flat&format=json&prop=wikitext",
-        "revid": 630483
+        "revid": 643856
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-16",
       "products": [
         "BX-01",
         "BX-48",
@@ -9309,9 +9309,9 @@
       "source": {
         "page": "UnicornDelta PO3-60GU",
         "url": "https://beyblade.fandom.com/wiki/UnicornDelta_PO3-60GU",
-        "revid": 642434
+        "revid": 643844
       },
-      "lastVerified": "2026-07-01",
+      "lastVerified": "2026-07-16",
       "status": "verified",
       "type": "balance",
       "shortName": "GU",
@@ -9532,9 +9532,9 @@
       "source": {
         "page": "BahamutBlitz BK1-50I",
         "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
-        "revid": 643195
+        "revid": 643854
       },
-      "lastVerified": "2026-07-10",
+      "lastVerified": "2026-07-16",
       "status": "verified",
       "type": "attack",
       "shortName": "I",
@@ -9696,10 +9696,10 @@
       "source": {
         "page": "Bit - Low Flat",
         "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Low_Flat&format=json&prop=wikitext",
-        "revid": 639801
+        "revid": 643858
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-16",
       "products": [
         "BX-14",
         "G1695",
