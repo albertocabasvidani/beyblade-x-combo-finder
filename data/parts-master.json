@@ -1,5 +1,5 @@
 {
-  "version": "2026-07-16",
+  "version": "2026-07-17",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -169,9 +169,9 @@
       "source": {
         "page": "BulletGriffon H",
         "url": "https://beyblade.fandom.com/wiki/BulletGriffon_H",
-        "revid": 643843
+        "revid": 644082
       },
-      "lastVerified": "2026-07-16",
+      "lastVerified": "2026-07-17",
       "status": "verified",
       "type": "balance"
     },
@@ -384,10 +384,10 @@
       "source": {
         "page": "CobaltDragoon 2-60C",
         "url": "https://beyblade.fandom.com/wiki/CobaltDragoon_2-60C",
-        "revid": 643546
+        "revid": 643998
       },
       "status": "verified",
-      "lastVerified": "2026-07-14",
+      "lastVerified": "2026-07-17",
       "stats": {
         "atk": 60,
         "def": 15,
@@ -808,9 +808,9 @@
       "source": {
         "page": "DranStrike 4-50FF",
         "url": "https://beyblade.fandom.com/wiki/DranStrike_4-50FF",
-        "revid": 643050
+        "revid": 644026
       },
-      "lastVerified": "2026-07-09",
+      "lastVerified": "2026-07-17",
       "status": "verified",
       "type": "attack",
       "stats": {
@@ -2533,10 +2533,10 @@
       "source": {
         "page": "PhoenixWing 9-60GF",
         "url": "https://beyblade.fandom.com/wiki/PhoenixWing_9-60GF",
-        "revid": 643379
+        "revid": 643999
       },
       "status": "verified",
-      "lastVerified": "2026-07-12",
+      "lastVerified": "2026-07-17",
       "stats": {
         "atk": 60,
         "def": 25,
@@ -2889,7 +2889,7 @@
       "id": "scorpio-spear",
       "category": "blade",
       "line": "bx",
-      "type": "stamina",
+      "type": "balance",
       "names": {
         "tt": "Scorpio Spear",
         "hasbro": "Spear Scorpio 0-70Z",
@@ -2920,10 +2920,10 @@
       "source": {
         "page": "ScorpioSpear 0-70Z",
         "url": "https://beyblade.fandom.com/wiki/ScorpioSpear_0-70Z",
-        "revid": 642005
+        "revid": 644111
       },
       "status": "verified",
-      "lastVerified": "2026-06-29",
+      "lastVerified": "2026-07-17",
       "stats": {
         "atk": 25,
         "def": 55,
@@ -4406,10 +4406,10 @@
       "source": {
         "page": "BahamutBlitz BK1-50I",
         "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
-        "revid": 643854
+        "revid": 644056
       },
       "status": "verified",
-      "lastVerified": "2026-07-16",
+      "lastVerified": "2026-07-17",
       "products": [
         "CX-13",
         "G4572",
@@ -4446,9 +4446,9 @@
       "source": {
         "page": "BrachioWhip OW5-70Nr",
         "url": "https://beyblade.fandom.com/wiki/BrachioWhip_OW5-70Nr",
-        "revid": 643073
+        "revid": 644035
       },
-      "lastVerified": "2026-07-09",
+      "lastVerified": "2026-07-17",
       "status": "verified"
     },
     {
@@ -4602,10 +4602,10 @@
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 643378
+        "revid": 644015
       },
       "status": "verified",
-      "lastVerified": "2026-07-12",
+      "lastVerified": "2026-07-17",
       "products": [
         "CX-11",
         "G3028"
@@ -4878,10 +4878,10 @@
       "source": {
         "page": "PegasusBlast ATr",
         "url": "https://beyblade.fandom.com/wiki/PegasusBlast_ATr",
-        "revid": 643138
+        "revid": 643969
       },
       "status": "verified",
-      "lastVerified": "2026-07-10",
+      "lastVerified": "2026-07-17",
       "products": [
         "CX-07",
         "UX-18",
@@ -5141,9 +5141,9 @@
       "source": {
         "page": "UnicornDelta PO3-60GU",
         "url": "https://beyblade.fandom.com/wiki/UnicornDelta_PO3-60GU",
-        "revid": 643844
+        "revid": 644030
       },
-      "lastVerified": "2026-07-16",
+      "lastVerified": "2026-07-17",
       "status": "verified"
     },
     {
@@ -5171,10 +5171,10 @@
       "source": {
         "page": "ValkyrieVolt S4-70V",
         "url": "https://beyblade.fandom.com/wiki/ValkyrieVolt_S4-70V",
-        "revid": 643863
+        "revid": 644025
       },
       "status": "verified",
-      "lastVerified": "2026-07-16",
+      "lastVerified": "2026-07-17",
       "products": [
         "CX-00"
       ],
@@ -5380,10 +5380,10 @@
       "source": {
         "page": "PegasusBlast ATr",
         "url": "https://beyblade.fandom.com/wiki/PegasusBlast_ATr",
-        "revid": 643138
+        "revid": 643969
       },
       "status": "verified",
-      "lastVerified": "2026-07-10",
+      "lastVerified": "2026-07-17",
       "products": [
         "CX-07",
         "G2350"
@@ -5426,9 +5426,9 @@
       "source": {
         "page": "BahamutBlitz BK1-50I",
         "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
-        "revid": 643854
+        "revid": 644056
       },
-      "lastVerified": "2026-07-16",
+      "lastVerified": "2026-07-17",
       "status": "verified"
     },
     {
@@ -5590,9 +5590,9 @@
       "source": {
         "page": "UnicornDelta PO3-60GU",
         "url": "https://beyblade.fandom.com/wiki/UnicornDelta_PO3-60GU",
-        "revid": 643844
+        "revid": 644030
       },
-      "lastVerified": "2026-07-16",
+      "lastVerified": "2026-07-17",
       "status": "verified"
     },
     {
@@ -5904,10 +5904,10 @@
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 643378
+        "revid": 644015
       },
       "status": "verified",
-      "lastVerified": "2026-07-12",
+      "lastVerified": "2026-07-17",
       "products": [
         "CX-11",
         "G3028"
@@ -6030,10 +6030,10 @@
       "source": {
         "page": "ValkyrieVolt S4-70V",
         "url": "https://beyblade.fandom.com/wiki/ValkyrieVolt_S4-70V",
-        "revid": 643863
+        "revid": 644025
       },
       "status": "verified",
-      "lastVerified": "2026-07-16",
+      "lastVerified": "2026-07-17",
       "products": [
         "CX-00"
       ],
@@ -6073,9 +6073,9 @@
       "source": {
         "page": "BrachioWhip OW5-70Nr",
         "url": "https://beyblade.fandom.com/wiki/BrachioWhip_OW5-70Nr",
-        "revid": 643073
+        "revid": 644035
       },
-      "lastVerified": "2026-07-09",
+      "lastVerified": "2026-07-17",
       "status": "verified"
     },
     {
@@ -6133,10 +6133,10 @@
       "source": {
         "page": "PegasusBlast ATr",
         "url": "https://beyblade.fandom.com/wiki/PegasusBlast_ATr",
-        "revid": 643138
+        "revid": 643969
       },
       "status": "verified",
-      "lastVerified": "2026-07-10",
+      "lastVerified": "2026-07-17",
       "products": [
         "CX-07",
         "CX-00",
@@ -6355,9 +6355,9 @@
       "source": {
         "page": "Assist Blade - Gravity",
         "url": "https://beyblade.fandom.com/wiki/Assist_Blade_-_Gravity",
-        "revid": 643143
+        "revid": 643966
       },
-      "lastVerified": "2026-07-10",
+      "lastVerified": "2026-07-17",
       "status": "verified",
       "stats": {
         "atk": 37,
@@ -6391,10 +6391,10 @@
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 643378
+        "revid": 644015
       },
       "status": "verified",
-      "lastVerified": "2026-07-12",
+      "lastVerified": "2026-07-17",
       "products": [
         "CX-11",
         "G3028"
@@ -6468,9 +6468,9 @@
       "source": {
         "page": "BahamutBlitz BK1-50I",
         "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
-        "revid": 643854
+        "revid": 644056
       },
-      "lastVerified": "2026-07-16",
+      "lastVerified": "2026-07-17",
       "status": "verified",
       "shortName": "K"
     },
@@ -6539,9 +6539,9 @@
       "source": {
         "page": "UnicornDelta PO3-60GU",
         "url": "https://beyblade.fandom.com/wiki/UnicornDelta_PO3-60GU",
-        "revid": 643844
+        "revid": 644030
       },
-      "lastVerified": "2026-07-16",
+      "lastVerified": "2026-07-17",
       "status": "verified",
       "shortName": "O"
     },
@@ -7052,9 +7052,9 @@
       "source": {
         "page": "ScorpioSpear 0-70Z",
         "url": "https://beyblade.fandom.com/wiki/ScorpioSpear_0-70Z",
-        "revid": 642005
+        "revid": 644111
       },
-      "lastVerified": "2026-06-29",
+      "lastVerified": "2026-07-17",
       "status": "verified"
     },
     {
@@ -7127,9 +7127,9 @@
       "source": {
         "page": "BahamutBlitz BK1-50I",
         "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
-        "revid": 643854
+        "revid": 644056
       },
-      "lastVerified": "2026-07-16",
+      "lastVerified": "2026-07-17",
       "status": "verified",
       "stats": {
         "atk": 18,
@@ -7292,10 +7292,10 @@
       "source": {
         "page": "CobaltDragoon 2-60C",
         "url": "https://beyblade.fandom.com/wiki/CobaltDragoon_2-60C",
-        "revid": 643546
+        "revid": 643998
       },
       "status": "verified",
-      "lastVerified": "2026-07-14",
+      "lastVerified": "2026-07-17",
       "products": [
         "BX-34",
         "UX-07",
@@ -7601,10 +7601,10 @@
       "source": {
         "page": "DranStrike 4-50FF",
         "url": "https://beyblade.fandom.com/wiki/DranStrike_4-50FF",
-        "revid": 643050
+        "revid": 644026
       },
       "status": "verified",
-      "lastVerified": "2026-07-09",
+      "lastVerified": "2026-07-17",
       "products": [
         "BX-49",
         "UX-15"
@@ -8307,8 +8307,8 @@
       "line": "ux",
       "names": {
         "tt": "8-80",
-        "ja": "エイトエイティ",
-        "romaji": "Eito Eiti"
+        "ja": "エイトエイティー",
+        "romaji": "Eito Eitī"
       },
       "aliases": [
         {
@@ -8329,9 +8329,9 @@
       "source": {
         "page": "Ratchet - 8-80",
         "url": "https://beyblade.fandom.com/wiki/Ratchet_-_8-80",
-        "revid": 643849
+        "revid": 644117
       },
-      "lastVerified": "2026-07-16",
+      "lastVerified": "2026-07-17",
       "status": "unverified",
       "stats": {
         "atk": 8,
@@ -8363,10 +8363,10 @@
       "source": {
         "page": "Ratchet - 9-60",
         "url": "https://beyblade.fandom.com/api.php?action=parse&page=Ratchet_-_9-60&format=json&prop=wikitext",
-        "revid": 623180
+        "revid": 644028
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-17",
       "products": [
         "BX-23",
         "UX-05",
@@ -8708,10 +8708,10 @@
       "source": {
         "page": "CobaltDragoon 2-60C",
         "url": "https://beyblade.fandom.com/wiki/CobaltDragoon_2-60C",
-        "revid": 643546
+        "revid": 643998
       },
       "status": "verified",
-      "lastVerified": "2026-07-14",
+      "lastVerified": "2026-07-17",
       "products": [
         "BX-34",
         "UX-12"
@@ -9024,9 +9024,9 @@
       "source": {
         "page": "DranStrike 4-50FF",
         "url": "https://beyblade.fandom.com/wiki/DranStrike_4-50FF",
-        "revid": 643050
+        "revid": 644026
       },
-      "lastVerified": "2026-07-09",
+      "lastVerified": "2026-07-17",
       "status": "verified",
       "type": "attack",
       "shortName": "FF",
@@ -9118,10 +9118,10 @@
       "source": {
         "page": "Bit - Gear Flat",
         "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Gear_Flat&format=json&prop=wikitext",
-        "revid": 629257
+        "revid": 644029
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-17",
       "products": [
         "BX-23",
         "UX-07",
@@ -9309,9 +9309,9 @@
       "source": {
         "page": "UnicornDelta PO3-60GU",
         "url": "https://beyblade.fandom.com/wiki/UnicornDelta_PO3-60GU",
-        "revid": 643844
+        "revid": 644030
       },
-      "lastVerified": "2026-07-16",
+      "lastVerified": "2026-07-17",
       "status": "verified",
       "type": "balance",
       "shortName": "GU",
@@ -9532,9 +9532,9 @@
       "source": {
         "page": "BahamutBlitz BK1-50I",
         "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
-        "revid": 643854
+        "revid": 644056
       },
-      "lastVerified": "2026-07-16",
+      "lastVerified": "2026-07-17",
       "status": "verified",
       "type": "attack",
       "shortName": "I",
@@ -9955,9 +9955,9 @@
       "source": {
         "page": "BrachioWhip OW5-70Nr",
         "url": "https://beyblade.fandom.com/wiki/BrachioWhip_OW5-70Nr",
-        "revid": 643073
+        "revid": 644035
       },
-      "lastVerified": "2026-07-09",
+      "lastVerified": "2026-07-17",
       "status": "verified",
       "type": "stamina",
       "shortName": "Nr"
@@ -10038,9 +10038,9 @@
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 643378
+        "revid": 644015
       },
-      "lastVerified": "2026-07-12",
+      "lastVerified": "2026-07-17",
       "status": "verified",
       "shortName": "Op",
       "integratedRatchet": true
@@ -10475,9 +10475,9 @@
       "source": {
         "page": "PegasusBlast ATr",
         "url": "https://beyblade.fandom.com/wiki/PegasusBlast_ATr",
-        "revid": 643138
+        "revid": 643969
       },
-      "lastVerified": "2026-07-10",
+      "lastVerified": "2026-07-17",
       "status": "verified",
       "type": "attack",
       "shortName": "Tr",
@@ -10853,9 +10853,9 @@
       "source": {
         "page": "ScorpioSpear 0-70Z",
         "url": "https://beyblade.fandom.com/wiki/ScorpioSpear_0-70Z",
-        "revid": 642005
+        "revid": 644111
       },
-      "lastVerified": "2026-06-29",
+      "lastVerified": "2026-07-17",
       "status": "verified",
       "type": "balance",
       "shortName": "Z",

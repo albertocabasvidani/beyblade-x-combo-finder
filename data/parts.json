@@ -1,5 +1,5 @@
 {
-  "version": "2026-07-16",
+  "version": "2026-07-17",
   "blades": [
     {
       "id": "aero-pegasus",
@@ -1061,7 +1061,7 @@
       "aliases": [
         "SukōpioSupia"
       ],
-      "type": "stamina",
+      "type": "balance",
       "line": "bx",
       "releaseSet": "BX-00",
       "stats": {
