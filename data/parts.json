@@ -1,5 +1,5 @@
 {
-  "version": "2026-07-17",
+  "version": "2026-07-18",
   "blades": [
     {
       "id": "aero-pegasus",
@@ -546,13 +546,15 @@
     },
     {
       "id": "hover-wyvern",
-      "name": "Hover Wyvern",
+      "name": "Wyvern Hover",
+      "nameWestern": "Hover Wyvern",
       "aliases": [
-        "Wyvern Hover"
+        "WaibānHobā",
+        "WyvernHover"
       ],
       "type": "defense",
-      "line": "bx",
-      "releaseSet": "UX-00",
+      "line": "ux",
+      "releaseSet": "G0842",
       "stats": {
         "atk": 13,
         "def": 60,

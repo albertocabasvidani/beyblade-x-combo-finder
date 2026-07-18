@@ -1,5 +1,5 @@
 {
-  "version": "2026-07-17",
+  "version": "2026-07-18",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -1305,9 +1305,9 @@
       "source": {
         "page": "HeavensRing 0-80DS",
         "url": "https://beyblade.fandom.com/wiki/HeavensRing_0-80DS",
-        "revid": 642685
+        "revid": 644265
       },
-      "lastVerified": "2026-07-04",
+      "lastVerified": "2026-07-18",
       "status": "verified",
       "type": "defense",
       "stats": {
@@ -1499,25 +1499,49 @@
     {
       "id": "hover-wyvern",
       "category": "blade",
-      "line": "bx",
+      "line": "ux",
       "type": "defense",
       "names": {
-        "tt": "Hover Wyvern",
-        "hasbro": null,
-        "ja": "",
-        "romaji": ""
+        "tt": "Wyvern Hover",
+        "hasbro": "Hover Wyvern",
+        "ja": "ワイバーンホバー",
+        "romaji": "WaibānHobā"
       },
       "aliases": [
         {
-          "value": "Wyvern Hover",
+          "value": "Hover Wyvern",
+          "lang": "en",
+          "kind": "hasbro"
+        },
+        {
+          "value": "ワイバーンホバー",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "WaibānHobā",
+          "lang": "ja",
+          "kind": "romaji"
+        },
+        {
+          "value": "WyvernHover",
           "lang": "en",
           "kind": "community"
         }
       ],
-      "firstReleaseSet": "UX-00",
-      "products": [],
-      "source": null,
-      "status": "unverified",
+      "firstReleaseSet": "G0842",
+      "products": [
+        "G0842",
+        "UX-00",
+        "UX-21"
+      ],
+      "source": {
+        "page": "Blade - Hover Wyvern",
+        "url": "https://beyblade.fandom.com/wiki/Blade_-_Hover_Wyvern",
+        "revid": 643699
+      },
+      "status": "verified",
+      "lastVerified": "2026-07-18",
       "stats": {
         "atk": 13,
         "def": 60,
@@ -4655,11 +4679,11 @@
       ],
       "firstReleaseSet": "CX-00",
       "source": {
-        "page": "Evangelion Deck Set",
+        "page": "EvaArc B0-70E",
         "url": "https://beyblade.fandom.com/wiki/EvaArc_B0-70E",
-        "revid": 634457
+        "revid": 634458
       },
-      "lastVerified": "2026-07-09",
+      "lastVerified": "2026-07-18",
       "status": "verified"
     },
     {
@@ -5171,10 +5195,10 @@
       "source": {
         "page": "ValkyrieVolt S4-70V",
         "url": "https://beyblade.fandom.com/wiki/ValkyrieVolt_S4-70V",
-        "revid": 644025
+        "revid": 644164
       },
       "status": "verified",
-      "lastVerified": "2026-07-17",
+      "lastVerified": "2026-07-18",
       "products": [
         "CX-00"
       ],
@@ -6030,10 +6054,10 @@
       "source": {
         "page": "ValkyrieVolt S4-70V",
         "url": "https://beyblade.fandom.com/wiki/ValkyrieVolt_S4-70V",
-        "revid": 644025
+        "revid": 644164
       },
       "status": "verified",
-      "lastVerified": "2026-07-17",
+      "lastVerified": "2026-07-18",
       "products": [
         "CX-00"
       ],
@@ -7695,10 +7719,10 @@
       "source": {
         "page": "Ratchet - 4-60",
         "url": "https://beyblade.fandom.com/api.php?action=parse&page=Ratchet_-_4-60&format=json&prop=wikitext",
-        "revid": 636211
+        "revid": 644270
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-18",
       "products": [
         "BX-02",
         "G1694",
@@ -8618,10 +8642,10 @@
       "source": {
         "page": "Bit - Ball",
         "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Ball&format=json&prop=wikitext",
-        "revid": 643578
+        "revid": 644279
       },
       "status": "verified",
-      "lastVerified": "2026-07-14",
+      "lastVerified": "2026-07-18",
       "products": [
         "BX-03",
         "G1695",
@@ -8811,9 +8835,9 @@
       "source": {
         "page": "HeavensRing 0-80DS",
         "url": "https://beyblade.fandom.com/wiki/HeavensRing_0-80DS",
-        "revid": 642685
+        "revid": 644265
       },
-      "lastVerified": "2026-07-04",
+      "lastVerified": "2026-07-18",
       "status": "verified",
       "type": "stamina",
       "shortName": "DS",
@@ -8930,10 +8954,10 @@
       "source": {
         "page": "Bit - Flat",
         "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Flat&format=json&prop=wikitext",
-        "revid": 643856
+        "revid": 644271
       },
       "status": "verified",
-      "lastVerified": "2026-07-16",
+      "lastVerified": "2026-07-18",
       "products": [
         "BX-01",
         "BX-48",
