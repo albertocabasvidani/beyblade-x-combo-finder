@@ -244,10 +244,10 @@ headless), `update-combos.bat` (collect+analyze), `dev-server.bat` (Astro).
 Registrazione task (eseguire una volta; il task pipeline ha `/it` = gira solo se l'utente è loggato,
 necessario per i browser headed). Path con spazi quotati dentro `/tr`:
 
-    schtasks /create /tn "Beyblade Daily Pipeline" /tr "\"c:\claude-code\Personale\beyblade combos\daily-pipeline.bat\"" /sc daily /st 08:00 /it /f
-    schtasks /create /tn "Beyblade Transcripts" /tr "wscript.exe \"c:\claude-code\Personale\beyblade combos\run-transcripts-hidden.vbs\"" /sc minute /mo 5 /f
-    schtasks /create /tn "Beyblade Discover Sources" /tr "wscript.exe \"c:\claude-code\Personale\beyblade combos\run-discover-hidden.vbs\"" /sc weekly /d MON /st 09:00 /it /f
-    schtasks /create /tn "Beyblade Recover Combos" /tr "\"c:\claude-code\Personale\beyblade combos\recover-combos.bat\"" /sc daily /st 14:00 /it /f
+    schtasks /create /tn "Beyblade Daily Pipeline" /tr "\"c:\claude-code\Personale\Beyblade\beyblade combos\daily-pipeline.bat\"" /sc daily /st 08:00 /it /f
+    schtasks /create /tn "Beyblade Transcripts" /tr "wscript.exe \"c:\claude-code\Personale\Beyblade\beyblade combos\run-transcripts-hidden.vbs\"" /sc minute /mo 5 /f
+    schtasks /create /tn "Beyblade Discover Sources" /tr "wscript.exe \"c:\claude-code\Personale\Beyblade\beyblade combos\run-discover-hidden.vbs\"" /sc weekly /d MON /st 09:00 /it /f
+    schtasks /create /tn "Beyblade Recover Combos" /tr "\"c:\claude-code\Personale\Beyblade\beyblade combos\recover-combos.bat\"" /sc daily /st 14:00 /it /f
 
 Il task transcripts gira **a finestra nascosta**: l'azione lancia `wscript.exe run-transcripts-hidden.vbs`,
 che a sua volta avvia `fetch-transcripts.bat` con console nascosta (`WScript.Shell.Run ..., 0`). Necessario

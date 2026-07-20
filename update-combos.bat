@@ -1,5 +1,5 @@
 @echo off
-cd /d "c:\claude-code\Personale\beyblade combos"
+cd /d "c:\claude-code\Personale\Beyblade\beyblade combos"
 echo === Raccolta dati da fonti esterne ===
 call npm run collect:sources
 echo.

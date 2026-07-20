@@ -19,7 +19,7 @@ REM
 REM LOGGING: ogni step scrive su logs\pipeline-YYYY-MM-DD.log con marker START/END + exit code, cosi'
 REM un'eventuale interruzione (PC sospeso, browser headed appeso, processo abortito) e' diagnosticabile
 REM dall'ultimo marker. Se l'ultimo marker e' "... START" senza "... END", quello step e' dove e' morta.
-cd /d "c:\claude-code\Personale\beyblade combos"
+cd /d "c:\claude-code\Personale\Beyblade\beyblade combos"
 
 REM --- data ISO per il nome del file di log ---
 for /f "tokens=*" %%i in ('powershell -NoProfile -Command "Get-Date -Format yyyy-MM-dd"') do set "TODAY=%%i"

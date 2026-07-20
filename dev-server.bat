@@ -1,3 +1,3 @@
 @echo off
-cd /d "c:\claude-code\Personale\beyblade combos"
+cd /d "c:\claude-code\Personale\Beyblade\beyblade combos"
 npm run dev
