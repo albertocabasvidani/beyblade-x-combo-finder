@@ -1,10 +1,12 @@
 {
   "lastRun": "2026-07-20",
   "lastProposal": {
-    "messageId": "19f7ea6fd17b3060",
-    "threadId": "19f7ea6fd17b3060",
+    "messageId": "19f7eac71ae53fe2",
+    "threadId": "19f7eac71ae53fe2",
     "date": "2026-07-20",
-    "subject": "Beyblade — 3 nuove fonti candidate (settimana 20/07)"
+    "subject": "Beyblade - 3 nuove fonti candidate YouTube (settimana 20/07, seguito)",
+    "note": "Run del 20/07 diviso in due email: 19f7ea6fd17b3060 (ramo social) e questa (ramo YouTube). Al prossimo run cercare le risposte su ENTRAMBI i thread.",
+    "relatedProposals": ["19f7ea6fd17b3060"]
   },
   "candidates": [
     {
@@ -653,6 +655,66 @@
       "status": "proposed",
       "dateFound": "2026-07-20",
       "lastSeen": "2026-07-20"
+    },
+    {
+      "candidateId": "youtube-ashen-dragoons",
+      "name": "Ashen Dragoons",
+      "type": "youtube",
+      "platform": "youtube",
+      "provides": "combos",
+      "lang": "en",
+      "region": "US-DMV",
+      "url": "https://www.youtube.com/@ashendragoons",
+      "channelId": "UC4vKwxemqIm2vm_pEQlj7gg",
+      "signals": { "subscribers": 17000, "lastActivity": "2026-07-19", "videoCount": 176, "publishesResults": true },
+      "rationale": "Verificato via API: copertura ricorrente di tornei reali dell'area DMV con esito esplicito — 'Beyblade X Summer Fest LIVE | DMV's Strongest Bladers Battle Through Top Cut', 'Beyblade X Team Tournament LIVE | Watch the Finishes!', 'JayCraft Wins Silver!'. Attivo 2-3 volte a settimana, 17k iscritti.",
+      "dedupCheck": "ATTENZIONE sovrapposizione: l'area DMV (DC/Maryland/Virginia) include il territorio di Maryland Beyblade League, già fonte attiva — gli stessi eventi potrebbero essere indicizzati due volte senza id-evento condiviso. Buona parte del contenuto è live/practice night (non torneo). Peso basso proposto per questo motivo.",
+      "proposedWeight": 0.4,
+      "recommendation": "propose",
+      "status": "proposed",
+      "verifiedOn": "2026-07-20",
+      "dateFound": "2026-07-20",
+      "lastSeen": "2026-07-20"
+    },
+    {
+      "candidateId": "youtube-zentonix",
+      "name": "Zentonix | Competitive Blader",
+      "type": "youtube",
+      "platform": "youtube",
+      "provides": "combos",
+      "lang": "en",
+      "region": "US",
+      "url": "https://www.youtube.com/@bladerzentonix",
+      "channelId": "UCAO6kJtq0W4cClF4Lx-yJwg",
+      "signals": { "subscribers": 145, "lastActivity": "2026-07-17", "videoCount": 14, "publishesResults": true },
+      "rationale": "Verificato via API: serie a bracket con stadi espliciti ('[FINALS] BBX Unranked Tournament 01 - Counter Battles! ZENTONIX VS SHAW', semifinali, first stage) e combo nei titoli dei 1v1 ('Calibur Samurai 5-80 B VS Stun Medusa 1-60 R'). Solo Beyblade X.",
+      "dedupCheck": "Nessuna sovrapposizione con fonti esistenti, ma i tornei sono auto-organizzati dal canale e dichiaratamente 'Unranked': evidenza più vicina al combo-testing strutturato che al piazzamento sanzionato. Canale molto piccolo (145 iscritti). Decisione utente consigliata.",
+      "proposedWeight": 0.3,
+      "recommendation": "manual-verify",
+      "status": "proposed",
+      "verifiedOn": "2026-07-20",
+      "dateFound": "2026-07-20",
+      "lastSeen": "2026-07-20"
+    },
+    {
+      "candidateId": "youtube-maritime-beyblade",
+      "name": "Maritime Beyblade (New Brunswick, CA)",
+      "type": "youtube",
+      "platform": "youtube",
+      "provides": "combos",
+      "lang": "en",
+      "region": "CA-NB",
+      "url": "https://www.youtube.com/@maritimebeyblade",
+      "channelId": "UCEXs1TNGa92v1Z3bBZXthIg",
+      "signals": { "subscribers": 34, "lastActivity": "2026-07-17", "videoCount": 11, "publishesResults": true },
+      "rationale": "Verificato via API: partecipazione a tornei reali con sede nominata ('Beyblade X Tournament: Test Your Might (Hampton, NB)', 'Dran Strike VS. Aero Pegasus @ Revolution X Beyblade Tournament') e combo showcase con parti esplicite ('Golem Rock 1-70R'). Copre il Canada atlantico, oggi assente.",
+      "dedupCheck": "Nessuna fonte del Canada atlantico (NBBA, stessa regione, è morta dal 2025-01). Molto piccolo (34 iscritti) e discontinuo: gap dic 2025 → giu 2026. Contenuto = clip di battaglie e launch-tech più che piazzamenti completi.",
+      "proposedWeight": 0.3,
+      "recommendation": "manual-verify",
+      "status": "proposed",
+      "verifiedOn": "2026-07-20",
+      "dateFound": "2026-07-20",
+      "lastSeen": "2026-07-20"
     }
   ],
   "knownNegatives": [
@@ -715,6 +777,22 @@
     "https://www.beybladexdash.com (hub organizzativo USA, rimanda al gruppo Facebook Beyblade X Tournaments USA per risultati -> vedi candidato social-beypointer-usa-fb)",
     "https://www.instagram.com/bladerleaguegermany (stesso ente del Discord 'blader-league-germany' (bladerleague.de) già in manualVerification, solo canale social aggiuntivo, non nuova fonte)",
     "https://www.facebook.com/beytournamentleague (lega Beyblade Messico, MX già ben coperta da 5 fonti attive/candidate: Flowbeyblade, Hiram108GAMER, Daniel Beys Z, BladerUlis1, Dano Blader/Taco League)",
-    "https://www.facebook.com/groups/flowercitybladers (community locale Rochester NY legata a eventi WBO 'Flower City Summit': già indicizzata via WBO)"
+    "https://www.facebook.com/groups/flowercitybladers (community locale Rochester NY legata a eventi WBO 'Flower City Summit': già indicizzata via WBO)",
+    "https://www.youtube.com/@ninjascarfbeys (verificato via API: contenuto teoria/analisi parti 'The 1-50 Ratchet In Beyblade X is...', 'The Most Consistent Blade'; inattivo dal 2026-03-15, fuori freschezza)",
+    "https://www.youtube.com/@tichinax (verificato via API: shorts/battaglie/stream misti con League of Legends, nessun piazzamento di torneo)",
+    "https://www.youtube.com/@ショウのベイブレード (verificato via API: contenuto reale = 検証/analisi parti e custom, nonostante la bio parli di partecipazione a 大会. Teoria, non placement)",
+    "https://www.youtube.com/@けーえす-k6r (verificato via API: 改造/custom e commento personaggi anime, entertainment/teoria)",
+    "https://www.youtube.com/@nbbabx (New Brunswick Beyblade Association: solo 2 video, inattivo dal 2025-01)",
+    "https://www.youtube.com/@beyjaxel (community South Jakarta: inattivo dal 2025-09)",
+    "https://www.youtube.com/@bajiobladersoficial (comunità MX León: dichiara di coprire i tornei della Liga Vortex Beymasters, già coperta da Hiram108GAMER)",
+    "https://www.youtube.com/@beyxlab-2 (ES combo testing, inattivo dal 2026-02)",
+    "https://www.youtube.com/@customxbattle (JP 環境カスタム 10本勝負: combo-testing teorico, non tornei)",
+    "https://www.youtube.com/@fonggou-waves (TW condivisione配置/combo, inattivo dal 2025-11)",
+    "https://www.youtube.com/@kirha_beyblade (JP: dichiara esplicitamente di NON cercare le custom più forti ma quelle divertenti, teoria/entertainment)",
+    "https://www.youtube.com/@watattich1120 (JP custom teoria, inattivo dal 2025-08)",
+    "https://www.youtube.com/@tameninaranai (JP entertainment generalista)",
+    "https://www.youtube.com/@테스터훈 (KR toy reviewer generalista 1.4M, non risultati Beyblade X)",
+    "https://www.youtube.com/@meteo.0707 (JP canale kids/goods)",
+    "https://www.youtube.com/@beyriftx (4 video, canale appena nato)"
   ]
 }
