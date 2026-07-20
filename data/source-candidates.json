@@ -1,10 +1,10 @@
 {
-  "lastRun": "2026-07-13",
+  "lastRun": "2026-07-20",
   "lastProposal": {
-    "messageId": "19f5a7338b9e5e48",
-    "threadId": "19f5a7338b9e5e48",
-    "date": "2026-07-13",
-    "subject": "Beyblade — 6 nuove fonti candidate (settimana 13/07)"
+    "messageId": "19f7ea6fd17b3060",
+    "threadId": "19f7ea6fd17b3060",
+    "date": "2026-07-20",
+    "subject": "Beyblade — 3 nuove fonti candidate (settimana 20/07)"
   },
   "candidates": [
     {
@@ -498,7 +498,9 @@
       "dedupCheck": "Nessun creator US esistente copre questa serie locale. Molto piccolo (94 iscritti): peso basso.",
       "proposedWeight": 0.4,
       "recommendation": "propose",
-      "status": "proposed",
+      "status": "accepted",
+      "verifyNote": "Approvato dall'utente (email 20/07/2026, risposta a proposta 13/07: \"approvo tutte in Da approvare\"). Promosso a sources.json.",
+      "promotedOn": "2026-07-20",
       "dateFound": "2026-07-13",
       "lastSeen": "2026-07-13"
     },
@@ -517,7 +519,9 @@
       "dedupCheck": "Le fonti MX attive coprono Liga Vortex (Hiram108GAMER) e Liga GDL (BladerUlis1): la Taco League è una lega diversa. Non duplica.",
       "proposedWeight": 0.4,
       "recommendation": "propose",
-      "status": "proposed",
+      "status": "accepted",
+      "verifyNote": "Approvato dall'utente (email 20/07/2026, risposta a proposta 13/07: \"approvo tutte in Da approvare\"). Promosso a sources.json.",
+      "promotedOn": "2026-07-20",
       "dateFound": "2026-07-13",
       "lastSeen": "2026-07-13"
     },
@@ -536,7 +540,9 @@
       "dedupCheck": "Scena UK coperta solo da Devon Beyblade Association (organizer piccolo) e Ryzo (proposta in attesa). Cadenza irregolare: gap dic 2025→giu 2026.",
       "proposedWeight": 0.4,
       "recommendation": "propose",
-      "status": "proposed",
+      "status": "accepted",
+      "verifyNote": "Approvato dall'utente (email 20/07/2026, risposta a proposta 13/07: \"approvo tutte in Da approvare\"). Promosso a sources.json.",
+      "promotedOn": "2026-07-20",
       "dateFound": "2026-07-13",
       "lastSeen": "2026-07-13"
     },
@@ -593,6 +599,60 @@
       "status": "proposed",
       "dateFound": "2026-07-13",
       "lastSeen": "2026-07-13"
+    },
+    {
+      "candidateId": "social-beypointer-usa-fb",
+      "name": "Beyblade X Tournaments USA (Beypointer.com / BBXD)",
+      "type": "social",
+      "platform": "facebook",
+      "provides": "combos",
+      "lang": "en",
+      "region": "US",
+      "url": "https://www.facebook.com/groups/1108647593595673/",
+      "signals": { "lastActivity": "2026", "publishesResults": true },
+      "rationale": "Gruppo Facebook nazionale USA legato all'app Beypointer e all'organizzazione BeybladeXDash (BBXD): il sito beybladexdash.com rimanda esplicitamente qui per eventi e risultati ('Events are posted on the Facebook Group: Beyblade X Tournaments USA').",
+      "dedupCheck": "Le fonti US attive/note sono locali (Maryland, Lafayette Louisiana, 321GoShoot, RPMzero) o già scartate (Houston). Questo gruppo è un aggregatore nazionale, non una lega locale: gap diverso. FB non automatizzabile -> verifica manuale.",
+      "proposedWeight": 0.5,
+      "recommendation": "manual-verify",
+      "status": "proposed",
+      "dateFound": "2026-07-20",
+      "lastSeen": "2026-07-20"
+    },
+    {
+      "candidateId": "social-pbbl-ph",
+      "name": "Philippine Beyblade Battle League (PBBL, ufficiale)",
+      "type": "social",
+      "platform": "facebook",
+      "provides": "combos",
+      "lang": "en",
+      "region": "PH",
+      "url": "https://www.facebook.com/OfficialPBBL/",
+      "signals": { "lastActivity": "2026", "publishesResults": true },
+      "rationale": "Pagina ufficiale della lega filippina, organizza tornei (es. 'BEY-Z CUP') distinti dal gruppo community generico già noto.",
+      "dedupCheck": "PH ha gia il gruppo Facebook 'beybladephilippines' (community generica) tra i manualVerification: PBBL e' l'organizzazione ufficiale che ospita i tornei, non duplica ma completa. Contenuto non verificabile via fetch (Facebook blocca l'accesso non autenticato) -> verifica manuale.",
+      "proposedWeight": 0.4,
+      "recommendation": "manual-verify",
+      "status": "proposed",
+      "dateFound": "2026-07-20",
+      "lastSeen": "2026-07-20"
+    },
+    {
+      "candidateId": "social-org-bsbey-br",
+      "name": "Organização Brasiliense de Beyblade",
+      "type": "social",
+      "platform": "instagram",
+      "provides": "combos",
+      "lang": "pt",
+      "region": "BR-DF",
+      "url": "https://www.instagram.com/org.bsbey/",
+      "signals": { "lastActivity": "2026", "publishesResults": true },
+      "rationale": "Organizzazione regionale di Brasilia che documenta i propri tornei locali su Instagram, granularita' simile a Maryland/Devon/Lafayette (leghe regionali gia' accettate in altri paesi).",
+      "dedupCheck": "Le fonti BR attive sono canali YouTube nazionali narrativi (LBP, Beyblade Galaxy): nessuna copertura regionale specifica di Brasilia. Instagram non automatizzabile e contenuto non verificabile via fetch -> verifica manuale.",
+      "proposedWeight": 0.4,
+      "recommendation": "manual-verify",
+      "status": "proposed",
+      "dateFound": "2026-07-20",
+      "lastSeen": "2026-07-20"
     }
   ],
   "knownNegatives": [
@@ -642,6 +702,19 @@
     "https://www.youtube.com/@pokemonasiatamilofficial (Pokemon, off-topic)",
     "https://www.tournoi-beyblade.fr/ (championnat FR: piattaforma iscrizioni/promo, nessun risultato o combo pubblici, news ferme a giu 2025)",
     "https://rpbey.fr/meta (aggregato per-parte derivato da WBO/BBX Weekly: duplicherebbe WBO)",
-    "https://www.bbx.gg (championship/belt + eventi sovrapposti a WBO senza id evento condiviso: rischio doppioni, già escluso in CLAUDE.md)"
+    "https://www.bbx.gg (championship/belt + eventi sovrapposti a WBO senza id evento condiviso: rischio doppioni, già escluso in CLAUDE.md)",
+    "https://bbxhub.net (verificato via fetch: dichiara esplicitamente 'All results come from community-reported winning combinations at WBO organized events worldwide, plus German Blader League tournaments' -> aggregatore derivato da WBO+Blader League Germany, duplicherebbe entrambe)",
+    "https://www.tclub.com.hk/en/blogs/比賽試玩 (blog negozio HK: solo annunci/premi tornei G3, nessuna combo dei vincitori)",
+    "https://www.metalbridges.com (media generalista thailandese: un articolo con combo complete del SIAM Takashimaya G2 Cup, ma nessuna copertura Beyblade X regolare/dedicata, non un source ricorrente)",
+    "https://osvarutobeysz.com (e-commerce/calendario eventi MX, nessun report di risultati o combo)",
+    "https://kakkon.net (blog familiare generalista JP, Beyblade X sezione minore 32/940 articoli, post occasionali non tecnici)",
+    "https://www.beybladexuk.co.uk/leaderboard (classifica solo nome/punteggio/regione, nessuna combo)",
+    "https://topdeck.gg/elo/beyblade/x (ranking Elo per giocatore, nessuna combo ne dettaglio evento)",
+    "https://www.texasbeybladeleague.com (pagina eventi passati senza risultati/combo verificabili)",
+    "https://pabeybey.com (contenuto non verificabile via fetch, solo titolo pagina disponibile)",
+    "https://www.beybladexdash.com (hub organizzativo USA, rimanda al gruppo Facebook Beyblade X Tournaments USA per risultati -> vedi candidato social-beypointer-usa-fb)",
+    "https://www.instagram.com/bladerleaguegermany (stesso ente del Discord 'blader-league-germany' (bladerleague.de) già in manualVerification, solo canale social aggiuntivo, non nuova fonte)",
+    "https://www.facebook.com/beytournamentleague (lega Beyblade Messico, MX già ben coperta da 5 fonti attive/candidate: Flowbeyblade, Hiram108GAMER, Daniel Beys Z, BladerUlis1, Dano Blader/Taco League)",
+    "https://www.facebook.com/groups/flowercitybladers (community locale Rochester NY legata a eventi WBO 'Flower City Summit': già indicizzata via WBO)"
   ]
 }

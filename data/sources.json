@@ -419,6 +419,33 @@
       "channelId": "UCxO9JEDikhzGmKiYMG-N2ZQ"
     },
     {
+      "id": "youtube-rpmzero",
+      "name": "RPMzero",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.4,
+      "lang": "en",
+      "channelId": "UCW2InTF0YdoUYI9kLjxJ3Sw"
+    },
+    {
+      "id": "youtube-dano-blader",
+      "name": "Dano Blader (Taco League MX)",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.4,
+      "lang": "es",
+      "channelId": "UCw2WhE8HvsI55ZB_QVmTIhw"
+    },
+    {
+      "id": "youtube-biscuitboii",
+      "name": "BiscuitBoii",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.4,
+      "lang": "en",
+      "channelId": "UCRI34I4M_6f3FWYgV_J4RrA"
+    },
+    {
       "id": "google-sheets-tier-list",
       "name": "Beyblade X Community Tier List (WBO)",
       "type": "spreadsheet",
