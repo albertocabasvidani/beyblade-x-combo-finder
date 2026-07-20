@@ -1,5 +1,5 @@
 {
-  "version": "2026-07-18",
+  "version": "2026-07-20",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -1305,9 +1305,9 @@
       "source": {
         "page": "HeavensRing 0-80DS",
         "url": "https://beyblade.fandom.com/wiki/HeavensRing_0-80DS",
-        "revid": 644265
+        "revid": 644458
       },
-      "lastVerified": "2026-07-18",
+      "lastVerified": "2026-07-20",
       "status": "verified",
       "type": "defense",
       "stats": {
@@ -2955,6 +2955,28 @@
       }
     },
     {
+      "id": "seize-jaguar",
+      "category": "blade",
+      "line": "ux",
+      "names": {
+        "tt": "Seize Jaguar",
+        "hasbro": "Seize Jaguar"
+      },
+      "aliases": [],
+      "products": [
+        "G4570"
+      ],
+      "firstReleaseSet": "G4570",
+      "source": {
+        "page": "Ratchet-Integrated Blade - Seize Jaguar",
+        "url": "https://beyblade.fandom.com/wiki/Ratchet-Integrated_Blade_-_Seize_Jaguar",
+        "revid": 644445
+      },
+      "lastVerified": "2026-07-20",
+      "status": "unverified",
+      "type": "defense"
+    },
+    {
       "id": "shark-edge",
       "category": "blade",
       "line": "bx",
@@ -4430,10 +4452,10 @@
       "source": {
         "page": "BahamutBlitz BK1-50I",
         "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
-        "revid": 644056
+        "revid": 644422
       },
       "status": "verified",
-      "lastVerified": "2026-07-17",
+      "lastVerified": "2026-07-20",
       "products": [
         "CX-13",
         "G4572",
@@ -5159,15 +5181,16 @@
         }
       ],
       "products": [
-        "CX-17"
+        "CX-17",
+        "G2752"
       ],
       "firstReleaseSet": "Random Booster Vol. 10",
       "source": {
         "page": "UnicornDelta PO3-60GU",
         "url": "https://beyblade.fandom.com/wiki/UnicornDelta_PO3-60GU",
-        "revid": 644030
+        "revid": 644460
       },
-      "lastVerified": "2026-07-17",
+      "lastVerified": "2026-07-20",
       "status": "verified"
     },
     {
@@ -5450,9 +5473,9 @@
       "source": {
         "page": "BahamutBlitz BK1-50I",
         "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
-        "revid": 644056
+        "revid": 644422
       },
-      "lastVerified": "2026-07-17",
+      "lastVerified": "2026-07-20",
       "status": "verified"
     },
     {
@@ -5608,15 +5631,16 @@
         }
       ],
       "products": [
-        "CX-17"
+        "CX-17",
+        "G2752"
       ],
       "firstReleaseSet": "Random Booster Vol. 10",
       "source": {
         "page": "UnicornDelta PO3-60GU",
         "url": "https://beyblade.fandom.com/wiki/UnicornDelta_PO3-60GU",
-        "revid": 644030
+        "revid": 644460
       },
-      "lastVerified": "2026-07-17",
+      "lastVerified": "2026-07-20",
       "status": "verified"
     },
     {
@@ -6379,9 +6403,9 @@
       "source": {
         "page": "Assist Blade - Gravity",
         "url": "https://beyblade.fandom.com/wiki/Assist_Blade_-_Gravity",
-        "revid": 643966
+        "revid": 644409
       },
-      "lastVerified": "2026-07-17",
+      "lastVerified": "2026-07-20",
       "status": "verified",
       "stats": {
         "atk": 37,
@@ -6492,9 +6516,9 @@
       "source": {
         "page": "BahamutBlitz BK1-50I",
         "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
-        "revid": 644056
+        "revid": 644422
       },
-      "lastVerified": "2026-07-17",
+      "lastVerified": "2026-07-20",
       "status": "verified",
       "shortName": "K"
     },
@@ -6557,15 +6581,16 @@
         }
       ],
       "products": [
-        "CX-17"
+        "CX-17",
+        "G2752"
       ],
       "firstReleaseSet": "Random Booster Vol. 10",
       "source": {
         "page": "UnicornDelta PO3-60GU",
         "url": "https://beyblade.fandom.com/wiki/UnicornDelta_PO3-60GU",
-        "revid": 644030
+        "revid": 644460
       },
-      "lastVerified": "2026-07-17",
+      "lastVerified": "2026-07-20",
       "status": "verified",
       "shortName": "O"
     },
@@ -6925,7 +6950,8 @@
       "category": "overBlade",
       "line": "cx",
       "names": {
-        "tt": "I"
+        "tt": "I",
+        "hasbro": null
       },
       "aliases": [],
       "products": [
@@ -7000,15 +7026,16 @@
         }
       ],
       "products": [
-        "CX-17"
+        "CX-17",
+        "G2752"
       ],
       "firstReleaseSet": "CX-17",
       "source": {
         "page": "Over Blade - Peak",
         "url": "https://beyblade.fandom.com/wiki/Over_Blade_-_Peak",
-        "revid": 636383
+        "revid": 644449
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-20",
       "status": "verified"
     }
   ],
@@ -7151,9 +7178,9 @@
       "source": {
         "page": "BahamutBlitz BK1-50I",
         "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
-        "revid": 644056
+        "revid": 644422
       },
-      "lastVerified": "2026-07-17",
+      "lastVerified": "2026-07-20",
       "status": "verified",
       "stats": {
         "atk": 18,
@@ -7431,10 +7458,10 @@
       "source": {
         "page": "Ratchet - 3-60",
         "url": "https://beyblade.fandom.com/api.php?action=parse&page=Ratchet_-_3-60&format=json&prop=wikitext",
-        "revid": 643855
+        "revid": 644452
       },
       "status": "verified",
-      "lastVerified": "2026-07-16",
+      "lastVerified": "2026-07-20",
       "products": [
         "BX-01",
         "G1692",
@@ -7445,7 +7472,8 @@
         "G0288",
         "F9589",
         "G0352",
-        "G0286"
+        "G0286",
+        "G2752"
       ],
       "firstReleaseSet": "BX-01",
       "stats": {
@@ -8332,7 +8360,8 @@
       "names": {
         "tt": "8-80",
         "ja": "エイトエイティー",
-        "romaji": "Eito Eitī"
+        "romaji": "Eito Eitī",
+        "hasbro": null
       },
       "aliases": [
         {
@@ -8835,9 +8864,9 @@
       "source": {
         "page": "HeavensRing 0-80DS",
         "url": "https://beyblade.fandom.com/wiki/HeavensRing_0-80DS",
-        "revid": 644265
+        "revid": 644458
       },
-      "lastVerified": "2026-07-18",
+      "lastVerified": "2026-07-20",
       "status": "verified",
       "type": "stamina",
       "shortName": "DS",
@@ -9327,15 +9356,16 @@
         }
       ],
       "products": [
-        "CX-17"
+        "CX-17",
+        "G2752"
       ],
       "firstReleaseSet": "Random Booster Vol. 10",
       "source": {
         "page": "UnicornDelta PO3-60GU",
         "url": "https://beyblade.fandom.com/wiki/UnicornDelta_PO3-60GU",
-        "revid": 644030
+        "revid": 644460
       },
-      "lastVerified": "2026-07-17",
+      "lastVerified": "2026-07-20",
       "status": "verified",
       "type": "balance",
       "shortName": "GU",
@@ -9458,16 +9488,17 @@
       "source": {
         "page": "Bit - High Needle",
         "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_High_Needle&format=json&prop=wikitext",
-        "revid": 636214
+        "revid": 644446
       },
       "status": "verified",
-      "lastVerified": "2026-06-21",
+      "lastVerified": "2026-07-20",
       "products": [
         "BX-13",
         "G1694",
         "BX-36",
         "CX-11",
-        "G1684"
+        "G1684",
+        "G4570"
       ],
       "firstReleaseSet": "BX-13",
       "shortName": "HN",
@@ -9556,9 +9587,9 @@
       "source": {
         "page": "BahamutBlitz BK1-50I",
         "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
-        "revid": 644056
+        "revid": 644422
       },
-      "lastVerified": "2026-07-17",
+      "lastVerified": "2026-07-20",
       "status": "verified",
       "type": "attack",
       "shortName": "I",

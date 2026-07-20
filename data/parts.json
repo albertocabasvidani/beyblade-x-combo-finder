@@ -1,5 +1,5 @@
 {
-  "version": "2026-07-19",
+  "version": "2026-07-20",
   "blades": [
     {
       "id": "aero-pegasus",
@@ -1071,6 +1071,15 @@
         "def": 55,
         "sta": 30
       }
+    },
+    {
+      "id": "seize-jaguar",
+      "name": "Seize Jaguar",
+      "nameWestern": "Seize Jaguar",
+      "type": "defense",
+      "line": "ux",
+      "integratedRatchet": true,
+      "releaseSet": "G4570"
     },
     {
       "id": "shark-edge",
