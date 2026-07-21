@@ -140,6 +140,10 @@ mai via API a pagamento. L'IA non calcola mai lo score né ri-parsa ciò che il 
   `fetch:wbo` (Playwright; Cloudflare blocca headless → `WBO_HEADED=1`, oppure ci si affida a MetaBeys
   che indicizza gli stessi eventi WBO; **paginazione all'indietro** del thread `?page=N`, capped a
   `WBO_MAX_PAGES`/run, cursore `wboBackfill`, canale `printthread` opzionale via `WBO_PRINTTHREAD=1`).
+  **Profilo dedicato `.playwright-wbo`**, non condiviso: quando usava `.playwright-beyblade` insieme a
+  Reddit/arca, un Chrome lasciato aperto da Reddit in ETIMEDOUT lo faceva fallire con *"Target page,
+  context or browser has been closed"* — in **tutti** i run dal 29/06, mentre da solo completa in ~30s.
+  Il profilo serve solo ai cookie Cloudflare, nessun login condiviso.
   `fetch:transcripts` gira SEPARATO (ogni 5 min, `--batch 1`):
   scarica solo i video `relevant:true` (giudicati da `/judge-youtube`), nella lingua reale del video
   (`youtube_transcript_api.list()` + `.translate('en')` se non-EN e traducibile).
@@ -198,15 +202,27 @@ sovrapposti a WBO senza id condiviso → rischio doppioni). Facebook PH/MY e Ins
 
 ## Automazione (Windows Task Scheduler)
 
-Il PC è spento di notte → tutta la pipeline gira in **un'unica sequenza alle 08:00** (utente loggato).
-`daily-pipeline.bat` esegue in ordine: `/update-parts` → `collect:sources` (con Reddit/WBO/arca **headed**
-via `REDDIT_HEADED=1`/`WBO_HEADED=1`/`ARCA_HEADED=1`, lette da collect:sources; BBX Weekly headless) →
-`/judge-youtube` (rilevanza + lingua dei video raccolti, a blocchi) → `/update-combos` (fonti strutturate)
-→ `/mine-reddit` (Reddit a blocchi). Reddit riusa il login del
-profilo `.playwright-beyblade`; WBO/arca possono chiedere il captcha Cloudflare (mattina = utente al PC
-per risolverlo). I transcript YouTube girano a
-parte ogni 5 min (`--batch 1`, rate-limit): scaricano solo i video `relevant:true` (decisi da
-`/judge-youtube`), nella lingua reale del video, nelle ore successive (eventually-consistent).
+Il PC è spento di notte → tutto gira di mattina, in **due task distinti**.
+
+**07:30 — `collect-sources-task.bat`** (task "Beyblade Collect Sources", `/it`): sola raccolta delle
+cache grezze, con Reddit/WBO/arca **headed** (`REDDIT_HEADED=1`/`WBO_HEADED=1`/`ARCA_HEADED=1`; BBX
+Weekly headless). Reddit riusa il login del profilo `.playwright-beyblade`; WBO ha il **profilo
+dedicato** `.playwright-wbo` (vedi sotto) e può chiedere il captcha Cloudflare.
+
+**08:00 — `daily-pipeline.bat`** (task "Beyblade Daily Pipeline", `/it`): `/update-parts` →
+`/judge-youtube` → `/update-combos` → `/mine-reddit`. **Nessuno di questi step apre browser**: lavorano
+sulle cache raccolte mezz'ora prima, di cui il log riporta la data di ultima scrittura.
+
+**Perché separati** (21/07/2026): quando la raccolta stava dentro la pipeline, i browser headed
+chiudendosi si portavano dietro il `.bat` — 37 log dal 29/06 con `collect:sources START` e mai `END`,
+quindi `/update-combos` non partiva **mai** e `combos.json` restava indietro in silenzio (buco
+03/07→18/07 recuperato a mano; anche `recover-combos.bat` moriva lì, rendendo inutile la rete di
+sicurezza). La causa esatta non è deterministica (la correlazione con i singoli fetcher regge 30 volte
+su 37): la separazione la rende irrilevante, perché una raccolta che muore non impedisce l'elaborazione.
+
+I transcript YouTube girano a parte ogni 5 min (`--batch 1`, rate-limit): scaricano solo i video
+`relevant:true` (decisi da `/judge-youtube`), nella lingua reale del video, nelle ore successive
+(eventually-consistent).
 `/update-parts`, `/update-combos` e `/mine-reddit` fanno **commit/push autonomi su master**.
 Ogni step scrive su `logs/pipeline-YYYY-MM-DD.log` (marker `START`/`END` + exit code): se la sequenza si
 interrompe (PC sospeso, browser headed appeso, processo abortito), l'ultimo marker dice **dove** è morta.
@@ -225,8 +241,9 @@ ha portato i combo da 204 a 457). Nella marcia normale è 1 blocco → pochi min
 
 Recupero combo — task SEPARATO, **giornaliero nel pomeriggio** (utente al PC): `recover-combos.bat`
 controlla via `git log --since=midnight` se gli step che committano sono già passati **oggi**; se
-`update combos database` manca rifà `collect:sources` → `/judge-youtube` → `/update-combos`, se
-`mine reddit combos` manca rifà `/mine-reddit`. **Idempotente**: se la mattina è andata, non fa nulla
+`update combos database` manca rifà `/judge-youtube` → `/update-combos`, se
+`mine reddit combos` manca rifà `/mine-reddit`. **Non rifà la raccolta** (è il task delle 07:30):
+elabora la cache presente. **Idempotente**: se la mattina è andata, non fa nulla
 (solo log in `logs/recover-YYYY-MM-DD.log`). Rete di sicurezza per le interruzioni della sequenza
 mattutina interattiva (caso 25-26/06/2026: pipeline morta a metà, `combos.json` fermo 2 giorni).
 
@@ -244,6 +261,7 @@ headless), `update-combos.bat` (collect+analyze), `dev-server.bat` (Astro).
 Registrazione task (eseguire una volta; il task pipeline ha `/it` = gira solo se l'utente è loggato,
 necessario per i browser headed). Path con spazi quotati dentro `/tr`:
 
+    schtasks /create /tn "Beyblade Collect Sources" /tr "\"c:\claude-code\Personale\Beyblade\beyblade combos\collect-sources-task.bat\"" /sc daily /st 07:30 /it /f
     schtasks /create /tn "Beyblade Daily Pipeline" /tr "\"c:\claude-code\Personale\Beyblade\beyblade combos\daily-pipeline.bat\"" /sc daily /st 08:00 /it /f
     schtasks /create /tn "Beyblade Transcripts" /tr "wscript.exe \"c:\claude-code\Personale\Beyblade\beyblade combos\run-transcripts-hidden.vbs\"" /sc minute /mo 5 /f
     schtasks /create /tn "Beyblade Discover Sources" /tr "wscript.exe \"c:\claude-code\Personale\Beyblade\beyblade combos\run-discover-hidden.vbs\"" /sc weekly /d MON /st 09:00 /it /f
