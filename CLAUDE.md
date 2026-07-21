@@ -217,10 +217,10 @@ default di sessione del momento (Opus a effort variabile, a volte Fable): lavoro
 lavoro di punta. Il vincolo sta in due posti — flag `--model`/`--effort` in tutti i `.bat` e frontmatter
 `model:`/`effort:` nel `.md` del comando:
 
-> **Gotcha (verificato 21/07/2026)**: il frontmatter vale solo se il comando è invocato **direttamente**
-> (`/update-parts`). Con `-p "Esegui /update-parts"` — la forma usata da tutti i `.bat` — il comando
-> passa dal tool Skill e il frontmatter viene **ignorato**: resta il modello della sessione. Nei `.bat`
-> a decidere sono quindi solo i flag CLI; il frontmatter copre l'uso interattivo.
+> **Gotcha (verificato 21/07/2026)**: il frontmatter vale solo con l'invocazione **diretta**
+> (`-p "/update-parts"`). Con `-p "Esegui /update-parts"` il comando passa dal tool Skill e il
+> frontmatter viene **ignorato**: resta il modello della sessione, più un turno sprecato a decidere di
+> invocarlo. Per questo tutti i `.bat` usano la forma diretta `-p "/comando"`, mai `-p "Esegui /comando"`.
 
 | Comando | Modello | Effort | Perché |
 |---|---|---|---|

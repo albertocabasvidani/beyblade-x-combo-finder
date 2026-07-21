@@ -33,10 +33,10 @@ if errorlevel 1 (
   REM a /update-combos — cioe' proprio il recupero che doveva garantire. Si elabora
   REM la cache gia' presente: se il task del mattino e' andato, e' fresca di poche ore.
   call :log "--- judge-youtube START ---"
-  claude --model sonnet --effort medium --dangerously-skip-permissions -p "Esegui /judge-youtube" >> "%LOG%" 2>&1
+  claude --model sonnet --effort medium --dangerously-skip-permissions -p "/judge-youtube" >> "%LOG%" 2>&1
   call :log "--- judge-youtube END exit=!errorlevel! ---"
   call :log "--- update-combos START ---"
-  claude --model sonnet --effort high --dangerously-skip-permissions -p "Esegui /update-combos" >> "%LOG%" 2>&1
+  claude --model sonnet --effort high --dangerously-skip-permissions -p "/update-combos" >> "%LOG%" 2>&1
   call :log "--- update-combos END exit=!errorlevel! ---"
 ) else (
   call :log "update-combos gia' committato oggi -> skip"
@@ -45,7 +45,7 @@ if errorlevel 1 (
 findstr /c:"mine reddit combos" "%CHECK%" >nul
 if errorlevel 1 (
   call :log "--- mine-reddit START ---"
-  claude --model sonnet --effort medium --dangerously-skip-permissions -p "Esegui /mine-reddit" >> "%LOG%" 2>&1
+  claude --model sonnet --effort medium --dangerously-skip-permissions -p "/mine-reddit" >> "%LOG%" 2>&1
   call :log "--- mine-reddit END exit=!errorlevel! ---"
 ) else (
   call :log "mine-reddit gia' committato oggi -> skip"

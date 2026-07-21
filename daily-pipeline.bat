@@ -40,7 +40,7 @@ call :log "--- 1/4 update-parts START ---"
 REM Modello fissato a Sonnet/effort medium: e' un lavoro meccanico e ripetitivo (diff revid, estrazione
 REM strutturata, merge), non serve il modello di punta. I flag CLI rendono la scelta deterministica anche
 REM se cambia il modello di default della sessione; il frontmatter del comando dice la stessa cosa.
-claude --model sonnet --effort medium --dangerously-skip-permissions -p "Esegui /update-parts" >> "%LOG%" 2>&1
+claude --model sonnet --effort medium --dangerously-skip-permissions -p "/update-parts" >> "%LOG%" 2>&1
 call :log "--- 1/4 update-parts END exit=!errorlevel! ---"
 
 REM La raccolta fonti NON sta piu' qui: e' il task "Beyblade Collect Sources" delle
@@ -59,15 +59,15 @@ for %%f in (reddit-cache.json wbo-cache.json metabeys-cache.json arca-cache.json
 )
 
 call :log "--- 2/4 judge-youtube START ---"
-claude --model sonnet --effort medium --dangerously-skip-permissions -p "Esegui /judge-youtube" >> "%LOG%" 2>&1
+claude --model sonnet --effort medium --dangerously-skip-permissions -p "/judge-youtube" >> "%LOG%" 2>&1
 call :log "--- 2/4 judge-youtube END exit=!errorlevel! ---"
 
 call :log "--- 3/4 update-combos START ---"
-claude --model sonnet --effort high --dangerously-skip-permissions -p "Esegui /update-combos" >> "%LOG%" 2>&1
+claude --model sonnet --effort high --dangerously-skip-permissions -p "/update-combos" >> "%LOG%" 2>&1
 call :log "--- 3/4 update-combos END exit=!errorlevel! ---"
 
 call :log "--- 4/4 mine-reddit START ---"
-claude --model sonnet --effort medium --dangerously-skip-permissions -p "Esegui /mine-reddit" >> "%LOG%" 2>&1
+claude --model sonnet --effort medium --dangerously-skip-permissions -p "/mine-reddit" >> "%LOG%" 2>&1
 call :log "--- 4/4 mine-reddit END exit=!errorlevel! ---"
 
 call :log "=== PIPELINE END ==="

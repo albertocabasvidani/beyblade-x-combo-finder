@@ -5,4 +5,4 @@ REM e' registrato con /it. Il comando /discover-sources si ferma allo staging (d
 REM + email a cinquequarti@gmail.com; NON aggiunge nulla a sources.json. Commit/push autonomo su master.
 cd /d "c:\claude-code\Personale\Beyblade\beyblade combos"
 echo === Scoperta nuove fonti tornei ===
-claude --model opus --effort medium --dangerously-skip-permissions -p "Esegui /discover-sources"
+claude --model opus --effort medium --dangerously-skip-permissions -p "/discover-sources"
