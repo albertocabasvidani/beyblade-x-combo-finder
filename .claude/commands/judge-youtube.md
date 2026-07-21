@@ -1,3 +1,9 @@
+---
+description: Giudica a blocchi rilevanza e lingua dei video YouTube in cache
+model: sonnet
+effort: medium
+---
+
 Giudica la rilevanza dei video YouTube raccolti (`data/youtube-cache.json`) **a blocchi**, in modo
 idempotente, decidendo per ognuno se riguarda combo/deck/meta/tornei **competitivi Beyblade X** e in
 quale lingua è parlato. Serve a far scaricare i transcript solo dei video utili, nella lingua giusta.

@@ -1,3 +1,9 @@
+---
+description: Cerca e valuta nuove fonti tornei, manda la proposta via email
+model: opus
+effort: medium
+---
+
 Cerca NUOVE fonti di risultati di tornei Beyblade X (canali YouTube, siti/blog/newsletter, forum,
 account social), **escludendo quelle già note**, le **valuta** e ti invia via **email** una proposta
 motivata (corpo leggibile, niente allegati). Tu rispondi all'email in linguaggio naturale dicendo quali

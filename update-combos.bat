@@ -4,4 +4,4 @@ echo === Raccolta dati da fonti esterne ===
 call npm run collect:sources
 echo.
 echo === Analisi combo con Claude ===
-claude --dangerously-skip-permissions -p "Esegui /update-combos"
+claude --model sonnet --effort high --dangerously-skip-permissions -p "Esegui /update-combos"

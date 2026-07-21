@@ -1,3 +1,9 @@
+---
+description: Mina a blocchi la cache Reddit per estrarre le combo competitive
+model: sonnet
+effort: medium
+---
+
 Mina i post Reddit raccolti (`data/reddit-cache.json`) **a blocchi**, in modo idempotente, per
 estrarre le combo competitive senza skimmare. Risolve il limite per cui la cache è troppo grande
 (migliaia di righe) per un singolo Read: `/update-combos` da solo legge le prime ~2000 righe e

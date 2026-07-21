@@ -212,9 +212,23 @@ dedicato** `.playwright-wbo` (vedi sotto) e può chiedere il captcha Cloudflare.
 **08:00 — `daily-pipeline.bat`** (task "Beyblade Daily Pipeline", `/it`): `/update-parts` →
 `/judge-youtube` → `/update-combos` → `/mine-reddit`. **Nessuno di questi step apre browser**: lavorano
 sulle cache raccolte mezz'ora prima, di cui il log riporta la data di ultima scrittura.
-`/update-parts` gira a **modello fissato: Sonnet, effort medium** (`--model sonnet --effort medium` nel
-bat + frontmatter `model:`/`effort:` nel comando): è lavoro meccanico (diff revid, estrazione
-strutturata, merge), non serve il modello di punta.
+**Modello fissato per ogni comando della pipeline.** Senza vincolo esplicito ogni run ereditava il
+default di sessione del momento (Opus a effort variabile, a volte Fable): lavoro meccanico pagato come
+lavoro di punta. Il vincolo sta in due posti — flag `--model`/`--effort` in tutti i `.bat` e frontmatter
+`model:`/`effort:` nel `.md` del comando:
+
+> **Gotcha (verificato 21/07/2026)**: il frontmatter vale solo se il comando è invocato **direttamente**
+> (`/update-parts`). Con `-p "Esegui /update-parts"` — la forma usata da tutti i `.bat` — il comando
+> passa dal tool Skill e il frontmatter viene **ignorato**: resta il modello della sessione. Nei `.bat`
+> a decidere sono quindi solo i flag CLI; il frontmatter copre l'uso interattivo.
+
+| Comando | Modello | Effort | Perché |
+|---|---|---|---|
+| `/update-parts` | sonnet | medium | diff revid, estrazione strutturata, merge |
+| `/judge-youtube` | sonnet | medium | classificazione a blocchi (rilevanza + lingua) |
+| `/mine-reddit` | sonnet | medium | estrazione + match nomi parte, merge deterministico a valle |
+| `/update-combos` | sonnet | high | scrive `combos.json` da fonti narrative: estrazione, ma delicata |
+| `/discover-sources` | opus | medium | giudica fonti nuove e **manda una email** in autonomia |
 
 **Perché separati** (21/07/2026): quando la raccolta stava dentro la pipeline, i browser headed
 chiudendosi si portavano dietro il `.bat` — 37 log dal 29/06 con `collect:sources START` e mai `END`,

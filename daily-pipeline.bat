@@ -59,15 +59,15 @@ for %%f in (reddit-cache.json wbo-cache.json metabeys-cache.json arca-cache.json
 )
 
 call :log "--- 2/4 judge-youtube START ---"
-claude --dangerously-skip-permissions -p "Esegui /judge-youtube" >> "%LOG%" 2>&1
+claude --model sonnet --effort medium --dangerously-skip-permissions -p "Esegui /judge-youtube" >> "%LOG%" 2>&1
 call :log "--- 2/4 judge-youtube END exit=!errorlevel! ---"
 
 call :log "--- 3/4 update-combos START ---"
-claude --dangerously-skip-permissions -p "Esegui /update-combos" >> "%LOG%" 2>&1
+claude --model sonnet --effort high --dangerously-skip-permissions -p "Esegui /update-combos" >> "%LOG%" 2>&1
 call :log "--- 3/4 update-combos END exit=!errorlevel! ---"
 
 call :log "--- 4/4 mine-reddit START ---"
-claude --dangerously-skip-permissions -p "Esegui /mine-reddit" >> "%LOG%" 2>&1
+claude --model sonnet --effort medium --dangerously-skip-permissions -p "Esegui /mine-reddit" >> "%LOG%" 2>&1
 call :log "--- 4/4 mine-reddit END exit=!errorlevel! ---"
 
 call :log "=== PIPELINE END ==="
