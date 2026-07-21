@@ -29,7 +29,13 @@ const ROOT = join(import.meta.dirname, '..');
 const DATA = join(ROOT, 'data');
 const cachePath = join(DATA, 'wbo-cache.json');
 const histPath = join(DATA, 'scan-history.json');
-const USER_DIR = 'C:/Users/cinqu/.playwright-beyblade';
+// Profilo DEDICATO, non condiviso con scrape-reddit/scrape-arca (che usano
+// .playwright-beyblade). Quando Reddit va in ETIMEDOUT lascia Chrome aggrappato al
+// profilo, e qui launchPersistentContext falliva con "Target page, context or browser
+// has been closed" — trascinandosi dietro il .bat chiamante. Stesso schema di
+// fetch-bbx-weekly.ts (.playwright-bbx), l'unico fetcher che non ha mai fallito.
+// Qui serve solo a conservare i cookie Cloudflare: nessun login da condividere.
+const USER_DIR = 'C:/Users/cinqu/.playwright-wbo';
 
 interface ThreadCfg { key: string; tid: number; base: string; }
 // Thread attivi. Il canonico copre TUTTI gli eventi WBO BBX (1°/2°/3° posto). Candidati da valutare nel
