@@ -1,3 +1,9 @@
+---
+description: Aggiornamento giornaliero del database parti Beyblade X (diff per revid)
+model: sonnet
+effort: medium
+---
+
 Aggiornamento giornaliero del database parti Beyblade X da Beyblade Fandom Wiki. Rileva SOLO le
 modifiche (diff per revid), aggiorna `data/parts-master.json`, rigenera `data/parts.json` con
 `npm run build:parts`. Eseguito da Claude (la lettura/interpretazione delle pagine e il match dei nomi

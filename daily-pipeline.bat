@@ -37,7 +37,10 @@ set WBO_HEADED=1
 call :log "=== PIPELINE START ==="
 
 call :log "--- 1/4 update-parts START ---"
-claude --dangerously-skip-permissions -p "Esegui /update-parts" >> "%LOG%" 2>&1
+REM Modello fissato a Sonnet/effort medium: e' un lavoro meccanico e ripetitivo (diff revid, estrazione
+REM strutturata, merge), non serve il modello di punta. I flag CLI rendono la scelta deterministica anche
+REM se cambia il modello di default della sessione; il frontmatter del comando dice la stessa cosa.
+claude --model sonnet --effort medium --dangerously-skip-permissions -p "Esegui /update-parts" >> "%LOG%" 2>&1
 call :log "--- 1/4 update-parts END exit=!errorlevel! ---"
 
 REM La raccolta fonti NON sta piu' qui: e' il task "Beyblade Collect Sources" delle

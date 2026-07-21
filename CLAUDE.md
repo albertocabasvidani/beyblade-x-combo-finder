@@ -212,6 +212,9 @@ dedicato** `.playwright-wbo` (vedi sotto) e può chiedere il captcha Cloudflare.
 **08:00 — `daily-pipeline.bat`** (task "Beyblade Daily Pipeline", `/it`): `/update-parts` →
 `/judge-youtube` → `/update-combos` → `/mine-reddit`. **Nessuno di questi step apre browser**: lavorano
 sulle cache raccolte mezz'ora prima, di cui il log riporta la data di ultima scrittura.
+`/update-parts` gira a **modello fissato: Sonnet, effort medium** (`--model sonnet --effort medium` nel
+bat + frontmatter `model:`/`effort:` nel comando): è lavoro meccanico (diff revid, estrazione
+strutturata, merge), non serve il modello di punta.
 
 **Perché separati** (21/07/2026): quando la raccolta stava dentro la pipeline, i browser headed
 chiudendosi si portavano dietro il `.bat` — 37 log dal 29/06 con `collect:sources START` e mai `END`,
