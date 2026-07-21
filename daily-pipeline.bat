@@ -36,25 +36,36 @@ set WBO_HEADED=1
 
 call :log "=== PIPELINE START ==="
 
-call :log "--- 1/5 update-parts START ---"
+call :log "--- 1/4 update-parts START ---"
 claude --dangerously-skip-permissions -p "Esegui /update-parts" >> "%LOG%" 2>&1
-call :log "--- 1/5 update-parts END exit=!errorlevel! ---"
+call :log "--- 1/4 update-parts END exit=!errorlevel! ---"
 
-call :log "--- 2/5 collect:sources START ---"
-call npm run collect:sources >> "%LOG%" 2>&1
-call :log "--- 2/5 collect:sources END exit=!errorlevel! ---"
+REM La raccolta fonti NON sta piu' qui: e' il task "Beyblade Collect Sources" delle
+REM 07:30 (collect-sources-task.bat). Motivo: i browser headed di collect:sources,
+REM chiudendosi male, si portavano dietro questo bat e gli step sotto non partivano
+REM MAI (37 log dal 29/06/2026 con "collect:sources START" e nessun "END").
+REM Separandola, un browser che muore ferma al massimo la raccolta: qui si elaborano
+REM comunque le cache presenti. Freschezza: 30 minuti prima, stessa mattina.
+call :log "--- cache disponibili (raccolte dal task delle 07:30) ---"
+for %%f in (reddit-cache.json wbo-cache.json metabeys-cache.json arca-cache.json youtube-cache.json) do (
+  if exist "data\%%f" (
+    for %%d in ("data\%%f") do call :log "    %%f  %%~td"
+  ) else (
+    call :log "    %%f  ASSENTE"
+  )
+)
 
-call :log "--- 3/5 judge-youtube START ---"
+call :log "--- 2/4 judge-youtube START ---"
 claude --dangerously-skip-permissions -p "Esegui /judge-youtube" >> "%LOG%" 2>&1
-call :log "--- 3/5 judge-youtube END exit=!errorlevel! ---"
+call :log "--- 2/4 judge-youtube END exit=!errorlevel! ---"
 
-call :log "--- 4/5 update-combos START ---"
+call :log "--- 3/4 update-combos START ---"
 claude --dangerously-skip-permissions -p "Esegui /update-combos" >> "%LOG%" 2>&1
-call :log "--- 4/5 update-combos END exit=!errorlevel! ---"
+call :log "--- 3/4 update-combos END exit=!errorlevel! ---"
 
-call :log "--- 5/5 mine-reddit START ---"
+call :log "--- 4/4 mine-reddit START ---"
 claude --dangerously-skip-permissions -p "Esegui /mine-reddit" >> "%LOG%" 2>&1
-call :log "--- 5/5 mine-reddit END exit=!errorlevel! ---"
+call :log "--- 4/4 mine-reddit END exit=!errorlevel! ---"
 
 call :log "=== PIPELINE END ==="
 endlocal

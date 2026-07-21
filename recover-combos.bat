@@ -27,10 +27,11 @@ git log --since="%TODAY% 00:00" --pretty=format:%%s > "%CHECK%" 2>nul
 
 findstr /c:"update combos database" "%CHECK%" >nul
 if errorlevel 1 (
-  call :log "update-combos NON committato oggi -> recupero (collect + judge + update-combos)"
-  call :log "--- collect:sources START ---"
-  call npm run collect:sources >> "%LOG%" 2>&1
-  call :log "--- collect:sources END exit=!errorlevel! ---"
+  call :log "update-combos NON committato oggi -> recupero (judge + update-combos)"
+  REM La raccolta NON viene rifatta qui: e' il task "Beyblade Collect Sources" delle
+  REM 07:30 a farla, e i suoi browser headed uccidevano questo bat prima di arrivare
+  REM a /update-combos — cioe' proprio il recupero che doveva garantire. Si elabora
+  REM la cache gia' presente: se il task del mattino e' andato, e' fresca di poche ore.
   call :log "--- judge-youtube START ---"
   claude --dangerously-skip-permissions -p "Esegui /judge-youtube" >> "%LOG%" 2>&1
   call :log "--- judge-youtube END exit=!errorlevel! ---"
