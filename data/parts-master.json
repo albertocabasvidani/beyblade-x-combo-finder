@@ -1,5 +1,5 @@
 {
-  "version": "2026-07-21",
+  "version": "2026-07-22",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -1013,7 +1013,8 @@
       ],
       "firstReleaseSet": "UX-12",
       "products": [
-        "UX-12"
+        "UX-12",
+        "BX-50"
       ],
       "source": {
         "page": "Random Booster Vol. 5",
@@ -1021,7 +1022,7 @@
         "revid": 636787
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-22",
       "stats": {
         "atk": 5,
         "def": 40,
@@ -1606,7 +1607,8 @@
       ],
       "firstReleaseSet": "UX-11",
       "products": [
-        "UX-11"
+        "UX-11",
+        "BX-50"
       ],
       "source": {
         "page": "ImpactDrake 9-60LR",
@@ -1614,7 +1616,7 @@
         "revid": 643464
       },
       "status": "verified",
-      "lastVerified": "2026-07-13",
+      "lastVerified": "2026-07-22",
       "stats": {
         "atk": 75,
         "def": 25,
@@ -2418,15 +2420,16 @@
         }
       ],
       "products": [
-        "UX-00"
+        "UX-00",
+        "G2762"
       ],
       "firstReleaseSet": "UX-00",
       "source": {
         "page": "OrochiCluster 6-60LF",
         "url": "https://beyblade.fandom.com/wiki/OrochiCluster_6-60LF",
-        "revid": 644338
+        "revid": 644580
       },
-      "lastVerified": "2026-07-19",
+      "lastVerified": "2026-07-22",
       "status": "verified",
       "type": "attack"
     },
@@ -2972,8 +2975,8 @@
         "url": "https://beyblade.fandom.com/wiki/Ratchet-Integrated_Blade_-_Seize_Jaguar",
         "revid": 644492
       },
-      "lastVerified": "2026-07-21",
-      "status": "unverified",
+      "lastVerified": "2026-07-22",
+      "status": "verified",
       "type": "defense"
     },
     {
@@ -4520,7 +4523,8 @@
         }
       ],
       "products": [
-        "CX-08"
+        "CX-08",
+        "BX-50"
       ],
       "firstReleaseSet": "Random Booster Vol. 7",
       "source": {
@@ -4528,7 +4532,7 @@
         "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._7",
         "revid": 636788
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-22",
       "status": "verified"
     },
     {
@@ -5190,7 +5194,7 @@
         "url": "https://beyblade.fandom.com/wiki/UnicornDelta_PO3-60GU",
         "revid": 644533
       },
-      "lastVerified": "2026-07-21",
+      "lastVerified": "2026-07-22",
       "status": "verified"
     },
     {
@@ -5324,9 +5328,10 @@
         "revid": 643064
       },
       "status": "verified",
-      "lastVerified": "2026-07-09",
+      "lastVerified": "2026-07-22",
       "products": [
-        "CX-10"
+        "CX-10",
+        "BX-50"
       ],
       "firstReleaseSet": "CX-10"
     }
@@ -5640,7 +5645,7 @@
         "url": "https://beyblade.fandom.com/wiki/UnicornDelta_PO3-60GU",
         "revid": 644533
       },
-      "lastVerified": "2026-07-21",
+      "lastVerified": "2026-07-22",
       "status": "verified"
     },
     {
@@ -5739,7 +5744,8 @@
         }
       ],
       "products": [
-        "CX-08"
+        "CX-08",
+        "BX-50"
       ],
       "firstReleaseSet": "Random Booster Vol. 7",
       "source": {
@@ -5747,7 +5753,7 @@
         "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._7",
         "revid": 636788
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-22",
       "status": "verified",
       "stats": {
         "atk": 5,
@@ -6030,9 +6036,10 @@
         "revid": 641562
       },
       "status": "verified",
-      "lastVerified": "2026-06-20",
+      "lastVerified": "2026-07-22",
       "products": [
-        "CX-05"
+        "CX-05",
+        "BX-50"
       ],
       "firstReleaseSet": "Random Booster Vol. 6",
       "stats": {
@@ -6221,12 +6228,13 @@
         "revid": 642257
       },
       "status": "verified",
-      "lastVerified": "2026-06-29",
+      "lastVerified": "2026-07-22",
       "products": [
         "CX-03",
         "CX-00",
         "G1684",
-        "G1680"
+        "G1680",
+        "BX-50"
       ],
       "firstReleaseSet": "PerseusDark B6-80W"
     },
@@ -6295,9 +6303,10 @@
         "revid": 642334
       },
       "status": "verified",
-      "lastVerified": "2026-06-30",
+      "lastVerified": "2026-07-22",
       "products": [
-        "CX-09"
+        "CX-09",
+        "BX-50"
       ],
       "firstReleaseSet": "SolEclipse D5-70TK"
     },
@@ -6590,7 +6599,7 @@
         "url": "https://beyblade.fandom.com/wiki/UnicornDelta_PO3-60GU",
         "revid": 644533
       },
-      "lastVerified": "2026-07-21",
+      "lastVerified": "2026-07-22",
       "status": "verified",
       "shortName": "O"
     },
@@ -7035,7 +7044,7 @@
         "url": "https://beyblade.fandom.com/wiki/Over_Blade_-_Peak",
         "revid": 644449
       },
-      "lastVerified": "2026-07-20",
+      "lastVerified": "2026-07-22",
       "status": "verified"
     }
   ],
@@ -7135,10 +7144,11 @@
         "revid": 636787
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-22",
       "products": [
         "UX-12",
-        "CX-06"
+        "CX-06",
+        "BX-50"
       ],
       "firstReleaseSet": "Random Booster Vol. 5",
       "stats": {
@@ -7461,7 +7471,7 @@
         "revid": 644452
       },
       "status": "verified",
-      "lastVerified": "2026-07-20",
+      "lastVerified": "2026-07-22",
       "products": [
         "BX-01",
         "G1692",
@@ -8054,11 +8064,12 @@
         "revid": 644390
       },
       "status": "verified",
-      "lastVerified": "2026-07-19",
+      "lastVerified": "2026-07-22",
       "products": [
         "CX-01",
         "UX-00",
-        "G1677"
+        "G1677",
+        "G2762"
       ],
       "firstReleaseSet": "DranBrave S6-60V",
       "stats": {
@@ -8173,10 +8184,11 @@
         "revid": 641582
       },
       "status": "verified",
-      "lastVerified": "2026-06-20",
+      "lastVerified": "2026-07-22",
       "products": [
         "UX-18",
-        "G2750"
+        "G2750",
+        "BX-50"
       ],
       "firstReleaseSet": "Random Booster Vol. 8",
       "stats": {
@@ -8459,11 +8471,12 @@
         "revid": 638061
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-22",
       "products": [
         "UX-16",
         "CX-17",
-        "G4567"
+        "G4567",
+        "BX-50"
       ],
       "firstReleaseSet": "Random Booster ClockMirage Select",
       "stats": {
@@ -8584,7 +8597,8 @@
       ],
       "products": [
         "BX-44",
-        "CX-11"
+        "CX-11",
+        "BX-50"
       ],
       "firstReleaseSet": "BX-44",
       "source": {
@@ -8592,7 +8606,7 @@
         "url": "https://beyblade.fandom.com/wiki/TriceraPress_M-85BS",
         "revid": 643457
       },
-      "lastVerified": "2026-07-13",
+      "lastVerified": "2026-07-22",
       "status": "verified",
       "stats": {
         "atk": 8,
@@ -9033,12 +9047,13 @@
         "revid": 640865
       },
       "status": "verified",
-      "lastVerified": "2026-06-21",
+      "lastVerified": "2026-07-22",
       "products": [
         "UX-08",
         "CX-11",
         "G3497",
-        "G3028"
+        "G3028",
+        "BX-50"
       ],
       "firstReleaseSet": "UX-08",
       "shortName": "FB",
@@ -9365,7 +9380,7 @@
         "url": "https://beyblade.fandom.com/wiki/UnicornDelta_PO3-60GU",
         "revid": 644533
       },
-      "lastVerified": "2026-07-21",
+      "lastVerified": "2026-07-22",
       "status": "verified",
       "type": "balance",
       "shortName": "GU",
@@ -9491,7 +9506,7 @@
         "revid": 644446
       },
       "status": "verified",
-      "lastVerified": "2026-07-20",
+      "lastVerified": "2026-07-22",
       "products": [
         "BX-13",
         "G1694",
@@ -9709,9 +9724,10 @@
         "revid": 634335
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-22",
       "products": [
-        "UX-15"
+        "UX-15",
+        "BX-50"
       ],
       "firstReleaseSet": "SharkScale Deck Set",
       "shortName": "L",
@@ -9754,13 +9770,14 @@
         "revid": 643858
       },
       "status": "verified",
-      "lastVerified": "2026-07-16",
+      "lastVerified": "2026-07-22",
       "products": [
         "BX-14",
         "G1695",
         "UX-05",
         "CX-05",
-        "UX-00"
+        "UX-00",
+        "G2762"
       ],
       "firstReleaseSet": "BX-14",
       "shortName": "LF",
@@ -10487,10 +10504,11 @@
         "revid": 639774
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-22",
       "products": [
         "BX-38",
-        "UX-18"
+        "UX-18",
+        "BX-50"
       ],
       "firstReleaseSet": "BX-38",
       "shortName": "TP",
@@ -10736,7 +10754,8 @@
         }
       ],
       "products": [
-        "CX-08"
+        "CX-08",
+        "BX-50"
       ],
       "firstReleaseSet": "Random Booster Vol. 7",
       "source": {
@@ -10744,7 +10763,7 @@
         "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._7",
         "revid": 636788
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-22",
       "status": "verified",
       "type": "stamina",
       "shortName": "WB",
