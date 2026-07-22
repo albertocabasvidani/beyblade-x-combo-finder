@@ -14135,6 +14135,27 @@
     }
   },
   "scannedRedditPosts": {
+    "1v35wa2": {
+      "title": "Gingka vs Kyoya in the world tournament was absolute BS",
+      "subreddit": "r/Beyblade",
+      "scannedDate": "2026-07-22",
+      "combosFound": 0,
+      "notes": "Discussione anime Metal Fight, off-topic"
+    },
+    "1v2j4rn": {
+      "title": "Rago Vs Tyson Granger",
+      "subreddit": "r/Beyblade",
+      "scannedDate": "2026-07-22",
+      "combosFound": 0,
+      "notes": "Power-scaling anime, off-topic"
+    },
+    "1v2y2fi": {
+      "title": "Which deck should I use for a tournament",
+      "subreddit": "r/Beyblade",
+      "scannedDate": "2026-07-22",
+      "combosFound": 4,
+      "notes": "Commenti: bullet-griffon-hexa, cobalt-dragoon-9-60-level, silver-wolf-9-70-free-ball, hover-wyvern-1-60-rush (gia in DB, mention aggiunta)"
+    },
     "1p2lbi3": {
       "title": "PXD November 2025 META tier list",
       "subreddit": "r/Beyblade",
@@ -19695,34 +19716,39 @@
       "contentHash": "jacobpomegranate-rank-1-california"
     },
     "https://sbbl.es/beyblade-stats": {
-      "lastScannedDate": "2026-07-18",
-      "contentHash": "sbbl-winrate-leaderboard-2026-07-18",
-      "notes": "Win-rate leaderboard ES via WebFetch. Ri-controllato 2026-07-18: top 10 tutte già nel DB (incl. Meteor Dragoon 7-60 Level e Pegasus Blast Wheel 9-60 Free Ball); 8 mention SBBL fresche mergiate via tmp/web-merge.ts (dedup source|kind|url). Riassunto tool non verificabile alla lettera."
+      "lastScannedDate": "2026-07-22",
+      "contentHash": "sbbl-winrate-leaderboard-2026-07-22",
+      "notes": "Win-rate leaderboard ES via WebFetch. Ri-controllato 2026-07-22: top combo (Wizard Rod 9-60 Low Orb, Pegasus Blast Wheel 9-60 Free Ball, Silver Wolf 9-70/9-60 Free Ball, Cobalt Dragoon 3-60/5-60 Elevate, Aero Pegasus 1-60 Point, Wizard Rod 1-60 Hexa, Hells Scythe 3-60 Free Ball, Phoenix Wing 3-60 Rush) già tutte nel DB, solo win-rate aggiornati (stat live, non nuove combo)."
+    },
+    "https://sbbl.es/resumen-semanal": {
+      "lastScannedDate": "2026-07-22",
+      "contentHash": "sbbl-resumen-semanal-2026-07-22",
+      "notes": "Solo calendario/stato tornei SBBL (Gran Nacional, Quedada, Copa chill), nessuna combo con parti. NO COMBO LIST."
     },
     "https://okuyama3093.com/beyblade-x-matome/": {
-      "lastScannedDate": "2026-07-18",
+      "lastScannedDate": "2026-07-22",
       "contentHash": "okuyama-matome-index-hub",
-      "notes": "Pagina indice/hub (まとめ): nessuna combo con parti sulla pagina stessa, solo link ad articoli per-parte. NO COMBO LIST. Ri-verificato 2026-07-18: invariata."
+      "notes": "Pagina indice/hub (まとめ): nessuna combo con parti sulla pagina stessa, solo link ad articoli per-parte. NO COMBO LIST. Ri-verificato 2026-07-22: invariata."
     },
     "https://www.probladers.it/ranking/": {
-      "lastScannedDate": "2026-07-18",
+      "lastScannedDate": "2026-07-22",
       "contentHash": "probladers-ranking-players-only",
-      "notes": "Ranking giocatori (punti + n° tornei, agg. 06/07/2026), nessuna parte combo. NO COMBO LIST. Ri-verificato 2026-07-18: invariata."
+      "notes": "Ranking giocatori, nessuna parte combo. NO COMBO LIST. Ri-verificato 2026-07-22: invariata."
     },
     "https://polishbladers.pl/turnieje": {
-      "lastScannedDate": "2026-07-18",
+      "lastScannedDate": "2026-07-22",
       "contentHash": "polishbladers-schedule-rules",
-      "notes": "Calendario tornei (feb-ago 2026) + regolamento, non archivio risultati. NO COMBO LIST. Ri-verificato 2026-07-18: invariata."
+      "notes": "Calendario tornei (feb-ago 2026) + regolamento, non archivio risultati. NO COMBO LIST. Ri-verificato 2026-07-22: invariata. Nota: esiste una sezione 'Zwycięzcy' (Winners) linkata in navigazione, non ancora in sources.json — candidata per /discover-sources."
     },
     "https://note.com/kamen_a": {
-      "lastScannedDate": "2026-07-18",
-      "contentHash": "kamen-a-report-2026-06-28-07-11",
-      "notes": "Nuovo WBO Prize Score Report bisettimanale (28/06-11/07) + report mensile giugno. Segnale per-parte aggregato: MAI promosso a placements (duplicherebbe WBO)."
+      "lastScannedDate": "2026-07-22",
+      "contentHash": "kamen-a-report-2026-07-12-07-18",
+      "notes": "Nuovo report bisettimanale pubblicato 3gg fa (12/07-18/07), confermato dal profilo, ma il link diretto all'articolo non è estraibile via WebFetch (note.com è una SPA, gli href degli articoli risolvono alla root del profilo). Contenuto non recuperato: nessun dato inventato. Da ri-tentare in un run futuro o valutare fetch alternativo."
     },
     "https://note.com/bey_bee": {
-      "lastScannedDate": "2026-07-18",
-      "contentHash": "bey-bee-news-2026-07-18",
-      "notes": "Solo news prodotti (collab Ultraman, UX-00 Samurai Saber Samurai Blue, TT Mall lottery, CASUAL BATTLE DAY DMM). Nessuna tier list/combo nuova."
+      "lastScannedDate": "2026-07-22",
+      "contentHash": "bey-bee-news-2026-07-22",
+      "notes": "Solo news prodotti (collab Ultraman, UX-00 Samurai Saber Samurai Blue, TT Mall lottery, torneo aziendale 11/08, DrakeBrave metal coat). Nessuna tier list/combo nuova."
     }
   },
   "scannedEvents": {
