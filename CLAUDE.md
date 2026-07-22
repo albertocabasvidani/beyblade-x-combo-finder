@@ -244,17 +244,41 @@ I transcript YouTube girano a parte ogni 5 min (`--batch 1`, rate-limit): scaric
 Ogni step scrive su `logs/pipeline-YYYY-MM-DD.log` (marker `START`/`END` + exit code): se la sequenza si
 interrompe (PC sospeso, browser headed appeso, processo abortito), l'ultimo marker dice **dove** è morta.
 
+### Perché i log si fermavano a metà (risolto il 22/07/2026)
+
+**I task giravano con una finestra di console visibile e veniva chiusa a mano.** Chiudere la finestra
+manda `CTRL_CLOSE_EVENT` a tutto il gruppo di processi: `cmd.exe` e `claude` morivano insieme, a metà
+del lavoro, senza lasciare alcun errore. Da qui i 24 log dal 29/06 fermi a metà, e gli exit code
+`0xC000013A` (`STATUS_CONTROL_C_EXIT`, la firma di una console chiusa) su `Recover Combos` e
+`BX Deals SEO Monitor`.
+
+La finestra sembrava un residuo da chiudere perché **è vuota**: dalla separazione della raccolta la
+pipeline non apre più browser, e ogni step scrive sul file di log, non a schermo.
+
+Prova che il lavoro era sano e che a morire era l'albero di processi: il 22/07 il batch si è fermato
+alle 08:27:13, ma `claude` ha continuato a lavorare e ha scritto `youtube-cache.json` alle **08:29:09**,
+due minuti dopo, senza mai chiudere il turno.
+
+**Correzione**: i tre task lanciano ora `wscript.exe <wrapper>.vbs`
+(`run-pipeline-hidden.vbs`, `run-collect-hidden.vbs`, `run-recover-hidden.vbs`), che eseguono il `.bat`
+con finestra nascosta (`Run ..., 0, True`). `True` — non `False` come nel wrapper dei transcript — così
+il Task Scheduler aspetta la fine e l'exit code resta significativo. Nascondere la console **non**
+nasconde i browser: quelli di `collect:sources` restano visibili, e servono per il captcha Cloudflare
+di WBO. Se un task va ricreato, l'azione deve puntare al `.vbs`, mai direttamente al `.bat`.
+
+Cause escluse lungo la strada, tutte con prove: `ExecutionTimeLimit` (è `PT72H`), crash di processo
+(nessun evento nel log Applicazione), esaurimento risorse (zero eventi in 30 giorni), sospensione del
+PC, browser headed (il 22/07 è morta su `judge-youtube`, che non ne apre), la forma di invocazione di
+`claude` (`-p "/comando"` con i flag modello e `-p "Esegui /comando"` sopravvivono entrambe) e il
+meccanismo `.bat` + `claude` in sé (tre `claude -p` in sequenza sotto Task Scheduler arrivano in fondo).
+
 **Battito cardiaco** (`scripts/heartbeat.ps1`, dal 22/07/2026): `start /b` lo avvia nella **stessa
 console** del bat, scrive una riga ogni 30s in `logs/heartbeat-YYYY-MM-DD.log` e si chiude quando il bat
-rimuove `tmp/pipeline-alive.flag`. Serve a separare due cause che l'ultimo marker da solo non distingue:
-se il battito **si ferma nello stesso istante** dell'ultimo marker è stata uccisa l'intera console
-(evento CTRL+C al gruppo di processi, taskkill sull'albero, chiusura della finestra); se **prosegue**,
-la console era viva ed è uscito solo `cmd.exe`. Diagnostica pura: non cambia il comportamento della
-pipeline. Cause già escluse con prove: `ExecutionTimeLimit` (è `PT72H`), crash di processo (nessun
-evento nel log Applicazione), esaurimento risorse (zero eventi `Resource-Exhaustion-Detector` in 30
-giorni), sospensione del PC, browser headed (il 22/07 è morta su `judge-youtube`, che non apre browser)
-e il meccanismo `.bat` + `claude` in sé (tre `claude -p` in sequenza sotto Task Scheduler con la stessa
-configurazione della pipeline arrivano in fondo).
+rimuove `tmp/pipeline-alive.flag`. Diagnostica pura, non cambia il comportamento della pipeline. Se il
+battito **si ferma nello stesso istante** dell'ultimo marker è stata uccisa l'intera console; se
+**prosegue**, la console era viva ed è uscito solo `cmd.exe`. Resta in piedi come rete di controllo: se
+i log tornassero a fermarsi a metà nonostante la finestra nascosta, dice subito di quale delle due si
+tratta.
 La pipeline è interattiva (`/it`) e dura ~1h: se il PC viene sospeso/spento a metà, gli step combo che
 committano non completano e `combos.json` resta indietro — per questo c'è il task di recupero (sotto).
 `logs/` è gitignorato. All'avvio il bat pulisce i lock del profilo `.playwright-beyblade`.
@@ -290,11 +314,11 @@ headless), `update-combos.bat` (collect+analyze), `dev-server.bat` (Astro).
 Registrazione task (eseguire una volta; il task pipeline ha `/it` = gira solo se l'utente è loggato,
 necessario per i browser headed). Path con spazi quotati dentro `/tr`:
 
-    schtasks /create /tn "Beyblade Collect Sources" /tr "\"c:\claude-code\Personale\Beyblade\beyblade combos\collect-sources-task.bat\"" /sc daily /st 07:30 /it /f
-    schtasks /create /tn "Beyblade Daily Pipeline" /tr "\"c:\claude-code\Personale\Beyblade\beyblade combos\daily-pipeline.bat\"" /sc daily /st 08:00 /it /f
+    schtasks /create /tn "Beyblade Collect Sources" /tr "wscript.exe \"c:\claude-code\Personale\Beyblade\beyblade combos\run-collect-hidden.vbs\"" /sc daily /st 07:30 /it /f
+    schtasks /create /tn "Beyblade Daily Pipeline" /tr "wscript.exe \"c:\claude-code\Personale\Beyblade\beyblade combos\run-pipeline-hidden.vbs\"" /sc daily /st 08:00 /it /f
     schtasks /create /tn "Beyblade Transcripts" /tr "wscript.exe \"c:\claude-code\Personale\Beyblade\beyblade combos\run-transcripts-hidden.vbs\"" /sc minute /mo 5 /f
     schtasks /create /tn "Beyblade Discover Sources" /tr "wscript.exe \"c:\claude-code\Personale\Beyblade\beyblade combos\run-discover-hidden.vbs\"" /sc weekly /d MON /st 09:00 /it /f
-    schtasks /create /tn "Beyblade Recover Combos" /tr "\"c:\claude-code\Personale\Beyblade\beyblade combos\recover-combos.bat\"" /sc daily /st 14:00 /it /f
+    schtasks /create /tn "Beyblade Recover Combos" /tr "wscript.exe \"c:\claude-code\Personale\Beyblade\beyblade combos\run-recover-hidden.vbs\"" /sc daily /st 14:00 /it /f
 
 Il task transcripts gira **a finestra nascosta**: l'azione lancia `wscript.exe run-transcripts-hidden.vbs`,
 che a sua volta avvia `fetch-transcripts.bat` con console nascosta (`WScript.Shell.Run ..., 0`). Necessario
