@@ -34,6 +34,16 @@ del /q "C:\Users\cinqu\.playwright-beyblade\SingletonSocket" 2>nul
 set REDDIT_HEADED=1
 set WBO_HEADED=1
 
+REM --- battito cardiaco (diagnostica, vedi scripts\heartbeat.ps1) ---
+REM Gira NELLA STESSA CONSOLE (start /b), quindi ne condivide la sorte. Confrontando
+REM dove si ferma il battito con l'ultimo marker qui sotto si distingue "e' stata uccisa
+REM tutta la console" (battito fermo nello stesso istante) da "e' uscito solo cmd.exe"
+REM (battito che prosegue). Path relativi: start tronca i path assoluti con spazi.
+if not exist tmp mkdir tmp
+set "FLAG=tmp\pipeline-alive.flag"
+echo attiva> "%FLAG%"
+start "" /b powershell -NoProfile -ExecutionPolicy Bypass -File "scripts\heartbeat.ps1" "logs\heartbeat-%TODAY%.log" "%FLAG%"
+
 call :log "=== PIPELINE START ==="
 
 call :log "--- 1/4 update-parts START ---"
@@ -70,6 +80,10 @@ call :log "--- 4/4 mine-reddit START ---"
 claude --model sonnet --effort medium --dangerously-skip-permissions -p "/mine-reddit" >> "%LOG%" 2>&1
 call :log "--- 4/4 mine-reddit END exit=!errorlevel! ---"
 
+REM Rimuovere il flag prima del marker finale: il battito lo vede entro 30s e si chiude
+REM da solo. Se il bat muore prima di qui, il flag resta e il battito prosegue fino a
+REM scadenza — ed e' proprio quel proseguire a dire che la console era ancora viva.
+del /q "%FLAG%" 2>nul
 call :log "=== PIPELINE END ==="
 endlocal
 goto :eof

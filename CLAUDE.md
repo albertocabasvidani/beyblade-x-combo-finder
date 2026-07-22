@@ -243,6 +243,18 @@ I transcript YouTube girano a parte ogni 5 min (`--batch 1`, rate-limit): scaric
 `/update-parts`, `/update-combos` e `/mine-reddit` fanno **commit/push autonomi su master**.
 Ogni step scrive su `logs/pipeline-YYYY-MM-DD.log` (marker `START`/`END` + exit code): se la sequenza si
 interrompe (PC sospeso, browser headed appeso, processo abortito), l'ultimo marker dice **dove** è morta.
+
+**Battito cardiaco** (`scripts/heartbeat.ps1`, dal 22/07/2026): `start /b` lo avvia nella **stessa
+console** del bat, scrive una riga ogni 30s in `logs/heartbeat-YYYY-MM-DD.log` e si chiude quando il bat
+rimuove `tmp/pipeline-alive.flag`. Serve a separare due cause che l'ultimo marker da solo non distingue:
+se il battito **si ferma nello stesso istante** dell'ultimo marker è stata uccisa l'intera console
+(evento CTRL+C al gruppo di processi, taskkill sull'albero, chiusura della finestra); se **prosegue**,
+la console era viva ed è uscito solo `cmd.exe`. Diagnostica pura: non cambia il comportamento della
+pipeline. Cause già escluse con prove: `ExecutionTimeLimit` (è `PT72H`), crash di processo (nessun
+evento nel log Applicazione), esaurimento risorse (zero eventi `Resource-Exhaustion-Detector` in 30
+giorni), sospensione del PC, browser headed (il 22/07 è morta su `judge-youtube`, che non apre browser)
+e il meccanismo `.bat` + `claude` in sé (tre `claude -p` in sequenza sotto Task Scheduler con la stessa
+configurazione della pipeline arrivano in fondo).
 La pipeline è interattiva (`/it`) e dura ~1h: se il PC viene sospeso/spento a metà, gli step combo che
 committano non completano e `combos.json` resta indietro — per questo c'è il task di recupero (sotto).
 `logs/` è gitignorato. All'avvio il bat pulisce i lock del profilo `.playwright-beyblade`.
