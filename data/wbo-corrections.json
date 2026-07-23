@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21",
+  "generatedAt": "2026-07-23",
   "note": "Mappa norm(riga-combo WBO) -> riga corretta. Curata dal subagent typo di /update-combos: per ogni riga refuso del ledger (categoria blade-unresolved/bit-unresolved) propone la riga corretta usando la lista nomi del registro; ogni proposta passa il gate deterministico (la riga corretta DEVE risolvere con parseComboLine) ed e' confermata dal subagent giudice. parse-wbo applica questa mappa PRIMA del parsing, cosi' i refusi risolvono in contesto (data/evento) e spariscono dal ledger. Vuota = nessuna correzione attiva.",
   "corrections": {
     "*hover wyven 9-60kick": "Hover Wyvern 9-60 Kick",
@@ -39,9 +39,9 @@
     "shakescale 4-50lr": "Shark Scale 4-50LR",
     "sillverwolf 3-60wb": "Silver Wolf 3-60WB",
     "sillverwolf 9-60h": "Silver Wolf 9-60H",
-    "sliverwolf 5-60free ball": "SilverWolf 5-60FreeBall",
+    "sliverwolf 5-60free ball": "Silver Wolf 5-60Free Ball",
     "sliverwolf 9-60hexa": "Silver Wolf 9-60Hexa",
-    "sliverwolf 9-70elevate": "Silver Wolf 9-70 Elevate",
+    "sliverwolf 9-70elevate": "Silver Wolf 9-70Elevate",
     "sliverwolf 9-70hexa": "Silver Wolf 9-70Hexa",
     "tyrannobeat 1-80rushl": "TyrannoBeat 1-80Rush",
     "tyranobeat 1-70kick": "TyrannoBeat 1-70Kick",
