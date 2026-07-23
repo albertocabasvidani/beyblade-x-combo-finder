@@ -1,5 +1,5 @@
 {
-  "version": "2026-07-22",
+  "version": "2026-07-23",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -1058,7 +1058,8 @@
         }
       ],
       "products": [
-        "UX-20"
+        "UX-20",
+        "G4568"
       ],
       "firstReleaseSet": "UX-20",
       "source": {
@@ -1066,7 +1067,7 @@
         "url": "https://beyblade.fandom.com/wiki/Ratchet-Integrated_Blade_-_GloryValkyrie",
         "revid": 643857
       },
-      "lastVerified": "2026-07-16",
+      "lastVerified": "2026-07-23",
       "status": "verified",
       "stats": {
         "atk": 85,
@@ -3403,7 +3404,8 @@
       "firstReleaseSet": "G0288",
       "products": [
         "G0288",
-        "BX-00"
+        "BX-00",
+        "G3064"
       ],
       "source": {
         "page": "Spider-Man 3-60F",
@@ -3411,7 +3413,7 @@
         "revid": 603635
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-07-23",
       "stats": {
         "atk": 33,
         "def": 17,
@@ -3745,15 +3747,16 @@
       ],
       "firstReleaseSet": "BX-44",
       "products": [
-        "BX-44"
+        "BX-44",
+        "G2763"
       ],
       "source": {
         "page": "TriceraPress M-85BS",
         "url": "https://beyblade.fandom.com/wiki/TriceraPress_M-85BS",
-        "revid": 643457
+        "revid": 644606
       },
       "status": "verified",
-      "lastVerified": "2026-07-13",
+      "lastVerified": "2026-07-23",
       "stats": {
         "atk": 20,
         "def": 65,
@@ -8064,12 +8067,13 @@
         "revid": 644390
       },
       "status": "verified",
-      "lastVerified": "2026-07-22",
+      "lastVerified": "2026-07-23",
       "products": [
         "CX-01",
         "UX-00",
         "G1677",
-        "G2762"
+        "G2762",
+        "G3064"
       ],
       "firstReleaseSet": "DranBrave S6-60V",
       "stats": {
@@ -8184,11 +8188,12 @@
         "revid": 641582
       },
       "status": "verified",
-      "lastVerified": "2026-07-22",
+      "lastVerified": "2026-07-23",
       "products": [
         "UX-18",
         "G2750",
-        "BX-50"
+        "BX-50",
+        "G2763"
       ],
       "firstReleaseSet": "Random Booster Vol. 8",
       "stats": {
@@ -8604,7 +8609,7 @@
       "source": {
         "page": "TriceraPress M-85BS",
         "url": "https://beyblade.fandom.com/wiki/TriceraPress_M-85BS",
-        "revid": 643457
+        "revid": 644606
       },
       "lastVerified": "2026-07-22",
       "status": "verified",
@@ -8733,7 +8738,7 @@
       "source": {
         "page": "TriceraPress M-85BS",
         "url": "https://beyblade.fandom.com/wiki/TriceraPress_M-85BS",
-        "revid": 643457
+        "revid": 644606
       },
       "status": "verified",
       "lastVerified": "2026-07-13",
@@ -9683,10 +9688,11 @@
         "revid": 641562
       },
       "status": "verified",
-      "lastVerified": "2026-06-20",
+      "lastVerified": "2026-07-23",
       "products": [
         "CX-05",
-        "UX-00"
+        "UX-00",
+        "G2763"
       ],
       "firstReleaseSet": "Random Booster Vol. 6",
       "shortName": "K",
@@ -9767,7 +9773,7 @@
       "source": {
         "page": "Bit - Low Flat",
         "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Low_Flat&format=json&prop=wikitext",
-        "revid": 643858
+        "revid": 644560
       },
       "status": "verified",
       "lastVerified": "2026-07-22",
@@ -10328,13 +10334,14 @@
         "revid": 643572
       },
       "status": "verified",
-      "lastVerified": "2026-07-14",
+      "lastVerified": "2026-07-23",
       "products": [
         "BX-20",
         "G1690",
         "BX-35",
         "BX-46",
-        "UX-10"
+        "UX-10",
+        "G3064"
       ],
       "firstReleaseSet": "BX-20",
       "shortName": "R",

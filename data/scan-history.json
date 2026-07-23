@@ -14122,7 +14122,7 @@
   },
   "scannedSheets": {
     "15wiNF1pTAUzohfu4mTglFeM1rgfL62C5-8nrp5u3CcQ": {
-      "lastScannedDate": "2026-07-22",
+      "lastScannedDate": "2026-07-23",
       "totalRows": 13614,
       "tabCount": 16
     },
@@ -19634,14 +19634,24 @@
   },
   "scannedPages": {
     "https://beyblade.fandom.com/wiki/List_of_Beyblade_X_products_(Takara_Tomy)": {
-      "lastScannedDate": "2026-07-21",
+      "lastScannedDate": "2026-07-23",
       "revid": 643713,
-      "notes": "Lista prodotti TT. Novità valutate al 18/07: BX-50 RB Vol.11 (6 slot, tutte ricombinazioni di parti registrate), UX-21 HellsNether Deck Set (HellsNether Z, SilverWolf 9-70R, WyvernHover 8-80B — tutte parti registrate), CX-00 TigaRage FT3-60T (ricombinazione già valutata). Nessuna parte nuova."
+      "notes": "Lista prodotti TT. Revid invariato dal 21/07. Nessuna parte nuova."
     },
     "https://beyblade.fandom.com/wiki/List_of_Beyblade_X_products_(Hasbro)": {
-      "lastScannedDate": "2026-07-22",
-      "revid": 644569,
-      "notes": "Lista prodotti Hasbro. Novità al 22/07: G2762 Coil Orochi and Pearl Tiger Dual Pack (= OrochiCluster 6-60LF, parti già registrate, G2762 aggiunto ai products di blade/ratchet/bit). Nessun altro candidato."
+      "lastScannedDate": "2026-07-23",
+      "revid": 644615,
+      "notes": "Lista prodotti Hasbro. Novità al 23/07: G2763 Brace Triceratops and Dagger Dran Dual Pack (= TriceraPress M-85BS + DranDagger 7-55G/Kick, tutte parti già registrate: G2763 aggiunto a tricera-press/7-55/kick — nota: la pagina TriceraPress M-85BS riporta erroneamente G2762, già assegnato a OrochiCluster, scartato in favore del ProductCode G2763 dell'infobox del Dual Pack e della pagina Dagger Dran 7-55K); G3064 Spider-Man and Hulk Multipack Set (= Spider-Man 6-60R + Hulk 3-85N, tutte parti già registrate: G3064 aggiunto a spider-man/6-60/rush; blade hulk aveva già G3064 pre-registrato come unverified, pagina wiki ancora {{Provisional}}, status invariato). G4568 Glory Valkerion LF aggiunto ai products di glory-valkyrie (rilevato da Bit - Low Flat)."
+    },
+    "https://beyblade.fandom.com/wiki/TriceraPress_M-85BS": {
+      "lastScannedDate": "2026-07-23",
+      "revid": 644606,
+      "notes": "Revid cambiato (643457→644606): aggiunta menzione G2763 Brace Triceratops and Dagger Dran Dual Pack (pagina riporta erroneamente G2762, scartato). Parti già registrate (tricera-press, M-85, Bound Spike), G2763 aggiunto a tricera-press."
+    },
+    "https://beyblade.fandom.com/wiki/Bit_-_Low_Flat": {
+      "lastScannedDate": "2026-07-23",
+      "revid": 644560,
+      "notes": "Revid cambiato (643858→644560): G2762 (già registrato dal 22/07) confermato esplicito nella lista Products; aggiunto ProductCode G4568 a Glory Valkerion LF (glory-valkyrie, già registrata come UX-20). Nessuna parte nuova."
     },
     "https://beyblade.fandom.com/wiki/OrochiCluster_6-60LF": {
       "lastScannedDate": "2026-07-22",
@@ -19649,19 +19659,14 @@
       "notes": "Revid cambiato (644338→644580): aggiunta menzione G2762 Coil Orochi and Pearl Tiger Dual Pack. Parti già registrate (orochi-cluster, ratchet 6-60, bit Low Flat), G2762 aggiunto ai products."
     },
     "https://beyblade.fandom.com/wiki/Random_Booster_Vol._11": {
-      "lastScannedDate": "2026-07-22",
+      "lastScannedDate": "2026-07-18",
       "revid": 643373,
-      "notes": "BX-50, 11/07/2026. 6 slot: HeavensRing 0-80DS e 6-60TP, ImpactDrake 7-55FB, GhostCircle M-85DS, WolfFlame D9-65L, CerberusReaper B0-80WB — tutte parti già registrate (blade/lockChip/mainBlade/assistBlade/ratchet/bit). BX-50 aggiunto ai products di: ghost-circle, impact-drake, wolf, flame, dual, cerberus, reaper, bumper, ratchet 7-55/9-65/M-85/0-80, bit Free Ball/Level/Wall Ball/Trans Point. Nessuna parte nuova."
+      "notes": "BX-50 (11/07/2026). 6 slot: HeavensRing 0-80DS/6-60TP, ImpactDrake 7-55FB, GhostCircle M-85DS, WolfFlame D9-65L, CerberusReaper B0-80WB. Tutte ricombinazioni di parti registrate (assist D=Dual, B=Bumper)."
     },
     "https://beyblade.fandom.com/wiki/HellsNether_Deck_Set": {
       "lastScannedDate": "2026-07-18",
       "revid": 643603,
       "notes": "UX-21 (08/08/2026, Unreleased). Contenuti: HellsNether Z, SilverWolf 9-70R (Metal Coat Violet), WyvernHover 8-80B. Tutte le parti (hellsnether, silver-wolf, 9-70, rush, hover-wyvern, 8-80, ball, zap/Z) già registrate."
-    },
-    "https://beyblade.fandom.com/wiki/Random_Booster_Vol._11": {
-      "lastScannedDate": "2026-07-18",
-      "revid": 643373,
-      "notes": "BX-50 (11/07/2026). 6 slot: HeavensRing 0-80DS/6-60TP, ImpactDrake 7-55FB, GhostCircle M-85DS, WolfFlame D9-65L, CerberusReaper B0-80WB. Tutte ricombinazioni di parti registrate (assist D=Dual, B=Bumper)."
     },
     "https://beybase.com/top-5-best-beyblade-x-combos-up-to-ux-13-bx-39/": {
       "lastScannedDate": "2026-03-04",
@@ -20941,7 +20946,7 @@
     "bbx-winning": {
       "nextPage": 0,
       "done": true,
-      "lastPage": 1
+      "lastPage": 144
     }
   }
 }
