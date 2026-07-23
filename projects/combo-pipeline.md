@@ -1,7 +1,7 @@
 ---
 name: combo-pipeline
 status: active
-updated: 17/06/2026
+updated: 23/07/2026
 health: green
 next-step: "valutare un filtro UI per la coda di combo a evento singolo (3285 attive) + rifinire le CX unresolved via /update-combos"
 blocked-by: null
@@ -23,6 +23,8 @@ tutto in sequenza giornaliera.
 ## Backlog
 
 <!-- Idee, feature, task non avviati. Formato: `- gg/mm/aaaa — testo` -->
+- 23/07/2026 — Il parser MetaBeys non ha un meccanismo di corrections come `wbo-corrections.json`: in questa revisione ho trovato 37 piazzamenti recuperabili persi per refusi puri (es. "Scark Scale"→"Shark Scale", "Areo Pegasus"→"Aero Pegasus", "Hovery Wyvern"/"Hover Wyern"→"Hover Wyvern", "T Rex"/"T-Rex" nickname di Tyranno Beat) su 192 unresolved totali (144 sono dati mancanti alla fonte, non fixabili). Andrebbe replicato lo stesso pattern typo-candidates/typo-apply usato per WBO, applicato a `metabeys-evidence.json`
+- 23/07/2026 — Le overBlade (`data/parts-master.json`) non hanno `shortName`: WBO/YouTube usano spesso codici a 2 lettere per over+assist incollati prima del ratchet (es. "BahamutBlitz BK1-50I", "BRACHIO BLITZ OD 5-60FF") che `cx-resolve.ts` non sa decodificare (gestisce solo nomi pieni incollati tipo "BreakHeavy"). Il pattern "BK" ricorre 53 volte nel solo ledger WBO. Servirebbe assegnare shortName ufficiali alle overBlade e insegnare a `resolveCoda` i codici a 2 lettere — ma senza conoscenza certa della convenzione WBO non è stato tentato (rischio di risolvere combo sbagliate)
 
 ## Known issues
 
