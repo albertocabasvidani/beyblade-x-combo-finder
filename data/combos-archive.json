@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-22T12:14:21.846Z",
+  "lastUpdated": "2026-07-24T07:01:20.732Z",
   "combos": [
     {
       "id": "aero-pegasus-1-80-low-flat",
@@ -1166,6 +1166,49 @@
       },
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-07-18"
+    },
+    {
+      "id": "knight-mail-M-85-flat",
+      "line": "bx",
+      "blade": "knight-mail",
+      "ratchet": "M-85",
+      "bit": "flat",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Knight Mail M-85 Flat",
+      "type": "defense",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — New Realm Games Locals (July 23rd 2025)",
+          "url": "https://www.metabeys.com/events/1753515048947",
+          "weight": 1,
+          "date": "2025-07-23"
+        }
+      ],
+      "dateAdded": "2026-06-24",
+      "dateUpdated": "2026-07-24",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-07-24"
     },
     {
       "id": "knight-shield-7-60-point",
