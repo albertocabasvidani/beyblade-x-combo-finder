@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-24T07:01:20.732Z",
+  "lastUpdated": "2026-07-25T06:49:58.380Z",
   "combos": [
     {
       "id": "aero-pegasus-1-80-low-flat",
@@ -2171,6 +2171,49 @@
       },
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-06-17"
+    },
+    {
+      "id": "tricera-press-3-60-low-rush",
+      "line": "bx",
+      "blade": "tricera-press",
+      "ratchet": "3-60",
+      "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Tricera Press 3-60 Low Rush",
+      "type": "defense",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Jul. 24, 2025  12:40 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-07-19"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-07-25",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-07-25"
     },
     {
       "id": "tricera-press-5-60-rush",

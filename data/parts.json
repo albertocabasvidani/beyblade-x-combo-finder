@@ -6,7 +6,9 @@
       "name": "Aero Pegasus",
       "aliases": [
         "EaroPegasasu",
-        "AeroPegasus"
+        "AeroPegasus",
+        "Areo Pegasus",
+        "Aero Pegaus"
       ],
       "type": "attack",
       "line": "bx",
@@ -550,7 +552,9 @@
       "nameWestern": "Hover Wyvern",
       "aliases": [
         "WaibānHobā",
-        "WyvernHover"
+        "WyvernHover",
+        "Hover Wyern",
+        "Hovery Wyvern"
       ],
       "type": "defense",
       "line": "ux",
@@ -778,7 +782,8 @@
       "name": "Meteor Dragoon",
       "nameWestern": "Meteoroid Dragoon 3-70J",
       "aliases": [
-        "Meteo"
+        "Meteo",
+        "Meteo Dragoon"
       ],
       "type": "attack",
       "line": "bx",
@@ -881,7 +886,8 @@
       "name": "Orochi Cluster",
       "nameWestern": "Coil Orochi",
       "aliases": [
-        "OrochiKurasuta"
+        "OrochiKurasuta",
+        "Orochu Cluster"
       ],
       "type": "attack",
       "line": "ux",
@@ -924,7 +930,8 @@
       "name": "Phoenix Wing",
       "nameWestern": "Soar Phoenix",
       "aliases": [
-        "FenikkusuUingu"
+        "FenikkusuUingu",
+        "Phoeniz Wing"
       ],
       "type": "attack",
       "line": "bx",
@@ -1119,7 +1126,8 @@
       "name": "Shark Scale",
       "nameWestern": "Scale Shark",
       "aliases": [
-        "ShākuSukeiru"
+        "ShākuSukeiru",
+        "Scark Scale"
       ],
       "type": "attack",
       "line": "bx",
@@ -1372,7 +1380,8 @@
       "name": "Tricera Press",
       "nameWestern": "Brace Triceratops",
       "aliases": [
-        "TorikeraPuresu"
+        "TorikeraPuresu",
+        "Tricerapress"
       ],
       "type": "defense",
       "line": "bx",
