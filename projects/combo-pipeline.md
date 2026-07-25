@@ -1,7 +1,7 @@
 ---
 name: combo-pipeline
 status: active
-updated: 23/07/2026
+updated: 25/07/2026
 health: green
 next-step: "valutare un filtro UI per la coda di combo a evento singolo (3285 attive) + rifinire le CX unresolved via /update-combos"
 blocked-by: null
@@ -31,6 +31,7 @@ tutto in sequenza giornaliera.
 <!-- Bug noti, problemi aperti, debiti tecnici. Formato: `- gg/mm/aaaa — testo` -->
 - 16/06/2026 — WBO bloccato da Cloudflare in headless: serve `WBO_HEADED=1` + captcha manuale; fallback su MetaBeys
 - 16/06/2026 — Reddit blocca l'accesso non autenticato: dipende dalla sessione loggata nel profilo `.playwright-beyblade` (`REDDIT_HEADED=1`), fragile
+- 25/07/2026 — `/mine-reddit` non ha (ancora) un passaggio deterministico di dedup id come `scripts/reddit-merge.ts`: creando a mano due nuove combo da un report Reddit ho duplicato l'`id` di due combo già esistenti (`shark-scale-3-60-low-rush`, `meteor-dragoon-9-60-elevate`), non essendomi accorto che esistevano già sotto un nome pieno del bit invece della sigla che avevo ipotizzato. `score:combos` non fa dedup per id: ha ricalcolato entrambe le copie separatamente, portando a 2 score diversi per lo stesso id in `combos.json` finché non ho unito manualmente evidence+mentions e cancellato il duplicato. Prevenzione: prima di creare una combo nuova a mano, cercare sempre `blade+ratchet+bit` (non solo l'id ipotizzato) in `combos.json`
 
 ## In progress
 
@@ -39,6 +40,7 @@ tutto in sequenza giornaliera.
 ## Changelog
 
 <!-- Cose completate, dalla più recente. Formato: `- gg/mm/aaaa — testo` -->
+- 25/07/2026 — `/mine-reddit`: minato il blocco residuo (6 post, ledger a zero). Estratto un tournament-report dettagliato (2° posto G2 Northeast Regional Thailand, 240+ partecipanti): mention aggiunta a `wizard-rod-1-60-hexa` (esistente) e alle nuove `shark-scale-3-60-low-rush`/`meteor-dragoon-9-60-elevate`. `score:combos` + `prune:combos --apply` (1 combo archiviata, `tricera-press-3-60-low-rush`) rieseguiti dopo il fix del duplicato id (v. Known issues)
 - 17/06/2026 — backfill WBO 12 mesi eseguito (headed, Cloudflare): thread `tid=110113` paginato all'indietro fino al cutoff (pagina 48, 2025-05-24), 87 pagine in cache. `?page=N` reale confermato. **Dataset combo da ~23 a ~2027 eventi distinti, 3285 combo attive**; archivio riconciliato a 18. Top CAS coerente col meta reale (Wizard Rod 1-60 Hexa 9.6). `printthread`/altri thread BBX non promossi (vista forum sufficiente, approccio curato)
 - 17/06/2026 — fix WBO date + scoring NaN-safe + fetch più veloce: `parse:wbo` riconosce il timestamp dei post ("Mon. GG, AAAA") e valida la data (scarta non-date di calendario), prima ripiegava quasi sempre su `fetchedAt`; `scoring.ts` `daysBetween` NaN-safe (una data invalida non azzera più lo score); `fetch-wbo` senza attesa fissa di 3s/pagina (controllo Cloudflare immediato, attesa solo se sfidato)
 - 17/06/2026 — scheduling Task Scheduler ATTIVO e verificato: "Beyblade Daily Pipeline" (08:00 giornaliero) Ready, ultimo run 17/06 esito 0. `/update-combos` ora esegue anche `prune:combos --apply`
