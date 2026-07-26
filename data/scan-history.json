@@ -1,5 +1,5 @@
 {
-  "lastFullScan": null,
+  "lastFullScan": "2026-07-26",
   "scannedVideos": {
     "SJDoM_CuSNQ": {
       "title": "Un Beyblade assurdo si divide in 2! ☄️ #unboxing #gameplay #deck",
@@ -14358,7 +14358,8 @@
     "15wiNF1pTAUzohfu4mTglFeM1rgfL62C5-8nrp5u3CcQ": {
       "lastScannedDate": "2026-07-26",
       "totalRows": 13614,
-      "tabCount": 16
+      "tabCount": 16,
+      "notes": "Verificato 26/07: tab Full Thread Data + mensili sono aggregati punti/usage per-parte derivati dallo stesso thread WBO Winning Combinations, senza granularita evento/data/piazzamento. Ridondante con wbo-evidence.json (parse:wbo), che copre lo stesso thread in modo deterministico e granulare (20870 piazzamenti). Nessuna estrazione: rischio doppio conteggio senza id-evento condiviso."
     },
     "1m1dHOabGkGMEODGwPFDx6VFWB3ohAIAcSRTpB7mbFOs": {
       "lastScannedDate": "2026-03-04",
@@ -20055,9 +20056,9 @@
       "contentHash": "jacobpomegranate-rank-1-california"
     },
     "https://sbbl.es/beyblade-stats": {
-      "lastScannedDate": "2026-07-22",
-      "contentHash": "sbbl-winrate-leaderboard-2026-07-22",
-      "notes": "Win-rate leaderboard ES via WebFetch. Ri-controllato 2026-07-22: top combo (Wizard Rod 9-60 Low Orb, Pegasus Blast Wheel 9-60 Free Ball, Silver Wolf 9-70/9-60 Free Ball, Cobalt Dragoon 3-60/5-60 Elevate, Aero Pegasus 1-60 Point, Wizard Rod 1-60 Hexa, Hells Scythe 3-60 Free Ball, Phoenix Wing 3-60 Rush) già tutte nel DB, solo win-rate aggiornati (stat live, non nuove combo)."
+      "lastScannedDate": "2026-07-26",
+      "contentHash": "sbbl-winrate-leaderboard-2026-07-26",
+      "notes": "Ri-controllato 26/07: top 10 (Wizard Rod 9-60 Low Orb, Pegasus Blast 9-60 Free Ball, Silver Wolf 9-70 Free Ball, Cobalt Dragoon 3-60 Elevate, Aero Pegasus 1-60 Point, Wizard Rod 9-60 Free Ball, Wizard Rod 1-60 High Needle, Wizard Rod 1-80 Hexa, Cobalt Dragoon 9-70 Elevate, Meteor Dragoon 7-60 Level) gia tutte nel DB, solo win-rate live aggiornati."
     },
     "https://sbbl.es/resumen-semanal": {
       "lastScannedDate": "2026-07-22",
@@ -20080,9 +20081,9 @@
       "notes": "Calendario tornei (feb-ago 2026) + regolamento, non archivio risultati. NO COMBO LIST. Ri-verificato 2026-07-22: invariata. Nota: esiste una sezione 'Zwycięzcy' (Winners) linkata in navigazione, non ancora in sources.json — candidata per /discover-sources."
     },
     "https://note.com/kamen_a": {
-      "lastScannedDate": "2026-07-24",
-      "contentHash": "kamen-a-report-2026-07-12-07-18",
-      "notes": "Ri-verificato 24/07: stesso report 12/07-18/07 (pubblicato 4gg fa), il successivo (19/07-25/07) non è ancora uscito. Link diretto tuttora non estraibile via WebFetch (SPA). Nessun dato nuovo."
+      "lastScannedDate": "2026-07-26",
+      "contentHash": "kamen-a-report-2026-07-12-07-25",
+      "notes": "Ri-verificato 26/07: nuovo report pubblicato (titolo rilevato via WebSearch, 2026/07/12-07/25, 2 settimane), ma non ancora indicizzato/apribile via WebFetch (pagina profilo SPA, come nei tentativi precedenti). Nessun dato per-parte estratto: resta segnale mention, non promosso a placements."
     },
     "https://note.com/bey_bee": {
       "lastScannedDate": "2026-07-24",
@@ -21698,6 +21699,238 @@
     },
     "177717846": {
       "scannedDate": "2026-07-23",
+      "combosFound": 0
+    },
+    "177799949": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "177800190": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "177800454": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "177802852": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "177804533": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "177805036": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "177807391": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "177808803": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "177813661": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "177813888": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "177815611": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "177816716": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "177817176": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "177817639": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "177819589": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "177820046": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "177823797": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "177824085": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "177827140": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "177867155": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "177894691": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "177898055": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "177898204": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "177898367": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "177899809": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "177900247": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "177904060": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "177904475": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "177905574": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "177906884": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "177907005": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "177907046": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "177907138": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "177910019": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "177910658": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "177910727": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "177910766": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "177912875": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "177913017": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "177914691": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "178011687": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "178012395": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "178012962": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "178013952": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "178015584": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "178016335": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "178017410": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "178020030": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "178020049": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "178020365": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "178020941": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "178021300": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "178021449": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "178021627": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "178022594": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "178022660": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "178023126": {
+      "scannedDate": "2026-07-26",
+      "combosFound": 0
+    },
+    "178023320": {
+      "scannedDate": "2026-07-26",
       "combosFound": 0
     },
     "nebo-x-third-space-5": {
