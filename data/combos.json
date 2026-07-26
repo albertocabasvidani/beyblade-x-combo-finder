@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-26T08:52:58.273Z",
+  "lastUpdated": "2026-07-26T08:58:22.724Z",
   "combos": [
     {
       "id": "wizard-rod-1-60-hexa",
@@ -107312,7 +107312,7 @@
       "score": 6.2,
       "scoreBreakdown": {
         "performance": 0.707,
-        "presence": 0.526,
+        "presence": 0.525,
         "corroboration": 0.6,
         "tournamentEvents": 74,
         "wins": 21,
@@ -112278,7 +112278,7 @@
       "score": 6.08,
       "scoreBreakdown": {
         "performance": 0.771,
-        "presence": 0.325,
+        "presence": 0.324,
         "corroboration": 0.677,
         "tournamentEvents": 77,
         "wins": 20,
@@ -193365,7 +193365,7 @@
       "type": "attack",
       "score": 3.3,
       "scoreBreakdown": {
-        "performance": 0.422,
+        "performance": 0.421,
         "presence": 0,
         "corroboration": 0.821,
         "tournamentEvents": 24,
@@ -206292,208 +206292,6 @@
       }
     },
     {
-      "id": "cobalt-dragoon-1-50-elevate",
-      "line": "bx",
-      "blade": "cobalt-dragoon",
-      "ratchet": "1-50",
-      "bit": "elevate",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "displayName": "Cobalt Dragoon 1-50 Elevate",
-      "type": "attack",
-      "score": 2.95,
-      "scoreBreakdown": {
-        "performance": 0.45,
-        "presence": 0,
-        "corroboration": 0.615,
-        "tournamentEvents": 11,
-        "wins": 5,
-        "topCutAppearances": 11,
-        "lastPlacementDate": "2026-06-24",
-        "stadiums": [
-          "xtreme"
-        ]
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "1 MetaBeys top-cut deck appearance.",
-      "sources": [
-        {
-          "name": "MetaBeys",
-          "url": "https://www.metabeys.com/events/1781128493142",
-          "weight": 1,
-          "date": "2026-05-30"
-        },
-        {
-          "name": "Reddit r/Beyblade",
-          "url": "https://reddit.com/r/Beyblade/comments/1t4g7uz/cobalt_dragoon_150_elevate_is_the_best_antimeta/",
-          "weight": 0.6,
-          "date": "2026-05-05"
-        }
-      ],
-      "amazon": {},
-      "dateAdded": "2026-06-15",
-      "dateUpdated": "2026-07-26",
-      "evidence": {
-        "placements": [
-          {
-            "source": "metabeys",
-            "tier": "structured",
-            "eventId": "1782933769710",
-            "eventName": "Jester's Gallery 6/24",
-            "date": "2026-06-24",
-            "placement": 1,
-            "topCutSize": 3,
-            "players": 13,
-            "deckScore": "B",
-            "lang": "en",
-            "url": "https://www.metabeys.com/events/1782933769710"
-          },
-          {
-            "source": "metabeys",
-            "tier": "structured",
-            "eventId": "1781895956124",
-            "eventName": "LGHS Ranked Season 2 #9",
-            "date": "2026-05-31",
-            "placement": 10,
-            "topCutSize": 16,
-            "players": 53,
-            "deckScore": "C",
-            "lang": "en",
-            "url": "https://www.metabeys.com/events/1781895956124"
-          },
-          {
-            "source": "metabeys",
-            "tier": "structured",
-            "eventId": "1781128493142",
-            "eventName": "Waltz Party I",
-            "date": "2026-05-30",
-            "placement": 3,
-            "topCutSize": 3,
-            "players": 23,
-            "deckScore": "C",
-            "lang": "en",
-            "url": "https://www.metabeys.com/events/1781128493142"
-          },
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-124696",
-            "eventName": "Apr. 06, 2026  8:38 AM",
-            "date": "2026-04-04",
-            "placement": 1,
-            "players": 27,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          },
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-pid-1919452",
-            "eventName": "Apr. 12, 2026  1:45 AM",
-            "date": "2026-04-11",
-            "placement": 3,
-            "players": 31,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          },
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-124317",
-            "eventName": "Apr. 19, 2026  4:38 AM",
-            "date": "2026-04-18",
-            "placement": 1,
-            "players": 25,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          },
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-125223",
-            "eventName": "May. 02, 2026  5:31 PM",
-            "date": "2026-04-30",
-            "placement": 1,
-            "players": 35,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          },
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-125402",
-            "eventName": "May. 04, 2026  7:39 AM",
-            "date": "2026-05-01",
-            "placement": 2,
-            "players": 23,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          },
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-125616",
-            "eventName": "May. 19, 2026  7:25 PM",
-            "date": "2026-05-16",
-            "placement": 3,
-            "players": 29,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          },
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-125778",
-            "eventName": "Jun. 01, 2026  8:56 PM",
-            "date": "2026-05-28",
-            "placement": 3,
-            "players": 40,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          },
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-126442",
-            "eventName": "Delusional",
-            "date": "2026-06-13",
-            "placement": 1,
-            "players": 27,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": [
-          {
-            "source": "reddit-1t4g7uz",
-            "date": "2026-05-05",
-            "kind": "recommendation",
-            "lang": "en",
-            "url": "https://reddit.com/r/Beyblade/comments/1t4g7uz/cobalt_dragoon_150_elevate_is_the_best_antimeta/"
-          },
-          {
-            "source": "reddit-r-beyblade",
-            "date": "2026-05-05",
-            "kind": "recommendation",
-            "lang": "en",
-            "url": "https://reddit.com/r/Beyblade/comments/1t4g7uz/cobalt_dragoon_150_elevate_is_the_best_antimeta/"
-          }
-        ]
-      }
-    },
-    {
       "id": "shark-scale-3-60-wedge",
       "line": "bx",
       "blade": "shark-scale",
@@ -206789,6 +206587,208 @@
             "kind": "recommendation",
             "lang": "en",
             "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cobalt-dragoon-1-50-elevate",
+      "line": "bx",
+      "blade": "cobalt-dragoon",
+      "ratchet": "1-50",
+      "bit": "elevate",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "displayName": "Cobalt Dragoon 1-50 Elevate",
+      "type": "attack",
+      "score": 2.94,
+      "scoreBreakdown": {
+        "performance": 0.45,
+        "presence": 0,
+        "corroboration": 0.615,
+        "tournamentEvents": 11,
+        "wins": 5,
+        "topCutAppearances": 11,
+        "lastPlacementDate": "2026-06-24",
+        "stadiums": [
+          "xtreme"
+        ]
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "1 MetaBeys top-cut deck appearance.",
+      "sources": [
+        {
+          "name": "MetaBeys",
+          "url": "https://www.metabeys.com/events/1781128493142",
+          "weight": 1,
+          "date": "2026-05-30"
+        },
+        {
+          "name": "Reddit r/Beyblade",
+          "url": "https://reddit.com/r/Beyblade/comments/1t4g7uz/cobalt_dragoon_150_elevate_is_the_best_antimeta/",
+          "weight": 0.6,
+          "date": "2026-05-05"
+        }
+      ],
+      "amazon": {},
+      "dateAdded": "2026-06-15",
+      "dateUpdated": "2026-07-26",
+      "evidence": {
+        "placements": [
+          {
+            "source": "metabeys",
+            "tier": "structured",
+            "eventId": "1782933769710",
+            "eventName": "Jester's Gallery 6/24",
+            "date": "2026-06-24",
+            "placement": 1,
+            "topCutSize": 3,
+            "players": 13,
+            "deckScore": "B",
+            "lang": "en",
+            "url": "https://www.metabeys.com/events/1782933769710"
+          },
+          {
+            "source": "metabeys",
+            "tier": "structured",
+            "eventId": "1781895956124",
+            "eventName": "LGHS Ranked Season 2 #9",
+            "date": "2026-05-31",
+            "placement": 10,
+            "topCutSize": 16,
+            "players": 53,
+            "deckScore": "C",
+            "lang": "en",
+            "url": "https://www.metabeys.com/events/1781895956124"
+          },
+          {
+            "source": "metabeys",
+            "tier": "structured",
+            "eventId": "1781128493142",
+            "eventName": "Waltz Party I",
+            "date": "2026-05-30",
+            "placement": 3,
+            "topCutSize": 3,
+            "players": 23,
+            "deckScore": "C",
+            "lang": "en",
+            "url": "https://www.metabeys.com/events/1781128493142"
+          },
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-124696",
+            "eventName": "Apr. 06, 2026  8:38 AM",
+            "date": "2026-04-04",
+            "placement": 1,
+            "players": 27,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          },
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-pid-1919452",
+            "eventName": "Apr. 12, 2026  1:45 AM",
+            "date": "2026-04-11",
+            "placement": 3,
+            "players": 31,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          },
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-124317",
+            "eventName": "Apr. 19, 2026  4:38 AM",
+            "date": "2026-04-18",
+            "placement": 1,
+            "players": 25,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          },
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-125223",
+            "eventName": "May. 02, 2026  5:31 PM",
+            "date": "2026-04-30",
+            "placement": 1,
+            "players": 35,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          },
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-125402",
+            "eventName": "May. 04, 2026  7:39 AM",
+            "date": "2026-05-01",
+            "placement": 2,
+            "players": 23,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          },
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-125616",
+            "eventName": "May. 19, 2026  7:25 PM",
+            "date": "2026-05-16",
+            "placement": 3,
+            "players": 29,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          },
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-125778",
+            "eventName": "Jun. 01, 2026  8:56 PM",
+            "date": "2026-05-28",
+            "placement": 3,
+            "players": 40,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          },
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-126442",
+            "eventName": "Delusional",
+            "date": "2026-06-13",
+            "placement": 1,
+            "players": 27,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "reddit-1t4g7uz",
+            "date": "2026-05-05",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://reddit.com/r/Beyblade/comments/1t4g7uz/cobalt_dragoon_150_elevate_is_the_best_antimeta/"
+          },
+          {
+            "source": "reddit-r-beyblade",
+            "date": "2026-05-05",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://reddit.com/r/Beyblade/comments/1t4g7uz/cobalt_dragoon_150_elevate_is_the_best_antimeta/"
           }
         ]
       }
@@ -267073,7 +267073,7 @@
       "type": "defense",
       "score": 1.52,
       "scoreBreakdown": {
-        "performance": 0.129,
+        "performance": 0.128,
         "presence": 0,
         "corroboration": 0.744,
         "tournamentEvents": 8,
@@ -290285,6 +290285,72 @@
       }
     },
     {
+      "id": "scorpio-spear-7-60-elevate",
+      "line": "bx",
+      "blade": "scorpio-spear",
+      "ratchet": "7-60",
+      "bit": "elevate",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Scorpio Spear 7-60 Elevate",
+      "type": "balance",
+      "score": 1.22,
+      "scoreBreakdown": {
+        "performance": 0.248,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 1,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-07-25",
+        "stadiums": [
+          "xtreme"
+        ]
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — BeyKnights Summer 2026 #10",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-07-25"
+        }
+      ],
+      "dateAdded": "2026-07-26",
+      "dateUpdated": "2026-07-26",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-126973",
+            "eventName": "BeyKnights Summer 2026 #10",
+            "date": "2026-07-25",
+            "placement": 1,
+            "players": 64,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-beyknights-summer-2026-10",
+            "date": "2026-07-25",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      }
+    },
+    {
       "id": "emperor-blast-heavy-1-60-kick",
       "line": "cx",
       "blade": null,
@@ -301547,64 +301613,6 @@
       }
     },
     {
-      "id": "scorpio-spear-7-60-elevate",
-      "line": "bx",
-      "blade": "scorpio-spear",
-      "ratchet": "7-60",
-      "bit": "elevate",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Scorpio Spear 7-60 Elevate",
-      "type": "balance",
-      "score": 1.12,
-      "scoreBreakdown": {
-        "performance": 0.248,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 1,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-07-25",
-        "stadiums": [
-          "xtreme"
-        ]
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — BeyKnights Summer 2026 #10",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-07-25"
-        }
-      ],
-      "dateAdded": "2026-07-26",
-      "dateUpdated": "2026-07-26",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-126973",
-            "eventName": "BeyKnights Summer 2026 #10",
-            "date": "2026-07-25",
-            "placement": 1,
-            "players": 64,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      }
-    },
-    {
       "id": "meteor-dragoon-1-60-kick",
       "line": "bx",
       "blade": "meteor-dragoon",
@@ -302557,6 +302565,72 @@
           {
             "source": "wbo-jan-14-2026-3-45-am",
             "date": "2026-10-01",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      }
+    },
+    {
+      "id": "hover-wyvern-2-70-low-rush",
+      "line": "bx",
+      "blade": "hover-wyvern",
+      "ratchet": "2-70",
+      "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Wyvern Hover 2-70 Low Rush",
+      "type": "defense",
+      "score": 1.11,
+      "scoreBreakdown": {
+        "performance": 0.214,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 1,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-07-19",
+        "stadiums": [
+          "xtreme"
+        ]
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Rocky Mountain Xtreme #11 S2",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-07-19"
+        }
+      ],
+      "dateAdded": "2026-07-26",
+      "dateUpdated": "2026-07-26",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-125940",
+            "eventName": "Rocky Mountain Xtreme #11 S2",
+            "date": "2026-07-19",
+            "placement": 1,
+            "players": 49,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-rocky-mountain-xtreme-11-s2",
+            "date": "2026-07-19",
             "kind": "recommendation",
             "lang": "en",
             "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
@@ -311353,6 +311427,174 @@
       }
     },
     {
+      "id": "emperor-hunt-heavy-4-50-low-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "4-50",
+      "bit": "low-rush",
+      "lockChip": "emperor",
+      "mainBlade": "hunt",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Emperor Hunt H 4-50 Low Rush",
+      "type": "balance",
+      "score": 1.03,
+      "scoreBreakdown": {
+        "performance": 0.191,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 1,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-10-01",
+        "stadiums": [
+          "xtreme"
+        ]
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — View All Faces",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-10-01"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-07-26",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-122611",
+            "eventName": "View All Faces",
+            "date": "2026-10-01",
+            "placement": 1,
+            "players": 32,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-view-all-faces",
+            "date": "2026-10-01",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      }
+    },
+    {
+      "id": "hover-wyvern-1-70-taper",
+      "line": "bx",
+      "blade": "hover-wyvern",
+      "ratchet": "1-70",
+      "bit": "taper",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Hover Wyvern 1-70 Taper",
+      "type": "defense",
+      "score": 1.03,
+      "scoreBreakdown": {
+        "performance": 0.118,
+        "presence": 0,
+        "corroboration": 0.524,
+        "tournamentEvents": 3,
+        "wins": 0,
+        "topCutAppearances": 3,
+        "lastPlacementDate": "2026-07-22",
+        "stadiums": [
+          "xtreme"
+        ]
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Jan. 19, 2026  4:45 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-01-03"
+        },
+        {
+          "name": "WBO — Feb. 16, 2026  10:59 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-15-02"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-07-26",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-122769",
+            "eventName": "Jan. 19, 2026  4:45 AM",
+            "date": "2026-01-03",
+            "placement": 3,
+            "players": 29,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          },
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-123687",
+            "eventName": "Feb. 16, 2026  10:59 PM",
+            "date": "2026-02-16",
+            "placement": 2,
+            "players": 19,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          },
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-pid-1932459",
+            "eventName": "Jul. 23, 2026  7:40 AM",
+            "date": "2026-07-22",
+            "placement": 3,
+            "players": 26,
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-jan-19-2026-4-45-am",
+            "date": "2026-01-03",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          },
+          {
+            "source": "wbo-feb-16-2026-10-59-pm",
+            "date": "2026-15-02",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      }
+    },
+    {
       "id": "wizard-rod-1-70-rubber-accel",
       "line": "bx",
       "blade": "wizard-rod",
@@ -311364,7 +311606,7 @@
       "overBlade": null,
       "displayName": "Wizard Rod 1-70 Rubber Accel",
       "type": "stamina",
-      "score": 1.03,
+      "score": 1.02,
       "scoreBreakdown": {
         "performance": 0.061,
         "presence": 0,
@@ -311540,174 +311782,6 @@
         "mentions": [
           {
             "source": "wbo-feb-18-2026-8-36-am",
-            "date": "2026-15-02",
-            "kind": "recommendation",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ]
-      }
-    },
-    {
-      "id": "emperor-hunt-heavy-4-50-low-rush",
-      "line": "cx",
-      "blade": null,
-      "ratchet": "4-50",
-      "bit": "low-rush",
-      "lockChip": "emperor",
-      "mainBlade": "hunt",
-      "assistBlade": "heavy",
-      "overBlade": null,
-      "displayName": "Emperor Hunt H 4-50 Low Rush",
-      "type": "balance",
-      "score": 1.03,
-      "scoreBreakdown": {
-        "performance": 0.191,
-        "presence": 0,
-        "corroboration": 0.444,
-        "tournamentEvents": 1,
-        "wins": 1,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-10-01",
-        "stadiums": [
-          "xtreme"
-        ]
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — View All Faces",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-10-01"
-        }
-      ],
-      "dateAdded": "2026-06-17",
-      "dateUpdated": "2026-07-26",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-122611",
-            "eventName": "View All Faces",
-            "date": "2026-10-01",
-            "placement": 1,
-            "players": 32,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": [
-          {
-            "source": "wbo-view-all-faces",
-            "date": "2026-10-01",
-            "kind": "recommendation",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ]
-      }
-    },
-    {
-      "id": "hover-wyvern-1-70-taper",
-      "line": "bx",
-      "blade": "hover-wyvern",
-      "ratchet": "1-70",
-      "bit": "taper",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Hover Wyvern 1-70 Taper",
-      "type": "defense",
-      "score": 1.03,
-      "scoreBreakdown": {
-        "performance": 0.118,
-        "presence": 0,
-        "corroboration": 0.524,
-        "tournamentEvents": 3,
-        "wins": 0,
-        "topCutAppearances": 3,
-        "lastPlacementDate": "2026-07-22",
-        "stadiums": [
-          "xtreme"
-        ]
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — Jan. 19, 2026  4:45 AM",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-01-03"
-        },
-        {
-          "name": "WBO — Feb. 16, 2026  10:59 PM",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-15-02"
-        }
-      ],
-      "dateAdded": "2026-06-17",
-      "dateUpdated": "2026-07-26",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-122769",
-            "eventName": "Jan. 19, 2026  4:45 AM",
-            "date": "2026-01-03",
-            "placement": 3,
-            "players": 29,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          },
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-123687",
-            "eventName": "Feb. 16, 2026  10:59 PM",
-            "date": "2026-02-16",
-            "placement": 2,
-            "players": 19,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          },
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-pid-1932459",
-            "eventName": "Jul. 23, 2026  7:40 AM",
-            "date": "2026-07-22",
-            "placement": 3,
-            "players": 26,
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": [
-          {
-            "source": "wbo-jan-19-2026-4-45-am",
-            "date": "2026-01-03",
-            "kind": "recommendation",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          },
-          {
-            "source": "wbo-feb-16-2026-10-59-pm",
             "date": "2026-15-02",
             "kind": "recommendation",
             "lang": "en",
@@ -313545,64 +313619,6 @@
       }
     },
     {
-      "id": "hover-wyvern-2-70-low-rush",
-      "line": "bx",
-      "blade": "hover-wyvern",
-      "ratchet": "2-70",
-      "bit": "low-rush",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Wyvern Hover 2-70 Low Rush",
-      "type": "defense",
-      "score": 1.01,
-      "scoreBreakdown": {
-        "performance": 0.214,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 1,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-07-19",
-        "stadiums": [
-          "xtreme"
-        ]
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — Rocky Mountain Xtreme #11 S2",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-07-19"
-        }
-      ],
-      "dateAdded": "2026-07-26",
-      "dateUpdated": "2026-07-26",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-125940",
-            "eventName": "Rocky Mountain Xtreme #11 S2",
-            "date": "2026-07-19",
-            "placement": 1,
-            "players": 49,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      }
-    },
-    {
       "id": "golem-rock-3-60-under-needle",
       "line": "bx",
       "blade": "golem-rock",
@@ -315236,6 +315252,72 @@
           {
             "source": "wbo-view-all-faces",
             "date": "2026-06-17",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cerberus-outer-whip-wheel-7-80-hexa",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "7-80",
+      "bit": "hexa",
+      "lockChip": "cerberus",
+      "mainBlade": "whip",
+      "assistBlade": "wheel",
+      "overBlade": "outer",
+      "displayName": "Cerberus Whip Outer Wh 7-80 Hexa",
+      "type": "balance",
+      "score": 1,
+      "scoreBreakdown": {
+        "performance": 0.183,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 1,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-07-26",
+        "stadiums": [
+          "xtreme"
+        ]
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — ICT's Monthly Ranked Tournament: July",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-07-26"
+        }
+      ],
+      "dateAdded": "2026-07-26",
+      "dateUpdated": "2026-07-26",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-126965",
+            "eventName": "ICT's Monthly Ranked Tournament: July",
+            "date": "2026-07-26",
+            "placement": 1,
+            "players": 29,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-ict-s-monthly-ranked-tournament-july",
+            "date": "2026-07-26",
             "kind": "recommendation",
             "lang": "en",
             "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
@@ -317832,6 +317914,72 @@
       }
     },
     {
+      "id": "meteor-dragoon-6-70-level",
+      "line": "bx",
+      "blade": "meteor-dragoon",
+      "ratchet": "6-70",
+      "bit": "level",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Meteor Dragoon 6-70 Level",
+      "type": "attack",
+      "score": 0.98,
+      "scoreBreakdown": {
+        "performance": 0.176,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 0,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-07-25",
+        "stadiums": [
+          "xtreme"
+        ]
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — BeyKnights Summer 2026 #10",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-07-25"
+        }
+      ],
+      "dateAdded": "2026-07-26",
+      "dateUpdated": "2026-07-26",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-126973",
+            "eventName": "BeyKnights Summer 2026 #10",
+            "date": "2026-07-25",
+            "placement": 2,
+            "players": 64,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-beyknights-summer-2026-10",
+            "date": "2026-07-25",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      }
+    },
+    {
       "id": "orochi-cluster-1-70-taper",
       "line": "bx",
       "blade": "orochi-cluster",
@@ -319964,72 +320112,6 @@
       }
     },
     {
-      "id": "pegasus-blast-round-9-60-low-rush",
-      "line": "cx",
-      "blade": null,
-      "ratchet": "9-60",
-      "bit": "low-rush",
-      "lockChip": "pegasus",
-      "mainBlade": "blast",
-      "assistBlade": "round",
-      "overBlade": null,
-      "displayName": "Pegasus Blast R 9-60 Low Rush",
-      "type": "balance",
-      "score": 0.96,
-      "scoreBreakdown": {
-        "performance": 0.168,
-        "presence": 0,
-        "corroboration": 0.444,
-        "tournamentEvents": 1,
-        "wins": 1,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-07-17",
-        "stadiums": [
-          "xtreme"
-        ]
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — Jul. 18, 2026  7:24 PM",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-07-17"
-        }
-      ],
-      "dateAdded": "2026-07-21",
-      "dateUpdated": "2026-07-26",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-pid-1931604",
-            "eventName": "Jul. 18, 2026  7:24 PM",
-            "date": "2026-07-17",
-            "placement": 1,
-            "players": 28,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": [
-          {
-            "source": "wbo-jul-18-2026-7-24-pm",
-            "date": "2026-07-17",
-            "kind": "recommendation",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ]
-      }
-    },
-    {
       "id": "pegasus-blast-heavy-9-60-taper",
       "line": "cx",
       "blade": null,
@@ -320439,6 +320521,72 @@
           {
             "source": "wbo-sep-08-2025-3-40-am",
             "date": "2026-06-17",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      }
+    },
+    {
+      "id": "pegasus-blast-round-9-60-low-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "low-rush",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "round",
+      "overBlade": null,
+      "displayName": "Pegasus Blast R 9-60 Low Rush",
+      "type": "balance",
+      "score": 0.95,
+      "scoreBreakdown": {
+        "performance": 0.168,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 1,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-07-17",
+        "stadiums": [
+          "xtreme"
+        ]
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Jul. 18, 2026  7:24 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-07-17"
+        }
+      ],
+      "dateAdded": "2026-07-21",
+      "dateUpdated": "2026-07-26",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-pid-1931604",
+            "eventName": "Jul. 18, 2026  7:24 PM",
+            "date": "2026-07-17",
+            "placement": 1,
+            "players": 28,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-jul-18-2026-7-24-pm",
+            "date": "2026-07-17",
             "kind": "recommendation",
             "lang": "en",
             "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
@@ -328889,26 +329037,26 @@
       }
     },
     {
-      "id": "cerberus-outer-whip-wheel-7-80-hexa",
-      "line": "cx",
-      "blade": null,
-      "ratchet": "7-80",
-      "bit": "hexa",
-      "lockChip": "cerberus",
-      "mainBlade": "whip",
-      "assistBlade": "wheel",
-      "overBlade": "outer",
-      "displayName": "Cerberus Whip Outer Wh 7-80 Hexa",
-      "type": "balance",
+      "id": "golem-rock-7-70-under-needle",
+      "line": "bx",
+      "blade": "golem-rock",
+      "ratchet": "7-70",
+      "bit": "under-needle",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Golem Rock 7-70 Under Needle",
+      "type": "defense",
       "score": 0.9,
       "scoreBreakdown": {
-        "performance": 0.183,
+        "performance": 0.15,
         "presence": 0,
-        "corroboration": 0.333,
+        "corroboration": 0.444,
         "tournamentEvents": 1,
-        "wins": 1,
+        "wins": 0,
         "topCutAppearances": 1,
-        "lastPlacementDate": "2026-07-26",
+        "lastPlacementDate": "2026-07-19",
         "stadiums": [
           "xtreme"
         ]
@@ -328919,10 +329067,10 @@
       "notes": "",
       "sources": [
         {
-          "name": "WBO — ICT's Monthly Ranked Tournament: July",
+          "name": "WBO — Rocky Mountain Xtreme #11 S2",
           "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
           "weight": 0.95,
-          "date": "2026-07-26"
+          "date": "2026-07-19"
         }
       ],
       "dateAdded": "2026-07-26",
@@ -328932,18 +329080,26 @@
           {
             "source": "wbo-winning-combos",
             "tier": "structured",
-            "eventId": "wbo-thread-126965",
-            "eventName": "ICT's Monthly Ranked Tournament: July",
-            "date": "2026-07-26",
-            "placement": 1,
-            "players": 29,
+            "eventId": "wbo-thread-125940",
+            "eventName": "Rocky Mountain Xtreme #11 S2",
+            "date": "2026-07-19",
+            "placement": 2,
+            "players": 49,
             "stadium": "xtreme",
             "lang": "en",
             "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
           }
         ],
         "usage": [],
-        "mentions": []
+        "mentions": [
+          {
+            "source": "wbo-rocky-mountain-xtreme-11-s2",
+            "date": "2026-07-19",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
       }
     },
     {
@@ -332206,64 +332362,6 @@
       }
     },
     {
-      "id": "meteor-dragoon-6-70-level",
-      "line": "bx",
-      "blade": "meteor-dragoon",
-      "ratchet": "6-70",
-      "bit": "level",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Meteor Dragoon 6-70 Level",
-      "type": "attack",
-      "score": 0.88,
-      "scoreBreakdown": {
-        "performance": 0.176,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 0,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-07-25",
-        "stadiums": [
-          "xtreme"
-        ]
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — BeyKnights Summer 2026 #10",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-07-25"
-        }
-      ],
-      "dateAdded": "2026-07-26",
-      "dateUpdated": "2026-07-26",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-126973",
-            "eventName": "BeyKnights Summer 2026 #10",
-            "date": "2026-07-25",
-            "placement": 2,
-            "players": 64,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      }
-    },
-    {
       "id": "wizard-rod-1-50-level",
       "line": "bx",
       "blade": "wizard-rod",
@@ -333340,7 +333438,7 @@
       "type": "attack",
       "score": 0.86,
       "scoreBreakdown": {
-        "performance": 0.093,
+        "performance": 0.092,
         "presence": 0,
         "corroboration": 0.524,
         "tournamentEvents": 2,
@@ -345743,6 +345841,68 @@
       }
     },
     {
+      "id": "valkyrie-fortress-jaggy-9-60-free-ball",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "free-ball",
+      "lockChip": "valkyrie",
+      "mainBlade": "fortress",
+      "assistBlade": "jaggy",
+      "overBlade": null,
+      "displayName": "Valkyrie Fortress J 9-60 Free Ball",
+      "type": "balance",
+      "score": 0.81,
+      "scoreBreakdown": {
+        "performance": 0.124,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 0,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-06-20"
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Tournament Of Champions (Beycon Utah Qualifier)",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-06-20"
+        }
+      ],
+      "dateAdded": "2026-07-26",
+      "dateUpdated": "2026-07-26",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-126268",
+            "eventName": "Tournament Of Champions (Beycon Utah Qualifier)",
+            "date": "2026-06-20",
+            "placement": 2,
+            "players": 54,
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-tournament-of-champions-beycon-utah-qualifier",
+            "date": "2026-06-20",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      }
+    },
+    {
       "id": "dran-strike-5-60-kick",
       "line": "bx",
       "blade": "dran-strike",
@@ -347318,64 +347478,6 @@
             "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
           }
         ]
-      }
-    },
-    {
-      "id": "golem-rock-7-70-under-needle",
-      "line": "bx",
-      "blade": "golem-rock",
-      "ratchet": "7-70",
-      "bit": "under-needle",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Golem Rock 7-70 Under Needle",
-      "type": "defense",
-      "score": 0.8,
-      "scoreBreakdown": {
-        "performance": 0.15,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 0,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-07-19",
-        "stadiums": [
-          "xtreme"
-        ]
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — Rocky Mountain Xtreme #11 S2",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-07-19"
-        }
-      ],
-      "dateAdded": "2026-07-26",
-      "dateUpdated": "2026-07-26",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-125940",
-            "eventName": "Rocky Mountain Xtreme #11 S2",
-            "date": "2026-07-19",
-            "placement": 2,
-            "players": 49,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
       }
     },
     {
@@ -351388,6 +351490,72 @@
           {
             "source": "wbo-jan-19-2026-12-12-pm",
             "date": "2026-01-19",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      }
+    },
+    {
+      "id": "valkyrie-blast-gravity-6-60-hexa",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "6-60",
+      "bit": "hexa",
+      "lockChip": "valkyrie",
+      "mainBlade": "blast",
+      "assistBlade": "gravity",
+      "overBlade": null,
+      "displayName": "Valkyrie Blast G 6-60 Hexa",
+      "type": "balance",
+      "score": 0.78,
+      "scoreBreakdown": {
+        "performance": 0.114,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 0,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-07-25",
+        "stadiums": [
+          "xtreme"
+        ]
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — RCX: July 2026 Ranked Tournament",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-07-25"
+        }
+      ],
+      "dateAdded": "2026-07-26",
+      "dateUpdated": "2026-07-26",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-pid-1931693",
+            "eventName": "RCX: July 2026 Ranked Tournament",
+            "date": "2026-07-25",
+            "placement": 2,
+            "players": 23,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-rcx-july-2026-ranked-tournament",
+            "date": "2026-07-25",
             "kind": "recommendation",
             "lang": "en",
             "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
@@ -356347,6 +356515,72 @@
           {
             "source": "wbo-jan-13-2026-5-56-pm",
             "date": "2026-11-01",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      }
+    },
+    {
+      "id": "shark-scale-1-70-flat",
+      "line": "bx",
+      "blade": "shark-scale",
+      "ratchet": "1-70",
+      "bit": "flat",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Shark Scale 1-70 Flat",
+      "type": "attack",
+      "score": 0.76,
+      "scoreBreakdown": {
+        "performance": 0.109,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 0,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-07-19",
+        "stadiums": [
+          "xtreme"
+        ]
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Rocky Mountain Xtreme #11 S2",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-07-19"
+        }
+      ],
+      "dateAdded": "2026-07-26",
+      "dateUpdated": "2026-07-26",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-125940",
+            "eventName": "Rocky Mountain Xtreme #11 S2",
+            "date": "2026-07-19",
+            "placement": 3,
+            "players": 49,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-rocky-mountain-xtreme-11-s2",
+            "date": "2026-07-19",
             "kind": "recommendation",
             "lang": "en",
             "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
@@ -368021,60 +368255,6 @@
       }
     },
     {
-      "id": "valkyrie-fortress-jaggy-9-60-free-ball",
-      "line": "cx",
-      "blade": null,
-      "ratchet": "9-60",
-      "bit": "free-ball",
-      "lockChip": "valkyrie",
-      "mainBlade": "fortress",
-      "assistBlade": "jaggy",
-      "overBlade": null,
-      "displayName": "Valkyrie Fortress J 9-60 Free Ball",
-      "type": "balance",
-      "score": 0.71,
-      "scoreBreakdown": {
-        "performance": 0.125,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 0,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-06-20"
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — Tournament Of Champions (Beycon Utah Qualifier)",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-06-20"
-        }
-      ],
-      "dateAdded": "2026-07-26",
-      "dateUpdated": "2026-07-26",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-126268",
-            "eventName": "Tournament Of Champions (Beycon Utah Qualifier)",
-            "date": "2026-06-20",
-            "placement": 2,
-            "players": 54,
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      }
-    },
-    {
       "id": "unicorn-blast-heavy-1-60-kick",
       "line": "cx",
       "blade": null,
@@ -378138,64 +378318,6 @@
       }
     },
     {
-      "id": "valkyrie-blast-gravity-6-60-hexa",
-      "line": "cx",
-      "blade": null,
-      "ratchet": "6-60",
-      "bit": "hexa",
-      "lockChip": "valkyrie",
-      "mainBlade": "blast",
-      "assistBlade": "gravity",
-      "overBlade": null,
-      "displayName": "Valkyrie Blast G 6-60 Hexa",
-      "type": "balance",
-      "score": 0.68,
-      "scoreBreakdown": {
-        "performance": 0.114,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 0,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-07-25",
-        "stadiums": [
-          "xtreme"
-        ]
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — RCX: July 2026 Ranked Tournament",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-07-25"
-        }
-      ],
-      "dateAdded": "2026-07-26",
-      "dateUpdated": "2026-07-26",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-pid-1931693",
-            "eventName": "RCX: July 2026 Ranked Tournament",
-            "date": "2026-07-25",
-            "placement": 2,
-            "players": 23,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      }
-    },
-    {
       "id": "knight-peak-blitz-odd-1-50-low-rush",
       "line": "cx",
       "blade": null,
@@ -380949,6 +381071,72 @@
       }
     },
     {
+      "id": "phoenix-wing-3-80-rush",
+      "line": "bx",
+      "blade": "phoenix-wing",
+      "ratchet": "3-80",
+      "bit": "rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Phoenix Wing 3-80 Rush",
+      "type": "attack",
+      "score": 0.67,
+      "scoreBreakdown": {
+        "performance": 0.081,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 0,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-07-25",
+        "stadiums": [
+          "xtreme"
+        ]
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Del Rio Beyblade League at Pla-Mor Bowling",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-07-25"
+        }
+      ],
+      "dateAdded": "2026-07-26",
+      "dateUpdated": "2026-07-26",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-126956",
+            "eventName": "Del Rio Beyblade League at Pla-Mor Bowling",
+            "date": "2026-07-25",
+            "placement": 2,
+            "players": 11,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-del-rio-beyblade-league-at-pla-mor-bowling",
+            "date": "2026-07-25",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      }
+    },
+    {
       "id": "fox-brush-heavy-1-50-kick",
       "line": "cx",
       "blade": null,
@@ -383534,64 +383722,6 @@
             "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
           }
         ]
-      }
-    },
-    {
-      "id": "shark-scale-1-70-flat",
-      "line": "bx",
-      "blade": "shark-scale",
-      "ratchet": "1-70",
-      "bit": "flat",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Shark Scale 1-70 Flat",
-      "type": "attack",
-      "score": 0.66,
-      "scoreBreakdown": {
-        "performance": 0.109,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 0,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-07-19",
-        "stadiums": [
-          "xtreme"
-        ]
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — Rocky Mountain Xtreme #11 S2",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-07-19"
-        }
-      ],
-      "dateAdded": "2026-07-26",
-      "dateUpdated": "2026-07-26",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-125940",
-            "eventName": "Rocky Mountain Xtreme #11 S2",
-            "date": "2026-07-19",
-            "placement": 3,
-            "players": 49,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
       }
     },
     {
@@ -423773,64 +423903,6 @@
       }
     },
     {
-      "id": "phoenix-wing-3-80-rush",
-      "line": "bx",
-      "blade": "phoenix-wing",
-      "ratchet": "3-80",
-      "bit": "rush",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Phoenix Wing 3-80 Rush",
-      "type": "attack",
-      "score": 0.57,
-      "scoreBreakdown": {
-        "performance": 0.081,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 0,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-07-25",
-        "stadiums": [
-          "xtreme"
-        ]
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — Del Rio Beyblade League at Pla-Mor Bowling",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-07-25"
-        }
-      ],
-      "dateAdded": "2026-07-26",
-      "dateUpdated": "2026-07-26",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-126956",
-            "eventName": "Del Rio Beyblade League at Pla-Mor Bowling",
-            "date": "2026-07-25",
-            "placement": 2,
-            "players": 11,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      }
-    },
-    {
       "id": "shark-scale-1-50-free-flat",
       "line": "bx",
       "blade": "shark-scale",
@@ -440724,6 +440796,72 @@
             "kind": "recommendation",
             "lang": "en",
             "url": "https://reddit.com/r/Beyblade/comments/1uqyd1q/im_tired_of_losing_i_need_help_with_combos/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "emperor-blast-wheel-7-70-hexa",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "7-70",
+      "bit": "hexa",
+      "lockChip": "emperor",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Emperor Blast Wh 7-70 Hexa",
+      "type": "balance",
+      "score": 0.54,
+      "scoreBreakdown": {
+        "performance": 0.042,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 0,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-05-06",
+        "stadiums": [
+          "xtreme"
+        ]
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — May. 07, 2026  4:27 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-05-06"
+        }
+      ],
+      "dateAdded": "2026-07-26",
+      "dateUpdated": "2026-07-26",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-125448",
+            "eventName": "May. 07, 2026  4:27 AM",
+            "date": "2026-05-06",
+            "placement": 2,
+            "players": 12,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-may-07-2026-4-27-am",
+            "date": "2026-05-06",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
           }
         ]
       }
@@ -470094,6 +470232,72 @@
       }
     },
     {
+      "id": "fox-blast-heavy-7-60-level",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "7-60",
+      "bit": "level",
+      "lockChip": "fox",
+      "mainBlade": "blast",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Fox Blast H 7-60 Level",
+      "type": "balance",
+      "score": 0.49,
+      "scoreBreakdown": {
+        "performance": 0.026,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 0,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-03-22",
+        "stadiums": [
+          "xtreme"
+        ]
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Mar. 23, 2026  4:21 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-03-22"
+        }
+      ],
+      "dateAdded": "2026-07-26",
+      "dateUpdated": "2026-07-26",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-123441",
+            "eventName": "Mar. 23, 2026  4:21 AM",
+            "date": "2026-03-22",
+            "placement": 2,
+            "players": 10,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-mar-23-2026-4-21-am",
+            "date": "2026-03-22",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      }
+    },
+    {
       "id": "shark-edge-3-60-wedge",
       "line": "bx",
       "blade": "shark-edge",
@@ -482664,6 +482868,128 @@
           {
             "source": "wbo-aug-11-2025-7-07-am",
             "date": "2026-06-17",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      }
+    },
+    {
+      "id": "shark-edge-4-55-hexa",
+      "line": "bx",
+      "blade": "shark-edge",
+      "ratchet": "4-55",
+      "bit": "hexa",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Shark Edge 4-55 Hexa",
+      "type": "attack",
+      "score": 0.47,
+      "scoreBreakdown": {
+        "performance": 0.021,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 1,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2025-12-18"
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Dec. 18, 2025  8:02 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-12-18"
+        }
+      ],
+      "dateAdded": "2026-07-26",
+      "dateUpdated": "2026-07-26",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-dec-18-2025-8-02-am-2025-12-18",
+            "eventName": "Dec. 18, 2025  8:02 AM",
+            "date": "2025-12-18",
+            "placement": 1,
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-dec-18-2025-8-02-am",
+            "date": "2025-12-18",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      }
+    },
+    {
+      "id": "whale-wave-4-70-wedge",
+      "line": "bx",
+      "blade": "whale-wave",
+      "ratchet": "4-70",
+      "bit": "wedge",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Whale Wave 4-70 Wedge",
+      "type": "balance",
+      "score": 0.47,
+      "scoreBreakdown": {
+        "performance": 0.021,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 1,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2025-12-18"
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Dec. 18, 2025  8:02 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-12-18"
+        }
+      ],
+      "dateAdded": "2026-07-26",
+      "dateUpdated": "2026-07-26",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-dec-18-2025-8-02-am-2025-12-18",
+            "eventName": "Dec. 18, 2025  8:02 AM",
+            "date": "2025-12-18",
+            "placement": 1,
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-dec-18-2025-8-02-am",
+            "date": "2025-12-18",
             "kind": "recommendation",
             "lang": "en",
             "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
@@ -497251,67 +497577,6 @@
       }
     },
     {
-      "id": "storm-pegasis-3-60-rush",
-      "line": "bx",
-      "blade": "storm-pegasis",
-      "ratchet": "3-60",
-      "bit": "rush",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Storm Pegasis 3-60 Rush",
-      "type": "attack",
-      "score": 0.45,
-      "scoreBreakdown": {
-        "performance": 0.014,
-        "presence": 0,
-        "corroboration": 0.444,
-        "tournamentEvents": 1,
-        "wins": 1,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2025-10-30"
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — Oct. 30, 2025  12:26 AM",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-06-17"
-        }
-      ],
-      "dateAdded": "2026-06-17",
-      "dateUpdated": "2026-07-26",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-challonge-4csrieop",
-            "eventName": "Oct. 30, 2025  12:26 AM",
-            "date": "2025-10-30",
-            "placement": 1,
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": [
-          {
-            "source": "wbo-oct-30-2025-12-26-am",
-            "date": "2026-06-17",
-            "kind": "recommendation",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ]
-      }
-    },
-    {
       "id": "victory-valkyrie-6-60-level",
       "line": "bx",
       "blade": "victory-valkyrie",
@@ -497364,67 +497629,6 @@
         "mentions": [
           {
             "source": "wbo-jan-25-2026-8-39-am",
-            "date": "2026-06-17",
-            "kind": "recommendation",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ]
-      }
-    },
-    {
-      "id": "whale-wave-3-80-high-taper",
-      "line": "bx",
-      "blade": "whale-wave",
-      "ratchet": "3-80",
-      "bit": "high-taper",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Whale Wave 3-80 High Taper",
-      "type": "balance",
-      "score": 0.45,
-      "scoreBreakdown": {
-        "performance": 0.014,
-        "presence": 0,
-        "corroboration": 0.444,
-        "tournamentEvents": 1,
-        "wins": 1,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2025-10-30"
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — Oct. 30, 2025  5:41 AM",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-06-17"
-        }
-      ],
-      "dateAdded": "2026-06-17",
-      "dateUpdated": "2026-07-26",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-121545",
-            "eventName": "Oct. 30, 2025  5:41 AM",
-            "date": "2025-10-30",
-            "placement": 1,
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": [
-          {
-            "source": "wbo-oct-30-2025-5-41-am",
             "date": "2026-06-17",
             "kind": "recommendation",
             "lang": "en",
@@ -497562,6 +497766,190 @@
       }
     },
     {
+      "id": "impact-drake-1-80-wedge",
+      "line": "bx",
+      "blade": "impact-drake",
+      "ratchet": "1-80",
+      "bit": "wedge",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Impact Drake 1-80 Wedge",
+      "type": "attack",
+      "score": 0.45,
+      "scoreBreakdown": {
+        "performance": 0.016,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 1,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2025-10-05"
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Oct. 07, 2025  3:09 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-05"
+        }
+      ],
+      "dateAdded": "2026-07-26",
+      "dateUpdated": "2026-07-26",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-120729",
+            "eventName": "Oct. 07, 2025  3:09 PM",
+            "date": "2025-10-05",
+            "placement": 1,
+            "players": 36,
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-oct-07-2025-3-09-pm",
+            "date": "2025-10-05",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      }
+    },
+    {
+      "id": "storm-pegasis-3-60-rush",
+      "line": "bx",
+      "blade": "storm-pegasis",
+      "ratchet": "3-60",
+      "bit": "rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Storm Pegasis 3-60 Rush",
+      "type": "attack",
+      "score": 0.44,
+      "scoreBreakdown": {
+        "performance": 0.014,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 1,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2025-10-30"
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Oct. 30, 2025  12:26 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-06-17"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-07-26",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-challonge-4csrieop",
+            "eventName": "Oct. 30, 2025  12:26 AM",
+            "date": "2025-10-30",
+            "placement": 1,
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-oct-30-2025-12-26-am",
+            "date": "2026-06-17",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      }
+    },
+    {
+      "id": "whale-wave-3-80-high-taper",
+      "line": "bx",
+      "blade": "whale-wave",
+      "ratchet": "3-80",
+      "bit": "high-taper",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Whale Wave 3-80 High Taper",
+      "type": "balance",
+      "score": 0.44,
+      "scoreBreakdown": {
+        "performance": 0.014,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 1,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2025-10-30"
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Oct. 30, 2025  5:41 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-06-17"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-07-26",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-121545",
+            "eventName": "Oct. 30, 2025  5:41 AM",
+            "date": "2025-10-30",
+            "placement": 1,
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-oct-30-2025-5-41-am",
+            "date": "2026-06-17",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      }
+    },
+    {
       "id": "pegasus-blast-wall-7-60-level",
       "line": "cx",
       "blade": null,
@@ -497573,7 +497961,7 @@
       "overBlade": null,
       "displayName": "Pegasus Blast W 7-60 Level",
       "type": "balance",
-      "score": 0.45,
+      "score": 0.44,
       "scoreBreakdown": {
         "performance": 0.014,
         "presence": 0,
@@ -509721,64 +510109,6 @@
             "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
           }
         ]
-      }
-    },
-    {
-      "id": "emperor-blast-wheel-7-70-hexa",
-      "line": "cx",
-      "blade": null,
-      "ratchet": "7-70",
-      "bit": "hexa",
-      "lockChip": "emperor",
-      "mainBlade": "blast",
-      "assistBlade": "wheel",
-      "overBlade": null,
-      "displayName": "Emperor Blast Wh 7-70 Hexa",
-      "type": "balance",
-      "score": 0.44,
-      "scoreBreakdown": {
-        "performance": 0.042,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 0,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-05-06",
-        "stadiums": [
-          "xtreme"
-        ]
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — May. 07, 2026  4:27 AM",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-05-06"
-        }
-      ],
-      "dateAdded": "2026-07-26",
-      "dateUpdated": "2026-07-26",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-125448",
-            "eventName": "May. 07, 2026  4:27 AM",
-            "date": "2026-05-06",
-            "placement": 2,
-            "players": 12,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
       }
     },
     {
@@ -526242,6 +526572,190 @@
           {
             "source": "wbo-nov-22-2025-5-37-pm",
             "date": "2025-11-22",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      }
+    },
+    {
+      "id": "samurai-calibur-7-70-kick",
+      "line": "bx",
+      "blade": "samurai-calibur",
+      "ratchet": "7-70",
+      "bit": "kick",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Samurai Calibur 7-70 Kick",
+      "type": "attack",
+      "score": 0.43,
+      "scoreBreakdown": {
+        "performance": 0.011,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 0,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2025-10-05"
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Oct. 07, 2025  3:09 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-05"
+        }
+      ],
+      "dateAdded": "2026-07-26",
+      "dateUpdated": "2026-07-26",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-120729",
+            "eventName": "Oct. 07, 2025  3:09 PM",
+            "date": "2025-10-05",
+            "placement": 2,
+            "players": 36,
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-oct-07-2025-3-09-pm",
+            "date": "2025-10-05",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sol-eclipse-turn-5-60-hexa",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "5-60",
+      "bit": "hexa",
+      "lockChip": "sol",
+      "mainBlade": "eclipse",
+      "assistBlade": "turn",
+      "overBlade": null,
+      "displayName": "Sol Eclipse T 5-60 Hexa",
+      "type": "balance",
+      "score": 0.43,
+      "scoreBreakdown": {
+        "performance": 0.008,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 0,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2025-10-15"
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Oct. 15, 2025  7:38 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-15"
+        }
+      ],
+      "dateAdded": "2026-07-26",
+      "dateUpdated": "2026-07-26",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-121003",
+            "eventName": "Oct. 15, 2025  7:38 AM",
+            "date": "2025-10-15",
+            "placement": 2,
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-oct-15-2025-7-38-am",
+            "date": "2025-10-15",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      }
+    },
+    {
+      "id": "storm-pegasis-3-60-level",
+      "line": "bx",
+      "blade": "storm-pegasis",
+      "ratchet": "3-60",
+      "bit": "level",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Storm Pegasis 3-60 Level",
+      "type": "attack",
+      "score": 0.43,
+      "scoreBreakdown": {
+        "performance": 0.008,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 1,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2025-09-05"
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Sep. 05, 2025  4:05 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-05"
+        }
+      ],
+      "dateAdded": "2026-07-26",
+      "dateUpdated": "2026-07-26",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-119669",
+            "eventName": "Sep. 05, 2025  4:05 PM",
+            "date": "2025-09-05",
+            "placement": 1,
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-sep-05-2025-4-05-pm",
+            "date": "2025-09-05",
             "kind": "recommendation",
             "lang": "en",
             "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
@@ -570901,64 +571415,6 @@
       }
     },
     {
-      "id": "fox-blast-heavy-7-60-level",
-      "line": "cx",
-      "blade": null,
-      "ratchet": "7-60",
-      "bit": "level",
-      "lockChip": "fox",
-      "mainBlade": "blast",
-      "assistBlade": "heavy",
-      "overBlade": null,
-      "displayName": "Fox Blast H 7-60 Level",
-      "type": "balance",
-      "score": 0.39,
-      "scoreBreakdown": {
-        "performance": 0.026,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 0,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-03-22",
-        "stadiums": [
-          "xtreme"
-        ]
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — Mar. 23, 2026  4:21 AM",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-03-22"
-        }
-      ],
-      "dateAdded": "2026-07-26",
-      "dateUpdated": "2026-07-26",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-123441",
-            "eventName": "Mar. 23, 2026  4:21 AM",
-            "date": "2026-03-22",
-            "placement": 2,
-            "players": 10,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      }
-    },
-    {
       "id": "knight-mail-9-70-low-rush",
       "line": "bx",
       "blade": "knight-mail",
@@ -572402,112 +572858,6 @@
             "deckScore": "D",
             "lang": "en",
             "url": "https://www.metabeys.com/events/1756770985755"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      }
-    },
-    {
-      "id": "shark-edge-4-55-hexa",
-      "line": "bx",
-      "blade": "shark-edge",
-      "ratchet": "4-55",
-      "bit": "hexa",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Shark Edge 4-55 Hexa",
-      "type": "attack",
-      "score": 0.37,
-      "scoreBreakdown": {
-        "performance": 0.021,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 1,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2025-12-18"
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — Dec. 18, 2025  8:02 AM",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2025-12-18"
-        }
-      ],
-      "dateAdded": "2026-07-26",
-      "dateUpdated": "2026-07-26",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-dec-18-2025-8-02-am-2025-12-18",
-            "eventName": "Dec. 18, 2025  8:02 AM",
-            "date": "2025-12-18",
-            "placement": 1,
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      }
-    },
-    {
-      "id": "whale-wave-4-70-wedge",
-      "line": "bx",
-      "blade": "whale-wave",
-      "ratchet": "4-70",
-      "bit": "wedge",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Whale Wave 4-70 Wedge",
-      "type": "balance",
-      "score": 0.37,
-      "scoreBreakdown": {
-        "performance": 0.021,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 1,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2025-12-18"
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — Dec. 18, 2025  8:02 AM",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2025-12-18"
-        }
-      ],
-      "dateAdded": "2026-07-26",
-      "dateUpdated": "2026-07-26",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-dec-18-2025-8-02-am-2025-12-18",
-            "eventName": "Dec. 18, 2025  8:02 AM",
-            "date": "2025-12-18",
-            "placement": 1,
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
           }
         ],
         "usage": [],
@@ -574647,60 +574997,6 @@
             "deckScore": "D",
             "lang": "en",
             "url": "https://www.metabeys.com/events/1755919720131"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      }
-    },
-    {
-      "id": "impact-drake-1-80-wedge",
-      "line": "bx",
-      "blade": "impact-drake",
-      "ratchet": "1-80",
-      "bit": "wedge",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Impact Drake 1-80 Wedge",
-      "type": "attack",
-      "score": 0.35,
-      "scoreBreakdown": {
-        "performance": 0.016,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 1,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2025-10-05"
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — Oct. 07, 2025  3:09 PM",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2025-10-05"
-        }
-      ],
-      "dateAdded": "2026-07-26",
-      "dateUpdated": "2026-07-26",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-120729",
-            "eventName": "Oct. 07, 2025  3:09 PM",
-            "date": "2025-10-05",
-            "placement": 1,
-            "players": 36,
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
           }
         ],
         "usage": [],
@@ -576851,166 +577147,6 @@
             "deckScore": "D",
             "lang": "en",
             "url": "https://www.metabeys.com/events/1769736608304"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      }
-    },
-    {
-      "id": "samurai-calibur-7-70-kick",
-      "line": "bx",
-      "blade": "samurai-calibur",
-      "ratchet": "7-70",
-      "bit": "kick",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Samurai Calibur 7-70 Kick",
-      "type": "attack",
-      "score": 0.33,
-      "scoreBreakdown": {
-        "performance": 0.011,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 0,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2025-10-05"
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — Oct. 07, 2025  3:09 PM",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2025-10-05"
-        }
-      ],
-      "dateAdded": "2026-07-26",
-      "dateUpdated": "2026-07-26",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-120729",
-            "eventName": "Oct. 07, 2025  3:09 PM",
-            "date": "2025-10-05",
-            "placement": 2,
-            "players": 36,
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      }
-    },
-    {
-      "id": "sol-eclipse-turn-5-60-hexa",
-      "line": "cx",
-      "blade": null,
-      "ratchet": "5-60",
-      "bit": "hexa",
-      "lockChip": "sol",
-      "mainBlade": "eclipse",
-      "assistBlade": "turn",
-      "overBlade": null,
-      "displayName": "Sol Eclipse T 5-60 Hexa",
-      "type": "balance",
-      "score": 0.33,
-      "scoreBreakdown": {
-        "performance": 0.008,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 0,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2025-10-15"
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — Oct. 15, 2025  7:38 AM",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2025-10-15"
-        }
-      ],
-      "dateAdded": "2026-07-26",
-      "dateUpdated": "2026-07-26",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-121003",
-            "eventName": "Oct. 15, 2025  7:38 AM",
-            "date": "2025-10-15",
-            "placement": 2,
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      }
-    },
-    {
-      "id": "storm-pegasis-3-60-level",
-      "line": "bx",
-      "blade": "storm-pegasis",
-      "ratchet": "3-60",
-      "bit": "level",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Storm Pegasis 3-60 Level",
-      "type": "attack",
-      "score": 0.33,
-      "scoreBreakdown": {
-        "performance": 0.008,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 1,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2025-09-05"
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — Sep. 05, 2025  4:05 PM",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2025-09-05"
-        }
-      ],
-      "dateAdded": "2026-07-26",
-      "dateUpdated": "2026-07-26",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-119669",
-            "eventName": "Sep. 05, 2025  4:05 PM",
-            "date": "2025-09-05",
-            "placement": 1,
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
           }
         ],
         "usage": [],
