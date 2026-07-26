@@ -1,7 +1,7 @@
 ---
 name: combo-pipeline
 status: active
-updated: 25/07/2026
+updated: 26/07/2026
 health: green
 next-step: "valutare un filtro UI per la coda di combo a evento singolo (3285 attive) + rifinire le CX unresolved via /update-combos"
 blocked-by: null
@@ -40,6 +40,7 @@ tutto in sequenza giornaliera.
 ## Changelog
 
 <!-- Cose completate, dalla più recente. Formato: `- gg/mm/aaaa — testo` -->
+- 26/07/2026 — `/update-combos`: parser ri-eseguiti su cache fresche (4950 combo, 17 nuove da evidenza WBO). Recupero refusi ledger: 60 proposte typo (subagent Haiku, verificate contro il registro), 55 accettate dal gate deterministico → ledger sceso da 194 a 135 non risolte (i due pattern a 53 occorrenze "BahamutBlitz BK1-50I"/"BrachioWhip OW5-70Nr" restano aperti, vedi Backlog 23/07). Estrazione fonti narrative senza novità (YouTube già scansionato, arca.live 58 post nuovi tutti chiacchiere/scambi, SBBL e Sheets WBO ri-verificati ridondanti con l'evidenza WBO già strutturata). Validato in produzione il fix a `mergeUnresolved` (`scripts/lib/wbo-unresolved.ts`, non ancora committato a parte): una riga risolta ora sparisce davvero dal ledger invece di restarci in eterno
 - 25/07/2026 — `/mine-reddit`: minato il blocco residuo (6 post, ledger a zero). Estratto un tournament-report dettagliato (2° posto G2 Northeast Regional Thailand, 240+ partecipanti): mention aggiunta a `wizard-rod-1-60-hexa` (esistente) e alle nuove `shark-scale-3-60-low-rush`/`meteor-dragoon-9-60-elevate`. `score:combos` + `prune:combos --apply` (1 combo archiviata, `tricera-press-3-60-low-rush`) rieseguiti dopo il fix del duplicato id (v. Known issues)
 - 17/06/2026 — backfill WBO 12 mesi eseguito (headed, Cloudflare): thread `tid=110113` paginato all'indietro fino al cutoff (pagina 48, 2025-05-24), 87 pagine in cache. `?page=N` reale confermato. **Dataset combo da ~23 a ~2027 eventi distinti, 3285 combo attive**; archivio riconciliato a 18. Top CAS coerente col meta reale (Wizard Rod 1-60 Hexa 9.6). `printthread`/altri thread BBX non promossi (vista forum sufficiente, approccio curato)
 - 17/06/2026 — fix WBO date + scoring NaN-safe + fetch più veloce: `parse:wbo` riconosce il timestamp dei post ("Mon. GG, AAAA") e valida la data (scarta non-date di calendario), prima ripiegava quasi sempre su `fetchedAt`; `scoring.ts` `daysBetween` NaN-safe (una data invalida non azzera più lo score); `fetch-wbo` senza attesa fissa di 3s/pagina (controllo Cloudflare immediato, attesa solo se sfidato)
