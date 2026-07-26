@@ -1,7 +1,7 @@
 ---
 name: parts-database
 status: active
-updated: 16/06/2026
+updated: 26/07/2026
 health: green
 next-step: "mantenere verify:wiki a 0 mancanti"
 blocked-by: null
@@ -36,6 +36,7 @@ contro il wiki e modellazione delle categorie (incl. Over Blade per CX Expand).
 ## Changelog
 
 <!-- Cose completate, dalla più recente. Formato: `- gg/mm/aaaa — testo` -->
+- 26/07/2026 — `/update-parts`: nessuna parte nuova. Verificati a fondo i 3 nuovi Random Booster (Vol. 10, Vol. 11, BrachioWhip Select, 13 bey): tutti ricombinazioni di parti già registrate. Revid `BahamutBlitz BK1-50I` aggiornato (edit sul wiki annullato dalla community, nessun impatto sui dati)
 - 16/06/2026 — docs: README/CLAUDE.md aggiornati per pipeline e confine IA/codice
 - 15/06/2026 — modellato Over Blade come categoria a sé (`overBlades`) + bonifica DB parti
 - 15/06/2026 — `npm run verify:wiki` contro fonte affidabile (category per-tipo X-pure) + ripristino L-Drago
