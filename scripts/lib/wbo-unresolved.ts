@@ -94,17 +94,23 @@ export function mergeUnresolved(prev: Ledger, items: UnresolvedItem[], today: st
     else current.set(key, { line: it.line.trim(), reason: it.reason, normLine, count: 1 });
   }
 
-  const byKey = new Map<string, LedgerItem>(prev.items.map((i) => [i.key, i]));
+  // Si riparte da `current`, non da `prev`: una riga che non è più nell'output del parser (perché una
+  // correzione l'ha fatta risolvere) deve sparire dal ledger, non restarci in eterno.
+  const prevByKey = new Map<string, LedgerItem>(prev.items.map((i) => [i.key, i]));
   let added = 0;
+  const out: LedgerItem[] = [];
   for (const [key, c] of current) {
-    const existing = byKey.get(key);
+    const existing = prevByKey.get(key);
     if (existing) {
-      existing.lastSeen = today;
-      existing.occurrences = c.count;
-      existing.reason = c.reason; // il reason può evolvere col parser
-      existing.category = categorize(c.line, c.reason);
+      out.push({
+        ...existing,
+        lastSeen: today,
+        occurrences: c.count,
+        reason: c.reason, // il reason può evolvere col parser
+        category: categorize(c.line, c.reason),
+      });
     } else {
-      byKey.set(key, {
+      out.push({
         key, line: c.line, normLine: c.normLine, reason: c.reason,
         category: categorize(c.line, c.reason), status: 'new',
         occurrences: c.count, firstSeen: today, lastSeen: today,
@@ -113,7 +119,7 @@ export function mergeUnresolved(prev: Ledger, items: UnresolvedItem[], today: st
     }
   }
 
-  const out = [...byKey.values()].sort((a, b) => a.key.localeCompare(b.key));
+  out.sort((a, b) => a.key.localeCompare(b.key));
   const stats = {
     total: out.length,
     new: out.filter((i) => i.status === 'new').length,

@@ -43,6 +43,12 @@ const r3 = mergeUnresolved(r2.ledger, items, '2026-06-19');
 check('status "ignored" preservato dopo re-merge', r3.ledger.items[0].status === 'ignored');
 check('stats riflette lo status', r3.ledger.stats.ignored === 1);
 
+// 3b) una riga risolta (es. da una correzione typo) sparisce dal ledger al merge successivo, non resta per sempre
+const itemsWithoutSliverWolf = items.filter((i) => !i.line.startsWith('SliverWolf'));
+const r3b = mergeUnresolved(r3.ledger, itemsWithoutSliverWolf, '2026-06-20');
+check('riga risolta sparisce dal ledger', !r3b.ledger.items.some((i) => i.line.startsWith('SliverWolf')));
+check('totale scende di conseguenza', r3b.ledger.stats.total === 1, String(r3b.ledger.stats.total));
+
 // 4) categorize + isLedgerable diretti
 check('categorize CX ambiguo', categorize('HellsArc Foo', 'blade CX ambiguo: "..." (split multiplo)') === 'cx-ambiguous');
 check('categorize blade-unresolved', categorize('SliverWolf', 'blade non risolto: "SliverWolf" (CX o nome ignoto)') === 'blade-unresolved');
