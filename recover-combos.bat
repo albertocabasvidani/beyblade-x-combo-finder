@@ -41,9 +41,13 @@ if errorlevel 1 set "COMBOS_DA_FARE=1"
 if defined SALTA_COMBOS set "COMBOS_DA_FARE="
 
 if defined COMBOS_DA_FARE (
-  call :log "update-combos NON committato oggi -> recupero (judge + update-combos)"
-  REM La raccolta NON viene rifatta qui: e' il task "Beyblade Collect Sources" delle
-  REM 07:30 a farla, e i suoi browser headed uccidevano questo bat prima di arrivare
+  REM Niente ">" nei messaggi: in ":log" il testo arriva come %~1 e il parser di cmd vede
+  REM la freccia PRIMA di stampare, trattandola come redirezione. "oggi -> recupero"
+  REM creava un file chiamato "recupero" nella cartella del progetto e lasciava nel log la
+  REM riga troncata a "oggi -", senza nessun errore (successo dal 24 al 27/07/2026).
+  call :log "update-combos NON committato oggi: recupero (judge + update-combos)"
+  REM La raccolta NON viene rifatta qui: e' il job `beyblade-collect` (soglia 07:30)
+  REM a farla, e i suoi browser headed uccidevano questo bat prima di arrivare
   REM a /update-combos - cioe' proprio il recupero che doveva garantire. Si elabora
   REM la cache gia' presente: se il task del mattino e' andato, e' fresca di poche ore.
   call :log "--- judge-youtube START ---"
@@ -53,7 +57,14 @@ if defined COMBOS_DA_FARE (
   claude --model sonnet --effort high --dangerously-skip-permissions -p "/update-combos" >> "%LOG%" 2>&1
   call :log "--- update-combos END exit=!errorlevel! ---"
 ) else (
-  call :log "update-combos: niente da fare (gia' committato oggi, oppure in pausa)"
+  REM Due stati opposti non possono avere lo stesso messaggio: "la mattina e' andata" e
+  REM "e' in pausa da una settimana" si leggono uguali nel log, e a distanza di giorni
+  REM nessuno sa piu' quale dei due era.
+  if defined SALTA_COMBOS (
+    call :log "update-combos: NON eseguito perche' in pausa (.pausa-update-combos)"
+  ) else (
+    call :log "update-combos: niente da fare, gia' committato oggi"
+  )
 )
 
 findstr /c:"mine reddit combos" "%CHECK%" >nul
@@ -62,7 +73,7 @@ if errorlevel 1 (
   claude --model sonnet --effort medium --dangerously-skip-permissions -p "/mine-reddit" >> "%LOG%" 2>&1
   call :log "--- mine-reddit END exit=!errorlevel! ---"
 ) else (
-  call :log "mine-reddit gia' committato oggi -> skip"
+  call :log "mine-reddit gia' committato oggi: skip"
 )
 
 call :log "=== RECOVER END ==="

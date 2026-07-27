@@ -121,4 +121,5 @@ naturale e promuovere lo fa l'IA. Solo Beyblade X.
 - **Solo Beyblade X**: scarta fonti su Burst/Metal/altri sistemi.
 - **MAI API a pagamento**: la valutazione e l'interpretazione del feedback le fa l'IA su questo
   abbonamento; l'unica API esterna è YouTube Data v3 (già usata dalla pipeline).
-- Eseguito settimanalmente da `discover-sources.bat` (Task Scheduler "Beyblade Discover Sources").
+- Eseguito settimanalmente da `discover-sources.bat`, job `beyblade-discover` del dispatcher
+  generale (`c:\claude-code\task-dispatcher\jobs.json`, lunedì, soglia 09:00).

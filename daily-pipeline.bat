@@ -1,7 +1,8 @@
 @echo off
 setlocal enabledelayedexpansion
-REM Pipeline giornaliera COMPLETA in sequenza, alle 08:00 (PC acceso di giorno, utente loggato).
-REM Un solo task: l'ordine conta (parts -> collect -> judge youtube -> analyze -> mine reddit).
+REM Pipeline giornaliera COMPLETA in sequenza, soglia 08:00 (PC acceso di giorno, utente loggato).
+REM Job `beyblade-pipeline` del dispatcher generale: l'ora e' una soglia, non un appuntamento.
+REM Un solo esecutore: l'ordine conta (parts -> collect -> judge youtube -> analyze -> mine reddit).
 REM Reddit/WBO headed (REDDIT_HEADED/WBO_HEADED, lette da collect:sources): Reddit riusa il login del
 REM profilo .playwright-beyblade; WBO puo' chiedere il captcha Cloudflare da risolvere nella finestra.
 REM Task schedulato con /it (solo se l'utente e' loggato) perche' i fetcher social aprono un browser.
@@ -53,8 +54,8 @@ REM se cambia il modello di default della sessione; il frontmatter del comando d
 claude --model sonnet --effort medium --dangerously-skip-permissions -p "/update-parts" >> "%LOG%" 2>&1
 call :log "--- 1/4 update-parts END exit=!errorlevel! ---"
 
-REM La raccolta fonti NON sta piu' qui: e' il task "Beyblade Collect Sources" delle
-REM 07:30 (collect-sources-task.bat). Motivo: i browser headed di collect:sources,
+REM La raccolta fonti NON sta piu' qui: e' il job `beyblade-collect` del dispatcher
+REM generale, soglia 07:30 (collect-sources-task.bat). Motivo: i browser headed di collect:sources,
 REM chiudendosi male, si portavano dietro questo bat e gli step sotto non partivano
 REM MAI (37 log dal 29/06/2026 con "collect:sources START" e nessun "END").
 REM Separandola, un browser che muore ferma al massimo la raccolta: qui si elaborano

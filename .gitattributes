@@ -1,0 +1,14 @@
+# I batch DEVONO uscire dal checkout con fine riga CRLF.
+#
+# cmd.exe non carica il file in memoria: lo rilegge dal disco cercando per offset di byte.
+# Con fine riga LF un salto (`call :log`, `goto :eof`) puo' atterrare a meta' riga, e il file
+# si esegue a pezzi senza dare un errore: il 27/07/2026 e' bastato aggiungere una riga di
+# commento a daily-pipeline.bat perche' perdesse una riga di log e rieseguisse meta' pipeline.
+#
+# Non basta convertirli a mano: git normalizza le fine riga in fase di commit, quindi la
+# conversione non resta registrata e il primo strumento che riscrive il file in LF (il tool
+# Write di Claude Code, per esempio) rimette il guasto. Questa riga lo impone al checkout,
+# indipendentemente da core.autocrlf della macchina.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.vbs text eol=crlf

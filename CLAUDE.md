@@ -200,18 +200,19 @@ CAS**: BBX Weekly (`parts-usage`, ranking per-parte). **BBX.gg escluso** (champi
 sovrapposti a WBO senza id condiviso → rischio doppioni). Facebook PH/MY e Instagram restano in
 `manualVerification` (non automatizzabili senza login/API).
 
-## Automazione (Windows Task Scheduler)
+## Automazione (job del dispatcher generale)
 
-Il PC è spento di notte → tutto gira di mattina, in **due task distinti**.
+Il PC è spento di notte → tutto gira di mattina, in **due job distinti**. Gli orari sono
+**soglie**, non appuntamenti (vedi in fondo alla sezione).
 
-**07:30 — `collect-sources-task.bat`** (task "Beyblade Collect Sources", `/it`): sola raccolta delle
+**Soglia 07:30 — `collect-sources-task.bat`** (job `beyblade-collect`): sola raccolta delle
 cache grezze, con Reddit/WBO/arca **headed** (`REDDIT_HEADED=1`/`WBO_HEADED=1`/`ARCA_HEADED=1`; BBX
 Weekly headless). Reddit riusa il login del profilo `.playwright-beyblade`; WBO ha il **profilo
 dedicato** `.playwright-wbo` (vedi sotto) e può chiedere il captcha Cloudflare.
 
-**08:00 — `daily-pipeline.bat`** (task "Beyblade Daily Pipeline", `/it`): `/update-parts` →
+**Soglia 08:00 — `daily-pipeline.bat`** (job `beyblade-pipeline`): `/update-parts` →
 `/judge-youtube` → `/update-combos` → `/mine-reddit`. **Nessuno di questi step apre browser**: lavorano
-sulle cache raccolte mezz'ora prima, di cui il log riporta la data di ultima scrittura.
+sulle cache raccolte poco prima, di cui il log riporta la data di ultima scrittura.
 **Modello fissato per ogni comando della pipeline.** Senza vincolo esplicito ogni run ereditava il
 default di sessione del momento (Opus a effort variabile, a volte Fable): lavoro meccanico pagato come
 lavoro di punta. Il vincolo sta in due posti — flag `--model`/`--effort` in tutti i `.bat` e frontmatter
@@ -259,14 +260,15 @@ Prova che il lavoro era sano e che a morire era l'albero di processi: il 22/07 i
 alle 08:27:13, ma `claude` ha continuato a lavorare e ha scritto `youtube-cache.json` alle **08:29:09**,
 due minuti dopo, senza mai chiudere il turno.
 
-**Correzione**: i tre task lanciano ora `wscript.exe <wrapper>.vbs`
+**Correzione**: i task lanciavano `wscript.exe <wrapper>.vbs`
 (`run-pipeline-hidden.vbs`, `run-collect-hidden.vbs`, `run-recover-hidden.vbs`), che eseguono il `.bat`
 con finestra nascosta (`Run ..., 0, True`). `True` — non `False` come nel wrapper dei transcript — così
-il Task Scheduler aspetta la fine e l'exit code resta significativo. Nascondere la console **non**
+chi lancia aspetta la fine e l'exit code resta significativo. Nascondere la console **non**
 nasconde i browser: quelli di `collect:sources` restano visibili, e servono per il captcha Cloudflare
-di WBO. Se un task va ricreato, l'azione deve puntare al `.vbs`, mai direttamente al `.bat`.
+di WBO. Dal passaggio al dispatcher generale i wrapper non servono più alla pianificazione (il
+dispatcher gira già nascosto e chiama i `.bat` diretti): restano come **ingresso manuale**.
 
-Cause escluse lungo la strada, tutte con prove: `ExecutionTimeLimit` (è `PT72H`), crash di processo
+Cause escluse lungo la strada, tutte con prove: il limite di durata del task (allora `PT72H`), crash di processo
 (nessun evento nel log Applicazione), esaurimento risorse (zero eventi in 30 giorni), sospensione del
 PC, browser headed (il 22/07 è morta su `judge-youtube`, che non ne apre), la forma di invocazione di
 `claude` (`-p "/comando"` con i flag modello e `-p "Esegui /comando"` sopravvivono entrambe) e il
@@ -292,24 +294,36 @@ copre sia un backfill (~900 post → molti blocchi) sia i pochi post nuovi del g
 Durata `/mine-reddit`: **~39 min** per un backfill da 934 post (16 blocchi da 60; misurato 16/06/2026,
 ha portato i combo da 204 a 457). Nella marcia normale è 1 blocco → pochi minuti.
 
-Recupero combo — task SEPARATO, **giornaliero nel pomeriggio** (utente al PC): `recover-combos.bat`
+Recupero combo — job SEPARATO `beyblade-recover`, **giornaliero nel pomeriggio** (soglia 14:00,
+utente al PC): `recover-combos.bat`
 controlla via `git log --since=midnight` se gli step che committano sono già passati **oggi**; se
 `update combos database` manca rifà `/judge-youtube` → `/update-combos`, se
-`mine reddit combos` manca rifà `/mine-reddit`. **Non rifà la raccolta** (è il task delle 07:30):
+`mine reddit combos` manca rifà `/mine-reddit`. **Non rifà la raccolta** (è il job `beyblade-collect`):
 elabora la cache presente. **Idempotente**: se la mattina è andata, non fa nulla
 (solo log in `logs/recover-YYYY-MM-DD.log`). Rete di sicurezza per le interruzioni della sequenza
 mattutina interattiva (caso 25-26/06/2026: pipeline morta a metà, `combos.json` fermo 2 giorni).
 
-Scoperta nuove fonti — task SEPARATO, **settimanale** (lunedì 09:00): `discover-sources.bat` esegue
+Scoperta nuove fonti — job SEPARATO `beyblade-discover`, **settimanale** (lunedì, soglia 09:00): `discover-sources.bat` esegue
 `/discover-sources` (ricerca YouTube/siti/forum/social, valutazione, dedup vs fonti note). Manda una **email**
 di proposta a `cinquequarti@gmail.com` (via gws, corpo leggibile senza allegati). Loop di feedback: si
 risponde all'email in linguaggio naturale e il run successivo legge la risposta e promuove gli approvati
-in `sources.json` (social → `manualVerification`), marca i rifiutati. Gira a finestra nascosta via
-`run-discover-hidden.vbs` e committa `source-candidates.json` (+ `sources.json` quando applica feedback).
-Per passare a giornaliero: `/sc daily`.
+in `sources.json` (social → `manualVerification`), marca i rifiutati. Committa
+`source-candidates.json` (+ `sources.json` quando applica feedback).
+Per passare a giornaliero: `"days": "daily"` nella sua voce del manifest, mai `schtasks`.
 
 Bat manuali: `collect-social.bat` (solo Reddit+WBO headed), `collect-combos.bat` (solo collect
 headless), `update-combos.bat` (collect+analyze), `dev-server.bat` (Astro).
+
+**I `.bat` con etichette vanno tenuti a fine riga CRLF** (`daily-pipeline.bat`,
+`recover-combos.bat`, `collect-sources-task.bat`). `cmd.exe` li rilegge dal disco cercando per
+offset di byte: con fine riga LF un salto può atterrare a metà riga, e il file si esegue a pezzi
+senza dare errore. Il 27/07/2026 è bastato aggiungere **una riga di commento** a
+`daily-pipeline.bat` perché perdesse la riga di log `1/4 update-parts END` e **rieseguisse metà
+pipeline**. Il tool Write scrive LF: dopo ogni modifica riconvertire e **rieseguire il bat** con
+`claude`/`npm` sostituiti da stub `.exe`, controllando che il log abbia tutte le righe una volta
+sola. Nei messaggi passati a `:log` niente `>`: cmd lo tratta come redirezione (un `-> skip` creava
+il file `skip` nella cartella del progetto e troncava la riga di log). Regola generale in
+`C:\Users\cinqu\.claude\rules\bash-and-tools.md`.
 
 **Non si registrano Scheduled Task.** Collect, pipeline, discover e recover sono **job del
 dispatcher generale** (`c:\claude-code\task-dispatcher\jobs.json`: `beyblade-collect`,

@@ -68,13 +68,21 @@ async function main() {
     console.log(`\nSalvate ${out.length} pagine in ${CACHE_PATH}`);
 
     // Cross-check di freschezza: BBX aggiorna ogni venerdì; se i nostri dati sono più vecchi, avvisa.
+    // Se /update-combos è in pausa, combos.json è fermo PER SCELTA: dirlo come «possibile
+    // staleness della pipeline» sarebbe descrivere una decisione come un guasto, e dopo una
+    // settimana di avvisi previsti nessuno legge più nemmeno quelli veri.
     if (existsSync(COMBOS_PATH)) {
       try {
         const db = JSON.parse(readFileSync(COMBOS_PATH, 'utf-8'));
         const ourDate = (db.lastUpdated ?? '').slice(0, 10);
         if (ourDate && ourDate < today()) {
           const days = Math.round((Date.parse(today()) - Date.parse(ourDate)) / 86_400_000);
-          if (days >= 7) console.warn(`⚠ Cross-check: BBX Weekly è di oggi ma combos.json è fermo da ${days} giorni (${ourDate}). Possibile staleness della pipeline.`);
+          const inPausa = existsSync(join(ROOT, '.pausa-update-combos'));
+          if (days >= 7 && inPausa) {
+            console.log(`  Cross-check: combos.json fermo da ${days} giorni (${ourDate}), atteso: /update-combos e' in pausa (.pausa-update-combos).`);
+          } else if (days >= 7) {
+            console.warn(`⚠ Cross-check: BBX Weekly è di oggi ma combos.json è fermo da ${days} giorni (${ourDate}). Possibile staleness della pipeline.`);
+          }
         }
       } catch { /* ignore */ }
     }

@@ -1,6 +1,7 @@
 @echo off
 setlocal enabledelayedexpansion
-REM Raccolta fonti, task Windows AUTONOMO (07:30), separato dalla pipeline delle 08:00.
+REM Raccolta fonti: job `beyblade-collect` del dispatcher generale (soglia 07:30),
+REM separato dalla pipeline (soglia 08:00) che gira subito dopo nella stessa coda.
 REM
 REM Perche' separato: collect:sources apre browser Chrome headed (Reddit/WBO/arca).
 REM Quando uno di questi si chiude male porta con se' il .bat che lo ha lanciato:
