@@ -25,12 +25,26 @@ call :log "=== RECOVER START ==="
 
 git log --since="%TODAY% 00:00" --pretty=format:%%s > "%CHECK%" 2>nul
 
+REM Stesso interruttore manuale di daily-pipeline.bat: senza, il recupero rifarebbe
+REM /update-combos proprio mentre lo si e' messo in pausa nella pipeline.
+set "SALTA_COMBOS="
+if exist "%~dp0.pausa-update-combos" set "SALTA_COMBOS=1"
+if defined SALTA_COMBOS call :log "update-combos in pausa (.pausa-update-combos): salto judge + update-combos"
+
+REM Le due condizioni si combinano in una variabile, senza goto e senza if concatenati:
+REM  - "if errorlevel 1 if not defined X (...) else (...)" legherebbe l'else al SECONDO if;
+REM  - un "goto" in avanti si rompe perche' cmd cerca le etichette per offset di byte e questi
+REM    .bat hanno fine riga LF: il salto atterra a meta' riga (visto: "setlocal" letto "tlocal").
 findstr /c:"update combos database" "%CHECK%" >nul
-if errorlevel 1 (
+set "COMBOS_DA_FARE="
+if errorlevel 1 set "COMBOS_DA_FARE=1"
+if defined SALTA_COMBOS set "COMBOS_DA_FARE="
+
+if defined COMBOS_DA_FARE (
   call :log "update-combos NON committato oggi -> recupero (judge + update-combos)"
   REM La raccolta NON viene rifatta qui: e' il task "Beyblade Collect Sources" delle
   REM 07:30 a farla, e i suoi browser headed uccidevano questo bat prima di arrivare
-  REM a /update-combos — cioe' proprio il recupero che doveva garantire. Si elabora
+  REM a /update-combos - cioe' proprio il recupero che doveva garantire. Si elabora
   REM la cache gia' presente: se il task del mattino e' andato, e' fresca di poche ore.
   call :log "--- judge-youtube START ---"
   claude --model sonnet --effort medium --dangerously-skip-permissions -p "/judge-youtube" >> "%LOG%" 2>&1
@@ -39,7 +53,7 @@ if errorlevel 1 (
   claude --model sonnet --effort high --dangerously-skip-permissions -p "/update-combos" >> "%LOG%" 2>&1
   call :log "--- update-combos END exit=!errorlevel! ---"
 ) else (
-  call :log "update-combos gia' committato oggi -> skip"
+  call :log "update-combos: niente da fare (gia' committato oggi, oppure in pausa)"
 )
 
 findstr /c:"mine reddit combos" "%CHECK%" >nul

@@ -72,9 +72,18 @@ call :log "--- 2/4 judge-youtube START ---"
 claude --model sonnet --effort medium --dangerously-skip-permissions -p "/judge-youtube" >> "%LOG%" 2>&1
 call :log "--- 2/4 judge-youtube END exit=!errorlevel! ---"
 
-call :log "--- 3/4 update-combos START ---"
-claude --model sonnet --effort high --dangerously-skip-permissions -p "/update-combos" >> "%LOG%" 2>&1
-call :log "--- 3/4 update-combos END exit=!errorlevel! ---"
+REM Interruttore manuale per il solo /update-combos: se il file esiste, lo step viene saltato
+REM e il resto della pipeline prosegue. E' lo step piu' lungo (~20 min: legge combos.json da
+REM 19,7 MB, estrae con l'IA dalle fonti narrative, riscora ~4900 combo, ricompila il sito).
+REM Per riattivarlo basta cancellare il file. Stesso interruttore in recover-combos.bat,
+REM altrimenti il recupero delle 14:00 lo rifarebbe comunque.
+if exist "%~dp0.pausa-update-combos" (
+  call :log "--- 3/4 update-combos SALTATO: esiste .pausa-update-combos ---"
+) else (
+  call :log "--- 3/4 update-combos START ---"
+  claude --model sonnet --effort high --dangerously-skip-permissions -p "/update-combos" >> "%LOG%" 2>&1
+  call :log "--- 3/4 update-combos END exit=!errorlevel! ---"
+)
 
 call :log "--- 4/4 mine-reddit START ---"
 claude --model sonnet --effort medium --dangerously-skip-permissions -p "/mine-reddit" >> "%LOG%" 2>&1
@@ -82,7 +91,7 @@ call :log "--- 4/4 mine-reddit END exit=!errorlevel! ---"
 
 REM Rimuovere il flag prima del marker finale: il battito lo vede entro 30s e si chiude
 REM da solo. Se il bat muore prima di qui, il flag resta e il battito prosegue fino a
-REM scadenza — ed e' proprio quel proseguire a dire che la console era ancora viva.
+REM scadenza - ed e' proprio quel proseguire a dire che la console era ancora viva.
 del /q "%FLAG%" 2>nul
 call :log "=== PIPELINE END ==="
 endlocal
