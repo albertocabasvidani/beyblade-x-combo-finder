@@ -1,11 +1,11 @@
 {
-  "lastRun": "2026-07-20",
+  "lastRun": "2026-07-27",
   "lastProposal": {
-    "messageId": "19f7eac71ae53fe2",
-    "threadId": "19f7eac71ae53fe2",
-    "date": "2026-07-20",
-    "subject": "Beyblade - 3 nuove fonti candidate YouTube (settimana 20/07, seguito)",
-    "note": "Run del 20/07 diviso in due email: 19f7ea6fd17b3060 (ramo social) e questa (ramo YouTube). Al prossimo run cercare le risposte su ENTRAMBI i thread.",
+    "messageId": "19fa2ca29656f3b1",
+    "threadId": "19fa2ca29656f3b1",
+    "date": "2026-07-27",
+    "subject": "Beyblade — 1 nuova fonte candidata (settimana 27/07)",
+    "note": "Include conferma feedback del 27/07 (ramo YouTube 20/07) + 1 nuovo candidato (X Knights MY) + pendenti social del 20/07 (thread 19f7ea6fd17b3060, mai risposto) ancora in attesa. Al prossimo run cercare le risposte su questo thread E sul 19f7ea6fd17b3060.",
     "relatedProposals": ["19f7ea6fd17b3060"]
   },
   "candidates": [
@@ -295,10 +295,10 @@
       "rationale": "Comunità ufficiale del Perù con Ranking nazionale e tornei Beyblade X dedicati.",
       "dedupCheck": "Nessuna fonte PE (SBBL è ES, Liga Vortex è MX). Ranking nazionale ancora da popolare.",
       "verifiedOn": "2026-06-29",
-      "verifyNote": "Verificato: sito 'VERSION BETA 1.0', pagine ranking (Estandar/Kids) ancora vuote (solo intestazioni). Nessun piazzamento/combo. Monitorare quando si riempie.",
+      "verifyNote": "Verificato: sito 'VERSION BETA 1.0', pagine ranking (Estandar/Kids) ancora vuote (solo intestazioni). Nessun piazzamento/combo. Scartato dall'utente (email 27/07/2026): \"escludili se non hanno combo\". Aggiunto a knownNegatives.",
       "proposedWeight": 0.6,
       "recommendation": "manual-verify",
-      "status": "proposed",
+      "status": "rejected",
       "dateFound": "2026-06-17",
       "lastSeen": "2026-06-29"
     },
@@ -315,10 +315,10 @@
       "rationale": "Campionato ufficiale Hasbro LATAM (calendario, regolamento, consigli competitivi).",
       "dedupCheck": "Non duplica fonti esistenti. Hub informativo/promozionale.",
       "verifiedOn": "2026-06-29",
-      "verifyNote": "Verificato: solo nuovi prodotti, Demo Tour, consigli competitivi, regolamento/calendario e nomi finalisti. Nessuna configurazione di parti per-piazzamento. Monitorare.",
+      "verifyNote": "Verificato: solo nuovi prodotti, Demo Tour, consigli competitivi, regolamento/calendario e nomi finalisti. Nessuna configurazione di parti per-piazzamento. Scartato dall'utente (email 27/07/2026): \"escludili se non hanno combo\". Aggiunto a knownNegatives.",
       "proposedWeight": 0.5,
       "recommendation": "manual-verify",
-      "status": "proposed",
+      "status": "rejected",
       "dateFound": "2026-06-17",
       "lastSeen": "2026-06-29"
     },
@@ -481,7 +481,8 @@
       "dedupCheck": "Scena UK coperta solo dalla piccola Devon Beyblade Association: Ryzo è un competitor che porta anche tornei internazionali. Non duplica. Profilo 'journey-vlog': verificare quota di combo/piazzamenti reali.",
       "proposedWeight": 0.5,
       "recommendation": "propose",
-      "status": "proposed",
+      "status": "rejected",
+      "verifyNote": "Scartato dall'utente (email 27/07/2026): \"Ryzo non pubblica quasi mai\". Aggiunto a knownNegatives.",
       "dateFound": "2026-06-29",
       "lastSeen": "2026-07-13"
     },
@@ -559,12 +560,13 @@
       "url": "https://www.x-rank.fr/tournaments",
       "signals": { "lastActivity": "2026", "publishesResults": false },
       "rationale": "Piattaforma francese di tornei e ranking per Pro Bladers. La Francia oggi è un gap totale di copertura (nessuna fonte fr).",
-      "dedupCheck": "Contenuto caricato via JavaScript, non verificabile con fetch statico: serve un passaggio Playwright per confermare che pubblichi piazzamenti/combo. Nessuna fonte FR esistente.",
+      "dedupCheck": "Nessuna fonte FR esistente (gap totale).",
+      "verifyNote": "27/07/2026: sito in manutenzione fino al 10/08/2026 (pagina 'Notre équipe travaille dur...'), /tournaments dà 404. Non verificabile ora se pubblica combo. Resta in sospeso: ri-verificare dopo il 10/08.",
       "proposedWeight": 0.6,
       "recommendation": "manual-verify",
       "status": "proposed",
       "dateFound": "2026-07-13",
-      "lastSeen": "2026-07-13"
+      "lastSeen": "2026-07-27"
     },
     {
       "candidateId": "website-lbb-oficial",
@@ -577,12 +579,13 @@
       "url": "https://lbboficial.com/",
       "signals": { "lastActivity": "2026", "publishesResults": false },
       "rationale": "Lega nazionale brasiliana con tornei mensili in più città, arbitri e ranking stagione 2026 aggiornato in tempo reale.",
-      "dedupCheck": "BR coperto solo da canali YouTube narrativi (LBP, Galaxy): nessuna fonte strutturata BR. Dati caricati via JavaScript: verificare con Playwright se espone le combo per piazzamento.",
+      "dedupCheck": "BR coperto solo da canali YouTube narrativi (LBP, Galaxy): nessuna fonte strutturata BR.",
+      "verifyNote": "Verificato via fetch (27/07/2026): mostra solo 'Os 3 melhores jogadores do ranking' (ranking giocatori senza combo), calendario dietro login, promo iscrizioni. Nessuna combo per-piazzamento. Scartato dall'utente: \"escludili se non hanno combo\". Aggiunto a knownNegatives.",
       "proposedWeight": 0.6,
       "recommendation": "manual-verify",
-      "status": "proposed",
+      "status": "rejected",
       "dateFound": "2026-07-13",
-      "lastSeen": "2026-07-13"
+      "lastSeen": "2026-07-27"
     },
     {
       "candidateId": "website-bbx-kr",
@@ -595,12 +598,13 @@
       "url": "https://bbx.co.kr/sub/ranking-history.php",
       "signals": { "lastActivity": "2026", "publishesResults": true },
       "rationale": "Sito ufficiale del campionato coreano: ranking punti in tempo reale dei giocatori + post del board con le combo dei campioni nazionali (es. combo dei rappresentanti al mondiale).",
-      "dedupCheck": "KR già coperta da arca.live (forum) e Leonerd/BEYBLADE X KOREA (YouTube). Il ranking è per-giocatore, non per-combo: le combo appaiono solo in post occasionali del board. Valore medio.",
+      "dedupCheck": "KR già coperta da arca.live (forum) e Leonerd/BEYBLADE X KOREA (YouTube).",
+      "verifyNote": "Verificato via fetch (27/07/2026): la pagina ranking-history mostra solo la classifica '실시간 랭킹' (posizione/nome/punti per giocatore, suddivisa per lega), nessuna combo o parte. Scartato dall'utente: \"escludili se non hanno combo\". Aggiunto a knownNegatives.",
       "proposedWeight": 0.5,
       "recommendation": "manual-verify",
-      "status": "proposed",
+      "status": "rejected",
       "dateFound": "2026-07-13",
-      "lastSeen": "2026-07-13"
+      "lastSeen": "2026-07-27"
     },
     {
       "candidateId": "social-beypointer-usa-fb",
@@ -671,7 +675,9 @@
       "dedupCheck": "ATTENZIONE sovrapposizione: l'area DMV (DC/Maryland/Virginia) include il territorio di Maryland Beyblade League, già fonte attiva — gli stessi eventi potrebbero essere indicizzati due volte senza id-evento condiviso. Buona parte del contenuto è live/practice night (non torneo). Peso basso proposto per questo motivo.",
       "proposedWeight": 0.4,
       "recommendation": "propose",
-      "status": "proposed",
+      "status": "accepted",
+      "verifyNote": "Approvato dall'utente (email 27/07/2026, risposta a proposta 20/07: \"aggiungi il primo\"). Promosso a sources.json (w 0.4).",
+      "promotedOn": "2026-07-27",
       "verifiedOn": "2026-07-20",
       "dateFound": "2026-07-20",
       "lastSeen": "2026-07-20"
@@ -691,7 +697,8 @@
       "dedupCheck": "Nessuna sovrapposizione con fonti esistenti, ma i tornei sono auto-organizzati dal canale e dichiaratamente 'Unranked': evidenza più vicina al combo-testing strutturato che al piazzamento sanzionato. Canale molto piccolo (145 iscritti). Decisione utente consigliata.",
       "proposedWeight": 0.3,
       "recommendation": "manual-verify",
-      "status": "proposed",
+      "status": "rejected",
+      "verifyNote": "Scartato dall'utente (email 27/07/2026): \"gli altri due sono troppo piccoli\" (145 iscritti). Aggiunto a knownNegatives.",
       "verifiedOn": "2026-07-20",
       "dateFound": "2026-07-20",
       "lastSeen": "2026-07-20"
@@ -711,10 +718,30 @@
       "dedupCheck": "Nessuna fonte del Canada atlantico (NBBA, stessa regione, è morta dal 2025-01). Molto piccolo (34 iscritti) e discontinuo: gap dic 2025 → giu 2026. Contenuto = clip di battaglie e launch-tech più che piazzamenti completi.",
       "proposedWeight": 0.3,
       "recommendation": "manual-verify",
-      "status": "proposed",
+      "status": "rejected",
+      "verifyNote": "Scartato dall'utente (email 27/07/2026): \"gli altri due sono troppo piccoli\" (34 iscritti). Aggiunto a knownNegatives.",
       "verifiedOn": "2026-07-20",
       "dateFound": "2026-07-20",
       "lastSeen": "2026-07-20"
+    },
+    {
+      "candidateId": "youtube-xknights-beyblade-my",
+      "name": "X Knights Beyblade MY",
+      "type": "youtube",
+      "platform": "youtube",
+      "provides": "combos",
+      "lang": "en",
+      "region": "MY",
+      "url": "https://www.youtube.com/@xknightsbeyblademy",
+      "channelId": "UCLyTNcQ89nf_ls9m7Lzklyw",
+      "signals": { "subscribers": 77, "lastActivity": "2026-07-24", "videoCount": 93, "publishesResults": true },
+      "rationale": "Comunità competitiva Beyblade X di Kuala Lumpur che dichiara 'tournament highlights, combo testing, event videos, competitive play'. Attiva (upload 2026-07-24, 93 video).",
+      "dedupCheck": "MY oggi coperta solo da due pagine Facebook (wbbamy, Beyblademy in manualVerification) e da Combo Challengers (entertainment, in knownNegatives): una community-organizzatore MY su YouTube colma un gap automatizzabile. ATTENZIONE: canale molto piccolo (77 iscritti, sotto la soglia con cui hai scartato Zentonix/Maritime) e contenuto misto highlights+combo-testing. Decisione tua.",
+      "proposedWeight": 0.3,
+      "recommendation": "manual-verify",
+      "status": "proposed",
+      "dateFound": "2026-07-27",
+      "lastSeen": "2026-07-27"
     }
   ],
   "knownNegatives": [
@@ -793,6 +820,15 @@
     "https://www.youtube.com/@tameninaranai (JP entertainment generalista)",
     "https://www.youtube.com/@테스터훈 (KR toy reviewer generalista 1.4M, non risultati Beyblade X)",
     "https://www.youtube.com/@meteo.0707 (JP canale kids/goods)",
-    "https://www.youtube.com/@beyriftx (4 video, canale appena nato)"
+    "https://www.youtube.com/@beyriftx (4 video, canale appena nato)",
+    "https://www.youtube.com/@bladerzentonix (Zentonix: tornei auto-organizzati 'Unranked', canale 145 iscritti, scartato dall'utente 27/07 troppo piccolo)",
+    "https://www.youtube.com/@maritimebeyblade (Maritime Beyblade CA-NB: 34 iscritti, discontinuo, scartato dall'utente 27/07 troppo piccolo)",
+    "https://www.youtube.com/@ryzoblades (Ryzo UK: journey-vlog, pubblica di rado, scartato dall'utente 27/07)",
+    "https://beybladeperu.com/ (Beyblade Perù: ranking beta vuoto, nessuna combo, scartato dall'utente 27/07)",
+    "https://campeonatobeybladex.com/ (Campeonato BeybladeX LATAM: promo/calendario, nessuna combo per-piazzamento, scartato dall'utente 27/07)",
+    "https://lbboficial.com/ (LBB Brasile: solo ranking giocatori, nessuna combo, scartato dall'utente 27/07)",
+    "https://bbx.co.kr/sub/ranking-history.php (campionato KR: solo ranking punti per giocatore, nessuna combo, scartato dall'utente 27/07)",
+    "https://www.youtube.com/@beybladeprochile (CL entertainment: batallas/unboxings/directos, non risultati di torneo)",
+    "https://www.youtube.com/@storm_beys (US combo-testing/building teoria, inattivo dal 2026-01-18)"
   ]
 }
