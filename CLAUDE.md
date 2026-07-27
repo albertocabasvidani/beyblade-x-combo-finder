@@ -311,14 +311,25 @@ Per passare a giornaliero: `/sc daily`.
 Bat manuali: `collect-social.bat` (solo Reddit+WBO headed), `collect-combos.bat` (solo collect
 headless), `update-combos.bat` (collect+analyze), `dev-server.bat` (Astro).
 
-Registrazione task (eseguire una volta; il task pipeline ha `/it` = gira solo se l'utente è loggato,
-necessario per i browser headed). Path con spazi quotati dentro `/tr`:
+**Non si registrano Scheduled Task.** Collect, pipeline, discover e recover sono **job del
+dispatcher generale** (`c:\claude-code\task-dispatcher\jobs.json`: `beyblade-collect`,
+`beyblade-pipeline`, `beyblade-discover`, `beyblade-recover`), che li esegue **in sequenza**. Per
+cambiare orario o timeout si edita il manifest, mai `schtasks`. Stato: `dispatcher.ps1 -Elenco`;
+motivazioni in `c:\claude-code\task-dispatcher\README.md`.
 
-    schtasks /create /tn "Beyblade Collect Sources" /tr "wscript.exe \"c:\claude-code\Personale\Beyblade\beyblade combos\run-collect-hidden.vbs\"" /sc daily /st 07:30 /it /f
-    schtasks /create /tn "Beyblade Daily Pipeline" /tr "wscript.exe \"c:\claude-code\Personale\Beyblade\beyblade combos\run-pipeline-hidden.vbs\"" /sc daily /st 08:00 /it /f
+L'ora nel manifest è una **soglia**, non un appuntamento: il dispatcher guarda ogni 15 minuti cosa è
+dovuto, quindi la raccolta delle 07:30 può partire alle 07:45; e se il PC si è svegliato da meno di
+30 minuti il giro esce e riprova dopo.
+
+Resta un task a sé **solo** `Beyblade Transcripts` (ogni 5 minuti: una coda sequenziale lo
+affamerebbe dietro un job da 3 ore), elencato in `fuoriDispatcher` nel manifest:
+
     schtasks /create /tn "Beyblade Transcripts" /tr "wscript.exe \"c:\claude-code\Personale\Beyblade\beyblade combos\run-transcripts-hidden.vbs\"" /sc minute /mo 5 /f
-    schtasks /create /tn "Beyblade Discover Sources" /tr "wscript.exe \"c:\claude-code\Personale\Beyblade\beyblade combos\run-discover-hidden.vbs\"" /sc weekly /d MON /st 09:00 /it /f
-    schtasks /create /tn "Beyblade Recover Combos" /tr "wscript.exe \"c:\claude-code\Personale\Beyblade\beyblade combos\run-recover-hidden.vbs\"" /sc daily /st 14:00 /it /f
+
+I wrapper `run-collect-hidden.vbs`, `run-pipeline-hidden.vbs`, `run-discover-hidden.vbs` e
+`run-recover-hidden.vbs` non sono più usati da alcun task (il dispatcher gira già nascosto e chiama
+i `.bat` diretti): restano come ingresso manuale, ma prima conviene chiedere `dispatcher.ps1
+-Occupato` per non diventare un secondo attore.
 
 Il task transcripts gira **a finestra nascosta**: l'azione lancia `wscript.exe run-transcripts-hidden.vbs`,
 che a sua volta avvia `fetch-transcripts.bat` con console nascosta (`WScript.Shell.Run ..., 0`). Necessario

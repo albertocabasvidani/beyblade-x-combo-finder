@@ -5,7 +5,14 @@ const ROOT = join(import.meta.dirname, '..');
 
 // I fetcher Playwright (MetaBeys/WBO) sono più lenti → timeout dedicato.
 const scripts = [
-  { name: 'Reddit scraper', cmd: 'npx tsx scripts/scrape-reddit.ts', timeout: 120_000 },
+  // Reddit: 15 min, non 2. Il ciclo commenti fa `await sleep(2000)` per post (rate-limit voluto):
+  // con KEEP_TOP=150 post da arricchire sono ~3s l'uno, cioè ~7,5 min — il vecchio timeout di
+  // 120_000 era matematicamente insufficiente sopra i ~40 post e falliva SEMPRE. Il fallimento era
+  // mascherato: execSync uccide solo il figlio diretto (cmd.exe), non i nipoti, così lo scraper
+  // orfano proseguiva e scriveva la cache minuti dopo che collect l'aveva dato per morto
+  // (22/07/2026: "Salvati 150 post" comparso DOPO "Done. 6/8 succeeded"). Sotto carico l'orfano non
+  // ce la faceva e la cache non veniva scritta affatto.
+  { name: 'Reddit scraper', cmd: 'npx tsx scripts/scrape-reddit.ts', timeout: 900_000 },
   { name: 'arca.live scraper (KR)', cmd: 'npx tsx scripts/scrape-arca.ts', timeout: 180_000 },
   { name: 'YouTube fetcher', cmd: 'npx tsx scripts/fetch-youtube.ts', timeout: 120_000 },
   { name: 'Sheets fetcher', cmd: 'npx tsx scripts/fetch-sheets.ts', timeout: 120_000 },
