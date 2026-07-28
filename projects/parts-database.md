@@ -1,7 +1,7 @@
 ---
 name: parts-database
 status: active
-updated: 27/07/2026
+updated: 28/07/2026
 health: green
 next-step: "mantenere verify:wiki a 0 mancanti"
 blocked-by: null
@@ -36,6 +36,7 @@ contro il wiki e modellazione delle categorie (incl. Over Blade per CX Expand).
 ## Changelog
 
 <!-- Cose completate, dalla più recente. Formato: `- gg/mm/aaaa — testo` -->
+- 28/07/2026 — `/update-parts`: nessuna parte nuova. Le due liste prodotti TT/Hasbro invariate. 12 pagine con revid cambiato, tutte per il nuovo G3084 Rival Rumble Pack (Hasbro, repackaging di colorazioni già registrate: Pearl Tiger 3-60U, Wriggle Kraken S 3-85O, Sterling Wolf 3-80FB, Crest Leon 7-60GN, Gill Shark 4-70O, HornetFort R7-60T) e mention aggiuntive sulla stessa Bit - Gear Needle (G3392 Ridge Triceratops 9-80GN, G3393 Yggdrasil Team Pack, G4565 Tread Croc TQ 5-50GN, tutte combo di parti già registrate)
 - 27/07/2026 — `/update-parts`: nessuna parte nuova. Le due liste prodotti TT/Hasbro invariate dal 23/07. 3 pagine con revid cambiato (LeonCrest 7-60GN, SilverWolf 3-80FB, WeissTiger 3-60U): solo metadata release occidentale/gallery, nessun campo schema. Verificati a fondo anche 2 prodotti CX non ancora tracciati (Fang Leon T 4-60U, TigaRage FT3-60T) e le 11 pagine-registro linkate dalle liste (Blade/Ratchet/Bit/Lock Chip/Main Blade/Assist Blade "-"): tutte parti già a registro. 2 prodotti restano non estraibili perché ancora {{Unreleased}} con nomi parte non confermati (Tread Croc TQ 5-50GN: assist blade "Q" e over blade "T" senza nome ufficiale; Seize Jaguar HN: blade non ancora nominato)
 - 26/07/2026 — `/update-parts`: nessuna parte nuova. Verificati a fondo i 3 nuovi Random Booster (Vol. 10, Vol. 11, BrachioWhip Select, 13 bey): tutti ricombinazioni di parti già registrate. Revid `BahamutBlitz BK1-50I` aggiornato (edit sul wiki annullato dalla community, nessun impatto sui dati)
 - 16/06/2026 — docs: README/CLAUDE.md aggiornati per pipeline e confine IA/codice
