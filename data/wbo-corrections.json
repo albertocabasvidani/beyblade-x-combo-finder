@@ -1,11 +1,17 @@
 {
-  "generatedAt": "2026-07-26",
+  "generatedAt": "2026-07-27",
   "note": "Mappa norm(riga-combo WBO) -> riga corretta. Curata dal subagent typo di /update-combos: per ogni riga refuso del ledger (categoria blade-unresolved/bit-unresolved) propone la riga corretta usando la lista nomi del registro; ogni proposta passa il gate deterministico (la riga corretta DEVE risolvere con parseComboLine) ed e' confermata dal subagent giudice. parse-wbo applica questa mappa PRIMA del parsing, cosi' i refusi risolvono in contesto (data/evento) e spariscono dal ledger. Vuota = nessuna correzione attiva.",
   "corrections": {
     "* acordz: aeropegasus 1-60r": "Aero Pegasus 1-60 Rush",
     "* bongobongo: wizardrod 1-60h": "Wizard Rod 1-60 Hexa",
+    "* buicejox: cobaltdragoon 5-60e": "Cobalt Dragoon 5-60E",
+    "* cloroxwipes: tyrannobeat 7-60r": "Tyranno Beat 7-60R",
     "* dark law: hover wyvern 1-60k": "Hover Wyvern 1-60 Kick",
+    "* junebuggarella: cobaltdragoon 5-60e": "Cobalt Dragoon 5-60E",
+    "* kyoutaro: cobaltdragoon 9-60e": "Cobalt Dragoon 9-60E",
     "* lololegacy: wizardrod 7-60h": "Wizard Rod 7-60 Hexa",
+    "* oyapapi: scarkscale 3-60lr": "Shark Scale 3-60LR",
+    "* rokki33: sharkscale 1-60fb": "Shark Scale 1-60FB",
     "* teefoh: knightmail 3-60r": "Knight Mail 3-60 Rush",
     "*cobaltdragoon 5-60elevate": "Cobalt Dragoon 5-60 Elevate",
     "*hover wyven 9-60kick": "Hover Wyvern 9-60 Kick",
@@ -60,6 +66,7 @@
     "hovern wyvern 3-60r": "Hover Wyvern 3-60R",
     "hoverwyvern 9-60kick (single stage) - cheeezy": "Hover Wyvern 9-60 Kick",
     "keel shark: 4-55hexa": "Shark Edge 4-55 Hexa",
+    "meteroid dragoon 9-60e": "Meteor Dragoon 9-60E",
     "mummyscurse 9-60wedge (both stages)": "Mummy Curse 9-60Wedge (both stages)",
     "pegausblast h5-60lr": "Pegasus Blast H5-60LR",
     "pheonixwing 1-60 r (frist & final stage)": "Phoenix Wing 1-60 R (Frist & Final Stage)",
@@ -98,6 +105,7 @@
     "sliverwolf 9-70elevate": "Silver Wolf 9-70Elevate",
     "sliverwolf 9-70hexa": "Silver Wolf 9-70Hexa",
     "stormpegasus 3-60l": "Storm Pegasis 3-60 Level",
+    "sword blader: sharkscale 1-70low rush (first stage & final stage)": "Shark Scale 1-70Low Rush (First Stage & Final Stage)",
     "tyranno beat / 1-70 / rush": "Tyranno Beat 1-70 Rush",
     "tyranno beat / 5-70 / point": "Tyranno Beat 5-70 Point",
     "tyrannobeat 1-60rush": "Tyranno Beat 1-60 Rush",
@@ -130,6 +138,7 @@
     "wizardrod 9-60under n": "Wizard Rod 9-60 Under Needle",
     "wizzardrod 1-60h": "Wizard Rod 1-60H",
     "wizzardrod1-60h": "Wizard Rod 1-60H",
-    "wyvernhovern 1-50rush (first stage & final stage)": "Hover Wyvern 1-50Rush (First Stage & Final Stage)"
+    "wyvernhovern 1-50rush (first stage & final stage)": "Hover Wyvern 1-50Rush (First Stage & Final Stage)",
+    "🦖tyrannobeat 1-60rush": "Tyranno Beat 1-60Rush"
   }
 }
