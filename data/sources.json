@@ -455,6 +455,15 @@
       "channelId": "UC4vKwxemqIm2vm_pEQlj7gg"
     },
     {
+      "id": "youtube-xknights-beyblade-my",
+      "name": "X Knights Beyblade MY",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.3,
+      "lang": "en",
+      "channelId": "UCLyTNcQ89nf_ls9m7Lzklyw"
+    },
+    {
       "id": "google-sheets-tier-list",
       "name": "Beyblade X Community Tier List (WBO)",
       "type": "spreadsheet",

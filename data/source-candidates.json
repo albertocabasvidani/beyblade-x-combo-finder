@@ -1,11 +1,11 @@
 {
-  "lastRun": "2026-07-27",
+  "lastRun": "2026-08-03",
   "lastProposal": {
-    "messageId": "19fa2ca29656f3b1",
-    "threadId": "19fa2ca29656f3b1",
-    "date": "2026-07-27",
-    "subject": "Beyblade — 1 nuova fonte candidata (settimana 27/07)",
-    "note": "Include conferma feedback del 27/07 (ramo YouTube 20/07) + 1 nuovo candidato (X Knights MY) + pendenti social del 20/07 (thread 19f7ea6fd17b3060, mai risposto) ancora in attesa. Al prossimo run cercare le risposte su questo thread E sul 19f7ea6fd17b3060.",
+    "messageId": "19fc67292184b2f3",
+    "threadId": "19fc67292184b2f3",
+    "date": "2026-08-03",
+    "subject": "Beyblade — nessuna nuova fonte (settimana 03/08)",
+    "note": "Conferma del feedback del 28/07 (\"procedi con il primo\" -> X Knights MY promosso) + nessun nuovo candidato + pendenti social del 20/07 (thread 19f7ea6fd17b3060, mai risposto) ancora in attesa + X-RANK FR da ri-verificare dopo il 10/08. Al prossimo run cercare le risposte su questo thread E sul 19f7ea6fd17b3060.",
     "relatedProposals": ["19f7ea6fd17b3060"]
   },
   "candidates": [
@@ -561,7 +561,7 @@
       "signals": { "lastActivity": "2026", "publishesResults": false },
       "rationale": "Piattaforma francese di tornei e ranking per Pro Bladers. La Francia oggi è un gap totale di copertura (nessuna fonte fr).",
       "dedupCheck": "Nessuna fonte FR esistente (gap totale).",
-      "verifyNote": "27/07/2026: sito in manutenzione fino al 10/08/2026 (pagina 'Notre équipe travaille dur...'), /tournaments dà 404. Non verificabile ora se pubblica combo. Resta in sospeso: ri-verificare dopo il 10/08.",
+      "verifyNote": "03/08/2026: ancora in manutenzione (countdown al 10/08/2026), /tournaments dà 404. Non verificabile se pubblica combo. Ri-verificare dopo il 10/08.",
       "proposedWeight": 0.6,
       "recommendation": "manual-verify",
       "status": "proposed",
@@ -739,9 +739,10 @@
       "dedupCheck": "MY oggi coperta solo da due pagine Facebook (wbbamy, Beyblademy in manualVerification) e da Combo Challengers (entertainment, in knownNegatives): una community-organizzatore MY su YouTube colma un gap automatizzabile. ATTENZIONE: canale molto piccolo (77 iscritti, sotto la soglia con cui hai scartato Zentonix/Maritime) e contenuto misto highlights+combo-testing. Decisione tua.",
       "proposedWeight": 0.3,
       "recommendation": "manual-verify",
-      "status": "proposed",
+      "status": "accepted",
+      "verifyNote": "Approvato dall'utente (email 03/08/2026: \"procedi con il primo\", riferito al candidato in cima alla proposta del 27/07). Promosso in sources.json con peso 0.3.",
       "dateFound": "2026-07-27",
-      "lastSeen": "2026-07-27"
+      "lastSeen": "2026-08-03"
     }
   ],
   "knownNegatives": [
@@ -829,6 +830,15 @@
     "https://lbboficial.com/ (LBB Brasile: solo ranking giocatori, nessuna combo, scartato dall'utente 27/07)",
     "https://bbx.co.kr/sub/ranking-history.php (campionato KR: solo ranking punti per giocatore, nessuna combo, scartato dall'utente 27/07)",
     "https://www.youtube.com/@beybladeprochile (CL entertainment: batallas/unboxings/directos, non risultati di torneo)",
-    "https://www.youtube.com/@storm_beys (US combo-testing/building teoria, inattivo dal 2026-01-18)"
+    "https://www.youtube.com/@storm_beys (US combo-testing/building teoria, inattivo dal 2026-01-18)",
+    "https://www.youtube.com/@anonymousblader190 (Unknown Beyblade Battle Archive: video integrali di eventi WBO East Coast Cup X, le descrizioni linkano il thread Winning Combinations WBO che già parsiamo -> doppione di WBO)",
+    "https://www.youtube.com/@stimatabbx (verificato via API: shorts/clip di battaglie con caption meme, un solo vlog di torneo, nessun piazzamento con combo)",
+    "https://www.youtube.com/@asakura0626 (JP: partecipa a S1/G3 e riporta i propri 優勝, ma inattivo dal 2026-04-18, fuori freschezza ~107 giorni)",
+    "https://www.youtube.com/@yihewu3794 (512眼鏡爸, TW: contenuto = test parti/battaglie e giveaway, un solo riferimento a un 高雄G1冠軍配置 su 50 video, teoria non placement)",
+    "https://www.youtube.com/@dada-c4f (Da打陀螺, TW:開箱/改造實測, teoria non risultati)",
+    "https://www.youtube.com/@awkimkt (BR: vlog-entertainment di tornei LBC senza piazzamenti/combo, BR già coperta da LBP/Galaxy)",
+    "https://bbx.co.kr/sub/sub05_03.php?boardid=review (bacheca review KR: l'unico post con le 조합 dei vincitori è del 2024-11, nessun post 2026, fuori freschezza)",
+    "https://malloftoys.com/blogs/news (blog e-commerce: copertura occasionale del World Championship, nessuna copertura regolare di tornei)",
+    "https://titipjepang.com (media ID: articolo one-off sul GTA Beylangkon, non fonte ricorrente)"
   ]
 }
