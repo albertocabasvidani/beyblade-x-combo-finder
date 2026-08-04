@@ -411,7 +411,7 @@
       "type": "attack",
       "names": {
         "tt": "Cobalt Drake",
-        "hasbro": null,
+        "hasbro": "Cobalt Drake",
         "ja": "コバルトドレイク",
         "romaji": "KobarutoDoreiku"
       },
@@ -439,7 +439,7 @@
         "revid": 634353
       },
       "status": "verified",
-      "lastVerified": "2026-07-31",
+      "lastVerified": "2026-08-04",
       "stats": {
         "atk": 65,
         "def": 30,
@@ -677,24 +677,39 @@
       "type": "attack",
       "names": {
         "tt": "Dragoon Storm",
-        "hasbro": null,
-        "ja": "",
-        "romaji": ""
+        "hasbro": "Dragoon Storm",
+        "ja": "ドラグーンストーム",
+        "romaji": "DoragūnSutōmu"
       },
-      "aliases": [],
+      "aliases": [
+        {
+          "value": "ドラグーンストーム",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "DoragūnSutōmu",
+          "lang": "ja",
+          "kind": "romaji"
+        }
+      ],
       "firstReleaseSet": "BX-00",
       "products": [
         "BX-00",
         "G1844"
       ],
-      "source": null,
-      "status": "unverified",
+      "source": {
+        "page": "DragoonStorm 4-60RA",
+        "url": "https://beyblade.fandom.com/wiki/DragoonStorm_4-60RA",
+        "revid": 645272
+      },
+      "status": "verified",
       "stats": {
         "atk": 55,
         "def": 30,
         "sta": 15
       },
-      "lastVerified": "2026-07-31"
+      "lastVerified": "2026-08-04"
     },
     {
       "id": "dran-buster",
@@ -3250,22 +3265,37 @@
       "names": {
         "tt": "Shinobi Knife",
         "hasbro": "Knife Shinobi",
-        "ja": "",
-        "romaji": ""
+        "ja": "シノビナイフ",
+        "romaji": "ShinobiNaifu"
       },
-      "aliases": [],
+      "aliases": [
+        {
+          "value": "シノビナイフ",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "ShinobiNaifu",
+          "lang": "ja",
+          "kind": "romaji"
+        }
+      ],
       "firstReleaseSet": "BX-14",
       "products": [
         "BX-00"
       ],
-      "source": null,
-      "status": "unverified",
+      "source": {
+        "page": "ShinobiKnife 4-60LF",
+        "url": "https://beyblade.fandom.com/wiki/ShinobiKnife_4-60LF",
+        "revid": 610269
+      },
+      "status": "verified",
       "stats": {
         "atk": 23,
         "def": 50,
         "sta": 27
       },
-      "lastVerified": "2026-07-31"
+      "lastVerified": "2026-08-04"
     },
     {
       "id": "shinobi-shadow",
@@ -3524,24 +3554,39 @@
       "type": "attack",
       "names": {
         "tt": "Storm Pegasis",
-        "hasbro": null,
-        "ja": "",
-        "romaji": ""
+        "hasbro": "Storm Pegasis",
+        "ja": "ストームペガシス",
+        "romaji": "SutōmuPegashisu"
       },
-      "aliases": [],
+      "aliases": [
+        {
+          "value": "ストームペガシス",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "SutōmuPegashisu",
+          "lang": "ja",
+          "kind": "romaji"
+        }
+      ],
       "firstReleaseSet": "BX-00",
       "products": [
         "BX-00",
         "G1844"
       ],
-      "source": null,
-      "status": "unverified",
+      "source": {
+        "page": "StormPegasis 3-70RA",
+        "url": "https://beyblade.fandom.com/wiki/StormPegasis_3-70RA",
+        "revid": 645295
+      },
+      "status": "verified",
       "stats": {
         "atk": 55,
         "def": 15,
         "sta": 30
       },
-      "lastVerified": "2026-07-31"
+      "lastVerified": "2026-08-04"
     },
     {
       "id": "stormspriggan",
@@ -5192,9 +5237,16 @@
         "tt": "Stag",
         "hasbro": "Stag"
       },
-      "aliases": [],
+      "aliases": [
+        {
+          "value": "Bucks",
+          "lang": "en",
+          "kind": "community"
+        }
+      ],
       "products": [
-        "G1684"
+        "G1684",
+        "CX-00"
       ],
       "firstReleaseSet": "G1684",
       "source": {
@@ -5417,9 +5469,16 @@
         "tt": "Antler",
         "hasbro": "Antler"
       },
-      "aliases": [],
+      "aliases": [
+        {
+          "value": "Antlers",
+          "lang": "en",
+          "kind": "community"
+        }
+      ],
       "products": [
-        "G1684"
+        "G1684",
+        "CX-00"
       ],
       "firstReleaseSet": "G1684",
       "source": {

@@ -151,6 +151,7 @@
     {
       "id": "cobalt-drake",
       "name": "Cobalt Drake",
+      "nameWestern": "Cobalt Drake",
       "aliases": [
         "KobarutoDoreiku"
       ],
@@ -243,6 +244,10 @@
     {
       "id": "dragoon-storm",
       "name": "Dragoon Storm",
+      "nameWestern": "Dragoon Storm",
+      "aliases": [
+        "DoragūnSutōmu"
+      ],
       "type": "attack",
       "line": "bx",
       "releaseSet": "BX-00",
@@ -1170,6 +1175,9 @@
       "id": "shinobi-knife",
       "name": "Shinobi Knife",
       "nameWestern": "Knife Shinobi",
+      "aliases": [
+        "ShinobiNaifu"
+      ],
       "type": "defense",
       "line": "bx",
       "releaseSet": "BX-14",
@@ -1273,6 +1281,10 @@
     {
       "id": "storm-pegasis",
       "name": "Storm Pegasis",
+      "nameWestern": "Storm Pegasis",
+      "aliases": [
+        "SutōmuPegashisu"
+      ],
       "type": "attack",
       "line": "bx",
       "releaseSet": "BX-00",
