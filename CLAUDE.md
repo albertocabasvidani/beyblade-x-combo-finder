@@ -325,20 +325,27 @@ sola. Nei messaggi passati a `:log` niente `>`: cmd lo tratta come redirezione (
 il file `skip` nella cartella del progetto e troncava la riga di log). Regola generale in
 `C:\Users\cinqu\.claude\rules\bash-and-tools.md`.
 
+**Dal 06/08/2026 tutta l'automazione gira sul mini PC homeserver**, non su questo portatile:
+la copia attiva del progetto è `C:\Users\server\progetti\beyblade-combos` (accesso:
+`ssh homeserver`). Questa copia serve allo sviluppo; dopo un push, sul server va fatto `git pull`.
+Le cache gitignorate (`youtube-transcripts.json`, ecc.) e i profili Playwright vivono sul server.
+
 **Non si registrano Scheduled Task.** Collect, pipeline, discover e recover sono **job del
-dispatcher generale** (`c:\claude-code\task-dispatcher\jobs.json`: `beyblade-collect`,
-`beyblade-pipeline`, `beyblade-discover`, `beyblade-recover`), che li esegue **in sequenza**. Per
-cambiare orario o timeout si edita il manifest, mai `schtasks`. Stato: `dispatcher.ps1 -Elenco`;
-motivazioni in `c:\claude-code\task-dispatcher\README.md`.
+dispatcher generale** (manifest `jobs.HOMESERVER.json` nel clone del server:
+`beyblade-collect`, `beyblade-pipeline`, `beyblade-discover`, `beyblade-recover`), che li esegue
+**in sequenza**. Per cambiare orario o timeout si edita il manifest, mai `schtasks`. Stato:
+`dispatcher.ps1 -Elenco` sul server; motivazioni nel README del task-dispatcher.
 
 L'ora nel manifest è una **soglia**, non un appuntamento: il dispatcher guarda ogni 15 minuti cosa è
 dovuto, quindi la raccolta delle 07:30 può partire alle 07:45; e se il PC si è svegliato da meno di
 30 minuti il giro esce e riprova dopo.
 
 Resta un task a sé **solo** `Beyblade Transcripts` (ogni 5 minuti: una coda sequenziale lo
-affamerebbe dietro un job da 3 ore), elencato in `fuoriDispatcher` nel manifest:
+affamerebbe dietro un job da 3 ore), registrato **sul server** ed elencato in `fuoriDispatcher`
+del manifest. Il wrapper `run-transcripts-hidden.vbs` ricava il percorso da sé, quindi la stessa
+riga vale su qualunque macchina:
 
-    schtasks /create /tn "Beyblade Transcripts" /tr "wscript.exe \"c:\claude-code\Personale\Beyblade\beyblade combos\run-transcripts-hidden.vbs\"" /sc minute /mo 5 /f
+    schtasks /create /tn "Beyblade Transcripts" /tr "wscript.exe C:\Users\server\progetti\beyblade-combos\run-transcripts-hidden.vbs" /sc minute /mo 5 /st 00:00 /it /f
 
 I wrapper `run-collect-hidden.vbs`, `run-pipeline-hidden.vbs`, `run-discover-hidden.vbs` e
 `run-recover-hidden.vbs` non sono più usati da alcun task (il dispatcher gira già nascosto e chiama
