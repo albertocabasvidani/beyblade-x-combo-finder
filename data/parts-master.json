@@ -1,5 +1,5 @@
 {
-  "version": "2026-07-23",
+  "version": "2026-08-05",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -884,11 +884,11 @@
       ],
       "source": {
         "page": "DranSword 3-60F",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=DranSword_3-60F&format=json&prop=wikitext",
-        "revid": 645325
+        "url": "https://beyblade.fandom.com/wiki/DranSword_3-60F",
+        "revid": 645570
       },
       "status": "verified",
-      "lastVerified": "2026-08-02",
+      "lastVerified": "2026-08-05",
       "stats": {
         "atk": 55,
         "def": 25,
@@ -1337,9 +1337,9 @@
       "source": {
         "page": "HeavensRing 0-80DS",
         "url": "https://beyblade.fandom.com/wiki/HeavensRing_0-80DS",
-        "revid": 645252
+        "revid": 645561
       },
-      "lastVerified": "2026-07-31",
+      "lastVerified": "2026-08-05",
       "status": "verified",
       "type": "defense",
       "stats": {
@@ -9019,9 +9019,9 @@
       "source": {
         "page": "HeavensRing 0-80DS",
         "url": "https://beyblade.fandom.com/wiki/HeavensRing_0-80DS",
-        "revid": 645252
+        "revid": 645561
       },
-      "lastVerified": "2026-07-31",
+      "lastVerified": "2026-08-05",
       "status": "verified",
       "type": "stamina",
       "shortName": "DS",
