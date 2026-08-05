@@ -15,14 +15,14 @@ naturale e promuovere lo fa l'IA. Solo Beyblade X.
 ## Prerequisiti
 - `data/sources.json` (fonti attive + `manualVerification`) e `data/source-candidates.json` (staging).
 - `.env` con `YOUTUBE_API_KEY` (per `discover:youtube`).
-- gws CLI per leggere/inviare email: `"/c/Users/cinqu/AppData/Roaming/npm/gws.cmd"` (vedi `~/.claude/rules/gws.md`).
+- gws CLI per leggere/inviare email: `"$APPDATA/npm/gws.cmd"` (vedi `~/.claude/rules/gws.md`).
 
 ## Flusso
 
 1. **Applica il feedback della proposta precedente** (se esiste). In `source-candidates.json` leggi
    `lastProposal` (`messageId`, `threadId`, `date`). Con gws cerca le **risposte** dell'utente a
    quell'email:
-   `"/c/Users/cinqu/AppData/Roaming/npm/gws.cmd" gmail users messages list --user-id me --q "newer_than:10d subject:fonti candidate"`
+   `"$APPDATA/npm/gws.cmd" gmail users messages list --user-id me --q "newer_than:10d subject:fonti candidate"`
    poi `gmail +read --id <ID>` sui messaggi con id ≠ `lastProposal.messageId` (sono il tuo feedback).
    Interpreta il testo libero (es. "approva Blade Bey X e Ben, scarta Yuki", "promuovi tutti i propose"),
    risolvendo i nomi ai `candidateId`. Per ogni candidato citato:
@@ -88,7 +88,7 @@ naturale e promuovere lo fa l'IA. Solo Beyblade X.
    SENZA allegati** (tutto leggibile nel corpo):
 
    ```
-   "/c/Users/cinqu/AppData/Roaming/npm/gws.cmd" gmail +send --from "alberto@sosautomazioni.com" --to "cinquequarti@gmail.com" --html --subject "Beyblade — N nuove fonti candidate (settimana gg/mm)" --body "<corpo HTML>"
+   "$APPDATA/npm/gws.cmd" gmail +send --from "alberto@sosautomazioni.com" --to "cinquequarti@gmail.com" --html --subject "Beyblade — N nuove fonti candidate (settimana gg/mm)" --body "<corpo HTML>"
    ```
    Il mittente è l'alias send-as **`alberto@sosautomazioni.com`** (verificato sull'account gws
    `info@sosautomazioni.com`; le risposte tornano nella casella di `info@`, quindi lo step 1 le legge).

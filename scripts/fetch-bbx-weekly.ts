@@ -36,7 +36,7 @@ async function main() {
   console.log(`BBX Weekly fetch (browser ${HEADED ? 'headed' : 'headless'})\n`);
   const existing = loadCache();
 
-  const ctx = await chromium.launchPersistentContext('C:/Users/cinqu/.playwright-bbx', {
+  const ctx = await chromium.launchPersistentContext(`${(process.env.USERPROFILE || '').replace(/\\/g, '/')}/.playwright-bbx`, {
     channel: 'chrome', headless: !HEADED, chromiumSandbox: true,
   });
   const page = ctx.pages()[0] ?? (await ctx.newPage());

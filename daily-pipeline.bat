@@ -20,7 +20,7 @@ REM
 REM LOGGING: ogni step scrive su logs\pipeline-YYYY-MM-DD.log con marker START/END + exit code, cosi'
 REM un'eventuale interruzione (PC sospeso, browser headed appeso, processo abortito) e' diagnosticabile
 REM dall'ultimo marker. Se l'ultimo marker e' "... START" senza "... END", quello step e' dove e' morta.
-cd /d "c:\claude-code\Personale\Beyblade\beyblade combos"
+cd /d "%~dp0"
 
 REM --- data ISO per il nome del file di log ---
 for /f "tokens=*" %%i in ('powershell -NoProfile -Command "Get-Date -Format yyyy-MM-dd"') do set "TODAY=%%i"
@@ -28,9 +28,9 @@ if not exist logs mkdir logs
 set "LOG=logs\pipeline-%TODAY%.log"
 
 REM --- cleanup lock file del profilo Playwright (un Chrome chiuso male lascia lock che bloccano l'open) ---
-del /q "C:\Users\cinqu\.playwright-beyblade\SingletonLock" 2>nul
-del /q "C:\Users\cinqu\.playwright-beyblade\SingletonCookie" 2>nul
-del /q "C:\Users\cinqu\.playwright-beyblade\SingletonSocket" 2>nul
+del /q "%USERPROFILE%\.playwright-beyblade\SingletonLock" 2>nul
+del /q "%USERPROFILE%\.playwright-beyblade\SingletonCookie" 2>nul
+del /q "%USERPROFILE%\.playwright-beyblade\SingletonSocket" 2>nul
 
 set REDDIT_HEADED=1
 set WBO_HEADED=1

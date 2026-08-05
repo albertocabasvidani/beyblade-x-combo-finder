@@ -25,12 +25,12 @@ if not exist logs mkdir logs
 set "LOG=logs\collect-%TODAY%.log"
 
 REM lock di un Chrome chiuso male: bloccherebbero l'apertura del profilo
-del /q "C:\Users\cinqu\.playwright-beyblade\SingletonLock" 2>nul
-del /q "C:\Users\cinqu\.playwright-beyblade\SingletonCookie" 2>nul
-del /q "C:\Users\cinqu\.playwright-beyblade\SingletonSocket" 2>nul
-del /q "C:\Users\cinqu\.playwright-wbo\SingletonLock" 2>nul
-del /q "C:\Users\cinqu\.playwright-wbo\SingletonCookie" 2>nul
-del /q "C:\Users\cinqu\.playwright-wbo\SingletonSocket" 2>nul
+del /q "%USERPROFILE%\.playwright-beyblade\SingletonLock" 2>nul
+del /q "%USERPROFILE%\.playwright-beyblade\SingletonCookie" 2>nul
+del /q "%USERPROFILE%\.playwright-beyblade\SingletonSocket" 2>nul
+del /q "%USERPROFILE%\.playwright-wbo\SingletonLock" 2>nul
+del /q "%USERPROFILE%\.playwright-wbo\SingletonCookie" 2>nul
+del /q "%USERPROFILE%\.playwright-wbo\SingletonSocket" 2>nul
 
 set REDDIT_HEADED=1
 set WBO_HEADED=1

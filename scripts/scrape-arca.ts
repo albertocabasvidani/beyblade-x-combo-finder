@@ -20,7 +20,7 @@ import { join } from 'path';
 
 const ROOT = join(import.meta.dirname, '..');
 const CACHE_PATH = join(ROOT, 'data', 'arca-cache.json');
-const USER_DIR = 'C:/Users/cinqu/.playwright-arca';
+const USER_DIR = `${(process.env.USERPROFILE || '').replace(/\\/g, '/')}/.playwright-arca`;
 const HEADED = process.env.ARCA_HEADED === '1';
 const BOARD = 'https://arca.live/b/beyblade';
 const KEEP_TOP = 120;        // post tenuti in cache (i più recenti)

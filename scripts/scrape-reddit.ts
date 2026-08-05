@@ -22,7 +22,7 @@ import { join } from 'path';
 
 const ROOT = join(import.meta.dirname, '..');
 const CACHE_PATH = join(ROOT, 'data', 'reddit-cache.json');
-const USER_DIR = 'C:/Users/cinqu/.playwright-beyblade';
+const USER_DIR = `${(process.env.USERPROFILE || '').replace(/\\/g, '/')}/.playwright-beyblade`;
 const HEADED = process.env.REDDIT_HEADED === '1';
 // Backfill storico (one-off): pagina a fondo tutte le query (cursore `after`, fino a ~1000/query, il
 // limite di Reddit) e NON applica KEEP_TOP (tiene tutto). Va seguito SUBITO da /update-combos, prima

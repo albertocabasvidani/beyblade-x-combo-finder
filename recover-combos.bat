@@ -7,16 +7,16 @@ REM possono non completare e combos.json resta indietro (successo gia' 25-26/06/
 REM Questo script, schedulato nel POMERIGGIO (utente al PC), controlla via git se gli step combo sono
 REM stati committati OGGI; se mancano, rifa' collect:sources fresco -> judge-youtube -> update-combos
 REM e/o mine-reddit. E' idempotente: se la mattina e' andata, non fa nulla (solo log).
-cd /d "c:\claude-code\Personale\Beyblade\beyblade combos"
+cd /d "%~dp0"
 
 for /f "tokens=*" %%i in ('powershell -NoProfile -Command "Get-Date -Format yyyy-MM-dd"') do set "TODAY=%%i"
 if not exist logs mkdir logs
 set "LOG=logs\recover-%TODAY%.log"
 set "CHECK=%TEMP%\bey-recover-check.txt"
 
-del /q "C:\Users\cinqu\.playwright-beyblade\SingletonLock" 2>nul
-del /q "C:\Users\cinqu\.playwright-beyblade\SingletonCookie" 2>nul
-del /q "C:\Users\cinqu\.playwright-beyblade\SingletonSocket" 2>nul
+del /q "%USERPROFILE%\.playwright-beyblade\SingletonLock" 2>nul
+del /q "%USERPROFILE%\.playwright-beyblade\SingletonCookie" 2>nul
+del /q "%USERPROFILE%\.playwright-beyblade\SingletonSocket" 2>nul
 
 set REDDIT_HEADED=1
 set WBO_HEADED=1

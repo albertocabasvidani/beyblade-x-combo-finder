@@ -35,7 +35,7 @@ const histPath = join(DATA, 'scan-history.json');
 // has been closed" — trascinandosi dietro il .bat chiamante. Stesso schema di
 // fetch-bbx-weekly.ts (.playwright-bbx), l'unico fetcher che non ha mai fallito.
 // Qui serve solo a conservare i cookie Cloudflare: nessun login da condividere.
-const USER_DIR = 'C:/Users/cinqu/.playwright-wbo';
+const USER_DIR = `${(process.env.USERPROFILE || '').replace(/\\/g, '/')}/.playwright-wbo`;
 
 interface ThreadCfg { key: string; tid: number; base: string; }
 // Thread attivi. Il canonico copre TUTTI gli eventi WBO BBX (1°/2°/3° posto). Candidati da valutare nel
