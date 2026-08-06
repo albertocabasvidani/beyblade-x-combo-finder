@@ -1,5 +1,5 @@
 {
-  "version": "2026-08-05",
+  "version": "2026-08-06",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -885,10 +885,10 @@
       "source": {
         "page": "DranSword 3-60F",
         "url": "https://beyblade.fandom.com/wiki/DranSword_3-60F",
-        "revid": 645570
+        "revid": 645580
       },
       "status": "verified",
-      "lastVerified": "2026-08-05",
+      "lastVerified": "2026-08-06",
       "stats": {
         "atk": 55,
         "def": 25,
@@ -1264,7 +1264,7 @@
       "type": "balance",
       "names": {
         "tt": "Gust Bat",
-        "hasbro": null,
+        "hasbro": "Gust Bat",
         "ja": "",
         "romaji": ""
       },
@@ -1294,7 +1294,7 @@
         "url": "https://beyblade.fandom.com/wiki/Blade_-_Gust_Bat",
         "revid": 641672
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-06",
       "status": "unverified",
       "stats": {
         "atk": 42,
@@ -2482,9 +2482,9 @@
       "source": {
         "page": "OrochiCluster 6-60LF",
         "url": "https://beyblade.fandom.com/wiki/OrochiCluster_6-60LF",
-        "revid": 645309
+        "revid": 645588
       },
-      "lastVerified": "2026-08-02",
+      "lastVerified": "2026-08-06",
       "status": "verified",
       "type": "attack"
     },
@@ -6739,6 +6739,30 @@
       "shortName": "O"
     },
     {
+      "id": "q",
+      "category": "assistBlade",
+      "line": "cx",
+      "shortName": "Q",
+      "names": {
+        "tt": "Q",
+        "hasbro": null,
+        "ja": "",
+        "romaji": ""
+      },
+      "aliases": [],
+      "products": [
+        "G4565"
+      ],
+      "firstReleaseSet": "G4565",
+      "source": {
+        "page": "Tread Croc TQ 5-50GN",
+        "url": "https://beyblade.fandom.com/wiki/Tread_Croc_TQ_5-50GN",
+        "revid": 644486
+      },
+      "lastVerified": "2026-08-06",
+      "status": "unverified"
+    },
+    {
       "id": "round",
       "category": "assistBlade",
       "line": "cx",
@@ -7181,6 +7205,28 @@
       },
       "lastVerified": "2026-07-22",
       "status": "verified"
+    },
+    {
+      "id": "t",
+      "category": "overBlade",
+      "line": "cx",
+      "names": {
+        "tt": "T",
+        "hasbro": null
+      },
+      "aliases": [],
+      "products": [
+        "G4565"
+      ],
+      "firstReleaseSet": "G4565",
+      "source": {
+        "page": "Tread Croc TQ 5-50GN",
+        "url": "https://beyblade.fandom.com/wiki/Tread_Croc_TQ_5-50GN",
+        "revid": 644486
+      },
+      "lastVerified": "2026-08-06",
+      "status": "unverified",
+      "type": "defense"
     }
   ],
   "ratchets": [

@@ -1,5 +1,5 @@
 {
-  "version": "2026-08-05",
+  "version": "2026-08-06",
   "blades": [
     {
       "id": "aero-pegasus",
@@ -462,6 +462,7 @@
     {
       "id": "gust-bat",
       "name": "Gust Bat",
+      "nameWestern": "Gust Bat",
       "aliases": [
         "Bat Gust",
         "BattoGasuto"
@@ -2066,6 +2067,12 @@
       "line": "cx"
     },
     {
+      "id": "q",
+      "name": "Q (Q)",
+      "shortName": "Q",
+      "line": "cx"
+    },
+    {
       "id": "round",
       "name": "R (Round)",
       "shortName": "R",
@@ -2137,6 +2144,11 @@
     {
       "id": "peak",
       "name": "Peak",
+      "line": "cx"
+    },
+    {
+      "id": "t",
+      "name": "T",
       "line": "cx"
     }
   ],
