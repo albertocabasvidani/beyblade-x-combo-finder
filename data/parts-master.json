@@ -1,5 +1,5 @@
 {
-  "version": "2026-08-06",
+  "version": "2026-08-07",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -838,7 +838,7 @@
       "source": {
         "page": "DranStrike 4-50FF",
         "url": "https://beyblade.fandom.com/wiki/DranStrike_4-50FF",
-        "revid": 644026
+        "revid": 645601
       },
       "lastVerified": "2026-07-17",
       "status": "verified",
@@ -885,7 +885,7 @@
       "source": {
         "page": "DranSword 3-60F",
         "url": "https://beyblade.fandom.com/wiki/DranSword_3-60F",
-        "revid": 645580
+        "revid": 645640
       },
       "status": "verified",
       "lastVerified": "2026-08-06",
@@ -4657,10 +4657,21 @@
       "names": {
         "tt": "Croc",
         "hasbro": "Croc",
-        "ja": "",
-        "romaji": ""
+        "ja": "クロコ",
+        "romaji": "Kuroko"
       },
-      "aliases": [],
+      "aliases": [
+        {
+          "value": "クロコ",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "Kuroko",
+          "lang": "ja",
+          "kind": "romaji"
+        }
+      ],
       "products": [
         "G4565"
       ],
@@ -4668,10 +4679,10 @@
       "source": {
         "page": "Lock Chip - Croc",
         "url": "https://beyblade.fandom.com/wiki/Lock_Chip_-_Croc",
-        "revid": 644487
+        "revid": 645615
       },
       "status": "unverified",
-      "lastVerified": "2026-07-21"
+      "lastVerified": "2026-08-07"
     },
     {
       "id": "drake",
@@ -6188,10 +6199,21 @@
       "names": {
         "tt": "Tread",
         "hasbro": "Tread",
-        "ja": "",
-        "romaji": ""
+        "ja": "トレッド",
+        "romaji": "Toreddo"
       },
-      "aliases": [],
+      "aliases": [
+        {
+          "value": "トレッド",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "Toreddo",
+          "lang": "ja",
+          "kind": "romaji"
+        }
+      ],
       "products": [
         "G4565"
       ],
@@ -6199,10 +6221,10 @@
       "source": {
         "page": "Metal Blade - Tread",
         "url": "https://beyblade.fandom.com/wiki/Metal_Blade_-_Tread",
-        "revid": 644488
+        "revid": 645617
       },
       "status": "unverified",
-      "lastVerified": "2026-07-21"
+      "lastVerified": "2026-08-07"
     },
     {
       "id": "volt",
@@ -6739,28 +6761,39 @@
       "shortName": "O"
     },
     {
-      "id": "q",
+      "id": "quell",
       "category": "assistBlade",
       "line": "cx",
-      "shortName": "Q",
       "names": {
-        "tt": "Q",
-        "hasbro": null,
-        "ja": "",
-        "romaji": ""
+        "tt": "Quell",
+        "ja": "クエル",
+        "romaji": "Kueru"
       },
-      "aliases": [],
+      "aliases": [
+        {
+          "value": "クエル",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "Kueru",
+          "lang": "ja",
+          "kind": "romaji"
+        }
+      ],
       "products": [
+        "CX-19",
         "G4565"
       ],
-      "firstReleaseSet": "G4565",
+      "firstReleaseSet": "CX-19",
       "source": {
-        "page": "Tread Croc TQ 5-50GN",
-        "url": "https://beyblade.fandom.com/wiki/Tread_Croc_TQ_5-50GN",
-        "revid": 644486
+        "page": "Assist Blade - Quell",
+        "url": "https://beyblade.fandom.com/wiki/Assist_Blade_-_Quell",
+        "revid": 645623
       },
-      "lastVerified": "2026-08-06",
-      "status": "unverified"
+      "lastVerified": "2026-08-07",
+      "status": "verified",
+      "type": "defense"
     },
     {
       "id": "round",
@@ -7207,25 +7240,38 @@
       "status": "verified"
     },
     {
-      "id": "t",
+      "id": "tough",
       "category": "overBlade",
       "line": "cx",
       "names": {
-        "tt": "T",
-        "hasbro": null
+        "tt": "Tough",
+        "ja": "タフ",
+        "romaji": "Tafu"
       },
-      "aliases": [],
+      "aliases": [
+        {
+          "value": "タフ",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "Tafu",
+          "lang": "ja",
+          "kind": "romaji"
+        }
+      ],
       "products": [
+        "CX-19",
         "G4565"
       ],
-      "firstReleaseSet": "G4565",
+      "firstReleaseSet": "CX-19",
       "source": {
-        "page": "Tread Croc TQ 5-50GN",
-        "url": "https://beyblade.fandom.com/wiki/Tread_Croc_TQ_5-50GN",
-        "revid": 644486
+        "page": "Over Blade - Tough",
+        "url": "https://beyblade.fandom.com/wiki/Over_Blade_-_Tough",
+        "revid": 645621
       },
-      "lastVerified": "2026-08-06",
-      "status": "unverified",
+      "lastVerified": "2026-08-07",
+      "status": "verified",
       "type": "defense"
     }
   ],
@@ -8085,10 +8131,10 @@
       "source": {
         "page": "Ratchet - 5-50",
         "url": "https://beyblade.fandom.com/wiki/Ratchet_-_5-50",
-        "revid": 644489
+        "revid": 645618
       },
       "status": "unverified",
-      "lastVerified": "2026-07-21"
+      "lastVerified": "2026-08-07"
     },
     {
       "id": "5-60",
@@ -9423,11 +9469,11 @@
       "source": {
         "page": "Bit - Gear Needle",
         "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Gear_Needle&format=json&prop=wikitext",
-        "revid": 645014,
+        "revid": 645619,
         "lastVerified": "2026-07-28"
       },
       "status": "verified",
-      "lastVerified": "2026-07-08",
+      "lastVerified": "2026-08-07",
       "products": [
         "BX-27",
         "G1691",

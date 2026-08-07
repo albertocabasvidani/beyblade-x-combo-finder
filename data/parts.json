@@ -1,5 +1,5 @@
 {
-  "version": "2026-08-06",
+  "version": "2026-08-07",
   "blades": [
     {
       "id": "aero-pegasus",
@@ -2067,9 +2067,9 @@
       "line": "cx"
     },
     {
-      "id": "q",
-      "name": "Q (Q)",
-      "shortName": "Q",
+      "id": "quell",
+      "name": "Quell",
+      "shortName": "",
       "line": "cx"
     },
     {
@@ -2147,8 +2147,8 @@
       "line": "cx"
     },
     {
-      "id": "t",
-      "name": "T",
+      "id": "tough",
+      "name": "Tough",
       "line": "cx"
     }
   ],
