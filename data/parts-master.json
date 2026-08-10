@@ -3983,10 +3983,10 @@
       "source": {
         "page": "TyrannoBeat 4-70Q",
         "url": "https://beyblade.fandom.com/api.php?action=parse&page=TyrannoBeat_4-70Q&format=json&prop=wikitext",
-        "revid": 640361
+        "revid": 645874
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-10",
       "stats": {
         "atk": 65,
         "def": 30,
@@ -8666,19 +8666,23 @@
       "source": {
         "page": "Ratchet - 9-60",
         "url": "https://beyblade.fandom.com/api.php?action=parse&page=Ratchet_-_9-60&format=json&prop=wikitext",
-        "revid": 644028
+        "revid": 645868
       },
       "status": "verified",
-      "lastVerified": "2026-07-17",
+      "lastVerified": "2026-08-10",
       "products": [
         "BX-23",
         "UX-05",
         "BX-46",
         "UX-11",
-        "G1898",
+        "G1889",
         "BX-00",
         "G2738",
-        "G0284"
+        "G0284",
+        "UX-00",
+        "F9324",
+        "G0842",
+        "G2951"
       ],
       "firstReleaseSet": "BX-23"
     },
