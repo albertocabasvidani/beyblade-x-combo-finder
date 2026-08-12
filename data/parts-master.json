@@ -1,5 +1,5 @@
 {
-  "version": "2026-08-07",
+  "version": "2026-08-12",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -536,12 +536,12 @@
         "G3083"
       ],
       "source": {
-        "page": "CrocCrunch 2-60Q",
-        "url": "https://beyblade.fandom.com/wiki/CrocCrunch_2-60Q",
-        "revid": 645730
+        "page": "CrocoCrunch 2-60Q",
+        "url": "https://beyblade.fandom.com/wiki/CrocoCrunch_2-60Q",
+        "revid": 645926
       },
       "status": "verified",
-      "lastVerified": "2026-08-08",
+      "lastVerified": "2026-08-12",
       "stats": {
         "atk": 60,
         "def": 22,
@@ -1516,15 +1516,16 @@
         }
       ],
       "products": [
-        "UX-21"
+        "UX-21",
+        "G4564"
       ],
       "firstReleaseSet": "UX-21",
       "source": {
         "page": "Ratchet-Integrated Blade - HellsNether",
         "url": "https://beyblade.fandom.com/wiki/Ratchet-Integrated_Blade_-_HellsNether",
-        "revid": 643601
+        "revid": 646027
       },
-      "lastVerified": "2026-07-15",
+      "lastVerified": "2026-08-12",
       "status": "unverified",
       "type": "balance"
     },
@@ -2482,9 +2483,9 @@
       "source": {
         "page": "OrochiCluster 6-60LF",
         "url": "https://beyblade.fandom.com/wiki/OrochiCluster_6-60LF",
-        "revid": 645588
+        "revid": 645932
       },
-      "lastVerified": "2026-08-06",
+      "lastVerified": "2026-08-12",
       "status": "verified",
       "type": "attack"
     },
@@ -3718,10 +3719,10 @@
       "source": {
         "page": "Blade - Suppress Superion",
         "url": "https://beyblade.fandom.com/wiki/Blade_-_Suppress_Superion",
-        "revid": 644484
+        "revid": 646030
       },
       "status": "unverified",
-      "lastVerified": "2026-07-21"
+      "lastVerified": "2026-08-12"
     },
     {
       "id": "tackle-goat",
@@ -4656,16 +4657,21 @@
       "status": "verified"
     },
     {
-      "id": "croc",
+      "id": "croco",
       "category": "lockChip",
       "line": "cx",
       "names": {
-        "tt": "Croc",
+        "tt": "Croco",
         "hasbro": "Croc",
         "ja": "クロコ",
         "romaji": "Kuroko"
       },
       "aliases": [
+        {
+          "value": "Croc",
+          "lang": "en",
+          "kind": "hasbro"
+        },
         {
           "value": "クロコ",
           "lang": "ja",
@@ -4682,12 +4688,12 @@
       ],
       "firstReleaseSet": "G4565",
       "source": {
-        "page": "Lock Chip - Croc",
-        "url": "https://beyblade.fandom.com/wiki/Lock_Chip_-_Croc",
-        "revid": 645615
+        "page": "Lock Chip - Croco",
+        "url": "https://beyblade.fandom.com/wiki/Lock_Chip_-_Croco",
+        "revid": 645904
       },
       "status": "unverified",
-      "lastVerified": "2026-08-07"
+      "lastVerified": "2026-08-12"
     },
     {
       "id": "drake",
@@ -5362,10 +5368,10 @@
       "source": {
         "page": "ValkyrieVolt S4-70V",
         "url": "https://beyblade.fandom.com/wiki/ValkyrieVolt_S4-70V",
-        "revid": 644164
+        "revid": 645962
       },
       "status": "verified",
-      "lastVerified": "2026-07-18",
+      "lastVerified": "2026-08-12",
       "products": [
         "CX-00"
       ],
@@ -6226,10 +6232,10 @@
       "source": {
         "page": "Metal Blade - Tread",
         "url": "https://beyblade.fandom.com/wiki/Metal_Blade_-_Tread",
-        "revid": 645617
+        "revid": 645911
       },
       "status": "unverified",
-      "lastVerified": "2026-08-07"
+      "lastVerified": "2026-08-12"
     },
     {
       "id": "volt",
@@ -6245,10 +6251,10 @@
       "source": {
         "page": "ValkyrieVolt S4-70V",
         "url": "https://beyblade.fandom.com/wiki/ValkyrieVolt_S4-70V",
-        "revid": 644164
+        "revid": 645962
       },
       "status": "verified",
-      "lastVerified": "2026-07-18",
+      "lastVerified": "2026-08-12",
       "products": [
         "CX-00"
       ],
@@ -6794,9 +6800,9 @@
       "source": {
         "page": "Assist Blade - Quell",
         "url": "https://beyblade.fandom.com/wiki/Assist_Blade_-_Quell",
-        "revid": 645623
+        "revid": 645913
       },
-      "lastVerified": "2026-08-07",
+      "lastVerified": "2026-08-12",
       "status": "verified",
       "type": "defense"
     },
@@ -7273,9 +7279,9 @@
       "source": {
         "page": "Over Blade - Tough",
         "url": "https://beyblade.fandom.com/wiki/Over_Blade_-_Tough",
-        "revid": 645621
+        "revid": 645912
       },
-      "lastVerified": "2026-08-07",
+      "lastVerified": "2026-08-12",
       "status": "verified",
       "type": "defense"
     }
@@ -8136,10 +8142,10 @@
       "source": {
         "page": "Ratchet - 5-50",
         "url": "https://beyblade.fandom.com/wiki/Ratchet_-_5-50",
-        "revid": 645618
+        "revid": 645914
       },
       "status": "unverified",
-      "lastVerified": "2026-08-07"
+      "lastVerified": "2026-08-12"
     },
     {
       "id": "5-60",
@@ -9478,11 +9484,11 @@
       "source": {
         "page": "Bit - Gear Needle",
         "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Gear_Needle&format=json&prop=wikitext",
-        "revid": 645619,
+        "revid": 645915,
         "lastVerified": "2026-07-28"
       },
       "status": "verified",
-      "lastVerified": "2026-08-07",
+      "lastVerified": "2026-08-12",
       "products": [
         "BX-27",
         "G1691",
@@ -10500,9 +10506,9 @@
       "source": {
         "page": "Bit - Quake",
         "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Quake&format=json&prop=wikitext",
-        "revid": 643258
+        "revid": 645924
       },
-      "lastVerified": "2026-07-11",
+      "lastVerified": "2026-08-12",
       "status": "verified",
       "type": "attack",
       "shortName": "Q",
