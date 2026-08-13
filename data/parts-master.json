@@ -793,7 +793,7 @@
       ],
       "source": {
         "page": "DranDagger 4-60R",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=DranDagger_4-60R&format=json&prop=wikitext",
+        "url": "https://beyblade.fandom.com/wiki/DranDagger_4-60R",
         "revid": 639515
       },
       "status": "verified",
@@ -832,15 +832,17 @@
         }
       ],
       "products": [
-        "BX-49"
+        "BX-49",
+        "BX-00",
+        "G2743"
       ],
       "firstReleaseSet": "BX-49",
       "source": {
         "page": "DranStrike 4-50FF",
         "url": "https://beyblade.fandom.com/wiki/DranStrike_4-50FF",
-        "revid": 645601
+        "revid": 646156
       },
-      "lastVerified": "2026-07-17",
+      "lastVerified": "2026-08-13",
       "status": "verified",
       "type": "attack",
       "stats": {
@@ -1383,7 +1385,7 @@
       ],
       "source": {
         "page": "HellsChain 5-60HT",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=HellsChain_5-60HT&format=json&prop=wikitext",
+        "url": "https://beyblade.fandom.com/wiki/HellsChain_5-60HT",
         "revid": 640392
       },
       "status": "verified",
@@ -1477,7 +1479,7 @@
       ],
       "source": {
         "page": "HellsScythe 4-60T",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=HellsScythe_4-60T&format=json&prop=wikitext",
+        "url": "https://beyblade.fandom.com/wiki/HellsScythe_4-60T",
         "revid": 640400
       },
       "status": "verified",
@@ -1523,9 +1525,9 @@
       "source": {
         "page": "Ratchet-Integrated Blade - HellsNether",
         "url": "https://beyblade.fandom.com/wiki/Ratchet-Integrated_Blade_-_HellsNether",
-        "revid": 646027
+        "revid": 646067
       },
-      "lastVerified": "2026-08-12",
+      "lastVerified": "2026-08-13",
       "status": "unverified",
       "type": "balance"
     },
@@ -1741,7 +1743,7 @@
       ],
       "source": {
         "page": "KnightLance 4-80HN",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=KnightLance_4-80HN&format=json&prop=wikitext",
+        "url": "https://beyblade.fandom.com/wiki/KnightLance_4-80HN",
         "revid": 632917
       },
       "status": "verified",
@@ -1900,7 +1902,7 @@
       ],
       "source": {
         "page": "LeonClaw 5-60P",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=LeonClaw_5-60P&format=json&prop=wikitext",
+        "url": "https://beyblade.fandom.com/wiki/LeonClaw_5-60P",
         "revid": 645005,
         "lastVerified": "2026-07-28"
       },
@@ -2781,7 +2783,7 @@
       ],
       "source": {
         "page": "RhinoHorn 3-80S",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=RhinoHorn_3-80S&format=json&prop=wikitext",
+        "url": "https://beyblade.fandom.com/wiki/RhinoHorn_3-80S",
         "revid": 645822
       },
       "status": "verified",
@@ -3089,7 +3091,7 @@
       ],
       "source": {
         "page": "SharkEdge 3-60LF",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=SharkEdge_3-60LF&format=json&prop=wikitext",
+        "url": "https://beyblade.fandom.com/wiki/SharkEdge_3-60LF",
         "revid": 645429
       },
       "status": "verified",
@@ -3136,10 +3138,10 @@
       "source": {
         "page": "SharkGill 5-60FB",
         "url": "https://beyblade.fandom.com/wiki/SharkGill_5-60FB",
-        "revid": 641728
+        "revid": 646153
       },
       "status": "verified",
-      "lastVerified": "2026-06-21",
+      "lastVerified": "2026-08-13",
       "stats": {
         "atk": 20,
         "def": 25,
@@ -3455,15 +3457,17 @@
       "firstReleaseSet": "BX-27",
       "products": [
         "BX-27",
-        "UX-07"
+        "UX-07",
+        "G1530",
+        "G3393"
       ],
       "source": {
         "page": "SphinxCowl 9-80GN",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=SphinxCowl_9-80GN&format=json&prop=wikitext",
-        "revid": 640362
+        "url": "https://beyblade.fandom.com/wiki/SphinxCowl_9-80GN",
+        "revid": 646148
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-13",
       "stats": {
         "atk": 35,
         "def": 55,
@@ -4071,15 +4075,17 @@
       "firstReleaseSet": "BX-26",
       "products": [
         "BX-26",
-        "BX-35"
+        "BX-35",
+        "G0283",
+        "G3393"
       ],
       "source": {
         "page": "UnicornSting 5-60GP",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=UnicornSting_5-60GP&format=json&prop=wikitext",
-        "revid": 640359
+        "url": "https://beyblade.fandom.com/wiki/UnicornSting_5-60GP",
+        "revid": 646149
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-13",
       "stats": {
         "atk": 35,
         "def": 35,
@@ -4256,7 +4262,7 @@
       ],
       "source": {
         "page": "ViperTail 5-80O",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=ViperTail_5-80O&format=json&prop=wikitext",
+        "url": "https://beyblade.fandom.com/wiki/ViperTail_5-80O",
         "revid": 640350
       },
       "status": "verified",
@@ -4400,7 +4406,7 @@
       ],
       "source": {
         "page": "WizardArrow 4-80B",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=WizardArrow_4-80B&format=json&prop=wikitext",
+        "url": "https://beyblade.fandom.com/wiki/WizardArrow_4-80B",
         "revid": 639649
       },
       "status": "verified",
@@ -4497,7 +4503,7 @@
       ],
       "source": {
         "page": "WyvernGale 5-80GB",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=WyvernGale_5-80GB&format=json&prop=wikitext",
+        "url": "https://beyblade.fandom.com/wiki/WyvernGale_5-80GB",
         "revid": 643669
       },
       "status": "verified",
@@ -4684,16 +4690,17 @@
         }
       ],
       "products": [
-        "G4565"
+        "G4565",
+        "CX-19"
       ],
       "firstReleaseSet": "G4565",
       "source": {
         "page": "Lock Chip - Croco",
         "url": "https://beyblade.fandom.com/wiki/Lock_Chip_-_Croco",
-        "revid": 645904
+        "revid": 646059
       },
       "status": "unverified",
-      "lastVerified": "2026-08-12"
+      "lastVerified": "2026-08-13"
     },
     {
       "id": "drake",
@@ -4789,10 +4796,10 @@
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 645403
+        "revid": 646155
       },
       "status": "verified",
-      "lastVerified": "2026-08-03",
+      "lastVerified": "2026-08-13",
       "products": [
         "CX-11",
         "G3028"
@@ -5241,10 +5248,10 @@
       "source": {
         "page": "SolEclipse D5-70TK",
         "url": "https://beyblade.fandom.com/wiki/SolEclipse_D5-70TK",
-        "revid": 642334
+        "revid": 646151
       },
       "status": "verified",
-      "lastVerified": "2026-06-30",
+      "lastVerified": "2026-08-13",
       "products": [
         "CX-09",
         "UX-18"
@@ -5368,10 +5375,10 @@
       "source": {
         "page": "ValkyrieVolt S4-70V",
         "url": "https://beyblade.fandom.com/wiki/ValkyrieVolt_S4-70V",
-        "revid": 645962
+        "revid": 646095
       },
       "status": "verified",
-      "lastVerified": "2026-08-12",
+      "lastVerified": "2026-08-13",
       "products": [
         "CX-00"
       ],
@@ -5827,10 +5834,10 @@
       "source": {
         "page": "SolEclipse D5-70TK",
         "url": "https://beyblade.fandom.com/wiki/SolEclipse_D5-70TK",
-        "revid": 642334
+        "revid": 646151
       },
       "status": "verified",
-      "lastVerified": "2026-06-30",
+      "lastVerified": "2026-08-13",
       "products": [
         "CX-09"
       ],
@@ -6113,10 +6120,10 @@
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 645403
+        "revid": 646155
       },
       "status": "verified",
-      "lastVerified": "2026-08-03",
+      "lastVerified": "2026-08-13",
       "products": [
         "CX-11",
         "G3028"
@@ -6226,16 +6233,17 @@
         }
       ],
       "products": [
-        "G4565"
+        "G4565",
+        "CX-19"
       ],
       "firstReleaseSet": "G4565",
       "source": {
         "page": "Metal Blade - Tread",
         "url": "https://beyblade.fandom.com/wiki/Metal_Blade_-_Tread",
-        "revid": 645911
+        "revid": 646068
       },
       "status": "unverified",
-      "lastVerified": "2026-08-12"
+      "lastVerified": "2026-08-13"
     },
     {
       "id": "volt",
@@ -6251,10 +6259,10 @@
       "source": {
         "page": "ValkyrieVolt S4-70V",
         "url": "https://beyblade.fandom.com/wiki/ValkyrieVolt_S4-70V",
-        "revid": 645962
+        "revid": 646095
       },
       "status": "verified",
-      "lastVerified": "2026-08-12",
+      "lastVerified": "2026-08-13",
       "products": [
         "CX-00"
       ],
@@ -6467,10 +6475,10 @@
       "source": {
         "page": "SolEclipse D5-70TK",
         "url": "https://beyblade.fandom.com/wiki/SolEclipse_D5-70TK",
-        "revid": 642334
+        "revid": 646151
       },
       "status": "verified",
-      "lastVerified": "2026-07-22",
+      "lastVerified": "2026-08-13",
       "products": [
         "CX-09",
         "BX-50"
@@ -6615,10 +6623,10 @@
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 645403
+        "revid": 646155
       },
       "status": "verified",
-      "lastVerified": "2026-08-03",
+      "lastVerified": "2026-08-13",
       "products": [
         "CX-11",
         "G3028"
@@ -6800,9 +6808,9 @@
       "source": {
         "page": "Assist Blade - Quell",
         "url": "https://beyblade.fandom.com/wiki/Assist_Blade_-_Quell",
-        "revid": 645913
+        "revid": 646076
       },
-      "lastVerified": "2026-08-12",
+      "lastVerified": "2026-08-13",
       "status": "verified",
       "type": "defense"
     },
@@ -7279,9 +7287,9 @@
       "source": {
         "page": "Over Blade - Tough",
         "url": "https://beyblade.fandom.com/wiki/Over_Blade_-_Tough",
-        "revid": 645912
+        "revid": 646069
       },
-      "lastVerified": "2026-08-12",
+      "lastVerified": "2026-08-13",
       "status": "verified",
       "type": "defense"
     }
@@ -7465,7 +7473,7 @@
       ],
       "source": {
         "page": "Ratchet - 1-60",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Ratchet_-_1-60&format=json&prop=wikitext",
+        "url": "https://beyblade.fandom.com/wiki/Ratchet_-_1-60",
         "revid": 636223
       },
       "status": "verified",
@@ -7706,12 +7714,12 @@
       ],
       "source": {
         "page": "Ratchet - 3-60",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Ratchet_-_3-60&format=json&prop=wikitext",
-        "revid": 645836,
+        "url": "https://beyblade.fandom.com/wiki/Ratchet_-_3-60",
+        "revid": 646142,
         "lastVerified": "2026-07-28"
       },
       "status": "verified",
-      "lastVerified": "2026-08-08",
+      "lastVerified": "2026-08-13",
       "products": [
         "BX-01",
         "G1692",
@@ -7723,7 +7731,29 @@
         "F9589",
         "G0352",
         "G0286",
-        "G2752"
+        "G2752",
+        "BX-07",
+        "BX-14",
+        "BX-17",
+        "BX-21",
+        "BX-22",
+        "BX-24",
+        "BX-31",
+        "BX-39",
+        "CX-00",
+        "F9580",
+        "F9588",
+        "G0194",
+        "G0197",
+        "G0198",
+        "G0199",
+        "G1543",
+        "G1671",
+        "G1686",
+        "G1688",
+        "G1754",
+        "G1844",
+        "G3084"
       ],
       "firstReleaseSet": "BX-01",
       "stats": {
@@ -7796,7 +7826,7 @@
       ],
       "source": {
         "page": "Ratchet - 3-80",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Ratchet_-_3-80&format=json&prop=wikitext",
+        "url": "https://beyblade.fandom.com/wiki/Ratchet_-_3-80",
         "revid": 645825,
         "lastVerified": "2026-07-28"
       },
@@ -7904,13 +7934,15 @@
       "source": {
         "page": "DranStrike 4-50FF",
         "url": "https://beyblade.fandom.com/wiki/DranStrike_4-50FF",
-        "revid": 645601
+        "revid": 646156
       },
       "status": "verified",
-      "lastVerified": "2026-08-08",
+      "lastVerified": "2026-08-13",
       "products": [
         "BX-49",
-        "UX-15"
+        "UX-15",
+        "BX-00",
+        "G2743"
       ],
       "firstReleaseSet": "BX-49",
       "stats": {
@@ -7997,7 +8029,7 @@
       ],
       "source": {
         "page": "Ratchet - 4-60",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Ratchet_-_4-60&format=json&prop=wikitext",
+        "url": "https://beyblade.fandom.com/wiki/Ratchet_-_4-60",
         "revid": 645827
       },
       "status": "verified",
@@ -8047,7 +8079,7 @@
       ],
       "source": {
         "page": "Ratchet - 4-70",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Ratchet_-_4-70&format=json&prop=wikitext",
+        "url": "https://beyblade.fandom.com/wiki/Ratchet_-_4-70",
         "revid": 645008,
         "lastVerified": "2026-07-28"
       },
@@ -8090,7 +8122,7 @@
       ],
       "source": {
         "page": "Ratchet - 4-80",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Ratchet_-_4-80&format=json&prop=wikitext",
+        "url": "https://beyblade.fandom.com/wiki/Ratchet_-_4-80",
         "revid": 645839
       },
       "status": "verified",
@@ -8136,16 +8168,17 @@
         }
       ],
       "products": [
-        "G4565"
+        "G4565",
+        "CX-19"
       ],
       "firstReleaseSet": "G4565",
       "source": {
         "page": "Ratchet - 5-50",
         "url": "https://beyblade.fandom.com/wiki/Ratchet_-_5-50",
-        "revid": 645914
+        "revid": 646060
       },
       "status": "unverified",
-      "lastVerified": "2026-08-12"
+      "lastVerified": "2026-08-13"
     },
     {
       "id": "5-60",
@@ -8170,11 +8203,11 @@
       ],
       "source": {
         "page": "Ratchet - 5-60",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Ratchet_-_5-60&format=json&prop=wikitext",
-        "revid": 635198
+        "url": "https://beyblade.fandom.com/wiki/Ratchet_-_5-60",
+        "revid": 646147
       },
       "status": "verified",
-      "lastVerified": "2026-06-21",
+      "lastVerified": "2026-08-13",
       "products": [
         "BX-15",
         "CX-11",
@@ -8182,7 +8215,16 @@
         "BX-21",
         "G0196",
         "UX-00",
-        "G3028"
+        "G3028",
+        "BX-24",
+        "BX-26",
+        "BX-27",
+        "BX-37",
+        "G0193",
+        "G0283",
+        "G1687",
+        "G2735",
+        "G3393"
       ],
       "firstReleaseSet": "BX-15",
       "stats": {
@@ -8261,7 +8303,7 @@
       ],
       "source": {
         "page": "Ratchet - 5-80",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Ratchet_-_5-80&format=json&prop=wikitext",
+        "url": "https://beyblade.fandom.com/wiki/Ratchet_-_5-80",
         "revid": 645829
       },
       "status": "verified",
@@ -8638,9 +8680,9 @@
       "source": {
         "page": "Ratchet - 8-80",
         "url": "https://beyblade.fandom.com/wiki/Ratchet_-_8-80",
-        "revid": 644117
+        "revid": 646061
       },
-      "lastVerified": "2026-07-17",
+      "lastVerified": "2026-08-13",
       "status": "unverified",
       "stats": {
         "atk": 8,
@@ -8671,7 +8713,7 @@
       ],
       "source": {
         "page": "Ratchet - 9-60",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Ratchet_-_9-60&format=json&prop=wikitext",
+        "url": "https://beyblade.fandom.com/wiki/Ratchet_-_9-60",
         "revid": 645868
       },
       "status": "verified",
@@ -8801,7 +8843,7 @@
       ],
       "source": {
         "page": "Ratchet - 9-80",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Ratchet_-_9-80&format=json&prop=wikitext",
+        "url": "https://beyblade.fandom.com/wiki/Ratchet_-_9-80",
         "revid": 636225
       },
       "status": "verified",
@@ -8932,7 +8974,7 @@
       ],
       "source": {
         "page": "Bit - Ball",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Ball&format=json&prop=wikitext",
+        "url": "https://beyblade.fandom.com/wiki/Bit_-_Ball",
         "revid": 645387
       },
       "status": "verified",
@@ -9244,7 +9286,7 @@
       ],
       "source": {
         "page": "Bit - Flat",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Flat&format=json&prop=wikitext",
+        "url": "https://beyblade.fandom.com/wiki/Bit_-_Flat",
         "revid": 645833
       },
       "status": "verified",
@@ -9335,15 +9377,17 @@
         }
       ],
       "products": [
-        "BX-49"
+        "BX-49",
+        "BX-00",
+        "G2743"
       ],
       "firstReleaseSet": "BX-49",
       "source": {
         "page": "DranStrike 4-50FF",
         "url": "https://beyblade.fandom.com/wiki/DranStrike_4-50FF",
-        "revid": 645601
+        "revid": 646156
       },
-      "lastVerified": "2026-08-08",
+      "lastVerified": "2026-08-13",
       "status": "verified",
       "type": "attack",
       "shortName": "FF",
@@ -9382,7 +9426,7 @@
       ],
       "source": {
         "page": "Bit - Gear Ball",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Gear_Ball&format=json&prop=wikitext",
+        "url": "https://beyblade.fandom.com/wiki/Bit_-_Gear_Ball",
         "revid": 639811
       },
       "status": "verified",
@@ -9434,7 +9478,7 @@
       ],
       "source": {
         "page": "Bit - Gear Flat",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Gear_Flat&format=json&prop=wikitext",
+        "url": "https://beyblade.fandom.com/wiki/Bit_-_Gear_Flat",
         "revid": 644029
       },
       "status": "verified",
@@ -9483,7 +9527,7 @@
       ],
       "source": {
         "page": "Bit - Gear Needle",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Gear_Needle&format=json&prop=wikitext",
+        "url": "https://beyblade.fandom.com/wiki/Bit_-_Gear_Needle",
         "revid": 645915,
         "lastVerified": "2026-07-28"
       },
@@ -9532,7 +9576,7 @@
       ],
       "source": {
         "page": "Bit - Gear Point",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Gear_Point&format=json&prop=wikitext",
+        "url": "https://beyblade.fandom.com/wiki/Bit_-_Gear_Point",
         "revid": 636930
       },
       "status": "verified",
@@ -9752,7 +9796,7 @@
       ],
       "source": {
         "page": "Bit - High Needle",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_High_Needle&format=json&prop=wikitext",
+        "url": "https://beyblade.fandom.com/wiki/Bit_-_High_Needle",
         "revid": 645428
       },
       "status": "verified",
@@ -9802,7 +9846,7 @@
       ],
       "source": {
         "page": "Bit - High Taper",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_High_Taper&format=json&prop=wikitext",
+        "url": "https://beyblade.fandom.com/wiki/Bit_-_High_Taper",
         "revid": 636226
       },
       "status": "verified",
@@ -10018,7 +10062,7 @@
       ],
       "source": {
         "page": "Bit - Low Flat",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Low_Flat&format=json&prop=wikitext",
+        "url": "https://beyblade.fandom.com/wiki/Bit_-_Low_Flat",
         "revid": 645837
       },
       "status": "verified",
@@ -10116,10 +10160,10 @@
       "source": {
         "page": "Bit - Low Point",
         "url": "https://beyblade.fandom.com/wiki/Bit_-_Low_Point",
-        "revid": 644485
+        "revid": 646064
       },
       "status": "unverified",
-      "lastVerified": "2026-07-21"
+      "lastVerified": "2026-08-13"
     },
     {
       "id": "low-rush",
@@ -10310,7 +10354,7 @@
       ],
       "source": {
         "page": "Bit - Needle",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Needle&format=json&prop=wikitext",
+        "url": "https://beyblade.fandom.com/wiki/Bit_-_Needle",
         "revid": 645840
       },
       "status": "verified",
@@ -10362,9 +10406,9 @@
       "source": {
         "page": "EmperorMight HOp",
         "url": "https://beyblade.fandom.com/wiki/EmperorMight_HOp",
-        "revid": 645403
+        "revid": 646155
       },
-      "lastVerified": "2026-08-03",
+      "lastVerified": "2026-08-13",
       "status": "verified",
       "shortName": "Op",
       "integratedRatchet": true
@@ -10393,7 +10437,7 @@
       ],
       "source": {
         "page": "Bit - Orb",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Orb&format=json&prop=wikitext",
+        "url": "https://beyblade.fandom.com/wiki/Bit_-_Orb",
         "revid": 645842,
         "lastVerified": "2026-07-28"
       },
@@ -10453,7 +10497,7 @@
       ],
       "source": {
         "page": "Bit - Point",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Point&format=json&prop=wikitext",
+        "url": "https://beyblade.fandom.com/wiki/Bit_-_Point",
         "revid": 636212
       },
       "status": "verified",
@@ -10505,7 +10549,7 @@
       "firstReleaseSet": "BX-31",
       "source": {
         "page": "Bit - Quake",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Quake&format=json&prop=wikitext",
+        "url": "https://beyblade.fandom.com/wiki/Bit_-_Quake",
         "revid": 645924
       },
       "lastVerified": "2026-08-12",
@@ -10577,7 +10621,7 @@
       ],
       "source": {
         "page": "Bit - Rush",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Rush&format=json&prop=wikitext",
+        "url": "https://beyblade.fandom.com/wiki/Bit_-_Rush",
         "revid": 643572
       },
       "status": "verified",
@@ -10622,7 +10666,7 @@
       ],
       "source": {
         "page": "Bit - Spike",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Spike&format=json&prop=wikitext",
+        "url": "https://beyblade.fandom.com/wiki/Bit_-_Spike",
         "revid": 645826
       },
       "status": "verified",
@@ -10660,12 +10704,12 @@
       ],
       "source": {
         "page": "Bit - Taper",
-        "url": "https://beyblade.fandom.com/api.php?action=parse&page=Bit_-_Taper&format=json&prop=wikitext",
-        "revid": 645830,
+        "url": "https://beyblade.fandom.com/wiki/Bit_-_Taper",
+        "revid": 646143,
         "lastVerified": "2026-07-28"
       },
       "status": "verified",
-      "lastVerified": "2026-08-08",
+      "lastVerified": "2026-08-13",
       "products": [
         "BX-02",
         "BX-00",
@@ -10676,7 +10720,16 @@
         "G1682",
         "G2750",
         "G0188",
-        "CX-00"
+        "CX-00",
+        "BX-08",
+        "BX-14",
+        "BX-20",
+        "BX-24",
+        "F9583",
+        "F9588",
+        "G0198",
+        "G1543",
+        "G3084"
       ],
       "firstReleaseSet": "BX-02",
       "shortName": "T",
@@ -10716,10 +10769,10 @@
       "source": {
         "page": "SolEclipse D5-70TK",
         "url": "https://beyblade.fandom.com/wiki/SolEclipse_D5-70TK",
-        "revid": 642334
+        "revid": 646151
       },
       "status": "verified",
-      "lastVerified": "2026-06-30",
+      "lastVerified": "2026-08-13",
       "products": [
         "CX-09"
       ],
