@@ -115,6 +115,15 @@ async function main() {
   }
   console.log(`\nTotale: ${totM} mancanti, ${totE} extra.`);
   if (totM === 0) console.log('Registro COMPLETO rispetto alla fonte. Gli EXTRA sono parti non a catalogo wiki (RatchetBit, varianti community, dati podio): verificare caso per caso.');
+
+  // --strict serve a /update-parts: la completezza va imposta, non solo raccontata. Senza, lo
+  // script esce 0 anche con parti mancanti e l'unico modo per accorgersene sarebbe leggere lo
+  // stdout - fragile per una sessione headless. Exit 2 (non 1) per distinguere "mancano parti"
+  // da "la verifica stessa e' fallita" (fetch andato male), che resta exit 1.
+  if (process.argv.includes('--strict') && totM > 0) {
+    console.error(`\nSTRICT: ${totM} parti presenti sul wiki e assenti dal master.`);
+    process.exit(2);
+  }
 }
 
 main().catch((e) => { console.error('verify-against-wiki fallito:', e.message); process.exit(1); });

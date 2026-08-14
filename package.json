@@ -33,7 +33,11 @@
     "test:wbo": "npx tsx scripts/test-parse-wbo.ts",
     "test:wbo-unresolved": "npx tsx scripts/test-wbo-unresolved.ts",
     "test:freshness": "npx tsx scripts/test-freshness.ts",
-    "test:prune": "npx tsx scripts/test-prune.ts"
+    "test:prune": "npx tsx scripts/test-prune.ts",
+    "test:wiki-scan": "npx tsx scripts/test-wiki-scan.ts",
+    "scan:wiki": "npx tsx scripts/scan-wiki-updates.ts",
+    "verify:preserved": "npx tsx scripts/verify-parts-preserved.ts",
+    "resolve:new-parts": "npx tsx scripts/resolve-new-parts.ts"
   },
   "devDependencies": {
     "playwright-core": "^1.48.0",

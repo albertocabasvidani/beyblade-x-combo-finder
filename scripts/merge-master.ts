@@ -17,8 +17,15 @@ import { join } from 'path';
 
 const ROOT = join(import.meta.dirname, '..');
 const DATA = join(ROOT, 'data');
-const TMP = join(ROOT, 'tmp');
-const masterPath = join(DATA, 'parts-master.json');
+// Percorsi sovrascrivibili da riga di comando: servono a test-wiki-scan.ts per far girare il
+// merge su una COPIA del master in tmp/. Senza flag il comportamento e' identico a prima.
+const argOpt = (name: string, def: string) => {
+  const i = process.argv.indexOf(name);
+  return i >= 0 && process.argv[i + 1] ? process.argv[i + 1] : def;
+};
+const TMP = argOpt('--tmp', join(ROOT, 'tmp'));
+const masterPath = argOpt('--master', join(DATA, 'parts-master.json'));
+const conflictsPath = argOpt('--conflicts', join(DATA, 'parts-master-conflicts.json'));
 
 const CATS = ['blades', 'lockChips', 'mainBlades', 'assistBlades', 'overBlades', 'ratchets', 'bits'] as const;
 const CAT_OF: Record<string, typeof CATS[number]> = {
@@ -86,7 +93,14 @@ function findExisting(cat: string, tt: string, hasbro?: string | null): Entry | 
   e = list.find((x) => norm(x.names.hasbro || '') === nt);
   if (e) return e;
   const id = kebab(tt);
-  return list.find((x) => x.id === id);
+  e = list.find((x) => x.id === id);
+  if (e) return e;
+  // Ultimo livello: gli ALIAS. verify-against-wiki considera una parte "presente" anche quando il
+  // nome del wiki corrisponde solo a un alias; se il merge non facesse altrettanto, sanare una
+  // parte segnalata mancante creerebbe un DOPPIONE invece di arricchire la voce che gia' c'era.
+  // Con questo livello il doppione e' impossibile per costruzione, non affidato all'attenzione
+  // di chi legge il report.
+  return list.find((x) => (x.aliases ?? []).some((a) => norm(a.value) === nt));
 }
 
 function addAlias(e: Entry, value: string | undefined | null, lang: string, kind: string) {
@@ -96,6 +110,24 @@ function addAlias(e: Entry, value: string | undefined | null, lang: string, kind
   if (e.names.tt && norm(v) === norm(e.names.tt)) return; // non duplicare il tt
   if (e.aliases.some((a) => norm(a.value) === norm(v) && a.kind === kind)) return;
   e.aliases.push({ value: v, lang, kind });
+}
+
+/**
+ * Normalizza i codici prodotto. Sul wiki `ProductCode` e' un campo libero, spesso una riga sola
+ * tipo "G0290 (Hasbro)<br>BX-00 (Takara Tomy)": chi lo copia di peso infila quella stringa intera
+ * dentro products[], e da li' non esce piu'. Qui si spezza sui separatori, si buttano le
+ * annotazioni fra parentesi e si tiene solo cio' che ha la FORMA di un codice.
+ */
+function normCodes(codes: unknown): string[] {
+  const out: string[] = [];
+  for (const raw of Array.isArray(codes) ? codes : [codes]) {
+    if (typeof raw !== 'string') continue;
+    for (const pezzo of raw.split(/<br\s*\/?>|[,;/\n]/)) {
+      const c = pezzo.replace(/\([^)]*\)/g, '').replace(/'''?/g, '').trim();
+      if (/^(?:BX|UX|CX|BXG)-\d+\w*$/i.test(c) || /^[A-Z]\d{3,4}$/.test(c)) out.push(c.toUpperCase());
+    }
+  }
+  return [...new Set(out)];
 }
 
 function pickFirstSet(codes: string[]): string | null {
@@ -108,14 +140,27 @@ function pickFirstSet(codes: string[]): string | null {
 // Carica tutti i batch + il pilota CX (formato annidato → appiattito)
 function loadRecords(): any[] {
   const recs: any[] = [];
+  const illeggibili: string[] = [];
   let files: string[] = [];
-  try { files = readdirSync(TMP).filter((f) => /^parts-extract-batch-.*\.json$/.test(f)); } catch {}
+  try { files = readdirSync(TMP).filter((f: string) => /^parts-extract-batch-.*\.json$/.test(f)); } catch {}
   for (const f of files) {
     try {
-      const arr = JSON.parse(readFileSync(join(TMP, f), 'utf8'));
+      // Il BOM va tolto prima di JSON.parse: su Windows i batch scritti da un subagent lo hanno
+      // quasi sempre, e JSON.parse fallisce. Prima l'errore finiva in un console.warn e il merge
+      // proseguiva come se niente fosse — cioe' un intero lotto di parti spariva in silenzio.
+      const arr = JSON.parse(readFileSync(join(TMP, f), 'utf8').replace(/^﻿/, ''));
       if (Array.isArray(arr)) recs.push(...arr);
       else if (Array.isArray(arr.records)) recs.push(...arr.records);
-    } catch (e) { console.warn(`Batch illeggibile ${f}: ${(e as Error).message}`); }
+      else { illeggibili.push(`${f}: nessun array di record`); }
+    } catch (e) { illeggibili.push(`${f}: ${(e as Error).message}`); }
+  }
+  // Un batch illeggibile non e' un dettaglio: sono parti che non entreranno. Meglio fermarsi che
+  // committare un aggiornamento parziale credendolo completo.
+  if (illeggibili.length) {
+    console.error(`\nBATCH ILLEGGIBILI (${illeggibili.length}):`);
+    for (const m of illeggibili) console.error(`  ${m}`);
+    console.error('Merge interrotto: nessuna modifica al master.');
+    process.exit(1);
   }
   // Pilota CX (formato {products:[{parts:{cat:{...}}}]}) → record flat
   try {
@@ -186,15 +231,15 @@ for (const r of records) {
 
   // Prodotti / firstReleaseSet
   e.products = e.products ?? [];
-  for (const c of r.productCodes ?? []) if (c && !e.products.includes(c)) e.products.push(c);
-  if (!e.firstReleaseSet) e.firstReleaseSet = r.firstSet ?? pickFirstSet(e.products);
+  for (const c of normCodes(r.productCodes)) if (!e.products.includes(c)) e.products.push(c);
+  if (!e.firstReleaseSet) e.firstReleaseSet = normCodes(r.firstSet)[0] ?? pickFirstSet(e.products);
 }
 
 master.version = today();
 for (const c of CATS) master[c] = byCat[c].slice().sort((a: Entry, b: Entry) => a.id.localeCompare(b.id));
 
 writeFileSync(masterPath, JSON.stringify(master, null, 2) + '\n');
-writeFileSync(join(DATA, 'parts-master-conflicts.json'), JSON.stringify({ generated: today(), count: conflicts.length, conflicts }, null, 2) + '\n');
+writeFileSync(conflictsPath, JSON.stringify({ generated: today(), count: conflicts.length, conflicts }, null, 2) + '\n');
 
 console.log(`Merge completato: ${records.length} record processati → ${enriched} arricchimenti, ${created} parti nuove.`);
 console.log(`Totali master: ${master.blades.length} blade, ${master.lockChips.length} lock chip, ${master.mainBlades.length} main blade, ${master.assistBlades.length} assist blade, ${master.overBlades.length} over blade, ${master.ratchets.length} ratchet, ${master.bits.length} bit.`);

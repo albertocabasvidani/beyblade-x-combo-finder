@@ -33,7 +33,9 @@ parallelo**, con QUESTO prompt (validato su DranSword BX e DranBrave CX):
 > (`https://beyblade.fandom.com/api.php?action=parse&page=TITLE&format=json&prop=wikitext`, spazi→`_`).
 > Per ogni pagina, dall'infobox `{{Beyblade Infobox}}`:
 > - `ProductCode` → codice TT (`BX-/UX-/CX-`) **e** codice Hasbro (`F####/G####`).
-> - `Type`; `System`→line (Basic→bx, Unique→ux, Custom→cx); `Series` → se ≠ "Beyblade X" SCARTA.
+> - `Type`; `System`→line (Basic→bx, Unique→ux, Custom→cx); `Series` → TIENI tutto cio' che comincia
+>   per "Beyblade X" (`Beyblade X (Season 1/2/3)` sono stagioni dell'anime, non altre linee);
+>   SCARTA solo le altre generazioni (Burst, Metal Fight, originale).
 > - Componenti: BX/UX = `BladeX`+`Ratchet`+`Bit`; CX = `LockChip`+`MainBlade`+`AssistBlade`+`Ratchet`+`Bit`; CX Expand aggiunge `OverBlade`.
 > - **BX/UX** (1 blade, mappatura 1:1): TT = `BladeX` spaziato; Hasbro = segmento `AKA (Hasbro)` senza
 >   ratchet/bit; JP = porzione di `JPName` PRIMA del primo `{{Ruby}}`; romaji = prima parola di `RomajiName`.
@@ -100,8 +102,10 @@ Scrivi `data/parts-master-conflicts.json` con i casi che NON risolvi da solo:
    delle parti products mancanti deve ridursi (idealmente a 0).
 2. `npm run build` per confermare la compilazione.
 3. Esegui `/verify-parts-master` e rivedi il report + i conflitti.
-4. Aggiorna `data/scan-history.json` `scannedPages` con `{revid, timestamp, lastScannedDate}` per ogni
-   pagina letta (serve all'update incrementale).
+4. Registra le pagine lette in `data/wiki-scan.json` con
+   `npx tsx scripts/scan-wiki-updates.ts --record` (serve all'update incrementale di
+   `/update-parts`). NON scrivere `scannedPages` in `scan-history.json`: le pagine wiki non si
+   tracciano più lì.
 5. Git: `git add data/ scripts/` → commit `import parts master da Fandom [data]` → push.
 
 ## Note
