@@ -79,8 +79,9 @@ script per registrare la classificazione giusta al posto di quella euristica:
 **Subagent solo sopra le 15 pagine**: sotto, fai da te. Sopra, dividi in lotti da ~15 con **al
 massimo 4 in parallelo**, e ogni lotto scrive il suo `tmp/parts-extract-batch-daily-N.json`.
 
-Se non hai estratto nessun record, salta al punto 7 (niente merge: riscriverebbe il master solo
-per cambiare il campo `version`).
+Se non hai estratto nessun record, salta merge e build — riscriverebbero il master solo per
+cambiare il campo `version` — e vai **al punto 6**: la verifica di completezza si fa comunque,
+anche nei giorni in cui non c'era niente da estrarre.
 
 ### 3. Consolidare
 
@@ -127,6 +128,11 @@ Se esce diverso da 0: **fermati. Niente commit, niente registrazione.** Segnala 
 ```
 npm run verify:wiki -- --strict
 ```
+**Si esegue sempre**, anche quando non hai estratto niente: e' l'unica rete che pesca una parte
+comparsa in una categoria del wiki senza passare dalle pagine-lista. Saltarla nei giorni tranquilli
+vorrebbe dire tenderla solo quando c'e' gia' movimento — cioe' quasi mai quando serve. Costa una
+manciata di secondi di rete e nessun token.
+
 Se esce 2 (parti sul wiki assenti dal master), fai **una sola** tornata di recupero: leggi le
 pagine-parte esattamente elencate come MANCANTI, prendi il `tt` dal loro infobox, aggiungile a
 `tmp/parts-extract-batch-daily-heal.json` e alle `extraPages` dei results, poi ripeti i punti 3-5 e
@@ -145,8 +151,12 @@ rifa' tutto da capo invece di credere di aver gia' guardato.
 
 ```
 git add data/parts-master.json data/parts.json data/parts-master-conflicts.json data/wiki-scan.json
-git commit -m "update parts database [data]" && git push
+git commit -m "update parts database [2026-08-14]" && git push
 ```
+Nel messaggio va la **data di oggi** al posto di `2026-08-14`: e' un esempio, non un segnaposto da
+copiare. (Il 14/08/2026 una run ha committato la stringa `[data]` alla lettera.) Aggiungi solo i
+file che risultano davvero modificati da `git status`: nei giorni tranquilli e' il solo
+`data/wiki-scan.json`.
 **Lista esplicita di file, mai `git add data/`**: alle 07:30 il job di raccolta fonti puo' ancora
 star scrivendo le sue cache in `data/`, e finirebbero dentro a meta'.
 
