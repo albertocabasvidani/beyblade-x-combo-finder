@@ -1,5 +1,5 @@
 {
-  "version": "2026-08-13",
+  "version": "2026-08-14",
   "blades": [
     {
       "id": "aero-pegasus",
@@ -23,6 +23,9 @@
       "id": "bear-scratch",
       "name": "Bear Scratch",
       "nameWestern": "Savage Bear",
+      "aliases": [
+        "BeaSukuratchi"
+      ],
       "type": "defense",
       "line": "bx",
       "releaseSet": "BX-37",
@@ -51,8 +54,9 @@
     {
       "id": "bullet-griffon",
       "name": "Bullet Griffon",
-      "nameWestern": "Rocket Griffon H",
+      "nameWestern": "Rocket Griffon",
       "aliases": [
+        "Rocket Griffon H",
         "Bullet Gryphon",
         "BarettoGurifon"
       ],
@@ -419,9 +423,9 @@
     {
       "id": "golem-rock",
       "name": "Golem Rock",
-      "nameWestern": "Rock Golem 1-60UN",
+      "nameWestern": "Rock Golem",
       "aliases": [
-        "Rock Golem",
+        "Rock Golem 1-60UN",
         "GōremuRokku"
       ],
       "type": "defense",
@@ -586,8 +590,9 @@
     {
       "id": "impact-drake",
       "name": "Impact Drake",
-      "nameWestern": "Impact Drake 9-60LR",
+      "nameWestern": "Impact Drake",
       "aliases": [
+        "Impact Drake 9-60LR",
         "InpakutoDoreiku"
       ],
       "type": "attack",
@@ -953,7 +958,8 @@
       "name": "Ptera Swing",
       "nameWestern": "Talon Ptera",
       "aliases": [
-        "Putera"
+        "Putera",
+        "PuteraSuingu"
       ],
       "type": "stamina",
       "line": "bx",
@@ -1582,7 +1588,8 @@
       "name": "Wizard Arrow",
       "nameWestern": "Arrow Wizard",
       "aliases": [
-        "WizārdoArō"
+        "WizārdoArō",
+        "WizādoArō"
       ],
       "type": "stamina",
       "line": "bx",
@@ -1598,7 +1605,8 @@
       "name": "Wizard Rod",
       "nameWestern": "Wand Wizard",
       "aliases": [
-        "WizārdoRoddo"
+        "WizārdoRoddo",
+        "WizādoRoddo"
       ],
       "type": "stamina",
       "line": "bx",
@@ -1721,6 +1729,7 @@
     {
       "id": "leon",
       "name": "Leon",
+      "nameWestern": "Leon",
       "line": "cx"
     },
     {
@@ -1746,6 +1755,7 @@
     {
       "id": "rhino",
       "name": "Rhino",
+      "nameWestern": "Rhino",
       "line": "cx"
     },
     {
@@ -1827,6 +1837,7 @@
     {
       "id": "blitz",
       "name": "Blitz",
+      "type": "attack",
       "line": "cx"
     },
     {
@@ -1844,6 +1855,7 @@
     {
       "id": "brush",
       "name": "Brush",
+      "nameWestern": "Brush",
       "type": "attack",
       "line": "cx",
       "stats": {
@@ -1855,6 +1867,7 @@
     {
       "id": "dark",
       "name": "Dark",
+      "type": "defense",
       "line": "cx",
       "stats": {
         "atk": 10,
@@ -1865,6 +1878,7 @@
     {
       "id": "delta",
       "name": "Delta",
+      "type": "balance",
       "line": "cx"
     },
     {
@@ -1875,6 +1889,7 @@
     {
       "id": "fang",
       "name": "Fang",
+      "type": "attack",
       "line": "cx",
       "stats": {
         "atk": 35,
@@ -1885,6 +1900,7 @@
     {
       "id": "flame",
       "name": "Flame",
+      "type": "stamina",
       "line": "cx",
       "stats": {
         "atk": 5,
@@ -1918,6 +1934,7 @@
       "id": "fortress",
       "name": "Fortress",
       "nameWestern": "Armor",
+      "type": "defense",
       "line": "cx"
     },
     {
@@ -1948,11 +1965,13 @@
     {
       "id": "rage",
       "name": "Rage",
+      "type": "stamina",
       "line": "cx"
     },
     {
       "id": "reaper",
       "name": "Reaper",
+      "type": "balance",
       "line": "cx",
       "stats": {
         "atk": 25,
@@ -2918,7 +2937,8 @@
       "type": "attack",
       "shortName": "LR",
       "aliases": [
-        "Rō"
+        "Rō",
+        "Rō Rasshu"
       ],
       "stats": {
         "atk": 45,
@@ -3121,7 +3141,8 @@
       "type": "attack",
       "shortName": "UF",
       "aliases": [
-        "Andā"
+        "Andā",
+        "Andā Furatto"
       ],
       "stats": {
         "atk": 55,
@@ -3178,7 +3199,8 @@
       "type": "stamina",
       "shortName": "WB",
       "aliases": [
-        "Uōru"
+        "Uōru",
+        "Uōru Bōru"
       ],
       "stats": {
         "atk": 15,

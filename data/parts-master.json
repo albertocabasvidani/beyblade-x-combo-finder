@@ -1,5 +1,5 @@
 {
-  "version": "2026-08-12",
+  "version": "2026-08-14",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -65,19 +65,31 @@
       "names": {
         "tt": "Bear Scratch",
         "hasbro": "Savage Bear",
-        "ja": "",
-        "romaji": ""
+        "ja": "ベアスクラッチ",
+        "romaji": "BeaSukuratchi"
       },
       "aliases": [
         {
           "value": "Savage Bear",
           "lang": "en",
           "kind": "hasbro"
+        },
+        {
+          "value": "ベアスクラッチ",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "BeaSukuratchi",
+          "lang": "ja",
+          "kind": "romaji"
         }
       ],
       "firstReleaseSet": "BX-37",
       "products": [
-        "G0286"
+        "G0286",
+        "BX-37",
+        "G2735"
       ],
       "source": {
         "page": "Savage Bear 3-60S",
@@ -85,7 +97,7 @@
         "revid": 590065
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "stats": {
         "atk": 25,
         "def": 45,
@@ -123,7 +135,8 @@
       "firstReleaseSet": "BX-35",
       "products": [
         "BX-35",
-        "CX-08"
+        "CX-08",
+        "G1533"
       ],
       "source": {
         "page": "Random Booster Vol. 4",
@@ -131,7 +144,7 @@
         "revid": 613776
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "stats": {
         "atk": 10,
         "def": 65,
@@ -147,7 +160,7 @@
         "tt": "Bullet Griffon",
         "ja": "バレットグリフォン",
         "romaji": "BarettoGurifon",
-        "hasbro": "Rocket Griffon H"
+        "hasbro": "Rocket Griffon"
       },
       "aliases": [
         {
@@ -181,7 +194,7 @@
         "url": "https://beyblade.fandom.com/wiki/BulletGriffon_H",
         "revid": 644082
       },
-      "lastVerified": "2026-07-17",
+      "lastVerified": "2026-08-14",
       "status": "verified",
       "type": "balance"
     },
@@ -347,7 +360,8 @@
       ],
       "firstReleaseSet": "UX-16",
       "products": [
-        "UX-16"
+        "UX-16",
+        "G2737"
       ],
       "source": {
         "page": "Random Booster ClockMirage Select",
@@ -355,7 +369,7 @@
         "revid": 638061
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "stats": {
         "atk": 10,
         "def": 10,
@@ -397,7 +411,7 @@
         "revid": 645327
       },
       "status": "verified",
-      "lastVerified": "2026-08-02",
+      "lastVerified": "2026-08-14",
       "stats": {
         "atk": 60,
         "def": 15,
@@ -439,7 +453,7 @@
         "revid": 634353
       },
       "status": "verified",
-      "lastVerified": "2026-08-04",
+      "lastVerified": "2026-08-14",
       "stats": {
         "atk": 65,
         "def": 30,
@@ -477,7 +491,8 @@
       "firstReleaseSet": "BX-38",
       "products": [
         "BX-38",
-        "CX-17"
+        "CX-17",
+        "G1673"
       ],
       "source": {
         "page": "CrimsonGaruda 4-70TP",
@@ -485,7 +500,7 @@
         "revid": 639774
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "stats": {
         "atk": 45,
         "def": 25,
@@ -538,10 +553,10 @@
       "source": {
         "page": "CrocoCrunch 2-60Q",
         "url": "https://beyblade.fandom.com/wiki/CrocoCrunch_2-60Q",
-        "revid": 645926
+        "revid": 646180
       },
       "status": "verified",
-      "lastVerified": "2026-08-12",
+      "lastVerified": "2026-08-14",
       "stats": {
         "atk": 60,
         "def": 22,
@@ -742,7 +757,9 @@
       "firstReleaseSet": "UX-01",
       "products": [
         "UX-01",
-        "CX-08"
+        "CX-08",
+        "G1536",
+        "G1751"
       ],
       "source": {
         "page": "DranBuster 1-60A",
@@ -750,7 +767,7 @@
         "revid": 640811
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "stats": {
         "atk": 70,
         "def": 20,
@@ -789,7 +806,8 @@
       "products": [
         "BX-20",
         "UX-18",
-        "BX-00"
+        "BX-00",
+        "G1670"
       ],
       "source": {
         "page": "DranDagger 4-60R",
@@ -797,7 +815,7 @@
         "revid": 639515
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "stats": {
         "atk": 50,
         "def": 25,
@@ -834,7 +852,8 @@
       "products": [
         "BX-49",
         "BX-00",
-        "G2743"
+        "G2743",
+        "G2742"
       ],
       "firstReleaseSet": "BX-49",
       "source": {
@@ -842,7 +861,7 @@
         "url": "https://beyblade.fandom.com/wiki/DranStrike_4-50FF",
         "revid": 646156
       },
-      "lastVerified": "2026-08-13",
+      "lastVerified": "2026-08-14",
       "status": "verified",
       "type": "attack",
       "stats": {
@@ -882,7 +901,8 @@
       "firstReleaseSet": "BX-01",
       "products": [
         "BX-01",
-        "BX-00"
+        "BX-00",
+        "F9580"
       ],
       "source": {
         "page": "DranSword 3-60F",
@@ -890,7 +910,7 @@
         "revid": 645640
       },
       "status": "verified",
-      "lastVerified": "2026-08-06",
+      "lastVerified": "2026-08-14",
       "stats": {
         "atk": 55,
         "def": 25,
@@ -1099,7 +1119,7 @@
         "url": "https://beyblade.fandom.com/wiki/Ratchet-Integrated_Blade_-_GloryValkyrie",
         "revid": 643857
       },
-      "lastVerified": "2026-07-23",
+      "lastVerified": "2026-08-14",
       "status": "verified",
       "stats": {
         "atk": 85,
@@ -1159,7 +1179,7 @@
       "type": "defense",
       "names": {
         "tt": "Golem Rock",
-        "hasbro": "Rock Golem 1-60UN",
+        "hasbro": "Rock Golem",
         "ja": "ゴーレムロック",
         "romaji": "GōremuRokku"
       },
@@ -1188,7 +1208,8 @@
       "firstReleaseSet": "UX-13",
       "products": [
         "UX-13",
-        "CX-11"
+        "CX-11",
+        "G1676"
       ],
       "source": {
         "page": "GolemRock 1-60UN",
@@ -1196,7 +1217,7 @@
         "revid": 640758
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "stats": {
         "atk": 30,
         "def": 60,
@@ -1296,8 +1317,8 @@
         "url": "https://beyblade.fandom.com/wiki/Blade_-_Gust_Bat",
         "revid": 641672
       },
-      "lastVerified": "2026-08-06",
-      "status": "unverified",
+      "lastVerified": "2026-08-14",
+      "status": "verified",
       "stats": {
         "atk": 42,
         "def": 38,
@@ -1341,7 +1362,7 @@
         "url": "https://beyblade.fandom.com/wiki/HeavensRing_0-80DS",
         "revid": 645561
       },
-      "lastVerified": "2026-08-05",
+      "lastVerified": "2026-08-14",
       "status": "verified",
       "type": "defense",
       "stats": {
@@ -1428,7 +1449,8 @@
       "products": [
         "UX-02",
         "UX-10",
-        "CX-17"
+        "CX-17",
+        "G1752"
       ],
       "source": {
         "page": "HellsHammer 3-70H",
@@ -1436,7 +1458,7 @@
         "revid": 642937
       },
       "status": "verified",
-      "lastVerified": "2026-07-08",
+      "lastVerified": "2026-08-14",
       "stats": {
         "atk": 50,
         "def": 25,
@@ -1475,7 +1497,10 @@
       "products": [
         "BX-02",
         "BX-48",
-        "BX-00"
+        "BX-00",
+        "F9583",
+        "BX-08",
+        "G0285"
       ],
       "source": {
         "page": "HellsScythe 4-60T",
@@ -1483,7 +1508,7 @@
         "revid": 640400
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "stats": {
         "atk": 30,
         "def": 35,
@@ -1527,8 +1552,8 @@
         "url": "https://beyblade.fandom.com/wiki/Ratchet-Integrated_Blade_-_HellsNether",
         "revid": 646067
       },
-      "lastVerified": "2026-08-13",
-      "status": "unverified",
+      "lastVerified": "2026-08-14",
+      "status": "verified",
       "type": "balance"
     },
     {
@@ -1629,7 +1654,7 @@
       "type": "attack",
       "names": {
         "tt": "Impact Drake",
-        "hasbro": "Impact Drake 9-60LR",
+        "hasbro": "Impact Drake",
         "ja": "インパクトドレイク",
         "romaji": "InpakutoDoreiku"
       },
@@ -1653,15 +1678,16 @@
       "firstReleaseSet": "UX-11",
       "products": [
         "UX-11",
-        "BX-50"
+        "BX-50",
+        "G0842"
       ],
       "source": {
         "page": "ImpactDrake 9-60LR",
         "url": "https://beyblade.fandom.com/wiki/ImpactDrake_9-60LR",
-        "revid": 645328
+        "revid": 646178
       },
       "status": "verified",
-      "lastVerified": "2026-08-02",
+      "lastVerified": "2026-08-14",
       "stats": {
         "atk": 75,
         "def": 25,
@@ -1739,7 +1765,10 @@
       ],
       "firstReleaseSet": "BX-13",
       "products": [
-        "BX-13"
+        "BX-13",
+        "G0184",
+        "BX-21",
+        "G1671"
       ],
       "source": {
         "page": "KnightLance 4-80HN",
@@ -1747,7 +1776,7 @@
         "revid": 632917
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "stats": {
         "atk": 25,
         "def": 60,
@@ -1830,7 +1859,8 @@
       ],
       "firstReleaseSet": "BX-04",
       "products": [
-        "BX-04"
+        "BX-04",
+        "F9581"
       ],
       "source": {
         "page": "KnightShield 3-80N",
@@ -1838,7 +1868,7 @@
         "revid": 642425
       },
       "status": "verified",
-      "lastVerified": "2026-07-01",
+      "lastVerified": "2026-08-14",
       "stats": {
         "atk": 20,
         "def": 55,
@@ -1898,7 +1928,8 @@
       "firstReleaseSet": "BX-15",
       "products": [
         "BX-15",
-        "UX-12"
+        "UX-12",
+        "G0193"
       ],
       "source": {
         "page": "LeonClaw 5-60P",
@@ -1907,7 +1938,7 @@
         "lastVerified": "2026-07-28"
       },
       "status": "verified",
-      "lastVerified": "2026-06-25",
+      "lastVerified": "2026-08-14",
       "stats": {
         "atk": 40,
         "def": 40,
@@ -2121,7 +2152,7 @@
         "revid": 635147
       },
       "status": "verified",
-      "lastVerified": "2026-07-31",
+      "lastVerified": "2026-08-14",
       "stats": {
         "atk": 33,
         "def": 35,
@@ -2319,7 +2350,8 @@
       ],
       "firstReleaseSet": "BX-00",
       "products": [
-        "UX-18"
+        "UX-18",
+        "G2734"
       ],
       "source": {
         "page": "Random Booster Vol. 8",
@@ -2327,7 +2359,7 @@
         "revid": 641582
       },
       "status": "verified",
-      "lastVerified": "2026-06-20",
+      "lastVerified": "2026-08-14",
       "stats": {
         "atk": 30,
         "def": 60,
@@ -2521,7 +2553,9 @@
       ],
       "firstReleaseSet": "BX-00",
       "products": [
-        "UX-12"
+        "UX-12",
+        "BX-00",
+        "G2740"
       ],
       "source": {
         "page": "Random Booster Vol. 5",
@@ -2529,7 +2563,7 @@
         "revid": 636787
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "stats": {
         "atk": 50,
         "def": 20,
@@ -2567,7 +2601,8 @@
       "firstReleaseSet": "UX-07",
       "products": [
         "UX-07",
-        "CX-05"
+        "CX-05",
+        "G2739"
       ],
       "source": {
         "page": "PhoenixRudder Deck Set",
@@ -2575,7 +2610,7 @@
         "revid": 600830
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "stats": {
         "atk": 10,
         "def": 35,
@@ -2619,7 +2654,8 @@
       "products": [
         "BX-23",
         "BX-35",
-        "BX-00"
+        "BX-00",
+        "G1756"
       ],
       "source": {
         "page": "PhoenixWing 9-60GF",
@@ -2627,7 +2663,7 @@
         "revid": 643999
       },
       "status": "verified",
-      "lastVerified": "2026-07-31",
+      "lastVerified": "2026-08-14",
       "stats": {
         "atk": 60,
         "def": 25,
@@ -2660,6 +2696,11 @@
           "value": "Putera",
           "lang": "ja",
           "kind": "romaji"
+        },
+        {
+          "value": "PuteraSuingu",
+          "lang": "ja",
+          "kind": "romaji"
         }
       ],
       "firstReleaseSet": "BX-00",
@@ -2673,7 +2714,7 @@
         "revid": 618301
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "stats": {
         "atk": 27,
         "def": 23,
@@ -2779,7 +2820,8 @@
       ],
       "firstReleaseSet": "BX-19",
       "products": [
-        "BX-19"
+        "BX-19",
+        "G0192"
       ],
       "source": {
         "page": "RhinoHorn 3-80S",
@@ -2787,7 +2829,7 @@
         "revid": 645822
       },
       "status": "verified",
-      "lastVerified": "2026-08-08",
+      "lastVerified": "2026-08-14",
       "stats": {
         "atk": 20,
         "def": 50,
@@ -2925,7 +2967,7 @@
         "revid": 636391
       },
       "status": "verified",
-      "lastVerified": "2026-07-31",
+      "lastVerified": "2026-08-14",
       "stats": {
         "atk": 65,
         "def": 20,
@@ -2971,7 +3013,7 @@
         "revid": 642416
       },
       "status": "verified",
-      "lastVerified": "2026-07-01",
+      "lastVerified": "2026-08-14",
       "stats": {
         "atk": 40,
         "def": 37,
@@ -3046,7 +3088,7 @@
         "url": "https://beyblade.fandom.com/wiki/Ratchet-Integrated_Blade_-_Seize_Jaguar",
         "revid": 644492
       },
-      "lastVerified": "2026-07-22",
+      "lastVerified": "2026-08-14",
       "status": "verified",
       "type": "defense"
     },
@@ -3087,7 +3129,10 @@
       "products": [
         "BX-14",
         "BX-48",
-        "BX-00"
+        "BX-00",
+        "G0194",
+        "BX-31",
+        "G1534"
       ],
       "source": {
         "page": "SharkEdge 3-60LF",
@@ -3095,7 +3140,7 @@
         "revid": 645429
       },
       "status": "verified",
-      "lastVerified": "2026-08-04",
+      "lastVerified": "2026-08-14",
       "stats": {
         "atk": 60,
         "def": 25,
@@ -3183,7 +3228,8 @@
       ],
       "firstReleaseSet": "UX-15",
       "products": [
-        "UX-15"
+        "UX-15",
+        "G2731"
       ],
       "source": {
         "page": "SharkScale Deck Set",
@@ -3191,7 +3237,7 @@
         "revid": 634335
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "stats": {
         "atk": 70,
         "def": 15,
@@ -3250,7 +3296,9 @@
       ],
       "firstReleaseSet": "BX-39",
       "products": [
-        "BX-39"
+        "BX-39",
+        "G1675",
+        "G2732"
       ],
       "source": {
         "page": "Random Booster ShelterDrake Select",
@@ -3258,7 +3306,7 @@
         "revid": 634298
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "stats": {
         "atk": 25,
         "def": 40,
@@ -3336,7 +3384,8 @@
       "firstReleaseSet": "UX-05",
       "products": [
         "UX-05",
-        "UX-12"
+        "UX-12",
+        "G1539"
       ],
       "source": {
         "page": "Random Booster ShinobiShadow Select",
@@ -3344,7 +3393,7 @@
         "revid": 599619
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "stats": {
         "atk": 10,
         "def": 70,
@@ -3410,7 +3459,8 @@
       ],
       "firstReleaseSet": "UX-08",
       "products": [
-        "UX-08"
+        "UX-08",
+        "G1674"
       ],
       "source": {
         "page": "SilverWolf 3-80FB",
@@ -3419,7 +3469,7 @@
         "lastVerified": "2026-07-28"
       },
       "status": "verified",
-      "lastVerified": "2026-07-27",
+      "lastVerified": "2026-08-14",
       "stats": {
         "atk": 15,
         "def": 30,
@@ -3467,7 +3517,7 @@
         "revid": 646148
       },
       "status": "verified",
-      "lastVerified": "2026-08-13",
+      "lastVerified": "2026-08-14",
       "stats": {
         "atk": 35,
         "def": 55,
@@ -3723,10 +3773,10 @@
       "source": {
         "page": "Blade - Suppress Superion",
         "url": "https://beyblade.fandom.com/wiki/Blade_-_Suppress_Superion",
-        "revid": 646030
+        "revid": 646218
       },
-      "status": "unverified",
-      "lastVerified": "2026-08-12"
+      "status": "verified",
+      "lastVerified": "2026-08-14"
     },
     {
       "id": "tackle-goat",
@@ -3932,7 +3982,7 @@
         "def": 55,
         "sta": 13
       },
-      "lastVerified": "2026-06-20"
+      "lastVerified": "2026-08-14"
     },
     {
       "id": "trypio",
@@ -4037,7 +4087,7 @@
         "revid": 634335
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "stats": {
         "atk": 60,
         "def": 28,
@@ -4085,7 +4135,7 @@
         "revid": 646149
       },
       "status": "verified",
-      "lastVerified": "2026-08-13",
+      "lastVerified": "2026-08-14",
       "stats": {
         "atk": 35,
         "def": 35,
@@ -4357,7 +4407,8 @@
       "firstReleaseSet": "BX-36",
       "products": [
         "BX-36",
-        "CX-05"
+        "CX-05",
+        "G1669"
       ],
       "source": {
         "page": "Random Booster WhaleWave Select",
@@ -4365,7 +4416,7 @@
         "revid": 599603
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "stats": {
         "atk": 45,
         "def": 35,
@@ -4398,11 +4449,20 @@
           "value": "WizārdoArō",
           "lang": "ja",
           "kind": "romaji"
+        },
+        {
+          "value": "WizādoArō",
+          "lang": "ja",
+          "kind": "romaji"
         }
       ],
       "firstReleaseSet": "BX-03",
       "products": [
-        "BX-03"
+        "BX-03",
+        "F9582",
+        "BX-24",
+        "G1531",
+        "G1755"
       ],
       "source": {
         "page": "WizardArrow 4-80B",
@@ -4410,7 +4470,7 @@
         "revid": 639649
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "stats": {
         "atk": 15,
         "def": 30,
@@ -4443,11 +4503,19 @@
           "value": "WizārdoRoddo",
           "lang": "ja",
           "kind": "romaji"
+        },
+        {
+          "value": "WizādoRoddo",
+          "lang": "ja",
+          "kind": "romaji"
         }
       ],
       "firstReleaseSet": "UX-03",
       "products": [
-        "UX-03"
+        "UX-03",
+        "G1537",
+        "BX-35",
+        "G1538"
       ],
       "source": {
         "page": "WizardRod 5-70DB",
@@ -4455,7 +4523,7 @@
         "revid": 633671
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "stats": {
         "atk": 15,
         "def": 25,
@@ -4584,7 +4652,7 @@
         "revid": 645239
       },
       "status": "verified",
-      "lastVerified": "2026-07-31",
+      "lastVerified": "2026-08-14",
       "products": [
         "CX-13",
         "G4572",
@@ -4613,10 +4681,16 @@
           "value": "Burakiou",
           "lang": "ja",
           "kind": "romaji"
+        },
+        {
+          "value": "Burakio",
+          "lang": "ja",
+          "kind": "romaji"
         }
       ],
       "products": [
-        "CX-18"
+        "CX-18",
+        "G4566"
       ],
       "firstReleaseSet": "Random Booster BrachioWhip Select",
       "source": {
@@ -4624,7 +4698,7 @@
         "url": "https://beyblade.fandom.com/wiki/BrachioWhip_OW5-70Nr",
         "revid": 645611
       },
-      "lastVerified": "2026-08-08",
+      "lastVerified": "2026-08-14",
       "status": "verified"
     },
     {
@@ -4651,7 +4725,8 @@
       ],
       "products": [
         "CX-08",
-        "BX-50"
+        "BX-50",
+        "G2747"
       ],
       "firstReleaseSet": "Random Booster Vol. 7",
       "source": {
@@ -4659,7 +4734,7 @@
         "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._7",
         "revid": 636788
       },
-      "lastVerified": "2026-07-22",
+      "lastVerified": "2026-08-14",
       "status": "verified"
     },
     {
@@ -4699,8 +4774,8 @@
         "url": "https://beyblade.fandom.com/wiki/Lock_Chip_-_Croco",
         "revid": 646059
       },
-      "status": "unverified",
-      "lastVerified": "2026-08-13"
+      "status": "verified",
+      "lastVerified": "2026-08-14"
     },
     {
       "id": "drake",
@@ -4733,7 +4808,7 @@
         "url": "https://beyblade.fandom.com/wiki/Lock_Chip_-_Drake",
         "revid": 643142
       },
-      "lastVerified": "2026-07-10",
+      "lastVerified": "2026-08-14",
       "status": "verified"
     },
     {
@@ -4764,7 +4839,7 @@
         "revid": 644390
       },
       "status": "verified",
-      "lastVerified": "2026-07-19",
+      "lastVerified": "2026-08-14",
       "products": [
         "CX-01",
         "G1677"
@@ -4884,9 +4959,10 @@
         "revid": 634319
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "products": [
-        "CX-06"
+        "CX-06",
+        "G1681"
       ],
       "firstReleaseSet": "Random Booster FoxBrush Select"
     },
@@ -4923,10 +4999,11 @@
         "revid": 634335
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "products": [
         "UX-15",
-        "CX-05"
+        "CX-05",
+        "G1678"
       ],
       "firstReleaseSet": "SharkScale Deck Set"
     },
@@ -4981,7 +5058,7 @@
         "revid": 642332
       },
       "status": "verified",
-      "lastVerified": "2026-06-30",
+      "lastVerified": "2026-08-14",
       "products": [
         "CX-14",
         "G4563"
@@ -4994,11 +5071,25 @@
       "line": "cx",
       "names": {
         "tt": "Kraken",
-        "hasbro": "Kraken"
+        "hasbro": "Kraken",
+        "ja": "クラーケン",
+        "romaji": "Kurāken"
       },
-      "aliases": [],
+      "aliases": [
+        {
+          "value": "クラーケン",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "Kurāken",
+          "lang": "ja",
+          "kind": "romaji"
+        }
+      ],
       "products": [
-        "G1683"
+        "G1683",
+        "CX-00"
       ],
       "firstReleaseSet": "G1683",
       "source": {
@@ -5007,7 +5098,7 @@
         "revid": 645025,
         "lastVerified": "2026-07-28"
       },
-      "lastVerified": "2026-06-21",
+      "lastVerified": "2026-08-14",
       "status": "verified"
     },
     {
@@ -5018,7 +5109,7 @@
         "tt": "Leon",
         "ja": "レオン",
         "romaji": "ReonFangu",
-        "hasbro": null
+        "hasbro": "Leon"
       },
       "aliases": [
         {
@@ -5038,7 +5129,8 @@
         }
       ],
       "products": [
-        "CX-00"
+        "CX-00",
+        "G2748"
       ],
       "firstReleaseSet": "CX-00",
       "source": {
@@ -5046,7 +5138,7 @@
         "url": "https://beyblade.fandom.com/wiki/LeonFang_T4-60A",
         "revid": 624993
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "status": "verified"
     },
     {
@@ -5113,7 +5205,7 @@
         "revid": 642257
       },
       "status": "verified",
-      "lastVerified": "2026-06-29",
+      "lastVerified": "2026-08-14",
       "products": [
         "CX-03",
         "G1680"
@@ -5182,7 +5274,7 @@
         "revid": 645287
       },
       "status": "verified",
-      "lastVerified": "2026-07-31",
+      "lastVerified": "2026-08-14",
       "products": [
         "CX-15",
         "G4562"
@@ -5195,7 +5287,7 @@
       "line": "cx",
       "names": {
         "tt": "Rhino",
-        "hasbro": null,
+        "hasbro": "Rhino",
         "ja": "ライノ",
         "romaji": "Raino"
       },
@@ -5217,9 +5309,10 @@
         "revid": 641562
       },
       "status": "verified",
-      "lastVerified": "2026-06-20",
+      "lastVerified": "2026-08-14",
       "products": [
-        "CX-05"
+        "CX-05",
+        "G2746"
       ],
       "firstReleaseSet": "Random Booster Vol. 6"
     },
@@ -5264,13 +5357,25 @@
       "line": "cx",
       "names": {
         "tt": "Stag",
-        "hasbro": "Stag"
+        "hasbro": "Stag",
+        "ja": "バックス",
+        "romaji": "Bakkusu"
       },
       "aliases": [
         {
           "value": "Bucks",
           "lang": "en",
           "kind": "community"
+        },
+        {
+          "value": "バックス",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "Bakkusu",
+          "lang": "ja",
+          "kind": "romaji"
         }
       ],
       "products": [
@@ -5283,7 +5388,7 @@
         "url": "https://beyblade.fandom.com/wiki/Antler_Stag_B_2-60HN",
         "revid": 641745
       },
-      "lastVerified": "2026-06-21",
+      "lastVerified": "2026-08-14",
       "status": "verified"
     },
     {
@@ -5312,8 +5417,8 @@
         "url": "https://beyblade.fandom.com/wiki/Lock_Chip_-_Tiga",
         "revid": 643179
       },
-      "lastVerified": "2026-07-10",
-      "status": "unverified"
+      "lastVerified": "2026-08-14",
+      "status": "verified"
     },
     {
       "id": "unicorn",
@@ -5345,9 +5450,9 @@
       "source": {
         "page": "UnicornDelta PO3-60GU",
         "url": "https://beyblade.fandom.com/wiki/UnicornDelta_PO3-60GU",
-        "revid": 644533
+        "revid": 646181
       },
-      "lastVerified": "2026-07-22",
+      "lastVerified": "2026-08-14",
       "status": "verified"
     },
     {
@@ -5446,7 +5551,7 @@
         "revid": 643067
       },
       "status": "verified",
-      "lastVerified": "2026-07-09",
+      "lastVerified": "2026-08-14",
       "products": [
         "CX-02",
         "G1679"
@@ -5496,13 +5601,25 @@
       "line": "cx",
       "names": {
         "tt": "Antler",
-        "hasbro": "Antler"
+        "hasbro": "Antler",
+        "ja": "アントラーズ",
+        "romaji": "Antorāzu"
       },
       "aliases": [
         {
           "value": "Antlers",
           "lang": "en",
           "kind": "community"
+        },
+        {
+          "value": "アントラーズ",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "Antorāzu",
+          "lang": "ja",
+          "kind": "romaji"
         }
       ],
       "products": [
@@ -5515,7 +5632,7 @@
         "url": "https://beyblade.fandom.com/wiki/Antler_Stag_B_2-60HN",
         "revid": 641745
       },
-      "lastVerified": "2026-06-21",
+      "lastVerified": "2026-08-14",
       "status": "verified",
       "type": "stamina",
       "stats": {
@@ -5552,7 +5669,7 @@
         "revid": 643067
       },
       "status": "verified",
-      "lastVerified": "2026-07-09",
+      "lastVerified": "2026-08-14",
       "products": [
         "CX-02",
         "CX-05",
@@ -5641,8 +5758,9 @@
         "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
         "revid": 645239
       },
-      "lastVerified": "2026-07-31",
-      "status": "verified"
+      "lastVerified": "2026-08-14",
+      "status": "verified",
+      "type": "attack"
     },
     {
       "id": "brave",
@@ -5677,7 +5795,7 @@
         "revid": 644390
       },
       "status": "verified",
-      "lastVerified": "2026-07-19",
+      "lastVerified": "2026-08-14",
       "products": [
         "CX-01",
         "CX-00",
@@ -5697,7 +5815,7 @@
       "line": "cx",
       "names": {
         "tt": "Brush",
-        "hasbro": null,
+        "hasbro": "Brush",
         "ja": "ブラッシュ",
         "romaji": "Burasshu"
       },
@@ -5719,11 +5837,12 @@
         "revid": 641582
       },
       "status": "verified",
-      "lastVerified": "2026-06-20",
+      "lastVerified": "2026-08-14",
       "products": [
         "UX-18",
         "CX-06",
-        "CX-00"
+        "CX-00",
+        "G1681"
       ],
       "firstReleaseSet": "Random Booster Vol. 8",
       "type": "attack",
@@ -5761,7 +5880,7 @@
         "revid": 642257
       },
       "status": "verified",
-      "lastVerified": "2026-06-29",
+      "lastVerified": "2026-08-14",
       "products": [
         "CX-03",
         "CX-08",
@@ -5772,7 +5891,8 @@
         "atk": 10,
         "def": 40,
         "sta": 10
-      }
+      },
+      "type": "defense"
     },
     {
       "id": "delta",
@@ -5804,10 +5924,11 @@
       "source": {
         "page": "UnicornDelta PO3-60GU",
         "url": "https://beyblade.fandom.com/wiki/UnicornDelta_PO3-60GU",
-        "revid": 644533
+        "revid": 646181
       },
-      "lastVerified": "2026-07-22",
-      "status": "verified"
+      "lastVerified": "2026-08-14",
+      "status": "verified",
+      "type": "balance"
     },
     {
       "id": "eclipse",
@@ -5866,7 +5987,8 @@
         }
       ],
       "products": [
-        "CX-00"
+        "CX-00",
+        "G2748"
       ],
       "firstReleaseSet": "CX-00",
       "source": {
@@ -5874,13 +5996,14 @@
         "url": "https://beyblade.fandom.com/wiki/LeonFang_T4-60A",
         "revid": 624993
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "status": "verified",
       "stats": {
         "atk": 35,
         "def": 10,
         "sta": 15
-      }
+      },
+      "type": "attack"
     },
     {
       "id": "flame",
@@ -5906,7 +6029,8 @@
       ],
       "products": [
         "CX-08",
-        "BX-50"
+        "BX-50",
+        "G2747"
       ],
       "firstReleaseSet": "Random Booster Vol. 7",
       "source": {
@@ -5914,13 +6038,14 @@
         "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._7",
         "revid": 636788
       },
-      "lastVerified": "2026-07-22",
+      "lastVerified": "2026-08-14",
       "status": "verified",
       "stats": {
         "atk": 5,
         "def": 15,
         "sta": 40
-      }
+      },
+      "type": "stamina"
     },
     {
       "id": "flare",
@@ -6032,8 +6157,9 @@
         "url": "https://beyblade.fandom.com/wiki/KnightFortress_GV8-70UN",
         "revid": 642332
       },
-      "lastVerified": "2026-06-30",
-      "status": "verified"
+      "lastVerified": "2026-08-14",
+      "status": "verified",
+      "type": "defense"
     },
     {
       "id": "hunt",
@@ -6159,7 +6285,8 @@
       ],
       "products": [
         "CX-15",
-        "G4562"
+        "G4562",
+        "CX-00"
       ],
       "firstReleaseSet": "CX-15",
       "source": {
@@ -6167,8 +6294,9 @@
         "url": "https://beyblade.fandom.com/wiki/RagnaRage_FE4-55Y",
         "revid": 645287
       },
-      "lastVerified": "2026-07-31",
-      "status": "verified"
+      "lastVerified": "2026-08-14",
+      "status": "verified",
+      "type": "stamina"
     },
     {
       "id": "reaper",
@@ -6198,17 +6326,20 @@
         "revid": 641562
       },
       "status": "verified",
-      "lastVerified": "2026-07-22",
+      "lastVerified": "2026-08-14",
       "products": [
         "CX-05",
-        "BX-50"
+        "BX-50",
+        "G1678",
+        "G2746"
       ],
       "firstReleaseSet": "Random Booster Vol. 6",
       "stats": {
         "atk": 25,
         "def": 10,
         "sta": 25
-      }
+      },
+      "type": "balance"
     },
     {
       "id": "tread",
@@ -6242,8 +6373,8 @@
         "url": "https://beyblade.fandom.com/wiki/Metal_Blade_-_Tread",
         "revid": 646068
       },
-      "status": "unverified",
-      "lastVerified": "2026-08-13"
+      "status": "verified",
+      "lastVerified": "2026-08-14"
     },
     {
       "id": "volt",
@@ -6293,10 +6424,16 @@
           "value": "Hoippu",
           "lang": "ja",
           "kind": "romaji"
+        },
+        {
+          "value": "Wippu",
+          "lang": "ja",
+          "kind": "romaji"
         }
       ],
       "products": [
-        "CX-18"
+        "CX-18",
+        "G4566"
       ],
       "firstReleaseSet": "Random Booster BrachioWhip Select",
       "source": {
@@ -6304,7 +6441,7 @@
         "url": "https://beyblade.fandom.com/wiki/BrachioWhip_OW5-70Nr",
         "revid": 645611
       },
-      "lastVerified": "2026-08-08",
+      "lastVerified": "2026-08-14",
       "status": "verified"
     },
     {
@@ -6313,11 +6450,25 @@
       "line": "cx",
       "names": {
         "tt": "Wriggle",
-        "hasbro": "Wriggle"
+        "hasbro": "Wriggle",
+        "ja": "リグル",
+        "romaji": "Riguru"
       },
-      "aliases": [],
+      "aliases": [
+        {
+          "value": "リグル",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "Riguru",
+          "lang": "ja",
+          "kind": "romaji"
+        }
+      ],
       "products": [
-        "G1683"
+        "G1683",
+        "CX-00"
       ],
       "firstReleaseSet": "G1683",
       "source": {
@@ -6326,7 +6477,7 @@
         "revid": 645025,
         "lastVerified": "2026-07-28"
       },
-      "lastVerified": "2026-06-21",
+      "lastVerified": "2026-08-14",
       "status": "verified",
       "type": "stamina",
       "stats": {
@@ -6403,7 +6554,7 @@
         "revid": 642257
       },
       "status": "verified",
-      "lastVerified": "2026-07-22",
+      "lastVerified": "2026-08-14",
       "products": [
         "CX-03",
         "CX-00",
@@ -6411,7 +6562,8 @@
         "G1680",
         "BX-50"
       ],
-      "firstReleaseSet": "PerseusDark B6-80W"
+      "firstReleaseSet": "PerseusDark B6-80W",
+      "type": "defense"
     },
     {
       "id": "charge",
@@ -6442,12 +6594,14 @@
         "revid": 641582
       },
       "status": "verified",
-      "lastVerified": "2026-06-20",
+      "lastVerified": "2026-08-14",
       "products": [
         "UX-18",
-        "CX-05"
+        "CX-05",
+        "G2746"
       ],
-      "firstReleaseSet": "Random Booster Vol. 8"
+      "firstReleaseSet": "Random Booster Vol. 8",
+      "type": "defense"
     },
     {
       "id": "dual",
@@ -6517,9 +6671,10 @@
         "url": "https://beyblade.fandom.com/wiki/RagnaRage_FE4-55Y",
         "revid": 645287
       },
-      "lastVerified": "2026-07-31",
+      "lastVerified": "2026-08-14",
       "status": "verified",
-      "shortName": "E"
+      "shortName": "E",
+      "type": "stamina"
     },
     {
       "id": "free",
@@ -6589,7 +6744,7 @@
         "url": "https://beyblade.fandom.com/wiki/Assist_Blade_-_Gravity",
         "revid": 644409
       },
-      "lastVerified": "2026-07-20",
+      "lastVerified": "2026-08-14",
       "status": "verified",
       "stats": {
         "atk": 37,
@@ -6662,12 +6817,14 @@
         "revid": 634335
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "products": [
         "UX-15",
-        "CX-06"
+        "CX-06",
+        "G1681"
       ],
-      "firstReleaseSet": "SharkScale Deck Set"
+      "firstReleaseSet": "SharkScale Deck Set",
+      "type": "attack"
     },
     {
       "id": "knuckle",
@@ -6703,9 +6860,10 @@
         "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
         "revid": 645239
       },
-      "lastVerified": "2026-07-31",
+      "lastVerified": "2026-08-14",
       "status": "verified",
-      "shortName": "K"
+      "shortName": "K",
+      "type": "attack"
     },
     {
       "id": "massive",
@@ -6773,11 +6931,12 @@
       "source": {
         "page": "UnicornDelta PO3-60GU",
         "url": "https://beyblade.fandom.com/wiki/UnicornDelta_PO3-60GU",
-        "revid": 644533
+        "revid": 646181
       },
-      "lastVerified": "2026-07-22",
+      "lastVerified": "2026-08-14",
       "status": "verified",
-      "shortName": "O"
+      "shortName": "O",
+      "type": "balance"
     },
     {
       "id": "quell",
@@ -6786,7 +6945,8 @@
       "names": {
         "tt": "Quell",
         "ja": "クエル",
-        "romaji": "Kueru"
+        "romaji": "Kueru",
+        "hasbro": null
       },
       "aliases": [
         {
@@ -6810,7 +6970,7 @@
         "url": "https://beyblade.fandom.com/wiki/Assist_Blade_-_Quell",
         "revid": 646076
       },
-      "lastVerified": "2026-08-13",
+      "lastVerified": "2026-08-14",
       "status": "verified",
       "type": "defense"
     },
@@ -6843,14 +7003,15 @@
         "revid": 643067
       },
       "status": "verified",
-      "lastVerified": "2026-07-09",
+      "lastVerified": "2026-08-14",
       "products": [
         "CX-02",
         "G1682",
         "G1679",
         "CX-00"
       ],
-      "firstReleaseSet": "WizardArc R4-55LO"
+      "firstReleaseSet": "WizardArc R4-55LO",
+      "type": "stamina"
     },
     {
       "id": "slash",
@@ -6881,7 +7042,7 @@
         "revid": 644390
       },
       "status": "verified",
-      "lastVerified": "2026-07-19",
+      "lastVerified": "2026-08-14",
       "products": [
         "CX-01",
         "CX-00",
@@ -6889,7 +7050,8 @@
         "G2750",
         "G1677"
       ],
-      "firstReleaseSet": "DranBrave S6-60V"
+      "firstReleaseSet": "DranBrave S6-60V",
+      "type": "attack"
     },
     {
       "id": "turn",
@@ -6920,12 +7082,15 @@
         "revid": 641562
       },
       "status": "verified",
-      "lastVerified": "2026-06-20",
+      "lastVerified": "2026-08-14",
       "products": [
         "CX-05",
-        "CX-00"
+        "CX-00",
+        "G1678",
+        "G2748"
       ],
-      "firstReleaseSet": "Random Booster Vol. 6"
+      "firstReleaseSet": "Random Booster Vol. 6",
+      "type": "balance"
     },
     {
       "id": "vertical",
@@ -6959,9 +7124,10 @@
         "url": "https://beyblade.fandom.com/wiki/KnightFortress_GV8-70UN",
         "revid": 642332
       },
-      "lastVerified": "2026-06-30",
+      "lastVerified": "2026-08-14",
       "status": "verified",
-      "shortName": "V"
+      "shortName": "V",
+      "type": "defense"
     },
     {
       "id": "wall",
@@ -7007,12 +7173,15 @@
         "revid": 636788
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "products": [
         "CX-08",
-        "CX-18"
+        "CX-18",
+        "G2747",
+        "G4566"
       ],
-      "firstReleaseSet": "Random Booster Vol. 7"
+      "firstReleaseSet": "Random Booster Vol. 7",
+      "type": "stamina"
     },
     {
       "id": "zillion",
@@ -7085,7 +7254,7 @@
         "url": "https://beyblade.fandom.com/wiki/Over_Blade_-_Break",
         "revid": 642362
       },
-      "lastVerified": "2026-06-30",
+      "lastVerified": "2026-08-14",
       "status": "verified"
     },
     {
@@ -7113,7 +7282,8 @@
       ],
       "products": [
         "CX-15",
-        "G4562"
+        "G4562",
+        "CX-00"
       ],
       "firstReleaseSet": "CX-15",
       "source": {
@@ -7121,7 +7291,7 @@
         "url": "https://beyblade.fandom.com/wiki/Over_Blade_-_Flow",
         "revid": 645289
       },
-      "lastVerified": "2026-07-31",
+      "lastVerified": "2026-08-14",
       "status": "verified",
       "stats": {
         "atk": 5,
@@ -7162,7 +7332,7 @@
         "url": "https://beyblade.fandom.com/wiki/Over_Blade_-_Guard",
         "revid": 642229
       },
-      "lastVerified": "2026-06-29",
+      "lastVerified": "2026-08-14",
       "status": "verified"
     },
     {
@@ -7211,7 +7381,8 @@
         }
       ],
       "products": [
-        "CX-18"
+        "CX-18",
+        "G4566"
       ],
       "firstReleaseSet": "CX-18",
       "source": {
@@ -7219,7 +7390,7 @@
         "url": "https://beyblade.fandom.com/wiki/Over_Blade_-_Outer",
         "revid": 642956
       },
-      "lastVerified": "2026-07-08",
+      "lastVerified": "2026-08-14",
       "status": "verified"
     },
     {
@@ -7255,7 +7426,7 @@
         "url": "https://beyblade.fandom.com/wiki/Over_Blade_-_Peak",
         "revid": 644449
       },
-      "lastVerified": "2026-07-22",
+      "lastVerified": "2026-08-14",
       "status": "verified"
     },
     {
@@ -7265,7 +7436,8 @@
       "names": {
         "tt": "Tough",
         "ja": "タフ",
-        "romaji": "Tafu"
+        "romaji": "Tafu",
+        "hasbro": null
       },
       "aliases": [
         {
@@ -7289,7 +7461,7 @@
         "url": "https://beyblade.fandom.com/wiki/Over_Blade_-_Tough",
         "revid": 646069
       },
-      "lastVerified": "2026-08-13",
+      "lastVerified": "2026-08-14",
       "status": "verified",
       "type": "defense"
     }
@@ -7341,18 +7513,25 @@
       "names": {
         "tt": "0-70",
         "romaji": "Zero Sebunti",
-        "hasbro": null
+        "hasbro": null,
+        "ja": "ゼロセブンティー"
       },
       "aliases": [
         {
           "value": "Zero Sebunti",
           "lang": "ja",
           "kind": "romaji"
+        },
+        {
+          "value": "ゼロセブンティー",
+          "lang": "ja",
+          "kind": "native"
         }
       ],
       "products": [
         "UX-14",
-        "CX-00"
+        "CX-00",
+        "G2745"
       ],
       "firstReleaseSet": "ScorpioSpear 0-70Z",
       "source": {
@@ -7360,7 +7539,7 @@
         "url": "https://beyblade.fandom.com/wiki/ScorpioSpear_0-70Z",
         "revid": 644111
       },
-      "lastVerified": "2026-07-17",
+      "lastVerified": "2026-08-14",
       "status": "verified"
     },
     {
@@ -7382,6 +7561,11 @@
           "value": "Zero",
           "lang": "ja",
           "kind": "romaji"
+        },
+        {
+          "value": "Zero Eitī",
+          "lang": "ja",
+          "kind": "romaji"
         }
       ],
       "source": {
@@ -7390,11 +7574,12 @@
         "revid": 636787
       },
       "status": "verified",
-      "lastVerified": "2026-07-22",
+      "lastVerified": "2026-08-14",
       "products": [
         "UX-12",
         "CX-06",
-        "BX-50"
+        "BX-50",
+        "G4571"
       ],
       "firstReleaseSet": "Random Booster Vol. 5",
       "stats": {
@@ -7437,7 +7622,7 @@
         "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
         "revid": 645239
       },
-      "lastVerified": "2026-07-31",
+      "lastVerified": "2026-08-14",
       "status": "verified",
       "stats": {
         "atk": 18,
@@ -7477,7 +7662,7 @@
         "revid": 636223
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "products": [
         "BX-31",
         "G1691",
@@ -7485,7 +7670,11 @@
         "BX-35",
         "UX-13",
         "CX-08",
-        "BX-00"
+        "BX-00",
+        "G1536",
+        "G1538",
+        "G1676",
+        "G1534"
       ],
       "firstReleaseSet": "BX-31"
     },
@@ -7560,14 +7749,15 @@
         "revid": 636518
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "products": [
         "G1690",
         "UX-05",
         "UX-07",
         "CX-17",
         "G1898",
-        "BX-00"
+        "BX-00",
+        "G1539"
       ],
       "firstReleaseSet": "G1690"
     },
@@ -7603,13 +7793,17 @@
         "revid": 645327
       },
       "status": "verified",
-      "lastVerified": "2026-08-02",
+      "lastVerified": "2026-08-14",
       "products": [
         "BX-34",
         "UX-07",
         "UX-12",
         "CX-06",
-        "G1684"
+        "G1684",
+        "CX-00",
+        "G2740",
+        "BX-00",
+        "G3083"
       ],
       "firstReleaseSet": "BX-34"
     },
@@ -7618,7 +7812,7 @@
       "category": "ratchet",
       "names": {
         "tt": "2-70",
-        "ja": "",
+        "ja": "ツーセブンティー",
         "romaji": "Tsū Sebuntī",
         "hasbro": null
       },
@@ -7627,6 +7821,11 @@
           "value": "Tsū Sebuntī",
           "lang": "ja",
           "kind": "romaji"
+        },
+        {
+          "value": "ツーセブンティー",
+          "lang": "ja",
+          "kind": "native"
         }
       ],
       "source": {
@@ -7635,10 +7834,12 @@
         "revid": 645284
       },
       "status": "verified",
-      "lastVerified": "2026-07-31",
+      "lastVerified": "2026-08-14",
       "products": [
         "BX-00",
-        "CX-00"
+        "CX-00",
+        "UX-09",
+        "G1862"
       ],
       "firstReleaseSet": "BX-00",
       "stats": {
@@ -7674,7 +7875,7 @@
         "revid": 635147
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "products": [
         "BX-48",
         "BX-00"
@@ -7719,7 +7920,7 @@
         "lastVerified": "2026-07-28"
       },
       "status": "verified",
-      "lastVerified": "2026-08-13",
+      "lastVerified": "2026-08-14",
       "products": [
         "BX-01",
         "G1692",
@@ -7789,12 +7990,14 @@
         "revid": 642937
       },
       "status": "verified",
-      "lastVerified": "2026-07-08",
+      "lastVerified": "2026-08-14",
       "products": [
         "UX-02",
         "UX-05",
         "UX-17",
-        "UX-00"
+        "UX-00",
+        "CX-00",
+        "G1752"
       ],
       "firstReleaseSet": "UX-02",
       "stats": {
@@ -7831,7 +8034,7 @@
         "lastVerified": "2026-07-28"
       },
       "status": "verified",
-      "lastVerified": "2026-08-08",
+      "lastVerified": "2026-08-14",
       "products": [
         "BX-04",
         "G1694",
@@ -7843,7 +8046,13 @@
         "G0288",
         "F9589",
         "G0352",
-        "G0195"
+        "G0195",
+        "F9581",
+        "G1674",
+        "BX-19",
+        "G0192",
+        "BX-08",
+        "G0285"
       ],
       "firstReleaseSet": "BX-04",
       "stats": {
@@ -7884,7 +8093,7 @@
         "revid": 639479
       },
       "status": "verified",
-      "lastVerified": "2026-06-21",
+      "lastVerified": "2026-08-14",
       "products": [
         "G3061",
         "BX-48",
@@ -7896,7 +8105,8 @@
         "G3195",
         "G1899",
         "BX-00",
-        "G1683"
+        "G1683",
+        "G2733"
       ],
       "firstReleaseSet": "G3061",
       "stats": {
@@ -7937,12 +8147,14 @@
         "revid": 646156
       },
       "status": "verified",
-      "lastVerified": "2026-08-13",
+      "lastVerified": "2026-08-14",
       "products": [
         "BX-49",
         "UX-15",
         "BX-00",
-        "G2743"
+        "G2743",
+        "G2742",
+        "G2731"
       ],
       "firstReleaseSet": "BX-49",
       "stats": {
@@ -7983,7 +8195,7 @@
         "revid": 643067
       },
       "status": "verified",
-      "lastVerified": "2026-07-09",
+      "lastVerified": "2026-08-14",
       "products": [
         "CX-02",
         "CX-05",
@@ -7992,7 +8204,8 @@
         "G4562",
         "G1899",
         "BX-00",
-        "G1679"
+        "G1679",
+        "G2746"
       ],
       "firstReleaseSet": "WizardArc R4-55LO",
       "stats": {
@@ -8033,7 +8246,7 @@
         "revid": 645827
       },
       "status": "verified",
-      "lastVerified": "2026-08-08",
+      "lastVerified": "2026-08-14",
       "products": [
         "BX-02",
         "G1694",
@@ -8042,7 +8255,12 @@
         "G0287",
         "G0290",
         "G0353",
-        "CX-00"
+        "CX-00",
+        "G2736",
+        "F9583",
+        "G2748",
+        "BX-35",
+        "G1533"
       ],
       "firstReleaseSet": "BX-02",
       "stats": {
@@ -8084,13 +8302,17 @@
         "lastVerified": "2026-07-28"
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "products": [
         "BX-31",
         "G1690",
         "BX-38",
         "CX-05",
-        "CX-00"
+        "CX-00",
+        "G1673",
+        "G2739",
+        "G1678",
+        "G1670"
       ],
       "firstReleaseSet": "BX-31"
     },
@@ -8126,7 +8348,7 @@
         "revid": 645839
       },
       "status": "verified",
-      "lastVerified": "2026-08-08",
+      "lastVerified": "2026-08-14",
       "products": [
         "BX-03",
         "G1695",
@@ -8136,7 +8358,13 @@
         "G0287",
         "G0290",
         "G0353",
-        "G0188"
+        "G0188",
+        "F9582",
+        "BX-13",
+        "G0184",
+        "BX-24",
+        "G1531",
+        "G1755"
       ],
       "firstReleaseSet": "BX-03",
       "stats": {
@@ -8177,8 +8405,8 @@
         "url": "https://beyblade.fandom.com/wiki/Ratchet_-_5-50",
         "revid": 646060
       },
-      "status": "unverified",
-      "lastVerified": "2026-08-13"
+      "status": "verified",
+      "lastVerified": "2026-08-14"
     },
     {
       "id": "5-60",
@@ -8207,7 +8435,7 @@
         "revid": 646147
       },
       "status": "verified",
-      "lastVerified": "2026-08-13",
+      "lastVerified": "2026-08-14",
       "products": [
         "BX-15",
         "CX-11",
@@ -8260,13 +8488,18 @@
         "revid": 637380
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "products": [
         "G1695",
         "UX-03",
         "CX-09",
         "CX-18",
-        "BX-00"
+        "BX-00",
+        "G1537",
+        "G1751",
+        "G4566",
+        "BX-39",
+        "G2732"
       ],
       "firstReleaseSet": "G1695",
       "stats": {
@@ -8307,12 +8540,16 @@
         "revid": 645829
       },
       "status": "verified",
-      "lastVerified": "2026-08-08",
+      "lastVerified": "2026-08-14",
       "products": [
         "BX-16",
         "G1692",
         "BX-36",
-        "CX-08"
+        "CX-08",
+        "G2747",
+        "G1669",
+        "BX-35",
+        "G1756"
       ],
       "firstReleaseSet": "BX-16",
       "stats": {
@@ -8348,7 +8585,7 @@
         "revid": 644390
       },
       "status": "verified",
-      "lastVerified": "2026-07-23",
+      "lastVerified": "2026-08-14",
       "products": [
         "CX-01",
         "UX-00",
@@ -8429,7 +8666,7 @@
         "revid": 642257
       },
       "status": "verified",
-      "lastVerified": "2026-06-29",
+      "lastVerified": "2026-08-14",
       "products": [
         "CX-03",
         "BX-00",
@@ -8461,6 +8698,11 @@
           "value": "Sebun",
           "lang": "ja",
           "kind": "romaji"
+        },
+        {
+          "value": "Sebun Fifuti Faibu",
+          "lang": "ja",
+          "kind": "romaji"
         }
       ],
       "source": {
@@ -8469,12 +8711,13 @@
         "revid": 641582
       },
       "status": "verified",
-      "lastVerified": "2026-07-23",
+      "lastVerified": "2026-08-14",
       "products": [
         "UX-18",
         "G2750",
         "BX-50",
-        "G2763"
+        "G2763",
+        "G2734"
       ],
       "firstReleaseSet": "Random Booster Vol. 8",
       "stats": {
@@ -8599,10 +8842,11 @@
         "revid": 634298
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "products": [
         "BX-39",
-        "CX-17"
+        "CX-17",
+        "G1675"
       ],
       "firstReleaseSet": "BX-39",
       "stats": {
@@ -8643,7 +8887,7 @@
         "url": "https://beyblade.fandom.com/wiki/KnightFortress_GV8-70UN",
         "revid": 642332
       },
-      "lastVerified": "2026-06-30",
+      "lastVerified": "2026-08-14",
       "status": "verified",
       "stats": {
         "atk": 8,
@@ -8717,7 +8961,7 @@
         "revid": 645868
       },
       "status": "verified",
-      "lastVerified": "2026-08-10",
+      "lastVerified": "2026-08-14",
       "products": [
         "BX-23",
         "UX-05",
@@ -8753,6 +8997,11 @@
           "value": "Nain",
           "lang": "ja",
           "kind": "romaji"
+        },
+        {
+          "value": "Nain Shikkusuti Faibu",
+          "lang": "ja",
+          "kind": "romaji"
         }
       ],
       "source": {
@@ -8761,12 +9010,13 @@
         "revid": 638061
       },
       "status": "verified",
-      "lastVerified": "2026-07-22",
+      "lastVerified": "2026-08-14",
       "products": [
         "UX-16",
         "CX-17",
         "G4567",
-        "BX-50"
+        "BX-50",
+        "G2737"
       ],
       "firstReleaseSet": "Random Booster ClockMirage Select",
       "stats": {
@@ -8807,11 +9057,12 @@
         "revid": 600830
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "products": [
         "UX-07",
         "UX-18",
-        "CX-06"
+        "CX-06",
+        "G1681"
       ],
       "firstReleaseSet": "UX-07"
     },
@@ -8847,14 +9098,17 @@
         "revid": 636225
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "products": [
         "BX-27",
         "G1691",
         "BX-35",
         "BX-48",
         "CX-05",
-        "CX-12"
+        "CX-12",
+        "BX-00",
+        "G1530",
+        "G3392"
       ],
       "firstReleaseSet": "BX-27",
       "stats": {
@@ -8934,13 +9188,14 @@
         "revid": 640811
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "products": [
         "UX-01",
         "UX-00",
         "G1899",
         "BX-00",
-        "CX-00"
+        "CX-00",
+        "G1536"
       ],
       "firstReleaseSet": "UX-01",
       "shortName": "A",
@@ -8978,7 +9233,7 @@
         "revid": 645387
       },
       "status": "verified",
-      "lastVerified": "2026-08-02",
+      "lastVerified": "2026-08-14",
       "products": [
         "BX-03",
         "G1695",
@@ -8988,7 +9243,11 @@
         "BX-00",
         "G0290",
         "G0353",
-        "G0195"
+        "G0195",
+        "F9582",
+        "BX-08",
+        "G0285",
+        "G2737"
       ],
       "firstReleaseSet": "BX-03",
       "shortName": "B",
@@ -9119,11 +9378,14 @@
         "revid": 633671
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "products": [
         "UX-03",
         "CX-06",
-        "CX-10"
+        "CX-10",
+        "G1537",
+        "BX-00",
+        "G1751"
       ],
       "firstReleaseSet": "UX-03",
       "shortName": "DB",
@@ -9170,7 +9432,7 @@
         "url": "https://beyblade.fandom.com/wiki/HeavensRing_0-80DS",
         "revid": 645561
       },
-      "lastVerified": "2026-08-05",
+      "lastVerified": "2026-08-14",
       "status": "verified",
       "type": "stamina",
       "shortName": "DS",
@@ -9208,13 +9470,16 @@
         "revid": 645274
       },
       "status": "verified",
-      "lastVerified": "2026-07-31",
+      "lastVerified": "2026-08-14",
       "products": [
         "BX-00",
         "G2218",
         "BX-35",
         "CX-05",
-        "G1899"
+        "G1899",
+        "CX-00",
+        "G2746",
+        "G1533"
       ],
       "firstReleaseSet": "BX-00",
       "shortName": "D"
@@ -9247,12 +9512,14 @@
         "revid": 639479
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "products": [
         "G3061",
         "BX-36",
         "UX-12",
-        "CX-00"
+        "CX-00",
+        "BX-00",
+        "G1669"
       ],
       "firstReleaseSet": "G3061",
       "shortName": "E",
@@ -9290,7 +9557,7 @@
         "revid": 645833
       },
       "status": "verified",
-      "lastVerified": "2026-08-08",
+      "lastVerified": "2026-08-14",
       "products": [
         "BX-01",
         "BX-48",
@@ -9299,7 +9566,11 @@
         "BX-00",
         "G0288",
         "F9589",
-        "G0352"
+        "G0352",
+        "G2736",
+        "F9580",
+        "BX-37",
+        "G2735"
       ],
       "firstReleaseSet": "BX-01",
       "shortName": "F",
@@ -9338,13 +9609,14 @@
         "lastVerified": "2026-07-28"
       },
       "status": "verified",
-      "lastVerified": "2026-07-27",
+      "lastVerified": "2026-08-14",
       "products": [
         "UX-08",
         "CX-11",
         "G3497",
         "G3028",
-        "BX-50"
+        "BX-50",
+        "G1674"
       ],
       "firstReleaseSet": "UX-08",
       "shortName": "FB",
@@ -9379,7 +9651,8 @@
       "products": [
         "BX-49",
         "BX-00",
-        "G2743"
+        "G2743",
+        "G2742"
       ],
       "firstReleaseSet": "BX-49",
       "source": {
@@ -9387,7 +9660,7 @@
         "url": "https://beyblade.fandom.com/wiki/DranStrike_4-50FF",
         "revid": 646156
       },
-      "lastVerified": "2026-08-13",
+      "lastVerified": "2026-08-14",
       "status": "verified",
       "type": "attack",
       "shortName": "FF",
@@ -9430,7 +9703,7 @@
         "revid": 639811
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "products": [
         "BX-24",
         "G1690",
@@ -9439,7 +9712,9 @@
         "G1898",
         "BX-00",
         "G2738",
-        "G4567"
+        "G4567",
+        "G1531",
+        "G0198"
       ],
       "firstReleaseSet": "BX-24",
       "shortName": "GB",
@@ -9482,7 +9757,7 @@
         "revid": 644029
       },
       "status": "verified",
-      "lastVerified": "2026-07-17",
+      "lastVerified": "2026-08-14",
       "products": [
         "BX-23",
         "UX-07",
@@ -9532,12 +9807,16 @@
         "lastVerified": "2026-07-28"
       },
       "status": "verified",
-      "lastVerified": "2026-08-12",
+      "lastVerified": "2026-08-14",
       "products": [
         "BX-27",
         "G1691",
         "UX-06",
-        "BX-00"
+        "BX-00",
+        "CX-19",
+        "G4565",
+        "G1530",
+        "G3392"
       ],
       "firstReleaseSet": "BX-27",
       "shortName": "GN",
@@ -9580,13 +9859,16 @@
         "revid": 636930
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "products": [
         "BX-26",
         "G1692",
         "BX-39",
         "UX-05",
-        "BX-00"
+        "BX-00",
+        "G1675",
+        "G0283",
+        "G2733"
       ],
       "firstReleaseSet": "BX-26",
       "shortName": "GP",
@@ -9629,10 +9911,11 @@
         "revid": 634319
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "products": [
         "CX-06",
-        "CX-17"
+        "CX-17",
+        "G1681"
       ],
       "firstReleaseSet": "Random Booster FoxBrush Select",
       "shortName": "GR",
@@ -9672,9 +9955,9 @@
       "source": {
         "page": "UnicornDelta PO3-60GU",
         "url": "https://beyblade.fandom.com/wiki/UnicornDelta_PO3-60GU",
-        "revid": 644533
+        "revid": 646181
       },
-      "lastVerified": "2026-07-22",
+      "lastVerified": "2026-08-14",
       "status": "verified",
       "type": "balance",
       "shortName": "GU",
@@ -9754,10 +10037,14 @@
         "revid": 642937
       },
       "status": "verified",
-      "lastVerified": "2026-07-08",
+      "lastVerified": "2026-08-14",
       "products": [
         "UX-02",
-        "UX-19"
+        "UX-19",
+        "G1752",
+        "G4561",
+        "BX-35",
+        "G1756"
       ],
       "firstReleaseSet": "UX-02",
       "shortName": "H",
@@ -9800,14 +10087,15 @@
         "revid": 645428
       },
       "status": "verified",
-      "lastVerified": "2026-08-03",
+      "lastVerified": "2026-08-14",
       "products": [
         "BX-13",
         "G1694",
         "BX-36",
         "CX-11",
         "G1684",
-        "G4570"
+        "G4570",
+        "G0184"
       ],
       "firstReleaseSet": "BX-13",
       "shortName": "HN",
@@ -9899,7 +10187,7 @@
         "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
         "revid": 645239
       },
-      "lastVerified": "2026-07-31",
+      "lastVerified": "2026-08-14",
       "status": "verified",
       "type": "attack",
       "shortName": "I",
@@ -9978,11 +10266,12 @@
         "revid": 641562
       },
       "status": "verified",
-      "lastVerified": "2026-07-23",
+      "lastVerified": "2026-08-14",
       "products": [
         "CX-05",
         "UX-00",
-        "G2763"
+        "G2763",
+        "G1678"
       ],
       "firstReleaseSet": "Random Booster Vol. 6",
       "shortName": "K",
@@ -10020,10 +10309,12 @@
         "revid": 634335
       },
       "status": "verified",
-      "lastVerified": "2026-07-22",
+      "lastVerified": "2026-08-14",
       "products": [
         "UX-15",
-        "BX-50"
+        "BX-50",
+        "UX-09",
+        "G1862"
       ],
       "firstReleaseSet": "SharkScale Deck Set",
       "shortName": "L",
@@ -10066,14 +10357,20 @@
         "revid": 645837
       },
       "status": "verified",
-      "lastVerified": "2026-08-08",
+      "lastVerified": "2026-08-14",
       "products": [
         "BX-14",
         "G1695",
         "UX-05",
         "CX-05",
         "UX-00",
-        "G2762"
+        "G2762",
+        "UX-20",
+        "G4568",
+        "G2739",
+        "G0194",
+        "BX-21",
+        "G1671"
       ],
       "firstReleaseSet": "BX-14",
       "shortName": "LF",
@@ -10116,7 +10413,7 @@
         "revid": 643067
       },
       "status": "verified",
-      "lastVerified": "2026-07-09",
+      "lastVerified": "2026-08-14",
       "products": [
         "CX-02",
         "CX-17",
@@ -10160,10 +10457,10 @@
       "source": {
         "page": "Bit - Low Point",
         "url": "https://beyblade.fandom.com/wiki/Bit_-_Low_Point",
-        "revid": 646064
+        "revid": 646219
       },
-      "status": "unverified",
-      "lastVerified": "2026-08-13"
+      "status": "verified",
+      "lastVerified": "2026-08-14"
     },
     {
       "id": "low-rush",
@@ -10185,17 +10482,23 @@
           "value": "Rō",
           "lang": "ja",
           "kind": "romaji"
+        },
+        {
+          "value": "Rō Rasshu",
+          "lang": "ja",
+          "kind": "romaji"
         }
       ],
       "source": {
         "page": "ImpactDrake 9-60LR",
         "url": "https://beyblade.fandom.com/wiki/ImpactDrake_9-60LR",
-        "revid": 645328
+        "revid": 646178
       },
       "status": "verified",
-      "lastVerified": "2026-08-02",
+      "lastVerified": "2026-08-14",
       "products": [
-        "UX-11"
+        "UX-11",
+        "G0842"
       ],
       "firstReleaseSet": "ImpactDrake 9-60LR",
       "shortName": "LR",
@@ -10280,11 +10583,12 @@
         "revid": 599619
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "products": [
         "UX-05",
         "UX-10",
-        "CX-08"
+        "CX-08",
+        "G1539"
       ],
       "firstReleaseSet": "UX-05",
       "shortName": "MN",
@@ -10317,7 +10621,8 @@
         }
       ],
       "products": [
-        "CX-18"
+        "CX-18",
+        "G4566"
       ],
       "firstReleaseSet": "Random Booster BrachioWhip Select",
       "source": {
@@ -10325,7 +10630,7 @@
         "url": "https://beyblade.fandom.com/wiki/BrachioWhip_OW5-70Nr",
         "revid": 645611
       },
-      "lastVerified": "2026-08-08",
+      "lastVerified": "2026-08-14",
       "status": "verified",
       "type": "stamina",
       "shortName": "Nr"
@@ -10358,7 +10663,7 @@
         "revid": 645840
       },
       "status": "verified",
-      "lastVerified": "2026-08-08",
+      "lastVerified": "2026-08-14",
       "products": [
         "BX-04",
         "UX-12",
@@ -10366,7 +10671,9 @@
         "G0288",
         "BX-00",
         "F9589",
-        "G0352"
+        "G0352",
+        "F9581",
+        "G2740"
       ],
       "firstReleaseSet": "BX-04",
       "shortName": "N",
@@ -10442,14 +10749,17 @@
         "lastVerified": "2026-07-28"
       },
       "status": "verified",
-      "lastVerified": "2026-08-08",
+      "lastVerified": "2026-08-14",
       "products": [
         "BX-16",
         "G1692",
         "G3061",
         "BX-39",
         "CX-05",
-        "G1683"
+        "G1683",
+        "CX-00",
+        "G1755",
+        "G2732"
       ],
       "firstReleaseSet": "BX-16",
       "shortName": "O",
@@ -10501,7 +10811,7 @@
         "revid": 636212
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "products": [
         "BX-15",
         "G1694",
@@ -10510,7 +10820,8 @@
         "UX-10",
         "G0287",
         "G0290",
-        "G0353"
+        "G0353",
+        "G0193"
       ],
       "firstReleaseSet": "BX-15",
       "shortName": "P",
@@ -10544,7 +10855,11 @@
       ],
       "products": [
         "BX-31",
-        "BX-48"
+        "BX-48",
+        "G1534",
+        "G1670",
+        "BX-00",
+        "G3083"
       ],
       "firstReleaseSet": "BX-31",
       "source": {
@@ -10552,7 +10867,7 @@
         "url": "https://beyblade.fandom.com/wiki/Bit_-_Quake",
         "revid": 645924
       },
-      "lastVerified": "2026-08-12",
+      "lastVerified": "2026-08-14",
       "status": "verified",
       "type": "attack",
       "shortName": "Q",
@@ -10625,14 +10940,15 @@
         "revid": 643572
       },
       "status": "verified",
-      "lastVerified": "2026-07-23",
+      "lastVerified": "2026-08-14",
       "products": [
         "BX-20",
         "G1690",
         "BX-35",
         "BX-46",
         "UX-10",
-        "G3064"
+        "G3064",
+        "G1538"
       ],
       "firstReleaseSet": "BX-20",
       "shortName": "R",
@@ -10670,12 +10986,13 @@
         "revid": 645826
       },
       "status": "verified",
-      "lastVerified": "2026-08-08",
+      "lastVerified": "2026-08-14",
       "products": [
         "BX-19",
         "BX-48",
         "UX-07",
-        "G0286"
+        "G0286",
+        "G0192"
       ],
       "firstReleaseSet": "BX-19",
       "shortName": "S"
@@ -10709,7 +11026,7 @@
         "lastVerified": "2026-07-28"
       },
       "status": "verified",
-      "lastVerified": "2026-08-13",
+      "lastVerified": "2026-08-14",
       "products": [
         "BX-02",
         "BX-00",
@@ -10812,11 +11129,12 @@
         "revid": 639774
       },
       "status": "verified",
-      "lastVerified": "2026-07-22",
+      "lastVerified": "2026-08-14",
       "products": [
         "BX-38",
         "UX-18",
-        "BX-50"
+        "BX-50",
+        "G1673"
       ],
       "firstReleaseSet": "BX-38",
       "shortName": "TP",
@@ -10884,10 +11202,16 @@
           "value": "Andā",
           "lang": "ja",
           "kind": "romaji"
+        },
+        {
+          "value": "Andā Furatto",
+          "lang": "ja",
+          "kind": "romaji"
         }
       ],
       "products": [
-        "UX-15"
+        "UX-15",
+        "G2731"
       ],
       "firstReleaseSet": "SharkScale Deck Set",
       "source": {
@@ -10895,7 +11219,7 @@
         "url": "https://beyblade.fandom.com/wiki/SharkScale_Deck_Set",
         "revid": 634335
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "status": "verified",
       "type": "attack",
       "shortName": "UF",
@@ -10938,11 +11262,12 @@
         "revid": 640758
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-14",
       "products": [
         "UX-13",
         "CX-14",
-        "G4563"
+        "G4563",
+        "G1676"
       ],
       "firstReleaseSet": "GolemRock 1-60UN",
       "shortName": "UN",
@@ -10981,12 +11306,13 @@
         "lastVerified": "2026-07-28"
       },
       "status": "verified",
-      "lastVerified": "2026-07-27",
+      "lastVerified": "2026-08-14",
       "products": [
         "BX-33",
         "CX-06",
         "G1898",
-        "BX-00"
+        "BX-00",
+        "G2748"
       ],
       "firstReleaseSet": "BX-33",
       "shortName": "U",
@@ -11030,7 +11356,7 @@
         "url": "https://beyblade.fandom.com/wiki/DranBrave_S6-60V",
         "revid": 644390
       },
-      "lastVerified": "2026-07-19",
+      "lastVerified": "2026-08-14",
       "status": "verified",
       "type": "attack",
       "shortName": "V",
@@ -11060,11 +11386,17 @@
           "value": "Uōru",
           "lang": "ja",
           "kind": "romaji"
+        },
+        {
+          "value": "Uōru Bōru",
+          "lang": "ja",
+          "kind": "romaji"
         }
       ],
       "products": [
         "CX-08",
-        "BX-50"
+        "BX-50",
+        "G2747"
       ],
       "firstReleaseSet": "Random Booster Vol. 7",
       "source": {
@@ -11072,7 +11404,7 @@
         "url": "https://beyblade.fandom.com/wiki/Random_Booster_Vol._7",
         "revid": 636788
       },
-      "lastVerified": "2026-07-22",
+      "lastVerified": "2026-08-14",
       "status": "verified",
       "type": "stamina",
       "shortName": "WB",
@@ -11151,11 +11483,12 @@
         "revid": 642257
       },
       "status": "verified",
-      "lastVerified": "2026-06-29",
+      "lastVerified": "2026-08-14",
       "products": [
         "CX-03",
         "UX-18",
-        "G1680"
+        "G1680",
+        "G2734"
       ],
       "firstReleaseSet": "PerseusDark B6-80W",
       "shortName": "W",
@@ -11197,7 +11530,7 @@
         "url": "https://beyblade.fandom.com/wiki/RagnaRage_FE4-55Y",
         "revid": 645287
       },
-      "lastVerified": "2026-07-31",
+      "lastVerified": "2026-08-14",
       "status": "verified",
       "type": "stamina",
       "shortName": "Y",
@@ -11230,7 +11563,9 @@
         }
       ],
       "products": [
-        "UX-14"
+        "UX-14",
+        "UX-21",
+        "G4564"
       ],
       "firstReleaseSet": "ScorpioSpear 0-70Z",
       "source": {
@@ -11238,7 +11573,7 @@
         "url": "https://beyblade.fandom.com/wiki/ScorpioSpear_0-70Z",
         "revid": 644111
       },
-      "lastVerified": "2026-07-17",
+      "lastVerified": "2026-08-14",
       "status": "verified",
       "type": "balance",
       "shortName": "Z",

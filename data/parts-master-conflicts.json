@@ -1,5 +1,83 @@
 {
-  "generated": "2026-08-07",
-  "count": 0,
-  "conflicts": []
+  "generated": "2026-08-14",
+  "count": 11,
+  "conflicts": [
+    {
+      "type": "type_mismatch",
+      "id": "dran-dagger",
+      "existing": "attack",
+      "found": "balance",
+      "from": "DranDagger 2-80GP"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "phoenix-wing",
+      "existing": "attack",
+      "found": "stamina",
+      "from": "PhoenixWing 9-80DB"
+    },
+    {
+      "type": "hasbro_mismatch",
+      "id": "golem-rock",
+      "existing": "Rock Golem 1-60UN",
+      "found": "Rock Golem",
+      "from": "Rock Golem 1-60UN"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "phoenix-rudder",
+      "existing": "balance",
+      "found": "stamina",
+      "from": "Rudder Phoenix 4-70LF"
+    },
+    {
+      "type": "hasbro_mismatch",
+      "id": "bullet-griffon",
+      "existing": "Rocket Griffon H",
+      "found": "Rocket Griffon",
+      "from": "Rocket Griffon H"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "disk-spike",
+      "existing": "stamina",
+      "found": "defense",
+      "from": "Ring Aether 0-80DS"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "samurai-steel",
+      "existing": "attack",
+      "found": "balance",
+      "from": "Steel Samurai 4-80T"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "hells-scythe",
+      "existing": "balance",
+      "found": "stamina",
+      "from": "Scythe Incendio 3-80B"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "knight-lance",
+      "existing": "defense",
+      "found": "attack",
+      "from": "Lance Knight 3-60LF"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "phoenix-wing",
+      "existing": "attack",
+      "found": "balance",
+      "from": "Soar Phoenix 5-80H"
+    },
+    {
+      "type": "hasbro_mismatch",
+      "id": "impact-drake",
+      "existing": "Impact Drake 9-60LR",
+      "found": "Impact Drake",
+      "from": "ImpactDrake 9-60LR"
+    }
+  ]
 }
