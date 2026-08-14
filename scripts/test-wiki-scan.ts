@@ -344,16 +344,33 @@ titolo('D. Le parti vecchie non si perdono');
 
 const partsCopia = join(WORK, 'parts.json');
 copyFileSync(join(DATA, 'parts.json'), partsCopia);
-const vp0 = tsx(['scripts/verify-parts-preserved.ts', '--current', partsCopia]);
-check('con parts.json integro la verifica passa', vp0.code === 0, vp0.out.slice(-300));
+
+// Il confronto e' contro git HEAD: se il working tree contiene rimozioni legittime non ancora
+// committate (succede proprio mentre si ripara qualcosa), comparirebbero qui come "perdite" e
+// falserebbero il test. Le si misura una volta e le si mette fra le rimozioni ammesse, cosi' il
+// test misura quello che vuole misurare — che una parte tolta venga notata — e non lo stato del
+// commit corrente.
+const base = tsx(['scripts/verify-parts-preserved.ts', '--current', partsCopia]);
+const giaMancanti = [...base.out.matchAll(/PERSE -> (.+)/g)]
+  .flatMap((m) => m[1].split(',').map((s) => s.trim())).filter(Boolean);
+const ammessi = [...new Set(giaMancanti)];
+if (ammessi.length) console.log(`  --  rimozioni gia' presenti nel working tree, ammesse nei test: ${ammessi.join(', ')}`);
+
+const conAmmessi = (extra: string[] = []) => {
+  const lista = [...ammessi, ...extra];
+  return tsx(['scripts/verify-parts-preserved.ts', '--current', partsCopia,
+    ...(lista.length ? ['--allow-removed', lista.join(',')] : [])]);
+};
+
+check('con parts.json integro la verifica passa', conAmmessi().code === 0, base.out.slice(-300));
 
 const mutilato = JSON.parse(readFileSync(partsCopia, 'utf8'));
 const idTolto = mutilato.blades?.[0]?.id;
 mutilato.blades = (mutilato.blades ?? []).slice(1);
 writeFileSync(partsCopia, JSON.stringify(mutilato, null, 2));
-const vp1 = tsx(['scripts/verify-parts-preserved.ts', '--current', partsCopia]);
+const vp1 = conAmmessi();
 check(`togliere la parte "${idTolto}" fa fallire la verifica`, vp1.code === 1 && vp1.out.includes(idTolto), vp1.out.slice(-300));
-const vp2 = tsx(['scripts/verify-parts-preserved.ts', '--current', partsCopia, '--allow-removed', idTolto]);
+const vp2 = conAmmessi([idTolto]);
 check('--allow-removed permette una rimozione voluta', vp2.code === 0, vp2.out.slice(-200));
 
 // ------------------------------------------------------------------ 0-bis. isolamento verificato

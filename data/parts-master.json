@@ -7204,25 +7204,10 @@
       "type": "defense"
     },
     {
-      "id": "wall",
-      "category": "assistBlade",
-      "line": "cx",
-      "shortName": "W",
-      "names": {
-        "tt": "Wall",
-        "hasbro": null,
-        "ja": "",
-        "romaji": ""
-      },
-      "aliases": [],
-      "source": null,
-      "status": "unverified"
-    },
-    {
       "id": "wheel",
       "category": "assistBlade",
       "line": "cx",
-      "shortName": "Wh",
+      "shortName": "W",
       "names": {
         "tt": "Wheel",
         "hasbro": null,
@@ -7239,6 +7224,11 @@
           "value": "Hoīru",
           "lang": "ja",
           "kind": "romaji"
+        },
+        {
+          "value": "Wall",
+          "lang": "en",
+          "kind": "community"
         }
       ],
       "source": {
@@ -10879,6 +10869,11 @@
           "value": "Ōbu",
           "lang": "ja",
           "kind": "romaji"
+        },
+        {
+          "value": "Orbit",
+          "lang": "en",
+          "kind": "community"
         }
       ],
       "source": {
@@ -10910,20 +10905,6 @@
         "def": 30,
         "sta": 50
       }
-    },
-    {
-      "id": "orbit",
-      "category": "bit",
-      "type": "stamina",
-      "names": {
-        "tt": "Orbit",
-        "hasbro": null,
-        "ja": "",
-        "romaji": ""
-      },
-      "aliases": [],
-      "source": null,
-      "status": "unverified"
     },
     {
       "id": "point",

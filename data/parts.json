@@ -2117,15 +2117,9 @@
       "line": "cx"
     },
     {
-      "id": "wall",
-      "name": "W (Wall)",
-      "shortName": "W",
-      "line": "cx"
-    },
-    {
       "id": "wheel",
-      "name": "Wh (Wheel)",
-      "shortName": "Wh",
+      "name": "W (Wheel)",
+      "shortName": "W",
       "line": "cx"
     },
     {
@@ -3013,18 +3007,14 @@
       "type": "stamina",
       "shortName": "O",
       "aliases": [
-        "Ōbu"
+        "Ōbu",
+        "Orbit"
       ],
       "stats": {
         "atk": 10,
         "def": 30,
         "sta": 50
       }
-    },
-    {
-      "id": "orbit",
-      "name": "Orbit",
-      "type": "stamina"
     },
     {
       "id": "point",

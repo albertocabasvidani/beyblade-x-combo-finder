@@ -97,24 +97,32 @@ async function main() {
 
   console.log('Fonte: category per-tipo del Fandom Wiki (Blades filtrati su Category:Beyblade X)\n');
   console.log('CATEGORIA       wiki-X  master   mancanti / extra');
-  let totM = 0, totE = 0;
+  let totM = 0, totE = 0, totI = 0;
   for (const [label, titles, arr] of groups) {
     const wiki = new Map<string, string>();
     for (const t of titles) { const k = norm(stripPrefix(t)); if (k) wiki.set(k, t); }
     const mkeys = masterKeys(arr);
     const wkeys = new Set(wiki.keys());
     const missing = [...wiki.entries()].filter(([k]) => !mkeys.has(k)).map(([, t]) => t);
-    const extra = (arr || []).filter((e: any) => {
+    const fuoriCatalogo = (arr || []).filter((e: any) => {
       const c = [norm(e.names?.tt), norm(e.id), e.names?.hasbro ? norm(e.names.hasbro) : ''].filter(Boolean);
       return !c.some((x: string) => wkeys.has(x));
-    }).map((e: any) => e.id);
-    totM += missing.length; totE += extra.length;
+    });
+    // I bit a cricchetto integrato (Operate, Turbo) NON hanno una pagina `Bit - X`: esistono solo
+    // dentro il prodotto che li monta, quindi mancano dalla categoria per costruzione. Segnalarli
+    // ogni giorno insegna solo a ignorare l'elenco degli extra — e un extra ignorato e' un extra
+    // inutile. Restano visibili come voce a parte, cosi' non spariscono dal radar.
+    const integrati = fuoriCatalogo.filter((e: any) => e.integratedRatchet).map((e: any) => e.id);
+    const extra = fuoriCatalogo.filter((e: any) => !e.integratedRatchet).map((e: any) => e.id);
+    totM += missing.length; totE += extra.length; totI += integrati.length;
     console.log(`${label.padEnd(14)} ${String(wiki.size).padStart(5)} ${String((arr || []).length).padStart(7)}    -${missing.length} / +${extra.length}`);
     if (missing.length) console.log('   MANCANTI: ' + missing.join(', '));
     if (extra.length) console.log('   EXTRA:    ' + extra.join(', '));
+    if (integrati.length) console.log('   integrati (attesi, senza pagina dedicata): ' + integrati.join(', '));
   }
-  console.log(`\nTotale: ${totM} mancanti, ${totE} extra.`);
-  if (totM === 0) console.log('Registro COMPLETO rispetto alla fonte. Gli EXTRA sono parti non a catalogo wiki (RatchetBit, varianti community, dati podio): verificare caso per caso.');
+  console.log(`\nTotale: ${totM} mancanti, ${totE} extra${totI ? `, ${totI} a cricchetto integrato (attesi)` : ''}.`);
+  if (totM === 0 && totE === 0) console.log('Registro COMPLETO rispetto alla fonte, e nessun extra da spiegare.');
+  else if (totM === 0) console.log('Registro COMPLETO rispetto alla fonte. Gli EXTRA sono parti non a catalogo wiki (varianti community, dati podio): verificare caso per caso.');
 
   // --strict serve a /update-parts: la completezza va imposta, non solo raccontata. Senza, lo
   // script esce 0 anche con parti mancanti e l'unico modo per accorgersene sarebbe leggere lo

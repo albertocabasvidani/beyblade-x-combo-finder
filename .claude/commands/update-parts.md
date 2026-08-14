@@ -155,6 +155,13 @@ star scrivendo le sue cache in `data/`, e finirebbero dentro a meta'.
 - **Solo Beyblade X**: tieni ogni pagina il cui `Series` comincia per `Beyblade X` (le stagioni
   dell'anime sono pur sempre Beyblade X); scarta le altre generazioni.
 - **Mai inventare**: nome non derivabile → `null`; parte non confermata → `status:"unverified"`.
+- **Una sigla non e' un nome.** Nei codici CX la lettera dell'assist blade va sciolta leggendo il
+  campo `AKA` della pagina prodotto, che lo scrive per esteso (`CerberusFlame W5-80WB` → «Wheel
+  Five Eighty Wall Ball»), o il campo `AssistBlade`. Indovinare la parola dalla lettera ha gia'
+  prodotto un'assist blade fantasma «Wall» al posto di **Wheel**: si e' presa la sigla W, e per
+  mesi 111 combo sono finite su una parte inesistente — 39 delle quali doppioni esatti di combo
+  Wheel, con le prove divise a meta' e il punteggio dimezzato. Stessa storia per il bit «Orbit»,
+  che e' **Orb**. Se una sigla non si scioglie con certezza, `status:"unverified"` e segnalala.
 - I nomi non-EN (KR/CN/ES/PT) NON stanno su Fandom: li aggiunge `/update-combos` come
   `aliases{kind:"community"}`.
 - `source` nel master e' **provenienza**, non stato del diff: non aggiornare piu' `source.revid` a
