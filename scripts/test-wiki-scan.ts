@@ -279,6 +279,51 @@ if (vittima) {
     `products: ${JSON.stringify(dopoCod.products)}`);
 }
 
+// C-conflitti — un'ambiguita' non risolta deve sopravvivere a un run che non ripassa da quella
+// pagina. Prima il file veniva rigenerato da zero ogni volta: le 8 ambiguita' di tipo note
+// sparivano appena un giro non le riattraversava, e il file sembrava a posto proprio perche' era
+// vuoto.
+{
+  const cTmp = join(WORK, 'conflitti');
+  mkdirSync(cTmp, { recursive: true });
+  const masterC = join(WORK, 'master-conflitti.json');
+  copyFileSync(join(DATA, 'parts-master.json'), masterC);
+  const fileC = join(WORK, 'conflitti.json');
+
+  // Run 1: un record col type sbagliato su una parte che ne ha gia' uno -> conflitto.
+  const conTipo = JSON.parse(readFileSync(masterC, 'utf8')).blades.find((b: any) => b.type);
+  const altro = conTipo.type === 'attack' ? 'defense' : 'attack';
+  writeFileSync(join(cTmp, 'parts-extract-batch-c1.json'), JSON.stringify([{
+    category: 'blade', tt: conTipo.names.tt, type: altro,
+    fromProduct: 'Test', fromUrl: 'https://example.invalid/t',
+  }], null, 1));
+  tsx(['scripts/merge-master.ts', '--master', masterC, '--tmp', cTmp, '--conflicts', fileC]);
+  const dopo1 = JSON.parse(readFileSync(fileC, 'utf8'));
+  check('un type discordante viene registrato come conflitto',
+    dopo1.conflicts.some((c: any) => c.id === conTipo.id && c.type === 'type_mismatch'),
+    JSON.stringify(dopo1.conflicts?.slice(0, 2)));
+
+  // Run 2: un batch che NON parla di quella parte. Il conflitto deve restare.
+  writeFileSync(join(cTmp, 'parts-extract-batch-c1.json'), JSON.stringify([{
+    category: 'blade', tt: conTipo.names.tt, fromProduct: 'Test2', fromUrl: 'https://example.invalid/t2',
+  }], null, 1));
+  tsx(['scripts/merge-master.ts', '--master', masterC, '--tmp', cTmp, '--conflicts', fileC]);
+  const dopo2 = JSON.parse(readFileSync(fileC, 'utf8'));
+  check('il conflitto sopravvive a un run che non lo incontra',
+    dopo2.conflicts.some((c: any) => c.id === conTipo.id && c.type === 'type_mismatch'),
+    `count dopo: ${dopo2.count}`);
+
+  // Run 3: lo stesso conflitto rivisto aggiorna la data, non si duplica.
+  writeFileSync(join(cTmp, 'parts-extract-batch-c1.json'), JSON.stringify([{
+    category: 'blade', tt: conTipo.names.tt, type: altro,
+    fromProduct: 'Test', fromUrl: 'https://example.invalid/t',
+  }], null, 1));
+  tsx(['scripts/merge-master.ts', '--master', masterC, '--tmp', cTmp, '--conflicts', fileC]);
+  const dopo3 = JSON.parse(readFileSync(fileC, 'utf8'));
+  const quanti = dopo3.conflicts.filter((c: any) => c.id === conTipo.id && c.type === 'type_mismatch').length;
+  check('rivedere lo stesso conflitto non lo duplica', quanti === 1, `occorrenze: ${quanti}`);
+}
+
 // C12 — la migrazione non lascia collisioni.
 if (haStato) {
   const chiavi = Object.keys(stato.pages);

@@ -100,6 +100,14 @@ dopo che `resolve-new-parts` ha fatto il suo giro e' un campanello, non un succe
 `verify:wiki` era a 0 mancanti, una parte nuova e' quasi certamente un nome estratto male:
 fermati e controlla la pagina prima di proseguire.
 
+I conflitti in `data/parts-master-conflicts.json` si **accumulano** (chiave stabile, con
+`primaVisto`/`ultimoVisto`): restano finche' qualcuno non li risolve a mano correggendo il dato
+o cancellando la voce. Segnala nel report solo quelli **nuovi di questo run** — gli altri sono
+gia' noti. Le 8 ambiguita' di tipo aperte da tempo (`dran-dagger` attack/balance, `phoenix-wing`
+attack/stamina/balance, `phoenix-rudder`, `disk-spike`, `samurai-steel`, `hells-scythe`,
+`knight-lance`) nascono dal wiki stesso, che assegna tipi diversi alla stessa parte su pagine
+prodotto diverse: non risolverle di tua iniziativa.
+
 ### 4. Derivare
 
 ```

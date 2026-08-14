@@ -1,5 +1,86 @@
 {
   "generated": "2026-08-14",
-  "count": 0,
-  "conflicts": []
+  "count": 8,
+  "conflicts": [
+    {
+      "type": "type_mismatch",
+      "id": "dran-dagger",
+      "existing": "attack",
+      "found": "balance",
+      "from": "DranDagger 2-80GP",
+      "primaVisto": "2026-08-14",
+      "ultimoVisto": "2026-08-14",
+      "nota": "ambiguita' preesistente, recuperata dopo che il run del 14/08 aveva azzerato il file"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "phoenix-wing",
+      "existing": "attack",
+      "found": "stamina",
+      "from": "PhoenixWing 9-80DB",
+      "primaVisto": "2026-08-14",
+      "ultimoVisto": "2026-08-14",
+      "nota": "ambiguita' preesistente, recuperata dopo che il run del 14/08 aveva azzerato il file"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "phoenix-rudder",
+      "existing": "balance",
+      "found": "stamina",
+      "from": "Rudder Phoenix 4-70LF",
+      "primaVisto": "2026-08-14",
+      "ultimoVisto": "2026-08-14",
+      "nota": "ambiguita' preesistente, recuperata dopo che il run del 14/08 aveva azzerato il file"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "disk-spike",
+      "existing": "stamina",
+      "found": "defense",
+      "from": "Ring Aether 0-80DS",
+      "primaVisto": "2026-08-14",
+      "ultimoVisto": "2026-08-14",
+      "nota": "ambiguita' preesistente, recuperata dopo che il run del 14/08 aveva azzerato il file"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "samurai-steel",
+      "existing": "attack",
+      "found": "balance",
+      "from": "Steel Samurai 4-80T",
+      "primaVisto": "2026-08-14",
+      "ultimoVisto": "2026-08-14",
+      "nota": "ambiguita' preesistente, recuperata dopo che il run del 14/08 aveva azzerato il file"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "hells-scythe",
+      "existing": "balance",
+      "found": "stamina",
+      "from": "Scythe Incendio 3-80B",
+      "primaVisto": "2026-08-14",
+      "ultimoVisto": "2026-08-14",
+      "nota": "ambiguita' preesistente, recuperata dopo che il run del 14/08 aveva azzerato il file"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "knight-lance",
+      "existing": "defense",
+      "found": "attack",
+      "from": "Lance Knight 3-60LF",
+      "primaVisto": "2026-08-14",
+      "ultimoVisto": "2026-08-14",
+      "nota": "ambiguita' preesistente, recuperata dopo che il run del 14/08 aveva azzerato il file"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "phoenix-wing",
+      "existing": "attack",
+      "found": "balance",
+      "from": "Soar Phoenix 5-80H",
+      "primaVisto": "2026-08-14",
+      "ultimoVisto": "2026-08-14",
+      "nota": "ambiguita' preesistente, recuperata dopo che il run del 14/08 aveva azzerato il file"
+    }
+  ]
 }

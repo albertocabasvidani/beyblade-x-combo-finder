@@ -239,8 +239,41 @@ master.version = today();
 for (const c of CATS) master[c] = byCat[c].slice().sort((a: Entry, b: Entry) => a.id.localeCompare(b.id));
 
 writeFileSync(masterPath, JSON.stringify(master, null, 2) + '\n');
-writeFileSync(conflictsPath, JSON.stringify({ generated: today(), count: conflicts.length, conflicts }, null, 2) + '\n');
+
+/**
+ * I conflitti si ACCUMULANO, non si sovrascrivono.
+ *
+ * Prima questo file veniva rigenerato da zero coi soli conflitti del run corrente: siccome ogni
+ * giro guarda poche pagine, un'ambiguita' non risolta spariva dal registro appena una run non
+ * ripassava da quella pagina — e nessuno se ne accorgeva, perche' il file c'era e sembrava a
+ * posto. Le 8 ambiguita' di tipo note (dran-dagger attack/balance, phoenix-wing attack/stamina…)
+ * sopravvivevano solo per caso, finche' un run capitava di nuovo su quelle pagine.
+ *
+ * Ora ogni voce ha una chiave stabile (tipo + parte + valori in gioco) e porta `primaVisto` /
+ * `ultimoVisto`: rivedere lo stesso conflitto aggiorna la data, non crea un doppione, e chi non
+ * si rivede resta in lista finche' qualcuno non lo risolve a mano. Per toglierne uno: cancellare
+ * la voce dal file (o correggere il dato, cosi' non si ripresenta).
+ */
+const chiaveConflitto = (c: any) =>
+  [c.type, c.id ?? c.record?.tt ?? '', norm(String(c.existing ?? '')), norm(String(c.found ?? ''))].join('|');
+
+const precedenti = (() => {
+  try { return JSON.parse(readFileSync(conflictsPath, 'utf8').replace(/^﻿/, '')).conflicts ?? []; }
+  catch { return []; }
+})();
+
+const perChiave = new Map<string, any>();
+for (const c of precedenti) perChiave.set(chiaveConflitto(c), c);
+let nuoviConflitti = 0;
+for (const c of conflicts) {
+  const k = chiaveConflitto(c);
+  const vecchio = perChiave.get(k);
+  if (vecchio) { vecchio.ultimoVisto = today(); }
+  else { perChiave.set(k, { ...c, primaVisto: today(), ultimoVisto: today() }); nuoviConflitti++; }
+}
+const tutti = [...perChiave.values()];
+writeFileSync(conflictsPath, JSON.stringify({ generated: today(), count: tutti.length, conflicts: tutti }, null, 2) + '\n');
 
 console.log(`Merge completato: ${records.length} record processati → ${enriched} arricchimenti, ${created} parti nuove.`);
 console.log(`Totali master: ${master.blades.length} blade, ${master.lockChips.length} lock chip, ${master.mainBlades.length} main blade, ${master.assistBlades.length} assist blade, ${master.overBlades.length} over blade, ${master.ratchets.length} ratchet, ${master.bits.length} bit.`);
-console.log(`Conflitti: ${conflicts.length} (vedi data/parts-master-conflicts.json).`);
+console.log(`Conflitti: ${nuoviConflitti} nuovi in questo run, ${tutti.length} aperti in totale (vedi ${conflictsPath}).`);
