@@ -4,12 +4,12 @@
     "List of Beyblade X products (Takara Tomy)": {
       "revid": 645910,
       "timestamp": "2026-08-11T15:29:44.000Z",
-      "lastScannedDate": "2026-08-15"
+      "lastScannedDate": "2026-08-16"
     },
     "List of Beyblade X products (Hasbro)": {
       "revid": 646029,
       "timestamp": "2026-08-12T01:23:53.000Z",
-      "lastScannedDate": "2026-08-15"
+      "lastScannedDate": "2026-08-16"
     }
   },
   "pages": {
@@ -309,12 +309,12 @@
       "kindSource": "heuristic"
     },
     "MeteorDragoon 3-70J": {
-      "revid": 646331,
-      "timestamp": "2026-08-15T06:00:10.000Z",
-      "lastScannedDate": "2026-08-15",
+      "revid": 646367,
+      "timestamp": "2026-08-15T21:46:39.000Z",
+      "lastScannedDate": "2026-08-16",
       "kind": "product",
-      "kindSource": "heuristic",
-      "notes": "Solo correzioni testo (RomajiName/AKA/episodio anime, gallery), nessun dato struttura cambiato."
+      "kindSource": "ai",
+      "notes": "revisione minore (gallery GP2026, trivia); Blade/Ratchet/Bit gia' in master"
     },
     "Blade - Hulk": {
       "revid": 645360,
@@ -423,11 +423,12 @@
       "kindSource": "heuristic"
     },
     "DrakeBrave G4-70I": {
-      "revid": 646276,
-      "timestamp": "2026-08-15T01:32:09.000Z",
-      "lastScannedDate": "2026-08-15",
+      "revid": 646346,
+      "timestamp": "2026-08-15T06:26:25.000Z",
+      "lastScannedDate": "2026-08-16",
       "kind": "product",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "revisione minore (trivia su provenienza parti); LockChip/MainBlade/AssistBlade/Ratchet/Bit gia' in master"
     },
     "SamuraiSaber 2-70L": {
       "revid": 644248,
@@ -604,14 +605,15 @@
       "kindSource": "heuristic"
     },
     "DranStrike 4-50FF": {
-      "revid": 646156,
-      "timestamp": "2026-08-13T05:03:48.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 646337,
+      "timestamp": "2026-08-15T06:12:10.000Z",
+      "lastScannedDate": "2026-08-16",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Strike Dran 4-50FF"
-      ]
+      ],
+      "notes": "revisione minore (gallery); Blade/Ratchet/Bit gia' in master"
     },
     "General Grievous 3-80HN": {
       "revid": 636189,
@@ -1058,14 +1060,15 @@
       "kindSource": "heuristic"
     },
     "BrachioWhip OW5-70Nr": {
-      "revid": 645611,
-      "timestamp": "2026-08-07T04:51:15.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 646340,
+      "timestamp": "2026-08-15T06:17:56.000Z",
+      "lastScannedDate": "2026-08-16",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Whip Brachio OW 5-70Nr"
-      ]
+      ],
+      "notes": "revisione minore (gallery); LockChip/OverBlade/MetalBlade/AssistBlade/Ratchet/Bit gia' in master"
     },
     "Random Booster Vol. 7": {
       "revid": 636788,
@@ -1186,14 +1189,15 @@
       "kindSource": "heuristic"
     },
     "UnicornDelta PO3-60GU": {
-      "revid": 646181,
-      "timestamp": "2026-08-14T06:19:28.677Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 646361,
+      "timestamp": "2026-08-15T11:58:08.000Z",
+      "lastScannedDate": "2026-08-16",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Delta Unicorn PO 3-60GU"
-      ]
+      ],
+      "notes": "revisione minore (gallery/trivia); LockChip/OverBlade/MetalBlade/AssistBlade/Ratchet/Bit gia' in master"
     },
     "ValkyrieVolt S4-70V": {
       "revid": 646249,
@@ -1423,11 +1427,12 @@
       "kindSource": "heuristic"
     },
     "CrocoCrunch 2-60Q": {
-      "revid": 646180,
-      "timestamp": "2026-08-14T06:19:28.677Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 646363,
+      "timestamp": "2026-08-15T13:39:59.000Z",
+      "lastScannedDate": "2026-08-16",
       "kind": "product",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "revisione minore (release date/trivia); Blade/Ratchet/Bit gia' in master"
     },
     "SphinxCowl 9-80GN": {
       "revid": 646148,
@@ -1502,18 +1507,20 @@
       "kindSource": "heuristic"
     },
     "Ratchet - 5-70": {
-      "revid": 646290,
-      "timestamp": "2026-08-15T02:49:49.000Z",
-      "lastScannedDate": "2026-08-15",
+      "revid": 646354,
+      "timestamp": "2026-08-15T06:48:10.000Z",
+      "lastScannedDate": "2026-08-16",
       "kind": "part",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "aggiunto riferimento prodotto Buster Dran 5-70DB alla lista Products; parte gia' in master"
     },
     "Bit - Disk Ball": {
-      "revid": 646291,
-      "timestamp": "2026-08-15T02:50:28.000Z",
-      "lastScannedDate": "2026-08-15",
+      "revid": 646355,
+      "timestamp": "2026-08-15T06:48:15.000Z",
+      "lastScannedDate": "2026-08-16",
       "kind": "part",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "aggiunto riferimento prodotto Buster Dran 5-70DB alla lista Products; parte gia' in master"
     },
     "Blade - DranSword": {
       "revid": 643853,
@@ -1609,11 +1616,12 @@
       ]
     },
     "Buster Dran 5-70DB": {
-      "revid": 641556,
-      "timestamp": "2026-08-14T06:19:28.677Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 646352,
+      "timestamp": "2026-08-15T06:45:42.000Z",
+      "lastScannedDate": "2026-08-16",
       "kind": "product",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "revisione minore (gallery/trivia); Blade=Dran Buster (hasbro Buster Dran)/Ratchet 5-70/Bit Disk Ball gia' in master"
     },
     "PhoenixRudder 4-70LF": {
       "revid": 634315,
@@ -1683,14 +1691,15 @@
       "kindSource": "heuristic"
     },
     "HellsNether Z": {
-      "revid": 646217,
-      "timestamp": "2026-08-13T23:42:57.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 646343,
+      "timestamp": "2026-08-15T06:22:22.000Z",
+      "lastScannedDate": "2026-08-16",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Nether Incendio Z"
-      ]
+      ],
+      "notes": "revisione minore (trivia); RatchetBlade HellsNether/Bit Zap gia' in master"
     },
     "Seize Jaguar HN": {
       "revid": 644491,
