@@ -28,9 +28,12 @@ diff e' codice deterministico e lo stato sta in `data/wiki-scan.json`.
 npm run scan:wiki
 ```
 
-Se stampa `WORKLIST VUOTA`: non c'e' niente da fare. Committa `data/wiki-scan.json` **solo se e'
-cambiato** (`git diff --quiet -- data/wiki-scan.json`), con messaggio `wiki scan: nessuna novita'
-[data]`, poi **fermati qui**. Non lanciare merge, build o verifiche.
+Se stampa `WORKLIST VUOTA`: non c'e' niente da fare per le parti. Committa `data/wiki-scan.json`
+**e** `data/releases.json`, **ciascuno solo se e' cambiato** (`git status --short -- data/wiki-scan.json data/releases.json`),
+con messaggio `wiki scan: nessuna novita' [data]`, poi **fermati qui**. Non lanciare merge, build
+o verifiche. `releases.json` (date di uscita per bbxdealmonitor) puo' cambiare anche in un giorno
+senza parti nuove: le liste vengono rilette a ogni revid diverso, indipendentemente da quante
+pagine-prodotto emergano.
 
 Altrimenti leggi `tmp/parts-worklist.json`. Per ogni voce in `pages`:
 - `file` — il wikitext gia' scaricato, **inchiodato al revid del diff**. Leggilo da li'.
@@ -150,13 +153,15 @@ rifa' tutto da capo invece di credere di aver gia' guardato.
 ### 8. Committare
 
 ```
-git add data/parts-master.json data/parts.json data/parts-master-conflicts.json data/wiki-scan.json
+git add data/parts-master.json data/parts.json data/parts-master-conflicts.json data/wiki-scan.json data/releases.json
 git commit -m "update parts database [2026-08-14]" && git push
 ```
 Nel messaggio va la **data di oggi** al posto di `2026-08-14`: e' un esempio, non un segnaposto da
 copiare. (Il 14/08/2026 una run ha committato la stringa `[data]` alla lettera.) Aggiungi solo i
 file che risultano davvero modificati da `git status`: nei giorni tranquilli e' il solo
-`data/wiki-scan.json`.
+`data/wiki-scan.json`. `data/releases.json` (date di uscita, lette da bbxdealmonitor per le sue
+riproposte) e' proprieta' dello **stesso** `scan-wiki-updates.ts`, non di questo comando: non
+editarlo mai a mano.
 **Lista esplicita di file, mai `git add data/`**: alle 07:30 il job di raccolta fonti puo' ancora
 star scrivendo le sue cache in `data/`, e finirebbero dentro a meta'.
 

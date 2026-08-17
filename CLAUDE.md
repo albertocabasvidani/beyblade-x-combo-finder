@@ -55,6 +55,13 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
 - `data/wbo-cache.json` — cache thread WBO (Playwright; Cloudflare può bloccare headless); `threads[key].pages` per pagina + `raw` concatenato (entro 12 mesi)
 - `data/scan-history.json` — dedup: scannedVideos/Sheets/RedditPosts/Pages(+revid)/Events(+`eventDate`)/Posts; cursori di backfill `metabeysBackfill`/`wboBackfill` (`nextPage`/`done`). Le pagine **wiki** non stanno più qui: `scannedPages` resta solo per le fonti web di `/update-combos` (dedup per `contentHash`)
 - `data/wiki-scan.json` — stato del diff wiki per `/update-parts`, scritto **solo** da `scripts/scan-wiki-updates.ts`: una voce per pagina canonica (`revid`, `timestamp`, `kind`, i titoli-redirect assorbiti in `redirects[]`). File separato da scan-history apposta: quello lo riscrivono per intero anche i job delle 07:30, e due read-modify-write da 900 KB sovrapposti si perdono a vicenda
+- `data/releases.json` — date di uscita per prodotto, estratte dalla colonna Release Date delle
+  stesse due pagine-lista lette per scoprire le parti. Scritto dallo stesso `scan-wiki-updates.ts`,
+  nello stesso giro di rete (nessun fetch separato). `byCode` = Takara Tomy per codice prodotto,
+  `byName` = Hasbro per nome normalizzato (niente codice affidabile in comune con le chiavi Amazon)
+  Consumato dal progetto sorella `bbxdealmonitor` per le sue "riproposte": prodotti recenti fatti
+  riaffiorare sul canale WhatsApp nei momenti di silenzio. Una riga tutta TBA resta nel file senza
+  `date`, non sparisce
 
 ## Comandi
 

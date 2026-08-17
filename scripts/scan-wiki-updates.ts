@@ -85,6 +85,9 @@ const WORKLIST_PATH = opt('--worklist', join(TMP, 'parts-worklist.json'));
 const RESULTS_PATH = opt('--results', join(TMP, 'parts-worklist-results.json'));
 const LISTS_FROM = opt('--lists-from', '');
 const FETCH_DIR = opt('--fetch-dir', join(TMP, 'wiki_fetch'));
+// Default in TMP quando le fixture di collaudo comandano (LISTS_FROM): senza questo, la suite
+// (che inietta righe sintetiche nelle liste) riverserebbe date finte nel file vero di data/.
+const RELEASES_PATH = opt('--releases', join(LISTS_FROM ? TMP : DATA, 'releases.json'));
 
 // ---------------------------------------------------------------- parsing liste
 
@@ -100,9 +103,20 @@ const FETCH_DIR = opt('--fetch-dir', join(TMP, 'wiki_fetch'));
  * link), le decine di [[File:Flag of ...]] nelle celle di data e prezzo della lista Hasbro, e il
  * blocco introduttivo che linka [[Beyblade X]] senza codice.
  */
-export function parseListRows(wikitext: string): string[] {
-  const out: string[] = [];
-  const seen = new Set<string>();
+/** Una riga di prodotto, con anche il codice e la cella "Release Date" grezze — servono a
+ * scan() per popolare data/releases.json senza un secondo giro di parsing sulla stessa lista. */
+export interface ListEntry { title: string; code: string | null; dateCell: string | null }
+
+/**
+ * UNA entry per RIGA di tabella, senza dedup per titolo: righe diverse condividono spesso la
+ * stessa pagina-parte (es. "BX-03 Starter WizardArrow 4-80B" e "BX-05 Booster WizardArrow
+ * 4-80B" linkano entrambe a "WizardArrow 4-80B"), e ognuna ha il suo codice e la sua data. Un
+ * dedup qui perderebbe codici veri — verificato sulla lista Takara Tomy reale: senza, 9 codici
+ * su 95 sparivano (BX-05/06/22/28/30/42/43/51/57, tutti "seconda riga" di una pagina condivisa).
+ * `parseListRows` fa il suo dedup-per-titolo a valle, sul risultato.
+ */
+export function parseListEntries(wikitext: string): ListEntry[] {
+  const out: ListEntry[] = [];
   for (const block of wikitext.split(/\n\|-/)) {
     if (!/^\s*\|\s*(?:(?:BX|UX|CX|BXG)-[\w.]+|[FG]\d{4}|N\/A)/m.test(block)) continue;
     const m = [...block.matchAll(/\[\[([^\]|#]+)(?:\|[^\]]*)?\]\]/g)]
@@ -110,11 +124,70 @@ export function parseListRows(wikitext: string): string[] {
       .filter((t) => t && !/^(File|Image|Category|Template|User):/i.test(t));
     if (!m.length) continue;
     const title = m[0];
-    if (seen.has(title)) continue;
-    seen.add(title);
-    out.push(title);
+
+    // Celle nell'ordine della tabella (Product Code, Name, Release Date, Price): ogni cella
+    // e' una riga che comincia con '|' non seguito da '-' (quello e' gia' il separatore di
+    // riga, consumato dallo split sopra). cells[0]=codice, cells[2]=data.
+    const cells = block.split(/\n\|(?!-)/).slice(1).map((c) => c.trim());
+    const codeMatch = cells[0]?.match(/^(?:BX|UX|CX|BXG)-[\w.]+|^[FG]\d{4}/);
+    out.push({ title, code: codeMatch ? codeMatch[0] : null, dateCell: cells[2] ?? null });
   }
   return out;
+}
+
+/** Titoli di pagina unici (dedup per titolo, ordine di prima apparizione): serve alla scoperta
+ * pagine, dove piu' righe della stessa pagina-parte contano come un solo link da visitare. */
+export function parseListRows(wikitext: string): string[] {
+  return [...new Set(parseListEntries(wikitext).map((e) => e.title))];
+}
+
+const MESI: Record<string, string> = {
+  january: '01', february: '02', march: '03', april: '04', may: '05', june: '06',
+  july: '07', august: '08', september: '09', october: '10', november: '11', december: '12',
+};
+
+/** Toglie i marcatori wikitext da una cella data (bandiere, <br>, link, commenti) tenendo il
+ * testo leggibile. I commenti si tagliano dal PRIMO '<!--' al PRIMO '-->' successivo: sul wiki
+ * capitano commenti annidati male (due '<!--' e un solo '-->' di chiusura), e il non-greedy
+ * consuma comunque tutto il blocco fino a quell'unica chiusura — niente resta appeso a meta'. */
+function pulisciCellaData(raw: string): string {
+  return raw
+    .replace(/<!--[\s\S]*?-->/g, ' ')
+    .replace(/\[\[File:[^\]]*\]\]/gi, ' ')
+    .replace(/<br\s*\/?>/gi, ' ')
+    .replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, '$2')
+    .replace(/\[\[([^\]]+)\]\]/g, '$1');
+}
+
+/** Tutte le date leggibili nel testo pulito, la piu' antica in ISO (giorno 01 se il testo non
+ * lo specifica, es. "July 2024"). null se non resta nessuna data (riga tutta TBA). */
+function estraiDataPiuAntica(testoPulito: string): string | null {
+  const trovate: string[] = [];
+  const reCompleta = /\b([A-Za-z]+)\.?\s+(\d{1,2})(?:st|nd|rd|th)?,?\s+(\d{4})\b/g;
+  const coperti: [number, number][] = [];
+  let m: RegExpExecArray | null;
+  while ((m = reCompleta.exec(testoPulito))) {
+    const mese = MESI[m[1].toLowerCase()];
+    if (!mese) continue;
+    trovate.push(`${m[3]}-${mese}-${m[2].padStart(2, '0')}`);
+    coperti.push([m.index, m.index + m[0].length]);
+  }
+  const reMeseAnno = /\b([A-Za-z]+)\s+(\d{4})\b/g;
+  while ((m = reMeseAnno.exec(testoPulito))) {
+    if (coperti.some(([a, b]) => m!.index >= a && m!.index < b)) continue; // gia' in una data completa
+    const mese = MESI[m[1].toLowerCase()];
+    if (!mese) continue;
+    trovate.push(`${m[2]}-${mese}-01`);
+  }
+  if (!trovate.length) return null;
+  trovate.sort();
+  return trovate[0];
+}
+
+/** Nome normalizzato per il join per-nome (Hasbro, che non ha un codice affidabile in comune
+ * con le nostre chiavi Amazon): minuscolo, via ogni carattere che non sia lettera o cifra. */
+function normalizzaNome(s: string): string {
+  return s.toLowerCase().replace(/[^a-z0-9]/g, '');
 }
 
 /** Link della sezione ==Contents==: i Multipack elencano li' i bey membri, che spesso non stanno in nessuna lista. */
@@ -193,16 +266,49 @@ async function scan(): Promise<void> {
   }
   if (LISTS_FROM) listeCambiate = true; // in collaudo le fixture comandano
 
-  // --- candidati dalle liste -> titoli canonici
+  // --- candidati dalle liste -> titoli canonici, e (nello stesso giro) date di rilascio per
+  // data/releases.json: la colonna Release Date e' nel wikitext gia' scaricato per la scoperta
+  // pagine, non serve un secondo giro di rete. Si scarica anche quando le liste NON sono
+  // cambiate ma releases.json non esiste ancora (primo run): senza, il file non nascerebbe mai
+  // nei giorni in cui la wiki tace.
   const nuove: { title: string; info: PageInfo; via: string }[] = [];
   const missing: Worklist['missing'] = [];
-  if (listeCambiate) {
+  const scaricaListe = listeCambiate || !existsSync(RELEASES_PATH);
+  if (scaricaListe) {
     const candidati = new Map<string, string>(); // titolo grezzo -> lista di provenienza
+    const releaseByCode: Record<string, { name: string; date: string | null }> = {};
+    const releaseByName: { norm: string; name: string; date: string | null; productCode: string | null }[] = [];
+    const releasePages: Record<string, { revid: number; timestamp: string | null }> = {};
+    let scartateSenzaNome = 0;
     for (const t of LIST_TITLES) {
       const wt = await listWikitext(t, listInfo.get(t)!.revid);
-      for (const titolo of parseListRows(wt)) if (!candidati.has(titolo)) candidati.set(titolo, t);
+      const entries = parseListEntries(wt);
+      for (const e of entries) if (!candidati.has(e.title)) candidati.set(e.title, t);
+
+      const isTakaraTomy = t.includes('Takara Tomy');
+      for (const e of entries) {
+        const date = e.dateCell ? estraiDataPiuAntica(pulisciCellaData(e.dateCell)) : null;
+        if (isTakaraTomy) {
+          if (e.code) releaseByCode[e.code] = { name: e.title, date };
+        } else {
+          const norm = normalizzaNome(e.title);
+          if (norm.length >= 8) releaseByName.push({ norm, name: e.title, date, productCode: e.code });
+          else scartateSenzaNome++;
+        }
+      }
+      const info = listInfo.get(t)!;
+      releasePages[isTakaraTomy ? 'tt' : 'hasbro'] = { revid: info.revid!, timestamp: info.timestamp };
     }
+    releaseByName.sort((a, b) => b.norm.length - a.norm.length); // match piu' specifico prima
+    writeJsonAtomic(RELEASES_PATH, {
+      fetchedAt: new Date().toISOString(),
+      pages: releasePages,
+      byCode: releaseByCode,
+      byName: releaseByName,
+    });
     console.log(`Liste: ${candidati.size} titoli candidati.`);
+    console.log(`releases.json: ${Object.keys(releaseByCode).length} codici TT, ` +
+      `${releaseByName.length} nomi Hasbro${scartateSenzaNome ? ` (${scartateSenzaNome} scartati, nome troppo corto)` : ''}.`);
 
     const canon = await batchQuery([...candidati.keys()]);
     for (const [grezzo, info] of canon) {

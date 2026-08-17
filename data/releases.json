@@ -1,0 +1,1189 @@
+{
+  "fetchedAt": "2026-08-17T08:56:51.537Z",
+  "pages": {
+    "tt": {
+      "revid": 645910,
+      "timestamp": "2026-08-11T15:29:44Z"
+    },
+    "hasbro": {
+      "revid": 646029,
+      "timestamp": "2026-08-12T01:23:53Z"
+    }
+  },
+  "byCode": {
+    "BX-01": {
+      "name": "DranSword 3-60F",
+      "date": "2023-06-10"
+    },
+    "BX-02": {
+      "name": "HellsScythe 4-60T",
+      "date": "2023-06-10"
+    },
+    "BX-03": {
+      "name": "WizardArrow 4-80B",
+      "date": "2023-07-15"
+    },
+    "BX-04": {
+      "name": "KnightShield 3-80N",
+      "date": "2023-07-15"
+    },
+    "BX-05": {
+      "name": "WizardArrow 4-80B",
+      "date": "2023-07-15"
+    },
+    "BX-06": {
+      "name": "KnightShield 3-80N",
+      "date": "2023-07-15"
+    },
+    "BX-07": {
+      "name": "Start Dash Set",
+      "date": "2023-07-15"
+    },
+    "BX-08": {
+      "name": "3on3 Deck Set",
+      "date": "2023-07-15"
+    },
+    "BX-09": {
+      "name": "Beybattle Pass",
+      "date": "2023-07-15"
+    },
+    "BX-10": {
+      "name": "Xtreme Stadium",
+      "date": "2023-07-15"
+    },
+    "BX-11": {
+      "name": "Launcher Grip (Beyblade X)",
+      "date": "2023-07-15"
+    },
+    "BX-12": {
+      "name": "3on3 Deck Case",
+      "date": "2023-07-15"
+    },
+    "BX-13": {
+      "name": "KnightLance 4-80HN",
+      "date": "2023-08-10"
+    },
+    "BX-14": {
+      "name": "Random Booster Vol. 1",
+      "date": "2023-09-09"
+    },
+    "BX-15": {
+      "name": "LeonClaw 5-60P",
+      "date": "2023-10-07"
+    },
+    "BX-16": {
+      "name": "Random Booster ViperTail Select",
+      "date": "2023-10-07"
+    },
+    "BX-17": {
+      "name": "Battle Entry Set",
+      "date": "2023-10-07"
+    },
+    "BX-18": {
+      "name": "String Launcher (Beyblade X)",
+      "date": "2023-10-07"
+    },
+    "BX-19": {
+      "name": "RhinoHorn 3-80S",
+      "date": "2023-11-02"
+    },
+    "BX-20": {
+      "name": "DranDagger Deck Set",
+      "date": "2023-11-02"
+    },
+    "BX-21": {
+      "name": "HellsChain Deck Set",
+      "date": "2023-11-02"
+    },
+    "BX-22": {
+      "name": "DranSword 3-60F",
+      "date": "2023-12-02"
+    },
+    "BX-23": {
+      "name": "PhoenixWing 9-60GF",
+      "date": "2023-12-10"
+    },
+    "BX-24": {
+      "name": "Random Booster Vol. 2",
+      "date": "2023-12-27"
+    },
+    "BX-25": {
+      "name": "Gear Case",
+      "date": "2023-12-27"
+    },
+    "BX-26": {
+      "name": "UnicornSting 5-60GP",
+      "date": "2024-01-27"
+    },
+    "BX-27": {
+      "name": "Random Booster SphinxCowl Select",
+      "date": "2024-02-22"
+    },
+    "BX-28": {
+      "name": "String Launcher (Beyblade X)",
+      "date": "2024-03-30"
+    },
+    "BX-29": {
+      "name": "Custom Grip (Beyblade X)",
+      "date": "2024-03-30"
+    },
+    "BX-30": {
+      "name": "Custom Grip (Beyblade X)",
+      "date": "2024-03-30"
+    },
+    "BX-31": {
+      "name": "Random Booster Vol. 3",
+      "date": "2024-04-27"
+    },
+    "BX-32": {
+      "name": "Wide Xtreme Stadium",
+      "date": "2024-07-13"
+    },
+    "BX-33": {
+      "name": "WeissTiger 3-60U",
+      "date": "2024-06-15"
+    },
+    "BX-34": {
+      "name": "CobaltDragoon 2-60C",
+      "date": "2024-07-13"
+    },
+    "BX-35": {
+      "name": "Random Booster Vol. 4",
+      "date": "2024-07-13"
+    },
+    "BX-36": {
+      "name": "Random Booster WhaleWave Select",
+      "date": "2024-09-14"
+    },
+    "BX-37": {
+      "name": "Double Xtreme Stadium Set",
+      "date": "2024-10-12"
+    },
+    "BX-38": {
+      "name": "CrimsonGaruda 4-70TP",
+      "date": "2024-11-02"
+    },
+    "BX-39": {
+      "name": "Random Booster ShelterDrake Select",
+      "date": "2025-02-15"
+    },
+    "BX-40": {
+      "name": "Winder Launcher L",
+      "date": "2025-03-29"
+    },
+    "BX-41": {
+      "name": "Rubber Custom Grip",
+      "date": "2025-03-29"
+    },
+    "BX-42": {
+      "name": "Rubber Custom Grip",
+      "date": "2025-03-29"
+    },
+    "BX-43": {
+      "name": "Gear Case",
+      "date": "2025-03-29"
+    },
+    "BX-44": {
+      "name": "TriceraPress M-85BS",
+      "date": "2025-06-28"
+    },
+    "BX-45": {
+      "name": "SamuraiCalibur 6-70M",
+      "date": "2025-08-09"
+    },
+    "BX-46": {
+      "name": "Battle Entry Set Infinity",
+      "date": "2025-10-11"
+    },
+    "BX-47": {
+      "name": "String Launcher L",
+      "date": "2025-10-11"
+    },
+    "BX-48": {
+      "name": "Random Booster Vol. 9",
+      "date": "2026-02-14"
+    },
+    "BX-49": {
+      "name": "DranStrike 4-50FF",
+      "date": "2026-05-16"
+    },
+    "BX-50": {
+      "name": "Random Booster Vol. 11",
+      "date": "2026-07-11"
+    },
+    "BX-51": {
+      "name": "String Launcher (Beyblade X)",
+      "date": "2026-06-13"
+    },
+    "BX-57": {
+      "name": "3on3 Deck Case",
+      "date": "2026-08-08"
+    },
+    "UX-01": {
+      "name": "DranBuster 1-60A",
+      "date": "2024-03-30"
+    },
+    "UX-02": {
+      "name": "HellsHammer 3-70H",
+      "date": "2024-03-30"
+    },
+    "UX-03": {
+      "name": "WizardRod 5-70DB",
+      "date": "2024-03-30"
+    },
+    "UX-04": {
+      "name": "Battle Entry Set U",
+      "date": "2024-04-27"
+    },
+    "UX-05": {
+      "name": "Random Booster ShinobiShadow Select",
+      "date": "2024-05-18"
+    },
+    "UX-06": {
+      "name": "LeonCrest 7-60GN",
+      "date": "2024-08-10"
+    },
+    "UX-07": {
+      "name": "PhoenixRudder Deck Set",
+      "date": "2024-08-10"
+    },
+    "UX-08": {
+      "name": "SilverWolf 3-80FB",
+      "date": "2024-10-12"
+    },
+    "UX-09": {
+      "name": "SamuraiSaber 2-70L",
+      "date": "2024-11-02"
+    },
+    "UX-10": {
+      "name": "Customize Set U",
+      "date": "2024-11-02"
+    },
+    "UX-11": {
+      "name": "ImpactDrake 9-60LR",
+      "date": "2024-12-28"
+    },
+    "UX-12": {
+      "name": "Random Booster Vol. 5",
+      "date": "2024-12-28"
+    },
+    "UX-13": {
+      "name": "GolemRock 1-60UN",
+      "date": "2025-01-25"
+    },
+    "UX-14": {
+      "name": "ScorpioSpear 0-70Z",
+      "date": "2025-04-26"
+    },
+    "UX-15": {
+      "name": "SharkScale Deck Set",
+      "date": "2025-08-09"
+    },
+    "UX-16": {
+      "name": "Random Booster ClockMirage Select",
+      "date": "2025-10-11"
+    },
+    "UX-17": {
+      "name": "MeteorDragoon 3-70J",
+      "date": "2025-12-27"
+    },
+    "UX-18": {
+      "name": "Random Booster Vol. 8",
+      "date": "2025-12-27"
+    },
+    "UX-19": {
+      "name": "BulletGriffon H",
+      "date": "2026-04-25"
+    },
+    "UX-20": {
+      "name": "GloryValkyrie LF",
+      "date": "2026-07-11"
+    },
+    "UX-21": {
+      "name": "HellsNether Deck Set",
+      "date": "2026-08-08"
+    },
+    "CX-01": {
+      "name": "DranBrave S6-60V",
+      "date": "2025-03-29"
+    },
+    "CX-02": {
+      "name": "WizardArc R4-55LO",
+      "date": "2025-03-29"
+    },
+    "CX-03": {
+      "name": "PerseusDark B6-80W",
+      "date": "2025-03-29"
+    },
+    "CX-04": {
+      "name": "Battle Entry Set C",
+      "date": "2025-03-29"
+    },
+    "CX-05": {
+      "name": "Random Booster Vol. 6",
+      "date": "2025-04-26"
+    },
+    "CX-06": {
+      "name": "Random Booster FoxBrush Select",
+      "date": "2025-05-17"
+    },
+    "CX-07": {
+      "name": "PegasusBlast ATr",
+      "date": "2025-07-19"
+    },
+    "CX-08": {
+      "name": "Random Booster Vol. 7",
+      "date": "2025-07-19"
+    },
+    "CX-09": {
+      "name": "SolEclipse D5-70TK",
+      "date": "2025-09-27"
+    },
+    "CX-10": {
+      "name": "WolfHunt F0-60DB",
+      "date": "2025-11-01"
+    },
+    "CX-11": {
+      "name": "EmperorMight Deck Set",
+      "date": "2025-11-01"
+    },
+    "CX-12": {
+      "name": "PhoenixFlare Z9-80WW",
+      "date": "2026-01-24"
+    },
+    "CX-13": {
+      "name": "BahamutBlitz BK1-50I",
+      "date": "2026-03-28"
+    },
+    "CX-14": {
+      "name": "KnightFortress GV8-70UN",
+      "date": "2026-03-28"
+    },
+    "CX-15": {
+      "name": "RagnaRage FE4-55Y",
+      "date": "2026-03-28"
+    },
+    "CX-16": {
+      "name": "Start Dash Set C",
+      "date": "2026-03-28"
+    },
+    "CX-17": {
+      "name": "Random Booster Vol. 10",
+      "date": "2026-04-25"
+    },
+    "CX-18": {
+      "name": "Random Booster BrachioWhip Select",
+      "date": "2026-06-13"
+    },
+    "CX-19": {
+      "name": "Random Booster CrocoTread Select",
+      "date": "2026-09-12"
+    },
+    "BX-00": {
+      "name": "DranSword 3-60F",
+      "date": "2026-08-08"
+    },
+    "UX-00": {
+      "name": "GloryValkyrie LF",
+      "date": "2026-08-28"
+    },
+    "CX-00": {
+      "name": "TigaRage FT3-60T",
+      "date": "2026-09-12"
+    }
+  },
+  "byName": [
+    {
+      "norm": "meteoroiddragoondeluxeleftspinstringlauncherset",
+      "name": "Meteoroid Dragoon Deluxe Left-Spin String Launcher Set",
+      "date": "2026-07-15",
+      "productCode": "G3491"
+    },
+    {
+      "norm": "cobaltdragoondeluxeleftspinstringlauncherset",
+      "name": "Cobalt Dragoon Deluxe Left-Spin String Launcher Set",
+      "date": "2025-02-01",
+      "productCode": "G1491"
+    },
+    {
+      "norm": "obiwankenobiandgeneralgrievousmultipackset",
+      "name": "Obi-Wan Kenobi and General Grievous Multipack Set",
+      "date": "2025-05-01",
+      "productCode": "G1694"
+    },
+    {
+      "norm": "bitecrocdeluxestringlaunchercustomgripset",
+      "name": "Bite Croc Deluxe String Launcher & Custom Grip Set",
+      "date": "2026-03-01",
+      "productCode": "G3083"
+    },
+    {
+      "norm": "spinosaurusandquetzalcoatlusmultipackset",
+      "name": "Spinosaurus and Quetzalcoatlus Multipack Set",
+      "date": "2025-06-01",
+      "productCode": "G1899"
+    },
+    {
+      "norm": "themandalorianandmoffgideonmultipackset",
+      "name": "The Mandalorian and Moff Gideon Multipack Set",
+      "date": "2024-08-01",
+      "productCode": "F9589"
+    },
+    {
+      "norm": "calibursamuraiandobsidianshelldualpack",
+      "name": "Calibur Samurai and Obsidian Shell Dual Pack",
+      "date": "2026-01-30",
+      "productCode": "G2754"
+    },
+    {
+      "norm": "lukeskywalkeranddarthvadermultipackset",
+      "name": "Luke Skywalker and Darth Vader Multipack Set",
+      "date": "2024-08-01",
+      "productCode": "G0290"
+    },
+    {
+      "norm": "optimusprimalandstarscreammultipackset",
+      "name": "Optimus Primal and Starscream Multipack Set",
+      "date": "2024-07-13",
+      "productCode": "G0352"
+    },
+    {
+      "norm": "milesmoralesandgreengoblinmultipackset",
+      "name": "Miles Morales and Green Goblin Multipack Set",
+      "date": "2025-09-01",
+      "productCode": "G1691"
+    },
+    {
+      "norm": "bracetriceratopsanddaggerdrandualpack",
+      "name": "Brace Triceratops and Dagger Dran Dual Pack",
+      "date": null,
+      "productCode": "G2763"
+    },
+    {
+      "norm": "captainamericaandredhulkmultipackset",
+      "name": "Captain America and Red Hulk Multipack Set",
+      "date": "2025-08-01",
+      "productCode": "G1690"
+    },
+    {
+      "norm": "chewbaccaandstormtroopermultipackset",
+      "name": "Chewbacca and Stormtrooper Multipack Set",
+      "date": "2025-09-01",
+      "productCode": "G1695"
+    },
+    {
+      "norm": "chainincendioandarrowwizarddualpack",
+      "name": "Chain Incendio and Arrow Wizard Dual Pack",
+      "date": "2024-05-16",
+      "productCode": "G0196"
+    },
+    {
+      "norm": "circleghostandchainincendiodualpack",
+      "name": "Circle Ghost and Chain Incendio Dual Pack",
+      "date": "2025-07-01",
+      "productCode": "G1687"
+    },
+    {
+      "norm": "optimusprimeandmegatronmultipackset",
+      "name": "Optimus Prime and Megatron Multipack Set",
+      "date": "2024-07-13",
+      "productCode": "G0353"
+    },
+    {
+      "norm": "beattyrannoandknifeshinobidualpack",
+      "name": "Beat Tyranno and Knife Shinobi Dual Pack",
+      "date": "2024-12-01",
+      "productCode": "G1542"
+    },
+    {
+      "norm": "soarphoenixdeluxestringlauncherset",
+      "name": "Soar Phoenix Deluxe String Launcher Set",
+      "date": "2024-05-16",
+      "productCode": "F9324"
+    },
+    {
+      "norm": "bumblebeeandshockwavemultipackset",
+      "name": "Bumblebee and Shockwave Multipack Set",
+      "date": "2025-09-01",
+      "productCode": "G1692"
+    },
+    {
+      "norm": "knifeshinobiandkeelsharkdualpack",
+      "name": "Knife Shinobi and Keel Shark Dual Pack",
+      "date": "2024-05-16",
+      "productCode": "G0190"
+    },
+    {
+      "norm": "circleghostandhackvikingdualpack",
+      "name": "Circle Ghost and Hack Viking Dual Pack",
+      "date": "2026-01-30",
+      "productCode": "G2755"
+    },
+    {
+      "norm": "spearscorpioandtailviperdualpack",
+      "name": "Spear Scorpio and Tail Viper Dual Pack",
+      "date": null,
+      "productCode": "G2758"
+    },
+    {
+      "norm": "bitecrocandstingunicorndualpack",
+      "name": "Bite Croc and Sting Unicorn Dual Pack",
+      "date": "2024-08-01",
+      "productCode": "G0199"
+    },
+    {
+      "norm": "coilorochiandpearltigerdualpack",
+      "name": "Coil Orochi and Pearl Tiger Dual Pack",
+      "date": null,
+      "productCode": "G2762"
+    },
+    {
+      "norm": "groguandsnowtroopermultipackset",
+      "name": "Grogu and Snowtrooper Multipack Set",
+      "date": "2026-04-01",
+      "productCode": "G3061"
+    },
+    {
+      "norm": "doublextrememotorizedbeystadium",
+      "name": "Double Xtreme Motorized Beystadium",
+      "date": "2025-10-01",
+      "productCode": "G1864"
+    },
+    {
+      "norm": "galewyvernandtailviperdualpack",
+      "name": "Gale Wyvern and Tail Viper Dual Pack",
+      "date": "2024-08-01",
+      "productCode": "G0282"
+    },
+    {
+      "norm": "galewyvernandsworddrandualpack",
+      "name": "Gale Wyvern and Sword Dran Dual Pack",
+      "date": "2024-12-01",
+      "productCode": "G1543"
+    },
+    {
+      "norm": "cowlsphinxandcrestleondualpack",
+      "name": "Cowl Sphinx and Crest Leon Dual Pack",
+      "date": "2025-06-01",
+      "productCode": "G1685"
+    },
+    {
+      "norm": "pearltigerandgillsharkdualpack",
+      "name": "Pearl Tiger and Gill Shark Dual Pack",
+      "date": "2025-06-01",
+      "productCode": "G1686"
+    },
+    {
+      "norm": "tacklegoatandsworddrandualpack",
+      "name": "Tackle Goat and Sword Dran Dual Pack",
+      "date": "2025-07-01",
+      "productCode": "G1688"
+    },
+    {
+      "norm": "tailviperandsworddrandualpack",
+      "name": "Tail Viper and Sword Dran Dual Pack",
+      "date": "2024-05-16",
+      "productCode": "G0197"
+    },
+    {
+      "norm": "yellkongandhelmknightdualpack",
+      "name": "Yell Kong and Helm Knight Dual Pack",
+      "date": "2024-08-01",
+      "productCode": "G0198"
+    },
+    {
+      "norm": "clampcrabandcrestleondualpack",
+      "name": "Clamp Crab and Crest Leon Dual Pack",
+      "date": null,
+      "productCode": "G2759"
+    },
+    {
+      "norm": "spidermanandvenommultipackset",
+      "name": "Spider-Man and Venom Multipack Set",
+      "date": "2024-07-01",
+      "productCode": "G0288"
+    },
+    {
+      "norm": "trexandmosasaurusmultipackset",
+      "name": "T. Rex and Mosasaurus Multipack Set",
+      "date": "2025-06-01",
+      "productCode": "G1898"
+    },
+    {
+      "norm": "ironmanandthanosmultipackset",
+      "name": "Iron Man and Thanos Multipack Set",
+      "date": "2024-07-01",
+      "productCode": "G0287"
+    },
+    {
+      "norm": "spidermanandhulkmultipackset",
+      "name": "Spider-Man and Hulk Multipack Set",
+      "date": null,
+      "productCode": "G3064"
+    },
+    {
+      "norm": "beyblade25thanniversaryset",
+      "name": "Beyblade 25th Anniversary Set",
+      "date": "2025-07-24",
+      "productCode": "G1844"
+    },
+    {
+      "norm": "deluxestringlauncher2pack",
+      "name": "Deluxe String Launcher 2-Pack",
+      "date": "2026-08-01",
+      "productCode": "G2951"
+    },
+    {
+      "norm": "victorygriplauncherset",
+      "name": "Victory Grip Launcher Set",
+      "date": "2025-07-01",
+      "productCode": "G1862"
+    },
+    {
+      "norm": "suppresssuperion070lp",
+      "name": "Suppress Superion 0-70LP",
+      "date": null,
+      "productCode": "G2745"
+    },
+    {
+      "norm": "ridgetriceratops980gn",
+      "name": "Ridge Triceratops 9-80GN",
+      "date": "2026-01-30",
+      "productCode": "G3392"
+    },
+    {
+      "norm": "hurricaneenlilis755t",
+      "name": "Hurricane Enlil IS 7-55T",
+      "date": "2026-07-15",
+      "productCode": "G2750"
+    },
+    {
+      "norm": "clashcarrybeystadium",
+      "name": "Clash & Carry Beystadium",
+      "date": "2025-01-20",
+      "productCode": "G0841"
+    },
+    {
+      "norm": "sneakattackbattleset",
+      "name": "Sneak Attack Battle Set",
+      "date": "2026-07-15",
+      "productCode": "G1940"
+    },
+    {
+      "norm": "reaperincendiot470k",
+      "name": "Reaper Incendio T 4-70K",
+      "date": "2025-06-01",
+      "productCode": "G1678"
+    },
+    {
+      "norm": "flamecerberusw580wb",
+      "name": "Flame Cerberus W 5-80WB",
+      "date": "2026-01-30",
+      "productCode": "G2747"
+    },
+    {
+      "norm": "deltaunicornpo360gu",
+      "name": "Delta Unicorn PO 3-60GU",
+      "date": null,
+      "productCode": "G2752"
+    },
+    {
+      "norm": "xtremeexpansionpack",
+      "name": "X-treme Expansion Pack",
+      "date": "2026-01-01",
+      "productCode": "G3195"
+    },
+    {
+      "norm": "dropattackbattleset",
+      "name": "Drop Attack Battle Set",
+      "date": "2025-05-01",
+      "productCode": "G0842"
+    },
+    {
+      "norm": "scytheincendio460t",
+      "name": "Scythe Incendio 4-60T",
+      "date": "2024-05-16",
+      "productCode": "F9583"
+    },
+    {
+      "norm": "shadowshinobi180mn",
+      "name": "Shadow Shinobi 1-80MN",
+      "date": "2025-03-07",
+      "productCode": "G1539"
+    },
+    {
+      "norm": "scarletgaruda470tp",
+      "name": "Scarlet Garuda 4-70TP",
+      "date": "2025-06-01",
+      "productCode": "G1673"
+    },
+    {
+      "norm": "hammerincendio370h",
+      "name": "Hammer Incendio 3-70H",
+      "date": "2025-03-07",
+      "productCode": "G1752"
+    },
+    {
+      "norm": "rudderphoenix470lf",
+      "name": "Rudder Phoenix 4-70LF",
+      "date": "2026-01-30",
+      "productCode": "G2739"
+    },
+    {
+      "norm": "featherphoenix260n",
+      "name": "Feather Phoenix 2-60N",
+      "date": "2026-01-30",
+      "productCode": "G2740"
+    },
+    {
+      "norm": "wrigglekrakens385o",
+      "name": "Wriggle Kraken S 3-85O",
+      "date": "2025-08-01",
+      "productCode": "G1683"
+    },
+    {
+      "norm": "armorknightgv870un",
+      "name": "Armor Knight GV 8-70UN",
+      "date": "2026-05-01",
+      "productCode": "G4563"
+    },
+    {
+      "norm": "whipbrachioow570nr",
+      "name": "Whip Brachio OW 5-70Nr",
+      "date": null,
+      "productCode": "G4566"
+    },
+    {
+      "norm": "blitzbahamutbk150i",
+      "name": "Blitz Bahamut BK 1-50I",
+      "date": "2026-05-01",
+      "productCode": "G4572"
+    },
+    {
+      "norm": "scytheincendio380b",
+      "name": "Scythe Incendio 3-80B",
+      "date": "2024-07-01",
+      "productCode": "G0285"
+    },
+    {
+      "norm": "xtremebattlerspack",
+      "name": "X-treme Battlers Pack",
+      "date": "2026-03-01",
+      "productCode": "G3028"
+    },
+    {
+      "norm": "clipriplauncherset",
+      "name": "Clip & Rip Launcher Set",
+      "date": "2026-07-15",
+      "productCode": "G2350"
+    },
+    {
+      "norm": "sterlingwolf380fb",
+      "name": "Sterling Wolf 3-80FB",
+      "date": "2025-06-01",
+      "productCode": "G1674"
+    },
+    {
+      "norm": "shelterdrake780gp",
+      "name": "Shelter Drake 7-80GP",
+      "date": "2025-08-01",
+      "productCode": "G1675"
+    },
+    {
+      "norm": "shatterhorus965gb",
+      "name": "Shatter Horus 9-65GB",
+      "date": "2026-07-15",
+      "productCode": "G4567"
+    },
+    {
+      "norm": "stingunicorn560gp",
+      "name": "Sting Unicorn 5-60GP",
+      "date": "2024-07-01",
+      "productCode": "G0283"
+    },
+    {
+      "norm": "obsidianshell460d",
+      "name": "Obsidian Shell 4-60D",
+      "date": "2025-03-07",
+      "productCode": "G1533"
+    },
+    {
+      "norm": "yggdrasilteampack",
+      "name": "Yggdrasil Team Pack",
+      "date": "2026-01-01",
+      "productCode": "G3393"
+    },
+    {
+      "norm": "dranzerspiral380t",
+      "name": "Dranzer Spiral 3-80T",
+      "date": "2024-05-30",
+      "productCode": "F9584"
+    },
+    {
+      "norm": "dranzerspiral380t",
+      "name": "Dranzer Spiral 3-80T",
+      "date": "2024-06-10",
+      "productCode": "F9585"
+    },
+    {
+      "norm": "dranzerspiral380t",
+      "name": "Dranzer Spiral 3-80T",
+      "date": "2025-05-01",
+      "productCode": "G1842"
+    },
+    {
+      "norm": "dracielshield760d",
+      "name": "Draciel Shield 7-60D",
+      "date": "2026-01-01",
+      "productCode": "G2218"
+    },
+    {
+      "norm": "lanceknight480hn",
+      "name": "Lance Knight 4-80HN",
+      "date": "2024-07-01",
+      "productCode": "G0184"
+    },
+    {
+      "norm": "couragedrans660v",
+      "name": "Courage Dran S 6-60V",
+      "date": "2025-06-01",
+      "productCode": "G1677"
+    },
+    {
+      "norm": "darkperseusb680w",
+      "name": "Dark Perseus B 6-80W",
+      "date": "2025-06-01",
+      "productCode": "G1680"
+    },
+    {
+      "norm": "antlerstagb260hn",
+      "name": "Antler Stag B 2-60HN",
+      "date": "2025-08-01",
+      "productCode": "G1684"
+    },
+    {
+      "norm": "reaperrhinoc455d",
+      "name": "Reaper Rhino C 4-55D",
+      "date": "2026-01-30",
+      "productCode": "G2746"
+    },
+    {
+      "norm": "treadcroctq550gn",
+      "name": "Tread Croc TQ 5-50GN",
+      "date": null,
+      "productCode": "G4565"
+    },
+    {
+      "norm": "gloryvalkerionlf",
+      "name": "Glory Valkerion LF",
+      "date": "2026-07-15",
+      "productCode": "G4568"
+    },
+    {
+      "norm": "steelsamurai480t",
+      "name": "Steel Samurai 4-80T",
+      "date": "2024-05-16",
+      "productCode": "G0188"
+    },
+    {
+      "norm": "roartyranno960gf",
+      "name": "Roar Tyranno 9-60GF",
+      "date": "2024-07-01",
+      "productCode": "G0284"
+    },
+    {
+      "norm": "arrowwizard480gb",
+      "name": "Arrow Wizard 4-80GB",
+      "date": "2024-12-01",
+      "productCode": "G1531"
+    },
+    {
+      "norm": "lanceknight360lf",
+      "name": "Lance Knight 3-60LF",
+      "date": "2025-08-01",
+      "productCode": "G1671"
+    },
+    {
+      "norm": "shelterdrake570o",
+      "name": "Shelter Drake 5-70O",
+      "date": "2026-01-30",
+      "productCode": "G2732"
+    },
+    {
+      "norm": "arrowwizard480b",
+      "name": "Arrow Wizard 4-80B",
+      "date": "2024-05-16",
+      "productCode": "F9582"
+    },
+    {
+      "norm": "wandwizard570db",
+      "name": "Wand Wizard 5-70DB",
+      "date": "2024-12-01",
+      "productCode": "G1537"
+    },
+    {
+      "norm": "busterdran570db",
+      "name": "Buster Dran 5-70DB",
+      "date": "2025-03-07",
+      "productCode": "G1751"
+    },
+    {
+      "norm": "stunmedusa960gb",
+      "name": "Stun Medusa 9-60GB",
+      "date": "2026-01-30",
+      "productCode": "G2738"
+    },
+    {
+      "norm": "arcwizardr455lo",
+      "name": "Arc Wizard R 4-55LO",
+      "date": "2025-06-01",
+      "productCode": "G1679"
+    },
+    {
+      "norm": "forthornetr760t",
+      "name": "Fort Hornet R 7-60T",
+      "date": "2025-08-01",
+      "productCode": "G1682"
+    },
+    {
+      "norm": "strikedran450ff",
+      "name": "Strike Dran 4-50FF",
+      "date": "2026-07-15",
+      "productCode": "G2742"
+    },
+    {
+      "norm": "rageragnafe455y",
+      "name": "Rage Ragna FE 4-55Y",
+      "date": "2026-07-15",
+      "productCode": "G4562"
+    },
+    {
+      "norm": "netherincendioz",
+      "name": "Nether Incendio Z",
+      "date": null,
+      "productCode": "G4564"
+    },
+    {
+      "norm": "ringaether080ds",
+      "name": "Ring Aether 0-80DS",
+      "date": "2026-05-01",
+      "productCode": "G4571"
+    },
+    {
+      "norm": "cowlsphinx980gn",
+      "name": "Cowl Sphinx 9-80GN",
+      "date": "2024-12-01",
+      "productCode": "G1530"
+    },
+    {
+      "norm": "arrowwizard480o",
+      "name": "Arrow Wizard 4-80O",
+      "date": "2025-08-01",
+      "productCode": "G1755"
+    },
+    {
+      "norm": "soarphoenix580h",
+      "name": "Soar Phoenix 5-80H",
+      "date": "2025-03-07",
+      "productCode": "G1756"
+    },
+    {
+      "norm": "scaleshark450uf",
+      "name": "Scale Shark 4-50UF",
+      "date": "2026-01-30",
+      "productCode": "G2731"
+    },
+    {
+      "norm": "cobaltdrake460f",
+      "name": "Cobalt Drake 4-60F",
+      "date": null,
+      "productCode": "G2736"
+    },
+    {
+      "norm": "mirageclock965b",
+      "name": "Mirage Clock 9-65B",
+      "date": null,
+      "productCode": "G2737"
+    },
+    {
+      "norm": "busterdran570db",
+      "name": "Buster Dran 5-70DB",
+      "date": "2026-04-01",
+      "productCode": "G3611"
+    },
+    {
+      "norm": "drigerslash480p",
+      "name": "Driger Slash 4-80P",
+      "date": "2025-05-01",
+      "productCode": "G1843"
+    },
+    {
+      "norm": "xtremebattleset",
+      "name": "Xtreme Battle Set",
+      "date": "2024-05-16",
+      "productCode": "F9588"
+    },
+    {
+      "norm": "helmknight380n",
+      "name": "Helm Knight 3-80N",
+      "date": "2024-05-16",
+      "productCode": "F9581"
+    },
+    {
+      "norm": "busterdran160a",
+      "name": "Buster Dran 1-60A",
+      "date": "2024-12-01",
+      "productCode": "G1536"
+    },
+    {
+      "norm": "wandwizard160r",
+      "name": "Wand Wizard 1-60R",
+      "date": "2025-03-07",
+      "productCode": "G1538"
+    },
+    {
+      "norm": "rockgolem160un",
+      "name": "Rock Golem 1-60UN",
+      "date": "2025-08-01",
+      "productCode": "G1676"
+    },
+    {
+      "norm": "brushfoxj970gr",
+      "name": "Brush Fox J 9-70GR",
+      "date": "2025-08-01",
+      "productCode": "G1681"
+    },
+    {
+      "norm": "rocketgriffonh",
+      "name": "Rocket Griffon H",
+      "date": "2026-07-15",
+      "productCode": "G4561"
+    },
+    {
+      "norm": "keelshark360lf",
+      "name": "Keel Shark 3-60LF",
+      "date": "2024-05-16",
+      "productCode": "G0194"
+    },
+    {
+      "norm": "talonptera380b",
+      "name": "Talon Ptera 3-80B",
+      "date": "2024-05-16",
+      "productCode": "G0195"
+    },
+    {
+      "norm": "savagebear360s",
+      "name": "Savage Bear 3-60S",
+      "date": "2024-07-01",
+      "productCode": "G0286"
+    },
+    {
+      "norm": "daggerdran470q",
+      "name": "Dagger Dran 4-70Q",
+      "date": "2025-05-01",
+      "productCode": "G1670"
+    },
+    {
+      "norm": "cursemummy755w",
+      "name": "Curse Mummy 7-55W",
+      "date": "2026-04-01",
+      "productCode": "G2734"
+    },
+    {
+      "norm": "savagebear560f",
+      "name": "Savage Bear 5-60F",
+      "date": "2026-04-01",
+      "productCode": "G2735"
+    },
+    {
+      "norm": "beystadium2024",
+      "name": "Beystadium (2024)",
+      "date": "2024-05-30",
+      "productCode": "F9578"
+    },
+    {
+      "norm": "beystadium2026",
+      "name": "Beystadium (2026)",
+      "date": "2026-01-01",
+      "productCode": "G1546"
+    },
+    {
+      "norm": "widebeystadium",
+      "name": "Wide Beystadium",
+      "date": "2025-10-01",
+      "productCode": "G1863"
+    },
+    {
+      "norm": "winderlauncher",
+      "name": "Winder Launcher",
+      "date": "2024-05-16",
+      "productCode": "G0440"
+    },
+    {
+      "norm": "sworddran360f",
+      "name": "Sword Dran 3-60F",
+      "date": "2024-05-16",
+      "productCode": "F9580"
+    },
+    {
+      "norm": "fangleont460u",
+      "name": "Fang Leon T 4-60U",
+      "date": "2026-01-30",
+      "productCode": "G2748"
+    },
+    {
+      "norm": "seizejaguarhn",
+      "name": "Seize Jaguar HN",
+      "date": null,
+      "productCode": "G4570"
+    },
+    {
+      "norm": "hornrhino380s",
+      "name": "Horn Rhino 3-80S",
+      "date": "2024-05-16",
+      "productCode": "G0192"
+    },
+    {
+      "norm": "keelshark160q",
+      "name": "Keel Shark 1-60Q",
+      "date": "2025-02-01",
+      "productCode": "G1534"
+    },
+    {
+      "norm": "tidewhale580e",
+      "name": "Tide Whale 5-80E",
+      "date": "2025-05-01",
+      "productCode": "G1669"
+    },
+    {
+      "norm": "yellkong360gb",
+      "name": "Yell Kong 3-60GB",
+      "date": "2024-08-01",
+      "productCode": "G1754"
+    },
+    {
+      "norm": "xtremestadium",
+      "name": "Xtreme Stadium",
+      "date": "2025-09-01",
+      "productCode": "G0318"
+    },
+    {
+      "norm": "clawleon560p",
+      "name": "Claw Leon 5-60P",
+      "date": "2024-07-01",
+      "productCode": "G0193"
+    },
+    {
+      "norm": "valorbisonfb",
+      "name": "Valor Bison FB",
+      "date": null,
+      "productCode": "G3497"
+    },
+    {
+      "norm": "gustbat385gp",
+      "name": "Gust Bat 3-85GP",
+      "date": "2026-04-01",
+      "productCode": "G2733"
+    }
+  ]
+}

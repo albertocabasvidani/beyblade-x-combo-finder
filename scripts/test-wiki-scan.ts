@@ -29,7 +29,7 @@ const FIXT = join(WORK, 'fixtures');
 
 const LIST_TT = 'List of Beyblade X products (Takara Tomy)';
 const LIST_HAS = 'List of Beyblade X products (Hasbro)';
-const SORVEGLIATI = ['parts-master.json', 'parts.json', 'wiki-scan.json', 'scan-history.json'];
+const SORVEGLIATI = ['parts-master.json', 'parts.json', 'wiki-scan.json', 'scan-history.json', 'releases.json'];
 
 let falliti = 0;
 function check(name: string, cond: boolean, extra = ''): void {
