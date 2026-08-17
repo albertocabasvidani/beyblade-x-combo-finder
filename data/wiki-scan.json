@@ -4,12 +4,12 @@
     "List of Beyblade X products (Takara Tomy)": {
       "revid": 645910,
       "timestamp": "2026-08-11T15:29:44.000Z",
-      "lastScannedDate": "2026-08-16"
+      "lastScannedDate": "2026-08-17"
     },
     "List of Beyblade X products (Hasbro)": {
       "revid": 646029,
       "timestamp": "2026-08-12T01:23:53.000Z",
-      "lastScannedDate": "2026-08-16"
+      "lastScannedDate": "2026-08-17"
     }
   },
   "pages": {
@@ -50,12 +50,12 @@
       ]
     },
     "TriceraPress M-85BS": {
-      "revid": 644606,
-      "timestamp": null,
-      "lastScannedDate": "2026-08-09",
+      "revid": 646393,
+      "timestamp": "2026-08-17T04:24:55.000Z",
+      "lastScannedDate": "2026-08-17",
       "kind": "product",
-      "kindSource": "heuristic",
-      "notes": "Revid cambiato (643457→644606): aggiunta menzione G2763 Brace Triceratops and Dagger Dran Dual Pack (pagina riporta erroneamente G2762, scartato). Parti già registrate (tricera-press, M-85, Bound Spike), G2763 aggiunto a tricera-press."
+      "kindSource": "ai",
+      "notes": "solo aggiornamento info (Hasbro release/gallery/trivia); parti gia' nel master (tricera-press, M-85, bound-spike)"
     },
     "Bit - Low Flat": {
       "revid": 645837,
@@ -1462,14 +1462,15 @@
       "kindSource": "heuristic"
     },
     "GloryValkyrie LF": {
-      "revid": 644220,
-      "timestamp": "2026-08-14T06:19:28.677Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 646400,
+      "timestamp": "2026-08-17T04:32:38.000Z",
+      "lastScannedDate": "2026-08-17",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Glory Valkerion LF"
-      ]
+      ],
+      "notes": "solo aggiornamento info (Hasbro release/gallery/trivia); parti gia' nel master (glory-valkyrie, low-flat)"
     },
     "Blade - KnightShield": {
       "revid": 616259,
@@ -1871,11 +1872,12 @@
       ]
     },
     "Ridge Triceratops 9-80GN": {
-      "revid": 629558,
-      "timestamp": "2026-08-14T06:19:28.677Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 646398,
+      "timestamp": "2026-08-17T04:32:21.000Z",
+      "lastScannedDate": "2026-08-17",
       "kind": "product",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "solo aggiornamento info; parti gia' nel master (tricera-spiky, 9-80, gear-needle)"
     },
     "Start Dash Set": {
       "revid": 635855,
@@ -2787,6 +2789,14 @@
       "kind": "missing",
       "kindSource": "heuristic",
       "notes": "link rosso in List of Beyblade X products (Takara Tomy)"
+    },
+    "Blade - Glare Cyclops": {
+      "revid": 646377,
+      "timestamp": "2026-08-16T17:14:00.000Z",
+      "lastScannedDate": "2026-08-17",
+      "kind": "part",
+      "kindSource": "ai",
+      "notes": "recupero MANCANTI da verify:wiki; blade Hasbro-only (CyclopsEye/Glare Cyclops), Expand Blade Basic Line"
     }
   }
 }

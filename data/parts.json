@@ -1,5 +1,5 @@
 {
-  "version": "2026-08-14",
+  "version": "2026-08-17",
   "blades": [
     {
       "id": "aero-pegasus",
@@ -213,6 +213,16 @@
       "line": "ux",
       "integratedRatchet": true,
       "releaseSet": "G1940"
+    },
+    {
+      "id": "cyclopseye",
+      "name": "CyclopsEye",
+      "nameWestern": "Glare Cyclops",
+      "aliases": [
+        "SaikuropusuAi"
+      ],
+      "type": "stamina",
+      "line": "bx"
     },
     {
       "id": "darth-vader",
