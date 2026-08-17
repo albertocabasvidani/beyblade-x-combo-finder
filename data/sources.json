@@ -464,6 +464,24 @@
       "channelId": "UCLyTNcQ89nf_ls9m7Lzklyw"
     },
     {
+      "id": "youtube-miyagi-tetsunokobushi",
+      "name": "激闘！宮城てつのこぶし杯 (@宮城パーモット)",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.6,
+      "lang": "ja",
+      "channelId": "UC5Bp_MEXJJx4lyB3Ock_1JA"
+    },
+    {
+      "id": "youtube-bbx-lorem-ipsum",
+      "name": "BEYBLADE X Lorem Ipsum (Davao, PH)",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.4,
+      "lang": "en",
+      "channelId": "UCGlt6NYSljToVk-Y2eb_z4g"
+    },
+    {
       "id": "google-sheets-tier-list",
       "name": "Beyblade X Community Tier List (WBO)",
       "type": "spreadsheet",

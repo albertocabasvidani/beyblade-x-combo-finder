@@ -1,14 +1,15 @@
 {
-  "lastRun": "2026-08-10",
+  "lastRun": "2026-08-17",
   "lastProposal": {
-    "messageId": "19fea7d30be895fd",
-    "threadId": "19fea7d30be895fd",
-    "date": "2026-08-10",
-    "subject": "Beyblade — 3 nuove fonti candidate (settimana 10/08)",
-    "note": "Nessun feedback trovato per le proposte 20/07 (19f7ea6fd17b3060) e 03/08 (19fc67292184b2f3): entrambi i thread hanno un solo messaggio. Proposti 2 propose (miyagi-tetsunokobushi JP, bbx-lorem-ipsum PH) + 1 manual-verify (beyblade-buds-nc). Ricordati i 3 social pendenti dal 20/07 e X-RANK FR. Al prossimo run cercare risposte su TUTTI e tre i thread.",
+    "messageId": "1a00e895ff886719",
+    "threadId": "1a00e895ff886719",
+    "date": "2026-08-17",
+    "subject": "Beyblade — 2 nuove fonti candidate (settimana 17/08)",
+    "note": "Feedback 17/08 applicato (risposta 19ff4eaf5cc9bb81 alla proposta del 10/08: \"approvo i primi due\"): promossi miyagi-tetsunokobushi (0.6) e bbx-lorem-ipsum (0.4). Beyblade Buds non citato -> resta proposed e riproposto. Nuovi: 1 propose (rogue-hero-bbx US) + 1 manual-verify (beyblade-jamundi CO). Restano pendenti i 3 social dal 20/07 e X-RANK FR (4a verifica a vuoto: se al prossimo run e ancora in manutenzione, proporre lo scarto).",
     "relatedProposals": [
       "19f7ea6fd17b3060",
-      "19fc67292184b2f3"
+      "19fc67292184b2f3",
+      "19fea7d30be895fd"
     ]
   },
   "candidates": [
@@ -692,12 +693,12 @@
       },
       "rationale": "Piattaforma francese di tornei e ranking per Pro Bladers. La Francia oggi è un gap totale di copertura (nessuna fonte fr).",
       "dedupCheck": "Nessuna fonte FR esistente (gap totale).",
-      "verifyNote": "10/08/2026: ancora in manutenzione, il countdown e stato spostato al 10/08/2026 23:59 e /tournaments da ancora 404. Terza verifica consecutiva senza contenuto. Ri-verificare al prossimo run.",
+      "verifyNote": "17/08/2026: QUARTA verifica consecutiva a vuoto. La home mostra ancora 'Maintenance en Cours' con countdown fermo alla data gia scaduta (10/08/2026 23:59) e /tournaments da 404. Ri-verificare al prossimo run: se resta cosi, valutare lo scarto.",
       "proposedWeight": 0.6,
       "recommendation": "manual-verify",
       "status": "proposed",
       "dateFound": "2026-07-13",
-      "lastSeen": "2026-08-10"
+      "lastSeen": "2026-08-17"
     },
     {
       "candidateId": "website-lbb-oficial",
@@ -930,10 +931,12 @@
       "dedupCheck": "Le fonti JP attive sono blog (okuyama3093, bey_bee, kamen_a) e canali di singoli giocatori (touka, luca, dame, yuki): questo e il primo ORGANIZZATORE di eventi ufficiali JP, con struttura podio esplicita. Non duplica.",
       "proposedWeight": 0.6,
       "recommendation": "propose",
-      "status": "proposed",
+      "status": "accepted",
+      "verifyNote": "Approvato dall'utente (email 17/08/2026, risposta alla proposta del 10/08: \"approvo i primi due\"). Promosso in sources.json con peso 0.6.",
+      "promotedOn": "2026-08-17",
       "verifiedOn": "2026-08-10",
       "dateFound": "2026-08-10",
-      "lastSeen": "2026-08-10"
+      "lastSeen": "2026-08-17"
     },
     {
       "candidateId": "youtube-bbx-lorem-ipsum",
@@ -955,7 +958,9 @@
       "dedupCheck": "La scena PH e oggi solo in manualVerification (gruppo FB beybladephilippines, pagina PBBL): nessuna fonte PH automatizzabile. Non duplica. Canale piccolo (312 iscritti) ma orientato ai risultati, non a unboxing.",
       "proposedWeight": 0.4,
       "recommendation": "propose",
-      "status": "proposed",
+      "status": "accepted",
+      "verifyNote": "Approvato dall'utente (email 17/08/2026, risposta alla proposta del 10/08: \"approvo i primi due\"). Promosso in sources.json con peso 0.4.",
+      "promotedOn": "2026-08-17",
       "verifiedOn": "2026-08-10",
       "dateFound": "2026-08-10",
       "lastSeen": "2026-08-10"
@@ -983,7 +988,57 @@
       "status": "proposed",
       "verifiedOn": "2026-08-10",
       "dateFound": "2026-08-10",
-      "lastSeen": "2026-08-10"
+      "lastSeen": "2026-08-17"
+    },
+    {
+      "candidateId": "youtube-rogue-hero-bbx",
+      "name": "Rogue Hero BBX",
+      "type": "youtube",
+      "platform": "youtube",
+      "provides": "combos",
+      "lang": "en",
+      "region": "US",
+      "url": "https://www.youtube.com/@rogueherobbx",
+      "channelId": "UCvksSlckLsHRrXfHEigG74g",
+      "signals": {
+        "subscribers": 1630,
+        "lastActivity": "2026-08-15",
+        "videoCount": 76,
+        "publishesResults": true
+      },
+      "rationale": "Verificato via API: cadenza settimanale ininterrotta da aprile 2026, titoli con esito esplicito e combo nominata ('This Emperor Blast Build Got Me 1st Place - Beyblade X Tournament Testing', 'I Brought A Secret Dran Strike Combo To A Beyblade X Tournament', 'Koalaty Cash Cup - B4 Cobalt Dragoon Tournament', 'We Traveled to Japan to Compete in a Beyblade X G3 Tournament'). Copre anche la scena ufficiale JP dall'esterno.",
+      "dedupCheck": "Le fonti US attive sono leghe locali (Maryland, Lafayette, Ashen Dragoons/DMV, 321GoShoot) o creator meta (BeyMac, Anti Wizard): questo e un competitor itinerante che porta piazzamenti da eventi diversi, incluso un G3 giapponese. ATTENZIONE: circa meta dei video e 'Tournament Testing' (combo-testing teorico), l'altra meta e vlog di torneo con esito reale — da qui il peso basso.",
+      "proposedWeight": 0.4,
+      "recommendation": "propose",
+      "status": "proposed",
+      "verifiedOn": "2026-08-17",
+      "dateFound": "2026-08-17",
+      "lastSeen": "2026-08-17"
+    },
+    {
+      "candidateId": "youtube-beyblade-jamundi",
+      "name": "BeybladeJamundi (Colombia)",
+      "type": "youtube",
+      "platform": "youtube",
+      "provides": "combos",
+      "lang": "es",
+      "region": "CO",
+      "url": "https://www.youtube.com/@bey-jamundi",
+      "channelId": "UCYgz-DWeu3YvxlNR1S-Hg5A",
+      "signals": {
+        "subscribers": 33,
+        "lastActivity": "2026-08-15",
+        "videoCount": 20,
+        "publishesResults": true
+      },
+      "rationale": "Verificato via API: comunita di Jamundi che organizza tornei ranking mensili e ne pubblica finali, semifinali e premiazioni con i nomi dei vincitori ('FINAL TORNEO DE RANKING 23 DE MARZO', 'PREMIACION JERONIMO', 'ganador del 4o torneo de febrero', 'resumen de las ligas activas de jamundi').",
+      "dedupCheck": "La Colombia e oggi un gap totale: nessuna fonte CO tra le attive (le ES/LATAM sono SBBL in Spagna e le leghe messicane). ATTENZIONE: canale minuscolo (33 iscritti, molto sotto la soglia con cui hai scartato Zentonix a 145 e Maritime a 34) e attivita concentrata gen-apr 2026, con un solo video ad agosto. Decisione tua.",
+      "proposedWeight": 0.3,
+      "recommendation": "manual-verify",
+      "status": "proposed",
+      "verifiedOn": "2026-08-17",
+      "dateFound": "2026-08-17",
+      "lastSeen": "2026-08-17"
     }
   ],
   "knownNegatives": [
@@ -1093,6 +1148,38 @@
     "https://www.youtube.com/@beyviz (battaglie decise dalla ruota, formato entertainment, 50 iscritti)",
     "https://www.youtube.com/@spinormas (KR toy reviewer generalista, inattivo dal 2024-11)",
     "https://yukiblog32.com/beyblade-x-tournament/ (親子ベイブレーダーブログ: guida esplicativa ai tornei JP, nessun risultato con combo)",
-    "https://mygoldmachine.wordpress.com (blog ID: articolo one-off sul World Championship 2025, non fonte ricorrente)"
+    "https://mygoldmachine.wordpress.com (blog ID: articolo one-off sul World Championship 2025, non fonte ricorrente)",
+    "https://www.youtube.com/@wyvernbeychannel (BR 3.5k: unboxing/opinioni e prevalentemente Burst/Metal Fight, ultimo video Beyblade X dic 2025)",
+    "https://www.youtube.com/@ks_hobby玩具頻道 (KS HOBBY, HK: unboxing陀螺 misto a Gundam/modellismo, nessun risultato di torneo)",
+    "https://www.youtube.com/@turbokotyxd (PL: relazioni dai Turniej Ligowy Polish Bladers, doppione di polishbladers.pl gia fonte attiva, solo 4 video)",
+    "https://www.youtube.com/@opebcapital (organizzatore tornei Recife BR: 6 video, inattivo dal 2025-08)",
+    "https://www.youtube.com/@arthblader (BR: batalhas de beyblade caseiro, entertainment)",
+    "https://www.youtube.com/@arthurturbo-z9h (BR: combo casalinghe, 47 iscritti)",
+    "https://www.youtube.com/@matiasbladerbu (BR: divulgazione/fantasie e disegni, non risultati)",
+    "https://www.youtube.com/@blader_pegaso (BR: 1 iscritto, inattivo dal 2026-02)",
+    "https://www.youtube.com/@thecosmic4002 (BR: canale personale, inattivo dal 2025-08)",
+    "https://www.youtube.com/@willianblader (BR: tutorial e battaglie caseiras + Burst App, inattivo dal 2024-08)",
+    "https://www.youtube.com/@blxbrasil (BLX BRASIL: 6 video, inattivo dal 2025-11)",
+    "https://www.youtube.com/@beybladesanjuandemiraflores (PE: 4 iscritti, 13 video, nessuna descrizione ne struttura di risultati)",
+    "https://www.youtube.com/@ベイブレードx-d3l (ベイブレードXブレイヤ: 4 iscritti, inattivo dal 2026-04)",
+    "https://www.youtube.com/@ベイブレードxカスタム (1 video, morto dal 2025-03)",
+    "https://www.youtube.com/@climbthex (US: 25 iscritti, inattivo dal 2025-08)",
+    "https://www.youtube.com/@blitzbeyz (US: 28 iscritti, custom bey, non risultati)",
+    "https://www.youtube.com/@brickhousebeybladex (3 video, inattivo dal 2025-12)",
+    "https://www.youtube.com/@beybladexrevolution (AU: 4 video, 11 iscritti, family entertainment)",
+    "https://www.youtube.com/@jctheg (US: 7 video, principiante che documenta l'ingresso nell'hobby)",
+    "https://www.youtube.com/@madx_manny (US: 20 iscritti, contenuto dichiaratamente chill/fun)",
+    "https://www.youtube.com/@lucjgames (kids/VR misto, 31 iscritti)",
+    "https://www.youtube.com/@dt_vlogging (vlog generalista, 42 iscritti)",
+    "https://www.youtube.com/@vergilxblade (DE: teorie anime, off-topic)",
+    "https://www.youtube.com/@keito_x (70 iscritti, inattivo dal 2026-01)",
+    "https://www.youtube.com/@dragonmasterx1466 (9 video, inattivo dal 2018)",
+    "https://www.youtube.com/@ritvikkapur-n6h (IN: unboxing/tier list, 16 iscritti, inattivo dal 2025-10)",
+    "https://www.youtube.com/@planetdanielofficial (food review/challenge familiari, off-topic)",
+    "https://www.youtube.com/@madmaxy92 (codice sconto Mall of Toys, inattivo dal 2025-04)",
+    "https://www.youtube.com/@elchicodinamight7457 (nessuna descrizione, entertainment)",
+    "https://www.youtube.com/@sparkingvoid (64 iscritti, canale personale)",
+    "https://www.youtube.com/@phantomknight713 (40 iscritti, nessuna descrizione)",
+    "https://www.youtube.com/@gametheory (The Game Theorists: canale gaming generalista, off-topic)"
   ]
 }
