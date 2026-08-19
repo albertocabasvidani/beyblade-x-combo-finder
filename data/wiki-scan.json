@@ -4,12 +4,12 @@
     "List of Beyblade X products (Takara Tomy)": {
       "revid": 645910,
       "timestamp": "2026-08-11T15:29:44.000Z",
-      "lastScannedDate": "2026-08-18"
+      "lastScannedDate": "2026-08-19"
     },
     "List of Beyblade X products (Hasbro)": {
       "revid": 646029,
       "timestamp": "2026-08-12T01:23:53.000Z",
-      "lastScannedDate": "2026-08-18"
+      "lastScannedDate": "2026-08-19"
     }
   },
   "pages": {
@@ -2244,18 +2244,20 @@
       "kindSource": "heuristic"
     },
     "Grogu and Snowtrooper Multipack Set": {
-      "revid": 638043,
-      "timestamp": "2026-05-12T08:32:49.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 646477,
+      "timestamp": "2026-08-18T06:47:24.000Z",
+      "lastScannedDate": "2026-08-19",
       "kind": "multipack",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "Contiene Grogu 3-85E (blade Grogu gia' nel master) e Snowtrooper 7-60O (ratchet 7-60/bit gia' noti, blade Snowtrooper non presente ma pagina prodotto non fetchata in questo run)"
     },
     "Spider-Man and Hulk Multipack Set": {
-      "revid": 645369,
-      "timestamp": "2026-08-02T06:11:26.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 646476,
+      "timestamp": "2026-08-18T06:47:01.000Z",
+      "lastScannedDate": "2026-08-19",
       "kind": "multipack",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "Contiene Spider-Man 6-60R e Hulk 3-85N, entrambi con blade/ratchet/bit gia' nel master"
     },
     "Xtreme Battle Set": {
       "revid": 635905,
@@ -2503,11 +2505,12 @@
       "kindSource": "heuristic"
     },
     "Blade - HellsHammer": {
-      "revid": 635187,
-      "timestamp": "2026-04-15T02:58:05.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 646510,
+      "timestamp": "2026-08-18T23:35:44.000Z",
+      "lastScannedDate": "2026-08-19",
       "kind": "part",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "Solo aggiornamento testo/trivia (mold variant), nessuna parte nuova"
     },
     "Blade - GhostCircle": {
       "revid": 640996,
@@ -2559,18 +2562,20 @@
       "kindSource": "heuristic"
     },
     "Spider-Man 6-60R": {
-      "revid": 645362,
-      "timestamp": "2026-08-02T06:09:13.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 646478,
+      "timestamp": "2026-08-18T06:47:38.000Z",
+      "lastScannedDate": "2026-08-19",
       "kind": "product",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "Blade=Spider-Man, Ratchet=6-60, Bit=Rush, tutti gia' nel master"
     },
     "Hulk 3-85N": {
-      "revid": 645361,
-      "timestamp": "2026-08-02T06:09:11.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 646479,
+      "timestamp": "2026-08-18T06:47:49.000Z",
+      "lastScannedDate": "2026-08-19",
       "kind": "product",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "Blade=Hulk, Ratchet=3-85, Bit=Needle, tutti gia' nel master"
     },
     "Tusk Mammoth 3-60T": {
       "revid": 601884,
