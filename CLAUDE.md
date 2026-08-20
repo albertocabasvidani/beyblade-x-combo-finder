@@ -132,7 +132,8 @@ mai via API a pagamento. L'IA non calcola mai lo score né ri-parsa ciò che il 
 
 ### Database parti (master multilingua → derivati)
 - Fonte: pagine prodotto Beyblade Fandom Wiki via **API MediaWiki** (`api.php?action=parse&...&prop=wikitext`;
-  la pagina `/wiki/` dà 403). Corrispondenze TT↔Hasbro dall'AKA; per CX leggere le pagine parte
+  la pagina `/wiki/` dà 403 a `curl`, **402 a `WebFetch`** — mai usarlo su queste pagine, nemmeno per
+  un controllo al volo). Corrispondenze TT↔Hasbro dall'AKA; per CX leggere le pagine parte
   (`Main Blade - X`, `Lock Chip - X`, `Assist Blade - X`); nomi JP da JPName/RomajiName.
 - `/scrape-parts-master` (one-shot, subagent) popola `parts-master.json`; `scripts/build-parts.ts`
   deriva `parts.json` e valida i riferimenti (guardrail combos: aborta se rotti). `/update-parts`
@@ -143,7 +144,9 @@ mai via API a pagamento. L'IA non calcola mai lo score né ri-parsa ciò che il 
   restano nel report a stampa). Match parte→pagina per prefisso titolo (`Blade - `, `Bit - `, ecc. +
   varianti `Ratchet-Integrated`) e chiavi normalizzate (nome TT/Hasbro/id/alias); catena di fallback
   sull'URL immagine (pageimages → infobox wikitext → lista immagini pagina → pagina prodotto →
-  `data/image-overrides.json`, che vince su tutto). Foto reali del prodotto (non stile comic), una
+  `data/image-overrides.json`, che vince su tutto). Il campo immagine dell'infobox compare anche come
+  `|Image=` (maiuscolo), non solo `|image=`: il parsing va fatto case-insensitive, altrimenti si perdono
+  pagine che hanno comunque il file. Foto reali del prodotto (non stile comic), una
   sola per parte: distribuzione **solo runtime** nell'app mobile (l'app scarica/cacha via raw.githubusercontent,
   niente immagini nell'APK) — vedi `beyblade-x-score`.
 
