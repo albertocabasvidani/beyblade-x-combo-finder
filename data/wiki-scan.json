@@ -4,12 +4,12 @@
     "List of Beyblade X products (Takara Tomy)": {
       "revid": 645910,
       "timestamp": "2026-08-11T15:29:44.000Z",
-      "lastScannedDate": "2026-08-19"
+      "lastScannedDate": "2026-08-20"
     },
     "List of Beyblade X products (Hasbro)": {
       "revid": 646029,
       "timestamp": "2026-08-12T01:23:53.000Z",
-      "lastScannedDate": "2026-08-19"
+      "lastScannedDate": "2026-08-20"
     }
   },
   "pages": {
@@ -459,14 +459,15 @@
       "kindSource": "heuristic"
     },
     "CrocoTread TQ5-50GN": {
-      "revid": 646063,
-      "timestamp": "2026-08-12T07:59:10.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 646536,
+      "timestamp": "2026-08-19T02:43:17.000Z",
+      "lastScannedDate": "2026-08-20",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Tread Croc TQ 5-50GN"
-      ]
+      ],
+      "notes": "tutte le parti gia' nel master (Croco/Tough/Tread/Quell/5-50/Gear Needle); nessuna parte nuova"
     },
     "Gust Bat 3-85GP": {
       "revid": 641666,
@@ -998,11 +999,12 @@
       "kindSource": "heuristic"
     },
     "TyrannoBeat 4-70Q": {
-      "revid": 645888,
-      "timestamp": "2026-08-10T22:44:22.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 646546,
+      "timestamp": "2026-08-19T06:54:28.000Z",
+      "lastScannedDate": "2026-08-20",
       "kind": "product",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "blade gia' nel master come 'Tyranno Beat'; ratchet 4-70 e bit Quake gia' presenti; nessuna parte nuova"
     },
     "Venom 3-80N": {
       "revid": 603636,
@@ -1060,15 +1062,15 @@
       "kindSource": "heuristic"
     },
     "BrachioWhip OW5-70Nr": {
-      "revid": 646340,
-      "timestamp": "2026-08-15T06:17:56.000Z",
-      "lastScannedDate": "2026-08-16",
+      "revid": 646531,
+      "timestamp": "2026-08-19T02:37:39.000Z",
+      "lastScannedDate": "2026-08-20",
       "kind": "product",
       "kindSource": "ai",
       "redirects": [
         "Whip Brachio OW 5-70Nr"
       ],
-      "notes": "revisione minore (gallery); LockChip/OverBlade/MetalBlade/AssistBlade/Ratchet/Bit gia' in master"
+      "notes": "tutte le parti gia' nel master (Brachio/Outer/Whip/Wheel/5-70/Narrow); nessuna parte nuova"
     },
     "Random Booster Vol. 7": {
       "revid": 636788,
@@ -1406,11 +1408,12 @@
       "kindSource": "heuristic"
     },
     "Bit - Quake": {
-      "revid": 645924,
-      "timestamp": "2026-08-11T15:34:43.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 646548,
+      "timestamp": "2026-08-19T06:55:26.000Z",
+      "lastScannedDate": "2026-08-20",
       "kind": "part",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "bit gia' nel master; pagina aggiornata solo con nuovi prodotti che lo usano"
     },
     "Bit - Rush": {
       "revid": 643572,
@@ -1692,15 +1695,15 @@
       "kindSource": "heuristic"
     },
     "HellsNether Z": {
-      "revid": 646460,
-      "timestamp": "2026-08-17T22:36:06.000Z",
-      "lastScannedDate": "2026-08-18",
+      "revid": 646533,
+      "timestamp": "2026-08-19T02:39:16.000Z",
+      "lastScannedDate": "2026-08-20",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Nether Incendio Z"
       ],
-      "notes": "revisione minore (trivia); RatchetBlade HellsNether/Bit Zap gia' in master"
+      "notes": "ratchet-integrated blade HellsNether e bit Zap gia' nel master; nessuna parte nuova"
     },
     "Seize Jaguar HN": {
       "revid": 646465,
