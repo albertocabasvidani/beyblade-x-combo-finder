@@ -36,8 +36,9 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
 - Ratchet e Bit sono condivisi tra le linee
 
 ### File Dati
-- `data/parts-master.json` — **file canonico** parti multilingua (names.tt/hasbro/ja/romaji + aliases per lingua, **`shortName` = codice ufficiale dei bit** es. H/FB/LR, stats, products, source). Fonte di verità del registro parti.
-- `data/parts.json` — **derivato** da parts-master via `npm run build:parts` (schema consumato dal sito). NON editare a mano: si rigenera.
+- `data/parts-master.json` — **file canonico** parti multilingua (names.tt/hasbro/ja/romaji + aliases per lingua, **`shortName` = codice ufficiale dei bit** es. H/FB/LR, stats, products, source, **`image`** = `{file, wikiFile, fetchedAt}` scritto da `npm run sync:part-images`). Fonte di verità del registro parti.
+- `data/parts.json` — **derivato** da parts-master via `npm run build:parts` (schema consumato dal sito). NON editare a mano: si rigenera. Il campo `image` (se presente) è il solo filename PNG, relativo a `public/images/parts/`.
+- `data/image-overrides.json` — override manuali `{ "<id>": "<File:...>|<url assoluto>" }` per le parti che `sync:part-images` non risolve da sé (vince su tutta la catena di fallback dello script).
 - `data/parts-master-conflicts.json` — casi ambigui dell'import per revisione umana (type_mismatch = rumore; gli over_blade ora sono categoria `overBlades` a sé, non più conflitti)
 - `data/combos.json` — database combo con `evidence` (placements/usage/mentions; `usage` è uno **storico** di snapshot per il trend), `scoreBreakdown` CAS (con `lastPlacementDate`, `stadiums`, `usageTrend`) e fonti. Contiene **solo evidenza entro il cutoff di 12 mesi** (filtrata da `score:combos`)
 - `data/combos-archive.json` — combo rimaste **senza evidenza fresca** dopo il pruning (`prune:combos`): archiviate (non eliminate) con `archivedReason`/`archivedDate`, fuori dal sito e dal ranking. Reversibile: se la combo ri-piazza, `score:combos` la ricrea e `prune:combos` la toglie dall'archivio
@@ -68,6 +69,7 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
 - `npm run dev` — server sviluppo
 - `npm run build` — build produzione
 - `npm run build:parts` — rigenera `parts.json` da `parts-master.json` (guardrail: aborta se rompe i riferimenti di combos.json)
+- `npm run sync:part-images` — scarica da Fandom Wiki (API MediaWiki) l'immagine di ogni parte senza `image` in `public/images/parts/<id>.png` (idempotente, resize 512×512 via sharp, report a stampa con i mancanti e il motivo). `--force <id>` forza il ri-download di una parte sola
 - `npm run verify:wiki` — verifica completezza del master contro la fonte affidabile (category per-tipo del Fandom Wiki, X-pure; blade filtrati su `Category:Beyblade X` perché `Category:Blades` è mista X+Burst). Riporta mancanti/extra. Obiettivo: 0 mancanti.
 - `npm run collect:sources` — raccoglie le cache grezze (Reddit, arca.live, YouTube, Sheets, MetaBeys, WBO, BBX Weekly)
 - `npm run discover:youtube` — ricerca deterministica di NUOVI canali YouTube (search API multilingua, dedup vs `sources.json` + `source-candidates.json`) → `tmp/discover-youtube.json`; input di `/discover-sources`
@@ -135,6 +137,15 @@ mai via API a pagamento. L'IA non calcola mai lo score né ri-parsa ciò che il 
 - `/scrape-parts-master` (one-shot, subagent) popola `parts-master.json`; `scripts/build-parts.ts`
   deriva `parts.json` e valida i riferimenti (guardrail combos: aborta se rotti). `/update-parts`
   aggiorna via diff `revid`. Script deterministici: `bootstrap-master.ts`, `merge-master.ts`, `build-parts.ts`.
+- **Immagini dei componenti**: `scripts/sync-part-images.ts` (`npm run sync:part-images`, dentro
+  `/update-parts` punto 4, prima di `build:parts`) scarica da Fandom l'immagine di ogni parte in
+  `public/images/parts/<id>.png` (idempotente, mai un blocco della pipeline: le parti senza immagine
+  restano nel report a stampa). Match parte→pagina per prefisso titolo (`Blade - `, `Bit - `, ecc. +
+  varianti `Ratchet-Integrated`) e chiavi normalizzate (nome TT/Hasbro/id/alias); catena di fallback
+  sull'URL immagine (pageimages → infobox wikitext → lista immagini pagina → pagina prodotto →
+  `data/image-overrides.json`, che vince su tutto). Foto reali del prodotto (non stile comic), una
+  sola per parte: distribuzione **solo runtime** nell'app mobile (l'app scarica/cacha via raw.githubusercontent,
+  niente immagini nell'APK) — vedi `beyblade-x-score`.
 
 ### Script raccolta combo (`npm run collect:sources`)
 - `scrape:reddit` (Playwright; Reddit blocca l'accesso non autenticato → serve sessione browser loggata:
@@ -337,6 +348,13 @@ il file `skip` nella cartella del progetto e troncava la riga di log). Regola ge
 la copia attiva del progetto è `C:\Users\server\progetti\beyblade-combos` (accesso:
 `ssh homeserver`). Questa copia serve allo sviluppo; dopo un push, sul server va fatto `git pull`.
 Le cache gitignorate (`youtube-transcripts.json`, ecc.) e i profili Playwright vivono sul server.
+
+**La cartella locale ha uno spazio nel nome** (`beyblade combos`), quella sul server no
+(`beyblade-combos`): rompe in silenzio ogni script che passa un path a una subshell non quotata,
+come `test-wiki-scan.ts` che invoca `scan-wiki-updates.ts` via `execFileSync(..., {shell: true})`
+— l'argomento `--lists-from` si tronca allo spazio (`…\Beyblade\beyblade\…`, `ENOENT`). Editing va
+bene qui in locale; **test ed esecuzione della suite `npm run test:wiki-scan` vanno fatti sul
+server**, dove il path non ha lo spazio. Verificato il 17/08/2026.
 
 **Non si registrano Scheduled Task.** Collect, pipeline, discover e recover sono **job del
 dispatcher generale** (manifest `jobs.HOMESERVER.json` nel clone del server:

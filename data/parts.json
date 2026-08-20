@@ -1,5 +1,5 @@
 {
-  "version": "2026-08-17",
+  "version": "2026-08-20",
   "blades": [
     {
       "id": "aero-pegasus",
@@ -17,7 +17,8 @@
         "atk": 60,
         "def": 25,
         "sta": 30
-      }
+      },
+      "image": "aero-pegasus.png"
     },
     {
       "id": "bear-scratch",
@@ -33,7 +34,8 @@
         "atk": 25,
         "def": 45,
         "sta": 30
-      }
+      },
+      "image": "bear-scratch.png"
     },
     {
       "id": "black-shell",
@@ -49,7 +51,8 @@
         "atk": 10,
         "def": 65,
         "sta": 25
-      }
+      },
+      "image": "black-shell.png"
     },
     {
       "id": "bullet-griffon",
@@ -63,7 +66,8 @@
       "type": "balance",
       "line": "ux",
       "integratedRatchet": true,
-      "releaseSet": "BulletGriffon H"
+      "releaseSet": "BulletGriffon H",
+      "image": "bullet-griffon.png"
     },
     {
       "id": "bumblebee",
@@ -76,7 +80,8 @@
         "atk": 21,
         "def": 55,
         "sta": 24
-      }
+      },
+      "image": "bumblebee.png"
     },
     {
       "id": "captain-america",
@@ -89,7 +94,8 @@
         "atk": 55,
         "def": 28,
         "sta": 17
-      }
+      },
+      "image": "captain-america.png"
     },
     {
       "id": "chewbacca",
@@ -102,7 +108,8 @@
         "atk": 22,
         "def": 23,
         "sta": 55
-      }
+      },
+      "image": "chewbacca.png"
     },
     {
       "id": "clamp-crab",
@@ -118,7 +125,8 @@
         "atk": 10,
         "def": 43,
         "sta": 47
-      }
+      },
+      "image": "clamp-crab.png"
     },
     {
       "id": "clock-mirage",
@@ -134,7 +142,8 @@
         "atk": 10,
         "def": 10,
         "sta": 80
-      }
+      },
+      "image": "clock-mirage.png"
     },
     {
       "id": "cobalt-dragoon",
@@ -150,7 +159,8 @@
         "atk": 60,
         "def": 15,
         "sta": 25
-      }
+      },
+      "image": "cobalt-dragoon.png"
     },
     {
       "id": "cobalt-drake",
@@ -166,7 +176,8 @@
         "atk": 65,
         "def": 30,
         "sta": 20
-      }
+      },
+      "image": "cobalt-drake.png"
     },
     {
       "id": "crimson-garuda",
@@ -182,7 +193,8 @@
         "atk": 45,
         "def": 25,
         "sta": 30
-      }
+      },
+      "image": "crimson-garuda.png"
     },
     {
       "id": "croc-bite",
@@ -200,7 +212,8 @@
         "atk": 60,
         "def": 22,
         "sta": 18
-      }
+      },
+      "image": "croc-bite.png"
     },
     {
       "id": "cutter-shinobi",
@@ -212,7 +225,8 @@
       "type": "balance",
       "line": "ux",
       "integratedRatchet": true,
-      "releaseSet": "G1940"
+      "releaseSet": "G1940",
+      "image": "cutter-shinobi.png"
     },
     {
       "id": "cyclopseye",
@@ -222,7 +236,8 @@
         "SaikuropusuAi"
       ],
       "type": "stamina",
-      "line": "bx"
+      "line": "bx",
+      "image": "cyclopseye.png"
     },
     {
       "id": "darth-vader",
@@ -237,7 +252,8 @@
         "atk": 28,
         "def": 60,
         "sta": 12
-      }
+      },
+      "image": "darth-vader.png"
     },
     {
       "id": "draciel-shield",
@@ -253,7 +269,8 @@
         "atk": 30,
         "def": 50,
         "sta": 20
-      }
+      },
+      "image": "draciel-shield.png"
     },
     {
       "id": "dragoon-storm",
@@ -269,7 +286,8 @@
         "atk": 55,
         "def": 30,
         "sta": 15
-      }
+      },
+      "image": "dragoon-storm.png"
     },
     {
       "id": "dran-buster",
@@ -285,7 +303,8 @@
         "atk": 70,
         "def": 20,
         "sta": 10
-      }
+      },
+      "image": "dran-buster.png"
     },
     {
       "id": "dran-dagger",
@@ -301,7 +320,8 @@
         "atk": 50,
         "def": 25,
         "sta": 25
-      }
+      },
+      "image": "dran-dagger.png"
     },
     {
       "id": "dran-strike",
@@ -317,7 +337,8 @@
         "atk": 58,
         "def": 25,
         "sta": 17
-      }
+      },
+      "image": "dran-strike.png"
     },
     {
       "id": "dran-sword",
@@ -333,7 +354,8 @@
         "atk": 55,
         "def": 25,
         "sta": 20
-      }
+      },
+      "image": "dran-sword.png"
     },
     {
       "id": "dranzer-spiral",
@@ -350,7 +372,8 @@
         "atk": 35,
         "def": 30,
         "sta": 35
-      }
+      },
+      "image": "dranzer-spiral.png"
     },
     {
       "id": "driger-slash",
@@ -366,7 +389,8 @@
         "atk": 40,
         "def": 35,
         "sta": 25
-      }
+      },
+      "image": "driger-slash.png"
     },
     {
       "id": "general-grievous",
@@ -379,7 +403,8 @@
         "atk": 22,
         "def": 50,
         "sta": 28
-      }
+      },
+      "image": "general-grievous.png"
     },
     {
       "id": "ghost-circle",
@@ -395,7 +420,8 @@
         "atk": 5,
         "def": 40,
         "sta": 55
-      }
+      },
+      "image": "ghost-circle.png"
     },
     {
       "id": "glory-valkyrie",
@@ -412,7 +438,8 @@
         "atk": 85,
         "def": 35,
         "sta": 25
-      }
+      },
+      "image": "glory-valkyrie.png"
     },
     {
       "id": "goat-tackle",
@@ -428,7 +455,8 @@
         "atk": 13,
         "def": 65,
         "sta": 22
-      }
+      },
+      "image": "goat-tackle.png"
     },
     {
       "id": "golem-rock",
@@ -445,7 +473,8 @@
         "atk": 30,
         "def": 60,
         "sta": 10
-      }
+      },
+      "image": "golem-rock.png"
     },
     {
       "id": "green-goblin",
@@ -458,7 +487,8 @@
         "atk": 17,
         "def": 28,
         "sta": 55
-      }
+      },
+      "image": "green-goblin.png"
     },
     {
       "id": "grogu",
@@ -471,7 +501,8 @@
         "atk": 21,
         "def": 50,
         "sta": 29
-      }
+      },
+      "image": "grogu.png"
     },
     {
       "id": "gust-bat",
@@ -488,7 +519,8 @@
         "atk": 42,
         "def": 38,
         "sta": 20
-      }
+      },
+      "image": "gust-bat.png"
     },
     {
       "id": "heavens-ring",
@@ -504,7 +536,8 @@
         "atk": 10,
         "def": 60,
         "sta": 30
-      }
+      },
+      "image": "heavens-ring.png"
     },
     {
       "id": "hells-chain",
@@ -520,7 +553,8 @@
         "atk": 35,
         "def": 40,
         "sta": 25
-      }
+      },
+      "image": "hells-chain.png"
     },
     {
       "id": "hells-hammer",
@@ -536,7 +570,8 @@
         "atk": 50,
         "def": 25,
         "sta": 25
-      }
+      },
+      "image": "hells-hammer.png"
     },
     {
       "id": "hells-scythe",
@@ -552,7 +587,8 @@
         "atk": 30,
         "def": 35,
         "sta": 35
-      }
+      },
+      "image": "hells-scythe.png"
     },
     {
       "id": "hellsnether",
@@ -564,7 +600,8 @@
       "type": "balance",
       "line": "ux",
       "integratedRatchet": true,
-      "releaseSet": "UX-21"
+      "releaseSet": "UX-21",
+      "image": "hellsnether.png"
     },
     {
       "id": "hover-wyvern",
@@ -583,7 +620,8 @@
         "atk": 13,
         "def": 60,
         "sta": 27
-      }
+      },
+      "image": "hover-wyvern.png"
     },
     {
       "id": "hulk",
@@ -595,7 +633,8 @@
         "atk": 12,
         "def": 65,
         "sta": 23
-      }
+      },
+      "image": "hulk.png"
     },
     {
       "id": "impact-drake",
@@ -612,7 +651,8 @@
         "atk": 75,
         "def": 25,
         "sta": 10
-      }
+      },
+      "image": "impact-drake.png"
     },
     {
       "id": "iron-man",
@@ -627,7 +667,8 @@
         "atk": 17,
         "def": 55,
         "sta": 28
-      }
+      },
+      "image": "iron-man.png"
     },
     {
       "id": "knight-lance",
@@ -643,7 +684,8 @@
         "atk": 25,
         "def": 60,
         "sta": 15
-      }
+      },
+      "image": "knight-lance.png"
     },
     {
       "id": "knight-mail",
@@ -659,7 +701,8 @@
         "atk": 10,
         "def": 65,
         "sta": 35
-      }
+      },
+      "image": "knight-mail.png"
     },
     {
       "id": "knight-shield",
@@ -675,7 +718,8 @@
         "atk": 20,
         "def": 55,
         "sta": 25
-      }
+      },
+      "image": "knight-shield.png"
     },
     {
       "id": "kong-yell",
@@ -688,7 +732,8 @@
         "atk": 13,
         "def": 37,
         "sta": 50
-      }
+      },
+      "image": "kong-yell.png"
     },
     {
       "id": "leon-claw",
@@ -704,7 +749,8 @@
         "atk": 40,
         "def": 40,
         "sta": 20
-      }
+      },
+      "image": "leon-claw.png"
     },
     {
       "id": "leon-crest",
@@ -720,7 +766,8 @@
         "atk": 15,
         "def": 70,
         "sta": 15
-      }
+      },
+      "image": "leon-crest.png"
     },
     {
       "id": "lightning-l-drago-rapid-hit-type",
@@ -735,7 +782,8 @@
         "atk": 50,
         "def": 30,
         "sta": 20
-      }
+      },
+      "image": "lightning-l-drago-rapid-hit-type.png"
     },
     {
       "id": "lightning-l-drago-upper-type",
@@ -750,7 +798,8 @@
         "atk": 55,
         "def": 25,
         "sta": 20
-      }
+      },
+      "image": "lightning-l-drago-upper-type.png"
     },
     {
       "id": "luke-skywalker",
@@ -765,7 +814,8 @@
         "atk": 23,
         "def": 55,
         "sta": 22
-      }
+      },
+      "image": "luke-skywalker.png"
     },
     {
       "id": "mammoth-tusk",
@@ -781,7 +831,8 @@
         "atk": 33,
         "def": 35,
         "sta": 32
-      }
+      },
+      "image": "mammoth-tusk.png"
     },
     {
       "id": "megatron",
@@ -796,7 +847,8 @@
         "atk": 27,
         "def": 35,
         "sta": 38
-      }
+      },
+      "image": "megatron.png"
     },
     {
       "id": "meteor-dragoon",
@@ -813,7 +865,8 @@
         "atk": 75,
         "def": 15,
         "sta": 35
-      }
+      },
+      "image": "meteor-dragoon.png"
     },
     {
       "id": "miles-morales",
@@ -826,7 +879,8 @@
         "atk": 12,
         "def": 33,
         "sta": 55
-      }
+      },
+      "image": "miles-morales.png"
     },
     {
       "id": "moff-gideon",
@@ -841,7 +895,8 @@
         "atk": 32,
         "def": 35,
         "sta": 33
-      }
+      },
+      "image": "moff-gideon.png"
     },
     {
       "id": "mummy-curse",
@@ -857,7 +912,8 @@
         "atk": 30,
         "def": 60,
         "sta": 20
-      }
+      },
+      "image": "mummy-curse.png"
     },
     {
       "id": "obi-wan-kenobi",
@@ -870,7 +926,8 @@
         "atk": 23,
         "def": 60,
         "sta": 17
-      }
+      },
+      "image": "obi-wan-kenobi.png"
     },
     {
       "id": "optimus-primal",
@@ -885,7 +942,8 @@
         "atk": 60,
         "def": 27,
         "sta": 13
-      }
+      },
+      "image": "optimus-primal.png"
     },
     {
       "id": "optimus-prime",
@@ -900,7 +958,8 @@
         "atk": 22,
         "def": 55,
         "sta": 23
-      }
+      },
+      "image": "optimus-prime.png"
     },
     {
       "id": "orochi-cluster",
@@ -912,7 +971,8 @@
       ],
       "type": "attack",
       "line": "ux",
-      "releaseSet": "UX-00"
+      "releaseSet": "UX-00",
+      "image": "orochi-cluster.png"
     },
     {
       "id": "phoenix-feather",
@@ -928,7 +988,8 @@
         "atk": 50,
         "def": 20,
         "sta": 30
-      }
+      },
+      "image": "phoenix-feather.png"
     },
     {
       "id": "phoenix-rudder",
@@ -944,7 +1005,8 @@
         "atk": 10,
         "def": 35,
         "sta": 55
-      }
+      },
+      "image": "phoenix-rudder.png"
     },
     {
       "id": "phoenix-wing",
@@ -961,7 +1023,8 @@
         "atk": 60,
         "def": 25,
         "sta": 15
-      }
+      },
+      "image": "phoenix-wing.png"
     },
     {
       "id": "ptera-swing",
@@ -978,7 +1041,8 @@
         "atk": 27,
         "def": 23,
         "sta": 50
-      }
+      },
+      "image": "ptera-swing.png"
     },
     {
       "id": "rampart-aegis",
@@ -990,7 +1054,8 @@
       "type": "defense",
       "line": "ux",
       "integratedRatchet": true,
-      "releaseSet": "G1940"
+      "releaseSet": "G1940",
+      "image": "rampart-aegis.png"
     },
     {
       "id": "red-hulk",
@@ -1003,7 +1068,8 @@
         "atk": 65,
         "def": 27,
         "sta": 8
-      }
+      },
+      "image": "red-hulk.png"
     },
     {
       "id": "rhino-horn",
@@ -1019,7 +1085,8 @@
         "atk": 20,
         "def": 50,
         "sta": 30
-      }
+      },
+      "image": "rhino-horn.png"
     },
     {
       "id": "rock-leone",
@@ -1034,7 +1101,8 @@
         "atk": 30,
         "def": 55,
         "sta": 15
-      }
+      },
+      "image": "rock-leone.png"
     },
     {
       "id": "samurai-calibur",
@@ -1050,7 +1118,8 @@
         "atk": 40,
         "def": 30,
         "sta": 30
-      }
+      },
+      "image": "samurai-calibur.png"
     },
     {
       "id": "samurai-saber",
@@ -1067,7 +1136,8 @@
         "atk": 65,
         "def": 20,
         "sta": 25
-      }
+      },
+      "image": "samurai-saber.png"
     },
     {
       "id": "samurai-steel",
@@ -1083,7 +1153,8 @@
         "atk": 40,
         "def": 37,
         "sta": 23
-      }
+      },
+      "image": "samurai-steel.png"
     },
     {
       "id": "scorpio-spear",
@@ -1100,7 +1171,8 @@
         "atk": 25,
         "def": 55,
         "sta": 30
-      }
+      },
+      "image": "scorpio-spear.png"
     },
     {
       "id": "seize-jaguar",
@@ -1109,7 +1181,8 @@
       "type": "defense",
       "line": "ux",
       "integratedRatchet": true,
-      "releaseSet": "G4570"
+      "releaseSet": "G4570",
+      "image": "seize-jaguar.png"
     },
     {
       "id": "shark-edge",
@@ -1126,7 +1199,8 @@
         "atk": 60,
         "def": 25,
         "sta": 15
-      }
+      },
+      "image": "shark-edge.png"
     },
     {
       "id": "shark-gill",
@@ -1142,7 +1216,8 @@
         "atk": 20,
         "def": 25,
         "sta": 55
-      }
+      },
+      "image": "shark-gill.png"
     },
     {
       "id": "shark-scale",
@@ -1159,7 +1234,8 @@
         "atk": 70,
         "def": 15,
         "sta": 15
-      }
+      },
+      "image": "shark-scale.png"
     },
     {
       "id": "shatter-horus",
@@ -1171,7 +1247,8 @@
         "atk": 15,
         "def": 35,
         "sta": 50
-      }
+      },
+      "image": "shatter-horus.png"
     },
     {
       "id": "shelter-drake",
@@ -1187,7 +1264,8 @@
         "atk": 25,
         "def": 40,
         "sta": 35
-      }
+      },
+      "image": "shelter-drake.png"
     },
     {
       "id": "shinobi-knife",
@@ -1203,7 +1281,8 @@
         "atk": 23,
         "def": 50,
         "sta": 27
-      }
+      },
+      "image": "shinobi-knife.png"
     },
     {
       "id": "shinobi-shadow",
@@ -1219,7 +1298,8 @@
         "atk": 10,
         "def": 70,
         "sta": 20
-      }
+      },
+      "image": "shinobi-shadow.png"
     },
     {
       "id": "shockwave",
@@ -1232,7 +1312,8 @@
         "atk": 32,
         "def": 18,
         "sta": 50
-      }
+      },
+      "image": "shockwave.png"
     },
     {
       "id": "silver-wolf",
@@ -1248,7 +1329,8 @@
         "atk": 15,
         "def": 30,
         "sta": 65
-      }
+      },
+      "image": "silver-wolf.png"
     },
     {
       "id": "sphinx-cowl",
@@ -1264,7 +1346,8 @@
         "atk": 35,
         "def": 55,
         "sta": 10
-      }
+      },
+      "image": "sphinx-cowl.png"
     },
     {
       "id": "spider-man",
@@ -1279,7 +1362,8 @@
         "atk": 33,
         "def": 17,
         "sta": 50
-      }
+      },
+      "image": "spider-man.png"
     },
     {
       "id": "starscream",
@@ -1294,7 +1378,8 @@
         "atk": 18,
         "def": 27,
         "sta": 55
-      }
+      },
+      "image": "starscream.png"
     },
     {
       "id": "storm-pegasis",
@@ -1310,7 +1395,8 @@
         "atk": 55,
         "def": 15,
         "sta": 30
-      }
+      },
+      "image": "storm-pegasis.png"
     },
     {
       "id": "stormspriggan",
@@ -1327,7 +1413,8 @@
         "atk": 30,
         "def": 40,
         "sta": 30
-      }
+      },
+      "image": "stormspriggan.png"
     },
     {
       "id": "stormtrooper",
@@ -1340,7 +1427,8 @@
         "atk": 18,
         "def": 50,
         "sta": 32
-      }
+      },
+      "image": "stormtrooper.png"
     },
     {
       "id": "stun-medusa",
@@ -1353,7 +1441,8 @@
         "atk": 13,
         "def": 70,
         "sta": 17
-      }
+      },
+      "image": "stun-medusa.png"
     },
     {
       "id": "suppress-superion",
@@ -1361,7 +1450,8 @@
       "nameWestern": "Suppress Superion",
       "type": "balance",
       "line": "bx",
-      "releaseSet": "G2745"
+      "releaseSet": "G2745",
+      "image": "suppress-superion.png"
     },
     {
       "id": "tackle-goat",
@@ -1373,7 +1463,8 @@
         "atk": 13,
         "def": 65,
         "sta": 22
-      }
+      },
+      "image": "tackle-goat.png"
     },
     {
       "id": "thanos",
@@ -1388,7 +1479,8 @@
         "atk": 22,
         "def": 60,
         "sta": 18
-      }
+      },
+      "image": "thanos.png"
     },
     {
       "id": "the-mandalorian",
@@ -1403,7 +1495,8 @@
         "atk": 40,
         "def": 43,
         "sta": 17
-      }
+      },
+      "image": "the-mandalorian.png"
     },
     {
       "id": "tricera-press",
@@ -1420,7 +1513,8 @@
         "atk": 20,
         "def": 65,
         "sta": 15
-      }
+      },
+      "image": "tricera-press.png"
     },
     {
       "id": "tricera-spiky",
@@ -1437,13 +1531,15 @@
         "atk": 32,
         "def": 55,
         "sta": 13
-      }
+      },
+      "image": "tricera-spiky.png"
     },
     {
       "id": "trypio",
       "name": "Trypio",
       "type": "defense",
-      "line": "bx"
+      "line": "bx",
+      "image": "trypio.png"
     },
     {
       "id": "tyranno-beat",
@@ -1459,7 +1555,8 @@
         "atk": 65,
         "def": 30,
         "sta": 5
-      }
+      },
+      "image": "tyranno-beat.png"
     },
     {
       "id": "tyranno-roar",
@@ -1475,7 +1572,8 @@
         "atk": 60,
         "def": 28,
         "sta": 12
-      }
+      },
+      "image": "tyranno-roar.png"
     },
     {
       "id": "unicorn-sting",
@@ -1491,14 +1589,16 @@
         "atk": 35,
         "def": 35,
         "sta": 30
-      }
+      },
+      "image": "unicorn-sting.png"
     },
     {
       "id": "valor-bison",
       "name": "Valor Bison",
       "type": "stamina",
       "line": "ux",
-      "releaseSet": "G3497"
+      "releaseSet": "G3497",
+      "image": "valor-bison.png"
     },
     {
       "id": "venom",
@@ -1513,7 +1613,8 @@
         "atk": 55,
         "def": 22,
         "sta": 23
-      }
+      },
+      "image": "venom.png"
     },
     {
       "id": "victory-valkyrie",
@@ -1525,7 +1626,8 @@
         "atk": 55,
         "def": 20,
         "sta": 25
-      }
+      },
+      "image": "victory-valkyrie.png"
     },
     {
       "id": "viking-hack",
@@ -1541,7 +1643,8 @@
         "atk": 47,
         "def": 28,
         "sta": 25
-      }
+      },
+      "image": "viking-hack.png"
     },
     {
       "id": "viper-tail",
@@ -1558,7 +1661,8 @@
         "atk": 30,
         "def": 20,
         "sta": 50
-      }
+      },
+      "image": "viper-tail.png"
     },
     {
       "id": "weiss-tiger",
@@ -1574,7 +1678,8 @@
         "atk": 45,
         "def": 30,
         "sta": 25
-      }
+      },
+      "image": "weiss-tiger.png"
     },
     {
       "id": "whale-wave",
@@ -1591,7 +1696,8 @@
         "atk": 45,
         "def": 35,
         "sta": 20
-      }
+      },
+      "image": "whale-wave.png"
     },
     {
       "id": "wizard-arrow",
@@ -1608,7 +1714,8 @@
         "atk": 15,
         "def": 30,
         "sta": 55
-      }
+      },
+      "image": "wizard-arrow.png"
     },
     {
       "id": "wizard-rod",
@@ -1625,7 +1732,8 @@
         "atk": 15,
         "def": 25,
         "sta": 60
-      }
+      },
+      "image": "wizard-rod.png"
     },
     {
       "id": "wyvern-gale",
@@ -1642,7 +1750,8 @@
         "atk": 10,
         "def": 40,
         "sta": 50
-      }
+      },
+      "image": "wyvern-gale.png"
     },
     {
       "id": "xeno-xcalibur",
@@ -1657,127 +1766,150 @@
         "atk": 65,
         "def": 25,
         "sta": 10
-      }
+      },
+      "image": "xeno-xcalibur.png"
     }
   ],
   "lockChips": [
     {
       "id": "bahamut",
       "name": "Bahamut",
-      "line": "cx"
+      "line": "cx",
+      "image": "bahamut.png"
     },
     {
       "id": "brachio",
       "name": "Brachio",
-      "line": "cx"
+      "line": "cx",
+      "image": "brachio.png"
     },
     {
       "id": "cerberus",
       "name": "Cerberus",
-      "line": "cx"
+      "line": "cx",
+      "image": "cerberus.png"
     },
     {
       "id": "croco",
       "name": "Croco",
       "nameWestern": "Croc",
-      "line": "cx"
+      "line": "cx",
+      "image": "croco.png"
     },
     {
       "id": "drake",
       "name": "Drake",
-      "line": "cx"
+      "line": "cx",
+      "image": "drake.png"
     },
     {
       "id": "dran",
       "name": "Dran",
-      "line": "cx"
+      "line": "cx",
+      "image": "dran.png"
     },
     {
       "id": "emperor",
       "name": "Emperor",
-      "line": "cx"
+      "line": "cx",
+      "image": "emperor.png"
     },
     {
       "id": "enlil",
       "name": "Enlil",
-      "line": "cx"
+      "line": "cx",
+      "image": "enlil.png"
     },
     {
       "id": "eva",
       "name": "Eva",
-      "line": "cx"
+      "line": "cx",
+      "image": "eva.png"
     },
     {
       "id": "fox",
       "name": "Fox",
       "nameWestern": "Fox",
-      "line": "cx"
+      "line": "cx",
+      "image": "fox.png"
     },
     {
       "id": "hells",
       "name": "Hells",
       "nameWestern": "Incendio",
-      "line": "cx"
+      "line": "cx",
+      "image": "hells.png"
     },
     {
       "id": "hornet",
       "name": "Hornet",
       "nameWestern": "Hornet",
-      "line": "cx"
+      "line": "cx",
+      "image": "hornet.png"
     },
     {
       "id": "knight",
       "name": "Knight",
-      "line": "cx"
+      "line": "cx",
+      "image": "knight.png"
     },
     {
       "id": "kraken",
       "name": "Kraken",
       "nameWestern": "Kraken",
-      "line": "cx"
+      "line": "cx",
+      "image": "kraken.png"
     },
     {
       "id": "leon",
       "name": "Leon",
       "nameWestern": "Leon",
-      "line": "cx"
+      "line": "cx",
+      "image": "leon.png"
     },
     {
       "id": "pegasus",
       "name": "Pegasus",
-      "line": "cx"
+      "line": "cx",
+      "image": "pegasus.png"
     },
     {
       "id": "perseus",
       "name": "Perseus",
-      "line": "cx"
+      "line": "cx",
+      "image": "perseus.png"
     },
     {
       "id": "phoenix",
       "name": "Phoenix",
-      "line": "cx"
+      "line": "cx",
+      "image": "phoenix.png"
     },
     {
       "id": "ragna",
       "name": "Ragna",
-      "line": "cx"
+      "line": "cx",
+      "image": "ragna.png"
     },
     {
       "id": "rhino",
       "name": "Rhino",
       "nameWestern": "Rhino",
-      "line": "cx"
+      "line": "cx",
+      "image": "rhino.png"
     },
     {
       "id": "sol",
       "name": "Sol",
-      "line": "cx"
+      "line": "cx",
+      "image": "sol.png"
     },
     {
       "id": "stag",
       "name": "Stag",
       "nameWestern": "Stag",
-      "line": "cx"
+      "line": "cx",
+      "image": "stag.png"
     },
     {
       "id": "tiga",
@@ -1787,27 +1919,32 @@
     {
       "id": "unicorn",
       "name": "Unicorn",
-      "line": "cx"
+      "line": "cx",
+      "image": "unicorn.png"
     },
     {
       "id": "valkyrie",
       "name": "Valkyrie",
-      "line": "cx"
+      "line": "cx",
+      "image": "valkyrie.png"
     },
     {
       "id": "whale",
       "name": "Whale",
-      "line": "cx"
+      "line": "cx",
+      "image": "whale.png"
     },
     {
       "id": "wizard",
       "name": "Wizard",
-      "line": "cx"
+      "line": "cx",
+      "image": "wizard.png"
     },
     {
       "id": "wolf",
       "name": "Wolf",
-      "line": "cx"
+      "line": "cx",
+      "image": "wolf.png"
     }
   ],
   "mainBlades": [
@@ -1821,7 +1958,8 @@
         "atk": 8,
         "def": 15,
         "sta": 37
-      }
+      },
+      "image": "antler.png"
     },
     {
       "id": "arc",
@@ -1832,7 +1970,8 @@
         "atk": 10,
         "def": 10,
         "sta": 40
-      }
+      },
+      "image": "arc.png"
     },
     {
       "id": "blast",
@@ -1842,13 +1981,15 @@
         "atk": 50,
         "def": 10,
         "sta": 15
-      }
+      },
+      "image": "blast.png"
     },
     {
       "id": "blitz",
       "name": "Blitz",
       "type": "attack",
-      "line": "cx"
+      "line": "cx",
+      "image": "blitz.png"
     },
     {
       "id": "brave",
@@ -1860,7 +2001,8 @@
         "atk": 40,
         "def": 10,
         "sta": 10
-      }
+      },
+      "image": "brave.png"
     },
     {
       "id": "brush",
@@ -1872,7 +2014,8 @@
         "atk": 40,
         "def": 15,
         "sta": 5
-      }
+      },
+      "image": "brush.png"
     },
     {
       "id": "dark",
@@ -1883,18 +2026,21 @@
         "atk": 10,
         "def": 40,
         "sta": 10
-      }
+      },
+      "image": "dark.png"
     },
     {
       "id": "delta",
       "name": "Delta",
       "type": "balance",
-      "line": "cx"
+      "line": "cx",
+      "image": "delta.png"
     },
     {
       "id": "eclipse",
       "name": "Eclipse",
-      "line": "cx"
+      "line": "cx",
+      "image": "eclipse.png"
     },
     {
       "id": "fang",
@@ -1905,7 +2051,8 @@
         "atk": 35,
         "def": 10,
         "sta": 15
-      }
+      },
+      "image": "fang.png"
     },
     {
       "id": "flame",
@@ -1916,7 +2063,8 @@
         "atk": 5,
         "def": 15,
         "sta": 40
-      }
+      },
+      "image": "flame.png"
     },
     {
       "id": "flare",
@@ -1926,7 +2074,8 @@
         "atk": 25,
         "def": 40,
         "sta": 10
-      }
+      },
+      "image": "flare.png"
     },
     {
       "id": "fort",
@@ -1938,14 +2087,16 @@
         "atk": 24,
         "def": 12,
         "sta": 24
-      }
+      },
+      "image": "fort.png"
     },
     {
       "id": "fortress",
       "name": "Fortress",
       "nameWestern": "Armor",
       "type": "defense",
-      "line": "cx"
+      "line": "cx",
+      "image": "fortress.png"
     },
     {
       "id": "hunt",
@@ -1955,12 +2106,14 @@
         "atk": 20,
         "def": 10,
         "sta": 30
-      }
+      },
+      "image": "hunt.png"
     },
     {
       "id": "hurricane",
       "name": "Hurricane",
-      "line": "cx"
+      "line": "cx",
+      "image": "hurricane.png"
     },
     {
       "id": "might",
@@ -1970,13 +2123,15 @@
         "atk": 25,
         "def": 25,
         "sta": 25
-      }
+      },
+      "image": "might.png"
     },
     {
       "id": "rage",
       "name": "Rage",
       "type": "stamina",
-      "line": "cx"
+      "line": "cx",
+      "image": "rage.png"
     },
     {
       "id": "reaper",
@@ -1987,13 +2142,15 @@
         "atk": 25,
         "def": 10,
         "sta": 25
-      }
+      },
+      "image": "reaper.png"
     },
     {
       "id": "tread",
       "name": "Tread",
       "nameWestern": "Tread",
-      "line": "cx"
+      "line": "cx",
+      "image": "tread.png"
     },
     {
       "id": "volt",
@@ -2003,12 +2160,14 @@
         "atk": 45,
         "def": 15,
         "sta": 15
-      }
+      },
+      "image": "volt.png"
     },
     {
       "id": "whip",
       "name": "Whip",
-      "line": "cx"
+      "line": "cx",
+      "image": "whip.png"
     },
     {
       "id": "wriggle",
@@ -2020,7 +2179,8 @@
         "atk": 8,
         "def": 12,
         "sta": 40
-      }
+      },
+      "image": "wriggle.png"
     }
   ],
   "assistBlades": [
@@ -2028,132 +2188,154 @@
       "id": "assault",
       "name": "A (Assault)",
       "shortName": "A",
-      "line": "cx"
+      "line": "cx",
+      "image": "assault.png"
     },
     {
       "id": "bumper",
       "name": "B (Bumper)",
       "shortName": "B",
-      "line": "cx"
+      "line": "cx",
+      "image": "bumper.png"
     },
     {
       "id": "charge",
       "name": "C (Charge)",
       "shortName": "C",
-      "line": "cx"
+      "line": "cx",
+      "image": "charge.png"
     },
     {
       "id": "dual",
       "name": "D (Dual)",
       "shortName": "D",
-      "line": "cx"
+      "line": "cx",
+      "image": "dual.png"
     },
     {
       "id": "erase",
       "name": "E (Erase)",
       "shortName": "E",
-      "line": "cx"
+      "line": "cx",
+      "image": "erase.png"
     },
     {
       "id": "free",
       "name": "F (Free)",
       "shortName": "F",
-      "line": "cx"
+      "line": "cx",
+      "image": "free.png"
     },
     {
       "id": "gravity",
       "name": "G (Gravity)",
       "shortName": "G",
-      "line": "cx"
+      "line": "cx",
+      "image": "gravity.png"
     },
     {
       "id": "heavy",
       "name": "H (Heavy)",
       "shortName": "H",
-      "line": "cx"
+      "line": "cx",
+      "image": "heavy.png"
     },
     {
       "id": "jaggy",
       "name": "J (Jaggy)",
       "shortName": "J",
-      "line": "cx"
+      "line": "cx",
+      "image": "jaggy.png"
     },
     {
       "id": "knuckle",
       "name": "K (Knuckle)",
       "shortName": "K",
-      "line": "cx"
+      "line": "cx",
+      "image": "knuckle.png"
     },
     {
       "id": "massive",
       "name": "M (Massive)",
       "shortName": "M",
-      "line": "cx"
+      "line": "cx",
+      "image": "massive.png"
     },
     {
       "id": "odd",
       "name": "O (Odd)",
       "shortName": "O",
-      "line": "cx"
+      "line": "cx",
+      "image": "odd.png"
     },
     {
       "id": "quell",
       "name": "Quell",
       "shortName": "",
-      "line": "cx"
+      "line": "cx",
+      "image": "quell.png"
     },
     {
       "id": "round",
       "name": "R (Round)",
       "shortName": "R",
-      "line": "cx"
+      "line": "cx",
+      "image": "round.png"
     },
     {
       "id": "slash",
       "name": "S (Slash)",
       "shortName": "S",
-      "line": "cx"
+      "line": "cx",
+      "image": "slash.png"
     },
     {
       "id": "turn",
       "name": "T (Turn)",
       "shortName": "T",
-      "line": "cx"
+      "line": "cx",
+      "image": "turn.png"
     },
     {
       "id": "vertical",
       "name": "V (Vertical)",
       "shortName": "V",
-      "line": "cx"
+      "line": "cx",
+      "image": "vertical.png"
     },
     {
       "id": "wheel",
       "name": "W (Wheel)",
       "shortName": "W",
-      "line": "cx"
+      "line": "cx",
+      "image": "wheel.png"
     },
     {
       "id": "zillion",
       "name": "Z (Zillion)",
       "shortName": "Z",
-      "line": "cx"
+      "line": "cx",
+      "image": "zillion.png"
     }
   ],
   "overBlades": [
     {
       "id": "break",
       "name": "Break",
-      "line": "cx"
+      "line": "cx",
+      "image": "break.png"
     },
     {
       "id": "flow",
       "name": "Flow",
-      "line": "cx"
+      "line": "cx",
+      "image": "flow.png"
     },
     {
       "id": "guard",
       "name": "Guard",
-      "line": "cx"
+      "line": "cx",
+      "image": "guard.png"
     },
     {
       "id": "i",
@@ -2163,17 +2345,20 @@
     {
       "id": "outer",
       "name": "Outer",
-      "line": "cx"
+      "line": "cx",
+      "image": "outer.png"
     },
     {
       "id": "peak",
       "name": "Peak",
-      "line": "cx"
+      "line": "cx",
+      "image": "peak.png"
     },
     {
       "id": "tough",
       "name": "Tough",
-      "line": "cx"
+      "line": "cx",
+      "image": "tough.png"
     }
   ],
   "ratchets": [
@@ -2186,13 +2371,15 @@
         "atk": 3,
         "def": 14,
         "sta": 13
-      }
+      },
+      "image": "0-60.png"
     },
     {
       "id": "0-70",
       "name": "0-70",
       "sides": 0,
-      "height": 70
+      "height": 70,
+      "image": "0-70.png"
     },
     {
       "id": "0-80",
@@ -2203,7 +2390,8 @@
         "atk": 3,
         "def": 12,
         "sta": 15
-      }
+      },
+      "image": "0-80.png"
     },
     {
       "id": "1-50",
@@ -2214,13 +2402,15 @@
         "atk": 18,
         "def": 9,
         "sta": 3
-      }
+      },
+      "image": "1-50.png"
     },
     {
       "id": "1-60",
       "name": "1-60",
       "sides": 1,
-      "height": 60
+      "height": 60,
+      "image": "1-60.png"
     },
     {
       "id": "1-70",
@@ -2231,19 +2421,22 @@
         "atk": 17,
         "def": 6,
         "sta": 7
-      }
+      },
+      "image": "1-70.png"
     },
     {
       "id": "1-80",
       "name": "1-80",
       "sides": 1,
-      "height": 80
+      "height": 80,
+      "image": "1-80.png"
     },
     {
       "id": "2-60",
       "name": "2-60",
       "sides": 2,
-      "height": 60
+      "height": 60,
+      "image": "2-60.png"
     },
     {
       "id": "2-70",
@@ -2254,7 +2447,8 @@
         "atk": 10,
         "def": 12,
         "sta": 8
-      }
+      },
+      "image": "2-70.png"
     },
     {
       "id": "2-80",
@@ -2265,7 +2459,8 @@
         "atk": 10,
         "def": 11,
         "sta": 9
-      }
+      },
+      "image": "2-80.png"
     },
     {
       "id": "3-60",
@@ -2276,7 +2471,8 @@
         "atk": 15,
         "def": 9,
         "sta": 6
-      }
+      },
+      "image": "3-60.png"
     },
     {
       "id": "3-70",
@@ -2287,7 +2483,8 @@
         "atk": 15,
         "def": 8,
         "sta": 7
-      }
+      },
+      "image": "3-70.png"
     },
     {
       "id": "3-80",
@@ -2298,7 +2495,8 @@
         "atk": 15,
         "def": 7,
         "sta": 8
-      }
+      },
+      "image": "3-80.png"
     },
     {
       "id": "3-85",
@@ -2309,7 +2507,8 @@
         "atk": 5,
         "def": 15,
         "sta": 10
-      }
+      },
+      "image": "3-85.png"
     },
     {
       "id": "4-50",
@@ -2320,7 +2519,8 @@
         "atk": 12,
         "def": 13,
         "sta": 5
-      }
+      },
+      "image": "4-50.png"
     },
     {
       "id": "4-55",
@@ -2331,7 +2531,8 @@
         "atk": 7,
         "def": 11,
         "sta": 12
-      }
+      },
+      "image": "4-55.png"
     },
     {
       "id": "4-60",
@@ -2342,13 +2543,15 @@
         "atk": 11,
         "def": 13,
         "sta": 6
-      }
+      },
+      "image": "4-60.png"
     },
     {
       "id": "4-70",
       "name": "4-70",
       "sides": 4,
-      "height": 70
+      "height": 70,
+      "image": "4-70.png"
     },
     {
       "id": "4-80",
@@ -2359,13 +2562,15 @@
         "atk": 11,
         "def": 11,
         "sta": 8
-      }
+      },
+      "image": "4-80.png"
     },
     {
       "id": "5-50",
       "name": "5-50",
       "sides": 5,
-      "height": 50
+      "height": 50,
+      "image": "5-50.png"
     },
     {
       "id": "5-60",
@@ -2376,7 +2581,8 @@
         "atk": 12,
         "def": 9,
         "sta": 9
-      }
+      },
+      "image": "5-60.png"
     },
     {
       "id": "5-70",
@@ -2387,7 +2593,8 @@
         "atk": 12,
         "def": 8,
         "sta": 10
-      }
+      },
+      "image": "5-70.png"
     },
     {
       "id": "5-80",
@@ -2398,7 +2605,8 @@
         "atk": 12,
         "def": 8,
         "sta": 10
-      }
+      },
+      "image": "5-80.png"
     },
     {
       "id": "6-60",
@@ -2409,7 +2617,8 @@
         "atk": 14,
         "def": 8,
         "sta": 8
-      }
+      },
+      "image": "6-60.png"
     },
     {
       "id": "6-70",
@@ -2420,7 +2629,8 @@
         "atk": 14,
         "def": 7,
         "sta": 9
-      }
+      },
+      "image": "6-70.png"
     },
     {
       "id": "6-80",
@@ -2431,7 +2641,8 @@
         "atk": 14,
         "def": 6,
         "sta": 10
-      }
+      },
+      "image": "6-80.png"
     },
     {
       "id": "7-55",
@@ -2442,13 +2653,15 @@
         "atk": 6,
         "def": 14,
         "sta": 10
-      }
+      },
+      "image": "7-55.png"
     },
     {
       "id": "7-60",
       "name": "7-60",
       "sides": 7,
-      "height": 60
+      "height": 60,
+      "image": "7-60.png"
     },
     {
       "id": "7-70",
@@ -2459,7 +2672,8 @@
         "atk": 8,
         "def": 12,
         "sta": 10
-      }
+      },
+      "image": "7-70.png"
     },
     {
       "id": "7-80",
@@ -2470,7 +2684,8 @@
         "atk": 7,
         "def": 14,
         "sta": 9
-      }
+      },
+      "image": "7-80.png"
     },
     {
       "id": "8-70",
@@ -2481,7 +2696,8 @@
         "atk": 8,
         "def": 10,
         "sta": 12
-      }
+      },
+      "image": "8-70.png"
     },
     {
       "id": "8-80",
@@ -2492,13 +2708,15 @@
         "atk": 8,
         "def": 9,
         "sta": 13
-      }
+      },
+      "image": "8-80.png"
     },
     {
       "id": "9-60",
       "name": "9-60",
       "sides": 9,
-      "height": 60
+      "height": 60,
+      "image": "9-60.png"
     },
     {
       "id": "9-65",
@@ -2509,13 +2727,15 @@
         "atk": 13,
         "def": 10,
         "sta": 7
-      }
+      },
+      "image": "9-65.png"
     },
     {
       "id": "9-70",
       "name": "9-70",
       "sides": 9,
-      "height": 70
+      "height": 70,
+      "image": "9-70.png"
     },
     {
       "id": "9-80",
@@ -2526,7 +2746,8 @@
         "atk": 13,
         "def": 10,
         "sta": 7
-      }
+      },
+      "image": "9-80.png"
     },
     {
       "id": "M-85",
@@ -2537,7 +2758,8 @@
         "atk": 8,
         "def": 19,
         "sta": 13
-      }
+      },
+      "image": "M-85.png"
     }
   ],
   "bits": [
@@ -2553,7 +2775,8 @@
         "atk": 40,
         "def": 10,
         "sta": 10
-      }
+      },
+      "image": "accel.png"
     },
     {
       "id": "ball",
@@ -2567,7 +2790,8 @@
         "atk": 15,
         "def": 25,
         "sta": 50
-      }
+      },
+      "image": "ball.png"
     },
     {
       "id": "bound-spike",
@@ -2581,7 +2805,8 @@
         "atk": 5,
         "def": 60,
         "sta": 30
-      }
+      },
+      "image": "bound-spike.png"
     },
     {
       "id": "cyclone",
@@ -2595,7 +2820,8 @@
         "atk": 40,
         "def": 5,
         "sta": 10
-      }
+      },
+      "image": "cyclone.png"
     },
     {
       "id": "disk-ball",
@@ -2611,7 +2837,8 @@
         "atk": 15,
         "def": 20,
         "sta": 55
-      }
+      },
+      "image": "disk-ball.png"
     },
     {
       "id": "disk-spike",
@@ -2626,7 +2853,8 @@
         "atk": 5,
         "def": 55,
         "sta": 40
-      }
+      },
+      "image": "disk-spike.png"
     },
     {
       "id": "dot",
@@ -2635,7 +2863,8 @@
       "shortName": "D",
       "aliases": [
         "Dotto"
-      ]
+      ],
+      "image": "dot.png"
     },
     {
       "id": "elevate",
@@ -2649,7 +2878,8 @@
         "atk": 30,
         "def": 15,
         "sta": 20
-      }
+      },
+      "image": "elevate.png"
     },
     {
       "id": "flat",
@@ -2663,7 +2893,8 @@
         "atk": 40,
         "def": 15,
         "sta": 10
-      }
+      },
+      "image": "flat.png"
     },
     {
       "id": "free-ball",
@@ -2677,7 +2908,8 @@
         "atk": 10,
         "def": 25,
         "sta": 60
-      }
+      },
+      "image": "free-ball.png"
     },
     {
       "id": "free-flat",
@@ -2691,7 +2923,8 @@
         "atk": 40,
         "def": 15,
         "sta": 15
-      }
+      },
+      "image": "free-flat.png"
     },
     {
       "id": "gear-ball",
@@ -2706,7 +2939,8 @@
         "atk": 10,
         "def": 15,
         "sta": 45
-      }
+      },
+      "image": "gear-ball.png"
     },
     {
       "id": "gear-flat",
@@ -2721,7 +2955,8 @@
         "atk": 50,
         "def": 5,
         "sta": 5
-      }
+      },
+      "image": "gear-flat.png"
     },
     {
       "id": "gear-needle",
@@ -2736,7 +2971,8 @@
         "atk": 20,
         "def": 40,
         "sta": 10
-      }
+      },
+      "image": "gear-needle.png"
     },
     {
       "id": "gear-point",
@@ -2751,7 +2987,8 @@
         "atk": 30,
         "def": 25,
         "sta": 15
-      }
+      },
+      "image": "gear-point.png"
     },
     {
       "id": "gear-rush",
@@ -2766,7 +3003,8 @@
         "atk": 45,
         "def": 10,
         "sta": 10
-      }
+      },
+      "image": "gear-rush.png"
     },
     {
       "id": "gear-unite",
@@ -2780,7 +3018,8 @@
         "atk": 30,
         "def": 20,
         "sta": 20
-      }
+      },
+      "image": "gear-unite.png"
     },
     {
       "id": "glide",
@@ -2794,7 +3033,8 @@
         "atk": 20,
         "def": 10,
         "sta": 55
-      }
+      },
+      "image": "glide.png"
     },
     {
       "id": "hexa",
@@ -2808,7 +3048,8 @@
         "atk": 30,
         "def": 35,
         "sta": 20
-      }
+      },
+      "image": "hexa.png"
     },
     {
       "id": "high-needle",
@@ -2823,7 +3064,8 @@
         "atk": 15,
         "def": 55,
         "sta": 20
-      }
+      },
+      "image": "high-needle.png"
     },
     {
       "id": "high-taper",
@@ -2838,7 +3080,8 @@
         "atk": 30,
         "def": 25,
         "sta": 20
-      }
+      },
+      "image": "high-taper.png"
     },
     {
       "id": "ignition",
@@ -2852,7 +3095,8 @@
         "atk": 50,
         "def": 15,
         "sta": 5
-      }
+      },
+      "image": "ignition.png"
     },
     {
       "id": "jolt",
@@ -2866,7 +3110,8 @@
         "atk": 35,
         "def": 10,
         "sta": 15
-      }
+      },
+      "image": "jolt.png"
     },
     {
       "id": "kick",
@@ -2880,7 +3125,8 @@
         "atk": 35,
         "def": 25,
         "sta": 15
-      }
+      },
+      "image": "kick.png"
     },
     {
       "id": "level",
@@ -2894,7 +3140,8 @@
         "atk": 40,
         "def": 5,
         "sta": 15
-      }
+      },
+      "image": "level.png"
     },
     {
       "id": "low-flat",
@@ -2909,7 +3156,8 @@
         "atk": 45,
         "def": 5,
         "sta": 10
-      }
+      },
+      "image": "low-flat.png"
     },
     {
       "id": "low-orb",
@@ -2924,7 +3172,8 @@
         "atk": 5,
         "def": 25,
         "sta": 55
-      }
+      },
+      "image": "low-orb.png"
     },
     {
       "id": "low-point",
@@ -2948,7 +3197,8 @@
         "atk": 45,
         "def": 5,
         "sta": 15
-      }
+      },
+      "image": "low-rush.png"
     },
     {
       "id": "merge",
@@ -2962,7 +3212,8 @@
         "atk": 50,
         "def": 20,
         "sta": 10
-      }
+      },
+      "image": "merge.png"
     },
     {
       "id": "metal-needle",
@@ -2977,7 +3228,8 @@
         "atk": 8,
         "def": 57,
         "sta": 30
-      }
+      },
+      "image": "metal-needle.png"
     },
     {
       "id": "narrow",
@@ -2986,7 +3238,8 @@
       "shortName": "Nr",
       "aliases": [
         "Narō"
-      ]
+      ],
+      "image": "narrow.png"
     },
     {
       "id": "needle",
@@ -3000,7 +3253,8 @@
         "atk": 10,
         "def": 50,
         "sta": 30
-      }
+      },
+      "image": "needle.png"
     },
     {
       "id": "operate",
@@ -3009,7 +3263,8 @@
       "aliases": [
         "Operēto"
       ],
-      "integratedRatchet": true
+      "integratedRatchet": true,
+      "image": "operate.png"
     },
     {
       "id": "orb",
@@ -3024,7 +3279,8 @@
         "atk": 10,
         "def": 30,
         "sta": 50
-      }
+      },
+      "image": "orb.png"
     },
     {
       "id": "point",
@@ -3038,7 +3294,8 @@
         "atk": 25,
         "def": 25,
         "sta": 25
-      }
+      },
+      "image": "point.png"
     },
     {
       "id": "quake",
@@ -3052,7 +3309,8 @@
         "atk": 55,
         "def": 15,
         "sta": 5
-      }
+      },
+      "image": "quake.png"
     },
     {
       "id": "rubber-accel",
@@ -3061,7 +3319,8 @@
       "shortName": "RA",
       "aliases": [
         "Rabā"
-      ]
+      ],
+      "image": "rubber-accel.png"
     },
     {
       "id": "rush",
@@ -3075,7 +3334,8 @@
         "atk": 40,
         "def": 10,
         "sta": 20
-      }
+      },
+      "image": "rush.png"
     },
     {
       "id": "spike",
@@ -3084,7 +3344,8 @@
       "shortName": "S",
       "aliases": [
         "Supaiku"
-      ]
+      ],
+      "image": "spike.png"
     },
     {
       "id": "taper",
@@ -3098,7 +3359,8 @@
         "atk": 35,
         "def": 20,
         "sta": 20
-      }
+      },
+      "image": "taper.png"
     },
     {
       "id": "trans-kick",
@@ -3108,7 +3370,8 @@
       "aliases": [
         "Toransu",
         "Toransu Kikku"
-      ]
+      ],
+      "image": "trans-kick.png"
     },
     {
       "id": "trans-point",
@@ -3123,7 +3386,8 @@
         "atk": 35,
         "def": 25,
         "sta": 25
-      }
+      },
+      "image": "trans-point.png"
     },
     {
       "id": "turbo",
@@ -3133,7 +3397,8 @@
       "aliases": [
         "Tābo"
       ],
-      "integratedRatchet": true
+      "integratedRatchet": true,
+      "image": "turbo.png"
     },
     {
       "id": "under-flat",
@@ -3148,7 +3413,8 @@
         "atk": 55,
         "def": 5,
         "sta": 5
-      }
+      },
+      "image": "under-flat.png"
     },
     {
       "id": "under-needle",
@@ -3163,7 +3429,8 @@
         "atk": 10,
         "def": 60,
         "sta": 20
-      }
+      },
+      "image": "under-needle.png"
     },
     {
       "id": "unite",
@@ -3177,7 +3444,8 @@
         "atk": 25,
         "def": 25,
         "sta": 30
-      }
+      },
+      "image": "unite.png"
     },
     {
       "id": "vortex",
@@ -3191,7 +3459,8 @@
         "atk": 45,
         "def": 10,
         "sta": 5
-      }
+      },
+      "image": "vortex.png"
     },
     {
       "id": "wall-ball",
@@ -3206,7 +3475,8 @@
         "atk": 15,
         "def": 30,
         "sta": 45
-      }
+      },
+      "image": "wall-ball.png"
     },
     {
       "id": "wall-wedge",
@@ -3220,7 +3490,8 @@
         "atk": 5,
         "def": 60,
         "sta": 25
-      }
+      },
+      "image": "wall-wedge.png"
     },
     {
       "id": "wedge",
@@ -3234,7 +3505,8 @@
         "atk": 5,
         "def": 55,
         "sta": 30
-      }
+      },
+      "image": "wedge.png"
     },
     {
       "id": "yielding",
@@ -3248,7 +3520,8 @@
         "atk": 10,
         "def": 15,
         "sta": 65
-      }
+      },
+      "image": "yielding.png"
     },
     {
       "id": "zap",
@@ -3262,7 +3535,8 @@
         "atk": 30,
         "def": 20,
         "sta": 15
-      }
+      },
+      "image": "zap.png"
     }
   ]
 }

@@ -115,9 +115,12 @@ prodotto diverse: non risolverle di tua iniziativa.
 ### 4. Derivare
 
 ```
+npm run sync:part-images
 npm run build:parts && npm run build
 ```
-Il guardrail di `build:parts` deve restare verde e il ⚠️ delle parti products mancanti a 0.
+`sync:part-images` scarica dalle pagine wiki le immagini delle parti che ancora non le hanno
+(idempotente, report a stampa); le parti rimaste senza immagine vanno nel report del run, non
+bloccano. Il guardrail di `build:parts` deve restare verde e il ⚠️ delle parti products mancanti a 0.
 
 ### 5. Controllare che non si sia perso niente
 
@@ -153,7 +156,7 @@ rifa' tutto da capo invece di credere di aver gia' guardato.
 ### 8. Committare
 
 ```
-git add data/parts-master.json data/parts.json data/parts-master-conflicts.json data/wiki-scan.json data/releases.json
+git add data/parts-master.json data/parts.json data/parts-master-conflicts.json data/wiki-scan.json data/releases.json public/images/parts data/image-overrides.json
 git commit -m "update parts database [2026-08-14]" && git push
 ```
 Nel messaggio va la **data di oggi** al posto di `2026-08-14`: e' un esempio, non un segnaposto da

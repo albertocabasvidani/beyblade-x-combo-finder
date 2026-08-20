@@ -19,6 +19,7 @@
     "fetch:transcripts": "python scripts/fetch-transcripts.py",
     "collect:sources": "npx tsx scripts/collect-sources.ts",
     "build:parts": "npx tsx scripts/build-parts.ts",
+    "sync:part-images": "npx tsx scripts/sync-part-images.ts",
     "enrich:stats": "npx tsx scripts/enrich-stats.ts",
     "fetch:metabeys": "npx tsx scripts/fetch-metabeys.ts",
     "fetch:wbo": "npx tsx scripts/fetch-wbo.ts",
@@ -41,6 +42,7 @@
   },
   "devDependencies": {
     "playwright-core": "^1.48.0",
+    "sharp": "^0.35.3",
     "tsx": "^4.19.0"
   },
   "dependencies": {

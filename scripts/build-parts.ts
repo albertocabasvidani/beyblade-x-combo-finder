@@ -37,6 +37,7 @@ interface MasterPart {
   integratedRatchet?: boolean;
   stats?: Stats;
   source?: { page?: string; url?: string; revid?: number };
+  image?: { file?: string; wikiFile?: string; fetchedAt?: string };
 }
 interface Master {
   version?: string;
@@ -82,6 +83,9 @@ const withShort = (p: MasterPart) => {
 // Stat 3 assi dall'infobox Fandom (pagina dedicata della parte). Pass-through verbatim: se il
 // master non le ha (caso attuale per quasi tutte) il campo resta assente e parts.json non cambia.
 const withStats = (p: MasterPart) => (p.stats ? { stats: p.stats } : {});
+// Filename dell'immagine (public/images/parts/<file> nel repo combo finder), scritto da
+// sync-part-images.ts. Solo il nome: ogni consumatore compone la propria base URL.
+const withImage = (p: MasterPart) => (p.image?.file ? { image: p.image.file } : {});
 
 // Parte che ingloba il ratchet (no ratchet separato): vale sia per i blade UX (Cutter Shinobi,
 // Bullet Griffon) sia per i "Ratchet Integrated Bit" (Operate, Turbo). Segnalata dalla pagina wiki
@@ -102,6 +106,7 @@ function deriveParts(master: Master) {
     ...(isIntegratedRatchet(p) ? { integratedRatchet: true } : {}),
     ...(p.firstReleaseSet ? { releaseSet: p.firstReleaseSet } : {}),
     ...withStats(p),
+    ...withImage(p),
   }));
 
   const lockChips = (master.lockChips ?? []).slice().sort(byId).map((p) => ({
@@ -109,6 +114,7 @@ function deriveParts(master: Master) {
     name: p.names.tt,
     ...withWestern(p.names),
     line: 'cx',
+    ...withImage(p),
   }));
 
   const mainBlades = (master.mainBlades ?? []).slice().sort(byId).map((p) => ({
@@ -118,6 +124,7 @@ function deriveParts(master: Master) {
     ...(p.type ? { type: p.type } : {}),  // usato come type del combo CX (fallback 'balance' nel resolver)
     line: 'cx',
     ...withStats(p),
+    ...withImage(p),
   }));
 
   const assistBlades = (master.assistBlades ?? []).slice().sort(byId).map((p) => {
@@ -128,6 +135,7 @@ function deriveParts(master: Master) {
       ...withWestern(p.names),
       shortName: short,
       line: 'cx',
+      ...withImage(p),
     };
   });
 
@@ -136,11 +144,15 @@ function deriveParts(master: Master) {
     name: p.names.tt,
     ...withWestern(p.names),
     line: 'cx',
+    ...withImage(p),
   }));
 
   const ratchets = (master.ratchets ?? []).slice().sort(byId).map((p) => {
     const [s, h] = p.id.split('-');
-    return { id: p.id, name: p.names.tt ?? p.id, sides: Number(s), height: Number(h), ...withStats(p) };
+    return {
+      id: p.id, name: p.names.tt ?? p.id, sides: Number(s), height: Number(h),
+      ...withStats(p), ...withImage(p),
+    };
   });
 
   const bits = (master.bits ?? []).slice().sort(byId).map((p) => ({
@@ -151,6 +163,7 @@ function deriveParts(master: Master) {
     ...withAliases(p),
     ...(isIntegratedRatchet(p) ? { integratedRatchet: true } : {}),
     ...withStats(p),
+    ...withImage(p),
   }));
 
   return { version: today(), blades, lockChips, mainBlades, assistBlades, overBlades, ratchets, bits };

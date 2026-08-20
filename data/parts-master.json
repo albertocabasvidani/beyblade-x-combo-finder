@@ -55,6 +55,11 @@
         "atk": 60,
         "def": 25,
         "sta": 30
+      },
+      "image": {
+        "file": "aero-pegasus.png",
+        "wikiFile": "BladeAeroPegasus.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -102,6 +107,11 @@
         "atk": 25,
         "def": 45,
         "sta": 30
+      },
+      "image": {
+        "file": "bear-scratch.png",
+        "wikiFile": "Savage_Bear_3-60S.jpg",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -150,6 +160,11 @@
         "atk": 10,
         "def": 65,
         "sta": 25
+      },
+      "image": {
+        "file": "black-shell.png",
+        "wikiFile": "BladeBlackShell.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -197,7 +212,12 @@
       },
       "lastVerified": "2026-08-14",
       "status": "verified",
-      "type": "balance"
+      "type": "balance",
+      "image": {
+        "file": "bullet-griffon.png",
+        "wikiFile": "RatchetBladeBulletGriffon.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "bumblebee",
@@ -226,6 +246,11 @@
         "atk": 21,
         "def": 55,
         "sta": 24
+      },
+      "image": {
+        "file": "bumblebee.png",
+        "wikiFile": "Bumblebee_3-60GP.jpeg",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -255,6 +280,11 @@
         "atk": 55,
         "def": 28,
         "sta": 17
+      },
+      "image": {
+        "file": "captain-america.png",
+        "wikiFile": "Captain_America_4-70GB.jpeg",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -284,6 +314,11 @@
         "atk": 22,
         "def": 23,
         "sta": 55
+      },
+      "image": {
+        "file": "chewbacca.png",
+        "wikiFile": "Chewbacca_4-80LF.jpeg",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -329,6 +364,11 @@
         "atk": 10,
         "def": 43,
         "sta": 47
+      },
+      "image": {
+        "file": "clamp-crab.png",
+        "wikiFile": "BladeClampCrab.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -375,6 +415,11 @@
         "atk": 10,
         "def": 10,
         "sta": 80
+      },
+      "image": {
+        "file": "clock-mirage.png",
+        "wikiFile": "BladeClockMirage.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -417,6 +462,11 @@
         "atk": 60,
         "def": 15,
         "sta": 25
+      },
+      "image": {
+        "file": "cobalt-dragoon.png",
+        "wikiFile": "BladeCobaltDragoon.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -459,6 +509,11 @@
         "atk": 65,
         "def": 30,
         "sta": 20
+      },
+      "image": {
+        "file": "cobalt-drake.png",
+        "wikiFile": "BladeCobaltDrake.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -506,6 +561,11 @@
         "atk": 45,
         "def": 25,
         "sta": 30
+      },
+      "image": {
+        "file": "crimson-garuda.png",
+        "wikiFile": "BladeCrimsonGaruda.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -563,6 +623,11 @@
         "atk": 60,
         "def": 22,
         "sta": 18
+      },
+      "image": {
+        "file": "croc-bite.png",
+        "wikiFile": "Bite_Croc_3-60LF.jpeg",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -603,7 +668,12 @@
         "revid": 638655
       },
       "lastVerified": "2026-06-15",
-      "status": "unverified"
+      "status": "unverified",
+      "image": {
+        "file": "cutter-shinobi.png",
+        "wikiFile": "RatchetBladeCutterShinobi.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "cyclopseye",
@@ -640,7 +710,12 @@
       },
       "lastVerified": "2026-08-17",
       "status": "verified",
-      "type": "stamina"
+      "type": "stamina",
+      "image": {
+        "file": "cyclopseye.png",
+        "wikiFile": "BladeCyclopsEye.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "darth-vader",
@@ -681,6 +756,11 @@
         "atk": 28,
         "def": 60,
         "sta": 12
+      },
+      "image": {
+        "file": "darth-vader.png",
+        "wikiFile": "Darth_Vader_4-60P.jpeg",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -722,6 +802,11 @@
         "atk": 30,
         "def": 50,
         "sta": 20
+      },
+      "image": {
+        "file": "draciel-shield.png",
+        "wikiFile": "BladeDracielShield.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -763,7 +848,12 @@
         "def": 30,
         "sta": 15
       },
-      "lastVerified": "2026-08-14"
+      "lastVerified": "2026-08-14",
+      "image": {
+        "file": "dragoon-storm.png",
+        "wikiFile": "BladeDragoonStorm.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "dran-buster",
@@ -812,6 +902,11 @@
         "atk": 70,
         "def": 20,
         "sta": 10
+      },
+      "image": {
+        "file": "dran-buster.png",
+        "wikiFile": "BladeDranBuster.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -863,6 +958,11 @@
         "atk": 50,
         "def": 25,
         "sta": 25
+      },
+      "image": {
+        "file": "dran-dagger.png",
+        "wikiFile": "BladeDranDagger.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -911,6 +1011,11 @@
         "atk": 58,
         "def": 25,
         "sta": 17
+      },
+      "image": {
+        "file": "dran-strike.png",
+        "wikiFile": "BladeDranStrike.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -961,6 +1066,11 @@
         "atk": 55,
         "def": 25,
         "sta": 20
+      },
+      "image": {
+        "file": "dran-sword.png",
+        "wikiFile": "BladeDranSword.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -1009,6 +1119,11 @@
         "atk": 35,
         "def": 30,
         "sta": 35
+      },
+      "image": {
+        "file": "dranzer-spiral.png",
+        "wikiFile": "BladeDranzerSpiral.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -1050,6 +1165,11 @@
         "atk": 40,
         "def": 35,
         "sta": 25
+      },
+      "image": {
+        "file": "driger-slash.png",
+        "wikiFile": "BladeDrigerSlash.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -1079,6 +1199,11 @@
         "atk": 22,
         "def": 50,
         "sta": 28
+      },
+      "image": {
+        "file": "general-grievous.png",
+        "wikiFile": "General_Grievous_3-80HN.jpeg",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -1127,6 +1252,11 @@
         "atk": 5,
         "def": 40,
         "sta": 55
+      },
+      "image": {
+        "file": "ghost-circle.png",
+        "wikiFile": "BladeGhostCircle.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -1173,6 +1303,11 @@
         "atk": 85,
         "def": 35,
         "sta": 25
+      },
+      "image": {
+        "file": "glory-valkyrie.png",
+        "wikiFile": "RatchetBladeGloryValkyrie.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -1218,6 +1353,11 @@
         "atk": 13,
         "def": 65,
         "sta": 22
+      },
+      "image": {
+        "file": "goat-tackle.png",
+        "wikiFile": "Tackle_Goat_2-70N.jpeg",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -1276,6 +1416,11 @@
         "atk": 30,
         "def": 60,
         "sta": 10
+      },
+      "image": {
+        "file": "golem-rock.png",
+        "wikiFile": "BladeGolemRock.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -1305,6 +1450,11 @@
         "atk": 17,
         "def": 28,
         "sta": 55
+      },
+      "image": {
+        "file": "green-goblin.png",
+        "wikiFile": "Green_Goblin_9-80HT.jpeg",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -1332,6 +1482,11 @@
         "atk": 21,
         "def": 50,
         "sta": 29
+      },
+      "image": {
+        "file": "grogu.png",
+        "wikiFile": "BladeGrogu.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -1377,6 +1532,11 @@
         "atk": 42,
         "def": 38,
         "sta": 20
+      },
+      "image": {
+        "file": "gust-bat.png",
+        "wikiFile": "BladeBatGust.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -1423,6 +1583,11 @@
         "atk": 10,
         "def": 60,
         "sta": 30
+      },
+      "image": {
+        "file": "heavens-ring.png",
+        "wikiFile": "BladeRingAether.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -1469,6 +1634,11 @@
         "atk": 35,
         "def": 40,
         "sta": 25
+      },
+      "image": {
+        "file": "hells-chain.png",
+        "wikiFile": "BladeHellsChain.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -1517,6 +1687,11 @@
         "atk": 50,
         "def": 25,
         "sta": 25
+      },
+      "image": {
+        "file": "hells-hammer.png",
+        "wikiFile": "BladeHellsHammer.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -1567,6 +1742,11 @@
         "atk": 30,
         "def": 35,
         "sta": 35
+      },
+      "image": {
+        "file": "hells-scythe.png",
+        "wikiFile": "BladeHellsScythe.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -1608,7 +1788,12 @@
       },
       "lastVerified": "2026-08-14",
       "status": "verified",
-      "type": "balance"
+      "type": "balance",
+      "image": {
+        "file": "hellsnether.png",
+        "wikiFile": "RatchetBladeHellsNether_(Low_Mode).png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "hover-wyvern",
@@ -1670,6 +1855,11 @@
         "atk": 13,
         "def": 60,
         "sta": 27
+      },
+      "image": {
+        "file": "hover-wyvern.png",
+        "wikiFile": "BladeWyvernHover.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -1699,7 +1889,12 @@
         "def": 65,
         "sta": 23
       },
-      "lastVerified": "2026-08-14"
+      "lastVerified": "2026-08-14",
+      "image": {
+        "file": "hulk.png",
+        "wikiFile": "BladeHulk.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "impact-drake",
@@ -1746,6 +1941,11 @@
         "atk": 75,
         "def": 25,
         "sta": 10
+      },
+      "image": {
+        "file": "impact-drake.png",
+        "wikiFile": "BladeImpactDrake.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -1787,6 +1987,11 @@
         "atk": 17,
         "def": 55,
         "sta": 28
+      },
+      "image": {
+        "file": "iron-man.png",
+        "wikiFile": "Iron_Man_4-80B.jpeg",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -1835,6 +2040,11 @@
         "atk": 25,
         "def": 60,
         "sta": 15
+      },
+      "image": {
+        "file": "knight-lance.png",
+        "wikiFile": "BladeKnightLance.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -1881,6 +2091,11 @@
         "atk": 10,
         "def": 65,
         "sta": 35
+      },
+      "image": {
+        "file": "knight-mail.png",
+        "wikiFile": "BladeKnightMail.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -1930,6 +2145,11 @@
         "atk": 20,
         "def": 55,
         "sta": 25
+      },
+      "image": {
+        "file": "knight-shield.png",
+        "wikiFile": "BladeKnightShield.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -1964,7 +2184,12 @@
         "def": 37,
         "sta": 50
       },
-      "lastVerified": "2026-08-14"
+      "lastVerified": "2026-08-14",
+      "image": {
+        "file": "kong-yell.png",
+        "wikiFile": "Yell_Kong_3-60GB.jpeg",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "leon-claw",
@@ -2012,6 +2237,11 @@
         "atk": 40,
         "def": 40,
         "sta": 20
+      },
+      "image": {
+        "file": "leon-claw.png",
+        "wikiFile": "BladeLeonClaw.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -2060,6 +2290,11 @@
         "atk": 15,
         "def": 70,
         "sta": 15
+      },
+      "image": {
+        "file": "leon-crest.png",
+        "wikiFile": "BladeLeonCrest.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -2100,6 +2335,11 @@
         "atk": 50,
         "def": 30,
         "sta": 20
+      },
+      "image": {
+        "file": "lightning-l-drago-rapid-hit-type.png",
+        "wikiFile": "BladeLightningL-Drago(Rapid-HitType).png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -2140,6 +2380,11 @@
         "atk": 55,
         "def": 25,
         "sta": 20
+      },
+      "image": {
+        "file": "lightning-l-drago-upper-type.png",
+        "wikiFile": "BladeLightningL-Drago(UpperType).png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -2181,6 +2426,11 @@
         "atk": 23,
         "def": 55,
         "sta": 22
+      },
+      "image": {
+        "file": "luke-skywalker.png",
+        "wikiFile": "Luke_Skywalker_4-80B.jpeg",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -2228,6 +2478,11 @@
         "atk": 33,
         "def": 35,
         "sta": 32
+      },
+      "image": {
+        "file": "mammoth-tusk.png",
+        "wikiFile": "Tusk_Mammoth_3-60T.jpeg",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -2269,6 +2524,11 @@
         "atk": 27,
         "def": 35,
         "sta": 38
+      },
+      "image": {
+        "file": "megatron.png",
+        "wikiFile": "Megatron_4-80B.jpeg",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -2319,6 +2579,11 @@
         "atk": 75,
         "def": 15,
         "sta": 35
+      },
+      "image": {
+        "file": "meteor-dragoon.png",
+        "wikiFile": "BladeMeteorDragoon.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -2348,6 +2613,11 @@
         "atk": 12,
         "def": 33,
         "sta": 55
+      },
+      "image": {
+        "file": "miles-morales.png",
+        "wikiFile": "Miles_Morales_1-60GN.jpeg",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -2389,6 +2659,11 @@
         "atk": 32,
         "def": 35,
         "sta": 33
+      },
+      "image": {
+        "file": "moff-gideon.png",
+        "wikiFile": "Moff_Gideon_3-80N.jpeg",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -2435,6 +2710,11 @@
         "atk": 30,
         "def": 60,
         "sta": 20
+      },
+      "image": {
+        "file": "mummy-curse.png",
+        "wikiFile": "BladeMummyCurse.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -2464,6 +2744,11 @@
         "atk": 23,
         "def": 60,
         "sta": 17
+      },
+      "image": {
+        "file": "obi-wan-kenobi.png",
+        "wikiFile": "Obi-Wan_Kenobi_4-60P.jpeg",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -2505,6 +2790,11 @@
         "atk": 60,
         "def": 27,
         "sta": 13
+      },
+      "image": {
+        "file": "optimus-primal.png",
+        "wikiFile": "Optimus_Primal_3-60F.jpeg",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -2546,6 +2836,11 @@
         "atk": 22,
         "def": 55,
         "sta": 23
+      },
+      "image": {
+        "file": "optimus-prime.png",
+        "wikiFile": "Optimus_Prime_4-60P.jpeg",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -2592,7 +2887,12 @@
       },
       "lastVerified": "2026-08-12",
       "status": "verified",
-      "type": "attack"
+      "type": "attack",
+      "image": {
+        "file": "orochi-cluster.png",
+        "wikiFile": "BladeOrochiCluster.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "phoenix-feather",
@@ -2639,6 +2939,11 @@
         "atk": 50,
         "def": 20,
         "sta": 30
+      },
+      "image": {
+        "file": "phoenix-feather.png",
+        "wikiFile": "BladePhoenixFeather.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -2687,6 +2992,11 @@
         "atk": 10,
         "def": 35,
         "sta": 55
+      },
+      "image": {
+        "file": "phoenix-rudder.png",
+        "wikiFile": "BladePhoenixRudder.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -2740,6 +3050,11 @@
         "atk": 60,
         "def": 25,
         "sta": 15
+      },
+      "image": {
+        "file": "phoenix-wing.png",
+        "wikiFile": "BladePhoenixWing.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -2793,6 +3108,11 @@
         "atk": 27,
         "def": 23,
         "sta": 50
+      },
+      "image": {
+        "file": "ptera-swing.png",
+        "wikiFile": "Talon_Ptera_3-80B.jpeg",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -2833,7 +3153,12 @@
         "revid": 638657
       },
       "lastVerified": "2026-06-15",
-      "status": "unverified"
+      "status": "unverified",
+      "image": {
+        "file": "rampart-aegis.png",
+        "wikiFile": "RatchetBladeRampartAegis.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "red-hulk",
@@ -2862,6 +3187,11 @@
         "atk": 65,
         "def": 27,
         "sta": 8
+      },
+      "image": {
+        "file": "red-hulk.png",
+        "wikiFile": "Red_Hulk_1-80R.jpeg",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -2908,6 +3238,11 @@
         "atk": 20,
         "def": 50,
         "sta": 30
+      },
+      "image": {
+        "file": "rhino-horn.png",
+        "wikiFile": "BladeRhinoHorn.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -2948,6 +3283,11 @@
         "atk": 30,
         "def": 55,
         "sta": 15
+      },
+      "image": {
+        "file": "rock-leone.png",
+        "wikiFile": "BladeRockLeone.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -2993,6 +3333,11 @@
         "atk": 40,
         "def": 30,
         "sta": 30
+      },
+      "image": {
+        "file": "samurai-calibur.png",
+        "wikiFile": "BladeSamuraiCalibur.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -3046,6 +3391,11 @@
         "atk": 65,
         "def": 20,
         "sta": 25
+      },
+      "image": {
+        "file": "samurai-saber.png",
+        "wikiFile": "BladeSamuraiSaber.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -3092,6 +3442,11 @@
         "atk": 40,
         "def": 37,
         "sta": 23
+      },
+      "image": {
+        "file": "samurai-steel.png",
+        "wikiFile": "Steel_Samurai_4-80T.jpeg",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -3142,6 +3497,11 @@
         "atk": 25,
         "def": 55,
         "sta": 30
+      },
+      "image": {
+        "file": "scorpio-spear.png",
+        "wikiFile": "BladeScorpioSpear.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -3164,7 +3524,12 @@
       },
       "lastVerified": "2026-08-14",
       "status": "verified",
-      "type": "defense"
+      "type": "defense",
+      "image": {
+        "file": "seize-jaguar.png",
+        "wikiFile": "RatchetBladeSeizeJaguar.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "shark-edge",
@@ -3221,6 +3586,11 @@
         "atk": 60,
         "def": 25,
         "sta": 15
+      },
+      "image": {
+        "file": "shark-edge.png",
+        "wikiFile": "BladeSharkEdge.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -3268,6 +3638,11 @@
         "atk": 20,
         "def": 25,
         "sta": 55
+      },
+      "image": {
+        "file": "shark-gill.png",
+        "wikiFile": "Gill_Shark_4-70O.jpeg",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -3319,6 +3694,11 @@
         "atk": 70,
         "def": 15,
         "sta": 15
+      },
+      "image": {
+        "file": "shark-scale.png",
+        "wikiFile": "BladeSharkScale.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -3346,6 +3726,11 @@
         "atk": 15,
         "def": 35,
         "sta": 50
+      },
+      "image": {
+        "file": "shatter-horus.png",
+        "wikiFile": "BladeShatterHorus.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -3388,6 +3773,11 @@
         "atk": 25,
         "def": 40,
         "sta": 35
+      },
+      "image": {
+        "file": "shelter-drake.png",
+        "wikiFile": "BladeShelterDrake.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -3434,7 +3824,12 @@
         "def": 50,
         "sta": 27
       },
-      "lastVerified": "2026-08-14"
+      "lastVerified": "2026-08-14",
+      "image": {
+        "file": "shinobi-knife.png",
+        "wikiFile": "BladeKnifeShinobi.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "shinobi-shadow",
@@ -3481,6 +3876,11 @@
         "atk": 10,
         "def": 70,
         "sta": 20
+      },
+      "image": {
+        "file": "shinobi-shadow.png",
+        "wikiFile": "BladeShinobiShadow.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -3510,6 +3910,11 @@
         "atk": 32,
         "def": 18,
         "sta": 50
+      },
+      "image": {
+        "file": "shockwave.png",
+        "wikiFile": "Shockwave_5-80O.jpeg",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -3557,6 +3962,11 @@
         "atk": 15,
         "def": 30,
         "sta": 65
+      },
+      "image": {
+        "file": "silver-wolf.png",
+        "wikiFile": "BladeSilverWolf.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -3606,6 +4016,11 @@
         "atk": 35,
         "def": 55,
         "sta": 10
+      },
+      "image": {
+        "file": "sphinx-cowl.png",
+        "wikiFile": "BladeSphinxCowl.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -3648,6 +4063,11 @@
         "atk": 33,
         "def": 17,
         "sta": 50
+      },
+      "image": {
+        "file": "spider-man.png",
+        "wikiFile": "BladeSpiderMan.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -3689,6 +4109,11 @@
         "atk": 18,
         "def": 27,
         "sta": 55
+      },
+      "image": {
+        "file": "starscream.png",
+        "wikiFile": "Starscream_3-80N.jpeg",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -3730,7 +4155,12 @@
         "def": 15,
         "sta": 30
       },
-      "lastVerified": "2026-08-14"
+      "lastVerified": "2026-08-14",
+      "image": {
+        "file": "storm-pegasis.png",
+        "wikiFile": "StormPegasis_3-70RA.jpeg",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "stormspriggan",
@@ -3780,6 +4210,11 @@
         "atk": 30,
         "def": 40,
         "sta": 30
+      },
+      "image": {
+        "file": "stormspriggan.png",
+        "wikiFile": "BladeStormSpriggan.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -3809,6 +4244,11 @@
         "atk": 18,
         "def": 50,
         "sta": 32
+      },
+      "image": {
+        "file": "stormtrooper.png",
+        "wikiFile": "Stormtrooper_5-70B.jpeg",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -3836,6 +4276,11 @@
         "atk": 13,
         "def": 70,
         "sta": 17
+      },
+      "image": {
+        "file": "stun-medusa.png",
+        "wikiFile": "Stun_Medusa_9-60GB.jpeg",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -3860,7 +4305,12 @@
         "revid": 646218
       },
       "status": "verified",
-      "lastVerified": "2026-08-14"
+      "lastVerified": "2026-08-14",
+      "image": {
+        "file": "suppress-superion.png",
+        "wikiFile": "BladeSiegSuperion.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "tackle-goat",
@@ -3888,7 +4338,12 @@
         "def": 65,
         "sta": 22
       },
-      "lastVerified": "2026-08-14"
+      "lastVerified": "2026-08-14",
+      "image": {
+        "file": "tackle-goat.png",
+        "wikiFile": "Tackle_Goat_2-70N.jpeg",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "thanos",
@@ -3929,6 +4384,11 @@
         "atk": 22,
         "def": 60,
         "sta": 18
+      },
+      "image": {
+        "file": "thanos.png",
+        "wikiFile": "Thanos_4-60P.jpeg",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -3970,6 +4430,11 @@
         "atk": 40,
         "def": 43,
         "sta": 17
+      },
+      "image": {
+        "file": "the-mandalorian.png",
+        "wikiFile": "The_Mandalorian_3-60F.jpeg",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -4021,6 +4486,11 @@
         "atk": 20,
         "def": 65,
         "sta": 15
+      },
+      "image": {
+        "file": "tricera-press.png",
+        "wikiFile": "BladeTriceraPress.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -4073,7 +4543,12 @@
         "def": 55,
         "sta": 13
       },
-      "lastVerified": "2026-08-14"
+      "lastVerified": "2026-08-14",
+      "image": {
+        "file": "tricera-spiky.png",
+        "wikiFile": "BladeTriceraSpiky.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "trypio",
@@ -4090,7 +4565,12 @@
       "firstReleaseSet": "",
       "products": [],
       "source": null,
-      "status": "unverified"
+      "status": "unverified",
+      "image": {
+        "file": "trypio.png",
+        "wikiFile": "Trypio_3-60N.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "tyranno-beat",
@@ -4140,6 +4620,11 @@
         "atk": 65,
         "def": 30,
         "sta": 5
+      },
+      "image": {
+        "file": "tyranno-beat.png",
+        "wikiFile": "BladeTyrannoBeat.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -4188,6 +4673,11 @@
         "atk": 60,
         "def": 28,
         "sta": 12
+      },
+      "image": {
+        "file": "tyranno-roar.png",
+        "wikiFile": "Roar_Tyranno_9-60GF.jpeg",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -4237,6 +4727,11 @@
         "atk": 35,
         "def": 35,
         "sta": 30
+      },
+      "image": {
+        "file": "unicorn-sting.png",
+        "wikiFile": "BladeUnicornSting.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -4259,7 +4754,12 @@
       },
       "lastVerified": "2026-07-31",
       "status": "verified",
-      "type": "stamina"
+      "type": "stamina",
+      "image": {
+        "file": "valor-bison.png",
+        "wikiFile": "RatchetBladeValorBison.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "venom",
@@ -4300,6 +4800,11 @@
         "atk": 55,
         "def": 22,
         "sta": 23
+      },
+      "image": {
+        "file": "venom.png",
+        "wikiFile": "Venom_3-80N.jpeg",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -4329,7 +4834,12 @@
         "def": 20,
         "sta": 25
       },
-      "lastVerified": "2026-08-14"
+      "lastVerified": "2026-08-14",
+      "image": {
+        "file": "victory-valkyrie.png",
+        "wikiFile": "VictoryValkyrie_2-60RA.jpeg",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "viking-hack",
@@ -4374,6 +4884,11 @@
         "atk": 47,
         "def": 28,
         "sta": 25
+      },
+      "image": {
+        "file": "viking-hack.png",
+        "wikiFile": "BladeHackViking.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -4427,6 +4942,11 @@
         "atk": 30,
         "def": 20,
         "sta": 50
+      },
+      "image": {
+        "file": "viper-tail.png",
+        "wikiFile": "BladeViperTail.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -4476,6 +4996,11 @@
         "atk": 45,
         "def": 30,
         "sta": 25
+      },
+      "image": {
+        "file": "weiss-tiger.png",
+        "wikiFile": "BladeWeissTiger.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -4528,6 +5053,11 @@
         "atk": 45,
         "def": 35,
         "sta": 20
+      },
+      "image": {
+        "file": "whale-wave.png",
+        "wikiFile": "BladeWhaleWave.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -4585,6 +5115,11 @@
         "atk": 15,
         "def": 30,
         "sta": 55
+      },
+      "image": {
+        "file": "wizard-arrow.png",
+        "wikiFile": "BladeWizardArrow.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -4638,6 +5173,11 @@
         "atk": 15,
         "def": 25,
         "sta": 60
+      },
+      "image": {
+        "file": "wizard-rod.png",
+        "wikiFile": "BladeWizardRod.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -4691,6 +5231,11 @@
         "atk": 10,
         "def": 40,
         "sta": 50
+      },
+      "image": {
+        "file": "wyvern-gale.png",
+        "wikiFile": "BladeWyvernGale.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -4731,6 +5276,11 @@
         "atk": 65,
         "def": 25,
         "sta": 10
+      },
+      "image": {
+        "file": "xeno-xcalibur.png",
+        "wikiFile": "BladeXenoXcalibur.png",
+        "fetchedAt": "2026-08-19"
       }
     }
   ],
@@ -4770,7 +5320,12 @@
         "CX-16",
         "CX-00"
       ],
-      "firstReleaseSet": "CX-13"
+      "firstReleaseSet": "CX-13",
+      "image": {
+        "file": "bahamut.png",
+        "wikiFile": "LockChipBahamut.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "brachio",
@@ -4810,7 +5365,12 @@
         "revid": 645611
       },
       "lastVerified": "2026-08-14",
-      "status": "verified"
+      "status": "verified",
+      "image": {
+        "file": "brachio.png",
+        "wikiFile": "LockChipBrachio.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "cerberus",
@@ -4846,7 +5406,12 @@
         "revid": 636788
       },
       "lastVerified": "2026-08-14",
-      "status": "verified"
+      "status": "verified",
+      "image": {
+        "file": "cerberus.png",
+        "wikiFile": "LockChipCerberus.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "croco",
@@ -4886,7 +5451,12 @@
         "revid": 646059
       },
       "status": "verified",
-      "lastVerified": "2026-08-14"
+      "lastVerified": "2026-08-14",
+      "image": {
+        "file": "croco.png",
+        "wikiFile": "LockChipCroco.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "drake",
@@ -4920,7 +5490,12 @@
         "revid": 643142
       },
       "lastVerified": "2026-08-14",
-      "status": "verified"
+      "status": "verified",
+      "image": {
+        "file": "drake.png",
+        "wikiFile": "LockChipDrake.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "dran",
@@ -4955,7 +5530,12 @@
         "CX-01",
         "G1677"
       ],
-      "firstReleaseSet": "DranBrave S6-60V"
+      "firstReleaseSet": "DranBrave S6-60V",
+      "image": {
+        "file": "dran.png",
+        "wikiFile": "LockChipDran.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "emperor",
@@ -4990,7 +5570,12 @@
         "CX-11",
         "G3028"
       ],
-      "firstReleaseSet": "EmperorMight Deck Set"
+      "firstReleaseSet": "EmperorMight Deck Set",
+      "image": {
+        "file": "emperor.png",
+        "wikiFile": "LockChipEmperor.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "enlil",
@@ -5011,7 +5596,12 @@
         "revid": 643408
       },
       "lastVerified": "2026-07-12",
-      "status": "verified"
+      "status": "verified",
+      "image": {
+        "file": "enlil.png",
+        "wikiFile": "Hurricane_Enlil_IS_7-55T_(Angled_View).jpeg",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "eva",
@@ -5040,7 +5630,12 @@
         "revid": 634458
       },
       "lastVerified": "2026-08-14",
-      "status": "verified"
+      "status": "verified",
+      "image": {
+        "file": "eva.png",
+        "wikiFile": "LockChipEvaUnit-00.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "fox",
@@ -5075,7 +5670,12 @@
         "CX-06",
         "G1681"
       ],
-      "firstReleaseSet": "Random Booster FoxBrush Select"
+      "firstReleaseSet": "Random Booster FoxBrush Select",
+      "image": {
+        "file": "fox.png",
+        "wikiFile": "LockChipFox.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "hells",
@@ -5116,7 +5716,12 @@
         "CX-05",
         "G1678"
       ],
-      "firstReleaseSet": "SharkScale Deck Set"
+      "firstReleaseSet": "SharkScale Deck Set",
+      "image": {
+        "file": "hells.png",
+        "wikiFile": "LockChipHells.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "hornet",
@@ -5139,7 +5744,12 @@
         "lastVerified": "2026-07-28"
       },
       "lastVerified": "2026-06-29",
-      "status": "verified"
+      "status": "verified",
+      "image": {
+        "file": "hornet.png",
+        "wikiFile": "LockChipHornet.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "knight",
@@ -5174,7 +5784,12 @@
         "CX-14",
         "G4563"
       ],
-      "firstReleaseSet": "CX-14"
+      "firstReleaseSet": "CX-14",
+      "image": {
+        "file": "knight.png",
+        "wikiFile": "LockChipKnight.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "kraken",
@@ -5210,7 +5825,12 @@
         "lastVerified": "2026-07-28"
       },
       "lastVerified": "2026-08-14",
-      "status": "verified"
+      "status": "verified",
+      "image": {
+        "file": "kraken.png",
+        "wikiFile": "LockChipKraken.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "leon",
@@ -5250,7 +5870,12 @@
         "revid": 624993
       },
       "lastVerified": "2026-08-14",
-      "status": "verified"
+      "status": "verified",
+      "image": {
+        "file": "leon.png",
+        "wikiFile": "LockChipLeon.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "pegasus",
@@ -5286,7 +5911,12 @@
         "UX-18",
         "G2350"
       ],
-      "firstReleaseSet": "PegasusBlast ATr"
+      "firstReleaseSet": "PegasusBlast ATr",
+      "image": {
+        "file": "pegasus.png",
+        "wikiFile": "LockChipPegasus.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "perseus",
@@ -5321,7 +5951,12 @@
         "CX-03",
         "G1680"
       ],
-      "firstReleaseSet": "PerseusDark B6-80W"
+      "firstReleaseSet": "PerseusDark B6-80W",
+      "image": {
+        "file": "perseus.png",
+        "wikiFile": "LockChipPerseus.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "phoenix",
@@ -5355,7 +5990,12 @@
       "products": [
         "CX-12"
       ],
-      "firstReleaseSet": "CX-12"
+      "firstReleaseSet": "CX-12",
+      "image": {
+        "file": "phoenix.png",
+        "wikiFile": "LockChipPhoenix.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "ragna",
@@ -5390,7 +6030,12 @@
         "CX-15",
         "G4562"
       ],
-      "firstReleaseSet": "CX-15"
+      "firstReleaseSet": "CX-15",
+      "image": {
+        "file": "ragna.png",
+        "wikiFile": "LockChipRagna.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "rhino",
@@ -5425,7 +6070,12 @@
         "CX-05",
         "G2746"
       ],
-      "firstReleaseSet": "Random Booster Vol. 6"
+      "firstReleaseSet": "Random Booster Vol. 6",
+      "image": {
+        "file": "rhino.png",
+        "wikiFile": "LockChipRhino.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "sol",
@@ -5460,7 +6110,12 @@
         "CX-09",
         "UX-18"
       ],
-      "firstReleaseSet": "SolEclipse D5-70TK"
+      "firstReleaseSet": "SolEclipse D5-70TK",
+      "image": {
+        "file": "sol.png",
+        "wikiFile": "LockChipSol.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "stag",
@@ -5500,7 +6155,12 @@
         "revid": 641745
       },
       "lastVerified": "2026-08-14",
-      "status": "verified"
+      "status": "verified",
+      "image": {
+        "file": "stag.png",
+        "wikiFile": "LockChipStag.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "tiga",
@@ -5564,7 +6224,12 @@
         "revid": 646181
       },
       "lastVerified": "2026-08-14",
-      "status": "verified"
+      "status": "verified",
+      "image": {
+        "file": "unicorn.png",
+        "wikiFile": "LockChipUnicorn.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "valkyrie",
@@ -5598,7 +6263,12 @@
       "products": [
         "CX-00"
       ],
-      "firstReleaseSet": "CX-00"
+      "firstReleaseSet": "CX-00",
+      "image": {
+        "file": "valkyrie.png",
+        "wikiFile": "LockChipValkyrie.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "whale",
@@ -5632,7 +6302,12 @@
       "products": [
         "CX-08"
       ],
-      "firstReleaseSet": "Random Booster Vol. 7"
+      "firstReleaseSet": "Random Booster Vol. 7",
+      "image": {
+        "file": "whale.png",
+        "wikiFile": "LockChipWhale.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "wizard",
@@ -5667,7 +6342,12 @@
         "CX-02",
         "G1679"
       ],
-      "firstReleaseSet": "WizardArc R4-55LO"
+      "firstReleaseSet": "WizardArc R4-55LO",
+      "image": {
+        "file": "wizard.png",
+        "wikiFile": "LockChipWizard.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "wolf",
@@ -5702,7 +6382,12 @@
         "CX-10",
         "BX-50"
       ],
-      "firstReleaseSet": "CX-10"
+      "firstReleaseSet": "CX-10",
+      "image": {
+        "file": "wolf.png",
+        "wikiFile": "LockChipWolf.png",
+        "fetchedAt": "2026-08-19"
+      }
     }
   ],
   "mainBlades": [
@@ -5750,6 +6435,11 @@
         "atk": 8,
         "def": 15,
         "sta": 37
+      },
+      "image": {
+        "file": "antler.png",
+        "wikiFile": "Antler_Stag_B_2-60HN.jpeg",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -5793,6 +6483,11 @@
         "atk": 10,
         "def": 10,
         "sta": 40
+      },
+      "image": {
+        "file": "arc.png",
+        "wikiFile": "MainBladeArc.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -5833,6 +6528,11 @@
         "atk": 50,
         "def": 10,
         "sta": 15
+      },
+      "image": {
+        "file": "blast.png",
+        "wikiFile": "MainBladeBlast.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -5871,7 +6571,12 @@
       },
       "lastVerified": "2026-08-14",
       "status": "verified",
-      "type": "attack"
+      "type": "attack",
+      "image": {
+        "file": "blitz.png",
+        "wikiFile": "BahamutBlitz_BK1-50I.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "brave",
@@ -5918,6 +6623,11 @@
         "atk": 40,
         "def": 10,
         "sta": 10
+      },
+      "image": {
+        "file": "brave.png",
+        "wikiFile": "MainBladeBrave.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -5961,6 +6671,11 @@
         "atk": 40,
         "def": 15,
         "sta": 5
+      },
+      "image": {
+        "file": "brush.png",
+        "wikiFile": "MainBladeBrush.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -6003,7 +6718,12 @@
         "def": 40,
         "sta": 10
       },
-      "type": "defense"
+      "type": "defense",
+      "image": {
+        "file": "dark.png",
+        "wikiFile": "MainBladeDark.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "delta",
@@ -6039,7 +6759,12 @@
       },
       "lastVerified": "2026-08-14",
       "status": "verified",
-      "type": "balance"
+      "type": "balance",
+      "image": {
+        "file": "delta.png",
+        "wikiFile": "UnicornDelta_PO3-60GU.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "eclipse",
@@ -6073,7 +6798,12 @@
       "products": [
         "CX-09"
       ],
-      "firstReleaseSet": "SolEclipse D5-70TK"
+      "firstReleaseSet": "SolEclipse D5-70TK",
+      "image": {
+        "file": "eclipse.png",
+        "wikiFile": "MainBladeEclipse_(Upper_Mode).png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "fang",
@@ -6114,7 +6844,12 @@
         "def": 10,
         "sta": 15
       },
-      "type": "attack"
+      "type": "attack",
+      "image": {
+        "file": "fang.png",
+        "wikiFile": "MainBladeFang.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "flame",
@@ -6156,7 +6891,12 @@
         "def": 15,
         "sta": 40
       },
-      "type": "stamina"
+      "type": "stamina",
+      "image": {
+        "file": "flame.png",
+        "wikiFile": "MainBladeFlame.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "flare",
@@ -6200,6 +6940,11 @@
         "atk": 25,
         "def": 40,
         "sta": 10
+      },
+      "image": {
+        "file": "flare.png",
+        "wikiFile": "MainBladeFlare.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -6229,6 +6974,11 @@
         "atk": 24,
         "def": 12,
         "sta": 24
+      },
+      "image": {
+        "file": "fort.png",
+        "wikiFile": "MainBladeFort.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -6270,7 +7020,12 @@
       },
       "lastVerified": "2026-08-14",
       "status": "verified",
-      "type": "defense"
+      "type": "defense",
+      "image": {
+        "file": "fortress.png",
+        "wikiFile": "KnightFortress_GV8-70UN.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "hunt",
@@ -6309,6 +7064,11 @@
         "atk": 20,
         "def": 10,
         "sta": 30
+      },
+      "image": {
+        "file": "hunt.png",
+        "wikiFile": "MainBladeHunt.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -6330,7 +7090,12 @@
         "revid": 643408
       },
       "lastVerified": "2026-07-12",
-      "status": "verified"
+      "status": "verified",
+      "image": {
+        "file": "hurricane.png",
+        "wikiFile": "Hurricane_Enlil_IS_7-55T_(Angled_View).jpeg",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "might",
@@ -6370,6 +7135,11 @@
         "atk": 25,
         "def": 25,
         "sta": 25
+      },
+      "image": {
+        "file": "might.png",
+        "wikiFile": "MainBladeMight.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -6407,7 +7177,12 @@
       },
       "lastVerified": "2026-08-14",
       "status": "verified",
-      "type": "stamina"
+      "type": "stamina",
+      "image": {
+        "file": "rage.png",
+        "wikiFile": "RagnaRage_FE4-55Y.jpeg",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "reaper",
@@ -6450,7 +7225,12 @@
         "def": 10,
         "sta": 25
       },
-      "type": "balance"
+      "type": "balance",
+      "image": {
+        "file": "reaper.png",
+        "wikiFile": "MainBladeReaper.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "tread",
@@ -6485,7 +7265,12 @@
         "revid": 646068
       },
       "status": "verified",
-      "lastVerified": "2026-08-14"
+      "lastVerified": "2026-08-14",
+      "image": {
+        "file": "tread.png",
+        "wikiFile": "MetalBladeTread.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "volt",
@@ -6513,6 +7298,11 @@
         "atk": 45,
         "def": 15,
         "sta": 15
+      },
+      "image": {
+        "file": "volt.png",
+        "wikiFile": "MainBladeVolt.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -6553,7 +7343,12 @@
         "revid": 645611
       },
       "lastVerified": "2026-08-14",
-      "status": "verified"
+      "status": "verified",
+      "image": {
+        "file": "whip.png",
+        "wikiFile": "BrachioWhip_OW5-70Nr_(CX-18_01).png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "wriggle",
@@ -6595,6 +7390,11 @@
         "atk": 8,
         "def": 12,
         "sta": 40
+      },
+      "image": {
+        "file": "wriggle.png",
+        "wikiFile": "MainBladeWriggle.png",
+        "fetchedAt": "2026-08-19"
       }
     }
   ],
@@ -6634,7 +7434,12 @@
         "CX-00",
         "G2350"
       ],
-      "firstReleaseSet": "PegasusBlast ATr"
+      "firstReleaseSet": "PegasusBlast ATr",
+      "image": {
+        "file": "assault.png",
+        "wikiFile": "AssistBladeAssault.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "bumper",
@@ -6674,7 +7479,12 @@
         "BX-50"
       ],
       "firstReleaseSet": "PerseusDark B6-80W",
-      "type": "defense"
+      "type": "defense",
+      "image": {
+        "file": "bumper.png",
+        "wikiFile": "AssistBladeBumper.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "charge",
@@ -6712,7 +7522,12 @@
         "G2746"
       ],
       "firstReleaseSet": "Random Booster Vol. 8",
-      "type": "defense"
+      "type": "defense",
+      "image": {
+        "file": "charge.png",
+        "wikiFile": "AssistBladeCharge.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "dual",
@@ -6748,7 +7563,12 @@
         "CX-09",
         "BX-50"
       ],
-      "firstReleaseSet": "SolEclipse D5-70TK"
+      "firstReleaseSet": "SolEclipse D5-70TK",
+      "image": {
+        "file": "dual.png",
+        "wikiFile": "AssistBladeDual_(Upper_Mode).png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "erase",
@@ -6785,7 +7605,12 @@
       "lastVerified": "2026-08-14",
       "status": "verified",
       "shortName": "E",
-      "type": "stamina"
+      "type": "stamina",
+      "image": {
+        "file": "erase.png",
+        "wikiFile": "AssistBladeErase.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "free",
@@ -6820,7 +7645,12 @@
       "products": [
         "CX-10"
       ],
-      "firstReleaseSet": "CX-10"
+      "firstReleaseSet": "CX-10",
+      "image": {
+        "file": "free.png",
+        "wikiFile": "AssistBladeFree.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "gravity",
@@ -6861,6 +7691,11 @@
         "atk": 37,
         "def": 9,
         "sta": 4
+      },
+      "image": {
+        "file": "gravity.png",
+        "wikiFile": "AssistBladeGravity.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -6897,7 +7732,12 @@
         "CX-11",
         "G3028"
       ],
-      "firstReleaseSet": "EmperorMight Deck Set"
+      "firstReleaseSet": "EmperorMight Deck Set",
+      "image": {
+        "file": "heavy.png",
+        "wikiFile": "AssistBladeHeavy.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "jaggy",
@@ -6935,7 +7775,12 @@
         "G1681"
       ],
       "firstReleaseSet": "SharkScale Deck Set",
-      "type": "attack"
+      "type": "attack",
+      "image": {
+        "file": "jaggy.png",
+        "wikiFile": "AssistBladeJaggy.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "knuckle",
@@ -6974,7 +7819,12 @@
       "lastVerified": "2026-08-14",
       "status": "verified",
       "shortName": "K",
-      "type": "attack"
+      "type": "attack",
+      "image": {
+        "file": "knuckle.png",
+        "wikiFile": "AssistBladeKnuckle.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "massive",
@@ -7010,7 +7860,12 @@
         "UX-18",
         "CX-08"
       ],
-      "firstReleaseSet": "Random Booster Vol. 8"
+      "firstReleaseSet": "Random Booster Vol. 8",
+      "image": {
+        "file": "massive.png",
+        "wikiFile": "AssistBladeMassive.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "odd",
@@ -7047,7 +7902,12 @@
       "lastVerified": "2026-08-14",
       "status": "verified",
       "shortName": "O",
-      "type": "balance"
+      "type": "balance",
+      "image": {
+        "file": "odd.png",
+        "wikiFile": "AssistBladeOdd.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "quell",
@@ -7083,7 +7943,12 @@
       },
       "lastVerified": "2026-08-14",
       "status": "verified",
-      "type": "defense"
+      "type": "defense",
+      "image": {
+        "file": "quell.png",
+        "wikiFile": "AssistBladeQuell.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "round",
@@ -7122,7 +7987,12 @@
         "CX-00"
       ],
       "firstReleaseSet": "WizardArc R4-55LO",
-      "type": "stamina"
+      "type": "stamina",
+      "image": {
+        "file": "round.png",
+        "wikiFile": "AssistBladeRound.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "slash",
@@ -7162,7 +8032,12 @@
         "G1677"
       ],
       "firstReleaseSet": "DranBrave S6-60V",
-      "type": "attack"
+      "type": "attack",
+      "image": {
+        "file": "slash.png",
+        "wikiFile": "AssistBladeSlash.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "turn",
@@ -7201,7 +8076,12 @@
         "G2748"
       ],
       "firstReleaseSet": "Random Booster Vol. 6",
-      "type": "balance"
+      "type": "balance",
+      "image": {
+        "file": "turn.png",
+        "wikiFile": "AssistBladeTurn.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "vertical",
@@ -7238,7 +8118,12 @@
       "lastVerified": "2026-08-14",
       "status": "verified",
       "shortName": "V",
-      "type": "defense"
+      "type": "defense",
+      "image": {
+        "file": "vertical.png",
+        "wikiFile": "AssistBladeVertical.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "wheel",
@@ -7282,7 +8167,12 @@
         "G4566"
       ],
       "firstReleaseSet": "Random Booster Vol. 7",
-      "type": "stamina"
+      "type": "stamina",
+      "image": {
+        "file": "wheel.png",
+        "wikiFile": "AssistBladeWheel.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "zillion",
@@ -7317,7 +8207,12 @@
       "products": [
         "CX-12"
       ],
-      "firstReleaseSet": "CX-12"
+      "firstReleaseSet": "CX-12",
+      "image": {
+        "file": "zillion.png",
+        "wikiFile": "AssistBladeZillion.png",
+        "fetchedAt": "2026-08-19"
+      }
     }
   ],
   "overBlades": [
@@ -7356,7 +8251,12 @@
         "revid": 642362
       },
       "lastVerified": "2026-08-14",
-      "status": "verified"
+      "status": "verified",
+      "image": {
+        "file": "break.png",
+        "wikiFile": "OverBladeBreak.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "flow",
@@ -7398,6 +8298,11 @@
         "atk": 5,
         "def": 5,
         "sta": 10
+      },
+      "image": {
+        "file": "flow.png",
+        "wikiFile": "OverBladeFlow.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -7434,7 +8339,12 @@
         "revid": 642229
       },
       "lastVerified": "2026-08-14",
-      "status": "verified"
+      "status": "verified",
+      "image": {
+        "file": "guard.png",
+        "wikiFile": "OverBladeGuard.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "i",
@@ -7492,7 +8402,12 @@
         "revid": 642956
       },
       "lastVerified": "2026-08-14",
-      "status": "verified"
+      "status": "verified",
+      "image": {
+        "file": "outer.png",
+        "wikiFile": "OverBladeOuter.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "peak",
@@ -7528,7 +8443,12 @@
         "revid": 644449
       },
       "lastVerified": "2026-08-14",
-      "status": "verified"
+      "status": "verified",
+      "image": {
+        "file": "peak.png",
+        "wikiFile": "OverBladePeak.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "tough",
@@ -7564,7 +8484,12 @@
       },
       "lastVerified": "2026-08-14",
       "status": "verified",
-      "type": "defense"
+      "type": "defense",
+      "image": {
+        "file": "tough.png",
+        "wikiFile": "OverBladeTough.png",
+        "fetchedAt": "2026-08-19"
+      }
     }
   ],
   "ratchets": [
@@ -7605,6 +8530,11 @@
         "atk": 3,
         "def": 14,
         "sta": 13
+      },
+      "image": {
+        "file": "0-60.png",
+        "wikiFile": "Ratchet0-60.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -7641,7 +8571,12 @@
         "revid": 644111
       },
       "lastVerified": "2026-08-14",
-      "status": "verified"
+      "status": "verified",
+      "image": {
+        "file": "0-70.png",
+        "wikiFile": "Ratchet0-70.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "0-80",
@@ -7688,6 +8623,11 @@
         "atk": 3,
         "def": 12,
         "sta": 15
+      },
+      "image": {
+        "file": "0-80.png",
+        "wikiFile": "Ratchet0-80.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -7730,6 +8670,11 @@
         "atk": 18,
         "def": 9,
         "sta": 3
+      },
+      "image": {
+        "file": "1-50.png",
+        "wikiFile": "Ratchet1-50.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -7778,7 +8723,12 @@
         "G1676",
         "G1534"
       ],
-      "firstReleaseSet": "BX-31"
+      "firstReleaseSet": "BX-31",
+      "image": {
+        "file": "1-60.png",
+        "wikiFile": "Ratchet1-60.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "1-70",
@@ -7822,6 +8772,11 @@
         "atk": 17,
         "def": 6,
         "sta": 7
+      },
+      "image": {
+        "file": "1-70.png",
+        "wikiFile": "Ratchet1-70.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -7862,7 +8817,12 @@
         "G1539",
         "G1685"
       ],
-      "firstReleaseSet": "G1690"
+      "firstReleaseSet": "G1690",
+      "image": {
+        "file": "1-80.png",
+        "wikiFile": "Ratchet1-80.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "2-60",
@@ -7909,7 +8869,12 @@
         "G3083",
         "G1844"
       ],
-      "firstReleaseSet": "BX-34"
+      "firstReleaseSet": "BX-34",
+      "image": {
+        "file": "2-60.png",
+        "wikiFile": "Ratchet2-60.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "2-70",
@@ -7951,6 +8916,11 @@
         "atk": 10,
         "def": 12,
         "sta": 8
+      },
+      "image": {
+        "file": "2-70.png",
+        "wikiFile": "Ratchet2-70.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -7990,6 +8960,11 @@
         "atk": 10,
         "def": 11,
         "sta": 9
+      },
+      "image": {
+        "file": "2-80.png",
+        "wikiFile": "2-80_(BX-00).png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -8066,6 +9041,11 @@
         "atk": 15,
         "def": 9,
         "sta": 6
+      },
+      "image": {
+        "file": "3-60.png",
+        "wikiFile": "Ratchet3-60.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -8111,6 +9091,11 @@
         "atk": 15,
         "def": 8,
         "sta": 7
+      },
+      "image": {
+        "file": "3-70.png",
+        "wikiFile": "Ratchet3-70.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -8172,6 +9157,11 @@
         "atk": 15,
         "def": 7,
         "sta": 8
+      },
+      "image": {
+        "file": "3-80.png",
+        "wikiFile": "Ratchet3-80.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -8231,6 +9221,11 @@
         "atk": 5,
         "def": 15,
         "sta": 10
+      },
+      "image": {
+        "file": "3-85.png",
+        "wikiFile": "Ratchet3-85.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -8279,6 +9274,11 @@
         "atk": 12,
         "def": 13,
         "sta": 5
+      },
+      "image": {
+        "file": "4-50.png",
+        "wikiFile": "Ratchet4-50.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -8332,6 +9332,11 @@
         "atk": 7,
         "def": 11,
         "sta": 12
+      },
+      "image": {
+        "file": "4-55.png",
+        "wikiFile": "Ratchet4-55.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -8394,6 +9399,11 @@
         "atk": 11,
         "def": 13,
         "sta": 6
+      },
+      "image": {
+        "file": "4-60.png",
+        "wikiFile": "Ratchet4-60.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -8443,7 +9453,12 @@
         "G1542",
         "G1686"
       ],
-      "firstReleaseSet": "BX-31"
+      "firstReleaseSet": "BX-31",
+      "image": {
+        "file": "4-70.png",
+        "wikiFile": "Ratchet4-70.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "4-80",
@@ -8504,6 +9519,11 @@
         "atk": 11,
         "def": 11,
         "sta": 8
+      },
+      "image": {
+        "file": "4-80.png",
+        "wikiFile": "Ratchet4-80.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -8539,7 +9559,12 @@
         "revid": 646060
       },
       "status": "verified",
-      "lastVerified": "2026-08-14"
+      "lastVerified": "2026-08-14",
+      "image": {
+        "file": "5-50.png",
+        "wikiFile": "Ratchet5-50.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "5-60",
@@ -8592,6 +9617,11 @@
         "atk": 12,
         "def": 9,
         "sta": 9
+      },
+      "image": {
+        "file": "5-60.png",
+        "wikiFile": "Ratchet5-60.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -8639,6 +9669,11 @@
         "atk": 12,
         "def": 8,
         "sta": 10
+      },
+      "image": {
+        "file": "5-70.png",
+        "wikiFile": "Ratchet5-70.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -8691,6 +9726,11 @@
         "atk": 12,
         "def": 8,
         "sta": 10
+      },
+      "image": {
+        "file": "5-80.png",
+        "wikiFile": "Ratchet5-80.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -8733,6 +9773,11 @@
         "atk": 14,
         "def": 8,
         "sta": 8
+      },
+      "image": {
+        "file": "6-60.png",
+        "wikiFile": "Ratchet6-60.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -8772,6 +9817,11 @@
         "atk": 14,
         "def": 7,
         "sta": 9
+      },
+      "image": {
+        "file": "6-70.png",
+        "wikiFile": "Ratchet6-70.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -8812,6 +9862,11 @@
         "atk": 14,
         "def": 6,
         "sta": 10
+      },
+      "image": {
+        "file": "6-80.png",
+        "wikiFile": "Ratchet6-80.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -8859,6 +9914,11 @@
         "atk": 6,
         "def": 14,
         "sta": 10
+      },
+      "image": {
+        "file": "7-55.png",
+        "wikiFile": "Ratchet7-55.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -8903,7 +9963,12 @@
         "G1682",
         "CX-00"
       ],
-      "firstReleaseSet": "G3061"
+      "firstReleaseSet": "G3061",
+      "image": {
+        "file": "7-60.png",
+        "wikiFile": "Ratchet7-60.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "7-70",
@@ -8949,6 +10014,11 @@
         "atk": 8,
         "def": 12,
         "sta": 10
+      },
+      "image": {
+        "file": "7-70.png",
+        "wikiFile": "Ratchet7-70.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -8989,6 +10059,11 @@
         "atk": 7,
         "def": 14,
         "sta": 9
+      },
+      "image": {
+        "file": "7-80.png",
+        "wikiFile": "Ratchet7-80.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -9029,6 +10104,11 @@
         "atk": 8,
         "def": 10,
         "sta": 12
+      },
+      "image": {
+        "file": "8-70.png",
+        "wikiFile": "Ratchet8-70.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -9068,6 +10148,11 @@
         "atk": 8,
         "def": 9,
         "sta": 13
+      },
+      "image": {
+        "file": "8-80.png",
+        "wikiFile": "Ratchet8-80.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -9113,7 +10198,12 @@
         "G2951",
         "G1898"
       ],
-      "firstReleaseSet": "BX-23"
+      "firstReleaseSet": "BX-23",
+      "image": {
+        "file": "9-60.png",
+        "wikiFile": "Ratchet9-60.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "9-65",
@@ -9162,6 +10252,11 @@
         "atk": 13,
         "def": 10,
         "sta": 7
+      },
+      "image": {
+        "file": "9-65.png",
+        "wikiFile": "Ratchet9-65.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -9204,7 +10299,12 @@
         "G1681",
         "G3393"
       ],
-      "firstReleaseSet": "UX-07"
+      "firstReleaseSet": "UX-07",
+      "image": {
+        "file": "9-70.png",
+        "wikiFile": "Ratchet9-70.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "9-80",
@@ -9255,6 +10355,11 @@
         "atk": 13,
         "def": 10,
         "sta": 7
+      },
+      "image": {
+        "file": "9-80.png",
+        "wikiFile": "Ratchet9-80.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -9297,6 +10402,11 @@
         "atk": 8,
         "def": 19,
         "sta": 13
+      },
+      "image": {
+        "file": "M-85.png",
+        "wikiFile": "RatchetM-85.png",
+        "fetchedAt": "2026-08-19"
       }
     }
   ],
@@ -9345,6 +10455,11 @@
         "atk": 40,
         "def": 10,
         "sta": 10
+      },
+      "image": {
+        "file": "accel.png",
+        "wikiFile": "BitAccel.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -9399,6 +10514,11 @@
         "atk": 15,
         "def": 25,
         "sta": 50
+      },
+      "image": {
+        "file": "ball.png",
+        "wikiFile": "BitBall.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -9441,6 +10561,11 @@
         "atk": 5,
         "def": 60,
         "sta": 30
+      },
+      "image": {
+        "file": "bound-spike.png",
+        "wikiFile": "BitBoundSpike.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -9482,6 +10607,11 @@
         "atk": 40,
         "def": 5,
         "sta": 10
+      },
+      "image": {
+        "file": "cyclone.png",
+        "wikiFile": "BitCyclone.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -9538,6 +10668,11 @@
         "atk": 15,
         "def": 20,
         "sta": 55
+      },
+      "image": {
+        "file": "disk-ball.png",
+        "wikiFile": "BitDiskBall.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -9585,6 +10720,11 @@
         "atk": 5,
         "def": 55,
         "sta": 40
+      },
+      "image": {
+        "file": "disk-spike.png",
+        "wikiFile": "BitDiskSpike.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -9627,7 +10767,12 @@
         "G1533"
       ],
       "firstReleaseSet": "BX-00",
-      "shortName": "D"
+      "shortName": "D",
+      "image": {
+        "file": "dot.png",
+        "wikiFile": "BitDot.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "elevate",
@@ -9672,6 +10817,11 @@
         "atk": 30,
         "def": 15,
         "sta": 20
+      },
+      "image": {
+        "file": "elevate.png",
+        "wikiFile": "Elevate_(BX-00).png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -9725,6 +10875,11 @@
         "atk": 40,
         "def": 15,
         "sta": 10
+      },
+      "image": {
+        "file": "flat.png",
+        "wikiFile": "BitFlat.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -9771,6 +10926,11 @@
         "atk": 10,
         "def": 25,
         "sta": 60
+      },
+      "image": {
+        "file": "free-ball.png",
+        "wikiFile": "BitFreeBall.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -9815,6 +10975,11 @@
         "atk": 40,
         "def": 15,
         "sta": 15
+      },
+      "image": {
+        "file": "free-flat.png",
+        "wikiFile": "BitFreeFlat.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -9871,6 +11036,11 @@
         "atk": 10,
         "def": 15,
         "sta": 45
+      },
+      "image": {
+        "file": "gear-ball.png",
+        "wikiFile": "BitGearBall.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -9921,6 +11091,11 @@
         "atk": 50,
         "def": 5,
         "sta": 5
+      },
+      "image": {
+        "file": "gear-flat.png",
+        "wikiFile": "BitGearFlat.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -9974,6 +11149,11 @@
         "atk": 20,
         "def": 40,
         "sta": 10
+      },
+      "image": {
+        "file": "gear-needle.png",
+        "wikiFile": "BitGearNeedle.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -10026,6 +11206,11 @@
         "atk": 30,
         "def": 25,
         "sta": 15
+      },
+      "image": {
+        "file": "gear-point.png",
+        "wikiFile": "BitGearPoint.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -10073,6 +11258,11 @@
         "atk": 45,
         "def": 10,
         "sta": 10
+      },
+      "image": {
+        "file": "gear-rush.png",
+        "wikiFile": "BitGearRush.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -10115,6 +11305,11 @@
         "atk": 30,
         "def": 20,
         "sta": 20
+      },
+      "image": {
+        "file": "gear-unite.png",
+        "wikiFile": "BitGearUnite.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -10158,6 +11353,11 @@
         "atk": 20,
         "def": 10,
         "sta": 55
+      },
+      "image": {
+        "file": "glide.png",
+        "wikiFile": "BitGlide.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -10203,6 +11403,11 @@
         "atk": 30,
         "def": 35,
         "sta": 20
+      },
+      "image": {
+        "file": "hexa.png",
+        "wikiFile": "BitHexa.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -10258,6 +11463,11 @@
         "atk": 15,
         "def": 55,
         "sta": 20
+      },
+      "image": {
+        "file": "high-needle.png",
+        "wikiFile": "BitHighNeedle.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -10306,6 +11516,11 @@
         "atk": 30,
         "def": 25,
         "sta": 20
+      },
+      "image": {
+        "file": "high-taper.png",
+        "wikiFile": "BitHighTaper.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -10350,6 +11565,11 @@
         "atk": 50,
         "def": 15,
         "sta": 5
+      },
+      "image": {
+        "file": "ignition.png",
+        "wikiFile": "BitIgnition.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -10391,6 +11611,11 @@
         "atk": 35,
         "def": 10,
         "sta": 15
+      },
+      "image": {
+        "file": "jolt.png",
+        "wikiFile": "BitJolt.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -10434,6 +11659,11 @@
         "atk": 35,
         "def": 25,
         "sta": 15
+      },
+      "image": {
+        "file": "kick.png",
+        "wikiFile": "BitKick.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -10477,6 +11707,11 @@
         "atk": 40,
         "def": 5,
         "sta": 15
+      },
+      "image": {
+        "file": "level.png",
+        "wikiFile": "BitLevel.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -10535,6 +11770,11 @@
         "atk": 45,
         "def": 5,
         "sta": 10
+      },
+      "image": {
+        "file": "low-flat.png",
+        "wikiFile": "BitLowFlat.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -10583,6 +11823,11 @@
         "atk": 5,
         "def": 25,
         "sta": 55
+      },
+      "image": {
+        "file": "low-orb.png",
+        "wikiFile": "BitLowOrb.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -10665,6 +11910,11 @@
         "atk": 45,
         "def": 5,
         "sta": 15
+      },
+      "image": {
+        "file": "low-rush.png",
+        "wikiFile": "BitLowRush.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -10707,6 +11957,11 @@
         "atk": 50,
         "def": 20,
         "sta": 10
+      },
+      "image": {
+        "file": "merge.png",
+        "wikiFile": "Merge_(BX-00).png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -10755,6 +12010,11 @@
         "atk": 8,
         "def": 57,
         "sta": 30
+      },
+      "image": {
+        "file": "metal-needle.png",
+        "wikiFile": "BitMetalNeedle.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -10792,7 +12052,12 @@
       "lastVerified": "2026-08-14",
       "status": "verified",
       "type": "stamina",
-      "shortName": "Nr"
+      "shortName": "Nr",
+      "image": {
+        "file": "narrow.png",
+        "wikiFile": "BitNarrow.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "needle",
@@ -10847,6 +12112,11 @@
         "atk": 10,
         "def": 50,
         "sta": 30
+      },
+      "image": {
+        "file": "needle.png",
+        "wikiFile": "BitNeedle.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -10884,7 +12154,12 @@
       "lastVerified": "2026-08-13",
       "status": "verified",
       "shortName": "Op",
-      "integratedRatchet": true
+      "integratedRatchet": true,
+      "image": {
+        "file": "operate.png",
+        "wikiFile": "RatchetBitOperate_(Defense_Mode).png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "orb",
@@ -10941,6 +12216,11 @@
         "atk": 10,
         "def": 30,
         "sta": 50
+      },
+      "image": {
+        "file": "orb.png",
+        "wikiFile": "BitOrb.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -10990,6 +12270,11 @@
         "atk": 25,
         "def": 25,
         "sta": 25
+      },
+      "image": {
+        "file": "point.png",
+        "wikiFile": "BitPoint.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -11037,6 +12322,11 @@
         "atk": 55,
         "def": 15,
         "sta": 5
+      },
+      "image": {
+        "file": "quake.png",
+        "wikiFile": "BitQuake.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -11074,7 +12364,12 @@
         "G1844"
       ],
       "firstReleaseSet": "Customize Set U",
-      "shortName": "RA"
+      "shortName": "RA",
+      "image": {
+        "file": "rubber-accel.png",
+        "wikiFile": "BitRubberAccel.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "rush",
@@ -11121,6 +12416,11 @@
         "atk": 40,
         "def": 10,
         "sta": 20
+      },
+      "image": {
+        "file": "rush.png",
+        "wikiFile": "BitRush.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -11162,7 +12462,12 @@
         "G2759"
       ],
       "firstReleaseSet": "BX-19",
-      "shortName": "S"
+      "shortName": "S",
+      "image": {
+        "file": "spike.png",
+        "wikiFile": "BitSpike.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "taper",
@@ -11221,6 +12526,11 @@
         "atk": 35,
         "def": 20,
         "sta": 20
+      },
+      "image": {
+        "file": "taper.png",
+        "wikiFile": "BitTaper.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -11261,7 +12571,12 @@
         "CX-09"
       ],
       "firstReleaseSet": "SolEclipse D5-70TK",
-      "shortName": "TK"
+      "shortName": "TK",
+      "image": {
+        "file": "trans-kick.png",
+        "wikiFile": "BitTransKick.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "trans-point",
@@ -11309,6 +12624,11 @@
         "atk": 35,
         "def": 25,
         "sta": 25
+      },
+      "image": {
+        "file": "trans-point.png",
+        "wikiFile": "BitTransPoint.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -11347,7 +12667,12 @@
       "status": "verified",
       "type": "attack",
       "shortName": "Tr",
-      "integratedRatchet": true
+      "integratedRatchet": true,
+      "image": {
+        "file": "turbo.png",
+        "wikiFile": "RatchetBitTurbo.png",
+        "fetchedAt": "2026-08-19"
+      }
     },
     {
       "id": "under-flat",
@@ -11394,6 +12719,11 @@
         "atk": 55,
         "def": 5,
         "sta": 5
+      },
+      "image": {
+        "file": "under-flat.png",
+        "wikiFile": "BitUnderFlat.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -11442,6 +12772,11 @@
         "atk": 10,
         "def": 60,
         "sta": 20
+      },
+      "image": {
+        "file": "under-needle.png",
+        "wikiFile": "BitUnderNeedle.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -11487,6 +12822,11 @@
         "atk": 25,
         "def": 25,
         "sta": 30
+      },
+      "image": {
+        "file": "unite.png",
+        "wikiFile": "BitUnite.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -11531,6 +12871,11 @@
         "atk": 45,
         "def": 10,
         "sta": 5
+      },
+      "image": {
+        "file": "vortex.png",
+        "wikiFile": "BitVortex.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -11580,6 +12925,11 @@
         "atk": 15,
         "def": 30,
         "sta": 45
+      },
+      "image": {
+        "file": "wall-ball.png",
+        "wikiFile": "BitWallBall.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -11621,6 +12971,11 @@
         "atk": 5,
         "def": 60,
         "sta": 25
+      },
+      "image": {
+        "file": "wall-wedge.png",
+        "wikiFile": "BitWallWedge.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -11664,6 +13019,11 @@
         "atk": 5,
         "def": 55,
         "sta": 30
+      },
+      "image": {
+        "file": "wedge.png",
+        "wikiFile": "BitWedge.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -11706,6 +13066,11 @@
         "atk": 10,
         "def": 15,
         "sta": 65
+      },
+      "image": {
+        "file": "yielding.png",
+        "wikiFile": "BitYielding.png",
+        "fetchedAt": "2026-08-19"
       }
     },
     {
@@ -11749,6 +13114,11 @@
         "atk": 30,
         "def": 20,
         "sta": 15
+      },
+      "image": {
+        "file": "zap.png",
+        "wikiFile": "BitZap.png",
+        "fetchedAt": "2026-08-19"
       }
     }
   ]
