@@ -1,15 +1,16 @@
 {
-  "lastRun": "2026-08-17",
+  "lastRun": "2026-08-24",
   "lastProposal": {
-    "messageId": "1a00e895ff886719",
-    "threadId": "1a00e895ff886719",
-    "date": "2026-08-17",
-    "subject": "Beyblade — 2 nuove fonti candidate (settimana 17/08)",
-    "note": "Feedback 17/08 applicato (risposta 19ff4eaf5cc9bb81 alla proposta del 10/08: \"approvo i primi due\"): promossi miyagi-tetsunokobushi (0.6) e bbx-lorem-ipsum (0.4). Beyblade Buds non citato -> resta proposed e riproposto. Nuovi: 1 propose (rogue-hero-bbx US) + 1 manual-verify (beyblade-jamundi CO). Restano pendenti i 3 social dal 20/07 e X-RANK FR (4a verifica a vuoto: se al prossimo run e ancora in manutenzione, proporre lo scarto).",
+    "messageId": "1a0318eb0da56c32",
+    "threadId": "1a0318eb0da56c32",
+    "date": "2026-08-24",
+    "subject": "Beyblade — 3 nuove fonti candidate (settimana 24/08)",
+    "note": "Nessuna risposta alla proposta del 17/08: nessun feedback applicato, sources.json invariato. Nuovi: 1 propose (atmosphererql, UK BBN) + 2 manual-verify (beycorner DE, torneos-beyblade-chile IG). Proposto all'utente lo SCARTO di X-RANK FR (5a verifica a vuoto). Restano pendenti rogue-hero-bbx, beyblade-jamundi, beyblade-buds-nc e i 3 social dal 20/07.",
     "relatedProposals": [
       "19f7ea6fd17b3060",
       "19fc67292184b2f3",
-      "19fea7d30be895fd"
+      "19fea7d30be895fd",
+      "1a00e895ff886719"
     ]
   },
   "candidates": [
@@ -693,12 +694,12 @@
       },
       "rationale": "Piattaforma francese di tornei e ranking per Pro Bladers. La Francia oggi è un gap totale di copertura (nessuna fonte fr).",
       "dedupCheck": "Nessuna fonte FR esistente (gap totale).",
-      "verifyNote": "17/08/2026: QUARTA verifica consecutiva a vuoto. La home mostra ancora 'Maintenance en Cours' con countdown fermo alla data gia scaduta (10/08/2026 23:59) e /tournaments da 404. Ri-verificare al prossimo run: se resta cosi, valutare lo scarto.",
+      "verifyNote": "24/08/2026: QUINTA verifica consecutiva a vuoto. La home mostra ancora 'Maintenance en Cours' con lo stesso countdown scaduto (10/08/2026 23:59), due settimane dopo la data promessa. Scarto proposto all'utente nella mail del 24/08: se confermato, passa a rejected + knownNegatives.",
       "proposedWeight": 0.6,
       "recommendation": "manual-verify",
       "status": "proposed",
       "dateFound": "2026-07-13",
-      "lastSeen": "2026-08-17"
+      "lastSeen": "2026-08-24"
     },
     {
       "candidateId": "website-lbb-oficial",
@@ -1039,9 +1040,89 @@
       "verifiedOn": "2026-08-17",
       "dateFound": "2026-08-17",
       "lastSeen": "2026-08-17"
+    },
+    {
+      "candidateId": "youtube-atmosphererql",
+      "name": "AtmosphereRQL",
+      "type": "youtube",
+      "platform": "youtube",
+      "provides": "combos",
+      "lang": "en",
+      "region": "GB",
+      "url": "https://www.youtube.com/@atmosphererqlbeyblade",
+      "channelId": "UCj2nirfb_tzl1Aqs8Sd8Z1g",
+      "signals": {
+        "subscribers": 1230,
+        "lastActivity": "2026-08-14",
+        "videoCount": 104,
+        "publishesResults": true
+      },
+      "rationale": "Verificato via API: copertura sistematica e continuativa del circuito UK BBN con la struttura del torneo esplicita nei titoli — Swiss Stage, Top Cut, Grand Finals, Top 8 — ed eventi nominati per sede (Stevenage, London, Croydon World GP Qualifier). Cadenza ~quindicinale ininterrotta da novembre 2025 a oggi (2026-08-14).",
+      "dedupCheck": "La scena UK e oggi coperta solo da Devon Beyblade Association (organizzatore minuscolo, 48 iscritti) e BiscuitBoii (cadenza irregolare, gap dic-giu). AtmosphereRQL copre il circuito nazionale BBN in modo regolare: non duplica, colma il buco. ATTENZIONE: una minoranza dei video e combo-testing (Golem Rock, Worn Rubber Accel) e collezionismo Bakuten, da qui il peso medio-basso.",
+      "proposedWeight": 0.5,
+      "recommendation": "propose",
+      "status": "proposed",
+      "verifiedOn": "2026-08-24",
+      "dateFound": "2026-08-24",
+      "lastSeen": "2026-08-24"
+    },
+    {
+      "candidateId": "youtube-beycorner",
+      "name": "BeyCorner (DE)",
+      "type": "youtube",
+      "platform": "youtube",
+      "provides": "combos",
+      "lang": "de",
+      "region": "DE",
+      "url": "https://www.youtube.com/@beycorner",
+      "channelId": "UCqyZyr8lOeHnlv3nY1EB8Kw",
+      "signals": {
+        "subscribers": 3280,
+        "lastActivity": "2026-08-22",
+        "videoCount": 82,
+        "publishesResults": true
+      },
+      "rationale": "Canale tedesco con cadenza settimanale rigorosa (ogni venerdi, ininterrotta). Include vlog di tornei ricorrenti con esito ('Mein BEYBLADE TURNIER lief FAST perfekt', 'Deutschlands GROESSTES Beyblade X Turnier', 'Kann ich mir ein Ticket zur BCG MEISTERSCHAFT sichern?!') e prove di deck portati in torneo.",
+      "dedupCheck": "La DE ha gia AbuBeyblade (fonte attiva, w 0.5, stesso profilo 'Turnier-Vlogs') piu xleague_germany e il Discord blader-league in manualVerification. ATTENZIONE: il formato dominante e la recensione-parte ricorrente ('LOHNT sich X wirklich?', circa meta dei video), cioe teoria; i tornei sono vlog personali senza podio completo. Sovrapposizione reale con AbuBeyblade: valore aggiunto incerto. Decisione tua.",
+      "proposedWeight": 0.3,
+      "recommendation": "manual-verify",
+      "status": "proposed",
+      "verifiedOn": "2026-08-24",
+      "dateFound": "2026-08-24",
+      "lastSeen": "2026-08-24"
+    },
+    {
+      "candidateId": "social-torneos-beyblade-chile",
+      "name": "Torneos Beyblade Chile (Instagram)",
+      "type": "social",
+      "platform": "instagram",
+      "provides": "combos",
+      "lang": "es",
+      "region": "CL",
+      "url": "https://www.instagram.com/torneos.beyblade.chile/",
+      "signals": {
+        "lastActivity": "2026",
+        "publishesResults": true
+      },
+      "rationale": "Account dedicato esplicitamente ai TORNEI Beyblade in Cile (non alla community generica), emerso dalla ricerca sulla scena CL/AR.",
+      "dedupCheck": "Il Cile e oggi un gap totale: l'unica fonte CL incontrata finora e beybladeprochile, gia in knownNegatives come entertainment. Le ES/LATAM attive sono SBBL (Spagna) e le leghe messicane. Instagram non automatizzabile e contenuto non verificabile via fetch -> verifica manuale, zona di parcheggio.",
+      "proposedWeight": 0.4,
+      "recommendation": "manual-verify",
+      "status": "proposed",
+      "dateFound": "2026-08-24",
+      "lastSeen": "2026-08-24"
     }
   ],
   "knownNegatives": [
+    "https://www.youtube.com/@itsmaplex (Maple X, US 2.3k: shorts di opinione/meta/tutorial ranking, i tornei sono esperienze personali senza podio ne combo per-piazzamento, stesso profilo di leftspinbeys)",
+    "https://www.youtube.com/@toxicsharkggx (ToxicShark, UK: nonostante la bio da top-10 BBN, il contenuto reale e deck-rating, ranking bit, launch tech e unboxing. Teoria, nessun piazzamento)",
+    "https://www.youtube.com/@lionification_bbx (IT: spin-off chill con unboxing Pokemon/tech/vlog, non risultati)",
+    "https://www.youtube.com/@baybay_g41 (オタクブレーダーズ JP: canale dichiaratamente エンタメ, 4 video)",
+    "https://www.youtube.com/@jared-t7c (IamproudFilipino: 32 iscritti, nessuna descrizione)",
+    "https://www.youtube.com/@bey_battlex (BEYBATTLE X: 1 iscritto, 1 video, canale appena nato)",
+    "https://www.youtube.com/@beybladex7280 (inattivo dal 2020)",
+    "https://www.youtube.com/@optical_flash (variety streamer Twitch, Beyblade X marginale, 88 iscritti)",
+    "https://www.youtube.com/@深藏blue (TW 129k, 13699 video: canale gaming generalista, off-topic)",
     "https://www.youtube.com/@bakutalk (Bakugan, non Beyblade)",
     "https://www.youtube.com/@peterbotfn (Fortnite, off-topic)",
     "https://www.youtube.com/@zefn.dyrroth (Mobile Legends, off-topic)",
