@@ -4,12 +4,12 @@
     "List of Beyblade X products (Takara Tomy)": {
       "revid": 645910,
       "timestamp": "2026-08-11T15:29:44.000Z",
-      "lastScannedDate": "2026-08-23"
+      "lastScannedDate": "2026-08-24"
     },
     "List of Beyblade X products (Hasbro)": {
       "revid": 646029,
       "timestamp": "2026-08-12T01:23:53.000Z",
-      "lastScannedDate": "2026-08-23"
+      "lastScannedDate": "2026-08-24"
     }
   },
   "pages": {
@@ -915,11 +915,12 @@
       "kindSource": "heuristic"
     },
     "Shatter Horus 9-65GB": {
-      "revid": 644545,
-      "timestamp": "2026-07-21T08:08:53.000Z",
-      "lastScannedDate": "2026-08-09",
+      "revid": 646898,
+      "timestamp": "2026-08-23T07:44:56.000Z",
+      "lastScannedDate": "2026-08-24",
       "kind": "product",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "revid cambiato solo per foto box/AKA/prezzo aggiunti; Blade/Ratchet/Bit gia' presenti nel master con lo stesso nome, nessuna estrazione necessaria"
     },
     "Random Booster ShelterDrake Select": {
       "revid": 634298,
