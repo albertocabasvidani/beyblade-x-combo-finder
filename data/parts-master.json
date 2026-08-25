@@ -1,5 +1,5 @@
 {
-  "version": "2026-08-17",
+  "version": "2026-08-25",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -155,7 +155,7 @@
         "revid": 613776
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "stats": {
         "atk": 10,
         "def": 65,
@@ -233,7 +233,8 @@
       "aliases": [],
       "firstReleaseSet": "G1692",
       "products": [
-        "G1692"
+        "G1692",
+        "G3797"
       ],
       "source": {
         "page": "Bumblebee 3-60GP",
@@ -241,7 +242,7 @@
         "revid": 639473
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-25",
       "stats": {
         "atk": 21,
         "def": 55,
@@ -504,7 +505,7 @@
         "revid": 634353
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "stats": {
         "atk": 65,
         "def": 30,
@@ -556,7 +557,7 @@
         "revid": 639774
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "stats": {
         "atk": 45,
         "def": 25,
@@ -1247,7 +1248,7 @@
         "revid": 636787
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "stats": {
         "atk": 5,
         "def": 40,
@@ -1335,6 +1336,11 @@
           "value": "GōtoTakkuru",
           "lang": "ja",
           "kind": "romaji"
+        },
+        {
+          "value": "GotoTakkuru",
+          "lang": "ja",
+          "kind": "romaji"
         }
       ],
       "products": [
@@ -1346,7 +1352,7 @@
         "url": "https://beyblade.fandom.com/wiki/Battle_Entry_Set_Infinity",
         "revid": 634353
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-25",
       "status": "verified",
       "type": "defense",
       "stats": {
@@ -1411,7 +1417,7 @@
         "revid": 640758
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "stats": {
         "atk": 30,
         "def": 60,
@@ -1936,7 +1942,7 @@
         "revid": 646178
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "stats": {
         "atk": 75,
         "def": 25,
@@ -2086,7 +2092,7 @@
         "revid": 640394
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-25",
       "stats": {
         "atk": 10,
         "def": 65,
@@ -2818,12 +2824,18 @@
           "value": "Oputimasu",
           "lang": "ja",
           "kind": "romaji"
+        },
+        {
+          "value": "OputimasuPuraimu",
+          "lang": "ja",
+          "kind": "romaji"
         }
       ],
       "firstReleaseSet": "G0353",
       "products": [
         "G0353",
-        "BX-00"
+        "BX-00",
+        "G3797"
       ],
       "source": {
         "page": "Optimus Prime 4-60P",
@@ -2831,7 +2843,7 @@
         "revid": 610267
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "stats": {
         "atk": 22,
         "def": 55,
@@ -2885,7 +2897,7 @@
         "url": "https://beyblade.fandom.com/wiki/OrochiCluster_6-60LF",
         "revid": 645932
       },
-      "lastVerified": "2026-08-12",
+      "lastVerified": "2026-08-25",
       "status": "verified",
       "type": "attack",
       "image": {
@@ -3328,7 +3340,7 @@
         "revid": 640830
       },
       "status": "verified",
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-25",
       "stats": {
         "atk": 40,
         "def": 30,
@@ -3386,7 +3398,7 @@
         "revid": 636391
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "stats": {
         "atk": 65,
         "def": 20,
@@ -3456,7 +3468,7 @@
       "type": "balance",
       "names": {
         "tt": "Scorpio Spear",
-        "hasbro": "Spear Scorpio 0-70Z",
+        "hasbro": "Spear Scorpio",
         "ja": "スコーピオスピア",
         "romaji": "SukōpioSupia"
       },
@@ -3492,7 +3504,7 @@
         "revid": 644111
       },
       "status": "verified",
-      "lastVerified": "2026-07-17",
+      "lastVerified": "2026-08-25",
       "stats": {
         "atk": 25,
         "def": 55,
@@ -3768,7 +3780,7 @@
         "revid": 634298
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "stats": {
         "atk": 25,
         "def": 40,
@@ -3957,7 +3969,7 @@
         "lastVerified": "2026-07-28"
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "stats": {
         "atk": 15,
         "def": 30,
@@ -4481,7 +4493,7 @@
         "revid": 644606
       },
       "status": "verified",
-      "lastVerified": "2026-07-23",
+      "lastVerified": "2026-08-25",
       "stats": {
         "atk": 20,
         "def": 65,
@@ -5048,7 +5060,7 @@
         "revid": 599603
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "stats": {
         "atk": 45,
         "def": 35,
@@ -5665,7 +5677,7 @@
         "revid": 634319
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "products": [
         "CX-06",
         "G1681"
@@ -6658,7 +6670,7 @@
         "revid": 641582
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "products": [
         "UX-18",
         "CX-06",
@@ -7768,7 +7780,7 @@
         "revid": 634335
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "products": [
         "UX-15",
         "CX-06",
@@ -8570,7 +8582,7 @@
         "url": "https://beyblade.fandom.com/wiki/ScorpioSpear_0-70Z",
         "revid": 644111
       },
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "status": "verified",
       "image": {
         "file": "0-70.png",
@@ -8610,7 +8622,7 @@
         "revid": 636787
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "products": [
         "UX-12",
         "CX-06",
@@ -8709,7 +8721,7 @@
         "revid": 636223
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "products": [
         "BX-31",
         "G1691",
@@ -8721,7 +8733,8 @@
         "G1536",
         "G1538",
         "G1676",
-        "G1534"
+        "G1534",
+        "G3797"
       ],
       "firstReleaseSet": "BX-31",
       "image": {
@@ -8903,7 +8916,7 @@
         "revid": 645284
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "products": [
         "BX-00",
         "CX-00",
@@ -9126,7 +9139,7 @@
         "lastVerified": "2026-07-28"
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "products": [
         "BX-04",
         "G1694",
@@ -9196,7 +9209,7 @@
         "revid": 639479
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "products": [
         "G3061",
         "BX-48",
@@ -9371,7 +9384,7 @@
         "revid": 645827
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "products": [
         "BX-02",
         "G1694",
@@ -9439,7 +9452,7 @@
         "lastVerified": "2026-07-28"
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "products": [
         "BX-31",
         "G1690",
@@ -9708,7 +9721,7 @@
         "revid": 645829
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "products": [
         "BX-16",
         "G1692",
@@ -9760,7 +9773,7 @@
         "revid": 644390
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "products": [
         "CX-01",
         "UX-00",
@@ -9811,7 +9824,7 @@
         "url": "https://beyblade.fandom.com/wiki/SamuraiCalibur_6-70M",
         "revid": 640830
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-25",
       "status": "verified",
       "stats": {
         "atk": 14,
@@ -10002,12 +10015,13 @@
         "revid": 634353
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "products": [
         "BX-46",
         "UX-10",
         "CX-08",
-        "G3195"
+        "G3195",
+        "G3797"
       ],
       "firstReleaseSet": "BX-46",
       "stats": {
@@ -10048,7 +10062,7 @@
         "revid": 634298
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "products": [
         "BX-39",
         "CX-17",
@@ -10182,7 +10196,7 @@
         "revid": 645868
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "products": [
         "BX-23",
         "UX-05",
@@ -10291,7 +10305,7 @@
         "revid": 600830
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "products": [
         "UX-07",
         "UX-18",
@@ -10396,7 +10410,7 @@
         "url": "https://beyblade.fandom.com/wiki/TriceraPress_M-85BS",
         "revid": 644606
       },
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "status": "verified",
       "stats": {
         "atk": 8,
@@ -10490,7 +10504,7 @@
         "revid": 645387
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "products": [
         "BX-03",
         "G1695",
@@ -10506,7 +10520,8 @@
         "G0285",
         "G2737",
         "BX-14",
-        "G1543"
+        "G1543",
+        "G3745"
       ],
       "firstReleaseSet": "BX-03",
       "shortName": "B",
@@ -10549,7 +10564,7 @@
         "revid": 644606
       },
       "status": "verified",
-      "lastVerified": "2026-07-13",
+      "lastVerified": "2026-08-25",
       "products": [
         "BX-44",
         "UX-10",
@@ -10755,7 +10770,7 @@
         "revid": 645274
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "products": [
         "BX-00",
         "G2218",
@@ -10802,7 +10817,7 @@
         "revid": 639479
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "products": [
         "G3061",
         "BX-36",
@@ -10911,7 +10926,7 @@
         "lastVerified": "2026-07-28"
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "products": [
         "UX-08",
         "CX-11",
@@ -11015,7 +11030,7 @@
         "revid": 639811
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "products": [
         "BX-24",
         "G1690",
@@ -11076,14 +11091,16 @@
         "revid": 644029
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "products": [
         "BX-23",
         "UX-07",
         "UX-15",
         "BX-00",
         "G0284",
-        "G1685"
+        "G1685",
+        "F9324",
+        "G3745"
       ],
       "firstReleaseSet": "BX-23",
       "shortName": "GF",
@@ -11189,7 +11206,7 @@
         "revid": 636930
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "products": [
         "BX-26",
         "G1692",
@@ -11246,7 +11263,7 @@
         "revid": 634319
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "products": [
         "CX-06",
         "CX-17",
@@ -11694,12 +11711,13 @@
         "revid": 634335
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "products": [
         "UX-15",
         "BX-50",
         "UX-09",
-        "G1862"
+        "G1862",
+        "G3797"
       ],
       "firstReleaseSet": "SharkScale Deck Set",
       "shortName": "L",
@@ -11747,7 +11765,7 @@
         "revid": 645837
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "products": [
         "BX-14",
         "G1695",
@@ -11863,7 +11881,12 @@
         "revid": 646219
       },
       "status": "verified",
-      "lastVerified": "2026-08-14"
+      "lastVerified": "2026-08-14",
+      "image": {
+        "file": "low-point.png",
+        "wikiFile": "BitLowPoint.png",
+        "fetchedAt": "2026-08-25"
+      }
     },
     {
       "id": "low-rush",
@@ -11898,7 +11921,7 @@
         "revid": 646178
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "products": [
         "UX-11",
         "G0842",
@@ -11949,7 +11972,7 @@
         "url": "https://beyblade.fandom.com/wiki/SamuraiCalibur_6-70M",
         "revid": 640830
       },
-      "lastVerified": "2026-06-15",
+      "lastVerified": "2026-08-25",
       "status": "verified",
       "type": "balance",
       "shortName": "M",
@@ -12399,7 +12422,7 @@
         "revid": 643572
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "products": [
         "BX-20",
         "G1690",
@@ -12489,6 +12512,11 @@
           "value": "Tēpā",
           "lang": "ja",
           "kind": "romaji"
+        },
+        {
+          "value": "Tepa",
+          "lang": "ja",
+          "kind": "romaji"
         }
       ],
       "source": {
@@ -12498,7 +12526,7 @@
         "lastVerified": "2026-07-28"
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "products": [
         "BX-02",
         "BX-00",
@@ -12611,7 +12639,7 @@
         "revid": 639774
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "products": [
         "BX-38",
         "UX-18",
@@ -12759,7 +12787,7 @@
         "revid": 640758
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "products": [
         "UX-13",
         "CX-14",
@@ -13006,12 +13034,13 @@
         "revid": 642257
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "products": [
         "CX-03",
         "UX-18",
         "G1680",
-        "G2734"
+        "G2734",
+        "G3797"
       ],
       "firstReleaseSet": "PerseusDark B6-80W",
       "shortName": "W",
@@ -13106,7 +13135,7 @@
         "url": "https://beyblade.fandom.com/wiki/ScorpioSpear_0-70Z",
         "revid": 644111
       },
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-08-25",
       "status": "verified",
       "type": "balance",
       "shortName": "Z",

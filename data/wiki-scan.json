@@ -4,12 +4,12 @@
     "List of Beyblade X products (Takara Tomy)": {
       "revid": 645910,
       "timestamp": "2026-08-11T15:29:44.000Z",
-      "lastScannedDate": "2026-08-24"
+      "lastScannedDate": "2026-08-25"
     },
     "List of Beyblade X products (Hasbro)": {
-      "revid": 646029,
-      "timestamp": "2026-08-12T01:23:53.000Z",
-      "lastScannedDate": "2026-08-24"
+      "revid": 647059,
+      "timestamp": "2026-08-25T00:51:28.000Z",
+      "lastScannedDate": "2026-08-25"
     }
   },
   "pages": {
@@ -22,9 +22,9 @@
       "notes": "Nessuna nuova parte: tutti i link a nuovi articoli (BucksAntlers/HornetFortR/KrakenWriggle/DrakeBrave/TigaRage/GloryValkyrie/ecc.) risolvono a parti gia note nel master."
     },
     "List of Beyblade X products (Hasbro)": {
-      "revid": 646029,
-      "timestamp": null,
-      "lastScannedDate": "2026-08-12",
+      "revid": 647059,
+      "timestamp": "2026-08-25T00:51:28.000Z",
+      "lastScannedDate": "2026-08-25",
       "kind": "product",
       "kindSource": "heuristic",
       "notes": "Nessuna nuova parte: verificati nomi Hasbro/Multipack/Dual Pack, tutti gia coperti da alias esistenti."
@@ -50,11 +50,11 @@
       ]
     },
     "TriceraPress M-85BS": {
-      "revid": 646393,
-      "timestamp": "2026-08-17T04:24:55.000Z",
-      "lastScannedDate": "2026-08-17",
+      "revid": 646914,
+      "timestamp": "2026-08-24T07:43:46.000Z",
+      "lastScannedDate": "2026-08-25",
       "kind": "product",
-      "kindSource": "ai",
+      "kindSource": "heuristic",
       "notes": "solo aggiornamento info (Hasbro release/gallery/trivia); parti gia' nel master (tricera-press, M-85, bound-spike)"
     },
     "Bit - Low Flat": {
@@ -66,9 +66,9 @@
       "notes": "Revid cambiato (643858→644560): G2762 (già registrato dal 22/07) confermato esplicito nella lista Products; aggiunto ProductCode G4568 a Glory Valkerion LF (glory-valkyrie, già registrata come UX-20). Nessuna parte nuova."
     },
     "OrochiCluster 6-60LF": {
-      "revid": 646299,
-      "timestamp": "2026-08-15T05:03:03.000Z",
-      "lastScannedDate": "2026-08-15",
+      "revid": 646982,
+      "timestamp": "2026-08-24T12:54:19.000Z",
+      "lastScannedDate": "2026-08-25",
       "kind": "product",
       "kindSource": "heuristic",
       "notes": "Revid cambiato: aggiunta release Hasbro (Coil Orochi), gia presente nel master."
@@ -181,9 +181,9 @@
       "notes": "Aggiunto G3084 Rival Rumble Pack (Gill Shark 4-70O): parte gia' registrata."
     },
     "SilverWolf 3-80FB": {
-      "revid": 645016,
-      "timestamp": "2026-08-14T06:19:28.677Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 646963,
+      "timestamp": "2026-08-24T12:02:18.000Z",
+      "lastScannedDate": "2026-08-25",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -302,9 +302,9 @@
       "notes": "Revid cambiato, verificato: aggiunta Metal Coat Black (CoroCoro lottery/B4) e G2951 Deluxe String Launcher 2-Pack, nessuna parte nuova."
     },
     "ImpactDrake 9-60LR": {
-      "revid": 646178,
-      "timestamp": "2026-08-14T06:19:28.677Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 646951,
+      "timestamp": "2026-08-24T11:40:54.000Z",
+      "lastScannedDate": "2026-08-25",
       "kind": "product",
       "kindSource": "heuristic"
     },
@@ -336,9 +336,9 @@
       "notes": "Revid cambiato, verificato: nessun nuovo componente (solo modifiche testuali/gallery/video), Releases invariati (BX-14 01, G0194)."
     },
     "Bit - Ball": {
-      "revid": 645387,
-      "timestamp": "2026-08-02T06:29:17.000Z",
-      "lastScannedDate": "2026-08-09",
+      "revid": 647022,
+      "timestamp": "2026-08-24T23:21:56.000Z",
+      "lastScannedDate": "2026-08-25",
       "kind": "part",
       "kindSource": "heuristic",
       "notes": "Revid cambiato, verificato: nessun nuovo componente (solo modifiche testuali/gallery)."
@@ -431,9 +431,9 @@
       "notes": "revisione minore (trivia su provenienza parti); LockChip/MainBlade/AssistBlade/Ratchet/Bit gia' in master"
     },
     "SamuraiSaber 2-70L": {
-      "revid": 644248,
-      "timestamp": "2026-08-14T06:19:28.677Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 646971,
+      "timestamp": "2026-08-24T12:15:37.000Z",
+      "lastScannedDate": "2026-08-25",
       "kind": "product",
       "kindSource": "heuristic"
     },
@@ -550,16 +550,16 @@
       "kindSource": "heuristic"
     },
     "Battle Entry Set Infinity": {
-      "revid": 634353,
-      "timestamp": "2026-04-03T05:48:53.000Z",
-      "lastScannedDate": "2026-08-09",
+      "revid": 646988,
+      "timestamp": "2026-08-24T20:43:30.000Z",
+      "lastScannedDate": "2026-08-25",
       "kind": "set",
       "kindSource": "heuristic"
     },
     "CrimsonGaruda 4-70TP": {
-      "revid": 639774,
-      "timestamp": "2026-06-04T08:40:45.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 646934,
+      "timestamp": "2026-08-24T08:29:22.000Z",
+      "lastScannedDate": "2026-08-25",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -575,9 +575,9 @@
       "notes": "Pagina rinominata in CrocoCrunch 2-60Q (rivedi quella chiave)."
     },
     "Ratchet-Integrated Blade - Cutter Shinobi": {
-      "revid": 638655,
-      "timestamp": "2026-05-24T09:06:28.000Z",
-      "lastScannedDate": "2026-08-09",
+      "revid": 647026,
+      "timestamp": "2026-08-24T23:26:35.000Z",
+      "lastScannedDate": "2026-08-25",
       "kind": "product",
       "kindSource": "heuristic"
     },
@@ -638,9 +638,9 @@
       "kindSource": "heuristic"
     },
     "GolemRock 1-60UN": {
-      "revid": 640758,
-      "timestamp": "2026-06-12T06:05:04.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 646947,
+      "timestamp": "2026-08-24T11:33:25.000Z",
+      "lastScannedDate": "2026-08-25",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -727,9 +727,9 @@
       ]
     },
     "KnightMail 3-85BS": {
-      "revid": 646615,
-      "timestamp": "2026-08-21T06:28:34.000Z",
-      "lastScannedDate": "2026-08-22",
+      "revid": 646987,
+      "timestamp": "2026-08-24T17:52:33.000Z",
+      "lastScannedDate": "2026-08-25",
       "kind": "product",
       "kindSource": "heuristic"
     },
@@ -842,9 +842,9 @@
       "kindSource": "heuristic"
     },
     "Ratchet-Integrated Blade - Rampart Aegis": {
-      "revid": 638657,
-      "timestamp": "2026-05-24T09:06:37.000Z",
-      "lastScannedDate": "2026-08-09",
+      "revid": 647024,
+      "timestamp": "2026-08-24T23:26:18.000Z",
+      "lastScannedDate": "2026-08-25",
       "kind": "product",
       "kindSource": "heuristic"
     },
@@ -866,9 +866,9 @@
       ]
     },
     "SamuraiCalibur 6-70M": {
-      "revid": 640830,
-      "timestamp": "2026-06-12T13:00:10.000Z",
-      "lastScannedDate": "2026-08-09",
+      "revid": 646927,
+      "timestamp": "2026-08-24T08:13:54.000Z",
+      "lastScannedDate": "2026-08-25",
       "kind": "product",
       "kindSource": "heuristic"
     },
@@ -887,9 +887,9 @@
       "kindSource": "heuristic"
     },
     "ScorpioSpear 0-70Z": {
-      "revid": 644111,
-      "timestamp": "2026-07-17T00:06:22.000Z",
-      "lastScannedDate": "2026-08-09",
+      "revid": 646939,
+      "timestamp": "2026-08-24T10:03:50.000Z",
+      "lastScannedDate": "2026-08-25",
       "kind": "product",
       "kindSource": "heuristic"
     },
@@ -1290,9 +1290,9 @@
       "kindSource": "heuristic"
     },
     "Ratchet - 1-60": {
-      "revid": 646576,
-      "timestamp": "2026-08-20T07:08:34.000Z",
-      "lastScannedDate": "2026-08-21",
+      "revid": 647038,
+      "timestamp": "2026-08-24T23:39:32.000Z",
+      "lastScannedDate": "2026-08-25",
       "kind": "part",
       "kindSource": "heuristic"
     },
@@ -1367,9 +1367,9 @@
       "kindSource": "heuristic"
     },
     "Bit - Gear Flat": {
-      "revid": 644029,
-      "timestamp": "2026-07-16T08:41:17.000Z",
-      "lastScannedDate": "2026-08-09",
+      "revid": 647020,
+      "timestamp": "2026-08-24T23:21:21.000Z",
+      "lastScannedDate": "2026-08-25",
       "kind": "part",
       "kindSource": "heuristic"
     },
@@ -1570,9 +1570,9 @@
       "kindSource": "heuristic"
     },
     "Bit - Wedge": {
-      "revid": 633742,
-      "timestamp": "2026-08-14T06:19:28.677Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 647039,
+      "timestamp": "2026-08-24T23:39:40.000Z",
+      "lastScannedDate": "2026-08-25",
       "kind": "part",
       "kindSource": "heuristic"
     },
@@ -1611,9 +1611,9 @@
       ]
     },
     "ShelterDrake 7-80GP": {
-      "revid": 646448,
-      "timestamp": "2026-08-17T16:55:49.000Z",
-      "lastScannedDate": "2026-08-18",
+      "revid": 646940,
+      "timestamp": "2026-08-24T10:10:50.000Z",
+      "lastScannedDate": "2026-08-25",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -1659,9 +1659,9 @@
       ]
     },
     "FoxBrush J9-70GR": {
-      "revid": 644091,
-      "timestamp": "2026-07-16T21:38:36.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 646924,
+      "timestamp": "2026-08-24T08:06:56.000Z",
+      "lastScannedDate": "2026-08-25",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -1755,9 +1755,9 @@
       ]
     },
     "BlackShell 4-60D": {
-      "revid": 639747,
-      "timestamp": "2026-08-14T06:19:28.677Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 646929,
+      "timestamp": "2026-08-24T08:17:35.000Z",
+      "lastScannedDate": "2026-08-25",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -1775,9 +1775,9 @@
       ]
     },
     "WhaleWave 5-80E": {
-      "revid": 640949,
-      "timestamp": "2026-08-14T06:19:28.677Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 646978,
+      "timestamp": "2026-08-24T12:43:02.000Z",
+      "lastScannedDate": "2026-08-25",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -2453,9 +2453,9 @@
       "kindSource": "heuristic"
     },
     "GhostCircle 0-80GB": {
-      "revid": 640879,
-      "timestamp": "2026-06-13T05:11:50.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 646954,
+      "timestamp": "2026-08-24T11:49:42.000Z",
+      "lastScannedDate": "2026-08-25",
       "kind": "product",
       "kindSource": "heuristic"
     },
@@ -2531,9 +2531,9 @@
       "kindSource": "heuristic"
     },
     "Ratchet - 7-70": {
-      "revid": 621599,
-      "timestamp": "2025-12-19T07:06:31.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 647035,
+      "timestamp": "2026-08-24T23:38:45.000Z",
+      "lastScannedDate": "2026-08-25",
       "kind": "part",
       "kindSource": "heuristic"
     },
@@ -2806,6 +2806,76 @@
       "kind": "part",
       "kindSource": "heuristic",
       "notes": "recupero MANCANTI da verify:wiki; blade Hasbro-only (CyclopsEye/Glare Cyclops), Expand Blade Basic Line"
+    },
+    "Optimus Prime and Bumblebee Multipack Set": {
+      "revid": 647060,
+      "timestamp": "2026-08-25T00:51:42.000Z",
+      "lastScannedDate": "2026-08-25",
+      "kind": "multipack",
+      "kindSource": "heuristic"
+    },
+    "Infinity Rail Battle Set": {
+      "revid": 646990,
+      "timestamp": "2026-08-24T20:53:56.000Z",
+      "lastScannedDate": "2026-08-25",
+      "kind": "set",
+      "kindSource": "heuristic"
+    },
+    "CobaltDrake 9-60R": {
+      "revid": 634354,
+      "timestamp": "2026-04-03T05:49:24.000Z",
+      "lastScannedDate": "2026-08-25",
+      "kind": "product",
+      "kindSource": "heuristic"
+    },
+    "GoatTackle 7-70T": {
+      "revid": 646154,
+      "timestamp": "2026-08-13T04:49:34.000Z",
+      "lastScannedDate": "2026-08-25",
+      "kind": "product",
+      "kindSource": "heuristic"
+    },
+    "Optimus Prime 7-70L": {
+      "revid": 647057,
+      "timestamp": "2026-08-25T00:03:37.000Z",
+      "lastScannedDate": "2026-08-25",
+      "kind": "product",
+      "kindSource": "heuristic"
+    },
+    "Bumblebee 1-60W": {
+      "revid": 647058,
+      "timestamp": "2026-08-25T00:04:23.000Z",
+      "lastScannedDate": "2026-08-25",
+      "kind": "product",
+      "kindSource": "heuristic"
+    },
+    "Cutter Shinobi GF": {
+      "revid": 647018,
+      "timestamp": "2026-08-24T23:20:01.000Z",
+      "lastScannedDate": "2026-08-25",
+      "kind": "product",
+      "kindSource": "heuristic"
+    },
+    "Rampart Aegis B": {
+      "revid": 647017,
+      "timestamp": "2026-08-24T23:19:49.000Z",
+      "lastScannedDate": "2026-08-25",
+      "kind": "product",
+      "kindSource": "heuristic"
+    },
+    "Infinity Stadium": {
+      "revid": 646604,
+      "timestamp": "2026-08-20T23:34:19.000Z",
+      "lastScannedDate": "2026-08-25",
+      "kind": "accessory",
+      "kindSource": "heuristic"
+    },
+    "Infinity Rail Beystadium": {
+      "revid": 646999,
+      "timestamp": "2026-08-24T21:29:20.000Z",
+      "lastScannedDate": "2026-08-25",
+      "kind": "accessory",
+      "kindSource": "heuristic"
     }
   }
 }

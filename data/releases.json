@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-08-17T08:56:51.537Z",
+  "fetchedAt": "2026-08-25T02:00:17.561Z",
   "pages": {
     "tt": {
       "revid": 645910,
       "timestamp": "2026-08-11T15:29:44Z"
     },
     "hasbro": {
-      "revid": 646029,
-      "timestamp": "2026-08-12T01:23:53Z"
+      "revid": 647059,
+      "timestamp": "2026-08-25T00:51:28Z"
     }
   },
   "byCode": {
@@ -472,6 +472,12 @@
       "productCode": "G1695"
     },
     {
+      "norm": "optimusprimeandbumblebeemultipackset",
+      "name": "Optimus Prime and Bumblebee Multipack Set",
+      "date": null,
+      "productCode": "G3797"
+    },
+    {
       "norm": "chainincendioandarrowwizarddualpack",
       "name": "Chain Incendio and Arrow Wizard Dual Pack",
       "date": "2024-05-16",
@@ -650,6 +656,12 @@
       "name": "Ridge Triceratops 9-80GN",
       "date": "2026-01-30",
       "productCode": "G3392"
+    },
+    {
+      "norm": "infinityrailbattleset",
+      "name": "Infinity Rail Battle Set",
+      "date": null,
+      "productCode": "G3745"
     },
     {
       "norm": "hurricaneenlilis755t",

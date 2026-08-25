@@ -1,5 +1,5 @@
 {
-  "version": "2026-08-20",
+  "version": "2026-08-25",
   "blades": [
     {
       "id": "aero-pegasus",
@@ -446,7 +446,8 @@
       "name": "Goat Tackle",
       "nameWestern": "Tackle Goat",
       "aliases": [
-        "GōtoTakkuru"
+        "GōtoTakkuru",
+        "GotoTakkuru"
       ],
       "type": "defense",
       "line": "bx",
@@ -949,7 +950,8 @@
       "id": "optimus-prime",
       "name": "Optimus Prime",
       "aliases": [
-        "Oputimasu"
+        "Oputimasu",
+        "OputimasuPuraimu"
       ],
       "type": "balance",
       "line": "bx",
@@ -1159,8 +1161,9 @@
     {
       "id": "scorpio-spear",
       "name": "Scorpio Spear",
-      "nameWestern": "Spear Scorpio 0-70Z",
+      "nameWestern": "Spear Scorpio",
       "aliases": [
+        "Spear Scorpio 0-70Z",
         "Scorpio",
         "SukōpioSupia"
       ],
@@ -3182,7 +3185,8 @@
       "shortName": "LP",
       "aliases": [
         "Rō Pointo"
-      ]
+      ],
+      "image": "low-point.png"
     },
     {
       "id": "low-rush",
@@ -3353,7 +3357,8 @@
       "type": "balance",
       "shortName": "T",
       "aliases": [
-        "Tēpā"
+        "Tēpā",
+        "Tepa"
       ],
       "stats": {
         "atk": 35,

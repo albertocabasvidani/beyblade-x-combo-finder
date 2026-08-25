@@ -1,7 +1,20 @@
 {
-  "generated": "2026-08-17",
-  "count": 8,
+  "generated": "2026-08-25",
+  "count": 12,
   "conflicts": [
+    {
+      "type": "unsupported_mechanic",
+      "id": "ratchet-integrated-blade",
+      "from": [
+        "Ratchet-Integrated Blade - Cutter Shinobi",
+        "Ratchet-Integrated Blade - Rampart Aegis",
+        "Cutter Shinobi GF",
+        "Rampart Aegis B"
+      ],
+      "primaVisto": "2026-08-25",
+      "ultimoVisto": "2026-08-25",
+      "nota": "Nuovo pezzo Hasbro 'Ratchet-Integrated Blade' (System2=Expand Blade, linea 'Unique Line'): blade e ratchet fusi in un solo pezzo fisico (campo wiki `RatchetBlade=`), niente ratchet separato. Non entra nello schema blade+ratchet+bit ne' in quello CX. Non ancora rilasciato (ReleaseUS scheduled Oct 2026). Tenuto fuori dal master finche' non si decide come modellarlo (nuova categoria? blade con ratchet implicito?). I due bit coinvolti (Gear Flat, Ball) sono gia' nel master, nessun problema li'."
+    },
     {
       "type": "type_mismatch",
       "id": "dran-dagger",
@@ -81,6 +94,33 @@
       "primaVisto": "2026-08-14",
       "ultimoVisto": "2026-08-14",
       "nota": "ambiguita' preesistente, recuperata dopo che il run del 14/08 aveva azzerato il file"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "samurai-calibur",
+      "existing": "attack",
+      "found": "balance",
+      "from": "SamuraiCalibur 6-70M",
+      "primaVisto": "2026-08-25",
+      "ultimoVisto": "2026-08-25"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "goat-tackle",
+      "existing": "defense",
+      "found": "balance",
+      "from": "GoatTackle 7-70T",
+      "primaVisto": "2026-08-25",
+      "ultimoVisto": "2026-08-25"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "optimus-prime",
+      "existing": "balance",
+      "found": "attack",
+      "from": "Optimus Prime 7-70L",
+      "primaVisto": "2026-08-25",
+      "ultimoVisto": "2026-08-25"
     }
   ]
 }
