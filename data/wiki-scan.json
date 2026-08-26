@@ -4,12 +4,12 @@
     "List of Beyblade X products (Takara Tomy)": {
       "revid": 645910,
       "timestamp": "2026-08-11T15:29:44.000Z",
-      "lastScannedDate": "2026-08-25"
+      "lastScannedDate": "2026-08-26"
     },
     "List of Beyblade X products (Hasbro)": {
       "revid": 647059,
       "timestamp": "2026-08-25T00:51:28.000Z",
-      "lastScannedDate": "2026-08-25"
+      "lastScannedDate": "2026-08-26"
     }
   },
   "pages": {
@@ -2610,9 +2610,9 @@
       "kindSource": "heuristic"
     },
     "Beybattle Pass": {
-      "revid": 627458,
-      "timestamp": "2026-02-11T05:57:32.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 647084,
+      "timestamp": "2026-08-26T00:29:39.000Z",
+      "lastScannedDate": "2026-08-26",
       "kind": "accessory",
       "kindSource": "heuristic"
     },
@@ -2800,12 +2800,12 @@
       "notes": "link rosso in List of Beyblade X products (Takara Tomy)"
     },
     "Blade - Glare Cyclops": {
-      "revid": 646459,
-      "timestamp": "2026-08-17T22:35:57.000Z",
-      "lastScannedDate": "2026-08-18",
+      "revid": 647076,
+      "timestamp": "2026-08-25T18:40:54.000Z",
+      "lastScannedDate": "2026-08-26",
       "kind": "part",
-      "kindSource": "heuristic",
-      "notes": "recupero MANCANTI da verify:wiki; blade Hasbro-only (CyclopsEye/Glare Cyclops), Expand Blade Basic Line"
+      "kindSource": "ai",
+      "notes": "gia' nel master (cyclopseye); revid cambiato solo per ReleaseCA/data uscita e listing prodotto Glare Cyclops 7-55FB, nessun dato nome da aggiornare"
     },
     "Optimus Prime and Bumblebee Multipack Set": {
       "revid": 647060,
