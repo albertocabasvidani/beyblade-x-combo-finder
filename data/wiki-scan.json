@@ -4,12 +4,12 @@
     "List of Beyblade X products (Takara Tomy)": {
       "revid": 645910,
       "timestamp": "2026-08-11T15:29:44.000Z",
-      "lastScannedDate": "2026-08-26"
+      "lastScannedDate": "2026-08-27"
     },
     "List of Beyblade X products (Hasbro)": {
       "revid": 647059,
       "timestamp": "2026-08-25T00:51:28.000Z",
-      "lastScannedDate": "2026-08-26"
+      "lastScannedDate": "2026-08-27"
     }
   },
   "pages": {
@@ -30,9 +30,9 @@
       "notes": "Nessuna nuova parte: verificati nomi Hasbro/Multipack/Dual Pack, tutti gia coperti da alias esistenti."
     },
     "DranSword 3-60F": {
-      "revid": 646240,
-      "timestamp": "2026-08-14T04:26:15.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 647124,
+      "timestamp": "2026-08-26T03:43:48.000Z",
+      "lastScannedDate": "2026-08-27",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -192,9 +192,9 @@
       "notes": "Aggiunto G3084 Rival Rumble Pack (stesso combo): nessuna parte nuova."
     },
     "WeissTiger 3-60U": {
-      "revid": 645006,
-      "timestamp": null,
-      "lastScannedDate": "2026-08-09",
+      "revid": 647214,
+      "timestamp": "2026-08-26T12:53:57.000Z",
+      "lastScannedDate": "2026-08-27",
       "kind": "product",
       "kindSource": "heuristic",
       "notes": "Aggiunto G3084 Rival Rumble Pack (stesso combo): nessuna parte nuova."
@@ -294,9 +294,9 @@
       "notes": "Revid cambiato, verificato: nessun nuovo componente (solo modifiche testuali/gallery/date release)."
     },
     "CobaltDragoon 2-60C": {
-      "revid": 645327,
-      "timestamp": null,
-      "lastScannedDate": "2026-08-09",
+      "revid": 647216,
+      "timestamp": "2026-08-26T12:59:39.000Z",
+      "lastScannedDate": "2026-08-27",
       "kind": "product",
       "kindSource": "heuristic",
       "notes": "Revid cambiato, verificato: aggiunta Metal Coat Black (CoroCoro lottery/B4) e G2951 Deluxe String Launcher 2-Pack, nessuna parte nuova."
@@ -394,9 +394,9 @@
       "notes": "Sorgente mancante (source:null, unverified) per blade shinobi-knife gia' in master: popolata source.page/revid, names ja/romaji da JPName/RomajiName (hasbro 'Knife Shinobi' gia' corretto), status verified."
     },
     "StormPegasis 3-70RA": {
-      "revid": 645295,
-      "timestamp": null,
-      "lastScannedDate": "2026-08-09",
+      "revid": 647225,
+      "timestamp": "2026-08-26T22:18:59.000Z",
+      "lastScannedDate": "2026-08-27",
       "kind": "product",
       "kindSource": "heuristic",
       "notes": "Sorgente mancante (source:null, unverified) per blade storm-pegasis gia' in master: popolata source.page/revid, names ja/romaji/hasbro da JPName/RomajiName/AKA, status verified."
@@ -416,9 +416,9 @@
       "kindSource": "heuristic"
     },
     "TigaRage FT3-60T": {
-      "revid": 646072,
-      "timestamp": "2026-08-14T06:19:28.677Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 647172,
+      "timestamp": "2026-08-26T08:05:27.000Z",
+      "lastScannedDate": "2026-08-27",
       "kind": "product",
       "kindSource": "heuristic"
     },
@@ -669,9 +669,9 @@
       "kindSource": "heuristic"
     },
     "HellsChain 5-60HT": {
-      "revid": 640392,
-      "timestamp": "2026-06-09T11:29:16.000Z",
-      "lastScannedDate": "2026-08-09",
+      "revid": 647189,
+      "timestamp": "2026-08-26T12:01:28.000Z",
+      "lastScannedDate": "2026-08-27",
       "kind": "product",
       "kindSource": "heuristic"
     },
@@ -686,9 +686,9 @@
       ]
     },
     "HellsScythe 4-60T": {
-      "revid": 640400,
-      "timestamp": "2026-06-09T11:50:21.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 647208,
+      "timestamp": "2026-08-26T12:39:22.000Z",
+      "lastScannedDate": "2026-08-27",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -828,9 +828,9 @@
       "kindSource": "heuristic"
     },
     "PhoenixWing 9-60GF": {
-      "revid": 643999,
-      "timestamp": "2026-07-16T08:00:49.000Z",
-      "lastScannedDate": "2026-08-09",
+      "revid": 647198,
+      "timestamp": "2026-08-26T12:21:43.000Z",
+      "lastScannedDate": "2026-08-27",
       "kind": "product",
       "kindSource": "heuristic"
     },
@@ -1000,11 +1000,11 @@
       "kindSource": "heuristic"
     },
     "TyrannoBeat 4-70Q": {
-      "revid": 646546,
-      "timestamp": "2026-08-19T06:54:28.000Z",
-      "lastScannedDate": "2026-08-20",
+      "revid": 647123,
+      "timestamp": "2026-08-26T03:39:07.000Z",
+      "lastScannedDate": "2026-08-27",
       "kind": "product",
-      "kindSource": "ai",
+      "kindSource": "heuristic",
       "notes": "blade gia' nel master come 'Tyranno Beat'; ratchet 4-70 e bit Quake gia' presenti; nessuna parte nuova"
     },
     "Venom 3-80N": {
@@ -1056,9 +1056,9 @@
       ]
     },
     "WyvernGale 5-80GB": {
-      "revid": 643669,
-      "timestamp": "2026-07-14T23:11:53.000Z",
-      "lastScannedDate": "2026-08-09",
+      "revid": 647182,
+      "timestamp": "2026-08-26T11:48:14.000Z",
+      "lastScannedDate": "2026-08-27",
       "kind": "product",
       "kindSource": "heuristic"
     },
@@ -1290,16 +1290,16 @@
       "kindSource": "heuristic"
     },
     "Ratchet - 1-60": {
-      "revid": 647038,
-      "timestamp": "2026-08-24T23:39:32.000Z",
-      "lastScannedDate": "2026-08-25",
+      "revid": 647155,
+      "timestamp": "2026-08-26T06:23:20.000Z",
+      "lastScannedDate": "2026-08-27",
       "kind": "part",
       "kindSource": "heuristic"
     },
     "Ratchet - 4-60": {
-      "revid": 645827,
-      "timestamp": "2026-08-08T05:06:14.000Z",
-      "lastScannedDate": "2026-08-09",
+      "revid": 647146,
+      "timestamp": "2026-08-26T06:13:37.000Z",
+      "lastScannedDate": "2026-08-27",
       "kind": "part",
       "kindSource": "heuristic"
     },
@@ -1318,9 +1318,9 @@
       "kindSource": "heuristic"
     },
     "Ratchet - 5-80": {
-      "revid": 645829,
-      "timestamp": "2026-08-08T05:09:32.000Z",
-      "lastScannedDate": "2026-08-09",
+      "revid": 647160,
+      "timestamp": "2026-08-26T06:26:55.000Z",
+      "lastScannedDate": "2026-08-27",
       "kind": "part",
       "kindSource": "heuristic"
     },
@@ -1417,16 +1417,16 @@
       "notes": "bit gia' nel master; pagina aggiornata solo con nuovi prodotti che lo usano"
     },
     "Bit - Rush": {
-      "revid": 643572,
-      "timestamp": "2026-07-14T06:46:23.000Z",
-      "lastScannedDate": "2026-08-09",
+      "revid": 647156,
+      "timestamp": "2026-08-26T06:23:50.000Z",
+      "lastScannedDate": "2026-08-27",
       "kind": "part",
       "kindSource": "heuristic"
     },
     "Bit - Spike": {
-      "revid": 645826,
-      "timestamp": "2026-08-08T05:04:40.000Z",
-      "lastScannedDate": "2026-08-09",
+      "revid": 647151,
+      "timestamp": "2026-08-26T06:18:44.000Z",
+      "lastScannedDate": "2026-08-27",
       "kind": "part",
       "kindSource": "heuristic"
     },
@@ -1439,9 +1439,9 @@
       "notes": "revisione minore (release date/trivia); Blade/Ratchet/Bit gia' in master"
     },
     "SphinxCowl 9-80GN": {
-      "revid": 646148,
-      "timestamp": "2026-08-13T01:58:52.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 647204,
+      "timestamp": "2026-08-26T12:34:49.000Z",
+      "lastScannedDate": "2026-08-27",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -1449,9 +1449,9 @@
       ]
     },
     "UnicornSting 5-60GP": {
-      "revid": 646149,
-      "timestamp": "2026-08-13T02:03:02.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 647207,
+      "timestamp": "2026-08-26T12:37:05.000Z",
+      "lastScannedDate": "2026-08-27",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -1505,9 +1505,9 @@
       "kindSource": "heuristic"
     },
     "Blade - WizardRod": {
-      "revid": 646289,
-      "timestamp": "2026-08-15T02:49:14.000Z",
-      "lastScannedDate": "2026-08-15",
+      "revid": 647153,
+      "timestamp": "2026-08-26T06:22:15.000Z",
+      "lastScannedDate": "2026-08-27",
       "kind": "part",
       "kindSource": "heuristic"
     },
@@ -1591,9 +1591,9 @@
       "kindSource": "heuristic"
     },
     "WizardRod 1-60R": {
-      "revid": 605136,
-      "timestamp": "2026-08-14T06:19:28.677Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 647152,
+      "timestamp": "2026-08-26T06:20:53.000Z",
+      "lastScannedDate": "2026-08-27",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -1755,9 +1755,9 @@
       ]
     },
     "BlackShell 4-60D": {
-      "revid": 646929,
-      "timestamp": "2026-08-24T08:17:35.000Z",
-      "lastScannedDate": "2026-08-25",
+      "revid": 647144,
+      "timestamp": "2026-08-26T06:11:41.000Z",
+      "lastScannedDate": "2026-08-27",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -1816,9 +1816,9 @@
       "kindSource": "heuristic"
     },
     "PhoenixWing 5-80H": {
-      "revid": 610286,
-      "timestamp": "2026-08-14T06:19:28.677Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 647158,
+      "timestamp": "2026-08-26T06:25:23.000Z",
+      "lastScannedDate": "2026-08-27",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -2467,9 +2467,9 @@
       "kindSource": "heuristic"
     },
     "Obsidian Shell 3-85S": {
-      "revid": 642117,
-      "timestamp": "2026-06-26T21:23:38.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 647149,
+      "timestamp": "2026-08-26T06:16:14.000Z",
+      "lastScannedDate": "2026-08-27",
       "kind": "product",
       "kindSource": "heuristic"
     },
