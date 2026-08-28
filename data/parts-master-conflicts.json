@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-27",
-  "count": 13,
+  "generated": "2026-08-28",
+  "count": 15,
   "conflicts": [
     {
       "type": "unsupported_mechanic",
@@ -130,6 +130,24 @@
       "from": "WizardRod 1-60R",
       "primaVisto": "2026-08-27",
       "ultimoVisto": "2026-08-27"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "cutter-shinobi",
+      "existing": "balance",
+      "found": "attack",
+      "from": "Cutter Shinobi GF",
+      "primaVisto": "2026-08-28",
+      "ultimoVisto": "2026-08-28"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "rampart-aegis",
+      "existing": "defense",
+      "found": "stamina",
+      "from": "Rampart Aegis B",
+      "primaVisto": "2026-08-28",
+      "ultimoVisto": "2026-08-28"
     }
   ]
 }

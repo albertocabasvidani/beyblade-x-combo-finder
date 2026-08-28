@@ -4,12 +4,12 @@
     "List of Beyblade X products (Takara Tomy)": {
       "revid": 645910,
       "timestamp": "2026-08-11T15:29:44.000Z",
-      "lastScannedDate": "2026-08-27"
+      "lastScannedDate": "2026-08-28"
     },
     "List of Beyblade X products (Hasbro)": {
       "revid": 647059,
       "timestamp": "2026-08-25T00:51:28.000Z",
-      "lastScannedDate": "2026-08-27"
+      "lastScannedDate": "2026-08-28"
     }
   },
   "pages": {
@@ -2815,11 +2815,12 @@
       "kindSource": "heuristic"
     },
     "Infinity Rail Battle Set": {
-      "revid": 646990,
-      "timestamp": "2026-08-24T20:53:56.000Z",
-      "lastScannedDate": "2026-08-25",
+      "revid": 647245,
+      "timestamp": "2026-08-27T07:42:53.000Z",
+      "lastScannedDate": "2026-08-28",
       "kind": "set",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "Hasbro battle set (G3745): Beystadium + Cutter Shinobi GF + Rampart Aegis B + 2 launchers. Le due bey sono pagine-prodotto separate, gia' in worklist."
     },
     "CobaltDrake 9-60R": {
       "revid": 634354,
@@ -2850,18 +2851,20 @@
       "kindSource": "heuristic"
     },
     "Cutter Shinobi GF": {
-      "revid": 647018,
-      "timestamp": "2026-08-24T23:20:01.000Z",
-      "lastScannedDate": "2026-08-25",
+      "revid": 647237,
+      "timestamp": "2026-08-27T04:59:45.000Z",
+      "lastScannedDate": "2026-08-28",
       "kind": "product",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "Ratchet-Integrated Blade 'Cutter Shinobi' + Bit 'Gear Flat', entrambe gia' nel master (da G1940). Aggiunto solo il productCode G3745. Type=Attack sul wiki vs 'balance' esistente: conflitto type_mismatch, non risolto (merge lo registra)."
     },
     "Rampart Aegis B": {
-      "revid": 647017,
-      "timestamp": "2026-08-24T23:19:49.000Z",
-      "lastScannedDate": "2026-08-25",
+      "revid": 647238,
+      "timestamp": "2026-08-27T05:00:00.000Z",
+      "lastScannedDate": "2026-08-28",
       "kind": "product",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "Ratchet-Integrated Blade 'Rampart Aegis' + Bit 'Ball', entrambe gia' nel master (da G1940). Aggiunto solo il productCode G3745. Type=Stamina sul wiki vs 'defense' esistente: conflitto type_mismatch, non risolto (merge lo registra)."
     },
     "Infinity Stadium": {
       "revid": 646604,
@@ -2874,6 +2877,13 @@
       "revid": 646999,
       "timestamp": "2026-08-24T21:29:20.000Z",
       "lastScannedDate": "2026-08-25",
+      "kind": "accessory",
+      "kindSource": "heuristic"
+    },
+    "Infinity Rail Battle Set Beystadium": {
+      "revid": 647246,
+      "timestamp": "2026-08-27T07:43:11.000Z",
+      "lastScannedDate": "2026-08-28",
       "kind": "accessory",
       "kindSource": "heuristic"
     }
