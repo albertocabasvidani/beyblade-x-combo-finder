@@ -4,12 +4,12 @@
     "List of Beyblade X products (Takara Tomy)": {
       "revid": 645910,
       "timestamp": "2026-08-11T15:29:44.000Z",
-      "lastScannedDate": "2026-08-28"
+      "lastScannedDate": "2026-08-29"
     },
     "List of Beyblade X products (Hasbro)": {
       "revid": 647059,
       "timestamp": "2026-08-25T00:51:28.000Z",
-      "lastScannedDate": "2026-08-28"
+      "lastScannedDate": "2026-08-29"
     }
   },
   "pages": {
@@ -30,9 +30,9 @@
       "notes": "Nessuna nuova parte: verificati nomi Hasbro/Multipack/Dual Pack, tutti gia coperti da alias esistenti."
     },
     "DranSword 3-60F": {
-      "revid": 647124,
-      "timestamp": "2026-08-26T03:43:48.000Z",
-      "lastScannedDate": "2026-08-27",
+      "revid": 647306,
+      "timestamp": "2026-08-29T00:25:47.000Z",
+      "lastScannedDate": "2026-08-29",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -294,9 +294,9 @@
       "notes": "Revid cambiato, verificato: nessun nuovo componente (solo modifiche testuali/gallery/date release)."
     },
     "CobaltDragoon 2-60C": {
-      "revid": 647216,
-      "timestamp": "2026-08-26T12:59:39.000Z",
-      "lastScannedDate": "2026-08-27",
+      "revid": 647311,
+      "timestamp": "2026-08-29T01:03:03.000Z",
+      "lastScannedDate": "2026-08-29",
       "kind": "product",
       "kindSource": "heuristic",
       "notes": "Revid cambiato, verificato: aggiunta Metal Coat Black (CoroCoro lottery/B4) e G2951 Deluxe String Launcher 2-Pack, nessuna parte nuova."
@@ -368,9 +368,9 @@
       "notes": "Solo aggiunta descrizione completa (era draft placeholder), Products invariati."
     },
     "CobaltDrake 4-60F": {
-      "revid": 646275,
-      "timestamp": "2026-08-14T21:08:42.000Z",
-      "lastScannedDate": "2026-08-15",
+      "revid": 647310,
+      "timestamp": "2026-08-29T01:03:00.000Z",
+      "lastScannedDate": "2026-08-29",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -423,11 +423,11 @@
       "kindSource": "heuristic"
     },
     "DrakeBrave G4-70I": {
-      "revid": 646346,
-      "timestamp": "2026-08-15T06:26:25.000Z",
-      "lastScannedDate": "2026-08-16",
+      "revid": 647307,
+      "timestamp": "2026-08-29T00:55:48.000Z",
+      "lastScannedDate": "2026-08-29",
       "kind": "product",
-      "kindSource": "ai",
+      "kindSource": "heuristic",
       "notes": "revisione minore (trivia su provenienza parti); LockChip/MainBlade/AssistBlade/Ratchet/Bit gia' in master"
     },
     "SamuraiSaber 2-70L": {
@@ -669,9 +669,9 @@
       "kindSource": "heuristic"
     },
     "HellsChain 5-60HT": {
-      "revid": 647189,
-      "timestamp": "2026-08-26T12:01:28.000Z",
-      "lastScannedDate": "2026-08-27",
+      "revid": 647320,
+      "timestamp": "2026-08-29T01:50:35.000Z",
+      "lastScannedDate": "2026-08-29",
       "kind": "product",
       "kindSource": "heuristic"
     },
@@ -1036,9 +1036,9 @@
       "kindSource": "heuristic"
     },
     "WizardArrow 4-80B": {
-      "revid": 639649,
-      "timestamp": "2026-06-04T04:54:12.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 647317,
+      "timestamp": "2026-08-29T01:46:37.000Z",
+      "lastScannedDate": "2026-08-29",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -1116,9 +1116,9 @@
       "kindSource": "heuristic"
     },
     "EvaArc B0-70E": {
-      "revid": 634458,
-      "timestamp": "2026-04-05T05:17:21.000Z",
-      "lastScannedDate": "2026-08-09",
+      "revid": 647296,
+      "timestamp": "2026-08-28T08:32:38.000Z",
+      "lastScannedDate": "2026-08-29",
       "kind": "product",
       "kindSource": "heuristic"
     },
@@ -1318,9 +1318,9 @@
       "kindSource": "heuristic"
     },
     "Ratchet - 5-80": {
-      "revid": 647160,
-      "timestamp": "2026-08-26T06:26:55.000Z",
-      "lastScannedDate": "2026-08-27",
+      "revid": 647291,
+      "timestamp": "2026-08-28T07:01:01.000Z",
+      "lastScannedDate": "2026-08-29",
       "kind": "part",
       "kindSource": "heuristic"
     },
@@ -1367,9 +1367,9 @@
       "kindSource": "heuristic"
     },
     "Bit - Gear Flat": {
-      "revid": 647020,
-      "timestamp": "2026-08-24T23:21:21.000Z",
-      "lastScannedDate": "2026-08-25",
+      "revid": 647289,
+      "timestamp": "2026-08-28T06:57:05.000Z",
+      "lastScannedDate": "2026-08-29",
       "kind": "part",
       "kindSource": "heuristic"
     },
@@ -1775,9 +1775,9 @@
       ]
     },
     "WhaleWave 5-80E": {
-      "revid": 646978,
-      "timestamp": "2026-08-24T12:43:02.000Z",
-      "lastScannedDate": "2026-08-25",
+      "revid": 647304,
+      "timestamp": "2026-08-28T21:53:10.000Z",
+      "lastScannedDate": "2026-08-29",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -2066,9 +2066,9 @@
       "kindSource": "heuristic"
     },
     "Evangelion Deck Set": {
-      "revid": 634457,
-      "timestamp": "2026-04-05T05:17:05.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 647295,
+      "timestamp": "2026-08-28T08:32:11.000Z",
+      "lastScannedDate": "2026-08-29",
       "kind": "set",
       "kindSource": "heuristic"
     },
@@ -2383,16 +2383,16 @@
       "kindSource": "heuristic"
     },
     "EvaBrave A1-70V": {
-      "revid": 634459,
-      "timestamp": "2026-04-05T05:17:31.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 647298,
+      "timestamp": "2026-08-28T08:33:13.000Z",
+      "lastScannedDate": "2026-08-29",
       "kind": "product",
       "kindSource": "heuristic"
     },
     "EvaBrush T2-70A": {
-      "revid": 634460,
-      "timestamp": "2026-04-05T05:17:42.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 647297,
+      "timestamp": "2026-08-28T08:32:55.000Z",
+      "lastScannedDate": "2026-08-29",
       "kind": "product",
       "kindSource": "heuristic"
     },
@@ -2439,9 +2439,9 @@
       "kindSource": "heuristic"
     },
     "SphinxCowl 1-80GF": {
-      "revid": 609817,
-      "timestamp": "2025-06-19T06:41:07.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 647286,
+      "timestamp": "2026-08-28T06:55:15.000Z",
+      "lastScannedDate": "2026-08-29",
       "kind": "product",
       "kindSource": "heuristic"
     },
