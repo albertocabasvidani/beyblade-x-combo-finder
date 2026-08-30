@@ -4,12 +4,12 @@
     "List of Beyblade X products (Takara Tomy)": {
       "revid": 645910,
       "timestamp": "2026-08-11T15:29:44.000Z",
-      "lastScannedDate": "2026-08-29"
+      "lastScannedDate": "2026-08-30"
     },
     "List of Beyblade X products (Hasbro)": {
       "revid": 647059,
       "timestamp": "2026-08-25T00:51:28.000Z",
-      "lastScannedDate": "2026-08-29"
+      "lastScannedDate": "2026-08-30"
     }
   },
   "pages": {
@@ -30,9 +30,9 @@
       "notes": "Nessuna nuova parte: verificati nomi Hasbro/Multipack/Dual Pack, tutti gia coperti da alias esistenti."
     },
     "DranSword 3-60F": {
-      "revid": 647306,
-      "timestamp": "2026-08-29T00:25:47.000Z",
-      "lastScannedDate": "2026-08-29",
+      "revid": 647396,
+      "timestamp": "2026-08-29T05:54:20.000Z",
+      "lastScannedDate": "2026-08-30",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -50,9 +50,9 @@
       ]
     },
     "TriceraPress M-85BS": {
-      "revid": 646914,
-      "timestamp": "2026-08-24T07:43:46.000Z",
-      "lastScannedDate": "2026-08-25",
+      "revid": 647404,
+      "timestamp": "2026-08-29T06:03:25.000Z",
+      "lastScannedDate": "2026-08-30",
       "kind": "product",
       "kindSource": "heuristic",
       "notes": "solo aggiornamento info (Hasbro release/gallery/trivia); parti gia' nel master (tricera-press, M-85, bound-spike)"
@@ -66,9 +66,9 @@
       "notes": "Revid cambiato (643858→644560): G2762 (già registrato dal 22/07) confermato esplicito nella lista Products; aggiunto ProductCode G4568 a Glory Valkerion LF (glory-valkyrie, già registrata come UX-20). Nessuna parte nuova."
     },
     "OrochiCluster 6-60LF": {
-      "revid": 646982,
-      "timestamp": "2026-08-24T12:54:19.000Z",
-      "lastScannedDate": "2026-08-25",
+      "revid": 647403,
+      "timestamp": "2026-08-29T06:03:00.000Z",
+      "lastScannedDate": "2026-08-30",
       "kind": "product",
       "kindSource": "heuristic",
       "notes": "Revid cambiato: aggiunta release Hasbro (Coil Orochi), gia presente nel master."
@@ -138,9 +138,9 @@
       "notes": "Aggiunto G3084 Rival Rumble Pack (stesso combo, nuova colorazione): nessuna parte nuova."
     },
     "LeonClaw 5-60P": {
-      "revid": 645005,
-      "timestamp": "2026-07-28T02:19:19.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 647345,
+      "timestamp": "2026-08-29T02:33:34.000Z",
+      "lastScannedDate": "2026-08-30",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -325,9 +325,9 @@
       "notes": "Revid cambiato, verificato: solo testo/gallery aggiornati (G3064 gia registrato), nessuna parte nuova."
     },
     "SharkEdge 3-60LF": {
-      "revid": 645429,
-      "timestamp": "2026-08-03T09:09:11.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 647340,
+      "timestamp": "2026-08-29T02:23:56.000Z",
+      "lastScannedDate": "2026-08-30",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -368,9 +368,9 @@
       "notes": "Solo aggiunta descrizione completa (era draft placeholder), Products invariati."
     },
     "CobaltDrake 4-60F": {
-      "revid": 647310,
-      "timestamp": "2026-08-29T01:03:00.000Z",
-      "lastScannedDate": "2026-08-29",
+      "revid": 647401,
+      "timestamp": "2026-08-29T06:01:37.000Z",
+      "lastScannedDate": "2026-08-30",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -459,11 +459,11 @@
       "kindSource": "heuristic"
     },
     "CrocoTread TQ5-50GN": {
-      "revid": 646536,
-      "timestamp": "2026-08-19T02:43:17.000Z",
-      "lastScannedDate": "2026-08-20",
+      "revid": 647415,
+      "timestamp": "2026-08-29T16:27:48.000Z",
+      "lastScannedDate": "2026-08-30",
       "kind": "product",
-      "kindSource": "ai",
+      "kindSource": "heuristic",
       "redirects": [
         "Tread Croc TQ 5-50GN"
       ],
@@ -484,9 +484,9 @@
       "kindSource": "heuristic"
     },
     "AeroPegasus 3-70A": {
-      "revid": 646274,
-      "timestamp": "2026-08-14T21:06:14.000Z",
-      "lastScannedDate": "2026-08-15",
+      "revid": 647410,
+      "timestamp": "2026-08-29T06:12:16.000Z",
+      "lastScannedDate": "2026-08-30",
       "kind": "product",
       "kindSource": "heuristic"
     },
@@ -599,9 +599,9 @@
       ]
     },
     "DranDagger 4-60R": {
-      "revid": 639515,
-      "timestamp": "2026-06-03T02:08:13.000Z",
-      "lastScannedDate": "2026-08-09",
+      "revid": 647327,
+      "timestamp": "2026-08-29T02:04:47.000Z",
+      "lastScannedDate": "2026-08-30",
       "kind": "product",
       "kindSource": "heuristic"
     },
@@ -669,16 +669,16 @@
       "kindSource": "heuristic"
     },
     "HellsChain 5-60HT": {
-      "revid": 647320,
-      "timestamp": "2026-08-29T01:50:35.000Z",
-      "lastScannedDate": "2026-08-29",
+      "revid": 647354,
+      "timestamp": "2026-08-29T03:12:53.000Z",
+      "lastScannedDate": "2026-08-30",
       "kind": "product",
       "kindSource": "heuristic"
     },
     "HellsHammer 3-70H": {
-      "revid": 646792,
-      "timestamp": "2026-08-22T06:47:14.000Z",
-      "lastScannedDate": "2026-08-23",
+      "revid": 647377,
+      "timestamp": "2026-08-29T05:12:49.000Z",
+      "lastScannedDate": "2026-08-30",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -686,9 +686,9 @@
       ]
     },
     "HellsScythe 4-60T": {
-      "revid": 647208,
-      "timestamp": "2026-08-26T12:39:22.000Z",
-      "lastScannedDate": "2026-08-27",
+      "revid": 647390,
+      "timestamp": "2026-08-29T05:31:56.000Z",
+      "lastScannedDate": "2026-08-30",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -717,9 +717,9 @@
       "kindSource": "heuristic"
     },
     "KnightLance 4-80HN": {
-      "revid": 632917,
-      "timestamp": "2026-03-20T05:13:00.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 647331,
+      "timestamp": "2026-08-29T02:14:07.000Z",
+      "lastScannedDate": "2026-08-30",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -734,9 +734,9 @@
       "kindSource": "heuristic"
     },
     "KnightShield 3-80N": {
-      "revid": 642425,
-      "timestamp": "2026-06-30T22:30:04.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 647360,
+      "timestamp": "2026-08-29T03:27:42.000Z",
+      "lastScannedDate": "2026-08-30",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -856,9 +856,9 @@
       "kindSource": "heuristic"
     },
     "RhinoHorn 3-80S": {
-      "revid": 645822,
-      "timestamp": "2026-08-08T05:02:51.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 647348,
+      "timestamp": "2026-08-29T02:35:56.000Z",
+      "lastScannedDate": "2026-08-30",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -1022,9 +1022,9 @@
       "kindSource": "heuristic"
     },
     "ViperTail 5-80O": {
-      "revid": 640350,
-      "timestamp": "2026-06-08T22:26:10.000Z",
-      "lastScannedDate": "2026-08-09",
+      "revid": 647352,
+      "timestamp": "2026-08-29T02:41:06.000Z",
+      "lastScannedDate": "2026-08-30",
       "kind": "product",
       "kindSource": "heuristic"
     },
@@ -1046,9 +1046,9 @@
       ]
     },
     "WizardRod 5-70DB": {
-      "revid": 646301,
-      "timestamp": "2026-08-15T05:05:28.000Z",
-      "lastScannedDate": "2026-08-15",
+      "revid": 647382,
+      "timestamp": "2026-08-29T05:18:50.000Z",
+      "lastScannedDate": "2026-08-30",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -1601,9 +1601,9 @@
       ]
     },
     "ShinobiShadow 1-80MN": {
-      "revid": 646793,
-      "timestamp": "2026-08-22T06:48:25.000Z",
-      "lastScannedDate": "2026-08-23",
+      "revid": 647386,
+      "timestamp": "2026-08-29T05:24:37.000Z",
+      "lastScannedDate": "2026-08-30",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -1866,9 +1866,9 @@
       ]
     },
     "ClockMirage 9-65B": {
-      "revid": 646308,
-      "timestamp": "2026-08-15T05:12:33.000Z",
-      "lastScannedDate": "2026-08-15",
+      "revid": 647402,
+      "timestamp": "2026-08-29T06:02:25.000Z",
+      "lastScannedDate": "2026-08-30",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -1982,9 +1982,9 @@
       "kindSource": "heuristic"
     },
     "Random Booster CrocoTread Select": {
-      "revid": 646047,
-      "timestamp": "2026-08-12T03:06:21.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 647414,
+      "timestamp": "2026-08-29T16:26:56.000Z",
+      "lastScannedDate": "2026-08-30",
       "kind": "randombooster",
       "kindSource": "heuristic"
     },
