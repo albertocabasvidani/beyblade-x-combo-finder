@@ -1,16 +1,17 @@
 {
-  "lastRun": "2026-08-24",
+  "lastRun": "2026-08-31",
   "lastProposal": {
-    "messageId": "1a0318eb0da56c32",
-    "threadId": "1a0318eb0da56c32",
-    "date": "2026-08-24",
-    "subject": "Beyblade — 3 nuove fonti candidate (settimana 24/08)",
-    "note": "Nessuna risposta alla proposta del 17/08: nessun feedback applicato, sources.json invariato. Nuovi: 1 propose (atmosphererql, UK BBN) + 2 manual-verify (beycorner DE, torneos-beyblade-chile IG). Proposto all'utente lo SCARTO di X-RANK FR (5a verifica a vuoto). Restano pendenti rogue-hero-bbx, beyblade-jamundi, beyblade-buds-nc e i 3 social dal 20/07.",
+    "messageId": "1a0559d54ac7b334",
+    "threadId": "1a0559d54ac7b334",
+    "date": "2026-08-31",
+    "subject": "Beyblade - 3 nuove fonti candidate (settimana 31/08)",
+    "note": "Feedback del 31/08 applicato (\"Approvo tutte le proposte tranne Jamundi e Buds\"): promossi in sources.json atmosphererql (0.5), beycorner (0.3), rogue-hero-bbx (0.4); spostati in manualVerification torneos-beyblade-chile, beypointer-usa-fb, pbbl-ph, org-bsbey-br; chiuso X-RANK FR come rejected; jamundi e buds-nc rejected + knownNegatives. Nessun candidato resta pendente dalle settimane precedenti. Nuovi di questo run: 3 manual-verify (lfbx-fr, beybladex-thailand-league, wba-perth). Discovery YouTube in rendimento decrescente: 73 canali su 81 gia noti o gia scartati.",
     "relatedProposals": [
       "19f7ea6fd17b3060",
       "19fc67292184b2f3",
       "19fea7d30be895fd",
-      "1a00e895ff886719"
+      "1a00e895ff886719",
+      "1a0318eb0da56c32"
     ]
   },
   "candidates": [
@@ -694,12 +695,12 @@
       },
       "rationale": "Piattaforma francese di tornei e ranking per Pro Bladers. La Francia oggi è un gap totale di copertura (nessuna fonte fr).",
       "dedupCheck": "Nessuna fonte FR esistente (gap totale).",
-      "verifyNote": "24/08/2026: QUINTA verifica consecutiva a vuoto. La home mostra ancora 'Maintenance en Cours' con lo stesso countdown scaduto (10/08/2026 23:59), due settimane dopo la data promessa. Scarto proposto all'utente nella mail del 24/08: se confermato, passa a rejected + knownNegatives.",
+      "verifyNote": "24/08/2026: QUINTA verifica consecutiva a vuoto (home in 'Maintenance en Cours', countdown scaduto il 10/08, /tournaments 404). Scarto proposto nella mail del 24/08 e APPROVATO dall'utente (31/08/2026: \"Approvo tutte le proposte tranne Jamundi e Buds\"). Chiuso: rejected + knownNegatives. La Francia resta un gap scoperto.",
       "proposedWeight": 0.6,
       "recommendation": "manual-verify",
-      "status": "proposed",
+      "status": "rejected",
       "dateFound": "2026-07-13",
-      "lastSeen": "2026-08-24"
+      "lastSeen": "2026-08-31"
     },
     {
       "candidateId": "website-lbb-oficial",
@@ -762,9 +763,11 @@
       "dedupCheck": "Le fonti US attive/note sono locali (Maryland, Lafayette Louisiana, 321GoShoot, RPMzero) o già scartate (Houston). Questo gruppo è un aggregatore nazionale, non una lega locale: gap diverso. FB non automatizzabile -> verifica manuale.",
       "proposedWeight": 0.5,
       "recommendation": "manual-verify",
-      "status": "proposed",
+      "status": "accepted",
+      "verifyNote": "Approvato dall'utente (email 31/08/2026: \"Approvo tutte le proposte tranne Jamundi e Buds\"). Facebook non automatizzabile -> spostato in manualVerification.",
+      "promotedOn": "2026-08-31",
       "dateFound": "2026-07-20",
-      "lastSeen": "2026-07-20"
+      "lastSeen": "2026-08-31"
     },
     {
       "candidateId": "social-pbbl-ph",
@@ -783,9 +786,11 @@
       "dedupCheck": "PH ha gia il gruppo Facebook 'beybladephilippines' (community generica) tra i manualVerification: PBBL e' l'organizzazione ufficiale che ospita i tornei, non duplica ma completa. Contenuto non verificabile via fetch (Facebook blocca l'accesso non autenticato) -> verifica manuale.",
       "proposedWeight": 0.4,
       "recommendation": "manual-verify",
-      "status": "proposed",
+      "status": "accepted",
+      "verifyNote": "Approvato dall'utente (email 31/08/2026: \"Approvo tutte le proposte tranne Jamundi e Buds\"). Facebook non automatizzabile -> spostato in manualVerification.",
+      "promotedOn": "2026-08-31",
       "dateFound": "2026-07-20",
-      "lastSeen": "2026-07-20"
+      "lastSeen": "2026-08-31"
     },
     {
       "candidateId": "social-org-bsbey-br",
@@ -804,9 +809,11 @@
       "dedupCheck": "Le fonti BR attive sono canali YouTube nazionali narrativi (LBP, Beyblade Galaxy): nessuna copertura regionale specifica di Brasilia. Instagram non automatizzabile e contenuto non verificabile via fetch -> verifica manuale.",
       "proposedWeight": 0.4,
       "recommendation": "manual-verify",
-      "status": "proposed",
+      "status": "accepted",
+      "verifyNote": "Approvato dall'utente (email 31/08/2026: \"Approvo tutte le proposte tranne Jamundi e Buds\"). Instagram non automatizzabile -> spostato in manualVerification.",
+      "promotedOn": "2026-08-31",
       "dateFound": "2026-07-20",
-      "lastSeen": "2026-07-20"
+      "lastSeen": "2026-08-31"
     },
     {
       "candidateId": "youtube-ashen-dragoons",
@@ -986,10 +993,11 @@
       "dedupCheck": "Nuova area US (North Carolina), non copre il territorio di Maryland/Ashen Dragoons (DMV) ne Lafayette (LA). ATTENZIONE: i video di TORNEO (Beyblade X Tournament: Newton NC, Live Beyblade X Tournament) sono del 2025; nel 2026 ha pubblicato solo 2 clip 1v1. Il contenuto e battaglia singola, non piazzamento con podio. Decisione tua.",
       "proposedWeight": 0.3,
       "recommendation": "manual-verify",
-      "status": "proposed",
+      "status": "rejected",
+      "verifyNote": "Escluso dall'utente (email 31/08/2026: \"Approvo tutte le proposte tranne Jamundi e Buds\"). Aggiunto a knownNegatives.",
       "verifiedOn": "2026-08-10",
       "dateFound": "2026-08-10",
-      "lastSeen": "2026-08-17"
+      "lastSeen": "2026-08-31"
     },
     {
       "candidateId": "youtube-rogue-hero-bbx",
@@ -1011,10 +1019,12 @@
       "dedupCheck": "Le fonti US attive sono leghe locali (Maryland, Lafayette, Ashen Dragoons/DMV, 321GoShoot) o creator meta (BeyMac, Anti Wizard): questo e un competitor itinerante che porta piazzamenti da eventi diversi, incluso un G3 giapponese. ATTENZIONE: circa meta dei video e 'Tournament Testing' (combo-testing teorico), l'altra meta e vlog di torneo con esito reale — da qui il peso basso.",
       "proposedWeight": 0.4,
       "recommendation": "propose",
-      "status": "proposed",
+      "status": "accepted",
+      "verifyNote": "Approvato dall'utente (email 31/08/2026: \"Approvo tutte le proposte tranne Jamundi e Buds\"). Promosso in sources.json con peso 0.4.",
+      "promotedOn": "2026-08-31",
       "verifiedOn": "2026-08-17",
       "dateFound": "2026-08-17",
-      "lastSeen": "2026-08-17"
+      "lastSeen": "2026-08-31"
     },
     {
       "candidateId": "youtube-beyblade-jamundi",
@@ -1036,10 +1046,11 @@
       "dedupCheck": "La Colombia e oggi un gap totale: nessuna fonte CO tra le attive (le ES/LATAM sono SBBL in Spagna e le leghe messicane). ATTENZIONE: canale minuscolo (33 iscritti, molto sotto la soglia con cui hai scartato Zentonix a 145 e Maritime a 34) e attivita concentrata gen-apr 2026, con un solo video ad agosto. Decisione tua.",
       "proposedWeight": 0.3,
       "recommendation": "manual-verify",
-      "status": "proposed",
+      "status": "rejected",
+      "verifyNote": "Escluso dall'utente (email 31/08/2026: \"Approvo tutte le proposte tranne Jamundi e Buds\"). Aggiunto a knownNegatives.",
       "verifiedOn": "2026-08-17",
       "dateFound": "2026-08-17",
-      "lastSeen": "2026-08-17"
+      "lastSeen": "2026-08-31"
     },
     {
       "candidateId": "youtube-atmosphererql",
@@ -1061,10 +1072,12 @@
       "dedupCheck": "La scena UK e oggi coperta solo da Devon Beyblade Association (organizzatore minuscolo, 48 iscritti) e BiscuitBoii (cadenza irregolare, gap dic-giu). AtmosphereRQL copre il circuito nazionale BBN in modo regolare: non duplica, colma il buco. ATTENZIONE: una minoranza dei video e combo-testing (Golem Rock, Worn Rubber Accel) e collezionismo Bakuten, da qui il peso medio-basso.",
       "proposedWeight": 0.5,
       "recommendation": "propose",
-      "status": "proposed",
+      "status": "accepted",
+      "verifyNote": "Approvato dall'utente (email 31/08/2026: \"Approvo tutte le proposte tranne Jamundi e Buds\"). Promosso in sources.json con peso 0.5.",
+      "promotedOn": "2026-08-31",
       "verifiedOn": "2026-08-24",
       "dateFound": "2026-08-24",
-      "lastSeen": "2026-08-24"
+      "lastSeen": "2026-08-31"
     },
     {
       "candidateId": "youtube-beycorner",
@@ -1086,10 +1099,12 @@
       "dedupCheck": "La DE ha gia AbuBeyblade (fonte attiva, w 0.5, stesso profilo 'Turnier-Vlogs') piu xleague_germany e il Discord blader-league in manualVerification. ATTENZIONE: il formato dominante e la recensione-parte ricorrente ('LOHNT sich X wirklich?', circa meta dei video), cioe teoria; i tornei sono vlog personali senza podio completo. Sovrapposizione reale con AbuBeyblade: valore aggiunto incerto. Decisione tua.",
       "proposedWeight": 0.3,
       "recommendation": "manual-verify",
-      "status": "proposed",
+      "status": "accepted",
+      "verifyNote": "Approvato dall'utente (email 31/08/2026: \"Approvo tutte le proposte tranne Jamundi e Buds\"). Promosso in sources.json con peso 0.3 nonostante la sovrapposizione con AbuBeyblade.",
+      "promotedOn": "2026-08-31",
       "verifiedOn": "2026-08-24",
       "dateFound": "2026-08-24",
-      "lastSeen": "2026-08-24"
+      "lastSeen": "2026-08-31"
     },
     {
       "candidateId": "social-torneos-beyblade-chile",
@@ -1108,9 +1123,78 @@
       "dedupCheck": "Il Cile e oggi un gap totale: l'unica fonte CL incontrata finora e beybladeprochile, gia in knownNegatives come entertainment. Le ES/LATAM attive sono SBBL (Spagna) e le leghe messicane. Instagram non automatizzabile e contenuto non verificabile via fetch -> verifica manuale, zona di parcheggio.",
       "proposedWeight": 0.4,
       "recommendation": "manual-verify",
-      "status": "proposed",
+      "status": "accepted",
+      "verifyNote": "Approvato dall'utente (email 31/08/2026: \"Approvo tutte le proposte tranne Jamundi e Buds\"). Instagram non automatizzabile -> spostato in manualVerification.",
+      "promotedOn": "2026-08-31",
       "dateFound": "2026-08-24",
-      "lastSeen": "2026-08-24"
+      "lastSeen": "2026-08-31"
+    },
+    {
+      "candidateId": "youtube-wba-perth",
+      "name": "Western Bladers Association (WBA, Perth)",
+      "type": "youtube",
+      "platform": "youtube",
+      "provides": "combos",
+      "lang": "en",
+      "region": "AU-WA",
+      "url": "https://www.youtube.com/@wbaperth",
+      "channelId": "UCFvDFTsKPVp4wFg-20npqzQ",
+      "signals": {
+        "subscribers": 5,
+        "lastActivity": "2026-08-20",
+        "videoCount": 8,
+        "publishesResults": true
+      },
+      "rationale": "Verificato via API: lega organizzata di Perth con una struttura a stagione esplicita e continua — 'Season 1, Week 1..7 Highlights' con la data dell'evento nel titolo (20 June, 27 June, 04 July, 11 July, 18 July, 25 July, 01 Aug 2026). Non e un creator ma l'organizzatore, con calendario settimanale.",
+      "dedupCheck": "L'Oceania oggi ha MBBC (Monash, Melbourne) e Beyblade New Zealand: Perth/Western Australia e una scena separata, non duplica. ATTENZIONE: canale nato a luglio 2026, 5 iscritti — molto sotto la soglia con cui hai scartato Zentonix (145) e Maritime (34) — e i video sono 'Highlights', non podi completi con combo. Decisione tua.",
+      "proposedWeight": 0.3,
+      "recommendation": "manual-verify",
+      "status": "proposed",
+      "verifiedOn": "2026-08-31",
+      "dateFound": "2026-08-31",
+      "lastSeen": "2026-08-31"
+    },
+    {
+      "candidateId": "social-lfbx-fr",
+      "name": "Ligue Francaise de Beyblade X (LFBX)",
+      "type": "social",
+      "platform": "instagram",
+      "provides": "combos",
+      "lang": "fr",
+      "region": "FR",
+      "url": "https://www.instagram.com/lfbx_officiel/",
+      "signals": {
+        "lastActivity": "2026",
+        "publishesResults": true
+      },
+      "rationale": "Associazione (registrata su HelloAsso) che organizza tornei regolari in Francia e ne comunica gli esiti su Instagram. Finale francese il 24/10/2026, con qualificazione al Grand Prix di Bangkok.",
+      "dedupCheck": "La Francia e appena tornata un gap totale: X-RANK e stato chiuso questa settimana e tournoi-beyblade.fr era gia in knownNegatives (solo iscrizioni/promo). LFBX e l'unico ente FR che pubblica qualcosa di reale. Instagram non automatizzabile -> zona di parcheggio manualVerification.",
+      "proposedWeight": 0.4,
+      "recommendation": "manual-verify",
+      "status": "proposed",
+      "dateFound": "2026-08-31",
+      "lastSeen": "2026-08-31"
+    },
+    {
+      "candidateId": "social-beybladex-thailand-league",
+      "name": "BeybladeX Thailand League",
+      "type": "social",
+      "platform": "instagram",
+      "provides": "combos",
+      "lang": "th",
+      "region": "TH",
+      "url": "https://www.instagram.com/beybladex_t_l/",
+      "signals": {
+        "lastActivity": "2026",
+        "publishesResults": true
+      },
+      "rationale": "Lega nazionale thailandese (Facebook + Instagram) con calendario di tappe proprio. La Thailandia e il paese ospite del Grand Prix Final 2026 di Bangkok, quindi scena in crescita.",
+      "dedupCheck": "La TH oggi e coperta solo da Blade Bey X (YouTube, fonte attiva w 0.7), che pero e un singolo giocatore: la lega e l'organizzatore, non duplica. Social non automatizzabile -> manualVerification.",
+      "proposedWeight": 0.4,
+      "recommendation": "manual-verify",
+      "status": "proposed",
+      "dateFound": "2026-08-31",
+      "lastSeen": "2026-08-31"
     }
   ],
   "knownNegatives": [
@@ -1261,6 +1345,19 @@
     "https://www.youtube.com/@elchicodinamight7457 (nessuna descrizione, entertainment)",
     "https://www.youtube.com/@sparkingvoid (64 iscritti, canale personale)",
     "https://www.youtube.com/@phantomknight713 (40 iscritti, nessuna descrizione)",
-    "https://www.youtube.com/@gametheory (The Game Theorists: canale gaming generalista, off-topic)"
+    "https://www.youtube.com/@gametheory (The Game Theorists: canale gaming generalista, off-topic)",
+    "https://www.x-rank.fr/tournaments (X-RANK FR: 5 verifiche consecutive a vuoto, home in manutenzione con countdown scaduto, /tournaments 404. Scarto approvato dall'utente 31/08/2026)",
+    "https://www.youtube.com/@bey-jamundi (BeybladeJamundi CO: 33 iscritti, attivita concentrata gen-apr 2026, escluso dall'utente 31/08/2026)",
+    "https://www.youtube.com/@beybladebudsx (Beyblade Buds NC: video di torneo fermi al 2025, nel 2026 solo clip 1v1, escluso dall'utente 31/08/2026)",
+    "https://www.youtube.com/@deathbattle (DEATH BATTLE!: canale pop-culture generalista, off-topic)",
+    "https://www.youtube.com/@nuc (ilinnuc US 426k: unboxing/news/opinione sui nuovi set, solo 3 video nel 2026, non risultati)",
+    "https://www.youtube.com/@beyvid_x (BEYvid US 27k: verificato via API, shorts di battaglie singole e unboxing; i pochi video di torneo sono round WBO, gia indicizzati dal thread Winning Combinations -> doppione)",
+    "https://www.youtube.com/@mestrebeyblader (BR 176 iscritti: verificato via API, ranking-opinione di blade/bit/ratchet e unboxing quotidiani, teoria/entertainment)",
+    "https://www.youtube.com/@baybladexthunder (BAYBLADE X THUNDER: 6 iscritti, 2 video, canale appena nato)",
+    "https://www.youtube.com/@sho-channnel-p8p (SHOちゃんねる JP: 15 iscritti, 6 video, canale personale appena nato)",
+    "https://www.youtube.com/@hyde-q1c (47 iscritti, inattivo dal 2025-10)",
+    "https://beycompanion.com (Bey Companion: ranking combo da partite auto-registrate dagli utenti nell'app, non piazzamenti di torneo. Stessa natura teorica di BeyXDB)",
+    "https://bbx-meta.pages.dev (mirror di BBXHub, gia in knownNegatives: aggregatore derivato da WBO + Blader League Germany)",
+    "https://worldbeyblade.org/Forum-Tournament-Reports (sottoforum report WBO: stessi eventi del thread Winning Combinations che gia parsiamo -> doppione)"
   ]
 }

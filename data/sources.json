@@ -482,6 +482,33 @@
       "channelId": "UCGlt6NYSljToVk-Y2eb_z4g"
     },
     {
+      "id": "youtube-atmosphererql",
+      "name": "AtmosphereRQL (circuito UK BBN)",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.5,
+      "lang": "en",
+      "channelId": "UCj2nirfb_tzl1Aqs8Sd8Z1g"
+    },
+    {
+      "id": "youtube-beycorner",
+      "name": "BeyCorner (DE)",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.3,
+      "lang": "de",
+      "channelId": "UCqyZyr8lOeHnlv3nY1EB8Kw"
+    },
+    {
+      "id": "youtube-rogue-hero-bbx",
+      "name": "Rogue Hero BBX",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.4,
+      "lang": "en",
+      "channelId": "UCvksSlckLsHRrXfHEigG74g"
+    },
+    {
       "id": "google-sheets-tier-list",
       "name": "Beyblade X Community Tier List (WBO)",
       "type": "spreadsheet",
@@ -594,6 +621,34 @@
       "url": "https://www.facebook.com/beymasterleague/",
       "lang": "es",
       "region": "PE"
+    },
+    {
+      "platform": "facebook",
+      "handle": "Beyblade X Tournaments USA (Beypointer/BBXD)",
+      "url": "https://www.facebook.com/groups/1108647593595673/",
+      "lang": "en",
+      "region": "US"
+    },
+    {
+      "platform": "facebook",
+      "handle": "OfficialPBBL",
+      "url": "https://www.facebook.com/OfficialPBBL/",
+      "lang": "en",
+      "region": "PH"
+    },
+    {
+      "platform": "instagram",
+      "handle": "org.bsbey",
+      "url": "https://www.instagram.com/org.bsbey/",
+      "lang": "pt",
+      "region": "BR-DF"
+    },
+    {
+      "platform": "instagram",
+      "handle": "torneos.beyblade.chile",
+      "url": "https://www.instagram.com/torneos.beyblade.chile/",
+      "lang": "es",
+      "region": "CL"
     }
   ],
   "searchSettings": {
