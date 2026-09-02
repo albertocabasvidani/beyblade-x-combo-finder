@@ -21,6 +21,13 @@ del /q "%USERPROFILE%\.playwright-beyblade\SingletonSocket" 2>nul
 set REDDIT_HEADED=1
 set WBO_HEADED=1
 
+REM Il log da solo non basta: l'esito degli step deve arrivare al dispatcher, che legge
+REM l'exit code del bat. Senza il contatore qui sotto il file esce 0 anche con tutti gli
+REM step falliti, e la verifica delle 09:00 registra "esito=ok" (02/09/2026: tre step morti
+REM per sessione OAuth scaduta, dispatcher e verificatore silenziosi per tutta la notte).
+set "FALLITI=0"
+set "FALLITI_ELENCO="
+
 call :log "=== RECOVER START ==="
 
 git log --since="%TODAY% 00:00" --pretty=format:%%s > "%CHECK%" 2>nul
@@ -52,10 +59,14 @@ if defined COMBOS_DA_FARE (
   REM la cache gia' presente: se il task del mattino e' andato, e' fresca di poche ore.
   call :log "--- judge-youtube START ---"
   claude --model sonnet --effort medium --dangerously-skip-permissions -p "/judge-youtube" >> "%LOG%" 2>&1
-  call :log "--- judge-youtube END exit=!errorlevel! ---"
+  set "RC=!errorlevel!"
+  call :log "--- judge-youtube END exit=!RC! ---"
+  call :conta "!RC!" "judge-youtube"
   call :log "--- update-combos START ---"
   claude --model sonnet --effort high --dangerously-skip-permissions -p "/update-combos" >> "%LOG%" 2>&1
-  call :log "--- update-combos END exit=!errorlevel! ---"
+  set "RC=!errorlevel!"
+  call :log "--- update-combos END exit=!RC! ---"
+  call :conta "!RC!" "update-combos"
 ) else (
   REM Due stati opposti non possono avere lo stesso messaggio: "la mattina e' andata" e
   REM "e' in pausa da una settimana" si leggono uguali nel log, e a distanza di giorni
@@ -71,17 +82,37 @@ findstr /c:"mine reddit combos" "%CHECK%" >nul
 if errorlevel 1 (
   call :log "--- mine-reddit START ---"
   claude --model sonnet --effort medium --dangerously-skip-permissions -p "/mine-reddit" >> "%LOG%" 2>&1
-  call :log "--- mine-reddit END exit=!errorlevel! ---"
+  set "RC=!errorlevel!"
+  call :log "--- mine-reddit END exit=!RC! ---"
+  call :conta "!RC!" "mine-reddit"
 ) else (
   call :log "mine-reddit gia' committato oggi: skip"
 )
 
+if not "!FALLITI!"=="0" goto :fine_errore
 call :log "=== RECOVER END ==="
 del /q "%CHECK%" 2>nul
 endlocal
 goto :eof
 
+REM Esce non-zero: il dispatcher registra l'occorrenza come fallita (maxAttempts 1,
+REM quindi nessun ritentativo: si riprova domani) e la verifica delle 09:00 la mette
+REM fra i problemi invece di dire che e' andato tutto bene.
+:fine_errore
+call :log "=== RECOVER END: falliti !FALLITI! step:!FALLITI_ELENCO! ==="
+del /q "%CHECK%" 2>nul
+endlocal
+exit /b 1
+
 :log
 echo [%date% %time%] %~1
 echo [%date% %time%] %~1>> "%LOG%"
+goto :eof
+
+REM %~1 = exit code dello step, %~2 = nome. Il contatore decide l'exit code del bat.
+:conta
+if not "%~1"=="0" (
+  set /a FALLITI+=1
+  set "FALLITI_ELENCO=!FALLITI_ELENCO! %~2"
+)
 goto :eof

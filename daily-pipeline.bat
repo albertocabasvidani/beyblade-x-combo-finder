@@ -45,6 +45,13 @@ set "FLAG=tmp\pipeline-alive.flag"
 echo attiva> "%FLAG%"
 start "" /b powershell -NoProfile -ExecutionPolicy Bypass -File "scripts\heartbeat.ps1" "logs\heartbeat-%TODAY%.log" "%FLAG%"
 
+REM Il log da solo non basta: l'esito degli step deve arrivare al dispatcher, che legge
+REM l'exit code del bat. Senza il contatore qui sotto il file esce 0 anche con tutti gli
+REM step falliti, e la verifica delle 09:00 registra "esito=ok" (02/09/2026: tre step morti
+REM per sessione OAuth scaduta, dispatcher e verificatore silenziosi per tutta la notte).
+set "FALLITI=0"
+set "FALLITI_ELENCO="
+
 call :log "=== PIPELINE START ==="
 
 call :log "--- 1/4 update-parts START ---"
@@ -52,7 +59,9 @@ REM Modello fissato a Sonnet/effort medium: e' un lavoro meccanico e ripetitivo 
 REM strutturata, merge), non serve il modello di punta. I flag CLI rendono la scelta deterministica anche
 REM se cambia il modello di default della sessione; il frontmatter del comando dice la stessa cosa.
 claude --model sonnet --effort medium --dangerously-skip-permissions -p "/update-parts" >> "%LOG%" 2>&1
-call :log "--- 1/4 update-parts END exit=!errorlevel! ---"
+set "RC=!errorlevel!"
+call :log "--- 1/4 update-parts END exit=!RC! ---"
+call :conta "!RC!" "update-parts"
 
 REM La raccolta fonti NON sta piu' qui: e' il job `beyblade-collect` del dispatcher
 REM generale, soglia 07:30 (collect-sources-task.bat). Motivo: i browser headed di collect:sources,
@@ -71,7 +80,9 @@ for %%f in (reddit-cache.json wbo-cache.json metabeys-cache.json arca-cache.json
 
 call :log "--- 2/4 judge-youtube START ---"
 claude --model sonnet --effort medium --dangerously-skip-permissions -p "/judge-youtube" >> "%LOG%" 2>&1
-call :log "--- 2/4 judge-youtube END exit=!errorlevel! ---"
+set "RC=!errorlevel!"
+call :log "--- 2/4 judge-youtube END exit=!RC! ---"
+call :conta "!RC!" "judge-youtube"
 
 REM Interruttore manuale per il solo /update-combos: se il file esiste, lo step viene saltato
 REM e il resto della pipeline prosegue. E' lo step piu' lungo (~20 min: legge combos.json da
@@ -82,23 +93,44 @@ if exist "%~dp0.pausa-update-combos" (
   call :log "--- 3/4 update-combos SALTATO: esiste .pausa-update-combos ---"
 ) else (
   call :log "--- 3/4 update-combos START ---"
-  claude --model sonnet --effort high --dangerously-skip-permissions -p "/update-combos" >> "%LOG%" 2>&1
-  call :log "--- 3/4 update-combos END exit=!errorlevel! ---"
+  claude --model sonnet --effort medium --dangerously-skip-permissions -p "/update-combos" >> "%LOG%" 2>&1
+  set "RC=!errorlevel!"
+  call :log "--- 3/4 update-combos END exit=!RC! ---"
+  call :conta "!RC!" "update-combos"
 )
 
 call :log "--- 4/4 mine-reddit START ---"
 claude --model sonnet --effort medium --dangerously-skip-permissions -p "/mine-reddit" >> "%LOG%" 2>&1
-call :log "--- 4/4 mine-reddit END exit=!errorlevel! ---"
+set "RC=!errorlevel!"
+call :log "--- 4/4 mine-reddit END exit=!RC! ---"
+call :conta "!RC!" "mine-reddit"
 
 REM Rimuovere il flag prima del marker finale: il battito lo vede entro 30s e si chiude
 REM da solo. Se il bat muore prima di qui, il flag resta e il battito prosegue fino a
 REM scadenza - ed e' proprio quel proseguire a dire che la console era ancora viva.
 del /q "%FLAG%" 2>nul
+if not "!FALLITI!"=="0" goto :fine_errore
 call :log "=== PIPELINE END ==="
 endlocal
 goto :eof
 
+REM Esce non-zero: il dispatcher registra l'occorrenza come fallita (maxAttempts 1,
+REM quindi nessun ritentativo: si riprova domani) e la verifica delle 09:00 la mette
+REM fra i problemi invece di dire che e' andato tutto bene.
+:fine_errore
+call :log "=== PIPELINE END: falliti !FALLITI! step:!FALLITI_ELENCO! ==="
+endlocal
+exit /b 1
+
 :log
 echo [%date% %time%] %~1
 echo [%date% %time%] %~1>> "%LOG%"
+goto :eof
+
+REM %~1 = exit code dello step, %~2 = nome. Il contatore decide l'exit code del bat.
+:conta
+if not "%~1"=="0" (
+  set /a FALLITI+=1
+  set "FALLITI_ELENCO=!FALLITI_ELENCO! %~2"
+)
 goto :eof
