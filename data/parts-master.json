@@ -1,5 +1,5 @@
 {
-  "version": "2026-08-28",
+  "version": "2026-09-04",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -764,6 +764,26 @@
         "wikiFile": "Darth_Vader_4-60P.jpeg",
         "fetchedAt": "2026-08-19"
       }
+    },
+    {
+      "id": "doctor-doom",
+      "category": "blade",
+      "line": "bx",
+      "names": {
+        "tt": "Doctor Doom"
+      },
+      "aliases": [],
+      "products": [
+        "G3063"
+      ],
+      "firstReleaseSet": "G3063",
+      "source": {
+        "page": "Doctor Doom 0-80LO",
+        "url": "https://beyblade.fandom.com/wiki/Doctor_Doom_0-80LO"
+      },
+      "lastVerified": "2026-09-04",
+      "status": "verified",
+      "type": "stamina"
     },
     {
       "id": "draciel-shield",
@@ -2626,6 +2646,26 @@
         "wikiFile": "Miles_Morales_1-60GN.jpeg",
         "fetchedAt": "2026-08-19"
       }
+    },
+    {
+      "id": "mister-fantastic",
+      "category": "blade",
+      "line": "bx",
+      "names": {
+        "tt": "Mister Fantastic"
+      },
+      "aliases": [],
+      "products": [
+        "G3063"
+      ],
+      "firstReleaseSet": "G3063",
+      "source": {
+        "page": "Mister Fantastic 9-65A",
+        "url": "https://beyblade.fandom.com/wiki/Mister_Fantastic_9-65A"
+      },
+      "lastVerified": "2026-09-04",
+      "status": "verified",
+      "type": "attack"
     },
     {
       "id": "moff-gideon",

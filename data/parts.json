@@ -1,5 +1,5 @@
 {
-  "version": "2026-08-28",
+  "version": "2026-09-04",
   "blades": [
     {
       "id": "aero-pegasus",
@@ -254,6 +254,13 @@
         "sta": 12
       },
       "image": "darth-vader.png"
+    },
+    {
+      "id": "doctor-doom",
+      "name": "Doctor Doom",
+      "type": "stamina",
+      "line": "bx",
+      "releaseSet": "G3063"
     },
     {
       "id": "draciel-shield",
@@ -882,6 +889,13 @@
         "sta": 55
       },
       "image": "miles-morales.png"
+    },
+    {
+      "id": "mister-fantastic",
+      "name": "Mister Fantastic",
+      "type": "attack",
+      "line": "bx",
+      "releaseSet": "G3063"
     },
     {
       "id": "moff-gideon",

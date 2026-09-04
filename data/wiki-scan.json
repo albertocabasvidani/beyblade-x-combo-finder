@@ -4,12 +4,12 @@
     "List of Beyblade X products (Takara Tomy)": {
       "revid": 645910,
       "timestamp": "2026-08-11T15:29:44.000Z",
-      "lastScannedDate": "2026-09-03"
+      "lastScannedDate": "2026-09-04"
     },
     "List of Beyblade X products (Hasbro)": {
-      "revid": 647059,
-      "timestamp": "2026-08-25T00:51:28.000Z",
-      "lastScannedDate": "2026-09-03"
+      "revid": 648074,
+      "timestamp": "2026-09-03T04:26:57.000Z",
+      "lastScannedDate": "2026-09-04"
     }
   },
   "pages": {
@@ -22,12 +22,12 @@
       "notes": "Nessuna nuova parte: tutti i link a nuovi articoli (BucksAntlers/HornetFortR/KrakenWriggle/DrakeBrave/TigaRage/GloryValkyrie/ecc.) risolvono a parti gia note nel master."
     },
     "List of Beyblade X products (Hasbro)": {
-      "revid": 647059,
-      "timestamp": "2026-08-25T00:51:28.000Z",
-      "lastScannedDate": "2026-08-25",
+      "revid": 648074,
+      "timestamp": "2026-09-03T04:26:57.000Z",
+      "lastScannedDate": "2026-09-04",
       "kind": "product",
-      "kindSource": "heuristic",
-      "notes": "Nessuna nuova parte: verificati nomi Hasbro/Multipack/Dual Pack, tutti gia coperti da alias esistenti."
+      "kindSource": "ai",
+      "notes": "solo pagina-lista, righe gia' coperte dalle pagine prodotto del worklist; nessuna parte nuova"
     },
     "DranSword 3-60F": {
       "revid": 647396,
@@ -40,14 +40,15 @@
       ]
     },
     "HeavensRing 0-80DS": {
-      "revid": 645561,
-      "timestamp": "2026-08-05T00:50:12.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 648199,
+      "timestamp": "2026-09-03T23:28:52.000Z",
+      "lastScannedDate": "2026-09-04",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Ring Aether 0-80DS"
-      ]
+      ],
+      "notes": "aggiunta localizzazione Hasbro (Ring Aether, G4571); Blade/Ratchet/Bit gia' nel master con hasbro name"
     },
     "TriceraPress M-85BS": {
       "revid": 647948,
@@ -240,12 +241,12 @@
       "notes": "Revid cambiato, verificato: nessun nuovo componente (solo modifiche testuali/gallery/date release)."
     },
     "StormSpriggan 2-70M": {
-      "revid": 645284,
-      "timestamp": null,
-      "lastScannedDate": "2026-08-09",
+      "revid": 648172,
+      "timestamp": "2026-09-03T18:42:31.000Z",
+      "lastScannedDate": "2026-09-04",
       "kind": "product",
-      "kindSource": "heuristic",
-      "notes": "Revid cambiato, verificato: nessun nuovo componente (solo modifiche testuali/gallery/date release)."
+      "kindSource": "ai",
+      "notes": "nessuna variazione sostanziale, parte gia' nel master"
     },
     "Valor Bison FB": {
       "revid": 645254,
@@ -264,15 +265,15 @@
       "notes": "Revid cambiato, verificato: nessun nuovo componente (solo modifiche testuali/gallery/date release)."
     },
     "BahamutBlitz BK1-50I": {
-      "revid": 645239,
-      "timestamp": "2026-08-14T06:19:28.677Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 648183,
+      "timestamp": "2026-09-03T23:23:20.000Z",
+      "lastScannedDate": "2026-09-04",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Blitz Bahamut BK 1-50I"
       ],
-      "notes": "Revid cambiato, verificato: nessun nuovo componente (solo modifiche testuali/gallery/date release)."
+      "notes": "aggiunta localizzazione Hasbro (Blitz Bahamut, G4572); tutte le 6 parti CX Expand gia' nel master"
     },
     "RagnaRage FE4-55Y": {
       "revid": 646740,
@@ -505,14 +506,15 @@
       "kindSource": "heuristic"
     },
     "BulletGriffon H": {
-      "revid": 644082,
-      "timestamp": "2026-07-16T20:29:10.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 648218,
+      "timestamp": "2026-09-03T23:34:24.000Z",
+      "lastScannedDate": "2026-09-04",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Rocket Griffon H"
-      ]
+      ],
+      "notes": "aggiunta localizzazione Hasbro (Rocket Griffon, G4561); Ratchet-Integrated Blade e Bit gia' nel master con hasbro name"
     },
     "Bumblebee 3-60GP": {
       "revid": 639473,
@@ -606,15 +608,15 @@
       "kindSource": "heuristic"
     },
     "DranStrike 4-50FF": {
-      "revid": 646559,
-      "timestamp": "2026-08-20T04:58:11.000Z",
-      "lastScannedDate": "2026-08-21",
+      "revid": 648139,
+      "timestamp": "2026-09-03T11:27:49.000Z",
+      "lastScannedDate": "2026-09-04",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Strike Dran 4-50FF"
       ],
-      "notes": "revisione minore (gallery); Blade/Ratchet/Bit gia' in master"
+      "notes": "aggiunta localizzazione Hasbro (Strike Dran, G2742); parti gia' nel master, products gia' include G2742/G2743"
     },
     "General Grievous 3-80HN": {
       "revid": 636189,
@@ -1192,15 +1194,15 @@
       "kindSource": "heuristic"
     },
     "UnicornDelta PO3-60GU": {
-      "revid": 646618,
-      "timestamp": "2026-08-21T07:54:50.000Z",
-      "lastScannedDate": "2026-08-22",
+      "revid": 648150,
+      "timestamp": "2026-09-03T11:33:31.000Z",
+      "lastScannedDate": "2026-09-04",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Delta Unicorn PO 3-60GU"
       ],
-      "notes": "revisione minore (gallery/trivia); LockChip/OverBlade/MetalBlade/AssistBlade/Ratchet/Bit gia' in master"
+      "notes": "aggiunta localizzazione Hasbro (Delta Unicorn, G2752); tutte le 6 parti CX Expand gia' nel master"
     },
     "ValkyrieVolt S4-70V": {
       "revid": 646249,
@@ -1466,15 +1468,15 @@
       "kindSource": "heuristic"
     },
     "GloryValkyrie LF": {
-      "revid": 646467,
-      "timestamp": "2026-08-17T22:37:01.000Z",
-      "lastScannedDate": "2026-08-18",
+      "revid": 648176,
+      "timestamp": "2026-09-03T18:43:43.000Z",
+      "lastScannedDate": "2026-09-04",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Glory Valkerion LF"
       ],
-      "notes": "solo aggiornamento info (Hasbro release/gallery/trivia); parti gia' nel master (glory-valkyrie, low-flat)"
+      "notes": "aggiunta localizzazione Hasbro (Glory Valkerion, G4568); Ratchet-Integrated Blade e Bit gia' nel master con hasbro name"
     },
     "Blade - KnightShield": {
       "revid": 616259,
@@ -2538,11 +2540,12 @@
       "kindSource": "heuristic"
     },
     "Ratchet - 9-65": {
-      "revid": 644278,
-      "timestamp": "2026-07-18T01:28:56.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 648068,
+      "timestamp": "2026-09-03T04:20:35.000Z",
+      "lastScannedDate": "2026-09-04",
       "kind": "part",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "aggiunto solo un nuovo riferimento prodotto (Mister Fantastic 9-65A, G3063) alla lista Products; ratchet gia' nel master"
     },
     "Bit - Metal Needle": {
       "revid": 643930,
@@ -2886,6 +2889,30 @@
       "lastScannedDate": "2026-08-28",
       "kind": "accessory",
       "kindSource": "heuristic"
+    },
+    "Mister Fantastic and Doctor Doom Multipack Set": {
+      "revid": 648061,
+      "timestamp": "2026-09-03T04:09:45.000Z",
+      "lastScannedDate": "2026-09-04",
+      "kind": "multipack",
+      "kindSource": "ai",
+      "notes": "multipack Hasbro (G3063, collab Fantastic 4), contiene 2 bey nuovi"
+    },
+    "Mister Fantastic 9-65A": {
+      "revid": 648063,
+      "timestamp": "2026-09-03T04:15:00.000Z",
+      "lastScannedDate": "2026-09-04",
+      "kind": "product",
+      "kindSource": "ai",
+      "notes": "blade nuova 'Mister Fantastic' (BX, Attack), Ratchet 9-65 + Bit Accel gia' esistenti; pagina {{Provisional}}, nessuna data JP/release confermata"
+    },
+    "Doctor Doom 0-80LO": {
+      "revid": 648065,
+      "timestamp": "2026-09-03T04:17:00.000Z",
+      "lastScannedDate": "2026-09-04",
+      "kind": "product",
+      "kindSource": "ai",
+      "notes": "blade nuova 'Doctor Doom' (BX, Stamina), Ratchet 0-80 + Bit Low Orb gia' esistenti; pagina {{Provisional}}, nessuna data JP/release confermata"
     }
   }
 }
