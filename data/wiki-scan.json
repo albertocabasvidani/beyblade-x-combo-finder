@@ -4,12 +4,12 @@
     "List of Beyblade X products (Takara Tomy)": {
       "revid": 645910,
       "timestamp": "2026-08-11T15:29:44.000Z",
-      "lastScannedDate": "2026-09-04"
+      "lastScannedDate": "2026-09-05"
     },
     "List of Beyblade X products (Hasbro)": {
       "revid": 648074,
       "timestamp": "2026-09-03T04:26:57.000Z",
-      "lastScannedDate": "2026-09-04"
+      "lastScannedDate": "2026-09-05"
     }
   },
   "pages": {
@@ -310,9 +310,9 @@
       "kindSource": "heuristic"
     },
     "MeteorDragoon 3-70J": {
-      "revid": 647722,
-      "timestamp": "2026-09-01T01:20:15.000Z",
-      "lastScannedDate": "2026-09-01",
+      "revid": 648376,
+      "timestamp": "2026-09-04T12:53:28.000Z",
+      "lastScannedDate": "2026-09-05",
       "kind": "product",
       "kindSource": "heuristic",
       "notes": "revisione minore (gallery GP2026, trivia); Blade/Ratchet/Bit gia' in master"
@@ -424,9 +424,9 @@
       "kindSource": "heuristic"
     },
     "DrakeBrave G4-70I": {
-      "revid": 648049,
-      "timestamp": "2026-09-02T23:27:29.000Z",
-      "lastScannedDate": "2026-09-03",
+      "revid": 648389,
+      "timestamp": "2026-09-04T22:13:07.000Z",
+      "lastScannedDate": "2026-09-05",
       "kind": "product",
       "kindSource": "heuristic",
       "notes": "revisione minore (trivia su provenienza parti); LockChip/MainBlade/AssistBlade/Ratchet/Bit gia' in master"
@@ -608,11 +608,11 @@
       "kindSource": "heuristic"
     },
     "DranStrike 4-50FF": {
-      "revid": 648139,
-      "timestamp": "2026-09-03T11:27:49.000Z",
-      "lastScannedDate": "2026-09-04",
+      "revid": 648372,
+      "timestamp": "2026-09-04T11:46:16.000Z",
+      "lastScannedDate": "2026-09-05",
       "kind": "product",
-      "kindSource": "ai",
+      "kindSource": "heuristic",
       "redirects": [
         "Strike Dran 4-50FF"
       ],
@@ -1468,11 +1468,11 @@
       "kindSource": "heuristic"
     },
     "GloryValkyrie LF": {
-      "revid": 648176,
-      "timestamp": "2026-09-03T18:43:43.000Z",
-      "lastScannedDate": "2026-09-04",
+      "revid": 648368,
+      "timestamp": "2026-09-04T11:41:13.000Z",
+      "lastScannedDate": "2026-09-05",
       "kind": "product",
-      "kindSource": "ai",
+      "kindSource": "heuristic",
       "redirects": [
         "Glory Valkerion LF"
       ],
