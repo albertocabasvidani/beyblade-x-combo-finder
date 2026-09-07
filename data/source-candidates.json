@@ -1,17 +1,18 @@
 {
-  "lastRun": "2026-08-31",
+  "lastRun": "2026-09-07",
   "lastProposal": {
-    "messageId": "1a0559d54ac7b334",
-    "threadId": "1a0559d54ac7b334",
-    "date": "2026-08-31",
-    "subject": "Beyblade - 3 nuove fonti candidate (settimana 31/08)",
-    "note": "Feedback del 31/08 applicato (\"Approvo tutte le proposte tranne Jamundi e Buds\"): promossi in sources.json atmosphererql (0.5), beycorner (0.3), rogue-hero-bbx (0.4); spostati in manualVerification torneos-beyblade-chile, beypointer-usa-fb, pbbl-ph, org-bsbey-br; chiuso X-RANK FR come rejected; jamundi e buds-nc rejected + knownNegatives. Nessun candidato resta pendente dalle settimane precedenti. Nuovi di questo run: 3 manual-verify (lfbx-fr, beybladex-thailand-league, wba-perth). Discovery YouTube in rendimento decrescente: 73 canali su 81 gia noti o gia scartati.",
+    "messageId": "1a079a0d798e7a10",
+    "threadId": "1a079a0d798e7a10",
+    "date": "2026-09-07",
+    "subject": "Beyblade - 4 nuove fonti candidate (settimana 07/09)",
+    "note": "Nessuna risposta alla proposta del 31/08 -> nessun feedback applicato. Restano pendenti wba-perth, lfbx-fr, beybladex-thailand-league. Nuovi: 2 propose (jaykevbeys US, kukulkan-bladers MX) + 2 manual-verify (beyblade-tr TR, xbladers-vietnam VN). 16 nuovi knownNegatives. Discovery YouTube: 63 canali su 81 gia noti o scartati.",
     "relatedProposals": [
       "19f7ea6fd17b3060",
       "19fc67292184b2f3",
       "19fea7d30be895fd",
       "1a00e895ff886719",
-      "1a0318eb0da56c32"
+      "1a0318eb0da56c32",
+      "1a0559d54ac7b334"
     ]
   },
   "candidates": [
@@ -1195,6 +1196,97 @@
       "status": "proposed",
       "dateFound": "2026-08-31",
       "lastSeen": "2026-08-31"
+    },
+    {
+      "candidateId": "youtube-jaykevbeys",
+      "name": "Jaykev",
+      "type": "youtube",
+      "channelId": "UC10zWlWuh_v0rGhHCwqksXQ",
+      "url": "https://www.youtube.com/@jaykevbeys",
+      "provides": "combos",
+      "lang": "en",
+      "region": "US",
+      "signals": {
+        "subscribers": 272,
+        "videoCount": 91,
+        "lastUpload": "2026-09-06",
+        "publishesResults": true
+      },
+      "rationale": "Blader competitivo USA che pubblica i propri piazzamenti con la combo usata: '3RD PLACE AT WBO RANKED', 'Top Cut Invitational at Beycon', 'Beycon Nationals Highlights Top 64', 'My Current Competitive Deck'. Upload costanti, tutto Beyblade X.",
+      "dedupCheck": "Vicino a Rogue Hero BBX e Ashen Dragoons (US, gia attive): stessa scena ma giocatore diverso, con eventi (Beycon, WBO Ranked) e deck propri. Le combo restano deduplicabili per id-set, e il tier narrative pesa 0.6.",
+      "proposedWeight": 0.4,
+      "recommendation": "propose",
+      "status": "proposed",
+      "dateFound": "2026-09-07",
+      "lastSeen": "2026-09-07"
+    },
+    {
+      "candidateId": "youtube-kukulkan-bladers",
+      "name": "Kukulkan Bladers (Chiapas, MX)",
+      "type": "youtube",
+      "channelId": "UCkNvgznxsK5xId2FCUU917w",
+      "url": "https://www.youtube.com/@kukulkanbladers",
+      "provides": "combos",
+      "lang": "es",
+      "region": "MX",
+      "signals": {
+        "subscribers": 690,
+        "videoCount": 118,
+        "lastUpload": "2026-09-02",
+        "publishesResults": true
+      },
+      "rationale": "Organizzatore della Liga Chiapaneca de Beyblade: pubblica vincitori e finali di stagione ('8 ganadores de torneos temporada 3', 'Los mejores 8 Final de Temporada X-treme Dash') e prove di configurazioni. Attivo ogni settimana.",
+      "dedupCheck": "La ES e coperta da SBBL (ES), Flowbeyblade e BladerUlis: il Messico non e coperto da nessuna fonte attiva, e questa e una lega locale, non un canale di recensioni. Contenuto misto (anche Hasbro e casual) -> peso basso.",
+      "proposedWeight": 0.35,
+      "recommendation": "propose",
+      "status": "proposed",
+      "dateFound": "2026-09-07",
+      "lastSeen": "2026-09-07"
+    },
+    {
+      "candidateId": "youtube-beyblade-tr",
+      "name": "Beyblade TR (beybladetr.com)",
+      "type": "youtube",
+      "channelId": "UC1MIQ_vhEfRZYN3hmVezcqQ",
+      "url": "https://www.youtube.com/@beybladetrk",
+      "provides": "combos",
+      "lang": "tr",
+      "region": "TR",
+      "signals": {
+        "subscribers": 2250,
+        "videoCount": 216,
+        "lastUpload": "2026-08-14",
+        "publishesResults": true
+      },
+      "rationale": "Ente organizzatore turco (sito + forum forum.beybladetr.com + canale) con tornei numerati 'Dereceli/Derecesiz Beyblade TR Turnuvasi', alcuni marcati (X). Turchia = regione non coperta da nessuna fonte.",
+      "dedupCheck": "Nessuna fonte TR attiva ne fra i candidati. Verificato pero che i thread del forum (es. '43. Derecesiz') riportano solo partecipanti e video, senza elenco combo: i risultati non sono estraibili in automatico, e i tornei X sono sporadici (05/07, 20/05) fra edizioni Burst/Metal -> manual-verify, non propose.",
+      "proposedWeight": 0.3,
+      "recommendation": "manual-verify",
+      "status": "proposed",
+      "dateFound": "2026-09-07",
+      "lastSeen": "2026-09-07"
+    },
+    {
+      "candidateId": "social-xbladers-vietnam",
+      "name": "X-Bladers Vietnam (Beyblade X Viet Nam)",
+      "type": "social",
+      "platform": "facebook",
+      "handle": "xbladersvietnam24",
+      "url": "https://www.facebook.com/xbladersvietnam24/",
+      "provides": "combos",
+      "lang": "vi",
+      "region": "VN",
+      "signals": {
+        "publishesResults": null,
+        "note": "contenuto non verificabile senza login"
+      },
+      "rationale": "Comunita/organizzatore Beyblade X vietnamita (Di An). Il Vietnam ha una scena in avvio (campionato X-Bey nazionale promosso da Viet Tinh Anh/Mykingdom) e non e coperto da nessuna fonte.",
+      "dedupCheck": "Nessuna fonte VN attiva. Facebook non e leggibile senza login (fetch bloccato): evidenza di pubblicazione risultati NON verificata -> manualVerification, da controllare a mano prima di dargli valore.",
+      "proposedWeight": 0.3,
+      "recommendation": "manual-verify",
+      "status": "proposed",
+      "dateFound": "2026-09-07",
+      "lastSeen": "2026-09-07"
     }
   ],
   "knownNegatives": [
@@ -1358,6 +1450,22 @@
     "https://www.youtube.com/@hyde-q1c (47 iscritti, inattivo dal 2025-10)",
     "https://beycompanion.com (Bey Companion: ranking combo da partite auto-registrate dagli utenti nell'app, non piazzamenti di torneo. Stessa natura teorica di BeyXDB)",
     "https://bbx-meta.pages.dev (mirror di BBXHub, gia in knownNegatives: aggregatore derivato da WBO + Blader League Germany)",
-    "https://worldbeyblade.org/Forum-Tournament-Reports (sottoforum report WBO: stessi eventi del thread Winning Combinations che gia parsiamo -> doppione)"
+    "https://worldbeyblade.org/Forum-Tournament-Reports (sottoforum report WBO: stessi eventi del thread Winning Combinations che gia parsiamo -> doppione)",
+    "https://www.youtube.com/@spintournament (battaglie casalinghe/random combos, nessun torneo reale)",
+    "https://www.youtube.com/@bladerdexph (test battle e analisi build, nessun risultato di torneo)",
+    "https://www.youtube.com/@bladesamurai-x (battaglie/combo casalinghe, 21 iscritti)",
+    "https://www.youtube.com/@brandonny1 (canale generalista, non competitivo)",
+    "https://www.youtube.com/@nyoole (hobby/gaming generico)",
+    "https://www.youtube.com/@thebeybladeworld-c8j (1 video, canale appena nato)",
+    "https://www.youtube.com/@beybladeroyale (ES: dirette/unboxing e 'combo della settimana'; le riprese dei ranking sono della SBBL, gia fonte attiva -> doppione)",
+    "https://www.youtube.com/@ベイブレードx-d3l (riprese grezze di raduni JP, titoli = sole date, nessun risultato estraibile)",
+    "https://www.youtube.com/@ベイブレードxカスタム (1 video, fermo da marzo 2025)",
+    "https://www.youtube.com/@ks_hobby玩具頰道 (unboxing HK, ultimo upload 17/05/2026)",
+    "https://www.youtube.com/@蔚是蔚藍的蔚 (TW, inattivo dal 25/04/2026)",
+    "https://www.youtube.com/@swt56evd (contenuto vario non competitivo)",
+    "https://www.youtube.com/@smilingboris1118 (YouTuber generalista HK)",
+    "https://www.youtube.com/@sohocampinghank (canale di campeggio, off-topic)",
+    "https://www.youtube.com/@officialbeybladeindonesia (canale ufficiale del brand: anime e promo, nessun risultato di torneo)",
+    "https://start.gg (bracket/standing dei tornei senza alcuna combo: nessun dato utile allo scoring)"
   ]
 }
