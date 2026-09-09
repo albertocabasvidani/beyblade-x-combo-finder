@@ -105,6 +105,8 @@ set "RC=!errorlevel!"
 call :log "--- 4/4 mine-reddit END exit=!RC! ---"
 call :conta "!RC!" "mine-reddit"
 
+call :guardia_push
+
 REM Rimuovere il flag prima del marker finale: il battito lo vede entro 30s e si chiude
 REM da solo. Se il bat muore prima di qui, il flag resta e il battito prosegue fino a
 REM scadenza - ed e' proprio quel proseguire a dire che la console era ancora viva.
@@ -132,5 +134,29 @@ REM %~1 = exit code dello step, %~2 = nome. Il contatore decide l'exit code del 
 if not "%~1"=="0" (
   set /a FALLITI+=1
   set "FALLITI_ELENCO=!FALLITI_ELENCO! %~2"
+)
+goto :eof
+
+REM Gli step committano e pushano da soli, ma il push lo fa il modello e nessuno lo verificava.
+REM L'08/09/2026 /mine-reddit ha committato 1888f1f senza pushare ed e' uscito 0: i dati sono
+REM rimasti su una macchina sola per 22 ore mentre la verifica delle 09:00 diceva "tutto a
+REM posto". Qui si guarda il repo, non il racconto dello step: chi giudica dagli effetti
+REM collaterali eredita i loro difetti.
+REM AVANTI va inizializzato: senza upstream il for non assegna niente e "" non e' "0", quindi
+REM si spingerebbe a vuoto. --rebase --autostash per non restare bloccati da un file sporco
+REM lasciato da un altro job dello stesso repo.
+:guardia_push
+set "AVANTI=0"
+for /f %%c in ('git rev-list --count @{u}..HEAD 2^>nul') do set "AVANTI=%%c"
+if "!AVANTI!"=="0" goto :eof
+call :log "--- push mancante: !AVANTI! commit locali, li spingo io ---"
+git pull --rebase --autostash >> "%LOG%" 2>&1
+git push >> "%LOG%" 2>&1
+if errorlevel 1 (
+  call :log "push FALLITO"
+  set /a FALLITI+=1
+  set "FALLITI_ELENCO=!FALLITI_ELENCO! push-finale"
+) else (
+  call :log "push fatto"
 )
 goto :eof

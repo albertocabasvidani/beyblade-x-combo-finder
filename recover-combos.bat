@@ -89,6 +89,8 @@ if errorlevel 1 (
   call :log "mine-reddit gia' committato oggi: skip"
 )
 
+call :guardia_push
+
 if not "!FALLITI!"=="0" goto :fine_errore
 call :log "=== RECOVER END ==="
 del /q "%CHECK%" 2>nul
@@ -114,5 +116,28 @@ REM %~1 = exit code dello step, %~2 = nome. Il contatore decide l'exit code del 
 if not "%~1"=="0" (
   set /a FALLITI+=1
   set "FALLITI_ELENCO=!FALLITI_ELENCO! %~2"
+)
+goto :eof
+
+REM Gemella di quella in daily-pipeline.bat: gli step committano e pushano da soli, ma il push
+REM lo fa il modello e nessuno lo verificava. L'08/09/2026 /mine-reddit ha committato 1888f1f
+REM senza pushare ed e' uscito 0, e i dati sono rimasti su una macchina sola per 22 ore. Qui
+REM il recupero e' l'ultima occasione della giornata di accorgersene.
+REM AVANTI va inizializzato: senza upstream il for non assegna niente e "" non e' "0", quindi
+REM si spingerebbe a vuoto. --rebase --autostash per non restare bloccati da un file sporco
+REM lasciato da un altro job dello stesso repo.
+:guardia_push
+set "AVANTI=0"
+for /f %%c in ('git rev-list --count @{u}..HEAD 2^>nul') do set "AVANTI=%%c"
+if "!AVANTI!"=="0" goto :eof
+call :log "--- push mancante: !AVANTI! commit locali, li spingo io ---"
+git pull --rebase --autostash >> "%LOG%" 2>&1
+git push >> "%LOG%" 2>&1
+if errorlevel 1 (
+  call :log "push FALLITO"
+  set /a FALLITI+=1
+  set "FALLITI_ELENCO=!FALLITI_ELENCO! push-finale"
+) else (
+  call :log "push fatto"
 )
 goto :eof
