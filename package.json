@@ -19,6 +19,7 @@
     "fetch:transcripts": "python scripts/fetch-transcripts.py",
     "collect:sources": "npx tsx scripts/collect-sources.ts",
     "build:parts": "npx tsx scripts/build-parts.ts",
+    "build:thumbs": "npx tsx scripts/build-part-thumbs.ts",
     "sync:part-images": "npx tsx scripts/sync-part-images.ts",
     "enrich:stats": "npx tsx scripts/enrich-stats.ts",
     "fetch:metabeys": "npx tsx scripts/fetch-metabeys.ts",
