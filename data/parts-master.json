@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-04",
+  "version": "2026-09-10",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -770,7 +770,8 @@
       "category": "blade",
       "line": "bx",
       "names": {
-        "tt": "Doctor Doom"
+        "tt": "Doctor Doom",
+        "hasbro": null
       },
       "aliases": [],
       "products": [
@@ -2652,7 +2653,8 @@
       "category": "blade",
       "line": "bx",
       "names": {
-        "tt": "Mister Fantastic"
+        "tt": "Mister Fantastic",
+        "hasbro": null
       },
       "aliases": [],
       "products": [
@@ -5340,6 +5342,24 @@
   ],
   "lockChips": [
     {
+      "id": "afc",
+      "category": "lockChip",
+      "names": {
+        "tt": "AFC"
+      },
+      "aliases": [],
+      "products": [
+        "G3607"
+      ],
+      "firstReleaseSet": "G3607",
+      "source": {
+        "page": "Lock Chip - AFC",
+        "url": "https://beyblade.fandom.com/wiki/Lock_Chip_-_AFC"
+      },
+      "lastVerified": "2026-09-10",
+      "status": "verified"
+    },
+    {
       "id": "bahamut",
       "category": "lockChip",
       "line": "cx",
@@ -5930,6 +5950,24 @@
         "wikiFile": "LockChipLeon.png",
         "fetchedAt": "2026-08-19"
       }
+    },
+    {
+      "id": "nfc",
+      "category": "lockChip",
+      "names": {
+        "tt": "NFC"
+      },
+      "aliases": [],
+      "products": [
+        "G3607"
+      ],
+      "firstReleaseSet": "G3607",
+      "source": {
+        "page": "Lock Chip - NFC",
+        "url": "https://beyblade.fandom.com/wiki/Lock_Chip_-_NFC"
+      },
+      "lastVerified": "2026-09-10",
+      "status": "verified"
     },
     {
       "id": "pegasus",

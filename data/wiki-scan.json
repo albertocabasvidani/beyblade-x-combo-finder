@@ -4,12 +4,12 @@
     "List of Beyblade X products (Takara Tomy)": {
       "revid": 645910,
       "timestamp": "2026-08-11T15:29:44.000Z",
-      "lastScannedDate": "2026-09-09"
+      "lastScannedDate": "2026-09-10"
     },
     "List of Beyblade X products (Hasbro)": {
       "revid": 648074,
       "timestamp": "2026-09-03T04:26:57.000Z",
-      "lastScannedDate": "2026-09-09"
+      "lastScannedDate": "2026-09-10"
     }
   },
   "pages": {
@@ -678,14 +678,15 @@
       "kindSource": "heuristic"
     },
     "HellsHammer 3-70H": {
-      "revid": 648416,
-      "timestamp": "2026-09-05T17:25:26.000Z",
-      "lastScannedDate": "2026-09-06",
+      "revid": 648808,
+      "timestamp": "2026-09-10T00:31:31.000Z",
+      "lastScannedDate": "2026-09-10",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Hammer Incendio 3-70H"
-      ]
+      ],
+      "notes": "solo trivia/gallery aggiornate, parti gia' in master"
     },
     "HellsScythe 4-60T": {
       "revid": 647470,
@@ -1205,11 +1206,12 @@
       "notes": "aggiunta localizzazione Hasbro (Delta Unicorn, G2752); tutte le 6 parti CX Expand gia' nel master"
     },
     "ValkyrieVolt S4-70V": {
-      "revid": 648666,
-      "timestamp": "2026-09-09T01:52:32.000Z",
-      "lastScannedDate": "2026-09-09",
+      "revid": 648770,
+      "timestamp": "2026-09-09T19:00:32.000Z",
+      "lastScannedDate": "2026-09-10",
       "kind": "product",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "nessuna modifica sostanziale, parti gia' in master"
     },
     "WizardArc R4-55LO": {
       "revid": 646813,
@@ -1341,11 +1343,12 @@
       "kindSource": "heuristic"
     },
     "Ratchet - 9-60": {
-      "revid": 645868,
-      "timestamp": "2026-08-09T06:39:14.000Z",
-      "lastScannedDate": "2026-08-10",
+      "revid": 648803,
+      "timestamp": "2026-09-09T22:35:00.000Z",
+      "lastScannedDate": "2026-09-10",
       "kind": "part",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "solo lista prodotti aggiornata (NFL CX Top Pack), parte gia' in master"
     },
     "Ratchet - 9-80": {
       "revid": 636225,
@@ -2913,6 +2916,22 @@
       "kind": "product",
       "kindSource": "ai",
       "notes": "blade nuova 'Doctor Doom' (BX, Stamina), Ratchet 0-80 + Bit Low Orb gia' esistenti; pagina {{Provisional}}, nessuna data JP/release confermata"
+    },
+    "Lock Chip - AFC": {
+      "revid": 648794,
+      "timestamp": "2026-09-09T22:33:12.000Z",
+      "lastScannedDate": "2026-09-10",
+      "kind": "part",
+      "kindSource": "ai",
+      "notes": "mancante dal master, recuperata da verify:wiki strict (NFL CX Top Pack, Hasbro-only)"
+    },
+    "Lock Chip - NFC": {
+      "revid": 648800,
+      "timestamp": "2026-09-09T22:34:23.000Z",
+      "lastScannedDate": "2026-09-10",
+      "kind": "part",
+      "kindSource": "ai",
+      "notes": "mancante dal master, recuperata da verify:wiki strict (NFL CX Top Pack, Hasbro-only)"
     }
   }
 }

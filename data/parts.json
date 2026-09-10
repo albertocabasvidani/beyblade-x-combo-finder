@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-04",
+  "version": "2026-09-10",
   "blades": [
     {
       "id": "aero-pegasus",
@@ -1789,6 +1789,11 @@
   ],
   "lockChips": [
     {
+      "id": "afc",
+      "name": "AFC",
+      "line": "cx"
+    },
+    {
       "id": "bahamut",
       "name": "Bahamut",
       "line": "cx",
@@ -1883,6 +1888,11 @@
       "nameWestern": "Leon",
       "line": "cx",
       "image": "leon.png"
+    },
+    {
+      "id": "nfc",
+      "name": "NFC",
+      "line": "cx"
     },
     {
       "id": "pegasus",
