@@ -263,7 +263,12 @@ su 37): la separazione la rende irrilevante, perché una raccolta che muore non 
 I transcript YouTube girano a parte ogni 5 min (`--batch 1`, rate-limit): scaricano solo i video
 `relevant:true` (decisi da `/judge-youtube`), nella lingua reale del video, nelle ore successive
 (eventually-consistent).
-`/update-parts`, `/update-combos` e `/mine-reddit` fanno **commit/push autonomi su master**.
+`/update-parts`, `/update-combos` e `/mine-reddit` fanno **commit/push autonomi su master** — ma il
+push lo fa il modello e non è garantito: l'08/09/2026 `/mine-reddit` ha committato senza spingere ed
+è uscito 0, e i dati sono rimasti su una macchina sola per 22 ore mentre la verifica delle 09:00
+diceva «tutto a posto». In coda a `daily-pipeline.bat` e `recover-combos.bat` c'è ora `:guardia_push`:
+conta i commit locali (`git rev-list --count @{u}..HEAD`), se ce ne sono fa `pull --rebase
+--autostash` e `push`, e alza `FALLITI` se non riesce. Si guarda il repo, non il racconto dello step.
 Ogni step scrive su `logs/pipeline-YYYY-MM-DD.log` (marker `START`/`END` + exit code): se la sequenza si
 interrompe (PC sospeso, browser headed appeso, processo abortito), l'ultimo marker dice **dove** è morta.
 
