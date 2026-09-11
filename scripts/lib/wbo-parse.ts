@@ -280,19 +280,53 @@ function isoIfValid(yyyy: string, mm: string, dd: string): string | null {
   return iso;
 }
 
+const POST_TIMESTAMP_RE = /\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+(\d{1,2}),\s*(\d{4})\b/;
+
+/** Timestamp del post MyBB ("Jan. 10, 2026  9:57 PM") → 'YYYY-MM-DD', o null se assente/non valido. */
+export function parsePostTimestamp(headerText: string): string | null {
+  const m = headerText.match(POST_TIMESTAMP_RE);
+  if (!m) return null;
+  return isoIfValid(m[3], MONTH_ABBR[m[1].toLowerCase()], m[2]);
+}
+
+const dayDist = (a: string, b: string): number =>
+  Math.abs(Date.parse(a + 'T00:00:00Z') - Date.parse(b + 'T00:00:00Z')) / 86_400_000;
+
 /**
- * Data evento, in ordine di preferenza: "Date: MM/DD/YYYY" → timestamp del post "Mon. GG, AAAA"
- * (formato MyBB, es. "Jun. 09, 2026") → qualsiasi MM/DD/YYYY nell'header → fallback al fetchedAt
+ * Interpreta "N/N/YYYY". Il WBO assume MM/DD (US), ma molti poster europei scrivono DD/MM: "Date:
+ * 10/01/2026" letto all'americana diventava il 1° ottobre di un evento del 10 gennaio (228 placement
+ * con data futura in combos.json, 09/2026). Se l'inversione è una data valida E più vicina al
+ * timestamp del post, vince l'inversione: i risultati si postano a ridosso dell'evento. Senza
+ * timestamp resta l'interpretazione US.
+ */
+function resolveSlashDate(m: RegExpMatchArray | null, post: string | null): string | null {
+  if (!m) return null;
+  const mdy = isoIfValid(m[3], m[1], m[2]);
+  const dmy = isoIfValid(m[3], m[2], m[1]);
+  if (mdy && dmy && post && dmy !== mdy && dayDist(dmy, post) < dayDist(mdy, post)) return dmy;
+  return mdy ?? dmy;
+}
+
+/**
+ * Data evento, in ordine di preferenza: "Date: N/N/YYYY" → timestamp del post "Mon. GG, AAAA"
+ * (formato MyBB, es. "Jun. 09, 2026") → qualsiasi N/N/YYYY nell'header → fallback al fetchedAt
  * (alcuni eventi non riportano data: senza fallback si perderebbe l'intero podio, e lo scoring ha
- * bisogno di una data per il decay). Ogni candidato è validato: una data non di calendario è scartata.
+ * bisogno di una data per il decay). Ogni candidato N/N/YYYY passa per resolveSlashDate (MM/DD vs
+ * DD/MM decisa col timestamp del post); ogni candidato è validato come data di calendario, e un
+ * candidato posteriore a `fetchedAt` è scartato: un evento non può essersi svolto dopo la lettura.
  */
 export function parseDate(headerText: string, fetchedAt: string): string {
-  const labeled = headerText.match(/Date:\s*(\d{1,2})\/(\d{1,2})\/(\d{4})/i);
-  if (labeled) { const iso = isoIfValid(labeled[3], labeled[1], labeled[2]); if (iso) return iso; }
-  const abbr = headerText.match(/\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+(\d{1,2}),\s*(\d{4})\b/);
-  if (abbr) { const iso = isoIfValid(abbr[3], MONTH_ABBR[abbr[1].toLowerCase()], abbr[2]); if (iso) return iso; }
-  const any = headerText.match(/\b(\d{1,2})\/(\d{1,2})\/(\d{4})\b/);
-  if (any) { const iso = isoIfValid(any[3], any[1], any[2]); if (iso) return iso; }
+  const post = parsePostTimestamp(headerText);
+  const candidates: (string | null)[] = [
+    resolveSlashDate(headerText.match(/Date:\s*(\d{1,2})\/(\d{1,2})\/(\d{4})/i), post),
+    post,
+    resolveSlashDate(headerText.match(/\b(\d{1,2})\/(\d{1,2})\/(\d{4})\b/), post),
+  ];
+  for (const c of candidates) {
+    if (!c) continue;
+    if (fetchedAt && c > fetchedAt) continue;
+    return c;
+  }
   return fetchedAt;
 }
 
@@ -355,6 +389,10 @@ export function parseEventName(headerText: string, headerLines: string[]): strin
     (l) =>
       /\s/.test(l) &&                                  // i titoli hanno spazi, gli username no
       !/^(Today|Yesterday|\d+\s+(hours?|minutes?|days?|weeks?)\s+ago)/i.test(l) &&
+      // La riga-timestamp MyBB dei post non recenti ("Jan. 10, 2026  9:57 PM") ha spazi e passava
+      // l'euristica: finiva come eventName in 16.479 placement su 21.328 (09/2026), e con esso la
+      // dedup MetaBeys+WBO per data|posizione|nome non collassava mai lo stesso evento.
+      !POST_TIMESTAMP_RE.test(l) &&
       !/(METAL|BURST)\s+[\d,]+\s+BR/.test(l) &&
       !/^(Login|Join Now|Tournaments|Prev|Posts?:|Threads?:|Reputation|Joined|\(current\))/i.test(l) &&
       !HEADER_NOISE_RE.test(l),

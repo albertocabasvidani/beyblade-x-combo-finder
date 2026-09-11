@@ -5,7 +5,7 @@
  *
  * Esegui: npx tsx scripts/test-parse-wbo.ts
  */
-import { buildResolver, parseComboLine, parseEventId, parseDate, parsePlayers, parseStadium, parseEventName, segmentThread } from './lib/wbo-parse';
+import { buildResolver, parseComboLine, parseEventId, parseDate, parsePostTimestamp, parsePlayers, parseStadium, parseEventName, segmentThread } from './lib/wbo-parse';
 
 let pass = 0;
 let fail = 0;
@@ -98,6 +98,18 @@ check('eventId fallback slug+data', parseEventId('Event Page Link:Event Thread',
 check('date Date: MM/DD/YYYY', parseDate('Date: 06/14/2026', '2026-06-15') === '2026-06-14');
 check('date bare MM/DD/YYYY', parseDate('Bracket Link: x\n06/14/2026\nUnranked', '2026-06-15') === '2026-06-14');
 check('date fallback fetchedAt', parseDate('115 player tournament in Turkiye', '2026-06-15') === '2026-06-15');
+check('date EU DD/MM corretta col timestamp del post',
+  parseDate('Jan. 10, 2026  9:57 PM\nDate: 10/01/2026', '2026-08-05') === '2026-01-10');
+check('date US MM/DD coerente col post resta invariata',
+  parseDate('Jun. 15, 2026  8:00 PM\nDate: 06/14/2026', '2026-06-20') === '2026-06-14');
+check('date ambigua senza timestamp -> interpretazione US',
+  parseDate('Date: 03/04/2026', '2026-06-15') === '2026-03-04');
+check('date futura non invertibile -> timestamp del post',
+  parseDate('Feb. 02, 2026  1:00 AM\nDate: 12/25/2026', '2026-06-15') === '2026-02-02');
+check('date futura senza alternative -> fetchedAt',
+  parseDate('Date: 12/25/2026', '2026-06-15') === '2026-06-15');
+check('parsePostTimestamp', parsePostTimestamp('Oct. 08, 2025  4:48 AM') === '2025-10-08');
+check('parsePostTimestamp assente -> null', parsePostTimestamp('Date: 06/14/2026') === null);
 
 // --- players ---
 check('players Player Count', parsePlayers('Player Count: 15') === 15);
@@ -119,6 +131,9 @@ check('eventName scarta username (token unico) e prende la riga-titolo',
 check('eventName ripulisce URL dalla riga-titolo',
   parseEventName('', ['derincanleylek', '115 player tournament in Turkiye: https://challonge.com/tr/mptzhn5t']) === '115 player tournament in Turkiye');
 check('eventName vuoto se solo username', parseEventName('', ['Shawn514']) === '');
+check('eventName scarta il timestamp del post MyBB',
+  parseEventName('', ['Jan. 10, 2026  9:57 PM', 'Blaze Wheeler BURST 984 BR', 'New Year, New Beybattles!'])
+  === 'New Year, New Beybattles!');
 
 // --- Segmentazione deterministica: medaglie emoji (surrogate pair) ---
 const emojiRaw = [

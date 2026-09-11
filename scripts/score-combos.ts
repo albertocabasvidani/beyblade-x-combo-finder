@@ -80,7 +80,12 @@ function main() {
   // narrative preservati da combos.json e le usage/mentions storiche. Così combos.json contiene solo
   // evidenza fresca e i breakdown (conteggi eventi) sono coerenti. Le combo che restano a evidenza
   // vuota (score 0) le archivia poi `prune:combos`.
-  const fresh = <T extends { date: string }>(arr: T[]): T[] => arr.filter((x) => isFresh(x.date, ref));
+  // Nessuna evidenza può essere datata nel futuro: daysBetween() tratta le date future come 0 giorni
+  // (peso pieno nel decay) e lastPlacementDate finiva a dicembre. Difesa in profondità oltre al fix di
+  // parseDate (wbo-parse.ts): copre anche i placement già salvati in combos.json.
+  const todayISO = today();
+  const fresh = <T extends { date: string }>(arr: T[]): T[] =>
+    arr.filter((x) => isFresh(x.date, ref) && (!x.date || x.date <= todayISO));
   let rescored = 0;
   for (const combo of db.combos) {
     const p = parsed[combo.id];
