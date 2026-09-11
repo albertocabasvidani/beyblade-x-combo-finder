@@ -39,7 +39,7 @@ Scheduled Task propri ma di **job del dispatcher generale** della macchina
 ## In progress
 
 <!-- Lavori in corso. Se collegati a un piano in plans/, linkalo. -->
-- 27/07/2026 — **`/update-combos` in pausa** (interruttore `.pausa-update-combos` accanto ai bat): lo step più lungo (~20 min) è saltato sia da `daily-pipeline.bat` sia da `recover-combos.bat`. Conseguenza: `combos.json` è congelato, quindi niente estrazione dalle fonti narrative e niente `prune:combos --apply`; raccolta, `/update-parts` e `/mine-reddit` continuano normalmente. Resta: decidere quando riattivarlo cancellando il file
+- 11/09/2026 — **`/update-combos` riattivato** sul homeserver (rimosso `.pausa-update-combos` alle 16:50, dopo `git pull` a `ae1eb54` e `npm install`): il primo run è alla soglia 08:00 del 12/09 e rifà `parse:wbo` sulla cache fresca con le date corrette, recuperando l'evidenza dal 26/07. **Verifica il 12/09** (dopo `git pull` in locale): `git log --oneline -15 | Select-String "update combos database"` deve mostrare un commit del giorno; `python tmp/verifica-date.py` deve dare 0 placement con data futura (oggi 0 anche in locale, dopo il filtro), 0 `eventName` = timestamp del post (oggi 16.479 nel dato del server), `windowThresholds` presente, nessun id duplicato; nel log del server `logs/pipeline-2026-09-12.log` la riga `3/4 update-combos END` con exit 0. Se i numeri non tornano: controllare che il server abbia davvero girato sul commit nuovo (`ssh homeserver "git -C C:\Users\server\progetti\beyblade-combos log --oneline -3"`)
 
 ## Changelog
 

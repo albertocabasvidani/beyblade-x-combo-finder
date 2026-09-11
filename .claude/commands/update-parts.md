@@ -116,11 +116,16 @@ prodotto diverse: non risolverle di tua iniziativa.
 
 ```
 npm run sync:part-images
+npm run sync:amazon-asins
 npm run build:parts && npm run build
 ```
 `sync:part-images` scarica dalle pagine wiki le immagini delle parti che ancora non le hanno
 (idempotente, report a stampa); le parti rimaste senza immagine vanno nel report del run, non
-bloccano. Il guardrail di `build:parts` deve restare verde e il ⚠️ delle parti products mancanti a 0.
+bloccano. `sync:amazon-asins` riscrive `data/amazon-asins.json` (ASIN per codice prodotto e
+marketplace, per i link «Buy» del sito) dallo stato del monitor bbxdealmonitor accanto a questo
+repo (`../bbxdealmonitor/state/seen.json`; se manca stampa un avviso ed esce 0, non e' un errore):
+il file va nel commit di questo step quando cambia. Il guardrail di `build:parts` deve restare
+verde e il ⚠️ delle parti products mancanti a 0.
 
 ### 5. Controllare che non si sia perso niente
 
