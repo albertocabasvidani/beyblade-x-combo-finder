@@ -4,12 +4,12 @@
     "List of Beyblade X products (Takara Tomy)": {
       "revid": 645910,
       "timestamp": "2026-08-11T15:29:44.000Z",
-      "lastScannedDate": "2026-09-10"
+      "lastScannedDate": "2026-09-11"
     },
     "List of Beyblade X products (Hasbro)": {
-      "revid": 648074,
-      "timestamp": "2026-09-03T04:26:57.000Z",
-      "lastScannedDate": "2026-09-10"
+      "revid": 648852,
+      "timestamp": "2026-09-10T21:24:27.000Z",
+      "lastScannedDate": "2026-09-11"
     }
   },
   "pages": {
@@ -22,12 +22,12 @@
       "notes": "Nessuna nuova parte: tutti i link a nuovi articoli (BucksAntlers/HornetFortR/KrakenWriggle/DrakeBrave/TigaRage/GloryValkyrie/ecc.) risolvono a parti gia note nel master."
     },
     "List of Beyblade X products (Hasbro)": {
-      "revid": 648074,
-      "timestamp": "2026-09-03T04:26:57.000Z",
-      "lastScannedDate": "2026-09-04",
+      "revid": 648852,
+      "timestamp": "2026-09-10T21:24:27.000Z",
+      "lastScannedDate": "2026-09-11",
       "kind": "product",
       "kindSource": "ai",
-      "notes": "solo pagina-lista, righe gia' coperte dalle pagine prodotto del worklist; nessuna parte nuova"
+      "notes": "pagina lista: aggiunta riga NFL CX Top Pack, nessuna parte da estrarre da qui"
     },
     "DranSword 3-60F": {
       "revid": 647396,
@@ -1973,11 +1973,12 @@
       "kindSource": "heuristic"
     },
     "EmperorMight Deck Set": {
-      "revid": 641725,
-      "timestamp": "2026-06-20T21:51:25.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 648855,
+      "timestamp": "2026-09-10T21:26:05.000Z",
+      "lastScannedDate": "2026-09-11",
       "kind": "set",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "solo trivia aggiunta (label ristampa corretta), i 3 bey del set (EmperorMight HOp, GolemRock M-85HN, SharkGill 5-60FB) erano gia' noti"
     },
     "Start Dash Set C": {
       "revid": 635884,
@@ -2932,6 +2933,30 @@
       "kind": "part",
       "kindSource": "ai",
       "notes": "mancante dal master, recuperata da verify:wiki strict (NFL CX Top Pack, Hasbro-only)"
+    },
+    "NFL CX Top Pack": {
+      "revid": 648850,
+      "timestamp": "2026-09-10T21:22:46.000Z",
+      "lastScannedDate": "2026-09-11",
+      "kind": "product",
+      "kindSource": "ai",
+      "notes": "pack Hasbro NFL collab con 2 CX (AFC 6-70H, NFC 9-60LO), tutte le parti componenti gia' nel master"
+    },
+    "AFC 6-70H": {
+      "revid": 648790,
+      "timestamp": "2026-09-09T22:27:03.000Z",
+      "lastScannedDate": "2026-09-11",
+      "kind": "product",
+      "kindSource": "ai",
+      "notes": "CX: lockChip AFC, mainBlade Courage, assistBlade Slash, ratchet 6-70, bit Hexa - tutte parti gia' verificate nel master"
+    },
+    "NFC 9-60LO": {
+      "revid": 648791,
+      "timestamp": "2026-09-09T22:27:11.000Z",
+      "lastScannedDate": "2026-09-11",
+      "kind": "product",
+      "kindSource": "ai",
+      "notes": "CX: lockChip NFC, mainBlade Arc, assistBlade Round, ratchet 9-60, bit Low Orb - tutte parti gia' verificate nel master"
     }
   }
 }

@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-04T02:00:16.317Z",
+  "fetchedAt": "2026-09-11T02:00:20.038Z",
   "pages": {
     "tt": {
       "revid": 645910,
       "timestamp": "2026-08-11T15:29:44Z"
     },
     "hasbro": {
-      "revid": 648074,
-      "timestamp": "2026-09-03T04:26:57Z"
+      "revid": 648852,
+      "timestamp": "2026-09-10T21:24:27Z"
     }
   },
   "byCode": {
@@ -1202,6 +1202,12 @@
       "name": "Gust Bat 3-85GP",
       "date": "2026-04-01",
       "productCode": "G2733"
+    },
+    {
+      "norm": "nflcxtoppack",
+      "name": "NFL CX Top Pack",
+      "date": "2026-09-09",
+      "productCode": "G3607"
     }
   ]
 }
