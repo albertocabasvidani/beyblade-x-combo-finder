@@ -11,5 +11,6 @@ const { locale } = Astro.props;
 
 <footer class="border-t border-border bg-surface px-4 py-6 text-center text-xs text-muted-2">
   <p class="mb-2">{t(locale, 'footer.dataNote')}</p>
+  <p class="mb-2" data-testid="amazon-disclosure">{t(locale, 'footer.amazonDisclosure')}</p>
   <p>&copy; {new Date().getFullYear()} Beyblade X Combo Finder</p>
 </footer>

@@ -1,6 +1,8 @@
 import type { SelectedParts, Locale, ComboWindow, TierThresholds } from '../../lib/types';
 import type { SlimCombo } from '../../lib/slim-combos';
 import { getMatchedParts, hasAnySelection } from '../../lib/search-engine';
+import { buildAmazonUrl, type AmazonConfigFile, type AsinIndex, type PartLookup } from '../../lib/amazon';
+import { track } from '../../lib/analytics';
 import { ScoreBadge, scoreTier } from './score-badge';
 
 interface Props {
@@ -8,6 +10,8 @@ interface Props {
   /** La finestra temporale scelta dall'utente: score, breakdown e tag da mostrare. */
   view: ComboWindow;
   thresholds: TierThresholds;
+  /** Link affiliati sulle parti mancanti; assente = nessun link. */
+  amazon?: { config: AmazonConfigFile; lookup: PartLookup; asins: AsinIndex; market: string };
   displayName: string;
   selected: SelectedParts;
   compare: boolean;
@@ -40,7 +44,7 @@ function daysSince(iso: string): number {
   return (Date.now() - new Date(iso + 'T00:00:00Z').getTime()) / 86_400_000;
 }
 
-export function ComboCard({ combo, view, thresholds, displayName, selected, compare, locale, rank, partName, t }: Props) {
+export function ComboCard({ combo, view, thresholds, amazon, displayName, selected, compare, locale, rank, partName, t }: Props) {
   const matched = getMatchedParts(combo, selected);
   const b = view;
   const tier = scoreTier(view.score, view.tags, thresholds);
@@ -127,6 +131,22 @@ export function ComboCard({ combo, view, thresholds, displayName, selected, comp
               }`}
             >
               {owned ? '✓' : '!'} {label}
+              {!owned && amazon && p.id && (() => {
+                // Link affiliato: /dp/ASIN se il monitor conosce il set su questo mercato, altrimenti ricerca.
+                const { href, kind } = buildAmazonUrl(p.key, p.id, label, amazon.lookup, amazon.asins, amazon.market, amazon.config);
+                return (
+                  <a
+                    data-testid="buy"
+                    href={href}
+                    target="_blank"
+                    rel="sponsored noopener nofollow"
+                    class="ml-1 underline decoration-dotted underline-offset-2 hover:opacity-75"
+                    onClick={() => track('amazon_click', { partId: p.id, category: p.key, marketplace: amazon.market, kind, comboId: combo.id })}
+                  >
+                    {t('combo.buy')}
+                  </a>
+                );
+              })()}
             </span>
           );
         })}

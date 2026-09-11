@@ -5,6 +5,10 @@ import partsData from '../../data/parts.json';
 import combosData from '../../data/combos.json';
 import { toSlim, INITIAL_COMBOS } from '../lib/slim-combos';
 import type { CombosDatabase } from '../lib/types';
+import productsData from '../../data/products.json';
+import amazonConfig from '../../data/amazon-config.json';
+import amazonAsins from '../../data/amazon-asins.json';
+import { buildPartLookup, type AmazonConfigFile, type AsinIndex } from '../lib/amazon';
 import en from '../i18n/en.json';
 
 const locale = 'en';
@@ -18,6 +22,13 @@ const initial = {
   combos: slim.combos.slice(0, INITIAL_COMBOS).map((c) => ({ ...c, windows: { '12': c.windows['12'] } })),
 };
 const dataUrl = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/combos.json`;
+// Link affiliati Amazon (src/lib/amazon.ts): tag per marketplace in data/amazon-config.json, ASIN per
+// codice set in data/amazon-asins.json (npm run sync:amazon-asins), lookup parte → set da products.json.
+const amazon = {
+  config: amazonConfig as AmazonConfigFile,
+  lookup: buildPartLookup(productsData),
+  asins: amazonAsins as AsinIndex,
+};
 ---
 
 <BaseLayout>
@@ -26,6 +37,7 @@ const dataUrl = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/combos.json`;
     parts={partsData}
     initial={initial}
     dataUrl={dataUrl}
+    amazon={amazon}
     locale={locale}
     translations={en}
   />

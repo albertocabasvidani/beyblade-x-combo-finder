@@ -414,18 +414,25 @@ perché ogni 5 min altrimenti compariva una finestra cmd nella sessione utente. 
 - Interfacce TypeScript in `src/lib/types.ts`
 - Traduzioni in `src/i18n/en.json` (attiva) e `src/i18n/it.json` (dormiente, vedi i18n in Tech Stack)
 
-## Amazon Affiliate (disattivato nella UI dal redesign "Arena")
+## Amazon Affiliate (riattivato l'11/09/2026)
 
-Il redesign "Arena" ha **rimosso i link Amazon dalla UI** (niente badge link sulle parti mancanti, niente
-banner, niente disclosure nel footer). I chip delle parti mancanti ora sono solo informativi (`! Nome`).
+Con «Compare with my parts» attivo, ogni chip di parte mancante (`! Nome`) ha un link **Buy**
+(`combo-card.tsx`, `rel="sponsored noopener nofollow"`, evento PostHog `amazon_click`). Disclosure nel
+footer e sezione «Affiliate links» in `/about/`.
 
-La logica resta in repo per un eventuale ripristino, ma **non è più importata dal frontend**:
-`src/lib/amazon.ts` (`buildAmazonSearchUrl`, `buildProductLookup`) e `data/products.json` (ancora
-rigenerato da `/update-parts`, step 7) non vengono più usati da `combo-card.tsx`/`combo-search.tsx`.
-
-Per riattivarli servirebbe: ripassare `amazonConfig`/`productLookup` da `pages/{en,it}/index.astro` a
-`ComboSearch`, rifare il rendering dei link nei chip mancanti, e reintrodurre la disclosure nel footer.
-Gotcha storico (se si riattiva): blade/lock chip/main blade/assist blade si cercano per **nome diretto**
-(`Beyblade X Phoenix Wing`); ratchet e bit **per nome danno 0 risultati**, quindi si cerca il **codice del
-set** che li contiene (`3-60` → `Beyblade X BX-01`, `Hexa` → `Beyblade X UX-02`). Config in `.env`:
-`AMAZON_TAG_IT`, `AMAZON_TAG_US`; TLD per locale (IT → `amazon.it`, EN → `amazon.com`).
+- **Tag** in `data/amazon-config.json` (committato), uno per marketplace (it/de/fr/es/uk/jp/com): sono
+  **tracking ID dedicati al sito** sugli account Associates esistenti, diversi da quelli del canale
+  WhatsApp di bbxdealmonitor, così il suo report affiliati giornaliero distingue i due canali. Tag
+  vuoto = link senza `&tag=`. `com` resta vuoto (nessun account US). Il `.env` (`AMAZON_TAG_*`) non è
+  più letto dal sito.
+- **Marketplace** dalle lingue del browser (`src/lib/marketplace.ts`: it/de/fr/es/uk/jp, tutto il resto
+  → amazon.com senza tag) con select «Shop on» persistito in localStorage (`bxcf-marketplace`).
+- **Link diretti** `/dp/{ASIN}` quando `data/amazon-asins.json` conosce il set su quel mercato; il file
+  lo scrive `npm run sync:amazon-asins` leggendo `state/seen.json` di bbxdealmonitor (`BBX_SEEN_PATH`,
+  default `../bbxdealmonitor/state/seen.json`; assente → avviso, exit 0). Va eseguito **sul server**,
+  dove il monitor è aggiornato (copia locale del 05/08: 52 codici, 136 parti coperte). Altrimenti
+  **ricerca**: blade/lock chip/main/assist/over blade per **nome** («Beyblade X Phoenix Wing»); ratchet
+  e bit per nome danno 0 risultati, quindi per **codice del set** («Beyblade X BX-01»).
+- `buildPartLookup` (`src/lib/amazon.ts`) preferisce i codici Takara Tomy (BX/UX/CX-NN) a quelli Hasbro
+  (G1536…), che sui marketplace europei non esistono: prima `localeCompare` faceva vincere Hasbro per
+  10 ratchet/bit (`accel → G1536`). Golden test: `npm run test:amazon`.

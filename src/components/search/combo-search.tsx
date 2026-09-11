@@ -2,6 +2,9 @@ import { useEffect, useState } from 'preact/hooks';
 import type { PartsRegistry, SelectedParts, Locale, ComboLine, Stadium, WindowKey } from '../../lib/types';
 import type { SlimCombo, SlimDatabase } from '../../lib/slim-combos';
 import { filterCombos } from '../../lib/search-engine';
+import { track } from '../../lib/analytics';
+import type { AmazonConfigFile, AsinIndex, PartLookup } from '../../lib/amazon';
+import { initialMarket, storeMarket } from '../../lib/marketplace';
 import { PartSearch, type PartRef, type PartCategory } from './part-search';
 import { ComboCard } from './combo-card';
 
@@ -10,6 +13,8 @@ interface Props {
   /** Prime combo inline (primo paint): il dataset completo arriva da `dataUrl`. */
   initial: SlimDatabase;
   dataUrl: string;
+  /** Link affiliati: config marketplace/tag, lookup parte → codice set, ASIN per codice. */
+  amazon: { config: AmazonConfigFile; lookup: PartLookup; asins: AsinIndex };
   locale: Locale;
   translations: Record<string, string>;
 }
@@ -53,10 +58,20 @@ function Switch({ checked, onVar }: { checked: boolean; onVar: string }) {
   );
 }
 
-export default function ComboSearch({ parts, initial, dataUrl, locale, translations }: Props) {
+export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, translations }: Props) {
   const [db, setDb] = useState<SlimDatabase>(initial);
   const [period, setPeriod] = useState<WindowKey>('12');
   const [visible, setVisible] = useState(PAGE);
+  // Marketplace Amazon: default neutro in SSR, poi (al mount) preferenza salvata o lingue del browser,
+  // così il markup idratato coincide con quello servito.
+  const markets = Object.keys(amazon.config.marketplaces);
+  const [market, setMarket] = useState<string>(amazon.config.defaultMarketplace);
+  useEffect(() => { setMarket(initialMarket(markets)); }, []);
+  const changeMarket = (m: string) => {
+    storeMarket(m);
+    track('marketplace_changed', { marketplace: m });
+    setMarket(m);
+  };
   const [selected, setSelected] = useState<SelectedParts>({ ...emptySelection });
   const [compare, setCompare] = useState(false);
   const [onlyBuildable, setOnlyBuildable] = useState(false);
@@ -83,11 +98,26 @@ export default function ComboSearch({ parts, initial, dataUrl, locale, translati
 
   const t = (key: string) => translations[key] ?? key;
 
-  const add = (category: PartCategory, id: string) =>
+  const add = (category: PartCategory, id: string) => {
+    track('part_added', { category, id, name: resolveName(category, id) });
     setSelected((prev) => (prev[category].includes(id) ? prev : { ...prev, [category]: [...prev[category], id] }));
+  };
 
-  const remove = (category: PartCategory, id: string) =>
+  const remove = (category: PartCategory, id: string) => {
+    track('part_removed', { category, id, name: resolveName(category, id) });
     setSelected((prev) => ({ ...prev, [category]: prev[category].filter((x) => x !== id) }));
+  };
+
+  // Filtri booleani: un solo punto che aggiorna lo stato e registra l'evento.
+  const toggleFilter = (name: string, setter: (fn: (v: boolean) => boolean) => void, current: boolean) => {
+    track('filter_toggled', { name, on: !current });
+    setter((v) => !v);
+  };
+  const changePeriod = (p: WindowKey) => {
+    if (p === period) return;
+    track('period_changed', { months: Number(p) });
+    setPeriod(p);
+  };
 
   // Ricerca blade-centrica: una sola blade selezionata (e nient'altro) = "la miglior combo per la
   // lama X". Restringe il ranking a quella blade e cambia l'intestazione.
@@ -103,6 +133,24 @@ export default function ComboSearch({ parts, initial, dataUrl, locale, translati
   if (metaOnly) results = results.filter((c) => c.windows[period]!.tags.some((tag) => tag === 'meta' || tag === 'top-tier'));
   const shown = results.slice(0, visible);
   const thresholds = db.thresholds[period];
+
+  // Fotografia della ricerca: cosa ha selezionato l'utente e quanti risultati vede. Debounce di 500 ms
+  // così una raffica di clic produce un evento solo; il primo render (nessuna selezione) è escluso.
+  const selectedCount = Object.values(selected).reduce((n, a) => n + a.length, 0);
+  useEffect(() => {
+    if (selectedCount === 0 && !onlyBuildable && !tournamentOnly && !metaOnly && lineFilter.length === 0 && stadiumFilter.length === 0) return;
+    const id = setTimeout(() => {
+      track('search_results', {
+        selectedCount,
+        byCategory: Object.fromEntries(Object.entries(selected).map(([k, v]) => [k, v.length])),
+        results: results.length,
+        onlyBlade,
+        period: Number(period),
+        filters: { onlyBuildable, tournamentOnly, metaOnly, lines: lineFilter, stadiums: stadiumFilter },
+      });
+    }, 500);
+    return () => clearTimeout(id);
+  }, [selected, period, onlyBuildable, tournamentOnly, metaOnly, lineFilter, stadiumFilter, results.length]);
 
   const resolveName = (category: PartCategory, id: string): string => {
     const arr = parts[category] as Array<{ id: string; name: string }>;
@@ -186,7 +234,7 @@ export default function ComboSearch({ parts, initial, dataUrl, locale, translati
           type="button"
           role="switch"
           aria-checked={compare}
-          onClick={() => setCompare((v) => !v)}
+          onClick={() => toggleFilter('compare', setCompare, compare)}
           class="mt-3 flex w-full items-center justify-between gap-3 rounded-[11px] bg-surface-2 px-3 py-2.5 text-left"
         >
           <span class="min-w-0">
@@ -203,19 +251,33 @@ export default function ComboSearch({ parts, initial, dataUrl, locale, translati
         <div class="mt-4">
           <div class="mb-2 hidden font-mono text-[10px] uppercase tracking-[0.12em] text-muted-2 lg:block">{t('search.filters')}</div>
           <div class="flex flex-wrap gap-2">
-            <Pill active={tournamentOnly} onToggle={() => setTournamentOnly((v) => !v)} label={t('filter.tournamentProven')} accentVar="--c-scarlet" />
-            <Pill active={metaOnly} onToggle={() => setMetaOnly((v) => !v)} label={t('filter.metaOnly')} accentVar="--c-gold" />
-            <Pill active={onlyBuildable} onToggle={() => setOnlyBuildable((v) => !v)} label={t('search.onlyBuildable')} accentVar="--c-gold" />
+            <Pill active={tournamentOnly} onToggle={() => toggleFilter('tournamentOnly', setTournamentOnly, tournamentOnly)} label={t('filter.tournamentProven')} accentVar="--c-scarlet" />
+            <Pill active={metaOnly} onToggle={() => toggleFilter('metaOnly', setMetaOnly, metaOnly)} label={t('filter.metaOnly')} accentVar="--c-gold" />
+            <Pill active={onlyBuildable} onToggle={() => toggleFilter('onlyBuildable', setOnlyBuildable, onlyBuildable)} label={t('search.onlyBuildable')} accentVar="--c-gold" />
           </div>
           {/* Linea (BX/UX/CX) e stadio: solo filtro/etichetta, non separano il ranking. */}
           <div class="mt-2 flex flex-wrap gap-2">
             {(['bx', 'ux', 'cx'] as ComboLine[]).map((ln) => (
-              <Pill key={ln} active={lineFilter.includes(ln)} onToggle={() => setLineFilter((f) => toggleIn(f, ln))} label={ln.toUpperCase()} accentVar="--c-cx-text" />
+              <Pill key={ln} active={lineFilter.includes(ln)} onToggle={() => { track('filter_toggled', { name: `line:${ln}`, on: !lineFilter.includes(ln) }); setLineFilter((f) => toggleIn(f, ln)); }} label={ln.toUpperCase()} accentVar="--c-cx-text" />
             ))}
             {(['xtreme', 'infinity'] as Stadium[]).map((st) => (
-              <Pill key={st} active={stadiumFilter.includes(st)} onToggle={() => setStadiumFilter((f) => toggleIn(f, st))} label={t(`stadium.${st}`)} accentVar="--c-scarlet" />
+              <Pill key={st} active={stadiumFilter.includes(st)} onToggle={() => { track('filter_toggled', { name: `stadium:${st}`, on: !stadiumFilter.includes(st) }); setStadiumFilter((f) => toggleIn(f, st)); }} label={t(`stadium.${st}`)} accentVar="--c-scarlet" />
             ))}
           </div>
+          {/* Marketplace dei link "Buy" sulle parti mancanti (Compare attivo). */}
+          <label class="mt-3 flex items-center justify-between gap-2 text-[11px] text-muted-2">
+            <span>{t('search.shopOn')}</span>
+            <select
+              data-testid="marketplace"
+              value={market}
+              onChange={(e) => changeMarket((e.target as HTMLSelectElement).value)}
+              class="rounded-md border border-border bg-surface-2 px-2 py-1 text-[11px] text-text"
+            >
+              {markets.map((k) => (
+                <option key={k} value={k}>{amazon.config.marketplaces[k].tld}</option>
+              ))}
+            </select>
+          </label>
         </div>
       </section>
 
@@ -225,7 +287,7 @@ export default function ComboSearch({ parts, initial, dataUrl, locale, translati
         <div class="mb-3 flex flex-wrap items-center gap-2" role="group" aria-label={t('period.label')}>
           <span class="font-mono text-[10px] uppercase tracking-[0.12em] text-muted-2">{t('period.label')}</span>
           {PERIODS.map((p) => (
-            <Pill key={p} active={period === p} onToggle={() => setPeriod(p)} label={t(`period.${p}`)} accentVar="--c-gold" testId={`period-${p}`} />
+            <Pill key={p} active={period === p} onToggle={() => changePeriod(p)} label={t(`period.${p}`)} accentVar="--c-gold" testId={`period-${p}`} />
           ))}
           <span class="basis-full text-[11px] text-muted-2 lg:basis-auto lg:ml-1" data-testid="period-hint">{t(`period.hint.${period}`)}</span>
         </div>
@@ -256,6 +318,7 @@ export default function ComboSearch({ parts, initial, dataUrl, locale, translati
                 locale={locale}
                 rank={i + 1}
                 partName={partName}
+                amazon={{ ...amazon, market }}
                 t={t}
               />
             ))}
@@ -267,7 +330,7 @@ export default function ComboSearch({ parts, initial, dataUrl, locale, translati
             <button
               type="button"
               data-testid="load-more"
-              onClick={() => setVisible((v) => v + PAGE)}
+              onClick={() => { track('load_more', { visible: visible + PAGE, results: results.length }); setVisible((v) => v + PAGE); }}
               class="rounded-full border border-border bg-surface-2 px-5 py-2 text-[12px] font-semibold text-muted transition-colors hover:text-text"
             >
               {t('search.loadMore')} ({results.length - visible})

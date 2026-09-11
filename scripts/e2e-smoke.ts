@@ -28,6 +28,8 @@ function skipped(name: string, why: string) { skip++; console.log(`  SKIP ${name
 
 /** Chiave PostHog configurata nel sorgente: placeholder → nessuna richiesta attesa, chiave vera → almeno una. */
 function posthogConfigured(): boolean {
+  const env = process.env.PUBLIC_POSTHOG_KEY;   // stessa variabile letta dalla build (import.meta.env)
+  if (env) return !env.startsWith('phc_INCOLLA');
   const p = join(ROOT, 'src', 'lib', 'analytics-config.ts');
   if (!existsSync(p)) return false;
   const m = readFileSync(p, 'utf8').match(/POSTHOG_KEY[^\n]*?'(phc_[^']*)'/);
@@ -43,7 +45,13 @@ function watch(page: Page): Net {
 }
 function consoleErrors(page: Page): string[] {
   const errs: string[] = [];
-  page.on('console', (m) => { if (m.type() === 'error') errs.push(m.text()); });
+  // Con una chiave PostHog di prova (phc_test…) il server risponde 404: non è un errore del sito.
+  const testKey = (process.env.PUBLIC_POSTHOG_KEY ?? '').startsWith('phc_test');
+  page.on('console', (m) => {
+    if (m.type() !== 'error') return;
+    if (testKey && /posthog/i.test(m.location()?.url ?? '')) return;
+    errs.push(`${m.text()} [${m.location()?.url ?? ''}]`);
+  });
   page.on('pageerror', (e) => errs.push(String(e)));
   return errs;
 }

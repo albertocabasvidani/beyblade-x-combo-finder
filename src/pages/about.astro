@@ -46,7 +46,7 @@ const sources = sourcesData.sources.filter((s) => s.provides === 'combos');
           <div class="rounded-lg border border-border bg-surface p-3">
             <span class="font-medium text-text">{source.name}</span>
             {source.urls?.[0] && (
-              <a href={source.urls?.[0]} target="_blank" rel="noopener" class="mt-1 block truncate text-xs text-muted-2 hover:text-text-2">
+              <a href={source.urls?.[0]} target="_blank" rel="noopener" data-source={source.name} class="mt-1 block truncate text-xs text-muted-2 hover:text-text-2">
                 {source.urls?.[0]}
               </a>
             )}
@@ -55,9 +55,25 @@ const sources = sourcesData.sources.filter((s) => s.provides === 'combos');
       </div>
     </section>
 
+    <section class="mb-8">
+      <h2 class="mb-3 text-lg font-semibold text-text">{t(locale, 'about.affiliate.title')}</h2>
+      <p class="text-sm text-text-2">{t(locale, 'about.affiliate.text')}</p>
+    </section>
+
     <section class="rounded-lg border border-border bg-surface p-4">
       <h2 class="mb-2 text-lg font-semibold text-text">{t(locale, 'about.disclaimer.title')}</h2>
       <p class="text-sm text-muted">{t(locale, 'about.disclaimer.text')}</p>
     </section>
   </div>
 </BaseLayout>
+
+<script is:inline>
+  // Clic sui link alle fonti → evento PostHog (window.__ph è impostato da src/lib/analytics.ts).
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a[data-source]') : null;
+    if (!a) return;
+    try {
+      if (window.__ph) window.__ph.capture('source_click', { source: a.getAttribute('data-source') });
+    } catch (err) {}
+  });
+</script>

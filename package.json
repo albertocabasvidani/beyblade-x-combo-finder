@@ -38,6 +38,8 @@
     "test:prune": "npx tsx scripts/test-prune.ts",
     "test:wiki-scan": "npx tsx scripts/test-wiki-scan.ts",
     "test:e2e": "npx tsx scripts/e2e-smoke.ts",
+    "test:amazon": "npx tsx scripts/test-amazon.ts",
+    "sync:amazon-asins": "npx tsx scripts/sync-amazon-asins.ts",
     "scan:wiki": "npx tsx scripts/scan-wiki-updates.ts",
     "verify:preserved": "npx tsx scripts/verify-parts-preserved.ts",
     "resolve:new-parts": "npx tsx scripts/resolve-new-parts.ts"
@@ -51,6 +53,7 @@
     "@astrojs/preact": "^4.1.3",
     "@tailwindcss/vite": "^4.2.1",
     "astro": "^5.17.1",
+    "posthog-js": "^1.430.2",
     "preact": "^10.28.4",
     "tailwindcss": "^4.2.1"
   }

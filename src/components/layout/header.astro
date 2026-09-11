@@ -64,6 +64,9 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       try {
         localStorage.setItem('theme', next);
       } catch (e) {}
+      try {
+        if (window.__ph) window.__ph.capture('theme_toggled', { theme: next });
+      } catch (e) {}
     });
   })();
 </script>

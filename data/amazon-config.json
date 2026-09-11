@@ -1,0 +1,13 @@
+{
+  "_comment": "Tag = tracking ID Amazon Associates DEDICATI al sito (uno per account/marketplace), diversi da quelli usati da bbxdealmonitor per il canale WhatsApp: cosi' il report affiliati giornaliero distingue i due canali. Tag vuoto = link senza &tag=. `com` resta vuoto finche' non esiste un account Associates US.",
+  "defaultMarketplace": "com",
+  "marketplaces": {
+    "it": { "tld": "amazon.it", "tag": "" },
+    "de": { "tld": "amazon.de", "tag": "" },
+    "fr": { "tld": "amazon.fr", "tag": "" },
+    "es": { "tld": "amazon.es", "tag": "" },
+    "uk": { "tld": "amazon.co.uk", "tag": "" },
+    "jp": { "tld": "amazon.co.jp", "tag": "" },
+    "com": { "tld": "amazon.com", "tag": "" }
+  }
+}
