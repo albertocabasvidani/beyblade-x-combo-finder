@@ -19,7 +19,8 @@
  *
  *   npm run build:thumbs
  */
-import { readdir, mkdir, stat } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+import { readdir, readFile, mkdir, stat, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import sharp from 'sharp';
@@ -155,6 +156,10 @@ async function main(): Promise<void> {
   let byteOrigine = 0;
   let byteThumb = 0;
   const tScript = (await mtime(QUESTO_SCRIPT)) ?? 0;
+  const manifest: { generated: string; files: Record<string, string> } = {
+    generated: new Date().toISOString(),
+    files: {},
+  };
 
   for (const nome of file) {
     const src = join(SORGENTE, nome);
@@ -179,8 +184,14 @@ async function main(): Promise<void> {
     }
 
     byteOrigine += (await stat(src)).size;
-    byteThumb += (await stat(dest)).size;
+    const thumb = await readFile(dest);
+    byteThumb += thumb.length;
+    manifest.files[nome] = createHash('sha1').update(thumb).digest('hex').slice(0, 12);
   }
+
+  // Il manifest e' cio' che permette all'app di accorgersi di una miniatura rigenerata: la sua
+  // cache e' per nome file, e senza un hash del contenuto terrebbe la vecchia per sempre.
+  await writeFile(join(DESTINAZIONE, 'manifest.json'), JSON.stringify(manifest, null, 1) + '\n');
 
   const mb = (n: number) => (n / 1024 / 1024).toFixed(1);
   console.log(
