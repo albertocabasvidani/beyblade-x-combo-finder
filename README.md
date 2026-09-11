@@ -4,9 +4,14 @@ Sito web per trovare le migliori combo Beyblade X in base alle parti possedute. 
 da **risultati di tornei reali** raccolti da fonti competitive multilingua e aggiornati da una pipeline
 agentica Claude Code.
 
-- **Sito**: https://albertocabasvidani.github.io/beyblade-x-combo-finder/
+- **Sito**: https://albertocabasvidani.github.io/beyblade-x-combo-finder/ (in arrivo su beybladexcombos.com)
 - **Stack**: Astro (SSG) + Preact island, Tailwind CSS v4, GitHub Pages. Monolingua inglese servito
-  dalla root (`/`, `/about/`); infrastruttura i18n IT in standby nel repo.
+  dalla root (`/`, `/about/`, `/privacy/`); infrastruttura i18n IT in standby nel repo.
+- **Ricerca**: parti possedute → ranking unico BX/UX/CX per score CAS, con **periodo** 1/3/6/12 mesi,
+  filtri torneo, «Compare» con link Amazon affiliati sulle parti mancanti (marketplace dalla lingua del
+  browser). Il client riceve un dataset ridotto (`/combos.json`, ~175 KB gzip), non `combos.json` intero.
+- **Analytics**: PostHog cloud EU in modalità cookieless (niente cookie, niente banner); chiave in
+  `src/lib/analytics-config.ts`. **AdSense**: config in `src/lib/ads-config.ts`, spento finché vuoto.
 
 ## Installazione
 
@@ -16,8 +21,10 @@ npm install
 
 Richiede inoltre (per la pipeline dati):
 - Python con `youtube-transcript-api` (`pip install youtube-transcript-api`)
-- `.env` con `YOUTUBE_API_KEY` (YouTube Data API v3 + Google Sheets API v4) e, opzionali,
-  `AMAZON_TAG_IT` / `AMAZON_TAG_US` per i link affiliate.
+- `.env` con `YOUTUBE_API_KEY` (YouTube Data API v3 + Google Sheets API v4).
+- I tag Amazon Associates (tracking ID dedicati al sito, uno per marketplace) stanno in
+  `data/amazon-config.json`; gli ASIN per i link diretti in `data/amazon-asins.json`
+  (`npm run sync:amazon-asins`, dallo stato del monitor bbxdealmonitor).
 - `playwright-core` usa il Chrome di sistema (nessun download browser).
 
 ## Comandi
@@ -37,6 +44,9 @@ Richiede inoltre (per la pipeline dati):
 | `npm run test:wbo` / `npm run test:wbo-unresolved` | Golden test del parser WBO (BX/CX) e del ledger |
 | `npm run test:freshness` | Golden test del cutoff condiviso (`scripts/lib/freshness.ts`) |
 | `npm run test:prune` | Golden test della partizione del pruning |
+| `npm run test:amazon` | Golden test dei link affiliati e della scelta del marketplace |
+| `npm run test:e2e` | Percorso utente nel browser (Chrome headless) sulla preview: `npm run build && npm run preview` prima |
+| `npm run sync:amazon-asins` | Aggiorna `data/amazon-asins.json` dallo stato di bbxdealmonitor (`BBX_SEEN_PATH`) |
 
 Comandi Claude Code (in `.claude/commands/`):
 - `/scrape-parts-master` — import iniziale del database parti da Beyblade Fandom Wiki (one-shot)
@@ -48,7 +58,7 @@ Comandi Claude Code (in `.claude/commands/`):
 - **`data/parts-master.json`** — file canonico delle parti, multilingua (nomi Takara Tomy / Hasbro /
   giapponese + alias per lingua). Da qui `build:parts` deriva `data/parts.json` (consumato dal sito),
   preservando gli id e con un guardrail che aborta se romperebbe i riferimenti di `combos.json`.
-- **`data/combos.json`** — combo con `evidence` (placements/usage/mentions), `scoreBreakdown` CAS, tag e fonti. Solo evidenza entro il **cutoff di 12 mesi**.
+- **`data/combos.json`** — combo con `evidence` (placements/usage/mentions), `scoreBreakdown` CAS, `windows` (score per finestra 1/3/6/12 mesi), tag e fonti. Solo evidenza entro il **cutoff di 12 mesi**.
 - **`data/combos-archive.json`** — combo archiviate dal pruning (senza evidenza fresca): fuori dal sito, reversibili.
 - **`data/metabeys-evidence.json`** — evidenza torneo parsata in modo deterministico da MetaBeys (input dello scoring).
 - **`data/wbo-evidence.json`** — evidenza torneo da WBO (parser deterministico, BX **e CX** con campi `lockChip/mainBlade/assistBlade/overBlade`).
@@ -82,4 +92,6 @@ evidenza fresca in `combos-archive.json`. Dettagli completi e scheduling in `CLA
 
 ## Deploy
 
-Push su `master` → GitHub Actions builda e pubblica su GitHub Pages.
+Push su `master` → GitHub Actions builda e pubblica su GitHub Pages. Origine e base path del sito
+vengono da `astro.config.mjs` (`SITE_ORIGIN`/`SITE_BASE`, default GitHub Pages): la procedura per il
+passaggio al dominio beybladexcombos.com è in `CLAUDE.md`, sezione «GitHub e dominio».

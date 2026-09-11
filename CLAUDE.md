@@ -21,6 +21,15 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
   toggle chiaro/scuro persistito in `localStorage`, anti-FOUC inline in `base-layout.astro`). Spec design
   in `docs/redesign-arena.md`. Font: Anton (display) / Saira (body) / JetBrains Mono (mono).
 - **Hosting**: GitHub Pages (deploy automatico via Actions)
+- **SEO/social**: `@astrojs/sitemap` (solo pagine HTML), `src/pages/robots.txt.ts` generato a build,
+  canonical + Open Graph/Twitter card nel layout con `public/og.png` (1200×630, generata da `tmp/gen-og.mjs`).
+- **Analytics**: PostHog cloud EU cookieless (`src/lib/analytics.ts`, chiave in `analytics-config.ts`;
+  placeholder = spenta). Eventi elencati in `projects/web-frontend.md` (Changelog 11/09/2026).
+- **AdSense**: `src/lib/ads-config.ts` (client + id slot, vuoti = niente script né slot), slot
+  `src/components/ads/ad-slot.astro` sopra e sotto l'isola in `index.astro`, solo in produzione. Dopo
+  l'approvazione: compilare la config, `public/ads.txt` con la riga di AdSense, messaggio GDPR da
+  «Privacy & messaging» (CMP certificata Google, nessun codice nostro). Privacy policy in `/privacy/`
+  (`src/pages/privacy.astro`, testi `privacy.*` in i18n).
 - **i18n**: sito **monolingua inglese** servito dalla root (`/`, `/about/`), nessun redirect.
   L'infrastruttura i18n resta in repo (`src/i18n/{en,it}.json`, `ui.ts`, tipo `Locale`): `it.json` è
   dormiente, riattivabile ricreando le route `/it/` e il selettore lingua nell'header.
@@ -399,12 +408,26 @@ che a sua volta avvia `fetch-transcripts.bat` con console nascosta (`WScript.She
 perché ogni 5 min altrimenti compariva una finestra cmd nella sessione utente. Resta nella sessione loggata
 (non in background di sistema) perché Python è installato per-utente e serve l'accesso alla rete.
 
-## GitHub
+## GitHub e dominio
 
 - Repo: https://github.com/albertocabasvidani/beyblade-x-combo-finder
 - Branch: master
 - Deploy: GitHub Pages (automatico su push a master)
-- URL: https://albertocabasvidani.github.io/beyblade-x-combo-finder/
+- URL oggi: https://albertocabasvidani.github.io/beyblade-x-combo-finder/
+- Dominio scelto (11/09/2026): **beybladexcombos.com**, separato da trottolebeybladex.it (citato da Amazon nel
+  rifiuto dell'account Associates IT). Serve per AdSense, che non accetta i sottodomini `*.github.io`.
+- `astro.config.mjs` legge `SITE_ORIGIN`/`SITE_BASE` con default GitHub Pages; robots.txt, sitemap,
+  canonical e Open Graph li seguono. Prova del passaggio: `SITE_ORIGIN=https://beybladexcombos.com SITE_BASE=/ npm run build`
+  (e2e verde l'11/09/2026 su quella build).
+
+**Giorno del passaggio al dominio** (dopo che l'utente ha registrato il dominio e impostato i DNS:
+`A @` → 185.199.108.153 / 109.153 / 110.153 / 111.153, `CNAME www` → `albertocabasvidani.github.io`):
+1. `public/CNAME` con la sola riga `beybladexcombos.com`;
+2. in `astro.config.mjs` i due default: `SITE_ORIGIN` → `https://beybladexcombos.com`, `SITE_BASE` → `/`;
+3. in `scripts/e2e-smoke.ts` il default di `BASE` → `http://localhost:4321`;
+4. GitHub → Settings → Pages → Custom domain + Enforce HTTPS; poi `curl -sI https://beybladexcombos.com/` → 200;
+5. aggiornare l'URL in README, qui sopra e in `projects/web-frontend.md`.
+Finché il CNAME non c'è, il sito resta sul `github.io` e nulla cambia.
 
 ## Convenzioni
 

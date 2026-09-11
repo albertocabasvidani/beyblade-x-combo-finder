@@ -1,0 +1,35 @@
+---
+import BaseLayout from '../layouts/base-layout.astro';
+import { t } from '../i18n/ui';
+
+const locale = 'en';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+// Sezioni della policy: titolo + paragrafi (chiavi privacy.<sezione>.title / .p1 / .p2 in i18n).
+const sections = ['who', 'analytics', 'ads', 'affiliate', 'local', 'rights'] as const;
+const paragraphs = (s: string) => ['p1', 'p2', 'p3'].map((p) => t(locale, `privacy.${s}.${p}`)).filter((x) => !x.startsWith('privacy.'));
+---
+
+<BaseLayout title={`${t(locale, 'privacy.title')} — ${t(locale, 'site.title')}`} description={t(locale, 'privacy.intro')}>
+  <div class="mx-auto max-w-2xl">
+    <a href={`${base}/`} class="mb-6 inline-block text-sm text-muted hover:text-gold">&larr; {t(locale, 'nav.home')}</a>
+
+    <h1 class="mb-4 font-display text-3xl uppercase text-gold">{t(locale, 'privacy.title')}</h1>
+    <p class="mb-8 text-text-2">{t(locale, 'privacy.intro')}</p>
+
+    {sections.map((s) => (
+      <section class="mb-8" data-privacy-section={s}>
+        <h2 class="mb-3 text-lg font-semibold text-text">{t(locale, `privacy.${s}.title`)}</h2>
+        {paragraphs(s).map((p) => <p class="mb-3 text-sm text-text-2">{p}</p>)}
+        {s === 'ads' && (
+          <p class="text-sm text-text-2">
+            <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener" class="underline decoration-dotted hover:text-text">
+              {t(locale, 'privacy.ads.link')}
+            </a>
+          </p>
+        )}
+      </section>
+    ))}
+
+    <p class="text-xs text-muted-2">{t(locale, 'privacy.updated')}</p>
+  </div>
+</BaseLayout>

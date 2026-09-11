@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/base-layout.astro';
+import AdSlot from '../components/ads/ad-slot.astro';
 import ComboSearch from '../components/search/combo-search';
 import partsData from '../../data/parts.json';
 import combosData from '../../data/combos.json';
@@ -32,6 +33,7 @@ const amazon = {
 ---
 
 <BaseLayout>
+  <AdSlot slot="top" />
   <ComboSearch
     client:load
     parts={partsData}
@@ -41,4 +43,5 @@ const amazon = {
     locale={locale}
     translations={en}
   />
+  <AdSlot slot="bottom" />
 </BaseLayout>

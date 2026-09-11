@@ -3,6 +3,7 @@ import '../styles/global.css';
 import Header from '../components/layout/header.astro';
 import Footer from '../components/layout/footer.astro';
 import { getLocaleFromUrl, t } from '../i18n/ui';
+import { ADSENSE_CLIENT } from '../lib/ads-config';
 
 interface Props {
   title?: string;
@@ -12,6 +13,12 @@ interface Props {
 const locale = getLocaleFromUrl(Astro.url);
 const { title = t(locale, 'site.title'), description = t(locale, 'site.description') } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+// URL assoluti per canonical/Open Graph: `site` da astro.config.mjs + path della pagina (con base).
+// Le pagine sono directory (`/about/`): il canonical porta sempre lo slash finale, come la sitemap.
+const pathname = /\.[a-z0-9]+$/i.test(Astro.url.pathname) || Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${Astro.url.pathname}/`;
+const canonical = Astro.site ? new URL(pathname, Astro.site).href : Astro.url.href;
+const ogImage = Astro.site ? new URL(`${base}/og.png`, Astro.site).href : `${base}/og.png`;
+const adsEnabled = import.meta.env.PROD && !!ADSENSE_CLIENT;
 ---
 
 <!doctype html>
@@ -23,6 +30,22 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={t(locale, 'site.title')} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+    {adsEnabled && (
+      <script async is:inline src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`} crossorigin="anonymous"></script>
+    )}
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
