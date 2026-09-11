@@ -3,16 +3,29 @@ import BaseLayout from '../layouts/base-layout.astro';
 import ComboSearch from '../components/search/combo-search';
 import partsData from '../../data/parts.json';
 import combosData from '../../data/combos.json';
+import { toSlim, INITIAL_COMBOS } from '../lib/slim-combos';
+import type { CombosDatabase } from '../lib/types';
 import en from '../i18n/en.json';
 
 const locale = 'en';
+// Il dataset intero NON passa come prop dell'isola (Astro lo serializzerebbe in un attributo HTML,
+// raddoppiandolo): l'isola parte con le prime combo inline e fetcha /combos.json per il resto.
+const slim = toSlim(combosData as unknown as CombosDatabase);
+// Inline solo la finestra 12 (quella di default): le altre arrivano col fetch. Con tutte e quattro
+// le finestre, 60 combo inline pesavano ~480 KB di HTML.
+const initial = {
+  ...slim,
+  combos: slim.combos.slice(0, INITIAL_COMBOS).map((c) => ({ ...c, windows: { '12': c.windows['12'] } })),
+};
+const dataUrl = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/combos.json`;
 ---
 
 <BaseLayout>
   <ComboSearch
     client:load
     parts={partsData}
-    combos={combosData}
+    initial={initial}
+    dataUrl={dataUrl}
     locale={locale}
     translations={en}
   />

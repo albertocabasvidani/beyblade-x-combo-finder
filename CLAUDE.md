@@ -24,7 +24,11 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
 - **i18n**: sito **monolingua inglese** servito dalla root (`/`, `/about/`), nessun redirect.
   L'infrastruttura i18n resta in repo (`src/i18n/{en,it}.json`, `ui.ts`, tipo `Locale`): `it.json` è
   dormiente, riattivabile ricreando le route `/it/` e il selettore lingua nell'header.
-- **Database**: JSON nel repo (`data/combos.json`, `data/parts.json`)
+- **Database**: JSON nel repo (`data/combos.json`, `data/parts.json`). Il sito NON riceve `combos.json` intero:
+  `src/lib/slim-combos.ts` lo proietta sui soli campi che la UI legge (niente `evidence`), l'endpoint
+  `src/pages/combos.json.ts` lo serve come asset separato (`/combos.json`, ~2,5 MB, ~175 KB gzip) e
+  l'isola parte con 30 combo inline (`INITIAL_COMBOS`) e pagina i risultati a 60 («Show more»).
+  Prima (fino al 11/09/2026) il dataset intero passava come prop dell'isola e la home pesava 38,5 MB.
 - **Pipeline**: Claude Code agentico via comando `/update-combos`
 
 ## Struttura Dati
@@ -96,6 +100,8 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
 - `npm run test:wbo` — golden test del parser WBO (BX, CX order-agnostic/Western, hardening BX, casi che restano unresolved)
 - `npm run test:wbo-unresolved` — golden test del ledger (idempotenza, preservazione `status`, categorizzazione)
 - `npm run test:freshness` / `npm run test:prune` — golden test del cutoff condiviso e della partizione del pruning
+- `npm run test:e2e` — percorso utente nel browser (`scripts/e2e-smoke.ts`, playwright-core + Chrome di sistema, headless) sulla preview locale: prima `npm run build && npm run preview` (porta 4321); `E2E_URL` per puntarlo al sito pubblicato
+- Cosa controlla: peso della home (< 400 KB), fetch di `/combos.json`, ricerca parti, periodo 1/3/6/12M, filtri, Show more, Compare/Buy, marketplace, tema, about/privacy, mobile 390 px senza scroll orizzontale; screenshot in `tmp/e2e/`
 
 ## Pipeline Dati
 

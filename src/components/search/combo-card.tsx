@@ -1,9 +1,13 @@
-import type { Combo, SelectedParts, Locale } from '../../lib/types';
+import type { SelectedParts, Locale, ComboWindow, TierThresholds } from '../../lib/types';
+import type { SlimCombo } from '../../lib/slim-combos';
 import { getMatchedParts, hasAnySelection } from '../../lib/search-engine';
 import { ScoreBadge, scoreTier } from './score-badge';
 
 interface Props {
-  combo: Combo;
+  combo: SlimCombo;
+  /** La finestra temporale scelta dall'utente: score, breakdown e tag da mostrare. */
+  view: ComboWindow;
+  thresholds: TierThresholds;
   displayName: string;
   selected: SelectedParts;
   compare: boolean;
@@ -36,10 +40,10 @@ function daysSince(iso: string): number {
   return (Date.now() - new Date(iso + 'T00:00:00Z').getTime()) / 86_400_000;
 }
 
-export function ComboCard({ combo, displayName, selected, compare, locale, rank, partName, t }: Props) {
+export function ComboCard({ combo, view, thresholds, displayName, selected, compare, locale, rank, partName, t }: Props) {
   const matched = getMatchedParts(combo, selected);
-  const b = combo.scoreBreakdown;
-  const tier = scoreTier(combo);
+  const b = view;
+  const tier = scoreTier(view.score, view.tags, thresholds);
   const isTop = rank === 1;
   const showChips = compare && hasAnySelection(selected);
 
@@ -84,7 +88,7 @@ export function ComboCard({ combo, displayName, selected, compare, locale, rank,
 
   const Sources = () => (
     <span class="text-[10.5px] text-muted-2">
-      {combo.sources.length} {t('search.sources')}
+      {combo.sourceCount} {t('search.sources')}
     </span>
   );
 
@@ -117,6 +121,7 @@ export function ComboCard({ combo, displayName, selected, compare, locale, rank,
           return (
             <span
               key={p.key}
+              data-testid={owned ? 'part-owned' : 'part-missing'}
               class={`inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-[11px] font-bold ${
                 owned ? 'border-owned-border bg-owned-bg text-owned-text' : 'border-missing-border bg-missing-bg text-missing-text'
               }`}
@@ -141,7 +146,7 @@ export function ComboCard({ combo, displayName, selected, compare, locale, rank,
   return (
     <>
       {/* ---------- MOBILE: card verticale ---------- */}
-      <article class={`relative overflow-hidden rounded-[14px] lg:hidden ${cardClass}`} style={cardStyle}>
+      <article data-testid="combo-card" data-combo-id={combo.id} class={`relative overflow-hidden rounded-[14px] lg:hidden ${cardClass}`} style={cardStyle}>
         <span class="absolute inset-y-0 left-0 w-1" style={{ background: railBg }} aria-hidden="true" />
         <div class="py-[13px] pl-[18px] pr-[14px]">
           <div class="flex items-start justify-between gap-2.5">
@@ -159,7 +164,7 @@ export function ComboCard({ combo, displayName, selected, compare, locale, rank,
                 </div>
               </div>
             </div>
-            <ScoreBadge combo={combo} t={t} size="sm" title={breakdownTooltip} />
+            <ScoreBadge score={view.score} tags={view.tags} thresholds={thresholds} t={t} size="sm" title={breakdownTooltip} />
           </div>
 
           {b && (b.tournamentEvents > 0 || b.metaSharePct != null) && (
@@ -179,7 +184,7 @@ export function ComboCard({ combo, displayName, selected, compare, locale, rank,
       </article>
 
       {/* ---------- DESKTOP: riga orizzontale ---------- */}
-      <article class={`relative hidden overflow-hidden rounded-[14px] lg:block ${cardClass}`} style={cardStyle}>
+      <article data-testid="combo-card" data-combo-id={combo.id} class={`relative hidden overflow-hidden rounded-[14px] lg:block ${cardClass}`} style={cardStyle}>
         <span class="absolute inset-y-0 left-0 w-[5px]" style={{ background: railBg }} aria-hidden="true" />
         <div class="flex items-center gap-[18px] py-4 pl-[26px] pr-5">
           <span class={`font-display text-[38px] italic leading-none ${isTop ? 'text-rank-1' : 'text-rank-other'}`}>{rank}</span>
@@ -216,7 +221,7 @@ export function ComboCard({ combo, displayName, selected, compare, locale, rank,
             </div>
           )}
 
-          <ScoreBadge combo={combo} t={t} size="lg" title={breakdownTooltip} />
+          <ScoreBadge score={view.score} tags={view.tags} thresholds={thresholds} t={t} size="lg" title={breakdownTooltip} />
         </div>
       </article>
     </>
