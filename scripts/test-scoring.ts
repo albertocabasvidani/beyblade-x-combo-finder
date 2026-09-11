@@ -5,7 +5,11 @@
  * non valori esatti: i numeri assoluti dipendono dalla taratura delle costanti.
  * Esegui: npx tsx scripts/test-scoring.ts  (esce 1 se un assert fallisce).
  */
-import { scoreCombo, sat, decay, usageTrend, CONST } from '../src/lib/scoring';
+import {
+  scoreCombo, sat, decay, usageTrend, CONST,
+  windowCutoff, evidenceInWindow, qualifiesForWindow, windowThresholds, retagTiers, TIER_ABS,
+} from '../src/lib/scoring';
+import { cutoffISO } from './lib/freshness';
 import type { ComboEvidence, PlacementEvidence } from '../src/lib/types';
 
 const REF = new Date('2026-06-15T00:00:00Z');
@@ -144,6 +148,30 @@ const withStadium = scoreCombo(ev([
 ]), { ref: REF });
 check('lastPlacementDate = placement più recente', withStadium.breakdown.lastPlacementDate === '2026-06-10', `=${withStadium.breakdown.lastPlacementDate}`);
 check('stadiums raccoglie i piatti distinti', !!withStadium.breakdown.stadiums && withStadium.breakdown.stadiums.length === 2);
+
+console.log('Finestre temporali (1/3/6/12 mesi)');
+check('windowCutoff(12) == cutoffISO (invariante finestra 12)', windowCutoff(REF, 12) === cutoffISO(REF),
+  `(${windowCutoff(REF, 12)} vs ${cutoffISO(REF)})`);
+check('windowCutoff(1) = un mese prima', windowCutoff(REF, 1) === '2026-05-15', `=${windowCutoff(REF, 1)}`);
+const mixed = ev([...placements(3, 1, 20, 5), ...placements(4, 2, 20, 200)]);   // 3 recenti + 4 vecchi
+check('evidenceInWindow(1M) tiene solo i recenti', evidenceInWindow(mixed, REF, 1).placements.length === 3);
+check('evidenceInWindow(12M) tiene tutto', evidenceInWindow(mixed, REF, 12).placements.length === 7);
+check('data assente resta dentro la finestra',
+  evidenceInWindow(ev([{ ...placements(1, 1, 20)[0], date: '' }]), REF, 1).placements.length === 1);
+const s1 = scoreCombo(evidenceInWindow(mixed, REF, 1), { ref: REF, useConfidence: true }).score;
+const s12 = scoreCombo(evidenceInWindow(mixed, REF, 12), { ref: REF, useConfidence: true }).score;
+check('monotonia: score(1M) <= score(12M)', s1 <= s12, `(${s1},${s12})`);
+check('finestra 12 su evidenza già filtrata == score base',
+  s12 === scoreCombo(mixed, { ref: REF, useConfidence: true }).score);
+check('mentions non qualificano una finestra',
+  !qualifiesForWindow(ev([], [], [{ source: 'x', date: '2026-06-15', kind: 'tier-list', lang: 'en' }])));
+check('placement qualifica una finestra', qualifiesForWindow(mixed));
+check('soglie 12M assolute', windowThresholds([1, 2, 3], 12).meta === TIER_ABS.meta);
+check('soglie 1M assolute (stesso significato di "meta" in ogni finestra)',
+  JSON.stringify(windowThresholds([0, 1, 2, 3, 4], 1)) === JSON.stringify(TIER_ABS));
+check('retagTiers aggiunge meta/top-tier sopra soglia e conserva gli altri tag',
+  JSON.stringify(retagTiers(['tournament-proven'], 4.2, { meta: 4, top: 3, solid: 2 })) === '["tournament-proven","meta","top-tier"]');
+check('retagTiers toglie meta/top-tier sotto soglia', retagTiers(['meta', 'top-tier', 'rising'], 1, TIER_ABS).join() === 'rising');
 
 console.log(failed === 0 ? '\nTutti i test passati.' : `\n${failed} test FALLITI.`);
 process.exit(failed === 0 ? 0 : 1);

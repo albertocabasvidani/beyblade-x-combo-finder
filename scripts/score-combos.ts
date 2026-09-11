@@ -13,9 +13,12 @@
  */
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { join } from 'path';
-import { scoreCombo } from '../src/lib/scoring';
-import { isFresh } from './lib/freshness';
-import type { Combo, CombosDatabase, ComboEvidence, MentionEvidence, PlacementEvidence, UsageEvidence } from '../src/lib/types';
+import { scoreCombo, WINDOW_MONTHS, evidenceInWindow, qualifiesForWindow, windowThresholds, retagTiers } from '../src/lib/scoring';
+import { isFresh, CUTOFF_MONTHS } from './lib/freshness';
+import type {
+  Combo, CombosDatabase, ComboEvidence, ComboWindows, MentionEvidence, PlacementEvidence, TierThresholds,
+  UsageEvidence, WindowKey,
+} from '../src/lib/types';
 
 const ROOT = join(import.meta.dirname, '..');
 const DATA = join(ROOT, 'data');
@@ -45,6 +48,8 @@ function legacyMentions(combo: Combo): MentionEvidence[] {
 function main() {
   if (!existsSync(combosPath)) { console.error('combos.json mancante.'); process.exit(1); }
   const db: CombosDatabase = JSON.parse(readFileSync(combosPath, 'utf8'));
+  const mergedIds = dedupById(db);
+  if (mergedIds.length > 0) console.log(`score-combos: ${mergedIds.length} id duplicati uniti: ${mergedIds.join(', ')}`);
   const evidence = existsSync(evidencePath) ? JSON.parse(readFileSync(evidencePath, 'utf8')) : { combos: {} };
   const wboEvidence = existsSync(wboPath) ? JSON.parse(readFileSync(wboPath, 'utf8')) : { combos: {} };
   const parsed: Record<string, any> = evidence.combos ?? {};
@@ -129,6 +134,40 @@ function main() {
     rescored++;
   }
 
+  // 3) Score per finestra temporale (filtro periodo in UI). Passata A: stesso `ref` e stesse opzioni
+  //    dello score base, cambia SOLO l'evidenza ammessa. La finestra 12 riusa l'evidenza già filtrata
+  //    dal cutoff, quindi windows["12"].score è per costruzione identico a combo.score.
+  //    Mappa per oggetto e non per id: un id duplicato (già capitato, v. projects/combo-pipeline.md
+  //    25/07/2026) farebbe ereditare a una combo le finestre dell'altra.
+  const rawWindows = new Map<Combo, ComboWindows>();
+  const scoresByWindow: Record<WindowKey, number[]> = { '1': [], '3': [], '6': [], '12': [] };
+  for (const combo of db.combos) {
+    const ev = combo.evidence ?? { placements: [], usage: [], mentions: [] };
+    const w: ComboWindows = {};
+    for (const months of WINDOW_MONTHS) {
+      const key = String(months) as WindowKey;
+      const sub = months >= CUTOFF_MONTHS ? ev : evidenceInWindow(ev, ref, months);
+      if (!qualifiesForWindow(sub)) continue;
+      const r = scoreCombo(sub, { ref, useConfidence: true });
+      w[key] = { ...r.breakdown, score: r.score, tags: r.tags };
+      scoresByWindow[key].push(r.score);
+    }
+    rawWindows.set(combo, w);
+  }
+  //    Passata B: soglie di fascia per finestra (oggi assolute per tutte, vedi windowThresholds) e
+  //    riscrittura dei soli tag meta/top-tier della finestra.
+  const thresholds = Object.fromEntries(
+    WINDOW_MONTHS.map((m) => [String(m), windowThresholds(scoresByWindow[String(m) as WindowKey], m)]),
+  ) as Record<WindowKey, TierThresholds>;
+  for (const combo of db.combos) {
+    const w = rawWindows.get(combo)!;
+    for (const [k, win] of Object.entries(w)) {
+      if (win) win.tags = retagTiers(win.tags, win.score, thresholds[k as WindowKey]);
+    }
+    combo.windows = w;
+  }
+  db.windowThresholds = thresholds;
+
   db.combos.sort((a, b) => b.score - a.score);
   db.lastUpdated = new Date().toISOString();
   writeFileSync(combosPath, JSON.stringify(db, null, 2) + '\n');
@@ -139,6 +178,53 @@ function main() {
     const b = c.scoreBreakdown;
     console.log(`  ${c.score.toFixed(1).padStart(4)}  ${c.displayName.padEnd(34)} perf=${b.performance} pres=${b.presence} corr=${b.corroboration}  [${b.wins}W/${b.tournamentEvents}ev]`);
   }
+
+  const mismatch = db.combos.filter((c) => c.windows?.['12'] && c.windows['12'].score !== c.score).length;
+  console.log(`\nFinestre temporali (invariante windows[12]==score: ${mismatch} violazioni):`);
+  for (const m of WINDOW_MONTHS) {
+    const k = String(m) as WindowKey;
+    const rows = db.combos.filter((c) => c.windows?.[k]).sort((a, b) => b.windows![k]!.score - a.windows![k]!.score);
+    const th = thresholds[k];
+    console.log(`  ${String(m).padStart(2)}M: ${rows.length} combo, soglie meta=${th.meta} top=${th.top} solid=${th.solid}`);
+    for (const c of rows.slice(0, 5)) {
+      const w = c.windows![k]!;
+      console.log(`       ${w.score.toFixed(1).padStart(4)}  ${c.displayName.padEnd(34)} [${w.wins}W/${w.tournamentEvents}ev] ${w.tags.join(',')}`);
+    }
+  }
+}
+
+/**
+ * Unisce le combo con lo stesso id (deterministico, idempotente). `/mine-reddit` ne ha create tre
+ * volte di già esistenti (25/07, 06/08, 09/09/2026): due voci con lo stesso id ricevono score
+ * separati e in UI compaiono entrambe. Si tiene la prima occorrenza (la più vecchia, l'ordine del
+ * file è per score) e vi si fondono evidenza, sources, tag e note delle altre; placements e mentions
+ * vengono deduplicati con le stesse chiavi del merge normale. Ritorna gli id uniti.
+ */
+function dedupById(db: CombosDatabase): string[] {
+  const first = new Map<string, Combo>();
+  const merged: string[] = [];
+  const out: Combo[] = [];
+  for (const c of db.combos) {
+    const keep = first.get(c.id);
+    if (!keep) { first.set(c.id, c); out.push(c); continue; }
+    if (!merged.includes(c.id)) merged.push(c.id);
+    const a = keep.evidence ?? { placements: [], usage: [], mentions: [] };
+    const b = c.evidence ?? { placements: [], usage: [], mentions: [] };
+    keep.evidence = {
+      placements: dedupPlacements([...(a.placements ?? []), ...(b.placements ?? [])]),
+      usage: mergeUsageHistory(a.usage ?? [], b.usage ?? []),
+      mentions: dedupMentions([...(a.mentions ?? []), ...(b.mentions ?? [])]),
+    };
+    const srcKeys = new Set((keep.sources ?? []).map((s) => `${s.name}|${s.url}`));
+    for (const s of c.sources ?? []) {
+      if (!srcKeys.has(`${s.name}|${s.url}`)) { keep.sources = [...(keep.sources ?? []), s]; srcKeys.add(`${s.name}|${s.url}`); }
+    }
+    keep.tags = [...new Set([...(keep.tags ?? []), ...(c.tags ?? [])])];
+    if (!keep.notes && c.notes) keep.notes = c.notes;
+    if (c.dateAdded < keep.dateAdded) keep.dateAdded = c.dateAdded;
+  }
+  db.combos = out;
+  return merged;
 }
 
 function dedupMentions(ms: MentionEvidence[]): MentionEvidence[] {

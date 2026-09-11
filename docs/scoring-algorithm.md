@@ -208,7 +208,8 @@ Lo score da solo non comunica fiducia. Esporre l'evidenza accanto al numero:
 - badge autorevolezza: `Tournament-proven · 18 eventi · 4 vittorie · 14% meta share`
 - barre breakdown: Performance / Presence / Corroboration
 - provenienza: "usata dal Gold medalist World Championship 2025"
-- filtri ricerca: solo `tournament-proven`, finestra 30/60/90g, n° minimo eventi, lingua/regione.
+- filtri ricerca: solo `tournament-proven`, **finestra 1/3/6/12 mesi (implementata, vedi §8)**,
+  n° minimo eventi, lingua/regione.
 
 ## 8. Costanti (default iniziali)
 
@@ -240,7 +241,46 @@ dell'evidenza unita). Le combo che restano senza alcuna evidenza fresca le archi
 **Robustezza date**: `daysBetween` è NaN-safe — una data non valida è trattata come "oggi" (0 giorni),
 così un singolo dato sporco non azzera lo score dell'intera combo (regressione vista col backfill WBO,
 dove date fuori-range producevano `NaN`). I parser emettono solo date di calendario reali (validazione
-in `parse:wbo`/`parse:metabeys`).
+in `parse:wbo`/`parse:metabeys`). Una data **futura** vale anch'essa 0 giorni, cioè peso pieno: per
+questo `score:combos` scarta ogni evidenza datata dopo oggi (difesa in profondità: nel 09/2026 il
+parser WBO leggeva «Date: 10/01/2026» come 1° ottobre e 228 placement stavano nel futuro).
+
+### Finestre temporali (filtro periodo: 1 / 3 / 6 / 12 mesi)
+
+Il sito permette di restringere il ranking agli ultimi 1, 3, 6 o 12 mesi di risultati (niente
+intervallo libero). Non è un filtro sul client: `score:combos` calcola per ogni combo uno score per
+finestra e lo scrive in `combo.windows = { "1": …, "3": …, "6": …, "12": … }`, ciascuna voce con la
+stessa forma di `scoreBreakdown` più `score` e `tags`. Regole (`src/lib/scoring.ts`, funzioni
+`windowCutoff` / `evidenceInWindow` / `qualifiesForWindow` / `windowThresholds` / `retagTiers`):
+
+- **Stesso algoritmo, evidenza ristretta.** `scoreCombo` gira con lo stesso `ref` (oggi) e le
+  stesse opzioni (`useConfidence: true`) del punteggio base: cambia solo l'evidenza ammessa, cioè
+  placements, usage e mentions con `date >= ref - N mesi` (data assente = dentro, come `isFresh`).
+  Il decadimento resta relativo a oggi: una finestra corta non «ringiovanisce» gli eventi.
+- **Invariante: `windows["12"] == score`.** `windowCutoff(ref, 12)` usa lo stesso rollover di
+  `cutoffISO`, e a 12 mesi si riusa l'evidenza già filtrata dal cutoff: score, breakdown e tag della
+  finestra 12 coincidono con quelli della combo. `score:combos` lo verifica a ogni run e stampa le
+  violazioni (attese 0); golden test in `scripts/test-scoring.ts`.
+- **Qualificazione.** Una combo compare in una finestra solo se lì ha almeno un placement o uno
+  snapshot usage. Le mentions non qualificano: in `combos.json` hanno spesso date sintetiche
+  (`legacyMentions` assegna `today()` alle `sources[]` senza data — 3.076 su 8.296 con la stessa data
+  al 11/09/2026), e qualificherebbero centinaia di combo teoriche in ogni finestra. Conseguenza anche a
+  12 mesi: le combo solo-mention (score ≈ 0, `theory-only`) non hanno `windows["12"]` e restano fuori
+  dal sito.
+- **Soglie di fascia assolute in ogni finestra** (`db.windowThresholds`, oggi 8.5 / 7.0 / 5.5 per
+  tutte). «Meta» significa la stessa cosa a 3 come a 12 mesi: i badge diventano più rari nelle finestre
+  corte, non vengono ridefiniti. Misurato l'11/09/2026 su `combos.json` (evidenza ferma al 26/07):
+  top 3M = 8.2, top 6M = 8.5, quindi la scala regge. L'alternativa dei quantili per finestra (98°/90°/
+  70° percentile) è stata scartata perché a 3 mesi avrebbe marcato «meta» 13 combo con score ≥ 4.2. Le
+  soglie restano però dati (per finestra) e non costanti nella UI, così una ritaratura non tocca il
+  client. I tag `meta`/`top-tier` di ogni finestra sono riscritti con `retagTiers`; gli altri tag
+  (`tournament-proven`, `rising`, `theory-only`) restano quelli calcolati sull'evidenza della finestra.
+- **Conteggi misurati l'11/09/2026** (evidenza ferma al 26/07/2026, `/update-combos` in pausa):
+  12M 4.063 combo, 6M 2.026, 3M 643, 1M 28. Con la pipeline attiva la finestra 1M torna a contenere
+  l'ultimo mese di tornei (~1.500-2.500 placement/mese nel 2026).
+- **Dedup per id.** Prima dello scoring `score:combos` unisce le combo con lo stesso `id` (evidenza,
+  sources, tag, note nella prima occorrenza): `/mine-reddit` ne ha create tre volte di già esistenti,
+  e due voci con lo stesso id prendevano score separati e comparivano entrambe in UI.
 
 ## 9. Migrazione
 
