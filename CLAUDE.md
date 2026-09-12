@@ -413,21 +413,18 @@ perché ogni 5 min altrimenti compariva una finestra cmd nella sessione utente. 
 - Repo: https://github.com/albertocabasvidani/beyblade-x-combo-finder
 - Branch: master
 - Deploy: GitHub Pages (automatico su push a master)
-- URL oggi: https://albertocabasvidani.github.io/beyblade-x-combo-finder/
-- Dominio scelto (11/09/2026): **beybladexcombos.com**, separato da trottolebeybladex.it (citato da Amazon nel
-  rifiuto dell'account Associates IT). Serve per AdSense, che non accetta i sottodomini `*.github.io`.
-- `astro.config.mjs` legge `SITE_ORIGIN`/`SITE_BASE` con default GitHub Pages; robots.txt, sitemap,
-  canonical e Open Graph li seguono. Prova del passaggio: `SITE_ORIGIN=https://beybladexcombos.com SITE_BASE=/ npm run build`
-  (e2e verde l'11/09/2026 su quella build).
-
-**Giorno del passaggio al dominio** (dopo che l'utente ha registrato il dominio e impostato i DNS:
-`A @` → 185.199.108.153 / 109.153 / 110.153 / 111.153, `CNAME www` → `albertocabasvidani.github.io`):
-1. `public/CNAME` con la sola riga `beybladexcombos.com`;
-2. in `astro.config.mjs` i due default: `SITE_ORIGIN` → `https://beybladexcombos.com`, `SITE_BASE` → `/`;
-3. in `scripts/e2e-smoke.ts` il default di `BASE` → `http://localhost:4321`;
-4. GitHub → Settings → Pages → Custom domain + Enforce HTTPS; poi `curl -sI https://beybladexcombos.com/` → 200;
-5. aggiornare l'URL in README, qui sopra e in `projects/web-frontend.md`.
-Finché il CNAME non c'è, il sito resta sul `github.io` e nulla cambia.
+- URL: https://beybladexcombos.com/ (dal 12/09/2026; il vecchio `albertocabasvidani.github.io/beyblade-x-combo-finder/`
+  redirige lì). Dominio su Tophost (registrar Register SPA, DNS Seeweb): pannello da tophost.it → Area cliente →
+  icona «Vai al pannello di controllo» del dominio → Utility → Gestione DNS. Il pannello conferma le
+  cancellazioni con un `confirm()` nativo che blocca il browser MCP: `window.confirm = () => true` prima del click.
+- Dominio separato da trottolebeybladex.it (citato da Amazon nel rifiuto dell'account Associates IT). Serve per
+  AdSense, che non accetta i sottodomini `*.github.io`.
+- DNS: `A @` → 185.199.108/109/110/111.153, `AAAA @` → 2606:50c0:8000::153, `CNAME www` →
+  `albertocabasvidani.github.io`. Custom domain impostato via `gh api -X PUT repos/.../pages -f cname=...`
+  (il browser MCP non apre github.com); Enforce HTTPS si abilita quando GitHub ha emesso il certificato.
+- `astro.config.mjs` legge `SITE_ORIGIN`/`SITE_BASE` con default dominio; robots.txt, sitemap, canonical e
+  Open Graph li seguono. `public/CNAME` contiene il dominio. Per una build sul vecchio path:
+  `SITE_ORIGIN=https://albertocabasvidani.github.io SITE_BASE=/beyblade-x-combo-finder npm run build`.
 
 ## Convenzioni
 
