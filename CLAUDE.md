@@ -25,6 +25,12 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
   canonical + Open Graph/Twitter card nel layout con `public/og.png` (1200×630, generata da `tmp/gen-og.mjs`).
 - **Analytics**: PostHog cloud EU cookieless (`src/lib/analytics.ts`, chiave in `analytics-config.ts`;
   placeholder = spenta). Eventi elencati in `projects/web-frontend.md` (Changelog 11/09/2026).
+- Progetto PostHog id 272532. Nel progetto serve `cookieless_server_hash_mode` = 2 (stateful): a 0 l'ingest
+  risponde 200 e scarta ogni evento cookieless. Non sta nella UI delle impostazioni: si legge e si imposta con
+  GET/PATCH su `/api/environments/272532/` dalla scheda PostHog loggata.
+- posthog-js scarta gli eventi da browser headless/webdriver: un probe sul sito vero va fatto con UA normale e
+  `navigator.webdriver=false` (`tmp/ph-probe3.mjs`). Nel Chrome dell'utente un'estensione blocca le POST a
+  `eu.i.posthog.com` («Failed to fetch»): il suo traffico non compare in PostHog.
 - **AdSense**: `src/lib/ads-config.ts` (client + id slot, vuoti = niente script né slot), slot
   `src/components/ads/ad-slot.astro` sopra e sotto l'isola in `index.astro`, solo in produzione. Dopo
   l'approvazione: compilare la config, `public/ads.txt` con la riga di AdSense, messaggio GDPR da
