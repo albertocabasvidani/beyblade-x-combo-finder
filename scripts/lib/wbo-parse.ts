@@ -359,6 +359,14 @@ export interface SegPlacement { rank: number; comboLinesRaw: string[] }
 export interface SegEvent { eventName: string; headerRaw: string; placements: SegPlacement[] }
 
 const ROLE_RE = /^\s*(ORGANIZER|MEMBER|ADMINISTRATOR|MODERATOR|COMMITTEE)\s*$/;
+// Widget statico "Sponsored by" nel footer di OGNI pagina del thread (stesso negozio, stessi 3
+// prodotti/prezzi, invariato su 90 occorrenze verificate). Vive tra la fine di un post e l'header
+// della pagina successiva: siccome i blocchi si chiudono solo su ROLE_RE, queste righe finiscono
+// incollate in coda all'ULTIMO post della pagina precedente, sotto il suo ULTIMO piazzamento — e
+// "MeteorDragoon 3-70J" risolve da solo a una combo reale, iniettando piazzamenti fantasma (scoperto
+// 12/09/2026: ~54 "piazzamenti" di meteor-dragoon-3-70-jolt, quasi tutti a "posto 3", su eventi che
+// non c'entrano nulla). Rimosso PRIMA della segmentazione: non è mai testo di un post.
+const SHOP_AD_RE = /BrachioWhip OW5-70Nr\n\n\$20\.99 USD\n\nBahamutBlitz BK1-50I\n\n\$29\.99 USD\n\nMeteorDragoon 3-70J\n\n\$27\.99 USD\nMore @ BeysAndBricks\n/g;
 const PLACEMENT_RE = /^(\d+)(?:st|nd|rd|th)\b(?:\s+place)?:?/i;
 // Le medaglie sono caratteri astrali (surrogate pair): l[0] ne darebbe solo metà, quindi startsWith.
 function medalRank(l: string): number | undefined {
@@ -417,7 +425,7 @@ export function segmentThread(raw: string, r?: Resolver): SegEvent[] {
     const res = parseComboLine(r, l);
     return res.ok && res.combo.ratchet === null;
   };
-  const lines = raw.split('\n');
+  const lines = raw.replace(SHOP_AD_RE, '').split('\n');
   const blocks: string[][] = [];
   let cur: string[] | null = null;
   for (const ln of lines) {
