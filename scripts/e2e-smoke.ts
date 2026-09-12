@@ -12,7 +12,7 @@ import { existsSync, mkdirSync, readFileSync } from 'fs';
 import { join } from 'path';
 
 const ROOT = join(import.meta.dirname, '..');
-const BASE = (process.env.E2E_URL ?? 'http://localhost:4321/beyblade-x-combo-finder').replace(/\/$/, '');
+const BASE = (process.env.E2E_URL ?? 'http://localhost:4321').replace(/\/$/, '');
 const SHOTS = join(ROOT, 'tmp', 'e2e');
 const HOME_MAX_BYTES = 400_000;
 const PAGE_SIZE = 60;        // card per pagina (PAGE in combo-search.tsx)

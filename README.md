@@ -4,7 +4,7 @@ Sito web per trovare le migliori combo Beyblade X in base alle parti possedute. 
 da **risultati di tornei reali** raccolti da fonti competitive multilingua e aggiornati da una pipeline
 agentica Claude Code.
 
-- **Sito**: https://albertocabasvidani.github.io/beyblade-x-combo-finder/ (in arrivo su beybladexcombos.com)
+- **Sito**: https://beybladexcombos.com/
 - **Stack**: Astro (SSG) + Preact island, Tailwind CSS v4, GitHub Pages. Monolingua inglese servito
   dalla root (`/`, `/about/`, `/privacy/`); infrastruttura i18n IT in standby nel repo.
 - **Ricerca**: parti possedute → ranking unico BX/UX/CX per score CAS, con **periodo** 1/3/6/12 mesi,
