@@ -3,11 +3,11 @@
   "defaultMarketplace": "com",
   "marketplaces": {
     "it": { "tld": "amazon.it", "tag": "" },
-    "de": { "tld": "amazon.de", "tag": "" },
-    "fr": { "tld": "amazon.fr", "tag": "" },
-    "es": { "tld": "amazon.es", "tag": "" },
-    "uk": { "tld": "amazon.co.uk", "tag": "" },
-    "jp": { "tld": "amazon.co.jp", "tag": "" },
+    "de": { "tld": "amazon.de", "tag": "bxcombosde-21" },
+    "fr": { "tld": "amazon.fr", "tag": "bxcombosfr-21" },
+    "es": { "tld": "amazon.es", "tag": "bxcombos-21" },
+    "uk": { "tld": "amazon.co.uk", "tag": "bxcombosuk-21" },
+    "jp": { "tld": "amazon.co.jp", "tag": "bxcombos-22" },
     "com": { "tld": "amazon.com", "tag": "" }
   }
 }
