@@ -1,22 +1,25 @@
 ---
-// Slot annuncio AdSense responsive. Non renderizza nulla in dev, senza client o senza id slot.
-import { ADSENSE_CLIENT, AD_SLOTS, type AdSlotName } from '../../lib/ads-config';
+// Slot annuncio AdSense responsive fuori dall'isola Preact (dentro si usa ad-unit.tsx).
+// La prop si chiama `name`, non `slot`: in Astro `slot` è riservato ai named slot dei componenti,
+// quindi `<AdSlot slot="top" />` non passava alcuna prop e il componente non renderizzava nulla.
+// Non renderizza nulla in dev, senza client o senza id slot.
+import { ADSENSE_CLIENT, AD_SLOTS, AD_FORMATS, type AdSlotName } from '../../lib/ads-config';
 
-interface Props { slot: AdSlotName }
+interface Props { name: AdSlotName }
 
-const { slot } = Astro.props;
-const slotId = AD_SLOTS[slot];
+const { name } = Astro.props;
+const slotId = AD_SLOTS[name];
 const enabled = import.meta.env.PROD && !!ADSENSE_CLIENT && !!slotId;
 ---
 
 {enabled && (
-  <div class="my-4" data-ad-slot-name={slot}>
+  <div class="my-4" data-ad-slot-name={name} data-testid={`ad-${name}`}>
     <ins
       class="adsbygoogle"
       style="display:block"
       data-ad-client={ADSENSE_CLIENT}
       data-ad-slot={slotId}
-      data-ad-format="auto"
+      data-ad-format={AD_FORMATS[name]}
       data-full-width-responsive="true"
     ></ins>
     <script is:inline>(adsbygoogle = window.adsbygoogle || []).push({});</script>

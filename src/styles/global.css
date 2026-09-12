@@ -208,3 +208,10 @@
 [data-theme="dark"] .theme-icon-dark {
   display: none;
 }
+
+/* Slot AdSense senza annuncio da mostrare: si collassano invece di lasciare un buco alto quanto
+   mezza schermata. Google marca lo slot con data-ad-status="unfilled" quando la richiesta torna
+   vuota — finché il sito è in revisione sono tutti così. */
+ins.adsbygoogle[data-ad-status="unfilled"] {
+  display: none !important;
+}

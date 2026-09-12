@@ -35,13 +35,24 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
   (script in head) e i quattro id slot; uno slot con id vuoto non renderizza nulla. `public/ads.txt`
   pubblicato. Sito verificato, revisione richiesta il 12/09/2026, messaggio GDPR = CMP di Google a 3 scelte
   gestito da AdSense (scrive `google_*` in localStorage: previsto, il test e2e lo ammette).
-- Quattro posizionamenti: `top` e `bottom` fuori dall'isola (`ad-slot.astro` in `index.astro`), `rail` in
-  fondo al pannello parti e `infeed` fra le card (`ad-unit.tsx`, componente Preact dentro l'isola). L'in-feed
-  compare dopo la `INFEED_AFTER`-esima card (6) e poi ogni `INFEED_EVERY` (20), mai come ultimo elemento.
-- Il push su `adsbygoogle` è uno per istanza (`useRef`): ri-pushare su un `<ins>` già riempito fa fallire lo
-  script con «already have ads in them», e la lista si ri-renderizza a ogni filtro. Per lo stesso motivo la
-  key dello slot in-feed dipende dalla **posizione** nella lista, non dalla combo. Privacy policy in
-  `/privacy/` (`src/pages/privacy.astro`, testi `privacy.*` in i18n).
+- Quattro unità annuncio display responsive create il 12/09/2026 (`bxcombos-top` 2893429591, `-rail`
+  8552950383, `-infeed` 7497432742, `-bottom` 1580347920): `top` e `bottom` fuori dall'isola
+  (`ad-slot.astro` in `index.astro`), `rail` in fondo al pannello parti e `infeed` fra le card
+  (`ad-unit.tsx`, Preact). L'in-feed compare dopo la `INFEED_AFTER`-esima card (6) e poi ogni
+  `INFEED_EVERY` (20), mai come ultimo elemento. Formato per slot in `AD_FORMATS`.
+- La prop di `ad-slot.astro` si chiama `name`, non `slot`: in Astro `slot` è riservato ai named slot, e
+  `<AdSlot slot="top" />` non renderizzava nulla (difetto invisibile finché gli id erano vuoti).
+- Tre trappole misurate il 12/09/2026, tutte con lo script AdSense caricato e il sito ancora in revisione:
+  il push su `adsbygoogle` va fatto **una volta per istanza** (`useRef`) o si ottiene «already have ads in
+  them», e la lista si ri-renderizza a ogni filtro — per lo stesso motivo la key dello slot in-feed dipende
+  dalla **posizione**, non dalla combo; gli `<ins>` dell'isola si rendono **solo dopo il mount**, perché uno
+  slot reso lato server e poi rimpiazzato dall'idratazione lascia push senza contenitore (`no_div`); e con
+  `data-ad-format="auto"` uno slot vuoto riserva ~390 px su mobile, cioè una schermata bianca in cima.
+- Contro l'ultima: `top`/`bottom` usano `horizontal` (striscia, non rettangolo) e `global.css` collassa gli
+  slot non riempiti (`ins.adsbygoogle[data-ad-status="unfilled"] { display: none }`). Google marca
+  `unfilled` quando la richiesta torna vuota, e lo fa **quando lo slot entra nel viewport**: quelli sotto la
+  piega restano ingombranti finché non ci si arriva. Privacy policy in `/privacy/`
+  (`src/pages/privacy.astro`, testi `privacy.*` in i18n).
 - **i18n**: sito **monolingua inglese** servito dalla root (`/`, `/about/`), nessun redirect.
   L'infrastruttura i18n resta in repo (`src/i18n/{en,it}.json`, `ui.ts`, tipo `Locale`): `it.json` è
   dormiente, riattivabile ricreando le route `/it/` e il selettore lingua nell'header.

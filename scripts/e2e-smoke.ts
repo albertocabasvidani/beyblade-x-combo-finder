@@ -195,6 +195,11 @@ async function desktopFlow(context: BrowserContext) {
   }
 
   console.log('[10] Tema');
+  // Il toggle sta nell'header, che non e' sticky: dopo i passi precedenti la pagina resta scrollata
+  // (toggle a y=-106) e il click cade a vuoto mentre il layout si assesta. Un utente per cliccarlo
+  // deve comunque risalire: si scrolla in cima, come farebbe lui.
+  await page.evaluate(() => window.scrollTo(0, 0));
+  await page.waitForTimeout(300);
   const theme0 = await page.evaluate(() => document.documentElement.dataset.theme);
   await page.locator('#theme-toggle').click();
   const theme1 = await page.evaluate(() => document.documentElement.dataset.theme);
