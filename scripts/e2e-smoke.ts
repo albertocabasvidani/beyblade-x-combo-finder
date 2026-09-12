@@ -94,7 +94,11 @@ async function desktopFlow(context: BrowserContext) {
 
   console.log('[2] Cookie e storage');
   const cookies = await context.cookies();
-  check('nessun cookie', cookies.length === 0, cookies.map((c) => c.name).join(','));
+  // Gli unici cookie ammessi sono quelli della CMP di Google (FCCDCF/FCNEC: la scelta sul consenso
+  // pubblicitario, scritta solo sul dominio registrato in AdSense). Il sito non ne scrive di suoi e
+  // PostHog resta cookieless.
+  const cookieNostri = cookies.filter((c) => !/^(FCCDCF|FCNEC)$/.test(c.name));
+  check('nessun cookie oltre a quelli della CMP', cookieNostri.length === 0, cookies.map((c) => c.name).join(','));
   const lsKeys: string[] = await page.evaluate(() => Object.keys(localStorage));
   // `google_*` lo scrive la CMP di Google (messaggio di consenso AdSense): e' lo stato del consenso,
   // non tracciamento nostro. PostHog resta cookieless e non deve comparire (`ph_*`).
