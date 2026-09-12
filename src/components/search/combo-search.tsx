@@ -5,6 +5,8 @@ import { filterCombos } from '../../lib/search-engine';
 import { track } from '../../lib/analytics';
 import type { AmazonConfigFile, AsinIndex, PartLookup } from '../../lib/amazon';
 import { initialMarket, storeMarket } from '../../lib/marketplace';
+import { AdUnit } from '../ads/ad-unit';
+import { INFEED_AFTER, INFEED_EVERY } from '../../lib/ads-config';
 import { PartSearch, type PartRef, type PartCategory } from './part-search';
 import { ComboCard } from './combo-card';
 
@@ -279,6 +281,9 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
             </select>
           </label>
         </div>
+
+        {/* Annuncio nel pannello: su desktop e' la colonna sinistra, su mobile finisce sopra il ranking. */}
+        <AdUnit name="rail" class="mt-4" />
       </section>
 
       {/* ---------- Ranking ---------- */}
@@ -306,22 +311,30 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
           </div>
         ) : (
           <div class="flex flex-col gap-3 lg:gap-2.5">
-            {shown.map((combo, i) => (
-              <ComboCard
-                key={combo.id}
-                combo={combo}
-                view={combo.windows[period]!}
-                thresholds={thresholds}
-                displayName={comboDisplayName(combo)}
-                selected={selected}
-                compare={compare}
-                locale={locale}
-                rank={i + 1}
-                partName={partName}
-                amazon={{ ...amazon, market }}
-                t={t}
-              />
-            ))}
+            {shown.flatMap((combo, i) => {
+              const card = (
+                <ComboCard
+                  key={combo.id}
+                  combo={combo}
+                  view={combo.windows[period]!}
+                  thresholds={thresholds}
+                  displayName={comboDisplayName(combo)}
+                  selected={selected}
+                  compare={compare}
+                  locale={locale}
+                  rank={i + 1}
+                  partName={partName}
+                  amazon={{ ...amazon, market }}
+                  t={t}
+                />
+              );
+              // Annuncio dopo la INFEED_AFTER-esima card, poi ogni INFEED_EVERY: la key dipende dalla
+              // posizione, non dalla combo, cosi' un cambio di filtro non smonta (e non ricarica) lo slot.
+              const pos = i + 1;
+              const isAdSpot = pos === INFEED_AFTER || (pos > INFEED_AFTER && (pos - INFEED_AFTER) % INFEED_EVERY === 0);
+              if (!isAdSpot || i === shown.length - 1) return [card];
+              return [card, <AdUnit key={`ad-infeed-${pos}`} name="infeed" class="my-1" />];
+            })}
           </div>
         )}
 

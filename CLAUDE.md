@@ -32,11 +32,16 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
   `navigator.webdriver=false` (`tmp/ph-probe3.mjs`). Nel Chrome dell'utente un'estensione blocca le POST a
   `eu.i.posthog.com` («Failed to fetch»): il suo traffico non compare in PostHog.
 - **AdSense**: account `pub-7303361297226779` (lo stesso di YouTube). `src/lib/ads-config.ts` ha il client
-  (script in head) e gli id slot ancora vuoti = nessun annuncio; `public/ads.txt` pubblicato. Sito verificato,
-  revisione richiesta il 12/09/2026, messaggio GDPR = CMP di Google a 3 scelte gestito da AdSense. Quando il
-  sito è approvato: creare le unità annuncio e mettere gli id in `AD_SLOTS` (`ad-slot.astro` sopra e sotto
-  l'isola in `index.astro`, solo in produzione). Privacy policy in `/privacy/`
-  (`src/pages/privacy.astro`, testi `privacy.*` in i18n).
+  (script in head) e i quattro id slot; uno slot con id vuoto non renderizza nulla. `public/ads.txt`
+  pubblicato. Sito verificato, revisione richiesta il 12/09/2026, messaggio GDPR = CMP di Google a 3 scelte
+  gestito da AdSense (scrive `google_*` in localStorage: previsto, il test e2e lo ammette).
+- Quattro posizionamenti: `top` e `bottom` fuori dall'isola (`ad-slot.astro` in `index.astro`), `rail` in
+  fondo al pannello parti e `infeed` fra le card (`ad-unit.tsx`, componente Preact dentro l'isola). L'in-feed
+  compare dopo la `INFEED_AFTER`-esima card (6) e poi ogni `INFEED_EVERY` (20), mai come ultimo elemento.
+- Il push su `adsbygoogle` è uno per istanza (`useRef`): ri-pushare su un `<ins>` già riempito fa fallire lo
+  script con «already have ads in them», e la lista si ri-renderizza a ogni filtro. Per lo stesso motivo la
+  key dello slot in-feed dipende dalla **posizione** nella lista, non dalla combo. Privacy policy in
+  `/privacy/` (`src/pages/privacy.astro`, testi `privacy.*` in i18n).
 - **i18n**: sito **monolingua inglese** servito dalla root (`/`, `/about/`), nessun redirect.
   L'infrastruttura i18n resta in repo (`src/i18n/{en,it}.json`, `ui.ts`, tipo `Locale`): `it.json` è
   dormiente, riattivabile ricreando le route `/it/` e il selettore lingua nell'header.
@@ -443,9 +448,13 @@ perché ogni 5 min altrimenti compariva una finestra cmd nella sessione utente. 
 
 ## Amazon Affiliate (riattivato l'11/09/2026)
 
-Con «Compare with my parts» attivo, ogni chip di parte mancante (`! Nome`) ha un link **Buy**
-(`combo-card.tsx`, `rel="sponsored noopener nofollow"`, evento PostHog `amazon_click`). Disclosure nel
-footer e sezione «Affiliate links» in `/about/`.
+Due superfici in `combo-card.tsx`, entrambe con `rel="sponsored noopener nofollow"` ed evento PostHog
+`amazon_click` (campo `source` per distinguerle):
+- **Buy parts** — pulsante su ogni card, sempre visibile: apre un pannello con un link per **ogni** parte
+  della combo (`source: 'buy-parts'`, apertura tracciata come `buy_parts_opened`). Chiuso di default per non
+  allungare 60 card. Con Compare attivo le parti già possedute compaiono col ✓ e senza link.
+- **Chip delle parti mancanti** (`! Nome`) — richiede Compare attivo e una selezione (`source: 'missing-chip'`).
+Disclosure nel footer e sezione «Affiliate links» in `/about/`.
 
 - **Tag** in `data/amazon-config.json` (committato), uno per marketplace: tracking ID **dedicati al sito**
   creati sui portali Associates (es `bxcombos-21`, de `bxcombosde-21`, fr `bxcombosfr-21`, uk `bxcombosuk-21`,

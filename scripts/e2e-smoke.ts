@@ -96,7 +96,10 @@ async function desktopFlow(context: BrowserContext) {
   const cookies = await context.cookies();
   check('nessun cookie', cookies.length === 0, cookies.map((c) => c.name).join(','));
   const lsKeys: string[] = await page.evaluate(() => Object.keys(localStorage));
-  check('localStorage solo preferenze (theme, marketplace)', lsKeys.every((k) => ['theme', 'bxcf-marketplace'].includes(k)), lsKeys.join(','));
+  // `google_*` lo scrive la CMP di Google (messaggio di consenso AdSense): e' lo stato del consenso,
+  // non tracciamento nostro. PostHog resta cookieless e non deve comparire (`ph_*`).
+  check('localStorage solo preferenze e consenso (niente ph_*)',
+    lsKeys.every((k) => ['theme', 'bxcf-marketplace'].includes(k) || k.startsWith('google_')), lsKeys.join(','));
 
   console.log('[3] Dataset completo');
   await waitDataset(page);
@@ -143,6 +146,25 @@ async function desktopFlow(context: BrowserContext) {
   check(`card visibili ${PAGE_SIZE}`, (await visibleCards(page).count()) === PAGE_SIZE);
   await page.getByTestId('load-more').click();
   check(`card visibili ${PAGE_SIZE * 2} dopo Show more`, (await visibleCards(page).count()) === PAGE_SIZE * 2, `=${await visibleCards(page).count()}`);
+
+  console.log('[7b] Buy parts senza selezione');
+  // Superficie affiliata per chi guarda solo il ranking: il pannello si apre dalla card, senza Compare.
+  const toggles = page.locator('[data-testid=combo-card]:visible [data-testid=buy-parts-toggle]');
+  check('ogni card ha il pulsante Buy parts', (await toggles.count()) === await visibleCards(page).count(), `${await toggles.count()} pulsanti`);
+  check('nessun pannello aperto di default', (await page.locator('[data-testid=buy-parts-panel]').count()) === 0);
+  await toggles.first().click();
+  const panel = page.locator('[data-testid=combo-card]:visible [data-testid=buy-parts-panel]').first();
+  check('pannello aperto dopo il click', (await panel.count()) === 1);
+  const partLinks = panel.locator('a[data-testid=buy-part]');
+  const nParts = await partLinks.count();
+  check('almeno 3 parti linkate (BX) o 5 (CX)', nParts >= 3, `=${nParts}`);
+  const panelHrefs = await partLinks.evaluateAll((as) => as.map((a) => ({ href: (a as HTMLAnchorElement).href, rel: a.getAttribute('rel') ?? '', target: a.getAttribute('target') })));
+  check('link del pannello verso amazon, sponsored, _blank',
+    panelHrefs.every((h) => /^https:\/\/www\.amazon\./.test(h.href) && /sponsored/.test(h.rel) && h.target === '_blank'), panelHrefs[0]?.href);
+  const panelMarket = await page.getByTestId('marketplace').inputValue();
+  if (panelMarket !== 'com') check('link del pannello con tracking ID', panelHrefs.every((h) => /[?&]tag=/.test(h.href)), panelHrefs[0]?.href);
+  await toggles.first().click();
+  check('pannello richiuso', (await page.locator('[data-testid=buy-parts-panel]').count()) === 0);
 
   console.log('[8] Compare + Buy');
   // Blade + bit: con la sola blade il ranking si restringe a quella blade e nessun chip risulta

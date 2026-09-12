@@ -1,3 +1,4 @@
+import { useState } from 'preact/hooks';
 import type { SelectedParts, Locale, ComboWindow, TierThresholds } from '../../lib/types';
 import type { SlimCombo } from '../../lib/slim-combos';
 import { getMatchedParts, hasAnySelection } from '../../lib/search-engine';
@@ -10,7 +11,7 @@ interface Props {
   /** La finestra temporale scelta dall'utente: score, breakdown e tag da mostrare. */
   view: ComboWindow;
   thresholds: TierThresholds;
-  /** Link affiliati sulle parti mancanti; assente = nessun link. */
+  /** Link affiliati (chip delle parti mancanti e pannello «Buy parts»); assente = nessun link. */
   amazon?: { config: AmazonConfigFile; lookup: PartLookup; asins: AsinIndex; market: string };
   displayName: string;
   selected: SelectedParts;
@@ -45,6 +46,7 @@ function daysSince(iso: string): number {
 }
 
 export function ComboCard({ combo, view, thresholds, amazon, displayName, selected, compare, locale, rank, partName, t }: Props) {
+  const [buyOpen, setBuyOpen] = useState(false);
   const matched = getMatchedParts(combo, selected);
   const b = view;
   const tier = scoreTier(view.score, view.tags, thresholds);
@@ -141,7 +143,7 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, select
                     target="_blank"
                     rel="sponsored noopener nofollow"
                     class="ml-1 underline decoration-dotted underline-offset-2 hover:opacity-75"
-                    onClick={() => track('amazon_click', { partId: p.id, category: p.key, marketplace: amazon.market, kind, comboId: combo.id })}
+                    onClick={() => track('amazon_click', { partId: p.id, category: p.key, marketplace: amazon.market, kind, comboId: combo.id, source: 'missing-chip' })}
                   >
                     {t('combo.buy')}
                   </a>
@@ -150,6 +152,70 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, select
             </span>
           );
         })}
+      </div>
+    );
+
+  // ---------- «Buy parts»: link affiliati a TUTTE le parti, senza bisogna di selezione ----------
+  // I chip qui sopra mostrano i link solo sulle parti mancanti (serve Compare attivo): questo
+  // pannello e' la superficie per chi sta solo guardando il ranking. Chiuso di default per non
+  // allungare 60 card; l'apertura e' un evento PostHog, cosi' si misura se conviene aprirlo sempre.
+  const buyable = amazon ? parts.filter((p) => p.id) : [];
+
+  const toggleBuy = () => {
+    const next = !buyOpen;
+    setBuyOpen(next);
+    if (next && amazon) track('buy_parts_opened', { comboId: combo.id, line: combo.line, marketplace: amazon.market, rank });
+  };
+
+  const BuyToggle = ({ compact = false }: { compact?: boolean }) =>
+    buyable.length === 0 ? null : (
+      <button
+        type="button"
+        data-testid="buy-parts-toggle"
+        aria-expanded={buyOpen}
+        onClick={toggleBuy}
+        class={`shrink-0 rounded-full border font-bold text-gold transition-opacity hover:opacity-80 ${
+          compact ? 'px-2.5 py-1 text-[10.5px]' : 'px-3 py-1 text-[11px]'
+        }`}
+        style={{ borderColor: 'var(--c-gold)', background: 'color-mix(in srgb, var(--c-gold) 14%, transparent)' }}
+      >
+        {t('combo.buyParts')} {buyOpen ? '▴' : '▾'}
+      </button>
+    );
+
+  const BuyPanel = () =>
+    !buyOpen || !amazon ? null : (
+      <div data-testid="buy-parts-panel" class="mt-2.5 border-t border-hairline pt-2.5">
+        <div class="mb-1.5 font-mono text-[10px] uppercase tracking-[0.12em] text-muted-2">
+          {t('combo.buyOn')} {amazon.config.marketplaces[amazon.market]?.tld ?? ''}
+        </div>
+        <div class="flex flex-wrap gap-1.5">
+          {buyable.map((p) => {
+            const label = partName(p.key, p.id) || p.key;
+            const owned = showChips && matched[p.key] === 'owned';
+            if (owned) {
+              return (
+                <span key={p.key} class="inline-flex items-center gap-1 rounded-md border border-owned-border bg-owned-bg px-2 py-0.5 text-[11px] font-bold text-owned-text" title={t('combo.alreadyOwned')}>
+                  {'✓'} {label}
+                </span>
+              );
+            }
+            const { href, kind } = buildAmazonUrl(p.key, p.id!, label, amazon.lookup, amazon.asins, amazon.market, amazon.config);
+            return (
+              <a
+                key={p.key}
+                data-testid="buy-part"
+                href={href}
+                target="_blank"
+                rel="sponsored noopener nofollow"
+                class="inline-flex items-center gap-1 rounded-md border border-border bg-surface-2 px-2 py-0.5 text-[11px] font-bold text-text transition-colors hover:text-gold"
+                onClick={() => track('amazon_click', { partId: p.id, category: p.key, marketplace: amazon.market, kind, comboId: combo.id, source: 'buy-parts' })}
+              >
+                {label}
+              </a>
+            );
+          })}
+        </div>
       </div>
     );
 
@@ -181,6 +247,7 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, select
                   <TypeBadge />
                   <StadiumBadge />
                   <Sources />
+                  <BuyToggle compact />
                 </div>
               </div>
             </div>
@@ -199,6 +266,8 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, select
             </div>
           )}
 
+          <BuyPanel />
+
           {combo.notes && <p class="mt-2 text-[11px] leading-snug text-muted-2">{combo.notes}</p>}
         </div>
       </article>
@@ -206,7 +275,8 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, select
       {/* ---------- DESKTOP: riga orizzontale ---------- */}
       <article data-testid="combo-card" data-combo-id={combo.id} class={`relative hidden overflow-hidden rounded-[14px] lg:block ${cardClass}`} style={cardStyle}>
         <span class="absolute inset-y-0 left-0 w-[5px]" style={{ background: railBg }} aria-hidden="true" />
-        <div class="flex items-center gap-[18px] py-4 pl-[26px] pr-5">
+        <div class="py-4 pl-[26px] pr-5">
+        <div class="flex items-center gap-[18px]">
           <span class={`font-display text-[38px] italic leading-none ${isTop ? 'text-rank-1' : 'text-rank-other'}`}>{rank}</span>
 
           <div class="min-w-0 flex-1">
@@ -218,6 +288,7 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, select
               <TypeBadge />
               <StadiumBadge />
               {showChips ? <PartChips dense /> : <Sources />}
+              <BuyToggle compact />
             </div>
           </div>
 
@@ -242,6 +313,8 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, select
           )}
 
           <ScoreBadge score={view.score} tags={view.tags} thresholds={thresholds} t={t} size="lg" title={breakdownTooltip} />
+        </div>
+        <BuyPanel />
         </div>
       </article>
     </>
