@@ -5,7 +5,7 @@ updated: 12/09/2026
 health: green
 next-step: ""
 blocked-by: null
-current-plan: plans/monetizzazione-analytics-filtro-periodo-2026-09-11-1500.md
+current-plan: ""
 main-doc: CLAUDE.md
 ---
 
@@ -29,11 +29,13 @@ GitHub Pages via Actions. L'infrastruttura i18n IT resta in repo (dormiente), ri
 ## Known issues
 
 <!-- Bug noti, problemi aperti, debiti tecnici. Formato: `- gg/mm/aaaa — testo` -->
+- 12/09/2026 — Finché AdSense non approva il sito, i quattro slot lasciano spazio vuoto: 100 px per i banner in cima e in fondo (320x100 su mobile, 728x90 da 800 px in su) e 250 px per i due rettangoli, misurati sul dominio. Il collasso su `data-ad-status="unfilled"` in `global.css` li toglie solo quando Google risponde, e senza consenso alla CMP Google non risponde affatto. Si chiude da sé con l'approvazione; se la revisione fosse respinta, la via è svuotare gli id in `AD_SLOTS`
+- 12/09/2026 — Session replay di PostHog acceso l'11/09 ma **mai verificato**: sono stati controllati gli eventi in Activity, non che una registrazione compaia in Session replay. Da guardare al primo traffico vero (il Chrome dell'utente non serve: un'estensione gli blocca le POST verso `eu.i.posthog.com`)
 
 ## In progress
 
 <!-- Lavori in corso. Se collegati a un piano in plans/, linkalo. -->
-- 12/09/2026 — **AdSense in revisione**: sito verificato e revisione richiesta il 12/09. Resta: all'approvazione creare le unità annuncio in AdSense e mettere gli id in `src/lib/ads-config.ts` (`AD_SLOTS`), poi controllare che il messaggio di consenso compaia in EEA
+- 12/09/2026 — **AdSense: sito in revisione, slot già in pagina**. Le quattro unità display responsive esistono (`bxcombos-top` 2893429591, `-rail` 8552950383, `-infeed` 7497432742, `-bottom` 1580347920) e i loro id sono in `src/lib/ads-config.ts`, quindi la pagina serve già i tag `<ins>`; il sito è in stato «Getting ready» e nessun annuncio viene riempito finché non passa. Resta: aspettare l'esito; ricontrollare `ads.txt`, che AdSense segna «Not found» mentre è servito correttamente (`curl https://beybladexcombos.com/ads.txt` → 200, `text/plain`, riga giusta — pubblicato oggi, Google lo ricontrolla entro ~24 h); verificare che il messaggio di consenso compaia davvero a un visitatore in EEA
 - 12/09/2026 — **Associates IT in approvazione temporanea** (account nuovo `albertocv0b-21`, solo beybladexcombos.com dichiarato): Amazon rivede il sito dopo 3 vendite idonee da amazon.it, entro 180 giorni. Resta: portare traffico italiano al sito (canale WhatsApp, social) finché le 3 vendite non arrivano; se scade, ricandidarsi
 
 ## Changelog

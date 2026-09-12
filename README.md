@@ -7,11 +7,16 @@ agentica Claude Code.
 - **Sito**: https://beybladexcombos.com/
 - **Stack**: Astro (SSG) + Preact island, Tailwind CSS v4, GitHub Pages. Monolingua inglese servito
   dalla root (`/`, `/about/`, `/privacy/`); infrastruttura i18n IT in standby nel repo.
-- **Ricerca**: parti possedute → ranking unico BX/UX/CX per score CAS, con **periodo** 1/3/6/12 mesi,
-  filtri torneo, «Compare» con link Amazon affiliati sulle parti mancanti (marketplace dalla lingua del
-  browser). Il client riceve un dataset ridotto (`/combos.json`, ~175 KB gzip), non `combos.json` intero.
+- **Ricerca**: parti possedute → ranking unico BX/UX/CX per score CAS, con **periodo** 1/3/6/12 mesi
+  e filtri torneo. Il client riceve un dataset ridotto (`/combos.json`, ~175 KB gzip), non `combos.json`
+  intero.
+- **Link Amazon affiliati**: ogni card ha «Buy parts», che apre un link per ogni parte della combo;
+  con «Compare» attivo i chip delle parti mancanti ne hanno uno loro. Il marketplace segue le lingue del
+  browser, con selettore «Shop on» persistito.
 - **Analytics**: PostHog cloud EU in modalità cookieless (niente cookie, niente banner); chiave in
-  `src/lib/analytics-config.ts`. **AdSense**: config in `src/lib/ads-config.ts`, spento finché vuoto.
+  `src/lib/analytics-config.ts`. **AdSense**: quattro slot (sopra il contenuto, nel pannello parti, fra
+  le card, in fondo) con id in `src/lib/ads-config.ts` — uno slot con id vuoto non renderizza nulla. Il
+  consenso lo chiede la CMP di Google, che scrive il cookie `FCCDCF`.
 
 ## Installazione
 
