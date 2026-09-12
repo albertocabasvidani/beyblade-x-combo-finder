@@ -450,8 +450,10 @@ footer e sezione «Affiliate links» in `/about/`.
 - **Tag** in `data/amazon-config.json` (committato), uno per marketplace: tracking ID **dedicati al sito**
   creati sui portali Associates (es `bxcombos-21`, de `bxcombosde-21`, fr `bxcombosfr-21`, uk `bxcombosuk-21`,
   jp `bxcombos-22`), diversi da quelli del canale WhatsApp di bbxdealmonitor, così il suo report affiliati
-  distingue i due canali. Tag vuoto = link senza `&tag=`. `it` e `com` sono vuoti: l'account Associates IT
-  non esiste più (chiuso dopo il rifiuto del 25/08/2026) e non c'è un account US. Il `.env` non è più letto.
+  distingue i due canali. `it` = `albertocv0b-21`: account Associates IT nuovo, candidato il 12/09/2026 con il
+  solo beybladexcombos.com dopo la chiusura del precedente (rifiuto del 25/08/2026: nessun link taggato sulle
+  proprietà dichiarate). È in approvazione temporanea: servono 3 vendite idonee da amazon.it entro 180 giorni,
+  altrimenti Amazon lo chiude di nuovo. Tag vuoto = link senza `&tag=`; `com` è vuoto (nessun account US).
 - I suffissi `-21` sono un unico spazio di nomi fra i marketplace europei: un ID creato su un portale non è
   più disponibile sugli altri (per questo uk/de/fr hanno il paese nel nome). beybladexcombos.com è nella lista
   siti di ogni account (`/home/account/profile/sitelist`). Portali: afiliados.amazon.es, partnernet.amazon.de,
