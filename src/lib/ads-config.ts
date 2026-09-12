@@ -11,13 +11,15 @@ export const AD_SLOTS = {
 } as const;
 export type AdSlotName = keyof typeof AD_SLOTS;
 
-// Formato per slot. `auto` lascia decidere ad AdSense e su mobile riserva un rettangolo alto quanto
-// mezza schermata: sui banner in cima e in fondo si usa `horizontal`, che riserva una striscia.
-export const AD_FORMATS: Record<AdSlotName, string> = {
-  top: 'horizontal',
-  rail: 'auto',
-  infeed: 'auto',
-  bottom: 'horizontal',
+// Tipo di slot -> classe CSS che ne fissa le dimensioni (`global.css`). Niente `data-ad-format="auto"`
+// piu' `data-full-width-responsive`: quella coppia dimensiona lo slot sulla larghezza dello schermo e
+// su mobile riserva ~390 px anche quando resta vuoto, cioe' una schermata bianca in cima. Con
+// dimensioni fisse AdSense sceglie un annuncio che ci sta, e lo spazio riservato e' quello e basta.
+export const AD_KIND: Record<AdSlotName, 'banner' | 'box'> = {
+  top: 'banner',       // striscia: 320x100 -> 468x60 -> 728x90
+  rail: 'box',         // rettangolo 300x250
+  infeed: 'box',
+  bottom: 'banner',
 };
 
 // Posizione degli annunci in-feed nella lista dei risultati: il primo dopo la 6ª card (sotto la

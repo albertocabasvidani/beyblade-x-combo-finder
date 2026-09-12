@@ -39,7 +39,8 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
   8552950383, `-infeed` 7497432742, `-bottom` 1580347920): `top` e `bottom` fuori dall'isola
   (`ad-slot.astro` in `index.astro`), `rail` in fondo al pannello parti e `infeed` fra le card
   (`ad-unit.tsx`, Preact). L'in-feed compare dopo la `INFEED_AFTER`-esima card (6) e poi ogni
-  `INFEED_EVERY` (20), mai come ultimo elemento. Formato per slot in `AD_FORMATS`.
+  `INFEED_EVERY` (20), mai come ultimo elemento. Dimensioni per slot: `AD_KIND` dà la classe CSS
+  (`ad-banner` 320x100 → 468x60 → 728x90, `ad-box` 300x250), le misure stanno in `global.css`.
 - La prop di `ad-slot.astro` si chiama `name`, non `slot`: in Astro `slot` è riservato ai named slot, e
   `<AdSlot slot="top" />` non renderizzava nulla (difetto invisibile finché gli id erano vuoti).
 - Tre trappole misurate il 12/09/2026, tutte con lo script AdSense caricato e il sito ancora in revisione:
@@ -48,10 +49,14 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
   dalla **posizione**, non dalla combo; gli `<ins>` dell'isola si rendono **solo dopo il mount**, perché uno
   slot reso lato server e poi rimpiazzato dall'idratazione lascia push senza contenitore (`no_div`); e con
   `data-ad-format="auto"` uno slot vuoto riserva ~390 px su mobile, cioè una schermata bianca in cima.
-- Contro l'ultima: `top`/`bottom` usano `horizontal` (striscia, non rettangolo) e `global.css` collassa gli
-  slot non riempiti (`ins.adsbygoogle[data-ad-status="unfilled"] { display: none }`). Google marca
-  `unfilled` quando la richiesta torna vuota, e lo fa **quando lo slot entra nel viewport**: quelli sotto la
-  piega restano ingombranti finché non ci si arriva. Privacy policy in `/privacy/`
+- Contro l'ultima gli slot hanno **dimensioni fisse** (niente `data-ad-format`/`data-full-width-responsive`):
+  il collasso su `data-ad-status="unfilled"` in `global.css` c'è ancora ma non basta da solo, perché Google
+  marca `unfilled` solo dopo aver risposto — e non risponde affatto prima che il visitatore scelga nel
+  messaggio di consenso, con un adblocker attivo, o mentre il sito è in revisione. Misurato sul dominio
+  vero il 12/09/2026: slot `auto` fermi a 390 px su mobile, prima schermata bianca.
+- Sul dominio (non in locale: la CMP vive solo sul sito registrato in AdSense) compare il cookie `FCCDCF`
+  di Google Funding Choices, che ricorda la scelta sul consenso: dichiarato nella privacy policy e ammesso
+  dal test e2e, che per il resto pretende zero cookie. Privacy policy in `/privacy/`
   (`src/pages/privacy.astro`, testi `privacy.*` in i18n).
 - **i18n**: sito **monolingua inglese** servito dalla root (`/`, `/about/`), nessun redirect.
   L'infrastruttura i18n resta in repo (`src/i18n/{en,it}.json`, `ui.ts`, tipo `Locale`): `it.json` è

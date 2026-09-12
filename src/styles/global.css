@@ -209,9 +209,37 @@
   display: none;
 }
 
-/* Slot AdSense senza annuncio da mostrare: si collassano invece di lasciare un buco alto quanto
-   mezza schermata. Google marca lo slot con data-ad-status="unfilled" quando la richiesta torna
-   vuota — finché il sito è in revisione sono tutti così. */
+/* Slot AdSense a dimensione fissa: lo spazio riservato è noto in anticipo e resta piccolo anche
+   quando l'annuncio non arriva mai — succede prima che il visitatore risponda al messaggio di
+   consenso, con un adblocker attivo, e per tutto il tempo in cui il sito è in revisione. */
+.ad-banner,
+.ad-box {
+  display: flex;
+  justify-content: center;
+}
+.ad-banner ins.adsbygoogle {
+  display: inline-block;
+  width: 320px;
+  height: 100px;
+}
+@media (min-width: 520px) {
+  .ad-banner ins.adsbygoogle {
+    width: 468px;
+    height: 60px;
+  }
+}
+@media (min-width: 800px) {
+  .ad-banner ins.adsbygoogle {
+    width: 728px;
+    height: 90px;
+  }
+}
+.ad-box ins.adsbygoogle {
+  display: inline-block;
+  width: 300px;
+  height: 250px;
+}
+/* Google marca lo slot quando la richiesta torna senza annunci: lì si può togliere del tutto. */
 ins.adsbygoogle[data-ad-status="unfilled"] {
   display: none !important;
 }

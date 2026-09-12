@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'preact/hooks';
-import { ADSENSE_CLIENT, AD_SLOTS, AD_FORMATS, type AdSlotName } from '../../lib/ads-config';
+import { ADSENSE_CLIENT, AD_SLOTS, AD_KIND, type AdSlotName } from '../../lib/ads-config';
 
 interface Props {
   name: AdSlotName;
@@ -41,15 +41,12 @@ export function AdUnit({ name, class: className = '' }: Props) {
   if (!enabled || !mounted) return null;
 
   return (
-    <div class={className} data-ad-slot-name={name} data-testid={`ad-${name}`}>
+    <div class={`ad-${AD_KIND[name]} ${className}`} data-ad-slot-name={name} data-testid={`ad-${name}`}>
       <ins
         ref={insRef}
         class="adsbygoogle"
-        style="display:block"
         data-ad-client={ADSENSE_CLIENT}
         data-ad-slot={slotId}
-        data-ad-format={AD_FORMATS[name]}
-        data-full-width-responsive="true"
       />
     </div>
   );
