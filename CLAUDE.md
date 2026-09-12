@@ -31,10 +31,11 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
 - posthog-js scarta gli eventi da browser headless/webdriver: un probe sul sito vero va fatto con UA normale e
   `navigator.webdriver=false` (`tmp/ph-probe3.mjs`). Nel Chrome dell'utente un'estensione blocca le POST a
   `eu.i.posthog.com` («Failed to fetch»): il suo traffico non compare in PostHog.
-- **AdSense**: `src/lib/ads-config.ts` (client + id slot, vuoti = niente script né slot), slot
-  `src/components/ads/ad-slot.astro` sopra e sotto l'isola in `index.astro`, solo in produzione. Dopo
-  l'approvazione: compilare la config, `public/ads.txt` con la riga di AdSense, messaggio GDPR da
-  «Privacy & messaging» (CMP certificata Google, nessun codice nostro). Privacy policy in `/privacy/`
+- **AdSense**: account `pub-7303361297226779` (lo stesso di YouTube). `src/lib/ads-config.ts` ha il client
+  (script in head) e gli id slot ancora vuoti = nessun annuncio; `public/ads.txt` pubblicato. Sito verificato,
+  revisione richiesta il 12/09/2026, messaggio GDPR = CMP di Google a 3 scelte gestito da AdSense. Quando il
+  sito è approvato: creare le unità annuncio e mettere gli id in `AD_SLOTS` (`ad-slot.astro` sopra e sotto
+  l'isola in `index.astro`, solo in produzione). Privacy policy in `/privacy/`
   (`src/pages/privacy.astro`, testi `privacy.*` in i18n).
 - **i18n**: sito **monolingua inglese** servito dalla root (`/`, `/about/`), nessun redirect.
   L'infrastruttura i18n resta in repo (`src/i18n/{en,it}.json`, `ui.ts`, tipo `Locale`): `it.json` è
@@ -446,11 +447,15 @@ Con «Compare with my parts» attivo, ogni chip di parte mancante (`! Nome`) ha 
 (`combo-card.tsx`, `rel="sponsored noopener nofollow"`, evento PostHog `amazon_click`). Disclosure nel
 footer e sezione «Affiliate links» in `/about/`.
 
-- **Tag** in `data/amazon-config.json` (committato), uno per marketplace (it/de/fr/es/uk/jp/com): sono
-  **tracking ID dedicati al sito** sugli account Associates esistenti, diversi da quelli del canale
-  WhatsApp di bbxdealmonitor, così il suo report affiliati giornaliero distingue i due canali. Tag
-  vuoto = link senza `&tag=`. `com` resta vuoto (nessun account US). Il `.env` (`AMAZON_TAG_*`) non è
-  più letto dal sito.
+- **Tag** in `data/amazon-config.json` (committato), uno per marketplace: tracking ID **dedicati al sito**
+  creati sui portali Associates (es `bxcombos-21`, de `bxcombosde-21`, fr `bxcombosfr-21`, uk `bxcombosuk-21`,
+  jp `bxcombos-22`), diversi da quelli del canale WhatsApp di bbxdealmonitor, così il suo report affiliati
+  distingue i due canali. Tag vuoto = link senza `&tag=`. `it` e `com` sono vuoti: l'account Associates IT
+  non esiste più (chiuso dopo il rifiuto del 25/08/2026) e non c'è un account US. Il `.env` non è più letto.
+- I suffissi `-21` sono un unico spazio di nomi fra i marketplace europei: un ID creato su un portale non è
+  più disponibile sugli altri (per questo uk/de/fr hanno il paese nel nome). beybladexcombos.com è nella lista
+  siti di ogni account (`/home/account/profile/sitelist`). Portali: afiliados.amazon.es, partnernet.amazon.de,
+  partenaires.amazon.fr, affiliate-program.amazon.co.uk, affiliate.amazon.co.jp.
 - **Marketplace** dalle lingue del browser (`src/lib/marketplace.ts`: it/de/fr/es/uk/jp, tutto il resto
   → amazon.com senza tag) con select «Shop on» persistito in localStorage (`bxcf-marketplace`).
 - **Link diretti** `/dp/{ASIN}` quando `data/amazon-asins.json` conosce il set su quel mercato; il file
