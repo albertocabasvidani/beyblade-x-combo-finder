@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-12T02:16:23.140Z",
+  "lastUpdated": "2026-09-13T02:12:10.286Z",
   "combos": [
     {
       "id": "aero-pegasus-1-70-low-flat",
@@ -1011,6 +1011,51 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "croc-bite-1-60-low-rush",
+      "line": "bx",
+      "blade": "croc-bite",
+      "ratchet": "1-60",
+      "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Croc Bite 1-60 Low Rush",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "Combo segnalata su Reddit r/Beyblade.",
+      "sources": [
+        {
+          "name": "Reddit r/Beyblade",
+          "url": "https://reddit.com/r/Beyblade/comments/1nfch14/oh_my_god111_new_wizardrod960b_counter1111/",
+          "weight": 0.6,
+          "date": "2025-09-12"
+        }
+      ],
+      "amazon": {},
+      "dateAdded": "2026-06-16",
+      "dateUpdated": "2026-09-13",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-13"
     },
     {
       "id": "croc-bite-7-60-rush",
@@ -5956,6 +6001,50 @@
       "archivedDate": "2026-09-12"
     },
     {
+      "id": "pegasus-blast-assault-6-60-hexa",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "6-60",
+      "bit": "hexa",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "assault",
+      "overBlade": null,
+      "displayName": "Pegasus Blast A 6-60 Hexa",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Sep. 12, 2025  7:08 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-12"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-09-13",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-13"
+    },
+    {
       "id": "pegasus-blast-assault-6-60-low-rush",
       "line": "cx",
       "blade": null,
@@ -6329,6 +6418,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "pegasus-blast-jaggy-3-60-ball",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "3-60",
+      "bit": "ball",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "jaggy",
+      "overBlade": null,
+      "displayName": "Pegasus Blast J 3-60 Ball",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Sep. 12, 2025  4:41 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-12"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-09-13",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-13"
     },
     {
       "id": "pegasus-blast-jaggy-3-60-free-ball",
@@ -6799,6 +6932,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "pegasus-blast-jaggy-9-70-low-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-70",
+      "bit": "low-rush",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "jaggy",
+      "overBlade": null,
+      "displayName": "Pegasus Blast J 9-70 Low Rush",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Banana Games 10k Qualifier (September 12th 2025)",
+          "url": "https://www.metabeys.com/events/1757961568142",
+          "weight": 1,
+          "date": "2025-09-12"
+        }
+      ],
+      "dateAdded": "2026-06-23",
+      "dateUpdated": "2026-09-13",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-13"
     },
     {
       "id": "pegasus-blast-slash-1-60-low-flat",
@@ -8681,6 +8858,50 @@
       "archivedDate": "2026-09-12"
     },
     {
+      "id": "phoenix-wing-4-60-taper",
+      "line": "bx",
+      "blade": "phoenix-wing",
+      "ratchet": "4-60",
+      "bit": "taper",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Phoenix Wing 4-60 Taper",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Banana Games 10k Qualifier (September 12th 2025)",
+          "url": "https://www.metabeys.com/events/1757961568142",
+          "weight": 1,
+          "date": "2025-09-12"
+        }
+      ],
+      "dateAdded": "2026-06-23",
+      "dateUpdated": "2026-09-13",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-13"
+    },
+    {
       "id": "phoenix-wing-5-60-level",
       "line": "bx",
       "blade": "phoenix-wing",
@@ -10202,6 +10423,50 @@
       "archivedDate": "2026-09-12"
     },
     {
+      "id": "shelter-drake-5-60-wedge",
+      "line": "bx",
+      "blade": "shelter-drake",
+      "ratchet": "5-60",
+      "bit": "wedge",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Shelter Drake 5-60 Wedge",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Sep. 12, 2025  4:41 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-12"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-09-13",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-13"
+    },
+    {
       "id": "shelter-drake-6-60-low-rush",
       "line": "bx",
       "blade": "shelter-drake",
@@ -11556,6 +11821,50 @@
       "archivedDate": "2026-09-12"
     },
     {
+      "id": "valkyrie-blast-jaggy-4-50-low-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "4-50",
+      "bit": "low-rush",
+      "lockChip": "valkyrie",
+      "mainBlade": "blast",
+      "assistBlade": "jaggy",
+      "overBlade": null,
+      "displayName": "Valkyrie Blast J 4-50 Low Rush",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Krakenhits 14",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-12"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-09-13",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-13"
+    },
+    {
       "id": "valkyrie-blast-jaggy-5-60-low-rush",
       "line": "cx",
       "blade": null,
@@ -12692,6 +13001,50 @@
       "archivedDate": "2026-09-12"
     },
     {
+      "id": "wizard-arc-round-7-70-flat",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "7-70",
+      "bit": "flat",
+      "lockChip": "wizard",
+      "mainBlade": "arc",
+      "assistBlade": "round",
+      "overBlade": null,
+      "displayName": "Wizard Arc R 7-70 Flat",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Sep. 12, 2025  7:08 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-12"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-09-13",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-13"
+    },
+    {
       "id": "wizard-arc-slash-1-60-kick",
       "line": "cx",
       "blade": null,
@@ -13336,6 +13689,50 @@
       },
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-07-21"
+    },
+    {
+      "id": "wizard-rod-1-60-bound-spike",
+      "line": "bx",
+      "blade": "wizard-rod",
+      "ratchet": "1-60",
+      "bit": "bound-spike",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Wizard Rod 1-60 Bound Spike",
+      "type": "stamina",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Krakenhits 14",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-06"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-09-13",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-13"
     },
     {
       "id": "wizard-rod-1-60-gear-point",
