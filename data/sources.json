@@ -549,6 +549,33 @@
         "https://www.beybxdb.com/"
       ],
       "notes": "Test personali su parti, non dati torneo. Declassata."
+    },
+    {
+      "id": "youtube-jaykevbeys",
+      "name": "Jaykev",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.4,
+      "lang": "en",
+      "channelId": "UC10zWlWuh_v0rGhHCwqksXQ"
+    },
+    {
+      "id": "youtube-kukulkan-bladers",
+      "name": "Kukulkan Bladers (Chiapas, MX)",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.35,
+      "lang": "es",
+      "channelId": "UCkNvgznxsK5xId2FCUU917w"
+    },
+    {
+      "id": "youtube-wba-perth",
+      "name": "Western Bladers Association (WBA, Perth)",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.3,
+      "lang": "en",
+      "channelId": "UCFvDFTsKPVp4wFg-20npqzQ"
     }
   ],
   "manualVerification": [
@@ -649,6 +676,20 @@
       "url": "https://www.instagram.com/torneos.beyblade.chile/",
       "lang": "es",
       "region": "CL"
+    },
+    {
+      "platform": "instagram",
+      "handle": "lfbx_officiel",
+      "url": "https://www.instagram.com/lfbx_officiel/",
+      "lang": "fr",
+      "region": "FR"
+    },
+    {
+      "platform": "instagram",
+      "handle": "beybladex_t_l",
+      "url": "https://www.instagram.com/beybladex_t_l/",
+      "lang": "th",
+      "region": "TH"
     }
   ],
   "searchSettings": {

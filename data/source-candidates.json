@@ -1,18 +1,19 @@
 {
-  "lastRun": "2026-09-07",
+  "lastRun": "2026-09-14",
   "lastProposal": {
-    "messageId": "1a079a0d798e7a10",
-    "threadId": "1a079a0d798e7a10",
-    "date": "2026-09-07",
-    "subject": "Beyblade - 4 nuove fonti candidate (settimana 07/09)",
-    "note": "Nessuna risposta alla proposta del 31/08 -> nessun feedback applicato. Restano pendenti wba-perth, lfbx-fr, beybladex-thailand-league. Nuovi: 2 propose (jaykevbeys US, kukulkan-bladers MX) + 2 manual-verify (beyblade-tr TR, xbladers-vietnam VN). 16 nuovi knownNegatives. Discovery YouTube: 63 canali su 81 gia noti o scartati.",
+    "messageId": "1a09db1dfe015968",
+    "threadId": "1a09db1dfe015968",
+    "date": "2026-09-14",
+    "subject": "Beyblade - 3 nuove fonti candidate (settimana 14/09)",
+    "note": "Feedback applicato: 'approvo tutti' (31/08) -> wba-perth in sources, lfbx-fr e beybladex-thailand-league in manualVerification; 'approvo prime 2' (07/09) -> jaykevbeys e kukulkan-bladers in sources. Restano proposed (non citati dall'utente): beyblade-tr, xbladers-vietnam. Nuovi: 3 propose (south-carolina US, beyblade-x-boys AU, solical UK). 7 nuovi knownNegatives. Discovery YouTube: 75 canali su 81 gia noti o scartati; ricerca web senza novita.",
     "relatedProposals": [
       "19f7ea6fd17b3060",
       "19fc67292184b2f3",
       "19fea7d30be895fd",
       "1a00e895ff886719",
       "1a0318eb0da56c32",
-      "1a0559d54ac7b334"
+      "1a0559d54ac7b334",
+      "1a079a0d798e7a10"
     ]
   },
   "candidates": [
@@ -1150,10 +1151,11 @@
       "dedupCheck": "L'Oceania oggi ha MBBC (Monash, Melbourne) e Beyblade New Zealand: Perth/Western Australia e una scena separata, non duplica. ATTENZIONE: canale nato a luglio 2026, 5 iscritti — molto sotto la soglia con cui hai scartato Zentonix (145) e Maritime (34) — e i video sono 'Highlights', non podi completi con combo. Decisione tua.",
       "proposedWeight": 0.3,
       "recommendation": "manual-verify",
-      "status": "proposed",
+      "status": "accepted",
       "verifiedOn": "2026-08-31",
       "dateFound": "2026-08-31",
-      "lastSeen": "2026-08-31"
+      "lastSeen": "2026-09-14",
+      "acceptedOn": "2026-09-14"
     },
     {
       "candidateId": "social-lfbx-fr",
@@ -1172,9 +1174,10 @@
       "dedupCheck": "La Francia e appena tornata un gap totale: X-RANK e stato chiuso questa settimana e tournoi-beyblade.fr era gia in knownNegatives (solo iscrizioni/promo). LFBX e l'unico ente FR che pubblica qualcosa di reale. Instagram non automatizzabile -> zona di parcheggio manualVerification.",
       "proposedWeight": 0.4,
       "recommendation": "manual-verify",
-      "status": "proposed",
+      "status": "accepted",
       "dateFound": "2026-08-31",
-      "lastSeen": "2026-08-31"
+      "lastSeen": "2026-09-14",
+      "acceptedOn": "2026-09-14"
     },
     {
       "candidateId": "social-beybladex-thailand-league",
@@ -1193,9 +1196,10 @@
       "dedupCheck": "La TH oggi e coperta solo da Blade Bey X (YouTube, fonte attiva w 0.7), che pero e un singolo giocatore: la lega e l'organizzatore, non duplica. Social non automatizzabile -> manualVerification.",
       "proposedWeight": 0.4,
       "recommendation": "manual-verify",
-      "status": "proposed",
+      "status": "accepted",
       "dateFound": "2026-08-31",
-      "lastSeen": "2026-08-31"
+      "lastSeen": "2026-09-14",
+      "acceptedOn": "2026-09-14"
     },
     {
       "candidateId": "youtube-jaykevbeys",
@@ -1216,9 +1220,10 @@
       "dedupCheck": "Vicino a Rogue Hero BBX e Ashen Dragoons (US, gia attive): stessa scena ma giocatore diverso, con eventi (Beycon, WBO Ranked) e deck propri. Le combo restano deduplicabili per id-set, e il tier narrative pesa 0.6.",
       "proposedWeight": 0.4,
       "recommendation": "propose",
-      "status": "proposed",
+      "status": "accepted",
       "dateFound": "2026-09-07",
-      "lastSeen": "2026-09-07"
+      "lastSeen": "2026-09-14",
+      "acceptedOn": "2026-09-14"
     },
     {
       "candidateId": "youtube-kukulkan-bladers",
@@ -1239,9 +1244,10 @@
       "dedupCheck": "La ES e coperta da SBBL (ES), Flowbeyblade e BladerUlis: il Messico non e coperto da nessuna fonte attiva, e questa e una lega locale, non un canale di recensioni. Contenuto misto (anche Hasbro e casual) -> peso basso.",
       "proposedWeight": 0.35,
       "recommendation": "propose",
-      "status": "proposed",
+      "status": "accepted",
       "dateFound": "2026-09-07",
-      "lastSeen": "2026-09-07"
+      "lastSeen": "2026-09-14",
+      "acceptedOn": "2026-09-14"
     },
     {
       "candidateId": "youtube-beyblade-tr",
@@ -1287,6 +1293,81 @@
       "status": "proposed",
       "dateFound": "2026-09-07",
       "lastSeen": "2026-09-07"
+    },
+    {
+      "candidateId": "youtube-south-carolina-beyblade",
+      "name": "South Carolina Beyblade Community",
+      "type": "youtube",
+      "platform": "youtube",
+      "provides": "combos",
+      "lang": "en",
+      "region": "US-SC",
+      "url": "https://www.youtube.com/@southcarolinabeybladecommunity",
+      "channelId": "UCkafE4kIXmojOtKwV2vx30g",
+      "signals": {
+        "subscribers": 29,
+        "videoCount": 8,
+        "lastUpload": "2026-08-31",
+        "publishesResults": true
+      },
+      "rationale": "Organizzatore (non creator) di eventi in South Carolina: i video sono interi tornei con formato esplicito — 'Dragon Lair Games Double Elimination Tournament', 'Southeast Game Exchange Beyblade Tournament Swiss' e 'Final Stage', 'Spartan Games Beyblade Day Tournament'. Attivo il 31/08.",
+      "dedupCheck": "Gli USA sono gia coperti da Maryland Beyblade League, Devon Beyblade Association, Beyblade Lafayette Louisiana, Rogue Hero BBX, Ashen Dragoons e ora Jaykev: la South Carolina e pero una scena locale distinta e i piazzamenti si deduplicano per id-set. ATTENZIONE: 29 iscritti e 8 video, e i titoli non contengono le combo — la resa dipende dal parlato nel transcript.",
+      "proposedWeight": 0.3,
+      "recommendation": "propose",
+      "status": "proposed",
+      "verifiedOn": "2026-09-14",
+      "dateFound": "2026-09-14",
+      "lastSeen": "2026-09-14"
+    },
+    {
+      "candidateId": "youtube-beyblade-x-boys",
+      "name": "Beyblade X Boys (OHG locals, AU)",
+      "type": "youtube",
+      "platform": "youtube",
+      "provides": "combos",
+      "lang": "en",
+      "region": "AU",
+      "url": "https://www.youtube.com/@beybladexboys",
+      "channelId": "UCmHKagYaaXMipovd8t7UekA",
+      "signals": {
+        "subscribers": 441,
+        "videoCount": 132,
+        "lastUpload": "2026-09-13",
+        "publishesResults": true
+      },
+      "rationale": "Duo padre-figlio che copre settimanalmente i locals OHG e altri tornei: 'OHG Locals Highlights', 'Queen Bee Beyblade Highlights 9/8', 'Finals Between Myself And Ratatouille at OHG 8/18', 'Beat The Heat tournament highlights'. Cadenza quasi giornaliera, tutto Beyblade X.",
+      "dedupCheck": "L'Australia oggi ha solo MBBC (Melbourne) e, se approvata, WBA Perth: questo e un circuito diverso. ATTENZIONE: meta del canale e unboxing/giveaway/stock-combo testing, quindi molto rumore — peso basso e filtro per-video di /judge-youtube.",
+      "proposedWeight": 0.3,
+      "recommendation": "propose",
+      "status": "proposed",
+      "verifiedOn": "2026-09-14",
+      "dateFound": "2026-09-14",
+      "lastSeen": "2026-09-14"
+    },
+    {
+      "candidateId": "youtube-solical-beyblade",
+      "name": "Solical Beyblade (UK)",
+      "type": "youtube",
+      "platform": "youtube",
+      "provides": "combos",
+      "lang": "en",
+      "region": "GB",
+      "url": "https://www.youtube.com/@solicalbeyblade",
+      "channelId": "UC6PLBQWLwWeUHBznGJkHP3g",
+      "signals": {
+        "subscribers": 7560,
+        "videoCount": 412,
+        "lastUpload": "2026-08-02",
+        "publishesResults": true
+      },
+      "rationale": "Blader competitivo UK che pubblica i propri piazzamenti con la combo: '2nd Place In Nottingham! + Gravity Tournament Footage', '2nd Place Win At Europa Gaming', 'The Current BBX.GG Belt Holder', '5-0 Swiss Highlights', 'Europa OPE Store Championship Matches'.",
+      "dedupCheck": "Il Regno Unito e coperto da AtmosphereRQL (circuito BBN, 0.5): qui e un giocatore, non l'organizzatore, e gli eventi citati (Europa Gaming, Nottingham, BBX.GG) sono in parte diversi. ATTENZIONE: cadenza crollata — 2 soli video nel 2026 (02/08 e 15/06), il resto e del 2025.",
+      "proposedWeight": 0.3,
+      "recommendation": "propose",
+      "status": "proposed",
+      "verifiedOn": "2026-09-14",
+      "dateFound": "2026-09-14",
+      "lastSeen": "2026-09-14"
     }
   ],
   "knownNegatives": [
@@ -1466,6 +1547,13 @@
     "https://www.youtube.com/@smilingboris1118 (YouTuber generalista HK)",
     "https://www.youtube.com/@sohocampinghank (canale di campeggio, off-topic)",
     "https://www.youtube.com/@officialbeybladeindonesia (canale ufficiale del brand: anime e promo, nessun risultato di torneo)",
-    "https://start.gg (bracket/standing dei tornei senza alcuna combo: nessun dato utile allo scoring)"
+    "https://start.gg (bracket/standing dei tornei senza alcuna combo: nessun dato utile allo scoring)",
+    "https://www.youtube.com/@glehgleenx (UK, 27 iscritti: guide/unboxing/combo test casalinghi, nessun torneo)",
+    "https://www.youtube.com/@ultrabeys (US, 5750 iscritti: combo teoriche e sfide con la fidanzata, nessun piazzamento; ultimo upload 19/03/2026, inattivo)",
+    "https://www.youtube.com/@mr土圭垚 (TW: canale lifestyle/videogiochi generalista, Beyblade marginale)",
+    "https://www.youtube.com/@rebel.bladers (SG, ex TrailBladers, 5550 iscritti: solo 'Intense Combos Testing & Review' per ogni uscita = teoria di prodotto, nessun risultato di torneo)",
+    "https://www.youtube.com/@beybladesingapore (SG ufficiale: annunci e promo di SEA Cup/G1, nessun podio con combo)",
+    "https://yukiblog32.com/ (JP, 親子ベイブレーダーブログ: guide su regole e liste prodotto, verificato via fetch — nessun report di risultati)",
+    "https://note.com/zexro/n/n73621e61e35f (JP: singolo racconto di una vittoria, non una fonte ricorrente)"
   ]
 }
