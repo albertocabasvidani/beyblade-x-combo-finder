@@ -4,12 +4,12 @@
     "List of Beyblade X products (Takara Tomy)": {
       "revid": 645910,
       "timestamp": "2026-08-11T15:29:44.000Z",
-      "lastScannedDate": "2026-09-13"
+      "lastScannedDate": "2026-09-14"
     },
     "List of Beyblade X products (Hasbro)": {
-      "revid": 648852,
-      "timestamp": "2026-09-10T21:24:27.000Z",
-      "lastScannedDate": "2026-09-13"
+      "revid": 648918,
+      "timestamp": "2026-09-14T01:43:54.000Z",
+      "lastScannedDate": "2026-09-14"
     }
   },
   "pages": {
@@ -22,11 +22,11 @@
       "notes": "Nessuna nuova parte: tutti i link a nuovi articoli (BucksAntlers/HornetFortR/KrakenWriggle/DrakeBrave/TigaRage/GloryValkyrie/ecc.) risolvono a parti gia note nel master."
     },
     "List of Beyblade X products (Hasbro)": {
-      "revid": 648852,
-      "timestamp": "2026-09-10T21:24:27.000Z",
-      "lastScannedDate": "2026-09-11",
+      "revid": 648918,
+      "timestamp": "2026-09-14T01:43:54.000Z",
+      "lastScannedDate": "2026-09-14",
       "kind": "product",
-      "kindSource": "ai",
+      "kindSource": "heuristic",
       "notes": "pagina lista: aggiunta riga NFL CX Top Pack, nessuna parte da estrarre da qui"
     },
     "DranSword 3-60F": {
@@ -2957,6 +2957,20 @@
       "kind": "product",
       "kindSource": "ai",
       "notes": "CX: lockChip NFC, mainBlade Arc, assistBlade Round, ratchet 9-60, bit Low Orb - tutte parti gia' verificate nel master"
+    },
+    "Glare Cyclops 7-55FB": {
+      "revid": 646763,
+      "timestamp": "2026-08-22T04:35:06.000Z",
+      "lastScannedDate": "2026-09-14",
+      "kind": "product",
+      "kindSource": "heuristic"
+    },
+    "Rival Rumble Pack": {
+      "revid": 645368,
+      "timestamp": "2026-08-02T06:11:18.000Z",
+      "lastScannedDate": "2026-09-14",
+      "kind": "product",
+      "kindSource": "heuristic"
     }
   }
 }
