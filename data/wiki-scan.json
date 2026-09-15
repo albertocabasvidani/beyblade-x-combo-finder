@@ -2,21 +2,21 @@
   "version": 1,
   "lists": {
     "List of Beyblade X products (Takara Tomy)": {
-      "revid": 645910,
-      "timestamp": "2026-08-11T15:29:44.000Z",
-      "lastScannedDate": "2026-09-14"
+      "revid": 649061,
+      "timestamp": "2026-09-14T15:46:59.000Z",
+      "lastScannedDate": "2026-09-15"
     },
     "List of Beyblade X products (Hasbro)": {
       "revid": 648918,
       "timestamp": "2026-09-14T01:43:54.000Z",
-      "lastScannedDate": "2026-09-14"
+      "lastScannedDate": "2026-09-15"
     }
   },
   "pages": {
     "List of Beyblade X products (Takara Tomy)": {
-      "revid": 645910,
-      "timestamp": null,
-      "lastScannedDate": "2026-08-12",
+      "revid": 649061,
+      "timestamp": "2026-09-14T15:46:59.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic",
       "notes": "Nessuna nuova parte: tutti i link a nuovi articoli (BucksAntlers/HornetFortR/KrakenWriggle/DrakeBrave/TigaRage/GloryValkyrie/ecc.) risolvono a parti gia note nel master."
@@ -30,9 +30,9 @@
       "notes": "pagina lista: aggiunta riga NFL CX Top Pack, nessuna parte da estrarre da qui"
     },
     "DranSword 3-60F": {
-      "revid": 647396,
-      "timestamp": "2026-08-29T05:54:20.000Z",
-      "lastScannedDate": "2026-08-30",
+      "revid": 649168,
+      "timestamp": "2026-09-15T01:27:28.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -51,9 +51,9 @@
       "notes": "aggiunta localizzazione Hasbro (Ring Aether, G4571); Blade/Ratchet/Bit gia' nel master con hasbro name"
     },
     "TriceraPress M-85BS": {
-      "revid": 647948,
-      "timestamp": "2026-09-02T03:01:00.000Z",
-      "lastScannedDate": "2026-09-03",
+      "revid": 648989,
+      "timestamp": "2026-09-14T12:28:56.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic",
       "notes": "solo aggiornamento info (Hasbro release/gallery/trivia); parti gia' nel master (tricera-press, M-85, bound-spike)"
@@ -139,9 +139,9 @@
       "notes": "Aggiunto G3084 Rival Rumble Pack (stesso combo, nuova colorazione): nessuna parte nuova."
     },
     "LeonClaw 5-60P": {
-      "revid": 647345,
-      "timestamp": "2026-08-29T02:33:34.000Z",
-      "lastScannedDate": "2026-08-30",
+      "revid": 648968,
+      "timestamp": "2026-09-14T12:09:55.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -150,9 +150,9 @@
       "notes": "Solo testo aggiunto ('successore LeonCrest'), nessun dato nuovo."
     },
     "LeonCrest 7-60GN": {
-      "revid": 648653,
-      "timestamp": "2026-09-08T09:09:49.000Z",
-      "lastScannedDate": "2026-09-09",
+      "revid": 648969,
+      "timestamp": "2026-09-14T12:10:26.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic",
       "notes": "Aggiunto G3084 Rival Rumble Pack (stesso combo): nessuna parte nuova."
@@ -166,25 +166,25 @@
       "notes": "Revid cambiato, verificato: aggiunti prodotti che referenziano combo gia registrate (CX-17, CX-00, UX-15), nessuna parte nuova."
     },
     "Ratchet - 3-80": {
-      "revid": 645825,
-      "timestamp": "2026-08-08T05:04:19.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 649057,
+      "timestamp": "2026-09-14T15:44:17.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "part",
       "kindSource": "heuristic",
       "notes": "Revid cambiato, verificato: nessun nuovo componente (solo modifiche testuali/gallery)."
     },
     "Ratchet - 4-70": {
-      "revid": 648041,
-      "timestamp": "2026-09-02T12:16:23.000Z",
-      "lastScannedDate": "2026-09-03",
+      "revid": 649095,
+      "timestamp": "2026-09-14T18:09:35.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "part",
       "kindSource": "heuristic",
       "notes": "Aggiunto G3084 Rival Rumble Pack (Gill Shark 4-70O): parte gia' registrata."
     },
     "SilverWolf 3-80FB": {
-      "revid": 646963,
-      "timestamp": "2026-08-24T12:02:18.000Z",
-      "lastScannedDate": "2026-08-25",
+      "revid": 648984,
+      "timestamp": "2026-09-14T12:24:03.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -193,9 +193,9 @@
       "notes": "Aggiunto G3084 Rival Rumble Pack (stesso combo): nessuna parte nuova."
     },
     "WeissTiger 3-60U": {
-      "revid": 647214,
-      "timestamp": "2026-08-26T12:53:57.000Z",
-      "lastScannedDate": "2026-08-27",
+      "revid": 648980,
+      "timestamp": "2026-09-14T12:19:17.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic",
       "notes": "Aggiunto G3084 Rival Rumble Pack (stesso combo): nessuna parte nuova."
@@ -265,20 +265,20 @@
       "notes": "Revid cambiato, verificato: nessun nuovo componente (solo modifiche testuali/gallery/date release)."
     },
     "BahamutBlitz BK1-50I": {
-      "revid": 648183,
-      "timestamp": "2026-09-03T23:23:20.000Z",
-      "lastScannedDate": "2026-09-04",
+      "revid": 648935,
+      "timestamp": "2026-09-14T07:18:41.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
-      "kindSource": "ai",
+      "kindSource": "heuristic",
       "redirects": [
         "Blitz Bahamut BK 1-50I"
       ],
       "notes": "aggiunta localizzazione Hasbro (Blitz Bahamut, G4572); tutte le 6 parti CX Expand gia' nel master"
     },
     "RagnaRage FE4-55Y": {
-      "revid": 646740,
-      "timestamp": "2026-08-21T21:39:23.000Z",
-      "lastScannedDate": "2026-08-22",
+      "revid": 649005,
+      "timestamp": "2026-09-14T12:46:58.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -295,9 +295,9 @@
       "notes": "Revid cambiato, verificato: nessun nuovo componente (solo modifiche testuali/gallery/date release)."
     },
     "CobaltDragoon 2-60C": {
-      "revid": 648643,
-      "timestamp": "2026-09-08T02:45:27.000Z",
-      "lastScannedDate": "2026-09-09",
+      "revid": 648981,
+      "timestamp": "2026-09-14T12:21:01.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic",
       "notes": "Revid cambiato, verificato: aggiunta Metal Coat Black (CoroCoro lottery/B4) e G2951 Deluxe String Launcher 2-Pack, nessuna parte nuova."
@@ -310,9 +310,9 @@
       "kindSource": "heuristic"
     },
     "MeteorDragoon 3-70J": {
-      "revid": 648872,
-      "timestamp": "2026-09-11T13:10:38.000Z",
-      "lastScannedDate": "2026-09-12",
+      "revid": 649034,
+      "timestamp": "2026-09-14T15:28:54.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic",
       "notes": "revisione minore (gallery GP2026, trivia); Blade/Ratchet/Bit gia' in master"
@@ -326,9 +326,9 @@
       "notes": "Revid cambiato, verificato: solo testo/gallery aggiornati (G3064 gia registrato), nessuna parte nuova."
     },
     "SharkEdge 3-60LF": {
-      "revid": 647340,
-      "timestamp": "2026-08-29T02:23:56.000Z",
-      "lastScannedDate": "2026-08-30",
+      "revid": 648966,
+      "timestamp": "2026-09-14T12:07:55.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -337,25 +337,25 @@
       "notes": "Revid cambiato, verificato: nessun nuovo componente (solo modifiche testuali/gallery/video), Releases invariati (BX-14 01, G0194)."
     },
     "Bit - Ball": {
-      "revid": 647022,
-      "timestamp": "2026-08-24T23:21:56.000Z",
-      "lastScannedDate": "2026-08-25",
+      "revid": 649054,
+      "timestamp": "2026-09-14T15:43:19.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "part",
       "kindSource": "heuristic",
       "notes": "Revid cambiato, verificato: nessun nuovo componente (solo modifiche testuali/gallery)."
     },
     "PegasusBlast ATr": {
-      "revid": 648037,
-      "timestamp": "2026-09-02T12:01:58.000Z",
-      "lastScannedDate": "2026-09-03",
+      "revid": 648987,
+      "timestamp": "2026-09-14T12:26:45.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic",
       "notes": "Solo refuso hyphen in Ratchet-Integrated Bit, nessun dato struttura cambiato."
     },
     "EmperorMight HOp": {
-      "revid": 646319,
-      "timestamp": "2026-08-15T05:33:16.000Z",
-      "lastScannedDate": "2026-08-15",
+      "revid": 649007,
+      "timestamp": "2026-09-14T12:48:26.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic",
       "notes": "Solo refuso hyphen in Ratchet-Integrated Bit, nessun dato struttura cambiato."
@@ -410,9 +410,9 @@
       "kindSource": "heuristic"
     },
     "MammothTusk 2-80E": {
-      "revid": 604742,
-      "timestamp": "2026-08-14T06:19:28.677Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 648943,
+      "timestamp": "2026-09-14T07:51:54.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic"
     },
@@ -424,17 +424,17 @@
       "kindSource": "heuristic"
     },
     "DrakeBrave G4-70I": {
-      "revid": 648389,
-      "timestamp": "2026-09-04T22:13:07.000Z",
-      "lastScannedDate": "2026-09-05",
+      "revid": 648933,
+      "timestamp": "2026-09-14T06:54:34.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic",
       "notes": "revisione minore (trivia su provenienza parti); LockChip/MainBlade/AssistBlade/Ratchet/Bit gia' in master"
     },
     "SamuraiSaber 2-70L": {
-      "revid": 646971,
-      "timestamp": "2026-08-24T12:15:37.000Z",
-      "lastScannedDate": "2026-08-25",
+      "revid": 648991,
+      "timestamp": "2026-09-14T12:33:25.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic"
     },
@@ -460,9 +460,9 @@
       "kindSource": "heuristic"
     },
     "CrocoTread TQ5-50GN": {
-      "revid": 647771,
-      "timestamp": "2026-09-01T06:39:09.000Z",
-      "lastScannedDate": "2026-09-03",
+      "revid": 649065,
+      "timestamp": "2026-09-14T16:02:56.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -485,9 +485,9 @@
       "kindSource": "heuristic"
     },
     "AeroPegasus 3-70A": {
-      "revid": 648890,
-      "timestamp": "2026-09-12T03:27:58.000Z",
-      "lastScannedDate": "2026-09-13",
+      "revid": 649031,
+      "timestamp": "2026-09-14T15:27:30.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic"
     },
@@ -506,11 +506,11 @@
       "kindSource": "heuristic"
     },
     "BulletGriffon H": {
-      "revid": 648218,
-      "timestamp": "2026-09-03T23:34:24.000Z",
-      "lastScannedDate": "2026-09-04",
+      "revid": 648996,
+      "timestamp": "2026-09-14T12:36:46.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
-      "kindSource": "ai",
+      "kindSource": "heuristic",
       "redirects": [
         "Rocket Griffon H"
       ],
@@ -559,9 +559,9 @@
       "kindSource": "heuristic"
     },
     "CrimsonGaruda 4-70TP": {
-      "revid": 646934,
-      "timestamp": "2026-08-24T08:29:22.000Z",
-      "lastScannedDate": "2026-08-25",
+      "revid": 648983,
+      "timestamp": "2026-09-14T12:22:42.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -591,9 +591,9 @@
       "kindSource": "heuristic"
     },
     "DranBuster 1-60A": {
-      "revid": 646804,
-      "timestamp": "2026-08-22T11:21:26.000Z",
-      "lastScannedDate": "2026-08-23",
+      "revid": 648982,
+      "timestamp": "2026-09-14T12:22:10.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -601,16 +601,16 @@
       ]
     },
     "DranDagger 4-60R": {
-      "revid": 647327,
-      "timestamp": "2026-08-29T02:04:47.000Z",
-      "lastScannedDate": "2026-08-30",
+      "revid": 648954,
+      "timestamp": "2026-09-14T11:54:55.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic"
     },
     "DranStrike 4-50FF": {
-      "revid": 648372,
-      "timestamp": "2026-09-04T11:46:16.000Z",
-      "lastScannedDate": "2026-09-05",
+      "revid": 649001,
+      "timestamp": "2026-09-14T12:40:22.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -640,9 +640,9 @@
       "kindSource": "heuristic"
     },
     "GolemRock 1-60UN": {
-      "revid": 646947,
-      "timestamp": "2026-08-24T11:33:25.000Z",
-      "lastScannedDate": "2026-08-25",
+      "revid": 648993,
+      "timestamp": "2026-09-14T12:34:29.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -671,27 +671,27 @@
       "kindSource": "heuristic"
     },
     "HellsChain 5-60HT": {
-      "revid": 647354,
-      "timestamp": "2026-08-29T03:12:53.000Z",
-      "lastScannedDate": "2026-08-30",
+      "revid": 648956,
+      "timestamp": "2026-09-14T11:58:10.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic"
     },
     "HellsHammer 3-70H": {
-      "revid": 648808,
-      "timestamp": "2026-09-10T00:31:31.000Z",
-      "lastScannedDate": "2026-09-10",
+      "revid": 648957,
+      "timestamp": "2026-09-14T11:59:03.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
-      "kindSource": "ai",
+      "kindSource": "heuristic",
       "redirects": [
         "Hammer Incendio 3-70H"
       ],
       "notes": "solo trivia/gallery aggiornate, parti gia' in master"
     },
     "HellsScythe 4-60T": {
-      "revid": 647470,
-      "timestamp": "2026-08-31T02:25:32.000Z",
-      "lastScannedDate": "2026-09-01",
+      "revid": 649109,
+      "timestamp": "2026-09-14T19:44:47.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -720,9 +720,9 @@
       "kindSource": "heuristic"
     },
     "KnightLance 4-80HN": {
-      "revid": 647331,
-      "timestamp": "2026-08-29T02:14:07.000Z",
-      "lastScannedDate": "2026-08-30",
+      "revid": 648961,
+      "timestamp": "2026-09-14T12:02:40.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -730,16 +730,16 @@
       ]
     },
     "KnightMail 3-85BS": {
-      "revid": 646987,
-      "timestamp": "2026-08-24T17:52:33.000Z",
-      "lastScannedDate": "2026-08-25",
+      "revid": 648962,
+      "timestamp": "2026-09-14T12:03:15.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic"
     },
     "KnightShield 3-80N": {
-      "revid": 648896,
-      "timestamp": "2026-09-12T19:43:18.000Z",
-      "lastScannedDate": "2026-09-13",
+      "revid": 649160,
+      "timestamp": "2026-09-15T01:16:09.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -831,9 +831,9 @@
       "kindSource": "heuristic"
     },
     "PhoenixWing 9-60GF": {
-      "revid": 647198,
-      "timestamp": "2026-08-26T12:21:43.000Z",
-      "lastScannedDate": "2026-08-27",
+      "revid": 648972,
+      "timestamp": "2026-09-14T12:13:38.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic"
     },
@@ -859,9 +859,9 @@
       "kindSource": "heuristic"
     },
     "RhinoHorn 3-80S": {
-      "revid": 648560,
-      "timestamp": "2026-09-07T11:43:43.000Z",
-      "lastScannedDate": "2026-09-08",
+      "revid": 648971,
+      "timestamp": "2026-09-14T12:13:04.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -869,9 +869,9 @@
       ]
     },
     "SamuraiCalibur 6-70M": {
-      "revid": 648637,
-      "timestamp": "2026-09-08T01:55:52.000Z",
-      "lastScannedDate": "2026-09-08",
+      "revid": 648990,
+      "timestamp": "2026-09-14T12:29:38.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic"
     },
@@ -890,9 +890,9 @@
       "kindSource": "heuristic"
     },
     "ScorpioSpear 0-70Z": {
-      "revid": 646939,
-      "timestamp": "2026-08-24T10:03:50.000Z",
-      "lastScannedDate": "2026-08-25",
+      "revid": 648994,
+      "timestamp": "2026-09-14T12:35:20.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic"
     },
@@ -1003,9 +1003,9 @@
       "kindSource": "heuristic"
     },
     "TyrannoBeat 4-70Q": {
-      "revid": 647123,
-      "timestamp": "2026-08-26T03:39:07.000Z",
-      "lastScannedDate": "2026-08-27",
+      "revid": 648978,
+      "timestamp": "2026-09-14T12:18:12.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic",
       "notes": "blade gia' nel master come 'Tyranno Beat'; ratchet 4-70 e bit Quake gia' presenti; nessuna parte nuova"
@@ -1025,9 +1025,9 @@
       "kindSource": "heuristic"
     },
     "ViperTail 5-80O": {
-      "revid": 647352,
-      "timestamp": "2026-08-29T02:41:06.000Z",
-      "lastScannedDate": "2026-08-30",
+      "revid": 648970,
+      "timestamp": "2026-09-14T12:10:53.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic"
     },
@@ -1039,9 +1039,9 @@
       "kindSource": "heuristic"
     },
     "WizardArrow 4-80B": {
-      "revid": 648888,
-      "timestamp": "2026-09-12T02:10:14.000Z",
-      "lastScannedDate": "2026-09-13",
+      "revid": 649161,
+      "timestamp": "2026-09-15T01:16:50.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -1059,18 +1059,18 @@
       ]
     },
     "WyvernGale 5-80GB": {
-      "revid": 647182,
-      "timestamp": "2026-08-26T11:48:14.000Z",
-      "lastScannedDate": "2026-08-27",
+      "revid": 648977,
+      "timestamp": "2026-09-14T12:17:44.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic"
     },
     "BrachioWhip OW5-70Nr": {
-      "revid": 646531,
-      "timestamp": "2026-08-19T02:37:39.000Z",
-      "lastScannedDate": "2026-08-20",
+      "revid": 649004,
+      "timestamp": "2026-09-14T12:46:12.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
-      "kindSource": "ai",
+      "kindSource": "heuristic",
       "redirects": [
         "Whip Brachio OW 5-70Nr"
       ],
@@ -1133,9 +1133,9 @@
       "kindSource": "heuristic"
     },
     "KnightFortress GV8-70UN": {
-      "revid": 646716,
-      "timestamp": "2026-08-21T11:30:27.000Z",
-      "lastScannedDate": "2026-08-22",
+      "revid": 648963,
+      "timestamp": "2026-09-14T12:03:33.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -1150,9 +1150,9 @@
       "kindSource": "heuristic"
     },
     "PerseusDark B6-80W": {
-      "revid": 646828,
-      "timestamp": "2026-08-22T12:11:20.000Z",
-      "lastScannedDate": "2026-08-23",
+      "revid": 648951,
+      "timestamp": "2026-09-14T11:45:16.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -1160,9 +1160,9 @@
       ]
     },
     "PhoenixFlare Z9-80WW": {
-      "revid": 646607,
-      "timestamp": "2026-08-21T01:58:01.000Z",
-      "lastScannedDate": "2026-08-21",
+      "revid": 648974,
+      "timestamp": "2026-09-14T12:15:10.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic"
     },
@@ -1174,9 +1174,9 @@
       "kindSource": "heuristic"
     },
     "SolEclipse D5-70TK": {
-      "revid": 646314,
-      "timestamp": "2026-08-15T05:23:57.000Z",
-      "lastScannedDate": "2026-08-15",
+      "revid": 649000,
+      "timestamp": "2026-09-14T12:39:53.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic"
     },
@@ -1214,9 +1214,9 @@
       "notes": "nessuna modifica sostanziale, parti gia' in master"
     },
     "WizardArc R4-55LO": {
-      "revid": 646813,
-      "timestamp": "2026-08-22T11:46:45.000Z",
-      "lastScannedDate": "2026-08-23",
+      "revid": 648959,
+      "timestamp": "2026-09-14T12:00:59.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -1224,9 +1224,9 @@
       ]
     },
     "WolfHunt F0-60DB": {
-      "revid": 648493,
-      "timestamp": "2026-09-07T00:40:44.000Z",
-      "lastScannedDate": "2026-09-07",
+      "revid": 648985,
+      "timestamp": "2026-09-14T12:24:28.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic"
     },
@@ -1308,9 +1308,9 @@
       "kindSource": "heuristic"
     },
     "Ratchet - 4-80": {
-      "revid": 645839,
-      "timestamp": "2026-08-08T05:21:03.000Z",
-      "lastScannedDate": "2026-08-09",
+      "revid": 649053,
+      "timestamp": "2026-09-14T15:43:11.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "part",
       "kindSource": "heuristic"
     },
@@ -1400,9 +1400,9 @@
       "kindSource": "heuristic"
     },
     "Bit - Needle": {
-      "revid": 645840,
-      "timestamp": "2026-08-08T05:21:50.000Z",
-      "lastScannedDate": "2026-08-09",
+      "revid": 649058,
+      "timestamp": "2026-09-14T15:44:28.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "part",
       "kindSource": "heuristic"
     },
@@ -1436,17 +1436,17 @@
       "kindSource": "heuristic"
     },
     "CrocoCrunch 2-60Q": {
-      "revid": 646363,
-      "timestamp": "2026-08-15T13:39:59.000Z",
-      "lastScannedDate": "2026-08-16",
+      "revid": 649112,
+      "timestamp": "2026-09-14T21:47:53.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
-      "kindSource": "ai",
+      "kindSource": "heuristic",
       "notes": "revisione minore (release date/trivia); Blade/Ratchet/Bit gia' in master"
     },
     "SphinxCowl 9-80GN": {
-      "revid": 647204,
-      "timestamp": "2026-08-26T12:34:49.000Z",
-      "lastScannedDate": "2026-08-27",
+      "revid": 648976,
+      "timestamp": "2026-09-14T12:16:57.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -1454,9 +1454,9 @@
       ]
     },
     "UnicornSting 5-60GP": {
-      "revid": 647207,
-      "timestamp": "2026-08-26T12:37:05.000Z",
-      "lastScannedDate": "2026-08-27",
+      "revid": 648975,
+      "timestamp": "2026-09-14T12:16:14.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -1482,9 +1482,9 @@
       "notes": "aggiunta localizzazione Hasbro (Glory Valkerion, G4568); Ratchet-Integrated Blade e Bit gia' nel master con hasbro name"
     },
     "Blade - KnightShield": {
-      "revid": 616259,
-      "timestamp": "2026-08-14T06:19:28.677Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 649056,
+      "timestamp": "2026-09-14T15:44:06.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "part",
       "kindSource": "heuristic"
     },
@@ -1606,9 +1606,9 @@
       ]
     },
     "ShinobiShadow 1-80MN": {
-      "revid": 648600,
-      "timestamp": "2026-09-07T12:27:46.000Z",
-      "lastScannedDate": "2026-09-08",
+      "revid": 648979,
+      "timestamp": "2026-09-14T12:18:45.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -1616,9 +1616,9 @@
       ]
     },
     "ShelterDrake 7-80GP": {
-      "revid": 646940,
-      "timestamp": "2026-08-24T10:10:50.000Z",
-      "lastScannedDate": "2026-08-25",
+      "revid": 648988,
+      "timestamp": "2026-09-14T12:28:13.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -1664,9 +1664,9 @@
       ]
     },
     "FoxBrush J9-70GR": {
-      "revid": 648900,
-      "timestamp": "2026-09-13T01:58:21.000Z",
-      "lastScannedDate": "2026-09-13",
+      "revid": 648986,
+      "timestamp": "2026-09-14T12:25:06.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -1674,9 +1674,9 @@
       ]
     },
     "RhinoReaper C4-55D": {
-      "revid": 634312,
-      "timestamp": "2026-04-03T05:22:47.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 648947,
+      "timestamp": "2026-09-14T08:29:19.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -1701,15 +1701,15 @@
       "kindSource": "heuristic"
     },
     "HellsNether Z": {
-      "revid": 647494,
-      "timestamp": "2026-08-31T03:05:09.000Z",
-      "lastScannedDate": "2026-09-01",
+      "revid": 649157,
+      "timestamp": "2026-09-15T01:10:16.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Nether Incendio Z"
       ],
-      "notes": "ratchet-integrated blade HellsNether e bit Zap gia' nel master; nessuna parte nuova"
+      "notes": "RatchetBlade fuso (ratchet integrato nel blade): estratta come blade+bit, nessun ratchet separato."
     },
     "Seize Jaguar HN": {
       "revid": 646465,
@@ -1780,9 +1780,9 @@
       ]
     },
     "WhaleWave 5-80E": {
-      "revid": 647304,
-      "timestamp": "2026-08-28T21:53:10.000Z",
-      "lastScannedDate": "2026-08-29",
+      "revid": 648965,
+      "timestamp": "2026-09-14T12:06:41.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -1831,9 +1831,9 @@
       ]
     },
     "SharkScale 4-50UF": {
-      "revid": 645958,
-      "timestamp": "2026-08-14T06:19:28.677Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 648967,
+      "timestamp": "2026-09-14T12:09:02.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -1851,9 +1851,9 @@
       ]
     },
     "MummyCurse 7-55W": {
-      "revid": 646327,
-      "timestamp": "2026-08-15T05:49:04.000Z",
-      "lastScannedDate": "2026-08-15",
+      "revid": 648995,
+      "timestamp": "2026-09-14T12:36:14.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -1861,9 +1861,9 @@
       ]
     },
     "BearScratch 5-60F": {
-      "revid": 642128,
-      "timestamp": "2026-08-14T06:19:28.677Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 649002,
+      "timestamp": "2026-09-14T12:43:26.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -1871,9 +1871,9 @@
       ]
     },
     "ClockMirage 9-65B": {
-      "revid": 648471,
-      "timestamp": "2026-09-06T12:12:09.000Z",
-      "lastScannedDate": "2026-09-07",
+      "revid": 648998,
+      "timestamp": "2026-09-14T12:38:41.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -2459,9 +2459,9 @@
       "kindSource": "heuristic"
     },
     "GhostCircle 0-80GB": {
-      "revid": 646954,
-      "timestamp": "2026-08-24T11:49:42.000Z",
-      "lastScannedDate": "2026-08-25",
+      "revid": 648992,
+      "timestamp": "2026-09-14T12:33:59.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic"
     },
@@ -2566,9 +2566,9 @@
       "kindSource": "heuristic"
     },
     "PhoenixRudder 9-70G": {
-      "revid": 648654,
-      "timestamp": "2026-09-08T09:10:13.000Z",
-      "lastScannedDate": "2026-09-09",
+      "revid": 648973,
+      "timestamp": "2026-09-14T12:14:11.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "product",
       "kindSource": "heuristic"
     },
@@ -2645,9 +2645,9 @@
       "kindSource": "heuristic"
     },
     "String Launcher (Beyblade X)": {
-      "revid": 643708,
-      "timestamp": "2026-07-15T03:29:36.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 649059,
+      "timestamp": "2026-09-14T15:44:54.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "accessory",
       "kindSource": "heuristic"
     },
@@ -2680,9 +2680,9 @@
       "kindSource": "heuristic"
     },
     "Winder Launcher L": {
-      "revid": 634085,
-      "timestamp": "2026-03-31T08:57:03.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 649043,
+      "timestamp": "2026-09-14T15:40:25.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "accessory",
       "kindSource": "heuristic"
     },
@@ -2694,9 +2694,9 @@
       "kindSource": "heuristic"
     },
     "String Launcher L": {
-      "revid": 634086,
-      "timestamp": "2026-03-31T08:57:37.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 649038,
+      "timestamp": "2026-09-14T15:37:46.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "accessory",
       "kindSource": "heuristic"
     },
@@ -2729,9 +2729,9 @@
       "kindSource": "heuristic"
     },
     "Winder Launcher": {
-      "revid": 643185,
-      "timestamp": "2026-07-10T02:29:51.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 649060,
+      "timestamp": "2026-09-14T15:45:17.000Z",
+      "lastScannedDate": "2026-09-15",
       "kind": "accessory",
       "kindSource": "heuristic"
     },
@@ -2971,6 +2971,30 @@
       "lastScannedDate": "2026-09-14",
       "kind": "product",
       "kindSource": "heuristic"
+    },
+    "LusterDragoon 6-60LC": {
+      "revid": 649044,
+      "timestamp": "2026-09-14T15:40:38.000Z",
+      "lastScannedDate": "2026-09-15",
+      "kind": "product",
+      "kindSource": "ai",
+      "notes": "Infobox porta System2=Expand Blade ma i campi sono Blade/Ratchet/Bit (non LockChip/MainBlade/AssistBlade): trattata come blade BX standard, non CX Expand. Parte nuova."
+    },
+    "All In One Set": {
+      "revid": 649022,
+      "timestamp": "2026-09-14T15:14:45.000Z",
+      "lastScannedDate": "2026-09-15",
+      "kind": "set",
+      "kindSource": "ai",
+      "notes": "Beyblade Set Infobox, contiene AeroPegasus 3-70A, WizardArrow 4-80B (V2), KnightShield 3-80N (V2), tutti bey già esistenti; nessuna parte nuova."
+    },
+    "Lock Chip - Kid": {
+      "revid": 649092,
+      "timestamp": "2026-09-14T18:08:56.000Z",
+      "lastScannedDate": "2026-09-15",
+      "kind": "part",
+      "kindSource": "ai",
+      "notes": "Recupero da verify:wiki --strict: lock chip mancante dal master, pagina parte dedicata (unreleased), collegata al prodotto CX-00 KidHunt K4-70TK."
     }
   }
 }

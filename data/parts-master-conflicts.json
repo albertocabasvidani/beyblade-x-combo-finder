@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-10",
-  "count": 15,
+  "generated": "2026-09-15",
+  "count": 17,
   "conflicts": [
     {
       "type": "unsupported_mechanic",
@@ -42,7 +42,7 @@
       "found": "stamina",
       "from": "Rudder Phoenix 4-70LF",
       "primaVisto": "2026-08-14",
-      "ultimoVisto": "2026-08-14",
+      "ultimoVisto": "2026-09-15",
       "nota": "ambiguita' preesistente, recuperata dopo che il run del 14/08 aveva azzerato il file"
     },
     {
@@ -102,7 +102,7 @@
       "found": "balance",
       "from": "SamuraiCalibur 6-70M",
       "primaVisto": "2026-08-25",
-      "ultimoVisto": "2026-08-25"
+      "ultimoVisto": "2026-09-15"
     },
     {
       "type": "type_mismatch",
@@ -148,6 +148,24 @@
       "from": "Rampart Aegis B",
       "primaVisto": "2026-08-28",
       "ultimoVisto": "2026-08-28"
+    },
+    {
+      "type": "hasbro_mismatch",
+      "id": "meteor-dragoon",
+      "existing": "Meteoroid Dragoon 3-70J",
+      "found": "Meteoroid Dragoon",
+      "from": "MeteorDragoon 3-70J",
+      "primaVisto": "2026-09-15",
+      "ultimoVisto": "2026-09-15"
+    },
+    {
+      "type": "type_mismatch",
+      "id": "bear-scratch",
+      "existing": "defense",
+      "found": "attack",
+      "from": "BearScratch 5-60F",
+      "primaVisto": "2026-09-15",
+      "ultimoVisto": "2026-09-15"
     }
   ]
 }

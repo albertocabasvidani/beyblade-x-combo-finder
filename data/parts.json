@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-10",
+  "version": "2026-09-15",
   "blades": [
     {
       "id": "aero-pegasus",
@@ -826,6 +826,16 @@
       "image": "luke-skywalker.png"
     },
     {
+      "id": "luster-dragoon",
+      "name": "Luster Dragoon",
+      "aliases": [
+        "RasutāDoragūn"
+      ],
+      "type": "attack",
+      "line": "bx",
+      "releaseSet": "BX-52"
+    },
+    {
       "id": "mammoth-tusk",
       "name": "Mammoth Tusk",
       "nameWestern": "Tusk Mammoth",
@@ -864,7 +874,8 @@
       "nameWestern": "Meteoroid Dragoon 3-70J",
       "aliases": [
         "Meteo",
-        "Meteo Dragoon"
+        "Meteo Dragoon",
+        "MeteoDoragūn"
       ],
       "type": "attack",
       "line": "bx",
@@ -1796,6 +1807,7 @@
     {
       "id": "bahamut",
       "name": "Bahamut",
+      "nameWestern": "Bahamut",
       "line": "cx",
       "image": "bahamut.png"
     },
@@ -1870,6 +1882,11 @@
       "image": "hornet.png"
     },
     {
+      "id": "kid",
+      "name": "Kid",
+      "line": "cx"
+    },
+    {
       "id": "knight",
       "name": "Knight",
       "line": "cx",
@@ -1915,6 +1932,7 @@
     {
       "id": "ragna",
       "name": "Ragna",
+      "nameWestern": "Ragna",
       "line": "cx",
       "image": "ragna.png"
     },
@@ -2003,6 +2021,7 @@
     {
       "id": "blast",
       "name": "Blast",
+      "type": "attack",
       "line": "cx",
       "stats": {
         "atk": 50,
@@ -2014,6 +2033,7 @@
     {
       "id": "blitz",
       "name": "Blitz",
+      "nameWestern": "Blitz",
       "type": "attack",
       "line": "cx",
       "image": "blitz.png"
@@ -2145,6 +2165,7 @@
     {
       "id": "might",
       "name": "Might",
+      "type": "balance",
       "line": "cx",
       "stats": {
         "atk": 25,
@@ -2156,6 +2177,7 @@
     {
       "id": "rage",
       "name": "Rage",
+      "nameWestern": "Rage",
       "type": "stamina",
       "line": "cx",
       "image": "rage.png"
@@ -2163,6 +2185,7 @@
     {
       "id": "reaper",
       "name": "Reaper",
+      "nameWestern": "Reaper",
       "type": "balance",
       "line": "cx",
       "stats": {
@@ -2176,6 +2199,7 @@
       "id": "tread",
       "name": "Tread",
       "nameWestern": "Tread",
+      "type": "defense",
       "line": "cx",
       "image": "tread.png"
     },
@@ -3169,6 +3193,11 @@
         "sta": 15
       },
       "image": "level.png"
+    },
+    {
+      "id": "low-cyclone",
+      "name": "Low Cyclone",
+      "image": "low-cyclone.png"
     },
     {
       "id": "low-flat",
