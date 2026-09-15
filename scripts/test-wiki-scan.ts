@@ -19,7 +19,7 @@ import { readFileSync, writeFileSync, mkdirSync, rmSync, existsSync, copyFileSyn
 import { join } from 'path';
 import { createHash } from 'crypto';
 import { execFileSync } from 'child_process';
-import { parseListRows, parseContentsLinks, classifyKind } from './scan-wiki-updates';
+import { parseListRows, parseContentsLinks, classifyKind, parseListino } from './scan-wiki-updates';
 import { batchQuery, fetchWikitextByTitle, sanitizeFilename } from './lib/wiki';
 
 const ROOT = join(import.meta.dirname, '..');
@@ -379,6 +379,29 @@ const hashDopo = hashData();
 for (const f of SORVEGLIATI) {
   check(`data/${f} invariato`, hashPrima[f] === hashDopo[f], `${hashPrima[f]?.slice(0, 12)} -> ${hashDopo[f]?.slice(0, 12)}`);
 }
+
+// ------------------------------------------------------------------ 9. prezzo di listino
+titolo('9. Colonna Price delle liste (parseListino)');
+
+// Celle reali, copiate dal wikitext del 15/09/2026.
+check('TT: yen con migliaia', JSON.stringify(parseListino('1980円', true)) === '{"amount":1980,"currency":"JPY"}');
+check('TT: yen con virgola', JSON.stringify(parseListino('11,000円', true)) === '{"amount":11000,"currency":"JPY"}');
+check('TT: N/A non e\' un prezzo', parseListino('N/A', true) === null);
+check('TT: cella vuota', parseListino(null, true) === null);
+
+const HASBRO_USA = '[[File:Flag of Canada.png|20px]] $21.99<br>[[File:Flag of United States.png|20px]] $16.99<br>[[File:Flag of Australia.png|20px]] $24.99';
+check('Hasbro: prende la riga Stati Uniti', JSON.stringify(parseListino(HASBRO_USA, false)) === '{"amount":16.99,"currency":"USD"}');
+
+const HASBRO_TBA_COMMENTATO = '<!--[[File:Flag of Canada.png|20px]] $TBA<br>-->[[File:Flag of United States.png|20px]] $34.99';
+check('Hasbro: il commento HTML non nasconde il prezzo vero',
+  JSON.stringify(parseListino(HASBRO_TBA_COMMENTATO, false)) === '{"amount":34.99,"currency":"USD"}');
+
+const HASBRO_USA_COMMENTATO = '[[File:Flag of Canada.png|20px]] $59.99<!--<br>[[File:Flag of United States.png|20px]] $TBA-->';
+check('Hasbro: prezzo USA ancora dentro un commento -> null (non si legge il Canada)',
+  parseListino(HASBRO_USA_COMMENTATO, false) === null);
+
+check('Hasbro: una cella TT non produce dollari', parseListino('1980円', false) === null);
+check('TT: una cella Hasbro non produce yen', parseListino(HASBRO_USA, true) === null);
 
 console.log(falliti === 0 ? '\nTutti i controlli superati.' : `\n${falliti} controlli falliti.`);
 process.exit(falliti === 0 ? 0 : 1);

@@ -1,5 +1,13 @@
 {
   "fetchedAt": "2026-09-15T02:00:18.279Z",
+  "checkedAt": "2026-09-15T09:06:50.314Z",
+  "fx": {
+    "date": "2026-09-14",
+    "rates": {
+      "JPY": 178.52,
+      "USD": 1.1551
+    }
+  },
   "pages": {
     "tt": {
       "revid": 649061,
@@ -13,395 +21,885 @@
   "byCode": {
     "BX-01": {
       "name": "DranSword 3-60F",
-      "date": "2023-06-10"
+      "date": "2023-06-10",
+      "listino": {
+        "amount": 1980,
+        "currency": "JPY"
+      },
+      "listinoEur": 11.09
     },
     "BX-02": {
       "name": "HellsScythe 4-60T",
-      "date": "2023-06-10"
+      "date": "2023-06-10",
+      "listino": {
+        "amount": 1980,
+        "currency": "JPY"
+      },
+      "listinoEur": 11.09
     },
     "BX-03": {
       "name": "WizardArrow 4-80B",
-      "date": "2023-07-15"
+      "date": "2023-07-15",
+      "listino": {
+        "amount": 1980,
+        "currency": "JPY"
+      },
+      "listinoEur": 11.09
     },
     "BX-04": {
       "name": "KnightShield 3-80N",
-      "date": "2023-07-15"
+      "date": "2023-07-15",
+      "listino": {
+        "amount": 1980,
+        "currency": "JPY"
+      },
+      "listinoEur": 11.09
     },
     "BX-05": {
       "name": "WizardArrow 4-80B",
-      "date": "2023-07-15"
+      "date": "2023-07-15",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
     },
     "BX-06": {
       "name": "KnightShield 3-80N",
-      "date": "2023-07-15"
+      "date": "2023-07-15",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
     },
     "BX-07": {
       "name": "Start Dash Set",
-      "date": "2023-07-15"
+      "date": "2023-07-15",
+      "listino": {
+        "amount": 5720,
+        "currency": "JPY"
+      },
+      "listinoEur": 32.04
     },
     "BX-08": {
       "name": "3on3 Deck Set",
-      "date": "2023-07-15"
+      "date": "2023-07-15",
+      "listino": {
+        "amount": 3960,
+        "currency": "JPY"
+      },
+      "listinoEur": 22.18
     },
     "BX-09": {
       "name": "Beybattle Pass",
-      "date": "2023-07-15"
+      "date": "2023-07-15",
+      "listino": {
+        "amount": 3300,
+        "currency": "JPY"
+      },
+      "listinoEur": 18.49
     },
     "BX-10": {
       "name": "Xtreme Stadium",
-      "date": "2023-07-15"
+      "date": "2023-07-15",
+      "listino": {
+        "amount": 2700,
+        "currency": "JPY"
+      },
+      "listinoEur": 15.12
     },
     "BX-11": {
       "name": "Launcher Grip (Beyblade X)",
-      "date": "2023-07-15"
+      "date": "2023-07-15",
+      "listino": {
+        "amount": 700,
+        "currency": "JPY"
+      },
+      "listinoEur": 3.92
     },
     "BX-12": {
       "name": "3on3 Deck Case",
-      "date": "2023-07-15"
+      "date": "2023-07-15",
+      "listino": {
+        "amount": 990,
+        "currency": "JPY"
+      },
+      "listinoEur": 5.55
     },
     "BX-13": {
       "name": "KnightLance 4-80HN",
-      "date": "2023-08-10"
+      "date": "2023-08-10",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
     },
     "BX-14": {
       "name": "Random Booster Vol. 1",
-      "date": "2023-09-09"
+      "date": "2023-09-09",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
     },
     "BX-15": {
       "name": "LeonClaw 5-60P",
-      "date": "2023-10-07"
+      "date": "2023-10-07",
+      "listino": {
+        "amount": 1980,
+        "currency": "JPY"
+      },
+      "listinoEur": 11.09
     },
     "BX-16": {
       "name": "Random Booster ViperTail Select",
-      "date": "2023-10-07"
+      "date": "2023-10-07",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
     },
     "BX-17": {
       "name": "Battle Entry Set",
-      "date": "2023-10-07"
+      "date": "2023-10-07",
+      "listino": {
+        "amount": 6050,
+        "currency": "JPY"
+      },
+      "listinoEur": 33.89
     },
     "BX-18": {
       "name": "String Launcher (Beyblade X)",
-      "date": "2023-10-07"
+      "date": "2023-10-07",
+      "listino": {
+        "amount": 990,
+        "currency": "JPY"
+      },
+      "listinoEur": 5.55
     },
     "BX-19": {
       "name": "RhinoHorn 3-80S",
-      "date": "2023-11-02"
+      "date": "2023-11-02",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
     },
     "BX-20": {
       "name": "DranDagger Deck Set",
-      "date": "2023-11-02"
+      "date": "2023-11-02",
+      "listino": {
+        "amount": 3960,
+        "currency": "JPY"
+      },
+      "listinoEur": 22.18
     },
     "BX-21": {
       "name": "HellsChain Deck Set",
-      "date": "2023-11-02"
+      "date": "2023-11-02",
+      "listino": {
+        "amount": 3960,
+        "currency": "JPY"
+      },
+      "listinoEur": 22.18
     },
     "BX-22": {
       "name": "DranSword 3-60F",
-      "date": "2023-12-02"
+      "date": "2023-12-02",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
     },
     "BX-23": {
       "name": "PhoenixWing 9-60GF",
-      "date": "2023-12-10"
+      "date": "2023-12-10",
+      "listino": {
+        "amount": 2420,
+        "currency": "JPY"
+      },
+      "listinoEur": 13.56
     },
     "BX-24": {
       "name": "Random Booster Vol. 2",
-      "date": "2023-12-27"
+      "date": "2023-12-27",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
     },
     "BX-25": {
       "name": "Gear Case",
-      "date": "2023-12-27"
+      "date": "2023-12-27",
+      "listino": {
+        "amount": 4000,
+        "currency": "JPY"
+      },
+      "listinoEur": 22.41
     },
     "BX-26": {
       "name": "UnicornSting 5-60GP",
-      "date": "2024-01-27"
+      "date": "2024-01-27",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
     },
     "BX-27": {
       "name": "Random Booster SphinxCowl Select",
-      "date": "2024-02-22"
+      "date": "2024-02-22",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
     },
     "BX-28": {
       "name": "String Launcher (Beyblade X)",
-      "date": "2024-03-30"
+      "date": "2024-03-30",
+      "listino": {
+        "amount": 990,
+        "currency": "JPY"
+      },
+      "listinoEur": 5.55
     },
     "BX-29": {
       "name": "Custom Grip (Beyblade X)",
-      "date": "2024-03-30"
+      "date": "2024-03-30",
+      "listino": {
+        "amount": 1100,
+        "currency": "JPY"
+      },
+      "listinoEur": 6.16
     },
     "BX-30": {
       "name": "Custom Grip (Beyblade X)",
-      "date": "2024-03-30"
+      "date": "2024-03-30",
+      "listino": {
+        "amount": 1100,
+        "currency": "JPY"
+      },
+      "listinoEur": 6.16
     },
     "BX-31": {
       "name": "Random Booster Vol. 3",
-      "date": "2024-04-27"
+      "date": "2024-04-27",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
     },
     "BX-32": {
       "name": "Wide Xtreme Stadium",
-      "date": "2024-07-13"
+      "date": "2024-07-13",
+      "listino": {
+        "amount": 4400,
+        "currency": "JPY"
+      },
+      "listinoEur": 24.65
     },
     "BX-33": {
       "name": "WeissTiger 3-60U",
-      "date": "2024-06-15"
+      "date": "2024-06-15",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
     },
     "BX-34": {
       "name": "CobaltDragoon 2-60C",
-      "date": "2024-07-13"
+      "date": "2024-07-13",
+      "listino": {
+        "amount": 2321,
+        "currency": "JPY"
+      },
+      "listinoEur": 13
     },
     "BX-35": {
       "name": "Random Booster Vol. 4",
-      "date": "2024-07-13"
+      "date": "2024-07-13",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
     },
     "BX-36": {
       "name": "Random Booster WhaleWave Select",
-      "date": "2024-09-14"
+      "date": "2024-09-14",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
     },
     "BX-37": {
       "name": "Double Xtreme Stadium Set",
-      "date": "2024-10-12"
+      "date": "2024-10-12",
+      "listino": {
+        "amount": 8200,
+        "currency": "JPY"
+      },
+      "listinoEur": 45.93
     },
     "BX-38": {
       "name": "CrimsonGaruda 4-70TP",
-      "date": "2024-11-02"
+      "date": "2024-11-02",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
     },
     "BX-39": {
       "name": "Random Booster ShelterDrake Select",
-      "date": "2025-02-15"
+      "date": "2025-02-15",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
     },
     "BX-40": {
       "name": "Winder Launcher L",
-      "date": "2025-03-29"
+      "date": "2025-03-29",
+      "listino": {
+        "amount": 880,
+        "currency": "JPY"
+      },
+      "listinoEur": 4.93
     },
     "BX-41": {
       "name": "Rubber Custom Grip",
-      "date": "2025-03-29"
+      "date": "2025-03-29",
+      "listino": {
+        "amount": 1320,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.39
     },
     "BX-42": {
       "name": "Rubber Custom Grip",
-      "date": "2025-03-29"
+      "date": "2025-03-29",
+      "listino": {
+        "amount": 1320,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.39
     },
     "BX-43": {
       "name": "Gear Case",
-      "date": "2025-03-29"
+      "date": "2025-03-29",
+      "listino": {
+        "amount": 4000,
+        "currency": "JPY"
+      },
+      "listinoEur": 22.41
     },
     "BX-44": {
       "name": "TriceraPress M-85BS",
-      "date": "2025-06-28"
+      "date": "2025-06-28",
+      "listino": {
+        "amount": 1500,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.4
     },
     "BX-45": {
       "name": "SamuraiCalibur 6-70M",
-      "date": "2025-08-09"
+      "date": "2025-08-09",
+      "listino": {
+        "amount": 1500,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.4
     },
     "BX-46": {
       "name": "Battle Entry Set Infinity",
-      "date": "2025-10-11"
+      "date": "2025-10-11",
+      "listino": {
+        "amount": 7500,
+        "currency": "JPY"
+      },
+      "listinoEur": 42.01
     },
     "BX-47": {
       "name": "String Launcher L",
-      "date": "2025-10-11"
+      "date": "2025-10-11",
+      "listino": {
+        "amount": 990,
+        "currency": "JPY"
+      },
+      "listinoEur": 5.55
     },
     "BX-48": {
       "name": "Random Booster Vol. 9",
-      "date": "2026-02-14"
+      "date": "2026-02-14",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
     },
     "BX-49": {
       "name": "DranStrike 4-50FF",
-      "date": "2026-05-16"
+      "date": "2026-05-16",
+      "listino": {
+        "amount": 2200,
+        "currency": "JPY"
+      },
+      "listinoEur": 12.32
     },
     "BX-50": {
       "name": "Random Booster Vol. 11",
-      "date": "2026-07-11"
+      "date": "2026-07-11",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
     },
     "BX-51": {
       "name": "String Launcher (Beyblade X)",
-      "date": "2026-06-13"
+      "date": "2026-06-13",
+      "listino": {
+        "amount": 1100,
+        "currency": "JPY"
+      },
+      "listinoEur": 6.16
     },
     "BX-52": {
       "name": "LusterDragoon 6-60LC",
-      "date": "2026-10-10"
+      "date": "2026-10-10",
+      "listino": {
+        "amount": 2300,
+        "currency": "JPY"
+      },
+      "listinoEur": 12.88
     },
     "BX-53": {
       "name": "All In One Set",
-      "date": "2026-10-10"
+      "date": "2026-10-10",
+      "listino": {
+        "amount": 7480,
+        "currency": "JPY"
+      },
+      "listinoEur": 41.9
     },
     "BX-56": {
       "name": "String Launcher L",
-      "date": "2026-10-10"
+      "date": "2026-10-10",
+      "listino": {
+        "amount": 1100,
+        "currency": "JPY"
+      },
+      "listinoEur": 6.16
     },
     "BX-57": {
       "name": "3on3 Deck Case",
-      "date": "2026-08-08"
+      "date": "2026-08-08",
+      "listino": {
+        "amount": 1100,
+        "currency": "JPY"
+      },
+      "listinoEur": 6.16
     },
     "UX-01": {
       "name": "DranBuster 1-60A",
-      "date": "2024-03-30"
+      "date": "2024-03-30",
+      "listino": {
+        "amount": 1980,
+        "currency": "JPY"
+      },
+      "listinoEur": 11.09
     },
     "UX-02": {
       "name": "HellsHammer 3-70H",
-      "date": "2024-03-30"
+      "date": "2024-03-30",
+      "listino": {
+        "amount": 1980,
+        "currency": "JPY"
+      },
+      "listinoEur": 11.09
     },
     "UX-03": {
       "name": "WizardRod 5-70DB",
-      "date": "2024-03-30"
+      "date": "2024-03-30",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
     },
     "UX-04": {
       "name": "Battle Entry Set U",
-      "date": "2024-04-27"
+      "date": "2024-04-27",
+      "listino": {
+        "amount": 6050,
+        "currency": "JPY"
+      },
+      "listinoEur": 33.89
     },
     "UX-05": {
       "name": "Random Booster ShinobiShadow Select",
-      "date": "2024-05-18"
+      "date": "2024-05-18",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
     },
     "UX-06": {
       "name": "LeonCrest 7-60GN",
-      "date": "2024-08-10"
+      "date": "2024-08-10",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
     },
     "UX-07": {
       "name": "PhoenixRudder Deck Set",
-      "date": "2024-08-10"
+      "date": "2024-08-10",
+      "listino": {
+        "amount": 4100,
+        "currency": "JPY"
+      },
+      "listinoEur": 22.97
     },
     "UX-08": {
       "name": "SilverWolf 3-80FB",
-      "date": "2024-10-12"
+      "date": "2024-10-12",
+      "listino": {
+        "amount": 2080,
+        "currency": "JPY"
+      },
+      "listinoEur": 11.65
     },
     "UX-09": {
       "name": "SamuraiSaber 2-70L",
-      "date": "2024-11-02"
+      "date": "2024-11-02",
+      "listino": {
+        "amount": 3300,
+        "currency": "JPY"
+      },
+      "listinoEur": 18.49
     },
     "UX-10": {
       "name": "Customize Set U",
-      "date": "2024-11-02"
+      "date": "2024-11-02",
+      "listino": {
+        "amount": 5700,
+        "currency": "JPY"
+      },
+      "listinoEur": 31.93
     },
     "UX-11": {
       "name": "ImpactDrake 9-60LR",
-      "date": "2024-12-28"
+      "date": "2024-12-28",
+      "listino": {
+        "amount": 2420,
+        "currency": "JPY"
+      },
+      "listinoEur": 13.56
     },
     "UX-12": {
       "name": "Random Booster Vol. 5",
-      "date": "2024-12-28"
+      "date": "2024-12-28",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
     },
     "UX-13": {
       "name": "GolemRock 1-60UN",
-      "date": "2025-01-25"
+      "date": "2025-01-25",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
     },
     "UX-14": {
       "name": "ScorpioSpear 0-70Z",
-      "date": "2025-04-26"
+      "date": "2025-04-26",
+      "listino": {
+        "amount": 2200,
+        "currency": "JPY"
+      },
+      "listinoEur": 12.32
     },
     "UX-15": {
       "name": "SharkScale Deck Set",
-      "date": "2025-08-09"
+      "date": "2025-08-09",
+      "listino": {
+        "amount": 4200,
+        "currency": "JPY"
+      },
+      "listinoEur": 23.53
     },
     "UX-16": {
       "name": "Random Booster ClockMirage Select",
-      "date": "2025-10-11"
+      "date": "2025-10-11",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
     },
     "UX-17": {
       "name": "MeteorDragoon 3-70J",
-      "date": "2025-12-27"
+      "date": "2025-12-27",
+      "listino": {
+        "amount": 2300,
+        "currency": "JPY"
+      },
+      "listinoEur": 12.88
     },
     "UX-18": {
       "name": "Random Booster Vol. 8",
-      "date": "2025-12-27"
+      "date": "2025-12-27",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
     },
     "UX-19": {
       "name": "BulletGriffon H",
-      "date": "2026-04-25"
+      "date": "2026-04-25",
+      "listino": {
+        "amount": 2600,
+        "currency": "JPY"
+      },
+      "listinoEur": 14.56
     },
     "UX-20": {
       "name": "GloryValkyrie LF",
-      "date": "2026-07-11"
+      "date": "2026-07-11",
+      "listino": {
+        "amount": 2700,
+        "currency": "JPY"
+      },
+      "listinoEur": 15.12
     },
     "UX-21": {
       "name": "HellsNether Deck Set",
-      "date": "2026-08-08"
+      "date": "2026-08-08",
+      "listino": {
+        "amount": 4500,
+        "currency": "JPY"
+      },
+      "listinoEur": 25.21
     },
     "CX-01": {
       "name": "DranBrave S6-60V",
-      "date": "2025-03-29"
+      "date": "2025-03-29",
+      "listino": {
+        "amount": 2200,
+        "currency": "JPY"
+      },
+      "listinoEur": 12.32
     },
     "CX-02": {
       "name": "WizardArc R4-55LO",
-      "date": "2025-03-29"
+      "date": "2025-03-29",
+      "listino": {
+        "amount": 2200,
+        "currency": "JPY"
+      },
+      "listinoEur": 12.32
     },
     "CX-03": {
       "name": "PerseusDark B6-80W",
-      "date": "2025-03-29"
+      "date": "2025-03-29",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
     },
     "CX-04": {
       "name": "Battle Entry Set C",
-      "date": "2025-03-29"
+      "date": "2025-03-29",
+      "listino": {
+        "amount": 6501,
+        "currency": "JPY"
+      },
+      "listinoEur": 36.42
     },
     "CX-05": {
       "name": "Random Booster Vol. 6",
-      "date": "2025-04-26"
+      "date": "2025-04-26",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
     },
     "CX-06": {
       "name": "Random Booster FoxBrush Select",
-      "date": "2025-05-17"
+      "date": "2025-05-17",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
     },
     "CX-07": {
       "name": "PegasusBlast ATr",
-      "date": "2025-07-19"
+      "date": "2025-07-19",
+      "listino": {
+        "amount": 2600,
+        "currency": "JPY"
+      },
+      "listinoEur": 14.56
     },
     "CX-08": {
       "name": "Random Booster Vol. 7",
-      "date": "2025-07-19"
+      "date": "2025-07-19",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
     },
     "CX-09": {
       "name": "SolEclipse D5-70TK",
-      "date": "2025-09-27"
+      "date": "2025-09-27",
+      "listino": {
+        "amount": 2500,
+        "currency": "JPY"
+      },
+      "listinoEur": 14
     },
     "CX-10": {
       "name": "WolfHunt F0-60DB",
-      "date": "2025-11-01"
+      "date": "2025-11-01",
+      "listino": {
+        "amount": 1700,
+        "currency": "JPY"
+      },
+      "listinoEur": 9.52
     },
     "CX-11": {
       "name": "EmperorMight Deck Set",
-      "date": "2025-11-01"
+      "date": "2025-11-01",
+      "listino": {
+        "amount": 5000,
+        "currency": "JPY"
+      },
+      "listinoEur": 28.01
     },
     "CX-12": {
       "name": "PhoenixFlare Z9-80WW",
-      "date": "2026-01-24"
+      "date": "2026-01-24",
+      "listino": {
+        "amount": 1700,
+        "currency": "JPY"
+      },
+      "listinoEur": 9.52
     },
     "CX-13": {
       "name": "BahamutBlitz BK1-50I",
-      "date": "2026-03-28"
+      "date": "2026-03-28",
+      "listino": {
+        "amount": 2200,
+        "currency": "JPY"
+      },
+      "listinoEur": 12.32
     },
     "CX-14": {
       "name": "KnightFortress GV8-70UN",
-      "date": "2026-03-28"
+      "date": "2026-03-28",
+      "listino": {
+        "amount": 2200,
+        "currency": "JPY"
+      },
+      "listinoEur": 12.32
     },
     "CX-15": {
       "name": "RagnaRage FE4-55Y",
-      "date": "2026-03-28"
+      "date": "2026-03-28",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
     },
     "CX-16": {
       "name": "Start Dash Set C",
-      "date": "2026-03-28"
+      "date": "2026-03-28",
+      "listino": {
+        "amount": 5650,
+        "currency": "JPY"
+      },
+      "listinoEur": 31.65
     },
     "CX-17": {
       "name": "Random Booster Vol. 10",
-      "date": "2026-04-25"
+      "date": "2026-04-25",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
     },
     "CX-18": {
       "name": "Random Booster BrachioWhip Select",
-      "date": "2026-06-13"
+      "date": "2026-06-13",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
     },
     "CX-19": {
       "name": "Random Booster CrocoTread Select",
-      "date": "2026-09-12"
+      "date": "2026-09-12",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
     },
     "BX-00": {
       "name": "DranSword 3-60F",
-      "date": "2026-08-08"
+      "date": "2026-08-08",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
     },
     "UX-00": {
       "name": "GloryValkyrie LF",
-      "date": "2026-08-28"
+      "date": "2026-08-28",
+      "listino": {
+        "amount": 2800,
+        "currency": "JPY"
+      },
+      "listinoEur": 15.68
     },
     "CX-00": {
       "name": "TigaRage FT3-60T",
-      "date": "2026-09-12"
+      "date": "2026-09-12",
+      "listino": {
+        "amount": 2750,
+        "currency": "JPY"
+      },
+      "listinoEur": 15.4
     }
   },
   "byName": [
@@ -409,829 +907,6932 @@
       "norm": "meteoroiddragoondeluxeleftspinstringlauncherset",
       "name": "Meteoroid Dragoon Deluxe Left-Spin String Launcher Set",
       "date": "2026-07-15",
-      "productCode": "G3491"
+      "productCode": "G3491",
+      "listino": {
+        "amount": 24.99,
+        "currency": "USD"
+      },
+      "listinoEur": 21.63
     },
     {
       "norm": "cobaltdragoondeluxeleftspinstringlauncherset",
       "name": "Cobalt Dragoon Deluxe Left-Spin String Launcher Set",
       "date": "2025-02-01",
-      "productCode": "G1491"
+      "productCode": "G1491",
+      "listino": {
+        "amount": 19.99,
+        "currency": "USD"
+      },
+      "listinoEur": 17.31
     },
     {
       "norm": "obiwankenobiandgeneralgrievousmultipackset",
       "name": "Obi-Wan Kenobi and General Grievous Multipack Set",
       "date": "2025-05-01",
-      "productCode": "G1694"
+      "productCode": "G1694",
+      "listino": {
+        "amount": 24.99,
+        "currency": "USD"
+      },
+      "listinoEur": 21.63
     },
     {
       "norm": "bitecrocdeluxestringlaunchercustomgripset",
       "name": "Bite Croc Deluxe String Launcher & Custom Grip Set",
       "date": "2026-03-01",
-      "productCode": "G3083"
+      "productCode": "G3083",
+      "listino": {
+        "amount": 29.99,
+        "currency": "USD"
+      },
+      "listinoEur": 25.96
     },
     {
       "norm": "spinosaurusandquetzalcoatlusmultipackset",
       "name": "Spinosaurus and Quetzalcoatlus Multipack Set",
       "date": "2025-06-01",
-      "productCode": "G1899"
+      "productCode": "G1899",
+      "listino": {
+        "amount": 24.99,
+        "currency": "USD"
+      },
+      "listinoEur": 21.63
     },
     {
       "norm": "misterfantasticanddoctordoommultipackset",
       "name": "Mister Fantastic and Doctor Doom Multipack Set",
       "date": "2026-09-01",
-      "productCode": "G3063"
+      "productCode": "G3063",
+      "listino": {
+        "amount": 29.99,
+        "currency": "USD"
+      },
+      "listinoEur": 25.96
     },
     {
       "norm": "themandalorianandmoffgideonmultipackset",
       "name": "The Mandalorian and Moff Gideon Multipack Set",
       "date": "2024-08-01",
-      "productCode": "F9589"
+      "productCode": "F9589",
+      "listino": {
+        "amount": 24.99,
+        "currency": "USD"
+      },
+      "listinoEur": 21.63
     },
     {
       "norm": "calibursamuraiandobsidianshelldualpack",
       "name": "Calibur Samurai and Obsidian Shell Dual Pack",
       "date": "2026-01-30",
-      "productCode": "G2754"
+      "productCode": "G2754",
+      "listino": {
+        "amount": 17.99,
+        "currency": "USD"
+      },
+      "listinoEur": 15.57
     },
     {
       "norm": "lukeskywalkeranddarthvadermultipackset",
       "name": "Luke Skywalker and Darth Vader Multipack Set",
       "date": "2024-08-01",
-      "productCode": "G0290"
+      "productCode": "G0290",
+      "listino": {
+        "amount": 24.99,
+        "currency": "USD"
+      },
+      "listinoEur": 21.63
     },
     {
       "norm": "optimusprimalandstarscreammultipackset",
       "name": "Optimus Primal and Starscream Multipack Set",
       "date": "2024-07-13",
-      "productCode": "G0352"
+      "productCode": "G0352",
+      "listino": {
+        "amount": 24.99,
+        "currency": "USD"
+      },
+      "listinoEur": 21.63
     },
     {
       "norm": "milesmoralesandgreengoblinmultipackset",
       "name": "Miles Morales and Green Goblin Multipack Set",
       "date": "2025-09-01",
-      "productCode": "G1691"
+      "productCode": "G1691",
+      "listino": {
+        "amount": 29.99,
+        "currency": "USD"
+      },
+      "listinoEur": 25.96
     },
     {
       "norm": "bracetriceratopsanddaggerdrandualpack",
       "name": "Brace Triceratops and Dagger Dran Dual Pack",
       "date": null,
-      "productCode": "G2763"
+      "productCode": "G2763",
+      "listino": {
+        "amount": 17.99,
+        "currency": "USD"
+      },
+      "listinoEur": 15.57
     },
     {
       "norm": "captainamericaandredhulkmultipackset",
       "name": "Captain America and Red Hulk Multipack Set",
       "date": "2025-08-01",
-      "productCode": "G1690"
+      "productCode": "G1690",
+      "listino": {
+        "amount": 24.99,
+        "currency": "USD"
+      },
+      "listinoEur": 21.63
     },
     {
       "norm": "chewbaccaandstormtroopermultipackset",
       "name": "Chewbacca and Stormtrooper Multipack Set",
       "date": "2025-09-01",
-      "productCode": "G1695"
+      "productCode": "G1695",
+      "listino": {
+        "amount": 29.99,
+        "currency": "USD"
+      },
+      "listinoEur": 25.96
     },
     {
       "norm": "optimusprimeandbumblebeemultipackset",
       "name": "Optimus Prime and Bumblebee Multipack Set",
       "date": null,
-      "productCode": "G3797"
+      "productCode": "G3797",
+      "listino": {
+        "amount": 29.99,
+        "currency": "USD"
+      },
+      "listinoEur": 25.96
     },
     {
       "norm": "chainincendioandarrowwizarddualpack",
       "name": "Chain Incendio and Arrow Wizard Dual Pack",
       "date": "2024-05-16",
-      "productCode": "G0196"
+      "productCode": "G0196",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
     },
     {
       "norm": "circleghostandchainincendiodualpack",
       "name": "Circle Ghost and Chain Incendio Dual Pack",
       "date": "2025-07-01",
-      "productCode": "G1687"
+      "productCode": "G1687",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
     },
     {
       "norm": "optimusprimeandmegatronmultipackset",
       "name": "Optimus Prime and Megatron Multipack Set",
       "date": "2024-07-13",
-      "productCode": "G0353"
+      "productCode": "G0353",
+      "listino": {
+        "amount": 24.99,
+        "currency": "USD"
+      },
+      "listinoEur": 21.63
     },
     {
       "norm": "beattyrannoandknifeshinobidualpack",
       "name": "Beat Tyranno and Knife Shinobi Dual Pack",
       "date": "2024-12-01",
-      "productCode": "G1542"
+      "productCode": "G1542",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
     },
     {
       "norm": "soarphoenixdeluxestringlauncherset",
       "name": "Soar Phoenix Deluxe String Launcher Set",
       "date": "2024-05-16",
-      "productCode": "F9324"
+      "productCode": "F9324",
+      "listino": {
+        "amount": 19.99,
+        "currency": "USD"
+      },
+      "listinoEur": 17.31
     },
     {
       "norm": "bumblebeeandshockwavemultipackset",
       "name": "Bumblebee and Shockwave Multipack Set",
       "date": "2025-09-01",
-      "productCode": "G1692"
+      "productCode": "G1692",
+      "listino": {
+        "amount": 29.99,
+        "currency": "USD"
+      },
+      "listinoEur": 25.96
     },
     {
       "norm": "knifeshinobiandkeelsharkdualpack",
       "name": "Knife Shinobi and Keel Shark Dual Pack",
       "date": "2024-05-16",
-      "productCode": "G0190"
+      "productCode": "G0190",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
     },
     {
       "norm": "circleghostandhackvikingdualpack",
       "name": "Circle Ghost and Hack Viking Dual Pack",
       "date": "2026-01-30",
-      "productCode": "G2755"
+      "productCode": "G2755",
+      "listino": {
+        "amount": 17.99,
+        "currency": "USD"
+      },
+      "listinoEur": 15.57
     },
     {
       "norm": "spearscorpioandtailviperdualpack",
       "name": "Spear Scorpio and Tail Viper Dual Pack",
       "date": null,
-      "productCode": "G2758"
+      "productCode": "G2758",
+      "listino": {
+        "amount": 17.99,
+        "currency": "USD"
+      },
+      "listinoEur": 15.57
     },
     {
       "norm": "bitecrocandstingunicorndualpack",
       "name": "Bite Croc and Sting Unicorn Dual Pack",
       "date": "2024-08-01",
-      "productCode": "G0199"
+      "productCode": "G0199",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
     },
     {
       "norm": "coilorochiandpearltigerdualpack",
       "name": "Coil Orochi and Pearl Tiger Dual Pack",
       "date": null,
-      "productCode": "G2762"
+      "productCode": "G2762",
+      "listino": {
+        "amount": 17.99,
+        "currency": "USD"
+      },
+      "listinoEur": 15.57
     },
     {
       "norm": "groguandsnowtroopermultipackset",
       "name": "Grogu and Snowtrooper Multipack Set",
       "date": "2026-04-01",
-      "productCode": "G3061"
+      "productCode": "G3061",
+      "listino": {
+        "amount": 29.99,
+        "currency": "USD"
+      },
+      "listinoEur": 25.96
     },
     {
       "norm": "doublextrememotorizedbeystadium",
       "name": "Double Xtreme Motorized Beystadium",
       "date": "2025-10-01",
-      "productCode": "G1864"
+      "productCode": "G1864",
+      "listino": {
+        "amount": 89.99,
+        "currency": "USD"
+      },
+      "listinoEur": 77.91
     },
     {
       "norm": "galewyvernandtailviperdualpack",
       "name": "Gale Wyvern and Tail Viper Dual Pack",
       "date": "2024-08-01",
-      "productCode": "G0282"
+      "productCode": "G0282",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
     },
     {
       "norm": "galewyvernandsworddrandualpack",
       "name": "Gale Wyvern and Sword Dran Dual Pack",
       "date": "2024-12-01",
-      "productCode": "G1543"
+      "productCode": "G1543",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
     },
     {
       "norm": "cowlsphinxandcrestleondualpack",
       "name": "Cowl Sphinx and Crest Leon Dual Pack",
       "date": "2025-06-01",
-      "productCode": "G1685"
+      "productCode": "G1685",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
     },
     {
       "norm": "pearltigerandgillsharkdualpack",
       "name": "Pearl Tiger and Gill Shark Dual Pack",
       "date": "2025-06-01",
-      "productCode": "G1686"
+      "productCode": "G1686",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
     },
     {
       "norm": "tacklegoatandsworddrandualpack",
       "name": "Tackle Goat and Sword Dran Dual Pack",
       "date": "2025-07-01",
-      "productCode": "G1688"
+      "productCode": "G1688",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
     },
     {
       "norm": "tailviperandsworddrandualpack",
       "name": "Tail Viper and Sword Dran Dual Pack",
       "date": "2024-05-16",
-      "productCode": "G0197"
+      "productCode": "G0197",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
     },
     {
       "norm": "yellkongandhelmknightdualpack",
       "name": "Yell Kong and Helm Knight Dual Pack",
       "date": "2024-08-01",
-      "productCode": "G0198"
+      "productCode": "G0198",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
     },
     {
       "norm": "clampcrabandcrestleondualpack",
       "name": "Clamp Crab and Crest Leon Dual Pack",
       "date": null,
-      "productCode": "G2759"
+      "productCode": "G2759",
+      "listino": {
+        "amount": 17.99,
+        "currency": "USD"
+      },
+      "listinoEur": 15.57
     },
     {
       "norm": "spidermanandvenommultipackset",
       "name": "Spider-Man and Venom Multipack Set",
       "date": "2024-07-01",
-      "productCode": "G0288"
+      "productCode": "G0288",
+      "listino": {
+        "amount": 24.99,
+        "currency": "USD"
+      },
+      "listinoEur": 21.63
     },
     {
       "norm": "trexandmosasaurusmultipackset",
       "name": "T. Rex and Mosasaurus Multipack Set",
       "date": "2025-06-01",
-      "productCode": "G1898"
+      "productCode": "G1898",
+      "listino": {
+        "amount": 24.99,
+        "currency": "USD"
+      },
+      "listinoEur": 21.63
     },
     {
       "norm": "ironmanandthanosmultipackset",
       "name": "Iron Man and Thanos Multipack Set",
       "date": "2024-07-01",
-      "productCode": "G0287"
+      "productCode": "G0287",
+      "listino": {
+        "amount": 24.99,
+        "currency": "USD"
+      },
+      "listinoEur": 21.63
     },
     {
       "norm": "spidermanandhulkmultipackset",
       "name": "Spider-Man and Hulk Multipack Set",
       "date": null,
-      "productCode": "G3064"
+      "productCode": "G3064",
+      "listino": {
+        "amount": 29.99,
+        "currency": "USD"
+      },
+      "listinoEur": 25.96
     },
     {
       "norm": "beyblade25thanniversaryset",
       "name": "Beyblade 25th Anniversary Set",
       "date": "2025-07-24",
-      "productCode": "G1844"
+      "productCode": "G1844",
+      "listino": {
+        "amount": 79.99,
+        "currency": "USD"
+      },
+      "listinoEur": 69.25
     },
     {
       "norm": "deluxestringlauncher2pack",
       "name": "Deluxe String Launcher 2-Pack",
       "date": "2026-08-01",
-      "productCode": "G2951"
+      "productCode": "G2951",
+      "listino": null,
+      "listinoEur": null
     },
     {
       "norm": "victorygriplauncherset",
       "name": "Victory Grip Launcher Set",
       "date": "2025-07-01",
-      "productCode": "G1862"
+      "productCode": "G1862",
+      "listino": {
+        "amount": 24.99,
+        "currency": "USD"
+      },
+      "listinoEur": 21.63
     },
     {
       "norm": "suppresssuperion070lp",
       "name": "Suppress Superion 0-70LP",
       "date": null,
-      "productCode": "G2745"
+      "productCode": "G2745",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
     },
     {
       "norm": "ridgetriceratops980gn",
       "name": "Ridge Triceratops 9-80GN",
       "date": "2026-01-30",
-      "productCode": "G3392"
+      "productCode": "G3392",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
     },
     {
       "norm": "infinityrailbattleset",
       "name": "Infinity Rail Battle Set",
       "date": null,
-      "productCode": "G3745"
+      "productCode": "G3745",
+      "listino": {
+        "amount": 54.99,
+        "currency": "USD"
+      },
+      "listinoEur": 47.61
     },
     {
       "norm": "hurricaneenlilis755t",
       "name": "Hurricane Enlil IS 7-55T",
       "date": "2026-07-15",
-      "productCode": "G2750"
+      "productCode": "G2750",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
     },
     {
       "norm": "clashcarrybeystadium",
       "name": "Clash & Carry Beystadium",
       "date": "2025-01-20",
-      "productCode": "G0841"
+      "productCode": "G0841",
+      "listino": {
+        "amount": 29.99,
+        "currency": "USD"
+      },
+      "listinoEur": 25.96
     },
     {
       "norm": "sneakattackbattleset",
       "name": "Sneak Attack Battle Set",
       "date": "2026-07-15",
-      "productCode": "G1940"
+      "productCode": "G1940",
+      "listino": {
+        "amount": 54.99,
+        "currency": "USD"
+      },
+      "listinoEur": 47.61
     },
     {
       "norm": "reaperincendiot470k",
       "name": "Reaper Incendio T 4-70K",
       "date": "2025-06-01",
-      "productCode": "G1678"
+      "productCode": "G1678",
+      "listino": {
+        "amount": 12.99,
+        "currency": "USD"
+      },
+      "listinoEur": 11.25
     },
     {
       "norm": "flamecerberusw580wb",
       "name": "Flame Cerberus W 5-80WB",
       "date": "2026-01-30",
-      "productCode": "G2747"
+      "productCode": "G2747",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
     },
     {
       "norm": "deltaunicornpo360gu",
       "name": "Delta Unicorn PO 3-60GU",
       "date": null,
-      "productCode": "G2752"
+      "productCode": "G2752",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
     },
     {
       "norm": "xtremeexpansionpack",
       "name": "X-treme Expansion Pack",
       "date": "2026-01-01",
-      "productCode": "G3195"
+      "productCode": "G3195",
+      "listino": {
+        "amount": 29.99,
+        "currency": "USD"
+      },
+      "listinoEur": 25.96
     },
     {
       "norm": "dropattackbattleset",
       "name": "Drop Attack Battle Set",
       "date": "2025-05-01",
-      "productCode": "G0842"
+      "productCode": "G0842",
+      "listino": {
+        "amount": 49.99,
+        "currency": "USD"
+      },
+      "listinoEur": 43.28
     },
     {
       "norm": "scytheincendio460t",
       "name": "Scythe Incendio 4-60T",
       "date": "2024-05-16",
-      "productCode": "F9583"
+      "productCode": "F9583",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
     },
     {
       "norm": "shadowshinobi180mn",
       "name": "Shadow Shinobi 1-80MN",
       "date": "2025-03-07",
-      "productCode": "G1539"
+      "productCode": "G1539",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
     },
     {
       "norm": "scarletgaruda470tp",
       "name": "Scarlet Garuda 4-70TP",
       "date": "2025-06-01",
-      "productCode": "G1673"
+      "productCode": "G1673",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
     },
     {
       "norm": "hammerincendio370h",
       "name": "Hammer Incendio 3-70H",
       "date": "2025-03-07",
-      "productCode": "G1752"
+      "productCode": "G1752",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
     },
     {
       "norm": "rudderphoenix470lf",
       "name": "Rudder Phoenix 4-70LF",
       "date": "2026-01-30",
-      "productCode": "G2739"
+      "productCode": "G2739",
+      "listino": {
+        "amount": 12.99,
+        "currency": "USD"
+      },
+      "listinoEur": 11.25
     },
     {
       "norm": "featherphoenix260n",
       "name": "Feather Phoenix 2-60N",
       "date": "2026-01-30",
-      "productCode": "G2740"
+      "productCode": "G2740",
+      "listino": {
+        "amount": 12.99,
+        "currency": "USD"
+      },
+      "listinoEur": 11.25
     },
     {
       "norm": "wrigglekrakens385o",
       "name": "Wriggle Kraken S 3-85O",
       "date": "2025-08-01",
-      "productCode": "G1683"
+      "productCode": "G1683",
+      "listino": {
+        "amount": 12.99,
+        "currency": "USD"
+      },
+      "listinoEur": 11.25
     },
     {
       "norm": "armorknightgv870un",
       "name": "Armor Knight GV 8-70UN",
       "date": "2026-05-01",
-      "productCode": "G4563"
+      "productCode": "G4563",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
     },
     {
       "norm": "whipbrachioow570nr",
       "name": "Whip Brachio OW 5-70Nr",
       "date": null,
-      "productCode": "G4566"
+      "productCode": "G4566",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
     },
     {
       "norm": "blitzbahamutbk150i",
       "name": "Blitz Bahamut BK 1-50I",
       "date": "2026-05-01",
-      "productCode": "G4572"
+      "productCode": "G4572",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
     },
     {
       "norm": "scytheincendio380b",
       "name": "Scythe Incendio 3-80B",
       "date": "2024-07-01",
-      "productCode": "G0285"
+      "productCode": "G0285",
+      "listino": {
+        "amount": 7.99,
+        "currency": "USD"
+      },
+      "listinoEur": 6.92
     },
     {
       "norm": "xtremebattlerspack",
       "name": "X-treme Battlers Pack",
       "date": "2026-03-01",
-      "productCode": "G3028"
+      "productCode": "G3028",
+      "listino": null,
+      "listinoEur": null
     },
     {
       "norm": "clipriplauncherset",
       "name": "Clip & Rip Launcher Set",
       "date": "2026-07-15",
-      "productCode": "G2350"
+      "productCode": "G2350",
+      "listino": {
+        "amount": 29.99,
+        "currency": "USD"
+      },
+      "listinoEur": 25.96
     },
     {
       "norm": "sterlingwolf380fb",
       "name": "Sterling Wolf 3-80FB",
       "date": "2025-06-01",
-      "productCode": "G1674"
+      "productCode": "G1674",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
     },
     {
       "norm": "shelterdrake780gp",
       "name": "Shelter Drake 7-80GP",
       "date": "2025-08-01",
-      "productCode": "G1675"
+      "productCode": "G1675",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
     },
     {
       "norm": "shatterhorus965gb",
       "name": "Shatter Horus 9-65GB",
       "date": "2026-07-15",
-      "productCode": "G4567"
+      "productCode": "G4567",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
     },
     {
       "norm": "glarecyclops755fb",
       "name": "Glare Cyclops 7-55FB",
       "date": null,
-      "productCode": "G4569"
+      "productCode": "G4569",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
     },
     {
       "norm": "stingunicorn560gp",
       "name": "Sting Unicorn 5-60GP",
       "date": "2024-07-01",
-      "productCode": "G0283"
+      "productCode": "G0283",
+      "listino": {
+        "amount": 7.99,
+        "currency": "USD"
+      },
+      "listinoEur": 6.92
     },
     {
       "norm": "obsidianshell460d",
       "name": "Obsidian Shell 4-60D",
       "date": "2025-03-07",
-      "productCode": "G1533"
+      "productCode": "G1533",
+      "listino": {
+        "amount": 7.99,
+        "currency": "USD"
+      },
+      "listinoEur": 6.92
     },
     {
       "norm": "yggdrasilteampack",
       "name": "Yggdrasil Team Pack",
       "date": "2026-01-01",
-      "productCode": "G3393"
+      "productCode": "G3393",
+      "listino": {
+        "amount": 29.99,
+        "currency": "USD"
+      },
+      "listinoEur": 25.96
     },
     {
       "norm": "dranzerspiral380t",
       "name": "Dranzer Spiral 3-80T",
       "date": "2024-05-30",
-      "productCode": "F9584"
+      "productCode": "F9584",
+      "listino": {
+        "amount": 12.99,
+        "currency": "USD"
+      },
+      "listinoEur": 11.25
     },
     {
       "norm": "dranzerspiral380t",
       "name": "Dranzer Spiral 3-80T",
       "date": "2024-06-10",
-      "productCode": "F9585"
+      "productCode": "F9585",
+      "listino": null,
+      "listinoEur": null
     },
     {
       "norm": "dranzerspiral380t",
       "name": "Dranzer Spiral 3-80T",
       "date": "2025-05-01",
-      "productCode": "G1842"
+      "productCode": "G1842",
+      "listino": {
+        "amount": 12.99,
+        "currency": "USD"
+      },
+      "listinoEur": 11.25
     },
     {
       "norm": "dracielshield760d",
       "name": "Draciel Shield 7-60D",
       "date": "2026-01-01",
-      "productCode": "G2218"
+      "productCode": "G2218",
+      "listino": {
+        "amount": 12.99,
+        "currency": "USD"
+      },
+      "listinoEur": 11.25
     },
     {
       "norm": "lanceknight480hn",
       "name": "Lance Knight 4-80HN",
       "date": "2024-07-01",
-      "productCode": "G0184"
+      "productCode": "G0184",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
     },
     {
       "norm": "couragedrans660v",
       "name": "Courage Dran S 6-60V",
       "date": "2025-06-01",
-      "productCode": "G1677"
+      "productCode": "G1677",
+      "listino": {
+        "amount": 12.99,
+        "currency": "USD"
+      },
+      "listinoEur": 11.25
     },
     {
       "norm": "darkperseusb680w",
       "name": "Dark Perseus B 6-80W",
       "date": "2025-06-01",
-      "productCode": "G1680"
+      "productCode": "G1680",
+      "listino": {
+        "amount": 12.99,
+        "currency": "USD"
+      },
+      "listinoEur": 11.25
     },
     {
       "norm": "antlerstagb260hn",
       "name": "Antler Stag B 2-60HN",
       "date": "2025-08-01",
-      "productCode": "G1684"
+      "productCode": "G1684",
+      "listino": {
+        "amount": 12.99,
+        "currency": "USD"
+      },
+      "listinoEur": 11.25
     },
     {
       "norm": "reaperrhinoc455d",
       "name": "Reaper Rhino C 4-55D",
       "date": "2026-01-30",
-      "productCode": "G2746"
+      "productCode": "G2746",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
     },
     {
       "norm": "treadcroctq550gn",
       "name": "Tread Croc TQ 5-50GN",
       "date": null,
-      "productCode": "G4565"
+      "productCode": "G4565",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
     },
     {
       "norm": "gloryvalkerionlf",
       "name": "Glory Valkerion LF",
       "date": "2026-07-15",
-      "productCode": "G4568"
+      "productCode": "G4568",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
     },
     {
       "norm": "steelsamurai480t",
       "name": "Steel Samurai 4-80T",
       "date": "2024-05-16",
-      "productCode": "G0188"
+      "productCode": "G0188",
+      "listino": {
+        "amount": 7.99,
+        "currency": "USD"
+      },
+      "listinoEur": 6.92
     },
     {
       "norm": "roartyranno960gf",
       "name": "Roar Tyranno 9-60GF",
       "date": "2024-07-01",
-      "productCode": "G0284"
+      "productCode": "G0284",
+      "listino": {
+        "amount": 7.99,
+        "currency": "USD"
+      },
+      "listinoEur": 6.92
     },
     {
       "norm": "arrowwizard480gb",
       "name": "Arrow Wizard 4-80GB",
       "date": "2024-12-01",
-      "productCode": "G1531"
+      "productCode": "G1531",
+      "listino": {
+        "amount": 7.99,
+        "currency": "USD"
+      },
+      "listinoEur": 6.92
     },
     {
       "norm": "lanceknight360lf",
       "name": "Lance Knight 3-60LF",
       "date": "2025-08-01",
-      "productCode": "G1671"
+      "productCode": "G1671",
+      "listino": {
+        "amount": 7.99,
+        "currency": "USD"
+      },
+      "listinoEur": 6.92
     },
     {
       "norm": "shelterdrake570o",
       "name": "Shelter Drake 5-70O",
       "date": "2026-01-30",
-      "productCode": "G2732"
+      "productCode": "G2732",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
     },
     {
       "norm": "arrowwizard480b",
       "name": "Arrow Wizard 4-80B",
       "date": "2024-05-16",
-      "productCode": "F9582"
+      "productCode": "F9582",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
     },
     {
       "norm": "wandwizard570db",
       "name": "Wand Wizard 5-70DB",
       "date": "2024-12-01",
-      "productCode": "G1537"
+      "productCode": "G1537",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
     },
     {
       "norm": "busterdran570db",
       "name": "Buster Dran 5-70DB",
       "date": "2025-03-07",
-      "productCode": "G1751"
+      "productCode": "G1751",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
     },
     {
       "norm": "stunmedusa960gb",
       "name": "Stun Medusa 9-60GB",
       "date": "2026-01-30",
-      "productCode": "G2738"
+      "productCode": "G2738",
+      "listino": {
+        "amount": 12.99,
+        "currency": "USD"
+      },
+      "listinoEur": 11.25
     },
     {
       "norm": "arcwizardr455lo",
       "name": "Arc Wizard R 4-55LO",
       "date": "2025-06-01",
-      "productCode": "G1679"
+      "productCode": "G1679",
+      "listino": {
+        "amount": 12.99,
+        "currency": "USD"
+      },
+      "listinoEur": 11.25
     },
     {
       "norm": "forthornetr760t",
       "name": "Fort Hornet R 7-60T",
       "date": "2025-08-01",
-      "productCode": "G1682"
+      "productCode": "G1682",
+      "listino": {
+        "amount": 12.99,
+        "currency": "USD"
+      },
+      "listinoEur": 11.25
     },
     {
       "norm": "strikedran450ff",
       "name": "Strike Dran 4-50FF",
       "date": "2026-07-15",
-      "productCode": "G2742"
+      "productCode": "G2742",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
     },
     {
       "norm": "rageragnafe455y",
       "name": "Rage Ragna FE 4-55Y",
       "date": "2026-07-15",
-      "productCode": "G4562"
+      "productCode": "G4562",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
     },
     {
       "norm": "netherincendioz",
       "name": "Nether Incendio Z",
       "date": null,
-      "productCode": "G4564"
+      "productCode": "G4564",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
     },
     {
       "norm": "ringaether080ds",
       "name": "Ring Aether 0-80DS",
       "date": "2026-05-01",
-      "productCode": "G4571"
+      "productCode": "G4571",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
     },
     {
       "norm": "cowlsphinx980gn",
       "name": "Cowl Sphinx 9-80GN",
       "date": "2024-12-01",
-      "productCode": "G1530"
+      "productCode": "G1530",
+      "listino": {
+        "amount": 7.99,
+        "currency": "USD"
+      },
+      "listinoEur": 6.92
     },
     {
       "norm": "arrowwizard480o",
       "name": "Arrow Wizard 4-80O",
       "date": "2025-08-01",
-      "productCode": "G1755"
+      "productCode": "G1755",
+      "listino": {
+        "amount": 7.99,
+        "currency": "USD"
+      },
+      "listinoEur": 6.92
     },
     {
       "norm": "soarphoenix580h",
       "name": "Soar Phoenix 5-80H",
       "date": "2025-03-07",
-      "productCode": "G1756"
+      "productCode": "G1756",
+      "listino": {
+        "amount": 7.99,
+        "currency": "USD"
+      },
+      "listinoEur": 6.92
     },
     {
       "norm": "scaleshark450uf",
       "name": "Scale Shark 4-50UF",
       "date": "2026-01-30",
-      "productCode": "G2731"
+      "productCode": "G2731",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
     },
     {
       "norm": "cobaltdrake460f",
       "name": "Cobalt Drake 4-60F",
       "date": null,
-      "productCode": "G2736"
+      "productCode": "G2736",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
     },
     {
       "norm": "mirageclock965b",
       "name": "Mirage Clock 9-65B",
       "date": null,
-      "productCode": "G2737"
+      "productCode": "G2737",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
     },
     {
       "norm": "busterdran570db",
       "name": "Buster Dran 5-70DB",
       "date": "2026-04-01",
-      "productCode": "G3611"
+      "productCode": "G3611",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
     },
     {
       "norm": "rivalrumblepack",
       "name": "Rival Rumble Pack",
       "date": "2026-08-01",
-      "productCode": "G3084"
+      "productCode": "G3084",
+      "listino": null,
+      "listinoEur": null
     },
     {
       "norm": "drigerslash480p",
       "name": "Driger Slash 4-80P",
       "date": "2025-05-01",
-      "productCode": "G1843"
+      "productCode": "G1843",
+      "listino": {
+        "amount": 12.99,
+        "currency": "USD"
+      },
+      "listinoEur": 11.25
     },
     {
       "norm": "xtremebattleset",
       "name": "Xtreme Battle Set",
       "date": "2024-05-16",
-      "productCode": "F9588"
+      "productCode": "F9588",
+      "listino": {
+        "amount": 49.99,
+        "currency": "USD"
+      },
+      "listinoEur": 43.28
     },
     {
       "norm": "helmknight380n",
       "name": "Helm Knight 3-80N",
       "date": "2024-05-16",
-      "productCode": "F9581"
+      "productCode": "F9581",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
     },
     {
       "norm": "busterdran160a",
       "name": "Buster Dran 1-60A",
       "date": "2024-12-01",
-      "productCode": "G1536"
+      "productCode": "G1536",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
     },
     {
       "norm": "wandwizard160r",
       "name": "Wand Wizard 1-60R",
       "date": "2025-03-07",
-      "productCode": "G1538"
+      "productCode": "G1538",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
     },
     {
       "norm": "rockgolem160un",
       "name": "Rock Golem 1-60UN",
       "date": "2025-08-01",
-      "productCode": "G1676"
+      "productCode": "G1676",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
     },
     {
       "norm": "brushfoxj970gr",
       "name": "Brush Fox J 9-70GR",
       "date": "2025-08-01",
-      "productCode": "G1681"
+      "productCode": "G1681",
+      "listino": {
+        "amount": 12.99,
+        "currency": "USD"
+      },
+      "listinoEur": 11.25
     },
     {
       "norm": "rocketgriffonh",
       "name": "Rocket Griffon H",
       "date": "2026-07-15",
-      "productCode": "G4561"
+      "productCode": "G4561",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
     },
     {
       "norm": "keelshark360lf",
       "name": "Keel Shark 3-60LF",
       "date": "2024-05-16",
-      "productCode": "G0194"
+      "productCode": "G0194",
+      "listino": {
+        "amount": 7.99,
+        "currency": "USD"
+      },
+      "listinoEur": 6.92
     },
     {
       "norm": "talonptera380b",
       "name": "Talon Ptera 3-80B",
       "date": "2024-05-16",
-      "productCode": "G0195"
+      "productCode": "G0195",
+      "listino": {
+        "amount": 7.99,
+        "currency": "USD"
+      },
+      "listinoEur": 6.92
     },
     {
       "norm": "savagebear360s",
       "name": "Savage Bear 3-60S",
       "date": "2024-07-01",
-      "productCode": "G0286"
+      "productCode": "G0286",
+      "listino": {
+        "amount": 7.99,
+        "currency": "USD"
+      },
+      "listinoEur": 6.92
     },
     {
       "norm": "daggerdran470q",
       "name": "Dagger Dran 4-70Q",
       "date": "2025-05-01",
-      "productCode": "G1670"
+      "productCode": "G1670",
+      "listino": {
+        "amount": 7.99,
+        "currency": "USD"
+      },
+      "listinoEur": 6.92
     },
     {
       "norm": "cursemummy755w",
       "name": "Curse Mummy 7-55W",
       "date": "2026-04-01",
-      "productCode": "G2734"
+      "productCode": "G2734",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
     },
     {
       "norm": "savagebear560f",
       "name": "Savage Bear 5-60F",
       "date": "2026-04-01",
-      "productCode": "G2735"
+      "productCode": "G2735",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
     },
     {
       "norm": "beystadium2024",
       "name": "Beystadium (2024)",
       "date": "2024-05-30",
-      "productCode": "F9578"
+      "productCode": "F9578",
+      "listino": {
+        "amount": 12.99,
+        "currency": "USD"
+      },
+      "listinoEur": 11.25
     },
     {
       "norm": "beystadium2026",
       "name": "Beystadium (2026)",
       "date": "2026-01-01",
-      "productCode": "G1546"
+      "productCode": "G1546",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
     },
     {
       "norm": "widebeystadium",
       "name": "Wide Beystadium",
       "date": "2025-10-01",
-      "productCode": "G1863"
+      "productCode": "G1863",
+      "listino": {
+        "amount": 59.99,
+        "currency": "USD"
+      },
+      "listinoEur": 51.93
     },
     {
       "norm": "winderlauncher",
       "name": "Winder Launcher",
       "date": "2024-05-16",
-      "productCode": "G0440"
+      "productCode": "G0440",
+      "listino": {
+        "amount": 7.99,
+        "currency": "USD"
+      },
+      "listinoEur": 6.92
     },
     {
       "norm": "sworddran360f",
       "name": "Sword Dran 3-60F",
       "date": "2024-05-16",
-      "productCode": "F9580"
+      "productCode": "F9580",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
     },
     {
       "norm": "fangleont460u",
       "name": "Fang Leon T 4-60U",
       "date": "2026-01-30",
-      "productCode": "G2748"
+      "productCode": "G2748",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
     },
     {
       "norm": "seizejaguarhn",
       "name": "Seize Jaguar HN",
       "date": null,
-      "productCode": "G4570"
+      "productCode": "G4570",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
     },
     {
       "norm": "hornrhino380s",
       "name": "Horn Rhino 3-80S",
       "date": "2024-05-16",
-      "productCode": "G0192"
+      "productCode": "G0192",
+      "listino": {
+        "amount": 7.99,
+        "currency": "USD"
+      },
+      "listinoEur": 6.92
     },
     {
       "norm": "keelshark160q",
       "name": "Keel Shark 1-60Q",
       "date": "2025-02-01",
-      "productCode": "G1534"
+      "productCode": "G1534",
+      "listino": {
+        "amount": 7.99,
+        "currency": "USD"
+      },
+      "listinoEur": 6.92
     },
     {
       "norm": "tidewhale580e",
       "name": "Tide Whale 5-80E",
       "date": "2025-05-01",
-      "productCode": "G1669"
+      "productCode": "G1669",
+      "listino": {
+        "amount": 7.99,
+        "currency": "USD"
+      },
+      "listinoEur": 6.92
     },
     {
       "norm": "yellkong360gb",
       "name": "Yell Kong 3-60GB",
       "date": "2024-08-01",
-      "productCode": "G1754"
+      "productCode": "G1754",
+      "listino": {
+        "amount": 7.99,
+        "currency": "USD"
+      },
+      "listinoEur": 6.92
     },
     {
       "norm": "xtremestadium",
       "name": "Xtreme Stadium",
       "date": "2025-09-01",
-      "productCode": "G0318"
+      "productCode": "G0318",
+      "listino": {
+        "amount": 49.99,
+        "currency": "USD"
+      },
+      "listinoEur": 43.28
     },
     {
       "norm": "clawleon560p",
       "name": "Claw Leon 5-60P",
       "date": "2024-07-01",
-      "productCode": "G0193"
+      "productCode": "G0193",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
     },
     {
       "norm": "valorbisonfb",
       "name": "Valor Bison FB",
       "date": null,
-      "productCode": "G3497"
+      "productCode": "G3497",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
     },
     {
       "norm": "gustbat385gp",
       "name": "Gust Bat 3-85GP",
       "date": "2026-04-01",
-      "productCode": "G2733"
+      "productCode": "G2733",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
     },
     {
       "norm": "nflcxtoppack",
       "name": "NFL CX Top Pack",
       "date": "2026-09-09",
-      "productCode": "G3607"
+      "productCode": "G3607",
+      "listino": {
+        "amount": 34.99,
+        "currency": "USD"
+      },
+      "listinoEur": 30.29
+    }
+  ],
+  "products": [
+    {
+      "code": "BX-00",
+      "manufacturer": "tt",
+      "name": "DranzerSpiral 3-80T",
+      "type": "Booster",
+      "bladeNames": [
+        "Dranzer Spiral"
+      ],
+      "ratchet": "3-80",
+      "bitShort": "T",
+      "date": "2026-08-08",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "BX-00",
+      "manufacturer": "tt",
+      "name": "CobaltDrake 4-60F",
+      "type": "Booster",
+      "bladeNames": [
+        "Cobalt Drake"
+      ],
+      "ratchet": "4-60",
+      "bitShort": "F",
+      "date": "2026-08-08",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "BX-00",
+      "manufacturer": "tt",
+      "name": "HellsScythe 4-60T",
+      "type": "Booster",
+      "bladeNames": [
+        "Hells Scythe",
+        "Scythe Incendio"
+      ],
+      "ratchet": "4-60",
+      "bitShort": "T",
+      "date": "2026-08-08",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "BX-00",
+      "manufacturer": "tt",
+      "name": "DranSword 3-60F",
+      "type": "Booster",
+      "bladeNames": [
+        "Dran Sword",
+        "Sword Dran"
+      ],
+      "ratchet": "3-60",
+      "bitShort": "F",
+      "date": "2026-08-08",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "BX-00",
+      "manufacturer": "tt",
+      "name": "HellsScythe 3-80F",
+      "type": "Booster",
+      "bladeNames": [
+        "Hells Scythe",
+        "Scythe Incendio"
+      ],
+      "ratchet": "3-80",
+      "bitShort": "F",
+      "date": "2026-08-08",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "BX-00",
+      "manufacturer": "tt",
+      "name": "DranSword 3-60F",
+      "type": "Booster",
+      "bladeNames": [
+        "Dran Sword",
+        "Sword Dran"
+      ],
+      "ratchet": "3-60",
+      "bitShort": "F",
+      "date": "2026-08-08",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "BX-00",
+      "manufacturer": "tt",
+      "name": "LeonClaw 5-60P",
+      "type": "Booster",
+      "bladeNames": [
+        "Leon Claw",
+        "Claw Leon"
+      ],
+      "ratchet": "5-60",
+      "bitShort": "P",
+      "date": "2026-08-08",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "BX-00",
+      "manufacturer": "tt",
+      "name": "SharkEdge 5-60GF",
+      "type": "Booster",
+      "bladeNames": [
+        "Shark Edge",
+        "Keel Shark"
+      ],
+      "ratchet": "5-60",
+      "bitShort": "GF",
+      "date": "2026-08-08",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "BX-00",
+      "manufacturer": "tt",
+      "name": "DrigerSlash 4-80P",
+      "type": "Booster",
+      "bladeNames": [
+        "Driger Slash"
+      ],
+      "ratchet": "4-80",
+      "bitShort": "P",
+      "date": "2026-08-08",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "BX-00",
+      "manufacturer": "tt",
+      "name": "HellsChain 5-60HT",
+      "type": "Booster",
+      "bladeNames": [
+        "Hells Chain",
+        "Chain Incendio"
+      ],
+      "ratchet": "5-60",
+      "bitShort": "HT",
+      "date": "2026-08-08",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "BX-00",
+      "manufacturer": "tt",
+      "name": "DranDagger 2-80GP",
+      "type": "Starter",
+      "bladeNames": [
+        "Dran Dagger",
+        "Dagger Dran"
+      ],
+      "ratchet": "2-80",
+      "bitShort": "GP",
+      "date": "2026-08-08",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "BX-00",
+      "manufacturer": "tt",
+      "name": "CobaltDragoon 2-60C",
+      "type": "Starter",
+      "bladeNames": [
+        "Cobalt Dragoon"
+      ],
+      "ratchet": "2-60",
+      "bitShort": "C",
+      "date": "2026-08-08",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "BX-00",
+      "manufacturer": "tt",
+      "name": "ShinobiKnife 4-60LF",
+      "type": "Booster",
+      "bladeNames": [
+        "Shinobi Knife",
+        "Knife Shinobi"
+      ],
+      "ratchet": "4-60",
+      "bitShort": "LF",
+      "date": "2026-08-08",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "BX-00",
+      "manufacturer": "tt",
+      "name": "PhoenixWing 9-80DB",
+      "type": "Booster",
+      "bladeNames": [
+        "Phoenix Wing",
+        "Soar Phoenix",
+        "Phoeniz Wing"
+      ],
+      "ratchet": "9-80",
+      "bitShort": "DB",
+      "date": "2026-08-08",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "BX-00",
+      "manufacturer": "tt",
+      "name": "CobaltDrake 4-60F",
+      "type": "Booster",
+      "bladeNames": [
+        "Cobalt Drake"
+      ],
+      "ratchet": "4-60",
+      "bitShort": "F",
+      "date": "2026-08-08",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "BX-00",
+      "manufacturer": "tt",
+      "name": "DracielShield 7-60D",
+      "type": "Booster",
+      "bladeNames": [
+        "Draciel Shield"
+      ],
+      "ratchet": "7-60",
+      "bitShort": "D",
+      "date": "2026-08-08",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "BX-00",
+      "manufacturer": "tt",
+      "name": "CrocBite 2-60Q",
+      "type": "Booster",
+      "bladeNames": [
+        "Croc Crunch",
+        "Bite Croc",
+        "CrocCrunch",
+        "CrocoCrunch"
+      ],
+      "ratchet": "2-60",
+      "bitShort": "Q",
+      "date": "2026-08-08",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "BX-00",
+      "manufacturer": "tt",
+      "name": "DragoonStorm 4-60RA",
+      "type": "25th Anniversary Set",
+      "bladeNames": [
+        "Dragoon Storm"
+      ],
+      "ratchet": "4-60",
+      "bitShort": "RA",
+      "date": "2026-08-08",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "BX-00",
+      "manufacturer": "tt",
+      "name": "StormPegasis 3-70RA",
+      "type": "25th Anniversary Set",
+      "bladeNames": [
+        "Storm Pegasis"
+      ],
+      "ratchet": "3-70",
+      "bitShort": "RA",
+      "date": "2026-08-08",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "BX-00",
+      "manufacturer": "tt",
+      "name": "VictoryValkyrie 2-60RA",
+      "type": "25th Anniversary Set",
+      "bladeNames": [
+        "Victory Valkyrie"
+      ],
+      "ratchet": "2-60",
+      "bitShort": "RA",
+      "date": "2026-08-08",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "BX-00",
+      "manufacturer": "tt",
+      "name": "DranSword 3-60F",
+      "type": "25th Anniversary Set",
+      "bladeNames": [
+        "Dran Sword",
+        "Sword Dran"
+      ],
+      "ratchet": "3-60",
+      "bitShort": "F",
+      "date": "2026-08-08",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "BX-00",
+      "manufacturer": "tt",
+      "name": "MammothTusk 2-80E",
+      "type": "Booster",
+      "bladeNames": [
+        "Mammoth Tusk",
+        "Tusk Mammoth"
+      ],
+      "ratchet": "2-80",
+      "bitShort": "E",
+      "date": "2026-08-08",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "BX-00",
+      "manufacturer": "tt",
+      "name": "XenoXcalibur 3-60GF",
+      "type": "Booster",
+      "bladeNames": [
+        "Xeno Xcalibur"
+      ],
+      "ratchet": "3-60",
+      "bitShort": "GF",
+      "date": "2026-08-08",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "BX-00",
+      "manufacturer": "tt",
+      "name": "SamuraiSteel 5-70GF",
+      "type": "Booster",
+      "bladeNames": [
+        "Samurai Steel",
+        "Steel Samurai"
+      ],
+      "ratchet": "5-70",
+      "bitShort": "GF",
+      "date": "2026-08-08",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "BX-00",
+      "manufacturer": "tt",
+      "name": "RockLeone 6-80GN",
+      "type": "Booster",
+      "bladeNames": [
+        "Rock Leone"
+      ],
+      "ratchet": "6-80",
+      "bitShort": "GN",
+      "date": "2026-08-08",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "BX-00",
+      "manufacturer": "tt",
+      "name": "DranSword 1-60V",
+      "type": "Starter",
+      "bladeNames": [
+        "Dran Sword",
+        "Sword Dran"
+      ],
+      "ratchet": "1-60",
+      "bitShort": "V",
+      "date": "2026-08-08",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "BX-00",
+      "manufacturer": "tt",
+      "name": "CobaltDragoon 9-60F",
+      "type": "Starter",
+      "bladeNames": [
+        "Cobalt Dragoon"
+      ],
+      "ratchet": "9-60",
+      "bitShort": "F",
+      "date": "2026-08-08",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "BX-01",
+      "manufacturer": "tt",
+      "name": "DranSword 3-60F",
+      "type": "Starter",
+      "bladeNames": [
+        "Dran Sword",
+        "Sword Dran"
+      ],
+      "ratchet": "3-60",
+      "bitShort": "F",
+      "date": "2023-06-10",
+      "listino": {
+        "amount": 1980,
+        "currency": "JPY"
+      },
+      "listinoEur": 11.09
+    },
+    {
+      "code": "BX-02",
+      "manufacturer": "tt",
+      "name": "HellsScythe 4-60T",
+      "type": "Starter",
+      "bladeNames": [
+        "Hells Scythe",
+        "Scythe Incendio"
+      ],
+      "ratchet": "4-60",
+      "bitShort": "T",
+      "date": "2023-06-10",
+      "listino": {
+        "amount": 1980,
+        "currency": "JPY"
+      },
+      "listinoEur": 11.09
+    },
+    {
+      "code": "BX-03",
+      "manufacturer": "tt",
+      "name": "WizardArrow 4-80B",
+      "type": "Starter",
+      "bladeNames": [
+        "Wizard Arrow",
+        "Arrow Wizard"
+      ],
+      "ratchet": "4-80",
+      "bitShort": "B",
+      "date": "2023-07-15",
+      "listino": {
+        "amount": 1980,
+        "currency": "JPY"
+      },
+      "listinoEur": 11.09
+    },
+    {
+      "code": "BX-04",
+      "manufacturer": "tt",
+      "name": "KnightShield 3-80N",
+      "type": "Starter",
+      "bladeNames": [
+        "Knight Shield",
+        "Helm Knight"
+      ],
+      "ratchet": "3-80",
+      "bitShort": "N",
+      "date": "2023-07-15",
+      "listino": {
+        "amount": 1980,
+        "currency": "JPY"
+      },
+      "listinoEur": 11.09
+    },
+    {
+      "code": "BX-05",
+      "manufacturer": "tt",
+      "name": "WizardArrow 4-80B",
+      "type": "Booster",
+      "bladeNames": [
+        "Wizard Arrow",
+        "Arrow Wizard"
+      ],
+      "ratchet": "4-80",
+      "bitShort": "B",
+      "date": "2023-07-15",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-06",
+      "manufacturer": "tt",
+      "name": "KnightShield 3-80N",
+      "type": "Booster",
+      "bladeNames": [
+        "Knight Shield",
+        "Helm Knight"
+      ],
+      "ratchet": "3-80",
+      "bitShort": "N",
+      "date": "2023-07-15",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-07",
+      "manufacturer": "tt",
+      "name": "DranSword 3-60F",
+      "type": "Start Dash Set",
+      "bladeNames": [
+        "Dran Sword",
+        "Sword Dran"
+      ],
+      "ratchet": "3-60",
+      "bitShort": "F",
+      "date": "2023-07-15",
+      "listino": {
+        "amount": 5720,
+        "currency": "JPY"
+      },
+      "listinoEur": 32.04
+    },
+    {
+      "code": "BX-08",
+      "manufacturer": "tt",
+      "name": "HellsScythe 4-60T",
+      "type": "3on3 Deck Set",
+      "bladeNames": [
+        "Hells Scythe",
+        "Scythe Incendio"
+      ],
+      "ratchet": "4-60",
+      "bitShort": "T",
+      "date": "2023-07-15",
+      "listino": {
+        "amount": 3960,
+        "currency": "JPY"
+      },
+      "listinoEur": 22.18
+    },
+    {
+      "code": "BX-08",
+      "manufacturer": "tt",
+      "name": "WizardArrow 4-80B",
+      "type": "3on3 Deck Set",
+      "bladeNames": [
+        "Wizard Arrow",
+        "Arrow Wizard"
+      ],
+      "ratchet": "4-80",
+      "bitShort": "B",
+      "date": "2023-07-15",
+      "listino": {
+        "amount": 3960,
+        "currency": "JPY"
+      },
+      "listinoEur": 22.18
+    },
+    {
+      "code": "BX-08",
+      "manufacturer": "tt",
+      "name": "KnightShield 3-80N",
+      "type": "3on3 Deck Set",
+      "bladeNames": [
+        "Knight Shield",
+        "Helm Knight"
+      ],
+      "ratchet": "3-80",
+      "bitShort": "N",
+      "date": "2023-07-15",
+      "listino": {
+        "amount": 3960,
+        "currency": "JPY"
+      },
+      "listinoEur": 22.18
+    },
+    {
+      "code": "BX-13",
+      "manufacturer": "tt",
+      "name": "KnightLance 4-80HN",
+      "type": "Booster",
+      "bladeNames": [
+        "Knight Lance",
+        "Lance Knight"
+      ],
+      "ratchet": "4-80",
+      "bitShort": "HN",
+      "date": "2023-08-10",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-14",
+      "manufacturer": "tt",
+      "name": "SharkEdge 3-60LF",
+      "type": "Random Booster Vol. 1",
+      "bladeNames": [
+        "Shark Edge",
+        "Keel Shark"
+      ],
+      "ratchet": "3-60",
+      "bitShort": "LF",
+      "date": "2023-09-09",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-14",
+      "manufacturer": "tt",
+      "name": "SharkEdge 4-80N",
+      "type": "Random Booster Vol. 1",
+      "bladeNames": [
+        "Shark Edge",
+        "Keel Shark"
+      ],
+      "ratchet": "4-80",
+      "bitShort": "N",
+      "date": "2023-09-09",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-14",
+      "manufacturer": "tt",
+      "name": "DranSword 3-80B",
+      "type": "Random Booster Vol. 1",
+      "bladeNames": [
+        "Dran Sword",
+        "Sword Dran"
+      ],
+      "ratchet": "3-80",
+      "bitShort": "B",
+      "date": "2023-09-09",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-14",
+      "manufacturer": "tt",
+      "name": "HellsScythe 4-80LF",
+      "type": "Random Booster Vol. 1",
+      "bladeNames": [
+        "Hells Scythe",
+        "Scythe Incendio"
+      ],
+      "ratchet": "4-80",
+      "bitShort": "LF",
+      "date": "2023-09-09",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-14",
+      "manufacturer": "tt",
+      "name": "KnightShield 4-60LF",
+      "type": "Random Booster Vol. 1",
+      "bladeNames": [
+        "Knight Shield",
+        "Helm Knight"
+      ],
+      "ratchet": "4-60",
+      "bitShort": "LF",
+      "date": "2023-09-09",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-14",
+      "manufacturer": "tt",
+      "name": "WizardArrow 3-60T",
+      "type": "Random Booster Vol. 1",
+      "bladeNames": [
+        "Wizard Arrow",
+        "Arrow Wizard"
+      ],
+      "ratchet": "3-60",
+      "bitShort": "T",
+      "date": "2023-09-09",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-15",
+      "manufacturer": "tt",
+      "name": "LeonClaw 5-60P",
+      "type": "Starter",
+      "bladeNames": [
+        "Leon Claw",
+        "Claw Leon"
+      ],
+      "ratchet": "5-60",
+      "bitShort": "P",
+      "date": "2023-10-07",
+      "listino": {
+        "amount": 1980,
+        "currency": "JPY"
+      },
+      "listinoEur": 11.09
+    },
+    {
+      "code": "BX-16",
+      "manufacturer": "tt",
+      "name": "ViperTail 5-80O",
+      "type": "Random Booster ViperTail Select",
+      "bladeNames": [
+        "Viper Tail",
+        "Tail Viper"
+      ],
+      "ratchet": "5-80",
+      "bitShort": "O",
+      "date": "2023-10-07",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-16",
+      "manufacturer": "tt",
+      "name": "ViperTail 4-60F",
+      "type": "Random Booster ViperTail Select",
+      "bladeNames": [
+        "Viper Tail",
+        "Tail Viper"
+      ],
+      "ratchet": "4-60",
+      "bitShort": "F",
+      "date": "2023-10-07",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-16",
+      "manufacturer": "tt",
+      "name": "ViperTail 3-80HN",
+      "type": "Random Booster ViperTail Select",
+      "bladeNames": [
+        "Viper Tail",
+        "Tail Viper"
+      ],
+      "ratchet": "3-80",
+      "bitShort": "HN",
+      "date": "2023-10-07",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-17",
+      "manufacturer": "tt",
+      "name": "DranSword 3-60F",
+      "type": "Battle Entry Set",
+      "bladeNames": [
+        "Dran Sword",
+        "Sword Dran"
+      ],
+      "ratchet": "3-60",
+      "bitShort": "F",
+      "date": "2023-10-07",
+      "listino": {
+        "amount": 6050,
+        "currency": "JPY"
+      },
+      "listinoEur": 33.89
+    },
+    {
+      "code": "BX-17",
+      "manufacturer": "tt",
+      "name": "WizardArrow 4-80B",
+      "type": "Battle Entry Set",
+      "bladeNames": [
+        "Wizard Arrow",
+        "Arrow Wizard"
+      ],
+      "ratchet": "4-80",
+      "bitShort": "B",
+      "date": "2023-10-07",
+      "listino": {
+        "amount": 6050,
+        "currency": "JPY"
+      },
+      "listinoEur": 33.89
+    },
+    {
+      "code": "BX-19",
+      "manufacturer": "tt",
+      "name": "RhinoHorn 3-80S",
+      "type": "Booster",
+      "bladeNames": [
+        "Rhino Horn",
+        "Horn Rhino"
+      ],
+      "ratchet": "3-80",
+      "bitShort": "S",
+      "date": "2023-11-02",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-20",
+      "manufacturer": "tt",
+      "name": "DranDagger 4-60R",
+      "type": "DranDagger Deck Set",
+      "bladeNames": [
+        "Dran Dagger",
+        "Dagger Dran"
+      ],
+      "ratchet": "4-60",
+      "bitShort": "R",
+      "date": "2023-11-02",
+      "listino": {
+        "amount": 3960,
+        "currency": "JPY"
+      },
+      "listinoEur": 22.18
+    },
+    {
+      "code": "BX-20",
+      "manufacturer": "tt",
+      "name": "KnightShield 5-80T",
+      "type": "DranDagger Deck Set",
+      "bladeNames": [
+        "Knight Shield",
+        "Helm Knight"
+      ],
+      "ratchet": "5-80",
+      "bitShort": "T",
+      "date": "2023-11-02",
+      "listino": {
+        "amount": 3960,
+        "currency": "JPY"
+      },
+      "listinoEur": 22.18
+    },
+    {
+      "code": "BX-20",
+      "manufacturer": "tt",
+      "name": "SharkEdge 3-80F",
+      "type": "DranDagger Deck Set",
+      "bladeNames": [
+        "Shark Edge",
+        "Keel Shark"
+      ],
+      "ratchet": "3-80",
+      "bitShort": "F",
+      "date": "2023-11-02",
+      "listino": {
+        "amount": 3960,
+        "currency": "JPY"
+      },
+      "listinoEur": 22.18
+    },
+    {
+      "code": "BX-21",
+      "manufacturer": "tt",
+      "name": "HellsChain 5-60HT",
+      "type": "HellsChain Deck Set",
+      "bladeNames": [
+        "Hells Chain",
+        "Chain Incendio"
+      ],
+      "ratchet": "5-60",
+      "bitShort": "HT",
+      "date": "2023-11-02",
+      "listino": {
+        "amount": 3960,
+        "currency": "JPY"
+      },
+      "listinoEur": 22.18
+    },
+    {
+      "code": "BX-21",
+      "manufacturer": "tt",
+      "name": "KnightLance 3-60LF",
+      "type": "HellsChain Deck Set",
+      "bladeNames": [
+        "Knight Lance",
+        "Lance Knight"
+      ],
+      "ratchet": "3-60",
+      "bitShort": "LF",
+      "date": "2023-11-02",
+      "listino": {
+        "amount": 3960,
+        "currency": "JPY"
+      },
+      "listinoEur": 22.18
+    },
+    {
+      "code": "BX-21",
+      "manufacturer": "tt",
+      "name": "WizardArrow 4-80N",
+      "type": "HellsChain Deck Set",
+      "bladeNames": [
+        "Wizard Arrow",
+        "Arrow Wizard"
+      ],
+      "ratchet": "4-80",
+      "bitShort": "N",
+      "date": "2023-11-02",
+      "listino": {
+        "amount": 3960,
+        "currency": "JPY"
+      },
+      "listinoEur": 22.18
+    },
+    {
+      "code": "BX-22",
+      "manufacturer": "tt",
+      "name": "DranSword 3-60F",
+      "type": "Entry Package",
+      "bladeNames": [
+        "Dran Sword",
+        "Sword Dran"
+      ],
+      "ratchet": "3-60",
+      "bitShort": "F",
+      "date": "2023-12-02",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-23",
+      "manufacturer": "tt",
+      "name": "PhoenixWing 9-60GF",
+      "type": "Starter",
+      "bladeNames": [
+        "Phoenix Wing",
+        "Soar Phoenix",
+        "Phoeniz Wing"
+      ],
+      "ratchet": "9-60",
+      "bitShort": "GF",
+      "date": "2023-12-10",
+      "listino": {
+        "amount": 2420,
+        "currency": "JPY"
+      },
+      "listinoEur": 13.56
+    },
+    {
+      "code": "BX-24",
+      "manufacturer": "tt",
+      "name": "WyvernGale 5-80GB",
+      "type": "Random Booster Vol. 2",
+      "bladeNames": [
+        "Wyvern Gale",
+        "Gale Wyvern"
+      ],
+      "ratchet": "5-80",
+      "bitShort": "GB",
+      "date": "2023-12-27",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-24",
+      "manufacturer": "tt",
+      "name": "WyvernGale 3-60T",
+      "type": "Random Booster Vol. 2",
+      "bladeNames": [
+        "Wyvern Gale",
+        "Gale Wyvern"
+      ],
+      "ratchet": "3-60",
+      "bitShort": "T",
+      "date": "2023-12-27",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-24",
+      "manufacturer": "tt",
+      "name": "KnightLance 4-60GB",
+      "type": "Random Booster Vol. 2",
+      "bladeNames": [
+        "Knight Lance",
+        "Lance Knight"
+      ],
+      "ratchet": "4-60",
+      "bitShort": "GB",
+      "date": "2023-12-27",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-24",
+      "manufacturer": "tt",
+      "name": "ViperTail 5-60F",
+      "type": "Random Booster Vol. 2",
+      "bladeNames": [
+        "Viper Tail",
+        "Tail Viper"
+      ],
+      "ratchet": "5-60",
+      "bitShort": "F",
+      "date": "2023-12-27",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-24",
+      "manufacturer": "tt",
+      "name": "LeonClaw 3-80HN",
+      "type": "Random Booster Vol. 2",
+      "bladeNames": [
+        "Leon Claw",
+        "Claw Leon"
+      ],
+      "ratchet": "3-80",
+      "bitShort": "HN",
+      "date": "2023-12-27",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-24",
+      "manufacturer": "tt",
+      "name": "WizardArrow 4-80GB",
+      "type": "Random Booster Vol. 2",
+      "bladeNames": [
+        "Wizard Arrow",
+        "Arrow Wizard"
+      ],
+      "ratchet": "4-80",
+      "bitShort": "GB",
+      "date": "2023-12-27",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-26",
+      "manufacturer": "tt",
+      "name": "UnicornSting 5-60GP",
+      "type": "Booster",
+      "bladeNames": [
+        "Unicorn Sting",
+        "Sting Unicorn"
+      ],
+      "ratchet": "5-60",
+      "bitShort": "GP",
+      "date": "2024-01-27",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-27",
+      "manufacturer": "tt",
+      "name": "SphinxCowl 9-80GN",
+      "type": "Random Booster SphinxCowl Select",
+      "bladeNames": [
+        "Sphinx Cowl",
+        "Cowl Sphinx"
+      ],
+      "ratchet": "9-80",
+      "bitShort": "GN",
+      "date": "2024-02-22",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-27",
+      "manufacturer": "tt",
+      "name": "SphinxCowl 4-80HT",
+      "type": "Random Booster SphinxCowl Select",
+      "bladeNames": [
+        "Sphinx Cowl",
+        "Cowl Sphinx"
+      ],
+      "ratchet": "4-80",
+      "bitShort": "HT",
+      "date": "2024-02-22",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-27",
+      "manufacturer": "tt",
+      "name": "SphinxCowl 5-60O",
+      "type": "Random Booster SphinxCowl Select",
+      "bladeNames": [
+        "Sphinx Cowl",
+        "Cowl Sphinx"
+      ],
+      "ratchet": "5-60",
+      "bitShort": "O",
+      "date": "2024-02-22",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-31",
+      "manufacturer": "tt",
+      "name": "TyrannoBeat 4-70Q",
+      "type": "Random Booster Vol. 3",
+      "bladeNames": [
+        "Tyranno Beat",
+        "Beat Tyranno"
+      ],
+      "ratchet": "4-70",
+      "bitShort": "Q",
+      "date": "2024-04-27",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-31",
+      "manufacturer": "tt",
+      "name": "TyrannoBeat 3-60S",
+      "type": "Random Booster Vol. 3",
+      "bladeNames": [
+        "Tyranno Beat",
+        "Beat Tyranno"
+      ],
+      "ratchet": "3-60",
+      "bitShort": "S",
+      "date": "2024-04-27",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-31",
+      "manufacturer": "tt",
+      "name": "HellsChain 9-80O",
+      "type": "Random Booster Vol. 3",
+      "bladeNames": [
+        "Hells Chain",
+        "Chain Incendio"
+      ],
+      "ratchet": "9-80",
+      "bitShort": "O",
+      "date": "2024-04-27",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-31",
+      "manufacturer": "tt",
+      "name": "DranDagger 4-70P",
+      "type": "Random Booster Vol. 3",
+      "bladeNames": [
+        "Dran Dagger",
+        "Dagger Dran"
+      ],
+      "ratchet": "4-70",
+      "bitShort": "P",
+      "date": "2024-04-27",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-31",
+      "manufacturer": "tt",
+      "name": "SharkEdge 1-60Q",
+      "type": "Random Booster Vol. 3",
+      "bladeNames": [
+        "Shark Edge",
+        "Keel Shark"
+      ],
+      "ratchet": "1-60",
+      "bitShort": "Q",
+      "date": "2024-04-27",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-31",
+      "manufacturer": "tt",
+      "name": "RhinoHorn 5-80Q",
+      "type": "Random Booster Vol. 3",
+      "bladeNames": [
+        "Rhino Horn",
+        "Horn Rhino"
+      ],
+      "ratchet": "5-80",
+      "bitShort": "Q",
+      "date": "2024-04-27",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-33",
+      "manufacturer": "tt",
+      "name": "WeissTiger 3-60U",
+      "type": "Booster",
+      "bladeNames": [
+        "Weiss Tiger",
+        "Pearl Tiger"
+      ],
+      "ratchet": "3-60",
+      "bitShort": "U",
+      "date": "2024-06-15",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-34",
+      "manufacturer": "tt",
+      "name": "CobaltDragoon 2-60C",
+      "type": "Starter",
+      "bladeNames": [
+        "Cobalt Dragoon"
+      ],
+      "ratchet": "2-60",
+      "bitShort": "C",
+      "date": "2024-07-13",
+      "listino": {
+        "amount": 2321,
+        "currency": "JPY"
+      },
+      "listinoEur": 13
+    },
+    {
+      "code": "BX-35",
+      "manufacturer": "tt",
+      "name": "BlackShell 4-60D",
+      "type": "Random Booster Vol. 4",
+      "bladeNames": [
+        "Black Shell",
+        "Obsidian Shell"
+      ],
+      "ratchet": "4-60",
+      "bitShort": "D",
+      "date": "2024-07-13",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-35",
+      "manufacturer": "tt",
+      "name": "BlackShell 9-80B",
+      "type": "Random Booster Vol. 4",
+      "bladeNames": [
+        "Black Shell",
+        "Obsidian Shell"
+      ],
+      "ratchet": "9-80",
+      "bitShort": "B",
+      "date": "2024-07-13",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-35",
+      "manufacturer": "tt",
+      "name": "UnicornSting 3-70D",
+      "type": "Random Booster Vol. 4",
+      "bladeNames": [
+        "Unicorn Sting",
+        "Sting Unicorn"
+      ],
+      "ratchet": "3-70",
+      "bitShort": "D",
+      "date": "2024-07-13",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-35",
+      "manufacturer": "tt",
+      "name": "WizardRod 1-60R",
+      "type": "Random Booster Vol. 4",
+      "bladeNames": [
+        "Wizard Rod",
+        "Wand Wizard"
+      ],
+      "ratchet": "1-60",
+      "bitShort": "R",
+      "date": "2024-07-13",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-35",
+      "manufacturer": "tt",
+      "name": "PhoenixWing 5-80H",
+      "type": "Random Booster Vol. 4",
+      "bladeNames": [
+        "Phoenix Wing",
+        "Soar Phoenix",
+        "Phoeniz Wing"
+      ],
+      "ratchet": "5-80",
+      "bitShort": "H",
+      "date": "2024-07-13",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-35",
+      "manufacturer": "tt",
+      "name": "ViperTail 5-70D",
+      "type": "Random Booster Vol. 4",
+      "bladeNames": [
+        "Viper Tail",
+        "Tail Viper"
+      ],
+      "ratchet": "5-70",
+      "bitShort": "D",
+      "date": "2024-07-13",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-36",
+      "manufacturer": "tt",
+      "name": "WhaleWave 5-80E",
+      "type": "Random Booster WhaleWave Select",
+      "bladeNames": [
+        "Whale Wave",
+        "Tide Whale"
+      ],
+      "ratchet": "5-80",
+      "bitShort": "E",
+      "date": "2024-09-14",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-36",
+      "manufacturer": "tt",
+      "name": "WhaleWave 4-70HN",
+      "type": "Random Booster WhaleWave Select",
+      "bladeNames": [
+        "Whale Wave",
+        "Tide Whale"
+      ],
+      "ratchet": "4-70",
+      "bitShort": "HN",
+      "date": "2024-09-14",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-36",
+      "manufacturer": "tt",
+      "name": "WhaleWave 3-80GB",
+      "type": "Random Booster WhaleWave Select",
+      "bladeNames": [
+        "Whale Wave",
+        "Tide Whale"
+      ],
+      "ratchet": "3-80",
+      "bitShort": "GB",
+      "date": "2024-09-14",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-38",
+      "manufacturer": "tt",
+      "name": "CrimsonGaruda 4-70TP",
+      "type": "Booster",
+      "bladeNames": [
+        "Crimson Garuda",
+        "Scarlet Garuda"
+      ],
+      "ratchet": "4-70",
+      "bitShort": "TP",
+      "date": "2024-11-02",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-39",
+      "manufacturer": "tt",
+      "name": "ShelterDrake 7-80GP",
+      "type": "Random Booster ShelterDrake Select",
+      "bladeNames": [
+        "Shelter Drake"
+      ],
+      "ratchet": "7-80",
+      "bitShort": "GP",
+      "date": "2025-02-15",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-39",
+      "manufacturer": "tt",
+      "name": "ShelterDrake 5-70O",
+      "type": "Random Booster ShelterDrake Select",
+      "bladeNames": [
+        "Shelter Drake"
+      ],
+      "ratchet": "5-70",
+      "bitShort": "O",
+      "date": "2025-02-15",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-39",
+      "manufacturer": "tt",
+      "name": "ShelterDrake 3-60D",
+      "type": "Random Booster ShelterDrake Select",
+      "bladeNames": [
+        "Shelter Drake"
+      ],
+      "ratchet": "3-60",
+      "bitShort": "D",
+      "date": "2025-02-15",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "BX-44",
+      "manufacturer": "tt",
+      "name": "TriceraPress M-85BS",
+      "type": "Booster",
+      "bladeNames": [
+        "Tricera Press",
+        "Brace Triceratops",
+        "Tricerapress"
+      ],
+      "ratchet": "M-85",
+      "bitShort": "BS",
+      "date": "2025-06-28",
+      "listino": {
+        "amount": 1500,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.4
+    },
+    {
+      "code": "BX-45",
+      "manufacturer": "tt",
+      "name": "SamuraiCalibur 6-70M",
+      "type": "Booster",
+      "bladeNames": [
+        "Samurai Calibur",
+        "Calibur Samurai"
+      ],
+      "ratchet": "6-70",
+      "bitShort": "M",
+      "date": "2025-08-09",
+      "listino": {
+        "amount": 1500,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.4
+    },
+    {
+      "code": "BX-46",
+      "manufacturer": "tt",
+      "name": "CobaltDrake 9-60R",
+      "type": "Battle Entry Set Infinity",
+      "bladeNames": [
+        "Cobalt Drake"
+      ],
+      "ratchet": "9-60",
+      "bitShort": "R",
+      "date": "2025-10-11",
+      "listino": {
+        "amount": 7500,
+        "currency": "JPY"
+      },
+      "listinoEur": 42.01
+    },
+    {
+      "code": "BX-46",
+      "manufacturer": "tt",
+      "name": "GoatTackle 7-70T",
+      "type": "Battle Entry Set Infinity",
+      "bladeNames": [
+        "Tackle Goat"
+      ],
+      "ratchet": "7-70",
+      "bitShort": "T",
+      "date": "2025-10-11",
+      "listino": {
+        "amount": 7500,
+        "currency": "JPY"
+      },
+      "listinoEur": 42.01
+    },
+    {
+      "code": "BX-48",
+      "manufacturer": "tt",
+      "name": "CobaltDragoon 9-80F",
+      "type": "Random Booster Vol. 9",
+      "bladeNames": [
+        "Cobalt Dragoon"
+      ],
+      "ratchet": "9-80",
+      "bitShort": "F",
+      "date": "2026-02-14",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "BX-48",
+      "manufacturer": "tt",
+      "name": "SharkEdge 4-70E",
+      "type": "Random Booster Vol. 9",
+      "bladeNames": [
+        "Shark Edge",
+        "Keel Shark"
+      ],
+      "ratchet": "4-70",
+      "bitShort": "E",
+      "date": "2026-02-14",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "BX-48",
+      "manufacturer": "tt",
+      "name": "MammothTusk 7-60S",
+      "type": "Random Booster Vol. 9",
+      "bladeNames": [
+        "Mammoth Tusk",
+        "Tusk Mammoth"
+      ],
+      "ratchet": "7-60",
+      "bitShort": "S",
+      "date": "2026-02-14",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "BX-48",
+      "manufacturer": "tt",
+      "name": "HellsScythe 3-85GB",
+      "type": "Random Booster Vol. 9",
+      "bladeNames": [
+        "Hells Scythe",
+        "Scythe Incendio"
+      ],
+      "ratchet": "3-85",
+      "bitShort": "GB",
+      "date": "2026-02-14",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "BX-48",
+      "manufacturer": "tt",
+      "name": "DranBuster 2-80Q",
+      "type": "Random Booster Vol. 9",
+      "bladeNames": [
+        "Dran Buster",
+        "Buster Dran"
+      ],
+      "ratchet": "2-80",
+      "bitShort": "Q",
+      "date": "2026-02-14",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "CX-00",
+      "manufacturer": "tt",
+      "name": "ValkyrieVolt S4-70V",
+      "type": "Booster",
+      "bladeNames": [
+        "Volt",
+        "Valkyrie",
+        "Slash"
+      ],
+      "ratchet": "4-70",
+      "bitShort": "V",
+      "date": "2026-09-12",
+      "listino": {
+        "amount": 2750,
+        "currency": "JPY"
+      },
+      "listinoEur": 15.4
+    },
+    {
+      "code": "CX-00",
+      "manufacturer": "tt",
+      "name": "PegasusBlast ATr",
+      "type": "Booster",
+      "bladeNames": [
+        "Blast",
+        "Pegasus",
+        "Assault"
+      ],
+      "ratchet": null,
+      "bitShort": null,
+      "date": "2026-09-12",
+      "listino": {
+        "amount": 2750,
+        "currency": "JPY"
+      },
+      "listinoEur": 15.4
+    },
+    {
+      "code": "CX-00",
+      "manufacturer": "tt",
+      "name": "WizardArc R4-55LO",
+      "type": "Booster",
+      "bladeNames": [
+        "Arc",
+        "Wizard",
+        "Round"
+      ],
+      "ratchet": "4-55",
+      "bitShort": "LO",
+      "date": "2026-09-12",
+      "listino": {
+        "amount": 2750,
+        "currency": "JPY"
+      },
+      "listinoEur": 15.4
+    },
+    {
+      "code": "CX-00",
+      "manufacturer": "tt",
+      "name": "LeonFang T4-60A",
+      "type": "Booster",
+      "bladeNames": [
+        "Fang",
+        "Leon",
+        "Turn"
+      ],
+      "ratchet": "4-60",
+      "bitShort": "A",
+      "date": "2026-09-12",
+      "listino": {
+        "amount": 2750,
+        "currency": "JPY"
+      },
+      "listinoEur": 15.4
+    },
+    {
+      "code": "CX-00",
+      "manufacturer": "tt",
+      "name": "DranBrave S6-60V",
+      "type": "Booster",
+      "bladeNames": [
+        "Brave",
+        "Courage",
+        "Dran",
+        "Slash"
+      ],
+      "ratchet": "6-60",
+      "bitShort": "V",
+      "date": "2026-09-12",
+      "listino": {
+        "amount": 2750,
+        "currency": "JPY"
+      },
+      "listinoEur": 15.4
+    },
+    {
+      "code": "CX-01",
+      "manufacturer": "tt",
+      "name": "DranBrave S6-60V",
+      "type": "Starter",
+      "bladeNames": [
+        "Brave",
+        "Courage",
+        "Dran",
+        "Slash"
+      ],
+      "ratchet": "6-60",
+      "bitShort": "V",
+      "date": "2025-03-29",
+      "listino": {
+        "amount": 2200,
+        "currency": "JPY"
+      },
+      "listinoEur": 12.32
+    },
+    {
+      "code": "CX-02",
+      "manufacturer": "tt",
+      "name": "WizardArc R4-55LO",
+      "type": "Starter",
+      "bladeNames": [
+        "Arc",
+        "Wizard",
+        "Round"
+      ],
+      "ratchet": "4-55",
+      "bitShort": "LO",
+      "date": "2025-03-29",
+      "listino": {
+        "amount": 2200,
+        "currency": "JPY"
+      },
+      "listinoEur": 12.32
+    },
+    {
+      "code": "CX-03",
+      "manufacturer": "tt",
+      "name": "PerseusDark B6-80W",
+      "type": "Booster",
+      "bladeNames": [
+        "Dark",
+        "Perseus",
+        "Bumper"
+      ],
+      "ratchet": "6-80",
+      "bitShort": "W",
+      "date": "2025-03-29",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "CX-04",
+      "manufacturer": "tt",
+      "name": "DranBrave S6-60V",
+      "type": "Battle Entry Set C",
+      "bladeNames": [
+        "Brave",
+        "Courage",
+        "Dran",
+        "Slash"
+      ],
+      "ratchet": "6-60",
+      "bitShort": "V",
+      "date": "2025-03-29",
+      "listino": {
+        "amount": 6501,
+        "currency": "JPY"
+      },
+      "listinoEur": 36.42
+    },
+    {
+      "code": "CX-04",
+      "manufacturer": "tt",
+      "name": "PerseusDark B6-80W",
+      "type": "Battle Entry Set C",
+      "bladeNames": [
+        "Dark",
+        "Perseus",
+        "Bumper"
+      ],
+      "ratchet": "6-80",
+      "bitShort": "W",
+      "date": "2025-03-29",
+      "listino": {
+        "amount": 6501,
+        "currency": "JPY"
+      },
+      "listinoEur": 36.42
+    },
+    {
+      "code": "CX-05",
+      "manufacturer": "tt",
+      "name": "HellsReaper T4-70K",
+      "type": "Random Booster Vol. 6",
+      "bladeNames": [
+        "Reaper",
+        "Hells",
+        "Incendio",
+        "Turn"
+      ],
+      "ratchet": "4-70",
+      "bitShort": "K",
+      "date": "2025-04-26",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "CX-05",
+      "manufacturer": "tt",
+      "name": "RhinoReaper C4-55D",
+      "type": "Random Booster Vol. 6",
+      "bladeNames": [
+        "Reaper",
+        "Rhino",
+        "Charge"
+      ],
+      "ratchet": "4-55",
+      "bitShort": "D",
+      "date": "2025-04-26",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "CX-05",
+      "manufacturer": "tt",
+      "name": "HellsArc T3-85O",
+      "type": "Random Booster Vol. 6",
+      "bladeNames": [
+        "Arc",
+        "Hells",
+        "Incendio",
+        "Turn"
+      ],
+      "ratchet": "3-85",
+      "bitShort": "O",
+      "date": "2025-04-26",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "CX-05",
+      "manufacturer": "tt",
+      "name": "LeonCrest 9-80K",
+      "type": "Random Booster Vol. 6",
+      "bladeNames": [
+        "Leon Crest",
+        "Crest Leon"
+      ],
+      "ratchet": "9-80",
+      "bitShort": "K",
+      "date": "2025-04-26",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "CX-05",
+      "manufacturer": "tt",
+      "name": "PhoenixRudder 4-70LF",
+      "type": "Random Booster Vol. 6",
+      "bladeNames": [
+        "Phoenix Rudder",
+        "Rudder Phoenix"
+      ],
+      "ratchet": "4-70",
+      "bitShort": "LF",
+      "date": "2025-04-26",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "CX-05",
+      "manufacturer": "tt",
+      "name": "WhaleWave 7-60K",
+      "type": "Random Booster Vol. 6",
+      "bladeNames": [
+        "Whale Wave",
+        "Tide Whale"
+      ],
+      "ratchet": "7-60",
+      "bitShort": "K",
+      "date": "2025-04-26",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "CX-06",
+      "manufacturer": "tt",
+      "name": "FoxBrush J9-70GR",
+      "type": "Random Booster FoxBrush Select",
+      "bladeNames": [
+        "Brush",
+        "Fox",
+        "Jaggy"
+      ],
+      "ratchet": "9-70",
+      "bitShort": "GR",
+      "date": "2025-05-17",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "CX-06",
+      "manufacturer": "tt",
+      "name": "FoxBrush J0-80DB",
+      "type": "Random Booster FoxBrush Select",
+      "bladeNames": [
+        "Brush",
+        "Fox",
+        "Jaggy"
+      ],
+      "ratchet": "0-80",
+      "bitShort": "DB",
+      "date": "2025-05-17",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "CX-06",
+      "manufacturer": "tt",
+      "name": "FoxBrush J2-60U",
+      "type": "Random Booster FoxBrush Select",
+      "bladeNames": [
+        "Brush",
+        "Fox",
+        "Jaggy"
+      ],
+      "ratchet": "2-60",
+      "bitShort": "U",
+      "date": "2025-05-17",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "CX-07",
+      "manufacturer": "tt",
+      "name": "PegasusBlast ATr",
+      "type": "Starter",
+      "bladeNames": [
+        "Blast",
+        "Pegasus",
+        "Assault"
+      ],
+      "ratchet": null,
+      "bitShort": null,
+      "date": "2025-07-19",
+      "listino": {
+        "amount": 2600,
+        "currency": "JPY"
+      },
+      "listinoEur": 14.56
+    },
+    {
+      "code": "CX-08",
+      "manufacturer": "tt",
+      "name": "CerberusFlame W5-80WB",
+      "type": "Random Booster Vol. 7",
+      "bladeNames": [
+        "Flame",
+        "Cerberus",
+        "Wheel",
+        "Wall"
+      ],
+      "ratchet": "5-80",
+      "bitShort": "WB",
+      "date": "2025-07-19",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "CX-08",
+      "manufacturer": "tt",
+      "name": "WhaleFlame M3-85HT",
+      "type": "Random Booster Vol. 7",
+      "bladeNames": [
+        "Flame",
+        "Whale",
+        "Massive"
+      ],
+      "ratchet": "3-85",
+      "bitShort": "HT",
+      "date": "2025-07-19",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "CX-08",
+      "manufacturer": "tt",
+      "name": "CerberusDark W1-60F",
+      "type": "Random Booster Vol. 7",
+      "bladeNames": [
+        "Dark",
+        "Cerberus",
+        "Wheel",
+        "Wall"
+      ],
+      "ratchet": "1-60",
+      "bitShort": "F",
+      "date": "2025-07-19",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "CX-08",
+      "manufacturer": "tt",
+      "name": "DranBuster 5-80MN",
+      "type": "Random Booster Vol. 7",
+      "bladeNames": [
+        "Dran Buster",
+        "Buster Dran"
+      ],
+      "ratchet": "5-80",
+      "bitShort": "MN",
+      "date": "2025-07-19",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "CX-08",
+      "manufacturer": "tt",
+      "name": "BlackShell 7-70WB",
+      "type": "Random Booster Vol. 7",
+      "bladeNames": [
+        "Black Shell",
+        "Obsidian Shell"
+      ],
+      "ratchet": "7-70",
+      "bitShort": "WB",
+      "date": "2025-07-19",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "CX-08",
+      "manufacturer": "tt",
+      "name": "CobaltDragoon 4-55WB",
+      "type": "Random Booster Vol. 7",
+      "bladeNames": [
+        "Cobalt Dragoon"
+      ],
+      "ratchet": "4-55",
+      "bitShort": "WB",
+      "date": "2025-07-19",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "CX-09",
+      "manufacturer": "tt",
+      "name": "SolEclipse D5-70TK",
+      "type": "Starter",
+      "bladeNames": [
+        "Eclipse",
+        "Sol",
+        "Dual"
+      ],
+      "ratchet": "5-70",
+      "bitShort": "TK",
+      "date": "2025-09-27",
+      "listino": {
+        "amount": 2500,
+        "currency": "JPY"
+      },
+      "listinoEur": 14
+    },
+    {
+      "code": "CX-10",
+      "manufacturer": "tt",
+      "name": "WolfHunt F0-60DB",
+      "type": "Booster",
+      "bladeNames": [
+        "Hunt",
+        "Wolf",
+        "Free"
+      ],
+      "ratchet": "0-60",
+      "bitShort": "DB",
+      "date": "2025-11-01",
+      "listino": {
+        "amount": 1700,
+        "currency": "JPY"
+      },
+      "listinoEur": 9.52
+    },
+    {
+      "code": "CX-11",
+      "manufacturer": "tt",
+      "name": "EmperorMight HOp",
+      "type": "EmperorMight Deck Set",
+      "bladeNames": [
+        "Might",
+        "Emperor",
+        "Heavy"
+      ],
+      "ratchet": null,
+      "bitShort": null,
+      "date": "2025-11-01",
+      "listino": {
+        "amount": 5000,
+        "currency": "JPY"
+      },
+      "listinoEur": 28.01
+    },
+    {
+      "code": "CX-11",
+      "manufacturer": "tt",
+      "name": "GolemRock M-85HN",
+      "type": "EmperorMight Deck Set",
+      "bladeNames": [
+        "Golem Rock",
+        "Rock Golem",
+        "Rock Golem 1-60UN"
+      ],
+      "ratchet": "M-85",
+      "bitShort": "HN",
+      "date": "2025-11-01",
+      "listino": {
+        "amount": 5000,
+        "currency": "JPY"
+      },
+      "listinoEur": 28.01
+    },
+    {
+      "code": "CX-11",
+      "manufacturer": "tt",
+      "name": "SharkGill 5-60FB",
+      "type": "EmperorMight Deck Set",
+      "bladeNames": [
+        "Shark Gill",
+        "Gill Shark"
+      ],
+      "ratchet": "5-60",
+      "bitShort": "FB",
+      "date": "2025-11-01",
+      "listino": {
+        "amount": 5000,
+        "currency": "JPY"
+      },
+      "listinoEur": 28.01
+    },
+    {
+      "code": "CX-12",
+      "manufacturer": "tt",
+      "name": "PhoenixFlare Z9-80WW",
+      "type": "Booster",
+      "bladeNames": [
+        "Flare",
+        "Radiance",
+        "Phoenix",
+        "Zillion"
+      ],
+      "ratchet": "9-80",
+      "bitShort": "WW",
+      "date": "2026-01-24",
+      "listino": {
+        "amount": 1700,
+        "currency": "JPY"
+      },
+      "listinoEur": 9.52
+    },
+    {
+      "code": "CX-13",
+      "manufacturer": "tt",
+      "name": "BahamutBlitz BK1-50I",
+      "type": "Starter",
+      "bladeNames": [
+        "Blitz",
+        "Bahamut",
+        "Knuckle",
+        "Break"
+      ],
+      "ratchet": "1-50",
+      "bitShort": "I",
+      "date": "2026-03-28",
+      "listino": {
+        "amount": 2200,
+        "currency": "JPY"
+      },
+      "listinoEur": 12.32
+    },
+    {
+      "code": "CX-14",
+      "manufacturer": "tt",
+      "name": "KnightFortress GV8-70UN",
+      "type": "Starter",
+      "bladeNames": [
+        "Fortress",
+        "Armor",
+        "Knight",
+        "Vertical",
+        "Guard"
+      ],
+      "ratchet": "8-70",
+      "bitShort": "UN",
+      "date": "2026-03-28",
+      "listino": {
+        "amount": 2200,
+        "currency": "JPY"
+      },
+      "listinoEur": 12.32
+    },
+    {
+      "code": "CX-15",
+      "manufacturer": "tt",
+      "name": "RagnaRage FE4-55Y",
+      "type": "Booster",
+      "bladeNames": [
+        "Rage",
+        "Ragna",
+        "Erase",
+        "Flow"
+      ],
+      "ratchet": "4-55",
+      "bitShort": "Y",
+      "date": "2026-03-28",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "CX-16",
+      "manufacturer": "tt",
+      "name": "BahamutBlitz BK1-50I",
+      "type": "Start Dash Set C",
+      "bladeNames": [
+        "Blitz",
+        "Bahamut",
+        "Knuckle",
+        "Break"
+      ],
+      "ratchet": "1-50",
+      "bitShort": "I",
+      "date": "2026-03-28",
+      "listino": {
+        "amount": 5650,
+        "currency": "JPY"
+      },
+      "listinoEur": 31.65
+    },
+    {
+      "code": "F9580",
+      "manufacturer": "hasbro",
+      "name": "Sword Dran 3-60F",
+      "type": "Starter Pack",
+      "bladeNames": [
+        "Dran Sword",
+        "Sword Dran"
+      ],
+      "ratchet": "3-60",
+      "bitShort": "F",
+      "date": "2024-05-16",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
+    },
+    {
+      "code": "F9581",
+      "manufacturer": "hasbro",
+      "name": "Helm Knight 3-80N",
+      "type": "Starter Pack",
+      "bladeNames": [
+        "Knight Shield",
+        "Helm Knight"
+      ],
+      "ratchet": "3-80",
+      "bitShort": "N",
+      "date": "2024-05-16",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
+    },
+    {
+      "code": "F9582",
+      "manufacturer": "hasbro",
+      "name": "Arrow Wizard 4-80B",
+      "type": "Starter Pack",
+      "bladeNames": [
+        "Wizard Arrow",
+        "Arrow Wizard"
+      ],
+      "ratchet": "4-80",
+      "bitShort": "B",
+      "date": "2024-05-16",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
+    },
+    {
+      "code": "F9583",
+      "manufacturer": "hasbro",
+      "name": "Scythe Incendio 4-60T",
+      "type": "Starter Pack",
+      "bladeNames": [
+        "Hells Scythe",
+        "Scythe Incendio"
+      ],
+      "ratchet": "4-60",
+      "bitShort": "T",
+      "date": "2024-05-16",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
+    },
+    {
+      "code": "F9584",
+      "manufacturer": "hasbro",
+      "name": "Dranzer Spiral 3-80T",
+      "type": "X-Over Project",
+      "bladeNames": [
+        "Dranzer Spiral"
+      ],
+      "ratchet": "3-80",
+      "bitShort": "T",
+      "date": "2024-05-30",
+      "listino": {
+        "amount": 12.99,
+        "currency": "USD"
+      },
+      "listinoEur": 11.25
+    },
+    {
+      "code": "F9585",
+      "manufacturer": "hasbro",
+      "name": "Dranzer Spiral 3-80T",
+      "type": "X-Over Project",
+      "bladeNames": [
+        "Dranzer Spiral"
+      ],
+      "ratchet": "3-80",
+      "bitShort": "T",
+      "date": "2024-06-10",
+      "listino": null,
+      "listinoEur": null
+    },
+    {
+      "code": "F9589",
+      "manufacturer": "hasbro",
+      "name": "The Mandalorian",
+      "type": "Multipack Set",
+      "bladeNames": [
+        "The Mandalorian"
+      ],
+      "ratchet": null,
+      "bitShort": null,
+      "date": "2024-08-01",
+      "listino": {
+        "amount": 24.99,
+        "currency": "USD"
+      },
+      "listinoEur": 21.63
+    },
+    {
+      "code": "F9589",
+      "manufacturer": "hasbro",
+      "name": "Moff Gideon",
+      "type": "Multipack Set",
+      "bladeNames": [
+        "Moff Gideon"
+      ],
+      "ratchet": null,
+      "bitShort": null,
+      "date": "2024-08-01",
+      "listino": {
+        "amount": 24.99,
+        "currency": "USD"
+      },
+      "listinoEur": 21.63
+    },
+    {
+      "code": "G0000",
+      "manufacturer": "hasbro",
+      "name": "Savage Bear 5-60F",
+      "type": "Booster Pack",
+      "bladeNames": [
+        "Bear Scratch",
+        "Savage Bear"
+      ],
+      "ratchet": "5-60",
+      "bitShort": "F",
+      "date": null,
+      "listino": null,
+      "listinoEur": null
+    },
+    {
+      "code": "G0184",
+      "manufacturer": "hasbro",
+      "name": "Lance Knight 4-80HN",
+      "type": "Starter Pack",
+      "bladeNames": [
+        "Knight Lance",
+        "Lance Knight"
+      ],
+      "ratchet": "4-80",
+      "bitShort": "HN",
+      "date": "2024-07-01",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
+    },
+    {
+      "code": "G0188",
+      "manufacturer": "hasbro",
+      "name": "Steel Samurai 4-80T",
+      "type": "Booster Pack",
+      "bladeNames": [
+        "Samurai Steel",
+        "Steel Samurai"
+      ],
+      "ratchet": "4-80",
+      "bitShort": "T",
+      "date": "2024-05-16",
+      "listino": {
+        "amount": 7.99,
+        "currency": "USD"
+      },
+      "listinoEur": 6.92
+    },
+    {
+      "code": "G0190",
+      "manufacturer": "hasbro",
+      "name": "Knife Shinobi 4-80HN",
+      "type": "Dual Pack",
+      "bladeNames": [
+        "Shinobi Knife",
+        "Knife Shinobi"
+      ],
+      "ratchet": "4-80",
+      "bitShort": "HN",
+      "date": "2024-05-16",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
+    },
+    {
+      "code": "G0190",
+      "manufacturer": "hasbro",
+      "name": "Keel Shark 3-80F",
+      "type": "Dual Pack",
+      "bladeNames": [
+        "Shark Edge",
+        "Keel Shark"
+      ],
+      "ratchet": "3-80",
+      "bitShort": "F",
+      "date": "2024-05-16",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
+    },
+    {
+      "code": "G0192",
+      "manufacturer": "hasbro",
+      "name": "Horn Rhino 3-80S",
+      "type": "Booster Pack",
+      "bladeNames": [
+        "Rhino Horn",
+        "Horn Rhino"
+      ],
+      "ratchet": "3-80",
+      "bitShort": "S",
+      "date": "2024-05-16",
+      "listino": {
+        "amount": 7.99,
+        "currency": "USD"
+      },
+      "listinoEur": 6.92
+    },
+    {
+      "code": "G0193",
+      "manufacturer": "hasbro",
+      "name": "Claw Leon 5-60P",
+      "type": "Starter Pack",
+      "bladeNames": [
+        "Leon Claw",
+        "Claw Leon"
+      ],
+      "ratchet": "5-60",
+      "bitShort": "P",
+      "date": "2024-07-01",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
+    },
+    {
+      "code": "G0194",
+      "manufacturer": "hasbro",
+      "name": "Keel Shark 3-60LF",
+      "type": "Booster Pack",
+      "bladeNames": [
+        "Shark Edge",
+        "Keel Shark"
+      ],
+      "ratchet": "3-60",
+      "bitShort": "LF",
+      "date": "2024-05-16",
+      "listino": {
+        "amount": 7.99,
+        "currency": "USD"
+      },
+      "listinoEur": 6.92
+    },
+    {
+      "code": "G0195",
+      "manufacturer": "hasbro",
+      "name": "Talon Ptera 3-80B",
+      "type": "Booster Pack",
+      "bladeNames": [
+        "Ptera Swing",
+        "Talon Ptera"
+      ],
+      "ratchet": "3-80",
+      "bitShort": "B",
+      "date": "2024-05-16",
+      "listino": {
+        "amount": 7.99,
+        "currency": "USD"
+      },
+      "listinoEur": 6.92
+    },
+    {
+      "code": "G0196",
+      "manufacturer": "hasbro",
+      "name": "Chain Incendio 5-60HT",
+      "type": "Dual Pack",
+      "bladeNames": [
+        "Hells Chain",
+        "Chain Incendio"
+      ],
+      "ratchet": "5-60",
+      "bitShort": "HT",
+      "date": "2024-05-16",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
+    },
+    {
+      "code": "G0196",
+      "manufacturer": "hasbro",
+      "name": "Arrow Wizard 4-80N",
+      "type": "Dual Pack",
+      "bladeNames": [
+        "Wizard Arrow",
+        "Arrow Wizard"
+      ],
+      "ratchet": "4-80",
+      "bitShort": "N",
+      "date": "2024-05-16",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
+    },
+    {
+      "code": "G0197",
+      "manufacturer": "hasbro",
+      "name": "Tail Viper 5-80O",
+      "type": "Dual Pack",
+      "bladeNames": [
+        "Viper Tail",
+        "Tail Viper"
+      ],
+      "ratchet": "5-80",
+      "bitShort": "O",
+      "date": "2024-05-16",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
+    },
+    {
+      "code": "G0197",
+      "manufacturer": "hasbro",
+      "name": "Sword Dran 3-60F",
+      "type": "Dual Pack",
+      "bladeNames": [
+        "Dran Sword",
+        "Sword Dran"
+      ],
+      "ratchet": "3-60",
+      "bitShort": "F",
+      "date": "2024-05-16",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
+    },
+    {
+      "code": "G0198",
+      "manufacturer": "hasbro",
+      "name": "Yell Kong 3-60GB",
+      "type": "Dual Pack",
+      "bladeNames": [
+        "Kong Yell",
+        "Yell Kong"
+      ],
+      "ratchet": "3-60",
+      "bitShort": "GB",
+      "date": "2024-08-01",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
+    },
+    {
+      "code": "G0198",
+      "manufacturer": "hasbro",
+      "name": "Helm Knight 3-80N",
+      "type": "Dual Pack",
+      "bladeNames": [
+        "Knight Shield",
+        "Helm Knight"
+      ],
+      "ratchet": "3-80",
+      "bitShort": "N",
+      "date": "2024-08-01",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
+    },
+    {
+      "code": "G0199",
+      "manufacturer": "hasbro",
+      "name": "Bite Croc 2-60Q",
+      "type": "Dual Pack",
+      "bladeNames": [
+        "Croc Crunch",
+        "Bite Croc",
+        "CrocCrunch",
+        "CrocoCrunch"
+      ],
+      "ratchet": "2-60",
+      "bitShort": "Q",
+      "date": "2024-08-01",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
+    },
+    {
+      "code": "G0199",
+      "manufacturer": "hasbro",
+      "name": "Sting Unicorn 5-60GP",
+      "type": "Dual Pack",
+      "bladeNames": [
+        "Unicorn Sting",
+        "Sting Unicorn"
+      ],
+      "ratchet": "5-60",
+      "bitShort": "GP",
+      "date": "2024-08-01",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
+    },
+    {
+      "code": "G0282",
+      "manufacturer": "hasbro",
+      "name": "Gale Wyvern 5-80GB",
+      "type": "Dual Pack",
+      "bladeNames": [
+        "Wyvern Gale",
+        "Gale Wyvern"
+      ],
+      "ratchet": "5-80",
+      "bitShort": "GB",
+      "date": "2024-08-01",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
+    },
+    {
+      "code": "G0282",
+      "manufacturer": "hasbro",
+      "name": "Tail Viper 4-60F",
+      "type": "Dual Pack",
+      "bladeNames": [
+        "Viper Tail",
+        "Tail Viper"
+      ],
+      "ratchet": "4-60",
+      "bitShort": "F",
+      "date": "2024-08-01",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
+    },
+    {
+      "code": "G0283",
+      "manufacturer": "hasbro",
+      "name": "Sting Unicorn 5-60GP",
+      "type": "Booster Pack",
+      "bladeNames": [
+        "Unicorn Sting",
+        "Sting Unicorn"
+      ],
+      "ratchet": "5-60",
+      "bitShort": "GP",
+      "date": "2024-07-01",
+      "listino": {
+        "amount": 7.99,
+        "currency": "USD"
+      },
+      "listinoEur": 6.92
+    },
+    {
+      "code": "G0284",
+      "manufacturer": "hasbro",
+      "name": "Roar Tyranno 9-60GF",
+      "type": "Booster Pack",
+      "bladeNames": [
+        "Tyranno Roar",
+        "Roar Tyranno"
+      ],
+      "ratchet": "9-60",
+      "bitShort": "GF",
+      "date": "2024-07-01",
+      "listino": {
+        "amount": 7.99,
+        "currency": "USD"
+      },
+      "listinoEur": 6.92
+    },
+    {
+      "code": "G0285",
+      "manufacturer": "hasbro",
+      "name": "Scythe Incendio 3-80B",
+      "type": "Booster Pack",
+      "bladeNames": [
+        "Hells Scythe",
+        "Scythe Incendio"
+      ],
+      "ratchet": "3-80",
+      "bitShort": "B",
+      "date": "2024-07-01",
+      "listino": {
+        "amount": 7.99,
+        "currency": "USD"
+      },
+      "listinoEur": 6.92
+    },
+    {
+      "code": "G0286",
+      "manufacturer": "hasbro",
+      "name": "Savage Bear 3-60S",
+      "type": "Booster Pack",
+      "bladeNames": [
+        "Bear Scratch",
+        "Savage Bear"
+      ],
+      "ratchet": "3-60",
+      "bitShort": "S",
+      "date": "2024-07-01",
+      "listino": {
+        "amount": 7.99,
+        "currency": "USD"
+      },
+      "listinoEur": 6.92
+    },
+    {
+      "code": "G0287",
+      "manufacturer": "hasbro",
+      "name": "Iron Man",
+      "type": "Multipack Set",
+      "bladeNames": [
+        "Iron Man"
+      ],
+      "ratchet": null,
+      "bitShort": null,
+      "date": "2024-07-01",
+      "listino": {
+        "amount": 24.99,
+        "currency": "USD"
+      },
+      "listinoEur": 21.63
+    },
+    {
+      "code": "G0287",
+      "manufacturer": "hasbro",
+      "name": "Thanos",
+      "type": "Multipack Set",
+      "bladeNames": [
+        "Thanos"
+      ],
+      "ratchet": null,
+      "bitShort": null,
+      "date": "2024-07-01",
+      "listino": {
+        "amount": 24.99,
+        "currency": "USD"
+      },
+      "listinoEur": 21.63
+    },
+    {
+      "code": "G0288",
+      "manufacturer": "hasbro",
+      "name": "Spider-Man",
+      "type": "Multipack Set",
+      "bladeNames": [
+        "Spider-Man"
+      ],
+      "ratchet": null,
+      "bitShort": null,
+      "date": "2024-07-01",
+      "listino": {
+        "amount": 24.99,
+        "currency": "USD"
+      },
+      "listinoEur": 21.63
+    },
+    {
+      "code": "G0288",
+      "manufacturer": "hasbro",
+      "name": "Venom",
+      "type": "Multipack Set",
+      "bladeNames": [
+        "Venom"
+      ],
+      "ratchet": null,
+      "bitShort": null,
+      "date": "2024-07-01",
+      "listino": {
+        "amount": 24.99,
+        "currency": "USD"
+      },
+      "listinoEur": 21.63
+    },
+    {
+      "code": "G0290",
+      "manufacturer": "hasbro",
+      "name": "Luke Skywalker",
+      "type": "Multipack Set",
+      "bladeNames": [
+        "Luke Skywalker"
+      ],
+      "ratchet": null,
+      "bitShort": null,
+      "date": "2024-08-01",
+      "listino": {
+        "amount": 24.99,
+        "currency": "USD"
+      },
+      "listinoEur": 21.63
+    },
+    {
+      "code": "G0290",
+      "manufacturer": "hasbro",
+      "name": "Darth Vader",
+      "type": "Multipack Set",
+      "bladeNames": [
+        "Darth Vader"
+      ],
+      "ratchet": null,
+      "bitShort": null,
+      "date": "2024-08-01",
+      "listino": {
+        "amount": 24.99,
+        "currency": "USD"
+      },
+      "listinoEur": 21.63
+    },
+    {
+      "code": "G0352",
+      "manufacturer": "hasbro",
+      "name": "Optimus Primal",
+      "type": "Multipack Set",
+      "bladeNames": [
+        "Optimus Primal"
+      ],
+      "ratchet": null,
+      "bitShort": null,
+      "date": "2024-07-13",
+      "listino": {
+        "amount": 24.99,
+        "currency": "USD"
+      },
+      "listinoEur": 21.63
+    },
+    {
+      "code": "G0352",
+      "manufacturer": "hasbro",
+      "name": "Starscream",
+      "type": "Multipack Set",
+      "bladeNames": [
+        "Starscream"
+      ],
+      "ratchet": null,
+      "bitShort": null,
+      "date": "2024-07-13",
+      "listino": {
+        "amount": 24.99,
+        "currency": "USD"
+      },
+      "listinoEur": 21.63
+    },
+    {
+      "code": "G0353",
+      "manufacturer": "hasbro",
+      "name": "Optimus Prime",
+      "type": "Multipack Set",
+      "bladeNames": [
+        "Optimus Prime"
+      ],
+      "ratchet": null,
+      "bitShort": null,
+      "date": "2024-07-13",
+      "listino": {
+        "amount": 24.99,
+        "currency": "USD"
+      },
+      "listinoEur": 21.63
+    },
+    {
+      "code": "G0353",
+      "manufacturer": "hasbro",
+      "name": "Megatron",
+      "type": "Multipack Set",
+      "bladeNames": [
+        "Megatron"
+      ],
+      "ratchet": null,
+      "bitShort": null,
+      "date": "2024-07-13",
+      "listino": {
+        "amount": 24.99,
+        "currency": "USD"
+      },
+      "listinoEur": 21.63
+    },
+    {
+      "code": "G1530",
+      "manufacturer": "hasbro",
+      "name": "Cowl Sphinx 9-80GN",
+      "type": "Booster Pack",
+      "bladeNames": [
+        "Sphinx Cowl",
+        "Cowl Sphinx"
+      ],
+      "ratchet": "9-80",
+      "bitShort": "GN",
+      "date": "2024-12-01",
+      "listino": {
+        "amount": 7.99,
+        "currency": "USD"
+      },
+      "listinoEur": 6.92
+    },
+    {
+      "code": "G1531",
+      "manufacturer": "hasbro",
+      "name": "Arrow Wizard 4-80GB",
+      "type": "Booster Pack",
+      "bladeNames": [
+        "Wizard Arrow",
+        "Arrow Wizard"
+      ],
+      "ratchet": "4-80",
+      "bitShort": "GB",
+      "date": "2024-12-01",
+      "listino": {
+        "amount": 7.99,
+        "currency": "USD"
+      },
+      "listinoEur": 6.92
+    },
+    {
+      "code": "G1533",
+      "manufacturer": "hasbro",
+      "name": "Obsidian Shell 4-60D",
+      "type": "Booster Pack",
+      "bladeNames": [
+        "Black Shell",
+        "Obsidian Shell"
+      ],
+      "ratchet": "4-60",
+      "bitShort": "D",
+      "date": "2025-03-07",
+      "listino": {
+        "amount": 7.99,
+        "currency": "USD"
+      },
+      "listinoEur": 6.92
+    },
+    {
+      "code": "G1534",
+      "manufacturer": "hasbro",
+      "name": "Keel Shark 1-60Q",
+      "type": "Booster Pack",
+      "bladeNames": [
+        "Shark Edge",
+        "Keel Shark"
+      ],
+      "ratchet": "1-60",
+      "bitShort": "Q",
+      "date": "2025-02-01",
+      "listino": {
+        "amount": 7.99,
+        "currency": "USD"
+      },
+      "listinoEur": 6.92
+    },
+    {
+      "code": "G1536",
+      "manufacturer": "hasbro",
+      "name": "Buster Dran 1-60A",
+      "type": "Starter Pack",
+      "bladeNames": [
+        "Dran Buster",
+        "Buster Dran"
+      ],
+      "ratchet": "1-60",
+      "bitShort": "A",
+      "date": "2024-12-01",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
+    },
+    {
+      "code": "G1537",
+      "manufacturer": "hasbro",
+      "name": "Wand Wizard 5-70DB",
+      "type": "Starter Pack",
+      "bladeNames": [
+        "Wizard Rod",
+        "Wand Wizard"
+      ],
+      "ratchet": "5-70",
+      "bitShort": "DB",
+      "date": "2024-12-01",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
+    },
+    {
+      "code": "G1538",
+      "manufacturer": "hasbro",
+      "name": "Wand Wizard 1-60R",
+      "type": "Starter Pack",
+      "bladeNames": [
+        "Wizard Rod",
+        "Wand Wizard"
+      ],
+      "ratchet": "1-60",
+      "bitShort": "R",
+      "date": "2025-03-07",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
+    },
+    {
+      "code": "G1539",
+      "manufacturer": "hasbro",
+      "name": "Shadow Shinobi 1-80MN",
+      "type": "Starter Pack",
+      "bladeNames": [
+        "Shinobi Shadow",
+        "Shadow Shinobi"
+      ],
+      "ratchet": "1-80",
+      "bitShort": "MN",
+      "date": "2025-03-07",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
+    },
+    {
+      "code": "G1542",
+      "manufacturer": "hasbro",
+      "name": "Beat Tyranno 4-70Q",
+      "type": "Dual Pack",
+      "bladeNames": [
+        "Tyranno Beat",
+        "Beat Tyranno"
+      ],
+      "ratchet": "4-70",
+      "bitShort": "Q",
+      "date": "2024-12-01",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
+    },
+    {
+      "code": "G1542",
+      "manufacturer": "hasbro",
+      "name": "Knife Shinobi 3-60LF",
+      "type": "Dual Pack",
+      "bladeNames": [
+        "Shinobi Knife",
+        "Knife Shinobi"
+      ],
+      "ratchet": "3-60",
+      "bitShort": "LF",
+      "date": "2024-12-01",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
+    },
+    {
+      "code": "G1543",
+      "manufacturer": "hasbro",
+      "name": "Gale Wyvern 3-60T",
+      "type": "Dual Pack",
+      "bladeNames": [
+        "Wyvern Gale",
+        "Gale Wyvern"
+      ],
+      "ratchet": "3-60",
+      "bitShort": "T",
+      "date": "2024-12-01",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
+    },
+    {
+      "code": "G1543",
+      "manufacturer": "hasbro",
+      "name": "Sword Dran 3-80B",
+      "type": "Dual Pack",
+      "bladeNames": [
+        "Dran Sword",
+        "Sword Dran"
+      ],
+      "ratchet": "3-80",
+      "bitShort": "B",
+      "date": "2024-12-01",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
+    },
+    {
+      "code": "G1669",
+      "manufacturer": "hasbro",
+      "name": "Tide Whale 5-80E",
+      "type": "Booster Pack",
+      "bladeNames": [
+        "Whale Wave",
+        "Tide Whale"
+      ],
+      "ratchet": "5-80",
+      "bitShort": "E",
+      "date": "2025-05-01",
+      "listino": {
+        "amount": 7.99,
+        "currency": "USD"
+      },
+      "listinoEur": 6.92
+    },
+    {
+      "code": "G1670",
+      "manufacturer": "hasbro",
+      "name": "Dagger Dran 4-70Q",
+      "type": "Booster Pack",
+      "bladeNames": [
+        "Dran Dagger",
+        "Dagger Dran"
+      ],
+      "ratchet": "4-70",
+      "bitShort": "Q",
+      "date": "2025-05-01",
+      "listino": {
+        "amount": 7.99,
+        "currency": "USD"
+      },
+      "listinoEur": 6.92
+    },
+    {
+      "code": "G1671",
+      "manufacturer": "hasbro",
+      "name": "Lance Knight 3-60LF",
+      "type": "Booster Pack",
+      "bladeNames": [
+        "Knight Lance",
+        "Lance Knight"
+      ],
+      "ratchet": "3-60",
+      "bitShort": "LF",
+      "date": "2025-08-01",
+      "listino": {
+        "amount": 7.99,
+        "currency": "USD"
+      },
+      "listinoEur": 6.92
+    },
+    {
+      "code": "G1673",
+      "manufacturer": "hasbro",
+      "name": "Scarlet Garuda 4-70TP",
+      "type": "Starter Pack",
+      "bladeNames": [
+        "Crimson Garuda",
+        "Scarlet Garuda"
+      ],
+      "ratchet": "4-70",
+      "bitShort": "TP",
+      "date": "2025-06-01",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
+    },
+    {
+      "code": "G1674",
+      "manufacturer": "hasbro",
+      "name": "Sterling Wolf 3-80FB",
+      "type": "Starter Pack",
+      "bladeNames": [
+        "Silver Wolf",
+        "Sterling Wolf"
+      ],
+      "ratchet": "3-80",
+      "bitShort": "FB",
+      "date": "2025-06-01",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
+    },
+    {
+      "code": "G1675",
+      "manufacturer": "hasbro",
+      "name": "Shelter Drake 7-80GP",
+      "type": "Starter Pack",
+      "bladeNames": [
+        "Shelter Drake"
+      ],
+      "ratchet": "7-80",
+      "bitShort": "GP",
+      "date": "2025-08-01",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
+    },
+    {
+      "code": "G1676",
+      "manufacturer": "hasbro",
+      "name": "Rock Golem 1-60UN",
+      "type": "Starter Pack",
+      "bladeNames": [
+        "Golem Rock",
+        "Rock Golem",
+        "Rock Golem 1-60UN"
+      ],
+      "ratchet": "1-60",
+      "bitShort": "UN",
+      "date": "2025-08-01",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
+    },
+    {
+      "code": "G1677",
+      "manufacturer": "hasbro",
+      "name": "Courage Dran S 6-60V",
+      "type": "CX Starter Pack",
+      "bladeNames": [
+        "Brave",
+        "Courage",
+        "Dran",
+        "Slash"
+      ],
+      "ratchet": "6-60",
+      "bitShort": "V",
+      "date": "2025-06-01",
+      "listino": {
+        "amount": 12.99,
+        "currency": "USD"
+      },
+      "listinoEur": 11.25
+    },
+    {
+      "code": "G1678",
+      "manufacturer": "hasbro",
+      "name": "Reaper Incendio T 4-70K",
+      "type": "CX Starter Pack",
+      "bladeNames": [
+        "Reaper",
+        "Hells",
+        "Incendio",
+        "Turn"
+      ],
+      "ratchet": "4-70",
+      "bitShort": "K",
+      "date": "2025-06-01",
+      "listino": {
+        "amount": 12.99,
+        "currency": "USD"
+      },
+      "listinoEur": 11.25
+    },
+    {
+      "code": "G1679",
+      "manufacturer": "hasbro",
+      "name": "Arc Wizard R 4-55LO",
+      "type": "CX Starter Pack",
+      "bladeNames": [
+        "Arc",
+        "Wizard",
+        "Round"
+      ],
+      "ratchet": "4-55",
+      "bitShort": "LO",
+      "date": "2025-06-01",
+      "listino": {
+        "amount": 12.99,
+        "currency": "USD"
+      },
+      "listinoEur": 11.25
+    },
+    {
+      "code": "G1680",
+      "manufacturer": "hasbro",
+      "name": "Dark Perseus B 6-80W",
+      "type": "CX Starter Pack",
+      "bladeNames": [
+        "Dark",
+        "Perseus",
+        "Bumper"
+      ],
+      "ratchet": "6-80",
+      "bitShort": "W",
+      "date": "2025-06-01",
+      "listino": {
+        "amount": 12.99,
+        "currency": "USD"
+      },
+      "listinoEur": 11.25
+    },
+    {
+      "code": "G1681",
+      "manufacturer": "hasbro",
+      "name": "Brush Fox J 9-70GR",
+      "type": "CX Starter Pack",
+      "bladeNames": [
+        "Brush",
+        "Fox",
+        "Jaggy"
+      ],
+      "ratchet": "9-70",
+      "bitShort": "GR",
+      "date": "2025-08-01",
+      "listino": {
+        "amount": 12.99,
+        "currency": "USD"
+      },
+      "listinoEur": 11.25
+    },
+    {
+      "code": "G1682",
+      "manufacturer": "hasbro",
+      "name": "Fort Hornet R 7-60T",
+      "type": "CX Starter Pack",
+      "bladeNames": [
+        "Fort",
+        "Hornet",
+        "Round"
+      ],
+      "ratchet": "7-60",
+      "bitShort": "T",
+      "date": "2025-08-01",
+      "listino": {
+        "amount": 12.99,
+        "currency": "USD"
+      },
+      "listinoEur": 11.25
+    },
+    {
+      "code": "G1683",
+      "manufacturer": "hasbro",
+      "name": "Wriggle Kraken S 3-85O",
+      "type": "CX Starter Pack",
+      "bladeNames": [
+        "Wriggle",
+        "Kraken",
+        "Slash"
+      ],
+      "ratchet": "3-85",
+      "bitShort": "O",
+      "date": "2025-08-01",
+      "listino": {
+        "amount": 12.99,
+        "currency": "USD"
+      },
+      "listinoEur": 11.25
+    },
+    {
+      "code": "G1684",
+      "manufacturer": "hasbro",
+      "name": "Antler Stag B 2-60HN",
+      "type": "CX Starter Pack",
+      "bladeNames": [
+        "Antler",
+        "Antlers",
+        "Stag",
+        "Bucks",
+        "Bumper"
+      ],
+      "ratchet": "2-60",
+      "bitShort": "HN",
+      "date": "2025-08-01",
+      "listino": {
+        "amount": 12.99,
+        "currency": "USD"
+      },
+      "listinoEur": 11.25
+    },
+    {
+      "code": "G1685",
+      "manufacturer": "hasbro",
+      "name": "Cowl Sphinx 9-80GN",
+      "type": "Dual Pack",
+      "bladeNames": [
+        "Sphinx Cowl",
+        "Cowl Sphinx"
+      ],
+      "ratchet": "9-80",
+      "bitShort": "GN",
+      "date": "2025-06-01",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
+    },
+    {
+      "code": "G1685",
+      "manufacturer": "hasbro",
+      "name": "Crest Leon 7-60GN",
+      "type": "Dual Pack",
+      "bladeNames": [
+        "Leon Crest",
+        "Crest Leon"
+      ],
+      "ratchet": "7-60",
+      "bitShort": "GN",
+      "date": "2025-06-01",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
+    },
+    {
+      "code": "G1686",
+      "manufacturer": "hasbro",
+      "name": "Pearl Tiger 3-60U",
+      "type": "Dual Pack",
+      "bladeNames": [
+        "Weiss Tiger",
+        "Pearl Tiger"
+      ],
+      "ratchet": "3-60",
+      "bitShort": "U",
+      "date": "2025-06-01",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
+    },
+    {
+      "code": "G1686",
+      "manufacturer": "hasbro",
+      "name": "Gill Shark 5-60FB",
+      "type": "Dual Pack",
+      "bladeNames": [
+        "Shark Gill",
+        "Gill Shark"
+      ],
+      "ratchet": "5-60",
+      "bitShort": "FB",
+      "date": "2025-06-01",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
+    },
+    {
+      "code": "G1687",
+      "manufacturer": "hasbro",
+      "name": "Circle Ghost 0-80GB",
+      "type": "Dual Pack",
+      "bladeNames": [
+        "Ghost Circle",
+        "Circle Ghost"
+      ],
+      "ratchet": "0-80",
+      "bitShort": "GB",
+      "date": "2025-07-01",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
+    },
+    {
+      "code": "G1687",
+      "manufacturer": "hasbro",
+      "name": "Chain Incendio 9-80O",
+      "type": "Dual Pack",
+      "bladeNames": [
+        "Hells Chain",
+        "Chain Incendio"
+      ],
+      "ratchet": "9-80",
+      "bitShort": "O",
+      "date": "2025-07-01",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
+    },
+    {
+      "code": "G1688",
+      "manufacturer": "hasbro",
+      "name": "Tackle Goat 7-70T",
+      "type": "Dual Pack",
+      "bladeNames": [
+        "Tackle Goat"
+      ],
+      "ratchet": "7-70",
+      "bitShort": "T",
+      "date": "2025-07-01",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
+    },
+    {
+      "code": "G1688",
+      "manufacturer": "hasbro",
+      "name": "Sword Dran 4-80DB",
+      "type": "Dual Pack",
+      "bladeNames": [
+        "Dran Sword",
+        "Sword Dran"
+      ],
+      "ratchet": "4-80",
+      "bitShort": "DB",
+      "date": "2025-07-01",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
+    },
+    {
+      "code": "G1690",
+      "manufacturer": "hasbro",
+      "name": "Captain America",
+      "type": "Multipack Set",
+      "bladeNames": [
+        "Captain America"
+      ],
+      "ratchet": null,
+      "bitShort": null,
+      "date": "2025-08-01",
+      "listino": {
+        "amount": 24.99,
+        "currency": "USD"
+      },
+      "listinoEur": 21.63
+    },
+    {
+      "code": "G1690",
+      "manufacturer": "hasbro",
+      "name": "Red Hulk",
+      "type": "Multipack Set",
+      "bladeNames": [
+        "Red Hulk"
+      ],
+      "ratchet": null,
+      "bitShort": null,
+      "date": "2025-08-01",
+      "listino": {
+        "amount": 24.99,
+        "currency": "USD"
+      },
+      "listinoEur": 21.63
+    },
+    {
+      "code": "G1691",
+      "manufacturer": "hasbro",
+      "name": "Miles Morales",
+      "type": "Multipack Set",
+      "bladeNames": [
+        "Miles Morales"
+      ],
+      "ratchet": null,
+      "bitShort": null,
+      "date": "2025-09-01",
+      "listino": {
+        "amount": 29.99,
+        "currency": "USD"
+      },
+      "listinoEur": 25.96
+    },
+    {
+      "code": "G1691",
+      "manufacturer": "hasbro",
+      "name": "Green Goblin",
+      "type": "Multipack Set",
+      "bladeNames": [
+        "Green Goblin"
+      ],
+      "ratchet": null,
+      "bitShort": null,
+      "date": "2025-09-01",
+      "listino": {
+        "amount": 29.99,
+        "currency": "USD"
+      },
+      "listinoEur": 25.96
+    },
+    {
+      "code": "G1692",
+      "manufacturer": "hasbro",
+      "name": "Bumblebee",
+      "type": "Multipack Set",
+      "bladeNames": [
+        "Bumblebee"
+      ],
+      "ratchet": null,
+      "bitShort": null,
+      "date": "2025-09-01",
+      "listino": {
+        "amount": 29.99,
+        "currency": "USD"
+      },
+      "listinoEur": 25.96
+    },
+    {
+      "code": "G1692",
+      "manufacturer": "hasbro",
+      "name": "Shockwave",
+      "type": "Multipack Set",
+      "bladeNames": [
+        "Shockwave"
+      ],
+      "ratchet": null,
+      "bitShort": null,
+      "date": "2025-09-01",
+      "listino": {
+        "amount": 29.99,
+        "currency": "USD"
+      },
+      "listinoEur": 25.96
+    },
+    {
+      "code": "G1694",
+      "manufacturer": "hasbro",
+      "name": "Obi-Wan Kenobi",
+      "type": "Multipack Set",
+      "bladeNames": [
+        "Obi-Wan Kenobi"
+      ],
+      "ratchet": null,
+      "bitShort": null,
+      "date": "2025-05-01",
+      "listino": {
+        "amount": 24.99,
+        "currency": "USD"
+      },
+      "listinoEur": 21.63
+    },
+    {
+      "code": "G1694",
+      "manufacturer": "hasbro",
+      "name": "General Grievous",
+      "type": "Multipack Set",
+      "bladeNames": [
+        "General Grievous"
+      ],
+      "ratchet": null,
+      "bitShort": null,
+      "date": "2025-05-01",
+      "listino": {
+        "amount": 24.99,
+        "currency": "USD"
+      },
+      "listinoEur": 21.63
+    },
+    {
+      "code": "G1695",
+      "manufacturer": "hasbro",
+      "name": "Chewbacca",
+      "type": "Multipack Set",
+      "bladeNames": [
+        "Chewbacca"
+      ],
+      "ratchet": null,
+      "bitShort": null,
+      "date": "2025-09-01",
+      "listino": {
+        "amount": 29.99,
+        "currency": "USD"
+      },
+      "listinoEur": 25.96
+    },
+    {
+      "code": "G1695",
+      "manufacturer": "hasbro",
+      "name": "Stormtrooper",
+      "type": "Multipack Set",
+      "bladeNames": [
+        "Stormtrooper"
+      ],
+      "ratchet": null,
+      "bitShort": null,
+      "date": "2025-09-01",
+      "listino": {
+        "amount": 29.99,
+        "currency": "USD"
+      },
+      "listinoEur": 25.96
+    },
+    {
+      "code": "G1751",
+      "manufacturer": "hasbro",
+      "name": "Buster Dran 5-70DB",
+      "type": "Starter Pack",
+      "bladeNames": [
+        "Dran Buster",
+        "Buster Dran"
+      ],
+      "ratchet": "5-70",
+      "bitShort": "DB",
+      "date": "2025-03-07",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
+    },
+    {
+      "code": "G1752",
+      "manufacturer": "hasbro",
+      "name": "Hammer Incendio 3-70H",
+      "type": "Starter Pack",
+      "bladeNames": [
+        "Hells Hammer",
+        "Hammer Incendio"
+      ],
+      "ratchet": "3-70",
+      "bitShort": "H",
+      "date": "2025-03-07",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
+    },
+    {
+      "code": "G1754",
+      "manufacturer": "hasbro",
+      "name": "Yell Kong 3-60GB",
+      "type": "Booster Pack",
+      "bladeNames": [
+        "Kong Yell",
+        "Yell Kong"
+      ],
+      "ratchet": "3-60",
+      "bitShort": "GB",
+      "date": "2024-08-01",
+      "listino": {
+        "amount": 7.99,
+        "currency": "USD"
+      },
+      "listinoEur": 6.92
+    },
+    {
+      "code": "G1755",
+      "manufacturer": "hasbro",
+      "name": "Arrow Wizard 4-80O",
+      "type": "Booster Pack",
+      "bladeNames": [
+        "Wizard Arrow",
+        "Arrow Wizard"
+      ],
+      "ratchet": "4-80",
+      "bitShort": "O",
+      "date": "2025-08-01",
+      "listino": {
+        "amount": 7.99,
+        "currency": "USD"
+      },
+      "listinoEur": 6.92
+    },
+    {
+      "code": "G1756",
+      "manufacturer": "hasbro",
+      "name": "Soar Phoenix 5-80H",
+      "type": "Booster Pack",
+      "bladeNames": [
+        "Phoenix Wing",
+        "Soar Phoenix",
+        "Phoeniz Wing"
+      ],
+      "ratchet": "5-80",
+      "bitShort": "H",
+      "date": "2025-03-07",
+      "listino": {
+        "amount": 7.99,
+        "currency": "USD"
+      },
+      "listinoEur": 6.92
+    },
+    {
+      "code": "G1842",
+      "manufacturer": "hasbro",
+      "name": "Dranzer Spiral 3-80T",
+      "type": "X-Over Project",
+      "bladeNames": [
+        "Dranzer Spiral"
+      ],
+      "ratchet": "3-80",
+      "bitShort": "T",
+      "date": "2025-05-01",
+      "listino": {
+        "amount": 12.99,
+        "currency": "USD"
+      },
+      "listinoEur": 11.25
+    },
+    {
+      "code": "G1843",
+      "manufacturer": "hasbro",
+      "name": "Driger Slash 4-80P",
+      "type": "X-Over Project",
+      "bladeNames": [
+        "Driger Slash"
+      ],
+      "ratchet": "4-80",
+      "bitShort": "P",
+      "date": "2025-05-01",
+      "listino": {
+        "amount": 12.99,
+        "currency": "USD"
+      },
+      "listinoEur": 11.25
+    },
+    {
+      "code": "G1898",
+      "manufacturer": "hasbro",
+      "name": "T. Rex",
+      "type": "Multipack Set",
+      "bladeNames": [
+        "Tricera Spiky",
+        "Ridge Triceratops",
+        "Mosasaurus"
+      ],
+      "ratchet": null,
+      "bitShort": null,
+      "date": "2025-06-01",
+      "listino": {
+        "amount": 24.99,
+        "currency": "USD"
+      },
+      "listinoEur": 21.63
+    },
+    {
+      "code": "G2218",
+      "manufacturer": "hasbro",
+      "name": "Draciel Shield 7-60D",
+      "type": "X-Over Project",
+      "bladeNames": [
+        "Draciel Shield"
+      ],
+      "ratchet": "7-60",
+      "bitShort": "D",
+      "date": "2026-01-01",
+      "listino": {
+        "amount": 12.99,
+        "currency": "USD"
+      },
+      "listinoEur": 11.25
+    },
+    {
+      "code": "G2731",
+      "manufacturer": "hasbro",
+      "name": "Scale Shark 4-50UF",
+      "type": "Booster Pack",
+      "bladeNames": [
+        "Shark Scale",
+        "Scale Shark",
+        "Scark Scale"
+      ],
+      "ratchet": "4-50",
+      "bitShort": "UF",
+      "date": "2026-01-30",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
+    },
+    {
+      "code": "G2732",
+      "manufacturer": "hasbro",
+      "name": "Shelter Drake 5-70O",
+      "type": "Booster Pack",
+      "bladeNames": [
+        "Shelter Drake"
+      ],
+      "ratchet": "5-70",
+      "bitShort": "O",
+      "date": "2026-01-30",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
+    },
+    {
+      "code": "G2734",
+      "manufacturer": "hasbro",
+      "name": "Curse Mummy 7-55W",
+      "type": "Booster Pack",
+      "bladeNames": [
+        "Mummy Curse",
+        "Curse Mummy"
+      ],
+      "ratchet": "7-55",
+      "bitShort": "W",
+      "date": "2026-04-01",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
+    },
+    {
+      "code": "G2738",
+      "manufacturer": "hasbro",
+      "name": "Stun Medusa 9-60GB",
+      "type": "Starter Pack",
+      "bladeNames": [
+        "Stun Medusa"
+      ],
+      "ratchet": "9-60",
+      "bitShort": "GB",
+      "date": "2026-01-30",
+      "listino": {
+        "amount": 12.99,
+        "currency": "USD"
+      },
+      "listinoEur": 11.25
+    },
+    {
+      "code": "G2739",
+      "manufacturer": "hasbro",
+      "name": "Rudder Phoenix 4-70LF",
+      "type": "Starter Pack",
+      "bladeNames": [
+        "Phoenix Rudder",
+        "Rudder Phoenix"
+      ],
+      "ratchet": "4-70",
+      "bitShort": "LF",
+      "date": "2026-01-30",
+      "listino": {
+        "amount": 12.99,
+        "currency": "USD"
+      },
+      "listinoEur": 11.25
+    },
+    {
+      "code": "G2740",
+      "manufacturer": "hasbro",
+      "name": "Feather Phoenix 2-60N",
+      "type": "Starter Pack",
+      "bladeNames": [
+        "Phoenix Feather",
+        "Feather Phoenix"
+      ],
+      "ratchet": "2-60",
+      "bitShort": "N",
+      "date": "2026-01-30",
+      "listino": {
+        "amount": 12.99,
+        "currency": "USD"
+      },
+      "listinoEur": 11.25
+    },
+    {
+      "code": "G2742",
+      "manufacturer": "hasbro",
+      "name": "Strike Dran 4-50FF",
+      "type": "Infinity Starter Pack",
+      "bladeNames": [
+        "Dran Strike",
+        "Strike Dran"
+      ],
+      "ratchet": "4-50",
+      "bitShort": "FF",
+      "date": "2026-07-15",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
+    },
+    {
+      "code": "G2746",
+      "manufacturer": "hasbro",
+      "name": "Reaper Rhino C 4-55D",
+      "type": "CX Starter Pack",
+      "bladeNames": [
+        "Reaper",
+        "Rhino",
+        "Charge"
+      ],
+      "ratchet": "4-55",
+      "bitShort": "D",
+      "date": "2026-01-30",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
+    },
+    {
+      "code": "G2747",
+      "manufacturer": "hasbro",
+      "name": "Flame Cerberus W 5-80WB",
+      "type": "CX Starter Pack",
+      "bladeNames": [
+        "Flame",
+        "Cerberus",
+        "Wheel",
+        "Wall"
+      ],
+      "ratchet": "5-80",
+      "bitShort": "WB",
+      "date": "2026-01-30",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
+    },
+    {
+      "code": "G2748",
+      "manufacturer": "hasbro",
+      "name": "Fang Leon T 4-60U",
+      "type": "CX Starter Pack",
+      "bladeNames": [
+        "Fang",
+        "Leon",
+        "Turn"
+      ],
+      "ratchet": "4-60",
+      "bitShort": "U",
+      "date": "2026-01-30",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
+    },
+    {
+      "code": "G2754",
+      "manufacturer": "hasbro",
+      "name": "Calibur Samurai 6-70M",
+      "type": "Dual Pack",
+      "bladeNames": [
+        "Samurai Calibur",
+        "Calibur Samurai"
+      ],
+      "ratchet": "6-70",
+      "bitShort": "M",
+      "date": "2026-01-30",
+      "listino": {
+        "amount": 17.99,
+        "currency": "USD"
+      },
+      "listinoEur": 15.57
+    },
+    {
+      "code": "G2754",
+      "manufacturer": "hasbro",
+      "name": "Obsidian Shell 4-60D",
+      "type": "Dual Pack",
+      "bladeNames": [
+        "Black Shell",
+        "Obsidian Shell"
+      ],
+      "ratchet": "4-60",
+      "bitShort": "D",
+      "date": "2026-01-30",
+      "listino": {
+        "amount": 17.99,
+        "currency": "USD"
+      },
+      "listinoEur": 15.57
+    },
+    {
+      "code": "G2755",
+      "manufacturer": "hasbro",
+      "name": "Circle Ghost 4-60H",
+      "type": "Dual Pack",
+      "bladeNames": [
+        "Ghost Circle",
+        "Circle Ghost"
+      ],
+      "ratchet": "4-60",
+      "bitShort": "H",
+      "date": "2026-01-30",
+      "listino": {
+        "amount": 17.99,
+        "currency": "USD"
+      },
+      "listinoEur": 15.57
+    },
+    {
+      "code": "G2755",
+      "manufacturer": "hasbro",
+      "name": "Hack Viking 7-70WB",
+      "type": "Dual Pack",
+      "bladeNames": [
+        "Viking Hack",
+        "Hack Viking"
+      ],
+      "ratchet": "7-70",
+      "bitShort": "WB",
+      "date": "2026-01-30",
+      "listino": {
+        "amount": 17.99,
+        "currency": "USD"
+      },
+      "listinoEur": 15.57
+    },
+    {
+      "code": "G2758",
+      "manufacturer": "hasbro",
+      "name": "Spear Scorpio 0-70Z",
+      "type": "Dual Pack",
+      "bladeNames": [
+        "Scorpio Spear",
+        "Spear Scorpio",
+        "Spear Scorpio 0-70Z",
+        "Scorpio"
+      ],
+      "ratchet": "0-70",
+      "bitShort": "Z",
+      "date": null,
+      "listino": {
+        "amount": 17.99,
+        "currency": "USD"
+      },
+      "listinoEur": 15.57
+    },
+    {
+      "code": "G2758",
+      "manufacturer": "hasbro",
+      "name": "Tail Viper 5-70D",
+      "type": "Dual Pack",
+      "bladeNames": [
+        "Viper Tail",
+        "Tail Viper"
+      ],
+      "ratchet": "5-70",
+      "bitShort": "D",
+      "date": null,
+      "listino": {
+        "amount": 17.99,
+        "currency": "USD"
+      },
+      "listinoEur": 15.57
+    },
+    {
+      "code": "G3392",
+      "manufacturer": "hasbro",
+      "name": "Ridge Triceratops 9-80GN",
+      "type": "Booster Pack",
+      "bladeNames": [
+        "Tricera Press",
+        "Brace Triceratops",
+        "Tricerapress"
+      ],
+      "ratchet": "9-80",
+      "bitShort": "GN",
+      "date": "2026-01-30",
+      "listino": {
+        "amount": 9.99,
+        "currency": "USD"
+      },
+      "listinoEur": 8.65
+    },
+    {
+      "code": "G3393",
+      "manufacturer": "hasbro",
+      "name": "Rudder Phoenix 9-70G",
+      "type": "Yggdrasil Team Pack",
+      "bladeNames": [
+        "Phoenix Rudder",
+        "Rudder Phoenix"
+      ],
+      "ratchet": "9-70",
+      "bitShort": "G",
+      "date": "2026-01-01",
+      "listino": {
+        "amount": 29.99,
+        "currency": "USD"
+      },
+      "listinoEur": 25.96
+    },
+    {
+      "code": "G3393",
+      "manufacturer": "hasbro",
+      "name": "Sting Unicorn 5-60GP",
+      "type": "Yggdrasil Team Pack",
+      "bladeNames": [
+        "Unicorn Sting",
+        "Sting Unicorn"
+      ],
+      "ratchet": "5-60",
+      "bitShort": "GP",
+      "date": "2026-01-01",
+      "listino": {
+        "amount": 29.99,
+        "currency": "USD"
+      },
+      "listinoEur": 25.96
+    },
+    {
+      "code": "G3393",
+      "manufacturer": "hasbro",
+      "name": "Cowl Sphinx 9-80GN",
+      "type": "Yggdrasil Team Pack",
+      "bladeNames": [
+        "Sphinx Cowl",
+        "Cowl Sphinx"
+      ],
+      "ratchet": "9-80",
+      "bitShort": "GN",
+      "date": "2026-01-01",
+      "listino": {
+        "amount": 29.99,
+        "currency": "USD"
+      },
+      "listinoEur": 25.96
+    },
+    {
+      "code": "G3497",
+      "manufacturer": "hasbro",
+      "name": "Valor Bison FB",
+      "type": "Infinity Starter Pack",
+      "bladeNames": [
+        "Valor Bison"
+      ],
+      "ratchet": null,
+      "bitShort": "FB",
+      "date": null,
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
+    },
+    {
+      "code": "G4561",
+      "manufacturer": "hasbro",
+      "name": "Rocket Griffon H",
+      "type": "Infinity Starter Pack",
+      "bladeNames": [
+        "Bullet Griffon",
+        "Rocket Griffon",
+        "Rocket Griffon H",
+        "Bullet Gryphon"
+      ],
+      "ratchet": null,
+      "bitShort": "H",
+      "date": "2026-07-15",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
+    },
+    {
+      "code": "G4562",
+      "manufacturer": "hasbro",
+      "name": "Rage Ragna FE 4-55Y",
+      "type": "Infinity Starter Pack",
+      "bladeNames": [
+        "Rage",
+        "Ragna",
+        "Erase",
+        "Flow"
+      ],
+      "ratchet": "4-55",
+      "bitShort": "Y",
+      "date": "2026-07-15",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
+    },
+    {
+      "code": "G4563",
+      "manufacturer": "hasbro",
+      "name": "Armor Knight GV 8-70UN",
+      "type": "Infinity Starter Pack",
+      "bladeNames": [
+        "Fortress",
+        "Armor",
+        "Knight",
+        "Vertical",
+        "Guard"
+      ],
+      "ratchet": "8-70",
+      "bitShort": "UN",
+      "date": "2026-05-01",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
+    },
+    {
+      "code": "G4571",
+      "manufacturer": "hasbro",
+      "name": "Ring Aether 0-80DS",
+      "type": "Infinity Starter Pack",
+      "bladeNames": [
+        "Heavens Ring",
+        "Ring Aether"
+      ],
+      "ratchet": "0-80",
+      "bitShort": "DS",
+      "date": "2026-05-01",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
+    },
+    {
+      "code": "G4572",
+      "manufacturer": "hasbro",
+      "name": "Blitz Bahamut BK 1-50I",
+      "type": "Infinity Starter Pack",
+      "bladeNames": [
+        "Blitz",
+        "Bahamut",
+        "Knuckle",
+        "Break"
+      ],
+      "ratchet": "1-50",
+      "bitShort": "I",
+      "date": "2026-05-01",
+      "listino": {
+        "amount": 14.99,
+        "currency": "USD"
+      },
+      "listinoEur": 12.98
+    },
+    {
+      "code": "UX-00",
+      "manufacturer": "tt",
+      "name": "DranBuster 1-60A",
+      "type": "Booster",
+      "bladeNames": [
+        "Dran Buster",
+        "Buster Dran"
+      ],
+      "ratchet": "1-60",
+      "bitShort": "A",
+      "date": "2026-08-28",
+      "listino": {
+        "amount": 2800,
+        "currency": "JPY"
+      },
+      "listinoEur": 15.68
+    },
+    {
+      "code": "UX-00",
+      "manufacturer": "tt",
+      "name": "AeroPegasus 3-70A",
+      "type": "Booster",
+      "bladeNames": [
+        "Aero Pegasus",
+        "AeroPegasus",
+        "Areo Pegasus",
+        "Aero Pegaus"
+      ],
+      "ratchet": "3-70",
+      "bitShort": "A",
+      "date": "2026-08-28",
+      "listino": {
+        "amount": 2800,
+        "currency": "JPY"
+      },
+      "listinoEur": 15.68
+    },
+    {
+      "code": "UX-00",
+      "manufacturer": "tt",
+      "name": "DranSword 4-80DB",
+      "type": "Dran Deck Starter",
+      "bladeNames": [
+        "Dran Sword",
+        "Sword Dran"
+      ],
+      "ratchet": "4-80",
+      "bitShort": "DB",
+      "date": "2026-08-28",
+      "listino": {
+        "amount": 2800,
+        "currency": "JPY"
+      },
+      "listinoEur": 15.68
+    },
+    {
+      "code": "UX-00",
+      "manufacturer": "tt",
+      "name": "DranDagger 9-60LF",
+      "type": "Dran Deck Starter",
+      "bladeNames": [
+        "Dran Dagger",
+        "Dagger Dran"
+      ],
+      "ratchet": "9-60",
+      "bitShort": "LF",
+      "date": "2026-08-28",
+      "listino": {
+        "amount": 2800,
+        "currency": "JPY"
+      },
+      "listinoEur": 15.68
+    },
+    {
+      "code": "UX-00",
+      "manufacturer": "tt",
+      "name": "DranBuster 3-70N",
+      "type": "Dran Deck Starter",
+      "bladeNames": [
+        "Dran Buster",
+        "Buster Dran"
+      ],
+      "ratchet": "3-70",
+      "bitShort": "N",
+      "date": "2026-08-28",
+      "listino": {
+        "amount": 2800,
+        "currency": "JPY"
+      },
+      "listinoEur": 15.68
+    },
+    {
+      "code": "UX-00",
+      "manufacturer": "tt",
+      "name": "KnightMail 3-85BS",
+      "type": "Booster",
+      "bladeNames": [
+        "Knight Mail",
+        "Mail Knight"
+      ],
+      "ratchet": "3-85",
+      "bitShort": "BS",
+      "date": "2026-08-28",
+      "listino": {
+        "amount": 2800,
+        "currency": "JPY"
+      },
+      "listinoEur": 15.68
+    },
+    {
+      "code": "UX-00",
+      "manufacturer": "tt",
+      "name": "OrochiCluster 6-60LF",
+      "type": "Booster",
+      "bladeNames": [
+        "Orochi Cluster",
+        "Coil Orochi",
+        "Orochu Cluster"
+      ],
+      "ratchet": "6-60",
+      "bitShort": "LF",
+      "date": "2026-08-28",
+      "listino": {
+        "amount": 2800,
+        "currency": "JPY"
+      },
+      "listinoEur": 15.68
+    },
+    {
+      "code": "UX-00",
+      "manufacturer": "tt",
+      "name": "AeroPegasus 3-70A",
+      "type": "Booster",
+      "bladeNames": [
+        "Aero Pegasus",
+        "AeroPegasus",
+        "Areo Pegasus",
+        "Aero Pegaus"
+      ],
+      "ratchet": "3-70",
+      "bitShort": "A",
+      "date": "2026-08-28",
+      "listino": {
+        "amount": 2800,
+        "currency": "JPY"
+      },
+      "listinoEur": 15.68
+    },
+    {
+      "code": "UX-01",
+      "manufacturer": "tt",
+      "name": "DranBuster 1-60A",
+      "type": "Starter",
+      "bladeNames": [
+        "Dran Buster",
+        "Buster Dran"
+      ],
+      "ratchet": "1-60",
+      "bitShort": "A",
+      "date": "2024-03-30",
+      "listino": {
+        "amount": 1980,
+        "currency": "JPY"
+      },
+      "listinoEur": 11.09
+    },
+    {
+      "code": "UX-02",
+      "manufacturer": "tt",
+      "name": "HellsHammer 3-70H",
+      "type": "Starter",
+      "bladeNames": [
+        "Hells Hammer",
+        "Hammer Incendio"
+      ],
+      "ratchet": "3-70",
+      "bitShort": "H",
+      "date": "2024-03-30",
+      "listino": {
+        "amount": 1980,
+        "currency": "JPY"
+      },
+      "listinoEur": 11.09
+    },
+    {
+      "code": "UX-03",
+      "manufacturer": "tt",
+      "name": "WizardRod 5-70DB",
+      "type": "Booster",
+      "bladeNames": [
+        "Wizard Rod",
+        "Wand Wizard"
+      ],
+      "ratchet": "5-70",
+      "bitShort": "DB",
+      "date": "2024-03-30",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "UX-04",
+      "manufacturer": "tt",
+      "name": "DranBuster 1-60A",
+      "type": "Battle Entry Set U",
+      "bladeNames": [
+        "Dran Buster",
+        "Buster Dran"
+      ],
+      "ratchet": "1-60",
+      "bitShort": "A",
+      "date": "2024-04-27",
+      "listino": {
+        "amount": 6050,
+        "currency": "JPY"
+      },
+      "listinoEur": 33.89
+    },
+    {
+      "code": "UX-04",
+      "manufacturer": "tt",
+      "name": "WizardRod 5-70DB",
+      "type": "Battle Entry Set U",
+      "bladeNames": [
+        "Wizard Rod",
+        "Wand Wizard"
+      ],
+      "ratchet": "5-70",
+      "bitShort": "DB",
+      "date": "2024-04-27",
+      "listino": {
+        "amount": 6050,
+        "currency": "JPY"
+      },
+      "listinoEur": 33.89
+    },
+    {
+      "code": "UX-05",
+      "manufacturer": "tt",
+      "name": "ShinobiShadow 1-80MN",
+      "type": "Random Booster ShinobiShadow Select",
+      "bladeNames": [
+        "Shinobi Shadow",
+        "Shadow Shinobi"
+      ],
+      "ratchet": "1-80",
+      "bitShort": "MN",
+      "date": "2024-05-18",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "UX-05",
+      "manufacturer": "tt",
+      "name": "ShinobiShadow 9-60LF",
+      "type": "Random Booster ShinobiShadow Select",
+      "bladeNames": [
+        "Shinobi Shadow",
+        "Shadow Shinobi"
+      ],
+      "ratchet": "9-60",
+      "bitShort": "LF",
+      "date": "2024-05-18",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "UX-05",
+      "manufacturer": "tt",
+      "name": "ShinobiShadow 3-70GP",
+      "type": "Random Booster ShinobiShadow Select",
+      "bladeNames": [
+        "Shinobi Shadow",
+        "Shadow Shinobi"
+      ],
+      "ratchet": "3-70",
+      "bitShort": "GP",
+      "date": "2024-05-18",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "UX-06",
+      "manufacturer": "tt",
+      "name": "LeonCrest 7-60GN",
+      "type": "Booster",
+      "bladeNames": [
+        "Leon Crest",
+        "Crest Leon"
+      ],
+      "ratchet": "7-60",
+      "bitShort": "GN",
+      "date": "2024-08-10",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "UX-07",
+      "manufacturer": "tt",
+      "name": "PhoenixRudder 9-70G",
+      "type": "PhoenixRudder Deck Set",
+      "bladeNames": [
+        "Phoenix Rudder",
+        "Rudder Phoenix"
+      ],
+      "ratchet": "9-70",
+      "bitShort": "G",
+      "date": "2024-08-10",
+      "listino": {
+        "amount": 4100,
+        "currency": "JPY"
+      },
+      "listinoEur": 22.97
+    },
+    {
+      "code": "UX-07",
+      "manufacturer": "tt",
+      "name": "SphinxCowl 1-80GF",
+      "type": "PhoenixRudder Deck Set",
+      "bladeNames": [
+        "Sphinx Cowl",
+        "Cowl Sphinx"
+      ],
+      "ratchet": "1-80",
+      "bitShort": "GF",
+      "date": "2024-08-10",
+      "listino": {
+        "amount": 4100,
+        "currency": "JPY"
+      },
+      "listinoEur": 22.97
+    },
+    {
+      "code": "UX-07",
+      "manufacturer": "tt",
+      "name": "WyvernGale 2-60S",
+      "type": "PhoenixRudder Deck Set",
+      "bladeNames": [
+        "Wyvern Gale",
+        "Gale Wyvern"
+      ],
+      "ratchet": "2-60",
+      "bitShort": "S",
+      "date": "2024-08-10",
+      "listino": {
+        "amount": 4100,
+        "currency": "JPY"
+      },
+      "listinoEur": 22.97
+    },
+    {
+      "code": "UX-08",
+      "manufacturer": "tt",
+      "name": "SilverWolf 3-80FB",
+      "type": "Starter",
+      "bladeNames": [
+        "Silver Wolf",
+        "Sterling Wolf"
+      ],
+      "ratchet": "3-80",
+      "bitShort": "FB",
+      "date": "2024-10-12",
+      "listino": {
+        "amount": 2080,
+        "currency": "JPY"
+      },
+      "listinoEur": 11.65
+    },
+    {
+      "code": "UX-09",
+      "manufacturer": "tt",
+      "name": "SamuraiSaber 2-70L",
+      "type": "Starter",
+      "bladeNames": [
+        "Samurai Saber",
+        "Saber Samurai",
+        "Samurai Sabre"
+      ],
+      "ratchet": "2-70",
+      "bitShort": "L",
+      "date": "2024-11-02",
+      "listino": {
+        "amount": 3300,
+        "currency": "JPY"
+      },
+      "listinoEur": 18.49
+    },
+    {
+      "code": "UX-10",
+      "manufacturer": "tt",
+      "name": "KnightMail 3-85BS",
+      "type": "Customize Set",
+      "bladeNames": [
+        "Knight Mail",
+        "Mail Knight"
+      ],
+      "ratchet": "3-85",
+      "bitShort": "BS",
+      "date": "2024-11-02",
+      "listino": {
+        "amount": 5700,
+        "currency": "JPY"
+      },
+      "listinoEur": 31.93
+    },
+    {
+      "code": "UX-11",
+      "manufacturer": "tt",
+      "name": "ImpactDrake 9-60LR",
+      "type": "Starter",
+      "bladeNames": [
+        "Impact Drake",
+        "Impact Drake 9-60LR"
+      ],
+      "ratchet": "9-60",
+      "bitShort": "LR",
+      "date": "2024-12-28",
+      "listino": {
+        "amount": 2420,
+        "currency": "JPY"
+      },
+      "listinoEur": 13.56
+    },
+    {
+      "code": "UX-12",
+      "manufacturer": "tt",
+      "name": "GhostCircle 0-80GB",
+      "type": "Random Booster Vol. 5",
+      "bladeNames": [
+        "Ghost Circle",
+        "Circle Ghost"
+      ],
+      "ratchet": "0-80",
+      "bitShort": "GB",
+      "date": "2024-12-28",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "UX-12",
+      "manufacturer": "tt",
+      "name": "GhostCircle 4-60H",
+      "type": "Random Booster Vol. 5",
+      "bladeNames": [
+        "Ghost Circle",
+        "Circle Ghost"
+      ],
+      "ratchet": "4-60",
+      "bitShort": "H",
+      "date": "2024-12-28",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "UX-12",
+      "manufacturer": "tt",
+      "name": "ShinobiShadow 3-80F",
+      "type": "Random Booster Vol. 5",
+      "bladeNames": [
+        "Shinobi Shadow",
+        "Shadow Shinobi"
+      ],
+      "ratchet": "3-80",
+      "bitShort": "F",
+      "date": "2024-12-28",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "UX-12",
+      "manufacturer": "tt",
+      "name": "LeonClaw 0-80E",
+      "type": "Random Booster Vol. 5",
+      "bladeNames": [
+        "Leon Claw",
+        "Claw Leon"
+      ],
+      "ratchet": "0-80",
+      "bitShort": "E",
+      "date": "2024-12-28",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "UX-12",
+      "manufacturer": "tt",
+      "name": "PhoenixFeather 2-60N",
+      "type": "Random Booster Vol. 5",
+      "bladeNames": [
+        "Phoenix Feather",
+        "Feather Phoenix"
+      ],
+      "ratchet": "2-60",
+      "bitShort": "N",
+      "date": "2024-12-28",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "UX-12",
+      "manufacturer": "tt",
+      "name": "WyvernGale 0-80C",
+      "type": "Random Booster Vol. 5",
+      "bladeNames": [
+        "Wyvern Gale",
+        "Gale Wyvern"
+      ],
+      "ratchet": "0-80",
+      "bitShort": "C",
+      "date": "2024-12-28",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "UX-13",
+      "manufacturer": "tt",
+      "name": "GolemRock 1-60UN",
+      "type": "Booster",
+      "bladeNames": [
+        "Golem Rock",
+        "Rock Golem",
+        "Rock Golem 1-60UN"
+      ],
+      "ratchet": "1-60",
+      "bitShort": "UN",
+      "date": "2025-01-25",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "UX-14",
+      "manufacturer": "tt",
+      "name": "ScorpioSpear 0-70Z",
+      "type": "Starter",
+      "bladeNames": [
+        "Scorpio Spear",
+        "Spear Scorpio",
+        "Spear Scorpio 0-70Z",
+        "Scorpio"
+      ],
+      "ratchet": "0-70",
+      "bitShort": "Z",
+      "date": "2025-04-26",
+      "listino": {
+        "amount": 2200,
+        "currency": "JPY"
+      },
+      "listinoEur": 12.32
+    },
+    {
+      "code": "UX-15",
+      "manufacturer": "tt",
+      "name": "SharkScale 4-50UF",
+      "type": "SharkScale Deck Set",
+      "bladeNames": [
+        "Shark Scale",
+        "Scale Shark",
+        "Scark Scale"
+      ],
+      "ratchet": "4-50",
+      "bitShort": "UF",
+      "date": "2025-08-09",
+      "listino": {
+        "amount": 4200,
+        "currency": "JPY"
+      },
+      "listinoEur": 23.53
+    },
+    {
+      "code": "UX-15",
+      "manufacturer": "tt",
+      "name": "TyrannoRoar 1-70L",
+      "type": "SharkScale Deck Set",
+      "bladeNames": [
+        "Tyranno Roar",
+        "Roar Tyranno"
+      ],
+      "ratchet": "1-70",
+      "bitShort": "L",
+      "date": "2025-08-09",
+      "listino": {
+        "amount": 4200,
+        "currency": "JPY"
+      },
+      "listinoEur": 23.53
+    },
+    {
+      "code": "UX-15",
+      "manufacturer": "tt",
+      "name": "HellsBrave J3-60GF",
+      "type": "SharkScale Deck Set",
+      "bladeNames": [
+        "Brave",
+        "Courage",
+        "Hells",
+        "Incendio",
+        "Jaggy"
+      ],
+      "ratchet": "3-60",
+      "bitShort": "GF",
+      "date": "2025-08-09",
+      "listino": {
+        "amount": 4200,
+        "currency": "JPY"
+      },
+      "listinoEur": 23.53
+    },
+    {
+      "code": "UX-16",
+      "manufacturer": "tt",
+      "name": "ClockMirage 9-65B",
+      "type": "Random Booster ClockMirage Select",
+      "bladeNames": [
+        "Clock Mirage",
+        "Mirage Clock"
+      ],
+      "ratchet": "9-65",
+      "bitShort": "B",
+      "date": "2025-10-11",
+      "listino": {
+        "amount": 1400,
+        "currency": "JPY"
+      },
+      "listinoEur": 7.84
+    },
+    {
+      "code": "UX-17",
+      "manufacturer": "tt",
+      "name": "MeteorDragoon 3-70J",
+      "type": "Starter",
+      "bladeNames": [
+        "Meteor Dragoon",
+        "Meteoroid Dragoon 3-70J",
+        "Meteo Dragoon"
+      ],
+      "ratchet": "3-70",
+      "bitShort": "J",
+      "date": "2025-12-27",
+      "listino": {
+        "amount": 2300,
+        "currency": "JPY"
+      },
+      "listinoEur": 12.88
+    },
+    {
+      "code": "UX-18",
+      "manufacturer": "tt",
+      "name": "MummyCurse 7-55W",
+      "type": "Random Booster Vol. 8",
+      "bladeNames": [
+        "Mummy Curse",
+        "Curse Mummy"
+      ],
+      "ratchet": "7-55",
+      "bitShort": "W",
+      "date": "2025-12-27",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "UX-18",
+      "manufacturer": "tt",
+      "name": "MummyCurse 4-60C",
+      "type": "Random Booster Vol. 8",
+      "bladeNames": [
+        "Mummy Curse",
+        "Curse Mummy"
+      ],
+      "ratchet": "4-60",
+      "bitShort": "C",
+      "date": "2025-12-27",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "UX-18",
+      "manufacturer": "tt",
+      "name": "PegasusBrush M3-85W",
+      "type": "Random Booster Vol. 8",
+      "bladeNames": [
+        "Brush",
+        "Pegasus",
+        "Massive"
+      ],
+      "ratchet": "3-85",
+      "bitShort": "W",
+      "date": "2025-12-27",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "UX-18",
+      "manufacturer": "tt",
+      "name": "SolBrave C9-70TP",
+      "type": "Random Booster Vol. 8",
+      "bladeNames": [
+        "Brave",
+        "Courage",
+        "Sol",
+        "Charge"
+      ],
+      "ratchet": "9-70",
+      "bitShort": "TP",
+      "date": "2025-12-27",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "UX-18",
+      "manufacturer": "tt",
+      "name": "DranDagger 7-55G",
+      "type": "Random Booster Vol. 8",
+      "bladeNames": [
+        "Dran Dagger",
+        "Dagger Dran"
+      ],
+      "ratchet": "7-55",
+      "bitShort": "G",
+      "date": "2025-12-27",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
+    },
+    {
+      "code": "UX-18",
+      "manufacturer": "tt",
+      "name": "WeissTiger 4-80LR",
+      "type": "Random Booster Vol. 8",
+      "bladeNames": [
+        "Weiss Tiger",
+        "Pearl Tiger"
+      ],
+      "ratchet": "4-80",
+      "bitShort": "LR",
+      "date": "2025-12-27",
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY"
+      },
+      "listinoEur": 8.96
     }
   ]
 }

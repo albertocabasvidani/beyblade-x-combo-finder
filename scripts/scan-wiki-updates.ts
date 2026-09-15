@@ -103,9 +103,12 @@ const RELEASES_PATH = opt('--releases', join(LISTS_FROM ? TMP : DATA, 'releases.
  * link), le decine di [[File:Flag of ...]] nelle celle di data e prezzo della lista Hasbro, e il
  * blocco introduttivo che linka [[Beyblade X]] senza codice.
  */
-/** Una riga di prodotto, con anche il codice e la cella "Release Date" grezze — servono a
- * scan() per popolare data/releases.json senza un secondo giro di parsing sulla stessa lista. */
-export interface ListEntry { title: string; code: string | null; dateCell: string | null }
+/** Una riga di prodotto, con anche il codice e le celle "Release Date" e "Price" grezze —
+ * servono a scan() per popolare data/releases.json senza un secondo giro di parsing sulla
+ * stessa lista. */
+export interface ListEntry {
+  title: string; code: string | null; dateCell: string | null; priceCell: string | null;
+}
 
 /**
  * UNA entry per RIGA di tabella, senza dedup per titolo: righe diverse condividono spesso la
@@ -127,10 +130,15 @@ export function parseListEntries(wikitext: string): ListEntry[] {
 
     // Celle nell'ordine della tabella (Product Code, Name, Release Date, Price): ogni cella
     // e' una riga che comincia con '|' non seguito da '-' (quello e' gia' il separatore di
-    // riga, consumato dallo split sopra). cells[0]=codice, cells[2]=data.
+    // riga, consumato dallo split sopra). cells[0]=codice, cells[2]=data, cells[3]=prezzo.
     const cells = block.split(/\n\|(?!-)/).slice(1).map((c) => c.trim());
     const codeMatch = cells[0]?.match(/^(?:BX|UX|CX|BXG)-[\w.]+|^[FG]\d{4}/);
-    out.push({ title, code: codeMatch ? codeMatch[0] : null, dateCell: cells[2] ?? null });
+    out.push({
+      title,
+      code: codeMatch ? codeMatch[0] : null,
+      dateCell: cells[2] ?? null,
+      priceCell: cells[3] ?? null,
+    });
   }
   return out;
 }
@@ -188,6 +196,161 @@ function estraiDataPiuAntica(testoPulito: string): string | null {
  * con le nostre chiavi Amazon): minuscolo, via ogni carattere che non sia lettera o cifra. */
 function normalizzaNome(s: string): string {
   return s.toLowerCase().replace(/[^a-z0-9]/g, '');
+}
+
+/** Prezzo di listino dalla colonna "Price" della lista.
+ *
+ * Due formati, uno per lista. Takara Tomy scrive il prezzo consigliato giapponese in yen
+ * ("1980円", 156 righe su 175 il 15/09/2026; le altre sono "N/A", promozionali e jolly -00).
+ * Hasbro mette in una cella sola piu' valute, ognuna preceduta dalla bandiera del paese, e le
+ * valute non ancora annunciate stanno dentro commenti HTML ("<!-- $TBA -->"): si tolgono i
+ * commenti PRIMA di cercare, o si legge un prezzo che la wiki considera non pubblicato. Si
+ * prende la riga Stati Uniti, l'unica presente in tutte le 138 righe (Canada e Australia
+ * mancano piu' spesso; l'euro nella lista non c'e' affatto).
+ *
+ * Il valore resta nella valuta di origine: la conversione la fa `tassiEur`, cosi' il dato
+ * grezzo non invecchia col cambio. */
+export function parseListino(
+  priceCell: string | null, isTakaraTomy: boolean,
+): { amount: number; currency: 'JPY' | 'USD' } | null {
+  if (!priceCell) return null;
+  const testo = priceCell.replace(/<!--[\s\S]*?-->/g, ' ');
+  if (isTakaraTomy) {
+    const m = testo.match(/(\d[\d,]*)\s*円/);
+    if (!m) return null;
+    const amount = parseInt(m[1].replace(/,/g, ''), 10);
+    return Number.isFinite(amount) && amount > 0 ? { amount, currency: 'JPY' } : null;
+  }
+  const m = testo.match(/Flag of United States\.png\|\d+px\]\]\s*\$(\d+(?:\.\d+)?)/i);
+  if (!m) return null;
+  const amount = parseFloat(m[1]);
+  return Number.isFinite(amount) && amount > 0 ? { amount, currency: 'USD' } : null;
+}
+
+/** Tassi BCE del giorno (frankfurter.app), con l'ultimo valore buono in data/fx-rates.json.
+ *
+ * Il file serve al giorno in cui la rete non risponde: senza, tutti i `listinoEur` uscirebbero
+ * null e il monitor perderebbe il riferimento prezzo per l'intera giornata. Un tasso vecchio di
+ * qualche giorno sposta i rapporti di frazioni di punto, un tasso assente li azzera. */
+async function tassiEur(): Promise<{ date: string; rates: { JPY: number; USD: number } } | null> {
+  const path = join(DATA, 'fx-rates.json');
+  const precedente = readJson<{ date: string; rates: { JPY: number; USD: number } } | null>(path, null);
+  try {
+    const res = await fetch('https://api.frankfurter.app/latest?from=EUR&to=JPY,USD', {
+      headers: { 'User-Agent': 'beyblade-x-combo-finder/1.0 (scan-wiki-updates)' },
+      signal: AbortSignal.timeout(15000),
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const j = await res.json() as { date: string; rates: Record<string, number> };
+    const JPY = j.rates?.JPY;
+    const USD = j.rates?.USD;
+    if (!Number.isFinite(JPY) || !Number.isFinite(USD)) throw new Error('risposta senza JPY/USD');
+    const fx = { date: j.date, rates: { JPY, USD } };
+    writeJsonAtomic(path, { ...fx, fetchedAt: new Date().toISOString() });
+    return fx;
+  } catch (err) {
+    if (precedente) {
+      console.log(`tassi: frankfurter non raggiungibile (${(err as Error).message}); uso quelli del ${precedente.date}.`);
+      return precedente;
+    }
+    console.log(`tassi: frankfurter non raggiungibile (${(err as Error).message}) e nessun valore precedente: listinoEur sara' null.`);
+    return null;
+  }
+}
+
+/** Listino convertito in euro, 2 decimali. */
+function inEuro(
+  listino: { amount: number; currency: 'JPY' | 'USD' } | null,
+  fx: { rates: { JPY: number; USD: number } } | null,
+): number | null {
+  if (!listino || !fx) return null;
+  const tasso = fx.rates[listino.currency];
+  if (!Number.isFinite(tasso) || tasso <= 0) return null;
+  return Math.round((listino.amount / tasso) * 100) / 100;
+}
+
+/** Una voce della sezione `products` di releases.json. */
+interface ProductEntry {
+  code: string;
+  manufacturer: 'tt' | 'hasbro';
+  name: string;
+  type: string;
+  bladeNames: string[];
+  ratchet: string | null;
+  bitShort: string | null;
+  date: string | null;
+  listino: { amount: number; currency: 'JPY' | 'USD' } | null;
+  listinoEur: number | null;
+}
+
+/**
+ * Sezione `products`: il catalogo prodotti (data/products.json) arricchito con i nomi
+ * occidentali delle parti (data/parts-master.json) e con data e listino della riga wiki.
+ *
+ * Esiste perche' il consumatore (bbxdealmonitor) deve riconoscere un prodotto dal TITOLO di
+ * un annuncio Amazon, che non e' il nome della wiki: Hasbro traduce ("Fortress Knight" per
+ * "Armor Knight"), inverte l'ordine ("Sword Dran" per "Dran Sword") e vende lo stesso blade in
+ * confezioni diverse. Quell'identita' e' gia' risolta qui dentro, in parts-master (names.tt,
+ * names.hasbro, aliases en): il monitor non deve reinventarla, legge questa sezione.
+ *
+ * `bitShort` e' la sigla ufficiale del bit (H, FB, LR...), che negli annunci compare in coda al
+ * codice parte ("1-80MN"): serve a disambiguare due confezioni dello stesso blade.
+ */
+function costruisciProducts(
+  fx: { rates: { JPY: number; USD: number } } | null,
+  byCode: Record<string, { name: string; date: string | null; listino: { amount: number; currency: 'JPY' | 'USD' } | null }>,
+  byName: { productCode: string | null; date: string | null; listino: { amount: number; currency: 'JPY' | 'USD' } | null }[],
+): ProductEntry[] {
+  const master = readJson<Record<string, any[]>>(join(DATA, 'parts-master.json'), {});
+  const catalogo = readJson<{ products?: Record<string, Record<string, any[]>> }>(join(DATA, 'products.json'), {});
+  if (!catalogo.products) return [];
+
+  // id parte -> nomi occidentali (TT, Hasbro e alias inglesi: il titolo Amazon usa uno di questi)
+  const nomiParte = new Map<string, string[]>();
+  for (const categoria of ['blades', 'mainBlades', 'lockChips', 'assistBlades', 'overBlades']) {
+    for (const p of master[categoria] ?? []) {
+      const nomi = new Set<string>();
+      for (const v of [p?.names?.tt, p?.names?.hasbro]) if (v) nomi.add(v);
+      for (const a of p?.aliases ?? []) if (a?.lang === 'en' && a?.value) nomi.add(a.value);
+      if (p?.id && nomi.size) nomiParte.set(p.id, [...nomi]);
+    }
+  }
+  const bitShort = new Map<string, string>();
+  for (const b of master.bits ?? []) if (b?.id && b?.shortName) bitShort.set(b.id, b.shortName);
+
+  const perCodiceHasbro = new Map<string, { date: string | null; listino: ProductEntry['listino'] }>();
+  for (const r of byName) if (r.productCode) perCodiceHasbro.set(r.productCode, { date: r.date, listino: r.listino });
+
+  const out: ProductEntry[] = [];
+  for (const [chiave, categorie] of Object.entries(catalogo.products)) {
+    const manufacturer: 'tt' | 'hasbro' = chiave === 'takaraTomy' ? 'tt' : 'hasbro';
+    for (const prodotti of Object.values(categorie)) {
+      if (!Array.isArray(prodotti)) continue;
+      for (const p of prodotti) {
+        if (!p?.code) continue;
+        const nomi = new Set<string>();
+        for (const k of ['blade', 'mainBlade', 'lockChip', 'assistBlade', 'overBlade']) {
+          for (const n of nomiParte.get(p[k]) ?? []) nomi.add(n);
+        }
+        const riga = manufacturer === 'tt' ? byCode[p.code] : perCodiceHasbro.get(p.code);
+        const listino = riga?.listino ?? null;
+        out.push({
+          code: p.code,
+          manufacturer,
+          name: p.name ?? p.code,
+          type: p.type ?? '',
+          bladeNames: [...nomi],
+          ratchet: p.ratchet ?? null,
+          bitShort: p.bit ? bitShort.get(p.bit) ?? null : null,
+          date: riga?.date ?? null,
+          listino,
+          listinoEur: inEuro(listino, fx),
+        });
+      }
+    }
+  }
+  out.sort((a, b) => a.code.localeCompare(b.code));
+  return out;
 }
 
 /** Link della sezione ==Contents==: i Multipack elencano li' i bey membri, che spesso non stanno in nessuna lista. */
@@ -273,11 +436,22 @@ async function scan(): Promise<void> {
   // nei giorni in cui la wiki tace.
   const nuove: { title: string; info: PageInfo; via: string }[] = [];
   const missing: Worklist['missing'] = [];
-  const scaricaListe = listeCambiate || !existsSync(RELEASES_PATH);
+  // Le liste si rileggono anche quando i revid non sono cambiati, se releases.json e' vecchio:
+  // il file porta `checkedAt`, e il consumatore (bbxdealmonitor) lo usa per sapere se la wiki e'
+  // stata guardata di recente. Senza, un file fermo da 10 giorni perche' la wiki taceva era
+  // indistinguibile da un job che non gira piu' — e il monitor spegneva il filtro novita' per
+  // prudenza (misurato il 15/09/2026: intervalli di 3, 7, 8 e 10 giorni fra due scritture).
+  const releasesPrecedenti = readJson<{ checkedAt?: string } | null>(RELEASES_PATH, null);
+  const oreDaUltimoGiro = releasesPrecedenti?.checkedAt
+    ? (Date.now() - Date.parse(releasesPrecedenti.checkedAt)) / 3600000
+    : Infinity;
+  const scaricaListe = listeCambiate || !existsSync(RELEASES_PATH) || !(oreDaUltimoGiro < 20);
   if (scaricaListe) {
     const candidati = new Map<string, string>(); // titolo grezzo -> lista di provenienza
-    const releaseByCode: Record<string, { name: string; date: string | null }> = {};
-    const releaseByName: { norm: string; name: string; date: string | null; productCode: string | null }[] = [];
+    type Listino = { amount: number; currency: 'JPY' | 'USD' } | null;
+    const releaseByCode: Record<string, { name: string; date: string | null; listino: Listino; listinoEur: number | null }> = {};
+    const releaseByName: { norm: string; name: string; date: string | null; productCode: string | null; listino: Listino; listinoEur: number | null }[] = [];
+    const fx = await tassiEur();
     const releasePages: Record<string, { revid: number; timestamp: string | null }> = {};
     let scartateSenzaNome = 0;
     for (const t of LIST_TITLES) {
@@ -288,11 +462,13 @@ async function scan(): Promise<void> {
       const isTakaraTomy = t.includes('Takara Tomy');
       for (const e of entries) {
         const date = e.dateCell ? estraiDataPiuAntica(pulisciCellaData(e.dateCell)) : null;
+        const listino = parseListino(e.priceCell, isTakaraTomy);
+        const listinoEur = inEuro(listino, fx);
         if (isTakaraTomy) {
-          if (e.code) releaseByCode[e.code] = { name: e.title, date };
+          if (e.code) releaseByCode[e.code] = { name: e.title, date, listino, listinoEur };
         } else {
           const norm = normalizzaNome(e.title);
-          if (norm.length >= 8) releaseByName.push({ norm, name: e.title, date, productCode: e.code });
+          if (norm.length >= 8) releaseByName.push({ norm, name: e.title, date, productCode: e.code, listino, listinoEur });
           else scartateSenzaNome++;
         }
       }
@@ -300,15 +476,25 @@ async function scan(): Promise<void> {
       releasePages[isTakaraTomy ? 'tt' : 'hasbro'] = { revid: info.revid!, timestamp: info.timestamp };
     }
     releaseByName.sort((a, b) => b.norm.length - a.norm.length); // match piu' specifico prima
+    const products = costruisciProducts(fx, releaseByCode, releaseByName);
+    const adesso = new Date().toISOString();
     writeJsonAtomic(RELEASES_PATH, {
-      fetchedAt: new Date().toISOString(),
+      // fetchedAt: ultima volta che le LISTE sono cambiate; checkedAt: ultima volta che le
+      // abbiamo guardate. Sono due fatti diversi e il consumatore ha bisogno del secondo.
+      fetchedAt: listeCambiate || !releasesPrecedenti ? adesso : (releasesPrecedenti as any).fetchedAt ?? adesso,
+      checkedAt: adesso,
+      fx: fx ? { date: fx.date, rates: fx.rates } : null,
       pages: releasePages,
       byCode: releaseByCode,
       byName: releaseByName,
+      products,
     });
+    const conListino = Object.values(releaseByCode).filter((r) => r.listino).length
+      + releaseByName.filter((r) => r.listino).length;
     console.log(`Liste: ${candidati.size} titoli candidati.`);
     console.log(`releases.json: ${Object.keys(releaseByCode).length} codici TT, ` +
-      `${releaseByName.length} nomi Hasbro${scartateSenzaNome ? ` (${scartateSenzaNome} scartati, nome troppo corto)` : ''}.`);
+      `${releaseByName.length} nomi Hasbro${scartateSenzaNome ? ` (${scartateSenzaNome} scartati, nome troppo corto)` : ''}; ` +
+      `${conListino} righe con listino, ${products.length} prodotti (${products.filter((p) => p.listinoEur != null).length} con listino in euro).`);
 
     const canon = await batchQuery([...candidati.keys()]);
     for (const [grezzo, info] of canon) {
