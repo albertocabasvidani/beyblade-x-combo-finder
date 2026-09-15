@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14",
+  "generatedAt": "2026-09-15",
   "source": "wbo-winning-combos",
   "combos": {
     "aero-pegasus-0-60-rush": {
@@ -127,7 +127,7 @@
           "tier": "structured",
           "eventId": "wbo-thread-127300",
           "eventName": "Mata Nui's X Extravaganza 2",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 2,
           "stadium": "xtreme",
           "lang": "en",
@@ -2774,7 +2774,7 @@
           "tier": "structured",
           "eventId": "wbo-thread-127300",
           "eventName": "Mata Nui's X Extravaganza 2",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 1,
           "stadium": "xtreme",
           "lang": "en",
@@ -2785,7 +2785,7 @@
           "tier": "structured",
           "eventId": "wbo-thread-127300",
           "eventName": "Mata Nui's X Extravaganza 2",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 3,
           "stadium": "xtreme",
           "lang": "en",
@@ -8294,9 +8294,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-09-15",
           "eventName": "Dallas Beyblade Association - Beycon 26 Dallas Regionals",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 1,
           "players": 31,
           "stadium": "xtreme",
@@ -17380,7 +17380,7 @@
       "assistBlade": "free",
       "overBlade": null,
       "displayName": "Bahamut Blast F 7-60 Hexa",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -17408,7 +17408,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Bahamut Blast H 1-50 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -17436,7 +17436,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Bahamut Blast H 1-50 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -17474,7 +17474,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Bahamut Blast H 3-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -17502,7 +17502,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Bahamut Blast H 3-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -17530,7 +17530,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Bahamut Blast H 9-60 Free Ball",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -17558,7 +17558,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Bahamut Blast H 9-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -17586,7 +17586,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Bahamut Blast H 9-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -17614,7 +17614,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Bahamut Blast H 9-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -17642,7 +17642,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Bahamut Blast H 9-60 Taper",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -17670,7 +17670,7 @@
       "assistBlade": "knuckle",
       "overBlade": null,
       "displayName": "Bahamut Blast K 1-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -17698,7 +17698,7 @@
       "assistBlade": "vertical",
       "overBlade": null,
       "displayName": "Bahamut Blast V 3-60 Ignition",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -17726,7 +17726,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Bahamut Blast W 1-70 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -17754,7 +17754,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Bahamut Blast W 7-60 Hexa",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -17782,7 +17782,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Bahamut Blast W 9-60 Jolt",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -21286,7 +21286,7 @@
       "assistBlade": "free",
       "overBlade": null,
       "displayName": "Cerberus Blast F 3-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -21314,7 +21314,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Cerberus Blast H 1-50 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -21354,7 +21354,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Cerberus Blast H 1-50 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -21382,7 +21382,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Cerberus Blast H 1-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -21408,7 +21408,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Cerberus Blast H 5-50 Narrow",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -21436,7 +21436,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Cerberus Blast H 7-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -21462,7 +21462,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Cerberus Blast H 9-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -21512,7 +21512,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Cerberus Blast H 9-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -21551,7 +21551,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Cerberus Blast W 1-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -21577,7 +21577,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Cerberus Blast W 1-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -21605,7 +21605,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Cerberus Blast W 3-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -21633,7 +21633,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Cerberus Blast W 4-50 Point",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -21659,7 +21659,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Cerberus Blast W 6-60 Free Ball",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -21685,7 +21685,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Cerberus Blast W 7-60 Hexa",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -21711,7 +21711,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Cerberus Blast W 7-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -21738,7 +21738,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Cerberus Blast W 9-60 Hexa",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -21777,7 +21777,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Cerberus Blast W 9-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -21803,7 +21803,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Cerberus Blast W 9-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -21829,7 +21829,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Cerberus Blast W 9-60 Point",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -21855,7 +21855,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Cerberus Blast W 9-60 Taper",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -21881,7 +21881,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Cerberus Blast W 9-60 Trans Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -21921,7 +21921,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Cerberus Blast W 9-80 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -33390,9 +33390,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-09-15",
           "eventName": "Dallas Beyblade Association - Breaking Limits - Limited #8",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 1,
           "players": 7,
           "stadium": "xtreme",
@@ -33402,9 +33402,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-15",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 2,
           "players": 17,
           "stadium": "xtreme",
@@ -33414,9 +33414,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-15",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 3,
           "players": 17,
           "stadium": "xtreme",
@@ -34128,9 +34128,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-09-15",
           "eventName": "Dallas Beyblade Association - Breaking Limits - Limited #8",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 1,
           "players": 7,
           "stadium": "xtreme",
@@ -35263,9 +35263,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-09-15",
           "eventName": "Dallas Beyblade Association - Breaking Limits - Limited #8",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 1,
           "players": 7,
           "stadium": "xtreme",
@@ -38617,7 +38617,7 @@
           "tier": "structured",
           "eventId": "wbo-thread-127300",
           "eventName": "Mata Nui's X Extravaganza 2",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 3,
           "stadium": "xtreme",
           "lang": "en",
@@ -42216,7 +42216,7 @@
       "assistBlade": "assault",
       "overBlade": null,
       "displayName": "Dran Blast A 3-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -42243,7 +42243,7 @@
       "assistBlade": "dual",
       "overBlade": null,
       "displayName": "Dran Blast D 3-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -42269,7 +42269,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Dran Blast H 1-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -42297,7 +42297,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Dran Blast H 3-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -42325,7 +42325,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Dran Blast H 3-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -42353,7 +42353,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Dran Blast H 7-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -42381,7 +42381,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Dran Blast H 9-60 Jolt",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -42419,7 +42419,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Dran Blast H 9-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -42478,7 +42478,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Dran Blast J 1-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -42506,7 +42506,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Dran Blast J 5-60 Low Flat",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -42532,7 +42532,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Dran Blast J 9-60 Free Ball",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -42560,7 +42560,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Dran Blast J 9-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -42586,7 +42586,7 @@
       "assistBlade": "round",
       "overBlade": null,
       "displayName": "Dran Blast R 3-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -42613,7 +42613,7 @@
       "assistBlade": "slash",
       "overBlade": null,
       "displayName": "Dran Blast S 3-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -42639,7 +42639,7 @@
       "assistBlade": "slash",
       "overBlade": null,
       "displayName": "Dran Blast S 9-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -42665,7 +42665,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Dran Blast W 3-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -42691,7 +42691,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Dran Blast W 7-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -42719,7 +42719,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Dran Blast W 7-60 Low Orb",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -42745,7 +42745,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Dran Blast W 7-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -42771,7 +42771,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Dran Blast W 9-60 Hexa",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -42809,7 +42809,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Dran Blast W 9-60 Low Orb",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -42835,7 +42835,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Dran Blast W 9-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -48543,9 +48543,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-15",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 2,
           "players": 17,
           "stadium": "xtreme",
@@ -51578,7 +51578,7 @@
       "assistBlade": "dual",
       "overBlade": null,
       "displayName": "Emperor Blast D 5-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -51605,7 +51605,7 @@
       "assistBlade": "dual",
       "overBlade": null,
       "displayName": "Emperor Blast D 9-60 Taper",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -51633,7 +51633,7 @@
       "assistBlade": "free",
       "overBlade": null,
       "displayName": "Emperor Blast F 7-60 Free Ball",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -51660,7 +51660,7 @@
       "assistBlade": "free",
       "overBlade": null,
       "displayName": "Emperor Blast F 7-60 Hexa",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -51688,7 +51688,7 @@
       "assistBlade": "free",
       "overBlade": null,
       "displayName": "Emperor Blast F 9-60 Ball",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -51716,7 +51716,7 @@
       "assistBlade": "free",
       "overBlade": null,
       "displayName": "Emperor Blast F 9-60 Free Ball",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -51766,7 +51766,7 @@
       "assistBlade": "free",
       "overBlade": null,
       "displayName": "Emperor Blast F 9-60 Hexa",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -51806,7 +51806,7 @@
       "assistBlade": "free",
       "overBlade": null,
       "displayName": "Emperor Blast F 9-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -51865,7 +51865,7 @@
       "assistBlade": "free",
       "overBlade": null,
       "displayName": "Emperor Blast F 9-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -51893,7 +51893,7 @@
       "assistBlade": "free",
       "overBlade": null,
       "displayName": "Emperor Blast F 9-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -51919,7 +51919,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 0-60 Point",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -51945,7 +51945,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 1-50 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -52009,7 +52009,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 1-50 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -52037,7 +52037,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 1-50 Low Flat",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -52065,7 +52065,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 1-50 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -52093,7 +52093,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 1-60 Hexa",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -52155,7 +52155,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 1-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -52227,7 +52227,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 1-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -52297,7 +52297,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 1-60 Low Flat",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -52325,7 +52325,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 1-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -52471,7 +52471,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 1-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -52580,7 +52580,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 1-70 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -52617,7 +52617,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 1-70 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -52644,7 +52644,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 1-70 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -52683,7 +52683,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 1-70 Taper",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -52711,7 +52711,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 1-80 Low Orb",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -52738,7 +52738,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 3-60 Free Ball",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -52778,7 +52778,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 3-60 Jolt",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -52806,7 +52806,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 3-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -52985,7 +52985,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 3-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -53033,7 +53033,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 3-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -53221,7 +53221,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 3-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -53318,7 +53318,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 3-60 Under Flat",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -53346,7 +53346,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 3-60 Unite",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -53374,7 +53374,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 3-60 Wall Ball",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -53402,7 +53402,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 3-70 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -53428,7 +53428,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 4-50 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -53455,7 +53455,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 4-50 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -53494,7 +53494,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 4-50 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -53546,7 +53546,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 4-50 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -53595,7 +53595,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 4-50 Taper",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -53621,7 +53621,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 5-50 Free Ball",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -53649,7 +53649,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 5-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -53689,7 +53689,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 5-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -53725,7 +53725,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 6-60 Jolt",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -53765,7 +53765,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 6-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -53828,7 +53828,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 6-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -53900,7 +53900,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 6-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -53938,7 +53938,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 6-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -53964,7 +53964,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 6-70 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -53992,7 +53992,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 7-60 Hexa",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -54020,7 +54020,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 7-60 Jolt",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -54047,7 +54047,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 7-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -54157,7 +54157,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 7-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -54209,7 +54209,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 7-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -54249,7 +54249,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 7-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -54377,7 +54377,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 7-70 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -54403,14 +54403,14 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 7-70 Taper",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-15",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 1,
           "players": 17,
           "stadium": "xtreme",
@@ -54431,7 +54431,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 9-60 Ball",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -54459,7 +54459,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 9-60 Elevate",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -54486,7 +54486,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 9-60 Free Ball",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -54522,7 +54522,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 9-60 Hexa",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -54572,7 +54572,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 9-60 Jolt",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -54622,7 +54622,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 9-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -55243,7 +55243,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 9-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -55433,7 +55433,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 9-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -55763,7 +55763,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 9-60 Orb",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -55791,7 +55791,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 9-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -55984,7 +55984,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 9-60 Taper",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -56086,7 +56086,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 9-60 Trans Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -56114,7 +56114,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 9-60 Zap",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -56142,7 +56142,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 9-70 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -56169,7 +56169,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Emperor Blast H 9-70 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -56197,7 +56197,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Emperor Blast J 5-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -56225,7 +56225,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Emperor Blast J 5-60 Needle",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -56252,7 +56252,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Emperor Blast J 7-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -56280,7 +56280,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Emperor Blast J 7-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -56307,7 +56307,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Emperor Blast J 9-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -56335,7 +56335,7 @@
       "assistBlade": "slash",
       "overBlade": null,
       "displayName": "Emperor Blast S 1-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -56361,7 +56361,7 @@
       "assistBlade": "slash",
       "overBlade": null,
       "displayName": "Emperor Blast S 3-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -56387,7 +56387,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Emperor Blast W 0-70 Hexa",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -56415,7 +56415,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Emperor Blast W 1-60 Hexa",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -56443,7 +56443,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Emperor Blast W 1-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -56469,7 +56469,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Emperor Blast W 1-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -56495,7 +56495,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Emperor Blast W 3-60 Free Ball",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -56523,7 +56523,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Emperor Blast W 3-60 Hexa",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -56550,7 +56550,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Emperor Blast W 3-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -56578,7 +56578,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Emperor Blast W 5-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -56606,7 +56606,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Emperor Blast W 5-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -56632,7 +56632,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Emperor Blast W 5-60 Trans Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -56659,7 +56659,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Emperor Blast W 6-60 Hexa",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -56709,7 +56709,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Emperor Blast W 6-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -56737,7 +56737,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Emperor Blast W 6-70 Hexa",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -56765,7 +56765,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Emperor Blast W 7-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -56805,7 +56805,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Emperor Blast W 7-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -56833,7 +56833,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Emperor Blast W 7-70 Hexa",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -56861,7 +56861,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Emperor Blast W 9-60 Free Ball",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -56911,7 +56911,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Emperor Blast W 9-60 Hexa",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -57109,7 +57109,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Emperor Blast W 9-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -57149,7 +57149,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Emperor Blast W 9-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -57233,7 +57233,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Emperor Blast W 9-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -57261,7 +57261,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Emperor Blast W 9-60 Taper",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -57330,7 +57330,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Emperor Blast W 9-60 Zap",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -57358,7 +57358,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Emperor Blast W 9-70 Hexa",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -57386,7 +57386,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Emperor Blast W 9-70 Jolt",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -57412,7 +57412,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Emperor Blast W 9-70 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -57440,7 +57440,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Emperor Blast W 9-70 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -57466,7 +57466,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Emperor Blast W 9-70 Taper",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -61946,7 +61946,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Fox Blast H 1-50 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -61986,7 +61986,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Fox Blast H 3-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -62013,7 +62013,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Fox Blast H 3-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -62041,7 +62041,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Fox Blast H 5-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -62069,7 +62069,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Fox Blast H 5-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -62097,7 +62097,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Fox Blast H 7-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -62125,7 +62125,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Fox Blast J 3-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -62151,7 +62151,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Fox Blast J 5-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -62177,7 +62177,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Fox Blast J 7-60 Taper",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -62203,7 +62203,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Fox Blast J 9-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -62231,7 +62231,7 @@
       "assistBlade": "slash",
       "overBlade": null,
       "displayName": "Fox Blast S 7-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -62257,7 +62257,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Fox Blast W 7-60 Rubber Accel",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -62284,7 +62284,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Fox Blast W 9-60 Hexa",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -62311,7 +62311,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Fox Blast W 9-60 Taper",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -71925,9 +71925,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-15",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 2,
           "players": 17,
           "stadium": "xtreme",
@@ -72635,7 +72635,7 @@
       "assistBlade": "assault",
       "overBlade": null,
       "displayName": "Hells Blast A 3-60 Gear Point",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -72663,7 +72663,7 @@
       "assistBlade": "dual",
       "overBlade": null,
       "displayName": "Hells Blast D 1-70 Hexa",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -72689,7 +72689,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Hells Blast H 1-70 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -72717,7 +72717,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Hells Blast H 3-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -72743,7 +72743,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Hells Blast H 6-60 Trans Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -72769,7 +72769,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Hells Blast H 9-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -72795,7 +72795,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Hells Blast H 9-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -72821,7 +72821,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Hells Blast J 3-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -72848,7 +72848,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Hells Blast J 6-60 Point",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -72876,7 +72876,7 @@
       "assistBlade": "slash",
       "overBlade": null,
       "displayName": "Hells Blast S 3-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -72902,7 +72902,7 @@
       "assistBlade": "turn",
       "overBlade": null,
       "displayName": "Hells Blast T 6-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -72928,7 +72928,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Hells Blast W 1-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -72968,7 +72968,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Hells Blast W 3-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -73004,7 +73004,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Hells Blast W 7-60 Hexa",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -73030,7 +73030,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Hells Blast W 7-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -77728,7 +77728,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Hornet Blast H 1-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -77754,7 +77754,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Hornet Blast H 7-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -77782,7 +77782,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Hornet Blast H 9-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -77810,7 +77810,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Hornet Blast J 3-60 Jolt",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -77838,7 +77838,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Hornet Blast J 6-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -85120,9 +85120,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-15",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 1,
           "players": 17,
           "stadium": "xtreme",
@@ -94485,9 +94485,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-09-15",
           "eventName": "Dallas Beyblade Association - Beycon 26 Dallas Regionals",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 3,
           "players": 31,
           "stadium": "xtreme",
@@ -100997,7 +100997,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Knight Blast H 9-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -101025,7 +101025,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Knight Blast W 1-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -101053,7 +101053,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Knight Blast W 9-60 Free Ball",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -101081,7 +101081,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Knight Blast W 9-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -106429,7 +106429,7 @@
       "assistBlade": "free",
       "overBlade": null,
       "displayName": "Kraken Blast F 0-60 Wall Ball",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -106455,7 +106455,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Kraken Blast H 3-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -106483,7 +106483,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Kraken Blast H 9-60 Jolt",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -106511,7 +106511,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Kraken Blast H 9-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -106539,7 +106539,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Kraken Blast W 3-60 Taper",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -106819,7 +106819,7 @@
       "assistBlade": "free",
       "overBlade": null,
       "displayName": "Leon Blast F 9-60 Low Orb",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -108058,9 +108058,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-09-15",
           "eventName": "Dallas Beyblade Association - Breaking Limits - Limited #8",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 1,
           "players": 7,
           "stadium": "xtreme",
@@ -110058,9 +110058,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-09-15",
           "eventName": "Dallas Beyblade Association - Breaking Limits - Limited #8",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 1,
           "players": 7,
           "stadium": "xtreme",
@@ -110335,9 +110335,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-15",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 2,
           "players": 17,
           "stadium": "xtreme",
@@ -113061,9 +113061,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-09-15",
           "eventName": "Dallas Beyblade Association - Beycon 26 Dallas Regionals",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 3,
           "players": 31,
           "stadium": "xtreme",
@@ -113073,9 +113073,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-15",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 2,
           "players": 17,
           "stadium": "xtreme",
@@ -114721,9 +114721,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-15",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 3,
           "players": 17,
           "stadium": "xtreme",
@@ -121457,7 +121457,7 @@
       "assistBlade": "assault",
       "overBlade": null,
       "displayName": "Pegasus Blast A 1-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -121483,7 +121483,7 @@
       "assistBlade": "assault",
       "overBlade": null,
       "displayName": "Pegasus Blast A 1-60 Point",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -121509,7 +121509,7 @@
       "assistBlade": "assault",
       "overBlade": null,
       "displayName": "Pegasus Blast A 1-60 Taper",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -121536,7 +121536,7 @@
       "assistBlade": "assault",
       "overBlade": null,
       "displayName": "Pegasus Blast A 3-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -121562,7 +121562,7 @@
       "assistBlade": "assault",
       "overBlade": null,
       "displayName": "Pegasus Blast A 3-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -121588,7 +121588,7 @@
       "assistBlade": "assault",
       "overBlade": null,
       "displayName": "Pegasus Blast A 3-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -121658,7 +121658,7 @@
       "assistBlade": "assault",
       "overBlade": null,
       "displayName": "Pegasus Blast A 3-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -121694,7 +121694,7 @@
       "assistBlade": "assault",
       "overBlade": null,
       "displayName": "Pegasus Blast A 3-70 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -121722,7 +121722,7 @@
       "assistBlade": "assault",
       "overBlade": null,
       "displayName": "Pegasus Blast A 4-50 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -121750,7 +121750,7 @@
       "assistBlade": "assault",
       "overBlade": null,
       "displayName": "Pegasus Blast A 5-60 Ball",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -121778,7 +121778,7 @@
       "assistBlade": "assault",
       "overBlade": null,
       "displayName": "Pegasus Blast A 5-60 Under Needle",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -121804,7 +121804,7 @@
       "assistBlade": "assault",
       "overBlade": null,
       "displayName": "Pegasus Blast A 9-60 Taper",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -121830,7 +121830,7 @@
       "assistBlade": "assault",
       "overBlade": null,
       "displayName": "Pegasus Blast A 9-60 Wedge",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -121856,7 +121856,7 @@
       "assistBlade": "bumper",
       "overBlade": null,
       "displayName": "Pegasus Blast B 3-60 Taper",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -121882,7 +121882,7 @@
       "assistBlade": "bumper",
       "overBlade": null,
       "displayName": "Pegasus Blast B 9-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -121919,7 +121919,7 @@
       "assistBlade": "charge",
       "overBlade": null,
       "displayName": "Pegasus Blast C 7-60 Low Flat",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -121945,7 +121945,7 @@
       "assistBlade": "dual",
       "overBlade": null,
       "displayName": "Pegasus Blast D 3-70 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -121971,7 +121971,7 @@
       "assistBlade": "dual",
       "overBlade": null,
       "displayName": "Pegasus Blast D 9-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -121997,7 +121997,7 @@
       "assistBlade": "free",
       "overBlade": null,
       "displayName": "Pegasus Blast F 1-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -122025,7 +122025,7 @@
       "assistBlade": "free",
       "overBlade": null,
       "displayName": "Pegasus Blast F 1-80 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -122053,7 +122053,7 @@
       "assistBlade": "free",
       "overBlade": null,
       "displayName": "Pegasus Blast F 3-60 Free Ball",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -122081,7 +122081,7 @@
       "assistBlade": "free",
       "overBlade": null,
       "displayName": "Pegasus Blast F 9-60 Ball",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -122109,7 +122109,7 @@
       "assistBlade": "free",
       "overBlade": null,
       "displayName": "Pegasus Blast F 9-60 Free Ball",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -122159,7 +122159,7 @@
       "assistBlade": "free",
       "overBlade": null,
       "displayName": "Pegasus Blast F 9-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -122187,7 +122187,7 @@
       "assistBlade": "free",
       "overBlade": null,
       "displayName": "Pegasus Blast F 9-70 Low Orb",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -122215,7 +122215,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Pegasus Blast H 1-50 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -122267,7 +122267,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Pegasus Blast H 1-60 Free Ball",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -122295,7 +122295,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Pegasus Blast H 1-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -122371,7 +122371,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Pegasus Blast H 1-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -122411,7 +122411,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Pegasus Blast H 1-60 Taper",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -122439,7 +122439,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Pegasus Blast H 1-70 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -122467,7 +122467,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Pegasus Blast H 3-60 Cyclone",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -122494,7 +122494,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Pegasus Blast H 3-60 Free Flat",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -122522,7 +122522,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Pegasus Blast H 3-60 Jolt",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -122550,7 +122550,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Pegasus Blast H 3-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -122696,7 +122696,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Pegasus Blast H 3-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -122724,7 +122724,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Pegasus Blast H 3-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -122894,7 +122894,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Pegasus Blast H 3-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -122931,7 +122931,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Pegasus Blast H 3-60 Taper",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -122959,7 +122959,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Pegasus Blast H 4-50 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -122985,7 +122985,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Pegasus Blast H 5-60 Free Ball",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -123013,7 +123013,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Pegasus Blast H 5-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -123041,7 +123041,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Pegasus Blast H 5-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -123068,7 +123068,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Pegasus Blast H 5-80 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -123096,7 +123096,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Pegasus Blast H 6-60 Jolt",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -123124,7 +123124,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Pegasus Blast H 6-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -123152,7 +123152,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Pegasus Blast H 6-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -123178,7 +123178,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Pegasus Blast H 6-70 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -123206,7 +123206,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Pegasus Blast H 7-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -123234,7 +123234,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Pegasus Blast H 7-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -123262,7 +123262,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Pegasus Blast H 7-60 Unite",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -123290,7 +123290,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Pegasus Blast H 7-70 Hexa",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -123318,7 +123318,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Pegasus Blast H 7-70 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -123358,7 +123358,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Pegasus Blast H 7-70 Taper",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -123384,7 +123384,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Pegasus Blast H 9-60 Free Ball",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -123410,7 +123410,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Pegasus Blast H 9-60 Jolt",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -123436,7 +123436,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Pegasus Blast H 9-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -123687,7 +123687,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Pegasus Blast H 9-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -123749,7 +123749,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Pegasus Blast H 9-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -123837,7 +123837,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Pegasus Blast H 9-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -123911,7 +123911,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Pegasus Blast H 9-60 Taper",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -123939,7 +123939,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Pegasus Blast J 0-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -123965,7 +123965,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Pegasus Blast J 1-50 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -123993,7 +123993,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Pegasus Blast J 1-50 Taper",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -124021,7 +124021,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Pegasus Blast J 1-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -124047,7 +124047,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Pegasus Blast J 1-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -124073,7 +124073,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Pegasus Blast J 3-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -124131,7 +124131,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Pegasus Blast J 3-60 Point",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -124157,7 +124157,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Pegasus Blast J 3-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -124183,7 +124183,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Pegasus Blast J 4-60 Taper",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -124209,7 +124209,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Pegasus Blast J 6-60 Orb",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -124235,7 +124235,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Pegasus Blast J 7-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -124271,7 +124271,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Pegasus Blast J 9-60 Jolt",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -124299,7 +124299,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Pegasus Blast J 9-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -124349,7 +124349,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Pegasus Blast J 9-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -124375,7 +124375,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Pegasus Blast J 9-70 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -124401,7 +124401,7 @@
       "assistBlade": "round",
       "overBlade": null,
       "displayName": "Pegasus Blast R 9-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -124429,7 +124429,7 @@
       "assistBlade": "slash",
       "overBlade": null,
       "displayName": "Pegasus Blast S 1-60 Cyclone",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -124455,7 +124455,7 @@
       "assistBlade": "slash",
       "overBlade": null,
       "displayName": "Pegasus Blast S 1-60 Hexa",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -124482,7 +124482,7 @@
       "assistBlade": "slash",
       "overBlade": null,
       "displayName": "Pegasus Blast S 1-60 Rubber Accel",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -124508,7 +124508,7 @@
       "assistBlade": "slash",
       "overBlade": null,
       "displayName": "Pegasus Blast S 3-60 Hexa",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -124534,7 +124534,7 @@
       "assistBlade": "slash",
       "overBlade": null,
       "displayName": "Pegasus Blast S 3-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -124593,7 +124593,7 @@
       "assistBlade": "slash",
       "overBlade": null,
       "displayName": "Pegasus Blast S 3-60 Point",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -124621,7 +124621,7 @@
       "assistBlade": "slash",
       "overBlade": null,
       "displayName": "Pegasus Blast S 3-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -124659,7 +124659,7 @@
       "assistBlade": "slash",
       "overBlade": null,
       "displayName": "Pegasus Blast S 5-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -124687,7 +124687,7 @@
       "assistBlade": "slash",
       "overBlade": null,
       "displayName": "Pegasus Blast S 5-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -124713,7 +124713,7 @@
       "assistBlade": "slash",
       "overBlade": null,
       "displayName": "Pegasus Blast S 5-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -124741,7 +124741,7 @@
       "assistBlade": "slash",
       "overBlade": null,
       "displayName": "Pegasus Blast S 7-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -124767,7 +124767,7 @@
       "assistBlade": "slash",
       "overBlade": null,
       "displayName": "Pegasus Blast S 9-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -124795,7 +124795,7 @@
       "assistBlade": "slash",
       "overBlade": null,
       "displayName": "Pegasus Blast S 9-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -124831,7 +124831,7 @@
       "assistBlade": "slash",
       "overBlade": null,
       "displayName": "Pegasus Blast S 9-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -124857,7 +124857,7 @@
       "assistBlade": "slash",
       "overBlade": null,
       "displayName": "Pegasus Blast S 9-60 Point",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -124885,7 +124885,7 @@
       "assistBlade": "slash",
       "overBlade": null,
       "displayName": "Pegasus Blast S 9-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -124913,7 +124913,7 @@
       "assistBlade": "slash",
       "overBlade": null,
       "displayName": "Pegasus Blast S 9-60 Taper",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -124939,7 +124939,7 @@
       "assistBlade": "slash",
       "overBlade": null,
       "displayName": "Pegasus Blast S 9-70 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -124967,7 +124967,7 @@
       "assistBlade": "slash",
       "overBlade": null,
       "displayName": "Pegasus Blast S 9-70 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -124993,7 +124993,7 @@
       "assistBlade": "turn",
       "overBlade": null,
       "displayName": "Pegasus Blast T 3-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -125019,7 +125019,7 @@
       "assistBlade": "turn",
       "overBlade": null,
       "displayName": "Pegasus Blast T 3-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -125045,7 +125045,7 @@
       "assistBlade": "turn",
       "overBlade": null,
       "displayName": "Pegasus Blast T 3-60 Orb",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -125071,7 +125071,7 @@
       "assistBlade": "turn",
       "overBlade": null,
       "displayName": "Pegasus Blast T 7-60 Hexa",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -125099,7 +125099,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 0-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -125125,7 +125125,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 1-50 Hexa",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -125153,7 +125153,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 1-60 Hexa",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -125181,7 +125181,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 1-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -125209,7 +125209,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 1-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -125235,7 +125235,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 1-80 Jolt",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -125263,7 +125263,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 3-60 Flat",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -125289,7 +125289,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 3-60 Free Ball",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -125325,7 +125325,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 3-60 Hexa",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -125363,7 +125363,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 3-60 Jolt",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -125391,7 +125391,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 3-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -125417,7 +125417,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 3-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -125463,7 +125463,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 3-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -125539,7 +125539,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 3-60 Point",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -125578,7 +125578,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 3-60 Rubber Accel",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -125604,7 +125604,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 3-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -125630,7 +125630,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 3-60 Under Needle",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -125656,7 +125656,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 3-60 Unite",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -125682,7 +125682,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 3-70 Hexa",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -125710,7 +125710,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 3-70 Jolt",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -125738,7 +125738,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 4-50 Unite",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -125764,7 +125764,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 5-60 Hexa",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -125801,7 +125801,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 5-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -125827,7 +125827,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 5-60 Wall Ball",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -125854,7 +125854,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 6-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -125881,7 +125881,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 6-60 Taper",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -125907,7 +125907,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 6-60 Trans Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -125935,7 +125935,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 6-70 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -125963,7 +125963,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 7-60 Hexa",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -126013,7 +126013,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 7-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -126041,7 +126041,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 7-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -126089,7 +126089,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 7-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -126167,7 +126167,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 7-60 Point",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -126193,7 +126193,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 7-60 Rubber Accel",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -126220,7 +126220,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 7-60 Unite",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -126246,7 +126246,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 7-70 Hexa",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -126274,7 +126274,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 9-60 Ball",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -126302,7 +126302,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 9-60 Free Ball",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -126358,7 +126358,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 9-60 Hexa",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -126501,7 +126501,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 9-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -126551,7 +126551,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 9-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -126609,7 +126609,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 9-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -126728,7 +126728,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 9-60 Rubber Accel",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -126784,7 +126784,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 9-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -126832,7 +126832,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 9-60 Taper",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -126924,7 +126924,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 9-60 Wall Ball",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -126950,7 +126950,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 9-70 Taper",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -126998,7 +126998,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 9-70 Trans Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -127034,7 +127034,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Pegasus Blast W 9-80 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -127657,7 +127657,7 @@
       "assistBlade": "bumper",
       "overBlade": null,
       "displayName": "Perseus Blast B 1-60 Vortex",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -127683,7 +127683,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Perseus Blast H 9-60 Jolt",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -127721,7 +127721,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Perseus Blast H 9-70 Taper",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -127749,7 +127749,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Perseus Blast J 1-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -127775,7 +127775,7 @@
       "assistBlade": "slash",
       "overBlade": null,
       "displayName": "Perseus Blast S 3-60 Point",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -127801,7 +127801,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Perseus Blast W 5-60 Free Ball",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -127828,7 +127828,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Perseus Blast W 7-60 Rubber Accel",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -127854,7 +127854,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Perseus Blast W 7-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -127880,7 +127880,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Perseus Blast W 9-60 Free Ball",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -127908,7 +127908,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Perseus Blast W 9-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -127944,7 +127944,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Perseus Blast W 9-60 Taper",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -128029,9 +128029,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-15",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 3,
           "players": 17,
           "stadium": "xtreme",
@@ -128379,7 +128379,7 @@
       "assistBlade": "free",
       "overBlade": null,
       "displayName": "Phoenix Blast F 9-60 Free Ball",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -128406,7 +128406,7 @@
       "assistBlade": "free",
       "overBlade": null,
       "displayName": "Phoenix Blast F 9-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -128433,7 +128433,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Phoenix Blast H 1-50 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -128461,14 +128461,14 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Phoenix Blast H 1-80 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-15",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 3,
           "players": 17,
           "stadium": "xtreme",
@@ -128489,7 +128489,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Phoenix Blast H 3-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -128517,7 +128517,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Phoenix Blast H 6-60 Jolt",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -128545,7 +128545,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Phoenix Blast H 7-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -128573,7 +128573,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Phoenix Blast H 7-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -128601,7 +128601,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Phoenix Blast H 9-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -133939,9 +133939,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-15",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 3,
           "players": 17,
           "stadium": "xtreme",
@@ -136547,9 +136547,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-09-15",
           "eventName": "Dallas Beyblade Association - Beycon 26 Dallas Regionals",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 2,
           "players": 31,
           "stadium": "xtreme",
@@ -145082,7 +145082,7 @@
       "assistBlade": "assault",
       "overBlade": null,
       "displayName": "Rhino Blast A 3-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -145108,7 +145108,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Rhino Blast H 3-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -145148,7 +145148,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Rhino Blast J 9-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -145184,7 +145184,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Rhino Blast J 9-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -145210,7 +145210,7 @@
       "assistBlade": "odd",
       "overBlade": null,
       "displayName": "Rhino Blast O 1-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -145238,7 +145238,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Rhino Blast W 7-70 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -145264,7 +145264,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Rhino Blast W 9-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -145302,7 +145302,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Rhino Blast W 9-60 Yielding",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -145330,7 +145330,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Rhino Blast W 9-70 Taper",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -145356,7 +145356,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Rhino Blast W 9-70 Unite",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -153604,7 +153604,7 @@
           "tier": "structured",
           "eventId": "wbo-thread-127300",
           "eventName": "Mata Nui's X Extravaganza 2",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 2,
           "stadium": "xtreme",
           "lang": "en",
@@ -157182,9 +157182,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-15",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 3,
           "players": 17,
           "stadium": "xtreme",
@@ -177976,9 +177976,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-09-15",
           "eventName": "Dallas Beyblade Association - Beycon 26 Dallas Regionals",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 1,
           "players": 31,
           "stadium": "xtreme",
@@ -177988,9 +177988,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-15",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 1,
           "players": 17,
           "stadium": "xtreme",
@@ -178000,9 +178000,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-15",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 2,
           "players": 17,
           "stadium": "xtreme",
@@ -178014,7 +178014,7 @@
           "tier": "structured",
           "eventId": "wbo-thread-127300",
           "eventName": "Mata Nui's X Extravaganza 2",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 1,
           "stadium": "xtreme",
           "lang": "en",
@@ -191668,9 +191668,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-15",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 1,
           "players": 17,
           "stadium": "xtreme",
@@ -197090,9 +197090,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-15",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 2,
           "players": 17,
           "stadium": "xtreme",
@@ -200194,9 +200194,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-09-15",
           "eventName": "Dallas Beyblade Association - Beycon 26 Dallas Regionals",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 3,
           "players": 31,
           "stadium": "xtreme",
@@ -204938,9 +204938,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-15",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 2,
           "players": 17,
           "stadium": "xtreme",
@@ -206753,9 +206753,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-09-15",
           "eventName": "Dallas Beyblade Association - Breaking Limits - Limited #8",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 1,
           "players": 7,
           "stadium": "xtreme",
@@ -206781,9 +206781,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-09-15",
           "eventName": "Dallas Beyblade Association - Breaking Limits - Limited #8",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 1,
           "players": 7,
           "stadium": "xtreme",
@@ -211740,9 +211740,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-09-15",
           "eventName": "Dallas Beyblade Association - Beycon 26 Dallas Regionals",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 2,
           "players": 31,
           "stadium": "xtreme",
@@ -219560,7 +219560,7 @@
       "assistBlade": "dual",
       "overBlade": null,
       "displayName": "Sol Blast D 1-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -219586,7 +219586,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Sol Blast H 1-50 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -219614,7 +219614,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Sol Blast H 1-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -219640,7 +219640,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Sol Blast H 3-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -219690,7 +219690,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Sol Blast H 3-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -219729,7 +219729,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Sol Blast H 3-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -219757,7 +219757,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Sol Blast H 3-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -219832,7 +219832,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Sol Blast H 4-50 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -219881,7 +219881,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Sol Blast H 5-60 Gear Unite",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -219909,7 +219909,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Sol Blast H 5-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -219937,7 +219937,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Sol Blast H 6-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -219965,7 +219965,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Sol Blast H 9-60 Jolt",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -220013,7 +220013,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Sol Blast H 9-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -220112,7 +220112,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Sol Blast H 9-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -220140,7 +220140,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Sol Blast H 9-60 Taper",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -220168,7 +220168,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Sol Blast J 3-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -220196,7 +220196,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Sol Blast J 7-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -220222,7 +220222,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Sol Blast W 1-80 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -220249,7 +220249,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Sol Blast W 7-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -220275,7 +220275,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Sol Blast W 9-60 Hexa",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -220315,7 +220315,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Sol Blast W 9-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -222203,7 +222203,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Stag Blast H 9-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -222231,7 +222231,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Stag Blast H 9-60 Low Flat",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -222271,7 +222271,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Stag Blast J 1-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -222299,7 +222299,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Stag Blast J 3-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -230378,7 +230378,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Unicorn Blast H 1-50 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -230406,7 +230406,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Unicorn Blast H 1-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -230433,7 +230433,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Unicorn Blast H 3-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -232684,7 +232684,7 @@
       "assistBlade": "dual",
       "overBlade": null,
       "displayName": "Valkyrie Blast D 1-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -232711,7 +232711,7 @@
       "assistBlade": "free",
       "overBlade": null,
       "displayName": "Valkyrie Blast F 7-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -232747,7 +232747,7 @@
       "assistBlade": "free",
       "overBlade": null,
       "displayName": "Valkyrie Blast F 9-60 Free Ball",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -232775,7 +232775,7 @@
       "assistBlade": "free",
       "overBlade": null,
       "displayName": "Valkyrie Blast F 9-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -232814,7 +232814,7 @@
       "assistBlade": "free",
       "overBlade": null,
       "displayName": "Valkyrie Blast F 9-70 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -232842,7 +232842,7 @@
       "assistBlade": "gravity",
       "overBlade": null,
       "displayName": "Valkyrie Blast G 6-60 Hexa",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -232870,7 +232870,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Valkyrie Blast H 1-50 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -232898,7 +232898,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Valkyrie Blast H 1-50 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -232926,7 +232926,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Valkyrie Blast H 1-50 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -232954,7 +232954,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Valkyrie Blast H 1-60 Jolt",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -232982,7 +232982,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Valkyrie Blast H 1-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -233010,7 +233010,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Valkyrie Blast H 1-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -233036,7 +233036,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Valkyrie Blast H 1-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -233082,7 +233082,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Valkyrie Blast H 1-70 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -233108,7 +233108,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Valkyrie Blast H 3-60 Jolt",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -233136,7 +233136,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Valkyrie Blast H 3-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -233182,7 +233182,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Valkyrie Blast H 3-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -233210,7 +233210,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Valkyrie Blast H 3-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -233298,7 +233298,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Valkyrie Blast H 3-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -233367,7 +233367,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Valkyrie Blast H 3-70 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -233393,7 +233393,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Valkyrie Blast H 4-50 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -233429,7 +233429,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Valkyrie Blast H 5-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -233478,7 +233478,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Valkyrie Blast H 5-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -233506,7 +233506,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Valkyrie Blast H 6-60 Jolt",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -233557,7 +233557,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Valkyrie Blast H 6-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -233585,7 +233585,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Valkyrie Blast H 7-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -233613,7 +233613,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Valkyrie Blast H 7-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -233639,7 +233639,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Valkyrie Blast H 7-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -233717,7 +233717,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Valkyrie Blast H 7-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -233781,7 +233781,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Valkyrie Blast H 7-70 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -233809,7 +233809,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Valkyrie Blast H 7-70 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -233837,7 +233837,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Valkyrie Blast H 9-60 Free Ball",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -233873,7 +233873,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Valkyrie Blast H 9-60 Jolt",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -233901,7 +233901,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Valkyrie Blast H 9-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -234076,7 +234076,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Valkyrie Blast H 9-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -234191,7 +234191,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Valkyrie Blast H 9-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -234353,7 +234353,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Valkyrie Blast H 9-60 Taper",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -234391,7 +234391,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Valkyrie Blast H 9-60 Wedge",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -234419,7 +234419,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Valkyrie Blast H 9-70 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -234445,7 +234445,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Valkyrie Blast J 1-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -234473,7 +234473,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Valkyrie Blast J 1-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -234499,7 +234499,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Valkyrie Blast J 3-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -234525,7 +234525,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Valkyrie Blast J 3-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -234551,7 +234551,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Valkyrie Blast J 9-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -234577,7 +234577,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Valkyrie Blast J 9-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -234603,7 +234603,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Valkyrie Blast J 9-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -234649,7 +234649,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Valkyrie Blast J 9-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -234675,7 +234675,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Valkyrie Blast J 9-60 Unite",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -234701,7 +234701,7 @@
       "assistBlade": "slash",
       "overBlade": null,
       "displayName": "Valkyrie Blast S 8-70 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -234729,7 +234729,7 @@
       "assistBlade": "slash",
       "overBlade": null,
       "displayName": "Valkyrie Blast S 9-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -234755,7 +234755,7 @@
       "assistBlade": "turn",
       "overBlade": null,
       "displayName": "Valkyrie Blast T 9-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -234781,7 +234781,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Valkyrie Blast W 1-60 Taper",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -234820,7 +234820,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Valkyrie Blast W 1-70 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -234846,7 +234846,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Valkyrie Blast W 3-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -234872,7 +234872,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Valkyrie Blast W 3-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -234918,7 +234918,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Valkyrie Blast W 3-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -234954,7 +234954,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Valkyrie Blast W 3-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -235000,7 +235000,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Valkyrie Blast W 4-50 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -235096,7 +235096,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Valkyrie Blast W 4-50 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -235122,7 +235122,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Valkyrie Blast W 6-60 Hexa",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -235174,7 +235174,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Valkyrie Blast W 6-60 Unite",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -235214,7 +235214,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Valkyrie Blast W 7-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -235240,7 +235240,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Valkyrie Blast W 7-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -235326,7 +235326,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Valkyrie Blast W 7-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -235352,7 +235352,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Valkyrie Blast W 7-70 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -235378,7 +235378,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Valkyrie Blast W 7-70 Rubber Accel",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -235405,7 +235405,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Valkyrie Blast W 9-60 High Taper",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -235431,7 +235431,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Valkyrie Blast W 9-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -235457,7 +235457,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Valkyrie Blast W 9-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -235493,7 +235493,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Valkyrie Blast W 9-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -235585,7 +235585,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Valkyrie Blast W 9-60 Taper",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -235644,7 +235644,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Valkyrie Blast W 9-60 Unite",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -235672,7 +235672,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Valkyrie Blast W 9-70 Taper",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -236632,9 +236632,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-09-15",
           "eventName": "Dallas Beyblade Association - Breaking Limits - Limited #8",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 1,
           "players": 7,
           "stadium": "xtreme",
@@ -236688,9 +236688,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-09-15",
           "eventName": "Dallas Beyblade Association - Breaking Limits - Limited #8",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 1,
           "players": 7,
           "stadium": "xtreme",
@@ -238031,7 +238031,7 @@
       "assistBlade": "assault",
       "overBlade": null,
       "displayName": "Whale Blast A 3-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -238057,7 +238057,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Whale Blast H 1-50 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -238085,7 +238085,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Whale Blast H 1-50 Trans Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -238113,7 +238113,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Whale Blast H 3-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -238141,7 +238141,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Whale Blast H 7-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -238169,7 +238169,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Whale Blast W 1-60 Hexa",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -238197,7 +238197,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Whale Blast W 1-60 Jolt",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -238225,7 +238225,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Whale Blast W 3-60 Unite",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -238252,7 +238252,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Whale Blast W 9-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -241278,7 +241278,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Wizard Blast H 3-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -241305,7 +241305,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Wizard Blast H 4-50 Trans Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -241331,7 +241331,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Wizard Blast H 9-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -241359,7 +241359,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Wizard Blast H 9-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -241399,7 +241399,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Wizard Blast J 3-60 Point",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -241427,7 +241427,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Wizard Blast W 1-50 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -241455,7 +241455,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Wizard Blast W 3-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -241481,7 +241481,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Wizard Blast W 4-50 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -241507,7 +241507,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Wizard Blast W 9-70 Taper",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -246015,9 +246015,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-09-15",
           "eventName": "Dallas Beyblade Association - Beycon 26 Dallas Regionals",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 2,
           "players": 31,
           "stadium": "xtreme",
@@ -267119,9 +267119,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-09-15",
           "eventName": "Dallas Beyblade Association - Beycon 26 Dallas Regionals",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 3,
           "players": 31,
           "stadium": "xtreme",
@@ -267131,9 +267131,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-15",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 2,
           "players": 17,
           "stadium": "xtreme",
@@ -267143,9 +267143,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-15",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 3,
           "players": 17,
           "stadium": "xtreme",
@@ -267157,7 +267157,7 @@
           "tier": "structured",
           "eventId": "wbo-thread-127300",
           "eventName": "Mata Nui's X Extravaganza 2",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 1,
           "stadium": "xtreme",
           "lang": "en",
@@ -267168,7 +267168,7 @@
           "tier": "structured",
           "eventId": "wbo-thread-127300",
           "eventName": "Mata Nui's X Extravaganza 2",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 2,
           "stadium": "xtreme",
           "lang": "en",
@@ -267179,7 +267179,7 @@
           "tier": "structured",
           "eventId": "wbo-thread-127300",
           "eventName": "Mata Nui's X Extravaganza 2",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 3,
           "stadium": "xtreme",
           "lang": "en",
@@ -273973,9 +273973,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-15",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 1,
           "players": 17,
           "stadium": "xtreme",
@@ -278931,9 +278931,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-09-15",
           "eventName": "Dallas Beyblade Association - Beycon 26 Dallas Regionals",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 1,
           "players": 31,
           "stadium": "xtreme",
@@ -283784,9 +283784,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-14",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-09-15",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "placement": 1,
           "players": 17,
           "stadium": "xtreme",
@@ -285826,7 +285826,7 @@
       "assistBlade": "free",
       "overBlade": null,
       "displayName": "Wolf Blast F 3-60 Level",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -285852,7 +285852,7 @@
       "assistBlade": "free",
       "overBlade": null,
       "displayName": "Wolf Blast F 5-60 Free Ball",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -285878,7 +285878,7 @@
       "assistBlade": "free",
       "overBlade": null,
       "displayName": "Wolf Blast F 6-60 Free Ball",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -285906,7 +285906,7 @@
       "assistBlade": "free",
       "overBlade": null,
       "displayName": "Wolf Blast F 9-60 Ball",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -285932,7 +285932,7 @@
       "assistBlade": "free",
       "overBlade": null,
       "displayName": "Wolf Blast F 9-60 Elevate",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -285960,7 +285960,7 @@
       "assistBlade": "free",
       "overBlade": null,
       "displayName": "Wolf Blast F 9-60 Free Ball",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -286000,7 +286000,7 @@
       "assistBlade": "free",
       "overBlade": null,
       "displayName": "Wolf Blast F 9-60 Orb",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -286028,7 +286028,7 @@
       "assistBlade": "free",
       "overBlade": null,
       "displayName": "Wolf Blast F 9-60 Point",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -286055,7 +286055,7 @@
       "assistBlade": "free",
       "overBlade": null,
       "displayName": "Wolf Blast F 9-65 Free Ball",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -286083,7 +286083,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Wolf Blast H 1-50 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -286111,7 +286111,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Wolf Blast H 1-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -286137,7 +286137,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Wolf Blast H 3-60 Jolt",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -286163,7 +286163,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Wolf Blast H 3-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -286203,7 +286203,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Wolf Blast H 3-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -286261,7 +286261,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Wolf Blast H 4-50 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -286287,7 +286287,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Wolf Blast H 6-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -286325,7 +286325,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Wolf Blast H 9-60 Jolt",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -286377,7 +286377,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Wolf Blast H 9-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -286441,7 +286441,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Wolf Blast H 9-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -286510,7 +286510,7 @@
       "assistBlade": "heavy",
       "overBlade": null,
       "displayName": "Wolf Blast H 9-60 Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -286538,7 +286538,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Wolf Blast J 1-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -286564,7 +286564,7 @@
       "assistBlade": "jaggy",
       "overBlade": null,
       "displayName": "Wolf Blast J 3-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -286592,7 +286592,7 @@
       "assistBlade": "knuckle",
       "overBlade": null,
       "displayName": "Wolf Blast K 9-60 Taper",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -286620,7 +286620,7 @@
       "assistBlade": "slash",
       "overBlade": null,
       "displayName": "Wolf Blast S 3-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -286648,7 +286648,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Wolf Blast W 3-60 Kick",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -286675,7 +286675,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Wolf Blast W 3-60 Low Orb",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -286701,7 +286701,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Wolf Blast W 3-60 Low Rush",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -286727,7 +286727,7 @@
       "assistBlade": "wheel",
       "overBlade": null,
       "displayName": "Wolf Blast W 9-60 Hexa",
-      "type": "balance",
+      "type": "attack",
       "placements": [
         {
           "source": "wbo-winning-combos",
@@ -287533,21 +287533,6 @@
     }
   },
   "unresolved": [
-    {
-      "line": "Welcome To RIPSBURGH Part 1: MF Limited",
-      "reason": "oltre-cutoff (2023-08-17)",
-      "ctx": "wbo-welcome-to-ripsburgh-part-1-mf-limited-2023-08-17"
-    },
-    {
-      "line": "Salmon Run: Spawning Grounds",
-      "reason": "oltre-cutoff (2023-08-20)",
-      "ctx": "wbo-salmon-run-spawning-grounds-2023-08-20"
-    },
-    {
-      "line": "Rules & Resources",
-      "reason": "nessun marcatore di piazzamento (deck list senza podio)",
-      "ctx": "wbo-rules-resources-2026-09-14"
-    },
     {
       "line": "DFW Beyblades Weekly Tournament #34 Results",
       "reason": "oltre-cutoff (2025-07-05)",
@@ -289126,7 +289111,7 @@
     {
       "line": "FIRST BEYBLADE X TOURNAMENT IN NEW BRAUNFELS",
       "reason": "nessun marcatore di piazzamento (deck list senza podio)",
-      "ctx": "wbo-first-beyblade-x-tournament-in-new-braunfels-2026-09-14"
+      "ctx": "wbo-first-beyblade-x-tournament-in-new-braunfels-2026-09-15"
     },
     {
       "line": "Lightning L-Drago 1-60Zap (Upper Type) (First Stage & Final Stage)",
@@ -289175,10 +289160,10 @@
     }
   ],
   "stats": {
-    "events": 2001,
+    "events": 1998,
     "eventsWithPodium": 1767,
     "combosResolved": 4070,
     "placements": 19687,
-    "unresolved": 328
+    "unresolved": 325
   }
 }
