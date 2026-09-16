@@ -4,12 +4,12 @@
     "List of Beyblade X products (Takara Tomy)": {
       "revid": 649061,
       "timestamp": "2026-09-14T15:46:59.000Z",
-      "lastScannedDate": "2026-09-15"
+      "lastScannedDate": "2026-09-16"
     },
     "List of Beyblade X products (Hasbro)": {
       "revid": 648918,
       "timestamp": "2026-09-14T01:43:54.000Z",
-      "lastScannedDate": "2026-09-15"
+      "lastScannedDate": "2026-09-16"
     }
   },
   "pages": {
@@ -485,9 +485,9 @@
       "kindSource": "heuristic"
     },
     "AeroPegasus 3-70A": {
-      "revid": 649031,
-      "timestamp": "2026-09-14T15:27:30.000Z",
-      "lastScannedDate": "2026-09-15",
+      "revid": 649198,
+      "timestamp": "2026-09-15T03:03:22.000Z",
+      "lastScannedDate": "2026-09-16",
       "kind": "product",
       "kindSource": "heuristic"
     },
@@ -737,9 +737,9 @@
       "kindSource": "heuristic"
     },
     "KnightShield 3-80N": {
-      "revid": 649160,
-      "timestamp": "2026-09-15T01:16:09.000Z",
-      "lastScannedDate": "2026-09-15",
+      "revid": 649233,
+      "timestamp": "2026-09-15T05:12:00.000Z",
+      "lastScannedDate": "2026-09-16",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -883,9 +883,9 @@
       "kindSource": "heuristic"
     },
     "SamuraiSteel 5-70GF": {
-      "revid": 642416,
-      "timestamp": "2026-06-30T21:49:41.000Z",
-      "lastScannedDate": "2026-08-09",
+      "revid": 649255,
+      "timestamp": "2026-09-15T15:38:30.000Z",
+      "lastScannedDate": "2026-09-16",
       "kind": "product",
       "kindSource": "heuristic"
     },
@@ -1039,9 +1039,9 @@
       "kindSource": "heuristic"
     },
     "WizardArrow 4-80B": {
-      "revid": 649161,
-      "timestamp": "2026-09-15T01:16:50.000Z",
-      "lastScannedDate": "2026-09-15",
+      "revid": 649238,
+      "timestamp": "2026-09-15T06:28:35.000Z",
+      "lastScannedDate": "2026-09-16",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -1525,11 +1525,11 @@
       "notes": "aggiunto riferimento prodotto Buster Dran 5-70DB alla lista Products; parte gia' in master"
     },
     "Bit - Disk Ball": {
-      "revid": 646355,
-      "timestamp": "2026-08-15T06:48:15.000Z",
-      "lastScannedDate": "2026-08-16",
+      "revid": 649211,
+      "timestamp": "2026-09-15T03:22:46.000Z",
+      "lastScannedDate": "2026-09-16",
       "kind": "part",
-      "kindSource": "ai",
+      "kindSource": "heuristic",
       "notes": "aggiunto riferimento prodotto Buster Dran 5-70DB alla lista Products; parte gia' in master"
     },
     "Blade - DranSword": {
@@ -2624,9 +2624,9 @@
       "kindSource": "heuristic"
     },
     "Xtreme Stadium": {
-      "revid": 641822,
-      "timestamp": "2026-06-23T17:19:53.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 649203,
+      "timestamp": "2026-09-15T03:08:56.000Z",
+      "lastScannedDate": "2026-09-16",
       "kind": "accessory",
       "kindSource": "heuristic"
     },
@@ -2645,9 +2645,9 @@
       "kindSource": "heuristic"
     },
     "String Launcher (Beyblade X)": {
-      "revid": 649059,
-      "timestamp": "2026-09-14T15:44:54.000Z",
-      "lastScannedDate": "2026-09-15",
+      "revid": 649201,
+      "timestamp": "2026-09-15T03:06:55.000Z",
+      "lastScannedDate": "2026-09-16",
       "kind": "accessory",
       "kindSource": "heuristic"
     },
@@ -2729,9 +2729,9 @@
       "kindSource": "heuristic"
     },
     "Winder Launcher": {
-      "revid": 649060,
-      "timestamp": "2026-09-14T15:45:17.000Z",
-      "lastScannedDate": "2026-09-15",
+      "revid": 649202,
+      "timestamp": "2026-09-15T03:07:25.000Z",
+      "lastScannedDate": "2026-09-16",
       "kind": "accessory",
       "kindSource": "heuristic"
     },
@@ -2973,19 +2973,19 @@
       "kindSource": "heuristic"
     },
     "LusterDragoon 6-60LC": {
-      "revid": 649044,
-      "timestamp": "2026-09-14T15:40:38.000Z",
-      "lastScannedDate": "2026-09-15",
+      "revid": 649196,
+      "timestamp": "2026-09-15T03:01:03.000Z",
+      "lastScannedDate": "2026-09-16",
       "kind": "product",
-      "kindSource": "ai",
+      "kindSource": "heuristic",
       "notes": "Infobox porta System2=Expand Blade ma i campi sono Blade/Ratchet/Bit (non LockChip/MainBlade/AssistBlade): trattata come blade BX standard, non CX Expand. Parte nuova."
     },
     "All In One Set": {
-      "revid": 649022,
-      "timestamp": "2026-09-14T15:14:45.000Z",
-      "lastScannedDate": "2026-09-15",
+      "revid": 649206,
+      "timestamp": "2026-09-15T03:13:51.000Z",
+      "lastScannedDate": "2026-09-16",
       "kind": "set",
-      "kindSource": "ai",
+      "kindSource": "heuristic",
       "notes": "Beyblade Set Infobox, contiene AeroPegasus 3-70A, WizardArrow 4-80B (V2), KnightShield 3-80N (V2), tutti bey già esistenti; nessuna parte nuova."
     },
     "Lock Chip - Kid": {
