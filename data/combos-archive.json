@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-16T02:05:01.510Z",
+  "lastUpdated": "2026-09-17T02:07:34.813Z",
   "combos": [
     {
       "id": "aero-pegasus-1-70-low-flat",
@@ -1364,6 +1364,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "dran-blast-slash-3-60-low-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "3-60",
+      "bit": "low-rush",
+      "lockChip": "dran",
+      "mainBlade": "blast",
+      "assistBlade": "slash",
+      "overBlade": null,
+      "displayName": "Dran Blast S 3-60 Low Rush",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Sep. 16, 2025  11:56 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-16"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-09-17",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-17"
     },
     {
       "id": "dran-blast-slash-7-60-low-rush",
@@ -8701,6 +8745,56 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "pegasus-blast-wheel-7-60-rubber-accel",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "7-60",
+      "bit": "rubber-accel",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Pegasus Blast W 7-60 Rubber Accel",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Sep. 02, 2025  12:07 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-02"
+        },
+        {
+          "name": "WBO — X Masters 23",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-16"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-09-17",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-17"
     },
     {
       "id": "pegasus-blast-wheel-9-60-elevate",
