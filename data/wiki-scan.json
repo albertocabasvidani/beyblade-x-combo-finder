@@ -4,12 +4,12 @@
     "List of Beyblade X products (Takara Tomy)": {
       "revid": 649061,
       "timestamp": "2026-09-14T15:46:59.000Z",
-      "lastScannedDate": "2026-09-17"
+      "lastScannedDate": "2026-09-18"
     },
     "List of Beyblade X products (Hasbro)": {
       "revid": 648918,
       "timestamp": "2026-09-14T01:43:54.000Z",
-      "lastScannedDate": "2026-09-17"
+      "lastScannedDate": "2026-09-18"
     }
   },
   "pages": {
@@ -30,25 +30,26 @@
       "notes": "pagina lista: aggiunta riga NFL CX Top Pack, nessuna parte da estrarre da qui"
     },
     "DranSword 3-60F": {
-      "revid": 649168,
-      "timestamp": "2026-09-15T01:27:28.000Z",
-      "lastScannedDate": "2026-09-15",
+      "revid": 649323,
+      "timestamp": "2026-09-17T11:18:22.000Z",
+      "lastScannedDate": "2026-09-18",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Sword Dran 3-60F"
-      ]
+      ],
+      "notes": "gia' registrato (dran-sword); edit minore pagina"
     },
     "HeavensRing 0-80DS": {
-      "revid": 648199,
-      "timestamp": "2026-09-03T23:28:52.000Z",
-      "lastScannedDate": "2026-09-04",
+      "revid": 649320,
+      "timestamp": "2026-09-17T09:42:13.000Z",
+      "lastScannedDate": "2026-09-18",
       "kind": "product",
       "kindSource": "ai",
       "redirects": [
         "Ring Aether 0-80DS"
       ],
-      "notes": "aggiunta localizzazione Hasbro (Ring Aether, G4571); Blade/Ratchet/Bit gia' nel master con hasbro name"
+      "notes": "gia' registrato (heavens-ring); edit minore pagina"
     },
     "TriceraPress M-85BS": {
       "revid": 648989,
@@ -460,15 +461,15 @@
       "kindSource": "heuristic"
     },
     "CrocoTread TQ5-50GN": {
-      "revid": 649309,
-      "timestamp": "2026-09-17T01:58:58.000Z",
-      "lastScannedDate": "2026-09-17",
+      "revid": 649317,
+      "timestamp": "2026-09-17T05:14:00.000Z",
+      "lastScannedDate": "2026-09-18",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Tread Croc TQ 5-50GN"
       ],
-      "notes": "tutte le parti gia' nel master (Croco/Tough/Tread/Quell/5-50/Gear Needle); nessuna parte nuova"
+      "notes": "gia' registrato (croco/CX-19); edit minore pagina"
     },
     "Gust Bat 3-85GP": {
       "revid": 641666,
@@ -737,14 +738,15 @@
       "kindSource": "heuristic"
     },
     "KnightShield 3-80N": {
-      "revid": 649233,
-      "timestamp": "2026-09-15T05:12:00.000Z",
-      "lastScannedDate": "2026-09-16",
+      "revid": 649340,
+      "timestamp": "2026-09-17T23:15:48.000Z",
+      "lastScannedDate": "2026-09-18",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Helm Knight 3-80N"
-      ]
+      ],
+      "notes": "gia' registrato (knight-shield); edit minore pagina"
     },
     "Blade - Lightning L-Drago (Rapid-Hit Type)": {
       "revid": 632018,
@@ -838,11 +840,12 @@
       "kindSource": "heuristic"
     },
     "Customize Set U": {
-      "revid": 618301,
-      "timestamp": "2025-10-20T05:37:41.000Z",
-      "lastScannedDate": "2026-08-09",
-      "kind": "product",
-      "kindSource": "heuristic"
+      "revid": 649319,
+      "timestamp": "2026-09-17T05:15:35.000Z",
+      "lastScannedDate": "2026-09-18",
+      "kind": "set",
+      "kindSource": "ai",
+      "notes": "set gia' noto (UX-10), contents = parti gia' registrate (ptera-swing, hells-hammer, tyranno-beat)"
     },
     "Ratchet-Integrated Blade - Rampart Aegis": {
       "revid": 647024,
@@ -1039,14 +1042,15 @@
       "kindSource": "heuristic"
     },
     "WizardArrow 4-80B": {
-      "revid": 649238,
-      "timestamp": "2026-09-15T06:28:35.000Z",
-      "lastScannedDate": "2026-09-16",
+      "revid": 649341,
+      "timestamp": "2026-09-17T23:24:41.000Z",
+      "lastScannedDate": "2026-09-18",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Arrow Wizard 4-80B"
-      ]
+      ],
+      "notes": "gia' registrato (wizard-arrow); edit minore pagina"
     },
     "WizardRod 5-70DB": {
       "revid": 647382,
@@ -2995,6 +2999,22 @@
       "kind": "part",
       "kindSource": "ai",
       "notes": "Recupero da verify:wiki --strict: lock chip mancante dal master, pagina parte dedicata (unreleased), collegata al prodotto CX-00 KidHunt K4-70TK."
+    },
+    "Blade - Talon Ptera": {
+      "revid": 610016,
+      "timestamp": "2025-06-24T21:07:27.000Z",
+      "lastScannedDate": "2026-09-18",
+      "kind": "part",
+      "kindSource": "ai",
+      "notes": "falso positivo: gia' registrato come ptera-swing (aka Talon Ptera), riscoperto via contents di Customize Set U"
+    },
+    "Blade - TyrannoBeat": {
+      "revid": 646547,
+      "timestamp": "2026-08-19T06:55:00.000Z",
+      "lastScannedDate": "2026-09-18",
+      "kind": "part",
+      "kindSource": "ai",
+      "notes": "falso positivo: gia' registrato come tyranno-beat, riscoperto via contents di Customize Set U"
     }
   }
 }
