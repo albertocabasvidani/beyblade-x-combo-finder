@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-18T02:12:11.787Z",
+  "lastUpdated": "2026-09-19T02:05:39.151Z",
   "combos": [
     {
       "id": "aero-pegasus-1-70-low-flat",
@@ -3901,6 +3901,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "ghost-circle-1-70-low-rush",
+      "line": "bx",
+      "blade": "ghost-circle",
+      "ratchet": "1-70",
+      "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Ghost Circle 1-70 Low Rush",
+      "type": "stamina",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Game 3 LCQ 2 ( September 18th 2025)",
+          "url": "https://www.metabeys.com/events/1758466349731",
+          "weight": 1,
+          "date": "2025-09-18"
+        }
+      ],
+      "dateAdded": "2026-06-23",
+      "dateUpdated": "2026-09-19",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-19"
     },
     {
       "id": "golem-rock-4-50-low-rush",
@@ -10801,6 +10845,92 @@
       "archivedDate": "2026-09-12"
     },
     {
+      "id": "scorpio-spear-1-60-rubber-accel",
+      "line": "bx",
+      "blade": "scorpio-spear",
+      "ratchet": "1-60",
+      "bit": "rubber-accel",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Scorpio Spear 1-60 Rubber Accel",
+      "type": "stamina",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Untouchables Locals (Aug 1st 2025)",
+          "url": "https://www.metabeys.com/events/1756770985755",
+          "weight": 1,
+          "date": "2025-09-01"
+        },
+        {
+          "name": "MetaBeys — Banana Games Qualifier (Aug 29th 2025)",
+          "url": "https://www.metabeys.com/events/1756770741139",
+          "weight": 1,
+          "date": "2025-08-29"
+        },
+        {
+          "name": "MetaBeys — Black Rose Locals (August 26th 2025)",
+          "url": "https://www.metabeys.com/events/1756272714465",
+          "weight": 1,
+          "date": "2025-08-26"
+        },
+        {
+          "name": "MetaBeys — New Realm Games League (Aug 22nd 2025)",
+          "url": "https://www.metabeys.com/events/1755922263792",
+          "weight": 1,
+          "date": "2025-08-22"
+        },
+        {
+          "name": "MetaBeys — Untouchables Locals (August 18th 2025)",
+          "url": "https://www.metabeys.com/events/1755574211381",
+          "weight": 1,
+          "date": "2025-08-18"
+        },
+        {
+          "name": "MetaBeys — Game 3 LCQ 2 ( September 18th 2025)",
+          "url": "https://www.metabeys.com/events/1758466349731",
+          "weight": 1,
+          "date": "2025-09-18"
+        },
+        {
+          "name": "MetaBeys — Untouchables Locals (Sept 8th 2025)",
+          "url": "https://www.metabeys.com/events/1757384407195",
+          "weight": 1,
+          "date": "2025-09-08"
+        },
+        {
+          "name": "MetaBeys — Mancala Monk Locals (Sept 5th 2025)",
+          "url": "https://www.metabeys.com/events/1757210761668",
+          "weight": 1,
+          "date": "2025-09-05"
+        }
+      ],
+      "dateAdded": "2026-06-23",
+      "dateUpdated": "2026-09-19",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-19"
+    },
+    {
       "id": "scorpio-spear-3-60-ball",
       "line": "bx",
       "blade": "scorpio-spear",
@@ -10836,6 +10966,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "scorpio-spear-3-60-rubber-accel",
+      "line": "bx",
+      "blade": "scorpio-spear",
+      "ratchet": "3-60",
+      "bit": "rubber-accel",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Scorpio Spear 3-60 Rubber Accel",
+      "type": "stamina",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Game 3 LCQ 2 ( September 18th 2025)",
+          "url": "https://www.metabeys.com/events/1758466349731",
+          "weight": 1,
+          "date": "2025-09-18"
+        }
+      ],
+      "dateAdded": "2026-06-23",
+      "dateUpdated": "2026-09-19",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-19"
     },
     {
       "id": "scorpio-spear-3-60-wedge",
@@ -11489,6 +11663,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-16"
+    },
+    {
+      "id": "shark-scale-3-60-high-taper",
+      "line": "bx",
+      "blade": "shark-scale",
+      "ratchet": "3-60",
+      "bit": "high-taper",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Shark Scale 3-60 High Taper",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Game 3 LCQ 2 ( September 18th 2025)",
+          "url": "https://www.metabeys.com/events/1758466349731",
+          "weight": 1,
+          "date": "2025-09-18"
+        }
+      ],
+      "dateAdded": "2026-06-23",
+      "dateUpdated": "2026-09-19",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-19"
     },
     {
       "id": "shark-scale-5-70-hexa",
