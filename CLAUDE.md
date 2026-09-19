@@ -478,13 +478,19 @@ Disclosure nel footer e sezione «Affiliate links» in `/about/`.
   distingue i due canali. `it` = `albertocv0b-21`: account Associates IT nuovo, candidato il 12/09/2026 con il
   solo beybladexcombos.com dopo la chiusura del precedente (rifiuto del 25/08/2026: nessun link taggato sulle
   proprietà dichiarate). È in approvazione temporanea: servono 3 vendite idonee da amazon.it entro 180 giorni,
-  altrimenti Amazon lo chiude di nuovo. Tag vuoto = link senza `&tag=`; `com` è vuoto (nessun account US).
+  altrimenti Amazon lo chiude di nuovo. **Ogni marketplace elencato lì deve avere un tag**: `withTag()` in
+  `src/lib/amazon.ts` solleva su tag vuoto, quindi un link non tracciato rompe la build invece di essere
+  pubblicato. `com` non è elencato perché non esiste un account Associates US. Il tag `es` (`bxcombos-21`)
+  è dell'account chiuso da Amazon il 19/09/2026: da riscrivere quando la Spagna viene ri-candidata.
 - I suffissi `-21` sono un unico spazio di nomi fra i marketplace europei: un ID creato su un portale non è
   più disponibile sugli altri (per questo uk/de/fr hanno il paese nel nome). beybladexcombos.com è nella lista
   siti di ogni account (`/home/account/profile/sitelist`). Portali: afiliados.amazon.es, partnernet.amazon.de,
   partenaires.amazon.fr, affiliate-program.amazon.co.uk, affiliate.amazon.co.jp.
-- **Marketplace** dalle lingue del browser (`src/lib/marketplace.ts`: it/de/fr/es/uk/jp, tutto il resto
-  → amazon.com senza tag) con select «Shop on» persistito in localStorage (`bxcf-marketplace`).
+- **Marketplace** dalle lingue del browser (`src/lib/marketplace.ts`: it/de/fr/es/uk/jp; tutto il resto
+  → `defaultMarketplace`, oggi `uk`) con select «Shop on» persistito in localStorage (`bxcf-marketplace`).
+  Il fallback arriva dalla config, non è cablato: fino al 19/09/2026 era `com` scritto dentro la funzione,
+  e chiunque avesse il browser in inglese vedeva link senza tracking ID — una delle contestazioni che sono
+  costate l'account ES. Aprendo un account US, `com` torna in config col suo tag e ridiventa il default.
 - **Link diretti** `/dp/{ASIN}` quando `data/amazon-asins.json` conosce il set su quel mercato; il file
   lo scrive `npm run sync:amazon-asins` leggendo `state/seen.json` di bbxdealmonitor (`BBX_SEEN_PATH`,
   default `../bbxdealmonitor/state/seen.json`; assente → avviso, exit 0). Va eseguito **sul server**,
