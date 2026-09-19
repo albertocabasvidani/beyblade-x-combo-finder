@@ -1,0 +1,109 @@
+---
+import { getCollection, render } from 'astro:content';
+import EditorialLayout from '../../layouts/editorial-layout.astro';
+import BuyRow from '../../components/buy/buy-row.astro';
+import AffiliateDisclosure from '../../components/buy/affiliate-disclosure.astro';
+import { combosByBlade, combosByRatchet, combosByBit, placementsByBlade, placementsByRatchet, placementsByBit, partMasterById, comboExists } from '../../lib/build-data';
+
+export async function getStaticPaths() {
+  // Solo le entry non-draft: una pagina nasce dal testo scritto, non dal dataset (4.925 combo,
+  // 284 parti). In dev si vedono anche le draft, per poterle rileggere prima di pubblicarle.
+  const entries = await getCollection('parts', (e) => import.meta.env.DEV || !e.data.draft);
+  return entries.map((entry) => ({ params: { part: entry.data.partId }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const { partId, category, title, description, author, publishedAt, updatedAt, relatedCombos } = entry.data;
+
+const master = partMasterById.get(`${category}:${partId}`);
+const combosByCat = { blade: combosByBlade, ratchet: combosByRatchet, bit: combosByBit }[category as 'blade' | 'ratchet' | 'bit'];
+const placementsByCat = { blade: placementsByBlade, ratchet: placementsByRatchet, bit: placementsByBit }[category as 'blade' | 'ratchet' | 'bit'];
+const topCombos = (combosByCat?.get(partId) ?? []).slice(0, 8);
+const agg = placementsByCat?.get(partId);
+
+// Solo le combo dichiarate in relatedCombos che hanno DAVVERO una pagina scritta: un link a una
+// combo senza entry sarebbe orfano (invariante di scripts/test-content.ts).
+const relatedCombosLive = (await getCollection('combos', (e) => !e.data.draft))
+  .filter((c) => relatedCombos.includes(c.data.comboId));
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const site = Astro.site?.href.replace(/\/$/, '') ?? '';
+const url = `${site}${base}/parts/${partId}/`;
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: title,
+    description,
+    author: { '@type': 'Person', name: author },
+    datePublished: publishedAt.toISOString(),
+    dateModified: (updatedAt ?? publishedAt).toISOString(),
+    url,
+    mainEntityOfPage: url,
+  },
+];
+
+// Link "Buy" per il set d'uscita, se conosciuto e presente nei dati.
+const buyParts = master?.firstReleaseSet
+  ? [{ category, partId, partName: master.names?.tt ?? title }]
+  : [];
+---
+
+<EditorialLayout
+  title={title}
+  description={description}
+  breadcrumb={[{ name: 'Parts', href: `${base}/parts/` }, { name: title, href: `${base}/parts/${partId}/` }]}
+  jsonLd={jsonLd}
+  author={author}
+  publishedAt={publishedAt}
+  updatedAt={updatedAt}
+>
+  <Content />
+
+  {agg && (
+    <h2>Tournament record</h2>
+    <p>
+      {agg.events.toLocaleString('en-US')} tournament placements across {agg.combos} distinct combo{agg.combos === 1 ? '' : 's'},
+      {' '}{agg.wins.toLocaleString('en-US')} of them wins.
+    </p>
+  )}
+
+  {topCombos.length > 0 && (
+    <>
+      <h2>Best combos using {title}</h2>
+      <table>
+        <thead><tr><th>Combo</th><th>Score</th><th>Events</th><th>Wins</th></tr></thead>
+        <tbody>
+          {topCombos.map((c) => (
+            <tr>
+              <td>
+                {comboExists(c.id) ? <a href={`${base}/combos/${c.id}/`}>{c.displayName}</a> : c.displayName}
+              </td>
+              <td>{c.score.toFixed(2)}</td>
+              <td>{c.scoreBreakdown.tournamentEvents}</td>
+              <td>{c.scoreBreakdown.wins}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </>
+  )}
+
+  {relatedCombosLive.length > 0 && (
+    <>
+      <h2>Related reading</h2>
+      <ul>
+        {relatedCombosLive.map((c) => <li><a href={`${base}/combos/${c.data.comboId}/`}>{c.data.title}</a></li>)}
+      </ul>
+    </>
+  )}
+
+  {buyParts.length > 0 && (
+    <>
+      <AffiliateDisclosure />
+      <BuyRow parts={buyParts} />
+    </>
+  )}
+</EditorialLayout>

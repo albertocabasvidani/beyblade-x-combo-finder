@@ -1,0 +1,83 @@
+---
+/**
+ * buy-row.astro — link Amazon per una o più parti, renderizzati lato server (nell'HTML, non
+ * costruiti da un'isola al click come in combo-card.tsx): una pagina editoriale deve avere un
+ * link vero anche senza JavaScript, per lo stesso motivo per cui non ce l'ha la home — un crawler
+ * non clicca (known issue in projects/web-frontend.md, 19/09/2026).
+ *
+ * Renderizza col `defaultMarketplace` di data/amazon-config.json; uno script inline minuscolo
+ * riscrive gli href se il visitatore ha già un mercato salvato in localStorage (stessa chiave e
+ * stessa logica di src/lib/marketplace.ts, qui duplicata a mano perché quel modulo usa
+ * `navigator`/`localStorage` e non è pensato per essere eseguito lato server).
+ */
+import productsData from '../../../data/products.json';
+import amazonConfig from '../../../data/amazon-config.json';
+import amazonAsins from '../../../data/amazon-asins.json';
+import { buildPartLookup, buildAmazonUrl, type AmazonConfigFile, type AsinIndex } from '../../lib/amazon';
+
+interface Part {
+  category: string;
+  partId: string;
+  partName: string;
+}
+interface Props {
+  parts: Part[];
+}
+const { parts } = Astro.props;
+
+const config = amazonConfig as AmazonConfigFile;
+const lookup = buildPartLookup(productsData);
+const asins = amazonAsins as AsinIndex;
+const market = config.defaultMarketplace;
+
+const rows = parts.map((p) => ({
+  ...p,
+  ...buildAmazonUrl(p.category, p.partId, p.partName, lookup, asins, market, config),
+}));
+---
+
+<div class="my-6 rounded-lg border border-border bg-surface p-4">
+  <p class="mb-3 font-mono text-[11px] uppercase tracking-[0.06em] text-muted">Where to buy</p>
+  <ul class="flex flex-col gap-2" data-buy-row data-market={market}>
+    {rows.map((r) => (
+      <li>
+        <a
+          href={r.href}
+          data-part-id={r.partId}
+          data-category={r.category}
+          data-testid="buy-part"
+          target="_blank"
+          rel="sponsored noopener nofollow"
+          class="inline-flex items-center gap-2 font-mono text-[12px] text-gold hover:underline"
+        >
+          {r.partName} — Buy on Amazon
+        </a>
+      </li>
+    ))}
+  </ul>
+</div>
+
+<script>
+  import { readStoredMarket } from '../../lib/marketplace';
+  import amazonConfig from '../../../data/amazon-config.json';
+  import productsData from '../../../data/products.json';
+  import amazonAsins from '../../../data/amazon-asins.json';
+  import { buildPartLookup, buildAmazonUrl } from '../../lib/amazon';
+
+  const available = Object.keys(amazonConfig.marketplaces);
+  const stored = readStoredMarket(available);
+  if (stored) {
+    const lookup = buildPartLookup(productsData);
+    document.querySelectorAll<HTMLDivElement>('[data-buy-row]').forEach((row) => {
+      if (row.dataset.market === stored) return;
+      row.dataset.market = stored;
+      row.querySelectorAll<HTMLAnchorElement>('a[data-testid=buy-part]').forEach((a) => {
+        const category = a.dataset.category!;
+        const partId = a.dataset.partId!;
+        const name = a.textContent?.replace(/\s*—\s*Buy on Amazon$/, '') ?? partId;
+        const { href } = buildAmazonUrl(category, partId, name, lookup, amazonAsins as any, stored, amazonConfig as any);
+        a.href = href;
+      });
+    });
+  }
+</script>

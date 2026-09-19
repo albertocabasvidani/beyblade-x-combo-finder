@@ -1,0 +1,93 @@
+---
+/**
+ * editorial-layout.astro — layout comune alle pagine editoriali (report/parti/combo/guide).
+ * Aggiunge JSON-LD (Article/BlogPosting via `jsonLd`), breadcrumb e byline con link a /about/:
+ * un autore identificabile è parte di ciò che un revisore guarda per giudicare il contenuto
+ * originale, e prima di queste pagine il sito non ne mostrava uno da nessuna parte.
+ */
+import BaseLayout from './base-layout.astro';
+import Breadcrumb from '../components/seo/breadcrumb.astro';
+import JsonLd from '../components/seo/json-ld.astro';
+
+interface Crumb { name: string; href: string }
+interface Props {
+  title: string;
+  description: string;
+  breadcrumb: Crumb[];
+  jsonLd: Record<string, unknown>[];
+  author?: string;
+  publishedAt?: Date;
+  updatedAt?: Date;
+}
+const { title, description, breadcrumb, jsonLd, author = 'Alberto', publishedAt, updatedAt } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const fmt = (d: Date) => d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+---
+
+<BaseLayout title={title} description={description}>
+  <Breadcrumb items={breadcrumb} />
+  {jsonLd.map((d) => <JsonLd data={d} />)}
+  <article>
+    <header class="mb-6">
+      <h1 class="font-display text-2xl uppercase tracking-[0.01em] text-text lg:text-3xl">{title}</h1>
+      {publishedAt && (
+        <p class="mt-2 font-mono text-[11px] uppercase tracking-[0.06em] text-muted">
+          By <a href={`${base}/about/`} class="text-gold hover:underline">{author}</a>
+          {' · '}
+          <time datetime={publishedAt.toISOString()}>{fmt(publishedAt)}</time>
+          {updatedAt && updatedAt.getTime() !== publishedAt.getTime() && (
+            <> {' · '}updated <time datetime={updatedAt.toISOString()}>{fmt(updatedAt)}</time></>
+          )}
+        </p>
+      )}
+    </header>
+    <div class="prose-editorial">
+      <slot />
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .prose-editorial :global(h2) {
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    font-family: var(--font-display, inherit);
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+  }
+  .prose-editorial :global(h3) {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  .prose-editorial :global(p) {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+  }
+  .prose-editorial :global(ul),
+  .prose-editorial :global(ol) {
+    margin-bottom: 1rem;
+    padding-left: 1.25rem;
+  }
+  .prose-editorial :global(li) {
+    margin-bottom: 0.375rem;
+    line-height: 1.6;
+  }
+  .prose-editorial :global(a) {
+    color: var(--color-gold, #c9a227);
+    text-decoration: underline;
+  }
+  .prose-editorial :global(table) {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+  }
+  .prose-editorial :global(th),
+  .prose-editorial :global(td) {
+    border-bottom: 1px solid var(--color-border, #333);
+    padding: 0.375rem 0.5rem;
+    text-align: left;
+  }
+</style>

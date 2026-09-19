@@ -1,0 +1,97 @@
+---
+import { getCollection, render } from 'astro:content';
+import EditorialLayout from '../../layouts/editorial-layout.astro';
+import BuyRow from '../../components/buy/buy-row.astro';
+import AffiliateDisclosure from '../../components/buy/affiliate-disclosure.astro';
+import { comboById, partMasterById, partExists } from '../../lib/build-data';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('combos', (e) => import.meta.env.DEV || !e.data.draft);
+  return entries.map((entry) => ({ params: { combo: entry.data.comboId }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const { comboId, title, description, author, publishedAt, updatedAt, relatedParts } = entry.data;
+
+const combo = comboById.get(comboId);
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const site = Astro.site?.href.replace(/\/$/, '') ?? '';
+const url = `${site}${base}/combos/${comboId}/`;
+
+const partsLive = await getCollection('parts', (e) => !e.data.draft);
+const relatedPartsLive = partsLive.filter((p) => relatedParts.includes(p.data.partId));
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: title,
+    description,
+    author: { '@type': 'Person', name: author },
+    datePublished: publishedAt.toISOString(),
+    dateModified: (updatedAt ?? publishedAt).toISOString(),
+    url,
+    mainEntityOfPage: url,
+  },
+];
+
+// Le parti della combo che hanno un set d'uscita noto E una pagina scritta: solo quelle finiscono
+// nel pannello Buy, come per le pagine parte.
+const buyParts: { category: string; partId: string; partName: string }[] = [];
+if (combo?.blade && partExists('blade', combo.blade)) {
+  const m = partMasterById.get(`blade:${combo.blade}`);
+  buyParts.push({ category: 'blade', partId: combo.blade, partName: m?.names?.tt ?? combo.blade });
+}
+if (combo?.ratchet && partExists('ratchet', combo.ratchet)) {
+  buyParts.push({ category: 'ratchet', partId: combo.ratchet, partName: combo.ratchet });
+}
+if (combo?.bit && partExists('bit', combo.bit)) {
+  const m = partMasterById.get(`bit:${combo.bit}`);
+  buyParts.push({ category: 'bit', partId: combo.bit, partName: m?.names?.tt ?? combo.bit });
+}
+---
+
+<EditorialLayout
+  title={title}
+  description={description}
+  breadcrumb={[{ name: 'Combos', href: `${base}/combos/` }, { name: title, href: `${base}/combos/${comboId}/` }]}
+  jsonLd={jsonLd}
+  author={author}
+  publishedAt={publishedAt}
+  updatedAt={updatedAt}
+>
+  <Content />
+
+  {combo && (
+    <h2>Tournament record</h2>
+    <table>
+      <thead><tr><th>Score</th><th>Events</th><th>Wins</th><th>Meta share</th><th>Last seen</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>{combo.score.toFixed(2)}</td>
+          <td>{combo.scoreBreakdown.tournamentEvents}</td>
+          <td>{combo.scoreBreakdown.wins}</td>
+          <td>{combo.scoreBreakdown.metaSharePct ?? '—'}%</td>
+          <td>{combo.scoreBreakdown.lastPlacementDate ?? '—'}</td>
+        </tr>
+      </tbody>
+    </table>
+  )}
+
+  {relatedPartsLive.length > 0 && (
+    <>
+      <h2>The parts, in detail</h2>
+      <ul>
+        {relatedPartsLive.map((p) => <li><a href={`${base}/parts/${p.data.partId}/`}>{p.data.title}</a></li>)}
+      </ul>
+    </>
+  )}
+
+  {buyParts.length > 0 && (
+    <>
+      <AffiliateDisclosure />
+      <BuyRow parts={buyParts} />
+    </>
+  )}
+</EditorialLayout>

@@ -1,0 +1,37 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/base-layout.astro';
+import Breadcrumb from '../../components/seo/breadcrumb.astro';
+import JsonLd from '../../components/seo/json-ld.astro';
+
+const entries = (await getCollection('buyingGuides', (e) => import.meta.env.DEV || !e.data.draft))
+  .sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime());
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const site = Astro.site?.href.replace(/\/$/, '') ?? '';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  itemListElement: entries.map((e, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    url: `${site}${base}/buy/${e.data.setCode}/`,
+    name: e.data.title,
+  })),
+};
+---
+
+<BaseLayout title="Beyblade X Buying Guides" description="Which sets are worth buying, what's actually inside them, and what to skip.">
+  <Breadcrumb items={[{ name: 'Buying Guides', href: `${base}/buy/` }]} />
+  <JsonLd data={jsonLd} />
+  <h1 class="mb-4 font-display text-2xl uppercase text-text lg:text-3xl">Buying Guides</h1>
+  <p class="mb-6 text-muted">No prices here — Amazon's own listing has the current one. Just what's inside and whether it's worth it.</p>
+  <ul class="flex flex-col gap-3">
+    {entries.map((e) => (
+      <li class="border-b border-border pb-3">
+        <a href={`${base}/buy/${e.data.setCode}/`} class="font-medium text-gold hover:underline">{e.data.title}</a>
+        <p class="text-sm text-muted">{e.data.description}</p>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>

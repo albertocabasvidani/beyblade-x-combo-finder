@@ -3,6 +3,7 @@ import { defineConfig } from 'astro/config';
 
 import preact from '@astrojs/preact';
 import sitemap from '@astrojs/sitemap';
+import mdx from '@astrojs/mdx';
 import tailwindcss from '@tailwindcss/vite';
 
 // Origine e base path del sito. Default: il dominio beybladexcombos.com sulla root (dal 12/09/2026;
@@ -18,6 +19,7 @@ export default defineConfig({
   output: 'static',
   integrations: [
     preact(),
+    mdx(),
     // Solo le pagine HTML: l'endpoint /combos.json e /robots.txt non vanno nella sitemap.
     sitemap({ filter: (page) => !/\.(json|txt)$/.test(page) }),
   ],

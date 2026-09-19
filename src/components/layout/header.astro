@@ -30,6 +30,30 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
         {t(locale, 'nav.home')}
       </a>
       <a
+        href={`${base}/meta/`}
+        class="hidden font-mono text-[11px] uppercase tracking-[0.08em] text-muted transition-colors hover:text-text sm:inline-flex lg:text-xs"
+      >
+        {t(locale, 'nav.meta')}
+      </a>
+      <a
+        href={`${base}/parts/`}
+        class="hidden font-mono text-[11px] uppercase tracking-[0.08em] text-muted transition-colors hover:text-text sm:inline-flex lg:text-xs"
+      >
+        {t(locale, 'nav.parts')}
+      </a>
+      <a
+        href={`${base}/combos/`}
+        class="hidden font-mono text-[11px] uppercase tracking-[0.08em] text-muted transition-colors hover:text-text sm:inline-flex lg:text-xs"
+      >
+        {t(locale, 'nav.combos')}
+      </a>
+      <a
+        href={`${base}/buy/`}
+        class="hidden font-mono text-[11px] uppercase tracking-[0.08em] text-muted transition-colors hover:text-text sm:inline-flex lg:text-xs"
+      >
+        {t(locale, 'nav.buy')}
+      </a>
+      <a
         href={`${base}/about/`}
         class="font-mono text-[11px] uppercase tracking-[0.08em] text-muted transition-colors hover:text-text lg:text-xs"
       >

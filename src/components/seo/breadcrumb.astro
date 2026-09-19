@@ -1,0 +1,35 @@
+---
+// breadcrumb.astro — traccia visibile + JSON-LD BreadcrumbList. `items` esclude la home, che si
+// aggiunge sempre come primo elemento.
+import JsonLd from './json-ld.astro';
+
+interface Crumb { name: string; href: string }
+interface Props { items: Crumb[] }
+const { items } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const all: Crumb[] = [{ name: 'Home', href: `${base}/` }, ...items];
+const site = Astro.site?.href.replace(/\/$/, '') ?? '';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: all.map((c, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: c.name,
+    item: `${site}${c.href}`,
+  })),
+};
+---
+
+<nav aria-label="Breadcrumb" class="mb-4 font-mono text-[11px] uppercase tracking-[0.06em] text-muted">
+  {all.map((c, i) => (
+    <>
+      {i > 0 && <span class="mx-1.5 text-border-strong">/</span>}
+      {i === all.length - 1
+        ? <span aria-current="page" class="text-text">{c.name}</span>
+        : <a href={c.href} class="hover:text-text">{c.name}</a>}
+    </>
+  ))}
+</nav>
+<JsonLd data={jsonLd} />

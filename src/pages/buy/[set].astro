@@ -1,0 +1,96 @@
+---
+import { getCollection, render } from 'astro:content';
+import EditorialLayout from '../../layouts/editorial-layout.astro';
+import BuyRow from '../../components/buy/buy-row.astro';
+import AffiliateDisclosure from '../../components/buy/affiliate-disclosure.astro';
+import { releaseByCode, partExists, partMasterById } from '../../lib/build-data';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('buyingGuides', (e) => import.meta.env.DEV || !e.data.draft);
+  return entries.map((entry) => ({ params: { set: entry.data.setCode }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const { setCode, title, description, author, publishedAt, updatedAt, relatedParts } = entry.data;
+
+const products = releaseByCode.get(setCode) ?? [];
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const site = Astro.site?.href.replace(/\/$/, '') ?? '';
+const url = `${site}${base}/buy/${setCode}/`;
+
+const partsLive = await getCollection('parts', (e) => !e.data.draft);
+const relatedPartsLive = partsLive.filter((p) => relatedParts.includes(p.data.partId));
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: title,
+    description,
+    author: { '@type': 'Person', name: author },
+    datePublished: publishedAt.toISOString(),
+    dateModified: (updatedAt ?? publishedAt).toISOString(),
+    url,
+    mainEntityOfPage: url,
+  },
+];
+
+// Una riga Buy per ogni blade del set che ha davvero una pagina parte: il set stesso non è
+// linkabile per ASIN unico (un set può contenere più blade con codici prodotto diversi).
+const buyParts = products
+  .flatMap((p) => p.bladeNames ?? [])
+  .filter((name, i, arr) => arr.indexOf(name) === i)
+  .map((name) => {
+    const slug = name.toLowerCase().replace(/\s+/g, '-');
+    return partExists('blade', slug) ? { category: 'blade', partId: slug, partName: partMasterById.get(`blade:${slug}`)?.names?.tt ?? name } : null;
+  })
+  .filter((x): x is { category: string; partId: string; partName: string } => x !== null);
+---
+
+<EditorialLayout
+  title={title}
+  description={description}
+  breadcrumb={[{ name: 'Buying Guides', href: `${base}/buy/` }, { name: title, href: `${base}/buy/${setCode}/` }]}
+  jsonLd={jsonLd}
+  author={author}
+  publishedAt={publishedAt}
+  updatedAt={updatedAt}
+>
+  <Content />
+
+  {products.length > 0 && (
+    <>
+      <h2>What's in the box</h2>
+      <table>
+        <thead><tr><th>Blade</th><th>Ratchet</th><th>Bit</th><th>Released</th></tr></thead>
+        <tbody>
+          {products.map((p) => (
+            <tr>
+              <td>{p.bladeNames?.[0] ?? '—'}</td>
+              <td>{p.ratchet ?? '—'}</td>
+              <td>{p.bitShort ?? '—'}</td>
+              <td>{p.date ?? '—'}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </>
+  )}
+
+  {relatedPartsLive.length > 0 && (
+    <>
+      <h2>More on these parts</h2>
+      <ul>
+        {relatedPartsLive.map((p) => <li><a href={`${base}/parts/${p.data.partId}/`}>{p.data.title}</a></li>)}
+      </ul>
+    </>
+  )}
+
+  {buyParts.length > 0 && (
+    <>
+      <AffiliateDisclosure />
+      <BuyRow parts={buyParts} />
+    </>
+  )}
+</EditorialLayout>

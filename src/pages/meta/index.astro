@@ -1,0 +1,37 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/base-layout.astro';
+import Breadcrumb from '../../components/seo/breadcrumb.astro';
+import JsonLd from '../../components/seo/json-ld.astro';
+
+const entries = (await getCollection('metaReports', (e) => import.meta.env.DEV || !e.data.draft))
+  .sort((a, b) => b.data.month.localeCompare(a.data.month));
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const site = Astro.site?.href.replace(/\/$/, '') ?? '';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  itemListElement: entries.map((e, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    url: `${site}${base}/meta/${e.data.month}/`,
+    name: e.data.title,
+  })),
+};
+---
+
+<BaseLayout title="Beyblade X Meta Reports" description="Monthly recap of what's rising and falling in competitive Beyblade X, based on real tournament results.">
+  <Breadcrumb items={[{ name: 'Meta Reports', href: `${base}/meta/` }]} />
+  <JsonLd data={jsonLd} />
+  <h1 class="mb-4 font-display text-2xl uppercase text-text lg:text-3xl">Meta Reports</h1>
+  <p class="mb-6 text-muted">A monthly look at what's moving in the competitive meta, built from tournament placements — not guesses.</p>
+  <ul class="flex flex-col gap-3">
+    {entries.map((e) => (
+      <li class="border-b border-border pb-3">
+        <a href={`${base}/meta/${e.data.month}/`} class="font-medium text-gold hover:underline">{e.data.title}</a>
+        <p class="text-sm text-muted">{e.data.description}</p>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>

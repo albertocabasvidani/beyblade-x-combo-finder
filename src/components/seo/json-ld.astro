@@ -1,0 +1,10 @@
+---
+// json-ld.astro — un blocco <script type="application/ld+json"> per oggetto passato. Uno per
+// chiamata: le pagine editoriali ne montano più d'uno (es. Article + BreadcrumbList).
+interface Props {
+  data: Record<string, unknown>;
+}
+const { data } = Astro.props;
+---
+
+<script type="application/ld+json" is:inline set:html={JSON.stringify(data)} />

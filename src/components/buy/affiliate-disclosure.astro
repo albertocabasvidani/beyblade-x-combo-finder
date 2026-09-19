@@ -1,0 +1,10 @@
+---
+// affiliate-disclosure.astro — disclosure Amazon Associates DENTRO il contenuto della pagina, non
+// solo nel footer: l'Operating Agreement la chiede "in prossimità" dei link, e un revisore che
+// legge una pagina con link Buy e nessuna disclosure sopra la testa è uno dei pattern che vengono
+// segnalati. Stesso testId del footer (footer.astro), letto dallo stesso controllo e2e.
+---
+
+<p data-testid="amazon-disclosure" class="mb-6 border-l-2 border-border pl-3 font-mono text-[11px] text-muted">
+  As an Amazon Associate we earn from qualifying purchases.
+</p>

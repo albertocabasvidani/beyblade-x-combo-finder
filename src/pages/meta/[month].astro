@@ -1,0 +1,61 @@
+---
+/**
+ * meta/[month].astro — report mensile. I numeri citati nel corpo NON si ricalcolano a ogni build:
+ * la pipeline aggiunge placement retroattivi (un torneo caricato in ritardo), e senza congelamento
+ * la prosa scritta a settembre finirebbe a contraddire i numeri renderizzati a novembre. Lo
+ * snapshot vive in un file `<mese>.stats.json` accanto all'.mdx, scritto una volta e mai più
+ * toccato dalla pipeline (che non sa che src/content/ esiste).
+ */
+import { getCollection, render } from 'astro:content';
+import EditorialLayout from '../../layouts/editorial-layout.astro';
+
+const statsFiles = import.meta.glob('../../content/meta-reports/*.stats.json', { eager: true, import: 'default' }) as Record<string, unknown>;
+
+export async function getStaticPaths() {
+  const entries = await getCollection('metaReports', (e) => import.meta.env.DEV || !e.data.draft);
+  return entries.map((entry) => ({ params: { month: entry.data.month }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const { month, title, description, author, publishedAt, updatedAt } = entry.data;
+
+const statsPath = Object.keys(statsFiles).find((p) => p.endsWith(`/${month}.stats.json`));
+const stats = statsPath ? (statsFiles[statsPath] as { placements: number; risers: string[]; fallers: string[] }) : null;
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const site = Astro.site?.href.replace(/\/$/, '') ?? '';
+const url = `${site}${base}/meta/${month}/`;
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: title,
+    description,
+    author: { '@type': 'Person', name: author },
+    datePublished: publishedAt.toISOString(),
+    dateModified: (updatedAt ?? publishedAt).toISOString(),
+    url,
+    mainEntityOfPage: url,
+  },
+];
+---
+
+<EditorialLayout
+  title={title}
+  description={description}
+  breadcrumb={[{ name: 'Meta Reports', href: `${base}/meta/` }, { name: title, href: `${base}/meta/${month}/` }]}
+  jsonLd={jsonLd}
+  author={author}
+  publishedAt={publishedAt}
+  updatedAt={updatedAt}
+>
+  <Content />
+  {stats && (
+    <p class="mt-6 font-mono text-[11px] text-muted-2">
+      Numbers in this report are frozen at publication ({stats.placements.toLocaleString('en-US')} tournament
+      placements counted for {month}) and are not recalculated as more results come in later.
+    </p>
+  )}
+</EditorialLayout>
