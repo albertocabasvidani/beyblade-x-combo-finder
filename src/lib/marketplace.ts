@@ -2,9 +2,13 @@
  * marketplace.ts — scelta del marketplace Amazon per i link "Buy".
  *
  * Dalle lingue del browser: it → amazon.it, de/at/ch → .de, fr/be → .fr, es → .es, en-GB/en-IE → .co.uk,
- * ja → .co.jp. Tutto il resto (USA compresi) → amazon.com SENZA tag: non esiste un account Associates
- * US, e mandare gli americani su .co.uk sarebbe pessima esperienza. L'utente può forzare il mercato
- * con un select; la scelta resta in localStorage (preferenza dell'utente, non tracciamento).
+ * ja → .co.jp. Chi non matcha nessuna regola (USA compresi) va sul `fallback`, che è il
+ * `defaultMarketplace` di data/amazon-config.json. L'utente può forzare il mercato con un select; la
+ * scelta resta in localStorage (preferenza dell'utente, non tracciamento).
+ *
+ * Il fallback deve essere un mercato con tracking ID. Fino al 19/09/2026 era amazon.com, che non ha
+ * un account Associates e quindi un tag: chiunque avesse il browser in inglese — il revisore Amazon
+ * compreso — vedeva link senza `tag=`, ed è una delle contestazioni che sono costate l'account ES.
  */
 export const MARKET_STORAGE_KEY = 'bxcf-marketplace';
 
@@ -17,12 +21,20 @@ const RULES: [RegExp, string][] = [
   [/^ja\b/i, 'jp'],
 ];
 
-/** Mercato dedotto dalle lingue del browser (prima regola che matcha, in ordine di preferenza). */
-export function marketFromLanguages(langs: readonly string[] | undefined, available: string[]): string {
+/**
+ * Mercato dedotto dalle lingue del browser (prima regola che matcha, in ordine di preferenza).
+ * Nessuna corrispondenza → `fallback`; se nemmeno quello è disponibile, il primo dei disponibili —
+ * mai una stringa che non sia un mercato configurato, che darebbe un link senza tag.
+ */
+export function marketFromLanguages(
+  langs: readonly string[] | undefined,
+  available: string[],
+  fallback: string,
+): string {
   for (const l of langs ?? []) {
     for (const [re, m] of RULES) if (re.test(l) && available.includes(m)) return m;
   }
-  return 'com';
+  return available.includes(fallback) ? fallback : available[0];
 }
 
 export function readStoredMarket(available: string[]): string | null {
@@ -37,9 +49,9 @@ export function storeMarket(market: string): void {
 }
 
 /** Preferenza salvata, altrimenti lingue del browser. Solo lato client (usa localStorage/navigator). */
-export function initialMarket(available: string[]): string {
+export function initialMarket(available: string[], fallback: string): string {
   const stored = readStoredMarket(available);
   if (stored) return stored;
   const langs = typeof navigator !== 'undefined' ? navigator.languages ?? [navigator.language] : [];
-  return marketFromLanguages(langs, available);
+  return marketFromLanguages(langs, available, fallback);
 }

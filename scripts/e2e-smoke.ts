@@ -166,7 +166,7 @@ async function desktopFlow(context: BrowserContext) {
   check('link del pannello verso amazon, sponsored, _blank',
     panelHrefs.every((h) => /^https:\/\/www\.amazon\./.test(h.href) && /sponsored/.test(h.rel) && h.target === '_blank'), panelHrefs[0]?.href);
   const panelMarket = await page.getByTestId('marketplace').inputValue();
-  if (panelMarket !== 'com') check('link del pannello con tracking ID', panelHrefs.every((h) => /[?&]tag=/.test(h.href)), panelHrefs[0]?.href);
+  check(`link del pannello con tracking ID (mercato ${panelMarket})`, panelHrefs.every((h) => /[?&]tag=/.test(h.href)), panelHrefs[0]?.href);
   await toggles.first().click();
   check('pannello richiuso', (await page.locator('[data-testid=buy-parts-panel]').count()) === 0);
 
@@ -188,8 +188,8 @@ async function desktopFlow(context: BrowserContext) {
     check('ogni Buy ha target=_blank e rel sponsored', hrefs.every((h) => h.target === '_blank' && /sponsored/.test(h.rel)));
     const market = await page.getByTestId('marketplace').inputValue();
     const tagged = hrefs.filter((h) => /[?&]tag=/.test(h.href)).length;
-    if (market === 'com') check('amazon.com: nessun tag (nessun account US)', tagged === 0, `${tagged} con tag`);
-    else check(`mercato ${market}: tutti i link con tag`, tagged === hrefs.length, `${tagged}/${hrefs.length}`);
+    // Senza eccezioni, su ogni mercato: un link non tracciato e' la contestazione del 19/09/2026.
+    check(`mercato ${market}: tutti i link con tag`, tagged === hrefs.length, `${tagged}/${hrefs.length}`);
     console.log('[9] Marketplace');
     await page.getByTestId('marketplace').selectOption('de');
     const deHrefs: string[] = await buy.evaluateAll((as) => as.map((a) => (a as HTMLAnchorElement).href));

@@ -9,8 +9,9 @@
  *     («Beyblade X Phoenix Wing»); ratchet e bit per nome danno 0 risultati, quindi si cerca il CODICE
  *     del set che li contiene («Beyblade X BX-01»).
  *
- * Il tag (tracking ID Associates dedicato al sito) sta in `data/amazon-config.json`, per marketplace;
- * tag vuoto = nessun `&tag=` (è il caso di amazon.com: nessun account US).
+ * Il tag (tracking ID Associates dedicato al sito) sta in `data/amazon-config.json`, per marketplace.
+ * Ogni marketplace elencato lì deve averne uno: un tag vuoto fa sollevare `withTag`, quindi rompe la
+ * build invece di produrre link che non pagano e che Amazon contesta.
  */
 
 export interface AmazonMarketplace { tld: string; tag: string }
@@ -70,8 +71,14 @@ export function buildProductLookup(productsData: any): { ratchets: Record<string
   return { ratchets: l.ratchet, bits: l.bit };
 }
 
+/**
+ * Un URL Amazon senza `tag=` non paga e viola le policy Associates: qui è un errore, non un caso
+ * ammesso. Prima il tag vuoto era accettato in silenzio (era il caso di amazon.com, senza account
+ * US) e il difetto è arrivato fino alla revisione Amazon del 19/09/2026. La difesa sta qui e non
+ * nella config perché la config la riscrive chiunque, mentre questo solleva in build.
+ */
 function withTag(url: string, tag: string): string {
-  if (!tag) return url;
+  if (!tag) throw new Error(`Link Amazon senza tracking ID: ${url}. Ogni marketplace in data/amazon-config.json deve avere un tag.`);
   return url + (url.includes('?') ? '&' : '?') + 'tag=' + encodeURIComponent(tag);
 }
 

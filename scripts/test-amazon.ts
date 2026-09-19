@@ -18,11 +18,11 @@ const products = JSON.parse(readFileSync(join(ROOT, 'data', 'products.json'), 'u
 const lookup = buildPartLookup(products);
 
 const config: AmazonConfigFile = {
-  defaultMarketplace: 'com',
+  defaultMarketplace: 'uk',
   marketplaces: {
     it: { tld: 'amazon.it', tag: 'sito-it-21' },
     de: { tld: 'amazon.de', tag: 'sito-de-21' },
-    com: { tld: 'amazon.com', tag: '' },
+    uk: { tld: 'amazon.co.uk', tag: 'sito-uk-21' },
   },
 };
 const asins: AsinIndex = { 'BX-01': { it: 'B0TEST00001' } };
@@ -45,25 +45,43 @@ const bit = buildAmazonUrl('bit', 'flat', 'Flat', lookup, {}, 'de', config);
 check('bit → ricerca per codice set', bit.kind === 'search' && /s\?k=Beyblade%20X%20(BX|UX|CX)-\d+&tag=sito-de-21$/.test(bit.href), bit.href);
 const ratchet = buildAmazonUrl('ratchet', '3-60', '3-60', lookup, {}, 'it', config);
 check('ratchet → ricerca per codice set BX-01', ratchet.href === 'https://www.amazon.it/s?k=Beyblade%20X%20BX-01&tag=sito-it-21', ratchet.href);
-const com = buildAmazonUrl('blade', 'dran-sword', 'Dran Sword', lookup, asins, 'com', config);
-check('amazon.com senza tag', com.href === 'https://www.amazon.com/s?k=Beyblade%20X%20Dran%20Sword', com.href);
 const unknown = buildAmazonUrl('blade', 'dran-sword', 'Dran Sword', lookup, asins, 'xx', config);
-check('mercato sconosciuto → default (com)', unknown.href.startsWith('https://www.amazon.com/'), unknown.href);
+check('mercato sconosciuto → default, con tag', unknown.href === 'https://www.amazon.co.uk/s?k=Beyblade%20X%20Dran%20Sword&tag=sito-uk-21', unknown.href);
+
+// Un tag vuoto deve rompere, non produrre un link non tracciato: e' la contestazione del 19/09/2026.
+const senzaTag: AmazonConfigFile = { defaultMarketplace: 'com', marketplaces: { com: { tld: 'amazon.com', tag: '' } } };
+let ha_sollevato = false;
+try { buildAmazonUrl('blade', 'dran-sword', 'Dran Sword', lookup, asins, 'com', senzaTag); }
+catch { ha_sollevato = true; }
+check('marketplace con tag vuoto → solleva invece di emettere il link', ha_sollevato);
 const noCode = buildAmazonUrl('bit', 'bit-inesistente', 'Bit Inesistente', lookup, {}, 'it', config);
 check('bit senza codice → ricerca per nome', noCode.href.includes('Beyblade%20X%20Bit%20Inesistente'), noCode.href);
 
 console.log('Marketplace dalle lingue del browser');
-const avail = ['it', 'de', 'fr', 'es', 'uk', 'jp', 'com'];
-check("['it-IT','en'] → it", marketFromLanguages(['it-IT', 'en'], avail) === 'it');
-check("['en-US'] → com", marketFromLanguages(['en-US'], avail) === 'com');
-check("['en-GB'] → uk", marketFromLanguages(['en-GB'], avail) === 'uk');
-check("['fr-BE'] → fr", marketFromLanguages(['fr-BE'], avail) === 'fr');
-check("['de-AT'] → de", marketFromLanguages(['de-AT'], avail) === 'de');
-check("['ja'] → jp", marketFromLanguages(['ja'], avail) === 'jp');
-check("['pt-BR'] → com", marketFromLanguages(['pt-BR'], avail) === 'com');
-check('[] → com', marketFromLanguages([], avail) === 'com');
-check('undefined → com', marketFromLanguages(undefined, avail) === 'com');
-check('mercato non disponibile → com', marketFromLanguages(['it-IT'], ['com']) === 'com');
+const avail = ['it', 'de', 'fr', 'es', 'uk', 'jp'];
+const FB = 'uk';
+check("['it-IT','en'] → it", marketFromLanguages(['it-IT', 'en'], avail, FB) === 'it');
+check("['en-GB'] → uk", marketFromLanguages(['en-GB'], avail, FB) === 'uk');
+check("['fr-BE'] → fr", marketFromLanguages(['fr-BE'], avail, FB) === 'fr');
+check("['de-AT'] → de", marketFromLanguages(['de-AT'], avail, FB) === 'de');
+check("['es-ES'] → es", marketFromLanguages(['es-ES'], avail, FB) === 'es');
+check("['ja'] → jp", marketFromLanguages(['ja'], avail, FB) === 'jp');
+// Il caso del revisore Amazon: browser in inglese americano. Deve atterrare su un mercato TAGGATO.
+check("['en-US'] → fallback taggato", marketFromLanguages(['en-US'], avail, FB) === 'uk');
+check("['pt-BR'] → fallback taggato", marketFromLanguages(['pt-BR'], avail, FB) === 'uk');
+check('[] → fallback taggato', marketFromLanguages([], avail, FB) === 'uk');
+check('undefined → fallback taggato', marketFromLanguages(undefined, avail, FB) === 'uk');
+check('mercato non disponibile → uno dei disponibili', marketFromLanguages(['it-IT'], ['de'], FB) === 'de');
+
+console.log('Config reale (data/amazon-config.json)');
+const reale: AmazonConfigFile = JSON.parse(readFileSync(join(ROOT, 'data', 'amazon-config.json'), 'utf8'));
+const senza = Object.entries(reale.marketplaces).filter(([, m]) => !m.tag).map(([k]) => k);
+check('ogni marketplace configurato ha un tracking ID', senza.length === 0, `senza tag: ${senza.join(', ')}`);
+check('defaultMarketplace esiste ed e\' taggato', !!reale.marketplaces[reale.defaultMarketplace]?.tag, reale.defaultMarketplace);
+for (const [k, m] of Object.entries(reale.marketplaces)) {
+  const u = buildAmazonUrl('blade', 'dran-sword', 'Dran Sword', lookup, {}, k, reale);
+  check(`link su ${k} con tag=`, new URL(u.href).searchParams.get('tag') === m.tag, u.href);
+}
 
 console.log(failed === 0 ? '\nTutti i test passati.' : `\n${failed} test FALLITI.`);
 process.exit(failed === 0 ? 0 : 1);

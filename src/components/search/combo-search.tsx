@@ -68,7 +68,7 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
   // così il markup idratato coincide con quello servito.
   const markets = Object.keys(amazon.config.marketplaces);
   const [market, setMarket] = useState<string>(amazon.config.defaultMarketplace);
-  useEffect(() => { setMarket(initialMarket(markets)); }, []);
+  useEffect(() => { setMarket(initialMarket(markets, amazon.config.defaultMarketplace)); }, []);
   const changeMarket = (m: string) => {
     storeMarket(m);
     track('marketplace_changed', { marketplace: m });
