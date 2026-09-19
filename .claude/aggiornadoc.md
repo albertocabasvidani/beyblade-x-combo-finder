@@ -4,7 +4,7 @@
 
 | Documento | Quando aggiornarlo | Ultimo aggiornamento | Chiusure senza modifiche |
 |---|---|---|---|
-| CLAUDE.md | architettura, comandi npm, vincoli verificati sul campo, scheduling dei job, trappole di API e servizi esterni | 12/09/2026 | 0 |
+| CLAUDE.md | architettura, comandi npm, vincoli verificati sul campo, scheduling dei job, trappole di API e servizi esterni | 19/09/2026 | 0 |
 | README.md | utilizzo, installazione, comandi, cosa vede chi apre il sito | 12/09/2026 | 0 |
 | projects/combo-pipeline.md | ogni run o modifica di raccolta, parser, scoring, pruning, automazione | 12/09/2026 | 0 |
 | projects/web-frontend.md | ogni modifica al sito Astro/Preact, ad analytics, affiliazione e annunci | 12/09/2026 | 0 |

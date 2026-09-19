@@ -461,6 +461,8 @@ perché ogni 5 min altrimenti compariva una finestra cmd nella sessione utente. 
 - Componenti Astro in `.astro`
 - Interfacce TypeScript in `src/lib/types.ts`
 - Traduzioni in `src/i18n/en.json` (attiva) e `src/i18n/it.json` (dormiente, vedi i18n in Tech Stack)
+- Pagine editoriali in `src/content/{meta-reports,parts,combos,buying-guides}/*.mdx`: il body **non**
+  contiene un H1, lo renderizza da solo il layout editoriale (`src/layouts/editorial-layout.astro`)
 
 ## Amazon Affiliate (riattivato l'11/09/2026)
 
