@@ -1,14 +1,15 @@
 /**
  * e2e-smoke.ts — percorre il sito come un utente (Chrome di sistema via playwright-core, headless)
  * e verifica peso della pagina, dataset separato, ricerca parti, filtro periodo, filtri, paginazione,
- * link Amazon, marketplace, tema, pagine secondarie, mobile. Stampa OK/KO per passo ed esce 1 se un
- * passo fallisce. Screenshot in tmp/e2e/.
+ * link Amazon, marketplace, tema, pagine secondarie, mobile, e le pagine editoriali (meta/parts/
+ * combos/buy: sitemap vs dist/, H1 unico, canonical, JSON-LD, disclosure, tag= su ogni link Amazon).
+ * Stampa OK/KO per passo ed esce 1 se un passo fallisce. Screenshot in tmp/e2e/.
  *
  * Precondizione: `npm run build && npm run preview` in un altro terminale (porta 4321).
  * Esegui: npm run test:e2e            (E2E_URL per un'altra origine, es. https://beybladexcombos.com)
  */
 import { chromium, type Page, type BrowserContext, type Response } from 'playwright-core';
-import { existsSync, mkdirSync, readFileSync } from 'fs';
+import { existsSync, mkdirSync, readFileSync, readdirSync, statSync } from 'fs';
 import { join } from 'path';
 
 const ROOT = join(import.meta.dirname, '..');
@@ -232,6 +233,101 @@ async function desktopFlow(context: BrowserContext) {
   await page.close();
 }
 
+/** Tutti gli index.html sotto dist/, ricorsivo — per confrontare il conteggio con la sitemap. */
+function countDistPages(): number {
+  const dist = join(ROOT, 'dist');
+  if (!existsSync(dist)) return -1;
+  let n = 0;
+  const walk = (dir: string) => {
+    for (const entry of readdirSync(dir)) {
+      const p = join(dir, entry);
+      const st = statSync(p);
+      if (st.isDirectory()) walk(p);
+      else if (entry === 'index.html') n++;
+    }
+  };
+  walk(dist);
+  return n;
+}
+
+const EDITORIAL_MAX_BYTES = 150_000;
+const JSON_LD_TYPES = new Set(['Article', 'BlogPosting', 'ItemList', 'BreadcrumbList', 'WebSite', 'Organization']);
+
+async function editorialFlow(context: BrowserContext) {
+  console.log('\n[14] Editoriale (meta/parts/combos/buy)');
+
+  // La sitemap è la fonte della verità sulle pagine pubblicate: si parte da lì, non da un elenco
+  // scritto a mano, così un URL nuovo o sparito si vede da solo.
+  let sitemapUrls: string[] = [];
+  try {
+    const xml = await (await fetch(`${BASE}/sitemap-0.xml`)).text();
+    sitemapUrls = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
+  } catch (e) {
+    check('sitemap-0.xml raggiungibile', false, String(e));
+    return;
+  }
+  check(`sitemap ha almeno 15 URL (era 3 prima del piano contenuti)`, sitemapUrls.length >= 15, `=${sitemapUrls.length}`);
+
+  const distPages = countDistPages();
+  if (distPages >= 0) {
+    check('numero di URL in sitemap = pagine HTML in dist/', sitemapUrls.length === distPages, `sitemap=${sitemapUrls.length} dist=${distPages}`);
+  } else {
+    skipped('confronto sitemap vs dist/', 'dist/ non trovato (build non ancora fatta in locale)');
+  }
+
+  const editorialUrls = sitemapUrls.filter((u) => /\/(meta|parts|combos|buy)\//.test(u));
+  check('almeno una pagina per ciascuna delle 4 sezioni editoriali', ['meta', 'parts', 'combos', 'buy'].every((s) => editorialUrls.some((u) => u.includes(`/${s}/`))), editorialUrls.join(', '));
+
+  for (const url of editorialUrls) {
+    const path = url.replace(/^https?:\/\/[^/]+/, '');
+    const page = await context.newPage();
+    const errs = consoleErrors(page);
+    const net = watch(page);
+    const resp = await page.goto(BASE + path, { waitUntil: 'networkidle' });
+    const label = path;
+
+    check(`${label}: 200`, resp?.status() === 200, `status=${resp?.status()}`);
+    const html = resp ? await resp.text() : '';
+    check(`${label}: sotto ${EDITORIAL_MAX_BYTES.toLocaleString('it-IT')} byte`, html.length > 0 && html.length < EDITORIAL_MAX_BYTES, `${html.length.toLocaleString('it-IT')} byte`);
+
+    const h1Count = await page.locator('h1').count();
+    check(`${label}: esattamente un H1`, h1Count === 1, `=${h1Count}`);
+
+    const canonical = await page.locator('link[rel=canonical]').getAttribute('href');
+    const expected = url.endsWith('/') ? url : url + '/';
+    check(`${label}: canonical = URL con slash finale`, canonical === expected, `${canonical} vs ${expected}`);
+
+    // Ogni <script type=application/ld+json> deve essere JSON valido con un @type fra quelli noti.
+    const ldTexts = await page.locator('script[type="application/ld+json"]').allTextContents();
+    check(`${label}: almeno un blocco JSON-LD`, ldTexts.length > 0, `=${ldTexts.length}`);
+    const ldOk = ldTexts.every((t) => {
+      try { const d = JSON.parse(t); return JSON_LD_TYPES.has(d['@type']); } catch { return false; }
+    });
+    check(`${label}: ogni JSON-LD è valido con @type noto`, ldOk, ldTexts.map((t) => t.slice(0, 60)).join(' | '));
+
+    // La disclosure deve stare nel contenuto (main), non solo nel footer — solo dove ci sono link Buy.
+    const amazonLinks = await page.locator('a[href*="amazon."]').evaluateAll((as) =>
+      as.map((a) => ({ href: (a as HTMLAnchorElement).href, rel: a.getAttribute('rel') ?? '', target: a.getAttribute('target') })));
+    if (amazonLinks.length > 0) {
+      const disclosureInMain = (await page.locator('main [data-testid=amazon-disclosure]').count()) > 0;
+      check(`${label}: disclosure dentro il contenuto (${amazonLinks.length} link Amazon)`, disclosureInMain);
+      check(`${label}: ogni link Amazon ha tag=`, amazonLinks.every((l) => /[?&]tag=/.test(l.href)), amazonLinks.find((l) => !/[?&]tag=/.test(l.href))?.href ?? '');
+      check(`${label}: ogni link Amazon è sponsored/nofollow, target=_blank`,
+        amazonLinks.every((l) => /sponsored/.test(l.rel) && /nofollow/.test(l.rel) && l.target === '_blank'));
+    } else {
+      skipped(`${label}: link Amazon`, 'nessuno su questa pagina (hub o parte senza set noto)');
+    }
+
+    // Le pagine editoriali sono statiche: non devono scaricare il dataset intero della home.
+    const fetchedCombosJson = net.requests.some((u) => u.endsWith('/combos.json'));
+    check(`${label}: non fetcha /combos.json`, !fetchedCombosJson);
+
+    check(`${label}: nessun errore in console`, errs.length === 0, errs.slice(0, 2).join(' | '));
+
+    await page.close();
+  }
+}
+
 async function mobileFlow(context: BrowserContext) {
   const page = await context.newPage();
   const errs = consoleErrors(page);
@@ -260,6 +356,7 @@ async function main() {
   try {
     const desktop = await browser.newContext({ viewport: { width: 1366, height: 900 }, locale: 'en-US' });
     await desktopFlow(desktop);
+    await editorialFlow(desktop);
     await desktop.close();
     const mobile = await browser.newContext({ viewport: { width: 390, height: 844 }, locale: 'en-US', isMobile: true, hasTouch: true });
     await mobileFlow(mobile);
