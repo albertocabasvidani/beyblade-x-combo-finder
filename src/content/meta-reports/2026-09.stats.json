@@ -1,0 +1,17 @@
+{
+  "placements": 161,
+  "note": "Solo i primi 19 giorni del mese. Nei quattro mesi precedenti (maggio-agosto 2026), il conteggio al giorno 19 valeva tra il 42% e l'84% del totale mensile (media ~60%); qui e' molto sotto quella fascia (161 su un atteso di 600-1000 se il ritmo fosse quello storico). E' quasi certamente ritardo di pubblicazione sul forum WBO, non un crollo reale dell'attivita' competitiva: i numeri di questo report vanno letti come parziali, non come un trend.",
+  "historicalDay19Share": [
+    { "month": "2026-05", "day19": 1362, "fullMonth": 2332, "sharePct": 58.4 },
+    { "month": "2026-06", "day19": 1244, "fullMonth": 1480, "sharePct": 84.1 },
+    { "month": "2026-07", "day19": 391, "fullMonth": 920, "sharePct": 42.5 },
+    { "month": "2026-08", "day19": 676, "fullMonth": 1203, "sharePct": 56.2 }
+  ],
+  "topSoFar": [
+    { "id": "wizard-rod-1-60-hexa", "name": "Wizard Rod 1-60 Hexa", "placements": 14 },
+    { "id": "silver-wolf-9-60-free-ball", "name": "Silver Wolf 9-60 Free Ball", "placements": 7 },
+    { "id": "wizard-rod-1-60-free-ball", "name": "Wizard Rod 1-60 Free Ball", "placements": 5 },
+    { "id": "shark-scale-1-70-low-rush", "name": "Shark Scale 1-70 Low Rush", "placements": 5 },
+    { "id": "shark-scale-3-60-low-rush", "name": "Shark Scale 3-60 Low Rush", "placements": 3 }
+  ]
+}

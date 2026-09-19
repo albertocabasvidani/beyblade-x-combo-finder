@@ -3,7 +3,7 @@ name: web-frontend
 status: active
 updated: 19/09/2026
 health: yellow
-next-step: "Fase 1 del piano contenuti: @astrojs/mdx, content collections, build-data, JSON-LD"
+next-step: "Fase 5: sezione editoriale in e2e-smoke.ts, poi le altre ~27 pagine parte e ~100 combo (fase 7)"
 blocked-by: null
 current-plan: "C:\\Users\\cinqu\\.claude\\plans\\mi-hanno-espulso-dall-affiliazione-zany-squid.md"
 main-doc: CLAUDE.md
@@ -38,7 +38,7 @@ GitHub Pages via Actions. L'infrastruttura i18n IT resta in repo (dormiente), ri
 ## In progress
 
 <!-- Lavori in corso. Se collegati a un piano in plans/, linkalo. -->
-- 19/09/2026 — **Contenuti editoriali per reggere la revisione Associates** (piano: `C:\Users\cinqu\.claude\plans\mi-hanno-espulso-dall-affiliazione-zany-squid.md`). Amazon ha chiuso l'account ES il 19/09 contestando, sul sito combo, contenuto insufficiente e link senza tracking ID; il sito dichiarato è lo stesso su tutti i portali, quindi la stessa revisione può colpire l'Italia. Fase 0 (link taggati) chiusa. Resta: content collections + rotte statiche (`/meta/`, `/parts/`, `/combos/`, `/buy/`), 11 pubblicazioni scritte a mano, `test:content`, e la ri-candidatura ES
+- 19/09/2026 — **Contenuti editoriali per reggere la revisione Associates** (piano: `C:\Users\cinqu\.claude\plans\mi-hanno-espulso-dall-affiliazione-zany-squid.md`). Amazon ha chiuso l'account ES il 19/09 contestando, sul sito combo, contenuto insufficiente e link senza tracking ID; il sito dichiarato è lo stesso su tutti i portali (incluso l'account US appena attivato, sitelist dichiarata lo stesso giorno). Fatto: fasi 0-4 complete — content collections (`src/content.config.ts`, `@astrojs/mdx`), rotte `/meta/`, `/parts/`, `/combos/`, `/buy/` con link Amazon pre-renderizzati lato server, JSON-LD, breadcrumb, disclosure nel contenuto. Le 11 pubblicazioni sono scritte (7 da agenti Sonnet in parallelo, 2 report mensili scritti a mano): 2 report mensili, 3 pagine parte, 4 pagine combo, 2 guide d'acquisto — sitemap passata da 3 a 18 URL. `scripts/test-content.ts` verde (id contro dati veri, soglie di parole, anti-boilerplate, invariante di pubblicazione, anti-orfano). Resta: sezione editoriale in `e2e-smoke.ts` (fase 5, non ancora scritta — la verifica fatta finora è statica sull'HTML prodotto, non un browser reale), poi la ri-candidatura ES e — solo se quella passa — la revisione IT
 - 12/09/2026 — **AdSense: sito in revisione, slot già in pagina**. Le quattro unità display responsive esistono (`bxcombos-top` 2893429591, `-rail` 8552950383, `-infeed` 7497432742, `-bottom` 1580347920) e i loro id sono in `src/lib/ads-config.ts`, quindi la pagina serve già i tag `<ins>`; il sito è in stato «Getting ready» e nessun annuncio viene riempito finché non passa. `ads.txt` è passato a **Authorized** il 13/09/2026 (il 12 era ancora «Not found»: era solo il crawl di Google non ancora avvenuto). Resta: aspettare l'esito della revisione — il 13/09 lo stato era ancora «Getting ready» — e verificare che il messaggio di consenso compaia davvero a un visitatore in EEA
 - 12/09/2026 — **Associates IT in approvazione temporanea** (account nuovo `albertocv0b-21`, solo beybladexcombos.com dichiarato): Amazon rivede il sito dopo 3 vendite idonee da amazon.it, entro 180 giorni. Resta: portare traffico italiano al sito (canale WhatsApp, social) finché le 3 vendite non arrivano; se scade, ricandidarsi
 

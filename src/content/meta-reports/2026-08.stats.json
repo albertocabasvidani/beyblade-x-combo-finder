@@ -1,0 +1,16 @@
+{
+  "placements": 1203,
+  "risers": [
+    { "id": "wizard-rod-1-60-hexa", "name": "Wizard Rod 1-60 Hexa", "julyPlacements": 100, "augustPlacements": 125 },
+    { "id": "cobalt-dragoon-5-60-elevate", "name": "Cobalt Dragoon 5-60 Elevate", "julyPlacements": 8, "augustPlacements": 24 },
+    { "id": "silver-wolf-9-60-free-ball", "name": "Silver Wolf 9-60 Free Ball", "julyPlacements": 23, "augustPlacements": 39 },
+    { "id": "shark-scale-1-70-low-rush", "name": "Shark Scale 1-70 Low Rush", "julyPlacements": 20, "augustPlacements": 32 },
+    { "id": "shark-scale-3-60-low-rush", "name": "Shark Scale 3-60 Low Rush", "julyPlacements": 15, "augustPlacements": 27 }
+  ],
+  "fallers": [
+    { "id": "meteor-dragoon-7-60-level", "name": "Meteor Dragoon 7-60 Level", "julyPlacements": 22, "augustPlacements": 13 },
+    { "id": "phoenix-wing-3-60-rush", "name": "Phoenix Wing 3-60 Rush", "julyPlacements": 6, "augustPlacements": 2 },
+    { "id": "shark-scale-1-60-low-rush", "name": "Shark Scale 1-60 Low Rush", "julyPlacements": 12, "augustPlacements": 8 },
+    { "id": "aero-pegasus-1-50-low-rush", "name": "Aero Pegasus 1-50 Low Rush", "julyPlacements": 7, "augustPlacements": 3 }
+  ]
+}
