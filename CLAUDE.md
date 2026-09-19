@@ -473,21 +473,26 @@ Due superfici in `combo-card.tsx`, entrambe con `rel="sponsored noopener nofollo
 Disclosure nel footer e sezione «Affiliate links» in `/about/`.
 
 - **Tag** in `data/amazon-config.json` (committato), uno per marketplace: tracking ID **dedicati al sito**
-  creati sui portali Associates (es `bxcombos-21`, de `bxcombosde-21`, fr `bxcombosfr-21`, uk `bxcombosuk-21`,
-  jp `bxcombos-22`), diversi da quelli del canale WhatsApp di bbxdealmonitor, così il suo report affiliati
-  distingue i due canali. `it` = `albertocv0b-21`: account Associates IT nuovo, candidato il 12/09/2026 con il
-  solo beybladexcombos.com dopo la chiusura del precedente (rifiuto del 25/08/2026: nessun link taggato sulle
-  proprietà dichiarate). È in approvazione temporanea: servono 3 vendite idonee da amazon.it entro 180 giorni,
-  altrimenti Amazon lo chiude di nuovo. **Ogni marketplace elencato lì deve avere un tag**: `withTag()` in
-  `src/lib/amazon.ts` solleva su tag vuoto, quindi un link non tracciato rompe la build invece di essere
-  pubblicato. `com` non è elencato perché non esiste un account Associates US. Il tag `es` (`bxcombos-21`)
-  è dell'account chiuso da Amazon il 19/09/2026: da riscrivere quando la Spagna viene ri-candidata.
+  creati sui portali Associates (de `bxcombosde-21`, fr `bxcombosfr-21`, uk `bxcombosuk-21`, jp `bxcombos-22`),
+  diversi da quelli del canale WhatsApp di bbxdealmonitor, così il suo report affiliati distingue i due canali.
+  `it` = `albertocv0b-21`: account Associates IT nuovo, candidato il 12/09/2026 con il solo beybladexcombos.com
+  dopo la chiusura del precedente (rifiuto del 25/08/2026: nessun link taggato sulle proprietà dichiarate). È
+  in approvazione temporanea: servono 3 vendite idonee da amazon.it entro 180 giorni, altrimenti Amazon lo
+  chiude di nuovo — è l'unico account che genera commissioni oggi, e la stessa revisione che ha colpito la
+  Spagna può arrivare qui. `com` = `albertocabasv-20`, account US preesistente trovato il 19/09/2026 (lista
+  siti vuota, nomenclatura diversa dai `-21`/`-22`): sito dichiarato lo stesso giorno. `es` =
+  `beybladexcomb-21`, account nuovo ri-candidato il 19/09/2026 dopo il rifiuto del precedente (`bxcombos-21`,
+  chiuso per contenuto insufficiente e link senza tracking ID) — stessa attesa delle 3 vendite in 180 giorni.
+  **Ogni marketplace elencato deve avere un tag**: `withTag()` in `src/lib/amazon.ts` solleva su tag vuoto,
+  quindi un link non tracciato rompe la build invece di essere pubblicato.
 - I suffissi `-21` sono un unico spazio di nomi fra i marketplace europei: un ID creato su un portale non è
   più disponibile sugli altri (per questo uk/de/fr hanno il paese nel nome). beybladexcombos.com è nella lista
-  siti di ogni account (`/home/account/profile/sitelist`). Portali: afiliados.amazon.es, partnernet.amazon.de,
-  partenaires.amazon.fr, affiliate-program.amazon.co.uk, affiliate.amazon.co.jp.
+  siti di ogni account (`/home/account/profile/sitelist`) — **da solo**: `trottolebeybladex.it`, che compariva
+  insieme su de/fr/uk, è stato rimosso il 19/09/2026 (stesso sito citato nel rifiuto ES per price-caching).
+  Portali: afiliados.amazon.es, partnernet.amazon.de, partenaires.amazon.fr, affiliate-program.amazon.co.uk,
+  affiliate.amazon.co.jp, affiliate-program.amazon.com.
 - **Marketplace** dalle lingue del browser (`src/lib/marketplace.ts`: it/de/fr/es/uk/jp; tutto il resto
-  → `defaultMarketplace`, oggi `uk`) con select «Shop on» persistito in localStorage (`bxcf-marketplace`).
+  → `defaultMarketplace`, oggi `com`) con select «Shop on» persistito in localStorage (`bxcf-marketplace`).
   Il fallback arriva dalla config, non è cablato: fino al 19/09/2026 era `com` scritto dentro la funzione,
   e chiunque avesse il browser in inglese vedeva link senza tracking ID — una delle contestazioni che sono
   costate l'account ES. Aprendo un account US, `com` torna in config col suo tag e ridiventa il default.
