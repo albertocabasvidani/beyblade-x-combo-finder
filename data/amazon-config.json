@@ -1,12 +1,13 @@
 {
-  "_comment": "Tag = tracking ID Amazon Associates DEDICATI al sito (uno per account/marketplace), diversi da quelli usati da bbxdealmonitor per il canale WhatsApp: cosi' il report affiliati giornaliero distingue i due canali. Ogni marketplace elencato qui DEVE avere un tag non vuoto: un link senza &tag= e' una violazione delle policy Associates, contestata il 19/09/2026 sull'account ES. `com` non e' elencato perche' non esiste un account Associates US: finche' non c'e', chi non matcha nessuna lingua va sul defaultMarketplace, che un tag ce l'ha.",
-  "defaultMarketplace": "uk",
+  "_comment": "Tag = tracking ID Amazon Associates DEDICATI al sito (uno per account/marketplace), diversi da quelli usati da bbxdealmonitor per il canale WhatsApp: cosi' il report affiliati giornaliero distingue i due canali. Ogni marketplace elencato qui DEVE avere un tag non vuoto: un link senza &tag= e' una violazione delle policy Associates, contestata il 19/09/2026 sull'account ES. `com` usa l'account US preesistente `albertocabasv-20` (trovato il 19/09/2026, tag storico diverso dai `-21`/`-22`): beybladexcombos.com dichiarato in sitelist il 19/09/2026 (prima la lista era vuota). La revisione di quell'account arriva probabilmente entro qualche settimana: il contenuto editoriale del piano (fasi 1-6) va completato prima che arrivi.",
+  "defaultMarketplace": "com",
   "marketplaces": {
     "it": { "tld": "amazon.it", "tag": "albertocv0b-21" },
     "de": { "tld": "amazon.de", "tag": "bxcombosde-21" },
     "fr": { "tld": "amazon.fr", "tag": "bxcombosfr-21" },
     "es": { "tld": "amazon.es", "tag": "bxcombos-21" },
     "uk": { "tld": "amazon.co.uk", "tag": "bxcombosuk-21" },
-    "jp": { "tld": "amazon.co.jp", "tag": "bxcombos-22" }
+    "jp": { "tld": "amazon.co.jp", "tag": "bxcombos-22" },
+    "com": { "tld": "amazon.com", "tag": "albertocabasv-20" }
   }
 }

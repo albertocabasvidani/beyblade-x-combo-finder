@@ -3,12 +3,13 @@
  *
  * Dalle lingue del browser: it → amazon.it, de/at/ch → .de, fr/be → .fr, es → .es, en-GB/en-IE → .co.uk,
  * ja → .co.jp. Chi non matcha nessuna regola (USA compresi) va sul `fallback`, che è il
- * `defaultMarketplace` di data/amazon-config.json. L'utente può forzare il mercato con un select; la
- * scelta resta in localStorage (preferenza dell'utente, non tracciamento).
+ * `defaultMarketplace` di data/amazon-config.json — dal 19/09/2026 è `com` (account US
+ * `albertocabasv-20`, sito dichiarato). L'utente può forzare il mercato con un select; la scelta
+ * resta in localStorage (preferenza dell'utente, non tracciamento).
  *
- * Il fallback deve essere un mercato con tracking ID. Fino al 19/09/2026 era amazon.com, che non ha
- * un account Associates e quindi un tag: chiunque avesse il browser in inglese — il revisore Amazon
- * compreso — vedeva link senza `tag=`, ed è una delle contestazioni che sono costate l'account ES.
+ * Il fallback deve essere un mercato con tracking ID. Fino al 19/09/2026 `com` non aveva account
+ * Associates e quindi tag: chiunque avesse il browser in inglese — il revisore Amazon compreso —
+ * vedeva link senza `tag=`, ed è una delle contestazioni che sono costate l'account ES.
  */
 export const MARKET_STORAGE_KEY = 'bxcf-marketplace';
 
