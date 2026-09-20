@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-19T02:05:39.151Z",
+  "lastUpdated": "2026-09-20T02:27:41.781Z",
   "combos": [
     {
       "id": "aero-pegasus-1-70-low-flat",
@@ -1231,51 +1231,6 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
-    },
-    {
-      "id": "croc-bite-1-60-low-rush",
-      "line": "bx",
-      "blade": "croc-bite",
-      "ratchet": "1-60",
-      "bit": "low-rush",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Croc Bite 1-60 Low Rush",
-      "type": "attack",
-      "score": 0,
-      "scoreBreakdown": {
-        "performance": 0,
-        "presence": 0,
-        "corroboration": 0,
-        "tournamentEvents": 0,
-        "wins": 0,
-        "topCutAppearances": 0
-      },
-      "tags": [
-        "theory-only"
-      ],
-      "notes": "Combo segnalata su Reddit r/Beyblade.",
-      "sources": [
-        {
-          "name": "Reddit r/Beyblade",
-          "url": "https://reddit.com/r/Beyblade/comments/1nfch14/oh_my_god111_new_wizardrod960b_counter1111/",
-          "weight": 0.6,
-          "date": "2025-09-12"
-        }
-      ],
-      "amazon": {},
-      "dateAdded": "2026-06-16",
-      "dateUpdated": "2026-09-13",
-      "evidence": {
-        "placements": [],
-        "usage": [],
-        "mentions": []
-      },
-      "windows": {},
-      "archivedReason": "no-fresh-evidence (cutoff 12m)",
-      "archivedDate": "2026-09-13"
     },
     {
       "id": "croc-bite-7-60-rush",
@@ -13193,6 +13148,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "valkyrie-blast-jaggy-1-80-low-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "1-80",
+      "bit": "low-rush",
+      "lockChip": "valkyrie",
+      "mainBlade": "blast",
+      "assistBlade": "jaggy",
+      "overBlade": null,
+      "displayName": "Valkyrie Blast J 1-80 Low Rush",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Banana Games 10k Qualifier (September 19th 2025)",
+          "url": "https://www.metabeys.com/events/1758341209606",
+          "weight": 1,
+          "date": "2025-09-19"
+        }
+      ],
+      "dateAdded": "2026-06-23",
+      "dateUpdated": "2026-09-20",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-20"
     },
     {
       "id": "valkyrie-blast-jaggy-4-50-low-rush",
