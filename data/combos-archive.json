@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-20T02:27:41.781Z",
+  "lastUpdated": "2026-09-21T02:09:56.868Z",
   "combos": [
     {
       "id": "aero-pegasus-1-70-low-flat",
@@ -6148,6 +6148,50 @@
       "archivedDate": "2026-09-12"
     },
     {
+      "id": "knight-lance-3-80-needle",
+      "line": "bx",
+      "blade": "knight-lance",
+      "ratchet": "3-80",
+      "bit": "needle",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "displayName": "Knight Lance 3-80 Needle",
+      "type": "defense",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "Solid defensive combo with great stamina. Consistent in defense-oriented matchups.",
+      "sources": [
+        {
+          "name": "WBO Forum",
+          "url": "https://worldbeyblade.org/",
+          "weight": 0.7,
+          "date": "2025-09-20"
+        }
+      ],
+      "amazon": {},
+      "dateAdded": "2025-06-01",
+      "dateUpdated": "2026-09-21",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-21"
+    },
+    {
       "id": "knight-mail-1-60-zap",
       "line": "bx",
       "blade": "knight-mail",
@@ -8130,6 +8174,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "pegasus-blast-slash-9-60-taper",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "taper",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "slash",
+      "overBlade": null,
+      "displayName": "Pegasus Blast S 9-60 Taper",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Sep. 20, 2025  10:54 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-20"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-09-21",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-21"
     },
     {
       "id": "pegasus-blast-turn-3-60-hexa",
@@ -14510,6 +14598,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "wizard-arc-round-7-60-hexa",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "7-60",
+      "bit": "hexa",
+      "lockChip": "wizard",
+      "mainBlade": "arc",
+      "assistBlade": "round",
+      "overBlade": null,
+      "displayName": "Wizard Arc R 7-60 Hexa",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Sep. 20, 2025  10:54 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-20"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-09-21",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-21"
     },
     {
       "id": "wizard-arc-round-7-70-flat",
