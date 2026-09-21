@@ -5,10 +5,15 @@
  * link vero anche senza JavaScript, per lo stesso motivo per cui non ce l'ha la home — un crawler
  * non clicca (known issue in projects/web-frontend.md, 19/09/2026).
  *
- * Renderizza col `defaultMarketplace` di data/amazon-config.json; uno script inline minuscolo
- * riscrive gli href se il visitatore ha già un mercato salvato in localStorage (stessa chiave e
- * stessa logica di src/lib/marketplace.ts, qui duplicata a mano perché quel modulo usa
- * `navigator`/`localStorage` e non è pensato per essere eseguito lato server).
+ * Renderizza col `defaultMarketplace` di data/amazon-config.json, poi uno script inline riscrive
+ * gli href per il mercato del visitatore (`initialMarket`: preferenza salvata, altrimenti lingua
+ * del browser) e tiene allineato il select «Shop on».
+ *
+ * Il select c'è dal 21/09/2026, e con lui la lingua del browser: prima queste pagine restavano sul
+ * default per chiunque non avesse già scelto un mercato sulla home, e la home è l'unico posto dove
+ * si poteva sceglierlo. Chi arrivava qui da una ricerca — il caso normale per una pagina
+ * editoriale — vedeva link amazon.com col tag dell'account US anche col browser in francese,
+ * mentre Amazon France contestava proprio di non trovare il proprio identificativo sul sito.
  */
 import productsData from '../../../data/products.json';
 import amazonConfig from '../../../data/amazon-config.json';
@@ -37,7 +42,22 @@ const rows = parts.map((p) => ({
 ---
 
 <div class="my-6 rounded-lg border border-border bg-surface p-4">
-  <p class="mb-3 font-mono text-[11px] uppercase tracking-[0.06em] text-muted">Where to buy</p>
+  <div class="mb-3 flex flex-wrap items-center justify-between gap-2">
+    <p class="font-mono text-[11px] uppercase tracking-[0.06em] text-muted">Where to buy</p>
+    <label class="flex items-center gap-2 font-mono text-[11px] text-muted">
+      Shop on
+      <select
+        data-buy-market
+        data-testid="buy-market"
+        aria-label="Shop on"
+        class="rounded border border-border bg-surface px-2 py-1 font-mono text-[11px] text-muted"
+      >
+        {Object.entries(config.marketplaces).map(([code, m]) => (
+          <option value={code} selected={code === market}>{m.tld}</option>
+        ))}
+      </select>
+    </label>
+  </div>
   <ul class="flex flex-col gap-2" data-buy-row data-market={market}>
     {rows.map((r) => (
       <li>
@@ -58,26 +78,36 @@ const rows = parts.map((p) => ({
 </div>
 
 <script>
-  import { readStoredMarket } from '../../lib/marketplace';
+  import { initialMarket, storeMarket } from '../../lib/marketplace';
   import amazonConfig from '../../../data/amazon-config.json';
   import productsData from '../../../data/products.json';
   import amazonAsins from '../../../data/amazon-asins.json';
   import { buildPartLookup, buildAmazonUrl } from '../../lib/amazon';
 
   const available = Object.keys(amazonConfig.marketplaces);
-  const stored = readStoredMarket(available);
-  if (stored) {
-    const lookup = buildPartLookup(productsData);
-    document.querySelectorAll<HTMLDivElement>('[data-buy-row]').forEach((row) => {
-      if (row.dataset.market === stored) return;
-      row.dataset.market = stored;
+  const lookup = buildPartLookup(productsData);
+
+  /** Riscrive i link di ogni blocco e allinea i select: in pagina possono essercene più d'uno. */
+  function applica(market: string) {
+    document.querySelectorAll<HTMLUListElement>('[data-buy-row]').forEach((row) => {
+      row.dataset.market = market;
       row.querySelectorAll<HTMLAnchorElement>('a[data-testid=buy-part]').forEach((a) => {
         const category = a.dataset.category!;
         const partId = a.dataset.partId!;
         const name = a.textContent?.replace(/\s*—\s*Buy on Amazon$/, '') ?? partId;
-        const { href } = buildAmazonUrl(category, partId, name, lookup, amazonAsins as any, stored, amazonConfig as any);
+        const { href } = buildAmazonUrl(category, partId, name, lookup, amazonAsins as any, market, amazonConfig as any);
         a.href = href;
       });
     });
+    document.querySelectorAll<HTMLSelectElement>('[data-buy-market]').forEach((s) => { s.value = market; });
   }
+
+  applica(initialMarket(available, amazonConfig.defaultMarketplace));
+
+  document.querySelectorAll<HTMLSelectElement>('[data-buy-market]').forEach((s) => {
+    s.addEventListener('change', () => {
+      storeMarket(s.value);
+      applica(s.value);
+    });
+  });
 </script>
