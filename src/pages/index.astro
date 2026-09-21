@@ -25,8 +25,15 @@ const initial = {
 const dataUrl = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/combos.json`;
 // Link affiliati Amazon (src/lib/amazon.ts): tag per marketplace in data/amazon-config.json, ASIN per
 // codice set in data/amazon-asins.json (npm run sync:amazon-asins), lookup parte → set da products.json.
+// `amazon` viene serializzato nell'HTML per il componente client, campo per campo:
+// si passano solo i due che servono a costruire i link, mai il file intero. Fino al
+// 21/09/2026 ci finiva anche il suo `_comment`, cioè delle note interne sugli account
+// Associates, leggibili nel sorgente della homepage.
 const amazon = {
-  config: amazonConfig as AmazonConfigFile,
+  config: {
+    defaultMarketplace: amazonConfig.defaultMarketplace,
+    marketplaces: amazonConfig.marketplaces,
+  } as AmazonConfigFile,
   lookup: buildPartLookup(productsData),
   asins: amazonAsins as AsinIndex,
 };

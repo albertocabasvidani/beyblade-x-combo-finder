@@ -487,6 +487,14 @@ Disclosure nel footer e sezione «Affiliate links» in `/about/`.
   chiuso per contenuto insufficiente e link senza tracking ID) — stessa attesa delle 3 vendite in 180 giorni.
   **Ogni marketplace elencato deve avere un tag**: `withTag()` in `src/lib/amazon.ts` solleva su tag vuoto,
   quindi un link non tracciato rompe la build invece di essere pubblicato.
+- **In `amazon-config.json` non si scrivono note: è un dato servito al browser, non un documento.** JSON non
+  ha commenti, quindi per annotarlo bisogna inventare un campo — e un campo viaggia con gli altri. Il
+  `_comment` che stava lì dall'11/09/2026, ampliato il 19/09 con la cronaca dell'account ES chiuso e del
+  nuovo Store ID, è finito **nel sorgente HTML della homepage**: la config viene serializzata per il
+  componente che costruisce i link lato client, campo per campo. Trovato e rimosso il 21/09/2026, mentre si
+  preparava il ricorso all'account FR — cioè stava per leggerlo un revisore Amazon, sulla pagina che il suo
+  rifiuto cita come esempio. Le note su account, rifiuti e policy stanno qui e in `projects/`, che restano
+  nel repo; il file di configurazione porta solo i dati che servono a costruire i link.
 - I suffissi `-21` sono un unico spazio di nomi fra i marketplace europei: un ID creato su un portale non è
   più disponibile sugli altri (per questo uk/de/fr hanno il paese nel nome). beybladexcombos.com è nella lista
   siti di ogni account (`/home/account/profile/sitelist`) — **da solo**: `trottolebeybladex.it`, che compariva
