@@ -1,11 +1,11 @@
 {
-  "lastRun": "2026-09-14",
+  "lastRun": "2026-09-21",
   "lastProposal": {
-    "messageId": "1a09db1dfe015968",
-    "threadId": "1a09db1dfe015968",
-    "date": "2026-09-14",
-    "subject": "Beyblade - 3 nuove fonti candidate (settimana 14/09)",
-    "note": "Feedback applicato: 'approvo tutti' (31/08) -> wba-perth in sources, lfbx-fr e beybladex-thailand-league in manualVerification; 'approvo prime 2' (07/09) -> jaykevbeys e kukulkan-bladers in sources. Restano proposed (non citati dall'utente): beyblade-tr, xbladers-vietnam. Nuovi: 3 propose (south-carolina US, beyblade-x-boys AU, solical UK). 7 nuovi knownNegatives. Discovery YouTube: 75 canali su 81 gia noti o scartati; ricerca web senza novita.",
+    "messageId": "1a0c1c10cc8df4a8",
+    "threadId": "1a0c1c10cc8df4a8",
+    "date": "2026-09-21",
+    "subject": "Beyblade - 5 nuove fonti candidate (settimana 21/09)",
+    "note": "Nessuna risposta alla proposta del 14/09: nessun feedback applicato, sources.json invariato. Restano proposed anche solical-beyblade, beyblade-x-boys, south-carolina, beyblade-tr, xbladers-vietnam. Nuovi: 2 propose (og-pinoy-blader, dabz) + 3 manual-verify (beybladex-berlin DE, beyleague ES, beybladex-london UK). 5 nuovi knownNegatives. Discovery YouTube: 71 canali su 77 gia noti o scartati.",
     "relatedProposals": [
       "19f7ea6fd17b3060",
       "19fc67292184b2f3",
@@ -13,7 +13,8 @@
       "1a00e895ff886719",
       "1a0318eb0da56c32",
       "1a0559d54ac7b334",
-      "1a079a0d798e7a10"
+      "1a079a0d798e7a10",
+      "1a09db1dfe015968"
     ]
   },
   "candidates": [
@@ -1368,6 +1369,122 @@
       "verifiedOn": "2026-09-14",
       "dateFound": "2026-09-14",
       "lastSeen": "2026-09-14"
+    },
+    {
+      "candidateId": "youtube-og-pinoy-blader",
+      "name": "OG_Pinoy_Beyblader (US-NJ)",
+      "type": "youtube",
+      "platform": "youtube",
+      "provides": "combos",
+      "lang": "en",
+      "region": "US",
+      "url": "https://www.youtube.com/@og_pinoy_blader",
+      "channelId": "UCByjKX0VaqdEfc99q2SYaSQ",
+      "signals": {
+        "subscribers": 494,
+        "videoCount": 36,
+        "lastUpload": "2026-09-16",
+        "publishesResults": true
+      },
+      "rationale": "Giocatore della scena WBO East Coast che filma i tornei in POV con esito e combo: 'Beyblade X GP National Qualifier New Jersey Final Point', 'Competing at the Largest WBO East Coast Tournament of the Year BeyFest New Jersey', 'Mall of Toys x Warehouse Wreck NJ Tournament POV', 'Bullet Griffon Domination: Pro Tips from 3 Tournaments'. Cadenza regolare nel 2026.",
+      "dedupCheck": "US narrativo gia coperto da Jaykev (0.4) e BeyMac: qui gli eventi sono WBO/GP del New Jersey, in buona parte diversi, ed e un partecipante non un organizzatore.",
+      "proposedWeight": 0.35,
+      "recommendation": "propose",
+      "status": "proposed",
+      "verifiedOn": "2026-09-21",
+      "dateFound": "2026-09-21",
+      "lastSeen": "2026-09-21"
+    },
+    {
+      "candidateId": "youtube-dabz-beyblade",
+      "name": "Dabz (US)",
+      "type": "youtube",
+      "platform": "youtube",
+      "provides": "combos",
+      "lang": "en",
+      "region": "US",
+      "url": "https://www.youtube.com/@dabzbeyblade",
+      "channelId": "UCud8jsn9yM2z4FI8BPTpWYg",
+      "signals": {
+        "subscribers": 2110,
+        "videoCount": 540,
+        "lastUpload": "2026-09-20",
+        "publishesResults": true
+      },
+      "rationale": "Canale competitivo US che pubblica esiti dei propri tornei ('Beyblade X Deck Results From My Latest Tournament', 'Beyblade X tournament Deck Testing', 'Can I Win a Beyblade Tournament Using Only Balance Type Bits'), ma la maggior parte dei caricamenti sono shorts di meme/meta: segnale reale diluito.",
+      "dedupCheck": "Sovrapposizione con la scena US gia coperta (BeyMac, Casual Beyblader X, Jaykev). Valore aggiunto: deck 3v3 con esito, peso basso per la quota alta di contenuto non competitivo.",
+      "proposedWeight": 0.3,
+      "recommendation": "propose",
+      "status": "proposed",
+      "verifiedOn": "2026-09-21",
+      "dateFound": "2026-09-21",
+      "lastSeen": "2026-09-21"
+    },
+    {
+      "candidateId": "website-beybladex-berlin",
+      "name": "Beyblade X Berlin (beybladex-berlin.de)",
+      "type": "website",
+      "platform": "website",
+      "provides": "combos",
+      "lang": "de",
+      "region": "DE",
+      "url": "https://beybladex-berlin.de/",
+      "signals": {
+        "lastActivity": "2026",
+        "publishesResults": true
+      },
+      "rationale": "Sito della scena berlinese, stagione 2026: menu con Turniere, Statistik e una sezione dedicata 'Winning-Combos' per torneo. Sarebbe il primo aggancio diretto alla Germania, oggi scoperta.",
+      "dedupCheck": "Blader League Germany (bladerleague.de) e gia in manualVerification: questo e la scena locale di Berlino, eventi diversi. NON automatizzabile allo stato: 'Winning-Combos' e 'Statistik' si caricano via JavaScript e il fetch restituisce solo 'Turnier ladt...'.",
+      "proposedWeight": 0.5,
+      "recommendation": "manual-verify",
+      "status": "proposed",
+      "verifiedOn": "2026-09-21",
+      "dateFound": "2026-09-21",
+      "lastSeen": "2026-09-21"
+    },
+    {
+      "candidateId": "website-beybladex-london",
+      "name": "Beyblade XL — London (beybladex.london)",
+      "type": "website",
+      "platform": "website",
+      "provides": "combos",
+      "lang": "en",
+      "region": "GB",
+      "url": "https://www.beybladex.london/",
+      "signals": {
+        "lastActivity": "2026-09",
+        "publishesResults": false
+      },
+      "rationale": "Community londinese attiva (eventi fino a fine settembre 2026, anniversario dei 2 anni) con voce di menu Blader Ranks: potenziale ranking di scena UK.",
+      "dedupCheck": "UK gia parzialmente coperto da AtmosphereRQL (BBN). Verificato via fetch: la home mostra solo annunci di eventi, nessun archivio risultati, e /blader-ranks risponde 404 al fetch — serve un occhio umano per capire se i piazzamenti (e le combo) esistono davvero.",
+      "proposedWeight": 0.35,
+      "recommendation": "manual-verify",
+      "status": "proposed",
+      "verifiedOn": "2026-09-21",
+      "dateFound": "2026-09-21",
+      "lastSeen": "2026-09-21"
+    },
+    {
+      "candidateId": "website-beyleague",
+      "name": "BeyLeague (beyleague.com)",
+      "type": "website",
+      "platform": "website",
+      "provides": "combos",
+      "lang": "es",
+      "region": "LATAM",
+      "url": "https://beyleague.com/",
+      "signals": {
+        "lastActivity": "2026",
+        "publishesResults": false
+      },
+      "rationale": "Piattaforma ispanofona che si presenta come hub di tornei, ranking giocatori e comunita Beyblade: se esponesse i deck vincenti sarebbe un aggregatore LATAM/ES interessante.",
+      "dedupCheck": "ES coperta da SBBL (win-rate) e Kukulkan Bladers (MX). Non verificabile: il dominio risolve ma ogni percorso (/ e /tournaments) risponde 404 al fetch non-browser (SPA), e i motori indicizzano solo la home. Da aprire a mano nel browser.",
+      "proposedWeight": 0.4,
+      "recommendation": "manual-verify",
+      "status": "proposed",
+      "verifiedOn": "2026-09-21",
+      "dateFound": "2026-09-21",
+      "lastSeen": "2026-09-21"
     }
   ],
   "knownNegatives": [
@@ -1554,6 +1671,11 @@
     "https://www.youtube.com/@rebel.bladers (SG, ex TrailBladers, 5550 iscritti: solo 'Intense Combos Testing & Review' per ogni uscita = teoria di prodotto, nessun risultato di torneo)",
     "https://www.youtube.com/@beybladesingapore (SG ufficiale: annunci e promo di SEA Cup/G1, nessun podio con combo)",
     "https://yukiblog32.com/ (JP, 親子ベイブレーダーブログ: guide su regole e liste prodotto, verificato via fetch — nessun report di risultati)",
-    "https://note.com/zexro/n/n73621e61e35f (JP: singolo racconto di una vittoria, non una fonte ricorrente)"
+    "https://note.com/zexro/n/n73621e61e35f (JP: singolo racconto di una vittoria, non una fonte ricorrente)",
+    "https://www.youtube.com/@spinfyre (SPINFYRE, US 250 iscritti: organizza e partecipa a tornei ma il caricato e dominato da shorts di hype/teoria su singole parti (Glory Valkyrie TOP 3 COMBOS, Wizard Rod is COOKED), nessun piazzamento con combo. Stesso profilo dei gia scartati leftspinbeys/ToxicShark)",
+    "https://www.youtube.com/@kabiggon (KABIGGON, BR 248: combo a tema e battaglie nostalgia Metal Fight, nessun torneo)",
+    "https://www.youtube.com/@beyxtremex (BeyXtreme, BR: 2 video e 4 iscritti, canale appena nato)",
+    "https://www.youtube.com/@lipe-c2g (Lipe, BR 24 iscritti: tornei casalinghi fra generazioni miste, fermo da marzo 2026)",
+    "https://www.start.gg/tournament/ceo-2025-community-tournaments/event/beyblade-x (start.gg: bracket e standings senza alcuna combo, formato non utile allo scoring)"
   ]
 }
