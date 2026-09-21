@@ -501,11 +501,27 @@ Disclosure nel footer e sezione «Affiliate links» in `/about/`.
   insieme su de/fr/uk, è stato rimosso il 19/09/2026 (stesso sito citato nel rifiuto ES per price-caching).
   Portali: afiliados.amazon.es, partnernet.amazon.de, partenaires.amazon.fr, affiliate-program.amazon.co.uk,
   affiliate.amazon.co.jp, affiliate-program.amazon.com.
-- **Marketplace** dalle lingue del browser (`src/lib/marketplace.ts`: it/de/fr/es/uk/jp; tutto il resto
-  → `defaultMarketplace`, oggi `com`) con select «Shop on» persistito in localStorage (`bxcf-marketplace`).
-  Il fallback arriva dalla config, non è cablato: fino al 19/09/2026 era `com` scritto dentro la funzione,
-  e chiunque avesse il browser in inglese vedeva link senza tracking ID — una delle contestazioni che sono
-  costate l'account ES. Aprendo un account US, `com` torna in config col suo tag e ridiventa il default.
+- **Il negozio lo decide il paese del visitatore** (`src/lib/marketplace.ts`), con questa precedenza:
+  scelta manuale salvata (`bxcf-marketplace` in localStorage) → paese rilevato → lingue del browser →
+  `defaultMarketplace`. Il paese arriva da `cloudflare.com/cdn-cgi/trace` (riga `loc=XX`, senza chiave,
+  CORS aperto, timeout 1,5 s, risposta tenuta in `sessionStorage` per la sessione): il sito è statico su
+  GitHub Pages, quindi non esiste un header geografico lato server. Se la richiesta non arriva si scende
+  alla lingua, mai a un link senza tag. Il mercato **rilevato** non si salva mai: solo la scelta manuale,
+  o al viaggio successivo sovrascriverebbe in silenzio quello che ha scelto l'utente.
+- La lingua da sola non bastava: chi arrivava da una ricerca con browser in inglese — il revisore Amazon
+  compreso — finiva sul `defaultMarketplace` qualunque fosse il suo paese. È la contestazione del rifiuto
+  francese (21/09/2026), e il paese la chiude: da un indirizzo francese i link sono `amazon.fr` col tag
+  francese anche con Chrome in `en-US`.
+- **Il selettore sta nell'header** (`src/components/market-picker.astro`, montato anche nei blocchi
+  «Where to buy»), quindi su ogni pagina; la nota accanto dice **da dove** viene la scelta («detected from
+  your location», «your choice»). Senza quella riga chi naviga con una VPN vede il negozio sbagliato e non
+  ha modo di capire perché. Lo stato è uno per pagina, su `window.__bxcfMarket`, con l'evento `bxcf:market`:
+  i tre punti che mostrano un select (header, pannello della home, blocchi buy) restano allineati.
+- **Quando il negozio lo sceglie l'utente, i link portano `creatorsDisableRedirect=true`** (`KEEP_STORE_PARAM`
+  in `src/lib/amazon.ts`): senza, OneLink lo sposterebbe da sé sul negozio del suo paese e la scelta appena
+  fatta non varrebbe nulla. Sui link scelti dal sito il parametro non si mette, così Amazon resta libero di
+  correggere un rilevamento sbagliato. Verificato dalla Germania il 21/09/2026: col parametro il link
+  amazon.com resta su amazon.com, senza finisce su amazon.de.
 - **Link diretti** `/dp/{ASIN}` quando `data/amazon-asins.json` conosce il set su quel mercato; il file
   lo scrive `npm run sync:amazon-asins` leggendo `state/seen.json` di bbxdealmonitor (`BBX_SEEN_PATH`,
   default `../bbxdealmonitor/state/seen.json`; assente → avviso, exit 0). Va eseguito **sul server**,
@@ -515,3 +531,10 @@ Disclosure nel footer e sezione «Affiliate links» in `/about/`.
 - `buildPartLookup` (`src/lib/amazon.ts`) preferisce i codici Takara Tomy (BX/UX/CX-NN) a quelli Hasbro
   (G1536…), che sui marketplace europei non esistono: prima `localeCompare` faceva vincere Hasbro per
   10 ratchet/bit (`accel → G1536`). Golden test: `npm run test:amazon`.
+- **OneLink non sostituisce la localizzazione del sito, e non va dato per funzionante.** Dal 21/09/2026
+  l'account IT ha i quattro store collegabili collegati (DE `bxcombosde-21`, ES `beybladexcomb-21`,
+  UK `bxcombosuk-21`, US `albertocabasv-20`; Francia e Giappone non sono fra i collegabili). Misurato lo
+  stesso giorno con Chrome da un indirizzo tedesco: un link `amazon.com` col tag US viene spostato su
+  amazon.de, un link `amazon.it` col tag IT **no**, per sei prove in 25 minuti — e lo strumento «Controlla
+  prodotti corrispondenti» di Amazon nel frattempo dichiarava il contrario. Il redirect avviene nella
+  pagina Amazon, non come 30x: con `curl` non si vede. Quindi il paese lo deve rilevare il sito.

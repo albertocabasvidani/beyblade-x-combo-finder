@@ -12,7 +12,8 @@ interface Props {
   view: ComboWindow;
   thresholds: TierThresholds;
   /** Link affiliati (chip delle parti mancanti e pannello «Buy parts»); assente = nessun link. */
-  amazon?: { config: AmazonConfigFile; lookup: PartLookup; asins: AsinIndex; market: string };
+  /** `keepStore`: il negozio l'ha scelto il visitatore, quindi Amazon non deve spostarlo (OneLink). */
+  amazon?: { config: AmazonConfigFile; lookup: PartLookup; asins: AsinIndex; market: string; keepStore?: boolean };
   displayName: string;
   selected: SelectedParts;
   compare: boolean;
@@ -135,7 +136,7 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, select
               {owned ? '✓' : '!'} {label}
               {!owned && amazon && p.id && (() => {
                 // Link affiliato: /dp/ASIN se il monitor conosce il set su questo mercato, altrimenti ricerca.
-                const { href, kind } = buildAmazonUrl(p.key, p.id, label, amazon.lookup, amazon.asins, amazon.market, amazon.config);
+                const { href, kind } = buildAmazonUrl(p.key, p.id, label, amazon.lookup, amazon.asins, amazon.market, amazon.config, amazon.keepStore);
                 return (
                   <a
                     data-testid="buy"
@@ -200,7 +201,7 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, select
                 </span>
               );
             }
-            const { href, kind } = buildAmazonUrl(p.key, p.id!, label, amazon.lookup, amazon.asins, amazon.market, amazon.config);
+            const { href, kind } = buildAmazonUrl(p.key, p.id!, label, amazon.lookup, amazon.asins, amazon.market, amazon.config, amazon.keepStore);
             return (
               <a
                 key={p.key}

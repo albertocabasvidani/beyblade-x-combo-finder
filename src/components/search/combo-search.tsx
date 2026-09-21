@@ -4,7 +4,7 @@ import type { SlimCombo, SlimDatabase } from '../../lib/slim-combos';
 import { filterCombos } from '../../lib/search-engine';
 import { track } from '../../lib/analytics';
 import type { AmazonConfigFile, AsinIndex, PartLookup } from '../../lib/amazon';
-import { initialMarket, storeMarket } from '../../lib/marketplace';
+import { subscribeMarket, chooseMarket, type MarketSource } from '../../lib/marketplace';
 import { AdUnit } from '../ads/ad-unit';
 import { INFEED_AFTER, INFEED_EVERY } from '../../lib/ads-config';
 import { PartSearch, type PartRef, type PartCategory } from './part-search';
@@ -64,15 +64,18 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
   const [db, setDb] = useState<SlimDatabase>(initial);
   const [period, setPeriod] = useState<WindowKey>('12');
   const [visible, setVisible] = useState(PAGE);
-  // Marketplace Amazon: default neutro in SSR, poi (al mount) preferenza salvata o lingue del browser,
-  // così il markup idratato coincide con quello servito.
+  // Negozio Amazon: default neutro in SSR, poi (al mount) lo stato condiviso di lib/marketplace —
+  // scelta salvata, paese rilevato o lingua del browser. Così il markup idratato coincide con
+  // quello servito, e questo select resta allineato a quello dell'header.
   const markets = Object.keys(amazon.config.marketplaces);
   const [market, setMarket] = useState<string>(amazon.config.defaultMarketplace);
-  useEffect(() => { setMarket(initialMarket(markets, amazon.config.defaultMarketplace)); }, []);
+  const [marketSource, setMarketSource] = useState<MarketSource>('default');
+  useEffect(() => {
+    subscribeMarket(markets, amazon.config.defaultMarketplace, (m, s) => { setMarket(m); setMarketSource(s); });
+  }, []);
   const changeMarket = (m: string) => {
-    storeMarket(m);
+    chooseMarket(m);
     track('marketplace_changed', { marketplace: m });
-    setMarket(m);
   };
   const [selected, setSelected] = useState<SelectedParts>({ ...emptySelection });
   const [compare, setCompare] = useState(false);
@@ -266,7 +269,8 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
               <Pill key={st} active={stadiumFilter.includes(st)} onToggle={() => { track('filter_toggled', { name: `stadium:${st}`, on: !stadiumFilter.includes(st) }); setStadiumFilter((f) => toggleIn(f, st)); }} label={t(`stadium.${st}`)} accentVar="--c-scarlet" />
             ))}
           </div>
-          {/* Marketplace dei link "Buy" sulle parti mancanti (Compare attivo). */}
+          {/* Negozio Amazon dei link "Buy". La nota dice da dove viene la scelta: senza, chi naviga
+              con una VPN vede il negozio sbagliato e non capisce perché. */}
           <label class="mt-3 flex items-center justify-between gap-2 text-[11px] text-muted-2">
             <span>{t('search.shopOn')}</span>
             <select
@@ -280,6 +284,13 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
               ))}
             </select>
           </label>
+          <p data-testid="market-note" class="mt-1 text-[10px] leading-snug text-muted-2">
+            {marketSource === 'user'
+              ? 'Your choice, saved on this device.'
+              : marketSource === 'geo'
+                ? 'Detected from your location. Not where you shop? Pick your store.'
+                : 'Based on your browser language. Not where you shop? Pick your store.'}
+          </p>
         </div>
 
         {/* Annuncio nel pannello: su desktop e' la colonna sinistra, su mobile finisce sopra il ranking. */}
@@ -324,7 +335,7 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
                   locale={locale}
                   rank={i + 1}
                   partName={partName}
-                  amazon={{ ...amazon, market }}
+                  amazon={{ ...amazon, market, keepStore: marketSource === 'user' }}
                   t={t}
                 />
               );

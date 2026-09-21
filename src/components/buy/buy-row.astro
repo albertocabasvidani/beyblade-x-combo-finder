@@ -5,19 +5,18 @@
  * link vero anche senza JavaScript, per lo stesso motivo per cui non ce l'ha la home — un crawler
  * non clicca (known issue in projects/web-frontend.md, 19/09/2026).
  *
- * Renderizza col `defaultMarketplace` di data/amazon-config.json, poi uno script inline riscrive
- * gli href per il mercato del visitatore (`initialMarket`: preferenza salvata, altrimenti lingua
- * del browser) e tiene allineato il select «Shop on».
+ * Renderizza col `defaultMarketplace` di data/amazon-config.json, poi lo stato condiviso di
+ * `src/lib/marketplace.ts` riscrive gli href per il negozio del visitatore (paese rilevato, o
+ * scelta salvata, o lingua del browser). Il menù e la nota che spiega la scelta stanno in
+ * `market-picker.astro`, montato qui e nell'header.
  *
- * Il select c'è dal 21/09/2026, e con lui la lingua del browser: prima queste pagine restavano sul
- * default per chiunque non avesse già scelto un mercato sulla home, e la home è l'unico posto dove
- * si poteva sceglierlo. Chi arrivava qui da una ricerca — il caso normale per una pagina
- * editoriale — vedeva link amazon.com col tag dell'account US anche col browser in francese,
- * mentre Amazon France contestava proprio di non trovare il proprio identificativo sul sito.
+ * Quando è il visitatore ad aver scelto il negozio, i link portano anche `creatorsDisableRedirect`:
+ * senza, Amazon lo sposterebbe da sé sul negozio del suo paese, annullando la scelta appena fatta.
  */
 import productsData from '../../../data/products.json';
 import amazonConfig from '../../../data/amazon-config.json';
 import amazonAsins from '../../../data/amazon-asins.json';
+import MarketPicker from '../market-picker.astro';
 import { buildPartLookup, buildAmazonUrl, type AmazonConfigFile, type AsinIndex } from '../../lib/amazon';
 
 interface Part {
@@ -42,21 +41,9 @@ const rows = parts.map((p) => ({
 ---
 
 <div class="my-6 rounded-lg border border-border bg-surface p-4">
-  <div class="mb-3 flex flex-wrap items-center justify-between gap-2">
+  <div class="mb-3 flex flex-wrap items-start justify-between gap-2">
     <p class="font-mono text-[11px] uppercase tracking-[0.06em] text-muted">Where to buy</p>
-    <label class="flex items-center gap-2 font-mono text-[11px] text-muted">
-      Shop on
-      <select
-        data-buy-market
-        data-testid="buy-market"
-        aria-label="Shop on"
-        class="rounded border border-border bg-surface px-2 py-1 font-mono text-[11px] text-muted"
-      >
-        {Object.entries(config.marketplaces).map(([code, m]) => (
-          <option value={code} selected={code === market}>{m.tld}</option>
-        ))}
-      </select>
-    </label>
+    <MarketPicker class="items-end" />
   </div>
   <ul class="flex flex-col gap-2" data-buy-row data-market={market}>
     {rows.map((r) => (
@@ -78,7 +65,7 @@ const rows = parts.map((p) => ({
 </div>
 
 <script>
-  import { initialMarket, storeMarket } from '../../lib/marketplace';
+  import { subscribeMarket, type MarketSource } from '../../lib/marketplace';
   import amazonConfig from '../../../data/amazon-config.json';
   import productsData from '../../../data/products.json';
   import amazonAsins from '../../../data/amazon-asins.json';
@@ -87,27 +74,21 @@ const rows = parts.map((p) => ({
   const available = Object.keys(amazonConfig.marketplaces);
   const lookup = buildPartLookup(productsData);
 
-  /** Riscrive i link di ogni blocco e allinea i select: in pagina possono essercene più d'uno. */
-  function applica(market: string) {
+  /** Riscrive i link di ogni blocco: in pagina possono essercene più d'uno. */
+  function applica(market: string, source: MarketSource) {
     document.querySelectorAll<HTMLUListElement>('[data-buy-row]').forEach((row) => {
       row.dataset.market = market;
       row.querySelectorAll<HTMLAnchorElement>('a[data-testid=buy-part]').forEach((a) => {
         const category = a.dataset.category!;
         const partId = a.dataset.partId!;
         const name = a.textContent?.replace(/\s*—\s*Buy on Amazon$/, '') ?? partId;
-        const { href } = buildAmazonUrl(category, partId, name, lookup, amazonAsins as any, market, amazonConfig as any);
+        const { href } = buildAmazonUrl(
+          category, partId, name, lookup, amazonAsins as any, market, amazonConfig as any, source === 'user',
+        );
         a.href = href;
       });
     });
-    document.querySelectorAll<HTMLSelectElement>('[data-buy-market]').forEach((s) => { s.value = market; });
   }
 
-  applica(initialMarket(available, amazonConfig.defaultMarketplace));
-
-  document.querySelectorAll<HTMLSelectElement>('[data-buy-market]').forEach((s) => {
-    s.addEventListener('change', () => {
-      storeMarket(s.value);
-      applica(s.value);
-    });
-  });
+  subscribeMarket(available, amazonConfig.defaultMarketplace, applica);
 </script>

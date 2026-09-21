@@ -8,7 +8,7 @@
  * Precondizione: `npm run build && npm run preview` in un altro terminale (porta 4321).
  * Esegui: npm run test:e2e            (E2E_URL per un'altra origine, es. https://beybladexcombos.com)
  */
-import { chromium, type Page, type BrowserContext, type Response } from 'playwright-core';
+import { chromium, type Page, type Browser, type BrowserContext, type Response } from 'playwright-core';
 import { existsSync, mkdirSync, readFileSync, readdirSync, statSync } from 'fs';
 import { join } from 'path';
 
@@ -328,6 +328,91 @@ async function editorialFlow(context: BrowserContext) {
   }
 }
 
+/**
+ * [15] Il negozio deve seguire il PAESE del visitatore, non la lingua del browser: è il caso
+ * normale di chi arriva da una ricerca, ed è quello che vede un revisore Amazon che apre il sito
+ * dal proprio paese con un browser in inglese. Il paese si simula intercettando la richiesta a
+ * Cloudflare, così il test non dipende da dove gira.
+ */
+async function countryFlow(browser: Browser) {
+  console.log('\n[15] Negozio dal paese del visitatore');
+  const config = JSON.parse(readFileSync(join(ROOT, 'data', 'amazon-config.json'), 'utf8'));
+  const tagDi = (m: string) => config.marketplaces[m].tag;
+
+  /** Un contesto che risponde `loc=<paese>` alla sonda geografica; `null` la fa fallire. */
+  const contesto = async (paese: string | null) => {
+    const ctx = await browser.newContext({ viewport: { width: 1366, height: 900 }, locale: 'en-US' });
+    await ctx.route('**/cdn-cgi/trace', (route) =>
+      paese ? route.fulfill({ status: 200, contentType: 'text/plain', body: `fl=1\nloc=${paese}\nvisit_scheme=https\n` })
+            : route.abort());
+    return ctx;
+  };
+  const risolto = (page: Page) => page.waitForFunction(() => !!(window as any).__bxcfMarket, null, { timeout: 8000 });
+  const linkAmazon = (page: Page) => page.locator('a[data-testid=buy-part]')
+    .evaluateAll((as) => as.map((a) => (a as HTMLAnchorElement).href));
+
+  // --- Visitatore in Francia, browser in inglese: il paese vince sulla lingua.
+  const fr = await contesto('FR');
+  const page = await fr.newPage();
+  await page.goto(BASE + '/buy/BX-48/', { waitUntil: 'networkidle' });
+  await risolto(page);
+  let hrefs = await linkAmazon(page);
+  check('FR: i link vanno su amazon.fr', hrefs.length > 0 && hrefs.every((h) => h.includes('www.amazon.fr/')), hrefs[0] ?? 'nessun link');
+  check('FR: ogni link porta il tag francese', hrefs.every((h) => h.includes(`tag=${tagDi('fr')}`)), hrefs[0] ?? '');
+  const nota = (await page.getByTestId('market-note').first().textContent()) ?? '';
+  check('FR: la nota dice che il paese è stato rilevato', /detected from your location/i.test(nota), nota);
+  check('FR: nessun blocco del redirect su una scelta non sua', hrefs.every((h) => !h.includes('creatorsDisableRedirect')), hrefs[0] ?? '');
+
+  // --- Il visitatore corregge a mano (il caso VPN): la sua scelta vince e resta.
+  await page.locator('header [data-buy-market]').selectOption('it');
+  await page.waitForFunction(() => (window as any).__bxcfMarket?.source === 'user', null, { timeout: 5000 });
+  hrefs = await linkAmazon(page);
+  check('scelta manuale IT: i link vanno su amazon.it', hrefs.every((h) => h.includes('www.amazon.it/')), hrefs[0] ?? '');
+  check('scelta manuale IT: tag italiano', hrefs.every((h) => h.includes(`tag=${tagDi('it')}`)), hrefs[0] ?? '');
+  check('scelta manuale: i link impediscono ad Amazon di spostare il visitatore',
+    hrefs.every((h) => h.includes('creatorsDisableRedirect=true')), hrefs[0] ?? '');
+  const notaScelta = (await page.getByTestId('market-note').first().textContent()) ?? '';
+  check('scelta manuale: la nota lo dice', /your choice/i.test(notaScelta), notaScelta);
+  await page.close();
+
+  // Stesso profilo, ma adesso il paese rilevato è un altro: la scelta salvata deve reggere.
+  await fr.route('**/cdn-cgi/trace', (route) =>
+    route.fulfill({ status: 200, contentType: 'text/plain', body: 'loc=DE\n' }));
+  const page2 = await fr.newPage();
+  await page2.goto(BASE + '/buy/BX-48/', { waitUntil: 'networkidle' });
+  await risolto(page2);
+  hrefs = await linkAmazon(page2);
+  check('dopo un reload con paese DE: la scelta manuale IT resiste', hrefs.every((h) => h.includes('www.amazon.it/')), hrefs[0] ?? '');
+  await page2.close();
+  await fr.close();
+
+  // --- Sonda irraggiungibile (ad blocker, rete): si scende alla lingua, mai a un link senza tag.
+  const muto = await contesto(null);
+  const page3 = await muto.newPage();
+  await page3.goto(BASE + '/buy/BX-48/', { waitUntil: 'networkidle' });
+  await risolto(page3);
+  hrefs = await linkAmazon(page3);
+  const tagValidi = new Set(Object.values(config.marketplaces).map((m: any) => m.tag));
+  check('geo non disponibile: i link restano tutti taggati',
+    hrefs.length > 0 && hrefs.every((h) => [...tagValidi].some((t) => h.includes(`tag=${t}`))), hrefs[0] ?? '');
+  check('geo non disponibile: browser en-US → negozio di default',
+    hrefs.every((h) => h.includes(`www.${config.marketplaces[config.defaultMarketplace].tld}/`)), hrefs[0] ?? '');
+  await page3.close();
+  await muto.close();
+
+  // --- Home: l'isola Preact e il selettore dell'header devono mostrare lo stesso negozio.
+  const de = await contesto('DE');
+  const page4 = await de.newPage();
+  await page4.goto(BASE + '/', { waitUntil: 'networkidle' });
+  await risolto(page4);
+  const valori = await page4.locator('[data-buy-market], [data-testid=marketplace]')
+    .evaluateAll((els) => els.map((e) => (e as HTMLSelectElement).value));
+  check('DE: header e pannello della home mostrano lo stesso negozio',
+    valori.length >= 2 && new Set(valori).size === 1 && valori[0] === 'de', valori.join(','));
+  await page4.close();
+  await de.close();
+}
+
 async function mobileFlow(context: BrowserContext) {
   const page = await context.newPage();
   const errs = consoleErrors(page);
@@ -358,6 +443,7 @@ async function main() {
     await desktopFlow(desktop);
     await editorialFlow(desktop);
     await desktop.close();
+    await countryFlow(browser);
     const mobile = await browser.newContext({ viewport: { width: 390, height: 844 }, locale: 'en-US', isMobile: true, hasTouch: true });
     await mobileFlow(mobile);
     await mobile.close();

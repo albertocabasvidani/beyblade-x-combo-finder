@@ -1,0 +1,88 @@
+---
+/**
+ * market-picker.astro — il negozio Amazon del visitatore, e il modo di cambiarlo.
+ *
+ * Sta nell'header (quindi su ogni pagina, in forma compatta) e accanto ai blocchi di link. Tutte le
+ * istanze mostrano lo stesso valore: lo stato è uno solo per pagina, in `src/lib/marketplace.ts`.
+ *
+ * La nota sotto il select dice **da dove** viene il negozio in uso. Serve a chi naviga con una VPN
+ * o un browser che nasconde la provenienza: senza quella riga vede semplicemente il negozio
+ * sbagliato e non ha modo di capire perché.
+ *
+ * Renderizzato lato server col `defaultMarketplace`, come i link che accompagna: l'HTML servito e
+ * quello idratato devono coincidere.
+ */
+import amazonConfig from '../../data/amazon-config.json';
+import type { AmazonConfigFile } from '../lib/amazon';
+
+interface Props {
+  /** Nell'header: solo il menù, senza la nota. */
+  compact?: boolean;
+  class?: string;
+}
+
+const { compact = false, class: className = '' } = Astro.props;
+const config = amazonConfig as AmazonConfigFile;
+const market = config.defaultMarketplace;
+---
+
+<div class={`flex flex-col gap-1 ${className}`}>
+  <label class="flex items-center gap-2 font-mono text-[11px] text-muted">
+    {!compact && <span>Shop on</span>}
+    <select
+      data-buy-market
+      data-testid="buy-market"
+      aria-label="Amazon store"
+      class:list={[
+        'rounded border border-border bg-surface px-2 py-1 font-mono text-[11px] text-muted',
+        compact && 'max-w-[74px]',
+      ]}
+    >
+      {Object.entries(config.marketplaces).map(([code, m]) => (
+        // Nell'header solo il suffisso (.it, .co.uk): col dominio intero il menù occupa un terzo
+        // della barra su mobile e manda la navigazione a capo. Il nome per esteso è nel title.
+        <option value={code} selected={code === market}>{compact ? m.tld.replace(/^amazon/, '') : m.tld}</option>
+      ))}
+    </select>
+  </label>
+  {!compact && (
+    <p data-market-note data-testid="market-note" class="font-mono text-[10px] leading-snug text-muted-2">
+      Product links go to the store selected here.
+    </p>
+  )}
+</div>
+
+<script>
+  import amazonConfig from '../../data/amazon-config.json';
+  import { subscribeMarket, chooseMarket, type MarketSource } from '../lib/marketplace';
+
+  const available = Object.keys(amazonConfig.marketplaces);
+  const tld = (m: string) => (amazonConfig.marketplaces as Record<string, { tld: string }>)[m]?.tld ?? m;
+
+  const PERCHE: Record<MarketSource, string> = {
+    user: 'your choice, saved on this device',
+    geo: 'detected from your location',
+    lang: 'based on your browser language',
+    default: 'default store',
+  };
+
+  /** Allinea ogni menù e ogni nota della pagina: in pagina ce n'è più d'uno. */
+  function mostra(market: string, source: MarketSource) {
+    document.querySelectorAll<HTMLSelectElement>('[data-buy-market]').forEach((s) => { s.value = market; });
+    const nota = `Product links go to ${tld(market)} — ${PERCHE[source]}.`
+      + (source === 'user' ? '' : ' Not where you shop? Pick your store above.');
+    document.querySelectorAll<HTMLElement>('[data-market-note]').forEach((p) => { p.textContent = nota; });
+    document.querySelectorAll<HTMLSelectElement>('[data-buy-market]').forEach((s) => { s.title = nota; });
+  }
+
+  subscribeMarket(available, amazonConfig.defaultMarketplace, mostra);
+
+  document.querySelectorAll<HTMLSelectElement>('[data-buy-market]').forEach((s) => {
+    s.addEventListener('change', () => {
+      chooseMarket(s.value);
+      try {
+        if ((window as any).__ph) (window as any).__ph.capture('marketplace_changed', { marketplace: s.value });
+      } catch { /* analytics assente */ }
+    });
+  });
+</script>

@@ -4,8 +4,8 @@
  */
 import { readFileSync } from 'fs';
 import { join } from 'path';
-import { buildPartLookup, buildAmazonUrl, type AmazonConfigFile, type AsinIndex } from '../src/lib/amazon';
-import { marketFromLanguages } from '../src/lib/marketplace';
+import { buildPartLookup, buildAmazonUrl, KEEP_STORE_PARAM, type AmazonConfigFile, type AsinIndex } from '../src/lib/amazon';
+import { marketFromLanguages, marketFromCountry, resolveMarket } from '../src/lib/marketplace';
 
 let failed = 0;
 function check(name: string, cond: boolean, extra = '') {
@@ -72,6 +72,54 @@ check("['pt-BR'] → fallback taggato", marketFromLanguages(['pt-BR'], avail, FB
 check('[] → fallback taggato', marketFromLanguages([], avail, FB) === 'uk');
 check('undefined → fallback taggato', marketFromLanguages(undefined, avail, FB) === 'uk');
 check('mercato non disponibile → uno dei disponibili', marketFromLanguages(['it-IT'], ['de'], FB) === 'de');
+
+console.log('Negozio dal paese del visitatore');
+check("IT → it", marketFromCountry('IT', avail) === 'it');
+check("FR → fr", marketFromCountry('FR', avail) === 'fr');
+check("AT → de (compra su amazon.de)", marketFromCountry('AT', avail) === 'de');
+check("BE → fr", marketFromCountry('BE', avail) === 'fr');
+check("PT → es", marketFromCountry('PT', avail) === 'es');
+check("IE → uk", marketFromCountry('IE', avail) === 'uk');
+check("minuscolo e spazi → it", marketFromCountry(' it ', avail) === 'it');
+check('paese senza regola (BR) → null', marketFromCountry('BR', avail) === null);
+check('paese nullo → null', marketFromCountry(null, avail) === null);
+check('mercato non configurato → null', marketFromCountry('JP', ['it', 'de']) === null);
+
+console.log('Precedenza: paese, poi lingua, poi default');
+// `localStorage` non esiste in Node, quindi qui non c'e' mai una scelta salvata: e' il caso del
+// visitatore che arriva per la prima volta, cioe' quello che vede il revisore Amazon.
+const geoFR = await resolveMarket(avail, FB, async () => 'FR');
+check('paese FR → fr, source geo', geoFR.market === 'fr' && geoFR.source === 'geo', JSON.stringify(geoFR));
+const geoAT = await resolveMarket(avail, FB, async () => 'AT');
+check('paese AT → de, source geo', geoAT.market === 'de' && geoAT.source === 'geo', JSON.stringify(geoAT));
+// Senza paese si scende alla lingua del browser. Node 22 espone `navigator.languages` (qui it-IT),
+// quindi l'atteso si calcola invece di scriverlo: su un'altra macchina sarebbe un altro mercato.
+const attesoDaLingua = marketFromLanguages((globalThis.navigator as any)?.languages, avail, FB);
+const geoNull = await resolveMarket(avail, FB, async () => null);
+check('paese non rilevato → scende alla lingua del browser', geoNull.market === attesoDaLingua, JSON.stringify(geoNull));
+const geoIgnoto = await resolveMarket(avail, FB, async () => 'BR');
+check('paese senza regola → scende alla lingua del browser', geoIgnoto.market === attesoDaLingua, JSON.stringify(geoIgnoto));
+
+// Il caso del revisore Amazon: browser in inglese americano e nessun paese rilevabile. Deve
+// atterrare su un mercato TAGGATO, mai su un link senza tracking ID.
+Object.defineProperty(globalThis, 'navigator', { value: { languages: ['en-US'] }, configurable: true });
+const revisore = await resolveMarket(avail, FB, async () => null);
+check('en-US senza paese → fallback taggato, source default',
+  revisore.market === FB && revisore.source === 'default', JSON.stringify(revisore));
+const revisoreInFrancia = await resolveMarket(avail, FB, async () => 'FR');
+check('en-US ma indirizzo francese → fr (il paese batte la lingua)',
+  revisoreInFrancia.market === 'fr' && revisoreInFrancia.source === 'geo', JSON.stringify(revisoreInFrancia));
+
+console.log('La scelta manuale blocca il redirect di Amazon');
+const scelto = buildAmazonUrl('blade', 'dran-sword', 'Dran Sword', lookup, asins, 'it', config, true);
+check('scelta manuale → link con tag e con il parametro anti-redirect',
+  scelto.href === `https://www.amazon.it/dp/B0TEST00001?tag=sito-it-21&${KEEP_STORE_PARAM}`, scelto.href);
+const rilevato = buildAmazonUrl('blade', 'dran-sword', 'Dran Sword', lookup, asins, 'it', config);
+check('negozio rilevato dal sito → nessun parametro anti-redirect',
+  !rilevato.href.includes('creatorsDisableRedirect'), rilevato.href);
+const sceltoRicerca = buildAmazonUrl('bit', 'flat', 'Flat', lookup, {}, 'de', config, true);
+check('vale anche sui link di ricerca', sceltoRicerca.href.endsWith(`&${KEEP_STORE_PARAM}`)
+  && new URL(sceltoRicerca.href).searchParams.get('tag') === 'sito-de-21', sceltoRicerca.href);
 
 console.log('Config reale (data/amazon-config.json)');
 const reale: AmazonConfigFile = JSON.parse(readFileSync(join(ROOT, 'data', 'amazon-config.json'), 'utf8'));

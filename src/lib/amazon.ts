@@ -28,6 +28,18 @@ export type AmazonLinkKind = 'dp' | 'search';
 export const PART_KEYS = ['blade', 'lockChip', 'mainBlade', 'assistBlade', 'overBlade', 'ratchet', 'bit'] as const;
 const NAME_SEARCH = new Set(['blade', 'lockChip', 'mainBlade', 'assistBlade', 'overBlade']);
 
+/**
+ * Amazon sposta da sé un visitatore verso il negozio del suo paese (OneLink), e questo parametro
+ * glielo impedisce: si aggiunge solo ai link costruiti dopo che il visitatore ha scelto il negozio
+ * a mano, perché lì la sua scelta deve valere anche dopo il click. Sui link scelti dal sito non si
+ * mette, così Amazon resta libero di correggere un rilevamento sbagliato.
+ *
+ * Il nome del parametro è quello che Amazon stessa scrive nell'URL di arrivo dei suoi redirect;
+ * verificato dalla Germania il 21/09/2026: con il parametro il link amazon.com resta su amazon.com,
+ * senza finisce su amazon.de.
+ */
+export const KEEP_STORE_PARAM = 'creatorsDisableRedirect=true';
+
 function flattenProducts(productsData: any): any[] {
   const flat: any[] = [];
   for (const manufacturer of Object.values(productsData.products ?? {})) {
@@ -77,9 +89,11 @@ export function buildProductLookup(productsData: any): { ratchets: Record<string
  * US) e il difetto è arrivato fino alla revisione Amazon del 19/09/2026. La difesa sta qui e non
  * nella config perché la config la riscrive chiunque, mentre questo solleva in build.
  */
-function withTag(url: string, tag: string): string {
+function withTag(url: string, tag: string, keepStore = false): string {
   if (!tag) throw new Error(`Link Amazon senza tracking ID: ${url}. Ogni marketplace in data/amazon-config.json deve avere un tag.`);
-  return url + (url.includes('?') ? '&' : '?') + 'tag=' + encodeURIComponent(tag);
+  const sep = url.includes('?') ? '&' : '?';
+  const tagged = `${url}${sep}tag=${encodeURIComponent(tag)}`;
+  return keepStore ? `${tagged}&${KEEP_STORE_PARAM}` : tagged;
 }
 
 /**
@@ -94,15 +108,16 @@ export function buildAmazonUrl(
   asins: AsinIndex,
   market: string,
   config: AmazonConfigFile,
+  keepStore = false,
 ): { href: string; kind: AmazonLinkKind } {
   const mk = config.marketplaces[market] ?? config.marketplaces[config.defaultMarketplace];
   const code = lookup[category]?.[partId];
   const asin = code ? asins[code]?.[market] : undefined;
-  if (asin) return { href: withTag(`https://www.${mk.tld}/dp/${asin}`, mk.tag), kind: 'dp' };
+  if (asin) return { href: withTag(`https://www.${mk.tld}/dp/${asin}`, mk.tag, keepStore), kind: 'dp' };
 
   let query: string;
   if (NAME_SEARCH.has(category)) query = `Beyblade X ${partName || partId}`;
   else if (code) query = `Beyblade X ${code}`;
   else query = `Beyblade X ${partName || partId}`;
-  return { href: withTag(`https://www.${mk.tld}/s?k=${encodeURIComponent(query)}`, mk.tag), kind: 'search' };
+  return { href: withTag(`https://www.${mk.tld}/s?k=${encodeURIComponent(query)}`, mk.tag, keepStore), kind: 'search' };
 }
