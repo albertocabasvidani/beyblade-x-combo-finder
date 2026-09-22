@@ -95,7 +95,9 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
   (`npm run build:products-wiki`, parser in `scripts/lib/wiki-infobox.ts`). Esiste perché l'infobox
   dichiara i codici ufficiali dei due produttori sulla stessa riga (`ProductCode=BX-03 (Takara
   Tomy)<br>F9582 (Hasbro)`): è l'unico posto dove la corrispondenza TT↔Hasbro è **scritta** invece
-  che dedotta dai nomi, che Hasbro traduce e inverte. Tre identificatori per prodotto: codice TT,
+  che dedotta dai nomi, che Hasbro traduce e inverte. Un codice dentro un commento HTML
+  (`BX-52<!-- (Takara Tomy)<br>TBA (Hasbro)-->`) è un dato e non rumore: dice che quel codice
+  esiste ma non è ancora annunciato, e va tenuto separato dai codici visibili. Tre identificatori per prodotto: codice TT,
   codice Hasbro, titolo della pagina canonica. Sezioni: `beys` (una per pagina-bey, con parti, date
   per mercato, prezzi per valuta e la sezione `==Releases==`), `contenitori` (set, random booster,
   multipack, accessori), `products` (uno per produttore×codice, derivato), `unresolved` (quello che
