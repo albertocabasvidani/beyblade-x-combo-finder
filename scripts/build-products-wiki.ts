@@ -931,7 +931,11 @@ export async function main(): Promise<void> {
 
   const perTipo: Record<string, number> = {};
   for (const u of unresolved) perTipo[u.tipo] = (perTipo[u.tipo] ?? 0) + 1;
-  const conEntrambi = beys.filter((b) => b.codes.tt && b.codes.hasbro).length;
+  // Coppie VERE: un BX-00 accanto a un G2736 non e' una corrispondenza fra due prodotti, perche'
+  // il segnaposto non ne identifica nessuno. Contarle dava 108 invece di 80, e sarebbe stato il
+  // numero con cui si giudica se questa fonte vale.
+  const conEntrambi = beys.filter((b) =>
+    b.codes.tt && b.codes.hasbro && !isPlaceholder(b.codes.tt) && !isPlaceholder(b.codes.hasbro)).length;
 
   const uscita: FileUscita = {
     version: OGGI,
@@ -958,7 +962,7 @@ export async function main(): Promise<void> {
 
   console.log(`Fetch: ${daCache} da cache, ${scaricate} scaricate, ${fallite} fallite, ${nonTrovate} pagine inesistenti.`);
   console.log(`Resa: ${beys.length} bey, ${contenitori.length} contenitori, ${products.length} prodotti (${uscita.stats.productsTt} tt + ${uscita.stats.productsHasbro} hasbro), ${uscita.stats.productsConListino} con listino.`);
-  console.log(`Coppie TT<->Hasbro sulla stessa pagina: ${conEntrambi}.`);
+  console.log(`Coppie TT<->Hasbro (segnaposto esclusi): ${conEntrambi}.`);
   console.log(`Irrisolti: ${unresolved.length}${unresolved.length ? ' -> ' + JSON.stringify(perTipo) : ''}`);
   console.log(`Scritto ${OUT_PATH}`);
 }
