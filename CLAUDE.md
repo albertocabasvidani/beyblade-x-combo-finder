@@ -90,7 +90,22 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
 - `data/wbo-corrections.json` — mappa `norm(riga) → riga corretta` per i refusi, curata dal subagent typo di `/update-combos` (proposte gated: la riga corretta DEVE risolvere). `parse:wbo` la applica PRIMA del parsing, così i refusi risolvono in contesto e spariscono dal ledger
 - `data/arca-cache.json` — cache post arca.live KR (Playwright; estrazione combo via IA in `/update-combos`)
 - `data/bbx-weekly-cache.json` / `data/bbx-weekly-evidence.json` — BBX Weekly: raw + usage per-parte. **Cross-check, NON entra nel CAS**
-- `data/products.json` — catalogo prodotti TT+Hasbro (link Amazon); referenzia gli id parte
+- `data/products.json` — catalogo prodotti TT+Hasbro (link Amazon); referenzia gli id parte. **File statico**: nessuno script lo scrive, l'ultima modifica è del 14/08/2026. Chi cerca il catalogo aggiornato guardi `products-wiki.json`
+- `data/products-wiki.json` — catalogo prodotti **generato** dalle pagine-prodotto del wiki
+  (`npm run build:products-wiki`, parser in `scripts/lib/wiki-infobox.ts`). Esiste perché l'infobox
+  dichiara i codici ufficiali dei due produttori sulla stessa riga (`ProductCode=BX-03 (Takara
+  Tomy)<br>F9582 (Hasbro)`): è l'unico posto dove la corrispondenza TT↔Hasbro è **scritta** invece
+  che dedotta dai nomi, che Hasbro traduce e inverte. Tre identificatori per prodotto: codice TT,
+  codice Hasbro, titolo della pagina canonica. Sezioni: `beys` (una per pagina-bey, con parti, date
+  per mercato, prezzi per valuta e la sezione `==Releases==`), `contenitori` (set, random booster,
+  multipack, accessori), `products` (uno per produttore×codice, derivato), `unresolved` (quello che
+  il parser non risolve, **accumulato** fra i run) e `pagine` (cache per revid).
+  Misurato il 22/09/2026 contro `products.json`: **+63 codici, 0 persi**, 2 disaccordi sulle parti
+  in cui il catalogo vecchio ha torto (`BX-46` punta a `tackle-goat` invece di `goat-tackle`,
+  `G3392` a `tricera-press` invece di `tricera-spiky`), 80 coppie TT↔Hasbro, 62 codici che
+  guadagnano un listino oggi assente da `releases.json`. Verifica: `npm run test:products-wiki`
+  (`--esegui` rigenera e controlla isolamento, cache e determinismo). **Non è ancora agganciato
+  a `/update-parts` né a `releases.json`**: si lancia a mano
 - `data/sources.json` — fonti configurabili (con `lang`, `manualVerification`); editabile dall'utente
 - `data/source-candidates.json` — staging dei candidati-fonte scoperti da `/discover-sources` (`status` proposed/accepted/rejected + `knownNegatives`): dedup persistente tra run. NON è una fonte attiva — la promozione a `sources.json` è manuale
 - `data/youtube-cache.json`, `data/youtube-transcripts.json`, `data/reddit-cache.json`, `data/sheets-cache.json` — cache grezze fonti

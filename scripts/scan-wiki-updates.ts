@@ -158,7 +158,7 @@ const MESI: Record<string, string> = {
  * testo leggibile. I commenti si tagliano dal PRIMO '<!--' al PRIMO '-->' successivo: sul wiki
  * capitano commenti annidati male (due '<!--' e un solo '-->' di chiusura), e il non-greedy
  * consuma comunque tutto il blocco fino a quell'unica chiusura — niente resta appeso a meta'. */
-function pulisciCellaData(raw: string): string {
+export function pulisciCellaData(raw: string): string {
   return raw
     .replace(/<!--[\s\S]*?-->/g, ' ')
     .replace(/\[\[File:[^\]]*\]\]/gi, ' ')
@@ -169,7 +169,7 @@ function pulisciCellaData(raw: string): string {
 
 /** Tutte le date leggibili nel testo pulito, la piu' antica in ISO (giorno 01 se il testo non
  * lo specifica, es. "July 2024"). null se non resta nessuna data (riga tutta TBA). */
-function estraiDataPiuAntica(testoPulito: string): string | null {
+export function estraiDataPiuAntica(testoPulito: string): string | null {
   const trovate: string[] = [];
   const reCompleta = /\b([A-Za-z]+)\.?\s+(\d{1,2})(?:st|nd|rd|th)?,?\s+(\d{4})\b/g;
   const coperti: [number, number][] = [];
@@ -194,7 +194,7 @@ function estraiDataPiuAntica(testoPulito: string): string | null {
 
 /** Nome normalizzato per il join per-nome (Hasbro, che non ha un codice affidabile in comune
  * con le nostre chiavi Amazon): minuscolo, via ogni carattere che non sia lettera o cifra. */
-function normalizzaNome(s: string): string {
+export function normalizzaNome(s: string): string {
   return s.toLowerCase().replace(/[^a-z0-9]/g, '');
 }
 
@@ -259,7 +259,7 @@ async function tassiEur(): Promise<{ date: string; rates: { JPY: number; USD: nu
 }
 
 /** Listino convertito in euro, 2 decimali. */
-function inEuro(
+export function inEuro(
   listino: { amount: number; currency: 'JPY' | 'USD' } | null,
   fx: { rates: { JPY: number; USD: number } } | null,
 ): number | null {

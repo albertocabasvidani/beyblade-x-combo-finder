@@ -42,6 +42,8 @@
     "test:content": "npx tsx scripts/test-content.ts",
     "sync:amazon-asins": "npx tsx scripts/sync-amazon-asins.ts",
     "scan:wiki": "npx tsx scripts/scan-wiki-updates.ts",
+    "build:products-wiki": "npx tsx scripts/build-products-wiki.ts",
+    "test:products-wiki": "npx tsx scripts/test-products-wiki.ts",
     "verify:preserved": "npx tsx scripts/verify-parts-preserved.ts",
     "resolve:new-parts": "npx tsx scripts/resolve-new-parts.ts"
   },
