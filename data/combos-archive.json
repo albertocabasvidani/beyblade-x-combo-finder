@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-21T02:09:56.868Z",
+  "lastUpdated": "2026-09-22T02:08:24.106Z",
   "combos": [
     {
       "id": "aero-pegasus-1-70-low-flat",
@@ -10757,6 +10757,50 @@
       "archivedDate": "2026-09-12"
     },
     {
+      "id": "samurai-saber-3-60-kick",
+      "line": "bx",
+      "blade": "samurai-saber",
+      "ratchet": "3-60",
+      "bit": "kick",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Samurai Saber 3-60 Kick",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Black Rose Locals (September 21st 2025)",
+          "url": "https://www.metabeys.com/events/1758540809875",
+          "weight": 1,
+          "date": "2025-09-21"
+        }
+      ],
+      "dateAdded": "2026-06-23",
+      "dateUpdated": "2026-09-22",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-22"
+    },
+    {
       "id": "samurai-saber-3-60-orb",
       "line": "bx",
       "blade": "samurai-saber",
@@ -13983,6 +14027,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "whale-blast-wheel-3-60-unite",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "3-60",
+      "bit": "unite",
+      "lockChip": "whale",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Whale Blast W 3-60 Unite",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — X Masters 24",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-21"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-09-22",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-22"
     },
     {
       "id": "whale-blast-wheel-7-70-hexa",
