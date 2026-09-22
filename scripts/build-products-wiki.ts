@@ -573,6 +573,15 @@ function leggiPagina(
 
 // ---------------------------------------------------------------- derivazione dei prodotti
 
+/** Tutti i nomi sotto cui una pagina puo' comparire in una lista: titolo, nome Hasbro e i
+ * redirect assorbiti. La lista Hasbro scrive "Sword Dran 3-60F" dove la pagina si chiama
+ * "DranSword 3-60F": confrontare il solo titolo farebbe fallire l'arbitro su meta' dei casi. */
+function nomiDi(x: Contenitore | Bey): string[] {
+  const base = [x.id, x.names.hasbro, ...x.page.redirects];
+  if ('hasbroDaRedirect' in x.names) base.push(x.names.hasbroDaRedirect);
+  return base.filter((s): s is string => Boolean(s));
+}
+
 const MERCATO_DI: Record<Produttore, string[]> = { tt: ['JP'], hasbro: ['US', 'CA', 'UK', 'AU', 'EU'] };
 const VALUTA_DI: Record<Produttore, (keyof Prezzi)[]> = { tt: ['JPY'], hasbro: ['USD', 'CAD', 'GBP', 'AUD', 'EUR'] };
 
@@ -652,26 +661,53 @@ function derivaProdotti(
     }
   }
 
-  // 2. Il possesso. Una pagina-confezione batte sempre una pagina-bey, perche' descrive il
-  //    prodotto invece di essere venduta dentro di esso. Fra piu' bey soli nessuno vince: la
-  //    confezione che li contiene non ha una pagina, e prendere nome e prezzo da uno dei bey
-  //    darebbe il prezzo dello starter al multipack.
+  // 2. Il possesso, con la lista come arbitro.
+  //
+  //    La regola di ripiego e' "una pagina-confezione batte una pagina-bey", perche' di norma
+  //    descrive il prodotto invece di essere venduta dentro di esso. Ma non sempre: la pagina
+  //    "String Launcher L" dichiara BX-34 perche' quel launcher e' incluso nel prodotto, e cosi'
+  //    BX-34 finiva a 990 JPY invece dei 2321 JPY del CobaltDragoon che e'. Misurato: 80
+  //    prodotti hanno un owner diverso dal bey che li rivendica, e in 2 il listino ne risultava
+  //    sbagliato — abbastanza da zittire un'offerta vera a 39,90 EUR.
+  //
+  //    L'arbitro e' il NOME che la pagina-lista da' a quel codice: e' una terza fonte, gia'
+  //    parsata, che dichiara qual e' il prodotto. Vince il pretendente uno dei cui nomi (titolo,
+  //    nome Hasbro, redirect) combacia. Misurato sugli 81 prodotti con piu' pretendenti: decide
+  //    in 81 casi su 81, e i 6 owner che cambia sono tutti correzioni (BX-01 dal "Winder
+  //    Launcher" a "DranSword 3-60F", BX-07 dal "Launcher Grip" allo "Start Dash Set").
+  //    Se l'arbitro non decide si torna al ripiego, e la scelta resta dichiarata.
   for (const riv of rivendicazioni.values()) {
     const { p, code } = riv;
     const pagina = riv.contenitori[0]?.id ?? riv.beys[0]?.id ?? code;
     const prod = crea(p, code, pagina, {});
 
-    if (riv.contenitori.length > 1) {
-      // Due confezioni che rivendicano lo stesso codice: questa si' e' un'anomalia.
+    // L'arbitro parla solo quando c'e' una contesa: con un pretendente solo non c'e' niente da
+    // decidere, e consultarlo rischierebbe di scartare l'unico che c'e' per un nome diverso.
+    const pretendenti = [...riv.contenitori, ...riv.beys];
+    const nomeLista = (p === 'tt' ? liste.tt.get(code) : liste.hasbro.get(code))?.name ?? null;
+    let sceltoDallArbitro: Contenitore | Bey | null = null;
+    if (pretendenti.length > 1 && nomeLista) {
+      const target = normalizzaNome(nomeLista);
+      const vincitori = pretendenti.filter((x) => nomiDi(x).some((nome) => normalizzaNome(nome) === target));
+      if (vincitori.length === 1) [sceltoDallArbitro] = vincitori;
+    }
+
+    if (riv.contenitori.length > 1 && !sceltoDallArbitro) {
+      // Due confezioni che rivendicano lo stesso codice, e la lista non scioglie il dubbio.
       prod.flags.push('conteso');
       for (const c of riv.contenitori.slice(1)) {
         segnala('codice_conteso', c.page.title, c.page.revid, {
-          valore: code, nota: `gia' rivendicato da "${riv.contenitori[0].page.title}"`,
+          valore: code, nota: `gia' rivendicato da "${riv.contenitori[0].page.title}", e la lista non decide`,
         });
       }
     }
 
-    const c = riv.contenitori[0];
+    // Con l'arbitro muto resta il ripiego: la confezione, o l'unico bey che rivendica. Fra piu'
+    // bey soli nessuno vince — la confezione che li contiene non ha una pagina, e prendere nome
+    // e prezzo da uno di loro darebbe al multipack il prezzo di uno starter.
+    const scelto = sceltoDallArbitro ?? riv.contenitori[0] ?? (riv.beys.length === 1 ? riv.beys[0] : null);
+    const c = scelto && 'kind' in scelto ? (scelto as Contenitore) : null;
+    const b = scelto && !c ? (scelto as Bey) : null;
     if (c) {
       prod.owner = { page: c.page.title, revid: c.page.revid };
       prod.productType ??= c.productType ?? c.kind;
@@ -684,8 +720,7 @@ function derivaProdotti(
       prod.release = primaData(c.release, MERCATO_DI[p]);
       prod.listino ??= listinoDa(c.price, p, 'infobox');
       for (const v of c.contenuto) aggiungi(prod, v.titolo, v.variant, v.nota);
-    } else if (riv.beys.length === 1) {
-      const b = riv.beys[0];
+    } else if (b) {
       prod.owner = { page: b.page.title, revid: b.page.revid };
       prod.names = {
         tt: p === 'tt' ? b.names.tt : null,

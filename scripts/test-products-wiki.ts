@@ -114,18 +114,34 @@ async function blocco0(): Promise<void> {
 
 // ------------------------------------------------------------------ helper comuni
 
-/** Righe codice x bey del generato, nella forma piatta di products.json. */
-function righeGenerato(g: Generato): { code: string; manufacturer: string; bey: string; prod: Prodotto }[] {
+/** Righe codice x contenuto del generato, nella forma piatta di products.json.
+ *
+ * `soloBey` limita alle voci che hanno una pagina propria, le uniche di cui si conoscono le
+ * parti. Per la COPERTURA invece contano tutte: le varianti dei Random Booster (SharkEdge
+ * 4-80N) sono linkate nella sezione Contents senza avere una pagina, e escluderle faceva
+ * sembrare perse 82 righe su 299 che invece ci sono. */
+function righeGenerato(g: Generato, soloBey = false): { code: string; manufacturer: string; bey: string; prod: Prodotto }[] {
   const beyIds = new Set(g.beys.map((b) => b.id));
   const out: { code: string; manufacturer: string; bey: string; prod: Prodotto }[] = [];
   for (const p of g.products) {
     for (const v of p.contiene) {
-      // Solo i contenuti che sono davvero bey: un Deck Set contiene anche lancianti e arene.
-      if (!beyIds.has(v.titolo)) continue;
+      if (soloBey && !beyIds.has(v.titolo)) continue;
       out.push({ code: p.code, manufacturer: p.manufacturer, bey: v.titolo, prod: p });
     }
   }
   return out;
+}
+
+/** Ogni nome sotto cui un bey puo' comparire nel catalogo: il catalogo usa il nome Hasbro
+ * ("Helm Knight 3-80N") dove il generato ha il titolo della pagina ("KnightShield 3-80N"). */
+function aliasBey(g: Generato): Map<string, string> {
+  const m = new Map<string, string>();
+  for (const b of g.beys) {
+    for (const n of [b.id, b.names.hasbro, b.names.hasbroDaRedirect, ...b.page.redirects]) {
+      if (n && !m.has(normalizzaNome(n))) m.set(normalizzaNome(n), b.id);
+    }
+  }
+  return m;
 }
 
 function vociCatalogo(): VoceCatalogo[] {
@@ -179,17 +195,62 @@ function blocco2(g: Generato): void {
     console.log(`    ${c.padEnd(8)} ${v.name}`);
   }
 
+  // Copertura delle RIGHE, non dei soli codici. E' il controllo che mi ero perso: products.json
+  // non e' una lista di codici ma di associazioni codice x contenuto, e il confronto per codice
+  // diceva "0 persi" mentre meta' delle righe non si lasciava nemmeno confrontare.
+  const alias = aliasBey(g);
+  const righeTutte = new Set<string>();
+  for (const r of righeGenerato(g)) {
+    righeTutte.add(r.code.toUpperCase() + '|' + normalizzaNome(r.bey));
+    const id = alias.get(normalizzaNome(r.bey));
+    if (id) righeTutte.add(r.code.toUpperCase() + '|' + normalizzaNome(id));
+  }
+  const righePerse: VoceCatalogo[] = [];
+  for (const v of catalogo) {
+    const code = String(v.code).toUpperCase();
+    const chiavi = [normalizzaNome(v.name)];
+    const id = alias.get(normalizzaNome(v.name));
+    if (id) chiavi.push(normalizzaNome(id));
+    if (!chiavi.some((k) => righeTutte.has(code + '|' + k))) righePerse.push(v);
+  }
+  // Una riga "mancante" puo' esserlo per due motivi diversi, e vanno separati o il numero non
+  // dice niente: il catalogo chiama "Iron Man" quello che la wiki chiama "Iron Man 4-80B", e li'
+  // il dato c'e' — manca il join. Il criterio: sotto lo stesso codice esiste un contenuto il cui
+  // titolo comincia con quel nome.
+  const perCodice = new Map<string, string[]>();
+  for (const r of righeGenerato(g)) {
+    const k = r.code.toUpperCase();
+    if (!perCodice.has(k)) perCodice.set(k, []);
+    perCodice.get(k)!.push(r.bey);
+  }
+  const soloJoin: VoceCatalogo[] = [];
+  const assenti: VoceCatalogo[] = [];
+  for (const v of righePerse) {
+    const candidati = perCodice.get(String(v.code).toUpperCase()) ?? [];
+    const n = normalizzaNome(v.name);
+    (candidati.some((t) => normalizzaNome(t).startsWith(n) && n.length >= 6) ? soloJoin : assenti).push(v);
+  }
+  console.log(`\n  righe (codice x contenuto): catalogo ${catalogo.length} | ritrovate ${catalogo.length - righePerse.length} | non ritrovate ${righePerse.length}`);
+  console.log(`    di cui il dato c'e' col nome esteso (manca solo il join): ${soloJoin.length}`);
+  for (const v of soloJoin) console.log(`      ${String(v.code).padEnd(8)} catalogo="${v.name}"  generato="${(perCodice.get(String(v.code).toUpperCase()) ?? []).find((t) => normalizzaNome(t).startsWith(normalizzaNome(v.name)))}"`);
+  console.log(`    ASSENTI davvero: ${assenti.length}`);
+  for (const v of assenti) console.log(`      ${String(v.code).padEnd(8)} ${v.name}`);
+  if (assenti.length) daGuardare += 1;
+
   // Disaccordo sulle parti: il controllo piu' severo. products.json e' curato a mano da mesi e
   // ha gia' assorbito correzioni (Wall->Wheel, orbit->orb): se il generato lo contraddice su
-  // una parte, e' il generato a doversi spiegare.
+  // una parte, e' il generato a doversi spiegare. Solo sui contenuti con pagina propria, perche'
+  // gli altri non hanno parti da confrontare.
   const CATEGORIE = ['blade', 'lockChip', 'mainBlade', 'assistBlade', 'overBlade', 'ratchet', 'bit'] as const;
   const perBey = new Map(g.beys.map((b) => [b.id, b]));
-  const righe = righeGenerato(g);
+  const righe = righeGenerato(g, true);
   let confrontate = 0;
   const disaccordi: string[] = [];
   for (const v of catalogo) {
     const code = String(v.code).toUpperCase();
-    const riga = righe.find((r) => r.code.toUpperCase() === code && normalizzaNome(r.bey) === normalizzaNome(v.name));
+    const idAtteso = alias.get(normalizzaNome(v.name));
+    const riga = righe.find((r) => r.code.toUpperCase() === code
+      && (normalizzaNome(r.bey) === normalizzaNome(v.name) || (idAtteso && r.bey === idAtteso)));
     if (!riga) continue;
     const b = perBey.get(riga.bey)!;
     confrontate += 1;

@@ -100,12 +100,20 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
   per mercato, prezzi per valuta e la sezione `==Releases==`), `contenitori` (set, random booster,
   multipack, accessori), `products` (uno per produttore×codice, derivato), `unresolved` (quello che
   il parser non risolve, **accumulato** fra i run) e `pagine` (cache per revid).
-  Misurato il 22/09/2026 contro `products.json`: **+63 codici, 0 persi**, 2 disaccordi sulle parti
-  in cui il catalogo vecchio ha torto (`BX-46` punta a `tackle-goat` invece di `goat-tackle`,
-  `G3392` a `tricera-press` invece di `tricera-spiky`), 80 coppie TT↔Hasbro, 62 codici che
-  guadagnano un listino oggi assente da `releases.json`. Verifica: `npm run test:products-wiki`
-  (`--esegui` rigenera e controlla isolamento, cache e determinismo). **Non è ancora agganciato
-  a `/update-parts` né a `releases.json`**: si lancia a mano
+  Misurato il 22/09/2026 contro `products.json`: **+63 codici, 0 persi** sui codici; sulle
+  **righe** (codice × contenuto, che è la forma vera di `products.json`) 256 su 299 ritrovate,
+  21 non ritrovate solo perché il catalogo accorcia il nome («Iron Man» contro «Iron Man 4-80B»)
+  e **22 davvero assenti**, quasi tutte combinazioni che le due fonti dichiarano diverse dentro
+  i multipack (il catalogo mette nel `BX-08` 3on3 Deck Set le configurazioni degli starter, la
+  wiki altre tre che hanno una pagina propria ciascuna). Più 2 disaccordi sulle parti in cui il
+  catalogo vecchio ha torto (`BX-46` punta a `tackle-goat` invece di `goat-tackle`, `G3392` a
+  `tricera-press` invece di `tricera-spiky`) e 80 coppie TT↔Hasbro.
+  **Il possessore di un codice lo decide il nome della pagina-lista**, non la forma della pagina:
+  «String Launcher L» dichiara `BX-34` perché ci è incluso, e senza arbitro quel codice valeva
+  990 ¥ invece dei 2321 ¥ del CobaltDragoon che è. L'arbitro decide in 81 casi su 81 e ha
+  azzerato i 9 codici contesi.
+  Verifica: `npm run test:products-wiki` (`--esegui` rigenera e controlla isolamento, cache e
+  determinismo). **Non è ancora agganciato a `/update-parts` né a `releases.json`**: si lancia a mano
 - `data/sources.json` — fonti configurabili (con `lang`, `manualVerification`); editabile dall'utente
 - `data/source-candidates.json` — staging dei candidati-fonte scoperti da `/discover-sources` (`status` proposed/accepted/rejected + `knownNegatives`): dedup persistente tra run. NON è una fonte attiva — la promozione a `sources.json` è manuale
 - `data/youtube-cache.json`, `data/youtube-transcripts.json`, `data/reddit-cache.json`, `data/sheets-cache.json` — cache grezze fonti

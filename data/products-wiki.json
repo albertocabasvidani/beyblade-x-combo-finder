@@ -1,7 +1,7 @@
 {
   "version": "2026-09-22",
   "parserVersion": 2,
-  "generated": "2026-09-22T16:08:35.471Z",
+  "generated": "2026-09-22T16:25:12.142Z",
   "fonte": {
     "inventario": {
       "considerate": 371,
@@ -23426,15 +23426,15 @@
       "code": "F9324",
       "manufacturer": "hasbro",
       "owner": {
-        "page": "String Launcher (Beyblade X)",
-        "revid": 649201
+        "page": "PhoenixWing 9-60GF",
+        "revid": 648972
       },
-      "productType": "Launcher",
+      "productType": null,
       "names": {
         "tt": null,
-        "hasbro": "String Launcher (Beyblade X)",
-        "ja": null,
-        "romaji": null
+        "hasbro": "Soar Phoenix 9-60GF",
+        "ja": "フェニックスウイング9-60GF",
+        "romaji": "FenikkusuUingu Nain Shikusutī Giya Furatto"
       },
       "series": "Beyblade X",
       "release": {
@@ -23755,9 +23755,7 @@
           "nota": null
         }
       ],
-      "flags": [
-        "conteso"
-      ]
+      "flags": []
     },
     {
       "id": "hasbro:F9589",
@@ -24777,24 +24775,22 @@
           "nota": null
         }
       ],
-      "flags": [
-        "conteso"
-      ]
+      "flags": []
     },
     {
       "id": "hasbro:G1491",
       "code": "G1491",
       "manufacturer": "hasbro",
       "owner": {
-        "page": "String Launcher L",
-        "revid": 649038
+        "page": "CobaltDragoon 2-60C",
+        "revid": 649697
       },
-      "productType": "accessory",
+      "productType": null,
       "names": {
         "tt": null,
-        "hasbro": "String Launcher L",
-        "ja": null,
-        "romaji": null
+        "hasbro": "Cobalt Dragoon 2-60C",
+        "ja": "コバルトドラグーン2-60C",
+        "romaji": "KobarutoDoragūn Tsū Shikusutī Saikuron"
       },
       "series": "Beyblade X",
       "release": {
@@ -26482,9 +26478,7 @@
           "nota": "with Dragon Winder"
         }
       ],
-      "flags": [
-        "conteso"
-      ]
+      "flags": []
     },
     {
       "id": "hasbro:G1862",
@@ -26713,9 +26707,7 @@
           "nota": null
         }
       ],
-      "flags": [
-        "conteso"
-      ]
+      "flags": []
     },
     {
       "id": "hasbro:G2218",
@@ -28462,9 +28454,7 @@
           "nota": null
         }
       ],
-      "flags": [
-        "conteso"
-      ]
+      "flags": []
     },
     {
       "id": "hasbro:G3797",
@@ -31118,15 +31108,15 @@
       "code": "BX-01",
       "manufacturer": "tt",
       "owner": {
-        "page": "Winder Launcher",
-        "revid": 649202
+        "page": "DranSword 3-60F",
+        "revid": 649798
       },
-      "productType": "Launcher",
+      "productType": null,
       "names": {
-        "tt": "Winder Launcher",
+        "tt": "DranSword 3-60F",
         "hasbro": null,
-        "ja": null,
-        "romaji": null
+        "ja": "ドランソード3-60F",
+        "romaji": "DoranSōdo Surī Shikusutī Furatto"
       },
       "series": "Beyblade X",
       "release": {
@@ -31135,7 +31125,7 @@
       "listino": {
         "amount": 1980,
         "currency": "JPY",
-        "fonte": "lista-tt"
+        "fonte": "infobox"
       },
       "contiene": [
         {
@@ -31145,9 +31135,7 @@
           "nota": null
         }
       ],
-      "flags": [
-        "listinoDaLista"
-      ]
+      "flags": []
     },
     {
       "id": "tt:BX-02",
@@ -31326,22 +31314,22 @@
       "code": "BX-07",
       "manufacturer": "tt",
       "owner": {
-        "page": "Launcher Grip (Beyblade X)",
-        "revid": 637132
+        "page": "Start Dash Set",
+        "revid": 635855
       },
-      "productType": "Launcher Grip",
+      "productType": "set",
       "names": {
-        "tt": "Launcher Grip (Beyblade X)",
+        "tt": "Start Dash Set",
         "hasbro": null,
-        "ja": null,
-        "romaji": null
+        "ja": "スタートダッシュセット",
+        "romaji": "Sutāto Dasshu Setto"
       },
       "series": "Beyblade X",
       "release": {
         "JP": "2023-07-15"
       },
       "listino": {
-        "amount": 700,
+        "amount": 5720,
         "currency": "JPY",
         "fonte": "infobox"
       },
@@ -31350,12 +31338,28 @@
           "titolo": "DranSword 3-60F",
           "kind": "product",
           "variant": null,
-          "nota": "opaque blue"
+          "nota": "Special Ver."
+        },
+        {
+          "titolo": "Launcher Grip (Beyblade X)",
+          "kind": "accessory",
+          "variant": null,
+          "nota": "Blue Ver."
+        },
+        {
+          "titolo": "String Launcher (Beyblade X)",
+          "kind": "accessory",
+          "variant": null,
+          "nota": "Blue Ver."
+        },
+        {
+          "titolo": "Xtreme Stadium",
+          "kind": "accessory",
+          "variant": null,
+          "nota": "Clear Ver."
         }
       ],
-      "flags": [
-        "conteso"
-      ]
+      "flags": []
     },
     {
       "id": "tt:BX-08",
@@ -32266,22 +32270,22 @@
       "code": "BX-34",
       "manufacturer": "tt",
       "owner": {
-        "page": "String Launcher L",
-        "revid": 649038
+        "page": "CobaltDragoon 2-60C",
+        "revid": 649697
       },
-      "productType": "accessory",
+      "productType": null,
       "names": {
-        "tt": "String Launcher L",
+        "tt": "CobaltDragoon 2-60C",
         "hasbro": null,
-        "ja": null,
-        "romaji": null
+        "ja": "コバルトドラグーン2-60C",
+        "romaji": "KobarutoDoragūn Tsū Shikusutī Saikuron"
       },
       "series": "Beyblade X",
       "release": {
         "JP": "2024-07-13"
       },
       "listino": {
-        "amount": 990,
+        "amount": 2321,
         "currency": "JPY",
         "fonte": "infobox"
       },
@@ -32422,15 +32426,15 @@
       "code": "BX-37",
       "manufacturer": "tt",
       "owner": {
-        "page": "Double Xtreme Stadium",
-        "revid": 630839
+        "page": "Double Xtreme Stadium Set",
+        "revid": 641553
       },
-      "productType": "Stadium",
+      "productType": "accessory",
       "names": {
-        "tt": "Double Xtreme Stadium",
+        "tt": "Double Xtreme Stadium Set",
         "hasbro": null,
-        "ja": null,
-        "romaji": null
+        "ja": "ダブルエクストリームスタジアムセット",
+        "romaji": "Daburu Ekusutorīmu Sutajiamu Setto"
       },
       "series": "Beyblade X",
       "release": {
@@ -32447,11 +32451,21 @@
           "kind": "product",
           "variant": null,
           "nota": null
+        },
+        {
+          "titolo": "Double Xtreme Stadium",
+          "kind": "accessory",
+          "variant": null,
+          "nota": null
+        },
+        {
+          "titolo": "Winder Launcher",
+          "kind": "accessory",
+          "variant": null,
+          "nota": "Black×Gold Ver."
         }
       ],
-      "flags": [
-        "conteso"
-      ]
+      "flags": []
     },
     {
       "id": "tt:BX-38",
@@ -32684,9 +32698,7 @@
           "nota": "Red×White"
         }
       ],
-      "flags": [
-        "conteso"
-      ]
+      "flags": []
     },
     {
       "id": "tt:BX-48",
@@ -35767,96 +35779,6 @@
   ],
   "unresolved": [
     {
-      "chiave": "codice_conteso|Double Xtreme Stadium Set||BX-37",
-      "tipo": "codice_conteso",
-      "pagina": "Double Xtreme Stadium Set",
-      "revid": 641553,
-      "valore": "BX-37",
-      "nota": "gia' rivendicato da \"Double Xtreme Stadium\"",
-      "primaVisto": "2026-09-22",
-      "ultimoVisto": "2026-09-22"
-    },
-    {
-      "chiave": "codice_conteso|Drop Attack Beystadium||G0842",
-      "tipo": "codice_conteso",
-      "pagina": "Drop Attack Beystadium",
-      "revid": 639462,
-      "valore": "G0842",
-      "nota": "gia' rivendicato da \"Drop Attack Battle Set\"",
-      "primaVisto": "2026-09-22",
-      "ultimoVisto": "2026-09-22"
-    },
-    {
-      "chiave": "codice_conteso|Infinity Rail Battle Set Beystadium||G3745",
-      "tipo": "codice_conteso",
-      "pagina": "Infinity Rail Battle Set Beystadium",
-      "revid": 647246,
-      "valore": "G3745",
-      "nota": "gia' rivendicato da \"Infinity Rail Battle Set\"",
-      "primaVisto": "2026-09-22",
-      "ultimoVisto": "2026-09-22"
-    },
-    {
-      "chiave": "codice_conteso|Infinity Stadium||BX-46",
-      "tipo": "codice_conteso",
-      "pagina": "Infinity Stadium",
-      "revid": 646604,
-      "valore": "BX-46",
-      "nota": "gia' rivendicato da \"Battle Entry Set Infinity\"",
-      "primaVisto": "2026-09-22",
-      "ultimoVisto": "2026-09-22"
-    },
-    {
-      "chiave": "codice_conteso|Sneak Attack Beystadium||G1940",
-      "tipo": "codice_conteso",
-      "pagina": "Sneak Attack Beystadium",
-      "revid": 639466,
-      "valore": "G1940",
-      "nota": "gia' rivendicato da \"Sneak Attack Battle Set\"",
-      "primaVisto": "2026-09-22",
-      "ultimoVisto": "2026-09-22"
-    },
-    {
-      "chiave": "codice_conteso|Start Dash Set||BX-07",
-      "tipo": "codice_conteso",
-      "pagina": "Start Dash Set",
-      "revid": 635855,
-      "valore": "BX-07",
-      "nota": "gia' rivendicato da \"Launcher Grip (Beyblade X)\"",
-      "primaVisto": "2026-09-22",
-      "ultimoVisto": "2026-09-22"
-    },
-    {
-      "chiave": "codice_conteso|String Launcher (Beyblade X)||BX-07",
-      "tipo": "codice_conteso",
-      "pagina": "String Launcher (Beyblade X)",
-      "revid": 649201,
-      "valore": "BX-07",
-      "nota": "gia' rivendicato da \"Launcher Grip (Beyblade X)\"",
-      "primaVisto": "2026-09-22",
-      "ultimoVisto": "2026-09-22"
-    },
-    {
-      "chiave": "codice_conteso|Winder Launcher L||G1844",
-      "tipo": "codice_conteso",
-      "pagina": "Winder Launcher L",
-      "revid": 649043,
-      "valore": "G1844",
-      "nota": "gia' rivendicato da \"Beyblade 25th Anniversary Set\"",
-      "primaVisto": "2026-09-22",
-      "ultimoVisto": "2026-09-22"
-    },
-    {
-      "chiave": "codice_conteso|Xtreme Beystadium||F9588",
-      "tipo": "codice_conteso",
-      "pagina": "Xtreme Beystadium",
-      "revid": 639467,
-      "valore": "F9588",
-      "nota": "gia' rivendicato da \"Xtreme Battle Set\"",
-      "primaVisto": "2026-09-22",
-      "ultimoVisto": "2026-09-22"
-    },
-    {
       "chiave": "codice_produttore_discorde|Double Xtreme Stadium|ProductCode|BX-00",
       "tipo": "codice_produttore_discorde",
       "pagina": "Double Xtreme Stadium",
@@ -35973,7 +35895,6 @@
     "productsConListino": 286,
     "beyConEntrambiICodici": 80,
     "unresolvedPerTipo": {
-      "codice_conteso": 9,
       "codice_produttore_discorde": 1,
       "codice_solo_nelle_parti": 1,
       "hasbro_nome_discorde": 3,
