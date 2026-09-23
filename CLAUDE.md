@@ -500,7 +500,7 @@ Due superfici in `combo-card.tsx`, entrambe con `rel="sponsored noopener nofollo
 Disclosure nel footer e sezione «Affiliate links» in `/about/`.
 
 - **Tag** in `data/amazon-config.json` (committato), uno per marketplace: tracking ID **dedicati al sito**
-  creati sui portali Associates (de `bxcombosde-21`, fr `bxcombosfr-21`, uk `bxcombosuk-21`, jp `bxcombos-22`),
+  creati sui portali Associates (de `bxcombosde-21`, fr `bxcombosfranc-21`, uk `bxcombosuk-21`, jp `bxcombos-22`),
   diversi da quelli del canale WhatsApp di bbxdealmonitor, così il suo report affiliati distingue i due canali.
   `it` = `albertocv0b-21`: account Associates IT nuovo, candidato il 12/09/2026 con il solo beybladexcombos.com
   dopo la chiusura del precedente (rifiuto del 25/08/2026: nessun link taggato sulle proprietà dichiarate). È
