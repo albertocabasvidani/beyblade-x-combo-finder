@@ -520,6 +520,8 @@ Disclosure nel footer e sezione «Affiliate links» in `/about/`.
   preparava il ricorso all'account FR — cioè stava per leggerlo un revisore Amazon, sulla pagina che il suo
   rifiuto cita come esempio. Le note su account, rifiuti e policy stanno qui e in `projects/`, che restano
   nel repo; il file di configurazione porta solo i dati che servono a costruire i link.
+- **Lo Store ID richiesto viene troncato a 13 caratteri** (`bxcombosfrance` → `bxcombosfranc-21`): sceglierlo già corto, o leggere quello assegnato dalla pagina di conferma prima di scriverlo in config.
+- **Prima di un ricorso Associates, misurare il difetto contestato sull'HTML servito** (`curl` della pagina + grep del tag): un ricorso respinto chiude l'account, e lo Store ID non si riusa.
 - I suffissi `-21` sono un unico spazio di nomi fra i marketplace europei: un ID creato su un portale non è
   più disponibile sugli altri (per questo uk/de/fr hanno il paese nel nome). beybladexcombos.com è nella lista
   siti di ogni account (`/home/account/profile/sitelist`) — **da solo**: `trottolebeybladex.it`, che compariva
