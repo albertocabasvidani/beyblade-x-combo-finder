@@ -2,7 +2,7 @@ import { useState } from 'preact/hooks';
 import type { SelectedParts, Locale, ComboWindow, TierThresholds } from '../../lib/types';
 import type { SlimCombo } from '../../lib/slim-combos';
 import { getMatchedParts, hasAnySelection } from '../../lib/search-engine';
-import { buildAmazonUrl, type AmazonConfigFile, type AsinIndex, type PartLookup } from '../../lib/amazon';
+import { buildAmazonUrl, storeLinks, type AmazonConfigFile, type AsinIndex, type PartLookup } from '../../lib/amazon';
 import { track } from '../../lib/analytics';
 import { ScoreBadge, scoreTier } from './score-badge';
 
@@ -214,6 +214,36 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, select
               >
                 {label}
               </a>
+            );
+          })}
+        </div>
+        {/* Ogni parte anche su tutti gli altri negozi: i chip sopra seguono il paese del visitatore, e un
+            revisore Associates fuori dalla Francia non troverebbe mai amazon.fr col tag francese (rifiuto
+            FR del 21/09/2026). Link con creatorsDisableRedirect: chi clicca amazon.fr ha scelto amazon.fr. */}
+        <div data-testid="buy-parts-stores" class="mt-2 flex flex-col gap-1 font-mono text-[10px] text-muted">
+          {buyable.filter((p) => !(showChips && matched[p.key] === 'owned')).map((p) => {
+            const label = partName(p.key, p.id) || p.key;
+            const stores = storeLinks(amazon.config, (m) =>
+              buildAmazonUrl(p.key, p.id!, label, amazon.lookup, amazon.asins, m, amazon.config, true).href);
+            return (
+              <div key={p.key} data-part-id={p.id}>
+                <span class="text-muted-2">{label}:</span>{' '}
+                {stores.map((s, i) => (
+                  <span key={s.market}>
+                    {i > 0 && ' · '}
+                    <a
+                      href={s.href}
+                      data-market={s.market}
+                      target="_blank"
+                      rel="sponsored noopener nofollow"
+                      class="hover:text-text hover:underline"
+                      onClick={() => track('amazon_click', { partId: p.id, category: p.key, marketplace: s.market, comboId: combo.id, source: 'buy-parts-store' })}
+                    >
+                      {s.tld}
+                    </a>
+                  </span>
+                ))}
+              </div>
             );
           })}
         </div>

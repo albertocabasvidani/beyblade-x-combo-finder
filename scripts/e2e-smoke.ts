@@ -168,6 +168,16 @@ async function desktopFlow(context: BrowserContext) {
     panelHrefs.every((h) => /^https:\/\/www\.amazon\./.test(h.href) && /sponsored/.test(h.rel) && h.target === '_blank'), panelHrefs[0]?.href);
   const panelMarket = await page.getByTestId('marketplace').inputValue();
   check(`link del pannello con tracking ID (mercato ${panelMarket})`, panelHrefs.every((h) => /[?&]tag=/.test(h.href)), panelHrefs[0]?.href);
+  // Ogni parte anche su tutti i negozi, ciascuno col suo tag: è la via dalla home ad amazon.fr per chi
+  // non è in Francia, come un revisore Associates (rifiuto FR del 21/09/2026).
+  const amazonCfg = JSON.parse(readFileSync(join(ROOT, 'data', 'amazon-config.json'), 'utf8'));
+  const storeRows = panel.locator('[data-testid=buy-parts-stores] > div');
+  const rowsHrefs: string[][] = await storeRows.evaluateAll((rows) =>
+    rows.map((r) => [...r.querySelectorAll('a')].map((a) => (a as HTMLAnchorElement).href)));
+  check('pannello: una riga di negozi per ogni parte linkata', rowsHrefs.length === nParts, `${rowsHrefs.length} righe, ${nParts} parti`);
+  const rigaCompleta = (hrefs: string[]) => Object.values(amazonCfg.marketplaces).every((m: any) =>
+    hrefs.some((h) => h.startsWith(`https://www.${m.tld}/`) && h.includes(`tag=${m.tag}`)));
+  check('pannello: ogni riga ha tutti i negozi col proprio tag', rowsHrefs.length > 0 && rowsHrefs.every(rigaCompleta), rowsHrefs[0]?.join(' ') ?? '');
   await toggles.first().click();
   check('pannello richiuso', (await page.locator('[data-testid=buy-parts-panel]').count()) === 0);
 
@@ -426,6 +436,9 @@ async function mobileFlow(context: BrowserContext) {
   await waitDataset(page);
   const noHScroll = async () => (await page.evaluate(() => document.documentElement.scrollWidth)) <= 390;
   check('nessuno scroll orizzontale (home)', await noHScroll(), `scrollWidth=${await page.evaluate(() => document.documentElement.scrollWidth)}`);
+  // Da telefono la home deve portare alle sezioni: prima le voci erano nascoste sotto i 640 px.
+  const navMobile = page.locator('[data-testid=mobile-nav] a:visible');
+  check('menu sezioni visibile su mobile (4 voci)', (await navMobile.count()) === 4, `=${await navMobile.count()}`);
   await addPart(page, 'Wizard Rod');
   check('parte aggiunta su mobile', (await page.locator('button[aria-label="remove Wizard Rod"]').count()) === 1);
   await page.getByTestId('period-1').click();

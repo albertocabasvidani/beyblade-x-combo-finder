@@ -80,6 +80,18 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       </button>
     </div>
   </nav>
+  <!-- Sotto i 640 px le sezioni non entrano nella riga sopra: stanno qui, in una seconda riga. Senza,
+       da telefono la home non portava a nessuna pagina editoriale né ai link Amazon di ogni negozio. -->
+  <nav
+    data-testid="mobile-nav"
+    class="flex gap-5 overflow-x-auto border-t border-border px-4 py-2 sm:hidden"
+    aria-label="Sections"
+  >
+    <a href={`${base}/meta/`} class="shrink-0 font-mono text-[11px] uppercase tracking-[0.08em] text-muted hover:text-text">{t(locale, 'nav.meta')}</a>
+    <a href={`${base}/parts/`} class="shrink-0 font-mono text-[11px] uppercase tracking-[0.08em] text-muted hover:text-text">{t(locale, 'nav.parts')}</a>
+    <a href={`${base}/combos/`} class="shrink-0 font-mono text-[11px] uppercase tracking-[0.08em] text-muted hover:text-text">{t(locale, 'nav.combos')}</a>
+    <a href={`${base}/buy/`} class="shrink-0 font-mono text-[11px] uppercase tracking-[0.08em] text-muted hover:text-text">{t(locale, 'nav.buy')}</a>
+  </nav>
 </header>
 
 <script is:inline>

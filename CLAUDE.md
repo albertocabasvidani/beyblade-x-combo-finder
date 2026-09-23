@@ -549,7 +549,10 @@ Disclosure nel footer e sezione «Affiliate links» in `/about/`.
   eseguire lo script. Ora il footer ha una ricerca «Beyblade X» per ogni negozio della config, e ogni riga
   «Where to buy» (`buy-row.astro`) ha sotto il link principale il link allo stesso prodotto su tutti i
   negozi (`storeLinks` in `src/lib/amazon.ts`, con `creatorsDisableRedirect`: chi clicca amazon.fr ha
-  scelto amazon.fr). **`npm run test:amazon-tags`** legge `dist/` file per file e fallisce se una pagina
+  scelto amazon.fr). Lo stesso sotto i chip del pannello «Buy parts» delle card in home (isola, quindi
+  non nell'HTML: lo verifica `test:e2e` [7b]), che è la via dalla home per chi non scende al footer. Da
+  telefono le sezioni stanno in una seconda riga dell'header (`mobile-nav`), prima nascoste sotto i
+  640 px. **`npm run test:amazon-tags`** legge `dist/` file per file e fallisce se una pagina
   non contiene un tag, se un link ha il tag di un altro negozio o se una riga «Where to buy» non ha tutti i
   negozi; gira nel workflow di deploy fra build e pubblicazione. Con un argomento controlla un'altra
   cartella, per esempio pagine scaricate dal sito pubblicato.
