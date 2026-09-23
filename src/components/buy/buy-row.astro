@@ -56,6 +56,7 @@ const rows = parts.map((p) => ({
         <a
           href={r.href}
           data-part-id={r.partId}
+          data-part-name={r.partName}
           data-category={r.category}
           data-testid="buy-part"
           target="_blank"
@@ -100,7 +101,10 @@ const rows = parts.map((p) => ({
       row.querySelectorAll<HTMLAnchorElement>('a[data-testid=buy-part]').forEach((a) => {
         const category = a.dataset.category!;
         const partId = a.dataset.partId!;
-        const name = a.textContent?.replace(/\s*—\s*Buy on Amazon$/, '') ?? partId;
+        // Il nome da un attributo, non dal testo del link: il testo porta gli spazi e l'a capo del
+        // markup, la regex che toglieva « — Buy on Amazon» non combaciava più, e le ricerche partivano
+        // per « Cobalt Dragoon — Buy on Amazon» (visto il 23/09/2026 da un visitatore US).
+        const name = a.dataset.partName || partId;
         const { href } = buildAmazonUrl(
           category, partId, name, lookup, amazonAsins as any, market, amazonConfig as any, source === 'user',
         );

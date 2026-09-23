@@ -397,6 +397,9 @@ async function countryFlow(browser: Browser) {
   const tagValidi = new Set(Object.values(config.marketplaces).map((m: any) => m.tag));
   check('geo non disponibile: i link restano tutti taggati',
     hrefs.length > 0 && hrefs.every((h) => [...tagValidi].some((t) => h.includes(`tag=${t}`))), hrefs[0] ?? '');
+  // I link riscritti dallo script cercano il nome della parte, non il testo del link.
+  check('link riscritti: la ricerca non contiene «Buy on Amazon»',
+    hrefs.every((h) => !/Buy%20on%20Amazon|%E2%80%94/.test(h)), hrefs.find((h) => /Buy%20on%20Amazon|%E2%80%94/.test(h)) ?? '');
   check('geo non disponibile: browser en-US → negozio di default',
     hrefs.every((h) => h.includes(`www.${config.marketplaces[config.defaultMarketplace].tld}/`)), hrefs[0] ?? '');
   await page3.close();
