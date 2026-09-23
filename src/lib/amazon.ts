@@ -97,6 +97,31 @@ function withTag(url: string, tag: string, keepStore = false): string {
 }
 
 /**
+ * Un link per ogni negozio della config, nell'ordine in cui è scritta: servono dove i link devono stare
+ * tutti nell'HTML, indipendenti dal negozio scelto per il visitatore. Il rifiuto di Amazon Francia
+ * (21/09/2026, ricorso respinto il 23/09) era questo: il tag francese compariva solo dopo che lo script
+ * aveva rilevato un visitatore in Francia, e il revisore — da un altro paese, o con un crawler che non
+ * esegue JavaScript — leggeva solo link amazon.com. Portano `KEEP_STORE_PARAM`: chi clicca amazon.fr ha
+ * scelto amazon.fr.
+ */
+export function storeLinks(
+  config: AmazonConfigFile,
+  hrefFor: (market: string) => string,
+): { market: string; tld: string; href: string }[] {
+  return Object.entries(config.marketplaces).map(([market, mk]) => ({
+    market,
+    tld: mk.tld,
+    href: hrefFor(market),
+  }));
+}
+
+/** Ricerca «Beyblade X» su un negozio, col suo tag: i link del footer, presenti su ogni pagina. */
+export function buildStoreSearchUrl(market: string, config: AmazonConfigFile, query = 'Beyblade X'): string {
+  const mk = config.marketplaces[market];
+  return withTag(`https://www.${mk.tld}/s?k=${encodeURIComponent(query)}`, mk.tag, true);
+}
+
+/**
  * Link Amazon per una parte. `partName` è il nome risolto dal registro (non lo slug): è quello che si
  * cerca per blade/lock chip/main/assist/over blade.
  */

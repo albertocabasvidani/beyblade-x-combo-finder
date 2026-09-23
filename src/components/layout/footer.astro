@@ -1,6 +1,8 @@
 ---
 import { t } from '../../i18n/ui';
 import type { Locale } from '../../lib/types';
+import amazonConfig from '../../../data/amazon-config.json';
+import { storeLinks, buildStoreSearchUrl, type AmazonConfigFile } from '../../lib/amazon';
 
 interface Props {
   locale: Locale;
@@ -8,10 +10,29 @@ interface Props {
 
 const { locale } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+// Tutti i negozi, su ogni pagina e nell'HTML: così ogni tag della config è leggibile da un revisore
+// Amazon qualunque sia il suo paese (vedi storeLinks). Lo verifica scripts/check-amazon-tags.ts.
+const config = amazonConfig as AmazonConfigFile;
+const stores = storeLinks(config, (m) => buildStoreSearchUrl(m, config));
 ---
 
 <footer class="border-t border-border bg-surface px-4 py-6 text-center text-xs text-muted-2">
   <p class="mb-2">{t(locale, 'footer.dataNote')}</p>
+  <p class="mb-2" data-testid="amazon-stores">
+    {t(locale, 'footer.amazonStores')}{' '}
+    {stores.map((s, i) => (
+      <>
+        {i > 0 && ' · '}
+        <a
+          href={s.href}
+          data-market={s.market}
+          target="_blank"
+          rel="sponsored noopener nofollow"
+          class="hover:text-text"
+        >{s.tld}</a>
+      </>
+    ))}
+  </p>
   <p class="mb-2" data-testid="amazon-disclosure">{t(locale, 'footer.amazonDisclosure')}</p>
   <p class="mb-2">
     <a href={`${base}/about/`} class="hover:text-text">{t(locale, 'footer.about')}</a>

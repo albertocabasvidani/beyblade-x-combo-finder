@@ -39,6 +39,7 @@
     "test:wiki-scan": "npx tsx scripts/test-wiki-scan.ts",
     "test:e2e": "npx tsx scripts/e2e-smoke.ts",
     "test:amazon": "npx tsx scripts/test-amazon.ts",
+    "test:amazon-tags": "npx tsx scripts/check-amazon-tags.ts",
     "test:content": "npx tsx scripts/test-content.ts",
     "sync:amazon-asins": "npx tsx scripts/sync-amazon-asins.ts",
     "scan:wiki": "npx tsx scripts/scan-wiki-updates.ts",

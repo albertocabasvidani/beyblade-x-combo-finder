@@ -542,6 +542,17 @@ Disclosure nel footer e sezione «Affiliate links» in `/about/`.
   your location», «your choice»). Senza quella riga chi naviga con una VPN vede il negozio sbagliato e non
   ha modo di capire perché. Lo stato è uno per pagina, su `window.__bxcfMarket`, con l'evento `bxcf:market`:
   i tre punti che mostrano un select (header, pannello della home, blocchi buy) restano allineati.
+- **Ogni tag sta nell'HTML di ogni pagina, indipendente dal negozio rilevato.** La localizzazione riscrive
+  i link lato client, quindi da sola lascia nell'HTML servito il solo `defaultMarketplace`: fino al
+  23/09/2026 le pagine contenevano solo link amazon.com col tag US, e Amazon Francia ha respinto candidatura
+  e ricorso perché non trovava il tag francese — il revisore non era in Francia, o leggeva l'HTML senza
+  eseguire lo script. Ora il footer ha una ricerca «Beyblade X» per ogni negozio della config, e ogni riga
+  «Where to buy» (`buy-row.astro`) ha sotto il link principale il link allo stesso prodotto su tutti i
+  negozi (`storeLinks` in `src/lib/amazon.ts`, con `creatorsDisableRedirect`: chi clicca amazon.fr ha
+  scelto amazon.fr). **`npm run test:amazon-tags`** legge `dist/` file per file e fallisce se una pagina
+  non contiene un tag, se un link ha il tag di un altro negozio o se una riga «Where to buy» non ha tutti i
+  negozi; gira nel workflow di deploy fra build e pubblicazione. Con un argomento controlla un'altra
+  cartella, per esempio pagine scaricate dal sito pubblicato.
 - **Quando il negozio lo sceglie l'utente, i link portano `creatorsDisableRedirect=true`** (`KEEP_STORE_PARAM`
   in `src/lib/amazon.ts`): senza, OneLink lo sposterebbe da sé sul negozio del suo paese e la scelta appena
   fatta non varrebbe nulla. Sui link scelti dal sito il parametro non si mette, così Amazon resta libero di

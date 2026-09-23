@@ -17,7 +17,7 @@ import productsData from '../../../data/products.json';
 import amazonConfig from '../../../data/amazon-config.json';
 import amazonAsins from '../../../data/amazon-asins.json';
 import MarketPicker from '../market-picker.astro';
-import { buildPartLookup, buildAmazonUrl, type AmazonConfigFile, type AsinIndex } from '../../lib/amazon';
+import { buildPartLookup, buildAmazonUrl, storeLinks, type AmazonConfigFile, type AsinIndex } from '../../lib/amazon';
 
 interface Part {
   category: string;
@@ -34,9 +34,14 @@ const lookup = buildPartLookup(productsData);
 const asins = amazonAsins as AsinIndex;
 const market = config.defaultMarketplace;
 
+// Accanto al link principale, che lo script riscrive per il negozio del visitatore, una riga fissa con
+// tutti i negozi: il link al prodotto su amazon.fr col tag francese deve esistere nell'HTML anche per
+// chi non è in Francia o non esegue JavaScript, come il revisore Amazon (vedi storeLinks).
 const rows = parts.map((p) => ({
   ...p,
   ...buildAmazonUrl(p.category, p.partId, p.partName, lookup, asins, market, config),
+  stores: storeLinks(config, (m) =>
+    buildAmazonUrl(p.category, p.partId, p.partName, lookup, asins, m, config, true).href),
 }));
 ---
 
@@ -59,6 +64,20 @@ const rows = parts.map((p) => ({
         >
           {r.partName} — Buy on Amazon
         </a>
+        <p class="mt-0.5 font-mono text-[10px] text-muted" data-testid="buy-part-stores">
+          {r.stores.map((s, i) => (
+            <>
+              {i > 0 && ' · '}
+              <a
+                href={s.href}
+                data-market={s.market}
+                target="_blank"
+                rel="sponsored noopener nofollow"
+                class="hover:text-text hover:underline"
+              >{s.tld}</a>
+            </>
+          ))}
+        </p>
       </li>
     ))}
   </ul>

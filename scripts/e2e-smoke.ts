@@ -306,7 +306,9 @@ async function editorialFlow(context: BrowserContext) {
     check(`${label}: ogni JSON-LD è valido con @type noto`, ldOk, ldTexts.map((t) => t.slice(0, 60)).join(' | '));
 
     // La disclosure deve stare nel contenuto (main), non solo nel footer — solo dove ci sono link Buy.
-    const amazonLinks = await page.locator('a[href*="amazon."]').evaluateAll((as) =>
+    // Solo i link dentro main: quelli del footer (un link per negozio) stanno su ogni pagina, hub
+    // compresi, e hanno la loro disclosure accanto.
+    const amazonLinks = await page.locator('main a[href*="amazon."]').evaluateAll((as) =>
       as.map((a) => ({ href: (a as HTMLAnchorElement).href, rel: a.getAttribute('rel') ?? '', target: a.getAttribute('target') })));
     if (amazonLinks.length > 0) {
       const disclosureInMain = (await page.locator('main [data-testid=amazon-disclosure]').count()) > 0;

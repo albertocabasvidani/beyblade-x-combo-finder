@@ -25,6 +25,9 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+      # Ogni tracking ID Amazon nell'HTML di ogni pagina: senza, un revisore Associates fuori da quel
+      # paese non vede il tag e respinge l'account (Francia, 21/09/2026).
+      - run: npm run test:amazon-tags
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist/
