@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-24T02:10:19.008Z",
+  "lastUpdated": "2026-09-25T02:09:11.155Z",
   "combos": [
     {
       "id": "aero-pegasus-1-70-low-flat",
@@ -13670,6 +13670,50 @@
       },
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-06-17"
+    },
+    {
+      "id": "tyranno-roar-9-60-level",
+      "line": "bx",
+      "blade": "tyranno-roar",
+      "ratchet": "9-60",
+      "bit": "level",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Tyranno Roar 9-60 Level",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Had a weird month sine August, But here are the tournament Winning combinations from the KCBC August 17th 2025 Ranked Tournament",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-24"
+        }
+      ],
+      "dateAdded": "2026-09-18",
+      "dateUpdated": "2026-09-25",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-25"
     },
     {
       "id": "unicorn-sting-4-60-point",
