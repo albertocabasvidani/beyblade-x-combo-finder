@@ -33,7 +33,9 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
   `eu.i.posthog.com` («Failed to fetch»): il suo traffico non compare in PostHog.
 - **AdSense**: account `pub-7303361297226779` (lo stesso di YouTube). `src/lib/ads-config.ts` ha il client
   (script in head) e i quattro id slot; uno slot con id vuoto non renderizza nulla. `public/ads.txt`
-  pubblicato. Sito verificato, revisione richiesta il 12/09/2026, messaggio GDPR = CMP di Google a 3 scelte
+  pubblicato. Sito verificato, revisione richiesta il 12/09/2026 e **respinta il 22/09/2026 per «Low value
+  content»**: gli id slot in `AD_SLOTS` sono vuoti dal 26/09 (restano nel commento, da rimettere
+  all'approvazione), lo script in head resta. Messaggio GDPR = CMP di Google a 3 scelte
   gestito da AdSense (scrive `google_*` in localStorage: previsto, il test e2e lo ammette).
 - Quattro unità annuncio display responsive create il 12/09/2026 (`bxcombos-top` 2893429591, `-rail`
   8552950383, `-infeed` 7497432742, `-bottom` 1580347920): `top` e `bottom` fuori dall'isola

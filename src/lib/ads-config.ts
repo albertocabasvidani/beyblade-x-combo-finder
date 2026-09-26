@@ -3,12 +3,16 @@
 // Il consenso GDPR/CCPA lo gestisce il messaggio «Privacy & messaging» di AdSense (CMP certificata
 // Google), nessun codice nostro. Gli annunci compaiono solo in produzione (import.meta.env.PROD).
 export const ADSENSE_CLIENT = 'ca-pub-7303361297226779';
-export const AD_SLOTS = {
-  top: '2893429591',                          // bxcombos-top: banner sopra il contenuto (.astro)
-  rail: '8552950383',                         // bxcombos-rail: fondo del pannello parti (isola Preact)
-  infeed: '7497432742',                       // bxcombos-infeed: fra le card del ranking (isola Preact)
-  bottom: '1580347920',                       // bxcombos-bottom: sotto i risultati (.astro)
-} as const;
+// Id svuotati il 26/09/2026: AdSense ha respinto il sito il 22/09 («Low value content») e finché non
+// approva gli slot restano spazi vuoti in pagina. Lo script in head resta, serve alla nuova revisione.
+// Da rimettere ad approvazione avvenuta: top 2893429591, rail 8552950383, infeed 7497432742,
+// bottom 1580347920.
+export const AD_SLOTS: Record<'top' | 'rail' | 'infeed' | 'bottom', string> = {
+  top: '',                                    // bxcombos-top: banner sopra il contenuto (.astro)
+  rail: '',                                   // bxcombos-rail: fondo del pannello parti (isola Preact)
+  infeed: '',                                 // bxcombos-infeed: fra le card del ranking (isola Preact)
+  bottom: '',                                 // bxcombos-bottom: sotto i risultati (.astro)
+};
 export type AdSlotName = keyof typeof AD_SLOTS;
 
 // Tipo di slot -> classe CSS che ne fissa le dimensioni (`global.css`). Niente `data-ad-format="auto"`
