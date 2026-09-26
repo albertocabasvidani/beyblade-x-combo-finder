@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-25T02:09:11.155Z",
+  "lastUpdated": "2026-09-26T02:10:33.003Z",
   "combos": [
     {
       "id": "aero-pegasus-1-70-low-flat",
@@ -4289,6 +4289,50 @@
       "archivedDate": "2026-09-12"
     },
     {
+      "id": "hells-arc-turn-7-60-kick",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "7-60",
+      "bit": "kick",
+      "lockChip": "hells",
+      "mainBlade": "arc",
+      "assistBlade": "turn",
+      "overBlade": null,
+      "displayName": "Hells Arc T 7-60 Kick",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Sep. 25, 2025  8:38 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-25"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-09-26",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-26"
+    },
+    {
       "id": "hells-arc-turn-9-60-glide",
       "line": "cx",
       "blade": null,
@@ -5277,6 +5321,62 @@
       "archivedDate": "2026-09-12"
     },
     {
+      "id": "hells-reaper-turn-4-70-kick",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "4-70",
+      "bit": "kick",
+      "lockChip": "hells",
+      "mainBlade": "reaper",
+      "assistBlade": "turn",
+      "overBlade": null,
+      "displayName": "Hells Reaper T 4-70 Kick",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Aug. 17, 2025  1:25 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-08-17"
+        },
+        {
+          "name": "WBO — Sep. 07, 2025  4:58 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-07"
+        },
+        {
+          "name": "WBO — Sep. 25, 2025  8:38 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-25"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-09-26",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-26"
+    },
+    {
       "id": "hells-reaper-turn-7-60-hexa",
       "line": "cx",
       "blade": null,
@@ -5943,6 +6043,50 @@
       "archivedDate": "2026-09-12"
     },
     {
+      "id": "hover-wyvern-5-80-kick",
+      "line": "bx",
+      "blade": "hover-wyvern",
+      "ratchet": "5-80",
+      "bit": "kick",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Hover Wyvern 5-80 Kick",
+      "type": "defense",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Game 3 League Championship Invite Only (September 25th 2025)",
+          "url": "https://www.metabeys.com/events/1758540962873",
+          "weight": 1,
+          "date": "2025-09-25"
+        }
+      ],
+      "dateAdded": "2026-06-23",
+      "dateUpdated": "2026-09-26",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-26"
+    },
+    {
       "id": "hover-wyvern-6-60-hexa",
       "line": "bx",
       "blade": "hover-wyvern",
@@ -6537,6 +6681,50 @@
       "archivedDate": "2026-09-16"
     },
     {
+      "id": "knight-mail-7-60-rubber-accel",
+      "line": "bx",
+      "blade": "knight-mail",
+      "ratchet": "7-60",
+      "bit": "rubber-accel",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Knight Mail 7-60 Rubber Accel",
+      "type": "defense",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Game 3 League Championship Invite Only (September 25th 2025)",
+          "url": "https://www.metabeys.com/events/1758540962873",
+          "weight": 1,
+          "date": "2025-09-25"
+        }
+      ],
+      "dateAdded": "2026-06-23",
+      "dateUpdated": "2026-09-26",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-26"
+    },
+    {
       "id": "knight-mail-9-60-under-flat",
       "line": "bx",
       "blade": "knight-mail",
@@ -6810,6 +6998,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "leon-claw-5-70-gear-flat",
+      "line": "bx",
+      "blade": "leon-claw",
+      "ratchet": "5-70",
+      "bit": "gear-flat",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "displayName": "Leon Claw 5-70 Gear Flat",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "Strong mobile attack combo with gear movement pattern.",
+      "sources": [
+        {
+          "name": "Reddit r/Beyblade",
+          "url": "https://reddit.com/r/Beyblade",
+          "weight": 0.5,
+          "date": "2025-09-25"
+        }
+      ],
+      "amazon": {},
+      "dateAdded": "2025-08-15",
+      "dateUpdated": "2026-09-26",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-26"
     },
     {
       "id": "leon-crest-5-60-point",
@@ -14427,6 +14659,68 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "valkyrie-blast-wheel-9-60-rubber-accel",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "rubber-accel",
+      "lockChip": "valkyrie",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Valkyrie Blast W 9-60 Rubber Accel",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Banana Games Qualifier (Aug 29th 2025)",
+          "url": "https://www.metabeys.com/events/1756770741139",
+          "weight": 1,
+          "date": "2025-08-29"
+        },
+        {
+          "name": "MetaBeys — Summer Gold Rush Vol 2 (Dan, Bendo, VyonX)",
+          "url": "https://www.metabeys.com/events/1755480899907",
+          "weight": 1,
+          "date": "2025-08-17"
+        },
+        {
+          "name": "MetaBeys — Summer Showdown: Blast The XTREME Dash!",
+          "url": "https://www.metabeys.com/events/1755377765118",
+          "weight": 1,
+          "date": "2025-08-16"
+        },
+        {
+          "name": "MetaBeys — Game 3 League Championship Invite Only (September 25th 2025)",
+          "url": "https://www.metabeys.com/events/1758540962873",
+          "weight": 1,
+          "date": "2025-09-25"
+        }
+      ],
+      "dateAdded": "2026-06-23",
+      "dateUpdated": "2026-09-26",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-26"
     },
     {
       "id": "valkyrie-volt-assault-7-60-low-flat",
