@@ -78,7 +78,9 @@ derivazione. Solo Beyblade X.
    `scannedPages` con contentHash, `scannedEvents`, `scannedPosts`). `npm run score:combos`, poi
    `npm run prune:combos -- --apply` (archivia in `data/combos-archive.json` le combo rimaste senza
    evidenza fresca entro il cutoff di 12 mesi; senza `--apply` è un dry-run da ispezionare prima — il
-   guardrail aborta se le orfane superano il 60% o se l'evidenza torneo è a zero), poi `npm run build`.
+   guardrail aborta se le orfane superano il 60% o se l'evidenza torneo è a zero), poi `npm run build`,
+   poi `npm run ig:generate` (i caroselli Instagram candidati in `out/ig/`, gitignorato; li pubblica il
+   progetto contenuti alle 12:00 — se fallisce lo si riporta e si prosegue, non blocca il commit).
    Report: nuove/aggiornate combo, combo archiviate, **delta nuovo del ledger** `wbo-unresolved.json`
    (refusi corretti, residuo lasciato), nuove parti segnalate, alias community aggiunti, fonti
    `manualVerification` da controllare a mano. Git:

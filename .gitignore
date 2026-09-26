@@ -25,6 +25,9 @@ data/youtube-transcripts.json
 data/metabeys-cache.json
 data/wbo-cache.json
 
+# caroselli Instagram generati (vivono sul server, li pubblica il progetto contenuti)
+out/
+
 # temp / working files
 tmp/
 .playwright-cli/

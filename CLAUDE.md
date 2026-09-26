@@ -164,6 +164,17 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
 - `npm run test:wbo` — golden test del parser WBO (BX, CX order-agnostic/Western, hardening BX, casi che restano unresolved)
 - `npm run test:wbo-unresolved` — golden test del ledger (idempotenza, preservazione `status`, categorizzazione)
 - `npm run test:freshness` / `npm run test:prune` — golden test del cutoff condiviso e della partizione del pruning
+- `npm run ig:generate` — caroselli Instagram candidati da `combos.json` in `out/ig/` (gitignorato):
+  slide JPEG 1080×1350 (Chrome headless via playwright-core), `caption.txt`, `post.json`, `queue.json`.
+  Gira nel giro notturno dopo `build` (dentro `/update-combos`). Regole in `scripts/lib/ig-posts.ts`,
+  template in `scripts/lib/ig-render.ts`, golden test `npm run test:ig`. Chi sceglie e pubblica il post
+  del giorno è `tools/caroselli.py` del progetto **contenuti** (job `contenuti-caroselli`, 12:00 sul
+  server): un contenuto al giorno, mai nei giorni con un Reel; `top-build` il lunedì e `top-lame` il
+  giovedì con scarto massimo di un giorno; poi eventi (`build-lama-nuova` a 40 piazzamenti,
+  `nuovo-ingresso` ≥ 15 top cut e crescita ≥ ×2) e riempitivi `build-lama` a rotazione. Disegno e
+  soglie in `docs/ig-caroselli.md`. Gli id sono stabili (`top-build-2026-W40`,
+  `build-lama-shark-scale`): rigenerare aggiorna i numeri, il registro del pubblicatore decide cosa
+  è già uscito. Le immagini non vanno in git: vivono sul server e su una release temporanea
 - `npm run test:e2e` — percorso utente nel browser (`scripts/e2e-smoke.ts`, playwright-core + Chrome di sistema, headless) sulla preview locale: prima `npm run build && npm run preview` (porta 4321); `E2E_URL` per puntarlo al sito pubblicato
 - Cosa controlla: peso della home (< 400 KB), fetch di `/combos.json`, ricerca parti, periodo 1/3/6/12M, filtri, Show more, Compare/Buy, marketplace, tema, about/privacy, mobile 390 px senza scroll orizzontale; screenshot in `tmp/e2e/`
 
