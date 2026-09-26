@@ -135,4 +135,6 @@ async function main() {
   writeFileSync(scanHistoryPath, JSON.stringify(scanHistory, null, 2));
 }
 
-main().catch(console.error);
+// Un foglio inaccessibile (permessi, id, quota) deve risultare un fallimento a collect-sources: prima
+// l'eccezione finiva in console e il processo usciva 0, cioè «riuscito» senza aver scritto nulla.
+main().catch((e) => { console.error('fetch-sheets fallito:', (e as Error).message); process.exit(1); });

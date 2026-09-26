@@ -103,9 +103,12 @@ def load_existing():
     return {'lastFetched': '', 'transcripts': []}
 
 
-def save_transcripts(all_transcripts, all_failed=None):
+def save_transcripts(all_transcripts, all_failed=None, last_fetched=None):
+    # lastFetched = data dell'ultimo giro che ha scaricato qualcosa o è finito senza rate-limit.
+    # Un giro fermato subito dal blocco IP lo lascia com'era: prima lo aggiornava a oggi, e il file
+    # sembrava fresco anche dopo giorni di soli blocchi.
     output = {
-        'lastFetched': time.strftime('%Y-%m-%d'),
+        'lastFetched': last_fetched if last_fetched is not None else time.strftime('%Y-%m-%d'),
         'transcripts': all_transcripts,
     }
     if all_failed:
@@ -164,6 +167,7 @@ def main():
     all_transcripts = list(existing['transcripts'])
     all_failed = list(existing.get('failed', []))
     new_count = 0
+    rate_limited = False
     failures = 0
     consecutive_failures = 0
     today = time.strftime('%Y-%m-%d')
@@ -229,6 +233,7 @@ def main():
 
             if is_rate_limited:
                 print('\n*** YouTube ha bloccato l\'IP (rate-limit): stop. Riprovare tra 30-60 min. ***')
+                rate_limited = True
                 break
 
             # If 10+ consecutive failures, likely rate-limited. Stop early.
@@ -248,8 +253,9 @@ def main():
             delay = BASE_DELAY * 2
         time.sleep(delay)
 
-    # Final save
-    save_transcripts(all_transcripts, all_failed)
+    # Final save: la data di freschezza avanza solo se il giro ha prodotto o è finito pulito.
+    fresh = new_count > 0 or not rate_limited
+    save_transcripts(all_transcripts, all_failed, None if fresh else existing.get('lastFetched', ''))
 
     print()
     print('--- Summary ---')

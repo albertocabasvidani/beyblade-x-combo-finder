@@ -40,6 +40,8 @@ interface ScanHistory {
 }
 
 function getApiKey(): string {
+  // La variabile d'ambiente vince sul .env: serve a provare il run con una chiave non valida.
+  if (process.env.YOUTUBE_API_KEY) return process.env.YOUTUBE_API_KEY.trim();
   const envPath = join(import.meta.dirname, '..', '.env');
   if (!existsSync(envPath)) {
     throw new Error('.env file not found. Create it with YOUTUBE_API_KEY=...');
@@ -66,6 +68,15 @@ function loadScanHistory(): ScanHistory {
 function saveScanHistory(history: ScanHistory) {
   const path = join(DATA_DIR, 'scan-history.json');
   writeFileSync(path, JSON.stringify(history, null, 2));
+}
+
+// Errori dell'API nel run (quota esaurita, chiave non valida, canale sparito). Con quota esaurita ogni
+// canale risponde `data.error` e il run finiva lo stesso con «Saved 0 new videos» e `lastFetched` di
+// oggi: la cache sembrava fresca. Ora un run in cui NESSUN canale è stato letto non scrive nulla ed esce 2.
+const apiErrors: string[] = [];
+function noteApiError(err: any) {
+  const reason = err?.errors?.[0]?.reason ? ` [${err.errors[0].reason}]` : '';
+  apiErrors.push(`${err?.message ?? 'errore API'}${reason}`);
 }
 
 async function resolveChannelId(apiKey: string, handle: string): Promise<{ channelId: string; uploadsPlaylistId: string }> {
@@ -123,6 +134,7 @@ async function fetchUploadedVideos(
 
     if (data.error) {
       console.error(`  API error: ${data.error.message}`);
+      noteApiError(data.error);
       break;
     }
 
@@ -207,6 +219,7 @@ async function main() {
 
   const allNewVideos: VideoEntry[] = [];
   const sourcesData = JSON.parse(readFileSync(join(DATA_DIR, 'sources.json'), 'utf-8'));
+  let channelsRead = 0; // canali la cui lista upload è stata letta senza errori API
 
   for (const source of ytSources) {
     console.log(`Channel: ${source.name}`);
@@ -231,20 +244,23 @@ async function main() {
         const url = `${API_BASE}/channels?part=contentDetails&id=${channelId}&key=${apiKey}`;
         const res = await fetch(url);
         const data = await res.json();
+        if (data.error) noteApiError(data.error);
         uploadsPlaylistId = data.items?.[0]?.contentDetails?.relatedPlaylists?.uploads;
         if (!uploadsPlaylistId) {
-          console.error(`  Could not get uploads playlist for ${channelId}`);
+          console.error(`  Could not get uploads playlist for ${channelId}${data.error ? `: ${data.error.message}` : ''}`);
           continue;
         }
       }
 
       console.log('  Fetching videos...');
+      const errorsBefore = apiErrors.length;
       const videos = await fetchUploadedVideos(
         apiKey,
         uploadsPlaylistId,
         { id: source.id, lang: source.lang ?? '', channelId },
         isInitialScan ? 100 : 50,
       );
+      if (apiErrors.length === errorsBefore) channelsRead++;
 
       const newVideos = videos.filter((v) => !scanHistory.scannedVideos[v.videoId]);
       console.log(`  Found ${videos.length} videos, ${newVideos.length} new\n`);
@@ -262,6 +278,13 @@ async function main() {
       console.error(`  Error: ${(err as Error).message}\n`);
     }
   }
+
+  if (ytSources.length > 0 && channelsRead === 0) {
+    console.error(`Nessun canale letto su ${ytSources.length} (${apiErrors.length} errori API, il primo: ${apiErrors[0] ?? 'nessun dettaglio'}) → run invalido: cache, sources e scan-history intatti.`);
+    process.exitCode = 2;
+    return;
+  }
+  if (apiErrors.length) console.warn(`YouTube: ${apiErrors.length} errori API su ${ytSources.length} canali (letti ${channelsRead}); il primo: ${apiErrors[0]}`);
 
   writeFileSync(join(DATA_DIR, 'sources.json'), JSON.stringify(sourcesData, null, 2));
   saveScanHistory(scanHistory);
@@ -306,4 +329,4 @@ async function main() {
   );
 }
 
-main().catch(console.error);
+main().catch((e) => { console.error('fetch-youtube fallito:', (e as Error).message); process.exit(1); });

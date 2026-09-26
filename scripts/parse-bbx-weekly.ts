@@ -68,6 +68,13 @@ function main() {
     }
   }
 
+  // Zero parti da una cache presente è il layout cambiato (BBX classifica sempre decine di parti: 94
+  // il 26/09/2026), non un dato: l'evidence precedente resta e il run esce 1, così collect-sources lo
+  // registra invece di sovrascriverla con una lista vuota datata oggi.
+  if (out.length === 0) {
+    console.error(`bbx-weekly: 0 parti estratte da ${(cache.pages ?? []).length} pagine in cache → layout cambiato? Evidence precedente lasciata intatta.`);
+    process.exit(1);
+  }
   writeFileSync(OUT_PATH, JSON.stringify({ generatedAt: new Date().toISOString().slice(0, 10), parts: out }, null, 2) + '\n');
   console.log(`bbx-weekly: ${out.length} parti con usage estratte (cross-check, fuori dal CAS). → ${OUT_PATH}`);
 }

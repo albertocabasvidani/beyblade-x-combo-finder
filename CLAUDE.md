@@ -234,6 +234,13 @@ mai via API a pagamento. L'IA non calcola mai lo score né ri-parsa ciò che il 
   `fetch:wbo` (Playwright; Cloudflare blocca headless → `WBO_HEADED=1`, oppure ci si affida a MetaBeys
   che indicizza gli stessi eventi WBO; **paginazione all'indietro** del thread `?page=N`, capped a
   `WBO_MAX_PAGES`/run, cursore `wboBackfill`, canale `printthread` opzionale via `WBO_PRINTTHREAD=1`).
+  **La pagina si legge solo quando è il thread vero** (`looksLikeThread` in `scripts/lib/wbo-fetch-utils.ts`,
+  marcatore «Subscribe to this thread»): misurato sul server dal 06/08 al 26/09/2026, in 38 run su 52 il
+  documento veniva letto subito dopo la challenge Cloudflare, prima del render, e «ultima pagina = 1»
+  azzerava il cursore in silenzio con exit 0 (cache ferma al 04/09 per tre settimane). Ora un numero di
+  pagina più basso della pagina massima in cache non viene creduto, il run esce 2 senza toccare cache né
+  cursore, e a ogni run buono si **recuperano** da sole le pagine fra l'ultima e la frontiera in cache
+  (`WBO_CATCHUP_MAX`, default 20). Golden test: `npm run test:wbo-fetch`.
   **Profilo dedicato `.playwright-wbo`**, non condiviso: quando usava `.playwright-beyblade` insieme a
   Reddit/arca, un Chrome lasciato aperto da Reddit in ETIMEDOUT lo faceva fallire con *"Target page,
   context or browser has been closed"* — in **tutti** i run dal 29/06, mentre da solo completa in ~30s.

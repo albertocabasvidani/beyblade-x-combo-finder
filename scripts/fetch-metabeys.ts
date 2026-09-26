@@ -27,7 +27,8 @@ const DATA = join(ROOT, 'data');
 const cachePath = join(DATA, 'metabeys-cache.json');
 const histPath = join(DATA, 'scan-history.json');
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36';
-const LIST_URL = (page: number) => `https://www.metabeys.com/events/completed?sort=Newest&page=${page}`;
+// META_LIST_URL serve solo alle prove (una pagina senza eventi deve dare run invalido, non «archivio finito»).
+const LIST_URL = (page: number) => `${process.env.META_LIST_URL ?? 'https://www.metabeys.com/events/completed'}?sort=Newest&page=${page}`;
 const MAX_PAGES = Math.max(1, parseInt(process.env.META_MAX_PAGES ?? '3', 10) || 3);
 const CACHE_BACKSTOP = 400; // tetto numerico di sicurezza oltre il prune per data
 
@@ -51,10 +52,23 @@ async function main() {
   const newEvents: any[] = [];
   let page1Ids: string[] = [];
 
-  /** Legge gli id evento numerici (ordine pagina, Newest) della pagina lista N. [] se nessuno. */
-  async function listIds(pageNum: number): Promise<string[]> {
+  // Pagina di blocco/errore al posto della lista (Cloudflare, manutenzione, 5xx): stesso riconoscimento
+  // degli altri fetcher. Senza, una lista vuota per un blocco passava per «fine archivio» e marcava il
+  // backfill come completo per sempre (stessa classe di guasto di fetch-wbo, misurata il 26/09/2026).
+  const BLOCK = /just a moment|attention required|cloudflare|access denied|verify you are human|verifica di sicurezza|service unavailable|bad gateway/i;
+
+  /**
+   * Legge gli id evento numerici (ordine pagina, Newest) della pagina lista N.
+   * null = pagina non attendibile (blocco, errore, layout senza link evento): non è «nessun evento».
+   */
+  async function listIds(pageNum: number): Promise<string[] | null> {
     await page.goto(LIST_URL(pageNum), { waitUntil: 'networkidle', timeout: 60_000 });
     await page.waitForSelector('a[href^="/events/"]', { timeout: 30_000 }).catch(() => {});
+    const head = ((await page.innerText('body').catch(() => '')) || '').slice(0, 400);
+    if (BLOCK.test(head)) {
+      console.warn(`MetaBeys pagina ${pageNum}: pagina di blocco/errore («${head.replace(/\s+/g, ' ').slice(0, 60)}»).`);
+      return null;
+    }
     const ids: string[] = await page.$$eval('a[href^="/events/"]', (as) =>
       Array.from(new Set(as.map((a) => (a.getAttribute('href') || '').split('/').pop()).filter(Boolean) as string[]))
     );
@@ -76,8 +90,9 @@ async function main() {
    * e si ferma al primo evento oltre cutoff (ordine Newest ⇒ i successivi sono più vecchi).
    * Ritorna se la pagina aveva eventi e se ha raggiunto il cutoff (o una pagina "fasulla" = ripetizione).
    */
-  async function processList(pageNum: number): Promise<{ hadEvents: boolean; reachedCutoff: boolean }> {
+  async function processList(pageNum: number): Promise<{ hadEvents: boolean; reachedCutoff: boolean; invalid?: boolean }> {
     const ids = await listIds(pageNum);
+    if (ids === null) return { hadEvents: false, reachedCutoff: false, invalid: true };
     console.log(`MetaBeys pagina ${pageNum}: ${ids.length} eventi in lista.`);
     if (ids.length === 0) return { hadEvents: false, reachedCutoff: false };
     if (pageNum === 1) page1Ids = ids;
@@ -112,14 +127,24 @@ async function main() {
   }
 
   try {
-    // (a) Pagina 1: cattura sempre i nuovi eventi.
+    // (a) Pagina 1: cattura sempre i nuovi eventi. Se la pagina 1 non è leggibile o è vuota, il run
+    // è invalido: cursore intatto, cache intatta, codice 2. La pagina 1 di «Completed Events» non è
+    // mai vuota davvero (134 eventi in 12 mesi), quindi «0 eventi» qui è un guasto, non un dato.
     const p1 = await processList(1);
+    if (p1.invalid || !p1.hadEvents) {
+      console.warn('MetaBeys: pagina 1 non leggibile o senza eventi → run invalido, cursore e cache intatti.');
+      process.exitCode = 2;
+      return;
+    }
     if (p1.reachedCutoff) bf.done = true;
 
     // (b) Backfill incrementale dalle pagine non ancora viste, capped a META_MAX_PAGES per run.
+    // «Fine archivio» (done) si dichiara solo su una pagina N > 1 vuota con la pagina 1 piena; una
+    // pagina non leggibile ferma il giro e si ritenta al prossimo run.
     let walked = 0;
     while (!bf.done && walked < MAX_PAGES) {
       const r = await processList(bf.nextPage);
+      if (r.invalid) { console.warn(`MetaBeys: pagina ${bf.nextPage} non leggibile → backfill sospeso, riprende al prossimo run.`); break; }
       if (!r.hadEvents) { bf.done = true; break; } // fine archivio o pagina fasulla
       if (r.reachedCutoff) { bf.done = true; break; }
       bf.nextPage++;

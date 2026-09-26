@@ -34,6 +34,7 @@
     "test:scoring": "npx tsx scripts/test-scoring.ts",
     "test:wbo": "npx tsx scripts/test-parse-wbo.ts",
     "test:wbo-unresolved": "npx tsx scripts/test-wbo-unresolved.ts",
+    "test:wbo-fetch": "npx tsx scripts/test-wbo-fetch.ts",
     "test:freshness": "npx tsx scripts/test-freshness.ts",
     "test:prune": "npx tsx scripts/test-prune.ts",
     "test:wiki-scan": "npx tsx scripts/test-wiki-scan.ts",
