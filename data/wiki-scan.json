@@ -4,12 +4,12 @@
     "List of Beyblade X products (Takara Tomy)": {
       "revid": 649061,
       "timestamp": "2026-09-14T15:46:59.000Z",
-      "lastScannedDate": "2026-09-25"
+      "lastScannedDate": "2026-09-26"
     },
     "List of Beyblade X products (Hasbro)": {
       "revid": 648918,
       "timestamp": "2026-09-14T01:43:54.000Z",
-      "lastScannedDate": "2026-09-25"
+      "lastScannedDate": "2026-09-26"
     }
   },
   "pages": {
@@ -30,15 +30,15 @@
       "notes": "pagina lista: aggiunta riga NFL CX Top Pack, nessuna parte da estrarre da qui"
     },
     "DranSword 3-60F": {
-      "revid": 649864,
-      "timestamp": "2026-09-24T08:24:15.000Z",
-      "lastScannedDate": "2026-09-25",
+      "revid": 649939,
+      "timestamp": "2026-09-25T10:54:21.000Z",
+      "lastScannedDate": "2026-09-26",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Sword Dran 3-60F"
       ],
-      "notes": "gia' registrato (dran-sword); edit minore pagina"
+      "notes": "Version 2.0 content added; blade/ratchet/bit gia' in master"
     },
     "HeavensRing 0-80DS": {
       "revid": 649735,
@@ -108,12 +108,12 @@
       "notes": "Revid cambiato, verificato: stesso contenuto (HellsNether Z, SilverWolf 9-70R Metal Coat Violet, WyvernHover 8-80B), ancora Unreleased (08/08/2026), solo gallery/testo aggiornati. Nessuna parte nuova."
     },
     "Bit - Gear Needle": {
-      "revid": 645915,
-      "timestamp": "2026-08-11T15:30:50.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 649949,
+      "timestamp": "2026-09-25T19:31:43.000Z",
+      "lastScannedDate": "2026-09-26",
       "kind": "part",
-      "kindSource": "heuristic",
-      "notes": "Revid invariato salvo nuovi Products (G3392 Ridge Triceratops 9-80GN, G3393 Yggdrasil Team Pack, G4565 Tread Croc TQ 5-50GN): tutte combo di parti gia' registrate, nessuna parte nuova."
+      "kindSource": "ai",
+      "notes": "aggiornata lista prodotti (Rock Leone 6-80GN); parte gia' in master"
     },
     "Bit - Orb": {
       "revid": 649592,
@@ -234,12 +234,12 @@
       "notes": "Revid cambiato, verificato: nessun nuovo componente (solo modifiche testuali/gallery/date release)."
     },
     "Rock Leone 6-80GN": {
-      "revid": 645250,
-      "timestamp": null,
-      "lastScannedDate": "2026-08-09",
+      "revid": 649945,
+      "timestamp": "2026-09-25T19:28:23.000Z",
+      "lastScannedDate": "2026-09-26",
       "kind": "product",
-      "kindSource": "heuristic",
-      "notes": "Revid cambiato, verificato: nessun nuovo componente (solo modifiche testuali/gallery/date release)."
+      "kindSource": "ai",
+      "notes": "nuovo prodotto ma parti (rock-leone/6-80/gear-needle) tutte gia' in master"
     },
     "StormSpriggan 2-70M": {
       "revid": 649307,
@@ -738,15 +738,15 @@
       "kindSource": "heuristic"
     },
     "KnightShield 3-80N": {
-      "revid": 649860,
-      "timestamp": "2026-09-24T08:14:20.000Z",
-      "lastScannedDate": "2026-09-25",
+      "revid": 649940,
+      "timestamp": "2026-09-25T10:55:06.000Z",
+      "lastScannedDate": "2026-09-26",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Helm Knight 3-80N"
       ],
-      "notes": "gia' registrato (knight-shield); edit minore pagina"
+      "notes": "Version 2.0 content added; blade/ratchet/bit gia' in master"
     },
     "Blade - Lightning L-Drago (Rapid-Hit Type)": {
       "revid": 632018,
@@ -1572,11 +1572,12 @@
       "kindSource": "heuristic"
     },
     "Ratchet - 6-80": {
-      "revid": 613795,
-      "timestamp": "2026-08-14T06:19:28.677Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 649948,
+      "timestamp": "2026-09-25T19:31:41.000Z",
+      "lastScannedDate": "2026-09-26",
       "kind": "part",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "aggiornata lista prodotti (Rock Leone 6-80GN); parte gia' in master"
     },
     "Bit - Wedge": {
       "revid": 649605,
