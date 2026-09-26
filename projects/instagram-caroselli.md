@@ -3,7 +3,6 @@ name: instagram-caroselli
 status: active
 updated: 26/09/2026
 health: yellow
-next-step: "Prima pubblicazione vera con --forza (scelta dell'utente), poi una settimana di giri alle 12:00"
 blocked-by: null
 current-plan: docs/ig-caroselli.md
 main-doc: docs/ig-caroselli.md
