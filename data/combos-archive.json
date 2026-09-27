@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-26T02:10:33.003Z",
+  "lastUpdated": "2026-09-27T02:15:47.412Z",
   "combos": [
     {
       "id": "aero-pegasus-1-70-low-flat",
@@ -5065,49 +5065,6 @@
       "archivedDate": "2026-09-12"
     },
     {
-      "id": "hells-hammer-3-60-hexa",
-      "line": "bx",
-      "blade": "hells-hammer",
-      "ratchet": "3-60",
-      "bit": "hexa",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Hells Hammer 3-60 Hexa",
-      "type": "balance",
-      "score": 0,
-      "scoreBreakdown": {
-        "performance": 0,
-        "presence": 0,
-        "corroboration": 0,
-        "tournamentEvents": 0,
-        "wins": 0,
-        "topCutAppearances": 0
-      },
-      "tags": [
-        "theory-only"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — Jul. 27, 2025  4:52 AM",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2025-07-26"
-        }
-      ],
-      "dateAdded": "2026-06-17",
-      "dateUpdated": "2026-08-06",
-      "evidence": {
-        "placements": [],
-        "usage": [],
-        "mentions": []
-      },
-      "archivedReason": "no-fresh-evidence (cutoff 12m)",
-      "archivedDate": "2026-08-06"
-    },
-    {
       "id": "hells-hammer-9-60-low-rush",
       "line": "bx",
       "blade": "hells-hammer",
@@ -8509,6 +8466,50 @@
       "archivedDate": "2026-09-13"
     },
     {
+      "id": "pegasus-blast-slash-1-60-cyclone",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "1-60",
+      "bit": "cyclone",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "slash",
+      "overBlade": null,
+      "displayName": "Pegasus Blast S 1-60 Cyclone",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Sep. 26, 2025  10:44 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-26"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-09-27",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-27"
+    },
+    {
       "id": "pegasus-blast-slash-1-60-low-flat",
       "line": "cx",
       "blade": null,
@@ -9365,6 +9366,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "pegasus-blast-wheel-3-60-unite",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "3-60",
+      "bit": "unite",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Pegasus Blast W 3-60 Unite",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Sep. 26, 2025  12:28 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-26"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-09-27",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-27"
     },
     {
       "id": "pegasus-blast-wheel-5-60-low-rush",
@@ -13337,49 +13382,6 @@
       "archivedDate": "2026-09-12"
     },
     {
-      "id": "tricera-press-3-60-low-rush",
-      "line": "bx",
-      "blade": "tricera-press",
-      "ratchet": "3-60",
-      "bit": "low-rush",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Tricera Press 3-60 Low Rush",
-      "type": "defense",
-      "score": 0,
-      "scoreBreakdown": {
-        "performance": 0,
-        "presence": 0,
-        "corroboration": 0,
-        "tournamentEvents": 0,
-        "wins": 0,
-        "topCutAppearances": 0
-      },
-      "tags": [
-        "theory-only"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — Jul. 24, 2025  12:40 AM",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2025-07-19"
-        }
-      ],
-      "dateAdded": "2026-06-17",
-      "dateUpdated": "2026-07-25",
-      "evidence": {
-        "placements": [],
-        "usage": [],
-        "mentions": []
-      },
-      "archivedReason": "no-fresh-evidence (cutoff 12m)",
-      "archivedDate": "2026-07-25"
-    },
-    {
       "id": "tricera-press-5-60-rush",
       "line": "bx",
       "blade": "tricera-press",
@@ -13946,6 +13948,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-25"
+    },
+    {
+      "id": "unicorn-sting-0-70-level",
+      "line": "bx",
+      "blade": "unicorn-sting",
+      "ratchet": "0-70",
+      "bit": "level",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Unicorn Sting 0-70 Level",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Banana Games 10k Qualifier (September 26th 2025)",
+          "url": "https://www.metabeys.com/events/1758994820040",
+          "weight": 1,
+          "date": "2025-09-26"
+        }
+      ],
+      "dateAdded": "2026-06-21",
+      "dateUpdated": "2026-09-27",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-27"
     },
     {
       "id": "unicorn-sting-4-60-point",
