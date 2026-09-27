@@ -1,7 +1,7 @@
 ---
 name: instagram-caroselli
 status: active
-updated: 26/09/2026
+updated: 27/09/2026
 health: yellow
 blocked-by: null
 current-plan: docs/ig-caroselli.md
@@ -35,7 +35,7 @@ alle 12:00 sul server), intervallate ai Reel di papi.nerd: un contenuto al giorn
 ## In progress
 
 <!-- Lavori in corso. Se collegati a un piano in plans/, linkalo. -->
-- 26/09/2026 — **Messa in produzione** (disegno: `docs/ig-caroselli.md`). Fatto: generatore con golden test (`test:ig`, 28 controlli), 13 post generati in locale dai dati del 26/09 e guardati (top 5 build/lame, nuovo ingresso Heavens Ring, 10 riempitivi), pubblicatore con test delle regole (`tools/test_caroselli.py`, 10 casi), job nel manifest del server. Resta: `git pull` sui tre cloni del server (beyblade-combos, contenuti-video, task-dispatcher), primo `ig:generate` sul server, `caroselli.py --dry`, prima pubblicazione vera con `--forza` sul post scelto dall'utente, poi una settimana di giri
+- 26/09/2026 — **Messa in produzione** (disegno: `docs/ig-caroselli.md`). Fatto: generatore con golden test (`test:ig`, 28 controlli), 13 post generati in locale dai dati del 26/09 e guardati (top 5 build/lame, nuovo ingresso Heavens Ring, 10 riempitivi), pubblicatore con test delle regole (`tools/test_caroselli.py`, 10 casi), job nel manifest del server. Fatto anche: i tre cloni del server allineati (beyblade-combos, contenuti-video, task-dispatcher; `dispatcher.ps1 -Elenco` mostra `contenuti-caroselli 12:00`), `test_caroselli.py` verde sul server, `caroselli.py --dry` sul server il 26/09 ha risposto «oggi niente» per il Reel del giorno e ha letto i Reel in coda (27/09, 29/09, 01/10…), e il giro notturno del 27/09 ha generato da sé i post della settimana W40. Resta: la prima uscita automatica, attesa lunedì 28/09 alle 12:00 (`top-build-2026-W40`: il registro `.secrets/papi-nerd/caroselli.json` e il post su Instagram), poi una settimana di giri
 
 ## Changelog
 

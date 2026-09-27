@@ -15,7 +15,7 @@ const scripts = [
   // orfano proseguiva e scriveva la cache minuti dopo che collect l'aveva dato per morto
   // (22/07/2026: "Salvati 150 post" comparso DOPO "Done. 6/8 succeeded"). Sotto carico l'orfano non
   // ce la faceva e la cache non veniva scritta affatto.
-  { name: 'Reddit scraper', cmd: 'npx tsx scripts/scrape-reddit.ts', timeout: 900_000, summary: /^(Salvati \d+ post|.*0 nuovi post.*|.*non loggat.*|.*bloccat.*)$/im },
+  { name: 'Reddit scraper', cmd: 'npx tsx scripts/scrape-reddit.ts', timeout: 900_000, summary: /^(Salvati \d+ post.*|.*0 nuovi post.*|.*non loggat.*|.*bloccat.*)$/im },
   { name: 'arca.live scraper (KR)', cmd: 'npx tsx scripts/scrape-arca.ts', timeout: 180_000, summary: /^Salvati \d+ post.*$/im },
   { name: 'YouTube fetcher', cmd: 'npx tsx scripts/fetch-youtube.ts', timeout: 120_000, summary: /^(Saved \d+ new videos.*|Nessun canale letto.*)$/im },
   { name: 'Sheets fetcher', cmd: 'npx tsx scripts/fetch-sheets.ts', timeout: 120_000, summary: /^(Saved to .*|fetch-sheets fallito.*)$/im },

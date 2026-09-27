@@ -47,6 +47,9 @@ Richiede inoltre (per la pipeline dati):
 | `npm run typo:candidates` / `npm run typo:apply` | Bordo deterministico del recupero typo dal ledger (dump candidati per il subagent; gate + merge in `wbo-corrections.json`) |
 | `npm run test:scoring` | Golden test dell'algoritmo di scoring |
 | `npm run test:wbo` / `npm run test:wbo-unresolved` | Golden test del parser WBO (BX/CX) e del ledger |
+| `npm run test:wbo-fetch` | Golden test del fetcher WBO: pagina-thread riconosciuta, numero di pagina plausibile rispetto alla cache |
+| `npm run ig:generate` | Caroselli Instagram candidati (JPEG 1080×1350 + didascalia) in `out/ig/`; li pubblica il progetto contenuti alle 12:00 |
+| `npm run test:ig` | Golden test dei candidati Instagram (settimanali, lama nuova, nuovo ingresso, riempitivi) |
 | `npm run test:freshness` | Golden test del cutoff condiviso (`scripts/lib/freshness.ts`) |
 | `npm run test:prune` | Golden test della partizione del pruning |
 | `npm run test:amazon` | Golden test dei link affiliati e della scelta del marketplace |
