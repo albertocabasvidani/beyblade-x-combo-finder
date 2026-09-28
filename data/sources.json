@@ -576,6 +576,24 @@
       "weight": 0.3,
       "lang": "en",
       "channelId": "UCFvDFTsKPVp4wFg-20npqzQ"
+    },
+    {
+      "id": "youtube-og-pinoy-blader",
+      "name": "OG_Pinoy_Beyblader",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.35,
+      "lang": "en",
+      "channelId": "UCByjKX0VaqdEfc99q2SYaSQ"
+    },
+    {
+      "id": "youtube-dabz-beyblade",
+      "name": "Dabz",
+      "type": "youtube",
+      "provides": "combos",
+      "weight": 0.3,
+      "lang": "en",
+      "channelId": "UCud8jsn9yM2z4FI8BPTpWYg"
     }
   ],
   "manualVerification": [

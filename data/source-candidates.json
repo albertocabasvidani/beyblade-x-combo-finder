@@ -1,11 +1,11 @@
 {
-  "lastRun": "2026-09-21",
+  "lastRun": "2026-09-28",
   "lastProposal": {
-    "messageId": "1a0c1c10cc8df4a8",
-    "threadId": "1a0c1c10cc8df4a8",
-    "date": "2026-09-21",
-    "subject": "Beyblade - 5 nuove fonti candidate (settimana 21/09)",
-    "note": "Nessuna risposta alla proposta del 14/09: nessun feedback applicato, sources.json invariato. Restano proposed anche solical-beyblade, beyblade-x-boys, south-carolina, beyblade-tr, xbladers-vietnam. Nuovi: 2 propose (og-pinoy-blader, dabz) + 3 manual-verify (beybladex-berlin DE, beyleague ES, beybladex-london UK). 5 nuovi knownNegatives. Discovery YouTube: 71 canali su 77 gia noti o scartati.",
+    "messageId": "1a0e5d0903b67935",
+    "threadId": "1a0e5d0903b67935",
+    "date": "2026-09-28",
+    "subject": "Beyblade - 3 nuove fonti candidate (settimana 28/09)",
+    "note": "Feedback del 21/09 applicato (risposta 1a0d41f3e6b47a01): promossi youtube-og-pinoy-blader e youtube-dabz-beyblade. Nuovi: 1 propose (website-beybladehub-tw) + 2 manual-verify (gruppo FB winning combination, Beyblade Australia Network). 7 nuovi knownNegatives. Discovery YouTube: 75 canali su 78 gia noti o scartati.",
     "relatedProposals": [
       "19f7ea6fd17b3060",
       "19fc67292184b2f3",
@@ -14,7 +14,8 @@
       "1a0318eb0da56c32",
       "1a0559d54ac7b334",
       "1a079a0d798e7a10",
-      "1a09db1dfe015968"
+      "1a09db1dfe015968",
+      "1a0c1c10cc8df4a8"
     ]
   },
   "candidates": [
@@ -1271,7 +1272,7 @@
       "recommendation": "manual-verify",
       "status": "proposed",
       "dateFound": "2026-09-07",
-      "lastSeen": "2026-09-07"
+      "lastSeen": "2026-09-28"
     },
     {
       "candidateId": "social-xbladers-vietnam",
@@ -1293,7 +1294,7 @@
       "recommendation": "manual-verify",
       "status": "proposed",
       "dateFound": "2026-09-07",
-      "lastSeen": "2026-09-07"
+      "lastSeen": "2026-09-28"
     },
     {
       "candidateId": "youtube-south-carolina-beyblade",
@@ -1318,7 +1319,7 @@
       "status": "proposed",
       "verifiedOn": "2026-09-14",
       "dateFound": "2026-09-14",
-      "lastSeen": "2026-09-14"
+      "lastSeen": "2026-09-28"
     },
     {
       "candidateId": "youtube-beyblade-x-boys",
@@ -1343,7 +1344,7 @@
       "status": "proposed",
       "verifiedOn": "2026-09-14",
       "dateFound": "2026-09-14",
-      "lastSeen": "2026-09-14"
+      "lastSeen": "2026-09-28"
     },
     {
       "candidateId": "youtube-solical-beyblade",
@@ -1368,7 +1369,7 @@
       "status": "proposed",
       "verifiedOn": "2026-09-14",
       "dateFound": "2026-09-14",
-      "lastSeen": "2026-09-14"
+      "lastSeen": "2026-09-28"
     },
     {
       "candidateId": "youtube-og-pinoy-blader",
@@ -1390,10 +1391,12 @@
       "dedupCheck": "US narrativo gia coperto da Jaykev (0.4) e BeyMac: qui gli eventi sono WBO/GP del New Jersey, in buona parte diversi, ed e un partecipante non un organizzatore.",
       "proposedWeight": 0.35,
       "recommendation": "propose",
-      "status": "proposed",
+      "status": "accepted",
       "verifiedOn": "2026-09-21",
       "dateFound": "2026-09-21",
-      "lastSeen": "2026-09-21"
+      "lastSeen": "2026-09-21",
+      "decidedOn": "2026-09-28",
+      "decisionNote": "Approvato via email (risposta 1a0d41f3e6b47a01: \"Vanno bene i primi due\")"
     },
     {
       "candidateId": "youtube-dabz-beyblade",
@@ -1415,10 +1418,12 @@
       "dedupCheck": "Sovrapposizione con la scena US gia coperta (BeyMac, Casual Beyblader X, Jaykev). Valore aggiunto: deck 3v3 con esito, peso basso per la quota alta di contenuto non competitivo.",
       "proposedWeight": 0.3,
       "recommendation": "propose",
-      "status": "proposed",
+      "status": "accepted",
       "verifiedOn": "2026-09-21",
       "dateFound": "2026-09-21",
-      "lastSeen": "2026-09-21"
+      "lastSeen": "2026-09-21",
+      "decidedOn": "2026-09-28",
+      "decisionNote": "Approvato via email (risposta 1a0d41f3e6b47a01: \"Vanno bene i primi due\")"
     },
     {
       "candidateId": "website-beybladex-berlin",
@@ -1440,7 +1445,7 @@
       "status": "proposed",
       "verifiedOn": "2026-09-21",
       "dateFound": "2026-09-21",
-      "lastSeen": "2026-09-21"
+      "lastSeen": "2026-09-28"
     },
     {
       "candidateId": "website-beybladex-london",
@@ -1462,7 +1467,7 @@
       "status": "proposed",
       "verifiedOn": "2026-09-21",
       "dateFound": "2026-09-21",
-      "lastSeen": "2026-09-21"
+      "lastSeen": "2026-09-28"
     },
     {
       "candidateId": "website-beyleague",
@@ -1484,7 +1489,80 @@
       "status": "proposed",
       "verifiedOn": "2026-09-21",
       "dateFound": "2026-09-21",
-      "lastSeen": "2026-09-21"
+      "lastSeen": "2026-09-28"
+    },
+    {
+      "candidateId": "website-beybladehub-tw",
+      "name": "BeybladeHub (Taiwan)",
+      "type": "website",
+      "platform": "website",
+      "provides": "combos",
+      "lang": "zh",
+      "region": "TW",
+      "url": "https://beybladehub.app/tournaments",
+      "urls": [
+        "https://beybladehub.app/tournaments",
+        "https://beybladehub.app/combos"
+      ],
+      "signals": {
+        "events": 13,
+        "lastEvent": "2026-07-25",
+        "publishesResults": true,
+        "staticHtml": true
+      },
+      "rationale": "Sito della community taiwanese (curatore @dada_z77) con podio e combo complete dei tornei ufficiali di Taiwan (G1 Extreme Cup, G2, G3): 13 eventi, ultimo il 25/07/2026 (G1 Kaohsiung), HTML statico. Esempio: \"冠軍 曾博恩 鮫鯊狂鱗 7-60 R / 戰神爆擊 W 9-70 H / 魔導神杖 1-60 FB\". La pagina /combos aggrega i top 4 per configurazione, aggiornata a settembre 2026.",
+      "dedupCheck": "Nessuna fonte copre i tornei ufficiali Takara Tomy di Taiwan: namaste 阿土 (YouTube zh) e narrativo, WBO e MetaBeys non indicizzano questi eventi. Limite: nomi parte in cinese tradizionale, che il registro non ha fra gli alias, e volume basso (13 eventi).",
+      "proposedWeight": 0.5,
+      "recommendation": "propose",
+      "status": "proposed",
+      "verifiedOn": "2026-09-28",
+      "dateFound": "2026-09-28",
+      "lastSeen": "2026-09-28"
+    },
+    {
+      "candidateId": "social-bbx-tournament-winning-combination-fb",
+      "name": "Beyblade X Tournament Winning Combination (gruppo Facebook)",
+      "type": "social",
+      "platform": "facebook",
+      "provides": "combos",
+      "lang": "en",
+      "region": "intl",
+      "url": "https://www.facebook.com/groups/1292973557976201/",
+      "handle": "groups/1292973557976201",
+      "signals": {
+        "publishesResults": "unverified"
+      },
+      "rationale": "Gruppo Facebook dedicato proprio alla condivisione delle combo vincenti nei tornei: il nome e un post indicizzato lo confermano, ma il contenuto richiede login e non ho potuto verificarne regione, attivita e qualita.",
+      "dedupCheck": "Probabile sovrapposizione con WBO (stesso formato \"winning combination\"), da verificare a mano.",
+      "proposedWeight": 0.3,
+      "recommendation": "manual-verify",
+      "status": "proposed",
+      "verifiedOn": "2026-09-28",
+      "dateFound": "2026-09-28",
+      "lastSeen": "2026-09-28"
+    },
+    {
+      "candidateId": "social-beyblade-australia-network",
+      "name": "Beyblade Australia Network",
+      "type": "social",
+      "platform": "facebook",
+      "provides": "combos",
+      "lang": "en",
+      "region": "AU",
+      "url": "https://www.facebook.com/BeybladeAustraliaNetwork/",
+      "handle": "BeybladeAustraliaNetwork",
+      "signals": {
+        "members": 2900,
+        "publishesResults": "unverified"
+      },
+      "rationale": "Organizzatore nazionale di tornei in Australia (circa 2.900 membri): se pubblica i podi con le combo sarebbe la copertura AU piu ampia, ma sta solo su Facebook.",
+      "dedupCheck": "AU gia parzialmente coperta da WBA Perth (manualVerification, solo Perth) e dagli eventi AU presenti su WBO.",
+      "proposedWeight": 0.35,
+      "recommendation": "manual-verify",
+      "status": "proposed",
+      "verifiedOn": "2026-09-28",
+      "dateFound": "2026-09-28",
+      "lastSeen": "2026-09-28"
     }
   ],
   "knownNegatives": [
@@ -1676,6 +1754,13 @@
     "https://www.youtube.com/@kabiggon (KABIGGON, BR 248: combo a tema e battaglie nostalgia Metal Fight, nessun torneo)",
     "https://www.youtube.com/@beyxtremex (BeyXtreme, BR: 2 video e 4 iscritti, canale appena nato)",
     "https://www.youtube.com/@lipe-c2g (Lipe, BR 24 iscritti: tornei casalinghi fra generazioni miste, fermo da marzo 2026)",
-    "https://www.start.gg/tournament/ceo-2025-community-tournaments/event/beyblade-x (start.gg: bracket e standings senza alcuna combo, formato non utile allo scoring)"
+    "https://www.start.gg/tournament/ceo-2025-community-tournaments/event/beyblade-x (start.gg: bracket e standings senza alcuna combo, formato non utile allo scoring)",
+    "https://www.youtube.com/@bls_blader_league_salzburg (BLS Blader League Salzburg, AT: 5 iscritti e 4 video, troppo piccolo)",
+    "https://www.youtube.com/@育面ライダー (JP: canale di un genitore cosplayer, vlog familiari, nessun risultato di torneo)",
+    "https://www.youtube.com/@pqtoafim (To afim!, BR: vlog di viaggi, fuori tema)",
+    "https://bbax.org/ (BBAX, US/CA: leaderboard ELO/punti su Braacket senza alcuna combo)",
+    "https://competitive-beyblade.fandom.com/ (wiki con 1 utente attivo: esiti uno-contro-uno di Prime Time Beyblade e liste di rappresentanti, nessuna combo)",
+    "https://note.com/sieg_x2x3 (JP: tier list teoriche)",
+    "https://ichigo-mura.com/ (JP: articolo singolo sul Mondiale 2025, non ricorrente)"
   ]
 }
