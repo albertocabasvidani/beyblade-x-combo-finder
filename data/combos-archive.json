@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-27T02:15:47.412Z",
+  "lastUpdated": "2026-09-28T02:08:00.692Z",
   "combos": [
     {
       "id": "aero-pegasus-1-70-low-flat",
@@ -5197,6 +5197,50 @@
       "archivedDate": "2026-09-12"
     },
     {
+      "id": "hells-reaper-round-5-60-unite",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "5-60",
+      "bit": "unite",
+      "lockChip": "hells",
+      "mainBlade": "reaper",
+      "assistBlade": "round",
+      "overBlade": null,
+      "displayName": "Hells Reaper R 5-60 Unite",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Sep. 27, 2025  9:56 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-27"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-09-28",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-28"
+    },
+    {
       "id": "hells-reaper-slash-7-60-kick",
       "line": "cx",
       "blade": null,
@@ -9593,6 +9637,56 @@
       "archivedDate": "2026-09-12"
     },
     {
+      "id": "pegasus-blast-wheel-6-60-kick",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "6-60",
+      "bit": "kick",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Pegasus Blast W 6-60 Kick",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Untouchables Locals (Sept 8th 2025)",
+          "url": "https://www.metabeys.com/events/1757384407195",
+          "weight": 1,
+          "date": "2025-09-08"
+        },
+        {
+          "name": "WBO — Sep. 27, 2025  10:33 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-27"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-09-28",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-28"
+    },
+    {
       "id": "pegasus-blast-wheel-6-60-level",
       "line": "cx",
       "blade": null,
@@ -11823,6 +11917,50 @@
       "archivedDate": "2026-09-12"
     },
     {
+      "id": "samurai-saber-7-60-low-orb",
+      "line": "bx",
+      "blade": "samurai-saber",
+      "ratchet": "7-60",
+      "bit": "low-orb",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Samurai Saber 7-60 Low Orb",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Untouchables Locals (September 27th 2025)",
+          "url": "https://www.metabeys.com/events/1759111753609",
+          "weight": 1,
+          "date": "2025-09-27"
+        }
+      ],
+      "dateAdded": "2026-06-21",
+      "dateUpdated": "2026-09-28",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-28"
+    },
+    {
       "id": "scorpio-spear-1-60-rubber-accel",
       "line": "bx",
       "blade": "scorpio-spear",
@@ -12643,6 +12781,50 @@
       "archivedDate": "2026-09-16"
     },
     {
+      "id": "shark-gill-7-60-level",
+      "line": "bx",
+      "blade": "shark-gill",
+      "ratchet": "7-60",
+      "bit": "level",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Shark Gill 7-60 Level",
+      "type": "stamina",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Untouchables Locals (September 27th 2025)",
+          "url": "https://www.metabeys.com/events/1759111753609",
+          "weight": 1,
+          "date": "2025-09-27"
+        }
+      ],
+      "dateAdded": "2026-06-21",
+      "dateUpdated": "2026-09-28",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-28"
+    },
+    {
       "id": "shark-scale-3-60-high-taper",
       "line": "bx",
       "blade": "shark-scale",
@@ -12905,6 +13087,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "silver-wolf-3-70-wedge",
+      "line": "bx",
+      "blade": "silver-wolf",
+      "ratchet": "3-70",
+      "bit": "wedge",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Silver Wolf 3-70 Wedge",
+      "type": "stamina",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Untouchables Locals (September 27th 2025)",
+          "url": "https://www.metabeys.com/events/1759111753609",
+          "weight": 1,
+          "date": "2025-09-27"
+        }
+      ],
+      "dateAdded": "2026-06-21",
+      "dateUpdated": "2026-09-28",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-28"
     },
     {
       "id": "silver-wolf-3-80-wedge",
@@ -15390,6 +15616,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "whale-wave-5-70-taper",
+      "line": "bx",
+      "blade": "whale-wave",
+      "ratchet": "5-70",
+      "bit": "taper",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Whale Wave 5-70 Taper",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Aug. 06, 2025  1:27 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-07-13"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-09-28",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-28"
     },
     {
       "id": "whale-wave-7-60-level",
