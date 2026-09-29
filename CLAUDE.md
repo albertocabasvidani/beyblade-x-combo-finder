@@ -523,10 +523,8 @@ Disclosure nel footer e sezione «Affiliate links» in `/about/`.
   creati sui portali Associates (de `bxcombosde-21`, fr `bxcombosfranc-21`, uk `bxcombosuk-21`, jp `bxcombos-22`),
   diversi da quelli del canale WhatsApp di bbxdealmonitor, così il suo report affiliati distingue i due canali.
   `it` = `albertocv0b-21`: account Associates IT nuovo, candidato il 12/09/2026 con il solo beybladexcombos.com
-  dopo la chiusura del precedente (rifiuto del 25/08/2026: nessun link taggato sulle proprietà dichiarate). È
-  in approvazione temporanea: servono 3 vendite idonee da amazon.it entro 180 giorni, altrimenti Amazon lo
-  chiude di nuovo — è l'unico account che genera commissioni oggi, e la stessa revisione che ha colpito la
-  Spagna può arrivare qui. `com` = `albertocabasv-20`, account US preesistente trovato il 19/09/2026 (lista
+  dopo la chiusura del precedente (rifiuto del 25/08/2026: nessun link taggato sulle proprietà dichiarate). Approvato
+  (stato degli account Associates in `projects/web-frontend.md`). `com` = `albertocabasv-20`, account US preesistente trovato il 19/09/2026 (lista
   siti vuota, nomenclatura diversa dai `-21`/`-22`): sito dichiarato lo stesso giorno. `es` =
   `beybladexcomb-21`, account nuovo ri-candidato il 19/09/2026 dopo il rifiuto del precedente (`bxcombos-21`,
   chiuso per contenuto insufficiente e link senza tracking ID) — stessa attesa delle 3 vendite in 180 giorni.
