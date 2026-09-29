@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-28T02:08:00.692Z",
+  "lastUpdated": "2026-09-29T02:13:24.106Z",
   "combos": [
     {
       "id": "aero-pegasus-1-70-low-flat",
@@ -2711,51 +2711,6 @@
         }
       ],
       "dateAdded": "2026-06-17",
-      "dateUpdated": "2026-09-12",
-      "evidence": {
-        "placements": [],
-        "usage": [],
-        "mentions": []
-      },
-      "windows": {},
-      "archivedReason": "no-fresh-evidence (cutoff 12m)",
-      "archivedDate": "2026-09-12"
-    },
-    {
-      "id": "dran-sword-1-60-flat",
-      "line": "bx",
-      "blade": "dran-sword",
-      "ratchet": "1-60",
-      "bit": "flat",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Dran Sword 1-60 Flat",
-      "type": "attack",
-      "score": 0,
-      "scoreBreakdown": {
-        "performance": 0,
-        "presence": 0,
-        "corroboration": 0,
-        "tournamentEvents": 0,
-        "wins": 0,
-        "topCutAppearances": 0
-      },
-      "tags": [
-        "theory-only"
-      ],
-      "notes": "Combo segnalata su Reddit r/Beyblade.",
-      "sources": [
-        {
-          "name": "Reddit r/Beyblade",
-          "url": "https://reddit.com/r/Beyblade/comments/1n4bi1f/got_4th_place_at_3rd_tourno_won_wolf_bey/",
-          "weight": 0.6,
-          "date": "2025-08-30"
-        }
-      ],
-      "amazon": {},
-      "dateAdded": "2026-06-16",
       "dateUpdated": "2026-09-12",
       "evidence": {
         "placements": [],
@@ -5690,6 +5645,52 @@
       "archivedDate": "2026-09-16"
     },
     {
+      "id": "hells-wriggle-slash-1-60-cyclone",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "1-60",
+      "bit": "cyclone",
+      "lockChip": "hells",
+      "mainBlade": "wriggle",
+      "assistBlade": "slash",
+      "overBlade": null,
+      "displayName": "Hells Wriggle S 1-60 Cyclone",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only",
+        "cx"
+      ],
+      "notes": "Combo segnalata su Reddit r/Beyblade.",
+      "sources": [
+        {
+          "name": "Reddit r/Beyblade",
+          "url": "https://reddit.com/r/Beyblade/comments/1nt3kao/went_23_with_this_deck_thoughts_to_improve/",
+          "weight": 0.6,
+          "date": "2025-09-28"
+        }
+      ],
+      "amazon": {},
+      "dateAdded": "2026-06-16",
+      "dateUpdated": "2026-09-29",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-29"
+    },
+    {
       "id": "hover-wyvern-2-60-point",
       "line": "bx",
       "blade": "hover-wyvern",
@@ -7218,6 +7219,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "pegasus-blast-assault-1-60-point",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "1-60",
+      "bit": "point",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "assault",
+      "overBlade": null,
+      "displayName": "Pegasus Blast A 1-60 Point",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Sep. 28, 2025  9:51 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-28"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-09-29",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-29"
     },
     {
       "id": "pegasus-blast-assault-1-60-rush",
@@ -12869,6 +12914,51 @@
       "archivedDate": "2026-09-19"
     },
     {
+      "id": "shark-scale-4-50-trans-point",
+      "line": "bx",
+      "blade": "shark-scale",
+      "ratchet": "4-50",
+      "bit": "trans-point",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Shark Scale 4-50 Trans Point",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "Combo segnalata su Reddit r/Beyblade.",
+      "sources": [
+        {
+          "name": "Reddit r/Beyblade",
+          "url": "https://reddit.com/r/Beyblade/comments/1nt3kao/went_23_with_this_deck_thoughts_to_improve/",
+          "weight": 0.6,
+          "date": "2025-09-28"
+        }
+      ],
+      "amazon": {},
+      "dateAdded": "2026-06-16",
+      "dateUpdated": "2026-09-29",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-29"
+    },
+    {
       "id": "shark-scale-5-70-hexa",
       "line": "bx",
       "blade": "shark-scale",
@@ -13780,6 +13870,51 @@
       },
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-07-18"
+    },
+    {
+      "id": "tyranno-beat-1-70-low-orb",
+      "line": "bx",
+      "blade": "tyranno-beat",
+      "ratchet": "1-70",
+      "bit": "low-orb",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Tyranno Beat 1-70 Low Orb",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "Combo segnalata su Reddit r/Beyblade.",
+      "sources": [
+        {
+          "name": "Reddit r/Beyblade",
+          "url": "https://reddit.com/r/Beyblade/comments/1nt3kao/went_23_with_this_deck_thoughts_to_improve/",
+          "weight": 0.6,
+          "date": "2025-09-28"
+        }
+      ],
+      "amazon": {},
+      "dateAdded": "2026-06-16",
+      "dateUpdated": "2026-09-29",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-29"
     },
     {
       "id": "tyranno-beat-1-80-level",
@@ -14887,6 +15022,56 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "valkyrie-blast-wheel-7-70-rubber-accel",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "7-70",
+      "bit": "rubber-accel",
+      "lockChip": "valkyrie",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Valkyrie Blast W 7-70 Rubber Accel",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — X Masters 21",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-08-11"
+        },
+        {
+          "name": "WBO — X Masters 25",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-28"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-09-29",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-29"
     },
     {
       "id": "valkyrie-blast-wheel-9-60-ball",
