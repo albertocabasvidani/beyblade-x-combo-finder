@@ -4,12 +4,12 @@
     "List of Beyblade X products (Takara Tomy)": {
       "revid": 649061,
       "timestamp": "2026-09-14T15:46:59.000Z",
-      "lastScannedDate": "2026-09-29"
+      "lastScannedDate": "2026-09-30"
     },
     "List of Beyblade X products (Hasbro)": {
       "revid": 648918,
       "timestamp": "2026-09-14T01:43:54.000Z",
-      "lastScannedDate": "2026-09-29"
+      "lastScannedDate": "2026-09-30"
     }
   },
   "pages": {
@@ -68,12 +68,12 @@
       "notes": "Revid cambiato (643858→644560): G2762 (già registrato dal 22/07) confermato esplicito nella lista Products; aggiunto ProductCode G4568 a Glory Valkerion LF (glory-valkyrie, già registrata come UX-20). Nessuna parte nuova."
     },
     "OrochiCluster 6-60LF": {
-      "revid": 647954,
-      "timestamp": "2026-09-02T03:52:43.000Z",
-      "lastScannedDate": "2026-09-03",
+      "revid": 650110,
+      "timestamp": "2026-09-29T08:59:52.000Z",
+      "lastScannedDate": "2026-09-30",
       "kind": "product",
-      "kindSource": "heuristic",
-      "notes": "Revid cambiato: aggiunta release Hasbro (Coil Orochi), gia presente nel master."
+      "kindSource": "ai",
+      "notes": "parti gia' nel master, solo metadati"
     },
     "Random Booster Vol. 11": {
       "revid": 643373,
@@ -296,12 +296,12 @@
       "notes": "Revid cambiato, verificato: nessun nuovo componente (solo modifiche testuali/gallery/date release)."
     },
     "CobaltDragoon 2-60C": {
-      "revid": 649850,
-      "timestamp": "2026-09-24T07:44:30.000Z",
-      "lastScannedDate": "2026-09-25",
+      "revid": 650170,
+      "timestamp": "2026-09-30T00:58:52.000Z",
+      "lastScannedDate": "2026-09-30",
       "kind": "product",
-      "kindSource": "heuristic",
-      "notes": "Revid cambiato, verificato: aggiunta Metal Coat Black (CoroCoro lottery/B4) e G2951 Deluxe String Launcher 2-Pack, nessuna parte nuova."
+      "kindSource": "ai",
+      "notes": "parti gia' nel master, solo metadati"
     },
     "ImpactDrake 9-60LR": {
       "revid": 649705,
@@ -370,14 +370,15 @@
       "notes": "Solo aggiunta descrizione completa (era draft placeholder), Products invariati."
     },
     "CobaltDrake 4-60F": {
-      "revid": 649704,
-      "timestamp": "2026-09-20T21:40:33.000Z",
-      "lastScannedDate": "2026-09-21",
+      "revid": 650158,
+      "timestamp": "2026-09-30T00:02:18.000Z",
+      "lastScannedDate": "2026-09-30",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Cobalt Drake 4-60F"
-      ]
+      ],
+      "notes": "parti gia' nel master, solo metadati"
     },
     "DragoonStorm 4-60RA": {
       "revid": 649290,
@@ -1070,15 +1071,15 @@
       "kindSource": "heuristic"
     },
     "BrachioWhip OW5-70Nr": {
-      "revid": 649004,
-      "timestamp": "2026-09-14T12:46:12.000Z",
-      "lastScannedDate": "2026-09-15",
+      "revid": 650086,
+      "timestamp": "2026-09-29T02:10:17.000Z",
+      "lastScannedDate": "2026-09-30",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Whip Brachio OW 5-70Nr"
       ],
-      "notes": "tutte le parti gia' nel master (Brachio/Outer/Whip/Wheel/5-70/Narrow); nessuna parte nuova"
+      "notes": "parti gia' nel master, solo metadati"
     },
     "Random Booster Vol. 7": {
       "revid": 636788,
@@ -1706,15 +1707,15 @@
       "kindSource": "heuristic"
     },
     "HellsNether Z": {
-      "revid": 649851,
-      "timestamp": "2026-09-24T07:44:56.000Z",
-      "lastScannedDate": "2026-09-25",
+      "revid": 650101,
+      "timestamp": "2026-09-29T04:28:44.000Z",
+      "lastScannedDate": "2026-09-30",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Nether Incendio Z"
       ],
-      "notes": "RatchetBlade fuso (ratchet integrato nel blade): estratta come blade+bit, nessun ratchet separato."
+      "notes": "parti gia' nel master, solo metadati"
     },
     "Seize Jaguar HN": {
       "revid": 646465,
