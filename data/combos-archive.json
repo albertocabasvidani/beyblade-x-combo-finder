@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-29T02:13:24.106Z",
+  "lastUpdated": "2026-09-30T02:08:12.011Z",
   "combos": [
     {
       "id": "aero-pegasus-1-70-low-flat",
@@ -3508,6 +3508,50 @@
       "archivedDate": "2026-09-12"
     },
     {
+      "id": "fox-brush-jaggy-9-60-kick",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "kick",
+      "lockChip": "fox",
+      "mainBlade": "brush",
+      "assistBlade": "jaggy",
+      "overBlade": null,
+      "displayName": "Fox Brush J 9-60 Kick",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Sep. 29, 2025  2:30 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-29"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-09-30",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-30"
+    },
+    {
       "id": "fox-brush-jaggy-9-60-low-rush",
       "line": "cx",
       "blade": null,
@@ -3945,6 +3989,50 @@
       "archivedDate": "2026-09-12"
     },
     {
+      "id": "ghost-circle-1-60-kick",
+      "line": "bx",
+      "blade": "ghost-circle",
+      "ratchet": "1-60",
+      "bit": "kick",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Ghost Circle 1-60 Kick",
+      "type": "stamina",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Untouchables Locals (Sept 29th 2025)",
+          "url": "https://www.metabeys.com/events/1759201416304",
+          "weight": 1,
+          "date": "2025-09-29"
+        }
+      ],
+      "dateAdded": "2026-06-21",
+      "dateUpdated": "2026-09-30",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-30"
+    },
+    {
       "id": "ghost-circle-1-70-low-rush",
       "line": "bx",
       "blade": "ghost-circle",
@@ -4330,6 +4418,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "hells-blast-dual-9-60-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "rush",
+      "lockChip": "hells",
+      "mainBlade": "blast",
+      "assistBlade": "dual",
+      "overBlade": null,
+      "displayName": "Hells Blast D 9-60 Rush",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Cardboard Classics Locals (Sept 29th 2025)",
+          "url": "https://www.metabeys.com/events/1759201788089",
+          "weight": 1,
+          "date": "2025-09-29"
+        }
+      ],
+      "dateAdded": "2026-06-21",
+      "dateUpdated": "2026-09-30",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-30"
     },
     {
       "id": "hells-blast-jaggy-1-60-low-rush",
@@ -6175,6 +6307,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "hover-wyvern-9-60-gear-rush",
+      "line": "bx",
+      "blade": "hover-wyvern",
+      "ratchet": "9-60",
+      "bit": "gear-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Hover Wyvern 9-60 Gear Rush",
+      "type": "defense",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Cardboard Classics Locals (Sept 29th 2025)",
+          "url": "https://www.metabeys.com/events/1759201788089",
+          "weight": 1,
+          "date": "2025-09-29"
+        }
+      ],
+      "dateAdded": "2026-06-21",
+      "dateUpdated": "2026-09-30",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-30"
     },
     {
       "id": "hover-wyvern-9-70-zap",
@@ -8509,6 +8685,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "pegasus-blast-jaggy-9-70-level",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-70",
+      "bit": "level",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "jaggy",
+      "overBlade": null,
+      "displayName": "Pegasus Blast J 9-70 Level",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Sep. 29, 2025  3:39 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-29"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-09-30",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-30"
     },
     {
       "id": "pegasus-blast-jaggy-9-70-low-rush",
@@ -11699,6 +11919,50 @@
       "archivedDate": "2026-07-18"
     },
     {
+      "id": "samurai-calibur-6-60-point",
+      "line": "bx",
+      "blade": "samurai-calibur",
+      "ratchet": "6-60",
+      "bit": "point",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Samurai Calibur 6-60 Point",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Cardboard Classics Locals (Sept 29th 2025)",
+          "url": "https://www.metabeys.com/events/1759201788089",
+          "weight": 1,
+          "date": "2025-09-29"
+        }
+      ],
+      "dateAdded": "2026-06-21",
+      "dateUpdated": "2026-09-30",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-30"
+    },
+    {
       "id": "samurai-calibur-6-70-taper",
       "line": "bx",
       "blade": "samurai-calibur",
@@ -13003,6 +13267,94 @@
       "archivedDate": "2026-09-12"
     },
     {
+      "id": "shark-scale-5-80-kick",
+      "line": "bx",
+      "blade": "shark-scale",
+      "ratchet": "5-80",
+      "bit": "kick",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Shark Scale 5-80 Kick",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Cardboard Classics Locals (Sept 29th 2025)",
+          "url": "https://www.metabeys.com/events/1759201788089",
+          "weight": 1,
+          "date": "2025-09-29"
+        }
+      ],
+      "dateAdded": "2026-06-21",
+      "dateUpdated": "2026-09-30",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-30"
+    },
+    {
+      "id": "shark-scale-7-70-unite",
+      "line": "bx",
+      "blade": "shark-scale",
+      "ratchet": "7-70",
+      "bit": "unite",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Shark Scale 7-70 Unite",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Sep. 29, 2025  8:38 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-27"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-09-30",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-30"
+    },
+    {
       "id": "shelter-drake-5-60-wedge",
       "line": "bx",
       "blade": "shelter-drake",
@@ -13527,6 +13879,50 @@
       },
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-08-06"
+    },
+    {
+      "id": "silver-wolf-9-70-taper",
+      "line": "bx",
+      "blade": "silver-wolf",
+      "ratchet": "9-70",
+      "bit": "taper",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Silver Wolf 9-70 Taper",
+      "type": "stamina",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Untouchables Locals (Sept 29th 2025)",
+          "url": "https://www.metabeys.com/events/1759201416304",
+          "weight": 1,
+          "date": "2025-09-29"
+        }
+      ],
+      "dateAdded": "2026-06-21",
+      "dateUpdated": "2026-09-30",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-30"
     },
     {
       "id": "storm-pegasis-3-60-level",
@@ -17101,6 +17497,50 @@
       "archivedDate": "2026-09-12"
     },
     {
+      "id": "wizard-rod-1-70-unite",
+      "line": "bx",
+      "blade": "wizard-rod",
+      "ratchet": "1-70",
+      "bit": "unite",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Wizard Rod 1-70 Unite",
+      "type": "stamina",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Untouchables Locals (Sept 29th 2025)",
+          "url": "https://www.metabeys.com/events/1759201416304",
+          "weight": 1,
+          "date": "2025-09-29"
+        }
+      ],
+      "dateAdded": "2026-06-21",
+      "dateUpdated": "2026-09-30",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-30"
+    },
+    {
       "id": "wizard-rod-1-80-level",
       "line": "bx",
       "blade": "wizard-rod",
@@ -17267,6 +17707,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "wyvern-gale-1-80-low-rush",
+      "line": "bx",
+      "blade": "wyvern-gale",
+      "ratchet": "1-80",
+      "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Wyvern Gale 1-80 Low Rush",
+      "type": "stamina",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Sep. 29, 2025  8:38 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-27"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-09-30",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 12m)",
+      "archivedDate": "2026-09-30"
     }
   ]
 }
