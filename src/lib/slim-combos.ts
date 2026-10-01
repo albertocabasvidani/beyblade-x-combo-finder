@@ -11,7 +11,7 @@
 import type {
   BladeType, Combo, ComboLine, CombosDatabase, ComboWindow, ComboWindows, TierThresholds, WindowKey,
 } from './types';
-import { TIER_ABS, WINDOW_MONTHS } from './scoring';
+import { TIER_ABS, WINDOW_KEYS } from './scoring';
 
 export interface SlimCombo {
   id: string;
@@ -27,14 +27,14 @@ export interface SlimCombo {
   overBlade: string | null;
   notes?: string;
   sourceCount: number;
-  /** Score/breakdown/tag per finestra 1/3/6/12 mesi; "12" è sempre presente (== score della combo). */
+  /** Score/breakdown/tag per finestra 30/90/180/365 giorni; "365" è sempre presente (== score della combo). */
   windows: ComboWindows;
 }
 
 export interface SlimDatabase {
   lastUpdated: string;
   thresholds: Record<WindowKey, TierThresholds>;
-  /** Ordinate per windows["12"].score decrescente. */
+  /** Ordinate per windows["365"].score decrescente. */
   combos: SlimCombo[];
 }
 
@@ -47,22 +47,22 @@ export const INITIAL_COMBOS = 30;
 
 /**
  * Finestre della combo. Se combos.json non è ancora stato riscorato dal nuovo score:combos (nessun
- * `windows`), sintetizza la sola finestra 12 da score/scoreBreakdown/tags, così il sito resta
+ * `windows`), sintetizza la sola finestra 365 da score/scoreBreakdown/tags, così il sito resta
  * funzionante anche con un dato vecchio.
  */
 function windowsOf(c: Combo): ComboWindows {
-  if (c.windows && c.windows['12']) return c.windows;
+  if (c.windows && c.windows['365']) return c.windows;
   const b = c.scoreBreakdown;
   if (!b || (b.tournamentEvents === 0 && b.topCutAppearances === 0 && b.metaSharePct == null)) return {};
-  const w12: ComboWindow = { ...b, score: c.score, tags: c.tags ?? [] };
-  return { '12': w12 };
+  const w365: ComboWindow = { ...b, score: c.score, tags: c.tags ?? [] };
+  return { '365': w365 };
 }
 
 export function toSlim(db: CombosDatabase): SlimDatabase {
   const combos: SlimCombo[] = [];
   for (const c of db.combos) {
     const windows = windowsOf(c);
-    if (!windows['12']) continue;                 // nessun risultato in 12 mesi → fuori dal sito
+    if (!windows['365']) continue;                // nessun risultato in 365 giorni → fuori dal sito
     const s: SlimCombo = {
       id: c.id, line: c.line, type: c.type, displayName: c.displayName,
       blade: c.blade, ratchet: c.ratchet, bit: c.bit,
@@ -73,7 +73,10 @@ export function toSlim(db: CombosDatabase): SlimDatabase {
     if (c.notes) s.notes = c.notes;
     combos.push(s);
   }
-  combos.sort((a, b) => b.windows['12']!.score - a.windows['12']!.score);
-  const fallback = Object.fromEntries(WINDOW_MONTHS.map((m) => [String(m), { ...TIER_ABS }])) as Record<WindowKey, TierThresholds>;
-  return { lastUpdated: db.lastUpdated, thresholds: db.windowThresholds ?? fallback, combos };
+  combos.sort((a, b) => b.windows['365']!.score - a.windows['365']!.score);
+  // Le soglie scritte nel file prevalgono, il ripiego copre le chiavi che mancano: un combos.json con
+  // chiavi di finestra diverse da quelle del codice non deve lasciare una finestra senza soglie
+  // (scoreTier andrebbe in errore su `th.meta`).
+  const fallback = Object.fromEntries(WINDOW_KEYS.map((k) => [k, { ...TIER_ABS }])) as Record<WindowKey, TierThresholds>;
+  return { lastUpdated: db.lastUpdated, thresholds: { ...fallback, ...db.windowThresholds }, combos };
 }

@@ -77,7 +77,7 @@ derivazione. Solo Beyblade X.
 8. **Finalizza**: aggiorna `scan-history.json` (`scannedVideos`, `scannedSheets`, `scannedRedditPosts`,
    `scannedPages` con contentHash, `scannedEvents`, `scannedPosts`). `npm run score:combos`, poi
    `npm run prune:combos -- --apply` (archivia in `data/combos-archive.json` le combo rimaste senza
-   evidenza fresca entro il cutoff di 12 mesi; senza `--apply` è un dry-run da ispezionare prima — il
+   evidenza fresca entro il cutoff di 365 giorni; senza `--apply` è un dry-run da ispezionare prima — il
    guardrail aborta se le orfane superano il 60% o se l'evidenza torneo è a zero), poi `npm run build`,
    poi `npm run ig:generate` (i caroselli Instagram candidati in `out/ig/`, gitignorato; li pubblica il
    progetto contenuti alle 12:00 — se fallisce lo si riporta e si prosegue, non blocca il commit).

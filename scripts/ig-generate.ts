@@ -17,6 +17,8 @@ import { chromium } from 'playwright-core';
 import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync } from 'fs';
 import { join } from 'path';
 import { computeCandidates, isoDate, REGISTRY_KEYS, type Combo, type Registry } from './lib/ig-posts';
+import { comboStats } from '../src/lib/top-cut';
+import { WINDOW_DAYS, windowCutoff } from '../src/lib/scoring';
 import { renderCaption, renderSlides, type RenderCtx } from './lib/ig-render';
 
 const ROOT = join(import.meta.dirname, '..');
@@ -30,7 +32,7 @@ const only = args.includes('--only') ? args[args.indexOf('--only') + 1] : null;
 const dry = args.includes('--dry');
 
 async function main() {
-  const db = JSON.parse(readFileSync(join(ROOT, 'data', 'combos.json'), 'utf8')) as { lastUpdated?: string; combos: Combo[] };
+  const db = JSON.parse(readFileSync(join(ROOT, 'data', 'combos.json'), 'utf8')) as { lastUpdated?: string; windowsRef?: string; combos: Combo[] };
   const parts = JSON.parse(readFileSync(join(ROOT, 'data', 'parts.json'), 'utf8')) as Registry;
   const byId: Record<string, { name: string; image?: string }> = {};
   for (const k of REGISTRY_KEYS) for (const p of parts[k] ?? []) byId[p.id] = p;
@@ -46,8 +48,18 @@ async function main() {
     asOf: (db.lastUpdated ?? new Date().toISOString()).slice(0, 10).split('-').reverse().join('/'),
   };
 
-  const ref = new Date(db.lastUpdated ?? Date.now());
+  // La data delle finestre della home, non lastUpdated (scritto a fine run, può essere il giorno dopo).
+  const ref = new Date(db.windowsRef ?? db.lastUpdated ?? Date.now());
   let candidates = computeCandidates(db.combos, ref);
+  // Parità con la home: i top cut a 30 giorni di ogni combo devono essere quelli di windows['30'].
+  // Se divergono, il carosello direbbe numeri che il sito non mostra: si avvisa e si continua.
+  const d30 = windowCutoff(ref, WINDOW_DAYS['30']);
+  const ig30 = new Map(comboStats(db.combos, d30, isoDate(ref)).map((s) => [s.combo.id, s.topCut]));
+  let divergenti = 0;
+  for (const c of db.combos as Array<Combo & { windows?: Record<string, { topCutAppearances: number }> }>) {
+    if ((ig30.get(c.id) ?? 0) !== (c.windows?.['30']?.topCutAppearances ?? 0)) divergenti++;
+  }
+  console.log(`ig: parità con la home a 30 giorni: ${divergenti} combo con top cut diversi${divergenti ? ' (ATTENZIONE: i caroselli non coincidono col sito)' : ''}`);
   if (only) candidates = candidates.filter((c) => c.id === only);
   mkdirSync(OUT, { recursive: true });
 

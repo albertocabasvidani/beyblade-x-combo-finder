@@ -5,6 +5,7 @@
 import { computeCandidates, isoWeek, daysBefore, type Combo } from './lib/ig-posts';
 import { renderCaption, renderSlides } from './lib/ig-render';
 import { partStats } from '../src/lib/top-cut';
+import { windowCutoff } from '../src/lib/scoring';
 
 let failed = 0;
 function check(name: string, cond: boolean, extra = '') {
@@ -65,7 +66,12 @@ check('top-lame: la Main Blade m è seconda, marcata cx', (tl.data as any).blade
 check('top-lame: il totale include la CX (a 130 + b 25 + e 30 + f 28 + g 26 + c 25 + d 20 + h 9 + cx 40)', (tl.data as any).totalTopCut === 333, `=${(tl.data as any).totalTopCut}`);
 check('top-lame: 5 lame', (tl.data as any).blades.length === 5);
 
-console.log('classifiche ratchet e bit (pagina /top-cut/)');
+console.log('finestre uguali alla home');
+check('daysBefore == windowCutoff della home (30, 90, 365; anche con ora del ref)',
+  ([30, 90, 365] as const).every((n) => daysBefore(REF, n) === windowCutoff(REF, n)
+    && daysBefore(new Date('2026-09-26T23:59:00Z'), n) === windowCutoff(new Date('2026-09-26T23:59:00Z'), n)));
+
+console.log('classifiche ratchet e bit');
 const ratchets = partStats(db, 'ratchet', day(30), day(0));
 const bits = partStats(db, 'bit', day(30), day(0));
 check('ratchet: il ratchet integrato (null) non conta', !ratchets.some((r) => r.part === 'null') && ratchets.reduce((a, r) => a + r.topCut, 0) === 333 - 25, `=${ratchets.reduce((a, r) => a + r.topCut, 0)}`);

@@ -20,7 +20,7 @@ const slim = toSlim(combosData as unknown as CombosDatabase);
 // le finestre, 60 combo inline pesavano ~480 KB di HTML.
 const initial = {
   ...slim,
-  combos: slim.combos.slice(0, INITIAL_COMBOS).map((c) => ({ ...c, windows: { '12': c.windows['12'] } })),
+  combos: slim.combos.slice(0, INITIAL_COMBOS).map((c) => ({ ...c, windows: { '365': c.windows['365'] } })),
 };
 const dataUrl = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/combos.json`;
 // Link affiliati Amazon (src/lib/amazon.ts): tag per marketplace in data/amazon-config.json, ASIN per

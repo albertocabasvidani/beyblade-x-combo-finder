@@ -107,5 +107,15 @@ Le CX contano come le BX in ogni post (dal 01/10/2026). La loro esclusione era u
 semplificare il primo giro, finita per errore fra i confini decisi: l'utente non l'aveva mai chiesta.
 Per una CX la «lama» è la Main Blade: un post `build-lama` può quindi essere su una Main Blade (oggi
 `build-lama-blast`). La slide di una combo CX mostra le parti in una griglia 3×2 (lock chip, main blade,
-assist blade, over blade se c'è, ratchet, bit). I conteggi stanno in `src/lib/top-cut.ts`, lo stesso
-modulo che usa la pagina `/top-cut/` del sito: carosello e pagina danno gli stessi numeri.
+assist blade, over blade se c'è, ratchet, bit).
+
+## Stessi numeri della home
+
+I conteggi stanno in `src/lib/top-cut.ts` e usano le finestre della home (30 e 90 giorni da
+`windowsRef` di `combos.json`, `windowCutoff` di `src/lib/scoring.ts`): il carosello `top-build` è la
+home con `30D · Top cuts · Combos`, `top-lame` è `30D · Top cuts · Blades`, `build-lama-X` è `90D ·
+Top cuts` con le combo della lama X. Anche lo spareggio è lo stesso (top cut, poi vittorie, poi nome
+o id). Verificato il 01/10/2026: prime 20 combo e prime 20 lame nello stesso ordine in home e nei
+candidati. `ig:generate` stampa a ogni giro la parità con `windows["30"]` (attese 0 combo diverse).
+Una pagina `/top-cut/` a parte è stata pubblicata e tolta lo stesso giorno: l'utente vuole queste
+classifiche nella home.

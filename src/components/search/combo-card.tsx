@@ -1,7 +1,7 @@
 import { useState } from 'preact/hooks';
 import type { SelectedParts, Locale, ComboWindow, TierThresholds } from '../../lib/types';
 import type { SlimCombo } from '../../lib/slim-combos';
-import { getMatchedParts, hasAnySelection } from '../../lib/search-engine';
+import { bladeOf, getMatchedParts, hasAnySelection, type SortKey } from '../../lib/search-engine';
 import { buildAmazonUrl, storeLinks, type AmazonConfigFile, type AsinIndex, type PartLookup } from '../../lib/amazon';
 import { track } from '../../lib/analytics';
 import { ScoreBadge, scoreTier } from './score-badge';
@@ -19,6 +19,8 @@ interface Props {
   compare: boolean;
   locale: Locale;
   rank: number;
+  /** Metrica scelta in «Sort by»: nella riga evidenza è la sola sottolineata. */
+  sort: SortKey;
   partName: (category: string, id: string | null) => string;
   t: (key: string) => string;
 }
@@ -46,7 +48,11 @@ function daysSince(iso: string): number {
   return (Date.now() - new Date(iso + 'T00:00:00Z').getTime()) / 86_400_000;
 }
 
-export function ComboCard({ combo, view, thresholds, amazon, displayName, selected, compare, locale, rank, partName, t }: Props) {
+/** Classe di un valore della riga evidenza: oro e sottolineato se è la metrica dell'ordinamento. */
+export const metricClass = (on: boolean) =>
+  on ? 'font-bold text-gold underline decoration-2 underline-offset-4' : '';
+
+export function ComboCard({ combo, view, thresholds, amazon, displayName, selected, compare, locale, rank, sort, partName, t }: Props) {
   const [buyOpen, setBuyOpen] = useState(false);
   const matched = getMatchedParts(combo, selected);
   const b = view;
@@ -58,7 +64,7 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, select
     ? `${t('combo.perf')} ${b.performance} · ${t('combo.pres')} ${b.presence} · ${t('combo.corr')} ${b.corroboration}`
     : undefined;
 
-  const parts = combo.line === 'bx'
+  const parts = combo.line !== 'cx'
     ? [
         { key: 'blade', id: combo.blade },
         { key: 'ratchet', id: combo.ratchet },
@@ -253,7 +259,8 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, select
   const EvidenceInline = () =>
     b && (b.tournamentEvents > 0 || b.metaSharePct != null) ? (
       <div class="flex flex-wrap items-center gap-x-2 gap-y-1 text-[11.5px] font-semibold text-text-2" title={breakdownTooltip}>
-        {b.wins > 0 && <span class="text-gold">{'\u{1F3C6}'} {b.wins} {t('combo.wins')}</span>}
+        {b.wins > 0 && <span>{'\u{1F3C6}'} <span data-metric="wins" class={metricClass(sort === 'wins')}>{b.wins} {t('combo.wins')}</span></span>}
+        {b.topCutAppearances > 0 && <span data-metric="topCut" class={metricClass(sort === 'topCut')}>{b.topCutAppearances} {t('combo.topCuts')}</span>}
         {b.tournamentEvents > 0 && <span>{b.tournamentEvents} {t('combo.events')}</span>}
         {b.metaSharePct != null && <span class="text-scarlet">{b.metaSharePct}% {t('combo.metaShare')}</span>}
         <Freshness />
@@ -263,7 +270,7 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, select
   return (
     <>
       {/* ---------- MOBILE: card verticale ---------- */}
-      <article data-testid="combo-card" data-combo-id={combo.id} class={`relative overflow-hidden rounded-[14px] lg:hidden ${cardClass}`} style={cardStyle}>
+      <article data-testid="combo-card" data-combo-id={combo.id} data-blade={bladeOf(combo) ?? undefined} data-line={combo.line} class={`relative overflow-hidden rounded-[14px] lg:hidden ${cardClass}`} style={cardStyle}>
         <span class="absolute inset-y-0 left-0 w-1" style={{ background: railBg }} aria-hidden="true" />
         <div class="py-[13px] pl-[18px] pr-[14px]">
           <div class="flex items-start justify-between gap-2.5">
@@ -304,7 +311,7 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, select
       </article>
 
       {/* ---------- DESKTOP: riga orizzontale ---------- */}
-      <article data-testid="combo-card" data-combo-id={combo.id} class={`relative hidden overflow-hidden rounded-[14px] lg:block ${cardClass}`} style={cardStyle}>
+      <article data-testid="combo-card" data-combo-id={combo.id} data-blade={bladeOf(combo) ?? undefined} data-line={combo.line} class={`relative hidden overflow-hidden rounded-[14px] lg:block ${cardClass}`} style={cardStyle}>
         <span class="absolute inset-y-0 left-0 w-[5px]" style={{ background: railBg }} aria-hidden="true" />
         <div class="py-4 pl-[26px] pr-5">
         <div class="flex items-center gap-[18px]">
@@ -324,9 +331,10 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, select
           </div>
 
           {b && (b.tournamentEvents > 0 || b.metaSharePct != null) && (
-            <div class="w-[188px] shrink-0 border-l border-hairline pl-[18px] text-[12.5px]">
-              <div class="font-semibold text-text-2">
-                {b.wins > 0 && <span class="text-gold">{'\u{1F3C6}'} {b.wins} {t('combo.wins')}</span>}
+            <div class="w-[260px] shrink-0 border-l border-hairline pl-[18px] text-[12.5px]">
+              <div class="font-semibold leading-relaxed text-text-2">
+                {b.wins > 0 && <span>{'\u{1F3C6}'} <span data-metric="wins" class={metricClass(sort === 'wins')}>{b.wins} {t('combo.wins')}</span> {'·'} </span>}
+                {b.topCutAppearances > 0 && <span data-metric="topCut" class={metricClass(sort === 'topCut')}>{b.topCutAppearances} {t('combo.topCuts')}</span>}
                 {b.tournamentEvents > 0 && <span> {'·'} {b.tournamentEvents} {t('combo.events')}</span>}
               </div>
               {b.metaSharePct != null && (

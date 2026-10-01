@@ -17,6 +17,14 @@ const stores = storeLinks(config, (m) => buildStoreSearchUrl(m, config));
 ---
 
 <footer class="border-t border-border bg-surface px-4 py-6 text-center text-xs text-muted-2">
+  <!-- Tutte le sezioni: l'header ne mostra quattro, qui c'è anche il dettaglio delle guide. -->
+  <nav class="mb-3 flex flex-wrap justify-center gap-x-4 gap-y-1 font-mono text-[11px] uppercase tracking-[0.08em]" aria-label="Site sections" data-testid="footer-sections">
+    <a href={`${base}/meta/`} class="hover:text-text">{t(locale, 'nav.meta')}</a>
+    <a href={`${base}/guides/`} class="hover:text-text">{t(locale, 'nav.guides')}</a>
+    <a href={`${base}/parts/`} class="hover:text-text">{t(locale, 'nav.parts')}</a>
+    <a href={`${base}/combos/`} class="hover:text-text">{t(locale, 'nav.combos')}</a>
+    <a href={`${base}/buy/`} class="hover:text-text">{t(locale, 'nav.buy')}</a>
+  </nav>
   <p class="mb-2">{t(locale, 'footer.dataNote')}</p>
   <p class="mb-2" data-testid="amazon-stores">
     {t(locale, 'footer.amazonStores')}{' '}

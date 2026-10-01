@@ -28,12 +28,12 @@
  * (`printthread.php?tid=...&page=N`, HTML più leggero) — da preferire se regge meglio.
  *
  * Env: WBO_HEADED, WBO_PRINTTHREAD, WBO_MAX_PAGES (default 3), WBO_CATCHUP_MAX (default 20),
- * COMBO_CUTOFF_MONTHS (default 12).
+ * COMBO_CUTOFF_DAYS (default 365).
  */
 import { chromium } from 'playwright-core';
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { join } from 'path';
-import { isFresh, CUTOFF_MONTHS } from './lib/freshness';
+import { isFresh, CUTOFF_DAYS } from './lib/freshness';
 import { maxPageFrom, newestIso, looksLikeThread, isPlausibleLastPage, cacheFrontier, cacheFloor, pageFromUrl } from './lib/wbo-fetch-utils';
 
 const ROOT = join(import.meta.dirname, '..');
@@ -201,7 +201,7 @@ async function main() {
       cache.threads[t.key] = { url: t.base, fetchedAt: today(), blocked: false, lastPage, pages: slot.pages, raw };
       console.log(
         `WBO ${t.key}: ${ordered.length} pagine in cache (${raw.length} char). ` +
-        `Backfill: ${cur.done ? `completo (cutoff ${CUTOFF_MONTHS} mesi)` : `in corso, prossima pagina ${cur.nextPage}`}.`,
+        `Backfill: ${cur.done ? `completo (cutoff ${CUTOFF_DAYS} giorni)` : `in corso, prossima pagina ${cur.nextPage}`}.`,
       );
     }
     cache.lastFetched = today();

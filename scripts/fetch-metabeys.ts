@@ -15,12 +15,12 @@
  *    (la scoperta la fa il loop sulle pagine). La data evento viene salvata in `eventDate` così i
  *    run futuri sanno fermarsi senza riscaricare.
  *
- * Env: META_MAX_PAGES (default 3 — alzalo per un backfill one-shot), COMBO_CUTOFF_MONTHS (default 12).
+ * Env: META_MAX_PAGES (default 3 — alzalo per un backfill one-shot), COMBO_CUTOFF_DAYS (default 365).
  */
 import { chromium } from 'playwright-core';
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { join } from 'path';
-import { isFresh, parseLongDate, CUTOFF_MONTHS } from './lib/freshness';
+import { isFresh, parseLongDate, CUTOFF_DAYS } from './lib/freshness';
 
 const ROOT = join(import.meta.dirname, '..');
 const DATA = join(ROOT, 'data');
@@ -152,7 +152,7 @@ async function main() {
     }
     console.log(
       `MetaBeys: ${newEvents.length} nuovi eventi scaricati. ` +
-      `Backfill: ${bf.done ? `completo (cutoff ${CUTOFF_MONTHS} mesi)` : `in corso, prossima pagina ${bf.nextPage}`}.`,
+      `Backfill: ${bf.done ? `completo (cutoff ${CUTOFF_DAYS} giorni)` : `in corso, prossima pagina ${bf.nextPage}`}.`,
     );
 
     // Leaderboard aggregata (snapshot grezzo, utile per usage %)
@@ -176,7 +176,7 @@ async function main() {
     cache.lastFetched = today();
     writeFileSync(cachePath, JSON.stringify(cache, null, 2) + '\n');
     writeFileSync(histPath, JSON.stringify(hist, null, 2) + '\n');
-    console.log(`MetaBeys: cache con ${cache.events.length} eventi (entro ${CUTOFF_MONTHS} mesi).`);
+    console.log(`MetaBeys: cache con ${cache.events.length} eventi (entro ${CUTOFF_DAYS} giorni).`);
   } finally {
     await browser.close();
   }

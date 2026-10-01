@@ -12,7 +12,7 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
 |---|---|
 | [parts-database](projects/parts-database.md) | DB parti master multilingua: scrape wiki, derivazione, update, verify, Over Blade |
 | [combo-pipeline](projects/combo-pipeline.md) | Raccolta fonti → estrazione IA → scoring CAS → scheduling |
-| [web-frontend](projects/web-frontend.md) | Sito Astro/Preact (redesign "Arena"): ricerca unica parti, ranking unico BX+CX, temi chiaro/scuro, badge CAS. Monolingua EN su root |
+| [web-frontend](projects/web-frontend.md) | Sito Astro/Preact (redesign "Arena"): ricerca unica parti, ranking unico BX+CX per score, top cut o vittorie, vista per lama, temi chiaro/scuro, badge CAS. Header a quattro voci (Home, Meta, Guides, How scoring works). Monolingua EN su root |
 
 ## Tech Stack
 
@@ -89,8 +89,8 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
 - `data/parts.json` — **derivato** da parts-master via `npm run build:parts` (schema consumato dal sito). NON editare a mano: si rigenera. Il campo `image` (se presente) è il solo filename PNG, relativo a `public/images/parts/`.
 - `data/image-overrides.json` — override manuali `{ "<id>": "<File:...>|<url assoluto>" }` per le parti che `sync:part-images` non risolve da sé (vince su tutta la catena di fallback dello script).
 - `data/parts-master-conflicts.json` — casi ambigui dell'import per revisione umana (type_mismatch = rumore; gli over_blade ora sono categoria `overBlades` a sé, non più conflitti)
-- `data/combos.json` — database combo con `evidence` (placements/usage/mentions; `usage` è uno **storico** di snapshot per il trend), `scoreBreakdown` CAS (con `lastPlacementDate`, `stadiums`, `usageTrend`) e fonti. Contiene **solo evidenza entro il cutoff di 12 mesi e mai datata nel futuro** (filtrata da `score:combos`)
-- In ogni combo anche **`windows`**: score/breakdown/tag per finestra 1/3/6/12 mesi (filtro periodo del sito; `windows["12"]` coincide con lo score). In testa al file `windowThresholds` (soglie di fascia per finestra). Spec: `docs/scoring-algorithm.md` §8
+- `data/combos.json` — database combo con `evidence` (placements/usage/mentions; `usage` è uno **storico** di snapshot per il trend), `scoreBreakdown` CAS (con `lastPlacementDate`, `stadiums`, `usageTrend`) e fonti. Contiene **solo evidenza entro il cutoff di 365 giorni e mai datata nel futuro** (filtrata da `score:combos`)
+- In ogni combo anche **`windows`**: score/breakdown/tag per finestra **30/90/180/365 giorni** (non mesi), filtro periodo del sito; `windows["365"]` coincide con lo score. In testa al file `windowsRef` (data delle finestre) e `windowThresholds`. Spec: `docs/scoring-algorithm.md` §8
 - `data/combos-archive.json` — combo rimaste **senza evidenza fresca** dopo il pruning (`prune:combos`): archiviate (non eliminate) con `archivedReason`/`archivedDate`, fuori dal sito e dal ranking. Reversibile: se la combo ri-piazza, `score:combos` la ricrea e `prune:combos` la toglie dall'archivio
 - `data/metabeys-evidence.json` — evidenza torneo parsata in modo deterministico da MetaBeys (placements + usage, **BX e CX**), input dello scoring
 - `data/wbo-evidence.json` — evidenza torneo da WBO (placements BX **e CX**, con `stadium` xtreme/infinity), parser deterministico; input dello scoring. Le CX portano `lockChip/mainBlade/assistBlade/overBlade`
@@ -162,10 +162,10 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
 - `npx tsx scripts/reddit-merge.ts` — merge deterministico dei combo estratti da `/mine-reddit` (`tmp/reddit-extracted.json`, prodotto dall'IA) in `combos.json`: deriva id/line/type/displayName da `parts.json`, X-filter su blade/mainBlade, dedup dell'evidence per chiave stabile (idempotente). Lo score lo ricalcola poi `score:combos`
 - `npm run parse:metabeys` — parser deterministico MetaBeys (eventi+leaderboard) → `metabeys-evidence.json`. Risolve **BX (3 segmenti) e CX (4 segmenti** `lockChip mainBlade [over] / assist / ratchet / bit`, via `cx-resolve.ts`); solo typo/incompleti restano in `unresolved` (placements+usage)
 - `npm run parse:wbo` — parser deterministico WBO (segmentazione regex + risoluzione **BX e CX**) → `wbo-evidence.json`. Risolve le CX (lockChip+mainBlade+assist[+over], order-agnostic + Western) via `scripts/lib/cx-resolve.ts`; il residuo va nel ledger `wbo-unresolved.json` (delta nuovo segnalato). Applica `wbo-corrections.json` (refusi) prima del parsing
-- `npm run score:combos` — ricalcola gli score CAS deterministici da `evidence` (algoritmo in `src/lib/scoring.ts`, spec in `docs/scoring-algorithm.md`); filtra l'evidenza per il **cutoff 12 mesi** (`scripts/lib/freshness.ts`). Materializza anche le **combo CX** dall'evidenza WBO (copia `lockChip/mainBlade/assistBlade/overBlade`)
-- Sempre `score:combos`: **unisce le combo con lo stesso id** (le crea `/mine-reddit` per sbaglio), scarta l'evidenza datata nel futuro e calcola le **finestre** `windows` 1/3/6/12 mesi (invariante `windows["12"] == score`, violazioni stampate a fine run)
+- `npm run score:combos` — ricalcola gli score CAS deterministici da `evidence` (algoritmo in `src/lib/scoring.ts`, spec in `docs/scoring-algorithm.md`); filtra l'evidenza per il **cutoff 365 giorni** (`scripts/lib/freshness.ts`). Materializza anche le **combo CX** dall'evidenza WBO (copia `lockChip/mainBlade/assistBlade/overBlade`)
+- Sempre `score:combos`: **unisce le combo con lo stesso id** (le crea `/mine-reddit` per sbaglio), scarta l'evidenza datata nel futuro e calcola le **finestre** `windows` 30/90/180/365 giorni (invariante `windows["365"] == score`, violazioni stampate a fine run)
 - `npm run typo:candidates` / `npm run typo:apply` — bordo deterministico del recupero typo: dump del sottoinsieme `typo` del ledger + nomi registro (`tmp/typo-candidates.json`) per il subagent; gate (ri-parsa) + merge delle correzioni accettate in `wbo-corrections.json`
-- `npm run prune:combos` — pruning deterministico: archivia in `combos-archive.json` le combo senza evidenza fresca (cutoff 12 mesi). **Default dry-run**; `-- --apply` scrive. Guardrail: aborta se le orfane superano `PRUNE_GUARD_PCT` (60%) o se l'evidenza torneo è a 0
+- `npm run prune:combos` — pruning deterministico: archivia in `combos-archive.json` le combo senza evidenza fresca (cutoff 365 giorni). **Default dry-run**; `-- --apply` scrive. Guardrail: aborta se le orfane superano `PRUNE_GUARD_PCT` (60%) o se l'evidenza torneo è a 0
 - `npm run test:scoring` — golden test dell'algoritmo CAS
 - `npm run test:wbo` — golden test del parser WBO (BX, CX order-agnostic/Western, hardening BX, casi che restano unresolved)
 - `npm run test:wbo-unresolved` — golden test del ledger (idempotenza, preservazione `status`, categorizzazione)
@@ -173,9 +173,10 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
 - `npm run ig:generate` — caroselli Instagram candidati da `combos.json` in `out/ig/` (gitignorato):
   slide JPEG 1080×1350 (Chrome headless via playwright-core), `caption.txt`, `post.json`, `queue.json`.
   Gira nel giro notturno dopo `build` (dentro `/update-combos`). Regole in `scripts/lib/ig-posts.ts`,
-  template in `scripts/lib/ig-render.ts`, golden test `npm run test:ig`. I conteggi top cut stanno in
-  `src/lib/top-cut.ts`, condiviso con la pagina `/top-cut/` del sito: BX e CX insieme, e la lama di
-  una CX è la Main Blade. Chi sceglie e pubblica il post
+  template in `scripts/lib/ig-render.ts`, golden test `npm run test:ig`. I conteggi top cut
+  (`src/lib/top-cut.ts`) usano le finestre della home da `windowsRef`: `top-build` = home a `30D · Top
+  cuts`, `top-lame` = `30D · Top cuts · Blades` (BX e CX insieme, lama di una CX = Main Blade); il run
+  stampa la parità con `windows["30"]`. Chi sceglie e pubblica il post
   del giorno è `tools/caroselli.py` del progetto **contenuti** (job `contenuti-caroselli`, 12:00 sul
   server): un contenuto al giorno, mai nei giorni con un Reel; `top-build` il lunedì e `top-lame` il
   giovedì con scarto massimo di un giorno; poi eventi (`build-lama-nuova` a 40 piazzamenti,
@@ -184,7 +185,9 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
   `build-lama-shark-scale`): rigenerare aggiorna i numeri, il registro del pubblicatore decide cosa
   è già uscito. Le immagini non vanno in git: vivono sul server e su una release temporanea
 - `npm run test:e2e` — percorso utente nel browser (`scripts/e2e-smoke.ts`, playwright-core + Chrome di sistema, headless) sulla preview locale: prima `npm run build && npm run preview` (porta 4321); `E2E_URL` per puntarlo al sito pubblicato
-- Cosa controlla: peso della home (< 400 KB), fetch di `/combos.json`, ricerca parti, periodo 1/3/6/12M, filtri, Show more, Compare/Buy, marketplace, tema, about/privacy, mobile 390 px senza scroll orizzontale; screenshot in `tmp/e2e/`
+- Cosa controlla: peso della home (< 400 KB), fetch di `/combos.json`, ricerca parti, periodo 30/90/180/365, filtri, Show more, Compare/Buy, marketplace, tema, about/privacy, `/guides/` e menu, mobile 390 px senza scroll orizzontale; screenshot in `tmp/e2e/`
+- Blocco [16]: le casistiche d'uso del ranking (Sort by, vista lame, click su una lama anche CX, Buildable con le parti, filtri CX/Xtreme, nomi UX). Blocco [17]: dataset in arrivo (controlli disabilitati) e dataset bloccato
+- `npm run test:i18n` — inglese e italiano con le stesse chiavi, nessun valore vuoto, ogni chiave usata nei sorgenti presente; gira nel workflow di deploy prima della build
 
 ## Pipeline Dati
 
@@ -274,10 +277,10 @@ mai via API a pagamento. L'IA non calcola mai lo score né ri-parsa ciò che il 
 - Le cache grezze le interpreta `/update-combos` (estrazione, match multilingua, dedup id-set, scoring).
 
 ### Cutoff temporale e pruning (deterministici)
-Cutoff condiviso **12 mesi** in `scripts/lib/freshness.ts` (`CUTOFF_MONTHS`, override `COMBO_CUTOFF_MONTHS`):
+Cutoff condiviso **365 giorni** in `scripts/lib/freshness.ts` (`CUTOFF_DAYS`, override `COMBO_CUTOFF_DAYS`):
 unica fonte di verità applicata in **fetch** (stop paginazione storica), **parse** (scarto dei placement
-oltre cutoff) e **score** (filtro dell'evidenza unita). Coerente col decay (emivita 75gg: a 12 mesi il
-peso è già ~0.03). I fetcher paginano lo storico in modo **capped + resumable** (cursori in
+oltre cutoff) e **score** (filtro dell'evidenza unita). Coerente col decay (emivita 75gg: a 365 giorni il
+peso è già ~0.03). Deve coincidere con la finestra più lunga del sito: `score:combos` si ferma se no. I fetcher paginano lo storico in modo **capped + resumable** (cursori in
 `scan-history.json`; default 3 pagine/run, backfill profondo one-off con `META_MAX_PAGES`/`WBO_MAX_PAGES`
 alti). Il **pruning** (`prune:combos`) archivia in `combos-archive.json` le combo senza evidenza fresca:
 deterministico, **dry-run di default** (`-- --apply` scrive), guardrail (aborta se orfane > `PRUNE_GUARD_PCT`
@@ -513,7 +516,7 @@ perché ogni 5 min altrimenti compariva una finestra cmd nella sessione utente. 
 - Componenti Preact in `.tsx`
 - Componenti Astro in `.astro`
 - Interfacce TypeScript in `src/lib/types.ts`
-- Traduzioni in `src/i18n/en.json` (attiva) e `src/i18n/it.json` (dormiente, vedi i18n in Tech Stack)
+- Traduzioni in `src/i18n/en.json` (attiva) e `src/i18n/it.json` (dormiente, vedi i18n in Tech Stack): ogni chiave nuova o riscritta va in **tutte e due** nello stesso giro, `npm run test:i18n` controlla le chiavi. Nessun testo visibile cablato nei componenti
 - Pagine editoriali in `src/content/{meta-reports,parts,combos,buying-guides}/*.mdx`: il body **non**
   contiene un H1, lo renderizza da solo il layout editoriale (`src/layouts/editorial-layout.astro`)
 
@@ -579,8 +582,7 @@ Disclosure nel footer e sezione «Affiliate links» in `/about/`.
   negozi (`storeLinks` in `src/lib/amazon.ts`, con `creatorsDisableRedirect`: chi clicca amazon.fr ha
   scelto amazon.fr). Lo stesso sotto i chip del pannello «Buy parts» delle card in home (isola, quindi
   non nell'HTML: lo verifica `test:e2e` [7b]), che è la via dalla home per chi non scende al footer. Da
-  telefono le sezioni stanno in una seconda riga dell'header (`mobile-nav`), prima nascoste sotto i
-  640 px. **`npm run test:amazon-tags`** legge `dist/` file per file e fallisce se una pagina
+  telefono Meta e Guides stanno in una seconda riga dell'header (`mobile-nav`), sotto i 640 px. **`npm run test:amazon-tags`** legge `dist/` file per file e fallisce se una pagina
   non contiene un tag, se un link ha il tag di un altro negozio o se una riga «Where to buy» non ha tutti i
   negozi; gira nel workflow di deploy fra build e pubblicazione. Con un argomento controlla un'altra
   cartella, per esempio pagine scaricate dal sito pubblicato.

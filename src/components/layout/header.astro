@@ -9,6 +9,18 @@ interface Props {
 
 const { locale } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+// Quattro voci: Home, Meta, Guides (hub di parti, combo e guide all'acquisto), How scoring works.
+// La voce attiva segue la pagina: le guide di dettaglio (/parts/x, /combos/x, /buy/x) stanno sotto Guides.
+const path = Astro.url.pathname.slice(base.length) || '/';
+const active =
+  path === '/' ? 'home'
+  : path.startsWith('/meta/') ? 'meta'
+  : /^\/(guides|parts|combos|buy)\//.test(path) ? 'guides'
+  : path.startsWith('/about/') ? 'about'
+  : '';
+const link = (on: boolean) =>
+  `font-mono text-[11px] uppercase tracking-[0.08em] transition-colors lg:text-xs ${on ? 'text-gold' : 'text-muted hover:text-text'}`;
 ---
 
 <header class="border-b border-border-strong bg-surface">
@@ -24,46 +36,16 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     </a>
 
     <div class="flex items-center gap-3 lg:gap-6">
-      <a
-        href={`${base}/`}
-        class="font-mono text-[11px] uppercase tracking-[0.08em] text-gold lg:text-xs"
-      >
+      <a href={`${base}/`} class={link(active === 'home')} aria-current={active === 'home' ? 'page' : undefined}>
         {t(locale, 'nav.home')}
       </a>
-      <a
-        href={`${base}/meta/`}
-        class="hidden font-mono text-[11px] uppercase tracking-[0.08em] text-muted transition-colors hover:text-text sm:inline-flex lg:text-xs"
-      >
+      <a href={`${base}/meta/`} class={`hidden sm:inline-flex ${link(active === 'meta')}`} aria-current={active === 'meta' ? 'page' : undefined}>
         {t(locale, 'nav.meta')}
       </a>
-      <a
-        href={`${base}/top-cut/`}
-        class="hidden whitespace-nowrap font-mono text-[11px] uppercase tracking-[0.08em] text-muted transition-colors hover:text-text sm:inline-flex lg:text-xs"
-      >
-        {t(locale, 'nav.topCut')}
+      <a href={`${base}/guides/`} class={`hidden sm:inline-flex ${link(active === 'guides')}`} aria-current={active === 'guides' ? 'page' : undefined}>
+        {t(locale, 'nav.guides')}
       </a>
-      <a
-        href={`${base}/parts/`}
-        class="hidden font-mono text-[11px] uppercase tracking-[0.08em] text-muted transition-colors hover:text-text sm:inline-flex lg:text-xs"
-      >
-        {t(locale, 'nav.parts')}
-      </a>
-      <a
-        href={`${base}/combos/`}
-        class="hidden font-mono text-[11px] uppercase tracking-[0.08em] text-muted transition-colors hover:text-text sm:inline-flex lg:text-xs"
-      >
-        {t(locale, 'nav.combos')}
-      </a>
-      <a
-        href={`${base}/buy/`}
-        class="hidden font-mono text-[11px] uppercase tracking-[0.08em] text-muted transition-colors hover:text-text sm:inline-flex lg:text-xs"
-      >
-        {t(locale, 'nav.buy')}
-      </a>
-      <a
-        href={`${base}/about/`}
-        class="font-mono text-[11px] uppercase tracking-[0.08em] text-muted transition-colors hover:text-text lg:text-xs"
-      >
+      <a href={`${base}/about/`} class={link(active === 'about')} aria-current={active === 'about' ? 'page' : undefined}>
         {t(locale, 'nav.howScoring')}
       </a>
 
@@ -93,11 +75,8 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     class="flex gap-5 overflow-x-auto border-t border-border px-4 py-2 sm:hidden"
     aria-label="Sections"
   >
-    <a href={`${base}/meta/`} class="shrink-0 font-mono text-[11px] uppercase tracking-[0.08em] text-muted hover:text-text">{t(locale, 'nav.meta')}</a>
-    <a href={`${base}/top-cut/`} class="shrink-0 font-mono text-[11px] uppercase tracking-[0.08em] text-muted hover:text-text">{t(locale, 'nav.topCut')}</a>
-    <a href={`${base}/parts/`} class="shrink-0 font-mono text-[11px] uppercase tracking-[0.08em] text-muted hover:text-text">{t(locale, 'nav.parts')}</a>
-    <a href={`${base}/combos/`} class="shrink-0 font-mono text-[11px] uppercase tracking-[0.08em] text-muted hover:text-text">{t(locale, 'nav.combos')}</a>
-    <a href={`${base}/buy/`} class="shrink-0 font-mono text-[11px] uppercase tracking-[0.08em] text-muted hover:text-text">{t(locale, 'nav.buy')}</a>
+    <a href={`${base}/meta/`} class={`shrink-0 ${link(active === 'meta')}`}>{t(locale, 'nav.meta')}</a>
+    <a href={`${base}/guides/`} class={`shrink-0 ${link(active === 'guides')}`}>{t(locale, 'nav.guides')}</a>
   </nav>
 </header>
 

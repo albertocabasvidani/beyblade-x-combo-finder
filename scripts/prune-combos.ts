@@ -14,12 +14,12 @@
  *
  * Esegui: npx tsx scripts/prune-combos.ts            (dry-run)
  *         npx tsx scripts/prune-combos.ts --apply     (applica)
- * Env: PRUNE_GUARD_PCT (default 60), COMBO_CUTOFF_MONTHS (default 12).
+ * Env: PRUNE_GUARD_PCT (default 60), COMBO_CUTOFF_DAYS (default 365).
  */
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { join } from 'path';
 import { pathToFileURL } from 'url';
-import { isFresh, CUTOFF_MONTHS } from './lib/freshness';
+import { isFresh, CUTOFF_DAYS } from './lib/freshness';
 import type { Combo, CombosDatabase, ComboEvidence } from '../src/lib/types';
 
 const ROOT = join(import.meta.dirname, '..');
@@ -81,7 +81,7 @@ function main() {
 
   const { keep, orphans } = partition(db.combos, freshIds, ref);
 
-  console.log(`Pruning (cutoff ${CUTOFF_MONTHS} mesi, ref ${today()}):`);
+  console.log(`Pruning (cutoff ${CUTOFF_DAYS} giorni, ref ${today()}):`);
   console.log(`  combo totali:           ${db.combos.length}`);
   console.log(`  da tenere:              ${keep.length}`);
   console.log(`  orfane (da archiviare): ${orphans.length}`);
@@ -105,7 +105,7 @@ function main() {
   const activeIds = new Set(keep.map((c) => c.id));
   const archMap = new Map<string, any>();
   for (const c of archive.combos ?? []) if (!activeIds.has(c.id)) archMap.set(c.id, c); // riconciliazione
-  for (const o of orphans) archMap.set(o.id, { ...o, archivedReason: `no-fresh-evidence (cutoff ${CUTOFF_MONTHS}m)`, archivedDate: today() });
+  for (const o of orphans) archMap.set(o.id, { ...o, archivedReason: `no-fresh-evidence (cutoff ${CUTOFF_DAYS}d)`, archivedDate: today() });
   const archCombos = [...archMap.values()].sort((a, b) => a.id.localeCompare(b.id));
 
   db.combos = keep;

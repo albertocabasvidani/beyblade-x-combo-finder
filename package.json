@@ -36,6 +36,7 @@
     "test:wbo-unresolved": "npx tsx scripts/test-wbo-unresolved.ts",
     "test:wbo-fetch": "npx tsx scripts/test-wbo-fetch.ts",
     "test:ig": "npx tsx scripts/test-ig.ts",
+    "test:i18n": "npx tsx scripts/test-i18n.ts",
     "ig:generate": "npx tsx scripts/ig-generate.ts",
     "test:freshness": "npx tsx scripts/test-freshness.ts",
     "test:prune": "npx tsx scripts/test-prune.ts",

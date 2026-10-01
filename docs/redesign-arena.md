@@ -206,7 +206,7 @@ Radius 14px, striscia laterale 4px a sx, padding `13px 14px 13px 18px`.
   - Rank: Anton italic 26px (oro per #1, grigio altrimenti).
   - Nome combo (Anton uppercase 17px); se CX, badge "CX" prima del nome; sotto, badge tipo pieno + "N fonti" (muted).
   - Badge CAS: gettone clip-path, gradiente per fascia, numero Anton italic 22px + etichetta fascia 7.5px.
-- **Riga evidenza** (separata da hairline): "🏆 N vittorie" (oro) · "N tornei" / "N top-cut" · "N% meta" (scarlatto). Saira 600 11.5px. **Niente barra meta-share su mobile.**
+- **Riga evidenza** (separata da hairline): "🏆 N vittorie" · "N top cut" · "N tornei" · "N% meta" (scarlatto). Saira 600 11.5px. La metrica scelta in «Sort by» è oro e sottolineata (dal 01/10/2026; prima le vittorie erano sempre oro). **Niente barra meta-share su mobile.**
 - **Riga chip parti** (`gap 6px`, wrap): ✓ posseduta (verde) e ! mancante (scarlatto), una per parte. CX fino a 6 chip con font/padding ridotti. I chip mancanti **senza** ↗ né link Amazon.
 
 ### Desktop (riga orizzontale)

@@ -61,12 +61,27 @@ const num = (s: string | null) => parseInt((s ?? '').replace(/[^\d]/g, ''), 10);
 const resultsCount = async (page: Page) => num(await page.getByTestId('results-count').textContent());
 const visibleCards = (page: Page) => page.locator('[data-testid=combo-card]:visible');
 const firstCardId = async (page: Page) => visibleCards(page).first().getAttribute('data-combo-id');
+const bladeRows = (page: Page) => page.locator('[data-testid=blade-row]:visible');
+/** Valore della metrica (`topCut` | `wins`) su ogni card o riga visibile; 0 dove il valore non è mostrato. */
+const metricValues = (page: Page, sel: string, metric: string) => page.locator(sel).evaluateAll(
+  (els, m) => els.map((el) => { const v = el.querySelector(`[data-metric="${m}"]`); return v ? parseInt((v.textContent ?? '').replace(/[^\d]/g, ''), 10) : 0; }),
+  metric,
+);
+const nonIncreasing = (a: number[]) => a.every((v, i) => i === 0 || v <= a[i - 1]);
+/** Quote % lette dalle righe lama (testo «19.6% of top cuts»). */
+const shareValues = (page: Page) => bladeRows(page).evaluateAll((els) => els.map((el) => {
+  const m = (el.textContent ?? '').match(/(\d+(?:\.\d+)?)%/); return m ? parseFloat(m[1]) : 0;
+}));
 
 async function addPart(page: Page, query: string) {
   const input = page.locator('input[type=text]').first();
   await input.click();
   await input.fill(query);
-  await page.locator('ul li button').first().click();
+  // L'opzione col nome esatto, non la prima: «1-60» trova anche lame il cui nome occidentale contiene
+  // il ratchet («Rock Golem 1-60UN»), e la prima opzione era quella lama.
+  const esc = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const exact = page.locator('ul li button').filter({ has: page.locator('span.truncate', { hasText: new RegExp(`^${esc}$`) }) });
+  await ((await exact.count()) > 0 ? exact.first() : page.locator('ul li button').first()).click();
 }
 
 async function waitDataset(page: Page) {
@@ -111,6 +126,8 @@ async function desktopFlow(context: BrowserContext) {
   const total = await resultsCount(page);
   check(`contatore risultati > ${INLINE} dopo il fetch`, total > INLINE, `=${total}`);
   check(`card visibili = ${PAGE_SIZE} (paginazione)`, (await visibleCards(page).count()) === PAGE_SIZE, `=${await visibleCards(page).count()}`);
+  check('stato del dataset: ready', (await page.getByTestId('period-hint').getAttribute('data-dataset')) === 'ready');
+  check('dopo il fetch nessun controllo disabilitato', (await page.locator('[aria-disabled=true]').count()) === 0);
 
   console.log('[4] Cerca e aggiunge una parte');
   await addPart(page, 'Wizard Rod');
@@ -119,20 +136,23 @@ async function desktopFlow(context: BrowserContext) {
   const bladeCount = await resultsCount(page);
   check('contatore sceso', bladeCount > 0 && bladeCount < total, `${total} -> ${bladeCount}`);
 
-  console.log('[5] Periodo');
-  const first12 = await firstCardId(page);
-  const count12 = await resultsCount(page);
-  await page.getByTestId('period-1').click();
-  const count1 = await resultsCount(page);
-  check('1M: contatore <= 12M', count1 <= count12, `${count1} vs ${count12}`);
-  check('1M: hint del periodo aggiornato', /last month/i.test((await page.getByTestId('period-hint').textContent()) ?? ''));
+  console.log('[5] Periodo (30/90/180/365 giorni)');
+  const first365 = await firstCardId(page);
+  const count365 = await resultsCount(page);
+  await page.getByTestId('period-30').click();
+  const count30 = await resultsCount(page);
+  check('30D: contatore <= 1Y', count30 <= count365, `${count30} vs ${count365}`);
+  check('30D: hint del periodo aggiornato', /last 30 days/i.test((await page.getByTestId('period-hint').textContent()) ?? ''));
   const badges = await page.locator('[data-testid=score-badge]:visible').allTextContents();
-  check('1M: ogni badge ha un numero', badges.length === Math.min(count1, PAGE_SIZE) && badges.every((b) => /^\d+\.\d/.test(b.trim())), `${badges.length} badge`);
-  await page.getByTestId('period-3').click();
-  check('3M: contatore fra 1M e 12M', (await resultsCount(page)) >= count1 && (await resultsCount(page)) <= count12);
-  await page.getByTestId('period-12').click();
-  check('12M: stessa prima card di prima', (await firstCardId(page)) === first12, `${first12} vs ${await firstCardId(page)}`);
-  check('12M: stesso contatore di prima', (await resultsCount(page)) === count12);
+  check('30D: ogni badge ha un numero', badges.length === Math.min(count30, PAGE_SIZE) && badges.every((b) => /^\d+\.\d/.test(b.trim())), `${badges.length} badge`);
+  await page.getByTestId('period-90').click();
+  const count90 = await resultsCount(page);
+  await page.getByTestId('period-180').click();
+  const count180 = await resultsCount(page);
+  check('contatori crescenti 30D <= 90D <= 180D <= 1Y', count30 <= count90 && count90 <= count180 && count180 <= count365, `${count30} ${count90} ${count180} ${count365}`);
+  await page.getByTestId('period-365').click();
+  check('1Y: stessa prima card di prima', (await firstCardId(page)) === first365, `${first365} vs ${await firstCardId(page)}`);
+  check('1Y: stesso contatore di prima', (await resultsCount(page)) === count365);
 
   console.log('[6] Filtri');
   const before = await resultsCount(page);
@@ -231,24 +251,31 @@ async function desktopFlow(context: BrowserContext) {
   const privacy = await page.goto(BASE + '/privacy/', { waitUntil: 'networkidle' });
   if (!privacy || privacy.status() !== 200) skipped('/privacy/', `status=${privacy?.status()} (pagina non ancora creata)`);
   else check('privacy: sezione analytics', /PostHog/i.test((await page.textContent('body')) ?? ''));
-  const topCut = await page.goto(BASE + '/top-cut/', { waitUntil: 'networkidle' });
-  check('/top-cut/ 200', topCut?.status() === 200);
-  const righe = (days: number) => page.evaluate((d) => ['combos', 'blades', 'ratchets', 'bits'].map((t) =>
-    document.querySelectorAll(`[data-topcut-panel="${d}"] [data-testid=topcut-${t}] tbody tr`).length), days);
-  const r30 = await righe(30);
-  check('top-cut: le quattro classifiche a 30 giorni hanno righe', r30.every((n) => n > 0), r30.join(','));
-  check('top-cut: visibile solo la finestra a 30 giorni', await page.isVisible('[data-testid=topcut-30]') && !(await page.isVisible('[data-testid=topcut-90]')));
-  await page.click('[data-topcut-tab="90"]');
-  check('top-cut: il selettore mostra i 90 giorni', await page.isVisible('[data-testid=topcut-90]') && !(await page.isVisible('[data-testid=topcut-30]')));
+  const guides = await page.goto(BASE + '/guides/', { waitUntil: 'networkidle' });
+  check('/guides/ 200', guides?.status() === 200);
+  for (const sec of ['parts', 'combos', 'buy']) {
+    const n = await page.locator(`[data-testid=guides-${sec}] li a`).count();
+    check(`guides: sezione ${sec} con le sue guide e il link all'elenco`, n > 0 && (await page.locator(`[data-testid=guides-${sec}] a[href$="/${sec}/"]`).count()) > 0, `${n} guide`);
+  }
+  const navDesk = await page.locator('header nav').first().locator('a:visible').allTextContents();
+  check('header: Home · Meta · Guides · How scoring works', JSON.stringify(navDesk.slice(1).map((x) => x.trim().toLowerCase())) === JSON.stringify(['home', 'meta', 'guides', 'how scoring works']), navDesk.join(' | '));
+  check('header: Guides attiva su /guides/', (await page.locator('header a[aria-current=page]').textContent())?.trim() === 'Guides');
+  const partPage = await page.goto(BASE + '/parts/shark-scale/', { waitUntil: 'networkidle' });
+  if (partPage?.status() === 200) {
+    const crumbs = ((await page.locator('nav[aria-label=Breadcrumb]').textContent()) ?? '').split('/').map((x) => x.replace(/\s+/g, ' ').trim()).filter(Boolean);
+    check('breadcrumb di una parte: Home › Guides › Parts › …', crumbs[0]?.startsWith('Home') && crumbs[1]?.startsWith('Guides') && crumbs[2]?.startsWith('Parts'), crumbs.join(' › '));
+  } else skipped('breadcrumb di una parte', `/parts/shark-scale/ status ${partPage?.status()}`);
+  const oldTopCut = await page.goto(BASE + '/top-cut/');
+  check('/top-cut/ non esiste più', oldTopCut?.status() === 404, `status=${oldTopCut?.status()}`);
   await page.goto(BASE + '/', { waitUntil: 'networkidle' });
   const footer = (await page.locator('footer').textContent()) ?? '';
   if (/Amazon Associate/i.test(footer)) check('footer: disclosure Amazon', true); else skipped('footer: disclosure Amazon', 'non ancora presente');
 
   console.log('[13] Screenshot desktop');
   await waitDataset(page);
-  await page.screenshot({ path: join(SHOTS, 'home-desktop-12m.png'), fullPage: false });
-  await page.getByTestId('period-1').click();
-  await page.screenshot({ path: join(SHOTS, 'home-desktop-1m.png'), fullPage: false });
+  await page.screenshot({ path: join(SHOTS, 'home-desktop-365d.png'), fullPage: false });
+  await page.getByTestId('period-30').click();
+  await page.screenshot({ path: join(SHOTS, 'home-desktop-30d.png'), fullPage: false });
   await page.close();
 }
 
@@ -294,7 +321,7 @@ async function editorialFlow(context: BrowserContext) {
     skipped('confronto sitemap vs dist/', 'dist/ non trovato (build non ancora fatta in locale)');
   }
 
-  const editorialUrls = sitemapUrls.filter((u) => /\/(meta|parts|combos|buy)\//.test(u));
+  const editorialUrls = sitemapUrls.filter((u) => /\/(meta|parts|combos|buy|guides)\//.test(u));
   check('almeno una pagina per ciascuna delle 4 sezioni editoriali', ['meta', 'parts', 'combos', 'buy'].every((s) => editorialUrls.some((u) => u.includes(`/${s}/`))), editorialUrls.join(', '));
 
   for (const url of editorialUrls) {
@@ -437,6 +464,161 @@ async function countryFlow(browser: Browser) {
   await de.close();
 }
 
+/**
+ * [16] Casistiche d'uso del ranking: le domande tipiche di chi arriva in home.
+ * Lettura dei valori dal DOM (data-metric, data-blade, data-line), mai dai nomi: i dati cambiano ogni notte.
+ */
+async function rankingFlow(context: BrowserContext) {
+  const page = await context.newPage();
+  const errs = consoleErrors(page);
+  console.log('\n[16] Ranking: casistiche d\u2019uso');
+  await page.goto(BASE + '/', { waitUntil: 'networkidle' });
+  await waitDataset(page);
+  const cards = '[data-testid=combo-card]:visible';
+  const rows = '[data-testid=blade-row]:visible';
+
+  // 1. «Cosa va forte adesso?» — 30D · Top cuts · Combos
+  await page.getByTestId('period-30').click();
+  const count30 = await resultsCount(page);
+  await page.getByTestId('sort-topCut').click();
+  check('1. top cut: stesso contatore dell ordinamento per score', (await resultsCount(page)) === count30);
+  const tc = await metricValues(page, cards, 'topCut');
+  check('1. top cut: valori non crescenti lungo la lista', tc.length > 0 && nonIncreasing(tc), tc.slice(0, 8).join(','));
+  const underlined = await page.locator(`${cards} [data-metric=topCut]`).first().getAttribute('class');
+  check('1. top cut: la metrica scelta è sottolineata', /underline/.test(underlined ?? ''), underlined ?? '');
+  check('1. hint: «most top cuts … last 30 days»', /most top cuts.*last 30 days/i.test((await page.getByTestId('period-hint').textContent()) ?? ''));
+
+  // 2. «Chi vince di più?» — 30D · Wins
+  await page.getByTestId('sort-wins').click();
+  const wins = await metricValues(page, cards, 'wins');
+  check('2. vittorie: valori non crescenti lungo la lista', wins.length > 0 && nonIncreasing(wins), wins.slice(0, 8).join(','));
+  check('2. vittorie: sottolineata la metrica vittorie, non i top cut',
+    /underline/.test((await page.locator(`${cards} [data-metric=wins]`).first().getAttribute('class')) ?? '')
+    && !/underline/.test((await page.locator(`${cards} [data-metric=topCut]`).first().getAttribute('class')) ?? ''));
+
+  // 3. «Quale lama devo comprare?» — 30D · Top cuts · Blades
+  await page.getByTestId('sort-topCut').click();
+  await page.getByTestId('view-blades').click();
+  const nBlades = await resultsCount(page);
+  check('3. vista lame: contatore in lame e righe visibili', /blades/.test((await page.getByTestId('results-count').textContent()) ?? '') && (await bladeRows(page).count()) === Math.min(nBlades, PAGE_SIZE), `${nBlades} lame`);
+  check('3. vista lame: nessuna card combo visibile', (await visibleCards(page).count()) === 0);
+  // A 1024 px (la larghezza minima con due colonne) la colonna del ranking è la più stretta: senza
+  // min-w-0 la «Best build» su una riga la allargava e la pagina sbordava (fino a 1280 px).
+  await page.setViewportSize({ width: 1024, height: 900 });
+  const hScroll = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+  check('3. vista lame a 1024 px: nessuno scroll orizzontale', hScroll <= 0, `sborda di ${hScroll}px`);
+  await page.setViewportSize({ width: 1366, height: 900 });
+  const btc = await metricValues(page, rows, 'topCut');
+  check('3. vista lame: top cut non crescenti', nonIncreasing(btc), btc.slice(0, 8).join(','));
+  const shares = await shareValues(page);
+  check('3. vista lame: quote mostrate <= 100%', shares.reduce((a, b) => a + b, 0) <= 100.5, `somma ${shares.reduce((a, b) => a + b, 0).toFixed(1)}`);
+  const cxRows = page.locator(`${rows}[data-line=cx]`);
+  if ((await cxRows.count()) > 0) check('3. una Main Blade CX è in classifica col badge CX', (await cxRows.first().locator('span', { hasText: /^CX$/ }).count()) > 0);
+  else skipped('3. Main Blade CX in classifica', 'nessuna lama CX nelle prime righe a 30 giorni');
+  // 9. Show more nella vista lame
+  if (nBlades > PAGE_SIZE) {
+    await page.getByTestId('load-more').click();
+    check('9. Show more nella vista lame', (await bladeRows(page).count()) === Math.min(nBlades, PAGE_SIZE * 2), `=${await bladeRows(page).count()}`);
+  } else check('9. vista lame sotto una pagina: niente Show more', (await page.getByTestId('load-more').count()) === 0);
+
+  // 4. «Le build migliori per la lama X»: click sulla prima riga
+  const firstRow = bladeRows(page).first();
+  const focus = await firstRow.getAttribute('data-blade');
+  const focusName = ((await firstRow.locator('span.font-display').nth(1).textContent()) ?? '').trim();
+  await firstRow.click();
+  check('4. click su una lama: si torna alle combo', (await visibleCards(page).count()) > 0 && (await bladeRows(page).count()) === 0);
+  const focusedBlades = await page.locator(cards).evaluateAll((els) => els.map((e) => e.getAttribute('data-blade')));
+  check('4. solo combo di quella lama', focusedBlades.length > 0 && focusedBlades.every((b) => b === focus), `${focus}: ${[...new Set(focusedBlades)].join(',')}`);
+  check('4. titolo «Best combos for …»', /best combos for/i.test((await page.getByTestId('ranking-title').textContent()) ?? ''), `${focusName} / ${await page.getByTestId('ranking-title').textContent()}`);
+  check('4. «Search parts» non toccato (nessuna parte selezionata)', (await page.locator('button[aria-label^="remove "]').count()) === 0);
+  await page.getByTestId('blade-focus-clear').click();
+  check('4. ✕ torna a tutte le combo del periodo', (await resultsCount(page)) === count30, `${await resultsCount(page)} vs ${count30}`);
+  // Stesso percorso con una CX
+  await page.getByTestId('view-blades').click();
+  const cxRow = page.locator('[data-testid=blade-row][data-line=cx]').first();
+  if ((await cxRow.count()) > 0) {
+    const cxBlade = await cxRow.getAttribute('data-blade');
+    await cxRow.click();
+    const lines = await page.locator(cards).evaluateAll((els) => els.map((e) => `${e.getAttribute('data-line')}:${e.getAttribute('data-blade')}`));
+    check('4. lama CX: solo combo CX con quella Main Blade', lines.length > 0 && lines.every((l) => l === `cx:${cxBlade}`), lines.slice(0, 4).join(','));
+    await page.getByTestId('blade-focus-clear').click();
+  } else skipped('4. percorso con una lama CX', 'nessuna lama CX a 30 giorni');
+
+  // 6. «Solo CX, solo Xtreme» nella vista lame
+  await page.getByTestId('view-blades').click();
+  await page.getByRole('button', { name: 'CX', exact: true }).click();
+  const cxOnly = await bladeRows(page).evaluateAll((els) => els.map((e) => e.getAttribute('data-line')));
+  if (cxOnly.length > 0) check('6. filtro CX: solo righe CX', cxOnly.every((l) => l === 'cx'), cxOnly.join(','));
+  else skipped('6. filtro CX', 'nessuna lama CX a 30 giorni');
+  await page.getByRole('button', { name: 'CX', exact: true }).click();
+  await page.getByRole('button', { name: 'Xtreme', exact: true }).click();
+  const xShares = await shareValues(page);
+  check('6. filtro Xtreme: quote ricalcolate sul mostrato (somma ~100% se tutte in pagina)',
+    xShares.length > 0 && (xShares.length >= PAGE_SIZE || Math.abs(xShares.reduce((a, b) => a + b, 0) - 100) < 2), `${xShares.length} righe, somma ${xShares.reduce((a, b) => a + b, 0).toFixed(1)}`);
+  await page.getByRole('button', { name: 'Xtreme', exact: true }).click();
+
+  // 5. «Ho queste parti, cosa posso costruire?»
+  await page.getByTestId('view-combos').click();
+  await page.getByTestId('sort-score').click();
+  await page.getByTestId('period-365').click();
+  for (const q of ['Wizard Rod', '1-60', 'Hexa']) await addPart(page, q);
+  await page.getByRole('button', { name: 'Buildable' }).click();
+  await page.locator('button[role=switch]').click();
+  check('5. con le tre parti e Buildable in testa Wizard Rod 1-60 Hexa', (await firstCardId(page)) === 'wizard-rod-1-60-hexa', `${await firstCardId(page)}`);
+  await page.getByTestId('view-blades').click();
+  const ownRows = await bladeRows(page).evaluateAll((els) => els.map((e) => `${e.getAttribute('data-blade')}:${/✓/.test(e.textContent ?? '')}`));
+  check('5. vista lame con Buildable: solo Wizard Rod, col ✓', ownRows.length === 1 && ownRows[0] === 'wizard-rod:true', ownRows.join(','));
+  await page.getByTestId('sort-wins').click();
+  check('5. cambiando ordinamento la selezione resta', (await page.locator('button[aria-label^="remove "]').count()) === 3);
+
+  // UX: stessa struttura delle BX. Fino al 01/10/2026 il nome di una UX era il solo bit («Kick»).
+  await page.locator('button[aria-label^="remove "]').evaluateAll((els) => els.forEach((e) => (e as HTMLButtonElement).click()));
+  await page.getByRole('button', { name: 'Buildable' }).click();
+  await page.getByTestId('view-combos').click();
+  await page.getByRole('button', { name: 'UX', exact: true }).click();
+  const uxNames = await page.locator(`${cards}[data-line=ux] h3`).allTextContents();
+  if (uxNames.length > 0) check('nomi delle combo UX con la lama, non il solo bit', uxNames.every((n) => n.trim().split(/\s+/).length >= 2), uxNames.slice(0, 3).join(' | '));
+  else skipped('nomi delle combo UX', 'nessuna combo UX nel periodo');
+  await page.getByRole('button', { name: 'UX', exact: true }).click();
+
+  check('nessun errore in console (ranking)', errs.length === 0, errs.slice(0, 3).join(' | '));
+  await page.screenshot({ path: join(SHOTS, 'home-desktop-blades.png'), fullPage: false });
+  await page.close();
+}
+
+/** [17] Caso 8: primi istanti (dataset in arrivo) e dataset bloccato. */
+async function datasetFlow(browser: Browser) {
+  console.log('\n[17] Dataset: caricamento e guasto');
+  const ctx = await browser.newContext({ viewport: { width: 1366, height: 900 }, locale: 'en-US' });
+  const page = await ctx.newPage();
+  let release: () => void = () => {};
+  const gate = new Promise<void>((r) => { release = r; });
+  await page.route('**/combos.json', async (route) => { await gate; await route.continue(); });
+  await page.goto(BASE + '/', { waitUntil: 'domcontentloaded' });
+  await page.waitForSelector('[data-testid=period-hint]');
+  check('caricamento: stato loading', (await page.getByTestId('period-hint').getAttribute('data-dataset')) === 'loading');
+  check('caricamento: contatore = combo inline', (await resultsCount(page)) === INLINE, `=${await resultsCount(page)}`);
+  const disabled = await page.locator('[aria-disabled=true]').evaluateAll((els) => els.map((e) => e.getAttribute('data-testid')));
+  check('caricamento: disabilitati 30D 90D 180D, Top cuts, Wins, Blades',
+    JSON.stringify(disabled.sort()) === JSON.stringify(['period-180', 'period-30', 'period-90', 'sort-topCut', 'sort-wins', 'view-blades']), disabled.join(','));
+  await page.getByTestId('sort-topCut').click({ force: true });
+  check('caricamento: un clic su un controllo disabilitato non cambia nulla', (await page.getByTestId('sort-score').getAttribute('aria-pressed')) === 'true');
+  release();
+  await waitDataset(page);
+  check('arrivato il dataset: ready e nessun controllo disabilitato', (await page.getByTestId('period-hint').getAttribute('data-dataset')) === 'ready' && (await page.locator('[aria-disabled=true]').count()) === 0);
+  await page.close();
+
+  const broken = await ctx.newPage();
+  await broken.route('**/combos.json', (route) => route.abort());
+  await broken.goto(BASE + '/', { waitUntil: 'networkidle' });
+  await broken.waitForFunction(() => document.querySelector('[data-testid=period-hint]')?.getAttribute('data-dataset') === 'failed', null, { timeout: 10_000 }).catch(() => {});
+  check('dataset bloccato: stato failed col messaggio', (await broken.getByTestId('period-hint').getAttribute('data-dataset')) === 'failed'
+    && /unavailable/i.test((await broken.getByTestId('period-hint').textContent()) ?? ''));
+  check('dataset bloccato: restano le 30 combo e i controlli disabilitati', (await resultsCount(broken)) === INLINE && (await broken.locator('[aria-disabled=true]').count()) === 6);
+  await broken.close();
+  await ctx.close();
+}
+
 async function mobileFlow(context: BrowserContext) {
   const page = await context.newPage();
   const errs = consoleErrors(page);
@@ -447,16 +629,22 @@ async function mobileFlow(context: BrowserContext) {
   check('nessuno scroll orizzontale (home)', await noHScroll(), `scrollWidth=${await page.evaluate(() => document.documentElement.scrollWidth)}`);
   // Da telefono la home deve portare alle sezioni: prima le voci erano nascoste sotto i 640 px.
   const navMobile = page.locator('[data-testid=mobile-nav] a:visible');
-  check('menu sezioni visibile su mobile (5 voci)', (await navMobile.count()) === 5, `=${await navMobile.count()}`);
+  check('menu sezioni visibile su mobile (Meta · Guides)', JSON.stringify((await navMobile.allTextContents()).map((x) => x.trim().toLowerCase())) === '["meta","guides"]', (await navMobile.allTextContents()).join(','));
   await addPart(page, 'Wizard Rod');
   check('parte aggiunta su mobile', (await page.locator('button[aria-label="remove Wizard Rod"]').count()) === 1);
-  await page.getByTestId('period-1').click();
-  check('1M su mobile: contatore leggibile', (await resultsCount(page)) >= 0);
+  await page.getByTestId('period-30').click();
+  check('30D su mobile: contatore leggibile', (await resultsCount(page)) >= 0);
   await page.locator('button[role=switch]').click();
   check('nessuno scroll orizzontale (compare attivo)', await noHScroll());
-  await page.screenshot({ path: join(SHOTS, 'home-mobile-1m-compare.png'), fullPage: false });
-  await page.getByTestId('period-12').click();
-  await page.screenshot({ path: join(SHOTS, 'home-mobile-12m.png'), fullPage: false });
+  await page.screenshot({ path: join(SHOTS, 'home-mobile-30d-compare.png'), fullPage: false });
+  await page.getByTestId('sort-topCut').click();
+  await page.getByTestId('view-blades').click();
+  check('vista lame su mobile: righe visibili', (await bladeRows(page).count()) > 0);
+  check('nessuno scroll orizzontale (vista lame)', await noHScroll(), `scrollWidth=${await page.evaluate(() => document.documentElement.scrollWidth)}`);
+  await page.screenshot({ path: join(SHOTS, 'home-mobile-blades.png'), fullPage: false });
+  await page.getByTestId('view-combos').click();
+  await page.getByTestId('period-365').click();
+  await page.screenshot({ path: join(SHOTS, 'home-mobile-365d.png'), fullPage: false });
   check('nessun errore in console (mobile)', errs.length === 0, errs.slice(0, 3).join(' | '));
   await page.close();
 }
@@ -468,9 +656,11 @@ async function main() {
   try {
     const desktop = await browser.newContext({ viewport: { width: 1366, height: 900 }, locale: 'en-US' });
     await desktopFlow(desktop);
+    await rankingFlow(desktop);
     await editorialFlow(desktop);
     await desktop.close();
     await countryFlow(browser);
+    await datasetFlow(browser);
     const mobile = await browser.newContext({ viewport: { width: 390, height: 844 }, locale: 'en-US', isMobile: true, hasTouch: true });
     await mobileFlow(mobile);
     await mobile.close();

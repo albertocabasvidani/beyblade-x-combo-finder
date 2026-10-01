@@ -208,14 +208,14 @@ Lo score da solo non comunica fiducia. Esporre l'evidenza accanto al numero:
 - badge autorevolezza: `Tournament-proven · 18 eventi · 4 vittorie · 14% meta share`
 - barre breakdown: Performance / Presence / Corroboration
 - provenienza: "usata dal Gold medalist World Championship 2025"
-- filtri ricerca: solo `tournament-proven`, **finestra 1/3/6/12 mesi (implementata, vedi §8)**,
+- filtri ricerca: solo `tournament-proven`, **finestra 30/90/180/365 giorni (implementata, vedi §8)**,
   n° minimo eventi, lingua/regione.
 
 ## 8. Costanti (default iniziali)
 
 ```
 HALF_LIFE = 75 giorni
-CUTOFF = 12 mesi (confine duro, scripts/lib/freshness.ts)
+CUTOFF = 365 giorni (confine duro, scripts/lib/freshness.ts)
 pesi pilastri = 0.55 / 0.30 / 0.15
 K_perf = 6 ; K_pres = 3 ; K_corr = 2.0 ; K_conf = 4 (ATTIVO)
 placementWeight = {1:1.0, 2:0.65, 3:0.45, 4:0.30, 5-8:0.20, topcut:0.12}
@@ -228,15 +228,17 @@ rising: RISING_WINDOW_DAYS = 30 ; RISING_RATIO = 1.15
 Costanti tarate sulla distribuzione reale dopo il primo run. Fonte canonica: `src/lib/scoring.ts`
 (`CONST`), coperta dai golden test `scripts/test-scoring.ts`.
 
-### Cutoff temporale (12 mesi) vs decadimento
+### Cutoff temporale (365 giorni) vs decadimento
 
-Il `decay` (emivita 75g) è una rampa continua: un evento di 12 mesi pesa già ~0.034 (`0.5^(365/75)`),
-contributo trascurabile. Il **cutoff a 12 mesi** è invece un confine **duro** che taglia la coda di
+Il `decay` (emivita 75g) è una rampa continua: un evento di 365 giorni pesa già ~0.034 (`0.5^(365/75)`),
+contributo trascurabile. Il **cutoff a 365 giorni** è invece un confine **duro** che taglia la coda di
 rumore a monte dello score, in tre punti coerenti (unica costante in `scripts/lib/freshness.ts`):
 fetch (stop della paginazione storica), parse (scarto dei placement oltre cutoff) e score (filtro
 dell'evidenza unita). Le combo che restano senza alcuna evidenza fresca le archivia `prune:combos` in
 `combos-archive.json` (deterministico, dry-run + guardrail). Override per test/tuning:
-`COMBO_CUTOFF_MONTHS`.
+`COMBO_CUTOFF_DAYS` (la vecchia `COMBO_CUTOFF_MONTHS` è ignorata con un avviso). Il cutoff è in giorni
+come le finestre del sito: deve coincidere con la finestra più lunga (365), e `score:combos` si ferma
+con un errore se non è così.
 
 **Robustezza date**: `daysBetween` è NaN-safe — una data non valida è trattata come "oggi" (0 giorni),
 così un singolo dato sporco non azzera lo score dell'intera combo (regressione vista col backfill WBO,
@@ -245,39 +247,51 @@ in `parse:wbo`/`parse:metabeys`). Una data **futura** vale anch'essa 0 giorni, c
 questo `score:combos` scarta ogni evidenza datata dopo oggi (difesa in profondità: nel 09/2026 il
 parser WBO leggeva «Date: 10/01/2026» come 1° ottobre e 228 placement stavano nel futuro).
 
-### Finestre temporali (filtro periodo: 1 / 3 / 6 / 12 mesi)
+### Finestre temporali (filtro periodo: 30 / 90 / 180 / 365 giorni)
 
-Il sito permette di restringere il ranking agli ultimi 1, 3, 6 o 12 mesi di risultati (niente
-intervallo libero). Non è un filtro sul client: `score:combos` calcola per ogni combo uno score per
-finestra e lo scrive in `combo.windows = { "1": …, "3": …, "6": …, "12": … }`, ciascuna voce con la
-stessa forma di `scoreBreakdown` più `score` e `tags`. Regole (`src/lib/scoring.ts`, funzioni
-`windowCutoff` / `evidenceInWindow` / `qualifiesForWindow` / `windowThresholds` / `retagTiers`):
+Il sito permette di restringere il ranking agli ultimi 30, 90, 180 o 365 giorni di risultati (niente
+intervallo libero). In giorni e non in mesi di calendario: «un mese» deve valere 30 giorni come nei
+caroselli Instagram, altrimenti la stessa combo ha due conteggi (fino al 01/10/2026 la home contava il
+mese dal 30/08 e i caroselli dal 31/08: 72 combo su 459 con numeri diversi). Non è un filtro sul
+client: `score:combos` calcola per ogni combo uno score per finestra e lo scrive in
+`combo.windows = { "30": …, "90": …, "180": …, "365": … }`, ciascuna voce con la stessa forma di
+`scoreBreakdown` più `score` e `tags`; in testa a `combos.json` scrive anche `windowsRef`, la data su
+cui ha calcolato le finestre. Regole (`src/lib/scoring.ts`: `WINDOW_DAYS`, `windowCutoff`,
+`evidenceInWindow`, `qualifiesForWindow`, `windowTags`, `windowThresholds`, `retagTiers`):
 
 - **Stesso algoritmo, evidenza ristretta.** `scoreCombo` gira con lo stesso `ref` (oggi) e le
   stesse opzioni (`useConfidence: true`) del punteggio base: cambia solo l'evidenza ammessa, cioè
-  placements, usage e mentions con `date >= ref - N mesi` (data assente = dentro, come `isFresh`).
+  placements, usage e mentions con `date >=` giorno UTC di ref meno N giorni (data assente = dentro,
+  come `isFresh`). L'ora del ref non conta.
   Il decadimento resta relativo a oggi: una finestra corta non «ringiovanisce» gli eventi.
-- **Invariante: `windows["12"] == score`.** `windowCutoff(ref, 12)` usa lo stesso rollover di
-  `cutoffISO`, e a 12 mesi si riusa l'evidenza già filtrata dal cutoff: score, breakdown e tag della
-  finestra 12 coincidono con quelli della combo. `score:combos` lo verifica a ogni run e stampa le
+- **Invariante: `windows["365"] == score`.** `windowCutoff(ref, 365)` fa lo stesso calcolo di
+  `cutoffISO`, e a 365 giorni si riusa l'evidenza già filtrata dal cutoff: score, breakdown e tag della
+  finestra 365 coincidono con quelli della combo. `score:combos` lo verifica a ogni run e stampa le
   violazioni (attese 0); golden test in `scripts/test-scoring.ts`.
+- **`rising` non nelle finestre corte.** Nella finestra a 30 giorni (`RISING_WINDOW_DAYS`) lo
+  «storico» del tag sarebbe solo il giorno di confine, e il tag un artefatto: sulla vecchia finestra di
+  un mese 38 combo su 38 con `rising` lo avevano per quel solo motivo. `windowTags` lo toglie.
 - **Qualificazione.** Una combo compare in una finestra solo se lì ha almeno un placement o uno
   snapshot usage. Le mentions non qualificano: in `combos.json` hanno spesso date sintetiche
   (`legacyMentions` assegna `today()` alle `sources[]` senza data — 3.076 su 8.296 con la stessa data
   al 11/09/2026), e qualificherebbero centinaia di combo teoriche in ogni finestra. Conseguenza anche a
-  12 mesi: le combo solo-mention (score ≈ 0, `theory-only`) non hanno `windows["12"]` e restano fuori
-  dal sito.
+  365 giorni: le combo solo-mention (score ≈ 0, `theory-only`) non hanno `windows["365"]` e restano
+  fuori dal sito.
 - **Soglie di fascia assolute in ogni finestra** (`db.windowThresholds`, oggi 8.5 / 7.0 / 5.5 per
-  tutte). «Meta» significa la stessa cosa a 3 come a 12 mesi: i badge diventano più rari nelle finestre
+  tutte). «Meta» significa la stessa cosa a 90 come a 365 giorni: i badge diventano più rari nelle finestre
   corte, non vengono ridefiniti. Misurato l'11/09/2026 su `combos.json` (evidenza ferma al 26/07):
   top 3M = 8.2, top 6M = 8.5, quindi la scala regge. L'alternativa dei quantili per finestra (98°/90°/
   70° percentile) è stata scartata perché a 3 mesi avrebbe marcato «meta» 13 combo con score ≥ 4.2. Le
   soglie restano però dati (per finestra) e non costanti nella UI, così una ritaratura non tocca il
   client. I tag `meta`/`top-tier` di ogni finestra sono riscritti con `retagTiers`; gli altri tag
   (`tournament-proven`, `rising`, `theory-only`) restano quelli calcolati sull'evidenza della finestra.
-- **Conteggi misurati l'11/09/2026** (evidenza ferma al 26/07/2026, `/update-combos` in pausa):
-  12M 4.063 combo, 6M 2.026, 3M 643, 1M 28. Con la pipeline attiva la finestra 1M torna a contenere
-  l'ultimo mese di tornei (~1.500-2.500 placement/mese nel 2026).
+- **Conteggi misurati il 01/10/2026** (primo run con le finestre in giorni, ref 01/10/2026): 365 giorni
+  4.298 combo, 180 giorni 2.162, 90 giorni 994, 30 giorni 424.
+- **Ordinamenti della home.** Lo score è quello della finestra; «Top cuts» e «Wins» ordinano per
+  `topCutAppearances` e `wins` della stessa finestra (spareggio: l'altra delle due, poi il nome).
+  La vista «Blades» somma le combo mostrate per lama (Main Blade per le CX). I caroselli Instagram
+  contano sulle stesse finestre (`src/lib/top-cut.ts`, ref = `windowsRef`), e `ig:generate` stampa a ogni
+  giro quante combo hanno top cut a 30 giorni diversi da `windows["30"]` (attese 0).
 - **Dedup per id.** Prima dello scoring `score:combos` unisce le combo con lo stesso `id` (evidenza,
   sources, tag, note nella prima occorrenza): `/mine-reddit` ne ha create tre volte di già esistenti,
   e due voci con lo stesso id prendevano score separati e comparivano entrambe in UI.

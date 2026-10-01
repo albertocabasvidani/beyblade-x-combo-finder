@@ -7,7 +7,7 @@ agentica Claude Code.
 - **Sito**: https://beybladexcombos.com/
 - **Stack**: Astro (SSG) + Preact island, Tailwind CSS v4, GitHub Pages. Monolingua inglese servito
   dalla root (`/`, `/about/`, `/privacy/`); infrastruttura i18n IT in standby nel repo.
-- **Ricerca**: parti possedute → ranking unico BX/UX/CX per score CAS, con **periodo** 1/3/6/12 mesi
+- **Ricerca**: parti possedute → ranking unico BX/UX/CX, con **periodo** 30/90/180/365 giorni, **ordinamento** per score CAS, top cut o vittorie, e **vista per lama** (top cut sommati di tutte le build, quota, build migliore)
   e filtri torneo. Il client riceve un dataset ridotto (`/combos.json`, ~175 KB gzip), non `combos.json`
   intero.
 - **Link Amazon affiliati**: ogni card ha «Buy parts», che apre un link per ogni parte della combo;
@@ -42,7 +42,7 @@ Richiede inoltre (per la pipeline dati):
 | `npm run collect:sources` | Raccoglie le cache grezze (Reddit, YouTube, Sheets, MetaBeys, WBO) |
 | `npm run parse:metabeys` | Parser deterministico MetaBeys (eventi+leaderboard, **BX e CX**) → `data/metabeys-evidence.json` |
 | `npm run parse:wbo` | Parser deterministico WBO (segmentazione regex + risoluzione **BX e CX**) → `data/wbo-evidence.json`; residuo nel ledger `data/wbo-unresolved.json` |
-| `npm run score:combos` | Ricalcola lo score CAS (deterministico) da `evidence`, scrive `combos.json` (materializza anche le CX; filtra il cutoff 12 mesi) |
+| `npm run score:combos` | Ricalcola lo score CAS (deterministico) da `evidence`, scrive `combos.json` (materializza anche le CX; filtra il cutoff 365 giorni) |
 | `npm run prune:combos` | Pruning: archivia in `combos-archive.json` le combo senza evidenza fresca. **Dry-run** di default; `-- --apply` scrive |
 | `npm run typo:candidates` / `npm run typo:apply` | Bordo deterministico del recupero typo dal ledger (dump candidati per il subagent; gate + merge in `wbo-corrections.json`) |
 | `npm run test:scoring` | Golden test dell'algoritmo di scoring |
@@ -66,7 +66,7 @@ Comandi Claude Code (in `.claude/commands/`):
 - **`data/parts-master.json`** — file canonico delle parti, multilingua (nomi Takara Tomy / Hasbro /
   giapponese + alias per lingua). Da qui `build:parts` deriva `data/parts.json` (consumato dal sito),
   preservando gli id e con un guardrail che aborta se romperebbe i riferimenti di `combos.json`.
-- **`data/combos.json`** — combo con `evidence` (placements/usage/mentions), `scoreBreakdown` CAS, `windows` (score per finestra 1/3/6/12 mesi), tag e fonti. Solo evidenza entro il **cutoff di 12 mesi**.
+- **`data/combos.json`** — combo con `evidence` (placements/usage/mentions), `scoreBreakdown` CAS, `windows` (score, top cut e vittorie per finestra 30/90/180/365 giorni), tag e fonti. Solo evidenza entro il **cutoff di 365 giorni**.
 - **`data/combos-archive.json`** — combo archiviate dal pruning (senza evidenza fresca): fuori dal sito, reversibili.
 - **`data/metabeys-evidence.json`** — evidenza torneo parsata in modo deterministico da MetaBeys (input dello scoring).
 - **`data/wbo-evidence.json`** — evidenza torneo da WBO (parser deterministico, BX **e CX** con campi `lockChip/mainBlade/assistBlade/overBlade`).
@@ -94,7 +94,7 @@ MetaBeys e WBO via **Playwright headless** (WBO è dietro Cloudflare: usare `WBO
 MetaBeys, che indicizza gli stessi eventi). Il thread WBO usa un parser **deterministico**
 (segmentazione regex + risoluzione parti/sigle/id, dedup, stats); i casi non segmentabili li rifinisce
 l'IA in `/update-combos` (abbonamento Claude Code, mai via API a pagamento). MetaBeys e WBO **paginano
-lo storico fino a un cutoff di 12 mesi** (capped + resumable via cursori in `scan-history.json`); un
+lo storico fino a un cutoff di 365 giorni** (capped + resumable via cursori in `scan-history.json`); un
 **pruning** deterministico (`prune:combos`, dry-run di default + guardrail) archivia le combo senza
 evidenza fresca in `combos-archive.json`. Dettagli completi e scheduling in `CLAUDE.md`.
 

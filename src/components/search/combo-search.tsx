@@ -1,7 +1,7 @@
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useRef, useState } from 'preact/hooks';
 import type { PartsRegistry, SelectedParts, Locale, ComboLine, Stadium, WindowKey } from '../../lib/types';
 import type { SlimCombo, SlimDatabase } from '../../lib/slim-combos';
-import { filterCombos } from '../../lib/search-engine';
+import { aggregateBlades, bladeOf, filterCombos, SORT_KEYS, type SortKey } from '../../lib/search-engine';
 import { track } from '../../lib/analytics';
 import type { AmazonConfigFile, AsinIndex, PartLookup } from '../../lib/amazon';
 import { subscribeMarket, chooseMarket, type MarketSource } from '../../lib/marketplace';
@@ -9,6 +9,7 @@ import { AdUnit } from '../ads/ad-unit';
 import { INFEED_AFTER, INFEED_EVERY } from '../../lib/ads-config';
 import { PartSearch, type PartRef, type PartCategory } from './part-search';
 import { ComboCard } from './combo-card';
+import { BladeRow } from './blade-row';
 
 interface Props {
   parts: PartsRegistry;
@@ -21,7 +22,12 @@ interface Props {
   translations: Record<string, string>;
 }
 
-const PERIODS: WindowKey[] = ['1', '3', '6', '12'];
+const PERIODS: WindowKey[] = ['30', '90', '180', '365'];
+// Finestra delle combo inline (primo paint): l'unica disponibile finché non arriva il dataset completo.
+const INLINE_PERIOD: WindowKey = '365';
+type View = 'combos' | 'blades';
+const VIEWS: View[] = ['combos', 'blades'];
+type DatasetState = 'loading' | 'ready' | 'failed';
 const PAGE = 60;   // card renderizzate per volta ("Show more"): 4.000 card in DOM rendevano la pagina lenta
 
 const emptySelection: SelectedParts = {
@@ -62,8 +68,15 @@ function Switch({ checked, onVar }: { checked: boolean; onVar: string }) {
 
 export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, translations }: Props) {
   const [db, setDb] = useState<SlimDatabase>(initial);
-  const [period, setPeriod] = useState<WindowKey>('12');
+  const [dataset, setDataset] = useState<DatasetState>('loading');
+  const [period, setPeriod] = useState<WindowKey>(INLINE_PERIOD);
+  const [sort, setSort] = useState<SortKey>('score');
+  const [view, setView] = useState<View>('combos');
+  // Lama scelta dalla vista «Blades»: filtra le combo su quella lama SENZA toccare `selected`, che è
+  // l'inventario dell'utente (Compare, Buildable) e alimenta l'insight «parti più cercate».
+  const [bladeFocus, setBladeFocus] = useState<{ id: string; line: 'bx' | 'cx' } | null>(null);
   const [visible, setVisible] = useState(PAGE);
+  const rankingRef = useRef<HTMLElement>(null);
   // Negozio Amazon: default neutro in SSR, poi (al mount) lo stato condiviso di lib/marketplace —
   // scelta salvata, paese rilevato o lingua del browser. Così il markup idratato coincide con
   // quello servito, e questo select resta allineato a quello dell'header.
@@ -87,17 +100,26 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
 
   // Il dataset completo arriva come asset separato (~190 KB gzip) invece che come prop dell'isola:
   // nelle props Astro ogni virgoletta diventa &quot; e la home pesava 38,5 MB.
+  // Finché non è `ready` si mostrano solo le combo inline, che hanno la sola finestra 365: periodi,
+  // ordinamenti e vista lame restano disabilitati, perché ordinare 30 combo per top cut darebbe un #1
+  // falso. Un JSON senza la finestra 365 (cache di una versione precedente, con altre chiavi) vale
+  // come fallito: con quello ogni periodo darebbe zero risultati.
   useEffect(() => {
     let alive = true;
     fetch(dataUrl)
       .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
-      .then((full: SlimDatabase) => { if (alive && full?.combos?.length) setDb(full); })
-      .catch(() => { /* restano le combo inline */ });
+      .then((full: SlimDatabase) => {
+        if (!alive) return;
+        if (full?.combos?.length && full.combos[0].windows?.[INLINE_PERIOD]) { setDb(full); setDataset('ready'); }
+        else setDataset('failed');
+      })
+      .catch(() => { if (alive) setDataset('failed'); });
     return () => { alive = false; };
   }, [dataUrl]);
+  const ready = dataset === 'ready';
 
   // Ogni cambio di criterio riparte dalla prima pagina di risultati.
-  useEffect(() => { setVisible(PAGE); }, [period, selected, onlyBuildable, tournamentOnly, metaOnly, lineFilter, stadiumFilter]);
+  useEffect(() => { setVisible(PAGE); }, [period, sort, view, bladeFocus, selected, onlyBuildable, tournamentOnly, metaOnly, lineFilter, stadiumFilter]);
 
   const toggleIn = <T,>(arr: T[], v: T): T[] => (arr.includes(v) ? arr.filter((x) => x !== v) : [...arr, v]);
 
@@ -120,8 +142,25 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
   };
   const changePeriod = (p: WindowKey) => {
     if (p === period) return;
-    track('period_changed', { months: Number(p) });
+    track('period_changed', { days: Number(p) });
     setPeriod(p);
+  };
+  const changeSort = (k: SortKey) => {
+    if (k === sort) return;
+    track('sort_changed', { by: k });
+    setSort(k);
+  };
+  const changeView = (v: View) => {
+    if (v === view) return;
+    track('view_changed', { view: v });
+    setView(v);
+    if (v === 'blades') setBladeFocus(null);
+  };
+  const focusBlade = (id: string, line: 'bx' | 'cx') => {
+    track('blade_row_clicked', { blade: id, line, period: Number(period), sort });
+    setBladeFocus({ id, line });
+    setView('combos');
+    rankingRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
   // Ricerca blade-centrica: una sola blade selezionata (e nient'altro) = "la miglior combo per la
@@ -132,39 +171,57 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
     selected.assistBlades.length === 0 && selected.overBlades.length === 0 &&
     selected.ratchets.length === 0 && selected.bits.length === 0;
 
-  let results = filterCombos(db.combos, selected, { period, onlyBuildable, lineFilter, stadiumFilter });
+  let results = filterCombos(db.combos, selected, { period, sort, onlyBuildable, lineFilter, stadiumFilter });
   if (onlyBlade) results = results.filter((c) => c.blade === selected.blades[0]);
   if (tournamentOnly) results = results.filter((c) => c.windows[period]!.tags.includes('tournament-proven'));
   if (metaOnly) results = results.filter((c) => c.windows[period]!.tags.some((tag) => tag === 'meta' || tag === 'top-tier'));
+  // Vista lame: si aggrega l'insieme filtrato, prima del fuoco su una lama (che riguarda le combo).
+  const bladeRows = view === 'blades' ? aggregateBlades(results, period, sort) : [];
+  if (view === 'combos' && bladeFocus) results = results.filter((c) => bladeOf(c) === bladeFocus.id);
+  const total = view === 'blades' ? bladeRows.length : results.length;
   const shown = results.slice(0, visible);
+  const shownRows = bladeRows.slice(0, visible);
   const thresholds = db.thresholds[period];
 
   // Fotografia della ricerca: cosa ha selezionato l'utente e quanti risultati vede. Debounce di 500 ms
   // così una raffica di clic produce un evento solo; il primo render (nessuna selezione) è escluso.
   const selectedCount = Object.values(selected).reduce((n, a) => n + a.length, 0);
   useEffect(() => {
-    if (selectedCount === 0 && !onlyBuildable && !tournamentOnly && !metaOnly && lineFilter.length === 0 && stadiumFilter.length === 0) return;
+    if (selectedCount === 0 && !onlyBuildable && !tournamentOnly && !metaOnly && lineFilter.length === 0 && stadiumFilter.length === 0
+      && sort === 'score' && view === 'combos' && !bladeFocus) return;
     const id = setTimeout(() => {
       track('search_results', {
         selectedCount,
         byCategory: Object.fromEntries(Object.entries(selected).map(([k, v]) => [k, v.length])),
-        results: results.length,
+        results: total,
         onlyBlade,
         period: Number(period),
+        sort,
+        view,
+        bladeFocus: bladeFocus?.id ?? null,
         filters: { onlyBuildable, tournamentOnly, metaOnly, lines: lineFilter, stadiums: stadiumFilter },
       });
     }, 500);
     return () => clearTimeout(id);
-  }, [selected, period, onlyBuildable, tournamentOnly, metaOnly, lineFilter, stadiumFilter, results.length]);
+  }, [selected, period, sort, view, bladeFocus, onlyBuildable, tournamentOnly, metaOnly, lineFilter, stadiumFilter, total]);
 
   const resolveName = (category: PartCategory, id: string): string => {
     const arr = parts[category] as Array<{ id: string; name: string }>;
     return arr.find((p) => p.id === id)?.name ?? id;
   };
 
-  const rankingTitle = onlyBlade
-    ? `${t('search.bestForBlade')} ${resolveName('blades', selected.blades[0])}`
-    : t('search.ranking');
+  const bladeName = (id: string, line: 'bx' | 'cx') => resolveName(line === 'cx' ? 'mainBlades' : 'blades', id);
+  const rankingTitle = view === 'combos' && bladeFocus
+    ? `${t('search.bestForBlade')} ${bladeName(bladeFocus.id, bladeFocus.line)}`
+    : view === 'combos' && onlyBlade
+      ? `${t('search.bestForBlade')} ${resolveName('blades', selected.blades[0])}`
+      : t('search.ranking');
+  // Riga sotto la barra dei controlli: cosa si sta guardando, o perché i controlli sono spenti.
+  const hint = dataset === 'loading'
+    ? t('search.loading')
+    : dataset === 'failed'
+      ? t('search.datasetFailed')
+      : t(`hint.${view}.${sort}`).replace('{period}', t(`period.span.${period}`));
 
   // nome di una parte combo (chiavi singolari: blade/ratchet/...)
   const partName = (category: string, id: string | null): string => {
@@ -174,7 +231,9 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
   };
 
   const comboDisplayName = (combo: SlimCombo): string => {
-    const keys = combo.line === 'bx'
+    // BX e UX: blade + ratchet + bit. Fino al 01/10/2026 solo 'bx': le 62 combo UX finivano nel ramo
+    // CX e il nome diventava il solo bit («Kick» per Glory Valkyrie Kick).
+    const keys = combo.line !== 'cx'
       ? [['blade', combo.blade], ['ratchet', combo.ratchet], ['bit', combo.bit]]
       : [
           ['lockChip', combo.lockChip],
@@ -187,8 +246,8 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
     return keys.map(([k, id]) => partName(k as string, id as string | null)).filter(Boolean).join(' ');
   };
 
-  // Suggerimenti: parti più frequenti nelle top combo (12 mesi, indipendente dal periodo scelto),
-  // non ancora possedute. db.combos è già ordinato per windows["12"].score.
+  // Suggerimenti: parti più frequenti nelle top combo (365 giorni, indipendente dal periodo scelto),
+  // non ancora possedute. db.combos è già ordinato per windows["365"].score.
   const suggestions: PartRef[] = (() => {
     const top = db.combos.slice(0, 20);
     const counts = new Map<string, { category: PartCategory; id: string; n: number }>();
@@ -214,15 +273,17 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
       .map((e) => ({ category: e.category, id: e.id, name: resolveName(e.category, e.id) }));
   })();
 
-  const Pill = ({ active, onToggle, label, accentVar, testId }: { active: boolean; onToggle: () => void; label: string; accentVar: string; testId?: string }) => (
+  const Pill = ({ active, onToggle, label, accentVar, testId, disabled = false }: { active: boolean; onToggle: () => void; label: string; accentVar: string; testId?: string; disabled?: boolean }) => (
     <button
       type="button"
       data-testid={testId}
       aria-pressed={active}
-      onClick={onToggle}
+      aria-disabled={disabled || undefined}
+      title={disabled ? t('search.loading') : undefined}
+      onClick={() => { if (!disabled) onToggle(); }}
       class={`rounded-full border px-3 py-1.5 text-[11px] font-semibold transition-colors ${
         active ? '' : 'border-border bg-surface-2 text-muted hover:text-text'
-      }`}
+      } ${disabled ? 'cursor-not-allowed opacity-40 hover:text-muted' : ''}`}
       style={active ? { borderColor: `var(${accentVar})`, background: `color-mix(in srgb, var(${accentVar}) 14%, transparent)`, color: `var(${accentVar})` } : undefined}
     >
       {label}
@@ -285,11 +346,7 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
             </select>
           </label>
           <p data-testid="market-note" class="mt-1 text-[10px] leading-snug text-muted-2">
-            {marketSource === 'user'
-              ? 'Your choice, saved on this device.'
-              : marketSource === 'geo'
-                ? 'Detected from your location. Not where you shop? Pick your store.'
-                : 'Based on your browser language. Not where you shop? Pick your store.'}
+            {t(marketSource === 'user' ? 'market.note.user' : marketSource === 'geo' ? 'market.note.geo' : 'market.note.lang')}
           </p>
         </div>
 
@@ -298,25 +355,75 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
       </section>
 
       {/* ---------- Ranking ---------- */}
-      <section>
-        {/* Periodo: finestra temporale del ranking (score per finestra calcolati da score:combos). */}
-        <div class="mb-3 flex flex-wrap items-center gap-2" role="group" aria-label={t('period.label')}>
-          <span class="font-mono text-[10px] uppercase tracking-[0.12em] text-muted-2">{t('period.label')}</span>
-          {PERIODS.map((p) => (
-            <Pill key={p} active={period === p} onToggle={() => changePeriod(p)} label={t(`period.${p}`)} accentVar="--c-gold" testId={`period-${p}`} />
-          ))}
-          <span class="basis-full text-[11px] text-muted-2 lg:basis-auto lg:ml-1" data-testid="period-hint">{t(`period.hint.${period}`)}</span>
+      {/* min-w-0: senza, la colonna 1fr della griglia non scende sotto la larghezza del testo più lungo
+          su una riga (la «Best build» troncata della vista lame) e la pagina sborda a destra. */}
+      <section ref={rankingRef} class="min-w-0 scroll-mt-4">
+        {/* Tre controlli del ranking: periodo (finestra calcolata da score:combos), metrica, raggruppamento. */}
+        <div class="mb-2 flex flex-wrap items-center gap-x-5 gap-y-2">
+          <div class="flex flex-wrap items-center gap-1.5" role="group" aria-label={t('period.label')}>
+            <span class="mr-1 font-mono text-[10px] uppercase tracking-[0.12em] text-muted-2">{t('period.label')}</span>
+            {PERIODS.map((p) => (
+              <Pill key={p} active={period === p} onToggle={() => changePeriod(p)} label={t(`period.${p}`)} accentVar="--c-gold" testId={`period-${p}`} disabled={!ready && p !== INLINE_PERIOD} />
+            ))}
+          </div>
+          <div class="flex flex-wrap items-center gap-1.5" role="group" aria-label={t('sort.label')}>
+            <span class="mr-1 font-mono text-[10px] uppercase tracking-[0.12em] text-muted-2">{t('sort.label')}</span>
+            {SORT_KEYS.map((k) => (
+              <Pill key={k} active={sort === k} onToggle={() => changeSort(k)} label={t(`sort.${k}`)} accentVar="--c-gold" testId={`sort-${k}`} disabled={!ready && k !== 'score'} />
+            ))}
+          </div>
+          <div class="flex flex-wrap items-center gap-1.5" role="group" aria-label={t('view.label')}>
+            <span class="mr-1 font-mono text-[10px] uppercase tracking-[0.12em] text-muted-2">{t('view.label')}</span>
+            {VIEWS.map((v) => (
+              <Pill key={v} active={view === v} onToggle={() => changeView(v)} label={t(`view.${v}`)} accentVar="--c-gold" testId={`view-${v}`} disabled={!ready && v !== 'combos'} />
+            ))}
+          </div>
         </div>
+        <p class="mb-3 text-[11px] text-muted-2" data-testid="period-hint" data-dataset={dataset}>{hint}</p>
 
         <div class="mb-4 flex items-center gap-3">
-          <h2 class="font-display text-[18px] uppercase text-text lg:text-[24px]">{rankingTitle}</h2>
+          <h2 class="font-display text-[18px] uppercase text-text lg:text-[24px]" data-testid="ranking-title">{rankingTitle}</h2>
+          {view === 'combos' && bladeFocus && (
+            <button
+              type="button"
+              data-testid="blade-focus-clear"
+              onClick={() => { track('blade_focus_cleared', { blade: bladeFocus.id }); setBladeFocus(null); }}
+              class="shrink-0 rounded-full border border-border px-2.5 py-0.5 text-[11px] font-semibold text-muted transition-colors hover:text-text"
+            >
+              ✕ {t('blade.clear')}
+            </button>
+          )}
           <span class="h-0.5 flex-1 rounded-full" style={{ background: 'var(--grad-ranking)' }} aria-hidden="true" />
           <span class="shrink-0 font-mono text-[11px] text-muted-2" data-testid="results-count">
-            {results.length} {t('search.combosUnit')}
+            {total} {t(view === 'blades' ? 'search.bladesUnit' : 'search.combosUnit')}
           </span>
         </div>
 
-        {results.length === 0 ? (
+        {view === 'blades' ? (
+          bladeRows.length === 0 ? (
+            <div class="rounded-[14px] border border-border bg-surface p-8 text-center">
+              <p class="text-sm text-muted-2">{t('search.noResults')}</p>
+            </div>
+          ) : (
+            <div class="flex flex-col gap-3 lg:gap-2.5">
+              {shownRows.map((row, i) => (
+                <BladeRow
+                  key={row.blade}
+                  row={row}
+                  rank={i + 1}
+                  period={period}
+                  sort={sort}
+                  thresholds={thresholds}
+                  name={bladeName(row.blade, row.line)}
+                  bestName={comboDisplayName(row.best)}
+                  owned={compare && [...selected.blades, ...selected.mainBlades].includes(row.blade)}
+                  onSelect={() => focusBlade(row.blade, row.line)}
+                  t={t}
+                />
+              ))}
+            </div>
+          )
+        ) : results.length === 0 ? (
           <div class="rounded-[14px] border border-border bg-surface p-8 text-center">
             <p class="text-sm text-muted-2">{t('search.noResults')}</p>
           </div>
@@ -334,6 +441,7 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
                   compare={compare}
                   locale={locale}
                   rank={i + 1}
+                  sort={sort}
                   partName={partName}
                   amazon={{ ...amazon, market, keepStore: marketSource === 'user' }}
                   t={t}
@@ -349,15 +457,15 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
           </div>
         )}
 
-        {results.length > visible && (
+        {total > visible && (
           <div class="mt-4 text-center">
             <button
               type="button"
               data-testid="load-more"
-              onClick={() => { track('load_more', { visible: visible + PAGE, results: results.length }); setVisible((v) => v + PAGE); }}
+              onClick={() => { track('load_more', { visible: visible + PAGE, results: total, view }); setVisible((v) => v + PAGE); }}
               class="rounded-full border border-border bg-surface-2 px-5 py-2 text-[12px] font-semibold text-muted transition-colors hover:text-text"
             >
-              {t('search.loadMore')} ({results.length - visible})
+              {t('search.loadMore')} ({total - visible})
             </button>
           </div>
         )}

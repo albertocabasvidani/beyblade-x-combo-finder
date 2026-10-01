@@ -15,10 +15,12 @@
  * nel progetto contenuti: qui si producono solo i candidati, con id stabili.
  * Soglie stimate sui dati di luglio-settembre 2026 (tmp/ig-cadenza.cjs): da rivedere dopo un mese.
  *
- * I conteggi (top cut per combo, per lama, tornei) stanno in src/lib/top-cut.ts, condivisi con la
- * pagina /top-cut/ del sito. Contano tutte le linee: per una CX la «lama» è la Main Blade.
+ * I conteggi (top cut per combo, per lama, tornei) stanno in src/lib/top-cut.ts, sulle stesse finestre
+ * della home (30 e 90 giorni da windowsRef): top-build = home a 30D · Top cuts · Combos, top-lame =
+ * 30D · Top cuts · Blades. Contano tutte le linee: per una CX la «lama» è la Main Blade.
  */
 import { bladeOf, bladeStats, bladeTotal, comboStats, daysBefore, isoDate, tournamentCount, type BladeStat, type ComboStat as ComboStatOf, type TopCutCombo } from '../../src/lib/top-cut';
+import { WINDOW_DAYS, windowCutoff } from '../../src/lib/scoring';
 export { daysBefore, isoDate };
 
 export const NEW_BLADE_DAYS = 60;
@@ -71,7 +73,8 @@ function build(s: ComboStat): Build {
 /** Tutti i candidati per la data di riferimento (di norma oggi, all'ora del giro notturno). */
 export function computeCandidates(db: Combo[], ref: Date): PostCandidate[] {
   const today = isoDate(ref);
-  const d30 = daysBefore(ref, 30), d90 = daysBefore(ref, 90);
+  // Le finestre della home (30D e 90D), non due numeri a parte: stesso confine, stessi conteggi.
+  const d30 = windowCutoff(ref, WINDOW_DAYS['30']), d90 = windowCutoff(ref, WINDOW_DAYS['90']);
   const month = bladeStats(db, d30, today);
   const quarter = bladeStats(db, d90, today);
   const combosMonth = comboStats(db, d30, today);

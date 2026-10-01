@@ -1,0 +1,75 @@
+---
+/**
+ * guides/index.astro — Hub delle guide: parti, analisi delle combo, guide all'acquisto.
+ *
+ * È la voce «Guides» dell'header (che ha quattro voci: Home, Meta, Guides, How scoring works). I tre
+ * elenchi /parts/, /combos/, /buy/ restano come pagine: ci portano i breadcrumb delle guide di
+ * dettaglio e il titolo di ogni sezione qui sotto.
+ */
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/base-layout.astro';
+import Breadcrumb from '../../components/seo/breadcrumb.astro';
+import JsonLd from '../../components/seo/json-ld.astro';
+import { t } from '../../i18n/ui';
+
+const locale = 'en';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const site = Astro.site?.href.replace(/\/$/, '') ?? '';
+const live = (e: { data: { draft: boolean } }) => import.meta.env.DEV || !e.data.draft;
+const byDate = <T extends { data: { publishedAt: Date } }>(a: T, b: T) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime();
+
+const sections = [
+  {
+    key: 'parts', href: `${base}/parts/`,
+    entries: (await getCollection('parts', live)).sort(byDate).map((e) => ({ href: `${base}/parts/${e.data.partId}/`, title: e.data.title, description: e.data.description })),
+  },
+  {
+    key: 'combos', href: `${base}/combos/`,
+    entries: (await getCollection('combos', live)).sort(byDate).map((e) => ({ href: `${base}/combos/${e.data.comboId}/`, title: e.data.title, description: e.data.description })),
+  },
+  {
+    key: 'buy', href: `${base}/buy/`,
+    entries: (await getCollection('buyingGuides', live)).sort(byDate).map((e) => ({ href: `${base}/buy/${e.data.setCode}/`, title: e.data.title, description: e.data.description })),
+  },
+];
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: t(locale, 'guides.title'),
+  itemListElement: sections.flatMap((s) => s.entries).map((e, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    url: `${site}${e.href}`,
+    name: e.title,
+  })),
+};
+---
+
+<BaseLayout title={t(locale, 'guides.title')} description={t(locale, 'guides.description')}>
+  <Breadcrumb items={[{ name: t(locale, 'nav.guides'), href: `${base}/guides/` }]} />
+  <JsonLd data={jsonLd} />
+  <h1 class="mb-4 font-display text-2xl uppercase text-text lg:text-3xl">{t(locale, 'nav.guides')}</h1>
+  <p class="mb-8 max-w-[70ch] text-muted">{t(locale, 'guides.intro')}</p>
+
+  {sections.map((s) => (
+    <section class="mb-10" data-testid={`guides-${s.key}`}>
+      <div class="mb-3 flex items-baseline gap-3">
+        <h2 class="font-display text-xl uppercase text-text">
+          <a href={s.href} class="hover:text-gold">{t(locale, `guides.${s.key}.title`)}</a>
+        </h2>
+        <span class="h-0.5 flex-1 rounded-full" style="background: var(--grad-ranking)" aria-hidden="true"></span>
+        <a href={s.href} class="shrink-0 font-mono text-[11px] uppercase tracking-[0.08em] text-muted hover:text-text">{t(locale, 'guides.all')} ({s.entries.length})</a>
+      </div>
+      <p class="mb-3 text-sm text-muted">{t(locale, `guides.${s.key}.text`)}</p>
+      <ul class="flex flex-col gap-3">
+        {s.entries.map((e) => (
+          <li class="border-b border-border pb-3">
+            <a href={e.href} class="font-medium text-gold hover:underline">{e.title}</a>
+            <p class="text-sm text-muted">{e.description}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
+</BaseLayout>

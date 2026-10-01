@@ -1,8 +1,10 @@
 /**
  * top-cut.ts — Classifiche per presenza nei top cut dei tornei, calcolate dai piazzamenti di combos.json.
  *
- * Unica fonte dei conteggi per due consumatori: la pagina /top-cut/ del sito e i caroselli Instagram
- * (scripts/lib/ig-posts.ts). Così chi arriva da un post trova sul sito gli stessi numeri.
+ * Conteggi dei caroselli Instagram (scripts/lib/ig-posts.ts). Le finestre sono le stesse della home
+ * (windowCutoff / WINDOW_DAYS di scoring.ts, data di riferimento = windowsRef di combos.json), così un
+ * post a 30 giorni ha esattamente i numeri della home con 30D · Top cuts: ig-generate.ts lo verifica
+ * a ogni giro contro windows['30'].topCutAppearances.
  *
  * Funzioni pure (niente file, niente rete). Tutte le linee contano: BX/UX e CX. Per le classifiche
  * «per lama» la lama di una CX è la Main Blade (è la parte che dà il nome alla combo, come la lama
@@ -31,8 +33,10 @@ export interface BladeStat<C extends TopCutCombo = TopCutCombo> { blade: string;
 export interface PartStat { part: string; topCut: number; wins: number; share: number }
 
 export const isoDate = (d: Date) => d.toISOString().slice(0, 10);
+/** Giorno UTC di ref meno n giorni: lo stesso calcolo di windowCutoff (scoring.ts), per ogni n. */
 export function daysBefore(ref: Date, n: number): string {
-  const x = new Date(ref); x.setUTCDate(x.getUTCDate() - n); return isoDate(x);
+  const x = new Date(Date.UTC(ref.getUTCFullYear(), ref.getUTCMonth(), ref.getUTCDate()));
+  x.setUTCDate(x.getUTCDate() - n); return isoDate(x);
 }
 
 /** La «lama» di una combo: la Blade per BX/UX, la Main Blade per CX. Null se manca (combo incompleta). */
@@ -73,7 +77,10 @@ export function bladeStats<C extends TopCutCombo>(db: C[], from: string, to: str
     const b = (by[k] = by[k] || { blade: k, line: s.combo.line === 'cx' ? 'cx' : 'bx', topCut: 0, share: 0, firstSeen: first[k] ?? '', combos: [] });
     b.topCut += s.topCut; b.combos.push(s);
   }
-  return Object.values(by).map((b) => ({ ...b, share: b.topCut / total })).sort((a, b) => b.topCut - a.topCut || a.blade.localeCompare(b.blade));
+  // Stesso spareggio della home (aggregateBlades in search-engine.ts, Sort by Top cuts): vittorie, poi id.
+  const wins = (b: BladeStat<C>) => b.combos.reduce((a, s) => a + s.wins, 0);
+  return Object.values(by).map((b) => ({ ...b, share: b.topCut / total }))
+    .sort((a, b) => b.topCut - a.topCut || wins(b) - wins(a) || a.blade.localeCompare(b.blade));
 }
 
 /** Statistiche per ratchet o bit: una combo col ratchet integrato nella lama non conta per i ratchet. */

@@ -5,23 +5,28 @@
  * parse (scarto dei placement più vecchi del cutoff) e score (filtro dell'evidence unita). Tenere il
  * confine in un solo modulo evita cutoff duplicati e divergenti tra gli stadi della pipeline.
  *
- * Il decadimento dello scoring (emivita 75gg in src/lib/scoring.ts) rende un evento di 12 mesi fa già
- * ~0.034: il cutoff a 12 mesi è coerente col modello e taglia la coda di rumore statistico.
+ * Il decadimento dello scoring (emivita 75gg in src/lib/scoring.ts) rende un evento di 365 giorni fa
+ * già ~0.034: il cutoff a 365 giorni è coerente col modello e taglia la coda di rumore statistico.
+ * In giorni e non in mesi di calendario, come le finestre del sito (WINDOW_DAYS in scoring.ts): la
+ * finestra più lunga, 365, coincide col cutoff e score-combos lo verifica all'avvio.
  */
 
-/** Mesi di storia trattenuti. Override via env COMBO_CUTOFF_MONTHS (test/tuning); default 12. */
-export const CUTOFF_MONTHS: number = (() => {
-  const n = parseInt(process.env.COMBO_CUTOFF_MONTHS ?? '', 10);
-  return Number.isFinite(n) && n > 0 ? n : 12;
+/** Giorni di storia trattenuti. Override via env COMBO_CUTOFF_DAYS (test/tuning); default 365. */
+export const CUTOFF_DAYS: number = (() => {
+  if (process.env.COMBO_CUTOFF_MONTHS) {
+    console.warn('freshness: COMBO_CUTOFF_MONTHS è ignorata dal 01/10/2026, usare COMBO_CUTOFF_DAYS.');
+  }
+  const n = parseInt(process.env.COMBO_CUTOFF_DAYS ?? '', 10);
+  return Number.isFinite(n) && n > 0 ? n : 365;
 })();
 
 /**
- * Confine di freschezza come 'YYYY-MM-DD': ref meno CUTOFF_MONTHS mesi (in UTC).
+ * Confine di freschezza come 'YYYY-MM-DD': giorno UTC di ref meno CUTOFF_DAYS giorni.
  * Una data >= a questo confine è "fresca". `ref` è iniettabile per test deterministici.
  */
 export function cutoffISO(ref: Date = new Date()): string {
   const d = new Date(Date.UTC(ref.getUTCFullYear(), ref.getUTCMonth(), ref.getUTCDate()));
-  d.setUTCMonth(d.getUTCMonth() - CUTOFF_MONTHS);
+  d.setUTCDate(d.getUTCDate() - CUTOFF_DAYS);
   return d.toISOString().slice(0, 10);
 }
 

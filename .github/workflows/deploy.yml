@@ -24,6 +24,8 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
+      # Inglese e italiano con le stesse chiavi, e ogni chiave usata nei sorgenti presente.
+      - run: npm run test:i18n
       - run: npm run build
       # Ogni tracking ID Amazon nell'HTML di ogni pagina: senza, un revisore Associates fuori da quel
       # paese non vede il tag e respinge l'account (Francia, 21/09/2026).

@@ -161,9 +161,9 @@ export interface ScoreBreakdown {
   usageTrend?: 'up' | 'down' | 'stable';  // trend meta-share da storico usage (≥2 snapshot)
 }
 
-// Finestre temporali del ranking (filtro periodo in UI): mesi di evidenza ammessa. "12" coincide
-// con il cutoff della pipeline, quindi windows["12"] == score/scoreBreakdown/tags della combo.
-export type WindowKey = '1' | '3' | '6' | '12';
+// Finestre temporali del ranking (filtro periodo in UI): giorni di evidenza ammessa. "365" coincide
+// con il cutoff della pipeline, quindi windows["365"] == score/scoreBreakdown/tags della combo.
+export type WindowKey = '30' | '90' | '180' | '365';
 
 /** Fotografia di una combo ristretta a una finestra: stesso algoritmo CAS, solo evidenza della finestra. */
 export interface ComboWindow extends ScoreBreakdown {
@@ -211,7 +211,9 @@ export interface Combo {
 
 export interface CombosDatabase {
   lastUpdated: string;
-  /** Soglie di fascia per finestra (quantili sotto i 12 mesi, assolute a 12): scritte da score:combos. */
+  /** Data (ISO) su cui score:combos ha calcolato le finestre: i caroselli contano i giorni da qui. */
+  windowsRef?: string;
+  /** Soglie di fascia per finestra (oggi assolute per tutte): scritte da score:combos. */
   windowThresholds?: Record<WindowKey, TierThresholds>;
   combos: Combo[];
 }

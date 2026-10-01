@@ -13,8 +13,8 @@
  */
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { join } from 'path';
-import { scoreCombo, WINDOW_MONTHS, evidenceInWindow, qualifiesForWindow, windowThresholds, retagTiers } from '../src/lib/scoring';
-import { isFresh, CUTOFF_MONTHS } from './lib/freshness';
+import { scoreCombo, WINDOW_DAYS, WINDOW_KEYS, windowCutoff, windowTags, evidenceInWindow, qualifiesForWindow, windowThresholds, retagTiers } from '../src/lib/scoring';
+import { isFresh, cutoffISO, CUTOFF_DAYS } from './lib/freshness';
 import type {
   Combo, CombosDatabase, ComboEvidence, ComboWindows, MentionEvidence, PlacementEvidence, TierThresholds,
   UsageEvidence, WindowKey,
@@ -81,6 +81,12 @@ function main() {
 
   // 2) Costruisci evidence per OGNI combo e ricalcola lo score.
   const ref = new Date();
+  // La finestra più lunga del sito deve coincidere col cutoff della pipeline: è su questo che regge
+  // l'invariante windows["365"] == score. Un COMBO_CUTOFF_DAYS diverso da 365 la romperebbe in silenzio.
+  const maxWindow = Math.max(...Object.values(WINDOW_DAYS)) as 365;
+  if (CUTOFF_DAYS !== maxWindow || windowCutoff(ref, maxWindow) !== cutoffISO(ref)) {
+    throw new Error(`cutoff ${CUTOFF_DAYS} giorni (${cutoffISO(ref)}) diverso dalla finestra più lunga ${maxWindow} (${windowCutoff(ref, maxWindow)})`);
+  }
   // Cutoff condiviso: filtra l'evidenza unita per freschezza (12 mesi). Copre anche i placement
   // narrative preservati da combos.json e le usage/mentions storiche. Così combos.json contiene solo
   // evidenza fresca e i breakdown (conteggi eventi) sono coerenti. Le combo che restano a evidenza
@@ -135,21 +141,22 @@ function main() {
   }
 
   // 3) Score per finestra temporale (filtro periodo in UI). Passata A: stesso `ref` e stesse opzioni
-  //    dello score base, cambia SOLO l'evidenza ammessa. La finestra 12 riusa l'evidenza già filtrata
-  //    dal cutoff, quindi windows["12"].score è per costruzione identico a combo.score.
+  //    dello score base, cambia SOLO l'evidenza ammessa. La finestra 365 riusa l'evidenza già filtrata
+  //    dal cutoff, quindi windows["365"].score è per costruzione identico a combo.score.
+  //    Il tag rising non si assegna nelle finestre corte (windowTags in scoring.ts).
   //    Mappa per oggetto e non per id: un id duplicato (già capitato, v. projects/combo-pipeline.md
   //    25/07/2026) farebbe ereditare a una combo le finestre dell'altra.
   const rawWindows = new Map<Combo, ComboWindows>();
-  const scoresByWindow: Record<WindowKey, number[]> = { '1': [], '3': [], '6': [], '12': [] };
+  const scoresByWindow = Object.fromEntries(WINDOW_KEYS.map((k) => [k, [] as number[]])) as Record<WindowKey, number[]>;
   for (const combo of db.combos) {
     const ev = combo.evidence ?? { placements: [], usage: [], mentions: [] };
     const w: ComboWindows = {};
-    for (const months of WINDOW_MONTHS) {
-      const key = String(months) as WindowKey;
-      const sub = months >= CUTOFF_MONTHS ? ev : evidenceInWindow(ev, ref, months);
+    for (const key of WINDOW_KEYS) {
+      const days = WINDOW_DAYS[key];
+      const sub = days >= CUTOFF_DAYS ? ev : evidenceInWindow(ev, ref, days);
       if (!qualifiesForWindow(sub)) continue;
       const r = scoreCombo(sub, { ref, useConfidence: true });
-      w[key] = { ...r.breakdown, score: r.score, tags: r.tags };
+      w[key] = { ...r.breakdown, score: r.score, tags: windowTags(r.tags, days) };
       scoresByWindow[key].push(r.score);
     }
     rawWindows.set(combo, w);
@@ -157,7 +164,7 @@ function main() {
   //    Passata B: soglie di fascia per finestra (oggi assolute per tutte, vedi windowThresholds) e
   //    riscrittura dei soli tag meta/top-tier della finestra.
   const thresholds = Object.fromEntries(
-    WINDOW_MONTHS.map((m) => [String(m), windowThresholds(scoresByWindow[String(m) as WindowKey], m)]),
+    WINDOW_KEYS.map((k) => [k, windowThresholds(scoresByWindow[k], WINDOW_DAYS[k])]),
   ) as Record<WindowKey, TierThresholds>;
   for (const combo of db.combos) {
     const w = rawWindows.get(combo)!;
@@ -169,6 +176,10 @@ function main() {
   db.windowThresholds = thresholds;
 
   db.combos.sort((a, b) => b.score - a.score);
+  // Data su cui sono calcolate le finestre: i caroselli Instagram (scripts/ig-generate.ts) contano i
+  // loro 30/90 giorni da qui, non da lastUpdated (scritto a fine run: a cavallo della mezzanotte UTC
+  // sarebbe il giorno dopo, e i numeri non coinciderebbero più con quelli della home).
+  db.windowsRef = ref.toISOString();
   db.lastUpdated = new Date().toISOString();
   writeFileSync(combosPath, JSON.stringify(db, null, 2) + '\n');
 
@@ -179,13 +190,12 @@ function main() {
     console.log(`  ${c.score.toFixed(1).padStart(4)}  ${c.displayName.padEnd(34)} perf=${b.performance} pres=${b.presence} corr=${b.corroboration}  [${b.wins}W/${b.tournamentEvents}ev]`);
   }
 
-  const mismatch = db.combos.filter((c) => c.windows?.['12'] && c.windows['12'].score !== c.score).length;
-  console.log(`\nFinestre temporali (invariante windows[12]==score: ${mismatch} violazioni):`);
-  for (const m of WINDOW_MONTHS) {
-    const k = String(m) as WindowKey;
+  const mismatch = db.combos.filter((c) => c.windows?.['365'] && c.windows['365'].score !== c.score).length;
+  console.log(`\nFinestre temporali (invariante windows[365]==score: ${mismatch} violazioni):`);
+  for (const k of WINDOW_KEYS) {
     const rows = db.combos.filter((c) => c.windows?.[k]).sort((a, b) => b.windows![k]!.score - a.windows![k]!.score);
     const th = thresholds[k];
-    console.log(`  ${String(m).padStart(2)}M: ${rows.length} combo, soglie meta=${th.meta} top=${th.top} solid=${th.solid}`);
+    console.log(`  ${k.padStart(3)}d (dal ${windowCutoff(ref, WINDOW_DAYS[k])}): ${rows.length} combo, soglie meta=${th.meta} top=${th.top} solid=${th.solid}`);
     for (const c of rows.slice(0, 5)) {
       const w = c.windows![k]!;
       console.log(`       ${w.score.toFixed(1).padStart(4)}  ${c.displayName.padEnd(34)} [${w.wins}W/${w.tournamentEvents}ev] ${w.tags.join(',')}`);

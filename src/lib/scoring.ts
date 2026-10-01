@@ -7,7 +7,7 @@
  * Funzioni pure, nessun side-effect: testabili in isolamento (scripts/test-scoring.ts).
  * L'IA NON calcola lo score: estrae l'evidenza, questo codice la trasforma in numero.
  */
-import type { ComboEvidence, ScoreBreakdown, PlacementEvidence, UsageEvidence, Stadium, TierThresholds } from './types';
+import type { ComboEvidence, ScoreBreakdown, PlacementEvidence, UsageEvidence, Stadium, TierThresholds, WindowKey } from './types';
 
 // ---- Costanti tarabili (un punto solo). Ricalibrare sulla distribuzione reale. ----
 export const CONST = {
@@ -216,26 +216,32 @@ function round3(x: number): number {
   return Math.round(x * 1000) / 1000;
 }
 
-// ---- Finestre temporali (filtro periodo: 1/3/6/12 mesi) -------------------------------------
+// ---- Finestre temporali (filtro periodo: 30/90/180/365 giorni) -------------------------------
 // Stesso algoritmo, evidenza ristretta alla finestra. `ref` resta "oggi": il decadimento è sempre
 // relativo a oggi, cambia solo l'evidenza ammessa. Spec in docs/scoring-algorithm.md.
+// In giorni, non in mesi di calendario: «un mese» deve valere 30 giorni come nei caroselli Instagram
+// (scripts/lib/ig-posts.ts), altrimenti la stessa combo ha due conteggi diversi (fino al 01/10/2026 la
+// home contava dal 30/08 e i caroselli dal 31/08: 72 combo su 459 con numeri diversi).
 
-export const WINDOW_MONTHS = [1, 3, 6, 12] as const;
+export type WindowDays = 30 | 90 | 180 | 365;
+export const WINDOW_DAYS: Record<WindowKey, WindowDays> = { '30': 30, '90': 90, '180': 180, '365': 365 };
+export const WINDOW_KEYS = Object.keys(WINDOW_DAYS) as WindowKey[];
 
 /**
- * Confine 'YYYY-MM-DD' della finestra: ref meno `months` mesi (UTC). Stesso rollover di
- * scripts/lib/freshness.ts::cutoffISO, così windowCutoff(ref, 12) == cutoffISO(ref) e la finestra
- * 12 coincide per costruzione con lo score corrente della combo.
+ * Confine 'YYYY-MM-DD' della finestra: giorno UTC di ref meno `days` giorni. Stesso calcolo di
+ * scripts/lib/freshness.ts::cutoffISO, così windowCutoff(ref, 365) == cutoffISO(ref) e la finestra
+ * 365 coincide per costruzione con lo score corrente della combo. Il tipo WindowDays impedisce di
+ * passare per errore un numero di mesi (12 diventerebbe 12 giorni senza alcun errore).
  */
-export function windowCutoff(ref: Date, months: number): string {
+export function windowCutoff(ref: Date, days: WindowDays): string {
   const d = new Date(Date.UTC(ref.getUTCFullYear(), ref.getUTCMonth(), ref.getUTCDate()));
-  d.setUTCMonth(d.getUTCMonth() - months);
+  d.setUTCDate(d.getUTCDate() - days);
   return d.toISOString().slice(0, 10);
 }
 
 /** Evidenza ristretta alla finestra. Data assente = dentro (come isFresh: l'età ignota non si scarta). */
-export function evidenceInWindow(ev: ComboEvidence, ref: Date, months: number): ComboEvidence {
-  const from = windowCutoff(ref, months);
+export function evidenceInWindow(ev: ComboEvidence, ref: Date, days: WindowDays): ComboEvidence {
+  const from = windowCutoff(ref, days);
   const keep = <T extends { date?: string }>(a: T[] | undefined): T[] =>
     (a ?? []).filter((x) => !x.date || x.date >= from);
   return { placements: keep(ev.placements), usage: keep(ev.usage), mentions: keep(ev.mentions) };
@@ -250,18 +256,28 @@ export function qualifiesForWindow(ev: ComboEvidence): boolean {
   return (ev.placements?.length ?? 0) > 0 || (ev.usage?.length ?? 0) > 0;
 }
 
+/**
+ * Tag di una finestra: quelli dello score, senza `rising` se la finestra non è più lunga di
+ * RISING_WINDOW_DAYS. Lì «storico» sarebbe solo il giorno di confine (daysBetween è frazionario e la
+ * finestra taglia a mezzanotte), quindi il tag sarebbe un artefatto: sulla vecchia finestra di un mese
+ * 38 combo su 38 con rising lo avevano per quel solo motivo.
+ */
+export function windowTags(tags: string[], days: WindowDays): string[] {
+  return days <= CONST.RISING_WINDOW_DAYS ? tags.filter((t) => t !== 'rising') : tags;
+}
+
 /** Soglie assolute di fascia: le stesse di deriveTags e dei badge UI. */
 export const TIER_ABS: TierThresholds = { meta: 8.5, top: 7.0, solid: 5.5 };
 
 /**
- * Soglie di fascia per una finestra: assolute per tutte, così "meta" significa la stessa cosa a 3
- * come a 12 mesi (badge più rari nelle finestre corte, non ridefiniti). Misurato l'11/09/2026 su
+ * Soglie di fascia per una finestra: assolute per tutte, così "meta" significa la stessa cosa a 90
+ * come a 365 giorni (badge più rari nelle finestre corte, non ridefiniti). Misurato l'11/09/2026 su
  * combos.json: top 3M = 8.2, top 6M = 8.5, quindi la scala regge anche sulle finestre corte; l'idea
  * dei quantili per finestra è stata scartata perché a 3 mesi avrebbe marcato "meta" 13 combo con
  * score ≥ 4.2. La funzione resta parametrica (finestra e distribuzione) per poterla ritarare senza
  * toccare score:combos né la UI, che leggono le soglie da db.windowThresholds.
  */
-export function windowThresholds(_scores: number[], _months: number): TierThresholds {
+export function windowThresholds(_scores: number[], _days: WindowDays): TierThresholds {
   return { ...TIER_ABS };
 }
 
