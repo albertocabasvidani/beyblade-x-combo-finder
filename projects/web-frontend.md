@@ -1,7 +1,7 @@
 ---
 name: web-frontend
 status: active
-updated: 26/09/2026
+updated: 01/10/2026
 health: yellow
 next-step: "Ricandidare Amazon.fr: ogni tag ora e' nell'HTML di ogni pagina; poi fase 7 (scalare i contenuti)"
 blocked-by: null
@@ -22,6 +22,7 @@ GitHub Pages via Actions. L'infrastruttura i18n IT resta in repo (dormiente), ri
 
 <!-- Idee, feature, task non avviati. Formato: `- gg/mm/aaaa — testo` -->
 - 26/09/2026 — Richiedere di nuovo la revisione AdSense (pagina Siti → «I confirm I have fixed the issues» → «Request review», click dell'utente) dopo la fase 7 dei contenuti e qualche settimana di traffico vero; all'approvazione rimettere gli id in `AD_SLOTS`
+- 01/10/2026 — Report SEO settimanale via email: job del dispatcher sul homeserver che legge la Search Console API (query e pagine in crescita/calo, copertura indice) con un service account aggiunto come utente della proprietà. Da fare quando Search Console ha 2-3 settimane di dati (dal ~20/10/2026)
 - 16/06/2026 — pagine dettaglio combo `/combo/[id]` (SSG) per SEO (non ancora implementate)
 - 16/06/2026 — SEO: structured data JSON-LD (la sitemap c'è dall'11/09/2026)
 - ~~16/06/2026 — registrare Amazon Associates US~~ **chiuso il 19/09/2026**: esisteva già un account US (`albertocabasv-20`, tag storico diverso dai `-21`/`-22`), lista siti vuota. Aggiunto `com` in config, dichiarato beybladexcombos.com nella sitelist, `defaultMarketplace` tornato `com`. Resta l'informativa fiscale USA (Incomplete, la può compilare solo il titolare): blocca solo il pagamento, non il tracciamento
@@ -43,6 +44,7 @@ GitHub Pages via Actions. L'infrastruttura i18n IT resta in repo (dormiente), ri
 ## Changelog
 
 <!-- Cose completate, dalla più recente. Formato: `- gg/mm/aaaa — testo` -->
+- 01/10/2026 — **Monitoraggio SEO attivato.** Google Search Console: proprietà di dominio `sc-domain:beybladexcombos.com`, verificata col record TXT `google-site-verification=…` aggiunto nella Gestione DNS di Tophost (non va tolto: senza, la verifica decade); sitemap `sitemap-index.xml` inviata. Collegati in Search Console anche i social di Papi Nerd (Instagram `papi.nerd`, TikTok `@papinerd`, YouTube «Papi Nerd»), X escluso per scelta. Bing Webmaster Tools: sito importato da Search Console (account con già `apprendistapasticcere.it`; `beyblade-x-deals.vercel.app` lasciato fuori) e sitemap inviata. Account Google: `cinquequarti@gmail.com`.
 - 28/09/2026 — **Account Associates amazon.co.uk approvato** (Store ID `albertocv04-21`): il tag del sito `bxcombosuk-21` è un tracking ID di quell'account, quindi il link UK non rischia più la chiusura per mancate vendite. Nessuna modifica a `amazon-config.json`. Resta da compilare payment e tax info su Associates Central.
 - 26/09/2026 — **AdSense ha respinto il sito, slot spenti.** Verdetto del 22/09/2026 11:41, letto nella pagina Siti: «Needs attention — Low value content». Ads.txt «Authorized», proprietà verificata: il rifiuto non è tecnico. Google chiede valore sostanziale, presenza costante sul web e interesse degli utenti; al momento della revisione il dominio aveva 10 giorni, 18 URL e traffico quasi nullo (deduzione, AdSense non dettaglia). Svuotati i quattro id in `AD_SLOTS` (`src/lib/ads-config.ts`, gli id restano nel commento), così le pagine non riservano più gli spazi vuoti da 100 e 250 px; lo script in head resta per la nuova revisione. Build: 0 `data-ad-slot` nella home, script presente; `test:e2e` 215 OK, 0 KO
 - 23/09/2026 — **Amazon.fr ri-candidato: nuovo Store ID `bxcombosfranc-21`** (chiesto `bxcombosfrance`, Amazon tronca a 13 caratteri), al posto di `bxcombosfr-21` in `data/amazon-config.json`. Dichiarato il solo beybladexcombos.com, «Site de contenu/niche». Approvazione temporanea: la revisione scatta alle 3 vendite idonee da amazon.fr. Puzzle anti-bot risolto dall'utente (il primo tentativo non si era caricato: «Impossible de charger l'étape de vérification»).

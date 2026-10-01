@@ -23,6 +23,9 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
 - **Hosting**: GitHub Pages (deploy automatico via Actions)
 - **SEO/social**: `@astrojs/sitemap` (solo pagine HTML), `src/pages/robots.txt.ts` generato a build,
   canonical + Open Graph/Twitter card nel layout con `public/og.png` (1200×630, generata da `tmp/gen-og.mjs`).
+- **Monitoraggio SEO** (dal 01/10/2026): Google Search Console, proprietà di dominio `sc-domain:beybladexcombos.com`
+  (account `cinquequarti@gmail.com`), verificata da un record TXT `google-site-verification` nel DNS Tophost: non
+  rimuoverlo. Bing Webmaster Tools importato da Search Console. Sitemap inviata a entrambi.
 - **Analytics**: PostHog cloud EU cookieless (`src/lib/analytics.ts`, chiave in `analytics-config.ts`;
   placeholder = spenta). Eventi elencati in `projects/web-frontend.md` (Changelog 11/09/2026).
 - Progetto PostHog id 272532. Nel progetto serve `cookieless_server_hash_mode` = 2 (stateful): a 0 l'ingest
