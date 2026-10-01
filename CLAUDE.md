@@ -26,6 +26,9 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
 - **Monitoraggio SEO** (dal 01/10/2026): Google Search Console, proprietà di dominio `sc-domain:beybladexcombos.com`
   (account `cinquequarti@gmail.com`), verificata da un record TXT `google-site-verification` nel DNS Tophost: non
   rimuoverlo. Bing Webmaster Tools importato da Search Console. Sitemap inviata a entrambi.
+- **Dashboard unica** in PostHog: «beybladexcombos.com: traffico e SEO» (dashboard 988880). Search Console vi entra come
+  fonte del data warehouse (tabelle `googlesearchconsole.search_analytics_by_*`, sync ogni 6 ore fatta da PostHog). Gli
+  insight si creano anche via API interna dalla scheda loggata (`/api/environments/272532/insights/`, header `X-CSRFToken`).
 - **Analytics**: PostHog cloud EU cookieless (`src/lib/analytics.ts`, chiave in `analytics-config.ts`;
   placeholder = spenta). Eventi elencati in `projects/web-frontend.md` (Changelog 11/09/2026).
 - Progetto PostHog id 272532. Nel progetto serve `cookieless_server_hash_mode` = 2 (stateful): a 0 l'ingest
