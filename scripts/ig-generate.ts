@@ -16,7 +16,7 @@
 import { chromium } from 'playwright-core';
 import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync } from 'fs';
 import { join } from 'path';
-import { computeCandidates, isoDate, type Combo, type Registry } from './lib/ig-posts';
+import { computeCandidates, isoDate, REGISTRY_KEYS, type Combo, type Registry } from './lib/ig-posts';
 import { renderCaption, renderSlides, type RenderCtx } from './lib/ig-render';
 
 const ROOT = join(import.meta.dirname, '..');
@@ -33,7 +33,7 @@ async function main() {
   const db = JSON.parse(readFileSync(join(ROOT, 'data', 'combos.json'), 'utf8')) as { lastUpdated?: string; combos: Combo[] };
   const parts = JSON.parse(readFileSync(join(ROOT, 'data', 'parts.json'), 'utf8')) as Registry;
   const byId: Record<string, { name: string; image?: string }> = {};
-  for (const k of ['blades', 'ratchets', 'bits'] as const) for (const p of parts[k] ?? []) byId[p.id] = p;
+  for (const k of REGISTRY_KEYS) for (const p of parts[k] ?? []) byId[p.id] = p;
   const dataUri: Record<string, string> = {};
   const ctx: RenderCtx = {
     name: (id) => byId[id]?.name ?? id,

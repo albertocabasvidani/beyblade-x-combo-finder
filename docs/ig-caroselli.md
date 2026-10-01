@@ -99,4 +99,13 @@ Un solo post al giorno; chi non esce resta in coda e ricompare il giorno libero 
 
 ## Fuori scope
 
-Bit/ratchet, post CX, xtreme/infinity, torneo della settimana, notifiche di freschezza.
+Bit/ratchet, xtreme/infinity, torneo della settimana, notifiche di freschezza.
+
+## Linea CX
+
+Le CX contano come le BX in ogni post (dal 01/10/2026). La loro esclusione era una scelta di Claude per
+semplificare il primo giro, finita per errore fra i confini decisi: l'utente non l'aveva mai chiesta.
+Per una CX la «lama» è la Main Blade: un post `build-lama` può quindi essere su una Main Blade (oggi
+`build-lama-blast`). La slide di una combo CX mostra le parti in una griglia 3×2 (lock chip, main blade,
+assist blade, over blade se c'è, ratchet, bit). I conteggi stanno in `src/lib/top-cut.ts`, lo stesso
+modulo che usa la pagina `/top-cut/` del sito: carosello e pagina danno gli stessi numeri.

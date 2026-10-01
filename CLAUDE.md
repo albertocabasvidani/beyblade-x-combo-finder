@@ -173,7 +173,9 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
 - `npm run ig:generate` — caroselli Instagram candidati da `combos.json` in `out/ig/` (gitignorato):
   slide JPEG 1080×1350 (Chrome headless via playwright-core), `caption.txt`, `post.json`, `queue.json`.
   Gira nel giro notturno dopo `build` (dentro `/update-combos`). Regole in `scripts/lib/ig-posts.ts`,
-  template in `scripts/lib/ig-render.ts`, golden test `npm run test:ig`. Chi sceglie e pubblica il post
+  template in `scripts/lib/ig-render.ts`, golden test `npm run test:ig`. I conteggi top cut stanno in
+  `src/lib/top-cut.ts`, condiviso con la pagina `/top-cut/` del sito: BX e CX insieme, e la lama di
+  una CX è la Main Blade. Chi sceglie e pubblica il post
   del giorno è `tools/caroselli.py` del progetto **contenuti** (job `contenuti-caroselli`, 12:00 sul
   server): un contenuto al giorno, mai nei giorni con un Reel; `top-build` il lunedì e `top-lame` il
   giovedì con scarto massimo di un giorno; poi eventi (`build-lama-nuova` a 40 piazzamenti,

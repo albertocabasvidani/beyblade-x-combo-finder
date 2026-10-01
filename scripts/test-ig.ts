@@ -4,6 +4,7 @@
  */
 import { computeCandidates, isoWeek, daysBefore, type Combo } from './lib/ig-posts';
 import { renderCaption, renderSlides } from './lib/ig-render';
+import { partStats } from '../src/lib/top-cut';
 
 let failed = 0;
 function check(name: string, cond: boolean, extra = '') {
@@ -35,8 +36,12 @@ const db: Combo[] = [
   combo('d', '3-60', 'rush', 12, 2, 200), combo('d', '1-60', 'hexa', 8, 2),
   // H: vecchia lama in crescita ma sotto la soglia dei 15 → no
   combo('h', '3-60', 'rush', 9, 1, 200),
-  // CX: ignorata
-  { id: 'cx1', line: 'cx', blade: 'z', ratchet: '1-60', bit: 'hexa', displayName: 'cx1', evidence: { placements: [{ date: day(2), placement: 1 }] } },
+  // CX: conta come le altre, con la Main Blade «m» come lama; 40 top cut nel mese → seconda combo e
+  // seconda lama. In giro da un anno, così non diventa una lama nuova.
+  { id: 'cx1', line: 'cx', blade: null, lockChip: 'lc', mainBlade: 'm', assistBlade: 'as', overBlade: 'ov', ratchet: '9-60', bit: 'kick', displayName: 'cx1', type: 'balance',
+    evidence: { placements: [...Array.from({ length: 40 }, (_, i) => ({ date: day(1 + (i % 29)), placement: (i % 3) + 1, eventName: `cx${i}` })), { date: day(300), placement: 2, eventName: 'cxfirst' }] } },
+  // CX senza Main Blade (combo incompleta): fuori da ogni classifica
+  { id: 'cx-rotta', line: 'cx', blade: null, lockChip: 'lc', mainBlade: null, assistBlade: 'as', ratchet: '1-60', bit: 'hexa', displayName: 'cx-rotta', evidence: { placements: [{ date: day(2), placement: 1, eventName: 'x' }] } },
 ];
 
 const cands = computeCandidates(db, REF);
@@ -52,9 +57,21 @@ const tb = byType('top-build')[0], tl = byType('top-lame')[0];
 check('top-build con id della settimana', tb?.id === 'top-build-2026-W39', `=${tb?.id}`);
 check('generato di domenica 27/09 → settimana del lunedì (W40)', computeCandidates(db, new Date('2026-09-27T04:00:00Z')).find((c) => c.type === 'top-build')?.id === 'top-build-2026-W40');
 check('top-build: 5 combo, prima a-1-60-hexa con 100', (tb.data as any).combos.length === 5 && (tb.data as any).combos[0].name === 'a-1-60-hexa' && (tb.data as any).combos[0].topCut === 100);
-check('top-build: la CX non compare', !(tb.data as any).combos.some((c: any) => c.name === 'cx1'));
+const cxBuild = (tb.data as any).combos[1];
+check('top-build: la CX è seconda, con la Main Blade come lama e le sue parti', cxBuild?.name === 'cx1' && cxBuild.topCut === 40 && cxBuild.line === 'cx' && cxBuild.blade === 'm' && cxBuild.lockChip === 'lc' && cxBuild.overBlade === 'ov', JSON.stringify(cxBuild));
+check('top-build: la CX senza Main Blade non compare', !(tb.data as any).combos.some((c: any) => c.name === 'cx-rotta'));
 check('top-lame: prima a con 130, quota calcolata', (tl.data as any).blades[0].blade === 'a' && (tl.data as any).blades[0].topCut === 130 && Math.abs((tl.data as any).blades[0].share - 130 / (tl.data as any).totalTopCut) < 1e-9);
+check('top-lame: la Main Blade m è seconda, marcata cx', (tl.data as any).blades[1]?.blade === 'm' && (tl.data as any).blades[1]?.line === 'cx', JSON.stringify((tl.data as any).blades[1]));
+check('top-lame: il totale include la CX (a 130 + b 25 + e 30 + f 28 + g 26 + c 25 + d 20 + h 9 + cx 40)', (tl.data as any).totalTopCut === 333, `=${(tl.data as any).totalTopCut}`);
 check('top-lame: 5 lame', (tl.data as any).blades.length === 5);
+
+console.log('classifiche ratchet e bit (pagina /top-cut/)');
+const ratchets = partStats(db, 'ratchet', day(30), day(0));
+const bits = partStats(db, 'bit', day(30), day(0));
+check('ratchet: il ratchet integrato (null) non conta', !ratchets.some((r) => r.part === 'null') && ratchets.reduce((a, r) => a + r.topCut, 0) === 333 - 25, `=${ratchets.reduce((a, r) => a + r.topCut, 0)}`);
+check('ratchet: 1-60 primo con a 100 + d 8 (la CX rotta non conta)', ratchets[0].part === '1-60' && ratchets[0].topCut === 108, JSON.stringify(ratchets[0]));
+check('bit: la CX conta (kick = a 30 + c 25 + cx 40)', bits.find((b) => b.part === 'kick')?.topCut === 95, JSON.stringify(bits.find((b) => b.part === 'kick')));
+check('bit: quote che sommano a 1', Math.abs(bits.reduce((a, b) => a + b.share, 0) - 1) < 1e-9);
 
 console.log('eventi');
 const nuova = byType('build-lama-nuova');
@@ -79,6 +96,8 @@ for (const c of [tb, tl, nuova[0], rising[0], fill[0]]) {
   const cap = renderCaption(ctx, c);
   check(`${c.type}: didascalia con sito e hashtag, entro 2200`, cap.includes('beybladexcombos.com') && cap.includes('#beybladex') && cap.length <= 2200);
 }
+const cxSlides = renderSlides(ctx, tb).join('');
+check('slide della CX: griglia con lock chip, main, assist, over, ratchet e bit', cxSlides.includes('class="cxgrid"') && ['LC', 'M', 'AS', 'OV', '9-60', 'KICK'].every((n) => cxSlides.includes(`<span class="nm">${n}</span>`)));
 check('ratchet integrato reso a testo, non «null»', renderSlides(ctx, nuova[0]).join('').includes('integrato nella lama') && !renderSlides(ctx, nuova[0]).join('').includes('>null<'));
 
 console.log(failed === 0 ? '\nTutti i test passati.' : `\n${failed} test FALLITI.`);

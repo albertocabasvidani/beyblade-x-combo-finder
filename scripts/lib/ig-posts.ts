@@ -14,7 +14,12 @@
  * Chi sceglie cosa pubblicare ogni giorno (Reel o carosello, settimanale o evento) è il pubblicatore
  * nel progetto contenuti: qui si producono solo i candidati, con id stabili.
  * Soglie stimate sui dati di luglio-settembre 2026 (tmp/ig-cadenza.cjs): da rivedere dopo un mese.
+ *
+ * I conteggi (top cut per combo, per lama, tornei) stanno in src/lib/top-cut.ts, condivisi con la
+ * pagina /top-cut/ del sito. Contano tutte le linee: per una CX la «lama» è la Main Blade.
  */
+import { bladeOf, bladeStats, bladeTotal, comboStats, daysBefore, isoDate, tournamentCount, type BladeStat, type ComboStat as ComboStatOf, type TopCutCombo } from '../../src/lib/top-cut';
+export { daysBefore, isoDate };
 
 export const NEW_BLADE_DAYS = 60;
 export const NEW_BLADE_MIN_PLACEMENTS = 40;
@@ -23,16 +28,11 @@ export const RISING_MIN_GROWTH = 2;
 export const FILLER_TOP_BLADES = 10;
 export const BUILDS_PER_BLADE = 4;
 
-export interface Placement { date?: string; placement?: number; eventName?: string }
-export interface Combo {
-  id: string; line: string; blade: string; ratchet: string | null; bit: string; displayName: string; type?: string;
-  evidence?: { placements?: Placement[] };
-}
+export type Combo = TopCutCombo;
 export interface Part { id: string; name: string; image?: string; releaseSet?: string }
-export interface Registry { blades: Part[]; ratchets: Part[]; bits: Part[] }
-
-export interface ComboStat { combo: Combo; topCut: number; wins: number; events: number }
-export interface BladeStat { blade: string; topCut: number; share: number; firstSeen: string; combos: ComboStat[] }
+export const REGISTRY_KEYS = ['blades', 'ratchets', 'bits', 'lockChips', 'mainBlades', 'assistBlades', 'overBlades'] as const;
+export type Registry = Partial<Record<(typeof REGISTRY_KEYS)[number], Part[]>>;
+type ComboStat = ComboStatOf<Combo>;
 
 export interface PostCandidate {
   id: string;
@@ -43,10 +43,6 @@ export interface PostCandidate {
   data: Record<string, unknown>;
 }
 
-export const isoDate = (d: Date) => d.toISOString().slice(0, 10);
-export function daysBefore(ref: Date, n: number): string {
-  const x = new Date(ref); x.setUTCDate(x.getUTCDate() - n); return isoDate(x);
-}
 /** Settimana ISO 8601 (lunedì-domenica) nel formato 2026-W40. */
 export function isoWeek(d: Date): string {
   const x = new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate()));
@@ -57,54 +53,19 @@ export function isoWeek(d: Date): string {
   return `${y}-W${String(wk).padStart(2, '0')}`;
 }
 
-const bxOnly = (db: Combo[]) => db.filter((c) => c.line !== 'cx' && c.blade);
-
-/** Statistiche per combo su una finestra [from, to] inclusa (date ISO). */
-export function comboStats(db: Combo[], from: string, to: string): ComboStat[] {
-  const out: ComboStat[] = [];
-  for (const c of bxOnly(db)) {
-    let topCut = 0, wins = 0; const ev = new Set<string>();
-    for (const p of c.evidence?.placements ?? []) {
-      if (!p.date || p.date < from || p.date > to) continue;
-      topCut++;
-      if (p.placement === 1) wins++;
-      ev.add(`${p.eventName ?? ''}|${p.date}`);
-    }
-    if (topCut) out.push({ combo: c, topCut, wins, events: ev.size });
-  }
-  return out.sort((a, b) => b.topCut - a.topCut || b.wins - a.wins || a.combo.displayName.localeCompare(b.combo.displayName));
+/** I dati di una build per le slide: la lama è quella di bladeOf (Main Blade per le CX), più le parti CX. */
+export interface Build {
+  id: string; name: string; line: string; blade: string; ratchet: string | null; bit: string; type: string;
+  lockChip: string | null; mainBlade: string | null; assistBlade: string | null; overBlade: string | null;
+  topCut: number; wins: number; events: number;
 }
-
-/** Statistiche per lama sulla stessa finestra: top cut, quota sul totale, prima evidenza assoluta, combo ordinate. */
-export function bladeStats(db: Combo[], from: string, to: string): BladeStat[] {
-  const stats = comboStats(db, from, to);
-  const total = stats.reduce((a, s) => a + s.topCut, 0) || 1;
-  const first: Record<string, string> = {};
-  for (const c of bxOnly(db)) for (const p of c.evidence?.placements ?? []) {
-    if (p.date && (!first[c.blade] || p.date < first[c.blade])) first[c.blade] = p.date;
-  }
-  const by: Record<string, BladeStat> = {};
-  for (const s of stats) {
-    const b = (by[s.combo.blade] = by[s.combo.blade] || { blade: s.combo.blade, topCut: 0, share: 0, firstSeen: first[s.combo.blade] ?? '', combos: [] });
-    b.topCut += s.topCut; b.combos.push(s);
-  }
-  return Object.values(by).map((b) => ({ ...b, share: b.topCut / total })).sort((a, b) => b.topCut - a.topCut || a.blade.localeCompare(b.blade));
-}
-
-/** Tornei distinti (evento+data) con almeno un piazzamento nella finestra. */
-export function tournamentCount(db: Combo[], from: string, to: string): number {
-  const ev = new Set<string>();
-  for (const c of bxOnly(db)) for (const p of c.evidence?.placements ?? []) {
-    if (p.date && p.date >= from && p.date <= to) ev.add(`${p.eventName ?? ''}|${p.date}`);
-  }
-  return ev.size;
-}
-
-/** Piazzamenti totali di una lama, senza limite di finestra (serve alla soglia della lama nuova). */
-function bladeTotal(db: Combo[], blade: string): number {
-  let n = 0;
-  for (const c of bxOnly(db)) if (c.blade === blade) n += (c.evidence?.placements ?? []).filter((p) => p.date).length;
-  return n;
+function build(s: ComboStat): Build {
+  const c = s.combo;
+  return {
+    id: c.id, name: c.displayName, line: c.line, blade: bladeOf(c)!, ratchet: c.ratchet, bit: c.bit, type: c.type ?? '',
+    lockChip: c.lockChip ?? null, mainBlade: c.mainBlade ?? null, assistBlade: c.assistBlade ?? null, overBlade: c.overBlade ?? null,
+    topCut: s.topCut, wins: s.wins, events: s.events,
+  };
 }
 
 /** Tutti i candidati per la data di riferimento (di norma oggi, all'ora del giro notturno). */
@@ -122,12 +83,12 @@ export function computeCandidates(db: Combo[], ref: Date): PostCandidate[] {
 
   out.push({ id: `top-build-${week}`, type: 'top-build', week, priority: 0, data: {
     tournaments: tournamentCount(db, d30, today), from: d30, to: today,
-    combos: combosMonth.slice(0, 5).map((s) => ({ id: s.combo.id, name: s.combo.displayName, blade: s.combo.blade, ratchet: s.combo.ratchet, bit: s.combo.bit, type: s.combo.type ?? '', topCut: s.topCut, wins: s.wins, events: s.events })),
+    combos: combosMonth.slice(0, 5).map(build),
   } });
   out.push({ id: `top-lame-${week}`, type: 'top-lame', week, priority: 0, data: {
     tournaments: tournamentCount(db, d30, today), from: d30, to: today,
     totalTopCut: month.reduce((a, b) => a + b.topCut, 0),
-    blades: month.slice(0, 5).map((b) => ({ blade: b.blade, topCut: b.topCut, share: b.share, bestCombo: b.combos[0]?.combo.displayName ?? '' })),
+    blades: month.slice(0, 5).map((b) => ({ blade: b.blade, line: b.line, topCut: b.topCut, share: b.share, bestCombo: b.combos[0]?.combo.displayName ?? '' })),
   } });
 
   // Eventi: lama nuova pronta (precedenza 1), nuovo ingresso (precedenza 2).
@@ -160,9 +121,9 @@ export function computeCandidates(db: Combo[], ref: Date): PostCandidate[] {
 }
 
 /** Dati per un post «le build meta per X»: le prime BUILDS_PER_BLADE combo della lama nella finestra. */
-function bladeBuildData(db: Combo[], b: BladeStat, from: string, to: string) {
+function bladeBuildData(db: Combo[], b: BladeStat<Combo>, from: string, to: string) {
   return {
-    blade: b.blade, from, to, tournaments: tournamentCount(db, from, to), topCut: b.topCut, share: b.share, firstSeen: b.firstSeen,
-    builds: b.combos.slice(0, BUILDS_PER_BLADE).map((s) => ({ id: s.combo.id, name: s.combo.displayName, blade: s.combo.blade, ratchet: s.combo.ratchet, bit: s.combo.bit, type: s.combo.type ?? '', topCut: s.topCut, wins: s.wins, events: s.events })),
+    blade: b.blade, line: b.line, from, to, tournaments: tournamentCount(db, from, to), topCut: b.topCut, share: b.share, firstSeen: b.firstSeen,
+    builds: b.combos.slice(0, BUILDS_PER_BLADE).map(build),
   };
 }

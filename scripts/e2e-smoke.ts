@@ -231,6 +231,15 @@ async function desktopFlow(context: BrowserContext) {
   const privacy = await page.goto(BASE + '/privacy/', { waitUntil: 'networkidle' });
   if (!privacy || privacy.status() !== 200) skipped('/privacy/', `status=${privacy?.status()} (pagina non ancora creata)`);
   else check('privacy: sezione analytics', /PostHog/i.test((await page.textContent('body')) ?? ''));
+  const topCut = await page.goto(BASE + '/top-cut/', { waitUntil: 'networkidle' });
+  check('/top-cut/ 200', topCut?.status() === 200);
+  const righe = (days: number) => page.evaluate((d) => ['combos', 'blades', 'ratchets', 'bits'].map((t) =>
+    document.querySelectorAll(`[data-topcut-panel="${d}"] [data-testid=topcut-${t}] tbody tr`).length), days);
+  const r30 = await righe(30);
+  check('top-cut: le quattro classifiche a 30 giorni hanno righe', r30.every((n) => n > 0), r30.join(','));
+  check('top-cut: visibile solo la finestra a 30 giorni', await page.isVisible('[data-testid=topcut-30]') && !(await page.isVisible('[data-testid=topcut-90]')));
+  await page.click('[data-topcut-tab="90"]');
+  check('top-cut: il selettore mostra i 90 giorni', await page.isVisible('[data-testid=topcut-90]') && !(await page.isVisible('[data-testid=topcut-30]')));
   await page.goto(BASE + '/', { waitUntil: 'networkidle' });
   const footer = (await page.locator('footer').textContent()) ?? '';
   if (/Amazon Associate/i.test(footer)) check('footer: disclosure Amazon', true); else skipped('footer: disclosure Amazon', 'non ancora presente');
@@ -438,7 +447,7 @@ async function mobileFlow(context: BrowserContext) {
   check('nessuno scroll orizzontale (home)', await noHScroll(), `scrollWidth=${await page.evaluate(() => document.documentElement.scrollWidth)}`);
   // Da telefono la home deve portare alle sezioni: prima le voci erano nascoste sotto i 640 px.
   const navMobile = page.locator('[data-testid=mobile-nav] a:visible');
-  check('menu sezioni visibile su mobile (4 voci)', (await navMobile.count()) === 4, `=${await navMobile.count()}`);
+  check('menu sezioni visibile su mobile (5 voci)', (await navMobile.count()) === 5, `=${await navMobile.count()}`);
   await addPart(page, 'Wizard Rod');
   check('parte aggiunta su mobile', (await page.locator('button[aria-label="remove Wizard Rod"]').count()) === 1);
   await page.getByTestId('period-1').click();

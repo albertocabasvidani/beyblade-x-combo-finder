@@ -29,6 +29,10 @@ const releases = releasesData as {
   }>;
 };
 
+/** Tutte le combo e la data dei dati (per le classifiche di /top-cut/). */
+export const allCombos = db.combos;
+export const dataLastUpdated: string = (db as any).lastUpdated ?? new Date().toISOString();
+
 /** Tutte le combo, indicizzate per id. */
 export const comboById = new Map<string, Combo>(db.combos.map((c) => [c.id, c]));
 

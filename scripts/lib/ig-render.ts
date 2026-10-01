@@ -5,7 +5,7 @@
  * pagina si renderizza con `setContent` senza server né file. Stile del sito (Anton/Saira, arancione su
  * nero); il layout è quello provato nel mockup del 26/09/2026 (tmp/ig-mockup.cjs), scalato ×2,5.
  */
-import type { PostCandidate } from './ig-posts';
+import type { Build, PostCandidate } from './ig-posts';
 
 export interface RenderCtx {
   name: (id: string) => string;      // nome leggibile di una parte
@@ -49,6 +49,10 @@ export const CSS = `
   .big{font-family:Anton,sans-serif;font-size:220px;line-height:.9;color:#f5a623}
   .big.dim{color:#777;font-size:160px}
   .arrow{font-size:100px;color:#f5a623}
+  .cxgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:34px 24px;margin-top:44px}
+  .cxgrid img,.cxgrid .noimg{width:230px;height:230px;object-fit:contain;display:block;margin:0 auto;filter:drop-shadow(0 16px 30px rgba(0,0,0,.7))}
+  .cxgrid .lbl{text-align:center;margin-top:14px;font-size:24px}
+  .cxgrid .nm{display:block;text-align:center;font-size:40px;margin-top:4px}
   ol.mini{margin-top:24px} ol.mini li{padding:18px 0} ol.mini img{width:110px;height:110px}
 `;
 
@@ -64,10 +68,21 @@ function partRow(ctx: RenderCtx, label: string, id: string | null): string {
   return `<div class="row">${src ? `<img src="${src}" alt="">` : '<div class="noimg"></div>'}<div><div class="lbl">${label}</div><div class="val">${esc(ctx.name(id))}</div></div></div>`;
 }
 
-interface Build { name: string; blade: string; ratchet: string | null; bit: string; type: string; topCut: number; wins: number; events: number }
 const proof = (b: Build, period: string) => `${b.topCut} top cut · ${b.wins} vittorie · ${b.events} tornei ${period}`;
 
+/** Le parti di una CX in griglia 3×2: sono cinque o sei, in righe da una per parte non entrano. */
+function cxGrid(ctx: RenderCtx, b: Build): string {
+  const parts: [string, string | null][] = [['LOCK CHIP', b.lockChip], ['MAIN BLADE', b.mainBlade], ['ASSIST BLADE', b.assistBlade]];
+  if (b.overBlade) parts.push(['OVER BLADE', b.overBlade]);
+  parts.push(['RATCHET', b.ratchet], ['BIT', b.bit]);
+  return `<div class="cxgrid">${parts.map(([label, id]) => {
+    const src = id ? ctx.img(id) : '';
+    return `<div>${src ? `<img src="${src}" alt="">` : '<div class="noimg"></div>'}<div class="lbl">${label}</div><span class="nm">${esc(id ? ctx.name(id) : '-')}</span></div>`;
+  }).join('')}</div>`;
+}
+
 function comboSlide(ctx: RenderCtx, kicker: string, b: Build, period: string, footer: string): string {
+  if (b.line === 'cx') return wrap(`<div class="kicker">${esc(kicker)} · CX</div><h1 style="font-size:96px;margin:30px 0 0">${esc(b.name)}</h1>${cxGrid(ctx, b)}<div class="proof">${esc(proof(b, period))}</div>${foot(footer)}`);
   return wrap(`<div class="kicker">${esc(kicker)}</div>${partRow(ctx, 'LAMA', b.blade)}${partRow(ctx, 'RATCHET', b.ratchet)}${partRow(ctx, 'BIT', b.bit)}<div class="proof">${esc(proof(b, period))}</div>${foot(footer)}`);
 }
 

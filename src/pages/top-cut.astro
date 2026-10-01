@@ -1,0 +1,235 @@
+---
+/**
+ * top-cut.astro — Classifiche per presenza nei top cut dei tornei: combo, lame, ratchet, bit, su 30 e
+ * 90 giorni. Stessi conteggi dei caroselli Instagram (src/lib/top-cut.ts è condiviso con
+ * scripts/lib/ig-posts.ts). BX e CX insieme: per una CX la lama è la Main Blade.
+ *
+ * Pagina statica: i numeri stanno nell'HTML e si aggiornano a ogni build, cioè ogni notte dopo la
+ * pipeline. Le due finestre sono entrambe nel markup; il selettore mostra una alla volta (senza
+ * JavaScript resta visibile la prima). Data di riferimento = lastUpdated di combos.json, come i caroselli.
+ */
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/base-layout.astro';
+import Breadcrumb from '../components/seo/breadcrumb.astro';
+import JsonLd from '../components/seo/json-ld.astro';
+import BuyRow from '../components/buy/buy-row.astro';
+import AffiliateDisclosure from '../components/buy/affiliate-disclosure.astro';
+import { allCombos, dataLastUpdated, partMasterById } from '../lib/build-data';
+import { bladeStats, comboStats, daysBefore, isoDate, partStats, tournamentCount } from '../lib/top-cut';
+
+const WINDOWS = [30, 90] as const;
+const TOP_COMBOS = 20;
+const TOP_BLADES = 15;
+const TOP_PARTS = 10;
+const BUY_TOP = 5;
+/** Giorni finali della finestra in cui WBO pubblica ancora in ritardo (vedi meta report di settembre). */
+const LAG_DAYS = 7;
+
+const ref = new Date(dataLastUpdated);
+const to = isoDate(ref);
+const dmy = (iso: string) => iso.split('-').reverse().join('/');
+const pct = (x: number) => `${(100 * x).toFixed(1)}%`;
+
+/** Nome leggibile di una parte: nome Takara Tomy dal master, altrimenti l'id. */
+function partName(category: string, id: string): string {
+  const m = partMasterById.get(`${category}:${id}`);
+  return m?.names?.tt ?? m?.name ?? id;
+}
+const bladeName = (id: string, line: string) => partName(line === 'cx' ? 'mainBlade' : 'blade', id);
+
+const comboPages = new Set((await getCollection('combos', (e) => !e.data.draft)).map((e) => e.data.comboId));
+const partPages = new Set((await getCollection('parts', (e) => !e.data.draft)).map((e) => e.data.partId));
+
+const windows = WINDOWS.map((days) => {
+  const from = daysBefore(ref, days);
+  const combos = comboStats(allCombos as any[], from, to);
+  return {
+    days,
+    from,
+    tournaments: tournamentCount(allCombos as any[], from, to),
+    totalTopCut: combos.reduce((a, s) => a + s.topCut, 0),
+    combos: combos.slice(0, TOP_COMBOS),
+    blades: bladeStats(allCombos as any[], from, to).slice(0, TOP_BLADES),
+    ratchets: partStats(allCombos as any[], 'ratchet', from, to).slice(0, TOP_PARTS),
+    bits: partStats(allCombos as any[], 'bit', from, to).slice(0, TOP_PARTS),
+  };
+});
+const month = windows[0];
+
+// «Where to buy» per le prime parti del mese: lame (Main Blade per le CX), ratchet, bit.
+const buyBlades = month.blades.slice(0, BUY_TOP).map((b) => ({ category: b.line === 'cx' ? 'mainBlade' : 'blade', partId: b.blade, partName: bladeName(b.blade, b.line) }));
+const buyRatchetsBits = [
+  ...month.ratchets.slice(0, 3).map((r) => ({ category: 'ratchet', partId: r.part, partName: r.part })),
+  ...month.bits.slice(0, 3).map((b) => ({ category: 'bit', partId: b.part, partName: partName('bit', b.part) })),
+];
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const site = Astro.site?.href.replace(/\/$/, '') ?? '';
+const title = 'Beyblade X Top Cut Leaderboard: Combos and Parts';
+const description = `The Beyblade X combos, blades, ratchets and bits that reached the most tournament top cuts in the last 30 and 90 days, from ${month.tournaments} events in the last month. Updated daily.`;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Beyblade X combos by tournament top cuts, last 30 days',
+  itemListElement: month.combos.map((s, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: s.combo.displayName,
+    ...(comboPages.has(s.combo.id) ? { url: `${site}${base}/combos/${s.combo.id}/` } : {}),
+  })),
+};
+
+const th = 'px-2 py-2 text-left font-mono text-[10px] font-normal uppercase tracking-[0.08em] text-muted';
+const thNum = 'px-2 py-2 text-right font-mono text-[10px] font-normal uppercase tracking-[0.08em] text-muted';
+const td = 'px-2 py-2 align-top';
+const tdNum = 'px-2 py-2 text-right align-top font-mono tabular-nums';
+const pos = 'w-8 px-2 py-2 align-top font-display text-gold';
+---
+
+<BaseLayout title={title} description={description}>
+  <Breadcrumb items={[{ name: 'Top Cut', href: `${base}/top-cut/` }]} />
+  <JsonLd data={jsonLd} />
+  <h1 class="mb-4 font-display text-2xl uppercase text-text lg:text-3xl">Top Cut Leaderboard</h1>
+  <p class="mb-3 text-muted">
+    Which combos and parts keep making it to the final stages of real tournaments. A <strong class="text-text">top cut</strong> is
+    one placement in the final standings of an event logged on WBO or MetaBeys: the more times a combo or a part shows up there,
+    the higher it ranks. BX and CX lines are counted together; for a CX combo the blade is its Main Blade.
+  </p>
+  <p class="mb-6 font-mono text-[11px] text-muted-2">Data as of {dmy(to)} · updated daily</p>
+
+  <div class="mb-6 flex gap-2" role="group" aria-label="Period">
+    {windows.map((w, i) => (
+      <button
+        type="button"
+        data-topcut-tab={w.days}
+        aria-pressed={i === 0 ? 'true' : 'false'}
+        class="rounded-lg border border-border px-3 py-1.5 font-mono text-[11px] uppercase tracking-[0.08em] text-muted aria-pressed:border-gold aria-pressed:text-gold"
+      >
+        Last {w.days} days
+      </button>
+    ))}
+  </div>
+
+  {windows.map((w, i) => (
+    <section data-topcut-panel={w.days} hidden={i !== 0} data-testid={`topcut-${w.days}`}>
+      <p class="mb-2 text-text-2">
+        {dmy(w.from)} – {dmy(to)}: <strong>{w.tournaments}</strong> tournaments, <strong>{w.totalTopCut}</strong> top cuts.
+      </p>
+      <p class="mb-6 text-sm text-muted">
+        Results are posted with a delay: the last {LAG_DAYS} days or so are still filling in, so
+        {w.days === 30 ? ' a combo that looks like it is dropping may just be waiting for its results.' : ' they weigh less here than in the 30-day view.'}
+      </p>
+
+      <h2 class="mb-2 mt-8 font-display text-xl uppercase text-text">Combos</h2>
+      <div class="overflow-x-auto">
+        <table class="w-full border-collapse text-sm" data-testid="topcut-combos">
+          <thead class="border-b border-border-strong">
+            <tr><th class={th}>#</th><th class={th}>Combo</th><th class={thNum}>Top cuts</th><th class={thNum}>Wins</th><th class={thNum}>Events</th></tr>
+          </thead>
+          <tbody>
+            {w.combos.map((s, k) => (
+              <tr class="border-b border-border">
+                <td class={pos}>{k + 1}</td>
+                <td class={td}>
+                  <span class="flex flex-wrap items-center gap-1.5">
+                    {comboPages.has(s.combo.id)
+                      ? <a href={`${base}/combos/${s.combo.id}/`} class="font-medium text-gold hover:underline">{s.combo.displayName}</a>
+                      : <span class="font-medium text-text">{s.combo.displayName}</span>}
+                    {s.combo.line === 'cx' && <span class="rounded-[4px] border border-cx-border bg-cx-bg px-1.5 py-0.5 font-mono text-[8.5px] font-bold text-cx-text">CX</span>}
+                  </span>
+                  {s.combo.type && <span class="font-mono text-[10px] uppercase text-muted">{s.combo.type}</span>}
+                </td>
+                <td class={tdNum}>{s.topCut}</td>
+                <td class={tdNum}>{s.wins}</td>
+                <td class={tdNum}>{s.events}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="mb-2 mt-10 font-display text-xl uppercase text-text">Blades</h2>
+      <p class="mb-2 text-sm text-muted">Share = the blade's top cuts over all top cuts in the period.</p>
+      <div class="overflow-x-auto">
+        <table class="w-full border-collapse text-sm" data-testid="topcut-blades">
+          <thead class="border-b border-border-strong">
+            <tr><th class={th}>#</th><th class={th}>Blade</th><th class={thNum}>Top cuts</th><th class={thNum}>Share</th><th class={th}>Best combo</th></tr>
+          </thead>
+          <tbody>
+            {w.blades.map((b, k) => (
+              <tr class="border-b border-border">
+                <td class={pos}>{k + 1}</td>
+                <td class={td}>
+                  <span class="flex flex-wrap items-center gap-1.5">
+                    {partPages.has(b.blade)
+                      ? <a href={`${base}/parts/${b.blade}/`} class="font-medium text-gold hover:underline">{bladeName(b.blade, b.line)}</a>
+                      : <span class="font-medium text-text">{bladeName(b.blade, b.line)}</span>}
+                    {b.line === 'cx' && <span class="rounded-[4px] border border-cx-border bg-cx-bg px-1.5 py-0.5 font-mono text-[8.5px] font-bold text-cx-text">CX</span>}
+                  </span>
+                </td>
+                <td class={tdNum}>{b.topCut}</td>
+                <td class={tdNum}>{pct(b.share)}</td>
+                <td class={`${td} text-text-2`}>{b.combos[0]?.combo.displayName} <span class="font-mono text-[11px] text-muted">({b.combos[0]?.topCut})</span></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mt-10 grid gap-8 md:grid-cols-2">
+        {([['Ratchets', 'ratchet', w.ratchets], ['Bits', 'bit', w.bits]] as const).map(([label, category, rows]) => (
+          <div>
+            <h2 class="mb-2 font-display text-xl uppercase text-text">{label}</h2>
+            <table class="w-full border-collapse text-sm" data-testid={`topcut-${category}s`}>
+              <thead class="border-b border-border-strong">
+                <tr><th class={th}>#</th><th class={th}>{category === 'ratchet' ? 'Ratchet' : 'Bit'}</th><th class={thNum}>Top cuts</th><th class={thNum}>Share</th></tr>
+              </thead>
+              <tbody>
+                {rows.map((r, k) => (
+                  <tr class="border-b border-border">
+                    <td class={pos}>{k + 1}</td>
+                    <td class={td}>
+                      {partPages.has(r.part)
+                        ? <a href={`${base}/parts/${r.part}/`} class="font-medium text-gold hover:underline">{partName(category, r.part)}</a>
+                        : <span class="font-medium text-text">{partName(category, r.part)}</span>}
+                    </td>
+                    <td class={tdNum}>{r.topCut}</td>
+                    <td class={tdNum}>{pct(r.share)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        ))}
+      </div>
+    </section>
+  ))}
+
+  <h2 class="mb-2 mt-12 font-display text-xl uppercase text-text">Where to buy this month's top parts</h2>
+  <p class="mb-3 text-sm text-muted">The five blades with the most top cuts in the last 30 days, then the top three ratchets and bits.</p>
+  <AffiliateDisclosure />
+  <BuyRow parts={buyBlades} />
+  <BuyRow parts={buyRatchetsBits} />
+
+  <p class="mt-8 text-sm text-muted">
+    Want to know which of these you can build with the parts you own? <a href={`${base}/`} class="text-gold hover:underline">Search combos by your parts</a>.
+    How tournament results turn into a score: <a href={`${base}/about/`} class="text-gold hover:underline">how scoring works</a>.
+  </p>
+</BaseLayout>
+
+<script is:inline>
+  (function () {
+    var tabs = document.querySelectorAll('[data-topcut-tab]');
+    tabs.forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        var days = tab.getAttribute('data-topcut-tab');
+        tabs.forEach(function (t) { t.setAttribute('aria-pressed', String(t === tab)); });
+        document.querySelectorAll('[data-topcut-panel]').forEach(function (p) {
+          p.hidden = p.getAttribute('data-topcut-panel') !== days;
+        });
+        try { if (window.__ph) window.__ph.capture('topcut_period', { days: Number(days) }); } catch (e) {}
+      });
+    });
+  })();
+</script>

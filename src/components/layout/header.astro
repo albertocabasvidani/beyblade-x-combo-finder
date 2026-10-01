@@ -37,6 +37,12 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
         {t(locale, 'nav.meta')}
       </a>
       <a
+        href={`${base}/top-cut/`}
+        class="hidden whitespace-nowrap font-mono text-[11px] uppercase tracking-[0.08em] text-muted transition-colors hover:text-text sm:inline-flex lg:text-xs"
+      >
+        {t(locale, 'nav.topCut')}
+      </a>
+      <a
         href={`${base}/parts/`}
         class="hidden font-mono text-[11px] uppercase tracking-[0.08em] text-muted transition-colors hover:text-text sm:inline-flex lg:text-xs"
       >
@@ -88,6 +94,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     aria-label="Sections"
   >
     <a href={`${base}/meta/`} class="shrink-0 font-mono text-[11px] uppercase tracking-[0.08em] text-muted hover:text-text">{t(locale, 'nav.meta')}</a>
+    <a href={`${base}/top-cut/`} class="shrink-0 font-mono text-[11px] uppercase tracking-[0.08em] text-muted hover:text-text">{t(locale, 'nav.topCut')}</a>
     <a href={`${base}/parts/`} class="shrink-0 font-mono text-[11px] uppercase tracking-[0.08em] text-muted hover:text-text">{t(locale, 'nav.parts')}</a>
     <a href={`${base}/combos/`} class="shrink-0 font-mono text-[11px] uppercase tracking-[0.08em] text-muted hover:text-text">{t(locale, 'nav.combos')}</a>
     <a href={`${base}/buy/`} class="shrink-0 font-mono text-[11px] uppercase tracking-[0.08em] text-muted hover:text-text">{t(locale, 'nav.buy')}</a>
