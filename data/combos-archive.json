@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-30T02:08:12.011Z",
+  "lastUpdated": "2026-10-02T02:05:17.030Z",
   "combos": [
     {
       "id": "aero-pegasus-1-70-low-flat",
@@ -394,6 +394,50 @@
       "archivedDate": "2026-09-14"
     },
     {
+      "id": "cerberus-blast-wheel-1-60-low-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "1-60",
+      "bit": "low-rush",
+      "lockChip": "cerberus",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Cerberus Blast W 1-60 Low Rush",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Oct. 01, 2025  5:23 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-01"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-10-02",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-02"
+    },
+    {
       "id": "cerberus-blast-wheel-3-60-low-rush",
       "line": "cx",
       "blade": null,
@@ -568,6 +612,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "cerberus-blast-wheel-9-60-point",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "point",
+      "lockChip": "cerberus",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Cerberus Blast W 9-60 Point",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Oct. 01, 2025  12:58 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-01"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-10-02",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-02"
     },
     {
       "id": "cerberus-blast-wheel-9-80-level",
@@ -4626,6 +4714,50 @@
       "archivedDate": "2026-09-12"
     },
     {
+      "id": "hells-blast-turn-6-60-kick",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "6-60",
+      "bit": "kick",
+      "lockChip": "hells",
+      "mainBlade": "blast",
+      "assistBlade": "turn",
+      "overBlade": null,
+      "displayName": "Hells Blast T 6-60 Kick",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Oct. 01, 2025  12:58 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-01"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-10-02",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-02"
+    },
+    {
       "id": "hells-blast-turn-9-60-ball",
       "line": "cx",
       "blade": null,
@@ -7909,6 +8041,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "pegasus-blast-heavy-1-70-kick",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "1-70",
+      "bit": "kick",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Pegasus Blast H 1-70 Kick",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — The Sparring Grounds 2",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-01"
+        }
+      ],
+      "dateAdded": "2026-09-12",
+      "dateUpdated": "2026-10-02",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-02"
     },
     {
       "id": "pegasus-blast-jaggy-1-60-kick",
@@ -15794,6 +15970,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "whale-blast-assault-3-60-kick",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "3-60",
+      "bit": "kick",
+      "lockChip": "whale",
+      "mainBlade": "blast",
+      "assistBlade": "assault",
+      "overBlade": null,
+      "displayName": "Whale Blast A 3-60 Kick",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Oct. 01, 2025  1:13 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-01"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-10-02",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-02"
     },
     {
       "id": "whale-blast-bumper-9-60-free-ball",
