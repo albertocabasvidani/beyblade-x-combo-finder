@@ -4,12 +4,12 @@
     "List of Beyblade X products (Takara Tomy)": {
       "revid": 649061,
       "timestamp": "2026-09-14T15:46:59.000Z",
-      "lastScannedDate": "2026-09-30"
+      "lastScannedDate": "2026-10-02"
     },
     "List of Beyblade X products (Hasbro)": {
       "revid": 648918,
       "timestamp": "2026-09-14T01:43:54.000Z",
-      "lastScannedDate": "2026-09-30"
+      "lastScannedDate": "2026-10-02"
     }
   },
   "pages": {
@@ -68,12 +68,12 @@
       "notes": "Revid cambiato (643858→644560): G2762 (già registrato dal 22/07) confermato esplicito nella lista Products; aggiunto ProductCode G4568 a Glory Valkerion LF (glory-valkyrie, già registrata come UX-20). Nessuna parte nuova."
     },
     "OrochiCluster 6-60LF": {
-      "revid": 650110,
-      "timestamp": "2026-09-29T08:59:52.000Z",
-      "lastScannedDate": "2026-09-30",
+      "revid": 650179,
+      "timestamp": "2026-09-30T08:33:24.000Z",
+      "lastScannedDate": "2026-10-02",
       "kind": "product",
       "kindSource": "ai",
-      "notes": "parti gia' nel master, solo metadati"
+      "notes": "pagina modificata; parti gia presenti nel master, nessuna nuova"
     },
     "Random Booster Vol. 11": {
       "revid": 643373,
@@ -311,12 +311,12 @@
       "kindSource": "heuristic"
     },
     "MeteorDragoon 3-70J": {
-      "revid": 649738,
-      "timestamp": "2026-09-21T00:56:10.000Z",
-      "lastScannedDate": "2026-09-21",
+      "revid": 650176,
+      "timestamp": "2026-09-30T04:04:39.000Z",
+      "lastScannedDate": "2026-10-02",
       "kind": "product",
-      "kindSource": "heuristic",
-      "notes": "revisione minore (gallery GP2026, trivia); Blade/Ratchet/Bit gia' in master"
+      "kindSource": "ai",
+      "notes": "pagina modificata; parti gia presenti nel master, nessuna nuova"
     },
     "Blade - Hulk": {
       "revid": 645360,
@@ -426,12 +426,12 @@
       "kindSource": "heuristic"
     },
     "DrakeBrave G4-70I": {
-      "revid": 649855,
-      "timestamp": "2026-09-24T08:01:41.000Z",
-      "lastScannedDate": "2026-09-25",
+      "revid": 650236,
+      "timestamp": "2026-10-01T03:13:19.000Z",
+      "lastScannedDate": "2026-10-02",
       "kind": "product",
-      "kindSource": "heuristic",
-      "notes": "revisione minore (trivia su provenienza parti); LockChip/MainBlade/AssistBlade/Ratchet/Bit gia' in master"
+      "kindSource": "ai",
+      "notes": "pagina modificata; parti gia presenti nel master, nessuna nuova"
     },
     "SamuraiSaber 2-70L": {
       "revid": 649720,
@@ -508,15 +508,15 @@
       "kindSource": "heuristic"
     },
     "BulletGriffon H": {
-      "revid": 649734,
-      "timestamp": "2026-09-20T21:55:39.000Z",
-      "lastScannedDate": "2026-09-21",
+      "revid": 650233,
+      "timestamp": "2026-10-01T03:05:59.000Z",
+      "lastScannedDate": "2026-10-02",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Rocket Griffon H"
       ],
-      "notes": "aggiunta localizzazione Hasbro (Rocket Griffon, G4561); Ratchet-Integrated Blade e Bit gia' nel master con hasbro name"
+      "notes": "pagina modificata; parti gia presenti nel master, nessuna nuova"
     },
     "Bumblebee 3-60GP": {
       "revid": 639473,
@@ -908,11 +908,12 @@
       "kindSource": "heuristic"
     },
     "SharkGill 5-60FB": {
-      "revid": 646256,
-      "timestamp": "2026-08-14T11:08:47.000Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 650240,
+      "timestamp": "2026-10-01T03:20:48.000Z",
+      "lastScannedDate": "2026-10-02",
       "kind": "product",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "pagina modificata; parti gia presenti nel master, nessuna nuova"
     },
     "SharkScale Deck Set": {
       "revid": 634335,
@@ -1155,14 +1156,15 @@
       "kindSource": "heuristic"
     },
     "PerseusDark B6-80W": {
-      "revid": 649724,
-      "timestamp": "2026-09-20T21:50:34.000Z",
-      "lastScannedDate": "2026-09-21",
+      "revid": 650237,
+      "timestamp": "2026-10-01T03:14:49.000Z",
+      "lastScannedDate": "2026-10-02",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Dark Perseus B 6-80W"
-      ]
+      ],
+      "notes": "pagina modificata; parti gia presenti nel master, nessuna nuova"
     },
     "PhoenixFlare Z9-80WW": {
       "revid": 648974,
@@ -1179,11 +1181,12 @@
       "kindSource": "heuristic"
     },
     "SolEclipse D5-70TK": {
-      "revid": 649000,
-      "timestamp": "2026-09-14T12:39:53.000Z",
-      "lastScannedDate": "2026-09-15",
+      "revid": 650238,
+      "timestamp": "2026-10-01T03:16:15.000Z",
+      "lastScannedDate": "2026-10-02",
       "kind": "product",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "pagina modificata; parti gia presenti nel master, nessuna nuova"
     },
     "Antler Stag B 2-60HN": {
       "revid": 641745,
@@ -1271,11 +1274,12 @@
       "kindSource": "heuristic"
     },
     "Over Blade - I": {
-      "revid": 643584,
-      "timestamp": "2026-07-14T12:48:20.000Z",
-      "lastScannedDate": "2026-08-09",
+      "revid": 650284,
+      "timestamp": "2026-10-01T20:10:31.000Z",
+      "lastScannedDate": "2026-10-02",
       "kind": "part",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "pagina modificata; parti gia presenti nel master, nessuna nuova"
     },
     "Over Blade - Outer": {
       "revid": 642956,
@@ -1690,14 +1694,15 @@
       ]
     },
     "CerberusFlame W5-80WB": {
-      "revid": 646832,
-      "timestamp": "2026-08-22T12:22:30.000Z",
-      "lastScannedDate": "2026-08-23",
+      "revid": 650235,
+      "timestamp": "2026-10-01T03:11:48.000Z",
+      "lastScannedDate": "2026-10-02",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Flame Cerberus W 5-80WB"
-      ]
+      ],
+      "notes": "pagina modificata; parti gia presenti nel master, nessuna nuova"
     },
     "Suppress Superion 0-70LP": {
       "revid": 646750,
@@ -1857,14 +1862,15 @@
       ]
     },
     "MummyCurse 7-55W": {
-      "revid": 648995,
-      "timestamp": "2026-09-14T12:36:14.000Z",
-      "lastScannedDate": "2026-09-15",
+      "revid": 650178,
+      "timestamp": "2026-09-30T05:29:44.000Z",
+      "lastScannedDate": "2026-10-02",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Curse Mummy 7-55W"
-      ]
+      ],
+      "notes": "pagina modificata; parti gia presenti nel master, nessuna nuova"
     },
     "BearScratch 5-60F": {
       "revid": 649992,
@@ -1877,14 +1883,15 @@
       ]
     },
     "ClockMirage 9-65B": {
-      "revid": 649732,
-      "timestamp": "2026-09-20T21:53:54.000Z",
-      "lastScannedDate": "2026-09-21",
+      "revid": 650239,
+      "timestamp": "2026-10-01T03:18:36.000Z",
+      "lastScannedDate": "2026-10-02",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Mirage Clock 9-65B"
-      ]
+      ],
+      "notes": "pagina modificata; parti gia presenti nel master, nessuna nuova"
     },
     "Ridge Triceratops 9-80GN": {
       "revid": 646413,
@@ -2843,11 +2850,12 @@
       "kindSource": "heuristic"
     },
     "GoatTackle 7-70T": {
-      "revid": 646154,
-      "timestamp": "2026-08-13T04:49:34.000Z",
-      "lastScannedDate": "2026-08-25",
+      "revid": 650241,
+      "timestamp": "2026-10-01T03:21:34.000Z",
+      "lastScannedDate": "2026-10-02",
       "kind": "product",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "pagina modificata; parti gia presenti nel master, nessuna nuova"
     },
     "Optimus Prime 7-70L": {
       "revid": 647057,
