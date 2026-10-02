@@ -1,7 +1,7 @@
 ---
 name: instagram-caroselli
 status: active
-updated: 27/09/2026
+updated: 02/10/2026
 health: yellow
 blocked-by: null
 current-plan: docs/ig-caroselli.md
@@ -40,4 +40,5 @@ alle 12:00 sul server), intervallate ai Reel di papi.nerd: un contenuto al giorn
 ## Changelog
 
 <!-- Cose completate, dalla più recente. Formato: `- gg/mm/aaaa — testo` -->
+- 01/10/2026 — **CX incluse e numeri identici alla home.** L'esclusione delle CX (`bxOnly`) era una scelta di Claude finita nel «Fuori scope» del piano, mai decisa dall'utente: tolta. Per una CX la lama è la Main Blade; la slide di una combo CX mostra le parti in griglia 3×2; in coda entra `build-lama-blast`. I conteggi stanno in `src/lib/top-cut.ts` sulle finestre della home (`windowCutoff`, ref `windowsRef`) con lo stesso spareggio (top cut, vittorie, nome): prime 20 combo e 20 lame nello stesso ordine di home a 30D · Top cuts. `ig:generate` stampa la parità con `windows["30"]` (0 diverse, anche sul server). `test:ig` verde
 - 26/09/2026 — **Disegno e prime prove.** Analisi dei post sul meta di gengischad (caroselli statici con una build per slide: 1.400-2.360 like contro ~110 dei reel, didascalie in inglese), quattro formati mockuppati in `tmp/ig-mockup.cjs` con i dati veri, tre correzioni dell'utente (numero di tornei al posto dei nomi delle fonti, niente score CAS, piè di slide leggibile, classifica ordinata per top cut). Decisioni: caroselli alle 12:00, un contenuto al giorno, settimanali con scarto massimo di un giorno, niente bit/ratchet. Frequenza dei «nuovo ingresso» misurata settimana per settimana su tre mesi: gli stessi candidati restano sopra soglia per 4-9 settimane, quindi serve un registro dei pubblicati, non un post per settimana; le lame che sfondano arrivano a 40 piazzamenti in 19-35 giorni dal primo risultato (Dran Strike 19, Bullet Griffon 25, Glory Valkyrie 35)

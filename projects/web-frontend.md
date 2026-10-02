@@ -1,7 +1,7 @@
 ---
 name: web-frontend
 status: active
-updated: 01/10/2026
+updated: 02/10/2026
 health: yellow
 next-step: "Ricandidare Amazon.fr: ogni tag ora e' nell'HTML di ogni pagina; poi fase 7 (scalare i contenuti)"
 blocked-by: null
