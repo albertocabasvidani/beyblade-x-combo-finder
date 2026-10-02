@@ -12,8 +12,6 @@ interface Props {
   /** Nome leggibile della lama (Blade o Main Blade) e della sua build migliore. */
   name: string;
   bestName: string;
-  /** Con «Compare» attivo: la lama è fra quelle possedute. */
-  owned: boolean;
   onSelect: () => void;
   t: (key: string) => string;
 }
@@ -24,7 +22,7 @@ interface Props {
  * legga allo stesso modo; il badge è quello della build migliore, non uno score della lama. Tutta la
  * riga è un pulsante: porta alle combo di quella lama.
  */
-export function BladeRow({ row, rank, period, sort, thresholds, name, bestName, owned, onSelect, t }: Props) {
+export function BladeRow({ row, rank, period, sort, thresholds, name, bestName, onSelect, t }: Props) {
   const best = row.best.windows[period]!;
   const isTop = rank === 1;
   const railBg = isTop ? 'var(--rail-1)' : row.line === 'cx' ? 'var(--rail-cx)' : 'var(--rail-2)';
@@ -39,9 +37,6 @@ export function BladeRow({ row, rank, period, sort, thresholds, name, bestName, 
       <span class="font-display uppercase leading-tight text-text text-[17px] lg:text-[22px]">{name}</span>
       {row.line === 'cx' && (
         <span class="shrink-0 rounded-[4px] border border-cx-border bg-cx-bg px-1.5 py-0.5 font-mono text-[8.5px] font-bold text-cx-text">CX</span>
-      )}
-      {owned && (
-        <span class="shrink-0 rounded-[4px] border border-owned-border bg-owned-bg px-1.5 py-0.5 text-[10px] font-bold text-owned-text" title={t('blade.owned')}>✓</span>
       )}
     </div>
   );

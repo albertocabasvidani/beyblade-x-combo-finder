@@ -51,29 +51,14 @@ const COMBO_PART_CATEGORY: Record<string, PartCategory> = {
   overBlade: 'overBlades',
 };
 
-// Toggle solo visivo: l'elemento interattivo è il contenitore (evita button annidati).
-function Switch({ checked, onVar }: { checked: boolean; onVar: string }) {
-  return (
-    <span
-      class="relative h-[22px] w-[38px] shrink-0 rounded-full transition-colors"
-      style={{ background: checked ? `var(${onVar})` : 'var(--c-track)' }}
-    >
-      <span
-        class="absolute top-[2px] h-[18px] w-[18px] rounded-full transition-all"
-        style={{ left: checked ? '18px' : '2px', background: 'var(--c-knob)' }}
-      />
-    </span>
-  );
-}
-
 export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, translations }: Props) {
   const [db, setDb] = useState<SlimDatabase>(initial);
   const [dataset, setDataset] = useState<DatasetState>('loading');
   const [period, setPeriod] = useState<WindowKey>(INLINE_PERIOD);
   const [sort, setSort] = useState<SortKey>('score');
   const [view, setView] = useState<View>('combos');
-  // Lama scelta dalla vista «Blades»: filtra le combo su quella lama SENZA toccare `selected`, che è
-  // l'inventario dell'utente (Compare, Buildable) e alimenta l'insight «parti più cercate».
+  // Lama scelta dalla vista «Blades»: filtra le combo su quella lama SENZA toccare `selected` (le parti
+  // cercate), che alimenta l'insight «parti più cercate».
   const [bladeFocus, setBladeFocus] = useState<{ id: string; line: 'bx' | 'cx' } | null>(null);
   const [visible, setVisible] = useState(PAGE);
   const rankingRef = useRef<HTMLElement>(null);
@@ -91,8 +76,6 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
     track('marketplace_changed', { marketplace: m });
   };
   const [selected, setSelected] = useState<SelectedParts>({ ...emptySelection });
-  const [compare, setCompare] = useState(false);
-  const [onlyBuildable, setOnlyBuildable] = useState(false);
   const [tournamentOnly, setTournamentOnly] = useState(false);
   const [metaOnly, setMetaOnly] = useState(false);
   const [lineFilter, setLineFilter] = useState<ComboLine[]>([]);
@@ -119,7 +102,7 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
   const ready = dataset === 'ready';
 
   // Ogni cambio di criterio riparte dalla prima pagina di risultati.
-  useEffect(() => { setVisible(PAGE); }, [period, sort, view, bladeFocus, selected, onlyBuildable, tournamentOnly, metaOnly, lineFilter, stadiumFilter]);
+  useEffect(() => { setVisible(PAGE); }, [period, sort, view, bladeFocus, selected, tournamentOnly, metaOnly, lineFilter, stadiumFilter]);
 
   const toggleIn = <T,>(arr: T[], v: T): T[] => (arr.includes(v) ? arr.filter((x) => x !== v) : [...arr, v]);
 
@@ -163,16 +146,15 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
     rankingRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
-  // Ricerca blade-centrica: una sola blade selezionata (e nient'altro) = "la miglior combo per la
-  // lama X". Restringe il ranking a quella blade e cambia l'intestazione.
+  // Ricerca blade-centrica: una sola blade cercata (e nient'altro) = "la miglior combo per la lama X".
+  // Il filtro lo fa già filterCombos (matchesSearch); qui cambia solo l'intestazione.
   const onlyBlade =
     selected.blades.length === 1 &&
     selected.lockChips.length === 0 && selected.mainBlades.length === 0 &&
     selected.assistBlades.length === 0 && selected.overBlades.length === 0 &&
     selected.ratchets.length === 0 && selected.bits.length === 0;
 
-  let results = filterCombos(db.combos, selected, { period, sort, onlyBuildable, lineFilter, stadiumFilter });
-  if (onlyBlade) results = results.filter((c) => c.blade === selected.blades[0]);
+  let results = filterCombos(db.combos, selected, { period, sort, lineFilter, stadiumFilter });
   if (tournamentOnly) results = results.filter((c) => c.windows[period]!.tags.includes('tournament-proven'));
   if (metaOnly) results = results.filter((c) => c.windows[period]!.tags.some((tag) => tag === 'meta' || tag === 'top-tier'));
   // Vista lame: si aggrega l'insieme filtrato, prima del fuoco su una lama (che riguarda le combo).
@@ -187,7 +169,7 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
   // così una raffica di clic produce un evento solo; il primo render (nessuna selezione) è escluso.
   const selectedCount = Object.values(selected).reduce((n, a) => n + a.length, 0);
   useEffect(() => {
-    if (selectedCount === 0 && !onlyBuildable && !tournamentOnly && !metaOnly && lineFilter.length === 0 && stadiumFilter.length === 0
+    if (selectedCount === 0 && !tournamentOnly && !metaOnly && lineFilter.length === 0 && stadiumFilter.length === 0
       && sort === 'score' && view === 'combos' && !bladeFocus) return;
     const id = setTimeout(() => {
       track('search_results', {
@@ -199,11 +181,11 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
         sort,
         view,
         bladeFocus: bladeFocus?.id ?? null,
-        filters: { onlyBuildable, tournamentOnly, metaOnly, lines: lineFilter, stadiums: stadiumFilter },
+        filters: { tournamentOnly, metaOnly, lines: lineFilter, stadiums: stadiumFilter },
       });
     }, 500);
     return () => clearTimeout(id);
-  }, [selected, period, sort, view, bladeFocus, onlyBuildable, tournamentOnly, metaOnly, lineFilter, stadiumFilter, total]);
+  }, [selected, period, sort, view, bladeFocus, tournamentOnly, metaOnly, lineFilter, stadiumFilter, total]);
 
   const resolveName = (category: PartCategory, id: string): string => {
     const arr = parts[category] as Array<{ id: string; name: string }>;
@@ -296,19 +278,6 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
       <section class="mb-6 self-start rounded-[14px] border border-border bg-surface p-4 lg:mb-0">
         <h2 class="font-display text-[18px] uppercase text-text lg:text-[19px]">{t('search.yourParts')}</h2>
 
-        <button
-          type="button"
-          role="switch"
-          aria-checked={compare}
-          onClick={() => toggleFilter('compare', setCompare, compare)}
-          class="mt-3 flex w-full items-center justify-between gap-3 rounded-[11px] bg-surface-2 px-3 py-2.5 text-left"
-        >
-          <span class="min-w-0">
-            <span class="block text-[13px] font-semibold text-text">{t('search.compareLabel')}</span>
-            <span class="block text-[11px] text-muted-2">{t('search.compareSub')}</span>
-          </span>
-          <Switch checked={compare} onVar="--c-gold" />
-        </button>
 
         <div class="mt-3">
           <PartSearch parts={parts} selected={selected} suggestions={suggestions} onAdd={add} onRemove={remove} t={t} />
@@ -319,7 +288,6 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
           <div class="flex flex-wrap gap-2">
             <Pill active={tournamentOnly} onToggle={() => toggleFilter('tournamentOnly', setTournamentOnly, tournamentOnly)} label={t('filter.tournamentProven')} accentVar="--c-scarlet" />
             <Pill active={metaOnly} onToggle={() => toggleFilter('metaOnly', setMetaOnly, metaOnly)} label={t('filter.metaOnly')} accentVar="--c-gold" />
-            <Pill active={onlyBuildable} onToggle={() => toggleFilter('onlyBuildable', setOnlyBuildable, onlyBuildable)} label={t('search.onlyBuildable')} accentVar="--c-gold" />
           </div>
           {/* Linea (BX/UX/CX) e stadio: solo filtro/etichetta, non separano il ranking. */}
           <div class="mt-2 flex flex-wrap gap-2">
@@ -416,7 +384,6 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
                   thresholds={thresholds}
                   name={bladeName(row.blade, row.line)}
                   bestName={comboDisplayName(row.best)}
-                  owned={compare && [...selected.blades, ...selected.mainBlades].includes(row.blade)}
                   onSelect={() => focusBlade(row.blade, row.line)}
                   t={t}
                 />
@@ -437,8 +404,6 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
                   view={combo.windows[period]!}
                   thresholds={thresholds}
                   displayName={comboDisplayName(combo)}
-                  selected={selected}
-                  compare={compare}
                   locale={locale}
                   rank={i + 1}
                   sort={sort}

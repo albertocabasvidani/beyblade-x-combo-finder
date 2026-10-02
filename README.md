@@ -7,11 +7,11 @@ agentica Claude Code.
 - **Sito**: https://beybladexcombos.com/
 - **Stack**: Astro (SSG) + Preact island, Tailwind CSS v4, GitHub Pages. Monolingua inglese servito
   dalla root (`/`, `/about/`, `/privacy/`); infrastruttura i18n IT in standby nel repo.
-- **Ricerca**: parti possedute → ranking unico BX/UX/CX, con **periodo** 30/90/180/365 giorni, **ordinamento** per score CAS, top cut o vittorie, e **vista per lama** (top cut sommati di tutte le build, quota, build migliore)
+- **Ricerca**: le parti cercate filtrano il ranking (combo che le contengono tutte; più parti della stessa categoria valgono «o») → ranking unico BX/UX/CX, con **periodo** 30/90/180/365 giorni, **ordinamento** per score CAS, top cut o vittorie, e **vista per lama** (top cut sommati di tutte le build, quota, build migliore)
   e filtri torneo. Il client riceve un dataset ridotto (`/combos.json`, ~175 KB gzip), non `combos.json`
   intero.
-- **Link Amazon affiliati**: ogni card ha «Buy parts», che apre un link per ogni parte della combo;
-  con «Compare» attivo i chip delle parti mancanti ne hanno uno loro. Il marketplace segue le lingue del
+- **Link Amazon affiliati**: ogni card ha «Buy parts», che apre un link per ogni parte della combo.
+  Il marketplace segue le lingue del
   browser, con selettore «Shop on» persistito.
 - **Analytics**: PostHog cloud EU in modalità cookieless (niente cookie, niente banner); chiave in
   `src/lib/analytics-config.ts`. **AdSense**: quattro slot (sopra il contenuto, nel pannello parti, fra

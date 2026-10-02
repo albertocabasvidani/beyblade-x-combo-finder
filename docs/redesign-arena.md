@@ -180,7 +180,7 @@ Comune ai 4 schermi: niente hero, niente tab BX/CX, niente toggle TT/Hasbro, nie
 1. **Header** compatto (`12px 18px`, border-bottom): logo skew "X" + "COMBO FINDER" (Anton uppercase) a sx; "INFO" muted a dx.
 2. **Selettore "Le tue parti"** (blocco unico, non a tab):
    - Titolo "Le tue parti" (Anton 17px).
-   - **Toggle "Confronta con le mie parti"**: label + sub-label "Evidenzia ✓ possedute e ! mancanti" + switch (on = oro).
+   - ~~**Toggle "Confronta con le mie parti"**: label + sub-label "Evidenzia ✓ possedute e ! mancanti" + switch (on = oro).~~ Tolto il 02/10/2026 insieme a «Buildable»: le parti inserite sono solo un filtro di ricerca, il pannello si chiama «Search parts».
    - **Search bar** unica: icona ⌕ + placeholder "Cerca Blade, Ratchet, Bit, Lock Chip…". Un solo campo per tutte le categorie.
    - **Chip parti possedute** (pieni oro + ✕), seguiti da chip "**+ Nome**" tratteggiati (suggerimenti).
    - **Filtri**: 2 pill affiancate (`gap 8px`, flex:1) — "Provate in torneo" (on = scarlatto), "Meta / top-tier" (off = grigio).

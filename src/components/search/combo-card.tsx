@@ -1,7 +1,7 @@
 import { useState } from 'preact/hooks';
-import type { SelectedParts, Locale, ComboWindow, TierThresholds } from '../../lib/types';
+import type { Locale, ComboWindow, TierThresholds } from '../../lib/types';
 import type { SlimCombo } from '../../lib/slim-combos';
-import { bladeOf, getMatchedParts, hasAnySelection, type SortKey } from '../../lib/search-engine';
+import { bladeOf, type SortKey } from '../../lib/search-engine';
 import { buildAmazonUrl, storeLinks, type AmazonConfigFile, type AsinIndex, type PartLookup } from '../../lib/amazon';
 import { track } from '../../lib/analytics';
 import { ScoreBadge, scoreTier } from './score-badge';
@@ -15,8 +15,6 @@ interface Props {
   /** `keepStore`: il negozio l'ha scelto il visitatore, quindi Amazon non deve spostarlo (OneLink). */
   amazon?: { config: AmazonConfigFile; lookup: PartLookup; asins: AsinIndex; market: string; keepStore?: boolean };
   displayName: string;
-  selected: SelectedParts;
-  compare: boolean;
   locale: Locale;
   rank: number;
   /** Metrica scelta in «Sort by»: nella riga evidenza è la sola sottolineata. */
@@ -52,13 +50,11 @@ function daysSince(iso: string): number {
 export const metricClass = (on: boolean) =>
   on ? 'font-bold text-gold underline decoration-2 underline-offset-4' : '';
 
-export function ComboCard({ combo, view, thresholds, amazon, displayName, selected, compare, locale, rank, sort, partName, t }: Props) {
+export function ComboCard({ combo, view, thresholds, amazon, displayName, locale, rank, sort, partName, t }: Props) {
   const [buyOpen, setBuyOpen] = useState(false);
-  const matched = getMatchedParts(combo, selected);
   const b = view;
   const tier = scoreTier(view.score, view.tags, thresholds);
   const isTop = rank === 1;
-  const showChips = compare && hasAnySelection(selected);
 
   const breakdownTooltip = b
     ? `${t('combo.perf')} ${b.performance} · ${t('combo.pres')} ${b.presence} · ${t('combo.corr')} ${b.corroboration}`
@@ -123,49 +119,10 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, select
       </span>
     ) : null;
 
-  const PartChips = ({ dense = false }: { dense?: boolean }) =>
-    !showChips ? null : (
-      <div class={`flex flex-wrap ${dense ? 'gap-1.5' : 'gap-2'}`}>
-        {parts.map((p) => {
-          const status = matched[p.key];
-          if (status === 'unset') return null;
-          const owned = status === 'owned';
-          const label = partName(p.key, p.id) || p.key;
-          return (
-            <span
-              key={p.key}
-              data-testid={owned ? 'part-owned' : 'part-missing'}
-              class={`inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-[11px] font-bold ${
-                owned ? 'border-owned-border bg-owned-bg text-owned-text' : 'border-missing-border bg-missing-bg text-missing-text'
-              }`}
-            >
-              {owned ? '✓' : '!'} {label}
-              {!owned && amazon && p.id && (() => {
-                // Link affiliato: /dp/ASIN se il monitor conosce il set su questo mercato, altrimenti ricerca.
-                const { href, kind } = buildAmazonUrl(p.key, p.id, label, amazon.lookup, amazon.asins, amazon.market, amazon.config, amazon.keepStore);
-                return (
-                  <a
-                    data-testid="buy"
-                    href={href}
-                    target="_blank"
-                    rel="sponsored noopener nofollow"
-                    class="ml-1 underline decoration-dotted underline-offset-2 hover:opacity-75"
-                    onClick={() => track('amazon_click', { partId: p.id, category: p.key, marketplace: amazon.market, kind, comboId: combo.id, source: 'missing-chip' })}
-                  >
-                    {t('combo.buy')}
-                  </a>
-                );
-              })()}
-            </span>
-          );
-        })}
-      </div>
-    );
-
-  // ---------- «Buy parts»: link affiliati a TUTTE le parti, senza bisogna di selezione ----------
-  // I chip qui sopra mostrano i link solo sulle parti mancanti (serve Compare attivo): questo
-  // pannello e' la superficie per chi sta solo guardando il ranking. Chiuso di default per non
-  // allungare 60 card; l'apertura e' un evento PostHog, cosi' si misura se conviene aprirlo sempre.
+  // ---------- «Buy parts»: link affiliati a TUTTE le parti della combo ----------
+  // L'unica superficie affiliata della card (i chip ✓/! del confronto con le proprie parti sono stati
+  // tolti il 02/10/2026). Chiuso di default per non allungare 60 card; l'apertura e' un evento
+  // PostHog, cosi' si misura se conviene aprirlo sempre.
   const buyable = amazon ? parts.filter((p) => p.id) : [];
 
   const toggleBuy = () => {
@@ -199,14 +156,6 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, select
         <div class="flex flex-wrap gap-1.5">
           {buyable.map((p) => {
             const label = partName(p.key, p.id) || p.key;
-            const owned = showChips && matched[p.key] === 'owned';
-            if (owned) {
-              return (
-                <span key={p.key} class="inline-flex items-center gap-1 rounded-md border border-owned-border bg-owned-bg px-2 py-0.5 text-[11px] font-bold text-owned-text" title={t('combo.alreadyOwned')}>
-                  {'✓'} {label}
-                </span>
-              );
-            }
             const { href, kind } = buildAmazonUrl(p.key, p.id!, label, amazon.lookup, amazon.asins, amazon.market, amazon.config, amazon.keepStore);
             return (
               <a
@@ -227,7 +176,7 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, select
             revisore Associates fuori dalla Francia non troverebbe mai amazon.fr col tag francese (rifiuto
             FR del 21/09/2026). Link con creatorsDisableRedirect: chi clicca amazon.fr ha scelto amazon.fr. */}
         <div data-testid="buy-parts-stores" class="mt-2 flex flex-col gap-1 font-mono text-[10px] text-muted">
-          {buyable.filter((p) => !(showChips && matched[p.key] === 'owned')).map((p) => {
+          {buyable.map((p) => {
             const label = partName(p.key, p.id) || p.key;
             const stores = storeLinks(amazon.config, (m) =>
               buildAmazonUrl(p.key, p.id!, label, amazon.lookup, amazon.asins, m, amazon.config, true).href);
@@ -298,11 +247,6 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, select
             </div>
           )}
 
-          {showChips && (
-            <div class="mt-2.5">
-              <PartChips />
-            </div>
-          )}
 
           <BuyPanel />
 
@@ -325,7 +269,7 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, select
             <div class="mt-2 flex flex-wrap items-center gap-2">
               <TypeBadge />
               <StadiumBadge />
-              {showChips ? <PartChips dense /> : <Sources />}
+              <Sources />
               <BuyToggle compact />
             </div>
           </div>

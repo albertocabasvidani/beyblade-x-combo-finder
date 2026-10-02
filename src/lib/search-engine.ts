@@ -62,9 +62,6 @@ interface FilterOptions {
   period: WindowKey;
   // Metrica dell'ordinamento (default score).
   sort?: SortKey;
-  // Se true, tiene solo le combo le cui parti note non contraddicono le selezioni
-  // (combo costruibili/parziali con le parti possedute). Default: mostra tutte.
-  onlyBuildable?: boolean;
   // Filtro per linea (BX/UX/CX): vuoto/assente = tutte. NON separa il ranking, lo restringe soltanto.
   lineFilter?: ComboLine[];
   // Filtro per stadio (xtreme/infinity): vuoto/assente = tutti. Tiene le combo con ≥1 placement
@@ -74,17 +71,18 @@ interface FilterOptions {
 
 // Ranking unico BX + UX + CX, ordinato per la metrica scelta nella finestra. La linea è solo un
 // filtro/etichetta: la domanda dell'utente è "la miglior combo per la lama X", non "della linea Y".
+// Le parti inserite nella ricerca filtrano sempre (matchesSearch): non sono un inventario.
 export function filterCombos(
   combos: SlimCombo[],
   selected: SelectedParts,
-  { period, sort = 'score', onlyBuildable = false, lineFilter, stadiumFilter }: FilterOptions,
+  { period, sort = 'score', lineFilter, stadiumFilter }: FilterOptions,
 ): SlimCombo[] {
   let base = combos.filter((c) => c.windows[period] !== undefined);
   if (lineFilter && lineFilter.length) base = base.filter((c) => lineFilter.includes(c.line));
   if (stadiumFilter && stadiumFilter.length) {
     base = base.filter((c) => (c.windows[period]!.stadiums ?? []).some((s) => stadiumFilter.includes(s)));
   }
-  if (onlyBuildable && hasAnySelection(selected)) base = base.filter((c) => isBuildable(c, selected));
+  if (hasAnySelection(selected)) base = base.filter((c) => matchesSearch(c, selected));
   return [...base].sort(compareCombos(period, sort));
 }
 
@@ -127,40 +125,23 @@ export function aggregateBlades(sorted: SlimCombo[], period: WindowKey, sort: So
   return out.sort((a, b) => key(b, sort) - key(a, sort) || key(b, other) - key(a, other) || a.blade.localeCompare(b.blade));
 }
 
-// Una combo passa se, per ogni categoria in cui ho selezionato qualcosa, la sua
-// parte (quando presente) è tra quelle che possiedo. I campi assenti (blade per le
-// CX, parti CX per le BX) sono null e vengono saltati: così la regola vale per
-// entrambe le linee senza ramificare. Eccezione: la lama. Blade e Main Blade sono la stessa
-// scelta («quale lama ho»), quindi se l'utente ha indicato delle lame, una combo è costruibile solo
-// se la sua lama (bladeOf) è fra quelle; prima una CX passava sempre con una lama BX selezionata.
-function isBuildable(combo: ComboParts, selected: SelectedParts): boolean {
-  const ownedBlades = [...selected.blades, ...selected.mainBlades];
-  const blade = bladeOf(combo);
-  if (ownedBlades.length > 0 && blade && !ownedBlades.includes(blade)) return false;
-  if (selected.lockChips.length > 0 && combo.lockChip && !selected.lockChips.includes(combo.lockChip)) return false;
-  if (selected.assistBlades.length > 0 && combo.assistBlade && !selected.assistBlades.includes(combo.assistBlade)) return false;
-  if (selected.overBlades.length > 0 && combo.overBlade && !selected.overBlades.includes(combo.overBlade)) return false;
-  if (selected.ratchets.length > 0 && combo.ratchet && !selected.ratchets.includes(combo.ratchet)) return false;
-  if (selected.bits.length > 0 && !selected.bits.includes(combo.bit)) return false;
-  return true;
+/**
+ * Una combo risponde alla ricerca se, per ogni categoria in cui è stato inserito qualcosa, la sua
+ * parte è fra quelle inserite: «e» fra categorie diverse, «o» dentro la stessa (Wizard Rod + Shark
+ * Scale = le combo dell'una o dell'altra). Blade e Main Blade sono la stessa scelta, la lama (bladeOf).
+ * Una parte che la combo non ha (ratchet integrato nella lama, parti CX di una BX) non risponde: chi
+ * cerca 1-60 vuole le combo col 1-60, non quelle senza ratchet.
+ * Fino al 02/10/2026 c'erano anche «Compare with my parts» e «Buildable», che trattavano le parti
+ * inserite come un inventario: tolti, perché la stessa selezione faceva due lavori diversi.
+ */
+export function matchesSearch(combo: ComboParts, selected: SelectedParts): boolean {
+  const blades = [...selected.blades, ...selected.mainBlades];
+  const has = (want: string[], part: string | null | undefined) => want.length === 0 || (!!part && want.includes(part));
+  return has(blades, bladeOf(combo))
+    && has(selected.lockChips, combo.lockChip)
+    && has(selected.assistBlades, combo.assistBlade)
+    && has(selected.overBlades, combo.overBlade)
+    && has(selected.ratchets, combo.ratchet)
+    && has(selected.bits, combo.bit);
 }
 
-// Returns 'owned' | 'missing' | 'unset' for each part
-export function getMatchedParts(combo: ComboParts, selected: SelectedParts): Record<string, string> {
-  // BX e UX hanno la stessa struttura (blade + ratchet + bit); solo le CX sono a cinque o sei parti.
-  if (combo.line !== 'cx') {
-    return {
-      blade: selected.blades.length === 0 ? 'unset' : (combo.blade !== null && selected.blades.includes(combo.blade)) ? 'owned' : 'missing',
-      ratchet: (selected.ratchets.length === 0 || combo.ratchet == null) ? 'unset' : selected.ratchets.includes(combo.ratchet) ? 'owned' : 'missing',
-      bit: selected.bits.length === 0 ? 'unset' : selected.bits.includes(combo.bit) ? 'owned' : 'missing',
-    };
-  }
-  return {
-    lockChip: selected.lockChips.length === 0 ? 'unset' : (combo.lockChip !== null && selected.lockChips.includes(combo.lockChip)) ? 'owned' : 'missing',
-    mainBlade: selected.mainBlades.length === 0 ? 'unset' : (combo.mainBlade !== null && selected.mainBlades.includes(combo.mainBlade)) ? 'owned' : 'missing',
-    assistBlade: selected.assistBlades.length === 0 ? 'unset' : (combo.assistBlade !== null && selected.assistBlades.includes(combo.assistBlade)) ? 'owned' : 'missing',
-    overBlade: (selected.overBlades.length === 0 || combo.overBlade == null) ? 'unset' : selected.overBlades.includes(combo.overBlade) ? 'owned' : 'missing',
-    ratchet: (selected.ratchets.length === 0 || combo.ratchet == null) ? 'unset' : selected.ratchets.includes(combo.ratchet) ? 'owned' : 'missing',
-    bit: selected.bits.length === 0 ? 'unset' : selected.bits.includes(combo.bit) ? 'owned' : 'missing',
-  };
-}

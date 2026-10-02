@@ -201,17 +201,20 @@ async function desktopFlow(context: BrowserContext) {
   await toggles.first().click();
   check('pannello richiuso', (await page.locator('[data-testid=buy-parts-panel]').count()) === 0);
 
-  console.log('[8] Compare + Buy');
-  // Blade + bit: con la sola blade il ranking si restringe a quella blade e nessun chip risulta
-  // mancante (ratchet/bit non selezionati = "unset"). Col bit selezionato le combo con altro bit
-  // mostrano il chip "!".
+  console.log('[8] Ricerca come filtro + Buy');
+  // Le parti cercate filtrano sempre: lama Wizard Rod E bit Hexa. Niente più «Compare» né «Buildable».
+  check('nessun interruttore Compare né pulsante Buildable', (await page.locator('button[role=switch]').count()) === 0
+    && (await page.getByRole('button', { name: 'Buildable' }).count()) === 0);
   await addPart(page, 'Wizard Rod');
   await addPart(page, 'Hexa');
-  await page.locator('button[role=switch]').click();
-  check('switch Compare attivo', (await page.locator('button[role=switch]').getAttribute('aria-checked')) === 'true');
-  const missingChips = page.locator('[data-testid=combo-card]:visible [data-testid=part-missing]');
-  check('chip parti mancanti visibili', (await missingChips.count()) > 0, `=${await missingChips.count()}`);
-  const buy = page.locator('[data-testid=combo-card]:visible a[data-testid=buy]');
+  const wrHexa = await page.locator('[data-testid=combo-card]:visible').evaluateAll((els) => els.map((e) => `${e.getAttribute('data-blade')}|${e.querySelector('h3')?.textContent ?? ''}`));
+  check('Wizard Rod + Hexa: solo combo con quella lama e quel bit', wrHexa.length > 0 && wrHexa.every((x) => x.startsWith('wizard-rod|') && /hexa$/i.test(x.trim())), wrHexa.slice(0, 4).join(', '));
+  await addPart(page, 'Shark Scale');
+  const twoBlades = await page.locator('[data-testid=combo-card]:visible').evaluateAll((els) => [...new Set(els.map((e) => e.getAttribute('data-blade')))]);
+  check('due lame nella stessa categoria valgono «o»: Wizard Rod o Shark Scale, sempre con Hexa', twoBlades.every((b) => b === 'wizard-rod' || b === 'shark-scale') && twoBlades.includes('shark-scale'), twoBlades.join(','));
+  await page.locator('button[aria-label="remove Shark Scale"]').click();
+  await page.locator('[data-testid=combo-card]:visible [data-testid=buy-parts-toggle]').first().click();
+  const buy = page.locator('[data-testid=combo-card]:visible a[data-testid=buy-part]');
   if ((await buy.count()) === 0) skipped('link Buy', 'nessun link Buy nella pagina (Amazon non ancora attivo)');
   else {
     const hrefs = await buy.evaluateAll((as) => as.map((a) => ({ href: (a as HTMLAnchorElement).href, target: a.getAttribute('target'), rel: a.getAttribute('rel') ?? '' })));
@@ -562,18 +565,18 @@ async function rankingFlow(context: BrowserContext) {
   await page.getByTestId('sort-score').click();
   await page.getByTestId('period-365').click();
   for (const q of ['Wizard Rod', '1-60', 'Hexa']) await addPart(page, q);
-  await page.getByRole('button', { name: 'Buildable' }).click();
-  await page.locator('button[role=switch]').click();
-  check('5. con le tre parti e Buildable in testa Wizard Rod 1-60 Hexa', (await firstCardId(page)) === 'wizard-rod-1-60-hexa', `${await firstCardId(page)}`);
+  check('5. Wizard Rod + 1-60 + Hexa: una sola combo, Wizard Rod 1-60 Hexa', (await resultsCount(page)) === 1 && (await firstCardId(page)) === 'wizard-rod-1-60-hexa', `${await resultsCount(page)} · ${await firstCardId(page)}`);
+  await page.locator('button[aria-label="remove Hexa"]').click();
+  const wr160 = await page.locator(`${cards}`).evaluateAll((els) => els.map((e) => `${e.getAttribute('data-line')}:${e.getAttribute('data-blade')}`));
+  check('5. Wizard Rod + 1-60: nessuna CX e nessun ratchet integrato, solo Wizard Rod', wr160.length > 0 && wr160.every((x) => x === 'bx:wizard-rod'), wr160.slice(0, 4).join(','));
   await page.getByTestId('view-blades').click();
-  const ownRows = await bladeRows(page).evaluateAll((els) => els.map((e) => `${e.getAttribute('data-blade')}:${/✓/.test(e.textContent ?? '')}`));
-  check('5. vista lame con Buildable: solo Wizard Rod, col ✓', ownRows.length === 1 && ownRows[0] === 'wizard-rod:true', ownRows.join(','));
+  const rowsWr = await bladeRows(page).evaluateAll((els) => els.map((e) => e.getAttribute('data-blade')));
+  check('5. vista lame con la ricerca: solo Wizard Rod', rowsWr.length === 1 && rowsWr[0] === 'wizard-rod', rowsWr.join(','));
   await page.getByTestId('sort-wins').click();
-  check('5. cambiando ordinamento la selezione resta', (await page.locator('button[aria-label^="remove "]').count()) === 3);
+  check('5. cambiando ordinamento la ricerca resta', (await page.locator('button[aria-label^="remove "]').count()) === 2);
 
   // UX: stessa struttura delle BX. Fino al 01/10/2026 il nome di una UX era il solo bit («Kick»).
   await page.locator('button[aria-label^="remove "]').evaluateAll((els) => els.forEach((e) => (e as HTMLButtonElement).click()));
-  await page.getByRole('button', { name: 'Buildable' }).click();
   await page.getByTestId('view-combos').click();
   await page.getByRole('button', { name: 'UX', exact: true }).click();
   const uxNames = await page.locator(`${cards}[data-line=ux] h3`).allTextContents();
@@ -634,9 +637,8 @@ async function mobileFlow(context: BrowserContext) {
   check('parte aggiunta su mobile', (await page.locator('button[aria-label="remove Wizard Rod"]').count()) === 1);
   await page.getByTestId('period-30').click();
   check('30D su mobile: contatore leggibile', (await resultsCount(page)) >= 0);
-  await page.locator('button[role=switch]').click();
-  check('nessuno scroll orizzontale (compare attivo)', await noHScroll());
-  await page.screenshot({ path: join(SHOTS, 'home-mobile-30d-compare.png'), fullPage: false });
+  check('nessuno scroll orizzontale (ricerca attiva)', await noHScroll());
+  await page.screenshot({ path: join(SHOTS, 'home-mobile-30d-search.png'), fullPage: false });
   await page.getByTestId('sort-topCut').click();
   await page.getByTestId('view-blades').click();
   check('vista lame su mobile: righe visibili', (await bladeRows(page).count()) > 0);

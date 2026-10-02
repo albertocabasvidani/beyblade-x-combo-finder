@@ -185,8 +185,8 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
   `build-lama-shark-scale`): rigenerare aggiorna i numeri, il registro del pubblicatore decide cosa
   è già uscito. Le immagini non vanno in git: vivono sul server e su una release temporanea
 - `npm run test:e2e` — percorso utente nel browser (`scripts/e2e-smoke.ts`, playwright-core + Chrome di sistema, headless) sulla preview locale: prima `npm run build && npm run preview` (porta 4321); `E2E_URL` per puntarlo al sito pubblicato
-- Cosa controlla: peso della home (< 400 KB), fetch di `/combos.json`, ricerca parti, periodo 30/90/180/365, filtri, Show more, Compare/Buy, marketplace, tema, about/privacy, `/guides/` e menu, mobile 390 px senza scroll orizzontale; screenshot in `tmp/e2e/`
-- Blocco [16]: le casistiche d'uso del ranking (Sort by, vista lame, click su una lama anche CX, Buildable con le parti, filtri CX/Xtreme, nomi UX). Blocco [17]: dataset in arrivo (controlli disabilitati) e dataset bloccato
+- Cosa controlla: peso della home (< 400 KB), fetch di `/combos.json`, ricerca parti come filtro, periodo 30/90/180/365, filtri, Show more, Buy parts, marketplace, tema, about/privacy, `/guides/` e menu, mobile 390 px senza scroll orizzontale; screenshot in `tmp/e2e/`
+- Blocco [16]: le casistiche d'uso del ranking (Sort by, vista lame, click su una lama anche CX, ricerca per lama + ratchet + bit, filtri CX/Xtreme, nomi UX). Blocco [17]: dataset in arrivo (controlli disabilitati) e dataset bloccato
 - `npm run test:i18n` — inglese e italiano con le stesse chiavi, nessun valore vuoto, ogni chiave usata nei sorgenti presente; gira nel workflow di deploy prima della build
 
 ## Pipeline Dati
@@ -522,12 +522,13 @@ perché ogni 5 min altrimenti compariva una finestra cmd nella sessione utente. 
 
 ## Amazon Affiliate (riattivato l'11/09/2026)
 
-Due superfici in `combo-card.tsx`, entrambe con `rel="sponsored noopener nofollow"` ed evento PostHog
-`amazon_click` (campo `source` per distinguerle):
+Una superficie in `combo-card.tsx`, con `rel="sponsored noopener nofollow"` ed evento PostHog `amazon_click`:
 - **Buy parts** — pulsante su ogni card, sempre visibile: apre un pannello con un link per **ogni** parte
   della combo (`source: 'buy-parts'`, apertura tracciata come `buy_parts_opened`). Chiuso di default per non
-  allungare 60 card. Con Compare attivo le parti già possedute compaiono col ✓ e senza link.
-- **Chip delle parti mancanti** (`! Nome`) — richiede Compare attivo e una selezione (`source: 'missing-chip'`).
+  allungare 60 card.
+- Non c'è più la seconda (chip `! Nome` delle parti mancanti, `source: 'missing-chip'`): dipendeva da
+  «Compare with my parts», tolto il 02/10/2026 con «Buildable». Le parti inserite nella ricerca sono un
+  filtro, non un inventario (`matchesSearch` in `src/lib/search-engine.ts`).
 Disclosure nel footer e sezione «Affiliate links» in `/about/`.
 
 - **Tag** in `data/amazon-config.json` (committato), uno per marketplace: tracking ID **dedicati al sito**
