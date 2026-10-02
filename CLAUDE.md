@@ -22,7 +22,7 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
   in `docs/redesign-arena.md`. Font: Anton (display) / Saira (body) / JetBrains Mono (mono).
 - **Hosting**: GitHub Pages (deploy automatico via Actions)
 - **SEO/social**: `@astrojs/sitemap` (solo pagine HTML), `src/pages/robots.txt.ts` generato a build,
-  canonical + Open Graph/Twitter card nel layout con `public/og.png` (1200×630, generata da `tmp/gen-og.mjs`).
+  canonical + Open Graph/Twitter card nel layout con `public/og.png` (1200×630, generata da `node scripts/gen-og.mjs`).
 - **Monitoraggio SEO** (dal 01/10/2026): Google Search Console, proprietà di dominio `sc-domain:beybladexcombos.com`
   (account `cinquequarti@gmail.com`), verificata da un record TXT `google-site-verification` nel DNS Tophost: non
   rimuoverlo. Bing Webmaster Tools importato da Search Console. Sitemap inviata a entrambi.

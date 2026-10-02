@@ -229,7 +229,7 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
   };
 
   // Suggerimenti: parti più frequenti nelle top combo (365 giorni, indipendente dal periodo scelto),
-  // non ancora possedute. db.combos è già ordinato per windows["365"].score.
+  // non ancora cercate. db.combos è già ordinato per windows["365"].score.
   const suggestions: PartRef[] = (() => {
     const top = db.combos.slice(0, 20);
     const counts = new Map<string, { category: PartCategory; id: string; n: number }>();
@@ -274,7 +274,7 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
 
   return (
     <div class="lg:grid lg:grid-cols-[340px_1fr] lg:gap-7">
-      {/* ---------- Pannello "Le tue parti" (rail su desktop) ---------- */}
+      {/* ---------- Pannello "Search parts" (rail su desktop) ---------- */}
       <section class="mb-6 self-start rounded-[14px] border border-border bg-surface p-4 lg:mb-0">
         <h2 class="font-display text-[18px] uppercase text-text lg:text-[19px]">{t('search.yourParts')}</h2>
 

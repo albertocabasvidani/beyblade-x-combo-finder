@@ -72,7 +72,7 @@ export function PartSearch({ parts, selected, suggestions, onAdd, onRemove, t }:
     .filter((o): o is (typeof index)[number] & { matchedAlt: string | null } => o !== null)
     .slice(0, 50);
 
-  const owned: PartRef[] = CATEGORIES.flatMap((c) =>
+  const chosen: PartRef[] = CATEGORIES.flatMap((c) =>
     selected[c.category].map((id) => {
       const found = (parts[c.category] as Array<{ id: string; name: string }>).find((p) => p.id === id);
       return { category: c.category, id, name: found ? found.name : id };
@@ -133,10 +133,10 @@ export function PartSearch({ parts, selected, suggestions, onAdd, onRemove, t }:
         )}
       </div>
 
-      {/* Chip parti possedute */}
-      {owned.length > 0 && (
+      {/* Chip delle parti cercate */}
+      {chosen.length > 0 && (
         <div class="mt-3 flex flex-wrap gap-2">
-          {owned.map((c) => (
+          {chosen.map((c) => (
             <span
               key={`${c.category}:${c.id}`}
               class="inline-flex items-center gap-1.5 rounded-[9px] bg-gold px-2.5 py-1 text-xs font-bold text-gold-ink"
@@ -156,7 +156,7 @@ export function PartSearch({ parts, selected, suggestions, onAdd, onRemove, t }:
         </div>
       )}
 
-      {/* Chip suggeriti (non ancora posseduti) */}
+      {/* Chip suggeriti (non ancora cercati) */}
       {suggestions.length > 0 && (
         <>
           <div class="mt-3 mb-2 font-mono text-[10px] uppercase tracking-[0.12em] text-muted-2">
