@@ -512,6 +512,7 @@ perché ogni 5 min altrimenti compariva una finestra cmd nella sessione utente. 
 
 ## Convenzioni
 
+- Classifiche e statistiche nuove entrano nella home come periodo, ordinamento o vista del ranking, non come pagine a parte. Le CX sono incluse sempre, in sito e caroselli, mai escluse per semplificare. Le parti cercate sono un filtro di ricerca, non un inventario dell'utente (il sito non ne ha)
 - Nomi file minuscoli con trattini
 - Componenti Preact in `.tsx`
 - Componenti Astro in `.astro`
