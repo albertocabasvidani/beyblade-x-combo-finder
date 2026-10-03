@@ -4,15 +4,15 @@
 
 | Documento | Quando aggiornarlo | Ultimo aggiornamento | Chiusure senza modifiche |
 |---|---|---|---|
-| CLAUDE.md | architettura, comandi npm, vincoli verificati sul campo, scheduling dei job, trappole di API e servizi esterni | 02/10/2026 | 0 |
-| README.md | utilizzo, installazione, comandi, cosa vede chi apre il sito | 02/10/2026 | 0 |
-| projects/combo-pipeline.md | ogni run o modifica di raccolta, parser, scoring, pruning, automazione | 02/10/2026 | 0 |
-| projects/web-frontend.md | ogni modifica al sito Astro/Preact, ad analytics, affiliazione e annunci | 02/10/2026 | 0 |
-| projects/parts-database.md | modifiche a parts-master, derivazione, verify:wiki, immagini delle parti | 20/08/2026 | 3 |
-| projects/instagram-caroselli.md | generatore dei caroselli, regole di scelta, soglie, esiti delle pubblicazioni | 02/10/2026 | 0 |
-| docs/ig-caroselli.md | cambiano tipi di post, regole del giorno, soglie o la divisione fra generatore e pubblicatore | 01/10/2026 | 0 |
-| docs/scoring-algorithm.md | cambia l'algoritmo CAS, i pesi, le costanti o le finestre temporali | 01/10/2026 | 0 |
-| docs/redesign-arena.md | cambia il design system (token, tipografia, componenti dell'interfaccia) | 02/10/2026 | 0 |
+| CLAUDE.md | architettura, comandi npm, vincoli verificati sul campo, scheduling dei job, trappole di API e servizi esterni | 03/10/2026 | 0 |
+| README.md | utilizzo, installazione, comandi, cosa vede chi apre il sito | 02/10/2026 | 1 |
+| projects/combo-pipeline.md | ogni run o modifica di raccolta, parser, scoring, pruning, automazione | 02/10/2026 | 1 |
+| projects/web-frontend.md | ogni modifica al sito Astro/Preact, ad analytics, affiliazione e annunci | 03/10/2026 | 0 |
+| projects/parts-database.md | modifiche a parts-master, derivazione, verify:wiki, immagini delle parti | 03/10/2026 | 0 |
+| projects/instagram-caroselli.md | generatore dei caroselli, regole di scelta, soglie, esiti delle pubblicazioni | 03/10/2026 | 0 |
+| docs/ig-caroselli.md | cambiano tipi di post, regole del giorno, soglie o la divisione fra generatore e pubblicatore | 01/10/2026 | 1 |
+| docs/scoring-algorithm.md | cambia l'algoritmo CAS, i pesi, le costanti o le finestre temporali | 01/10/2026 | 1 |
+| docs/redesign-arena.md | cambia il design system (token, tipografia, componenti dell'interfaccia) | 03/10/2026 | 0 |
 
 ## Esclusi
 

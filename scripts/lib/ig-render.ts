@@ -102,7 +102,7 @@ function bladeBuildSlides(ctx: RenderCtx, c: PostCandidate): string[] {
   slides.push(wrap(`
     <div class="kicker">E LE ALTRE?</div>
     <h1>TUTTE LE COMBO<br>DI <em>${esc(nome)}</em><br>SUL SITO</h1>
-    <div class="sub">Filtra per le parti che hai, vedi podi e trend di ogni combo.</div>
+    <div class="sub">Cerca per parti, vedi podi e trend di ogni combo.</div>
     <div class="url">beybladexcombos.com</div>
     ${foot('Salva il post · Scrivi la tua build nei commenti')}`));
   return slides;
@@ -123,7 +123,7 @@ function topBuildSlides(ctx: RenderCtx, c: PostCandidate): string[] {
     ...d.combos.slice(0, 3).map((b, i) => comboSlide(ctx, `#${i + 1} DEL MESE`, b, period, `${d.tournaments} tornei analizzati`)),
     wrap(`<div class="kicker">LE ALTRE?</div>
       <h1>TUTTA LA<br>CLASSIFICA<br><em>SUL SITO</em></h1>
-      <div class="sub">Filtra per periodo, per parti che hai, per stadio.</div>
+      <div class="sub">Filtra per periodo e per parti, ordina per top cut o vittorie.</div>
       <div class="url">beybladexcombos.com</div>
       ${foot('Salva il post · La tua build è in classifica? Scrivilo nei commenti')}`),
   ];
