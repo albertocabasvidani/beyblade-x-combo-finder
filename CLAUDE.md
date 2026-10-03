@@ -186,7 +186,7 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
   è già uscito. Le immagini non vanno in git: vivono sul server e su una release temporanea
 - `npm run test:e2e` — percorso utente nel browser (`scripts/e2e-smoke.ts`, playwright-core + Chrome di sistema, headless) sulla preview locale: prima `npm run build && npm run preview` (porta 4321); `E2E_URL` per puntarlo al sito pubblicato
 - Cosa controlla: peso della home (< 400 KB), fetch di `/combos.json`, ricerca parti come filtro, periodo 30/90/180/365, filtri, Show more, Buy parts, marketplace, tema, about/privacy, `/guides/` e menu, mobile 390 px senza scroll orizzontale; screenshot in `tmp/e2e/`
-- Blocco [16]: le casistiche d'uso del ranking (Sort by, vista lame, click su una lama anche CX, ricerca per lama + ratchet + bit, filtri CX/Xtreme, nomi UX). Blocco [17]: dataset in arrivo (controlli disabilitati) e dataset bloccato
+- Blocco [16]: le casistiche d'uso del ranking (Sort by, vista lame, click su una lama anche CX, ricerca per lama + ratchet + bit, assenza dei filtri linea/stadio e dei suggeriti, nomi UX). Blocco [17]: dataset in arrivo (controlli disabilitati) e dataset bloccato
 - `npm run test:i18n` — inglese e italiano con le stesse chiavi, nessun valore vuoto, ogni chiave usata nei sorgenti presente; gira nel workflow di deploy prima della build
 
 ## Pipeline Dati
@@ -301,7 +301,7 @@ momentum recente>storico). Algoritmo, pesi e costanti in `docs/scoring-algorithm
   la coda è dominata da combo a evento singolo, penalizzate dal confidence. `score:combos` chiama
   `scoreCombo(ev, { ref, useConfidence: true })`.
 - **Stadio**: i placement WBO portano `stadium` (xtreme/infinity, da `Stadium:` del thread); MetaBeys no.
-  Esposto come filtro/badge UI, NON pesato nello score. Lo storico `usage` alimenta il `usageTrend`.
+  Esposto solo come badge sulla card (il filtro Xtreme/Infinity è stato tolto il 03/10/2026), NON pesato nello score. Lo storico `usage` alimenta il `usageTrend`.
 - Peso per **tipologia** di fonte (`TIER_WEIGHT`: structured 1.0 / narrative 0.6 / theory 0.3), non
   per singola fonte: WBO è scorato 1.0, il `weight` di sources.json serve solo ai link UI.
 - Limite residuo dedup: senza id-evento condiviso cross-fonte, nomi del tutto diversi restano doppi

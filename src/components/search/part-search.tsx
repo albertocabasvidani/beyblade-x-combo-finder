@@ -15,7 +15,6 @@ const norm = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCa
 interface Props {
   parts: PartsRegistry;
   selected: SelectedParts;
-  suggestions: PartRef[];
   onAdd: (category: PartCategory, id: string) => void;
   onRemove: (category: PartCategory, id: string) => void;
   t: (key: string) => string;
@@ -42,7 +41,7 @@ function SearchIcon() {
   );
 }
 
-export function PartSearch({ parts, selected, suggestions, onAdd, onRemove, t }: Props) {
+export function PartSearch({ parts, selected, onAdd, onRemove, t }: Props) {
   const [query, setQuery] = useState('');
   const [isOpen, setIsOpen] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -154,27 +153,6 @@ export function PartSearch({ parts, selected, suggestions, onAdd, onRemove, t }:
             </span>
           ))}
         </div>
-      )}
-
-      {/* Chip suggeriti (non ancora cercati) */}
-      {suggestions.length > 0 && (
-        <>
-          <div class="mt-3 mb-2 font-mono text-[10px] uppercase tracking-[0.12em] text-muted-2">
-            {t('search.suggested')}
-          </div>
-          <div class="flex flex-wrap gap-2">
-            {suggestions.map((s) => (
-              <button
-                key={`${s.category}:${s.id}`}
-                type="button"
-                onClick={() => onAdd(s.category, s.id)}
-                class="inline-flex items-center gap-1 rounded-[9px] border border-dashed border-border px-2.5 py-1 text-xs font-semibold text-muted transition-colors hover:border-gold hover:text-text"
-              >
-                + {s.name}
-              </button>
-            ))}
-          </div>
-        </>
       )}
     </div>
   );

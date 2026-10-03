@@ -1,4 +1,4 @@
-import type { SelectedParts, ComboLine, Stadium, WindowKey } from './types';
+import type { SelectedParts, ComboLine, WindowKey } from './types';
 import type { SlimCombo } from './slim-combos';
 
 /** Le sole parti di una combo: soddisfatto sia da `Combo` sia da `SlimCombo`. */
@@ -62,26 +62,17 @@ interface FilterOptions {
   period: WindowKey;
   // Metrica dell'ordinamento (default score).
   sort?: SortKey;
-  // Filtro per linea (BX/UX/CX): vuoto/assente = tutte. NON separa il ranking, lo restringe soltanto.
-  lineFilter?: ComboLine[];
-  // Filtro per stadio (xtreme/infinity): vuoto/assente = tutti. Tiene le combo con ≥1 placement
-  // del piatto scelto nella finestra (lo stadio è noto solo per i placement WBO).
-  stadiumFilter?: Stadium[];
 }
 
-// Ranking unico BX + UX + CX, ordinato per la metrica scelta nella finestra. La linea è solo un
-// filtro/etichetta: la domanda dell'utente è "la miglior combo per la lama X", non "della linea Y".
+// Ranking unico BX + UX + CX, ordinato per la metrica scelta nella finestra. La linea è solo
+// un'etichetta (badge CX): la domanda dell'utente è "la miglior combo per la lama X", non "della linea Y".
 // Le parti inserite nella ricerca filtrano sempre (matchesSearch): non sono un inventario.
 export function filterCombos(
   combos: SlimCombo[],
   selected: SelectedParts,
-  { period, sort = 'score', lineFilter, stadiumFilter }: FilterOptions,
+  { period, sort = 'score' }: FilterOptions,
 ): SlimCombo[] {
   let base = combos.filter((c) => c.windows[period] !== undefined);
-  if (lineFilter && lineFilter.length) base = base.filter((c) => lineFilter.includes(c.line));
-  if (stadiumFilter && stadiumFilter.length) {
-    base = base.filter((c) => (c.windows[period]!.stadiums ?? []).some((s) => stadiumFilter.includes(s)));
-  }
   if (hasAnySelection(selected)) base = base.filter((c) => matchesSearch(c, selected));
   return [...base].sort(compareCombos(period, sort));
 }

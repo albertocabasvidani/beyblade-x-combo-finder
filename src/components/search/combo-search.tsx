@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'preact/hooks';
-import type { PartsRegistry, SelectedParts, Locale, ComboLine, Stadium, WindowKey } from '../../lib/types';
+import type { PartsRegistry, SelectedParts, Locale, WindowKey } from '../../lib/types';
 import type { SlimCombo, SlimDatabase } from '../../lib/slim-combos';
 import { aggregateBlades, bladeOf, filterCombos, SORT_KEYS, type SortKey } from '../../lib/search-engine';
 import { track } from '../../lib/analytics';
@@ -7,7 +7,7 @@ import type { AmazonConfigFile, AsinIndex, PartLookup } from '../../lib/amazon';
 import { subscribeMarket, chooseMarket, type MarketSource } from '../../lib/marketplace';
 import { AdUnit } from '../ads/ad-unit';
 import { INFEED_AFTER, INFEED_EVERY } from '../../lib/ads-config';
-import { PartSearch, type PartRef, type PartCategory } from './part-search';
+import { PartSearch, type PartCategory } from './part-search';
 import { ComboCard } from './combo-card';
 import { BladeRow } from './blade-row';
 
@@ -78,8 +78,6 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
   const [selected, setSelected] = useState<SelectedParts>({ ...emptySelection });
   const [tournamentOnly, setTournamentOnly] = useState(false);
   const [metaOnly, setMetaOnly] = useState(false);
-  const [lineFilter, setLineFilter] = useState<ComboLine[]>([]);
-  const [stadiumFilter, setStadiumFilter] = useState<Stadium[]>([]);
 
   // Il dataset completo arriva come asset separato (~190 KB gzip) invece che come prop dell'isola:
   // nelle props Astro ogni virgoletta diventa &quot; e la home pesava 38,5 MB.
@@ -102,9 +100,7 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
   const ready = dataset === 'ready';
 
   // Ogni cambio di criterio riparte dalla prima pagina di risultati.
-  useEffect(() => { setVisible(PAGE); }, [period, sort, view, bladeFocus, selected, tournamentOnly, metaOnly, lineFilter, stadiumFilter]);
-
-  const toggleIn = <T,>(arr: T[], v: T): T[] => (arr.includes(v) ? arr.filter((x) => x !== v) : [...arr, v]);
+  useEffect(() => { setVisible(PAGE); }, [period, sort, view, bladeFocus, selected, tournamentOnly, metaOnly]);
 
   const t = (key: string) => translations[key] ?? key;
 
@@ -154,7 +150,7 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
     selected.assistBlades.length === 0 && selected.overBlades.length === 0 &&
     selected.ratchets.length === 0 && selected.bits.length === 0;
 
-  let results = filterCombos(db.combos, selected, { period, sort, lineFilter, stadiumFilter });
+  let results = filterCombos(db.combos, selected, { period, sort });
   if (tournamentOnly) results = results.filter((c) => c.windows[period]!.tags.includes('tournament-proven'));
   if (metaOnly) results = results.filter((c) => c.windows[period]!.tags.some((tag) => tag === 'meta' || tag === 'top-tier'));
   // Vista lame: si aggrega l'insieme filtrato, prima del fuoco su una lama (che riguarda le combo).
@@ -169,7 +165,7 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
   // così una raffica di clic produce un evento solo; il primo render (nessuna selezione) è escluso.
   const selectedCount = Object.values(selected).reduce((n, a) => n + a.length, 0);
   useEffect(() => {
-    if (selectedCount === 0 && !tournamentOnly && !metaOnly && lineFilter.length === 0 && stadiumFilter.length === 0
+    if (selectedCount === 0 && !tournamentOnly && !metaOnly
       && sort === 'score' && view === 'combos' && !bladeFocus) return;
     const id = setTimeout(() => {
       track('search_results', {
@@ -181,11 +177,11 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
         sort,
         view,
         bladeFocus: bladeFocus?.id ?? null,
-        filters: { tournamentOnly, metaOnly, lines: lineFilter, stadiums: stadiumFilter },
+        filters: { tournamentOnly, metaOnly },
       });
     }, 500);
     return () => clearTimeout(id);
-  }, [selected, period, sort, view, bladeFocus, tournamentOnly, metaOnly, lineFilter, stadiumFilter, total]);
+  }, [selected, period, sort, view, bladeFocus, tournamentOnly, metaOnly, total]);
 
   const resolveName = (category: PartCategory, id: string): string => {
     const arr = parts[category] as Array<{ id: string; name: string }>;
@@ -228,33 +224,6 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
     return keys.map(([k, id]) => partName(k as string, id as string | null)).filter(Boolean).join(' ');
   };
 
-  // Suggerimenti: parti più frequenti nelle top combo (365 giorni, indipendente dal periodo scelto),
-  // non ancora cercate. db.combos è già ordinato per windows["365"].score.
-  const suggestions: PartRef[] = (() => {
-    const top = db.combos.slice(0, 20);
-    const counts = new Map<string, { category: PartCategory; id: string; n: number }>();
-    const bump = (category: PartCategory, id: string | null | undefined) => {
-      if (!id || selected[category].includes(id)) return;
-      const k = `${category}:${id}`;
-      const e = counts.get(k);
-      if (e) e.n++;
-      else counts.set(k, { category, id, n: 1 });
-    };
-    for (const c of top) {
-      bump('blades', c.blade);
-      bump('ratchets', c.ratchet);
-      bump('bits', c.bit);
-      bump('lockChips', c.lockChip);
-      bump('mainBlades', c.mainBlade);
-      bump('assistBlades', c.assistBlade);
-      bump('overBlades', c.overBlade ?? null);
-    }
-    return [...counts.values()]
-      .sort((a, b) => b.n - a.n)
-      .slice(0, 6)
-      .map((e) => ({ category: e.category, id: e.id, name: resolveName(e.category, e.id) }));
-  })();
-
   const Pill = ({ active, onToggle, label, accentVar, testId, disabled = false }: { active: boolean; onToggle: () => void; label: string; accentVar: string; testId?: string; disabled?: boolean }) => (
     <button
       type="button"
@@ -280,7 +249,7 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
 
 
         <div class="mt-3">
-          <PartSearch parts={parts} selected={selected} suggestions={suggestions} onAdd={add} onRemove={remove} t={t} />
+          <PartSearch parts={parts} selected={selected} onAdd={add} onRemove={remove} t={t} />
         </div>
 
         <div class="mt-4">
@@ -288,15 +257,6 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
           <div class="flex flex-wrap gap-2">
             <Pill active={tournamentOnly} onToggle={() => toggleFilter('tournamentOnly', setTournamentOnly, tournamentOnly)} label={t('filter.tournamentProven')} accentVar="--c-scarlet" />
             <Pill active={metaOnly} onToggle={() => toggleFilter('metaOnly', setMetaOnly, metaOnly)} label={t('filter.metaOnly')} accentVar="--c-gold" />
-          </div>
-          {/* Linea (BX/UX/CX) e stadio: solo filtro/etichetta, non separano il ranking. */}
-          <div class="mt-2 flex flex-wrap gap-2">
-            {(['bx', 'ux', 'cx'] as ComboLine[]).map((ln) => (
-              <Pill key={ln} active={lineFilter.includes(ln)} onToggle={() => { track('filter_toggled', { name: `line:${ln}`, on: !lineFilter.includes(ln) }); setLineFilter((f) => toggleIn(f, ln)); }} label={ln.toUpperCase()} accentVar="--c-cx-text" />
-            ))}
-            {(['xtreme', 'infinity'] as Stadium[]).map((st) => (
-              <Pill key={st} active={stadiumFilter.includes(st)} onToggle={() => { track('filter_toggled', { name: `stadium:${st}`, on: !stadiumFilter.includes(st) }); setStadiumFilter((f) => toggleIn(f, st)); }} label={t(`stadium.${st}`)} accentVar="--c-scarlet" />
-            ))}
           </div>
           {/* Negozio Amazon dei link "Buy". La nota dice da dove viene la scelta: senza, chi naviga
               con una VPN vede il negozio sbagliato e non capisce perché. */}

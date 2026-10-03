@@ -547,18 +547,13 @@ async function rankingFlow(context: BrowserContext) {
     await page.getByTestId('blade-focus-clear').click();
   } else skipped('4. percorso con una lama CX', 'nessuna lama CX a 30 giorni');
 
-  // 6. «Solo CX, solo Xtreme» nella vista lame
-  await page.getByTestId('view-blades').click();
-  await page.getByRole('button', { name: 'CX', exact: true }).click();
-  const cxOnly = await bladeRows(page).evaluateAll((els) => els.map((e) => e.getAttribute('data-line')));
-  if (cxOnly.length > 0) check('6. filtro CX: solo righe CX', cxOnly.every((l) => l === 'cx'), cxOnly.join(','));
-  else skipped('6. filtro CX', 'nessuna lama CX a 30 giorni');
-  await page.getByRole('button', { name: 'CX', exact: true }).click();
-  await page.getByRole('button', { name: 'Xtreme', exact: true }).click();
-  const xShares = await shareValues(page);
-  check('6. filtro Xtreme: quote ricalcolate sul mostrato (somma ~100% se tutte in pagina)',
-    xShares.length > 0 && (xShares.length >= PAGE_SIZE || Math.abs(xShares.reduce((a, b) => a + b, 0) - 100) < 2), `${xShares.length} righe, somma ${xShares.reduce((a, b) => a + b, 0).toFixed(1)}`);
-  await page.getByRole('button', { name: 'Xtreme', exact: true }).click();
+  // 6. Niente filtri per linea e stadio né parti suggerite (tolti il 03/10/2026): il pannello ha la
+  //    ricerca e i due filtri Tournament-proven e Meta / top-tier.
+  const tolti = ['BX', 'UX', 'CX', 'Xtreme', 'Infinity'];
+  const pillsTolte: string[] = [];
+  for (const n of tolti) if ((await page.getByRole('button', { name: n, exact: true }).count()) > 0) pillsTolte.push(n);
+  check('6. nessun filtro BX/UX/CX/Xtreme/Infinity', pillsTolte.length === 0, pillsTolte.join(','));
+  check('6. nessuna sezione Suggested', (await page.getByText('Suggested', { exact: true }).count()) === 0);
 
   // 5. «Ho queste parti, cosa posso costruire?»
   await page.getByTestId('view-combos').click();
@@ -577,12 +572,11 @@ async function rankingFlow(context: BrowserContext) {
 
   // UX: stessa struttura delle BX. Fino al 01/10/2026 il nome di una UX era il solo bit («Kick»).
   await page.locator('button[aria-label^="remove "]').evaluateAll((els) => els.forEach((e) => (e as HTMLButtonElement).click()));
+  // Le UX si prendono dal ranking così com'è: il filtro per linea non c'è più (03/10/2026).
   await page.getByTestId('view-combos').click();
-  await page.getByRole('button', { name: 'UX', exact: true }).click();
   const uxNames = await page.locator(`${cards}[data-line=ux] h3`).allTextContents();
   if (uxNames.length > 0) check('nomi delle combo UX con la lama, non il solo bit', uxNames.every((n) => n.trim().split(/\s+/).length >= 2), uxNames.slice(0, 3).join(' | '));
-  else skipped('nomi delle combo UX', 'nessuna combo UX nel periodo');
-  await page.getByRole('button', { name: 'UX', exact: true }).click();
+  else skipped('nomi delle combo UX', 'nessuna combo UX nella prima pagina');
 
   check('nessun errore in console (ranking)', errs.length === 0, errs.slice(0, 3).join(' | '));
   await page.screenshot({ path: join(SHOTS, 'home-desktop-blades.png'), fullPage: false });

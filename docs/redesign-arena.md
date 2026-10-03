@@ -179,8 +179,8 @@ Comune ai 4 schermi: niente hero, niente tab BX/CX, niente toggle TT/Hasbro, nie
    - Titolo "Le tue parti" (Anton 17px).
    - ~~**Toggle "Confronta con le mie parti"**: label + sub-label "Evidenzia ✓ possedute e ! mancanti" + switch (on = oro).~~ Tolto il 02/10/2026 insieme a «Buildable»: le parti inserite sono solo un filtro di ricerca, il pannello si chiama «Search parts».
    - **Search bar** unica: icona ⌕ + placeholder "Cerca Blade, Ratchet, Bit, Lock Chip…". Un solo campo per tutte le categorie.
-   - **Chip parti possedute** (pieni oro + ✕), seguiti da chip "**+ Nome**" tratteggiati (suggerimenti).
-   - **Filtri**: 2 pill affiancate (`gap 8px`, flex:1) — "Provate in torneo" (on = scarlatto), "Meta / top-tier" (off = grigio).
+   - **Chip parti cercate** (pieni oro + ✕). ~~Seguiti da chip "**+ Nome**" tratteggiati (suggerimenti).~~ Sezione «Suggested» tolta il 03/10/2026.
+   - **Filtri**: 2 pill affiancate (`gap 8px`, flex:1) — "Provate in torneo" (on = scarlatto), "Meta / top-tier" (off = grigio). Le pill BX/UX/CX e Xtreme/Infinity, aggiunte dopo, sono state tolte il 03/10/2026: lo stadio resta come badge sulla card.
 3. **Header ranking**: "RANKING" (Anton) + barra gradiente oro + conteggio "N combo".
 4. **Lista combo card** (colonna, `gap 11px`).
 
@@ -188,7 +188,7 @@ Comune ai 4 schermi: niente hero, niente tab BX/CX, niente toggle TT/Hasbro, nie
 1. **Top bar** app (`16px 32px`, border-bottom; nel light fondo bianco): logo skew + "COMBO FINDER" a sx; nav uppercase `gap 28px` a dx: "HOME" (attiva, oro), "INFO", "COME FUNZIONA IL PUNTEGGIO".
 2. **Griglia 2 colonne**: `grid-template-columns: 340px 1fr; gap: 28px`.
    - **Left rail (340px)**: titolo Anton 19px, toggle "Confronta…", search ("Cerca una parte…"), chip
-     possedute (oro + ✕), micro-label mono "SUGGERITI" + chip "+ …", divisore hairline, micro-label "FILTRI"
+     possedute (oro + ✕), ~~micro-label mono "SUGGERITI" + chip "+ …"~~ (tolti il 03/10/2026), divisore hairline, micro-label "FILTRI"
      + righe toggle (label sx, switch dx): "Provate in torneo", "Meta / top-tier". Switch desktop 36×20px.
    - **Colonna destra (1fr)**: header "RANKING" (Anton 24px) + barra gradiente + "N combo · ordinate per CAS";
      poi lista di **righe orizzontali**.
