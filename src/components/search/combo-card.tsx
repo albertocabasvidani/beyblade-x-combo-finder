@@ -5,6 +5,7 @@ import { bladeOf, type SortKey } from '../../lib/search-engine';
 import { buildAmazonUrl, storeLinks, type AmazonConfigFile, type AsinIndex, type PartLookup } from '../../lib/amazon';
 import { track } from '../../lib/analytics';
 import { ScoreBadge, scoreTier } from './score-badge';
+import { PartThumb } from './part-thumb';
 
 interface Props {
   combo: SlimCombo;
@@ -20,6 +21,8 @@ interface Props {
   /** Metrica scelta in «Sort by»: nella riga evidenza è la sola sottolineata. */
   sort: SortKey;
   partName: (category: string, id: string | null) => string;
+  /** File della foto di una parte (campo `image` del registro); undefined = nessuna foto. */
+  partImage: (category: string, id: string | null) => string | undefined;
   t: (key: string) => string;
 }
 
@@ -38,7 +41,7 @@ function daysSince(iso: string): number {
 export const metricClass = (on: boolean) =>
   on ? 'font-bold text-gold underline decoration-2 underline-offset-4' : '';
 
-export function ComboCard({ combo, view, thresholds, amazon, displayName, locale, rank, sort, partName, t }: Props) {
+export function ComboCard({ combo, view, thresholds, amazon, displayName, locale, rank, sort, partName, partImage, t }: Props) {
   const [buyOpen, setBuyOpen] = useState(false);
   const b = view;
   const tier = scoreTier(view.score, view.tags, thresholds);
@@ -69,6 +72,15 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, locale
     ? { background: 'var(--card1-bg)', borderColor: 'var(--card1-border)', boxShadow: 'var(--shadow-card1)' }
     : { boxShadow: 'var(--shadow-card)' };
   const cardClass = isTop ? 'border' : 'border border-border bg-surface';
+
+  // Foto delle parti, nell'ordine del nome (blade, ratchet, bit; per le CX lock chip → bit).
+  const Thumbs = ({ size }: { size: number }) => (
+    <div data-testid="combo-thumbs" class="flex flex-wrap gap-1.5">
+      {parts.filter((p) => p.id).map((p) => (
+        <PartThumb key={p.key} file={partImage(p.key, p.id)} name={partName(p.key, p.id) || p.key} size={size} />
+      ))}
+    </div>
+  );
 
   const CxBadge = () =>
     combo.line === 'cx' ? (
@@ -222,6 +234,10 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, locale
             <ScoreBadge score={view.score} tags={view.tags} thresholds={thresholds} t={t} size="sm" title={breakdownTooltip} />
           </div>
 
+          <div class="mt-2.5">
+            <Thumbs size={44} />
+          </div>
+
           {b && (b.tournamentEvents > 0 || b.metaSharePct != null) && (
             <div class="mt-[11px] border-t border-hairline pt-[11px]">
               <EvidenceInline />
@@ -246,6 +262,9 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, locale
             <div class="flex items-center gap-2">
               <CxBadge />
               <h3 class="font-display text-[22px] uppercase leading-tight text-text">{displayName}</h3>
+            </div>
+            <div class="mt-2">
+              <Thumbs size={48} />
             </div>
             <div class="mt-2 flex flex-wrap items-center gap-2">
               <StadiumBadge />

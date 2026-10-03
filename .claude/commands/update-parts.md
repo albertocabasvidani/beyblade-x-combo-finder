@@ -116,12 +116,16 @@ prodotto diverse: non risolverle di tua iniziativa.
 
 ```
 npm run sync:part-images
+npm run build:thumbs
 npm run sync:amazon-asins
 npm run build:parts && npm run build
 ```
 `sync:part-images` scarica dalle pagine wiki le immagini delle parti che ancora non le hanno
 (idempotente, report a stampa); le parti rimaste senza immagine vanno nel report del run, non
-bloccano. `sync:amazon-asins` riscrive `data/amazon-asins.json` (ASIN per codice prodotto e
+bloccano. `build:thumbs` ne ricava le miniature 160 px in `public/images/parts/160/` (le foto
+che il sito mostra su card, ricerca e vista lame, e che scarica l'app BeyMate) e aggiorna il
+`manifest.json` solo se cambia un hash; finiscono nel commit con `public/images/parts`.
+`sync:amazon-asins` riscrive `data/amazon-asins.json` (ASIN per codice prodotto e
 marketplace, per i link «Buy» del sito) dallo stato del monitor bbxdealmonitor accanto a questo
 repo (`../bbxdealmonitor/state/seen.json`; se manca stampa un avviso ed esce 0, non e' un errore):
 il file va nel commit di questo step quando cambia. Il guardrail di `build:parts` deve restare

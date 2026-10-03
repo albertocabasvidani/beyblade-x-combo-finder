@@ -2,6 +2,7 @@ import type { TierThresholds, WindowKey } from '../../lib/types';
 import type { BladeRow as Row, SortKey } from '../../lib/search-engine';
 import { ScoreBadge } from './score-badge';
 import { metricClass } from './combo-card';
+import { PartThumb } from './part-thumb';
 
 interface Props {
   row: Row;
@@ -12,6 +13,8 @@ interface Props {
   /** Nome leggibile della lama (Blade o Main Blade) e della sua build migliore. */
   name: string;
   bestName: string;
+  /** Foto della lama (campo `image` del registro). */
+  image?: string;
   onSelect: () => void;
   t: (key: string) => string;
 }
@@ -22,7 +25,7 @@ interface Props {
  * legga allo stesso modo; il badge è quello della build migliore, non uno score della lama. Tutta la
  * riga è un pulsante: porta alle combo di quella lama.
  */
-export function BladeRow({ row, rank, period, sort, thresholds, name, bestName, onSelect, t }: Props) {
+export function BladeRow({ row, rank, period, sort, thresholds, name, bestName, image, onSelect, t }: Props) {
   const best = row.best.windows[period]!;
   const isTop = rank === 1;
   const railBg = isTop ? 'var(--rail-1)' : row.line === 'cx' ? 'var(--rail-cx)' : 'var(--rail-2)';
@@ -68,6 +71,7 @@ export function BladeRow({ row, rank, period, sort, thresholds, name, bestName, 
         <div class="flex items-start justify-between gap-2.5">
           <div class="flex min-w-0 items-start gap-2.5">
             <span class={`font-display text-[26px] italic leading-none ${isTop ? 'text-rank-1' : 'text-rank-other'}`}>{rank}</span>
+            <PartThumb file={image} name={name} size={44} />
             <div class="min-w-0"><Name /><Best /></div>
           </div>
           <ScoreBadge score={best.score} tags={best.tags} thresholds={thresholds} t={t} size="sm" />
@@ -80,6 +84,7 @@ export function BladeRow({ row, rank, period, sort, thresholds, name, bestName, 
       {/* Desktop: riga orizzontale */}
       <div class="hidden items-center gap-[18px] py-4 pl-[26px] pr-5 lg:flex">
         <span class={`font-display text-[38px] italic leading-none ${isTop ? 'text-rank-1' : 'text-rank-other'}`}>{rank}</span>
+        <PartThumb file={image} name={name} size={56} />
         <div class="min-w-0 flex-1"><Name /><Best /></div>
         <div class="w-[260px] shrink-0 border-l border-hairline pl-[18px] text-[12.5px] font-semibold leading-relaxed text-text-2">
           <div><TopCuts /> {'·'} <Share /></div>

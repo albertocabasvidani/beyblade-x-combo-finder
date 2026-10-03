@@ -194,6 +194,33 @@
   display: none;
 }
 
+/* Miniatura di un componente (part-thumb.tsx). Classe scritta qui e non in utility Tailwind perché
+   la home ne rende ~180 nelle card inline: con le utility il markup pesava 336 byte a miniatura e
+   la home superava il tetto di 400 KB del test e2e (404.323 byte, misurato il 03/10/2026). */
+.part-thumb {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  width: var(--s);
+  height: var(--s);
+  overflow: hidden;
+  border-radius: 8px;
+  background: var(--c-surface-2);
+}
+.part-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 3px;
+}
+.part-thumb-plain {
+  border-radius: 0;
+  background: none;
+}
+.part-thumb-plain img {
+  padding: 0;
+}
+
 /* Slot AdSense a dimensione fissa: lo spazio riservato è noto in anticipo e resta piccolo anche
    quando l'annuncio non arriva mai — succede prima che il visitatore risponda al messaggio di
    consenso, con un adblocker attivo, e per tutto il tempo in cui il sito è in revisione. */

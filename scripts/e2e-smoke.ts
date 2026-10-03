@@ -128,6 +128,13 @@ async function desktopFlow(context: BrowserContext) {
   check(`card visibili = ${PAGE_SIZE} (paginazione)`, (await visibleCards(page).count()) === PAGE_SIZE, `=${await visibleCards(page).count()}`);
   check('stato del dataset: ready', (await page.getByTestId('period-hint').getAttribute('data-dataset')) === 'ready');
   check('dopo il fetch nessun controllo disabilitato', (await page.locator('[aria-disabled=true]').count()) === 0);
+  // Foto delle parti (miniature 160 px dell'app): la prima card ne ha una per parte e si caricano.
+  const thumbsOk = await page.waitForFunction(() => {
+    const card = [...document.querySelectorAll('[data-testid=combo-card]')].find((c) => (c as HTMLElement).offsetParent);
+    const imgs = [...(card?.querySelectorAll('[data-testid=combo-thumbs] img') ?? [])] as HTMLImageElement[];
+    return imgs.length >= 3 && imgs.every((i) => i.complete && i.naturalWidth > 0) ? imgs.length : false;
+  }, null, { timeout: 10_000 }).then((h) => h.jsonValue()).catch(() => 0);
+  check('prima card: foto delle parti caricate', Number(thumbsOk) >= 3, `=${thumbsOk}`);
 
   console.log('[4] Cerca e aggiunge una parte');
   await addPart(page, 'Wizard Rod');

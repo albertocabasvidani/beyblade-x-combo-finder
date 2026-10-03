@@ -1,5 +1,6 @@
 import { useState, useRef } from 'preact/hooks';
 import type { PartsRegistry, SelectedParts } from '../../lib/types';
+import { PartThumb } from './part-thumb';
 
 export type PartCategory = keyof SelectedParts;
 
@@ -7,6 +8,7 @@ export interface PartRef {
   category: PartCategory;
   id: string;
   name: string;
+  image?: string;
 }
 
 // Normalizza per il match: piega gli accenti (es. romaji "Bōru" → "boru") e abbassa il case.
@@ -50,10 +52,11 @@ export function PartSearch({ parts, selected, onAdd, onRemove, t }: Props) {
   // `variants` raccoglie ogni nome che il database associa alla parte (TT, Hasbro, romaji,
   // codice bit), in ordine di priorità per il display del match.
   const index: (PartRef & { catLabel: string; variants: string[] })[] = CATEGORIES.flatMap((c) =>
-    (parts[c.category] as Array<{ id: string; name: string; nameWestern?: string; aliases?: string[]; shortName?: string }>).map((p) => ({
+    (parts[c.category] as Array<{ id: string; name: string; nameWestern?: string; aliases?: string[]; shortName?: string; image?: string }>).map((p) => ({
       category: c.category,
       id: p.id,
       name: p.name,
+      image: p.image,
       catLabel: t(c.labelKey),
       variants: [p.name, p.nameWestern, ...(p.aliases ?? []), p.shortName].filter(Boolean) as string[],
     })),
@@ -73,8 +76,8 @@ export function PartSearch({ parts, selected, onAdd, onRemove, t }: Props) {
 
   const chosen: PartRef[] = CATEGORIES.flatMap((c) =>
     selected[c.category].map((id) => {
-      const found = (parts[c.category] as Array<{ id: string; name: string }>).find((p) => p.id === id);
-      return { category: c.category, id, name: found ? found.name : id };
+      const found = (parts[c.category] as Array<{ id: string; name: string; image?: string }>).find((p) => p.id === id);
+      return { category: c.category, id, name: found ? found.name : id, image: found?.image };
     }),
   );
 
@@ -118,11 +121,14 @@ export function PartSearch({ parts, selected, onAdd, onRemove, t }: Props) {
                     setIsOpen(false);
                   }}
                 >
+                  <span class="flex min-w-0 items-center gap-2.5">
+                  <PartThumb file={opt.image} name={opt.name} size={32} />
                   <span class="flex min-w-0 flex-col">
                     <span class="truncate">{opt.name}</span>
                     {opt.matchedAlt && (
                       <span class="truncate text-[11px] text-muted-2">{opt.matchedAlt}</span>
                     )}
+                  </span>
                   </span>
                   <span class="shrink-0 font-mono text-[10px] uppercase tracking-[0.1em] text-muted-2">{opt.catLabel}</span>
                 </button>
@@ -138,8 +144,9 @@ export function PartSearch({ parts, selected, onAdd, onRemove, t }: Props) {
           {chosen.map((c) => (
             <span
               key={`${c.category}:${c.id}`}
-              class="inline-flex items-center gap-1.5 rounded-[9px] bg-gold px-2.5 py-1 text-xs font-bold text-gold-ink"
+              class="inline-flex items-center gap-1.5 rounded-[9px] bg-gold py-1 pl-1 pr-2.5 text-xs font-bold text-gold-ink"
             >
+              <PartThumb file={c.image} name={c.name} size={22} plain />
               {c.name}
               <button
                 type="button"

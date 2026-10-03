@@ -185,7 +185,7 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
   `build-lama-shark-scale`): rigenerare aggiorna i numeri, il registro del pubblicatore decide cosa
   è già uscito. Le immagini non vanno in git: vivono sul server e su una release temporanea
 - `npm run test:e2e` — percorso utente nel browser (`scripts/e2e-smoke.ts`, playwright-core + Chrome di sistema, headless) sulla preview locale: prima `npm run build && npm run preview` (porta 4321); `E2E_URL` per puntarlo al sito pubblicato
-- Cosa controlla: peso della home (< 400 KB), fetch di `/combos.json`, ricerca parti come filtro, periodo 30/90/180/365, filtri, Show more, Buy parts, marketplace, tema, about/privacy, `/guides/` e menu, mobile 390 px senza scroll orizzontale; screenshot in `tmp/e2e/`
+- Cosa controlla: peso della home (< 400 KB), fetch di `/combos.json`, foto delle parti nella prima card, ricerca parti come filtro, periodo 30/90/180/365, filtri, Show more, Buy parts, marketplace, tema, about/privacy, `/guides/` e menu, mobile 390 px senza scroll orizzontale; screenshot in `tmp/e2e/`
 - Blocco [16]: le casistiche d'uso del ranking (Sort by, vista lame, click su una lama anche CX, ricerca per lama + ratchet + bit, assenza dei filtri linea/stadio e dei suggeriti, nomi UX). Blocco [17]: dataset in arrivo (controlli disabilitati) e dataset bloccato
 - `npm run test:i18n` — inglese e italiano con le stesse chiavi, nessun valore vuoto, ogni chiave usata nei sorgenti presente; gira nel workflow di deploy prima della build
 
@@ -241,8 +241,12 @@ mai via API a pagamento. L'IA non calcola mai lo score né ri-parsa ciò che il 
   `data/image-overrides.json`, che vince su tutto). Il campo immagine dell'infobox compare anche come
   `|Image=` (maiuscolo), non solo `|image=`: il parsing va fatto case-insensitive, altrimenti si perdono
   pagine che hanno comunque il file. Foto reali del prodotto (non stile comic), una
-  sola per parte: distribuzione **solo runtime** nell'app mobile (l'app scarica/cacha via raw.githubusercontent,
-  niente immagini nell'APK) — vedi `beyblade-x-score`.
+  sola per parte. `npm run build:thumbs` (dentro `/update-parts`, dopo `sync:part-images`) ne ricava le miniature
+  160 px a sfondo trasparente in `public/images/parts/160/` con `manifest.json` di hash: le usa sia il sito
+  (`src/components/search/part-thumb.tsx`: card, ricerca parti, vista lame) sia l'app mobile, che le scarica
+  a runtime via raw.githubusercontent senza metterle nell'APK — vedi `beyblade-x-score`.
+- Il markup della miniatura è minimo e lo stile sta in `global.css` (`.part-thumb`): la home ne rende ~180 lato
+  server e con le utility Tailwind superava il tetto di 400 KB del test e2e.
 
 ### Script raccolta combo (`npm run collect:sources`)
 - `scrape:reddit` (Playwright; Reddit blocca l'accesso non autenticato → serve sessione browser loggata:

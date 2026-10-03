@@ -191,7 +191,17 @@ async function main(): Promise<void> {
 
   // Il manifest e' cio' che permette all'app di accorgersi di una miniatura rigenerata: la sua
   // cache e' per nome file, e senza un hash del contenuto terrebbe la vecchia per sempre.
-  await writeFile(join(DESTINAZIONE, 'manifest.json'), JSON.stringify(manifest, null, 1) + '\n');
+  // Si riscrive solo se cambia un hash: lo script gira ogni giorno dentro /update-parts, e un
+  // `generated` nuovo a ogni giro sporcherebbe ogni commit con un manifest identico nel contenuto.
+  const percorsoManifest = join(DESTINAZIONE, 'manifest.json');
+  const precedente = await readFile(percorsoManifest, 'utf8')
+    .then((s) => JSON.parse(s) as { files?: Record<string, string> })
+    .catch(() => null);
+  if (precedente && JSON.stringify(precedente.files) === JSON.stringify(manifest.files)) {
+    console.log('manifest invariato');
+  } else {
+    await writeFile(percorsoManifest, JSON.stringify(manifest, null, 1) + '\n');
+  }
 
   const mb = (n: number) => (n / 1024 / 1024).toFixed(1);
   console.log(

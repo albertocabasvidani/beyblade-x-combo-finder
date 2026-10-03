@@ -188,6 +188,11 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
     return arr.find((p) => p.id === id)?.name ?? id;
   };
 
+  const resolveImage = (category: PartCategory, id: string): string | undefined => {
+    const arr = parts[category] as Array<{ id: string; image?: string }>;
+    return arr.find((p) => p.id === id)?.image;
+  };
+
   const bladeName = (id: string, line: 'bx' | 'cx') => resolveName(line === 'cx' ? 'mainBlades' : 'blades', id);
   const rankingTitle = view === 'combos' && bladeFocus
     ? `${t('search.bestForBlade')} ${bladeName(bladeFocus.id, bladeFocus.line)}`
@@ -206,6 +211,12 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
     if (!id) return '';
     const cat = COMBO_PART_CATEGORY[category];
     return cat ? resolveName(cat, id) : id;
+  };
+
+  const partImage = (category: string, id: string | null): string | undefined => {
+    if (!id) return undefined;
+    const cat = COMBO_PART_CATEGORY[category];
+    return cat ? resolveImage(cat, id) : undefined;
   };
 
   const comboDisplayName = (combo: SlimCombo): string => {
@@ -343,6 +354,7 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
                   sort={sort}
                   thresholds={thresholds}
                   name={bladeName(row.blade, row.line)}
+                  image={resolveImage(row.line === 'cx' ? 'mainBlades' : 'blades', row.blade)}
                   bestName={comboDisplayName(row.best)}
                   onSelect={() => focusBlade(row.blade, row.line)}
                   t={t}
@@ -368,6 +380,7 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
                   rank={i + 1}
                   sort={sort}
                   partName={partName}
+                  partImage={partImage}
                   amazon={{ ...amazon, market, keepStore: marketSource === 'user' }}
                   t={t}
                 />

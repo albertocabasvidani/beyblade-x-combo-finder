@@ -22,6 +22,8 @@ export type Stadium = 'xtreme' | 'infinity';
 export interface Blade {
   id: string;
   name: string;
+  /** Foto del componente: file PNG in public/images/parts/ (miniatura in /160/), scritto da sync:part-images. */
+  image?: string;
   nameWestern?: string;
   aliases?: string[];
   type: BladeType;
@@ -35,6 +37,8 @@ export interface Blade {
 export interface LockChip {
   id: string;
   name: string;
+  /** Foto del componente: file PNG in public/images/parts/ (miniatura in /160/), scritto da sync:part-images. */
+  image?: string;
   nameWestern?: string;
   line: 'cx';
 }
@@ -42,6 +46,8 @@ export interface LockChip {
 export interface MainBlade {
   id: string;
   name: string;
+  /** Foto del componente: file PNG in public/images/parts/ (miniatura in /160/), scritto da sync:part-images. */
+  image?: string;
   nameWestern?: string;
   line: 'cx';
   stats?: PartStats;
@@ -50,6 +56,8 @@ export interface MainBlade {
 export interface AssistBlade {
   id: string;
   name: string;
+  /** Foto del componente: file PNG in public/images/parts/ (miniatura in /160/), scritto da sync:part-images. */
+  image?: string;
   nameWestern?: string;
   shortName: string;
   line: 'cx';
@@ -58,6 +66,8 @@ export interface AssistBlade {
 export interface OverBlade {
   id: string;
   name: string;
+  /** Foto del componente: file PNG in public/images/parts/ (miniatura in /160/), scritto da sync:part-images. */
+  image?: string;
   nameWestern?: string;
   line: 'cx';
 }
@@ -65,6 +75,8 @@ export interface OverBlade {
 export interface Ratchet {
   id: string;
   name: string;
+  /** Foto del componente: file PNG in public/images/parts/ (miniatura in /160/), scritto da sync:part-images. */
+  image?: string;
   sides: number;
   height: number;
   stats?: PartStats;
@@ -73,6 +85,8 @@ export interface Ratchet {
 export interface Bit {
   id: string;
   name: string;
+  /** Foto del componente: file PNG in public/images/parts/ (miniatura in /160/), scritto da sync:part-images. */
+  image?: string;
   type: BitType;
   shortName?: string;   // codice ufficiale stampato sui prodotti (es. "H" = Hexa, "FB" = Free Ball)
   aliases?: string[];
