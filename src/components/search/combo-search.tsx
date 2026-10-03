@@ -4,7 +4,7 @@ import type { SlimCombo, SlimDatabase } from '../../lib/slim-combos';
 import { aggregateBlades, bladeOf, filterCombos, SORT_KEYS, type SortKey } from '../../lib/search-engine';
 import { track } from '../../lib/analytics';
 import type { AmazonConfigFile, AsinIndex, PartLookup } from '../../lib/amazon';
-import { subscribeMarket, type MarketSource } from '../../lib/marketplace';
+import { subscribeMarket, chooseMarket, type MarketSource } from '../../lib/marketplace';
 import { AdUnit } from '../ads/ad-unit';
 import { INFEED_AFTER, INFEED_EVERY } from '../../lib/ads-config';
 import { PartSearch, type PartCategory } from './part-search';
@@ -64,7 +64,7 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
   const rankingRef = useRef<HTMLElement>(null);
   // Negozio Amazon: default neutro in SSR, poi (al mount) lo stato condiviso di lib/marketplace —
   // scelta salvata, paese rilevato o lingua del browser. Così il markup idratato coincide con
-  // quello servito, e il negozio delle card resta allineato al selettore dell'header.
+  // quello servito, e il negozio delle card resta allineato ai selettori della pagina.
   const markets = Object.keys(amazon.config.marketplaces);
   const [market, setMarket] = useState<string>(amazon.config.defaultMarketplace);
   const [marketSource, setMarketSource] = useState<MarketSource>('default');
@@ -215,8 +215,8 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
     return cat ? resolveImage(cat, id) : undefined;
   };
 
-  // Il negozio si cambia dal selettore dell'header (uno solo per pagina); la nota che dice da dove
-  // viene la scelta sta nel pannello «Buy parts» di ogni card, accanto ai link che governa.
+  // Il negozio si sceglie in fondo a «Search parts»; la nota sotto il menu dice da dove viene la scelta:
+  // senza, chi naviga con una VPN vede il negozio sbagliato e non capisce perché.
   const marketNote = t(marketSource === 'user' ? 'market.note.user' : marketSource === 'geo' ? 'market.note.geo' : 'market.note.lang');
 
   const comboDisplayName = (combo: SlimCombo): string => {
@@ -269,6 +269,25 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
             <Pill active={tournamentOnly} onToggle={() => toggleFilter('tournamentOnly', setTournamentOnly, tournamentOnly)} label={t('filter.tournamentProven')} accentVar="--c-scarlet" />
             <Pill active={metaOnly} onToggle={() => toggleFilter('metaOnly', setMetaOnly, metaOnly)} label={t('filter.metaOnly')} accentVar="--c-gold" />
           </div>
+        </div>
+
+        {/* Negozio Amazon dei link «Buy parts», in fondo al pannello: nell'header, col solo «.it», sembrava
+            la scelta della lingua. L'etichetta dice a cosa serve. */}
+        <div class="mt-4 border-t border-hairline pt-3">
+          <label class="flex items-center justify-between gap-3">
+            <span class="text-[11.5px] font-semibold text-text-2">{t('search.store')}</span>
+            <select
+              data-testid="marketplace"
+              value={market}
+              onChange={(e) => { const m = (e.target as HTMLSelectElement).value; chooseMarket(m); track('marketplace_changed', { marketplace: m }); }}
+              class="shrink-0 rounded-md border border-border bg-surface-2 px-2 py-1.5 text-[12px] text-text"
+            >
+              {markets.map((k) => (
+                <option key={k} value={k}>{amazon.config.marketplaces[k].tld}</option>
+              ))}
+            </select>
+          </label>
+          <p data-testid="market-note" class="mt-1.5 text-[10.5px] leading-snug text-muted-2">{marketNote}</p>
         </div>
 
         {/* Annuncio nel pannello: su desktop e' la colonna sinistra, su mobile finisce sopra il ranking. */}
@@ -364,7 +383,7 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
                   sort={sort}
                   partName={partName}
                   partImage={partImage}
-                  amazon={{ ...amazon, market, keepStore: marketSource === 'user', note: marketNote }}
+                  amazon={{ ...amazon, market, keepStore: marketSource === 'user' }}
                   t={t}
                 />
               );

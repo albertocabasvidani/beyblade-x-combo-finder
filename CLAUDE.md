@@ -574,12 +574,12 @@ Disclosure nel footer e sezione «Affiliate links» in `/about/`.
   compreso — finiva sul `defaultMarketplace` qualunque fosse il suo paese. È la contestazione del rifiuto
   francese (21/09/2026), e il paese la chiude: da un indirizzo francese i link sono `amazon.fr` col tag
   francese anche con Chrome in `en-US`.
-- **Il selettore sta nell'header** (`src/components/market-picker.astro`, montato anche nei blocchi
-  «Where to buy»), quindi su ogni pagina; la nota accanto dice **da dove** viene la scelta («detected from
-  your location», «your choice»). Senza quella riga chi naviga con una VPN vede il negozio sbagliato e non
-  ha modo di capire perché. Lo stato è uno per pagina, su `window.__bxcfMarket`, con l'evento `bxcf:market`:
-  header, blocchi buy e card della home restano allineati. In home il select è solo quello dell'header:
-  la nota «da dove» sta nel pannello «Buy parts» di ogni card (`market.note.*` in i18n).
+- **Il selettore sta dove ci sono i link Amazon, non nell'header**: in home in fondo a «Search parts»
+  («Amazon store for “Buy parts”», nell'isola), nelle pagine guida accanto a ogni «Where to buy»
+  (`src/components/market-picker.astro`). Nell'header, col solo «.it», sembrava la scelta della lingua. La
+  nota sotto dice **da dove** viene la scelta («detected from your location», «your choice»): senza, chi
+  naviga con una VPN vede il negozio sbagliato e non capisce perché. Lo stato è uno per pagina, su
+  `window.__bxcfMarket`, con l'evento `bxcf:market`: selettori e card restano allineati.
 - **Ogni tag sta nell'HTML di ogni pagina, indipendente dal negozio rilevato.** La localizzazione riscrive
   i link lato client, quindi da sola lascia nell'HTML servito il solo `defaultMarketplace`: fino al
   23/09/2026 le pagine contenevano solo link amazon.com col tag US, e Amazon Francia ha respinto candidatura
@@ -590,7 +590,7 @@ Disclosure nel footer e sezione «Affiliate links» in `/about/`.
   scelto amazon.fr). Il pannello «Buy parts» delle card in home mostra solo il negozio scelto: l'elenco di
   tutti i negozi lì era illeggibile (21 link per tre parti) e, costruito dall'isola, non stava nell'HTML
   che `test:amazon-tags` controlla; dalla home i tag di ogni negozio restano nel footer. Sotto i
-  640 px l'header ha due righe: logo, negozio e tema; poi le quattro voci in `mobile-nav`. **`npm run test:amazon-tags`** legge `dist/` file per file e fallisce se una pagina
+  640 px l'header ha due righe: logo e tema; poi le quattro voci in `mobile-nav`. **`npm run test:amazon-tags`** legge `dist/` file per file e fallisce se una pagina
   non contiene un tag, se un link ha il tag di un altro negozio o se una riga «Where to buy» non ha tutti i
   negozi; gira nel workflow di deploy fra build e pubblicazione. Con un argomento controlla un'altra
   cartella, per esempio pagine scaricate dal sito pubblicato.

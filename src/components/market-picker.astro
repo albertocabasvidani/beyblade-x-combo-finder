@@ -2,7 +2,8 @@
 /**
  * market-picker.astro — il negozio Amazon del visitatore, e il modo di cambiarlo.
  *
- * Sta nell'header (quindi su ogni pagina, in forma compatta) e accanto ai blocchi di link. Tutte le
+ * Sta accanto ai blocchi di link «Where to buy» (in home il selettore è quello dell'isola, in fondo a
+ * «Search parts»). Non sta nell'header: col solo «.it» sembrava la scelta della lingua. Tutte le
  * istanze mostrano lo stesso valore: lo stato è uno solo per pagina, in `src/lib/marketplace.ts`.
  *
  * La nota sotto il select dice **da dove** viene il negozio in uso. Serve a chi naviga con una VPN
@@ -16,40 +17,31 @@ import amazonConfig from '../../data/amazon-config.json';
 import type { AmazonConfigFile } from '../lib/amazon';
 
 interface Props {
-  /** Nell'header: solo il menù, senza la nota. */
-  compact?: boolean;
   class?: string;
 }
 
-const { compact = false, class: className = '' } = Astro.props;
+const { class: className = '' } = Astro.props;
 const config = amazonConfig as AmazonConfigFile;
 const market = config.defaultMarketplace;
 ---
 
 <div class={`flex flex-col gap-1 ${className}`}>
   <label class="flex items-center gap-2 font-mono text-[11px] text-muted">
-    {!compact && <span>Shop on</span>}
+    <span>Shop on</span>
     <select
       data-buy-market
       data-testid="buy-market"
       aria-label="Amazon store"
-      class:list={[
-        'rounded border border-border bg-surface px-2 py-1 font-mono text-[11px] text-muted',
-        compact && 'max-w-[74px]',
-      ]}
+      class="rounded border border-border bg-surface px-2 py-1 font-mono text-[11px] text-muted"
     >
       {Object.entries(config.marketplaces).map(([code, m]) => (
-        // Nell'header solo il suffisso (.it, .co.uk): col dominio intero il menù occupa un terzo
-        // della barra su mobile e manda la navigazione a capo. Il nome per esteso è nel title.
-        <option value={code} selected={code === market}>{compact ? m.tld.replace(/^amazon/, '') : m.tld}</option>
+        <option value={code} selected={code === market}>{m.tld}</option>
       ))}
     </select>
   </label>
-  {!compact && (
-    <p data-market-note data-testid="market-note" class="font-mono text-[10px] leading-snug text-muted-2">
-      Product links go to the store selected here.
-    </p>
-  )}
+  <p data-market-note data-testid="market-note" class="font-mono text-[10px] leading-snug text-muted-2">
+    Product links go to the store selected here.
+  </p>
 </div>
 
 <script>

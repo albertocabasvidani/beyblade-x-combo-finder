@@ -193,7 +193,7 @@ async function desktopFlow(context: BrowserContext) {
   const panelHrefs = await partLinks.evaluateAll((as) => as.map((a) => ({ href: (a as HTMLAnchorElement).href, rel: a.getAttribute('rel') ?? '', target: a.getAttribute('target') })));
   check('link del pannello verso amazon, sponsored, _blank',
     panelHrefs.every((h) => /^https:\/\/www\.amazon\./.test(h.href) && /sponsored/.test(h.rel) && h.target === '_blank'), panelHrefs[0]?.href);
-  const panelMarket = await page.locator('header [data-buy-market]').inputValue();
+  const panelMarket = await page.getByTestId('marketplace').inputValue();
   check(`link del pannello con tracking ID (mercato ${panelMarket})`, panelHrefs.every((h) => /[?&]tag=/.test(h.href)), panelHrefs[0]?.href);
   // Il pannello mostra solo il negozio scelto: i link a tutti i negozi (per i revisori Associates)
   // stanno nell'HTML del footer e delle pagine «Where to buy», controllati da test:amazon-tags.
@@ -220,16 +220,16 @@ async function desktopFlow(context: BrowserContext) {
     const hrefs = await buy.evaluateAll((as) => as.map((a) => ({ href: (a as HTMLAnchorElement).href, target: a.getAttribute('target'), rel: a.getAttribute('rel') ?? '' })));
     check('ogni Buy punta ad amazon.', hrefs.every((h) => /^https:\/\/www\.amazon\./.test(h.href)), hrefs[0]?.href);
     check('ogni Buy ha target=_blank e rel sponsored', hrefs.every((h) => h.target === '_blank' && /sponsored/.test(h.rel)));
-    const market = await page.locator('header [data-buy-market]').inputValue();
+    const market = await page.getByTestId('marketplace').inputValue();
     const tagged = hrefs.filter((h) => /[?&]tag=/.test(h.href)).length;
     // Senza eccezioni, su ogni mercato: un link non tracciato e' la contestazione del 19/09/2026.
     check(`mercato ${market}: tutti i link con tag`, tagged === hrefs.length, `${tagged}/${hrefs.length}`);
     console.log('[9] Marketplace');
-    await page.locator('header [data-buy-market]').selectOption('de');
+    await page.getByTestId('marketplace').selectOption('de');
     const deHrefs: string[] = await buy.evaluateAll((as) => as.map((a) => (a as HTMLAnchorElement).href));
     check('link Buy passano ad amazon.de', deHrefs.every((h) => h.startsWith('https://www.amazon.de/')), deHrefs[0]);
     await page.reload({ waitUntil: 'networkidle' });
-    check('marketplace persistito dopo reload', (await page.locator('header [data-buy-market]').inputValue()) === 'de');
+    check('marketplace persistito dopo reload', (await page.getByTestId('marketplace').inputValue()) === 'de');
   }
 
   console.log('[10] Tema');
@@ -415,7 +415,7 @@ async function countryFlow(browser: Browser) {
   check('FR: nessun blocco del redirect su una scelta non sua', hrefs.every((h) => !h.includes('creatorsDisableRedirect')), hrefs[0] ?? '');
 
   // --- Il visitatore corregge a mano (il caso VPN): la sua scelta vince e resta.
-  await page.locator('header [data-buy-market]').selectOption('it');
+  await page.locator('[data-buy-market]').first().selectOption('it');
   await page.waitForFunction(() => (window as any).__bxcfMarket?.source === 'user', null, { timeout: 5000 });
   hrefs = await linkAmazon(page);
   check('scelta manuale IT: i link vanno su amazon.it', hrefs.every((h) => h.includes('www.amazon.it/')), hrefs[0] ?? '');
@@ -454,20 +454,19 @@ async function countryFlow(browser: Browser) {
   await page3.close();
   await muto.close();
 
-  // --- Home: l'isola Preact e il selettore dell'header devono mostrare lo stesso negozio.
+  // --- Home: il selettore sta in fondo a «Search parts» (non più nell'header) e le card lo seguono.
   const de = await contesto('DE');
   const page4 = await de.newPage();
   await page4.goto(BASE + '/', { waitUntil: 'networkidle' });
   await risolto(page4);
-  // Il selettore è uno solo (header); le card della home devono seguirlo, e la nota del pannello
-  // «Buy parts» dice da dove viene il negozio.
-  const valori = await page4.locator('[data-buy-market]')
-    .evaluateAll((els) => els.map((e) => (e as HTMLSelectElement).value));
-  check('DE: un solo selettore del negozio in home, su amazon.de', valori.length === 1 && valori[0] === 'de', valori.join(','));
+  check('DE: nessun selettore del negozio nell’header', (await page4.locator('header select').count()) === 0);
+  check('DE: un solo selettore in home, in Search parts, su amazon.de',
+    (await page4.locator('select').count()) === 1 && (await page4.getByTestId('marketplace').inputValue()) === 'de');
+  const notaDe = (await page4.getByTestId('market-note').textContent()) ?? '';
+  check('DE: la nota sotto il selettore dice perché', /detected from your location/i.test(notaDe), notaDe);
   await page4.locator('[data-testid=combo-card]:visible [data-testid=buy-parts-toggle]').first().click();
   const pannelloDe = (await page4.locator('[data-testid=buy-parts-panel]:visible').first().textContent()) ?? '';
-  check('DE: il pannello Buy parts della home segue l’header e dice perché',
-    /amazon\.de/i.test(pannelloDe) && /detected from your location/i.test(pannelloDe), pannelloDe.slice(0, 120));
+  check('DE: il pannello Buy parts segue il selettore', /amazon\.de/i.test(pannelloDe), pannelloDe.slice(0, 80));
   await page4.close();
   await de.close();
 }

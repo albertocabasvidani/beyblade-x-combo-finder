@@ -15,8 +15,7 @@ interface Props {
   thresholds: TierThresholds;
   /** Link affiliati (chip delle parti mancanti e pannello «Buy parts»); assente = nessun link. */
   /** `keepStore`: il negozio l'ha scelto il visitatore, quindi Amazon non deve spostarlo (OneLink). */
-  /** `note`: da dove viene il negozio (rilevato, scelto, lingua): il selettore sta nell'header. */
-  amazon?: { config: AmazonConfigFile; lookup: PartLookup; asins: AsinIndex; market: string; keepStore?: boolean; note?: string };
+  amazon?: { config: AmazonConfigFile; lookup: PartLookup; asins: AsinIndex; market: string; keepStore?: boolean };
   displayName: string;
   locale: Locale;
   rank: number;
@@ -154,7 +153,6 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, locale
         <div class="mb-1.5 font-mono text-[10px] uppercase tracking-[0.12em] text-muted-2">
           {t('combo.buyOn')} {amazon.config.marketplaces[amazon.market]?.tld ?? ''}
         </div>
-        {amazon.note && <p data-testid="market-note" class="-mt-1 mb-1.5 text-[10.5px] leading-snug text-muted-2">{amazon.note}</p>}
         <div class="flex flex-wrap gap-1.5">
           {buyable.map((p) => {
             const label = partName(p.key, p.id) || p.key;

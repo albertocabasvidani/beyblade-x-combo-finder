@@ -12,7 +12,7 @@ agentica Claude Code.
   intero.
 - **Link Amazon affiliati**: ogni card ha «Buy parts», che apre un link per ogni parte della combo.
   Il negozio segue il paese del visitatore
-  (poi le lingue del browser), con un selettore nell'header che ricorda la scelta.
+  (poi le lingue del browser), con un selettore in fondo a «Search parts» che ricorda la scelta.
 - **Analytics**: PostHog cloud EU in modalità cookieless (niente cookie, niente banner); chiave in
   `src/lib/analytics-config.ts`. **AdSense**: quattro slot (sopra il contenuto, nel pannello parti, fra
   le card, in fondo) con id in `src/lib/ads-config.ts` — uno slot con id vuoto non renderizza nulla. Il

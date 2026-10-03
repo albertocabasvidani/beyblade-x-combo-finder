@@ -1,6 +1,5 @@
 ---
 import { t } from '../../i18n/ui';
-import MarketPicker from '../market-picker.astro';
 import type { Locale } from '../../lib/types';
 
 interface Props {
@@ -49,8 +48,8 @@ const link = (on: boolean) =>
         {t(locale, 'nav.howScoring')}
       </a>
 
-      <!-- Il negozio Amazon del visitatore: nell'header perché vale per i link di ogni pagina. -->
-      <MarketPicker compact />
+      <!-- Niente selettore del negozio qui: col solo «.it» sembrava la scelta della lingua. Sta dove
+           ci sono i link Amazon: in fondo a «Search parts» in home e accanto a ogni «Where to buy». -->
 
       <button
         id="theme-toggle"
@@ -68,7 +67,7 @@ const link = (on: boolean) =>
       </button>
     </div>
   </nav>
-  <!-- Sotto i 640 px la riga sopra tiene solo logo, negozio e tema, e le quattro voci stanno tutte
+  <!-- Sotto i 640 px la riga sopra tiene solo logo e tema, e le quattro voci stanno tutte
        qui, nello stesso ordine del desktop. Prima Home e How scoring works restavano in alto, a capo
        su tre righe, e Meta e Guides finivano qui da sole: un menu spezzato in due senza criterio. -->
   <nav
