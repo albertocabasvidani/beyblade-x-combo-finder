@@ -48,8 +48,8 @@ const link = (on: boolean) =>
         {t(locale, 'nav.howScoring')}
       </a>
 
-      <!-- Niente selettore del negozio qui: col solo «.it» sembrava la scelta della lingua. Sta dove
-           ci sono i link Amazon: in fondo a «Search parts» in home e accanto a ogni «Where to buy». -->
+      {/* Niente selettore del negozio qui: col solo «.it» sembrava la scelta della lingua. Sta dove
+           ci sono i link Amazon: in fondo a «Search parts» in home e accanto a ogni «Where to buy». */}
 
       <button
         id="theme-toggle"
@@ -67,9 +67,9 @@ const link = (on: boolean) =>
       </button>
     </div>
   </nav>
-  <!-- Sotto i 640 px la riga sopra tiene solo logo e tema, e le quattro voci stanno tutte
+  {/* Sotto i 640 px la riga sopra tiene solo logo e tema, e le quattro voci stanno tutte
        qui, nello stesso ordine del desktop. Prima Home e How scoring works restavano in alto, a capo
-       su tre righe, e Meta e Guides finivano qui da sole: un menu spezzato in due senza criterio. -->
+       su tre righe, e Meta e Guides finivano qui da sole: un menu spezzato in due senza criterio. */}
   <nav
     data-testid="mobile-nav"
     class="flex justify-between gap-4 overflow-x-auto border-t border-border px-4 py-2 sm:hidden"

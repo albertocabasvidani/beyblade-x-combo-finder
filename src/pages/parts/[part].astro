@@ -45,6 +45,10 @@ const jsonLd = [
   },
 ];
 
+// Nome della parte nei titoli di sezione: la parte del titolo prima dei due punti («Hover Wyvern»),
+// non il titolo intero («Hover Wyvern: the defensive blade that beats attackers»).
+const partLabel = title.split(':')[0].trim();
+
 // Link "Buy" per il set d'uscita, se conosciuto e presente nei dati.
 const buyParts = master?.firstReleaseSet
   ? [{ category, partId, partName: master.names?.tt ?? title }]
@@ -72,7 +76,7 @@ const buyParts = master?.firstReleaseSet
 
   {topCombos.length > 0 && (
     <>
-      <h2>Best combos using {title}</h2>
+      <h2>Best combos using {partLabel}</h2>
       <table>
         <thead><tr><th>Combo</th><th>Score</th><th>Events</th><th>Wins</th></tr></thead>
         <tbody>
