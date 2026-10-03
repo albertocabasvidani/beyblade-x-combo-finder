@@ -3,7 +3,7 @@ import { useState } from 'preact/hooks';
 import type { Locale, ComboWindow, TierThresholds } from '../../lib/types';
 import type { SlimCombo } from '../../lib/slim-combos';
 import { bladeOf, type SortKey } from '../../lib/search-engine';
-import { buildAmazonUrl, storeLinks, type AmazonConfigFile, type AsinIndex, type PartLookup } from '../../lib/amazon';
+import { buildAmazonUrl, type AmazonConfigFile, type AsinIndex, type PartLookup } from '../../lib/amazon';
 import { track } from '../../lib/analytics';
 import { ScoreBadge, scoreTier } from './score-badge';
 import { PartThumb } from './part-thumb';
@@ -48,6 +48,9 @@ export const comboNameNodes = (name: string) =>
   name.split(' ').map((w, i) => (
     <Fragment key={i}>{i > 0 && ' '}{w.includes('-') ? <span class="whitespace-nowrap">{w}</span> : w}</Fragment>
   ));
+
+/** «1 win», «2 wins»: la chiave `<key>.one` porta il singolare. */
+export const countLabel = (n: number, key: string, t: (k: string) => string) => `${n} ${t(n === 1 ? `${key}.one` : key)}`;
 
 export const metricClass = (on: boolean) =>
   on ? 'font-bold text-gold underline decoration-2 underline-offset-4' : '';
@@ -102,7 +105,7 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, locale
 
   const Sources = () => (
     <span class="text-[10.5px] text-muted-2">
-      {combo.sourceCount} {t('search.sources')}
+      {countLabel(combo.sourceCount, 'search.sources', t)}
     </span>
   );
 
@@ -171,45 +174,15 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, locale
             );
           })}
         </div>
-        {/* Ogni parte anche su tutti gli altri negozi: i chip sopra seguono il paese del visitatore, e un
-            revisore Associates fuori dalla Francia non troverebbe mai amazon.fr col tag francese (rifiuto
-            FR del 21/09/2026). Link con creatorsDisableRedirect: chi clicca amazon.fr ha scelto amazon.fr. */}
-        <div data-testid="buy-parts-stores" class="mt-2 flex flex-col gap-1 font-mono text-[10px] text-muted">
-          {buyable.map((p) => {
-            const label = partName(p.key, p.id) || p.key;
-            const stores = storeLinks(amazon.config, (m) =>
-              buildAmazonUrl(p.key, p.id!, label, amazon.lookup, amazon.asins, m, amazon.config, true).href);
-            return (
-              <div key={p.key} data-part-id={p.id}>
-                <span class="text-muted-2">{label}:</span>{' '}
-                {stores.map((s, i) => (
-                  <span key={s.market}>
-                    {i > 0 && ' · '}
-                    <a
-                      href={s.href}
-                      data-market={s.market}
-                      target="_blank"
-                      rel="sponsored noopener nofollow"
-                      class="hover:text-text hover:underline"
-                      onClick={() => track('amazon_click', { partId: p.id, category: p.key, marketplace: s.market, comboId: combo.id, source: 'buy-parts-store' })}
-                    >
-                      {s.tld}
-                    </a>
-                  </span>
-                ))}
-              </div>
-            );
-          })}
-        </div>
       </div>
     );
 
   const EvidenceInline = () =>
     b && (b.tournamentEvents > 0 || b.metaSharePct != null) ? (
       <div class="flex flex-wrap items-center gap-x-2 gap-y-1 text-[11.5px] font-semibold text-text-2" title={breakdownTooltip}>
-        {b.wins > 0 && <span>{'\u{1F3C6}'} <span data-metric="wins" class={metricClass(sort === 'wins')}>{b.wins} {t('combo.wins')}</span></span>}
-        {b.topCutAppearances > 0 && <span data-metric="topCut" class={metricClass(sort === 'topCut')}>{b.topCutAppearances} {t('combo.topCuts')}</span>}
-        {b.tournamentEvents > 0 && <span>{b.tournamentEvents} {t('combo.events')}</span>}
+        {b.wins > 0 && <span>{'\u{1F3C6}'} <span data-metric="wins" class={metricClass(sort === 'wins')}>{countLabel(b.wins, 'combo.wins', t)}</span></span>}
+        {b.topCutAppearances > 0 && <span data-metric="topCut" class={metricClass(sort === 'topCut')}>{countLabel(b.topCutAppearances, 'combo.topCuts', t)}</span>}
+        {b.tournamentEvents > 0 && <span>{countLabel(b.tournamentEvents, 'combo.events', t)}</span>}
         {b.metaSharePct != null && <span class="text-scarlet">{b.metaSharePct}% {t('combo.metaShare')}</span>}
         <Freshness />
       </div>
@@ -286,9 +259,9 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, locale
           {b && (b.tournamentEvents > 0 || b.metaSharePct != null) && (
             <div class="w-[240px] shrink-0 border-l border-hairline pl-[18px] text-[12.5px]">
               <div class="font-semibold leading-relaxed text-text-2">
-                {b.wins > 0 && <span>{'\u{1F3C6}'} <span data-metric="wins" class={metricClass(sort === 'wins')}>{b.wins} {t('combo.wins')}</span> {'·'} </span>}
-                {b.topCutAppearances > 0 && <span data-metric="topCut" class={metricClass(sort === 'topCut')}>{b.topCutAppearances} {t('combo.topCuts')}</span>}
-                {b.tournamentEvents > 0 && <span> {'·'} {b.tournamentEvents} {t('combo.events')}</span>}
+                {b.wins > 0 && <span>{'\u{1F3C6}'} <span data-metric="wins" class={metricClass(sort === 'wins')}>{countLabel(b.wins, 'combo.wins', t)}</span> {'·'} </span>}
+                {b.topCutAppearances > 0 && <span data-metric="topCut" class={metricClass(sort === 'topCut')}>{countLabel(b.topCutAppearances, 'combo.topCuts', t)}</span>}
+                {b.tournamentEvents > 0 && <span> {'·'} {countLabel(b.tournamentEvents, 'combo.events', t)}</span>}
               </div>
               {b.metaSharePct != null && (
                 <>

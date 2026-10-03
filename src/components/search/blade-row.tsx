@@ -1,7 +1,7 @@
 import type { TierThresholds, WindowKey } from '../../lib/types';
 import type { BladeRow as Row, SortKey } from '../../lib/search-engine';
 import { ScoreBadge } from './score-badge';
-import { metricClass, comboNameNodes } from './combo-card';
+import { metricClass, comboNameNodes, countLabel } from './combo-card';
 import { PartThumb } from './part-thumb';
 
 interface Props {
@@ -33,7 +33,7 @@ export function BladeRow({ row, rank, period, sort, thresholds, name, bestName, 
     ? { background: 'var(--card1-bg)', borderColor: 'var(--card1-border)', boxShadow: 'var(--shadow-card1)' }
     : { boxShadow: 'var(--shadow-card)' };
   const pct = `${(100 * row.share).toFixed(1)}%`;
-  const bestMetric = sort === 'wins' ? `${best.wins} ${t('combo.wins')}` : `${best.topCutAppearances} ${t('combo.topCuts')}`;
+  const bestMetric = sort === 'wins' ? countLabel(best.wins, 'combo.wins', t) : countLabel(best.topCutAppearances, 'combo.topCuts', t);
 
   const Name = () => (
     <div class="flex min-w-0 items-center gap-2">
@@ -48,10 +48,10 @@ export function BladeRow({ row, rank, period, sort, thresholds, name, bestName, 
       <span class="text-muted">{t('blade.best')}</span> {comboNameNodes(bestName)} <span class="text-muted">({bestMetric})</span>
     </div>
   );
-  const TopCuts = () => <span data-metric="topCut" class={metricClass(sort === 'topCut')}>{row.topCut} {t('combo.topCuts')}</span>;
-  const Wins = () => <span>{'\u{1F3C6}'} <span data-metric="wins" class={metricClass(sort === 'wins')}>{row.wins} {t('combo.wins')}</span></span>;
+  const TopCuts = () => <span data-metric="topCut" class={metricClass(sort === 'topCut')}>{countLabel(row.topCut, 'combo.topCuts', t)}</span>;
+  const Wins = () => <span>{'\u{1F3C6}'} <span data-metric="wins" class={metricClass(sort === 'wins')}>{countLabel(row.wins, 'combo.wins', t)}</span></span>;
   const Share = () => <span>{pct} {t('blade.share')}</span>;
-  const Builds = () => <span>{row.builds} {t('blade.builds')}</span>;
+  const Builds = () => <span>{countLabel(row.builds, 'blade.builds', t)}</span>;
 
   return (
     <button

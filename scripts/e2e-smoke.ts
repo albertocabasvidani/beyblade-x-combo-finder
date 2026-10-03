@@ -195,16 +195,9 @@ async function desktopFlow(context: BrowserContext) {
     panelHrefs.every((h) => /^https:\/\/www\.amazon\./.test(h.href) && /sponsored/.test(h.rel) && h.target === '_blank'), panelHrefs[0]?.href);
   const panelMarket = await page.locator('header [data-buy-market]').inputValue();
   check(`link del pannello con tracking ID (mercato ${panelMarket})`, panelHrefs.every((h) => /[?&]tag=/.test(h.href)), panelHrefs[0]?.href);
-  // Ogni parte anche su tutti i negozi, ciascuno col suo tag: è la via dalla home ad amazon.fr per chi
-  // non è in Francia, come un revisore Associates (rifiuto FR del 21/09/2026).
-  const amazonCfg = JSON.parse(readFileSync(join(ROOT, 'data', 'amazon-config.json'), 'utf8'));
-  const storeRows = panel.locator('[data-testid=buy-parts-stores] > div');
-  const rowsHrefs: string[][] = await storeRows.evaluateAll((rows) =>
-    rows.map((r) => [...r.querySelectorAll('a')].map((a) => (a as HTMLAnchorElement).href)));
-  check('pannello: una riga di negozi per ogni parte linkata', rowsHrefs.length === nParts, `${rowsHrefs.length} righe, ${nParts} parti`);
-  const rigaCompleta = (hrefs: string[]) => Object.values(amazonCfg.marketplaces).every((m: any) =>
-    hrefs.some((h) => h.startsWith(`https://www.${m.tld}/`) && h.includes(`tag=${m.tag}`)));
-  check('pannello: ogni riga ha tutti i negozi col proprio tag', rowsHrefs.length > 0 && rowsHrefs.every(rigaCompleta), rowsHrefs[0]?.join(' ') ?? '');
+  // Il pannello mostra solo il negozio scelto: i link a tutti i negozi (per i revisori Associates)
+  // stanno nell'HTML del footer e delle pagine «Where to buy», controllati da test:amazon-tags.
+  check('pannello: nessun elenco di tutti i negozi', (await panel.locator('[data-testid=buy-parts-stores]').count()) === 0);
   await toggles.first().click();
   check('pannello richiuso', (await page.locator('[data-testid=buy-parts-panel]').count()) === 0);
 

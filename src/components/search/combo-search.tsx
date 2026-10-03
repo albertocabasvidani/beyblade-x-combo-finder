@@ -8,7 +8,7 @@ import { subscribeMarket, type MarketSource } from '../../lib/marketplace';
 import { AdUnit } from '../ads/ad-unit';
 import { INFEED_AFTER, INFEED_EVERY } from '../../lib/ads-config';
 import { PartSearch, type PartCategory } from './part-search';
-import { ComboCard } from './combo-card';
+import { ComboCard, countLabel } from './combo-card';
 import { BladeRow } from './blade-row';
 
 interface Props {
@@ -317,7 +317,7 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
           )}
           <span class="h-0.5 flex-1 rounded-full" style={{ background: 'var(--grad-ranking)' }} aria-hidden="true" />
           <span class="shrink-0 font-mono text-[11px] text-muted-2" data-testid="results-count">
-            {total} {t(view === 'blades' ? 'search.bladesUnit' : 'search.combosUnit')}
+            {countLabel(total, view === 'blades' ? 'search.bladesUnit' : 'search.combosUnit', t)}
           </span>
         </div>
 
