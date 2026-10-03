@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02",
+  "generatedAt": "2026-10-03",
   "source": "metabeys",
   "combos": {
     "silver-wolf-9-60-free-ball": {
@@ -461,7 +461,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 36,
           "sharePct": 0.61,
@@ -481,7 +481,7 @@
       "mainBlade": null,
       "assistBlade": null,
       "overBlade": null,
-      "displayName": "Suppress Superion 3-60 Jolt",
+      "displayName": "SiegSuperion 3-60 Jolt",
       "type": "balance",
       "placements": [
         {
@@ -523,7 +523,7 @@
       "mainBlade": null,
       "assistBlade": null,
       "overBlade": null,
-      "displayName": "Suppress Superion 7-60 Hexa",
+      "displayName": "SiegSuperion 7-60 Hexa",
       "type": "balance",
       "placements": [
         {
@@ -923,7 +923,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 99,
           "sharePct": 1.7,
@@ -1036,19 +1036,6 @@
           "deckScore": "S",
           "lang": "en",
           "url": "https://www.metabeys.com/events/1782597731334"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1759466648279",
-          "eventName": "Game 3 Locals - Sol Eclipse (October 2nd 2025)",
-          "date": "2025-10-02",
-          "placement": 6,
-          "topCutSize": 8,
-          "players": 23,
-          "deckScore": "C",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1759466648279"
         },
         {
           "source": "metabeys",
@@ -2575,32 +2562,6 @@
           "deckScore": "D",
           "lang": "en",
           "url": "https://www.metabeys.com/events/1759798609280"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1759466648279",
-          "eventName": "Game 3 Locals - Sol Eclipse (October 2nd 2025)",
-          "date": "2025-10-02",
-          "placement": 1,
-          "topCutSize": 8,
-          "players": 23,
-          "deckScore": "B",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1759466648279"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1759466648279",
-          "eventName": "Game 3 Locals - Sol Eclipse (October 2nd 2025)",
-          "date": "2025-10-02",
-          "placement": 7,
-          "topCutSize": 8,
-          "players": 23,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1759466648279"
         },
         {
           "source": "metabeys",
@@ -6581,7 +6542,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 823,
           "sharePct": 14,
@@ -6707,45 +6668,6 @@
           "deckScore": "B",
           "lang": "en",
           "url": "https://www.metabeys.com/events/1760252300352"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1759466648279",
-          "eventName": "Game 3 Locals - Sol Eclipse (October 2nd 2025)",
-          "date": "2025-10-02",
-          "placement": 1,
-          "topCutSize": 8,
-          "players": 23,
-          "deckScore": "B",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1759466648279"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1759466648279",
-          "eventName": "Game 3 Locals - Sol Eclipse (October 2nd 2025)",
-          "date": "2025-10-02",
-          "placement": 5,
-          "topCutSize": 8,
-          "players": 23,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1759466648279"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1759466648279",
-          "eventName": "Game 3 Locals - Sol Eclipse (October 2nd 2025)",
-          "date": "2025-10-02",
-          "placement": 7,
-          "topCutSize": 8,
-          "players": 23,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1759466648279"
         },
         {
           "source": "metabeys",
@@ -6920,7 +6842,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 54,
           "sharePct": 0.91,
@@ -7207,7 +7129,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 24,
           "sharePct": 0.4,
@@ -7227,7 +7149,7 @@
       "mainBlade": null,
       "assistBlade": null,
       "overBlade": null,
-      "displayName": "Suppress Superion 1-60 Low Rush",
+      "displayName": "SiegSuperion 1-60 Low Rush",
       "type": "balance",
       "placements": [
         {
@@ -7285,7 +7207,7 @@
       "mainBlade": null,
       "assistBlade": null,
       "overBlade": null,
-      "displayName": "Suppress Superion 9-60 Free Ball",
+      "displayName": "SiegSuperion 9-60 Free Ball",
       "type": "balance",
       "placements": [
         {
@@ -7776,7 +7698,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 102,
           "sharePct": 1.7,
@@ -8905,7 +8827,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 67,
           "sharePct": 1.1,
@@ -9250,7 +9172,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 26,
           "sharePct": 0.44,
@@ -10878,7 +10800,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 187,
           "sharePct": 3.2,
@@ -11242,7 +11164,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 34,
           "sharePct": 0.57,
@@ -11480,7 +11402,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 26,
           "sharePct": 0.44,
@@ -12076,19 +11998,6 @@
         {
           "source": "metabeys",
           "tier": "structured",
-          "eventId": "1759466648279",
-          "eventName": "Game 3 Locals - Sol Eclipse (October 2nd 2025)",
-          "date": "2025-10-02",
-          "placement": 4,
-          "topCutSize": 8,
-          "players": 23,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1759466648279"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
           "eventId": "1762786025692",
           "eventName": "The InBEYsion Vol 4",
           "date": "2025-11-08",
@@ -12610,7 +12519,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 81,
           "sharePct": 1.4,
@@ -13266,7 +13175,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 146,
           "sharePct": 2.5,
@@ -14151,7 +14060,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 25,
           "sharePct": 0.42,
@@ -14433,19 +14342,6 @@
           "deckScore": "A",
           "lang": "en",
           "url": "https://www.metabeys.com/events/1759798609280"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1759466648279",
-          "eventName": "Game 3 Locals - Sol Eclipse (October 2nd 2025)",
-          "date": "2025-10-02",
-          "placement": 3,
-          "topCutSize": 8,
-          "players": 23,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1759466648279"
         },
         {
           "source": "metabeys",
@@ -15257,7 +15153,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 132,
           "sharePct": 2.2,
@@ -15586,7 +15482,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 27,
           "sharePct": 0.46,
@@ -15829,19 +15725,6 @@
           "deckScore": "S",
           "lang": "en",
           "url": "https://www.metabeys.com/events/1759798609280"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1759466648279",
-          "eventName": "Game 3 Locals - Sol Eclipse (October 2nd 2025)",
-          "date": "2025-10-02",
-          "placement": 2,
-          "topCutSize": 8,
-          "players": 23,
-          "deckScore": "A",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1759466648279"
         },
         {
           "source": "metabeys",
@@ -16185,7 +16068,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 142,
           "sharePct": 2.4,
@@ -16533,7 +16416,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 23,
           "sharePct": 0.39,
@@ -17205,7 +17088,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 38,
           "sharePct": 0.64,
@@ -17253,19 +17136,6 @@
           "deckScore": "D",
           "lang": "en",
           "url": "https://www.metabeys.com/events/1761089904105"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1759466648279",
-          "eventName": "Game 3 Locals - Sol Eclipse (October 2nd 2025)",
-          "date": "2025-10-02",
-          "placement": 2,
-          "topCutSize": 8,
-          "players": 23,
-          "deckScore": "A",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1759466648279"
         },
         {
           "source": "metabeys",
@@ -17336,7 +17206,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 48,
           "sharePct": 0.81,
@@ -17423,19 +17293,6 @@
           "deckScore": "D",
           "lang": "en",
           "url": "https://www.metabeys.com/events/1761070095741"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1759466648279",
-          "eventName": "Game 3 Locals - Sol Eclipse (October 2nd 2025)",
-          "date": "2025-10-02",
-          "placement": 2,
-          "topCutSize": 8,
-          "players": 23,
-          "deckScore": "A",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1759466648279"
         },
         {
           "source": "metabeys",
@@ -17636,7 +17493,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 39,
           "sharePct": 0.66,
@@ -17988,7 +17845,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 30,
           "sharePct": 0.51,
@@ -18293,7 +18150,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 23,
           "sharePct": 0.39,
@@ -18500,7 +18357,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 23,
           "sharePct": 0.39,
@@ -19038,7 +18895,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 89,
           "sharePct": 1.5,
@@ -19854,19 +19711,6 @@
         {
           "source": "metabeys",
           "tier": "structured",
-          "eventId": "1759466648279",
-          "eventName": "Game 3 Locals - Sol Eclipse (October 2nd 2025)",
-          "date": "2025-10-02",
-          "placement": 3,
-          "topCutSize": 8,
-          "players": 23,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1759466648279"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
           "eventId": "1781895949243",
           "eventName": "Upkeep Locals",
           "date": "2026-06-07",
@@ -20050,7 +19894,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 34,
           "sharePct": 0.57,
@@ -20155,7 +19999,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 22,
           "sharePct": 0.37,
@@ -20289,7 +20133,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 29,
           "sharePct": 0.49,
@@ -20342,7 +20186,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 22,
           "sharePct": 0.37,
@@ -20593,7 +20437,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 71,
           "sharePct": 1.2,
@@ -21150,7 +20994,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 24,
           "sharePct": 0.4,
@@ -21375,7 +21219,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 26,
           "sharePct": 0.44,
@@ -21850,7 +21694,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 48,
           "sharePct": 0.81,
@@ -22211,7 +22055,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 21,
           "sharePct": 0.35,
@@ -22379,19 +22223,6 @@
           "deckScore": "B",
           "lang": "en",
           "url": "https://www.metabeys.com/events/1760582276223"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1759466648279",
-          "eventName": "Game 3 Locals - Sol Eclipse (October 2nd 2025)",
-          "date": "2025-10-02",
-          "placement": 1,
-          "topCutSize": 8,
-          "players": 23,
-          "deckScore": "B",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1759466648279"
         },
         {
           "source": "metabeys",
@@ -22565,7 +22396,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 57,
           "sharePct": 0.96,
@@ -22670,7 +22501,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 24,
           "sharePct": 0.4,
@@ -23390,7 +23221,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 61,
           "sharePct": 1,
@@ -24829,7 +24660,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 39,
           "sharePct": 0.66,
@@ -25381,7 +25212,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 29,
           "sharePct": 0.49,
@@ -26219,7 +26050,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 22,
           "sharePct": 0.37,
@@ -26309,19 +26140,6 @@
           "deckScore": "D",
           "lang": "en",
           "url": "https://www.metabeys.com/events/1760535996295"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1759466648279",
-          "eventName": "Game 3 Locals - Sol Eclipse (October 2nd 2025)",
-          "date": "2025-10-02",
-          "placement": 6,
-          "topCutSize": 8,
-          "players": 23,
-          "deckScore": "C",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1759466648279"
         },
         {
           "source": "metabeys",
@@ -27047,19 +26865,6 @@
         {
           "source": "metabeys",
           "tier": "structured",
-          "eventId": "1759466648279",
-          "eventName": "Game 3 Locals - Sol Eclipse (October 2nd 2025)",
-          "date": "2025-10-02",
-          "placement": 5,
-          "topCutSize": 8,
-          "players": 23,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1759466648279"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
           "eventId": "1765912676927",
           "eventName": "Spook and Spin Showdown",
           "date": "2025-11-02",
@@ -27139,7 +26944,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 73,
           "sharePct": 1.2,
@@ -27299,7 +27104,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 21,
           "sharePct": 0.35,
@@ -27911,7 +27716,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 70,
           "sharePct": 1.2,
@@ -27959,19 +27764,6 @@
           "deckScore": "D",
           "lang": "en",
           "url": "https://www.metabeys.com/events/1761070095741"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1759466648279",
-          "eventName": "Game 3 Locals - Sol Eclipse (October 2nd 2025)",
-          "date": "2025-10-02",
-          "placement": 8,
-          "topCutSize": 8,
-          "players": 23,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1759466648279"
         },
         {
           "source": "metabeys",
@@ -28081,7 +27873,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 68,
           "sharePct": 1.1,
@@ -28778,7 +28570,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 24,
           "sharePct": 0.4,
@@ -29474,7 +29266,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 26,
           "sharePct": 0.44,
@@ -30529,392 +30321,6 @@
           "deckScore": "D",
           "lang": "en",
           "url": "https://www.metabeys.com/events/1759798609280"
-        }
-      ],
-      "usage": []
-    },
-    "knight-mail-3-60-level": {
-      "id": "knight-mail-3-60-level",
-      "line": "bx",
-      "blade": "knight-mail",
-      "ratchet": "3-60",
-      "bit": "level",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Knight Mail 3-60 Level",
-      "type": "defense",
-      "placements": [
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1759466648279",
-          "eventName": "Game 3 Locals - Sol Eclipse (October 2nd 2025)",
-          "date": "2025-10-02",
-          "placement": 3,
-          "topCutSize": 8,
-          "players": 23,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1759466648279"
-        }
-      ],
-      "usage": []
-    },
-    "knight-mail-1-70-rush": {
-      "id": "knight-mail-1-70-rush",
-      "line": "bx",
-      "blade": "knight-mail",
-      "ratchet": "1-70",
-      "bit": "rush",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Knight Mail 1-70 Rush",
-      "type": "defense",
-      "placements": [
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1759466648279",
-          "eventName": "Game 3 Locals - Sol Eclipse (October 2nd 2025)",
-          "date": "2025-10-02",
-          "placement": 4,
-          "topCutSize": 8,
-          "players": 23,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1759466648279"
-        }
-      ],
-      "usage": []
-    },
-    "hover-wyvern-9-70-kick": {
-      "id": "hover-wyvern-9-70-kick",
-      "line": "bx",
-      "blade": "hover-wyvern",
-      "ratchet": "9-70",
-      "bit": "kick",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Wyvern Hover 9-70 Kick",
-      "type": "defense",
-      "placements": [
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1759466648279",
-          "eventName": "Game 3 Locals - Sol Eclipse (October 2nd 2025)",
-          "date": "2025-10-02",
-          "placement": 4,
-          "topCutSize": 8,
-          "players": 23,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1759466648279"
-        }
-      ],
-      "usage": []
-    },
-    "sol-eclipse-wheel-9-60-level": {
-      "id": "sol-eclipse-wheel-9-60-level",
-      "line": "cx",
-      "blade": null,
-      "ratchet": "9-60",
-      "bit": "level",
-      "lockChip": "sol",
-      "mainBlade": "eclipse",
-      "assistBlade": "wheel",
-      "overBlade": null,
-      "displayName": "Sol Eclipse W 9-60 Level",
-      "type": "balance",
-      "placements": [
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1759466648279",
-          "eventName": "Game 3 Locals - Sol Eclipse (October 2nd 2025)",
-          "date": "2025-10-02",
-          "placement": 5,
-          "topCutSize": 8,
-          "players": 23,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1759466648279"
-        }
-      ],
-      "usage": []
-    },
-    "hover-wyvern-1-60-kick": {
-      "id": "hover-wyvern-1-60-kick",
-      "line": "bx",
-      "blade": "hover-wyvern",
-      "ratchet": "1-60",
-      "bit": "kick",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Wyvern Hover 1-60 Kick",
-      "type": "defense",
-      "placements": [
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1759466648279",
-          "eventName": "Game 3 Locals - Sol Eclipse (October 2nd 2025)",
-          "date": "2025-10-02",
-          "placement": 6,
-          "topCutSize": 8,
-          "players": 23,
-          "deckScore": "C",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1759466648279"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1765914049150",
-          "eventName": "LGHS Ranked",
-          "date": "2025-11-16",
-          "placement": 12,
-          "topCutSize": 16,
-          "players": 65,
-          "deckScore": "C",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1765914049150"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1762786025692",
-          "eventName": "The InBEYsion Vol 4",
-          "date": "2025-11-08",
-          "placement": 8,
-          "topCutSize": 8,
-          "players": 40,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1762786025692"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1761575412585",
-          "eventName": "NRG League S4 Week 1",
-          "date": "2025-10-24",
-          "placement": 7,
-          "topCutSize": 8,
-          "players": 18,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761575412585"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1771195298227",
-          "eventName": "Banana 10k Main Event",
-          "date": "2025-12-06",
-          "placement": 3,
-          "topCutSize": 4,
-          "players": 32,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1771195298227"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1773081328148",
-          "eventName": "LGHS Ranked Season 2 #5",
-          "date": "2026-03-08",
-          "placement": 6,
-          "topCutSize": 16,
-          "players": 60,
-          "deckScore": "B",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1773081328148"
-        }
-      ],
-      "usage": [
-        {
-          "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
-          "window": "30d",
-          "appearances": 23,
-          "sharePct": 0.39,
-          "uniqueEvents": 22,
-          "uniquePlayers": 13,
-          "lang": "en"
-        }
-      ]
-    },
-    "hover-wyvern-7-60-rush": {
-      "id": "hover-wyvern-7-60-rush",
-      "line": "bx",
-      "blade": "hover-wyvern",
-      "ratchet": "7-60",
-      "bit": "rush",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Wyvern Hover 7-60 Rush",
-      "type": "defense",
-      "placements": [
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1759466648279",
-          "eventName": "Game 3 Locals - Sol Eclipse (October 2nd 2025)",
-          "date": "2025-10-02",
-          "placement": 7,
-          "topCutSize": 8,
-          "players": 23,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1759466648279"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1770742307020",
-          "eventName": "New Realm Games",
-          "date": "2026-02-06",
-          "placement": 1,
-          "topCutSize": 8,
-          "players": 28,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1770742307020"
-        }
-      ],
-      "usage": []
-    },
-    "wizard-rod-1-60-rush": {
-      "id": "wizard-rod-1-60-rush",
-      "line": "bx",
-      "blade": "wizard-rod",
-      "ratchet": "1-60",
-      "bit": "rush",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Wizard Rod 1-60 Rush",
-      "type": "stamina",
-      "placements": [
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1759466648279",
-          "eventName": "Game 3 Locals - Sol Eclipse (October 2nd 2025)",
-          "date": "2025-10-02",
-          "placement": 8,
-          "topCutSize": 8,
-          "players": 23,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1759466648279"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1762786814737",
-          "eventName": "New Realm Games League Week 3",
-          "date": "2025-11-07",
-          "placement": 6,
-          "topCutSize": 8,
-          "players": 20,
-          "deckScore": "C",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1762786814737"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1768407130792",
-          "eventName": "LGHS Ranked Season 2",
-          "date": "2026-01-11",
-          "placement": 8,
-          "topCutSize": 16,
-          "players": 53,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1768407130792"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1768407130792",
-          "eventName": "LGHS Ranked Season 2",
-          "date": "2026-01-11",
-          "placement": 15,
-          "topCutSize": 16,
-          "players": 53,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1768407130792"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1767069906057",
-          "eventName": "LGHS Aero Pegasus Tournament",
-          "date": "2026-01-01",
-          "placement": 6,
-          "topCutSize": 16,
-          "players": 58,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1767069906057"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1771903465982",
-          "eventName": "Xtreme Dash To Burning Rage!",
-          "date": "2026-02-22",
-          "placement": 3,
-          "topCutSize": 3,
-          "players": 46,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1771903465982"
-        }
-      ],
-      "usage": []
-    },
-    "hells-reaper-turn-9-60-kick": {
-      "id": "hells-reaper-turn-9-60-kick",
-      "line": "cx",
-      "blade": null,
-      "ratchet": "9-60",
-      "bit": "kick",
-      "lockChip": "hells",
-      "mainBlade": "reaper",
-      "assistBlade": "turn",
-      "overBlade": null,
-      "displayName": "Hells Reaper T 9-60 Kick",
-      "type": "balance",
-      "placements": [
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1759466648279",
-          "eventName": "Game 3 Locals - Sol Eclipse (October 2nd 2025)",
-          "date": "2025-10-02",
-          "placement": 8,
-          "topCutSize": 8,
-          "players": 23,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1759466648279"
         }
       ],
       "usage": []
@@ -32511,7 +31917,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 21,
           "sharePct": 0.35,
@@ -33082,6 +32488,98 @@
         }
       ],
       "usage": []
+    },
+    "hover-wyvern-1-60-kick": {
+      "id": "hover-wyvern-1-60-kick",
+      "line": "bx",
+      "blade": "hover-wyvern",
+      "ratchet": "1-60",
+      "bit": "kick",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Wyvern Hover 1-60 Kick",
+      "type": "defense",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1765914049150",
+          "eventName": "LGHS Ranked",
+          "date": "2025-11-16",
+          "placement": 12,
+          "topCutSize": 16,
+          "players": 65,
+          "deckScore": "C",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1765914049150"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1762786025692",
+          "eventName": "The InBEYsion Vol 4",
+          "date": "2025-11-08",
+          "placement": 8,
+          "topCutSize": 8,
+          "players": 40,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1762786025692"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1761575412585",
+          "eventName": "NRG League S4 Week 1",
+          "date": "2025-10-24",
+          "placement": 7,
+          "topCutSize": 8,
+          "players": 18,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1761575412585"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1771195298227",
+          "eventName": "Banana 10k Main Event",
+          "date": "2025-12-06",
+          "placement": 3,
+          "topCutSize": 4,
+          "players": 32,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1771195298227"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1773081328148",
+          "eventName": "LGHS Ranked Season 2 #5",
+          "date": "2026-03-08",
+          "placement": 6,
+          "topCutSize": 16,
+          "players": 60,
+          "deckScore": "B",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1773081328148"
+        }
+      ],
+      "usage": [
+        {
+          "source": "metabeys-leaderboard",
+          "date": "2026-10-03",
+          "window": "30d",
+          "appearances": 23,
+          "sharePct": 0.39,
+          "uniqueEvents": 22,
+          "uniquePlayers": 13,
+          "lang": "en"
+        }
+      ]
     },
     "dran-buster-1-70-low-rush": {
       "id": "dran-buster-1-70-low-rush",
@@ -34074,6 +33572,87 @@
           "deckScore": "D",
           "lang": "en",
           "url": "https://www.metabeys.com/events/1770830903402"
+        }
+      ],
+      "usage": []
+    },
+    "wizard-rod-1-60-rush": {
+      "id": "wizard-rod-1-60-rush",
+      "line": "bx",
+      "blade": "wizard-rod",
+      "ratchet": "1-60",
+      "bit": "rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Wizard Rod 1-60 Rush",
+      "type": "stamina",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1762786814737",
+          "eventName": "New Realm Games League Week 3",
+          "date": "2025-11-07",
+          "placement": 6,
+          "topCutSize": 8,
+          "players": 20,
+          "deckScore": "C",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1762786814737"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1768407130792",
+          "eventName": "LGHS Ranked Season 2",
+          "date": "2026-01-11",
+          "placement": 8,
+          "topCutSize": 16,
+          "players": 53,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1768407130792"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1768407130792",
+          "eventName": "LGHS Ranked Season 2",
+          "date": "2026-01-11",
+          "placement": 15,
+          "topCutSize": 16,
+          "players": 53,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1768407130792"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1767069906057",
+          "eventName": "LGHS Aero Pegasus Tournament",
+          "date": "2026-01-01",
+          "placement": 6,
+          "topCutSize": 16,
+          "players": 58,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1767069906057"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1771903465982",
+          "eventName": "Xtreme Dash To Burning Rage!",
+          "date": "2026-02-22",
+          "placement": 3,
+          "topCutSize": 3,
+          "players": 46,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1771903465982"
         }
       ],
       "usage": []
@@ -36065,7 +35644,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 21,
           "sharePct": 0.35,
@@ -37004,6 +36583,35 @@
           "deckScore": "D",
           "lang": "en",
           "url": "https://www.metabeys.com/events/1770830903402"
+        }
+      ],
+      "usage": []
+    },
+    "hover-wyvern-7-60-rush": {
+      "id": "hover-wyvern-7-60-rush",
+      "line": "bx",
+      "blade": "hover-wyvern",
+      "ratchet": "7-60",
+      "bit": "rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Wyvern Hover 7-60 Rush",
+      "type": "defense",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1770742307020",
+          "eventName": "New Realm Games",
+          "date": "2026-02-06",
+          "placement": 1,
+          "topCutSize": 8,
+          "players": 28,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1770742307020"
         }
       ],
       "usage": []
@@ -42936,7 +42544,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "window": "30d",
           "appearances": 20,
           "sharePct": 0.34,
@@ -43720,9 +43328,9 @@
     }
   ],
   "stats": {
-    "events": 129,
-    "combosResolved": 601,
-    "placements": 2523,
+    "events": 128,
+    "combosResolved": 596,
+    "placements": 2499,
     "usageRows": 50,
     "unresolved": 154
   }
