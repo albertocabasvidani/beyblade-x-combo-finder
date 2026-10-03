@@ -193,7 +193,7 @@ async function desktopFlow(context: BrowserContext) {
   const panelHrefs = await partLinks.evaluateAll((as) => as.map((a) => ({ href: (a as HTMLAnchorElement).href, rel: a.getAttribute('rel') ?? '', target: a.getAttribute('target') })));
   check('link del pannello verso amazon, sponsored, _blank',
     panelHrefs.every((h) => /^https:\/\/www\.amazon\./.test(h.href) && /sponsored/.test(h.rel) && h.target === '_blank'), panelHrefs[0]?.href);
-  const panelMarket = await page.getByTestId('marketplace').inputValue();
+  const panelMarket = await page.locator('header [data-buy-market]').inputValue();
   check(`link del pannello con tracking ID (mercato ${panelMarket})`, panelHrefs.every((h) => /[?&]tag=/.test(h.href)), panelHrefs[0]?.href);
   // Ogni parte anche su tutti i negozi, ciascuno col suo tag: è la via dalla home ad amazon.fr per chi
   // non è in Francia, come un revisore Associates (rifiuto FR del 21/09/2026).
@@ -227,16 +227,16 @@ async function desktopFlow(context: BrowserContext) {
     const hrefs = await buy.evaluateAll((as) => as.map((a) => ({ href: (a as HTMLAnchorElement).href, target: a.getAttribute('target'), rel: a.getAttribute('rel') ?? '' })));
     check('ogni Buy punta ad amazon.', hrefs.every((h) => /^https:\/\/www\.amazon\./.test(h.href)), hrefs[0]?.href);
     check('ogni Buy ha target=_blank e rel sponsored', hrefs.every((h) => h.target === '_blank' && /sponsored/.test(h.rel)));
-    const market = await page.getByTestId('marketplace').inputValue();
+    const market = await page.locator('header [data-buy-market]').inputValue();
     const tagged = hrefs.filter((h) => /[?&]tag=/.test(h.href)).length;
     // Senza eccezioni, su ogni mercato: un link non tracciato e' la contestazione del 19/09/2026.
     check(`mercato ${market}: tutti i link con tag`, tagged === hrefs.length, `${tagged}/${hrefs.length}`);
     console.log('[9] Marketplace');
-    await page.getByTestId('marketplace').selectOption('de');
+    await page.locator('header [data-buy-market]').selectOption('de');
     const deHrefs: string[] = await buy.evaluateAll((as) => as.map((a) => (a as HTMLAnchorElement).href));
     check('link Buy passano ad amazon.de', deHrefs.every((h) => h.startsWith('https://www.amazon.de/')), deHrefs[0]);
     await page.reload({ waitUntil: 'networkidle' });
-    check('marketplace persistito dopo reload', (await page.getByTestId('marketplace').inputValue()) === 'de');
+    check('marketplace persistito dopo reload', (await page.locator('header [data-buy-market]').inputValue()) === 'de');
   }
 
   console.log('[10] Tema');
@@ -269,7 +269,7 @@ async function desktopFlow(context: BrowserContext) {
   }
   const navDesk = await page.locator('header nav').first().locator('a:visible').allTextContents();
   check('header: Home · Meta · Guides · How scoring works', JSON.stringify(navDesk.slice(1).map((x) => x.trim().toLowerCase())) === JSON.stringify(['home', 'meta', 'guides', 'how scoring works']), navDesk.join(' | '));
-  check('header: Guides attiva su /guides/', (await page.locator('header a[aria-current=page]').textContent())?.trim() === 'Guides');
+  check('header: Guides attiva su /guides/', (await page.locator('header a[aria-current=page]:visible').textContent())?.trim() === 'Guides');
   const partPage = await page.goto(BASE + '/parts/shark-scale/', { waitUntil: 'networkidle' });
   if (partPage?.status() === 200) {
     const crumbs = ((await page.locator('nav[aria-label=Breadcrumb]').textContent()) ?? '').split('/').map((x) => x.replace(/\s+/g, ' ').trim()).filter(Boolean);
@@ -466,10 +466,15 @@ async function countryFlow(browser: Browser) {
   const page4 = await de.newPage();
   await page4.goto(BASE + '/', { waitUntil: 'networkidle' });
   await risolto(page4);
-  const valori = await page4.locator('[data-buy-market], [data-testid=marketplace]')
+  // Il selettore è uno solo (header); le card della home devono seguirlo, e la nota del pannello
+  // «Buy parts» dice da dove viene il negozio.
+  const valori = await page4.locator('[data-buy-market]')
     .evaluateAll((els) => els.map((e) => (e as HTMLSelectElement).value));
-  check('DE: header e pannello della home mostrano lo stesso negozio',
-    valori.length >= 2 && new Set(valori).size === 1 && valori[0] === 'de', valori.join(','));
+  check('DE: un solo selettore del negozio in home, su amazon.de', valori.length === 1 && valori[0] === 'de', valori.join(','));
+  await page4.locator('[data-testid=combo-card]:visible [data-testid=buy-parts-toggle]').first().click();
+  const pannelloDe = (await page4.locator('[data-testid=buy-parts-panel]:visible').first().textContent()) ?? '';
+  check('DE: il pannello Buy parts della home segue l’header e dice perché',
+    /amazon\.de/i.test(pannelloDe) && /detected from your location/i.test(pannelloDe), pannelloDe.slice(0, 120));
   await page4.close();
   await de.close();
 }
@@ -633,7 +638,13 @@ async function mobileFlow(context: BrowserContext) {
   check('nessuno scroll orizzontale (home)', await noHScroll(), `scrollWidth=${await page.evaluate(() => document.documentElement.scrollWidth)}`);
   // Da telefono la home deve portare alle sezioni: prima le voci erano nascoste sotto i 640 px.
   const navMobile = page.locator('[data-testid=mobile-nav] a:visible');
-  check('menu sezioni visibile su mobile (Meta · Guides)', JSON.stringify((await navMobile.allTextContents()).map((x) => x.trim().toLowerCase())) === '["meta","guides"]', (await navMobile.allTextContents()).join(','));
+  check('menu su mobile: le quattro voci in una riga (Home · Meta · Guides · How scoring works)', JSON.stringify((await navMobile.allTextContents()).map((x) => x.trim().toLowerCase())) === '["home","meta","guides","how scoring works"]', (await navMobile.allTextContents()).join(','));
+  const altezzaHeader = await page.evaluate(() => Math.round(document.querySelector('header')!.getBoundingClientRect().height));
+  check('header mobile su due righe (logo, negozio, tema / menu)', altezzaHeader <= 100, `${altezzaHeader}px`);
+  const nomiSpezzati = await page.locator('[data-testid=combo-card]:visible h3').evaluateAll((hs) =>
+    // Riga che finisce col trattino = ratchet spezzato («9-» / «60 KICK»).
+    hs.filter((h) => /-\s*$/m.test((h as HTMLElement).innerText.trim().replace(/[^\n]*$/, ''))).map((h) => h.textContent));
+  check('nessun nome di combo spezzato sul trattino del ratchet', nomiSpezzati.length === 0, nomiSpezzati.slice(0, 3).join(' | '));
   await addPart(page, 'Wizard Rod');
   check('parte aggiunta su mobile', (await page.locator('button[aria-label="remove Wizard Rod"]').count()) === 1);
   await page.getByTestId('period-30').click();

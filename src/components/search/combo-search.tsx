@@ -4,7 +4,7 @@ import type { SlimCombo, SlimDatabase } from '../../lib/slim-combos';
 import { aggregateBlades, bladeOf, filterCombos, SORT_KEYS, type SortKey } from '../../lib/search-engine';
 import { track } from '../../lib/analytics';
 import type { AmazonConfigFile, AsinIndex, PartLookup } from '../../lib/amazon';
-import { subscribeMarket, chooseMarket, type MarketSource } from '../../lib/marketplace';
+import { subscribeMarket, type MarketSource } from '../../lib/marketplace';
 import { AdUnit } from '../ads/ad-unit';
 import { INFEED_AFTER, INFEED_EVERY } from '../../lib/ads-config';
 import { PartSearch, type PartCategory } from './part-search';
@@ -64,17 +64,13 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
   const rankingRef = useRef<HTMLElement>(null);
   // Negozio Amazon: default neutro in SSR, poi (al mount) lo stato condiviso di lib/marketplace —
   // scelta salvata, paese rilevato o lingua del browser. Così il markup idratato coincide con
-  // quello servito, e questo select resta allineato a quello dell'header.
+  // quello servito, e il negozio delle card resta allineato al selettore dell'header.
   const markets = Object.keys(amazon.config.marketplaces);
   const [market, setMarket] = useState<string>(amazon.config.defaultMarketplace);
   const [marketSource, setMarketSource] = useState<MarketSource>('default');
   useEffect(() => {
     subscribeMarket(markets, amazon.config.defaultMarketplace, (m, s) => { setMarket(m); setMarketSource(s); });
   }, []);
-  const changeMarket = (m: string) => {
-    chooseMarket(m);
-    track('marketplace_changed', { marketplace: m });
-  };
   const [selected, setSelected] = useState<SelectedParts>({ ...emptySelection });
   const [tournamentOnly, setTournamentOnly] = useState(false);
   const [metaOnly, setMetaOnly] = useState(false);
@@ -219,6 +215,10 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
     return cat ? resolveImage(cat, id) : undefined;
   };
 
+  // Il negozio si cambia dal selettore dell'header (uno solo per pagina); la nota che dice da dove
+  // viene la scelta sta nel pannello «Buy parts» di ogni card, accanto ai link che governa.
+  const marketNote = t(marketSource === 'user' ? 'market.note.user' : marketSource === 'geo' ? 'market.note.geo' : 'market.note.lang');
+
   const comboDisplayName = (combo: SlimCombo): string => {
     // BX e UX: blade + ratchet + bit. Fino al 01/10/2026 solo 'bx': le 62 combo UX finivano nel ramo
     // CX e il nome diventava il solo bit («Kick» per Glory Valkyrie Kick).
@@ -269,24 +269,6 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
             <Pill active={tournamentOnly} onToggle={() => toggleFilter('tournamentOnly', setTournamentOnly, tournamentOnly)} label={t('filter.tournamentProven')} accentVar="--c-scarlet" />
             <Pill active={metaOnly} onToggle={() => toggleFilter('metaOnly', setMetaOnly, metaOnly)} label={t('filter.metaOnly')} accentVar="--c-gold" />
           </div>
-          {/* Negozio Amazon dei link "Buy". La nota dice da dove viene la scelta: senza, chi naviga
-              con una VPN vede il negozio sbagliato e non capisce perché. */}
-          <label class="mt-3 flex items-center justify-between gap-2 text-[11px] text-muted-2">
-            <span>{t('search.shopOn')}</span>
-            <select
-              data-testid="marketplace"
-              value={market}
-              onChange={(e) => changeMarket((e.target as HTMLSelectElement).value)}
-              class="rounded-md border border-border bg-surface-2 px-2 py-1 text-[11px] text-text"
-            >
-              {markets.map((k) => (
-                <option key={k} value={k}>{amazon.config.marketplaces[k].tld}</option>
-              ))}
-            </select>
-          </label>
-          <p data-testid="market-note" class="mt-1 text-[10px] leading-snug text-muted-2">
-            {t(marketSource === 'user' ? 'market.note.user' : marketSource === 'geo' ? 'market.note.geo' : 'market.note.lang')}
-          </p>
         </div>
 
         {/* Annuncio nel pannello: su desktop e' la colonna sinistra, su mobile finisce sopra il ranking. */}
@@ -298,21 +280,22 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
           su una riga (la «Best build» troncata della vista lame) e la pagina sborda a destra. */}
       <section ref={rankingRef} class="min-w-0 scroll-mt-4">
         {/* Tre controlli del ranking: periodo (finestra calcolata da score:combos), metrica, raggruppamento. */}
+        {/* Su mobile stanno una sotto l'altra: etichette a larghezza fissa, così le pillole partono dalla stessa colonna. */}
         <div class="mb-2 flex flex-wrap items-center gap-x-5 gap-y-2">
           <div class="flex flex-wrap items-center gap-1.5" role="group" aria-label={t('period.label')}>
-            <span class="mr-1 font-mono text-[10px] uppercase tracking-[0.12em] text-muted-2">{t('period.label')}</span>
+            <span class="mr-1 w-[62px] shrink-0 font-mono text-[10px] uppercase tracking-[0.12em] text-muted-2 lg:w-auto">{t('period.label')}</span>
             {PERIODS.map((p) => (
               <Pill key={p} active={period === p} onToggle={() => changePeriod(p)} label={t(`period.${p}`)} accentVar="--c-gold" testId={`period-${p}`} disabled={!ready && p !== INLINE_PERIOD} />
             ))}
           </div>
           <div class="flex flex-wrap items-center gap-1.5" role="group" aria-label={t('sort.label')}>
-            <span class="mr-1 font-mono text-[10px] uppercase tracking-[0.12em] text-muted-2">{t('sort.label')}</span>
+            <span class="mr-1 w-[62px] shrink-0 font-mono text-[10px] uppercase tracking-[0.12em] text-muted-2 lg:w-auto">{t('sort.label')}</span>
             {SORT_KEYS.map((k) => (
               <Pill key={k} active={sort === k} onToggle={() => changeSort(k)} label={t(`sort.${k}`)} accentVar="--c-gold" testId={`sort-${k}`} disabled={!ready && k !== 'score'} />
             ))}
           </div>
           <div class="flex flex-wrap items-center gap-1.5" role="group" aria-label={t('view.label')}>
-            <span class="mr-1 font-mono text-[10px] uppercase tracking-[0.12em] text-muted-2">{t('view.label')}</span>
+            <span class="mr-1 w-[62px] shrink-0 font-mono text-[10px] uppercase tracking-[0.12em] text-muted-2 lg:w-auto">{t('view.label')}</span>
             {VIEWS.map((v) => (
               <Pill key={v} active={view === v} onToggle={() => changeView(v)} label={t(`view.${v}`)} accentVar="--c-gold" testId={`view-${v}`} disabled={!ready && v !== 'combos'} />
             ))}
@@ -381,7 +364,7 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
                   sort={sort}
                   partName={partName}
                   partImage={partImage}
-                  amazon={{ ...amazon, market, keepStore: marketSource === 'user' }}
+                  amazon={{ ...amazon, market, keepStore: marketSource === 'user', note: marketNote }}
                   t={t}
                 />
               );

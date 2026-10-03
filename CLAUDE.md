@@ -578,7 +578,8 @@ Disclosure nel footer e sezione «Affiliate links» in `/about/`.
   «Where to buy»), quindi su ogni pagina; la nota accanto dice **da dove** viene la scelta («detected from
   your location», «your choice»). Senza quella riga chi naviga con una VPN vede il negozio sbagliato e non
   ha modo di capire perché. Lo stato è uno per pagina, su `window.__bxcfMarket`, con l'evento `bxcf:market`:
-  i tre punti che mostrano un select (header, pannello della home, blocchi buy) restano allineati.
+  header, blocchi buy e card della home restano allineati. In home il select è solo quello dell'header:
+  la nota «da dove» sta nel pannello «Buy parts» di ogni card (`market.note.*` in i18n).
 - **Ogni tag sta nell'HTML di ogni pagina, indipendente dal negozio rilevato.** La localizzazione riscrive
   i link lato client, quindi da sola lascia nell'HTML servito il solo `defaultMarketplace`: fino al
   23/09/2026 le pagine contenevano solo link amazon.com col tag US, e Amazon Francia ha respinto candidatura
@@ -587,8 +588,8 @@ Disclosure nel footer e sezione «Affiliate links» in `/about/`.
   «Where to buy» (`buy-row.astro`) ha sotto il link principale il link allo stesso prodotto su tutti i
   negozi (`storeLinks` in `src/lib/amazon.ts`, con `creatorsDisableRedirect`: chi clicca amazon.fr ha
   scelto amazon.fr). Lo stesso sotto i chip del pannello «Buy parts» delle card in home (isola, quindi
-  non nell'HTML: lo verifica `test:e2e` [7b]), che è la via dalla home per chi non scende al footer. Da
-  telefono Meta e Guides stanno in una seconda riga dell'header (`mobile-nav`), sotto i 640 px. **`npm run test:amazon-tags`** legge `dist/` file per file e fallisce se una pagina
+  non nell'HTML: lo verifica `test:e2e` [7b]), che è la via dalla home per chi non scende al footer. Sotto i
+  640 px l'header ha due righe: logo, negozio e tema; poi le quattro voci in `mobile-nav`. **`npm run test:amazon-tags`** legge `dist/` file per file e fallisce se una pagina
   non contiene un tag, se un link ha il tag di un altro negozio o se una riga «Where to buy» non ha tutti i
   negozi; gira nel workflow di deploy fra build e pubblicazione. Con un argomento controlla un'altra
   cartella, per esempio pagine scaricate dal sito pubblicato.

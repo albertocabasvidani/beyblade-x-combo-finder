@@ -236,8 +236,10 @@ Radius 14px, striscia 5px, padding `16px 20px 16px 26px`, `display:flex; align-i
 - **Badge CAS notch / striscia laterale / logo skew**: replicabili 1:1 con clip-path / pseudo-elementi /
   doppio skew. Nessuna immagine necessaria.
 - **Numeri** rank e CAS: Anton in `font-style: italic` (oblique sintetica — look voluto). Non usano un font mono.
-- **Responsive**: breakpoint implicito `lg` (~1024px) per passare da card verticale a riga orizzontale,
-  comparsa colonna evidenza (188px) e barra meta-share, e dalla colonna unica alla griglia `340px 1fr`.
+- **Responsive**: `lg` (1024px) passa dalla colonna unica alla griglia `340px 1fr`; la combo card passa da
+  verticale a riga orizzontale solo a `xl` (1280px), con colonna evidenza da 240px e barra meta-share. Fra
+  1024 e 1279 px la colonna del ranking è larga ~580px e nella riga orizzontale al nome restavano ~110px.
+  Su mobile le etichette Period / Sort by / Show hanno larghezza fissa, così le pillole partono dalla stessa colonna.
 - **Icone testuali** nel mockup: `⌕` `✕` `✓` `!` `🏆`. Valutare un set SVG per coerenza cross-platform delle emoji.
 - **Dati d'esempio** nel mockup: Wizard Rod 1-60 Hexa (Stamina/Meta 8.6); Shark Scale 1-70 Low Rush
   (Attacco/Top-tier 7.0); Phoenix Flow Flare H 3-60 Kick (CX/Attacco/Solida 6.4).

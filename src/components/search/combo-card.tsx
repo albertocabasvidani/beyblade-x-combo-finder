@@ -1,3 +1,4 @@
+import { Fragment } from 'preact';
 import { useState } from 'preact/hooks';
 import type { Locale, ComboWindow, TierThresholds } from '../../lib/types';
 import type { SlimCombo } from '../../lib/slim-combos';
@@ -14,7 +15,8 @@ interface Props {
   thresholds: TierThresholds;
   /** Link affiliati (chip delle parti mancanti e pannello «Buy parts»); assente = nessun link. */
   /** `keepStore`: il negozio l'ha scelto il visitatore, quindi Amazon non deve spostarlo (OneLink). */
-  amazon?: { config: AmazonConfigFile; lookup: PartLookup; asins: AsinIndex; market: string; keepStore?: boolean };
+  /** `note`: da dove viene il negozio (rilevato, scelto, lingua): il selettore sta nell'header. */
+  amazon?: { config: AmazonConfigFile; lookup: PartLookup; asins: AsinIndex; market: string; keepStore?: boolean; note?: string };
   displayName: string;
   locale: Locale;
   rank: number;
@@ -38,6 +40,15 @@ function daysSince(iso: string): number {
 }
 
 /** Classe di un valore della riga evidenza: oro e sottolineato se è la metrica dell'ordinamento. */
+/**
+ * Nome di una combo con i ratchet («9-60») indivisibili: altrimenti il browser va a capo sul trattino
+ * e lascia «9-» in fondo a una riga e «60 KICK» sulla successiva. Il testo resta identico.
+ */
+export const comboNameNodes = (name: string) =>
+  name.split(' ').map((w, i) => (
+    <Fragment key={i}>{i > 0 && ' '}{w.includes('-') ? <span class="whitespace-nowrap">{w}</span> : w}</Fragment>
+  ));
+
 export const metricClass = (on: boolean) =>
   on ? 'font-bold text-gold underline decoration-2 underline-offset-4' : '';
 
@@ -140,6 +151,7 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, locale
         <div class="mb-1.5 font-mono text-[10px] uppercase tracking-[0.12em] text-muted-2">
           {t('combo.buyOn')} {amazon.config.marketplaces[amazon.market]?.tld ?? ''}
         </div>
+        {amazon.note && <p data-testid="market-note" class="-mt-1 mb-1.5 text-[10.5px] leading-snug text-muted-2">{amazon.note}</p>}
         <div class="flex flex-wrap gap-1.5">
           {buyable.map((p) => {
             const label = partName(p.key, p.id) || p.key;
@@ -205,8 +217,10 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, locale
 
   return (
     <>
-      {/* ---------- MOBILE: card verticale ---------- */}
-      <article data-testid="combo-card" data-combo-id={combo.id} data-blade={bladeOf(combo) ?? undefined} data-line={combo.line} class={`relative overflow-hidden rounded-[14px] lg:hidden ${cardClass}`} style={cardStyle}>
+      {/* ---------- MOBILE e desktop stretto: card verticale ----------
+          Fino a 1279 px: fra 1024 e 1279 la colonna del ranking è larga ~580 px e nella riga
+          orizzontale al nome restavano ~110 px (nome su due righe, foto a capo). */}
+      <article data-testid="combo-card" data-combo-id={combo.id} data-blade={bladeOf(combo) ?? undefined} data-line={combo.line} class={`relative overflow-hidden rounded-[14px] xl:hidden ${cardClass}`} style={cardStyle}>
         <span class="absolute inset-y-0 left-0 w-1" style={{ background: railBg }} aria-hidden="true" />
         <div class="py-[13px] pl-[18px] pr-[14px]">
           <div class="flex items-start justify-between gap-2.5">
@@ -215,7 +229,7 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, locale
               <div class="min-w-0">
                 <div class="flex items-center gap-2">
                   <CxBadge />
-                  <h3 class="font-display text-[17px] uppercase leading-tight text-text">{displayName}</h3>
+                  <h3 class="font-display text-[17px] uppercase leading-tight text-text">{comboNameNodes(displayName)}</h3>
                 </div>
                 <div class="mt-1">
                   <Sources />
@@ -247,8 +261,9 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, locale
         </div>
       </article>
 
-      {/* ---------- DESKTOP: riga orizzontale ---------- */}
-      <article data-testid="combo-card" data-combo-id={combo.id} data-blade={bladeOf(combo) ?? undefined} data-line={combo.line} class={`relative hidden overflow-hidden rounded-[14px] lg:block ${cardClass}`} style={cardStyle}>
+      {/* ---------- DESKTOP largo (≥1280): riga orizzontale. Foto da 42 px ed evidenza da 240:
+          così anche una CX a 6 parti tiene le foto su una riga. ---------- */}
+      <article data-testid="combo-card" data-combo-id={combo.id} data-blade={bladeOf(combo) ?? undefined} data-line={combo.line} class={`relative hidden overflow-hidden rounded-[14px] xl:block ${cardClass}`} style={cardStyle}>
         <span class="absolute inset-y-0 left-0 w-[5px]" style={{ background: railBg }} aria-hidden="true" />
         <div class="py-4 pl-[26px] pr-5">
         <div class="flex items-center gap-[18px]">
@@ -257,10 +272,10 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, locale
           <div class="min-w-0 flex-1">
             <div class="flex items-center gap-2">
               <CxBadge />
-              <h3 class="font-display text-[22px] uppercase leading-tight text-text">{displayName}</h3>
+              <h3 class="font-display text-[22px] uppercase leading-tight text-text">{comboNameNodes(displayName)}</h3>
             </div>
             <div class="mt-2">
-              <Thumbs size={48} />
+              <Thumbs size={42} />
             </div>
             <div class="mt-2 flex flex-wrap items-center gap-2">
               <Sources />
@@ -269,7 +284,7 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, locale
           </div>
 
           {b && (b.tournamentEvents > 0 || b.metaSharePct != null) && (
-            <div class="w-[260px] shrink-0 border-l border-hairline pl-[18px] text-[12.5px]">
+            <div class="w-[240px] shrink-0 border-l border-hairline pl-[18px] text-[12.5px]">
               <div class="font-semibold leading-relaxed text-text-2">
                 {b.wins > 0 && <span>{'\u{1F3C6}'} <span data-metric="wins" class={metricClass(sort === 'wins')}>{b.wins} {t('combo.wins')}</span> {'·'} </span>}
                 {b.topCutAppearances > 0 && <span data-metric="topCut" class={metricClass(sort === 'topCut')}>{b.topCutAppearances} {t('combo.topCuts')}</span>}

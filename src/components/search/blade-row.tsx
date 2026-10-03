@@ -1,7 +1,7 @@
 import type { TierThresholds, WindowKey } from '../../lib/types';
 import type { BladeRow as Row, SortKey } from '../../lib/search-engine';
 import { ScoreBadge } from './score-badge';
-import { metricClass } from './combo-card';
+import { metricClass, comboNameNodes } from './combo-card';
 import { PartThumb } from './part-thumb';
 
 interface Props {
@@ -45,7 +45,7 @@ export function BladeRow({ row, rank, period, sort, thresholds, name, bestName, 
   );
   const Best = () => (
     <div class="mt-1 text-[12px] text-text-2 lg:truncate">
-      <span class="text-muted">{t('blade.best')}</span> {bestName} <span class="text-muted">({bestMetric})</span>
+      <span class="text-muted">{t('blade.best')}</span> {comboNameNodes(bestName)} <span class="text-muted">({bestMetric})</span>
     </div>
   );
   const TopCuts = () => <span data-metric="topCut" class={metricClass(sort === 'topCut')}>{row.topCut} {t('combo.topCuts')}</span>;
