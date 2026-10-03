@@ -62,7 +62,6 @@ const dynamic = [
   ...SORT_KEYS.map((k) => `sort.${k}`),
   ...VIEWS.map((v) => `view.${v}`),
   ...VIEWS.flatMap((v) => SORT_KEYS.map((k) => `hint.${v}.${k}`)),
-  'stadium.xtreme', 'stadium.infinity',
 ];
 const missingDyn = dynamic.filter((k) => !(k in en));
 check(`${dynamic.length} chiavi costruite a runtime presenti`, missingDyn.length === 0, missingDyn.join(', '));

@@ -95,13 +95,6 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, locale
     </span>
   );
 
-  const StadiumBadge = () =>
-    b?.stadiums && b.stadiums.length > 0 ? (
-      <span class="shrink-0 rounded-[4px] border border-border px-1.5 py-0.5 font-mono text-[9px] font-bold uppercase text-muted">
-        {b.stadiums.map((s) => t(`stadium.${s}`)).join(' / ')}
-      </span>
-    ) : null;
-
   // Freschezza (data ultimo podio) + trend del meta-share. Il trend appare solo con ≥2 snapshot
   // usage accumulati; finché manca lo storico resta nascosto.
   const Freshness = () =>
@@ -224,10 +217,8 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, locale
                   <CxBadge />
                   <h3 class="font-display text-[17px] uppercase leading-tight text-text">{displayName}</h3>
                 </div>
-                <div class="mt-1.5 flex flex-wrap items-center gap-2">
-                  <StadiumBadge />
+                <div class="mt-1">
                   <Sources />
-                  <BuyToggle compact />
                 </div>
               </div>
             </div>
@@ -244,10 +235,15 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, locale
             </div>
           )}
 
-
-          <BuyPanel />
-
           {combo.notes && <p class="mt-2 text-[11px] leading-snug text-muted-2">{combo.notes}</p>}
+
+          {/* «Buy parts» in fondo alla card: in testa occupava una riga da solo sotto il nome. */}
+          {buyable.length > 0 && (
+            <div class="mt-2.5">
+              <BuyToggle compact />
+            </div>
+          )}
+          <BuyPanel />
         </div>
       </article>
 
@@ -267,7 +263,6 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, locale
               <Thumbs size={48} />
             </div>
             <div class="mt-2 flex flex-wrap items-center gap-2">
-              <StadiumBadge />
               <Sources />
               <BuyToggle compact />
             </div>

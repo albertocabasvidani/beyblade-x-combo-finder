@@ -305,7 +305,7 @@ momentum recente>storico). Algoritmo, pesi e costanti in `docs/scoring-algorithm
   la coda è dominata da combo a evento singolo, penalizzate dal confidence. `score:combos` chiama
   `scoreCombo(ev, { ref, useConfidence: true })`.
 - **Stadio**: i placement WBO portano `stadium` (xtreme/infinity, da `Stadium:` del thread); MetaBeys no.
-  Esposto solo come badge sulla card (il filtro Xtreme/Infinity è stato tolto il 03/10/2026), NON pesato nello score. Lo storico `usage` alimenta il `usageTrend`.
+  Resta nel dato (`scoreBreakdown.stadiums`) ma il sito non lo mostra né lo filtra, e NON è pesato nello score. Lo storico `usage` alimenta il `usageTrend`.
 - Peso per **tipologia** di fonte (`TIER_WEIGHT`: structured 1.0 / narrative 0.6 / theory 0.3), non
   per singola fonte: WBO è scorato 1.0, il `weight` di sources.json serve solo ai link UI.
 - Limite residuo dedup: senza id-evento condiviso cross-fonte, nomi del tutto diversi restano doppi

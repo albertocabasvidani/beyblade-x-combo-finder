@@ -180,7 +180,7 @@ Comune ai 4 schermi: niente hero, niente tab BX/CX, niente toggle TT/Hasbro, nie
    - ~~**Toggle "Confronta con le mie parti"**: label + sub-label "Evidenzia ✓ possedute e ! mancanti" + switch (on = oro).~~ Tolto il 02/10/2026 insieme a «Buildable»: le parti inserite sono solo un filtro di ricerca, il pannello si chiama «Search parts».
    - **Search bar** unica: icona ⌕ + placeholder "Cerca Blade, Ratchet, Bit, Lock Chip…". Un solo campo per tutte le categorie.
    - **Chip parti cercate** (pieni oro + ✕). ~~Seguiti da chip "**+ Nome**" tratteggiati (suggerimenti).~~ Sezione «Suggested» tolta il 03/10/2026.
-   - **Filtri**: 2 pill affiancate (`gap 8px`, flex:1) — "Provate in torneo" (on = scarlatto), "Meta / top-tier" (off = grigio). Le pill BX/UX/CX e Xtreme/Infinity, aggiunte dopo, sono state tolte il 03/10/2026: lo stadio resta come badge sulla card.
+   - **Filtri**: 2 pill affiancate (`gap 8px`, flex:1) — "Provate in torneo" (on = scarlatto), "Meta / top-tier" (off = grigio). Le pill BX/UX/CX e Xtreme/Infinity, aggiunte dopo, sono state tolte il 03/10/2026, e lo stesso giorno anche il badge stadio sulla card: il sito non mostra più lo stadio.
 3. **Header ranking**: "RANKING" (Anton) + barra gradiente oro + conteggio "N combo".
 4. **Lista combo card** (colonna, `gap 11px`).
 
@@ -201,7 +201,7 @@ Comune ai 4 schermi: niente hero, niente tab BX/CX, niente toggle TT/Hasbro, nie
 Radius 14px, striscia laterale 4px a sx, padding `13px 14px 13px 18px`.
 - **Riga 1** (space-between): a sx blocco `rank + testo`; a dx **badge CAS notch**.
   - Rank: Anton italic 26px (oro per #1, grigio altrimenti).
-  - Nome combo (Anton uppercase 17px); se CX, badge "CX" prima del nome; sotto, badge stadio + "N fonti" (muted) + «Buy parts» (il badge tipo è stato tolto il 03/10/2026).
+  - Nome combo (Anton uppercase 17px); se CX, badge "CX" prima del nome; sotto, "N fonti" (muted); poi la fila di foto delle parti (44 px), l'evidenza, le note e in fondo «Buy parts» col suo pannello (badge tipo e badge stadio tolti il 03/10/2026).
   - Badge CAS: gettone clip-path, gradiente per fascia, numero Anton italic 22px + etichetta fascia 7.5px.
 - **Riga evidenza** (separata da hairline): "🏆 N vittorie" · "N top cut" · "N tornei" · "N% meta" (scarlatto). Saira 600 11.5px. La metrica scelta in «Sort by» è oro e sottolineata (dal 01/10/2026; prima le vittorie erano sempre oro). **Niente barra meta-share su mobile.**
 - **Riga chip parti** (`gap 6px`, wrap): ✓ posseduta (verde) e ! mancante (scarlatto), una per parte. CX fino a 6 chip con font/padding ridotti. I chip mancanti **senza** ↗ né link Amazon.
@@ -209,7 +209,7 @@ Radius 14px, striscia laterale 4px a sx, padding `13px 14px 13px 18px`.
 ### Desktop (riga orizzontale)
 Radius 14px, striscia 5px, padding `16px 20px 16px 26px`, `display:flex; align-items:center; gap:18px`. Da sx a dx:
 1. **Rank** Anton italic 38px.
-2. **Blocco centrale (flex:1)**: nome combo (Anton 22px, badge "CX" inline se CX) + riga sotto con badge stadio, "N fonti" e «Buy parts» (badge tipo e chip ✓/! tolti a ottobre 2026).
+2. **Blocco centrale (flex:1)**: nome combo (Anton 22px, badge "CX" inline se CX) + fila di foto delle parti (48 px) + riga sotto con "N fonti" e «Buy parts» (badge tipo, badge stadio e chip ✓/! tolti a ottobre 2026).
 3. **Colonna evidenza (188px, border-left hairline, padding-left 18px)**: "🏆 N vittorie · N tornei"; "N% meta share" (scarlatto); **barra meta-share** (solo desktop).
 4. **Badge CAS notch** (numero 30px), all'estrema destra.
 
