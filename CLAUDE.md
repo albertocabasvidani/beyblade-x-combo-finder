@@ -184,7 +184,7 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
   soglie in `docs/ig-caroselli.md`. Gli id sono stabili (`top-build-2026-W40`,
   `build-lama-shark-scale`): rigenerare aggiorna i numeri, il registro del pubblicatore decide cosa
   è già uscito. Le immagini non vanno in git: vivono sul server e su una release temporanea
-- `npm run test:e2e` — percorso utente nel browser (`scripts/e2e-smoke.ts`, playwright-core + Chrome di sistema, headless) sulla preview locale: prima `npm run build && npm run preview` (porta 4321); `E2E_URL` per puntarlo al sito pubblicato
+- `npm run test:e2e` — percorso utente nel browser (`scripts/e2e-smoke.ts`, playwright-core + Chrome di sistema, headless) sulla preview locale: prima `npm run build && npm run preview` (porta 4321). La preview serve `dist/`: dopo ogni modifica rifare `npm run build`, o si guarda e si testa la versione vecchia; `E2E_URL` per puntarlo al sito pubblicato
 - Cosa controlla: peso della home (< 400 KB), fetch di `/combos.json`, foto delle parti nella prima card, ricerca parti come filtro, periodo 30/90/180/365, filtri, Show more, Buy parts, marketplace, tema, about/privacy, `/guides/` e menu, mobile 390 px senza scroll orizzontale; screenshot in `tmp/e2e/`
 - Blocco [16]: le casistiche d'uso del ranking (Sort by, vista lame, click su una lama anche CX, ricerca per lama + ratchet + bit, assenza dei filtri linea/stadio e dei suggeriti, nomi UX). Blocco [17]: dataset in arrivo (controlli disabilitati) e dataset bloccato
 - `npm run test:i18n` — inglese e italiano con le stesse chiavi, nessun valore vuoto, ogni chiave usata nei sorgenti presente; gira nel workflow di deploy prima della build
@@ -555,6 +555,7 @@ Disclosure nel footer e sezione «Affiliate links» in `/about/`.
   preparava il ricorso all'account FR — cioè stava per leggerlo un revisore Amazon, sulla pagina che il suo
   rifiuto cita come esempio. Le note su account, rifiuti e policy stanno qui e in `projects/`, che restano
   nel repo; il file di configurazione porta solo i dati che servono a costruire i link.
+- **Nei `.astro` i commenti si scrivono `{/* */}`, mai `<!-- -->`**: quelli HTML finiscono nel sorgente di ogni pagina pubblicata, dove li legge anche un revisore. Verifica: in `dist/` l'unico `<!--` ammesso è `<!--astro:end-->`.
 - **Lo Store ID richiesto viene troncato a 13 caratteri** (`bxcombosfrance` → `bxcombosfranc-21`): sceglierlo già corto, o leggere quello assegnato dalla pagina di conferma prima di scriverlo in config.
 - **Prima di un ricorso Associates, misurare il difetto contestato sull'HTML servito** (`curl` della pagina + grep del tag): un ricorso respinto chiude l'account, e lo Store ID non si riusa.
 - I suffissi `-21` sono un unico spazio di nomi fra i marketplace europei: un ID creato su un portale non è
