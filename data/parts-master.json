@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-15",
+  "version": "2026-10-03",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -4400,23 +4400,35 @@
       "line": "bx",
       "type": "balance",
       "names": {
-        "tt": "Suppress Superion",
+        "tt": "SiegSuperion",
         "hasbro": "Suppress Superion",
-        "ja": "",
-        "romaji": ""
+        "ja": "ジークスペリオン",
+        "romaji": "JīkuSuperion"
       },
-      "aliases": [],
+      "aliases": [
+        {
+          "value": "ジークスペリオン",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "JīkuSuperion",
+          "lang": "ja",
+          "kind": "romaji"
+        }
+      ],
       "products": [
-        "G2745"
+        "G2745",
+        "BX-54"
       ],
       "firstReleaseSet": "G2745",
       "source": {
-        "page": "Blade - Suppress Superion",
-        "url": "https://beyblade.fandom.com/wiki/Blade_-_Suppress_Superion",
-        "revid": 646218
+        "page": "Blade - SiegSuperion",
+        "url": "https://beyblade.fandom.com/wiki/Blade_-_SiegSuperion",
+        "revid": 650337
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-10-03",
       "image": {
         "file": "suppress-superion.png",
         "wikiFile": "BladeSiegSuperion.png",
@@ -5890,7 +5902,8 @@
       "names": {
         "tt": "Kid",
         "ja": "キッド",
-        "romaji": "Kiddo"
+        "romaji": "Kiddo",
+        "hasbro": null
       },
       "aliases": [
         {
@@ -8550,8 +8563,8 @@
         "url": "https://beyblade.fandom.com/wiki/Over_Blade_-_I",
         "revid": 643584
       },
-      "lastVerified": "2026-07-15",
-      "status": "unverified",
+      "lastVerified": "2026-10-03",
+      "status": "verified",
       "type": "balance"
     },
     {
@@ -8749,7 +8762,8 @@
         "UX-14",
         "CX-00",
         "G2745",
-        "G2758"
+        "G2758",
+        "BX-54"
       ],
       "firstReleaseSet": "ScorpioSpear 0-70Z",
       "source": {
@@ -8757,7 +8771,7 @@
         "url": "https://beyblade.fandom.com/wiki/ScorpioSpear_0-70Z",
         "revid": 644111
       },
-      "lastVerified": "2026-09-15",
+      "lastVerified": "2026-10-03",
       "status": "verified",
       "image": {
         "file": "0-70.png",
@@ -9841,7 +9855,7 @@
         "revid": 637380
       },
       "status": "verified",
-      "lastVerified": "2026-09-15",
+      "lastVerified": "2026-10-03",
       "products": [
         "G1695",
         "UX-03",
@@ -12086,7 +12100,8 @@
       ],
       "shortName": "LP",
       "products": [
-        "G2745"
+        "G2745",
+        "BX-54"
       ],
       "firstReleaseSet": "G2745",
       "source": {
@@ -12095,7 +12110,7 @@
         "revid": 646219
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-10-03",
       "image": {
         "file": "low-point.png",
         "wikiFile": "BitLowPoint.png",

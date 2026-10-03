@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-15",
+  "version": "2026-10-03",
   "blades": [
     {
       "id": "aero-pegasus",
@@ -1474,8 +1474,11 @@
     },
     {
       "id": "suppress-superion",
-      "name": "Suppress Superion",
+      "name": "SiegSuperion",
       "nameWestern": "Suppress Superion",
+      "aliases": [
+        "JīkuSuperion"
+      ],
       "type": "balance",
       "line": "bx",
       "releaseSet": "G2745",

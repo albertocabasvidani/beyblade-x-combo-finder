@@ -1,8 +1,10 @@
 {
   "BX-01": {
+    "de": "B0C52R16P1",
     "jp": "B0C52R16P1"
   },
   "BX-02": {
+    "de": "B0C52C4L3T",
     "es": "B0C52C4L3T",
     "fr": "B0C52C4L3T",
     "it": "B0C52C4L3T",
@@ -31,6 +33,7 @@
   "BX-06": {
     "de": "B0C531R5L1",
     "fr": "B0C531R5L1",
+    "it": "B0C531R5L1",
     "jp": "B0C531R5L1",
     "uk": "B0C531R5L1"
   },
@@ -42,6 +45,7 @@
     "jp": "B0C52N5492"
   },
   "BX-08": {
+    "de": "B0C52KJB9K",
     "es": "B0C52KJB9K",
     "fr": "B0C52KJB9K",
     "it": "B0C52KJB9K",
@@ -54,6 +58,10 @@
     "jp": "B0C52SMHWN"
   },
   "BX-10": {
+    "de": "B0F2CMFXVP",
+    "es": "B0F2CMFXVP",
+    "fr": "B0F2CMFXVP",
+    "it": "B0F2CMFXVP",
     "jp": "B0C52YJQBC"
   },
   "BX-11": {
@@ -71,7 +79,11 @@
   },
   "BX-14": {
     "de": "B0CDW4X95V",
-    "jp": "B0CDW4X95V"
+    "es": "B0CDW4X95V",
+    "fr": "B0CDW4X95V",
+    "it": "B0CDW4X95V",
+    "jp": "B0CDW4X95V",
+    "uk": "B0CDW4X95V"
   },
   "BX-15": {
     "it": "B0CHR9SD9Z",
@@ -81,7 +93,11 @@
   "BX-16": {
     "jp": "B0CHRB3TQH"
   },
+  "BX-17": {
+    "jp": "B0CHR9TB2G"
+  },
   "BX-18": {
+    "es": "B0CHR9FP8L",
     "fr": "B0CHR9FP8L",
     "it": "B0CHR9FP8L",
     "jp": "B0CHR9FP8L",
@@ -96,7 +112,12 @@
     "uk": "B0CKQT37TB"
   },
   "BX-20": {
-    "jp": "B0CKQSX6CS"
+    "de": "B0CKQSX6CS",
+    "es": "B0CKQSX6CS",
+    "fr": "B0CKQSX6CS",
+    "it": "B0CKQSX6CS",
+    "jp": "B0CKQSX6CS",
+    "uk": "B0CKQSX6CS"
   },
   "BX-21": {
     "jp": "B0CKQTC5S8"
@@ -110,6 +131,7 @@
   },
   "BX-23": {
     "de": "B0CMZSRJ3Q",
+    "es": "B0CMZSRJ3Q",
     "fr": "B0CMZSRJ3Q",
     "it": "B0CMZSRJ3Q",
     "jp": "B0CMZSRJ3Q",
@@ -133,7 +155,8 @@
     "es": "B0CRQWFX9R",
     "fr": "B0CRQWFX9R",
     "it": "B0CRQWFX9R",
-    "jp": "B0CRQWFX9R"
+    "jp": "B0CRQWFX9R",
+    "uk": "B0CRQWFX9R"
   },
   "BX-27": {
     "jp": "B0CRQVY5ZX"
@@ -143,7 +166,8 @@
     "uk": "B0CV79K8KS"
   },
   "BX-29": {
-    "jp": "B0CV7HCP16"
+    "jp": "B0CV7HCP16",
+    "uk": "B0CV7HCP16"
   },
   "BX-30": {
     "jp": "B0CV73DH8V"
@@ -177,6 +201,9 @@
   },
   "BX-36": {
     "de": "B0DC66WCDV",
+    "es": "B0DC66WCDV",
+    "fr": "B0DC66WCDV",
+    "it": "B0DC66WCDV",
     "jp": "B0DC66WCDV",
     "uk": "B0DC66WCDV"
   },
@@ -205,6 +232,7 @@
   },
   "BX-40": {
     "de": "B0DWSBHQWD",
+    "es": "B0DWSBHQWD",
     "fr": "B0DWSBHQWD",
     "it": "B0DWSBHQWD",
     "jp": "B0DWSBHQWD",
@@ -219,6 +247,9 @@
     "uk": "B0DWS96T4F"
   },
   "BX-42": {
+    "de": "B0DWSB1VDQ",
+    "es": "B0DWSB1VDQ",
+    "fr": "B0DWSB1VDQ",
     "it": "B0DWSB1VDQ",
     "jp": "B0DWSB1VDQ",
     "uk": "B0DWSB1VDQ"
@@ -231,12 +262,14 @@
     "uk": "B0DWS3ZFF7"
   },
   "BX-44": {
+    "es": "B0F89Y6XQ1",
     "fr": "B0F89Y6XQ1",
     "it": "B0F89Y6XQ1",
     "jp": "B0F89Y6XQ1",
     "uk": "B0F89Y6XQ1"
   },
   "BX-45": {
+    "de": "B0FH4FF4NJ",
     "es": "B0FH4FF4NJ",
     "fr": "B0FH4FF4NJ",
     "it": "B0FH4FF4NJ",
@@ -248,6 +281,7 @@
     "uk": "B0FNM2MZDB"
   },
   "BX-47": {
+    "de": "B0FQ9ZSLPD",
     "fr": "B0FQ9ZSLPD",
     "it": "B0FQ9ZSLPD",
     "jp": "B0FQ9ZSLPD",
@@ -270,6 +304,10 @@
     "uk": "B0GS4M7T5B"
   },
   "BX-50": {
+    "de": "B0H4PM8QCF",
+    "es": "B0H4PM8QCF",
+    "fr": "B0H4PM8QCF",
+    "it": "B0H4PM8QCF",
     "jp": "B0H4PM8QCF",
     "uk": "B0H4PM8QCF"
   },
@@ -320,7 +358,12 @@
     "uk": "B001DR87UE"
   },
   "CX-04": {
-    "jp": "B0DWS1N4ZX"
+    "de": "B0DWS1N4ZX",
+    "es": "B0DWS1N4ZX",
+    "fr": "B0DWS1N4ZX",
+    "it": "B0DWS1N4ZX",
+    "jp": "B0DWS1N4ZX",
+    "uk": "B0DWS1N4ZX"
   },
   "CX-05": {
     "fr": "B0F12RK1F4",
@@ -332,6 +375,7 @@
     "jp": "B0F47D97BR"
   },
   "CX-07": {
+    "de": "B0FCLJ67NK",
     "es": "B0FCLJ67NK",
     "fr": "B0FCLJ67NK",
     "it": "B0FCLJ67NK",
@@ -377,6 +421,8 @@
     "uk": "B0GWKWBXH3"
   },
   "CX-18": {
+    "de": "B0H1B5QDJK",
+    "es": "B0H1B5QDJK",
     "fr": "B0H1B5QDJK",
     "it": "B0H1B5QDJK",
     "jp": "B0H1B5QDJK",
@@ -386,6 +432,7 @@
     "jp": "B0HCXR5PWS"
   },
   "UX-01": {
+    "es": "B0CV7HF3W6",
     "fr": "B0CV7HF3W6",
     "it": "B0CV7HF3W6",
     "jp": "B0CV7HF3W6",
@@ -401,6 +448,9 @@
     "fr": "B0CV7D5B6K",
     "jp": "B0CV7D5B6K"
   },
+  "UX-04": {
+    "jp": "B0CV7LP2M3"
+  },
   "UX-05": {
     "de": "B0D1B1CT2J",
     "es": "B0D1B1CT2J",
@@ -410,7 +460,10 @@
     "uk": "B0D1B1CT2J"
   },
   "UX-06": {
-    "jp": "B0D91K2WMS"
+    "fr": "B0D91K2WMS",
+    "it": "B0D91K2WMS",
+    "jp": "B0D91K2WMS",
+    "uk": "B0D91K2WMS"
   },
   "UX-08": {
     "de": "B0DGFZND26",
@@ -427,6 +480,10 @@
     "jp": "B0DJQQDFPS"
   },
   "UX-11": {
+    "de": "B0DMSQ57X5",
+    "es": "B0DMSQ57X5",
+    "fr": "B0DMSQ57X5",
+    "it": "B0DMSQ57X5",
     "jp": "B0DMSQ57X5",
     "uk": "B0DMSQ57X5"
   },
@@ -441,6 +498,10 @@
     "jp": "B0F47G3QJT"
   },
   "UX-15": {
+    "de": "B0FH4FD9NB",
+    "es": "B0FH4FD9NB",
+    "fr": "B0FH4FD9NB",
+    "it": "B0FH4FD9NB",
     "jp": "B0FH4FD9NB",
     "uk": "B0FH4FD9NB"
   },
@@ -452,6 +513,7 @@
     "jp": "B0G1QZR681"
   },
   "UX-18": {
+    "de": "B0G1R71G2F",
     "es": "B0G1R71G2F",
     "fr": "B0G1R71G2F",
     "it": "B0G1R71G2F",
@@ -475,6 +537,11 @@
     "uk": "B0H4PPV8MR"
   },
   "UX-21": {
-    "jp": "B0H861Y9Y3"
+    "de": "B0H861Y9Y3",
+    "es": "B0H861Y9Y3",
+    "fr": "B0H861Y9Y3",
+    "it": "B0H861Y9Y3",
+    "jp": "B0H861Y9Y3",
+    "uk": "B0H861Y9Y3"
   }
 }
