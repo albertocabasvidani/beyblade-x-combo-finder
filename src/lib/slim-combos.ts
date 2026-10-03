@@ -9,14 +9,13 @@
  * combo inline.
  */
 import type {
-  BladeType, Combo, ComboLine, CombosDatabase, ComboWindow, ComboWindows, TierThresholds, WindowKey,
+  Combo, ComboLine, CombosDatabase, ComboWindow, ComboWindows, TierThresholds, WindowKey,
 } from './types';
 import { TIER_ABS, WINDOW_KEYS } from './scoring';
 
 export interface SlimCombo {
   id: string;
   line: ComboLine;
-  type: BladeType;
   displayName: string;
   blade: string | null;
   ratchet: string | null;
@@ -64,7 +63,7 @@ export function toSlim(db: CombosDatabase): SlimDatabase {
     const windows = windowsOf(c);
     if (!windows['365']) continue;                // nessun risultato in 365 giorni → fuori dal sito
     const s: SlimCombo = {
-      id: c.id, line: c.line, type: c.type, displayName: c.displayName,
+      id: c.id, line: c.line, displayName: c.displayName,
       blade: c.blade, ratchet: c.ratchet, bit: c.bit,
       lockChip: c.lockChip, mainBlade: c.mainBlade, assistBlade: c.assistBlade, overBlade: c.overBlade ?? null,
       sourceCount: (c.sources ?? []).length,

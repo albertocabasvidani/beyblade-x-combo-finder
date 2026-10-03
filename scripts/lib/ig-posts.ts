@@ -57,14 +57,14 @@ export function isoWeek(d: Date): string {
 
 /** I dati di una build per le slide: la lama è quella di bladeOf (Main Blade per le CX), più le parti CX. */
 export interface Build {
-  id: string; name: string; line: string; blade: string; ratchet: string | null; bit: string; type: string;
+  id: string; name: string; line: string; blade: string; ratchet: string | null; bit: string;
   lockChip: string | null; mainBlade: string | null; assistBlade: string | null; overBlade: string | null;
   topCut: number; wins: number; events: number;
 }
 function build(s: ComboStat): Build {
   const c = s.combo;
   return {
-    id: c.id, name: c.displayName, line: c.line, blade: bladeOf(c)!, ratchet: c.ratchet, bit: c.bit, type: c.type ?? '',
+    id: c.id, name: c.displayName, line: c.line, blade: bladeOf(c)!, ratchet: c.ratchet, bit: c.bit,
     lockChip: c.lockChip ?? null, mainBlade: c.mainBlade ?? null, assistBlade: c.assistBlade ?? null, overBlade: c.overBlade ?? null,
     topCut: s.topCut, wins: s.wins, events: s.events,
   };

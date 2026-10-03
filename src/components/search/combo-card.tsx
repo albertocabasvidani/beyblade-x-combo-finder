@@ -23,18 +23,6 @@ interface Props {
   t: (key: string) => string;
 }
 
-const typeLabels: Record<string, Record<string, string>> = {
-  en: { attack: 'Attack', defense: 'Defense', stamina: 'Stamina', balance: 'Balance' },
-  it: { attack: 'Attacco', defense: 'Difesa', stamina: 'Resistenza', balance: 'Equilibrio' },
-};
-
-const typeBg: Record<string, string> = {
-  attack: 'bg-attack',
-  defense: 'bg-defense',
-  stamina: 'bg-stamina',
-  balance: 'bg-balance',
-};
-
 const STALE_DAYS = 45;   // oltre, l'evidenza più recente è considerata "datata"
 
 function fmtDate(iso: string, locale: Locale): string {
@@ -88,12 +76,6 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, locale
         CX
       </span>
     ) : null;
-
-  const TypeBadge = () => (
-    <span class={`shrink-0 rounded-[4px] px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-[0.05em] text-white ${typeBg[combo.type] ?? 'bg-muted'}`}>
-      {typeLabels[locale]?.[combo.type] ?? combo.type}
-    </span>
-  );
 
   const Sources = () => (
     <span class="text-[10.5px] text-muted-2">
@@ -231,7 +213,6 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, locale
                   <h3 class="font-display text-[17px] uppercase leading-tight text-text">{displayName}</h3>
                 </div>
                 <div class="mt-1.5 flex flex-wrap items-center gap-2">
-                  <TypeBadge />
                   <StadiumBadge />
                   <Sources />
                   <BuyToggle compact />
@@ -267,7 +248,6 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, locale
               <h3 class="font-display text-[22px] uppercase leading-tight text-text">{displayName}</h3>
             </div>
             <div class="mt-2 flex flex-wrap items-center gap-2">
-              <TypeBadge />
               <StadiumBadge />
               <Sources />
               <BuyToggle compact />

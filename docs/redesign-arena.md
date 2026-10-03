@@ -47,10 +47,8 @@ combo + striscia laterale viola.
 - **Scarlatto `#ff4332`** — filtro "Provate in torneo" on, "N% meta", base gradiente striscia card #1
 - `#ff7a6e` — testo chip parte mancante ("! …")
 
-**Tipo combo** (chip pieno, testo bianco)
-- ATK / Attacco: `#d23b34`
-- STA / Stamina: `#1f9d5b`
-- DEF, BAL: non presenti nel mockup → scegliere coerenti (proposta: DEF `#3b82c4` blu, BAL `#a855f7` viola)
+~~**Tipo combo** (chip pieno, testo bianco): ATK `#d23b34`, STA `#1f9d5b`, DEF `#3b82c4`, BAL `#a855f7`.~~
+Badge tipo tolto il 03/10/2026, colori compresi: il tipo (attack/defense/stamina/balance) era spesso sbagliato.
 
 **Fasce CAS** (badge "notch", gradiente verticale)
 - **Meta** (≥ ~8): `linear-gradient(180deg,#3bdc86,#1f9d5b)`, testo `#052413`
@@ -102,7 +100,7 @@ combo + striscia laterale viola.
 - **Scarlatto `#e0392c`** — filtro on, "N% meta", base gradiente striscia card #1
 - `#b02a20` — testo filtro scarlatto attivo (mobile); `#cf3022` — testo chip parte mancante
 
-**Tipo combo**: Stamina `#15914f`; Attacco `#e0392c`.
+~~**Tipo combo**: Stamina `#15914f`; Attacco `#e0392c`.~~ Tolto il 03/10/2026 (vedi tema scuro).
 
 **Fasce CAS**
 - Meta: `linear-gradient(180deg,#34c87f,#15914f)`, testo **`#fff`** (nel chiaro il #1 ha testo bianco)
@@ -125,7 +123,7 @@ combo + striscia laterale viola.
 - **Display / titoli / nomi combo / rank / badge CAS** → `'Anton', sans-serif` (weight 400),
   `text-transform: uppercase`, `letter-spacing 0.005em–0.02em`. **Rank** e **numero CAS** in `font-style: italic`.
 - **Body / UI / label / chip / evidenza** → `'Saira', sans-serif`. Pesi 600 (label/nav/evidenza), 700
-  (chip parte, chip selezionati, badge tipo); body 400/500.
+  (chip parte, chip selezionati); body 400/500.
 - **Mono / micro-label / meta** → `'JetBrains Mono', monospace` (500/700). Eyebrow, micro-label
   "Suggeriti"/"Filtri", URL browser, badge lettera. `uppercase`, `letter-spacing 0.1em–0.14em`.
 
@@ -135,7 +133,6 @@ combo + striscia laterale viola.
 - Nome combo: 17px (mobile) / 22px (desktop) Anton uppercase; CX leggermente ridotto (16px / 21px).
 - Rank number: 26px (mobile) / 38px (desktop) Anton italic.
 - Badge CAS numero: 22px (mobile) / 30px (desktop) Anton italic; etichetta fascia sotto 7.5–8.5px Saira 700 uppercase.
-- Badge tipo: 9.5px (mobile) / 10px (desktop) Saira 700 uppercase, `letter-spacing 0.05em`.
 - Riga evidenza torneo: 11.5px (mobile) / 12.5px (desktop) Saira 600.
 - Chip parte: 11px (mobile, 10.5px su CX) / 11.5px (desktop, 11px su CX) Saira 700.
 - Label/micro: 13–13.5px label toggle/search; 11px label filtro mobile; 10–10.5px micro-label mono.
@@ -148,7 +145,7 @@ combo + striscia laterale viola.
 - Telefono scocca 40px; schermo interno 32px.
 - Card combo 14px (rail/card desktop 16px).
 - Input / toggle / search 11px. Chip parte aggiunta/suggerita 9px. Chip ✓/! 6px (callout 7px).
-- Badge tipo 4px (mobile) / 5px (desktop); badge CX 4px. Filtri "pill" 999px. Track toggle 9–11px.
+- Badge CX 4px. Filtri "pill" 999px. Track toggle 9–11px.
 
 **Spacing (padding)**
 - Schermata mobile: header `12px 18px`; selettore `16px 18px 18px`; lista ranking `0 16px 20px`, `gap 11px`.
@@ -204,7 +201,7 @@ Comune ai 4 schermi: niente hero, niente tab BX/CX, niente toggle TT/Hasbro, nie
 Radius 14px, striscia laterale 4px a sx, padding `13px 14px 13px 18px`.
 - **Riga 1** (space-between): a sx blocco `rank + testo`; a dx **badge CAS notch**.
   - Rank: Anton italic 26px (oro per #1, grigio altrimenti).
-  - Nome combo (Anton uppercase 17px); se CX, badge "CX" prima del nome; sotto, badge tipo pieno + "N fonti" (muted).
+  - Nome combo (Anton uppercase 17px); se CX, badge "CX" prima del nome; sotto, badge stadio + "N fonti" (muted) + «Buy parts» (il badge tipo è stato tolto il 03/10/2026).
   - Badge CAS: gettone clip-path, gradiente per fascia, numero Anton italic 22px + etichetta fascia 7.5px.
 - **Riga evidenza** (separata da hairline): "🏆 N vittorie" · "N top cut" · "N tornei" · "N% meta" (scarlatto). Saira 600 11.5px. La metrica scelta in «Sort by» è oro e sottolineata (dal 01/10/2026; prima le vittorie erano sempre oro). **Niente barra meta-share su mobile.**
 - **Riga chip parti** (`gap 6px`, wrap): ✓ posseduta (verde) e ! mancante (scarlatto), una per parte. CX fino a 6 chip con font/padding ridotti. I chip mancanti **senza** ↗ né link Amazon.
@@ -212,7 +209,7 @@ Radius 14px, striscia laterale 4px a sx, padding `13px 14px 13px 18px`.
 ### Desktop (riga orizzontale)
 Radius 14px, striscia 5px, padding `16px 20px 16px 26px`, `display:flex; align-items:center; gap:18px`. Da sx a dx:
 1. **Rank** Anton italic 38px.
-2. **Blocco centrale (flex:1)**: nome combo (Anton 22px, badge "CX" inline se CX) + riga sotto con badge tipo e **i chip ✓/! inline sulla stessa riga**.
+2. **Blocco centrale (flex:1)**: nome combo (Anton 22px, badge "CX" inline se CX) + riga sotto con badge stadio, "N fonti" e «Buy parts» (badge tipo e chip ✓/! tolti a ottobre 2026).
 3. **Colonna evidenza (188px, border-left hairline, padding-left 18px)**: "🏆 N vittorie · N tornei"; "N% meta share" (scarlatto); **barra meta-share** (solo desktop).
 4. **Badge CAS notch** (numero 30px), all'estrema destra.
 

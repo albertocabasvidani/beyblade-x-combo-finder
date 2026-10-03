@@ -98,7 +98,7 @@ function bladeBuildSlides(ctx: RenderCtx, c: PostCandidate): string[] {
     <img class="hero" src="${ctx.img(d.blade)}" alt="">
     <div class="sub">${nuova ? `Primi podi dal ${dmy(d.firstSeen)}: ${d.topCut} top cut finora` : `${d.topCut} top cut negli ultimi 3 mesi, il ${pct(d.share)} del totale`}</div>
     ${foot(`${d.tournaments} tornei analizzati negli ultimi 3 mesi · dati al ${ctx.asOf}`)}`)];
-  d.builds.forEach((b, i) => slides.push(comboSlide(ctx, `BUILD ${i + 1} DI ${d.builds.length} · ${b.type}`, b, period, `${d.tournaments} tornei analizzati`)));
+  d.builds.forEach((b, i) => slides.push(comboSlide(ctx, `BUILD ${i + 1} DI ${d.builds.length}`, b, period, `${d.tournaments} tornei analizzati`)));
   slides.push(wrap(`
     <div class="kicker">E LE ALTRE?</div>
     <h1>TUTTE LE COMBO<br>DI <em>${esc(nome)}</em><br>SUL SITO</h1>
@@ -120,7 +120,7 @@ function topBuildSlides(ctx: RenderCtx, c: PostCandidate): string[] {
     wrap(`<div class="kicker">CLASSIFICA · ULTIMO MESE</div>
       <ol>${d.combos.map((b, i) => `<li><span class="pos">${i + 1}</span><img src="${ctx.img(b.blade)}" alt=""><span class="nm">${esc(b.name)}</span><span class="pd">${b.topCut} top cut</span></li>`).join('')}</ol>
       ${foot('Top cut = podio o fase finale nei tornei WBO e MetaBeys')}`),
-    ...d.combos.slice(0, 3).map((b, i) => comboSlide(ctx, `#${i + 1} DEL MESE · ${b.type}`, b, period, `${d.tournaments} tornei analizzati`)),
+    ...d.combos.slice(0, 3).map((b, i) => comboSlide(ctx, `#${i + 1} DEL MESE`, b, period, `${d.tournaments} tornei analizzati`)),
     wrap(`<div class="kicker">LE ALTRE?</div>
       <h1>TUTTA LA<br>CLASSIFICA<br><em>SUL SITO</em></h1>
       <div class="sub">Filtra per periodo, per parti che hai, per stadio.</div>
@@ -166,7 +166,7 @@ function risingSlides(ctx: RenderCtx, c: PostCandidate): string[] {
       <div class="kicker" style="margin-top:56px">LE BUILD CHE LO PORTANO</div>
       <ol class="mini">${d.builds.slice(0, 3).map((b) => `<li><img src="${ctx.img(b.bit)}" alt=""><span class="nm">${esc(b.name)}</span><span class="pd">${b.topCut} top cut</span></li>`).join('')}</ol>
       ${foot('Top cut = podio o fase finale nei tornei WBO e MetaBeys')}`),
-    comboSlide(ctx, `LA BUILD PIÙ USATA · ${d.builds[0].type}`, d.builds[0], 'in un mese', 'Provala e dimmi nei commenti come va'),
+    comboSlide(ctx, 'LA BUILD PIÙ USATA', d.builds[0], 'in un mese', 'Provala e dimmi nei commenti come va'),
   ];
 }
 

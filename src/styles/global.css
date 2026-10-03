@@ -29,11 +29,6 @@
   --color-scarlet: var(--c-scarlet);
   --color-scarlet-text: var(--c-scarlet-text);
 
-  --color-attack: var(--c-attack);
-  --color-defense: var(--c-defense);
-  --color-stamina: var(--c-stamina);
-  --color-balance: var(--c-balance);
-
   --color-owned-bg: var(--c-owned-bg);
   --color-owned-border: var(--c-owned-border);
   --color-owned-text: var(--c-owned-text);
@@ -71,11 +66,6 @@
   --c-gold-ink: #1a1100;
   --c-scarlet: #ff4332;
   --c-scarlet-text: #ff7a6e;
-
-  --c-attack: #d23b34;
-  --c-defense: #3b82c4;
-  --c-stamina: #1f9d5b;
-  --c-balance: #a855f7;
 
   --c-owned-bg: rgba(31, 157, 91, 0.13);
   --c-owned-border: rgba(31, 157, 91, 0.4);
@@ -143,11 +133,6 @@
   --c-gold-ink: #2a1a00;
   --c-scarlet: #e0392c;
   --c-scarlet-text: #cf3022;
-
-  --c-attack: #e0392c;
-  --c-defense: #2f6fae;
-  --c-stamina: #15914f;
-  --c-balance: #8b5cf6;
 
   --c-owned-bg: #e7f6ee;
   --c-owned-border: transparent;
