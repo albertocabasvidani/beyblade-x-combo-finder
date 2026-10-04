@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-03",
+  "version": "2026-10-04",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -2498,7 +2498,7 @@
         "page": "LusterDragoon 6-60LC",
         "url": "https://beyblade.fandom.com/wiki/LusterDragoon_6-60LC"
       },
-      "lastVerified": "2026-09-15",
+      "lastVerified": "2026-10-04",
       "status": "verified",
       "type": "attack"
     },
@@ -2649,7 +2649,7 @@
         "revid": 645410
       },
       "status": "verified",
-      "lastVerified": "2026-09-15",
+      "lastVerified": "2026-10-04",
       "stats": {
         "atk": 75,
         "def": 15,
@@ -4415,6 +4415,11 @@
           "value": "JīkuSuperion",
           "lang": "ja",
           "kind": "romaji"
+        },
+        {
+          "value": "Suppress Superion",
+          "lang": "en",
+          "kind": "hasbro"
         }
       ],
       "products": [
@@ -4428,7 +4433,7 @@
         "revid": 650337
       },
       "status": "verified",
-      "lastVerified": "2026-10-03",
+      "lastVerified": "2026-10-04",
       "image": {
         "file": "suppress-superion.png",
         "wikiFile": "BladeSiegSuperion.png",
@@ -11823,7 +11828,7 @@
         "url": "https://beyblade.fandom.com/wiki/MeteorDragoon_3-70J",
         "revid": 645410
       },
-      "lastVerified": "2026-09-15",
+      "lastVerified": "2026-10-04",
       "status": "verified",
       "type": "attack",
       "shortName": "J",
