@@ -35,6 +35,16 @@ del /q "%USERPROFILE%\.playwright-beyblade\SingletonSocket" 2>nul
 set REDDIT_HEADED=1
 set WBO_HEADED=1
 
+REM --- limite di sessione Claude ---
+REM Con questa variabile ogni claude -p, arrivato al limite, aspetta l'orario di azzeramento
+REM che il 429 riporta e poi riprende, invece di morire: senza, uno step al limite falliva e il
+REM job - un solo tentativo nel manifest - perdeva la giornata. Doc ufficiale: pagina env-vars,
+REM CLAUDE_CODE_RETRY_WATCHDOG, da v2.1.186. Il tetto all'attesa e' timeoutMin del dispatcher.
+REM Ritenta fino a ~3 ore anche errori di server e di rete. Sta qui e non fra le variabili
+REM dell'utente server perche' non arrivi alle sessioni Remote Control, dove il limite va visto.
+REM Dal 05/10/2026.
+set "CLAUDE_CODE_RETRY_WATCHDOG=1"
+
 REM --- battito cardiaco (diagnostica, vedi scripts\heartbeat.ps1) ---
 REM Gira NELLA STESSA CONSOLE (start /b), quindi ne condivide la sorte. Confrontando
 REM dove si ferma il battito con l'ultimo marker qui sotto si distingue "e' stata uccisa

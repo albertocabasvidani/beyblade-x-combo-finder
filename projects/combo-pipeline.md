@@ -40,6 +40,7 @@ Scheduled Task propri ma di **job del dispatcher generale** della macchina
 ## In progress
 
 <!-- Lavori in corso. Se collegati a un piano in plans/, linkalo. -->
+- 05/10/2026 — **Limite di sessione Claude: gli step aspettano invece di morire.** `daily-pipeline.bat` e `discover-sources.bat` impostano `CLAUDE_CODE_RETRY_WATCHDOG=1` (doc ufficiale, pagina env-vars): un `claude -p` al limite aspetta l'orario di azzeramento e riprende. Prima uno step al limite falliva e il job, con un solo tentativo, perdeva la giornata (la settimana per discover). Tetto all'attesa: `timeoutMin` del dispatcher, 180 per la pipeline e 120 per discover (era 60). `recover-combos.bat` lasciato senza di proposito: se la pipeline è morta al timeout il limite è lungo, e un'altra attesa terrebbe ferma la coda solo per niente. Resta: vedere un run vero arrivato al limite che aspetta e riprende — le docs lo dicono, non l'ho osservato
 
 ## Changelog
 
