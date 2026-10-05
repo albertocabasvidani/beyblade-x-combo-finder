@@ -1,7 +1,7 @@
 ---
 description: Aggiorna combos.json dalle cache fonti (estrazione, match multilingua, dedup)
 model: sonnet
-effort: high
+effort: medium
 ---
 
 Aggiorna `data/combos.json` estraendo le combo competitive da tutte le fonti raccolte, riconoscendo i

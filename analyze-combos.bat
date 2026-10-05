@@ -4,4 +4,4 @@ REM riconosce i nomi parte multilingua via parts-master.json, dedup id-set, scor
 REM Esecuzione MANUALE (analisi-only). Lo scheduling completo gira via daily-pipeline.bat (08:00).
 cd /d "c:\claude-code\Personale\Beyblade\beyblade combos"
 echo === Analisi e aggiornamento combo con Claude ===
-claude --model sonnet --effort high --dangerously-skip-permissions -p "/update-combos"
+claude --model sonnet --effort medium --dangerously-skip-permissions -p "/update-combos"

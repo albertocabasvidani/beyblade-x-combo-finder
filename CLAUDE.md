@@ -355,7 +355,7 @@ lavoro di punta. Il vincolo sta in due posti — flag `--model`/`--effort` in tu
 | `/update-parts` | sonnet | medium | diff revid, estrazione strutturata, merge |
 | `/judge-youtube` | sonnet | medium | classificazione a blocchi (rilevanza + lingua) |
 | `/mine-reddit` | sonnet | medium | estrazione + match nomi parte, merge deterministico a valle |
-| `/update-combos` | sonnet | high | scrive `combos.json` da fonti narrative: estrazione, ma delicata |
+| `/update-combos` | sonnet | medium | scrive `combos.json` da fonti narrative: estrazione, ma delicata |
 | `/discover-sources` | opus | medium | giudica fonti nuove e **manda una email** in autonomia |
 
 **Perché separati** (21/07/2026): quando la raccolta stava dentro la pipeline, i browser headed

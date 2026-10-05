@@ -63,7 +63,7 @@ if defined COMBOS_DA_FARE (
   call :log "--- judge-youtube END exit=!RC! ---"
   call :conta "!RC!" "judge-youtube"
   call :log "--- update-combos START ---"
-  claude --model sonnet --effort high --dangerously-skip-permissions -p "/update-combos" >> "%LOG%" 2>&1
+  claude --model sonnet --effort medium --dangerously-skip-permissions -p "/update-combos" >> "%LOG%" 2>&1
   set "RC=!errorlevel!"
   call :log "--- update-combos END exit=!RC! ---"
   call :conta "!RC!" "update-combos"
