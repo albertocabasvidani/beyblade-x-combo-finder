@@ -4,12 +4,12 @@
     "List of Beyblade X products (Takara Tomy)": {
       "revid": 650346,
       "timestamp": "2026-10-02T21:28:58.000Z",
-      "lastScannedDate": "2026-10-04"
+      "lastScannedDate": "2026-10-06"
     },
     "List of Beyblade X products (Hasbro)": {
       "revid": 648918,
       "timestamp": "2026-09-14T01:43:54.000Z",
-      "lastScannedDate": "2026-10-04"
+      "lastScannedDate": "2026-10-06"
     }
   },
   "pages": {
@@ -266,9 +266,9 @@
       "notes": "Revid cambiato, verificato: nessun nuovo componente (solo modifiche testuali/gallery/date release)."
     },
     "BahamutBlitz BK1-50I": {
-      "revid": 650066,
-      "timestamp": "2026-09-28T19:12:23.000Z",
-      "lastScannedDate": "2026-09-29",
+      "revid": 650418,
+      "timestamp": "2026-10-04T10:42:19.000Z",
+      "lastScannedDate": "2026-10-06",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -277,9 +277,9 @@
       "notes": "aggiunta localizzazione Hasbro (Blitz Bahamut, G4572); tutte le 6 parti CX Expand gia' nel master"
     },
     "RagnaRage FE4-55Y": {
-      "revid": 649710,
-      "timestamp": "2026-09-20T21:44:27.000Z",
-      "lastScannedDate": "2026-09-21",
+      "revid": 650412,
+      "timestamp": "2026-10-04T10:28:10.000Z",
+      "lastScannedDate": "2026-10-06",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -296,11 +296,11 @@
       "notes": "Revid cambiato, verificato: nessun nuovo componente (solo modifiche testuali/gallery/date release)."
     },
     "CobaltDragoon 2-60C": {
-      "revid": 650170,
-      "timestamp": "2026-09-30T00:58:52.000Z",
-      "lastScannedDate": "2026-09-30",
+      "revid": 650464,
+      "timestamp": "2026-10-05T01:23:53.000Z",
+      "lastScannedDate": "2026-10-06",
       "kind": "product",
-      "kindSource": "ai",
+      "kindSource": "heuristic",
       "notes": "parti gia' nel master, solo metadati"
     },
     "ImpactDrake 9-60LR": {
@@ -508,11 +508,11 @@
       "kindSource": "heuristic"
     },
     "BulletGriffon H": {
-      "revid": 650233,
-      "timestamp": "2026-10-01T03:05:59.000Z",
-      "lastScannedDate": "2026-10-02",
+      "revid": 650485,
+      "timestamp": "2026-10-05T18:24:40.000Z",
+      "lastScannedDate": "2026-10-06",
       "kind": "product",
-      "kindSource": "ai",
+      "kindSource": "heuristic",
       "redirects": [
         "Rocket Griffon H"
       ],
@@ -610,9 +610,9 @@
       "kindSource": "heuristic"
     },
     "DranStrike 4-50FF": {
-      "revid": 649702,
-      "timestamp": "2026-09-20T21:39:07.000Z",
-      "lastScannedDate": "2026-09-21",
+      "revid": 650413,
+      "timestamp": "2026-10-04T10:29:09.000Z",
+      "lastScannedDate": "2026-10-06",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -1072,11 +1072,11 @@
       "kindSource": "heuristic"
     },
     "BrachioWhip OW5-70Nr": {
-      "revid": 650086,
-      "timestamp": "2026-09-29T02:10:17.000Z",
-      "lastScannedDate": "2026-09-30",
+      "revid": 650482,
+      "timestamp": "2026-10-05T13:37:10.000Z",
+      "lastScannedDate": "2026-10-06",
       "kind": "product",
-      "kindSource": "ai",
+      "kindSource": "heuristic",
       "redirects": [
         "Whip Brachio OW 5-70Nr"
       ],
@@ -1139,9 +1139,9 @@
       "kindSource": "heuristic"
     },
     "KnightFortress GV8-70UN": {
-      "revid": 649736,
-      "timestamp": "2026-09-20T21:57:00.000Z",
-      "lastScannedDate": "2026-09-21",
+      "revid": 650414,
+      "timestamp": "2026-10-04T10:31:45.000Z",
+      "lastScannedDate": "2026-10-06",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -1203,9 +1203,9 @@
       "kindSource": "heuristic"
     },
     "UnicornDelta PO3-60GU": {
-      "revid": 649716,
-      "timestamp": "2026-09-20T21:47:12.000Z",
-      "lastScannedDate": "2026-09-21",
+      "revid": 650411,
+      "timestamp": "2026-10-04T10:27:35.000Z",
+      "lastScannedDate": "2026-10-06",
       "kind": "product",
       "kindSource": "heuristic",
       "redirects": [
@@ -3030,17 +3030,17 @@
     "Blade - SiegSuperion": {
       "revid": 650337,
       "timestamp": "2026-10-02T21:23:29.000Z",
-      "lastScannedDate": "2026-10-04",
+      "lastScannedDate": "2026-10-06",
       "kind": "part",
-      "kindSource": "ai",
+      "kindSource": "heuristic",
       "notes": "gia nel master (suppress-superion)"
     },
     "SiegSuperion 0-70LP": {
       "revid": 650333,
       "timestamp": "2026-10-02T21:19:02.000Z",
-      "lastScannedDate": "2026-10-04",
+      "lastScannedDate": "2026-10-06",
       "kind": "product",
-      "kindSource": "ai",
+      "kindSource": "heuristic",
       "notes": "gia nel master"
     }
   }
