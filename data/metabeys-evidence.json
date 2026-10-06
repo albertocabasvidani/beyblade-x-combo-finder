@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05",
+  "generatedAt": "2026-10-06",
   "source": "metabeys",
   "combos": {
     "shark-scale-7-60-rush": {
@@ -239,10 +239,10 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
           "appearances": 24,
-          "sharePct": 0.4,
+          "sharePct": 0.44,
           "uniqueEvents": 23,
           "uniquePlayers": 14,
           "lang": "en"
@@ -1628,58 +1628,6 @@
         {
           "source": "metabeys",
           "tier": "structured",
-          "eventId": "1761089904105",
-          "eventName": "Lets Go Hobby Shop Locals",
-          "date": "2025-10-05",
-          "placement": 4,
-          "topCutSize": 8,
-          "players": 51,
-          "deckScore": "B",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761089904105"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1761089904105",
-          "eventName": "Lets Go Hobby Shop Locals",
-          "date": "2025-10-05",
-          "placement": 6,
-          "topCutSize": 8,
-          "players": 51,
-          "deckScore": "A",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761089904105"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1761070095741",
-          "eventName": "POWER STONE Event",
-          "date": "2025-10-05",
-          "placement": 2,
-          "topCutSize": 3,
-          "players": 48,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761070095741"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1761070095741",
-          "eventName": "POWER STONE Event",
-          "date": "2025-10-05",
-          "placement": 3,
-          "topCutSize": 3,
-          "players": 48,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761070095741"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
           "eventId": "1781895957351",
           "eventName": "InBEYsion Weekly June 16th",
           "date": "2026-06-16",
@@ -5656,12 +5604,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 826,
+          "appearances": 771,
           "sharePct": 14,
-          "uniqueEvents": 261,
-          "uniquePlayers": 378,
+          "uniqueEvents": 244,
+          "uniquePlayers": 359,
           "lang": "en"
         }
       ]
@@ -6151,10 +6099,10 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
           "appearances": 38,
-          "sharePct": 0.64,
+          "sharePct": 0.7,
           "uniqueEvents": 29,
           "uniquePlayers": 29,
           "lang": "en"
@@ -6711,12 +6659,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 143,
+          "appearances": 128,
           "sharePct": 2.4,
-          "uniqueEvents": 103,
-          "uniquePlayers": 93,
+          "uniqueEvents": 92,
+          "uniquePlayers": 85,
           "lang": "en"
         }
       ]
@@ -6943,19 +6891,6 @@
           "deckScore": "B",
           "lang": "en",
           "url": "https://www.metabeys.com/events/1782597731334"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1761089904105",
-          "eventName": "Lets Go Hobby Shop Locals",
-          "date": "2025-10-05",
-          "placement": 3,
-          "topCutSize": 8,
-          "players": 51,
-          "deckScore": "S",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761089904105"
         },
         {
           "source": "metabeys",
@@ -7220,11 +7155,11 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 35,
-          "sharePct": 0.59,
-          "uniqueEvents": 34,
+          "appearances": 34,
+          "sharePct": 0.63,
+          "uniqueEvents": 33,
           "uniquePlayers": 23,
           "lang": "en"
         }
@@ -8091,12 +8026,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 82,
+          "appearances": 77,
           "sharePct": 1.4,
-          "uniqueEvents": 64,
-          "uniquePlayers": 59,
+          "uniqueEvents": 59,
+          "uniquePlayers": 55,
           "lang": "en"
         }
       ]
@@ -8262,19 +8197,6 @@
           "deckScore": "B",
           "lang": "en",
           "url": "https://www.metabeys.com/events/1759807664287"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1761089904105",
-          "eventName": "Lets Go Hobby Shop Locals",
-          "date": "2025-10-05",
-          "placement": 3,
-          "topCutSize": 8,
-          "players": 51,
-          "deckScore": "S",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761089904105"
         },
         {
           "source": "metabeys",
@@ -8553,12 +8475,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 99,
+          "appearances": 92,
           "sharePct": 1.7,
-          "uniqueEvents": 80,
-          "uniquePlayers": 58,
+          "uniqueEvents": 74,
+          "uniquePlayers": 55,
           "lang": "en"
         }
       ]
@@ -9054,12 +8976,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 54,
-          "sharePct": 0.91,
-          "uniqueEvents": 38,
-          "uniquePlayers": 27,
+          "appearances": 42,
+          "sharePct": 0.78,
+          "uniqueEvents": 33,
+          "uniquePlayers": 22,
           "lang": "en"
         }
       ]
@@ -9167,19 +9089,6 @@
           "deckScore": "B",
           "lang": "en",
           "url": "https://www.metabeys.com/events/1760582276223"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1761089904105",
-          "eventName": "Lets Go Hobby Shop Locals",
-          "date": "2025-10-05",
-          "placement": 5,
-          "topCutSize": 8,
-          "players": 51,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761089904105"
         },
         {
           "source": "metabeys",
@@ -9341,12 +9250,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 24,
-          "sharePct": 0.4,
-          "uniqueEvents": 23,
-          "uniquePlayers": 20,
+          "appearances": 21,
+          "sharePct": 0.39,
+          "uniqueEvents": 20,
+          "uniquePlayers": 18,
           "lang": "en"
         }
       ]
@@ -9910,12 +9819,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 102,
-          "sharePct": 1.7,
-          "uniqueEvents": 83,
-          "uniquePlayers": 62,
+          "appearances": 98,
+          "sharePct": 1.8,
+          "uniqueEvents": 79,
+          "uniquePlayers": 59,
           "lang": "en"
         }
       ]
@@ -11026,12 +10935,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 67,
-          "sharePct": 1.1,
-          "uniqueEvents": 51,
-          "uniquePlayers": 41,
+          "appearances": 63,
+          "sharePct": 1.2,
+          "uniqueEvents": 48,
+          "uniquePlayers": 37,
           "lang": "en"
         }
       ]
@@ -11358,12 +11267,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 26,
-          "sharePct": 0.44,
-          "uniqueEvents": 24,
-          "uniquePlayers": 19,
+          "appearances": 25,
+          "sharePct": 0.46,
+          "uniqueEvents": 23,
+          "uniquePlayers": 18,
           "lang": "en"
         }
       ]
@@ -11747,45 +11656,6 @@
           "deckScore": "D",
           "lang": "en",
           "url": "https://www.metabeys.com/events/1761070269599"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1761089904105",
-          "eventName": "Lets Go Hobby Shop Locals",
-          "date": "2025-10-05",
-          "placement": 3,
-          "topCutSize": 8,
-          "players": 51,
-          "deckScore": "S",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761089904105"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1761089904105",
-          "eventName": "Lets Go Hobby Shop Locals",
-          "date": "2025-10-05",
-          "placement": 6,
-          "topCutSize": 8,
-          "players": 51,
-          "deckScore": "A",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761089904105"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1761070095741",
-          "eventName": "POWER STONE Event",
-          "date": "2025-10-05",
-          "placement": 2,
-          "topCutSize": 3,
-          "players": 48,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761070095741"
         },
         {
           "source": "metabeys",
@@ -12934,12 +12804,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 187,
-          "sharePct": 3.1,
-          "uniqueEvents": 106,
-          "uniquePlayers": 114,
+          "appearances": 176,
+          "sharePct": 3.3,
+          "uniqueEvents": 100,
+          "uniquePlayers": 109,
           "lang": "en"
         }
       ]
@@ -13172,12 +13042,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 26,
+          "appearances": 24,
           "sharePct": 0.44,
-          "uniqueEvents": 22,
-          "uniquePlayers": 21,
+          "uniqueEvents": 20,
+          "uniquePlayers": 19,
           "lang": "en"
         }
       ]
@@ -13940,12 +13810,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 146,
+          "appearances": 134,
           "sharePct": 2.5,
-          "uniqueEvents": 95,
-          "uniquePlayers": 69,
+          "uniqueEvents": 86,
+          "uniquePlayers": 68,
           "lang": "en"
         }
       ]
@@ -14812,10 +14682,10 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
           "appearances": 25,
-          "sharePct": 0.42,
+          "sharePct": 0.46,
           "uniqueEvents": 24,
           "uniquePlayers": 18,
           "lang": "en"
@@ -15879,12 +15749,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 132,
+          "appearances": 120,
           "sharePct": 2.2,
-          "uniqueEvents": 89,
-          "uniquePlayers": 83,
+          "uniqueEvents": 83,
+          "uniquePlayers": 73,
           "lang": "en"
         }
       ]
@@ -16129,19 +15999,6 @@
         {
           "source": "metabeys",
           "tier": "structured",
-          "eventId": "1761070095741",
-          "eventName": "POWER STONE Event",
-          "date": "2025-10-05",
-          "placement": 1,
-          "topCutSize": 3,
-          "players": 48,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761070095741"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
           "eventId": "1771192129970",
           "eventName": "Untouchables Locals (Feb 14th 2026)",
           "date": "2026-02-14",
@@ -16195,10 +16052,10 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
           "appearances": 27,
-          "sharePct": 0.45,
+          "sharePct": 0.5,
           "uniqueEvents": 27,
           "uniquePlayers": 15,
           "lang": "en"
@@ -16423,7 +16280,18 @@
           "url": "https://www.metabeys.com/events/1778096216787"
         }
       ],
-      "usage": []
+      "usage": [
+        {
+          "source": "metabeys-leaderboard",
+          "date": "2026-10-06",
+          "window": "30d",
+          "appearances": 17,
+          "sharePct": 0.31,
+          "uniqueEvents": 16,
+          "uniquePlayers": 15,
+          "lang": "en"
+        }
+      ]
     },
     "hover-wyvern-9-60-jolt": {
       "id": "hover-wyvern-9-60-jolt",
@@ -16570,19 +16438,6 @@
           "deckScore": "C",
           "lang": "en",
           "url": "https://www.metabeys.com/events/1785873030219"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1761089904105",
-          "eventName": "Lets Go Hobby Shop Locals",
-          "date": "2025-10-05",
-          "placement": 7,
-          "topCutSize": 8,
-          "players": 51,
-          "deckScore": "C",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761089904105"
         },
         {
           "source": "metabeys",
@@ -16954,12 +16809,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 38,
-          "sharePct": 0.64,
-          "uniqueEvents": 34,
-          "uniquePlayers": 18,
+          "appearances": 35,
+          "sharePct": 0.65,
+          "uniqueEvents": 31,
+          "uniquePlayers": 17,
           "lang": "en"
         }
       ]
@@ -16989,19 +16844,6 @@
           "deckScore": "B",
           "lang": "en",
           "url": "https://www.metabeys.com/events/1784757878198"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1761089904105",
-          "eventName": "Lets Go Hobby Shop Locals",
-          "date": "2025-10-05",
-          "placement": 1,
-          "topCutSize": 8,
-          "players": 51,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761089904105"
         },
         {
           "source": "metabeys",
@@ -17072,12 +16914,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 48,
-          "sharePct": 0.81,
-          "uniqueEvents": 44,
-          "uniquePlayers": 38,
+          "appearances": 41,
+          "sharePct": 0.76,
+          "uniqueEvents": 37,
+          "uniquePlayers": 32,
           "lang": "en"
         }
       ]
@@ -17146,19 +16988,6 @@
           "deckScore": "B",
           "lang": "en",
           "url": "https://www.metabeys.com/events/1760535606539"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1761070095741",
-          "eventName": "POWER STONE Event",
-          "date": "2025-10-05",
-          "placement": 2,
-          "topCutSize": 3,
-          "players": 48,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761070095741"
         },
         {
           "source": "metabeys",
@@ -17359,12 +17188,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 39,
-          "sharePct": 0.66,
-          "uniqueEvents": 35,
-          "uniquePlayers": 29,
+          "appearances": 30,
+          "sharePct": 0.55,
+          "uniqueEvents": 29,
+          "uniquePlayers": 23,
           "lang": "en"
         }
       ]
@@ -17472,19 +17301,6 @@
           "deckScore": "A",
           "lang": "en",
           "url": "https://www.metabeys.com/events/1759807664287"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1761089904105",
-          "eventName": "Lets Go Hobby Shop Locals",
-          "date": "2025-10-05",
-          "placement": 1,
-          "topCutSize": 8,
-          "players": 51,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761089904105"
         },
         {
           "source": "metabeys",
@@ -17711,12 +17527,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 30,
-          "sharePct": 0.5,
-          "uniqueEvents": 23,
-          "uniquePlayers": 18,
+          "appearances": 29,
+          "sharePct": 0.54,
+          "uniqueEvents": 22,
+          "uniquePlayers": 17,
           "lang": "en"
         }
       ]
@@ -18016,12 +17832,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 23,
-          "sharePct": 0.39,
-          "uniqueEvents": 21,
-          "uniquePlayers": 11,
+          "appearances": 22,
+          "sharePct": 0.41,
+          "uniqueEvents": 20,
+          "uniquePlayers": 10,
           "lang": "en"
         }
       ]
@@ -18119,19 +17935,6 @@
         {
           "source": "metabeys",
           "tier": "structured",
-          "eventId": "1761070095741",
-          "eventName": "POWER STONE Event",
-          "date": "2025-10-05",
-          "placement": 1,
-          "topCutSize": 3,
-          "players": 48,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761070095741"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
           "eventId": "1761595833499",
           "eventName": "Toronto Cup 2025",
           "date": "2025-10-25",
@@ -18210,12 +18013,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 23,
-          "sharePct": 0.39,
-          "uniqueEvents": 20,
-          "uniquePlayers": 16,
+          "appearances": 19,
+          "sharePct": 0.35,
+          "uniqueEvents": 17,
+          "uniquePlayers": 14,
           "lang": "en"
         }
       ]
@@ -18722,12 +18525,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 89,
-          "sharePct": 1.5,
-          "uniqueEvents": 67,
-          "uniquePlayers": 60,
+          "appearances": 84,
+          "sharePct": 1.6,
+          "uniqueEvents": 62,
+          "uniquePlayers": 57,
           "lang": "en"
         }
       ]
@@ -19695,12 +19498,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 34,
-          "sharePct": 0.57,
-          "uniqueEvents": 32,
-          "uniquePlayers": 26,
+          "appearances": 29,
+          "sharePct": 0.54,
+          "uniqueEvents": 27,
+          "uniquePlayers": 21,
           "lang": "en"
         }
       ]
@@ -19787,11 +19590,11 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 22,
-          "sharePct": 0.37,
-          "uniqueEvents": 21,
+          "appearances": 21,
+          "sharePct": 0.39,
+          "uniqueEvents": 20,
           "uniquePlayers": 19,
           "lang": "en"
         }
@@ -19921,12 +19724,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 29,
-          "sharePct": 0.49,
-          "uniqueEvents": 26,
-          "uniquePlayers": 20,
+          "appearances": 25,
+          "sharePct": 0.46,
+          "uniqueEvents": 23,
+          "uniquePlayers": 17,
           "lang": "en"
         }
       ]
@@ -19974,12 +19777,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 22,
+          "appearances": 20,
           "sharePct": 0.37,
-          "uniqueEvents": 20,
-          "uniquePlayers": 16,
+          "uniqueEvents": 18,
+          "uniquePlayers": 15,
           "lang": "en"
         }
       ]
@@ -20051,32 +19854,6 @@
           "deckScore": "B",
           "lang": "en",
           "url": "https://www.metabeys.com/events/1761071546128"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1761089904105",
-          "eventName": "Lets Go Hobby Shop Locals",
-          "date": "2025-10-05",
-          "placement": 4,
-          "topCutSize": 8,
-          "players": 51,
-          "deckScore": "B",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761089904105"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1761089904105",
-          "eventName": "Lets Go Hobby Shop Locals",
-          "date": "2025-10-05",
-          "placement": 6,
-          "topCutSize": 8,
-          "players": 51,
-          "deckScore": "A",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761089904105"
         },
         {
           "source": "metabeys",
@@ -20225,12 +20002,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 71,
-          "sharePct": 1.2,
-          "uniqueEvents": 57,
-          "uniquePlayers": 50,
+          "appearances": 70,
+          "sharePct": 1.3,
+          "uniqueEvents": 56,
+          "uniquePlayers": 49,
           "lang": "en"
         }
       ]
@@ -20782,12 +20559,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 24,
-          "sharePct": 0.4,
-          "uniqueEvents": 23,
-          "uniquePlayers": 19,
+          "appearances": 21,
+          "sharePct": 0.39,
+          "uniqueEvents": 20,
+          "uniquePlayers": 16,
           "lang": "en"
         }
       ]
@@ -20994,10 +20771,10 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
           "appearances": 26,
-          "sharePct": 0.44,
+          "sharePct": 0.48,
           "uniqueEvents": 24,
           "uniquePlayers": 19,
           "lang": "en"
@@ -21469,12 +21246,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 48,
-          "sharePct": 0.81,
-          "uniqueEvents": 41,
-          "uniquePlayers": 35,
+          "appearances": 43,
+          "sharePct": 0.8,
+          "uniqueEvents": 37,
+          "uniquePlayers": 31,
           "lang": "en"
         }
       ]
@@ -21830,12 +21607,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 21,
-          "sharePct": 0.35,
-          "uniqueEvents": 21,
-          "uniquePlayers": 14,
+          "appearances": 20,
+          "sharePct": 0.37,
+          "uniqueEvents": 20,
+          "uniquePlayers": 13,
           "lang": "en"
         }
       ]
@@ -22171,12 +21948,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 57,
-          "sharePct": 0.96,
-          "uniqueEvents": 45,
-          "uniquePlayers": 42,
+          "appearances": 49,
+          "sharePct": 0.91,
+          "uniqueEvents": 40,
+          "uniquePlayers": 39,
           "lang": "en"
         }
       ]
@@ -22206,19 +21983,6 @@
           "deckScore": "B",
           "lang": "en",
           "url": "https://www.metabeys.com/events/1761071546128"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1761070095741",
-          "eventName": "POWER STONE Event",
-          "date": "2025-10-05",
-          "placement": 2,
-          "topCutSize": 3,
-          "players": 48,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761070095741"
         },
         {
           "source": "metabeys",
@@ -22263,11 +22027,11 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 24,
-          "sharePct": 0.4,
-          "uniqueEvents": 24,
+          "appearances": 23,
+          "sharePct": 0.43,
+          "uniqueEvents": 23,
           "uniquePlayers": 11,
           "lang": "en"
         }
@@ -22674,19 +22438,6 @@
         {
           "source": "metabeys",
           "tier": "structured",
-          "eventId": "1761089904105",
-          "eventName": "Lets Go Hobby Shop Locals",
-          "date": "2025-10-05",
-          "placement": 5,
-          "topCutSize": 8,
-          "players": 51,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761089904105"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
           "eventId": "1765912033209",
           "eventName": "New Realm Games League Week 8",
           "date": "2025-12-12",
@@ -22970,12 +22721,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 61,
-          "sharePct": 1,
-          "uniqueEvents": 54,
-          "uniquePlayers": 42,
+          "appearances": 53,
+          "sharePct": 0.98,
+          "uniqueEvents": 47,
+          "uniquePlayers": 37,
           "lang": "en"
         }
       ]
@@ -24396,12 +24147,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 39,
-          "sharePct": 0.66,
-          "uniqueEvents": 35,
-          "uniquePlayers": 24,
+          "appearances": 36,
+          "sharePct": 0.67,
+          "uniqueEvents": 32,
+          "uniquePlayers": 21,
           "lang": "en"
         }
       ]
@@ -24830,19 +24581,6 @@
         {
           "source": "metabeys",
           "tier": "structured",
-          "eventId": "1761089904105",
-          "eventName": "Lets Go Hobby Shop Locals",
-          "date": "2025-10-05",
-          "placement": 5,
-          "topCutSize": 8,
-          "players": 51,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761089904105"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
           "eventId": "1765914049150",
           "eventName": "LGHS Ranked",
           "date": "2025-11-16",
@@ -24948,12 +24686,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 29,
-          "sharePct": 0.49,
-          "uniqueEvents": 26,
-          "uniquePlayers": 27,
+          "appearances": 28,
+          "sharePct": 0.52,
+          "uniqueEvents": 25,
+          "uniquePlayers": 26,
           "lang": "en"
         }
       ]
@@ -25212,19 +24950,6 @@
           "deckScore": "D",
           "lang": "en",
           "url": "https://www.metabeys.com/events/1760558253065"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1761089904105",
-          "eventName": "Lets Go Hobby Shop Locals",
-          "date": "2025-10-05",
-          "placement": 4,
-          "topCutSize": 8,
-          "players": 51,
-          "deckScore": "B",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761089904105"
         },
         {
           "source": "metabeys",
@@ -25786,12 +25511,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 22,
-          "sharePct": 0.37,
-          "uniqueEvents": 22,
-          "uniquePlayers": 15,
+          "appearances": 18,
+          "sharePct": 0.33,
+          "uniqueEvents": 18,
+          "uniquePlayers": 14,
           "lang": "en"
         }
       ]
@@ -26667,12 +26392,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 73,
+          "appearances": 66,
           "sharePct": 1.2,
-          "uniqueEvents": 56,
-          "uniquePlayers": 37,
+          "uniqueEvents": 49,
+          "uniquePlayers": 35,
           "lang": "en"
         }
       ]
@@ -26798,18 +26523,7 @@
           "url": "https://www.metabeys.com/events/1761060643913"
         }
       ],
-      "usage": [
-        {
-          "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
-          "window": "30d",
-          "appearances": 21,
-          "sharePct": 0.35,
-          "uniqueEvents": 19,
-          "uniquePlayers": 10,
-          "lang": "en"
-        }
-      ]
+      "usage": []
     },
     "tyranno-roar-5-60-rush": {
       "id": "tyranno-roar-5-60-rush",
@@ -27269,32 +26983,6 @@
         {
           "source": "metabeys",
           "tier": "structured",
-          "eventId": "1761089904105",
-          "eventName": "Lets Go Hobby Shop Locals",
-          "date": "2025-10-05",
-          "placement": 7,
-          "topCutSize": 8,
-          "players": 51,
-          "deckScore": "C",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761089904105"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1761089904105",
-          "eventName": "Lets Go Hobby Shop Locals",
-          "date": "2025-10-05",
-          "placement": 8,
-          "topCutSize": 8,
-          "players": 51,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761089904105"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
           "eventId": "1762786814737",
           "eventName": "New Realm Games League Week 3",
           "date": "2025-11-07",
@@ -27361,12 +27049,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 70,
-          "sharePct": 1.2,
-          "uniqueEvents": 57,
-          "uniquePlayers": 46,
+          "appearances": 57,
+          "sharePct": 1.1,
+          "uniqueEvents": 48,
+          "uniquePlayers": 35,
           "lang": "en"
         }
       ]
@@ -27396,19 +27084,6 @@
           "deckScore": "B",
           "lang": "en",
           "url": "https://www.metabeys.com/events/1760582276223"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1761070095741",
-          "eventName": "POWER STONE Event",
-          "date": "2025-10-05",
-          "placement": 2,
-          "topCutSize": 3,
-          "players": 48,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761070095741"
         },
         {
           "source": "metabeys",
@@ -27518,12 +27193,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 68,
+          "appearances": 58,
           "sharePct": 1.1,
-          "uniqueEvents": 53,
-          "uniquePlayers": 54,
+          "uniqueEvents": 45,
+          "uniquePlayers": 46,
           "lang": "en"
         }
       ]
@@ -28098,12 +27773,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 24,
-          "sharePct": 0.4,
-          "uniqueEvents": 20,
-          "uniquePlayers": 19,
+          "appearances": 21,
+          "sharePct": 0.39,
+          "uniqueEvents": 17,
+          "uniquePlayers": 17,
           "lang": "en"
         }
       ]
@@ -28755,399 +28430,15 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 26,
-          "sharePct": 0.44,
-          "uniqueEvents": 20,
-          "uniquePlayers": 15,
+          "appearances": 22,
+          "sharePct": 0.41,
+          "uniqueEvents": 18,
+          "uniquePlayers": 14,
           "lang": "en"
         }
       ]
-    },
-    "pegasus-blast-slash-1-60-rush": {
-      "id": "pegasus-blast-slash-1-60-rush",
-      "line": "cx",
-      "blade": null,
-      "ratchet": "1-60",
-      "bit": "rush",
-      "lockChip": "pegasus",
-      "mainBlade": "blast",
-      "assistBlade": "slash",
-      "overBlade": null,
-      "displayName": "Pegasus Blast S 1-60 Rush",
-      "type": "attack",
-      "placements": [
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1761089904105",
-          "eventName": "Lets Go Hobby Shop Locals",
-          "date": "2025-10-05",
-          "placement": 1,
-          "topCutSize": 8,
-          "players": 51,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761089904105"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1765914049150",
-          "eventName": "LGHS Ranked",
-          "date": "2025-11-16",
-          "placement": 2,
-          "topCutSize": 16,
-          "players": 65,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1765914049150"
-        }
-      ],
-      "usage": []
-    },
-    "pegasus-blast-bumper-3-60-low-rush": {
-      "id": "pegasus-blast-bumper-3-60-low-rush",
-      "line": "cx",
-      "blade": null,
-      "ratchet": "3-60",
-      "bit": "low-rush",
-      "lockChip": "pegasus",
-      "mainBlade": "blast",
-      "assistBlade": "bumper",
-      "overBlade": null,
-      "displayName": "Pegasus Blast B 3-60 Low Rush",
-      "type": "attack",
-      "placements": [
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1761089904105",
-          "eventName": "Lets Go Hobby Shop Locals",
-          "date": "2025-10-05",
-          "placement": 2,
-          "topCutSize": 8,
-          "players": 51,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761089904105"
-        }
-      ],
-      "usage": []
-    },
-    "tricera-press-1-60-hexa": {
-      "id": "tricera-press-1-60-hexa",
-      "line": "bx",
-      "blade": "tricera-press",
-      "ratchet": "1-60",
-      "bit": "hexa",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Tricera Press 1-60 Hexa",
-      "type": "defense",
-      "placements": [
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1761089904105",
-          "eventName": "Lets Go Hobby Shop Locals",
-          "date": "2025-10-05",
-          "placement": 2,
-          "topCutSize": 8,
-          "players": 51,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761089904105"
-        }
-      ],
-      "usage": []
-    },
-    "samurai-saber-9-60-low-orb": {
-      "id": "samurai-saber-9-60-low-orb",
-      "line": "bx",
-      "blade": "samurai-saber",
-      "ratchet": "9-60",
-      "bit": "low-orb",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Samurai Saber 9-60 Low Orb",
-      "type": "attack",
-      "placements": [
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1761089904105",
-          "eventName": "Lets Go Hobby Shop Locals",
-          "date": "2025-10-05",
-          "placement": 2,
-          "topCutSize": 8,
-          "players": 51,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761089904105"
-        }
-      ],
-      "usage": []
-    },
-    "aero-pegasus-3-60-low-rush": {
-      "id": "aero-pegasus-3-60-low-rush",
-      "line": "bx",
-      "blade": "aero-pegasus",
-      "ratchet": "3-60",
-      "bit": "low-rush",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Aero Pegasus 3-60 Low Rush",
-      "type": "attack",
-      "placements": [
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1761089904105",
-          "eventName": "Lets Go Hobby Shop Locals",
-          "date": "2025-10-05",
-          "placement": 7,
-          "topCutSize": 8,
-          "players": 51,
-          "deckScore": "C",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761089904105"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1776127549442",
-          "eventName": "G3 AN Qualifier",
-          "date": "2026-04-12",
-          "placement": 4,
-          "topCutSize": 4,
-          "players": 55,
-          "deckScore": "C",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1776127549442"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1775882913966",
-          "eventName": "Korekuta Games (FIRST!) Locals",
-          "date": "2026-04-08",
-          "placement": 4,
-          "topCutSize": 8,
-          "players": 0,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1775882913966"
-        }
-      ],
-      "usage": []
-    },
-    "impact-drake-1-70-kick": {
-      "id": "impact-drake-1-70-kick",
-      "line": "bx",
-      "blade": "impact-drake",
-      "ratchet": "1-70",
-      "bit": "kick",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Impact Drake 1-70 Kick",
-      "type": "attack",
-      "placements": [
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1761089904105",
-          "eventName": "Lets Go Hobby Shop Locals",
-          "date": "2025-10-05",
-          "placement": 8,
-          "topCutSize": 8,
-          "players": 51,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761089904105"
-        }
-      ],
-      "usage": []
-    },
-    "golem-rock-6-60-low-rush": {
-      "id": "golem-rock-6-60-low-rush",
-      "line": "bx",
-      "blade": "golem-rock",
-      "ratchet": "6-60",
-      "bit": "low-rush",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Golem Rock 6-60 Low Rush",
-      "type": "defense",
-      "placements": [
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1761089904105",
-          "eventName": "Lets Go Hobby Shop Locals",
-          "date": "2025-10-05",
-          "placement": 8,
-          "topCutSize": 8,
-          "players": 51,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761089904105"
-        }
-      ],
-      "usage": []
-    },
-    "silver-wolf-9-70-low-orb": {
-      "id": "silver-wolf-9-70-low-orb",
-      "line": "bx",
-      "blade": "silver-wolf",
-      "ratchet": "9-70",
-      "bit": "low-orb",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Silver Wolf 9-70 Low Orb",
-      "type": "stamina",
-      "placements": [
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1761070095741",
-          "eventName": "POWER STONE Event",
-          "date": "2025-10-05",
-          "placement": 1,
-          "topCutSize": 3,
-          "players": 48,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761070095741"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1765914049150",
-          "eventName": "LGHS Ranked",
-          "date": "2025-11-16",
-          "placement": 3,
-          "topCutSize": 16,
-          "players": 65,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1765914049150"
-        }
-      ],
-      "usage": []
-    },
-    "phoenix-wing-3-60-kick": {
-      "id": "phoenix-wing-3-60-kick",
-      "line": "bx",
-      "blade": "phoenix-wing",
-      "ratchet": "3-60",
-      "bit": "kick",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Phoenix Wing 3-60 Kick",
-      "type": "attack",
-      "placements": [
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1761070095741",
-          "eventName": "POWER STONE Event",
-          "date": "2025-10-05",
-          "placement": 2,
-          "topCutSize": 3,
-          "players": 48,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761070095741"
-        }
-      ],
-      "usage": []
-    },
-    "silver-wolf-9-60-under-needle": {
-      "id": "silver-wolf-9-60-under-needle",
-      "line": "bx",
-      "blade": "silver-wolf",
-      "ratchet": "9-60",
-      "bit": "under-needle",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Silver Wolf 9-60 Under Needle",
-      "type": "stamina",
-      "placements": [
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1761070095741",
-          "eventName": "POWER STONE Event",
-          "date": "2025-10-05",
-          "placement": 3,
-          "topCutSize": 3,
-          "players": 48,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761070095741"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1781128494701",
-          "eventName": "Jester's Gallery Round Robin",
-          "date": "2026-05-27",
-          "placement": 2,
-          "topCutSize": 3,
-          "players": 12,
-          "deckScore": "C",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1781128494701"
-        }
-      ],
-      "usage": []
-    },
-    "hover-wyvern-5-60-kick": {
-      "id": "hover-wyvern-5-60-kick",
-      "line": "bx",
-      "blade": "hover-wyvern",
-      "ratchet": "5-60",
-      "bit": "kick",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Wyvern Hover 5-60 Kick",
-      "type": "defense",
-      "placements": [
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1761070095741",
-          "eventName": "POWER STONE Event",
-          "date": "2025-10-05",
-          "placement": 3,
-          "topCutSize": 3,
-          "players": 48,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761070095741"
-        }
-      ],
-      "usage": []
     },
     "dran-strike-6-60-point": {
       "id": "dran-strike-6-60-point",
@@ -30819,18 +30110,7 @@
           "url": "https://www.metabeys.com/events/1765914657782"
         }
       ],
-      "usage": [
-        {
-          "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
-          "window": "30d",
-          "appearances": 21,
-          "sharePct": 0.35,
-          "uniqueEvents": 20,
-          "uniquePlayers": 16,
-          "lang": "en"
-        }
-      ]
+      "usage": []
     },
     "pegasus-blast-jaggy-4-50-low-rush": {
       "id": "pegasus-blast-jaggy-4-50-low-rush",
@@ -31000,6 +30280,35 @@
       ],
       "usage": []
     },
+    "pegasus-blast-slash-1-60-rush": {
+      "id": "pegasus-blast-slash-1-60-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "1-60",
+      "bit": "rush",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "slash",
+      "overBlade": null,
+      "displayName": "Pegasus Blast S 1-60 Rush",
+      "type": "attack",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1765914049150",
+          "eventName": "LGHS Ranked",
+          "date": "2025-11-16",
+          "placement": 2,
+          "topCutSize": 16,
+          "players": 65,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1765914049150"
+        }
+      ],
+      "usage": []
+    },
     "shark-scale-9-70-low-rush": {
       "id": "shark-scale-9-70-low-rush",
       "line": "bx",
@@ -31064,6 +30373,35 @@
           "deckScore": "D",
           "lang": "en",
           "url": "https://www.metabeys.com/events/1773081328148"
+        }
+      ],
+      "usage": []
+    },
+    "silver-wolf-9-70-low-orb": {
+      "id": "silver-wolf-9-70-low-orb",
+      "line": "bx",
+      "blade": "silver-wolf",
+      "ratchet": "9-70",
+      "bit": "low-orb",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Silver Wolf 9-70 Low Orb",
+      "type": "stamina",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1765914049150",
+          "eventName": "LGHS Ranked",
+          "date": "2025-11-16",
+          "placement": 3,
+          "topCutSize": 16,
+          "players": 65,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1765914049150"
         }
       ],
       "usage": []
@@ -31476,12 +30814,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 23,
-          "sharePct": 0.39,
-          "uniqueEvents": 22,
-          "uniquePlayers": 13,
+          "appearances": 18,
+          "sharePct": 0.33,
+          "uniqueEvents": 17,
+          "uniquePlayers": 11,
           "lang": "en"
         }
       ]
@@ -33977,7 +33315,18 @@
           "url": "https://www.metabeys.com/events/1762180886595"
         }
       ],
-      "usage": []
+      "usage": [
+        {
+          "source": "metabeys-leaderboard",
+          "date": "2026-10-06",
+          "window": "30d",
+          "appearances": 19,
+          "sharePct": 0.35,
+          "uniqueEvents": 17,
+          "uniquePlayers": 13,
+          "lang": "en"
+        }
+      ]
     },
     "shark-scale-1-80-level": {
       "id": "shark-scale-1-80-level",
@@ -34649,12 +33998,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 21,
-          "sharePct": 0.35,
-          "uniqueEvents": 19,
-          "uniquePlayers": 12,
+          "appearances": 18,
+          "sharePct": 0.33,
+          "uniqueEvents": 17,
+          "uniquePlayers": 11,
           "lang": "en"
         }
       ]
@@ -39709,6 +39058,48 @@
       ],
       "usage": []
     },
+    "aero-pegasus-3-60-low-rush": {
+      "id": "aero-pegasus-3-60-low-rush",
+      "line": "bx",
+      "blade": "aero-pegasus",
+      "ratchet": "3-60",
+      "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Aero Pegasus 3-60 Low Rush",
+      "type": "attack",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1776127549442",
+          "eventName": "G3 AN Qualifier",
+          "date": "2026-04-12",
+          "placement": 4,
+          "topCutSize": 4,
+          "players": 55,
+          "deckScore": "C",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1776127549442"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1775882913966",
+          "eventName": "Korekuta Games (FIRST!) Locals",
+          "date": "2026-04-08",
+          "placement": 4,
+          "topCutSize": 8,
+          "players": 0,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1775882913966"
+        }
+      ],
+      "usage": []
+    },
     "valkyrie-blitz-heavy-1-50-low-rush": {
       "id": "valkyrie-blitz-heavy-1-50-low-rush",
       "line": "cx",
@@ -41243,6 +40634,35 @@
       ],
       "usage": []
     },
+    "silver-wolf-9-60-under-needle": {
+      "id": "silver-wolf-9-60-under-needle",
+      "line": "bx",
+      "blade": "silver-wolf",
+      "ratchet": "9-60",
+      "bit": "under-needle",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Silver Wolf 9-60 Under Needle",
+      "type": "stamina",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1781128494701",
+          "eventName": "Jester's Gallery Round Robin",
+          "date": "2026-05-27",
+          "placement": 2,
+          "topCutSize": 3,
+          "players": 12,
+          "deckScore": "C",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1781128494701"
+        }
+      ],
+      "usage": []
+    },
     "phoenix-wing-3-60-wedge": {
       "id": "phoenix-wing-3-60-wedge",
       "line": "bx",
@@ -41578,11 +40998,11 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "window": "30d",
-          "appearances": 20,
-          "sharePct": 0.34,
-          "uniqueEvents": 15,
+          "appearances": 19,
+          "sharePct": 0.35,
+          "uniqueEvents": 14,
           "uniquePlayers": 15,
           "lang": "en"
         }
@@ -42347,9 +41767,9 @@
     }
   ],
   "stats": {
-    "events": 127,
-    "combosResolved": 583,
-    "placements": 2441,
+    "events": 125,
+    "combosResolved": 576,
+    "placements": 2405,
     "usageRows": 50,
     "unresolved": 151
   }
