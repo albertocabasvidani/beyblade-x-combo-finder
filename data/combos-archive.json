@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-06T02:01:54.019Z",
+  "lastUpdated": "2026-10-07T02:02:19.183Z",
   "combos": [
     {
       "id": "aero-pegasus-1-70-low-flat",
@@ -10130,6 +10130,50 @@
       "archivedDate": "2026-09-21"
     },
     {
+      "id": "pegasus-blast-slash-9-70-level",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-70",
+      "bit": "level",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "slash",
+      "overBlade": null,
+      "displayName": "Pegasus Blast S 9-70 Level",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Oct. 06, 2025  10:10 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-06"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-10-07",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-07"
+    },
+    {
       "id": "pegasus-blast-turn-3-60-hexa",
       "line": "cx",
       "blade": null,
@@ -12781,6 +12825,50 @@
       "archivedDate": "2026-09-12"
     },
     {
+      "id": "rhino-blast-wheel-9-70-taper",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-70",
+      "bit": "taper",
+      "lockChip": "rhino",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Rhino Blast W 9-70 Taper",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Oct. 06, 2025  2:44 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-06"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-10-07",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-07"
+    },
+    {
       "id": "rhino-brave-jaggy-5-60-rush",
       "line": "cx",
       "blade": null,
@@ -14350,6 +14438,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-28"
+    },
+    {
+      "id": "shark-scale-1-80-high-taper",
+      "line": "bx",
+      "blade": "shark-scale",
+      "ratchet": "1-80",
+      "bit": "high-taper",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Shark Scale 1-80 High Taper",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Cardboard Classics Locals (October 6th 2025)",
+          "url": "https://www.metabeys.com/events/1759807664287",
+          "weight": 1,
+          "date": "2025-10-06"
+        }
+      ],
+      "dateAdded": "2026-06-21",
+      "dateUpdated": "2026-10-07",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-07"
     },
     {
       "id": "shark-scale-3-60-high-taper",
