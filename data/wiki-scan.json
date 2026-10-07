@@ -2,24 +2,24 @@
   "version": 1,
   "lists": {
     "List of Beyblade X products (Takara Tomy)": {
-      "revid": 650346,
-      "timestamp": "2026-10-02T21:28:58.000Z",
-      "lastScannedDate": "2026-10-06"
+      "revid": 650558,
+      "timestamp": "2026-10-06T05:39:13.000Z",
+      "lastScannedDate": "2026-10-07"
     },
     "List of Beyblade X products (Hasbro)": {
       "revid": 648918,
       "timestamp": "2026-09-14T01:43:54.000Z",
-      "lastScannedDate": "2026-10-06"
+      "lastScannedDate": "2026-10-07"
     }
   },
   "pages": {
     "List of Beyblade X products (Takara Tomy)": {
-      "revid": 650346,
-      "timestamp": "2026-10-02T21:28:58.000Z",
-      "lastScannedDate": "2026-10-03",
+      "revid": 650558,
+      "timestamp": "2026-10-06T05:39:13.000Z",
+      "lastScannedDate": "2026-10-07",
       "kind": "product",
       "kindSource": "ai",
-      "notes": "lista, nessuna parte propria"
+      "notes": "pagina-lista"
     },
     "List of Beyblade X products (Hasbro)": {
       "revid": 648918,
@@ -41,15 +41,15 @@
       "notes": "Version 2.0 content added; blade/ratchet/bit gia' in master"
     },
     "HeavensRing 0-80DS": {
-      "revid": 649735,
-      "timestamp": "2026-09-20T21:56:20.000Z",
-      "lastScannedDate": "2026-09-21",
+      "revid": 650594,
+      "timestamp": "2026-10-07T00:21:17.000Z",
+      "lastScannedDate": "2026-10-07",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Ring Aether 0-80DS"
       ],
-      "notes": "gia' registrato (heavens-ring); edit minore pagina"
+      "notes": "parti gia nel master"
     },
     "TriceraPress M-85BS": {
       "revid": 649713,
@@ -277,15 +277,15 @@
       "notes": "aggiunta localizzazione Hasbro (Blitz Bahamut, G4572); tutte le 6 parti CX Expand gia' nel master"
     },
     "RagnaRage FE4-55Y": {
-      "revid": 650412,
-      "timestamp": "2026-10-04T10:28:10.000Z",
-      "lastScannedDate": "2026-10-06",
+      "revid": 650593,
+      "timestamp": "2026-10-07T00:17:56.000Z",
+      "lastScannedDate": "2026-10-07",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Rage Ragna FE 4-55Y"
       ],
-      "notes": "Revid cambiato, verificato: nessun nuovo componente (solo modifiche testuali/gallery/date release)."
+      "notes": "parti gia nel master"
     },
     "Over Blade - Flow": {
       "revid": 645289,
@@ -1072,15 +1072,15 @@
       "kindSource": "heuristic"
     },
     "BrachioWhip OW5-70Nr": {
-      "revid": 650482,
-      "timestamp": "2026-10-05T13:37:10.000Z",
-      "lastScannedDate": "2026-10-06",
+      "revid": 650559,
+      "timestamp": "2026-10-06T06:21:51.000Z",
+      "lastScannedDate": "2026-10-07",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Whip Brachio OW 5-70Nr"
       ],
-      "notes": "parti gia' nel master, solo metadati"
+      "notes": "parti gia nel master"
     },
     "Random Booster Vol. 7": {
       "revid": 636788,
@@ -1139,14 +1139,15 @@
       "kindSource": "heuristic"
     },
     "KnightFortress GV8-70UN": {
-      "revid": 650414,
-      "timestamp": "2026-10-04T10:31:45.000Z",
-      "lastScannedDate": "2026-10-06",
+      "revid": 650575,
+      "timestamp": "2026-10-06T12:26:17.000Z",
+      "lastScannedDate": "2026-10-07",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Armor Knight GV 8-70UN"
-      ]
+      ],
+      "notes": "parti gia nel master"
     },
     "LeonFang T4-60A": {
       "revid": 624993,
@@ -1481,9 +1482,9 @@
       "kindSource": "heuristic"
     },
     "GloryValkyrie LF": {
-      "revid": 650371,
-      "timestamp": "2026-10-03T21:02:44.000Z",
-      "lastScannedDate": "2026-10-04",
+      "revid": 650601,
+      "timestamp": "2026-10-07T00:28:48.000Z",
+      "lastScannedDate": "2026-10-07",
       "kind": "product",
       "kindSource": "ai",
       "redirects": [
@@ -3030,18 +3031,74 @@
     "Blade - SiegSuperion": {
       "revid": 650337,
       "timestamp": "2026-10-02T21:23:29.000Z",
-      "lastScannedDate": "2026-10-06",
+      "lastScannedDate": "2026-10-07",
       "kind": "part",
-      "kindSource": "heuristic",
-      "notes": "gia nel master (suppress-superion)"
+      "kindSource": "ai",
+      "notes": "gia nel master come suppress-superion"
     },
     "SiegSuperion 0-70LP": {
       "revid": 650333,
       "timestamp": "2026-10-02T21:19:02.000Z",
-      "lastScannedDate": "2026-10-06",
+      "lastScannedDate": "2026-10-07",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
+      "notes": "parti gia nel master"
+    },
+    "Bey Kick Off Set": {
+      "revid": 599877,
+      "timestamp": "2025-02-19T17:14:07.000Z",
+      "lastScannedDate": "2026-10-07",
+      "kind": "set",
+      "kindSource": "ai",
+      "notes": "set con HellsHammer 3-70H, nessuna parte nuova"
+    },
+    "Assist Blade - Jaggy": {
+      "revid": 650550,
+      "timestamp": "2026-10-06T04:18:59.000Z",
+      "lastScannedDate": "2026-10-07",
+      "kind": "part",
+      "kindSource": "ai",
       "notes": "gia nel master"
+    },
+    "WyvernHover 2-80GN": {
+      "revid": 633919,
+      "timestamp": "2026-03-28T08:49:43.000Z",
+      "lastScannedDate": "2026-10-07",
+      "kind": "product",
+      "kindSource": "ai",
+      "notes": "recolor lottery"
+    },
+    "Bit - Vortex": {
+      "revid": 633222,
+      "timestamp": "2026-03-21T05:05:42.000Z",
+      "lastScannedDate": "2026-10-07",
+      "kind": "part",
+      "kindSource": "ai",
+      "notes": "gia nel master"
+    },
+    "SharkEdge 2-60GP": {
+      "revid": 629251,
+      "timestamp": "2026-02-22T08:15:50.000Z",
+      "lastScannedDate": "2026-10-07",
+      "kind": "product",
+      "kindSource": "ai",
+      "notes": "recolor"
+    },
+    "WhaleWave 1-80GF": {
+      "revid": 649756,
+      "timestamp": "2026-09-21T06:55:04.000Z",
+      "lastScannedDate": "2026-10-07",
+      "kind": "product",
+      "kindSource": "ai",
+      "notes": "recolor"
+    },
+    "DranArc S2-70K": {
+      "revid": 612189,
+      "timestamp": "2025-07-23T05:20:09.000Z",
+      "lastScannedDate": "2026-10-07",
+      "kind": "product",
+      "kindSource": "ai",
+      "notes": "parti gia nel master"
     }
   }
 }
