@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-07T02:02:19.183Z",
+  "lastUpdated": "2026-10-08T02:02:00.558Z",
   "combos": [
     {
       "id": "aero-pegasus-1-70-low-flat",
@@ -5730,6 +5730,56 @@
       "archivedDate": "2026-09-12"
     },
     {
+      "id": "hells-reaper-jaggy-5-60-unite",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "5-60",
+      "bit": "unite",
+      "lockChip": "hells",
+      "mainBlade": "reaper",
+      "assistBlade": "jaggy",
+      "overBlade": null,
+      "displayName": "Hells Reaper J 5-60 Unite",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Sep. 19, 2025  6:29 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-19"
+        },
+        {
+          "name": "WBO — Oct. 07, 2025  10:49 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-07"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-10-08",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-08"
+    },
+    {
       "id": "hells-reaper-round-5-60-unite",
       "line": "cx",
       "blade": null,
@@ -8017,6 +8067,50 @@
       },
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-06-17"
+    },
+    {
+      "id": "lightning-l-drago-upper-type-7-60-low-flat",
+      "line": "bx",
+      "blade": "lightning-l-drago-upper-type",
+      "ratchet": "7-60",
+      "bit": "low-flat",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Lightning L-Drago (Upper Type) 7-60 Low Flat",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — 2hah5973",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-07"
+        }
+      ],
+      "dateAdded": "2026-09-18",
+      "dateUpdated": "2026-10-08",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-08"
     },
     {
       "id": "optimus-primal-3-80-under-needle",
@@ -10607,6 +10701,56 @@
       "archivedDate": "2026-09-12"
     },
     {
+      "id": "pegasus-blast-wheel-3-60-rubber-accel",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "3-60",
+      "bit": "rubber-accel",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Pegasus Blast W 3-60 Rubber Accel",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Sep. 07, 2025  1:53 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-07"
+        },
+        {
+          "name": "WBO — Oct. 07, 2025  9:53 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-07"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-10-08",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-08"
+    },
+    {
       "id": "pegasus-blast-wheel-3-60-unite",
       "line": "cx",
       "blade": null,
@@ -11294,6 +11438,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 365d)",
       "archivedDate": "2026-10-04"
+    },
+    {
+      "id": "pegasus-flame-jaggy-9-60-low-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "low-rush",
+      "lockChip": "pegasus",
+      "mainBlade": "flame",
+      "assistBlade": "jaggy",
+      "overBlade": null,
+      "displayName": "Pegasus Flame J 9-60 Low Rush",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Oct. 07, 2025  10:49 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-07"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-10-08",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-08"
     },
     {
       "id": "pegasus-volt-jaggy-7-60-level",
@@ -19197,6 +19385,50 @@
       },
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-07-21"
+    },
+    {
+      "id": "wizard-fort-jaggy-3-60-hexa",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "3-60",
+      "bit": "hexa",
+      "lockChip": "wizard",
+      "mainBlade": "fort",
+      "assistBlade": "jaggy",
+      "overBlade": null,
+      "displayName": "Wizard Fort J 3-60 Hexa",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Oct. 07, 2025  10:49 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-07"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-10-08",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-08"
     },
     {
       "id": "wizard-rod-1-60-bound-spike",
