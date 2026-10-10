@@ -4,12 +4,12 @@
     "List of Beyblade X products (Takara Tomy)": {
       "revid": 650558,
       "timestamp": "2026-10-06T05:39:13.000Z",
-      "lastScannedDate": "2026-10-09"
+      "lastScannedDate": "2026-10-10"
     },
     "List of Beyblade X products (Hasbro)": {
       "revid": 648918,
       "timestamp": "2026-09-14T01:43:54.000Z",
-      "lastScannedDate": "2026-10-09"
+      "lastScannedDate": "2026-10-10"
     }
   },
   "pages": {
@@ -30,15 +30,15 @@
       "notes": "pagina lista: aggiunta riga NFL CX Top Pack, nessuna parte da estrarre da qui"
     },
     "DranSword 3-60F": {
-      "revid": 649939,
-      "timestamp": "2026-09-25T10:54:21.000Z",
-      "lastScannedDate": "2026-09-26",
+      "revid": 650772,
+      "timestamp": "2026-10-09T11:41:43.000Z",
+      "lastScannedDate": "2026-10-10",
       "kind": "product",
       "kindSource": "ai",
       "redirects": [
         "Sword Dran 3-60F"
       ],
-      "notes": "Version 2.0 content added; blade/ratchet/bit gia' in master"
+      "notes": "revisione V2.0, parti gia nel master"
     },
     "HeavensRing 0-80DS": {
       "revid": 650635,
@@ -346,12 +346,12 @@
       "notes": "Revid cambiato, verificato: nessun nuovo componente (solo modifiche testuali/gallery)."
     },
     "PegasusBlast ATr": {
-      "revid": 649715,
-      "timestamp": "2026-09-20T21:46:46.000Z",
-      "lastScannedDate": "2026-09-21",
+      "revid": 650831,
+      "timestamp": "2026-10-09T22:12:39.000Z",
+      "lastScannedDate": "2026-10-10",
       "kind": "product",
-      "kindSource": "heuristic",
-      "notes": "Solo refuso hyphen in Ratchet-Integrated Bit, nessun dato struttura cambiato."
+      "kindSource": "ai",
+      "notes": "gia nel master"
     },
     "EmperorMight HOp": {
       "revid": 649731,
@@ -691,14 +691,15 @@
       "notes": "solo trivia/gallery aggiornate, parti gia' in master"
     },
     "HellsScythe 4-60T": {
-      "revid": 650082,
-      "timestamp": "2026-09-29T00:35:43.000Z",
-      "lastScannedDate": "2026-09-29",
+      "revid": 650874,
+      "timestamp": "2026-10-09T23:15:53.000Z",
+      "lastScannedDate": "2026-10-10",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Scythe Incendio 4-60T"
-      ]
+      ],
+      "notes": "gia nel master"
     },
     "Ratchet-Integrated Blade - HellsNether": {
       "revid": 646461,
@@ -739,15 +740,15 @@
       "kindSource": "heuristic"
     },
     "KnightShield 3-80N": {
-      "revid": 650036,
-      "timestamp": "2026-09-26T20:26:07.000Z",
-      "lastScannedDate": "2026-09-27",
+      "revid": 650773,
+      "timestamp": "2026-10-09T11:42:02.000Z",
+      "lastScannedDate": "2026-10-10",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Helm Knight 3-80N"
       ],
-      "notes": "Version 2.0 content added; blade/ratchet/bit gia' in master"
+      "notes": "gia nel master"
     },
     "Blade - Lightning L-Drago (Rapid-Hit Type)": {
       "revid": 632018,
@@ -1044,15 +1045,15 @@
       "kindSource": "heuristic"
     },
     "WizardArrow 4-80B": {
-      "revid": 650032,
-      "timestamp": "2026-09-26T13:54:02.000Z",
-      "lastScannedDate": "2026-09-27",
+      "revid": 650753,
+      "timestamp": "2026-10-09T10:52:59.000Z",
+      "lastScannedDate": "2026-10-10",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Arrow Wizard 4-80B"
       ],
-      "notes": "gia' registrato (wizard-arrow); edit minore pagina"
+      "notes": "gia nel master"
     },
     "WizardRod 5-70DB": {
       "revid": 649852,
@@ -1197,11 +1198,12 @@
       "kindSource": "heuristic"
     },
     "Lock Chip - Tiga": {
-      "revid": 643179,
-      "timestamp": "2026-07-10T02:27:40.000Z",
-      "lastScannedDate": "2026-08-09",
+      "revid": 650680,
+      "timestamp": "2026-10-09T03:12:10.000Z",
+      "lastScannedDate": "2026-10-10",
       "kind": "part",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "gia nel master"
     },
     "UnicornDelta PO3-60GU": {
       "revid": 650411,
@@ -2830,11 +2832,12 @@
       "notes": "gia' nel master (cyclopseye); revid cambiato solo per ReleaseCA/data uscita e listing prodotto Glare Cyclops 7-55FB, nessun dato nome da aggiornare"
     },
     "Optimus Prime and Bumblebee Multipack Set": {
-      "revid": 647060,
-      "timestamp": "2026-08-25T00:51:42.000Z",
-      "lastScannedDate": "2026-08-25",
+      "revid": 650683,
+      "timestamp": "2026-10-09T03:16:15.000Z",
+      "lastScannedDate": "2026-10-10",
       "kind": "multipack",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "Optimus Prime/Bumblebee gia nel master"
     },
     "Infinity Rail Battle Set": {
       "revid": 647245,
@@ -2860,18 +2863,20 @@
       "notes": "pagina modificata; parti gia presenti nel master, nessuna nuova"
     },
     "Optimus Prime 7-70L": {
-      "revid": 647057,
-      "timestamp": "2026-08-25T00:03:37.000Z",
-      "lastScannedDate": "2026-08-25",
+      "revid": 650692,
+      "timestamp": "2026-10-09T05:22:51.000Z",
+      "lastScannedDate": "2026-10-10",
       "kind": "product",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "gia nel master"
     },
     "Bumblebee 1-60W": {
-      "revid": 647058,
-      "timestamp": "2026-08-25T00:04:23.000Z",
-      "lastScannedDate": "2026-08-25",
+      "revid": 650693,
+      "timestamp": "2026-10-09T05:23:03.000Z",
+      "lastScannedDate": "2026-10-10",
       "kind": "product",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "gia nel master"
     },
     "Cutter Shinobi GF": {
       "revid": 647237,
@@ -2989,20 +2994,20 @@
       "kindSource": "heuristic"
     },
     "LusterDragoon 6-60LC": {
-      "revid": 650364,
-      "timestamp": "2026-10-03T13:31:31.000Z",
-      "lastScannedDate": "2026-10-04",
+      "revid": 650675,
+      "timestamp": "2026-10-09T03:00:34.000Z",
+      "lastScannedDate": "2026-10-10",
       "kind": "product",
       "kindSource": "ai",
-      "notes": "gia nel master, unreleased"
+      "notes": "gia nel master come Luster Dragoon"
     },
     "All In One Set": {
-      "revid": 650028,
-      "timestamp": "2026-09-26T13:34:45.000Z",
-      "lastScannedDate": "2026-09-27",
+      "revid": 650678,
+      "timestamp": "2026-10-09T03:11:52.000Z",
+      "lastScannedDate": "2026-10-10",
       "kind": "set",
-      "kindSource": "heuristic",
-      "notes": "Beyblade Set Infobox, contiene AeroPegasus 3-70A, WizardArrow 4-80B (V2), KnightShield 3-80N (V2), tutti bey già esistenti; nessuna parte nuova."
+      "kindSource": "ai",
+      "notes": "solo recolor/V2.0 di bey esistenti"
     },
     "Lock Chip - Kid": {
       "revid": 649092,
@@ -3031,18 +3036,18 @@
     "Blade - SiegSuperion": {
       "revid": 650337,
       "timestamp": "2026-10-02T21:23:29.000Z",
-      "lastScannedDate": "2026-10-09",
+      "lastScannedDate": "2026-10-10",
       "kind": "part",
-      "kindSource": "heuristic",
-      "notes": "gia' nel master (suppress-superion)"
+      "kindSource": "ai",
+      "notes": "gia nel master"
     },
     "SiegSuperion 0-70LP": {
       "revid": 650333,
       "timestamp": "2026-10-02T21:19:02.000Z",
-      "lastScannedDate": "2026-10-09",
+      "lastScannedDate": "2026-10-10",
       "kind": "product",
-      "kindSource": "heuristic",
-      "notes": "parti gia' nel master"
+      "kindSource": "ai",
+      "notes": "gia nel master"
     },
     "Bey Kick Off Set": {
       "revid": 599877,
