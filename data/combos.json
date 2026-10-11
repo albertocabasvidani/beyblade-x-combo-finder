@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-11T02:03:33.947Z",
+  "lastUpdated": "2026-10-11T02:04:58.841Z",
   "combos": [
     {
       "id": "wizard-rod-1-60-hexa",
@@ -43196,7 +43196,7 @@
       "score": 8.52,
       "scoreBreakdown": {
         "performance": 0.918,
-        "presence": 0.758,
+        "presence": 0.757,
         "corroboration": 0.828,
         "tournamentEvents": 427,
         "wins": 162,
@@ -49413,7 +49413,7 @@
       "windows": {
         "30": {
           "performance": 0.559,
-          "presence": 0.758,
+          "presence": 0.757,
           "corroboration": 0.677,
           "tournamentEvents": 10,
           "wins": 1,
@@ -49431,7 +49431,7 @@
         },
         "90": {
           "performance": 0.811,
-          "presence": 0.758,
+          "presence": 0.757,
           "corroboration": 0.677,
           "tournamentEvents": 42,
           "wins": 11,
@@ -49450,7 +49450,7 @@
         },
         "180": {
           "performance": 0.87,
-          "presence": 0.758,
+          "presence": 0.757,
           "corroboration": 0.796,
           "tournamentEvents": 100,
           "wins": 30,
@@ -49470,7 +49470,7 @@
         },
         "365": {
           "performance": 0.918,
-          "presence": 0.758,
+          "presence": 0.757,
           "corroboration": 0.828,
           "tournamentEvents": 427,
           "wins": 162,
@@ -70841,7 +70841,7 @@
       "score": 7.09,
       "scoreBreakdown": {
         "performance": 0.915,
-        "presence": 0.354,
+        "presence": 0.353,
         "corroboration": 0.706,
         "tournamentEvents": 215,
         "wins": 92,
@@ -73879,7 +73879,7 @@
       "windows": {
         "30": {
           "performance": 0.635,
-          "presence": 0.354,
+          "presence": 0.353,
           "corroboration": 0.5,
           "tournamentEvents": 10,
           "wins": 4,
@@ -73897,7 +73897,7 @@
         },
         "90": {
           "performance": 0.846,
-          "presence": 0.354,
+          "presence": 0.353,
           "corroboration": 0.643,
           "tournamentEvents": 47,
           "wins": 20,
@@ -73915,7 +73915,7 @@
         },
         "180": {
           "performance": 0.902,
-          "presence": 0.354,
+          "presence": 0.353,
           "corroboration": 0.677,
           "tournamentEvents": 119,
           "wins": 58,
@@ -73934,7 +73934,7 @@
         },
         "365": {
           "performance": 0.915,
-          "presence": 0.354,
+          "presence": 0.353,
           "corroboration": 0.706,
           "tournamentEvents": 215,
           "wins": 92,
@@ -136520,7 +136520,7 @@
           "stadiums": [
             "xtreme"
           ],
-          "score": 3.31,
+          "score": 3.3,
           "tags": [
             "tournament-proven"
           ]
@@ -169820,7 +169820,7 @@
       "type": "stamina",
       "score": 3.24,
       "scoreBreakdown": {
-        "performance": 0.507,
+        "performance": 0.506,
         "presence": 0,
         "corroboration": 0.444,
         "tournamentEvents": 28,
@@ -170239,7 +170239,7 @@
           ]
         },
         "365": {
-          "performance": 0.507,
+          "performance": 0.506,
           "presence": 0,
           "corroboration": 0.444,
           "tournamentEvents": 28,
@@ -205089,7 +205089,7 @@
           ]
         },
         "180": {
-          "performance": 0.223,
+          "performance": 0.222,
           "presence": 0,
           "corroboration": 0.333,
           "tournamentEvents": 6,
@@ -224157,7 +224157,7 @@
       "type": "balance",
       "score": 1.93,
       "scoreBreakdown": {
-        "performance": 0.204,
+        "performance": 0.203,
         "presence": 0,
         "corroboration": 0.773,
         "tournamentEvents": 9,
@@ -224429,7 +224429,7 @@
           ]
         },
         "365": {
-          "performance": 0.204,
+          "performance": 0.203,
           "presence": 0,
           "corroboration": 0.773,
           "tournamentEvents": 9,
@@ -296649,6 +296649,534 @@
       }
     },
     {
+      "id": "black-shell-6-70-hexa",
+      "line": "bx",
+      "blade": "black-shell",
+      "ratchet": "6-70",
+      "bit": "hexa",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Black Shell 6-70 Hexa",
+      "type": "defense",
+      "score": 1.04,
+      "scoreBreakdown": {
+        "performance": 0.192,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 1,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-10-09",
+        "stadiums": [
+          "xtreme"
+        ]
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — “COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-10-09"
+        }
+      ],
+      "dateAdded": "2026-10-11",
+      "dateUpdated": "2026-10-11",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-128586",
+            "eventName": "“COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
+            "date": "2026-10-09",
+            "placement": 1,
+            "players": 34,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-coughing-baby-crackdown-beybladin-x-spokane",
+            "date": "2026-10-09",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      },
+      "windows": {
+        "30": {
+          "performance": 0.192,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 1.04,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "90": {
+          "performance": 0.192,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 1.04,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "180": {
+          "performance": 0.192,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 1.04,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "365": {
+          "performance": 0.192,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 1.04,
+          "tags": [
+            "tournament-proven"
+          ]
+        }
+      }
+    },
+    {
+      "id": "kong-yell-3-80-under-needle",
+      "line": "bx",
+      "blade": "kong-yell",
+      "ratchet": "3-80",
+      "bit": "under-needle",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Kong Yell 3-80 Under Needle",
+      "type": "stamina",
+      "score": 1.04,
+      "scoreBreakdown": {
+        "performance": 0.192,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 1,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-10-09",
+        "stadiums": [
+          "xtreme"
+        ]
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — “COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-10-09"
+        }
+      ],
+      "dateAdded": "2026-10-11",
+      "dateUpdated": "2026-10-11",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-128586",
+            "eventName": "“COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
+            "date": "2026-10-09",
+            "placement": 1,
+            "players": 34,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-coughing-baby-crackdown-beybladin-x-spokane",
+            "date": "2026-10-09",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      },
+      "windows": {
+        "30": {
+          "performance": 0.192,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 1.04,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "90": {
+          "performance": 0.192,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 1.04,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "180": {
+          "performance": 0.192,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 1.04,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "365": {
+          "performance": 0.192,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 1.04,
+          "tags": [
+            "tournament-proven"
+          ]
+        }
+      }
+    },
+    {
+      "id": "rhino-horn-5-60-rush",
+      "line": "bx",
+      "blade": "rhino-horn",
+      "ratchet": "5-60",
+      "bit": "rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Rhino Horn 5-60 Rush",
+      "type": "defense",
+      "score": 1.04,
+      "scoreBreakdown": {
+        "performance": 0.192,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 1,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-10-09",
+        "stadiums": [
+          "xtreme"
+        ]
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — “COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-10-09"
+        }
+      ],
+      "dateAdded": "2026-10-11",
+      "dateUpdated": "2026-10-11",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-128586",
+            "eventName": "“COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
+            "date": "2026-10-09",
+            "placement": 1,
+            "players": 34,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-coughing-baby-crackdown-beybladin-x-spokane",
+            "date": "2026-10-09",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      },
+      "windows": {
+        "30": {
+          "performance": 0.192,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 1.04,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "90": {
+          "performance": 0.192,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 1.04,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "180": {
+          "performance": 0.192,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 1.04,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "365": {
+          "performance": 0.192,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 1.04,
+          "tags": [
+            "tournament-proven"
+          ]
+        }
+      }
+    },
+    {
+      "id": "shinobi-shadow-9-60-point",
+      "line": "bx",
+      "blade": "shinobi-shadow",
+      "ratchet": "9-60",
+      "bit": "point",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Shinobi Shadow 9-60 Point",
+      "type": "defense",
+      "score": 1.04,
+      "scoreBreakdown": {
+        "performance": 0.192,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 1,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-10-09",
+        "stadiums": [
+          "xtreme"
+        ]
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — “COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-10-09"
+        }
+      ],
+      "dateAdded": "2026-10-11",
+      "dateUpdated": "2026-10-11",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-128586",
+            "eventName": "“COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
+            "date": "2026-10-09",
+            "placement": 1,
+            "players": 34,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-coughing-baby-crackdown-beybladin-x-spokane",
+            "date": "2026-10-09",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      },
+      "windows": {
+        "30": {
+          "performance": 0.192,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 1.04,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "90": {
+          "performance": 0.192,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 1.04,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "180": {
+          "performance": 0.192,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 1.04,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "365": {
+          "performance": 0.192,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 1.04,
+          "tags": [
+            "tournament-proven"
+          ]
+        }
+      }
+    },
+    {
       "id": "valkyrie-blast-heavy-7-60-low-rush",
       "line": "cx",
       "blade": null,
@@ -313041,502 +313569,6 @@
           "lastPlacementDate": "2026-10-11",
           "stadiums": [
             "infinity",
-            "xtreme"
-          ],
-          "score": 0.94,
-          "tags": [
-            "tournament-proven"
-          ]
-        }
-      }
-    },
-    {
-      "id": "black-shell-6-70-hexa",
-      "line": "bx",
-      "blade": "black-shell",
-      "ratchet": "6-70",
-      "bit": "hexa",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Black Shell 6-70 Hexa",
-      "type": "defense",
-      "score": 0.94,
-      "scoreBreakdown": {
-        "performance": 0.192,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 1,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-10-09",
-        "stadiums": [
-          "xtreme"
-        ]
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — “COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-10-09"
-        }
-      ],
-      "dateAdded": "2026-10-11",
-      "dateUpdated": "2026-10-11",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-128586",
-            "eventName": "“COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
-            "date": "2026-10-09",
-            "placement": 1,
-            "players": 34,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      },
-      "windows": {
-        "30": {
-          "performance": 0.192,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.94,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "90": {
-          "performance": 0.192,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.94,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "180": {
-          "performance": 0.192,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.94,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "365": {
-          "performance": 0.192,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.94,
-          "tags": [
-            "tournament-proven"
-          ]
-        }
-      }
-    },
-    {
-      "id": "kong-yell-3-80-under-needle",
-      "line": "bx",
-      "blade": "kong-yell",
-      "ratchet": "3-80",
-      "bit": "under-needle",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Kong Yell 3-80 Under Needle",
-      "type": "stamina",
-      "score": 0.94,
-      "scoreBreakdown": {
-        "performance": 0.192,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 1,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-10-09",
-        "stadiums": [
-          "xtreme"
-        ]
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — “COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-10-09"
-        }
-      ],
-      "dateAdded": "2026-10-11",
-      "dateUpdated": "2026-10-11",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-128586",
-            "eventName": "“COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
-            "date": "2026-10-09",
-            "placement": 1,
-            "players": 34,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      },
-      "windows": {
-        "30": {
-          "performance": 0.192,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.94,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "90": {
-          "performance": 0.192,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.94,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "180": {
-          "performance": 0.192,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.94,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "365": {
-          "performance": 0.192,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.94,
-          "tags": [
-            "tournament-proven"
-          ]
-        }
-      }
-    },
-    {
-      "id": "rhino-horn-5-60-rush",
-      "line": "bx",
-      "blade": "rhino-horn",
-      "ratchet": "5-60",
-      "bit": "rush",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Rhino Horn 5-60 Rush",
-      "type": "defense",
-      "score": 0.94,
-      "scoreBreakdown": {
-        "performance": 0.192,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 1,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-10-09",
-        "stadiums": [
-          "xtreme"
-        ]
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — “COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-10-09"
-        }
-      ],
-      "dateAdded": "2026-10-11",
-      "dateUpdated": "2026-10-11",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-128586",
-            "eventName": "“COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
-            "date": "2026-10-09",
-            "placement": 1,
-            "players": 34,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      },
-      "windows": {
-        "30": {
-          "performance": 0.192,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.94,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "90": {
-          "performance": 0.192,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.94,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "180": {
-          "performance": 0.192,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.94,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "365": {
-          "performance": 0.192,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.94,
-          "tags": [
-            "tournament-proven"
-          ]
-        }
-      }
-    },
-    {
-      "id": "shinobi-shadow-9-60-point",
-      "line": "bx",
-      "blade": "shinobi-shadow",
-      "ratchet": "9-60",
-      "bit": "point",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Shinobi Shadow 9-60 Point",
-      "type": "defense",
-      "score": 0.94,
-      "scoreBreakdown": {
-        "performance": 0.192,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 1,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-10-09",
-        "stadiums": [
-          "xtreme"
-        ]
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — “COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-10-09"
-        }
-      ],
-      "dateAdded": "2026-10-11",
-      "dateUpdated": "2026-10-11",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-128586",
-            "eventName": "“COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
-            "date": "2026-10-09",
-            "placement": 1,
-            "players": 34,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      },
-      "windows": {
-        "30": {
-          "performance": 0.192,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.94,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "90": {
-          "performance": 0.192,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.94,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "180": {
-          "performance": 0.192,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.94,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "365": {
-          "performance": 0.192,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
             "xtreme"
           ],
           "score": 0.94,
@@ -332303,6 +332335,270 @@
           "wins": 2,
           "topCutAppearances": 3,
           "lastPlacementDate": "2026-04-30",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.84,
+          "tags": [
+            "tournament-proven"
+          ]
+        }
+      }
+    },
+    {
+      "id": "leon-claw-5-50-kick",
+      "line": "bx",
+      "blade": "leon-claw",
+      "ratchet": "5-50",
+      "bit": "kick",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Leon Claw 5-50 Kick",
+      "type": "balance",
+      "score": 0.84,
+      "scoreBreakdown": {
+        "performance": 0.134,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 0,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-10-09",
+        "stadiums": [
+          "xtreme"
+        ]
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — “COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-10-09"
+        }
+      ],
+      "dateAdded": "2026-10-11",
+      "dateUpdated": "2026-10-11",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-128586",
+            "eventName": "“COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
+            "date": "2026-10-09",
+            "placement": 2,
+            "players": 34,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-coughing-baby-crackdown-beybladin-x-spokane",
+            "date": "2026-10-09",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      },
+      "windows": {
+        "30": {
+          "performance": 0.134,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.84,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "90": {
+          "performance": 0.134,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.84,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "180": {
+          "performance": 0.134,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.84,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "365": {
+          "performance": 0.134,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.84,
+          "tags": [
+            "tournament-proven"
+          ]
+        }
+      }
+    },
+    {
+      "id": "tricera-spiky-9-60-narrow",
+      "line": "bx",
+      "blade": "tricera-spiky",
+      "ratchet": "9-60",
+      "bit": "narrow",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Tricera Spiky 9-60 Narrow",
+      "type": "defense",
+      "score": 0.84,
+      "scoreBreakdown": {
+        "performance": 0.134,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 0,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-10-09",
+        "stadiums": [
+          "xtreme"
+        ]
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — “COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-10-09"
+        }
+      ],
+      "dateAdded": "2026-10-11",
+      "dateUpdated": "2026-10-11",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-128586",
+            "eventName": "“COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
+            "date": "2026-10-09",
+            "placement": 2,
+            "players": 34,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-coughing-baby-crackdown-beybladin-x-spokane",
+            "date": "2026-10-09",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      },
+      "windows": {
+        "30": {
+          "performance": 0.134,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.84,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "90": {
+          "performance": 0.134,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.84,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "180": {
+          "performance": 0.134,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.84,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "365": {
+          "performance": 0.134,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
           "stadiums": [
             "xtreme"
           ],
@@ -357094,254 +357390,6 @@
       }
     },
     {
-      "id": "leon-claw-5-50-kick",
-      "line": "bx",
-      "blade": "leon-claw",
-      "ratchet": "5-50",
-      "bit": "kick",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Leon Claw 5-50 Kick",
-      "type": "balance",
-      "score": 0.74,
-      "scoreBreakdown": {
-        "performance": 0.134,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 0,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-10-09",
-        "stadiums": [
-          "xtreme"
-        ]
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — “COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-10-09"
-        }
-      ],
-      "dateAdded": "2026-10-11",
-      "dateUpdated": "2026-10-11",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-128586",
-            "eventName": "“COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
-            "date": "2026-10-09",
-            "placement": 2,
-            "players": 34,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      },
-      "windows": {
-        "30": {
-          "performance": 0.134,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.74,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "90": {
-          "performance": 0.134,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.74,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "180": {
-          "performance": 0.134,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.74,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "365": {
-          "performance": 0.134,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.74,
-          "tags": [
-            "tournament-proven"
-          ]
-        }
-      }
-    },
-    {
-      "id": "tricera-spiky-9-60-narrow",
-      "line": "bx",
-      "blade": "tricera-spiky",
-      "ratchet": "9-60",
-      "bit": "narrow",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Tricera Spiky 9-60 Narrow",
-      "type": "defense",
-      "score": 0.74,
-      "scoreBreakdown": {
-        "performance": 0.134,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 0,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-10-09",
-        "stadiums": [
-          "xtreme"
-        ]
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — “COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-10-09"
-        }
-      ],
-      "dateAdded": "2026-10-11",
-      "dateUpdated": "2026-10-11",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-128586",
-            "eventName": "“COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
-            "date": "2026-10-09",
-            "placement": 2,
-            "players": 34,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      },
-      "windows": {
-        "30": {
-          "performance": 0.134,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.74,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "90": {
-          "performance": 0.134,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.74,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "180": {
-          "performance": 0.134,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.74,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "365": {
-          "performance": 0.134,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.74,
-          "tags": [
-            "tournament-proven"
-          ]
-        }
-      }
-    },
-    {
       "id": "dran-buster-3-60-rush",
       "line": "bx",
       "blade": "dran-buster",
@@ -364876,6 +364924,534 @@
           "wins": 1,
           "topCutAppearances": 2,
           "lastPlacementDate": "2025-11-26",
+          "score": 0.72,
+          "tags": [
+            "tournament-proven"
+          ]
+        }
+      }
+    },
+    {
+      "id": "draciel-shield-9-60-rush",
+      "line": "bx",
+      "blade": "draciel-shield",
+      "ratchet": "9-60",
+      "bit": "rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Draciel Shield 9-60 Rush",
+      "type": "defense",
+      "score": 0.72,
+      "scoreBreakdown": {
+        "performance": 0.097,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 0,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-10-09",
+        "stadiums": [
+          "xtreme"
+        ]
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — “COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-10-09"
+        }
+      ],
+      "dateAdded": "2026-10-11",
+      "dateUpdated": "2026-10-11",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-128586",
+            "eventName": "“COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
+            "date": "2026-10-09",
+            "placement": 3,
+            "players": 34,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-coughing-baby-crackdown-beybladin-x-spokane",
+            "date": "2026-10-09",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      },
+      "windows": {
+        "30": {
+          "performance": 0.097,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.72,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "90": {
+          "performance": 0.097,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.72,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "180": {
+          "performance": 0.097,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.72,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "365": {
+          "performance": 0.097,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.72,
+          "tags": [
+            "tournament-proven"
+          ]
+        }
+      }
+    },
+    {
+      "id": "dranzer-spiral-4-50-taper",
+      "line": "bx",
+      "blade": "dranzer-spiral",
+      "ratchet": "4-50",
+      "bit": "taper",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Dranzer Spiral 4-50 Taper",
+      "type": "balance",
+      "score": 0.72,
+      "scoreBreakdown": {
+        "performance": 0.097,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 0,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-10-09",
+        "stadiums": [
+          "xtreme"
+        ]
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — “COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-10-09"
+        }
+      ],
+      "dateAdded": "2026-10-11",
+      "dateUpdated": "2026-10-11",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-128586",
+            "eventName": "“COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
+            "date": "2026-10-09",
+            "placement": 3,
+            "players": 34,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-coughing-baby-crackdown-beybladin-x-spokane",
+            "date": "2026-10-09",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      },
+      "windows": {
+        "30": {
+          "performance": 0.097,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.72,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "90": {
+          "performance": 0.097,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.72,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "180": {
+          "performance": 0.097,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.72,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "365": {
+          "performance": 0.097,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.72,
+          "tags": [
+            "tournament-proven"
+          ]
+        }
+      }
+    },
+    {
+      "id": "goat-tackle-1-60-flat",
+      "line": "bx",
+      "blade": "goat-tackle",
+      "ratchet": "1-60",
+      "bit": "flat",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Goat Tackle 1-60 Flat",
+      "type": "defense",
+      "score": 0.72,
+      "scoreBreakdown": {
+        "performance": 0.097,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 0,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-10-09",
+        "stadiums": [
+          "xtreme"
+        ]
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — “COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-10-09"
+        }
+      ],
+      "dateAdded": "2026-10-11",
+      "dateUpdated": "2026-10-11",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-128586",
+            "eventName": "“COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
+            "date": "2026-10-09",
+            "placement": 3,
+            "players": 34,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-coughing-baby-crackdown-beybladin-x-spokane",
+            "date": "2026-10-09",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      },
+      "windows": {
+        "30": {
+          "performance": 0.097,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.72,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "90": {
+          "performance": 0.097,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.72,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "180": {
+          "performance": 0.097,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.72,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "365": {
+          "performance": 0.097,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.72,
+          "tags": [
+            "tournament-proven"
+          ]
+        }
+      }
+    },
+    {
+      "id": "shinobi-shadow-3-60-free-ball",
+      "line": "bx",
+      "blade": "shinobi-shadow",
+      "ratchet": "3-60",
+      "bit": "free-ball",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Shinobi Shadow 3-60 Free Ball",
+      "type": "defense",
+      "score": 0.72,
+      "scoreBreakdown": {
+        "performance": 0.097,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 0,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-10-09",
+        "stadiums": [
+          "xtreme"
+        ]
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — “COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-10-09"
+        }
+      ],
+      "dateAdded": "2026-10-11",
+      "dateUpdated": "2026-10-11",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-128586",
+            "eventName": "“COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
+            "date": "2026-10-09",
+            "placement": 3,
+            "players": 34,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-coughing-baby-crackdown-beybladin-x-spokane",
+            "date": "2026-10-09",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      },
+      "windows": {
+        "30": {
+          "performance": 0.097,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.72,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "90": {
+          "performance": 0.097,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.72,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "180": {
+          "performance": 0.097,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.72,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "365": {
+          "performance": 0.097,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-09",
+          "stadiums": [
+            "xtreme"
+          ],
           "score": 0.72,
           "tags": [
             "tournament-proven"
@@ -407344,502 +407920,6 @@
           "wins": 0,
           "topCutAppearances": 1,
           "lastPlacementDate": "2025-12-18",
-          "score": 0.62,
-          "tags": [
-            "tournament-proven"
-          ]
-        }
-      }
-    },
-    {
-      "id": "draciel-shield-9-60-rush",
-      "line": "bx",
-      "blade": "draciel-shield",
-      "ratchet": "9-60",
-      "bit": "rush",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Draciel Shield 9-60 Rush",
-      "type": "defense",
-      "score": 0.62,
-      "scoreBreakdown": {
-        "performance": 0.097,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 0,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-10-09",
-        "stadiums": [
-          "xtreme"
-        ]
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — “COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-10-09"
-        }
-      ],
-      "dateAdded": "2026-10-11",
-      "dateUpdated": "2026-10-11",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-128586",
-            "eventName": "“COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
-            "date": "2026-10-09",
-            "placement": 3,
-            "players": 34,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      },
-      "windows": {
-        "30": {
-          "performance": 0.097,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.62,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "90": {
-          "performance": 0.097,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.62,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "180": {
-          "performance": 0.097,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.62,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "365": {
-          "performance": 0.097,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.62,
-          "tags": [
-            "tournament-proven"
-          ]
-        }
-      }
-    },
-    {
-      "id": "dranzer-spiral-4-50-taper",
-      "line": "bx",
-      "blade": "dranzer-spiral",
-      "ratchet": "4-50",
-      "bit": "taper",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Dranzer Spiral 4-50 Taper",
-      "type": "balance",
-      "score": 0.62,
-      "scoreBreakdown": {
-        "performance": 0.097,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 0,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-10-09",
-        "stadiums": [
-          "xtreme"
-        ]
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — “COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-10-09"
-        }
-      ],
-      "dateAdded": "2026-10-11",
-      "dateUpdated": "2026-10-11",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-128586",
-            "eventName": "“COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
-            "date": "2026-10-09",
-            "placement": 3,
-            "players": 34,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      },
-      "windows": {
-        "30": {
-          "performance": 0.097,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.62,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "90": {
-          "performance": 0.097,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.62,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "180": {
-          "performance": 0.097,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.62,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "365": {
-          "performance": 0.097,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.62,
-          "tags": [
-            "tournament-proven"
-          ]
-        }
-      }
-    },
-    {
-      "id": "goat-tackle-1-60-flat",
-      "line": "bx",
-      "blade": "goat-tackle",
-      "ratchet": "1-60",
-      "bit": "flat",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Goat Tackle 1-60 Flat",
-      "type": "defense",
-      "score": 0.62,
-      "scoreBreakdown": {
-        "performance": 0.097,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 0,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-10-09",
-        "stadiums": [
-          "xtreme"
-        ]
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — “COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-10-09"
-        }
-      ],
-      "dateAdded": "2026-10-11",
-      "dateUpdated": "2026-10-11",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-128586",
-            "eventName": "“COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
-            "date": "2026-10-09",
-            "placement": 3,
-            "players": 34,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      },
-      "windows": {
-        "30": {
-          "performance": 0.097,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.62,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "90": {
-          "performance": 0.097,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.62,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "180": {
-          "performance": 0.097,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.62,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "365": {
-          "performance": 0.097,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.62,
-          "tags": [
-            "tournament-proven"
-          ]
-        }
-      }
-    },
-    {
-      "id": "shinobi-shadow-3-60-free-ball",
-      "line": "bx",
-      "blade": "shinobi-shadow",
-      "ratchet": "3-60",
-      "bit": "free-ball",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Shinobi Shadow 3-60 Free Ball",
-      "type": "defense",
-      "score": 0.62,
-      "scoreBreakdown": {
-        "performance": 0.097,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 0,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-10-09",
-        "stadiums": [
-          "xtreme"
-        ]
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — “COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-10-09"
-        }
-      ],
-      "dateAdded": "2026-10-11",
-      "dateUpdated": "2026-10-11",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-128586",
-            "eventName": "“COUGHING BABY CRACKDOWN - Beybladin' X Spokane”",
-            "date": "2026-10-09",
-            "placement": 3,
-            "players": 34,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      },
-      "windows": {
-        "30": {
-          "performance": 0.097,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.62,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "90": {
-          "performance": 0.097,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.62,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "180": {
-          "performance": 0.097,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.62,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "365": {
-          "performance": 0.097,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-09",
-          "stadiums": [
-            "xtreme"
-          ],
           "score": 0.62,
           "tags": [
             "tournament-proven"
@@ -696534,5 +696614,5 @@
       "solid": 5.5
     }
   },
-  "windowsRef": "2026-10-11T02:03:24.931Z"
+  "windowsRef": "2026-10-11T02:04:57.491Z"
 }
