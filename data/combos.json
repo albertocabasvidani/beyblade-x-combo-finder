@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-12T02:02:12.080Z",
+  "lastUpdated": "2026-10-12T02:03:35.655Z",
   "combos": [
     {
       "id": "wizard-rod-1-60-hexa",
@@ -84317,7 +84317,7 @@
       },
       "windows": {
         "30": {
-          "performance": 0.572,
+          "performance": 0.571,
           "presence": 0.278,
           "corroboration": 0.643,
           "tournamentEvents": 7,
@@ -111118,7 +111118,7 @@
           ]
         },
         "180": {
-          "performance": 0.828,
+          "performance": 0.827,
           "presence": 0,
           "corroboration": 0.615,
           "tournamentEvents": 71,
@@ -122874,7 +122874,7 @@
       "type": "attack",
       "score": 5.09,
       "scoreBreakdown": {
-        "performance": 0.639,
+        "performance": 0.638,
         "presence": 0.268,
         "corroboration": 0.6,
         "tournamentEvents": 80,
@@ -124032,7 +124032,7 @@
           ]
         },
         "365": {
-          "performance": 0.639,
+          "performance": 0.638,
           "presence": 0.268,
           "corroboration": 0.6,
           "tournamentEvents": 80,
@@ -143350,7 +143350,7 @@
       "type": "attack",
       "score": 4.29,
       "scoreBreakdown": {
-        "performance": 0.668,
+        "performance": 0.667,
         "presence": 0,
         "corroboration": 0.615,
         "tournamentEvents": 26,
@@ -143799,7 +143799,7 @@
           ]
         },
         "180": {
-          "performance": 0.668,
+          "performance": 0.667,
           "presence": 0,
           "corroboration": 0.615,
           "tournamentEvents": 26,
@@ -143816,7 +143816,7 @@
           ]
         },
         "365": {
-          "performance": 0.668,
+          "performance": 0.667,
           "presence": 0,
           "corroboration": 0.615,
           "tournamentEvents": 26,
@@ -181050,7 +181050,7 @@
           "stadiums": [
             "xtreme"
           ],
-          "score": 2.41,
+          "score": 2.4,
           "tags": [
             "tournament-proven"
           ]
@@ -291854,7 +291854,7 @@
       },
       "windows": {
         "180": {
-          "performance": 0.033,
+          "performance": 0.032,
           "presence": 0,
           "corroboration": 0.667,
           "tournamentEvents": 1,
@@ -317000,7 +317000,7 @@
       "type": "attack",
       "score": 0.91,
       "scoreBreakdown": {
-        "performance": 0.154,
+        "performance": 0.153,
         "presence": 0,
         "corroboration": 0.444,
         "tournamentEvents": 1,
@@ -317053,7 +317053,7 @@
       },
       "windows": {
         "90": {
-          "performance": 0.154,
+          "performance": 0.153,
           "presence": 0,
           "corroboration": 0.444,
           "tournamentEvents": 1,
@@ -317069,7 +317069,7 @@
           ]
         },
         "180": {
-          "performance": 0.154,
+          "performance": 0.153,
           "presence": 0,
           "corroboration": 0.444,
           "tournamentEvents": 1,
@@ -317085,7 +317085,7 @@
           ]
         },
         "365": {
-          "performance": 0.154,
+          "performance": 0.153,
           "presence": 0,
           "corroboration": 0.444,
           "tournamentEvents": 1,
@@ -318184,7 +318184,7 @@
       "type": "defense",
       "score": 0.9,
       "scoreBreakdown": {
-        "performance": 0.125,
+        "performance": 0.124,
         "presence": 0,
         "corroboration": 0.444,
         "tournamentEvents": 2,
@@ -318297,7 +318297,7 @@
           ]
         },
         "365": {
-          "performance": 0.125,
+          "performance": 0.124,
           "presence": 0,
           "corroboration": 0.444,
           "tournamentEvents": 2,
@@ -360886,6 +360886,138 @@
       }
     },
     {
+      "id": "silver-wolf-7-60-narrow",
+      "line": "bx",
+      "blade": "silver-wolf",
+      "ratchet": "7-60",
+      "bit": "narrow",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Silver Wolf 7-60 Narrow",
+      "type": "stamina",
+      "score": 0.73,
+      "scoreBreakdown": {
+        "performance": 0.101,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 0,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-10-10",
+        "stadiums": [
+          "xtreme"
+        ]
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Battle in the Nether",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-10-10"
+        }
+      ],
+      "dateAdded": "2026-10-12",
+      "dateUpdated": "2026-10-12",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-pid-1939439",
+            "eventName": "Battle in the Nether",
+            "date": "2026-10-10",
+            "placement": 3,
+            "players": 37,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-battle-in-the-nether",
+            "date": "2026-10-10",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      },
+      "windows": {
+        "30": {
+          "performance": 0.101,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-10",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.73,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "90": {
+          "performance": 0.101,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-10",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.73,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "180": {
+          "performance": 0.101,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-10",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.73,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "365": {
+          "performance": 0.101,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-10",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.73,
+          "tags": [
+            "tournament-proven"
+          ]
+        }
+      }
+    },
+    {
       "id": "cobalt-dragoon-1-70-elevate",
       "line": "bx",
       "blade": "cobalt-dragoon",
@@ -379592,6 +379724,122 @@
       }
     },
     {
+      "id": "cerberus-flame-wheel-3-60-ball",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "3-60",
+      "bit": "ball",
+      "lockChip": "cerberus",
+      "mainBlade": "flame",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Cerberus Flame W 3-60 Ball",
+      "type": "stamina",
+      "score": 0.68,
+      "scoreBreakdown": {
+        "performance": 0.084,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 1,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-10-11"
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — BEYBLADE @ SEMMES (10/11/26)",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-10-11"
+        }
+      ],
+      "dateAdded": "2026-10-12",
+      "dateUpdated": "2026-10-12",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-129250",
+            "eventName": "BEYBLADE @ SEMMES (10/11/26)",
+            "date": "2026-10-11",
+            "placement": 1,
+            "players": 5,
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-beyblade-semmes-10-11-26",
+            "date": "2026-10-11",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      },
+      "windows": {
+        "30": {
+          "performance": 0.084,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-11",
+          "score": 0.68,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "90": {
+          "performance": 0.084,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-11",
+          "score": 0.68,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "180": {
+          "performance": 0.084,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-11",
+          "score": 0.68,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "365": {
+          "performance": 0.084,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-11",
+          "score": 0.68,
+          "tags": [
+            "tournament-proven"
+          ]
+        }
+      }
+    },
+    {
       "id": "wizard-rod-6-60-ball",
       "line": "bx",
       "blade": "wizard-rod",
@@ -388711,6 +388959,138 @@
           "wins": 0,
           "topCutAppearances": 3,
           "lastPlacementDate": "2026-01-18",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.66,
+          "tags": [
+            "tournament-proven"
+          ]
+        }
+      }
+    },
+    {
+      "id": "suppress-superion-9-60-under-needle",
+      "line": "bx",
+      "blade": "suppress-superion",
+      "ratchet": "9-60",
+      "bit": "under-needle",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "SiegSuperion 9-60 Under Needle",
+      "type": "balance",
+      "score": 0.66,
+      "scoreBreakdown": {
+        "performance": 0.079,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 0,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-09-19",
+        "stadiums": [
+          "xtreme"
+        ]
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — SnoHo Monthly #6: event",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-09-19"
+        }
+      ],
+      "dateAdded": "2026-10-12",
+      "dateUpdated": "2026-10-12",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-128020",
+            "eventName": "SnoHo Monthly #6: event",
+            "date": "2026-09-19",
+            "placement": 3,
+            "players": 32,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-snoho-monthly-6-event",
+            "date": "2026-09-19",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      },
+      "windows": {
+        "30": {
+          "performance": 0.079,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-09-19",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.66,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "90": {
+          "performance": 0.079,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-09-19",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.66,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "180": {
+          "performance": 0.079,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-09-19",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.66,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "365": {
+          "performance": 0.079,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-09-19",
           "stadiums": [
             "xtreme"
           ],
@@ -402512,130 +402892,6 @@
           "wins": 0,
           "topCutAppearances": 1,
           "lastPlacementDate": "2026-02-01",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.63,
-          "tags": [
-            "tournament-proven"
-          ]
-        }
-      }
-    },
-    {
-      "id": "silver-wolf-7-60-narrow",
-      "line": "bx",
-      "blade": "silver-wolf",
-      "ratchet": "7-60",
-      "bit": "narrow",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Silver Wolf 7-60 Narrow",
-      "type": "stamina",
-      "score": 0.63,
-      "scoreBreakdown": {
-        "performance": 0.101,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 0,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-10-10",
-        "stadiums": [
-          "xtreme"
-        ]
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — Battle in the Nether",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-10-10"
-        }
-      ],
-      "dateAdded": "2026-10-12",
-      "dateUpdated": "2026-10-12",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-pid-1939439",
-            "eventName": "Battle in the Nether",
-            "date": "2026-10-10",
-            "placement": 3,
-            "players": 37,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      },
-      "windows": {
-        "30": {
-          "performance": 0.101,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-10",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.63,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "90": {
-          "performance": 0.101,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-10",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.63,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "180": {
-          "performance": 0.101,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-10",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.63,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "365": {
-          "performance": 0.101,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-10",
           "stadiums": [
             "xtreme"
           ],
@@ -424992,6 +425248,354 @@
       }
     },
     {
+      "id": "ghost-circle-3-60-orb",
+      "line": "bx",
+      "blade": "ghost-circle",
+      "ratchet": "3-60",
+      "bit": "orb",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Ghost Circle 3-60 Orb",
+      "type": "stamina",
+      "score": 0.59,
+      "scoreBreakdown": {
+        "performance": 0.057,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 0,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-10-11"
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — BEYBLADE @ SEMMES (10/11/26)",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-10-11"
+        }
+      ],
+      "dateAdded": "2026-10-12",
+      "dateUpdated": "2026-10-12",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-129250",
+            "eventName": "BEYBLADE @ SEMMES (10/11/26)",
+            "date": "2026-10-11",
+            "placement": 2,
+            "players": 5,
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-beyblade-semmes-10-11-26",
+            "date": "2026-10-11",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      },
+      "windows": {
+        "30": {
+          "performance": 0.057,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-11",
+          "score": 0.59,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "90": {
+          "performance": 0.057,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-11",
+          "score": 0.59,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "180": {
+          "performance": 0.057,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-11",
+          "score": 0.59,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "365": {
+          "performance": 0.057,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-11",
+          "score": 0.59,
+          "tags": [
+            "tournament-proven"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phoenix-wing-6-60-accel",
+      "line": "bx",
+      "blade": "phoenix-wing",
+      "ratchet": "6-60",
+      "bit": "accel",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Phoenix Wing 6-60 Accel",
+      "type": "attack",
+      "score": 0.59,
+      "scoreBreakdown": {
+        "performance": 0.057,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 0,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-10-11"
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — BEYBLADE @ SEMMES (10/11/26)",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-10-11"
+        }
+      ],
+      "dateAdded": "2026-10-12",
+      "dateUpdated": "2026-10-12",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-129250",
+            "eventName": "BEYBLADE @ SEMMES (10/11/26)",
+            "date": "2026-10-11",
+            "placement": 2,
+            "players": 5,
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-beyblade-semmes-10-11-26",
+            "date": "2026-10-11",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      },
+      "windows": {
+        "30": {
+          "performance": 0.057,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-11",
+          "score": 0.59,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "90": {
+          "performance": 0.057,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-11",
+          "score": 0.59,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "180": {
+          "performance": 0.057,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-11",
+          "score": 0.59,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "365": {
+          "performance": 0.057,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-11",
+          "score": 0.59,
+          "tags": [
+            "tournament-proven"
+          ]
+        }
+      }
+    },
+    {
+      "id": "shark-edge-4-60-free-ball",
+      "line": "bx",
+      "blade": "shark-edge",
+      "ratchet": "4-60",
+      "bit": "free-ball",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Shark Edge 4-60 Free Ball",
+      "type": "attack",
+      "score": 0.59,
+      "scoreBreakdown": {
+        "performance": 0.057,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 0,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-10-11"
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — BEYBLADE @ SEMMES (10/11/26)",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-10-11"
+        }
+      ],
+      "dateAdded": "2026-10-12",
+      "dateUpdated": "2026-10-12",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-129250",
+            "eventName": "BEYBLADE @ SEMMES (10/11/26)",
+            "date": "2026-10-11",
+            "placement": 2,
+            "players": 5,
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-beyblade-semmes-10-11-26",
+            "date": "2026-10-11",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      },
+      "windows": {
+        "30": {
+          "performance": 0.057,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-11",
+          "score": 0.59,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "90": {
+          "performance": 0.057,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-11",
+          "score": 0.59,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "180": {
+          "performance": 0.057,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-11",
+          "score": 0.59,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "365": {
+          "performance": 0.057,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-11",
+          "score": 0.59,
+          "tags": [
+            "tournament-proven"
+          ]
+        }
+      }
+    },
+    {
       "id": "emperor-blast-heavy-1-50-low-flat",
       "line": "cx",
       "blade": null,
@@ -433055,114 +433659,6 @@
           "stadiums": [
             "xtreme"
           ],
-          "score": 0.58,
-          "tags": [
-            "tournament-proven"
-          ]
-        }
-      }
-    },
-    {
-      "id": "cerberus-flame-wheel-3-60-ball",
-      "line": "cx",
-      "blade": null,
-      "ratchet": "3-60",
-      "bit": "ball",
-      "lockChip": "cerberus",
-      "mainBlade": "flame",
-      "assistBlade": "wheel",
-      "overBlade": null,
-      "displayName": "Cerberus Flame W 3-60 Ball",
-      "type": "stamina",
-      "score": 0.58,
-      "scoreBreakdown": {
-        "performance": 0.084,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 1,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-10-11"
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — BEYBLADE @ SEMMES (10/11/26)",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-10-11"
-        }
-      ],
-      "dateAdded": "2026-10-12",
-      "dateUpdated": "2026-10-12",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-129250",
-            "eventName": "BEYBLADE @ SEMMES (10/11/26)",
-            "date": "2026-10-11",
-            "placement": 1,
-            "players": 5,
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      },
-      "windows": {
-        "30": {
-          "performance": 0.084,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-11",
-          "score": 0.58,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "90": {
-          "performance": 0.084,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-11",
-          "score": 0.58,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "180": {
-          "performance": 0.084,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-11",
-          "score": 0.58,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "365": {
-          "performance": 0.084,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-11",
           "score": 0.58,
           "tags": [
             "tournament-proven"
@@ -445025,130 +445521,6 @@
           "wins": 1,
           "topCutAppearances": 2,
           "lastPlacementDate": "2025-10-19",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.56,
-          "tags": [
-            "tournament-proven"
-          ]
-        }
-      }
-    },
-    {
-      "id": "suppress-superion-9-60-under-needle",
-      "line": "bx",
-      "blade": "suppress-superion",
-      "ratchet": "9-60",
-      "bit": "under-needle",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "SiegSuperion 9-60 Under Needle",
-      "type": "balance",
-      "score": 0.56,
-      "scoreBreakdown": {
-        "performance": 0.079,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 0,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-09-19",
-        "stadiums": [
-          "xtreme"
-        ]
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — SnoHo Monthly #6: event",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-09-19"
-        }
-      ],
-      "dateAdded": "2026-10-12",
-      "dateUpdated": "2026-10-12",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-128020",
-            "eventName": "SnoHo Monthly #6: event",
-            "date": "2026-09-19",
-            "placement": 3,
-            "players": 32,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      },
-      "windows": {
-        "30": {
-          "performance": 0.079,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-09-19",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.56,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "90": {
-          "performance": 0.079,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-09-19",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.56,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "180": {
-          "performance": 0.079,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-09-19",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.56,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "365": {
-          "performance": 0.079,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-09-19",
           "stadiums": [
             "xtreme"
           ],
@@ -500437,330 +500809,6 @@
           "stadiums": [
             "xtreme"
           ],
-          "score": 0.49,
-          "tags": [
-            "tournament-proven"
-          ]
-        }
-      }
-    },
-    {
-      "id": "ghost-circle-3-60-orb",
-      "line": "bx",
-      "blade": "ghost-circle",
-      "ratchet": "3-60",
-      "bit": "orb",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Ghost Circle 3-60 Orb",
-      "type": "stamina",
-      "score": 0.49,
-      "scoreBreakdown": {
-        "performance": 0.057,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 0,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-10-11"
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — BEYBLADE @ SEMMES (10/11/26)",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-10-11"
-        }
-      ],
-      "dateAdded": "2026-10-12",
-      "dateUpdated": "2026-10-12",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-129250",
-            "eventName": "BEYBLADE @ SEMMES (10/11/26)",
-            "date": "2026-10-11",
-            "placement": 2,
-            "players": 5,
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      },
-      "windows": {
-        "30": {
-          "performance": 0.057,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-11",
-          "score": 0.49,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "90": {
-          "performance": 0.057,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-11",
-          "score": 0.49,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "180": {
-          "performance": 0.057,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-11",
-          "score": 0.49,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "365": {
-          "performance": 0.057,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-11",
-          "score": 0.49,
-          "tags": [
-            "tournament-proven"
-          ]
-        }
-      }
-    },
-    {
-      "id": "phoenix-wing-6-60-accel",
-      "line": "bx",
-      "blade": "phoenix-wing",
-      "ratchet": "6-60",
-      "bit": "accel",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Phoenix Wing 6-60 Accel",
-      "type": "attack",
-      "score": 0.49,
-      "scoreBreakdown": {
-        "performance": 0.057,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 0,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-10-11"
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — BEYBLADE @ SEMMES (10/11/26)",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-10-11"
-        }
-      ],
-      "dateAdded": "2026-10-12",
-      "dateUpdated": "2026-10-12",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-129250",
-            "eventName": "BEYBLADE @ SEMMES (10/11/26)",
-            "date": "2026-10-11",
-            "placement": 2,
-            "players": 5,
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      },
-      "windows": {
-        "30": {
-          "performance": 0.057,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-11",
-          "score": 0.49,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "90": {
-          "performance": 0.057,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-11",
-          "score": 0.49,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "180": {
-          "performance": 0.057,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-11",
-          "score": 0.49,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "365": {
-          "performance": 0.057,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-11",
-          "score": 0.49,
-          "tags": [
-            "tournament-proven"
-          ]
-        }
-      }
-    },
-    {
-      "id": "shark-edge-4-60-free-ball",
-      "line": "bx",
-      "blade": "shark-edge",
-      "ratchet": "4-60",
-      "bit": "free-ball",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Shark Edge 4-60 Free Ball",
-      "type": "attack",
-      "score": 0.49,
-      "scoreBreakdown": {
-        "performance": 0.057,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 0,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-10-11"
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — BEYBLADE @ SEMMES (10/11/26)",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-10-11"
-        }
-      ],
-      "dateAdded": "2026-10-12",
-      "dateUpdated": "2026-10-12",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-129250",
-            "eventName": "BEYBLADE @ SEMMES (10/11/26)",
-            "date": "2026-10-11",
-            "placement": 2,
-            "players": 5,
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      },
-      "windows": {
-        "30": {
-          "performance": 0.057,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-11",
-          "score": 0.49,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "90": {
-          "performance": 0.057,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-11",
-          "score": 0.49,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "180": {
-          "performance": 0.057,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-11",
-          "score": 0.49,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "365": {
-          "performance": 0.057,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-11",
           "score": 0.49,
           "tags": [
             "tournament-proven"
@@ -695414,5 +695462,5 @@
       "solid": 5.5
     }
   },
-  "windowsRef": "2026-10-12T02:01:55.132Z"
+  "windowsRef": "2026-10-12T02:03:34.804Z"
 }
