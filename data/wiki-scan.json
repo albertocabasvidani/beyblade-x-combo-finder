@@ -4,12 +4,12 @@
     "List of Beyblade X products (Takara Tomy)": {
       "revid": 650558,
       "timestamp": "2026-10-06T05:39:13.000Z",
-      "lastScannedDate": "2026-10-11"
+      "lastScannedDate": "2026-10-12"
     },
     "List of Beyblade X products (Hasbro)": {
       "revid": 648918,
       "timestamp": "2026-09-14T01:43:54.000Z",
-      "lastScannedDate": "2026-10-11"
+      "lastScannedDate": "2026-10-12"
     }
   },
   "pages": {
@@ -266,15 +266,15 @@
       "notes": "Revid cambiato, verificato: nessun nuovo componente (solo modifiche testuali/gallery/date release)."
     },
     "BahamutBlitz BK1-50I": {
-      "revid": 650418,
-      "timestamp": "2026-10-04T10:42:19.000Z",
-      "lastScannedDate": "2026-10-06",
+      "revid": 650911,
+      "timestamp": "2026-10-11T10:54:30.000Z",
+      "lastScannedDate": "2026-10-12",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Blitz Bahamut BK 1-50I"
       ],
-      "notes": "aggiunta localizzazione Hasbro (Blitz Bahamut, G4572); tutte le 6 parti CX Expand gia' nel master"
+      "notes": "parti gia' nel master, nessuna novita'"
     },
     "RagnaRage FE4-55Y": {
       "revid": 650593,
@@ -1217,12 +1217,12 @@
       "notes": "aggiunta localizzazione Hasbro (Delta Unicorn, G2752); tutte le 6 parti CX Expand gia' nel master"
     },
     "ValkyrieVolt S4-70V": {
-      "revid": 650362,
-      "timestamp": "2026-10-03T11:56:43.000Z",
-      "lastScannedDate": "2026-10-04",
+      "revid": 650910,
+      "timestamp": "2026-10-11T10:54:11.000Z",
+      "lastScannedDate": "2026-10-12",
       "kind": "product",
       "kindSource": "ai",
-      "notes": "CX-00 prize booster, parti gia presenti"
+      "notes": "parti gia' nel master"
     },
     "WizardArc R4-55LO": {
       "revid": 649729,
@@ -3036,18 +3036,18 @@
     "Blade - SiegSuperion": {
       "revid": 650337,
       "timestamp": "2026-10-02T21:23:29.000Z",
-      "lastScannedDate": "2026-10-11",
+      "lastScannedDate": "2026-10-12",
       "kind": "part",
       "kindSource": "ai",
-      "notes": "gia nel master, invariato"
+      "notes": "gia' suppress-superion"
     },
     "SiegSuperion 0-70LP": {
       "revid": 650333,
       "timestamp": "2026-10-02T21:19:02.000Z",
-      "lastScannedDate": "2026-10-11",
+      "lastScannedDate": "2026-10-12",
       "kind": "product",
       "kindSource": "ai",
-      "notes": "gia nel master, invariato"
+      "notes": "parti gia' nel master"
     },
     "Bey Kick Off Set": {
       "revid": 599877,
