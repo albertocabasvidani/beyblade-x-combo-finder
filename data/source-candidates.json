@@ -1,11 +1,11 @@
 {
-  "lastRun": "2026-09-28",
+  "lastRun": "2026-10-12",
   "lastProposal": {
-    "messageId": "1a0e5d0903b67935",
-    "threadId": "1a0e5d0903b67935",
-    "date": "2026-09-28",
-    "subject": "Beyblade - 3 nuove fonti candidate (settimana 28/09)",
-    "note": "Feedback del 21/09 applicato (risposta 1a0d41f3e6b47a01): promossi youtube-og-pinoy-blader e youtube-dabz-beyblade. Nuovi: 1 propose (website-beybladehub-tw) + 2 manual-verify (gruppo FB winning combination, Beyblade Australia Network). 7 nuovi knownNegatives. Discovery YouTube: 75 canali su 78 gia noti o scartati.",
+    "messageId": "1a12dde57b56ee0d",
+    "threadId": "1a12dde57b56ee0d",
+    "date": "2026-10-12",
+    "subject": "Beyblade - 1 nuova fonte candidata (settimana 12/10)",
+    "note": "Nessun feedback alla proposta del 28/09. Nuovo: 1 propose (website-beywatch-gg). 10 nuovi knownNegatives. Discovery YouTube: 88 canali, 76 gia noti o scartati.",
     "relatedProposals": [
       "19f7ea6fd17b3060",
       "19fc67292184b2f3",
@@ -15,7 +15,8 @@
       "1a0559d54ac7b334",
       "1a079a0d798e7a10",
       "1a09db1dfe015968",
-      "1a0c1c10cc8df4a8"
+      "1a0c1c10cc8df4a8",
+      "1a0e5d0903b67935"
     ]
   },
   "candidates": [
@@ -1563,6 +1564,41 @@
       "verifiedOn": "2026-09-28",
       "dateFound": "2026-09-28",
       "lastSeen": "2026-09-28"
+    },
+    {
+      "candidateId": "website-beywatch-gg",
+      "name": "BEYWATCH.GG",
+      "type": "website",
+      "platform": "website",
+      "provides": "combos",
+      "lang": "en",
+      "region": "GLOBAL",
+      "url": "https://beywatch.gg/tournaments",
+      "urls": [
+        "https://beywatch.gg/tournaments"
+      ],
+      "signals": {
+        "events": 3815,
+        "lastEvent": "2026-10-10",
+        "publishesResults": true,
+        "staticHtml": true,
+        "sourceTags": {
+          "wbo": 38,
+          "metabeys": 4,
+          "athlete-cup": 6,
+          "itabashi": 1,
+          "iloilo": 1
+        },
+        "sampleSize": 50
+      },
+      "rationale": "Aggregatore fan-made di risultati Beyblade X: 3815 tornei, il deck vincitore (fino a 5 combo complete blade+ratchet+bit) con data, formato e regione, aggiornato al 11/10/2026, paginato ?page=N. Ogni evento porta un tag di provenienza. Esempio: \"Beyblade Izmir Ranked X 2, 4/10/2026: Meteor Dragoon 7-60L, Emperor Blast Heavy 9-60J, Shark Scale 1-70LR\".",
+      "dedupCheck": "Su un campione di 50 eventi il 76% ha tag wbo e l 8% metabeys, quindi gia coperti da WBO/MetaBeys. Il valore sta nel restante 16% (tag athlete-cup e itabashi = tornei giapponesi Ai no Athlete Cup ed Extreme Cup di Itabashi, iloilo = Filippine), che nessuna fonte attiva indicizza. Da raccogliere filtrando per tag, altrimenti doppioni. Solo il vincitore, niente 2-3 posto.",
+      "proposedWeight": 0.6,
+      "recommendation": "propose",
+      "status": "proposed",
+      "verifiedOn": "2026-10-12",
+      "dateFound": "2026-10-12",
+      "lastSeen": "2026-10-12"
     }
   ],
   "knownNegatives": [
@@ -1761,6 +1797,16 @@
     "https://bbax.org/ (BBAX, US/CA: leaderboard ELO/punti su Braacket senza alcuna combo)",
     "https://competitive-beyblade.fandom.com/ (wiki con 1 utente attivo: esiti uno-contro-uno di Prime Time Beyblade e liste di rappresentanti, nessuna combo)",
     "https://note.com/sieg_x2x3 (JP: tier list teoriche)",
-    "https://ichigo-mura.com/ (JP: articolo singolo sul Mondiale 2025, non ricorrente)"
+    "https://ichigo-mura.com/ (JP: articolo singolo sul Mondiale 2025, non ricorrente)",
+    "https://meta.beycrate.com/ (tier list aggregata derivata solo da WBO, nessun piazzamento per evento: doppione)",
+    "https://beyxhub.org/ (database parti e tier list manuale ferma a luglio 2026, pagina tornei coming soon)",
+    "https://www.youtube.com/@compabey (canale nuovo, 3 iscritti: test e tornei simulati in 3D, sito compabey.com di deck builder)",
+    "https://www.youtube.com/@obvix (BR: tornei 3on3 senza combo nel titolo, ultimo upload 13/07/2026, inattivo)",
+    "https://www.youtube.com/@faxblader (BR: beyblade caseiro e analisi, non competitivo)",
+    "https://www.youtube.com/@lepurgatoirederyuk (FR: unboxing e review, anche Burst)",
+    "https://www.youtube.com/@gengischadbbx (IT: build e test, teoria)",
+    "https://www.youtube.com/@w.r.i.c (JP: analisi teoriche di winrate, nessun risultato torneo)",
+    "https://www.youtube.com/@blader_jade_moonveil (EN: combo personali, teoria)",
+    "https://luma.com/ Pune Beyblade X (IN: pagine evento con regolamento, nessun risultato pubblicato)"
   ]
 }
