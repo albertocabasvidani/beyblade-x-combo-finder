@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-12T02:02:12.365Z",
+  "lastUpdated": "2026-10-13T02:03:08.071Z",
   "combos": [
     {
       "id": "aero-pegasus-1-70-low-flat",
@@ -5524,6 +5524,50 @@
       "archivedDate": "2026-09-12"
     },
     {
+      "id": "hells-brave-jaggy-7-60-kick",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "7-60",
+      "bit": "kick",
+      "lockChip": "hells",
+      "mainBlade": "brave",
+      "assistBlade": "jaggy",
+      "overBlade": null,
+      "displayName": "Hells Brave J 7-60 Kick",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Oct. 12, 2025  5:11 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-12"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-10-13",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-13"
+    },
+    {
       "id": "hells-brave-jaggy-9-60-point",
       "line": "cx",
       "blade": null,
@@ -5784,6 +5828,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 365d)",
       "archivedDate": "2026-10-05"
+    },
+    {
+      "id": "hells-eclipse-turn-5-60-level",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "5-60",
+      "bit": "level",
+      "lockChip": "hells",
+      "mainBlade": "eclipse",
+      "assistBlade": "turn",
+      "overBlade": null,
+      "displayName": "Hells Eclipse T 5-60 Level",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Oct. 12, 2025  5:11 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-12"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-10-13",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-13"
     },
     {
       "id": "hells-flame-bumper-1-60-hexa",
