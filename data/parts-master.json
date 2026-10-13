@@ -6740,6 +6740,7 @@
     {
       "id": "blitz",
       "category": "mainBlade",
+      "metal": true,
       "line": "cx",
       "names": {
         "tt": "Blitz",
@@ -6930,6 +6931,7 @@
     {
       "id": "delta",
       "category": "mainBlade",
+      "metal": true,
       "line": "cx",
       "names": {
         "tt": "Delta",
@@ -7186,6 +7188,7 @@
     {
       "id": "fortress",
       "category": "mainBlade",
+      "metal": true,
       "line": "cx",
       "names": {
         "tt": "Fortress",
@@ -7276,6 +7279,7 @@
     {
       "id": "hurricane",
       "category": "mainBlade",
+      "metal": true,
       "line": "cx",
       "names": {
         "tt": "Hurricane",
@@ -7348,6 +7352,7 @@
     {
       "id": "rage",
       "category": "mainBlade",
+      "metal": true,
       "line": "cx",
       "names": {
         "tt": "Rage",
@@ -7438,6 +7443,7 @@
     {
       "id": "tread",
       "category": "mainBlade",
+      "metal": true,
       "line": "cx",
       "names": {
         "tt": "Tread",
@@ -7512,6 +7518,7 @@
     {
       "id": "whip",
       "category": "mainBlade",
+      "metal": true,
       "line": "cx",
       "names": {
         "tt": "Whip",

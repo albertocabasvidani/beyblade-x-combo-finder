@@ -2039,6 +2039,7 @@
       "nameWestern": "Blitz",
       "type": "attack",
       "line": "cx",
+      "metal": true,
       "image": "blitz.png"
     },
     {
@@ -2084,6 +2085,7 @@
       "name": "Delta",
       "type": "balance",
       "line": "cx",
+      "metal": true,
       "image": "delta.png"
     },
     {
@@ -2146,6 +2148,7 @@
       "nameWestern": "Armor",
       "type": "defense",
       "line": "cx",
+      "metal": true,
       "image": "fortress.png"
     },
     {
@@ -2163,6 +2166,7 @@
       "id": "hurricane",
       "name": "Hurricane",
       "line": "cx",
+      "metal": true,
       "image": "hurricane.png"
     },
     {
@@ -2183,6 +2187,7 @@
       "nameWestern": "Rage",
       "type": "stamina",
       "line": "cx",
+      "metal": true,
       "image": "rage.png"
     },
     {
@@ -2204,6 +2209,7 @@
       "nameWestern": "Tread",
       "type": "defense",
       "line": "cx",
+      "metal": true,
       "image": "tread.png"
     },
     {
@@ -2221,6 +2227,7 @@
       "id": "whip",
       "name": "Whip",
       "line": "cx",
+      "metal": true,
       "image": "whip.png"
     },
     {

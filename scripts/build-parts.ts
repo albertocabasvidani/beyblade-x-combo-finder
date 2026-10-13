@@ -35,6 +35,7 @@ interface MasterPart {
   short?: string;
   firstReleaseSet?: string;
   integratedRatchet?: boolean;
+  metal?: boolean;
   stats?: Stats;
   source?: { page?: string; url?: string; revid?: number };
   image?: { file?: string; wikiFile?: string; fetchedAt?: string };
@@ -123,6 +124,7 @@ function deriveParts(master: Master) {
     ...withWestern(p.names),
     ...(p.type ? { type: p.type } : {}),  // usato come type del combo CX (fallback 'balance' nel resolver)
     line: 'cx',
+    ...(p.metal ? { metal: true } : {}),  // Metal Blade (Expand Blade): le sole che accettano un Over Blade
     ...withStats(p),
     ...withImage(p),
   }));

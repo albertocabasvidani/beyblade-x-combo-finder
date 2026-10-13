@@ -52,7 +52,7 @@ type Alias = { value: string; lang: string; kind: string };
 interface Entry {
   id: string; category: string; line?: string; type?: string; shortName?: string;
   names: { tt: string; ttRaw?: string; hasbro?: string | null; ja?: string; romaji?: string };
-  aliases: Alias[]; stats?: any;
+  aliases: Alias[]; stats?: any; metal?: boolean;
   products?: string[]; firstReleaseSet?: string | null;
   source?: any; lastVerified?: string; status?: string;
 }
