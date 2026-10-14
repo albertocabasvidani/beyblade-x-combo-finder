@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-13T02:03:08.071Z",
+  "lastUpdated": "2026-10-14T02:03:19.975Z",
   "combos": [
     {
       "id": "aero-pegasus-1-70-low-flat",
@@ -1721,6 +1721,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "dran-blast-slash-9-60-level",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "level",
+      "lockChip": "dran",
+      "mainBlade": "blast",
+      "assistBlade": "slash",
+      "overBlade": null,
+      "displayName": "Dran Blast S 9-60 Level",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Oct. 13, 2025  1:16 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-13"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-10-14",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-14"
     },
     {
       "id": "dran-blast-wheel-3-60-rush",
@@ -16311,6 +16355,50 @@
       "archivedDate": "2026-10-12"
     },
     {
+      "id": "sol-eclipse-wheel-7-70-level",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "7-70",
+      "bit": "level",
+      "lockChip": "sol",
+      "mainBlade": "eclipse",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Sol Eclipse W 7-70 Level",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Untouchables Locals",
+          "url": "https://www.metabeys.com/events/1760535996295",
+          "weight": 1,
+          "date": "2025-10-13"
+        }
+      ],
+      "dateAdded": "2026-06-21",
+      "dateUpdated": "2026-10-14",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-14"
+    },
+    {
       "id": "sol-eclipse-wheel-9-60-level",
       "line": "cx",
       "blade": null,
@@ -17623,6 +17711,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "valkyrie-blast-jaggy-9-60-unite",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "unite",
+      "lockChip": "valkyrie",
+      "mainBlade": "blast",
+      "assistBlade": "jaggy",
+      "overBlade": null,
+      "displayName": "Valkyrie Blast J 9-60 Unite",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Oct. 13, 2025  12:11 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-13"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-10-14",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-14"
     },
     {
       "id": "valkyrie-blast-slash-1-60-kick",
