@@ -100,18 +100,10 @@ evidenza fresca in `combos-archive.json`. Dettagli completi e scheduling in `CLA
 
 ## Riconoscimento prodotti da foto
 
-Prototipo locale in [`tools/photo-recognition/`](tools/photo-recognition/README.md): prepara
-ritagli, confronti visivi e un database derivato che collega le lame a prodotti completi con
-ratchet e bit di vendita. Le fonti e le ricolorazioni aggiunte sono salvate in
-`data/recognition/`; il catalogo persistente resta `data/products-wiki.json`.
-Il riconoscimento è assistito da Codex: il ranking automatico è sperimentale e richiede revisione.
-La forma precede il colore; le versioni TT/Hasbro con combinazioni diverse restano distinte.
-Le lame componibili CX sono rappresentate dai loro componenti e hanno un atlante di confronto dedicato.
-I prodotti già censiti si riusano senza rete; le fonti salvate vengono riscaricate solo con `--refresh` esplicito.
-La preview mantiene il formato fisso dei template in `tools/photo-recognition/templates/`: cambiano soltanto i dati del lotto.
-
-Lo scraper supporta ora `npx --yes tsx scripts/build-products-wiki.ts --pagina "GhostCircle 4-60H"`
-per aggiungere un prodotto al bisogno senza perdere quelli già censiti.
+Il riconoscimento dei prodotti è un progetto autonomo nella cartella sorella
+`../beyblade-detector/`, con codice, template, conferme e preview propri.
+Cataloghi e immagini delle parti restano unici in questo repository e vengono letti
+direttamente dal detector, senza copie da sincronizzare. Anche l’importer resta condiviso.
 
 ## Deploy
 
