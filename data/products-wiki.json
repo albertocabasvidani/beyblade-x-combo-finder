@@ -1,15 +1,15 @@
 {
   "version": "2026-10-15",
   "parserVersion": 2,
-  "generated": "2026-10-15T08:38:24.265Z",
+  "generated": "2026-10-15T09:24:09.444Z",
   "fonte": {
     "inventario": {
-      "considerate": 381,
-      "pagineUniche": 319
+      "considerate": 382,
+      "pagineUniche": 320
     },
     "fetch": {
-      "daCache": 314,
-      "scaricate": 4,
+      "daCache": 318,
+      "scaricate": 1,
       "fallite": 0,
       "nonTrovate": 1
     }
@@ -1423,6 +1423,13 @@
     },
     "PegasusBlast ATr": {
       "revid": 650831,
+      "kind": "product",
+      "redirects": [],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
+    "PegasusBrush M3-85W": {
+      "revid": 634365,
       "kind": "product",
       "redirects": [],
       "parserVersion": 2,
@@ -11128,6 +11135,68 @@
           "dentro": "Clip & Rip Launcher Set"
         }
       ],
+      "flags": []
+    },
+    {
+      "id": "PegasusBrush M3-85W",
+      "page": {
+        "title": "PegasusBrush M3-85W",
+        "revid": 634365,
+        "url": "https://beyblade.fandom.com/wiki/PegasusBrush_M3-85W",
+        "redirects": []
+      },
+      "codes": {
+        "tt": "UX-18",
+        "hasbro": null
+      },
+      "codesAnnunciati": {
+        "tt": [],
+        "hasbro": []
+      },
+      "names": {
+        "tt": "PegasusBrush M3-85W",
+        "hasbro": null,
+        "hasbroDaRedirect": null,
+        "ja": "ペガサスブラッシュM3-85W",
+        "romaji": "PegasasuBurasshu Masshibu Surī Eitī Faibu Wejji",
+        "letture": [
+          "PegasusBrush Massive Three Eighty Five Wedge"
+        ],
+        "altri": []
+      },
+      "system": "Custom Line",
+      "system2": null,
+      "beyType": "defense",
+      "spinDirection": "Right-Spin",
+      "series": "Beyblade X (Season 3)",
+      "parts": {
+        "blade": null,
+        "lockChip": "pegasus",
+        "mainBlade": "brush",
+        "assistBlade": "massive",
+        "overBlade": null,
+        "ratchet": "3-85",
+        "bit": "wedge"
+      },
+      "partsRaw": {
+        "LockChip": "Pegasus",
+        "MainBlade": "Brush",
+        "AssistBlade": "Massive",
+        "Ratchet": "3-85",
+        "Bit": "Wedge"
+      },
+      "release": {
+        "JP": "2025-12-27"
+      },
+      "price": {
+        "JPY": 1600,
+        "USD": null,
+        "CAD": null,
+        "GBP": null,
+        "AUD": null,
+        "EUR": null
+      },
+      "releases": [],
       "flags": []
     },
     {
@@ -36972,7 +37041,7 @@
     }
   ],
   "stats": {
-    "beys": 206,
+    "beys": 207,
     "contenitori": 112,
     "products": 325,
     "productsTt": 186,
