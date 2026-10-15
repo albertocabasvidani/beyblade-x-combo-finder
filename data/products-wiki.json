@@ -1,15 +1,15 @@
 {
   "version": "2026-10-15",
   "parserVersion": 2,
-  "generated": "2026-10-15T09:24:09.444Z",
+  "generated": "2026-10-15T13:20:22.222Z",
   "fonte": {
     "inventario": {
-      "considerate": 382,
-      "pagineUniche": 320
+      "considerate": 383,
+      "pagineUniche": 321
     },
     "fetch": {
-      "daCache": 318,
-      "scaricate": 1,
+      "daCache": 316,
+      "scaricate": 4,
       "fallite": 0,
       "nonTrovate": 1
     }
@@ -1247,7 +1247,7 @@
       "resa": "contenitore"
     },
     "LusterDragoon 6-60LC": {
-      "revid": 651060,
+      "revid": 651162,
       "kind": "product",
       "redirects": [],
       "parserVersion": 2,
@@ -1443,7 +1443,7 @@
       "resa": "bey"
     },
     "PhoenixForce WHM-65MT": {
-      "revid": 651140,
+      "revid": 651161,
       "kind": "product",
       "redirects": [],
       "parserVersion": 2,
@@ -1883,7 +1883,7 @@
       "resa": "bey"
     },
     "SiegSuperion 0-70LP": {
-      "revid": 651139,
+      "revid": 651168,
       "kind": "product",
       "redirects": [
         "Suppress Superion 0-70LP"
@@ -2165,6 +2165,13 @@
     },
     "TyrannoBeat 4-70Q": {
       "revid": 648978,
+      "kind": "product",
+      "redirects": [],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
+    "TyrannoRoar 1-70L": {
+      "revid": 648937,
       "kind": "product",
       "redirects": [],
       "parserVersion": 2,
@@ -9916,7 +9923,7 @@
       "id": "LusterDragoon 6-60LC",
       "page": {
         "title": "LusterDragoon 6-60LC",
-        "revid": 651060,
+        "revid": 651162,
         "url": "https://beyblade.fandom.com/wiki/LusterDragoon_6-60LC",
         "redirects": []
       },
@@ -9937,7 +9944,12 @@
         "letture": [
           "LusterDragoon Six Sixty Low Cyclone"
         ],
-        "altri": []
+        "altri": [
+          {
+            "valore": "Luster Dragoon",
+            "fonte": "manga, English"
+          }
+        ]
       },
       "system": "Basic Line",
       "system2": "Expand Blade",
@@ -11461,7 +11473,7 @@
       "id": "PhoenixForce WHM-65MT",
       "page": {
         "title": "PhoenixForce WHM-65MT",
-        "revid": 651140,
+        "revid": 651161,
         "url": "https://beyblade.fandom.com/wiki/PhoenixForce_WHM-65MT",
         "redirects": []
       },
@@ -11482,7 +11494,12 @@
         "letture": [
           "PhoenixForce Weight Heavy M-65 Metal Taper"
         ],
-        "altri": []
+        "altri": [
+          {
+            "valore": "Phoenix Force",
+            "fonte": "manga, English"
+          }
+        ]
       },
       "system": "Custom Line",
       "system2": "Expand Blade",
@@ -14255,7 +14272,7 @@
       "id": "SiegSuperion 0-70LP",
       "page": {
         "title": "SiegSuperion 0-70LP",
-        "revid": 651139,
+        "revid": 651168,
         "url": "https://beyblade.fandom.com/wiki/SiegSuperion_0-70LP",
         "redirects": [
           "Suppress Superion 0-70LP"
@@ -15993,6 +16010,75 @@
           "tipo": "Dual Pack",
           "nota": "red; BX-31 model",
           "dentro": "Beat Tyranno and Knife Shinobi Dual Pack"
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": "TyrannoRoar 1-70L",
+      "page": {
+        "title": "TyrannoRoar 1-70L",
+        "revid": 648937,
+        "url": "https://beyblade.fandom.com/wiki/TyrannoRoar_1-70L",
+        "redirects": []
+      },
+      "codes": {
+        "tt": "UX-15",
+        "hasbro": null
+      },
+      "codesAnnunciati": {
+        "tt": [],
+        "hasbro": []
+      },
+      "names": {
+        "tt": "TyrannoRoar 1-70L",
+        "hasbro": null,
+        "hasbroDaRedirect": null,
+        "ja": "ティラノロア1-70L",
+        "romaji": "TiranoRoa Wan Sebunti Reberu",
+        "letture": [
+          "Tyranno Roar One Seventy Level"
+        ],
+        "altri": []
+      },
+      "system": "Basic Line",
+      "system2": null,
+      "beyType": "attack",
+      "spinDirection": "Right-Spin",
+      "series": "Beyblade X (Season 2)",
+      "parts": {
+        "blade": "tyranno-roar",
+        "lockChip": null,
+        "mainBlade": null,
+        "assistBlade": null,
+        "overBlade": null,
+        "ratchet": "1-70",
+        "bit": "level"
+      },
+      "partsRaw": {
+        "BladeX": "TyrannoRoar",
+        "Ratchet": "1-70",
+        "Bit": "Level"
+      },
+      "release": {
+        "JP": "2025-08-09"
+      },
+      "price": {
+        "JPY": 4200,
+        "USD": null,
+        "CAD": null,
+        "GBP": null,
+        "AUD": null,
+        "EUR": null
+      },
+      "releases": [
+        {
+          "manufacturer": "tt",
+          "code": "UX-15",
+          "variant": null,
+          "tipo": "Deck Set",
+          "nota": "orange",
+          "dentro": "SharkScale Deck Set"
         }
       ],
       "flags": []
@@ -27990,7 +28076,7 @@
       "manufacturer": "hasbro",
       "owner": {
         "page": "SiegSuperion 0-70LP",
-        "revid": 651139
+        "revid": 651168
       },
       "productType": null,
       "names": {
@@ -33771,7 +33857,7 @@
       "manufacturer": "tt",
       "owner": {
         "page": "LusterDragoon 6-60LC",
-        "revid": 651060
+        "revid": 651162
       },
       "productType": null,
       "names": {
@@ -33869,7 +33955,7 @@
       "manufacturer": "tt",
       "owner": {
         "page": "SiegSuperion 0-70LP",
-        "revid": 651139
+        "revid": 651168
       },
       "productType": null,
       "names": {
@@ -37041,7 +37127,7 @@
     }
   ],
   "stats": {
-    "beys": 207,
+    "beys": 208,
     "contenitori": 112,
     "products": 325,
     "productsTt": 186,
