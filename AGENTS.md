@@ -7,6 +7,7 @@ Per struttura, pipeline e vincoli generali del progetto leggere anche `CLAUDE.md
 Prima di lavorare sul riconoscimento leggere `tools/photo-recognition/README.md`.
 
 - Confrontare prima la forma della lama, poi il colore per scegliere la ricolorazione.
+- Per le CX confrontare lock chip e main blade e consultare l’atlante CX: una lama componibile non ha un ID `blade` monolitico. Il fallback di un componente va dichiarato.
 - Il colore da solo non identifica una lama. Consultare le varianti del modello prima di assegnare una confidenza alta.
 - Risalire al prodotto completo: ratchet e bit vengono dalla combinazione di vendita documentata nella pagina prodotto.
 - Conservare separatamente combinazioni Takara Tomy e Hasbro quando montano parti diverse, anche se condividono la stessa lama e livrea.

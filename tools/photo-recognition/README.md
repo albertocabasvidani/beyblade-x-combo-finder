@@ -10,7 +10,8 @@ riconoscitore autonomo affidabile.
 1. Individuare gli oggetti e salvare riquadri individuali. Le coordinate del primo test sono
    annotate a mano nella foto di riferimento; il prototipo non effettua il rilevamento automatico degli oggetti.
 2. Confrontare **prima sagoma e struttura**: profilo esterno, numero e disposizione delle
-   sezioni, inserti e chip. Il colore non decide il modello.
+   sezioni, inserti e chip. Il colore non decide il modello. Per i CX confrontare lock chip
+   e main blade con `atlas-cx.jpg`, oltre al prodotto montato quando la foto è disponibile.
 3. Aprire i riferimenti delle ricolorazioni dei modelli compatibili e usare il colore per
    distinguere le varianti. Se manca un riferimento della variante, aggiungerlo dal wiki.
 4. Cercare il prodotto completo e recuperare ratchet e bit della configurazione di vendita.
@@ -74,13 +75,22 @@ Ogni oggetto ha un ID alfanumerico e un `box: [x1, y1, x2, y2]` nell’immagine 
 Passarlo con `--regions`. Senza `review`, il report presenta i candidati e lascia il pezzo da
 rivedere. Dopo il confronto, `review.variant` indica una voce di `visual-variants.json`.
 `ownerConfirmedBlade` si aggiunge soltanto quando la lama viene confermata dall’utente.
+Per un CX `ownerConfirmedIdentity` contiene `cx:<lockChip>/<mainBlade>`: si mantiene `blade: null`
+e si registrano i componenti separati, senza inventare una lama monolitica.
 
 ## Stato del primo test
 
 Il campione è stato scelto per leggibilità nella foto fornita: non è casuale né indipendente.
-Le nove proposte iniziali ancora non confermate non sono ground truth.
-Il n. 09 è **Ghost Circle verde**, confermato dall’utente dopo un errore iniziale di Codex
-che lo aveva chiamato Wyvern Gale. L’errore è conservato nel fixture.
+L’utente ha confermato i dieci modelli dopo due correzioni: il n. 07 è **Rhino Reaper**,
+inizialmente chiamato Unicorn Sting, e il n. 09 è **Ghost Circle verde**, inizialmente chiamato
+Wyvern Gale. La prima passata visiva di Codex aveva quindi identificato **8 modelli su 10**.
+Le correzioni e la prima misura sono conservate nel fixture; il risultato corretto non è una
+nuova misurazione indipendente dell’accuratezza.
+
+**RhinoReaper C4-55D** è un CX: lock chip Rhino, main blade Reaper, assist blade Charge,
+ratchet 4-55 e bit Dot. Esce nel `CX-05 02` e nello starter Hasbro `G2746`.
+Il catalogo lo conteneva già, ma il primo ranking visivo escludeva i CX: ora il confronto
+gestisce identità composte, atlante CX e fallback esplicito alla main blade se manca la foto montata.
 
 La stessa lama verde compare in **GhostCircle 4-60H**, `UX-12 02`, e **Circle Ghost 4-60LR**,
 Hasbro `G2755`. Il vecchio `products.json` riportava erroneamente Hexa anche per `G2755`;
@@ -89,13 +99,13 @@ le due combinazioni come alternative.
 
 La baseline separa i descrittori di struttura dal colore e ordina prima per fasce di
 compatibilità della forma, poi per colore entro la stessa fascia. Le distanze non sono
-confidenze calibrate. Sull’attuale campione di sviluppo porta **3/10** proposte al primo posto
-e **3/10** nei primi cinque. Questi risultati non autorizzano un uso automatico: la revisione
-visiva di Codex rimane parte del flusso. La copertura delle immagini è inoltre sbilanciata:
+confidenze calibrate. Il confronto aggiornato è scritto in `results.json` e nel report,
+con conteggio delle etichette confermate distinto dalle proposte. Il ranking resta sperimentale:
+la revisione visiva di Codex rimane parte del flusso. La copertura delle immagini è inoltre sbilanciata:
 molte lame hanno il solo colore base, alcune varianti hanno un riferimento fotografico aggiunto.
 
 I test verificano configurazioni stock, alias, ricolorazioni, codici condivisi, ambiguità
-TT/Hasbro, riquadri fuori foto e assenza di prodotti inventati. La validazione del catalogo
+TT/Hasbro, prodotti CX completi, riquadri fuori foto e assenza di prodotti inventati. La validazione del catalogo
 esistente segnala separatamente i due disaccordi con il vecchio catalogo (GoatTackle `BX-46`
 e Ridge Triceratops `G3392`): gli assert strutturali passano, la verifica non è un via libera
 su ogni dato commerciale.

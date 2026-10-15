@@ -6,7 +6,7 @@
     1372
   ],
   "coordinateConvention": "xyxy, origine in alto a sinistra; coordinate scalate alla foto originale dopo EXIF",
-  "validation": "Nove proposte di Codex da confermare. La lama del n. 09 è Ghost Circle, confermata dall’utente dopo un errore iniziale. Il campione è di sviluppo e non è un test indipendente.",
+  "validation": "Dieci modelli confermati dall’utente. Due correzioni alla prima passata di Codex: n. 07 Rhino Reaper al posto di Unicorn Sting e n. 09 Ghost Circle al posto di Wyvern Gale. Produttore e confezione d’origine restano separati dalla conferma del modello. Il campione è di sviluppo e non è un test indipendente.",
   "objects": [
     {
       "id": "01",
@@ -19,9 +19,10 @@
       "position": "Quinta fila dall’alto, terzo da sinistra",
       "review": {
         "variant": "dran-buster-blue",
-        "confidence": "alta",
+        "confidence": "modello confermato dall’utente",
         "reason": "Sagoma asimmetrica, inserti blu/ciano ed emblema arancione coerenti."
-      }
+      },
+      "ownerConfirmedBlade": "dran-buster"
     },
     {
       "id": "02",
@@ -34,9 +35,10 @@
       "position": "Quinta fila, quinto da sinistra",
       "review": {
         "variant": "wizard-rod-yellow",
-        "confidence": "alta",
+        "confidence": "modello confermato dall’utente",
         "reason": "Profilo rotondo e nucleo giallo con emblema del mago coerenti."
-      }
+      },
+      "ownerConfirmedBlade": "wizard-rod"
     },
     {
       "id": "03",
@@ -49,9 +51,10 @@
       "position": "Penultima fila, quinto da sinistra",
       "review": {
         "variant": "scorpio-spear-orange",
-        "confidence": "alta",
+        "confidence": "modello confermato dall’utente",
         "reason": "Nucleo ambra e scorpione riconoscibili; corrisponde al prodotto indicato dall’utente."
-      }
+      },
+      "ownerConfirmedBlade": "scorpio-spear"
     },
     {
       "id": "04",
@@ -64,9 +67,10 @@
       "position": "Penultima fila, quarto da sinistra",
       "review": {
         "variant": "hells-hammer-red",
-        "confidence": "alta",
+        "confidence": "modello confermato dall’utente",
         "reason": "Tre punte metalliche, inserti rossi e chip arancione corrispondono alla variante standard."
-      }
+      },
+      "ownerConfirmedBlade": "hells-hammer"
     },
     {
       "id": "05",
@@ -79,9 +83,10 @@
       "position": "Seconda fila, sesto da sinistra",
       "review": {
         "variant": "driger-slash-white",
-        "confidence": "media",
+        "confidence": "modello confermato dall’utente",
         "reason": "Sagoma e inserti arancioni corrispondono; emblema meno leggibile per la sfocatura."
-      }
+      },
+      "ownerConfirmedBlade": "driger-slash"
     },
     {
       "id": "06",
@@ -94,9 +99,10 @@
       "position": "Seconda fila, secondo da sinistra",
       "review": {
         "variant": "wizard-arrow-yellow",
-        "confidence": "media",
+        "confidence": "modello confermato dall’utente",
         "reason": "Tre ali, nucleo giallo e chip coerenti; foto poco nitida."
-      }
+      },
+      "ownerConfirmedBlade": "wizard-arrow"
     },
     {
       "id": "07",
@@ -108,10 +114,16 @@
       ],
       "position": "Seconda fila, quinto da sinistra",
       "review": {
-        "variant": "unicorn-sting-teal",
-        "confidence": "alta",
-        "reason": "Combinazione turchese/viola e profilo metallico asimmetrico coerenti."
-      }
+        "variant": "rhino-reaper-grey-blue",
+        "confidence": "modello confermato dall’utente",
+        "reason": "Correzione dell’utente: Rhino Reaper. Configurazione di vendita RhinoReaper C4-55D: lock chip Rhino, main blade Reaper, assist blade Charge, ratchet 4-55 e bit Dot.",
+        "previousError": {
+          "blade": "unicorn-sting",
+          "confidence": "alta",
+          "cause": "Lama CX esclusa dai riferimenti visivi iniziali; confronto errato con UnicornSting."
+        }
+      },
+      "ownerConfirmedIdentity": "cx:rhino/reaper"
     },
     {
       "id": "08",
@@ -124,9 +136,10 @@
       "position": "Prima fila, terzo da sinistra",
       "review": {
         "variant": "knight-shield-green",
-        "confidence": "media",
+        "confidence": "modello confermato dall’utente",
         "reason": "Inserti verdi e sagoma corrispondono; chip piccolo e sfocato."
-      }
+      },
+      "ownerConfirmedBlade": "knight-shield"
     },
     {
       "id": "09",
@@ -140,7 +153,7 @@
       "ownerConfirmedBlade": "ghost-circle",
       "review": {
         "variant": "ghost-circle-green",
-        "confidence": "lama confermata dall’utente; confezione da distinguere",
+        "confidence": "modello confermato dall’utente",
         "reason": "Correzione dell’utente: Ghost Circle verde/giallo. TT GhostCircle 4-60H e Hasbro Circle Ghost 4-60LR condividono la lama ma hanno un bit diverso.",
         "previousError": {
           "blade": "wyvern-gale",
@@ -160,9 +173,19 @@
       "position": "Seconda fila, terzo da sinistra",
       "review": {
         "variant": "hells-scythe-red",
-        "confidence": "media",
+        "confidence": "modello confermato dall’utente",
         "reason": "Inserti rossi, profilo a quattro sezioni e chip Hells coerenti; manca dettaglio sul retro."
-      }
+      },
+      "ownerConfirmedBlade": "hells-scythe"
     }
-  ]
+  ],
+  "firstCodexPass": {
+    "correctModels": 8,
+    "total": 10,
+    "errors": [
+      "07",
+      "09"
+    ],
+    "includesUserCorrections": false
+  }
 }

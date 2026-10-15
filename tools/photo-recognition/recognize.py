@@ -45,6 +45,15 @@ def font(size):
     return ImageFont.load_default()
 
 
+def visual_identity(parts):
+    """Le CX hanno una lama componibile: non inventare un ID blade monolitico."""
+    if parts.get('blade'):
+        return parts['blade']
+    if parts.get('lockChip') and parts.get('mainBlade'):
+        return f"cx:{parts['lockChip']}/{parts['mainBlade']}"
+    return None
+
+
 def build_catalog():
     wiki = read(ROOT / 'data/products-wiki.json')
     master = read(ROOT / 'data/parts-master.json')
@@ -78,6 +87,11 @@ def build_catalog():
         b = assemblies[v['assembly']]
         if b['parts']['blade'] != v['blade']:
             raise ValueError(f"Lama incoerente: {v['id']}")
+        if not visual_identity(b['parts']):
+            raise ValueError(f"Identità visiva non risolta: {v['id']}")
+        for k, value in v.get('visibleParts', {}).items():
+            if b['parts'].get(k) != value:
+                raise ValueError(f"Componente CX incoerente: {v['id']} {k}")
         snap = DATA / f"sources/{v['id']}.json"
         if snap.exists():
             s = read(snap)
@@ -102,7 +116,7 @@ def stock_result(catalog, variant_id):
     b = catalog['assemblies'][v['assembly']]
     part = lambda k: catalog['parts'].get(b['parts'].get(k), {})
     bit = part('bit')
-    return {'variant': v['id'], 'blade': v['blade'], 'name': b['names']['tt'],
+    return {'variant': v['id'], 'blade': v['blade'], 'identity': visual_identity(b['parts']), 'name': b['names']['tt'],
             'westernName': b['names'].get('hasbro') or b['names'].get('hasbroDaRedirect'),
             'stockParts': b['parts'], 'bitName': bit.get('names', {}).get('tt'),
             'bitCode': bit.get('shortName'), 'preferredCode': v['preferredCode'],
@@ -130,7 +144,12 @@ def lookup(catalog, name, color=None, maker=None):
             matches.append(p['id'])
     candidates = []
     for b in catalog['assemblies'].values():
-        if b['parts'].get('blade') not in matches:
+        # Anche i nomi composti CX e i redirect Hasbro sono chiavi di ricerca.
+        aliases = [b['id'], *b['page'].get('redirects', []),
+                   b['names'].get('tt'), b['names'].get('hasbro'), b['names'].get('hasbroDaRedirect')]
+        aliases = [re.sub(r'\s+(?:[A-Z]{0,3})?\d+-\d+[A-Za-z]*$', '', a) for a in aliases if a]
+        named_assembly = norm(name) in {norm(a) for a in aliases}
+        if b['parts'].get('blade') not in matches and not named_assembly:
             continue
         offers = [o for o in catalog['offers'] if o['assembly'] == b['id']
                   and (not maker or o['manufacturer'] == maker)]
@@ -140,7 +159,7 @@ def lookup(catalog, name, color=None, maker=None):
                 offers = [o for o in offers if re.search(r'\b' + re.escape(color.lower()) + r'\b', (o.get('nota') or '').lower())]
         if not offers:
             continue
-        candidates.append({'assembly': b['id'], 'stockParts': b['parts'], 'offers': offers,
+        candidates.append({'assembly': b['id'], 'identity': visual_identity(b['parts']), 'stockParts': b['parts'], 'offers': offers,
                            'source': b['page'], 'currentAssemblyVerified': False})
     return {'blades': matches, 'color': color, 'manufacturer': maker,
             'status': ('resolved_stock' if len(candidates) == 1 else 'ambiguous' if candidates else 'unresolved'),
@@ -222,11 +241,22 @@ def references(catalog):
             refs.append({'blade': p['id'], 'file': path, 'kind': 'part', 'variant': None})
     for v in catalog['variants']:
         path = DATA / f"sources/{v['id']}.json"
+        downloaded = []
         if path.exists():
             for image in read(path)['images']:
                 if image.get('file') and (DATA / image['file']).exists():
-                    refs.append({'blade': v['blade'], 'file': DATA / image['file'],
+                    downloaded.append(image['file'])
+                    refs.append({'blade': visual_identity(catalog['assemblies'][v['assembly']]['parts']), 'file': DATA / image['file'],
                                  'kind': 'product', 'variant': v['id']})
+        # Un CX resta nei candidati anche se il CDN non ha fornito la foto montata.
+        # Il fallback è dichiarato come singolo componente, non come foto del prodotto.
+        b = catalog['assemblies'][v['assembly']]
+        if not downloaded and not b['parts'].get('blade'):
+            main = catalog['parts'].get(b['parts'].get('mainBlade'), {})
+            filename = main.get('image', {}).get('file')
+            if filename and (PARTS / filename).exists():
+                refs.append({'blade': visual_identity(b['parts']), 'file': PARTS / filename,
+                             'kind': 'cx-component', 'variant': v['id']})
     for ref in refs:
         with Image.open(ref['file']) as im:
             ref['features'] = features(im, reference=True)
@@ -279,6 +309,19 @@ def make_atlas(catalog, out):
                 atlas.paste(thumbnail(im, (210, 210)), (x, y))
         d.text((x + 4, y + 215), p['id'], fill='black', font=font(12))
     atlas.save(out / 'atlas.jpg')
+    cx = [p for p in catalog['parts'].values()
+          if p.get('category') in ('lockChip', 'mainBlade', 'assistBlade', 'overBlade') and p.get('image')]
+    if cx:
+        atlas = Image.new('RGB', (cell_w * 7, cell_h * math.ceil(len(cx) / 7)), '#eeeeee')
+        d = ImageDraw.Draw(atlas)
+        for i, p in enumerate(cx):
+            x, y = (i % 7) * cell_w, (i // 7) * cell_h
+            path = PARTS / p['image']['file']
+            if path.exists():
+                with Image.open(path) as im:
+                    atlas.paste(thumbnail(im, (210, 210)), (x, y))
+            d.text((x + 4, y + 215), f"{p['category']}: {p['id']}", fill='black', font=font(12))
+        atlas.save(out / 'atlas-cx.jpg')
 
 
 def run(image_path, fixture_path, out):
@@ -301,12 +344,12 @@ def run(image_path, fixture_path, out):
         candidates = rank(crop, refs)  # Nessuna review/etichetta entra in questo calcolo.
         review = obj.get('review')
         result = stock_result(catalog, review['variant']) if review else None
-        expected = result['blade'] if result else None
+        expected = result['identity'] if result else None
         place = next((i + 1 for i, c in enumerate(candidates) if c['blade'] == expected), None)
         row = {'id': obj['id'], 'box': list(box), 'position': obj.get('position'),
                'candidates': candidates[:8], 'review': review, 'result': result,
                'reviewedBladeRank': place,
-               'ownerConfirmed': obj.get('ownerConfirmedBlade') == expected if expected else False}
+               'ownerConfirmed': (obj.get('ownerConfirmedIdentity') or obj.get('ownerConfirmedBlade')) == expected if expected else False}
         rows.append(row)
         if result:
             metrics.append({'id': obj['id'], 'blade': expected, 'rank': place})
@@ -328,7 +371,9 @@ def run(image_path, fixture_path, out):
               'validation': fixture.get('validation'), 'catalogVersion': catalog['sourceVersion'],
               'counts': {'products': len(catalog['products']), 'assemblies': len(catalog['assemblies']),
                          'bladeReferences': len({r['blade'] for r in refs}), 'images': len(refs)},
-              'developmentBenchmark': {'provisionalLabels': n, 'top1': sum(m['rank'] == 1 for m in metrics),
+              'developmentBenchmark': {'provisionalLabels': sum(not r['ownerConfirmed'] for r in rows),
+                                       'labels': n, 'ownerConfirmedLabels': sum(r['ownerConfirmed'] for r in rows),
+                                       'top1': sum(m['rank'] == 1 for m in metrics),
                                        'top5': sum(m['rank'] is not None and m['rank'] <= 5 for m in metrics),
                                        'details': metrics, 'independentTest': False},
               'objects': rows}
@@ -337,7 +382,9 @@ def run(image_path, fixture_path, out):
     print(json.dumps({'out': str(out), 'counts': report['counts'],
                       'baselineTop1': report['developmentBenchmark']['top1'],
                       'baselineTop5': report['developmentBenchmark']['top5'],
-                      'provisionalLabels': n}, ensure_ascii=True))
+                      'labels': n,
+                      'ownerConfirmedLabels': report['developmentBenchmark']['ownerConfirmedLabels'],
+                      'provisionalLabels': report['developmentBenchmark']['provisionalLabels']}, ensure_ascii=True))
     return report
 
 
@@ -351,9 +398,11 @@ def render(report, catalog, image, annotated, out):
             cards.append(f'<article><h2>{esc(row["id"])} — da rivedere</h2><img src="{embed(crop)}"></article>')
             continue
         variant = next(v for v in catalog['variants'] if v['id'] == r['variant'])
-        part = catalog['parts'][r['blade']]
+        part = catalog['parts'][r['stockParts']['blade'] or r['stockParts']['mainBlade']]
         ref_path = PARTS / part['image']['file']
         reference_label = 'Riferimento della lama base (può avere un colore diverso)'
+        if not r['stockParts']['blade']:
+            reference_label = 'Riferimento della sola main blade; lock chip e assist blade sono separati'
         snapshot_path = DATA / f"sources/{r['variant']}.json"
         snapshot = read(snapshot_path) if snapshot_path.exists() else None
         if snapshot:
@@ -367,6 +416,8 @@ def render(report, catalog, image, annotated, out):
                                 + (f" · {o['packName']}" if o.get('packName') else '')
                                 + (f" · {o['nota']}" if o.get('nota') else '')) for o in r['commercialCandidates'])
         parts = r['stockParts']
+        cx_parts = ' · '.join(f"{k}: {esc(catalog['parts'].get(parts.get(k), {}).get('names', {}).get('tt'))}"
+                              for k in ('lockChip', 'mainBlade', 'assistBlade', 'overBlade') if parts.get(k))
         alternatives = ''.join(f"<p><b>Alternativa con la stessa lama:</b> {esc(a['name'])} · Ratchet {esc(a['stockParts']['ratchet'])}"
                                f" · Bit {esc(catalog['parts'].get(a['stockParts']['bit'], {}).get('names', {}).get('tt'))}.</p>"
                                for a in r['alternativeStockProducts'])
@@ -377,15 +428,16 @@ def render(report, catalog, image, annotated, out):
           <figure><img src="{embed(ref)}"><figcaption>{reference_label}</figcaption></figure></div>
           <p><b>{esc(r['preferredCode'])}{('-' + esc(r['variantNumber'])) if r['variantNumber'] else ''}</b>
           · Ratchet <b>{esc(parts['ratchet'])}</b> · Bit <b>{esc(r['bitName'])} ({esc(r['bitCode'])})</b></p>
+          {f'<p>{cx_parts}</p>' if cx_parts else ''}
           {alternatives}{ambiguity}
           <p>{esc(row['review']['reason'])}</p>
           <p><a href="{esc(r['source']['url'])}">Scheda prodotto wiki</a> ·
-          <a href="{esc(r['officialUrl'])}">Prodotto Takara Tomy</a></p>
+          <a href="{esc(r['officialUrl'])}">Fonte del prodotto candidato</a></p>
           <details><summary>Confezioni e uscite della stessa combinazione</summary><p>{offers}</p>
           <p>L’elenco comprende anche ricolorazioni: il codice principale sopra indica il candidato coerente con la variante proposta.
           Produttore e confezione d’origine restano da confermare.</p></details>
           <p class="small">Revisione wiki {esc(snapshot['revid'] if snapshot else r['source']['revid'])} ·
-          Baseline: lama al posto {esc(row['reviewedBladeRank'])} · {'Lama confermata dall’utente.' if row['ownerConfirmed'] else 'Proposta in attesa di conferma.'}</p></article>''')
+          Baseline: identità al posto {esc(row['reviewedBladeRank'])} · {'Modello confermato dall’utente.' if row['ownerConfirmed'] else 'Proposta in attesa di conferma.'}</p></article>''')
     bench = report['developmentBenchmark']
     page = f'''<!doctype html><html lang="it"><meta charset="utf-8"><meta name="viewport" content="width=device-width">
       <title>Beyblade X · prova di riconoscimento</title><style>
@@ -397,11 +449,11 @@ def render(report, catalog, image, annotated, out):
       figcaption,.small{{font-size:13px;color:#526874}}a{{color:#006a85}}summary{{cursor:pointer}}h2{{font-size:21px}}
       </style><main><h1>Dieci prodotti dalla foto</h1><div class="banner">
       <p>Ogni ritaglio è collegato a una combinazione commerciale completa. Ratchet e bit provengono dalla scheda del prodotto riconosciuto.</p>
-      <p>Le dieci identificazioni sono proposte di Codex da confermare. La combinazione di vendita non certifica eventuali parti cambiate dal proprietario;
+      <p>Modelli confermati dall’utente: {bench['ownerConfirmedLabels']}/{bench['labels']}. {esc(report['validation'])} La combinazione di vendita non certifica eventuali parti cambiate dal proprietario;
       una vista superiore può lasciare indistinguibili confezioni Takara Tomy e Hasbro equivalenti.</p>
       <p>Catalogo: <b>{report['counts']['products']} prodotti / {report['counts']['assemblies']} Beyblade</b>.
-      Baseline automatica: <b>{bench['top1']}/{bench['provisionalLabels']}</b> lame al primo posto,
-      <b>{bench['top5']}/{bench['provisionalLabels']}</b> nei primi cinque. Punteggi confrontati con etichette provvisorie sul campione di sviluppo.</p></div>
+      Baseline automatica: <b>{bench['top1']}/{bench['labels']}</b> identità al primo posto,
+      <b>{bench['top5']}/{bench['labels']}</b> nei primi cinque. Confronto sul campione di sviluppo; non è un test su foto nuove.</p></div>
       <img class="overview" src="{embed(annotated, (1700,1700))}" alt="Foto con dieci riquadri numerati">
       <div class="grid">{''.join(cards)}</div>
       <p class="small">Fonti: Beyblade Wiki/Fandom (autori e licenza nelle pagine immagine e nei metadati salvati);

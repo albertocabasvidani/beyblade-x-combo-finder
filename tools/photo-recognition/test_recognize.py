@@ -65,6 +65,17 @@ class ProductRecognitionTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             list(crop_boxes(Image.new('RGB', (200, 200)), f))
 
+    def test_rhino_reaper_is_cx_product_with_stock_components(self):
+        r = lookup(self.catalog, 'Rhino Reaper', 'blue')
+        self.assertEqual(r['status'], 'resolved_stock')
+        parts = r['candidates'][0]['stockParts']
+        self.assertIsNone(parts['blade'])
+        self.assertEqual((parts['lockChip'], parts['mainBlade'], parts['assistBlade']), ('rhino', 'reaper', 'charge'))
+        self.assertEqual((parts['ratchet'], parts['bit']), ('4-55', 'dot'))
+        self.assertEqual(r['candidates'][0]['identity'], 'cx:rhino/reaper')
+        western = lookup(self.catalog, 'Reaper Rhino')
+        self.assertEqual(western['candidates'][0]['assembly'], 'RhinoReaper C4-55D')
+
 
 if __name__ == '__main__':
     unittest.main()
