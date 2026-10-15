@@ -1,17 +1,17 @@
 {
-  "version": "2026-09-22",
+  "version": "2026-10-15",
   "parserVersion": 2,
-  "generated": "2026-09-22T16:25:12.142Z",
+  "generated": "2026-10-15T07:09:55.683Z",
   "fonte": {
     "inventario": {
-      "considerate": 371,
-      "pagineUniche": 310
+      "considerate": 380,
+      "pagineUniche": 380
     },
     "fetch": {
-      "daCache": 309,
+      "daCache": 317,
       "scaricate": 0,
       "fallite": 0,
-      "nonTrovate": 1
+      "nonTrovate": 0
     }
   },
   "pagine": {
@@ -30,7 +30,7 @@
       "resa": "contenitore"
     },
     "AeroPegasus 3-70A": {
-      "revid": 649723,
+      "revid": 650029,
       "kind": "product",
       "redirects": [],
       "parserVersion": 2,
@@ -44,7 +44,7 @@
       "resa": "bey"
     },
     "All In One Set": {
-      "revid": 649206,
+      "revid": 650678,
       "kind": "set",
       "redirects": [],
       "parserVersion": 2,
@@ -57,42 +57,6 @@
       "parserVersion": 2,
       "resa": "bey"
     },
-    "WizardArc R4-55LO": {
-      "revid": 649729,
-      "kind": "product",
-      "redirects": [
-        "Arc Wizard R 4-55LO"
-      ],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
-    "KnightFortress GV8-70UN": {
-      "revid": 649736,
-      "kind": "product",
-      "redirects": [
-        "Armor Knight GV 8-70UN"
-      ],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
-    "WizardArrow 4-80B": {
-      "revid": 649794,
-      "kind": "product",
-      "redirects": [
-        "Arrow Wizard 4-80B"
-      ],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
-    "WizardArrow 4-80GB": {
-      "revid": 646145,
-      "kind": "product",
-      "redirects": [
-        "Arrow Wizard 4-80GB"
-      ],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
     "Arrow Wizard 4-80O": {
       "revid": 645841,
       "kind": "product",
@@ -101,7 +65,7 @@
       "resa": "bey"
     },
     "BahamutBlitz BK1-50I": {
-      "revid": 648935,
+      "revid": 650911,
       "kind": "product",
       "redirects": [
         "Blitz Bahamut BK 1-50I"
@@ -138,7 +102,7 @@
       "resa": "contenitore"
     },
     "BearScratch 5-60F": {
-      "revid": 649002,
+      "revid": 649992,
       "kind": "product",
       "redirects": [
         "Savage Bear 5-60F"
@@ -149,6 +113,13 @@
     "Beat Tyranno and Knife Shinobi Dual Pack": {
       "revid": 601940,
       "kind": "multipack",
+      "redirects": [],
+      "parserVersion": 2,
+      "resa": "contenitore"
+    },
+    "Bey Kick Off Set": {
+      "revid": 599877,
+      "kind": "set",
       "redirects": [],
       "parserVersion": 2,
       "resa": "contenitore"
@@ -226,19 +197,10 @@
       "resa": "contenitore"
     },
     "BrachioWhip OW5-70Nr": {
-      "revid": 649004,
+      "revid": 650559,
       "kind": "product",
       "redirects": [
         "Whip Brachio OW 5-70Nr"
-      ],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
-    "FoxBrush J9-70GR": {
-      "revid": 649698,
-      "kind": "product",
-      "redirects": [
-        "Brush Fox J 9-70GR"
       ],
       "parserVersion": 2,
       "resa": "bey"
@@ -251,7 +213,7 @@
       "resa": "bey"
     },
     "BulletGriffon H": {
-      "revid": 649734,
+      "revid": 650485,
       "kind": "product",
       "redirects": [
         "Rocket Griffon H"
@@ -260,7 +222,7 @@
       "resa": "bey"
     },
     "Bumblebee 1-60W": {
-      "revid": 647058,
+      "revid": 650693,
       "kind": "product",
       "redirects": [],
       "parserVersion": 2,
@@ -279,15 +241,6 @@
       "redirects": [],
       "parserVersion": 2,
       "resa": "contenitore"
-    },
-    "DranBuster 1-60A": {
-      "revid": 649700,
-      "kind": "product",
-      "redirects": [
-        "Buster Dran 1-60A"
-      ],
-      "parserVersion": 2,
-      "resa": "bey"
     },
     "Buster Dran 5-70DB": {
       "revid": 646352,
@@ -318,7 +271,7 @@
       "resa": "contenitore"
     },
     "CerberusFlame W5-80WB": {
-      "revid": 646832,
+      "revid": 650235,
       "kind": "product",
       "redirects": [
         "Flame Cerberus W 5-80WB"
@@ -389,15 +342,6 @@
       "parserVersion": 2,
       "resa": "contenitore"
     },
-    "LeonClaw 5-60P": {
-      "revid": 648968,
-      "kind": "product",
-      "redirects": [
-        "Claw Leon 5-60P"
-      ],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
     "Clip & Rip Launcher Set": {
       "revid": 643968,
       "kind": "accessory",
@@ -406,7 +350,7 @@
       "resa": "contenitore"
     },
     "ClockMirage 9-65B": {
-      "revid": 649732,
+      "revid": 650239,
       "kind": "product",
       "redirects": [
         "Mirage Clock 9-65B"
@@ -415,19 +359,10 @@
       "resa": "bey"
     },
     "CobaltDragoon 2-60C": {
-      "revid": 649697,
+      "revid": 650464,
       "kind": "accessory",
       "redirects": [
         "Cobalt Dragoon Deluxe Left-Spin String Launcher Set"
-      ],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
-    "CobaltDrake 4-60F": {
-      "revid": 649704,
-      "kind": "product",
-      "redirects": [
-        "Cobalt Drake 4-60F"
       ],
       "parserVersion": 2,
       "resa": "bey"
@@ -436,6 +371,15 @@
       "revid": 633924,
       "kind": "product",
       "redirects": [],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
+    "CobaltDrake 4-60F": {
+      "revid": 650158,
+      "kind": "product",
+      "redirects": [
+        "Cobalt Drake 4-60F"
+      ],
       "parserVersion": 2,
       "resa": "bey"
     },
@@ -452,24 +396,6 @@
       "redirects": [],
       "parserVersion": 2,
       "resa": "contenitore"
-    },
-    "DranBrave S6-60V": {
-      "revid": 649701,
-      "kind": "product",
-      "redirects": [
-        "Courage Dran S 6-60V"
-      ],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
-    "SphinxCowl 9-80GN": {
-      "revid": 648976,
-      "kind": "product",
-      "redirects": [
-        "Cowl Sphinx 9-80GN"
-      ],
-      "parserVersion": 2,
-      "resa": "bey"
     },
     "Cowl Sphinx and Crest Leon Dual Pack": {
       "revid": 609816,
@@ -510,18 +436,16 @@
       "parserVersion": 2,
       "resa": "bey"
     },
-    "MummyCurse 7-55W": {
-      "revid": 648995,
-      "kind": "product",
-      "redirects": [
-        "Curse Mummy 7-55W"
-      ],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
     "Custom Grip (Beyblade X)": {
       "revid": 635900,
       "kind": "accessory",
+      "redirects": [],
+      "parserVersion": 2,
+      "resa": "contenitore"
+    },
+    "Customize Set C": {
+      "revid": 651141,
+      "kind": "set",
       "redirects": [],
       "parserVersion": 2,
       "resa": "contenitore"
@@ -561,28 +485,10 @@
       "parserVersion": 2,
       "resa": "bey"
     },
-    "PerseusDark B6-80W": {
-      "revid": 649724,
-      "kind": "product",
-      "redirects": [
-        "Dark Perseus B 6-80W"
-      ],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
     "Darth Vader 4-60P": {
       "revid": 610266,
       "kind": "product",
       "redirects": [],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
-    "UnicornDelta PO3-60GU": {
-      "revid": 649716,
-      "kind": "product",
-      "redirects": [
-        "Delta Unicorn PO 3-60GU"
-      ],
       "parserVersion": 2,
       "resa": "bey"
     },
@@ -617,7 +523,7 @@
       "resa": "contenitore"
     },
     "DracielShield 7-60D": {
-      "revid": 649289,
+      "revid": 649836,
       "kind": "product",
       "redirects": [
         "Draciel Shield 7-60D"
@@ -633,7 +539,7 @@
       "resa": "bey"
     },
     "DrakeBrave G4-70I": {
-      "revid": 649493,
+      "revid": 650236,
       "kind": "product",
       "redirects": [],
       "parserVersion": 2,
@@ -645,6 +551,31 @@
       "redirects": [],
       "parserVersion": 2,
       "resa": "contenitore"
+    },
+    "DranArc S2-70K": {
+      "revid": 612189,
+      "kind": "product",
+      "redirects": [],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
+    "DranBrave S6-60V": {
+      "revid": 649701,
+      "kind": "product",
+      "redirects": [
+        "Courage Dran S 6-60V"
+      ],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
+    "DranBuster 1-60A": {
+      "revid": 649700,
+      "kind": "product",
+      "redirects": [
+        "Buster Dran 1-60A"
+      ],
+      "parserVersion": 2,
+      "resa": "bey"
     },
     "DranBuster 3-70N": {
       "revid": 600838,
@@ -682,7 +613,7 @@
       "resa": "contenitore"
     },
     "DranStrike 4-50FF": {
-      "revid": 649702,
+      "revid": 650413,
       "kind": "product",
       "redirects": [
         "Strike Dran 4-50FF"
@@ -698,7 +629,7 @@
       "resa": "bey"
     },
     "DranSword 3-60F": {
-      "revid": 649798,
+      "revid": 651059,
       "kind": "product",
       "redirects": [
         "Sword Dran 3-60F"
@@ -810,19 +741,19 @@
       "parserVersion": 2,
       "resa": "bey"
     },
-    "PhoenixFeather 2-60N": {
-      "revid": 635041,
-      "kind": "product",
-      "redirects": [
-        "Feather Phoenix 2-60N"
-      ],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
     "Fort Hornet R 7-60T": {
       "revid": 645020,
       "kind": "product",
       "redirects": [],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
+    "FoxBrush J9-70GR": {
+      "revid": 649698,
+      "kind": "product",
+      "redirects": [
+        "Brush Fox J 9-70GR"
+      ],
       "parserVersion": 2,
       "resa": "bey"
     },
@@ -861,6 +792,13 @@
       "parserVersion": 2,
       "resa": "bey"
     },
+    "GhostCircle 4-60H": {
+      "revid": 621828,
+      "kind": "product",
+      "redirects": [],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
     "Gill Shark 4-70O": {
       "revid": 645004,
       "kind": "product",
@@ -876,7 +814,7 @@
       "resa": "bey"
     },
     "GloryValkyrie LF": {
-      "revid": 648368,
+      "revid": 650601,
       "kind": "product",
       "redirects": [
         "Glory Valkerion LF"
@@ -885,7 +823,7 @@
       "resa": "bey"
     },
     "GoatTackle 7-70T": {
-      "revid": 646154,
+      "revid": 650241,
       "kind": "product",
       "redirects": [],
       "parserVersion": 2,
@@ -942,17 +880,8 @@
       "parserVersion": 2,
       "resa": "bey"
     },
-    "HellsHammer 3-70H": {
-      "revid": 649708,
-      "kind": "product",
-      "redirects": [
-        "Hammer Incendio 3-70H"
-      ],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
     "HeavensRing 0-80DS": {
-      "revid": 649735,
+      "revid": 650635,
       "kind": "product",
       "redirects": [
         "Ring Aether 0-80DS"
@@ -974,6 +903,15 @@
       "parserVersion": 2,
       "resa": "contenitore"
     },
+    "HellsHammer 3-70H": {
+      "revid": 649708,
+      "kind": "product",
+      "redirects": [
+        "Hammer Incendio 3-70H"
+      ],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
     "HellsNether Deck Set": {
       "revid": 646065,
       "kind": "set",
@@ -982,7 +920,7 @@
       "resa": "contenitore"
     },
     "HellsNether Z": {
-      "revid": 649711,
+      "revid": 650101,
       "kind": "product",
       "redirects": [
         "Nether Incendio Z"
@@ -1016,28 +954,10 @@
       "resa": "bey"
     },
     "HellsScythe 4-60T": {
-      "revid": 649796,
+      "revid": 651121,
       "kind": "product",
       "redirects": [
         "Scythe Incendio 4-60T"
-      ],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
-    "KnightShield 3-80N": {
-      "revid": 649807,
-      "kind": "product",
-      "redirects": [
-        "Helm Knight 3-80N"
-      ],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
-    "RhinoHorn 3-80S": {
-      "revid": 649712,
-      "kind": "product",
-      "redirects": [
-        "Horn Rhino 3-80S"
       ],
       "parserVersion": 2,
       "resa": "bey"
@@ -1105,24 +1025,6 @@
       "parserVersion": 2,
       "resa": "contenitore"
     },
-    "SharkEdge 1-60Q": {
-      "revid": 646572,
-      "kind": "product",
-      "redirects": [
-        "Keel Shark 1-60Q"
-      ],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
-    "SharkEdge 3-60LF": {
-      "revid": 648966,
-      "kind": "product",
-      "redirects": [
-        "Keel Shark 3-60LF"
-      ],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
     "Knife Shinobi 4-80HN": {
       "revid": 624429,
       "kind": "product",
@@ -1136,6 +1038,15 @@
       "redirects": [],
       "parserVersion": 2,
       "resa": "contenitore"
+    },
+    "KnightFortress GV8-70UN": {
+      "revid": 650575,
+      "kind": "product",
+      "redirects": [
+        "Armor Knight GV 8-70UN"
+      ],
+      "parserVersion": 2,
+      "resa": "bey"
     },
     "KnightLance 3-60LF": {
       "revid": 645834,
@@ -1156,9 +1067,18 @@
       "resa": "bey"
     },
     "KnightMail 3-85BS": {
-      "revid": 648962,
+      "revid": 650019,
       "kind": "product",
       "redirects": [],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
+    "KnightShield 3-80N": {
+      "revid": 650773,
+      "kind": "product",
+      "redirects": [
+        "Helm Knight 3-80N"
+      ],
       "parserVersion": 2,
       "resa": "bey"
     },
@@ -1190,6 +1110,15 @@
       "parserVersion": 2,
       "resa": "contenitore"
     },
+    "LeonClaw 5-60P": {
+      "revid": 650038,
+      "kind": "product",
+      "redirects": [
+        "Claw Leon 5-60P"
+      ],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
     "LeonCrest 7-60GN": {
       "revid": 648969,
       "kind": "product",
@@ -1219,7 +1148,7 @@
       "resa": "contenitore"
     },
     "LusterDragoon 6-60LC": {
-      "revid": 649196,
+      "revid": 651060,
       "kind": "product",
       "redirects": [],
       "parserVersion": 2,
@@ -1240,7 +1169,7 @@
       "resa": "bey"
     },
     "MeteorDragoon 3-70J": {
-      "revid": 649738,
+      "revid": 650351,
       "kind": "product",
       "redirects": [],
       "parserVersion": 2,
@@ -1292,6 +1221,15 @@
       "revid": 613328,
       "kind": "product",
       "redirects": [],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
+    "MummyCurse 7-55W": {
+      "revid": 650178,
+      "kind": "product",
+      "redirects": [
+        "Curse Mummy 7-55W"
+      ],
       "parserVersion": 2,
       "resa": "bey"
     },
@@ -1352,14 +1290,14 @@
       "resa": "bey"
     },
     "Optimus Prime 7-70L": {
-      "revid": 647057,
+      "revid": 650692,
       "kind": "product",
       "redirects": [],
       "parserVersion": 2,
       "resa": "bey"
     },
     "Optimus Prime and Bumblebee Multipack Set": {
-      "revid": 647060,
+      "revid": 650683,
       "kind": "multipack",
       "redirects": [],
       "parserVersion": 2,
@@ -1373,7 +1311,7 @@
       "resa": "contenitore"
     },
     "OrochiCluster 6-60LF": {
-      "revid": 647954,
+      "revid": 650179,
       "kind": "product",
       "redirects": [],
       "parserVersion": 2,
@@ -1394,14 +1332,39 @@
       "resa": "contenitore"
     },
     "PegasusBlast ATr": {
-      "revid": 649715,
+      "revid": 650831,
       "kind": "product",
       "redirects": [],
       "parserVersion": 2,
       "resa": "bey"
     },
+    "PerseusDark B6-80W": {
+      "revid": 650237,
+      "kind": "product",
+      "redirects": [
+        "Dark Perseus B 6-80W"
+      ],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
+    "PhoenixFeather 2-60N": {
+      "revid": 635041,
+      "kind": "product",
+      "redirects": [
+        "Feather Phoenix 2-60N"
+      ],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
     "PhoenixFlare Z9-80WW": {
-      "revid": 648974,
+      "revid": 650957,
+      "kind": "product",
+      "redirects": [],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
+    "PhoenixForce WHM-65MT": {
+      "revid": 651140,
       "kind": "product",
       "redirects": [],
       "parserVersion": 2,
@@ -1463,7 +1426,7 @@
       "resa": "bey"
     },
     "RagnaRage FE4-55Y": {
-      "revid": 649710,
+      "revid": 650593,
       "kind": "product",
       "redirects": [
         "Rage Ragna FE 4-55Y"
@@ -1632,19 +1595,28 @@
       "parserVersion": 2,
       "resa": "contenitore"
     },
+    "Red Hulk 1-80R": {
+      "revid": 636518,
+      "kind": "product",
+      "redirects": [],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
+    "RhinoHorn 3-80S": {
+      "revid": 649712,
+      "kind": "product",
+      "redirects": [
+        "Horn Rhino 3-80S"
+      ],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
     "RhinoReaper C4-55D": {
       "revid": 648947,
       "kind": "product",
       "redirects": [
         "Reaper Rhino C 4-55D"
       ],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
-    "Red Hulk 1-80R": {
-      "revid": 636518,
-      "kind": "product",
-      "redirects": [],
       "parserVersion": 2,
       "resa": "bey"
     },
@@ -1670,7 +1642,7 @@
       "resa": "bey"
     },
     "Rock Leone 6-80GN": {
-      "revid": 645250,
+      "revid": 649945,
       "kind": "product",
       "redirects": [],
       "parserVersion": 2,
@@ -1727,15 +1699,6 @@
       "parserVersion": 2,
       "resa": "bey"
     },
-    "SharkScale 4-50UF": {
-      "revid": 648967,
-      "kind": "product",
-      "redirects": [
-        "Scale Shark 4-50UF"
-      ],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
     "ScorpioSpear 0-70Z": {
       "revid": 648994,
       "kind": "product",
@@ -1750,11 +1713,27 @@
       "parserVersion": 2,
       "resa": "bey"
     },
-    "ShinobiShadow 1-80MN": {
-      "revid": 649718,
+    "SharkEdge 1-60Q": {
+      "revid": 646572,
       "kind": "product",
       "redirects": [
-        "Shadow Shinobi 1-80MN"
+        "Keel Shark 1-60Q"
+      ],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
+    "SharkEdge 2-60GP": {
+      "revid": 629251,
+      "kind": "product",
+      "redirects": [],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
+    "SharkEdge 3-60LF": {
+      "revid": 648966,
+      "kind": "product",
+      "redirects": [
+        "Keel Shark 3-60LF"
       ],
       "parserVersion": 2,
       "resa": "bey"
@@ -1774,9 +1753,18 @@
       "resa": "bey"
     },
     "SharkGill 5-60FB": {
-      "revid": 646256,
+      "revid": 650240,
       "kind": "product",
       "redirects": [],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
+    "SharkScale 4-50UF": {
+      "revid": 651152,
+      "kind": "product",
+      "redirects": [
+        "Scale Shark 4-50UF"
+      ],
       "parserVersion": 2,
       "resa": "bey"
     },
@@ -1819,10 +1807,28 @@
       "parserVersion": 2,
       "resa": "bey"
     },
+    "ShinobiShadow 1-80MN": {
+      "revid": 649718,
+      "kind": "product",
+      "redirects": [
+        "Shadow Shinobi 1-80MN"
+      ],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
     "Shockwave 5-80O": {
       "revid": 618995,
       "kind": "product",
       "redirects": [],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
+    "SiegSuperion 0-70LP": {
+      "revid": 651139,
+      "kind": "product",
+      "redirects": [
+        "Suppress Superion 0-70LP"
+      ],
       "parserVersion": 2,
       "resa": "bey"
     },
@@ -1857,7 +1863,7 @@
       "resa": "bey"
     },
     "SolEclipse D5-70TK": {
-      "revid": 649000,
+      "revid": 650238,
       "kind": "product",
       "redirects": [],
       "parserVersion": 2,
@@ -1874,6 +1880,15 @@
       "revid": 647286,
       "kind": "product",
       "redirects": [],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
+    "SphinxCowl 9-80GN": {
+      "revid": 648976,
+      "kind": "product",
+      "redirects": [
+        "Cowl Sphinx 9-80GN"
+      ],
       "parserVersion": 2,
       "resa": "bey"
     },
@@ -1954,15 +1969,6 @@
       "parserVersion": 2,
       "resa": "bey"
     },
-    "UnicornSting 5-60GP": {
-      "revid": 649714,
-      "kind": "product",
-      "redirects": [
-        "Sting Unicorn 5-60GP"
-      ],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
     "StormPegasis 3-70RA": {
       "revid": 649292,
       "kind": "product",
@@ -2000,13 +2006,6 @@
     },
     "Stun Medusa 9-60GB": {
       "revid": 629583,
-      "kind": "product",
-      "redirects": [],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
-    "Suppress Superion 0-70LP": {
-      "revid": 646750,
       "kind": "product",
       "redirects": [],
       "parserVersion": 2,
@@ -2075,15 +2074,6 @@
       "parserVersion": 2,
       "resa": "contenitore"
     },
-    "WhaleWave 5-80E": {
-      "revid": 649722,
-      "kind": "product",
-      "redirects": [
-        "Tide Whale 5-80E"
-      ],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
     "TigaRage FT3-60T": {
       "revid": 647172,
       "kind": "product",
@@ -2112,8 +2102,26 @@
       "parserVersion": 2,
       "resa": "bey"
     },
+    "UnicornDelta PO3-60GU": {
+      "revid": 650411,
+      "kind": "product",
+      "redirects": [
+        "Delta Unicorn PO 3-60GU"
+      ],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
+    "UnicornSting 5-60GP": {
+      "revid": 649714,
+      "kind": "product",
+      "redirects": [
+        "Sting Unicorn 5-60GP"
+      ],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
     "ValkyrieVolt S4-70V": {
-      "revid": 649725,
+      "revid": 651151,
       "kind": "product",
       "redirects": [],
       "parserVersion": 2,
@@ -2141,7 +2149,7 @@
       "resa": "bey"
     },
     "ViperTail 3-80HN": {
-      "revid": 599544,
+      "revid": 649848,
       "kind": "product",
       "redirects": [],
       "parserVersion": 2,
@@ -2154,28 +2162,26 @@
       "parserVersion": 2,
       "resa": "bey"
     },
-    "WizardRod 1-60R": {
-      "revid": 647152,
-      "kind": "product",
-      "redirects": [
-        "Wand Wizard 1-60R"
-      ],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
-    "WizardRod 5-70DB": {
-      "revid": 649805,
-      "kind": "product",
-      "redirects": [
-        "Wand Wizard 5-70DB"
-      ],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
     "WeissTiger 3-60U": {
       "revid": 648980,
       "kind": "product",
       "redirects": [],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
+    "WhaleWave 1-80GF": {
+      "revid": 649756,
+      "kind": "product",
+      "redirects": [],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
+    "WhaleWave 5-80E": {
+      "revid": 649722,
+      "kind": "product",
+      "redirects": [
+        "Tide Whale 5-80E"
+      ],
       "parserVersion": 2,
       "resa": "bey"
     },
@@ -2202,6 +2208,15 @@
       "parserVersion": 2,
       "resa": "contenitore"
     },
+    "WizardArc R4-55LO": {
+      "revid": 649729,
+      "kind": "product",
+      "redirects": [
+        "Arc Wizard R 4-55LO"
+      ],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
     "WizardArrow 4-60N": {
       "revid": 614266,
       "kind": "product",
@@ -2209,10 +2224,46 @@
       "parserVersion": 2,
       "resa": "bey"
     },
+    "WizardArrow 4-80B": {
+      "revid": 651089,
+      "kind": "product",
+      "redirects": [
+        "Arrow Wizard 4-80B"
+      ],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
+    "WizardArrow 4-80GB": {
+      "revid": 646145,
+      "kind": "product",
+      "redirects": [
+        "Arrow Wizard 4-80GB"
+      ],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
     "WizardArrow 4-80N": {
       "revid": 613488,
       "kind": "product",
       "redirects": [],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
+    "WizardRod 1-60R": {
+      "revid": 647152,
+      "kind": "product",
+      "redirects": [
+        "Wand Wizard 1-60R"
+      ],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
+    "WizardRod 5-70DB": {
+      "revid": 649852,
+      "kind": "product",
+      "redirects": [
+        "Wand Wizard 5-70DB"
+      ],
       "parserVersion": 2,
       "resa": "bey"
     },
@@ -2238,7 +2289,14 @@
       "resa": "bey"
     },
     "WyvernGale 5-80GB": {
-      "revid": 648977,
+      "revid": 649843,
+      "kind": "product",
+      "redirects": [],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
+    "WyvernHover 2-80GN": {
+      "revid": 633919,
       "kind": "product",
       "redirects": [],
       "parserVersion": 2,
@@ -2306,7 +2364,7 @@
       "id": "AeroPegasus 3-70A",
       "page": {
         "title": "AeroPegasus 3-70A",
-        "revid": 649723,
+        "revid": 650029,
         "url": "https://beyblade.fandom.com/wiki/AeroPegasus_3-70A",
         "redirects": []
       },
@@ -2555,7 +2613,7 @@
       "id": "BahamutBlitz BK1-50I",
       "page": {
         "title": "BahamutBlitz BK1-50I",
-        "revid": 648935,
+        "revid": 650911,
         "url": "https://beyblade.fandom.com/wiki/BahamutBlitz_BK1-50I",
         "redirects": [
           "Blitz Bahamut BK 1-50I"
@@ -2647,6 +2705,14 @@
           "dentro": "CoroCoro Comic"
         },
         {
+          "manufacturer": "tt",
+          "code": "CX-00",
+          "variant": null,
+          "tipo": null,
+          "nota": null,
+          "dentro": null
+        },
+        {
           "manufacturer": "hasbro",
           "code": "G4572",
           "variant": null,
@@ -2661,7 +2727,7 @@
       "id": "BearScratch 5-60F",
       "page": {
         "title": "BearScratch 5-60F",
-        "revid": 649002,
+        "revid": 649992,
         "url": "https://beyblade.fandom.com/wiki/BearScratch_5-60F",
         "redirects": [
           "Savage Bear 5-60F"
@@ -2896,7 +2962,7 @@
       "id": "BrachioWhip OW5-70Nr",
       "page": {
         "title": "BrachioWhip OW5-70Nr",
-        "revid": 649004,
+        "revid": 650559,
         "url": "https://beyblade.fandom.com/wiki/BrachioWhip_OW5-70Nr",
         "redirects": [
           "Whip Brachio OW 5-70Nr"
@@ -3061,7 +3127,7 @@
       "id": "BulletGriffon H",
       "page": {
         "title": "BulletGriffon H",
-        "revid": 649734,
+        "revid": 650485,
         "url": "https://beyblade.fandom.com/wiki/BulletGriffon_H",
         "redirects": [
           "Rocket Griffon H"
@@ -3149,7 +3215,7 @@
       "id": "Bumblebee 1-60W",
       "page": {
         "title": "Bumblebee 1-60W",
-        "revid": 647058,
+        "revid": 650693,
         "url": "https://beyblade.fandom.com/wiki/Bumblebee_1-60W",
         "redirects": []
       },
@@ -3195,7 +3261,7 @@
       },
       "release": {
         "US": null,
-        "CA": null
+        "CA": "2026-09-11"
       },
       "price": {
         "JPY": null,
@@ -3396,7 +3462,7 @@
       "id": "CerberusFlame W5-80WB",
       "page": {
         "title": "CerberusFlame W5-80WB",
-        "revid": 646832,
+        "revid": 650235,
         "url": "https://beyblade.fandom.com/wiki/CerberusFlame_W5-80WB",
         "redirects": [
           "Flame Cerberus W 5-80WB"
@@ -3674,7 +3740,7 @@
       "id": "ClockMirage 9-65B",
       "page": {
         "title": "ClockMirage 9-65B",
-        "revid": 649732,
+        "revid": 650239,
         "url": "https://beyblade.fandom.com/wiki/ClockMirage_9-65B",
         "redirects": [
           "Mirage Clock 9-65B"
@@ -3784,7 +3850,7 @@
       "id": "CobaltDragoon 2-60C",
       "page": {
         "title": "CobaltDragoon 2-60C",
-        "revid": 649697,
+        "revid": 650464,
         "url": "https://beyblade.fandom.com/wiki/CobaltDragoon_2-60C",
         "redirects": [
           "Cobalt Dragoon Deluxe Left-Spin String Launcher Set"
@@ -3818,7 +3884,7 @@
       "system2": null,
       "beyType": "attack",
       "spinDirection": "Left-Spin",
-      "series": "Beyblade X",
+      "series": "Beyblade X (Season 1)",
       "parts": {
         "blade": "cobalt-dragoon",
         "lockChip": null,
@@ -3879,6 +3945,14 @@
           "tipo": "Pack",
           "nota": "blue; BX-34 model",
           "dentro": "Deluxe String Launcher 2-Pack"
+        },
+        {
+          "manufacturer": "hasbro",
+          "code": "G5289",
+          "variant": null,
+          "tipo": null,
+          "nota": null,
+          "dentro": null
         }
       ],
       "flags": []
@@ -3947,7 +4021,7 @@
       "id": "CobaltDrake 4-60F",
       "page": {
         "title": "CobaltDrake 4-60F",
-        "revid": 649704,
+        "revid": 650158,
         "url": "https://beyblade.fandom.com/wiki/CobaltDrake_4-60F",
         "redirects": [
           "Cobalt Drake 4-60F"
@@ -4781,7 +4855,7 @@
       "id": "DracielShield 7-60D",
       "page": {
         "title": "DracielShield 7-60D",
-        "revid": 649289,
+        "revid": 649836,
         "url": "https://beyblade.fandom.com/wiki/DracielShield_7-60D",
         "redirects": [
           "Draciel Shield 7-60D"
@@ -4933,7 +5007,7 @@
       "id": "DrakeBrave G4-70I",
       "page": {
         "title": "DrakeBrave G4-70I",
-        "revid": 649493,
+        "revid": 650236,
         "url": "https://beyblade.fandom.com/wiki/DrakeBrave_G4-70I",
         "redirects": []
       },
@@ -5007,6 +5081,68 @@
           "dentro": "Rare Bey Get Battle"
         }
       ],
+      "flags": []
+    },
+    {
+      "id": "DranArc S2-70K",
+      "page": {
+        "title": "DranArc S2-70K",
+        "revid": 612189,
+        "url": "https://beyblade.fandom.com/wiki/DranArc_S2-70K",
+        "redirects": []
+      },
+      "codes": {
+        "tt": "CX-00",
+        "hasbro": null
+      },
+      "codesAnnunciati": {
+        "tt": [],
+        "hasbro": []
+      },
+      "names": {
+        "tt": "DranArc S2-70K",
+        "hasbro": null,
+        "hasbroDaRedirect": null,
+        "ja": "ドランアークS2-70K",
+        "romaji": "DoranĀku Surasshu Tsū Sebuntī Kikku",
+        "letture": [
+          "DranArc Slash Two Seventy Kick"
+        ],
+        "altri": []
+      },
+      "system": "Custom Line",
+      "system2": null,
+      "beyType": "balance",
+      "spinDirection": "Right-Spin",
+      "series": "Beyblade X",
+      "parts": {
+        "blade": null,
+        "lockChip": "dran",
+        "mainBlade": "arc",
+        "assistBlade": "slash",
+        "overBlade": null,
+        "ratchet": "2-70",
+        "bit": "kick"
+      },
+      "partsRaw": {
+        "LockChip": "Dran",
+        "MainBlade": "Arc",
+        "AssistBlade": "Slash",
+        "Ratchet": "2-70",
+        "Bit": "Kick"
+      },
+      "release": {
+        "JP": null
+      },
+      "price": {
+        "JPY": null,
+        "USD": null,
+        "CAD": null,
+        "GBP": null,
+        "AUD": null,
+        "EUR": null
+      },
+      "releases": [],
       "flags": []
     },
     {
@@ -5558,7 +5694,7 @@
       "id": "DranStrike 4-50FF",
       "page": {
         "title": "DranStrike 4-50FF",
-        "revid": 649702,
+        "revid": 650413,
         "url": "https://beyblade.fandom.com/wiki/DranStrike_4-50FF",
         "redirects": [
           "Strike Dran 4-50FF"
@@ -5727,7 +5863,7 @@
       "id": "DranSword 3-60F",
       "page": {
         "title": "DranSword 3-60F",
-        "revid": 649798,
+        "revid": 651059,
         "url": "https://beyblade.fandom.com/wiki/DranSword_3-60F",
         "redirects": [
           "Sword Dran 3-60F"
@@ -6886,6 +7022,66 @@
       "flags": []
     },
     {
+      "id": "GhostCircle 4-60H",
+      "page": {
+        "title": "GhostCircle 4-60H",
+        "revid": 621828,
+        "url": "https://beyblade.fandom.com/wiki/GhostCircle_4-60H",
+        "redirects": []
+      },
+      "codes": {
+        "tt": "UX-12",
+        "hasbro": null
+      },
+      "codesAnnunciati": {
+        "tt": [],
+        "hasbro": []
+      },
+      "names": {
+        "tt": "GhostCircle 4-60H",
+        "hasbro": null,
+        "hasbroDaRedirect": null,
+        "ja": "ゴーストサークル4-60H",
+        "romaji": "GōsutoSākuru Fō Shikusutī Hekisa",
+        "letture": [
+          "GhostCircle Four Sixty Hexa"
+        ],
+        "altri": []
+      },
+      "system": "Unique Line",
+      "system2": null,
+      "beyType": "balance",
+      "spinDirection": "Right-Spin",
+      "series": "Beyblade X",
+      "parts": {
+        "blade": "ghost-circle",
+        "lockChip": null,
+        "mainBlade": null,
+        "assistBlade": null,
+        "overBlade": null,
+        "ratchet": "4-60",
+        "bit": "hexa"
+      },
+      "partsRaw": {
+        "BladeX": "GhostCircle",
+        "Ratchet": "4-60",
+        "Bit": "Hexa"
+      },
+      "release": {
+        "JP": "2024-12-28"
+      },
+      "price": {
+        "JPY": 1400,
+        "USD": null,
+        "CAD": null,
+        "GBP": null,
+        "AUD": null,
+        "EUR": null
+      },
+      "releases": [],
+      "flags": []
+    },
+    {
       "id": "Gill Shark 4-70O",
       "page": {
         "title": "Gill Shark 4-70O",
@@ -7037,7 +7233,7 @@
       "id": "GloryValkyrie LF",
       "page": {
         "title": "GloryValkyrie LF",
-        "revid": 648368,
+        "revid": 650601,
         "url": "https://beyblade.fandom.com/wiki/GloryValkyrie_LF",
         "redirects": [
           "Glory Valkerion LF"
@@ -7123,7 +7319,7 @@
       "id": "GoatTackle 7-70T",
       "page": {
         "title": "GoatTackle 7-70T",
-        "revid": 646154,
+        "revid": 650241,
         "url": "https://beyblade.fandom.com/wiki/GoatTackle_7-70T",
         "redirects": []
       },
@@ -7586,7 +7782,7 @@
       "id": "HeavensRing 0-80DS",
       "page": {
         "title": "HeavensRing 0-80DS",
-        "revid": 649735,
+        "revid": 650635,
         "url": "https://beyblade.fandom.com/wiki/HeavensRing_0-80DS",
         "redirects": [
           "Ring Aether 0-80DS"
@@ -7876,7 +8072,7 @@
       "id": "HellsNether Z",
       "page": {
         "title": "HellsNether Z",
-        "revid": 649711,
+        "revid": 650101,
         "url": "https://beyblade.fandom.com/wiki/HellsNether_Z",
         "redirects": [
           "Nether Incendio Z"
@@ -8185,7 +8381,7 @@
       "id": "HellsScythe 4-60T",
       "page": {
         "title": "HellsScythe 4-60T",
-        "revid": 649796,
+        "revid": 651121,
         "url": "https://beyblade.fandom.com/wiki/HellsScythe_4-60T",
         "redirects": [
           "Scythe Incendio 4-60T"
@@ -8264,6 +8460,14 @@
           "tipo": "Booster",
           "nota": "gold",
           "dentro": "Rare Bey Get Battle"
+        },
+        {
+          "manufacturer": "tt",
+          "code": "CX-20",
+          "variant": null,
+          "tipo": null,
+          "nota": null,
+          "dentro": "Customize Set C"
         },
         {
           "manufacturer": "hasbro",
@@ -8728,7 +8932,7 @@
       "id": "KnightFortress GV8-70UN",
       "page": {
         "title": "KnightFortress GV8-70UN",
-        "revid": 649736,
+        "revid": 650575,
         "url": "https://beyblade.fandom.com/wiki/KnightFortress_GV8-70UN",
         "redirects": [
           "Armor Knight GV 8-70UN"
@@ -8983,7 +9187,7 @@
       "id": "KnightMail 3-85BS",
       "page": {
         "title": "KnightMail 3-85BS",
-        "revid": 648962,
+        "revid": 650019,
         "url": "https://beyblade.fandom.com/wiki/KnightMail_3-85BS",
         "redirects": []
       },
@@ -9075,7 +9279,7 @@
       "id": "KnightShield 3-80N",
       "page": {
         "title": "KnightShield 3-80N",
-        "revid": 649807,
+        "revid": 650773,
         "url": "https://beyblade.fandom.com/wiki/KnightShield_3-80N",
         "redirects": [
           "Helm Knight 3-80N"
@@ -9387,7 +9591,7 @@
       "id": "LeonClaw 5-60P",
       "page": {
         "title": "LeonClaw 5-60P",
-        "revid": 648968,
+        "revid": 650038,
         "url": "https://beyblade.fandom.com/wiki/LeonClaw_5-60P",
         "redirects": [
           "Claw Leon 5-60P"
@@ -9698,7 +9902,7 @@
       "id": "LusterDragoon 6-60LC",
       "page": {
         "title": "LusterDragoon 6-60LC",
-        "revid": 649196,
+        "revid": 651060,
         "url": "https://beyblade.fandom.com/wiki/LusterDragoon_6-60LC",
         "redirects": []
       },
@@ -9890,7 +10094,7 @@
       "id": "MeteorDragoon 3-70J",
       "page": {
         "title": "MeteorDragoon 3-70J",
-        "revid": 649738,
+        "revid": 650351,
         "url": "https://beyblade.fandom.com/wiki/MeteorDragoon_3-70J",
         "redirects": []
       },
@@ -10229,7 +10433,7 @@
       "id": "MummyCurse 7-55W",
       "page": {
         "title": "MummyCurse 7-55W",
-        "revid": 648995,
+        "revid": 650178,
         "url": "https://beyblade.fandom.com/wiki/MummyCurse_7-55W",
         "redirects": [
           "Curse Mummy 7-55W"
@@ -10624,7 +10828,7 @@
       "id": "Optimus Prime 7-70L",
       "page": {
         "title": "Optimus Prime 7-70L",
-        "revid": 647057,
+        "revid": 650692,
         "url": "https://beyblade.fandom.com/wiki/Optimus_Prime_7-70L",
         "redirects": []
       },
@@ -10670,7 +10874,7 @@
       },
       "release": {
         "US": null,
-        "CA": null,
+        "CA": "2026-09-11",
         "JP": null
       },
       "price": {
@@ -10688,7 +10892,7 @@
       "id": "OrochiCluster 6-60LF",
       "page": {
         "title": "OrochiCluster 6-60LF",
-        "revid": 647954,
+        "revid": 650179,
         "url": "https://beyblade.fandom.com/wiki/OrochiCluster_6-60LF",
         "redirects": []
       },
@@ -10752,7 +10956,7 @@
           "code": "UX-00",
           "variant": null,
           "tipo": "Booster",
-          "nota": "purple",
+          "nota": "yellow and purple",
           "dentro": null
         },
         {
@@ -10760,7 +10964,7 @@
           "code": "G2762",
           "variant": null,
           "tipo": "Dual Pack",
-          "nota": "purple; UX-00 model",
+          "nota": "yellow and purple; UX-00 model",
           "dentro": "Coil Orochi and Pearl Tiger Dual Pack"
         }
       ],
@@ -10830,7 +11034,7 @@
       "id": "PegasusBlast ATr",
       "page": {
         "title": "PegasusBlast ATr",
-        "revid": 649715,
+        "revid": 650831,
         "url": "https://beyblade.fandom.com/wiki/PegasusBlast_ATr",
         "redirects": []
       },
@@ -10923,7 +11127,7 @@
       "id": "PerseusDark B6-80W",
       "page": {
         "title": "PerseusDark B6-80W",
-        "revid": 649724,
+        "revid": 650237,
         "url": "https://beyblade.fandom.com/wiki/PerseusDark_B6-80W",
         "redirects": [
           "Dark Perseus B 6-80W"
@@ -11110,7 +11314,7 @@
       "id": "PhoenixFlare Z9-80WW",
       "page": {
         "title": "PhoenixFlare Z9-80WW",
-        "revid": 648974,
+        "revid": 650957,
         "url": "https://beyblade.fandom.com/wiki/PhoenixFlare_Z9-80WW",
         "redirects": []
       },
@@ -11175,6 +11379,80 @@
         "EUR": null
       },
       "releases": [],
+      "flags": []
+    },
+    {
+      "id": "PhoenixForce WHM-65MT",
+      "page": {
+        "title": "PhoenixForce WHM-65MT",
+        "revid": 651140,
+        "url": "https://beyblade.fandom.com/wiki/PhoenixForce_WHM-65MT",
+        "redirects": []
+      },
+      "codes": {
+        "tt": "CX-20",
+        "hasbro": null
+      },
+      "codesAnnunciati": {
+        "tt": [],
+        "hasbro": []
+      },
+      "names": {
+        "tt": "PhoenixForce WHM-65MT",
+        "hasbro": null,
+        "hasbroDaRedirect": null,
+        "ja": "フェニックスフォースWHM-65MT",
+        "romaji": "FenikkusuFōsu Ueito Hebī Emu Shikkusuti Faibu Metaru Tēpā",
+        "letture": [
+          "PhoenixForce Weight Heavy M-65 Metal Taper"
+        ],
+        "altri": []
+      },
+      "system": "Custom Line",
+      "system2": "Expand Blade",
+      "beyType": "balance",
+      "spinDirection": "Right-Spin",
+      "series": "Beyblade X (Season 3)",
+      "parts": {
+        "blade": null,
+        "lockChip": "phoenix",
+        "mainBlade": "force",
+        "assistBlade": "heavy",
+        "overBlade": "weight",
+        "ratchet": "M-65",
+        "bit": "metal-taper"
+      },
+      "partsRaw": {
+        "LockChip": "Phoenix",
+        "MetalBlade": "Force",
+        "AssistBlade": "Heavy",
+        "OverBlade": "Weight",
+        "Ratchet": "M-65",
+        "Bit": "Metal Taper"
+      },
+      "release": {
+        "JP": "2026-11-21",
+        "US": null,
+        "CA": null
+      },
+      "price": {
+        "JPY": 6600,
+        "USD": null,
+        "CAD": null,
+        "GBP": null,
+        "AUD": null,
+        "EUR": null
+      },
+      "releases": [
+        {
+          "manufacturer": "tt",
+          "code": "CX-20",
+          "variant": null,
+          "tipo": null,
+          "nota": null,
+          "dentro": "Customize Set C"
+        }
+      ],
       "flags": []
     },
     {
@@ -11650,7 +11928,7 @@
       "id": "RagnaRage FE4-55Y",
       "page": {
         "title": "RagnaRage FE4-55Y",
-        "revid": 649710,
+        "revid": 650593,
         "url": "https://beyblade.fandom.com/wiki/RagnaRage_FE4-55Y",
         "redirects": [
           "Rage Ragna FE 4-55Y"
@@ -12227,13 +12505,13 @@
       "id": "Rock Leone 6-80GN",
       "page": {
         "title": "Rock Leone 6-80GN",
-        "revid": 645250,
+        "revid": 649945,
         "url": "https://beyblade.fandom.com/wiki/Rock_Leone_6-80GN",
         "redirects": []
       },
       "codes": {
         "tt": "BX-00",
-        "hasbro": null
+        "hasbro": "G4905"
       },
       "codesAnnunciati": {
         "tt": [],
@@ -12943,6 +13221,64 @@
       "flags": []
     },
     {
+      "id": "SharkEdge 2-60GP",
+      "page": {
+        "title": "SharkEdge 2-60GP",
+        "revid": 629251,
+        "url": "https://beyblade.fandom.com/wiki/SharkEdge_2-60GP",
+        "redirects": []
+      },
+      "codes": {
+        "tt": "BX-00",
+        "hasbro": null
+      },
+      "codesAnnunciati": {
+        "tt": [],
+        "hasbro": []
+      },
+      "names": {
+        "tt": "SharkEdge 2-60GP",
+        "hasbro": null,
+        "hasbroDaRedirect": null,
+        "ja": "シャークエッジ2-60GP",
+        "romaji": "ShākuEjji Tsū Shikusutī Giya Pointo",
+        "letture": [],
+        "altri": []
+      },
+      "system": "Basic Line",
+      "system2": null,
+      "beyType": "balance",
+      "spinDirection": "Right-Spin",
+      "series": "Beyblade X (Season 3)",
+      "parts": {
+        "blade": "shark-edge",
+        "lockChip": null,
+        "mainBlade": null,
+        "assistBlade": null,
+        "overBlade": null,
+        "ratchet": "2-60",
+        "bit": "gear-point"
+      },
+      "partsRaw": {
+        "BladeX": "SharkEdge",
+        "Ratchet": "2-60",
+        "Bit": "Gear Point"
+      },
+      "release": {
+        "JP": "2026-02-18"
+      },
+      "price": {
+        "JPY": 2220,
+        "USD": null,
+        "CAD": null,
+        "GBP": null,
+        "AUD": null,
+        "EUR": null
+      },
+      "releases": [],
+      "flags": []
+    },
+    {
       "id": "SharkEdge 3-60LF",
       "page": {
         "title": "SharkEdge 3-60LF",
@@ -13181,7 +13517,7 @@
       "id": "SharkGill 5-60FB",
       "page": {
         "title": "SharkGill 5-60FB",
-        "revid": 646256,
+        "revid": 650240,
         "url": "https://beyblade.fandom.com/wiki/SharkGill_5-60FB",
         "redirects": []
       },
@@ -13260,7 +13596,7 @@
       "id": "SharkScale 4-50UF",
       "page": {
         "title": "SharkScale 4-50UF",
-        "revid": 648967,
+        "revid": 651152,
         "url": "https://beyblade.fandom.com/wiki/SharkScale_4-50UF",
         "redirects": [
           "Scale Shark 4-50UF"
@@ -13332,6 +13668,14 @@
           "tipo": "Deck Set",
           "nota": "purple",
           "dentro": "SharkScale Deck Set"
+        },
+        {
+          "manufacturer": "tt",
+          "code": "UX-00",
+          "variant": null,
+          "tipo": null,
+          "nota": null,
+          "dentro": null
         },
         {
           "manufacturer": "hasbro",
@@ -13772,6 +14116,75 @@
       "flags": []
     },
     {
+      "id": "SiegSuperion 0-70LP",
+      "page": {
+        "title": "SiegSuperion 0-70LP",
+        "revid": 651139,
+        "url": "https://beyblade.fandom.com/wiki/SiegSuperion_0-70LP",
+        "redirects": [
+          "Suppress Superion 0-70LP"
+        ]
+      },
+      "codes": {
+        "tt": "BX-54",
+        "hasbro": "G2745"
+      },
+      "codesAnnunciati": {
+        "tt": [],
+        "hasbro": []
+      },
+      "names": {
+        "tt": "SiegSuperion 0-70LP",
+        "hasbro": "Suppress Superion 0-70LP",
+        "hasbroDaRedirect": "Suppress Superion 0-70LP",
+        "ja": "ジークスペリオン0-70LP",
+        "romaji": "JīkuSuperion Zero Sebunti Rō Pointo",
+        "letture": [
+          "SiegSuperion Zero Seventy Low Point"
+        ],
+        "altri": [
+          {
+            "valore": "Suppress Superion",
+            "fonte": "anime/manga, English"
+          }
+        ]
+      },
+      "system": "Basic Line",
+      "system2": "Expand Blade",
+      "beyType": "balance",
+      "spinDirection": "Right-Spin",
+      "series": "Beyblade X (Season 4)",
+      "parts": {
+        "blade": "suppress-superion",
+        "lockChip": null,
+        "mainBlade": null,
+        "assistBlade": null,
+        "overBlade": null,
+        "ratchet": "0-70",
+        "bit": "low-point"
+      },
+      "partsRaw": {
+        "Blade": "SiegSuperion",
+        "Ratchet": "0-70",
+        "Bit": "Low Point"
+      },
+      "release": {
+        "US": "2026-08-11",
+        "CA": "2026-08-17",
+        "JP": "2026-11-01"
+      },
+      "price": {
+        "JPY": 1600,
+        "USD": 14.99,
+        "CAD": 19.99,
+        "GBP": null,
+        "AUD": null,
+        "EUR": null
+      },
+      "releases": [],
+      "flags": []
+    },
+    {
       "id": "SilverWolf 3-80FB",
       "page": {
         "title": "SilverWolf 3-80FB",
@@ -13930,7 +14343,7 @@
       "id": "SolEclipse D5-70TK",
       "page": {
         "title": "SolEclipse D5-70TK",
-        "revid": 649000,
+        "revid": 650238,
         "url": "https://beyblade.fandom.com/wiki/SolEclipse_D5-70TK",
         "redirects": []
       },
@@ -14830,67 +15243,6 @@
       "flags": []
     },
     {
-      "id": "Suppress Superion 0-70LP",
-      "page": {
-        "title": "Suppress Superion 0-70LP",
-        "revid": 646750,
-        "url": "https://beyblade.fandom.com/wiki/Suppress_Superion_0-70LP",
-        "redirects": []
-      },
-      "codes": {
-        "tt": null,
-        "hasbro": "G2745"
-      },
-      "codesAnnunciati": {
-        "tt": [],
-        "hasbro": []
-      },
-      "names": {
-        "tt": "Suppress Superion 0-70LP",
-        "hasbro": null,
-        "hasbroDaRedirect": null,
-        "ja": null,
-        "romaji": null,
-        "letture": [
-          "Suppress Superion Zero Seventy Low Point"
-        ],
-        "altri": []
-      },
-      "system": "Basic Line",
-      "system2": "Expand Blade",
-      "beyType": "balance",
-      "spinDirection": "Right-Spin",
-      "series": "Beyblade X (Season 3)",
-      "parts": {
-        "blade": "suppress-superion",
-        "lockChip": null,
-        "mainBlade": null,
-        "assistBlade": null,
-        "overBlade": null,
-        "ratchet": "0-70",
-        "bit": "low-point"
-      },
-      "partsRaw": {
-        "Blade": "Suppress Superion",
-        "Ratchet": "0-70",
-        "Bit": "Low Point"
-      },
-      "release": {
-        "US": "2026-08-11",
-        "CA": "2026-08-17"
-      },
-      "price": {
-        "JPY": null,
-        "USD": 14.99,
-        "CAD": 19.99,
-        "GBP": null,
-        "AUD": null,
-        "EUR": null
-      },
-      "releases": [],
-      "flags": []
-    },
-    {
       "id": "T. Rex 1-80GB",
       "page": {
         "title": "T. Rex 1-80GB",
@@ -15513,7 +15865,7 @@
       "id": "UnicornDelta PO3-60GU",
       "page": {
         "title": "UnicornDelta PO3-60GU",
-        "revid": 649716,
+        "revid": 650411,
         "url": "https://beyblade.fandom.com/wiki/UnicornDelta_PO3-60GU",
         "redirects": [
           "Delta Unicorn PO 3-60GU"
@@ -15704,7 +16056,7 @@
       "id": "ValkyrieVolt S4-70V",
       "page": {
         "title": "ValkyrieVolt S4-70V",
-        "revid": 649725,
+        "revid": 651151,
         "url": "https://beyblade.fandom.com/wiki/ValkyrieVolt_S4-70V",
         "redirects": []
       },
@@ -15963,7 +16315,7 @@
       "id": "ViperTail 3-80HN",
       "page": {
         "title": "ViperTail 3-80HN",
-        "revid": 599544,
+        "revid": 649848,
         "url": "https://beyblade.fandom.com/wiki/ViperTail_3-80HN",
         "redirects": []
       },
@@ -16185,6 +16537,67 @@
           "dentro": "Rival Rumble Pack"
         }
       ],
+      "flags": []
+    },
+    {
+      "id": "WhaleWave 1-80GF",
+      "page": {
+        "title": "WhaleWave 1-80GF",
+        "revid": 649756,
+        "url": "https://beyblade.fandom.com/wiki/WhaleWave_1-80GF",
+        "redirects": []
+      },
+      "codes": {
+        "tt": "BX-00",
+        "hasbro": null
+      },
+      "codesAnnunciati": {
+        "tt": [],
+        "hasbro": []
+      },
+      "names": {
+        "tt": "WhaleWave 1-80GF",
+        "hasbro": null,
+        "hasbroDaRedirect": null,
+        "ja": "ホエールウェーブ1-80GF",
+        "romaji": "HoēruUēbu Wan Eitī Giya Furatto",
+        "letture": [
+          "WhaleWave One Eighty Gear Flat",
+          "Abyss Whale Bey"
+        ],
+        "altri": []
+      },
+      "system": "Basic Line",
+      "system2": null,
+      "beyType": "attack",
+      "spinDirection": "Right-Spin",
+      "series": "Beyblade X (Season 3)",
+      "parts": {
+        "blade": "whale-wave",
+        "lockChip": null,
+        "mainBlade": null,
+        "assistBlade": null,
+        "overBlade": null,
+        "ratchet": "1-80",
+        "bit": "gear-flat"
+      },
+      "partsRaw": {
+        "BladeX": "WhaleWave",
+        "Ratchet": "1-80",
+        "Bit": "Gear Flat"
+      },
+      "release": {
+        "JP": "2026-03-05"
+      },
+      "price": {
+        "JPY": 2980,
+        "USD": null,
+        "CAD": null,
+        "GBP": null,
+        "AUD": null,
+        "EUR": null
+      },
+      "releases": [],
       "flags": []
     },
     {
@@ -16450,7 +16863,7 @@
       "id": "WizardArrow 4-80B",
       "page": {
         "title": "WizardArrow 4-80B",
-        "revid": 649794,
+        "revid": 651089,
         "url": "https://beyblade.fandom.com/wiki/WizardArrow_4-80B",
         "redirects": [
           "Arrow Wizard 4-80B"
@@ -16771,7 +17184,7 @@
       "id": "WizardRod 5-70DB",
       "page": {
         "title": "WizardRod 5-70DB",
-        "revid": 649805,
+        "revid": 649852,
         "url": "https://beyblade.fandom.com/wiki/WizardRod_5-70DB",
         "redirects": [
           "Wand Wizard 5-70DB"
@@ -17090,7 +17503,7 @@
       "id": "WyvernGale 5-80GB",
       "page": {
         "title": "WyvernGale 5-80GB",
-        "revid": 648977,
+        "revid": 649843,
         "url": "https://beyblade.fandom.com/wiki/WyvernGale_5-80GB",
         "redirects": []
       },
@@ -17166,6 +17579,83 @@
           "tipo": "Dual Pack",
           "nota": "green; BX-24 model",
           "dentro": "Gale Wyvern and Tail Viper Dual Pack"
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": "WyvernHover 2-80GN",
+      "page": {
+        "title": "WyvernHover 2-80GN",
+        "revid": 633919,
+        "url": "https://beyblade.fandom.com/wiki/WyvernHover_2-80GN",
+        "redirects": []
+      },
+      "codes": {
+        "tt": "UX-00",
+        "hasbro": null
+      },
+      "codesAnnunciati": {
+        "tt": [],
+        "hasbro": []
+      },
+      "names": {
+        "tt": "WyvernHover 2-80GN",
+        "hasbro": null,
+        "hasbroDaRedirect": null,
+        "ja": "ワイバーンホバー2-80GN",
+        "romaji": "WaibānHobā Tsū Eitī Giya Nīdoru",
+        "letture": [
+          "WyvernHover Two Eighty Gear Needle"
+        ],
+        "altri": []
+      },
+      "system": "Unique Line",
+      "system2": null,
+      "beyType": "defense",
+      "spinDirection": "Right-Spin",
+      "series": "Beyblade X",
+      "parts": {
+        "blade": "hover-wyvern",
+        "lockChip": null,
+        "mainBlade": null,
+        "assistBlade": null,
+        "overBlade": null,
+        "ratchet": "2-80",
+        "bit": "gear-needle"
+      },
+      "partsRaw": {
+        "BladeX": "WyvernHover",
+        "Ratchet": "2-80",
+        "Bit": "Gear Needle"
+      },
+      "release": {
+        "JP": "2025-10-24"
+      },
+      "price": {
+        "JPY": 770,
+        "USD": null,
+        "CAD": null,
+        "GBP": null,
+        "AUD": null,
+        "EUR": null
+      },
+      "releases": [
+        {
+          "manufacturer": "tt",
+          "code": "UX-00",
+          "variant": null,
+          "tipo": "Booster",
+          "nota": "purple/gray",
+          "dentro": null
+        },
+        {
+          "manufacturer": "tt",
+          "code": "UX-00",
+          "variant": null,
+          "tipo": "Booster",
+          "nota": "purple/gray",
+          "dentro": null
         }
       ],
       "flags": []
@@ -17417,7 +17907,7 @@
       "id": "All In One Set",
       "page": {
         "title": "All In One Set",
-        "revid": 649206,
+        "revid": 650678,
         "url": "https://beyblade.fandom.com/wiki/All_In_One_Set",
         "redirects": []
       },
@@ -17795,6 +18285,62 @@
           "titolo": "Knife Shinobi 4-80HN",
           "variant": null,
           "nota": null
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": "Bey Kick Off Set",
+      "page": {
+        "title": "Bey Kick Off Set",
+        "revid": 599877,
+        "url": "https://beyblade.fandom.com/wiki/Bey_Kick_Off_Set",
+        "redirects": []
+      },
+      "kind": "set",
+      "codes": {
+        "tt": "UX-00",
+        "hasbro": null
+      },
+      "codesAnnunciati": {
+        "tt": [],
+        "hasbro": []
+      },
+      "names": {
+        "tt": "Bey Kick Off Set",
+        "hasbro": null,
+        "ja": "ベイキックオフセット",
+        "romaji": "Bei Kikku Ofu Setto"
+      },
+      "productType": null,
+      "system": "Unique Line",
+      "series": "Beyblade X",
+      "release": {
+        "JP": "2024-01-25"
+      },
+      "price": {
+        "JPY": 6501,
+        "USD": null,
+        "CAD": null,
+        "GBP": null,
+        "AUD": null,
+        "EUR": null
+      },
+      "contenuto": [
+        {
+          "titolo": "HellsHammer 3-70H",
+          "variant": null,
+          "nota": "Metal Coat: Red FC Barcelona Ver."
+        },
+        {
+          "titolo": "Winder Launcher",
+          "variant": null,
+          "nota": "Red×Blue Ver."
+        },
+        {
+          "titolo": "Xtreme Stadium",
+          "variant": null,
+          "nota": "FC Barcelona Ver."
         }
       ],
       "flags": []
@@ -18859,6 +19405,102 @@
         "EUR": null
       },
       "contenuto": [],
+      "flags": []
+    },
+    {
+      "id": "Customize Set C",
+      "page": {
+        "title": "Customize Set C",
+        "revid": 651141,
+        "url": "https://beyblade.fandom.com/wiki/Customize_Set_C",
+        "redirects": []
+      },
+      "kind": "set",
+      "codes": {
+        "tt": "CX-20",
+        "hasbro": null
+      },
+      "codesAnnunciati": {
+        "tt": [],
+        "hasbro": []
+      },
+      "names": {
+        "tt": "Customize Set C",
+        "hasbro": null,
+        "ja": "カスタマイズセットC",
+        "romaji": "Kasutamaizu Setto Kasutamu"
+      },
+      "productType": null,
+      "system": "Custom Line",
+      "series": "Beyblade X (Season 4)",
+      "release": {
+        "JP": "2026-11-21"
+      },
+      "price": {
+        "JPY": 6600,
+        "USD": null,
+        "CAD": null,
+        "GBP": null,
+        "AUD": null,
+        "EUR": null
+      },
+      "contenuto": [
+        {
+          "titolo": "PhoenixForce WHM-65MT",
+          "variant": null,
+          "nota": null
+        },
+        {
+          "titolo": "Blade - HellsScythe",
+          "variant": null,
+          "nota": "Version 2.0"
+        },
+        {
+          "titolo": "Blade - WizardRod",
+          "variant": null,
+          "nota": "Metal Coat: Blue"
+        },
+        {
+          "titolo": "Blade - SharkScale",
+          "variant": null,
+          "nota": null
+        },
+        {
+          "titolo": "Ratchet - 1-70",
+          "variant": null,
+          "nota": null
+        },
+        {
+          "titolo": "Ratchet - 8-80",
+          "variant": null,
+          "nota": null
+        },
+        {
+          "titolo": "Bit - Kick",
+          "variant": null,
+          "nota": null
+        },
+        {
+          "titolo": "Bit - Low Rush",
+          "variant": null,
+          "nota": null
+        },
+        {
+          "titolo": "Bit - High Needle",
+          "variant": null,
+          "nota": null
+        },
+        {
+          "titolo": "Bit - Low Orb",
+          "variant": null,
+          "nota": null
+        },
+        {
+          "titolo": "Bit - Under Flat",
+          "variant": null,
+          "nota": null
+        }
+      ],
       "flags": []
     },
     {
@@ -20497,7 +21139,7 @@
       "id": "Optimus Prime and Bumblebee Multipack Set",
       "page": {
         "title": "Optimus Prime and Bumblebee Multipack Set",
-        "revid": 647060,
+        "revid": 650683,
         "url": "https://beyblade.fandom.com/wiki/Optimus_Prime_and_Bumblebee_Multipack_Set",
         "redirects": []
       },
@@ -20521,7 +21163,7 @@
       "series": "Beyblade X (Season 3)",
       "release": {
         "US": null,
-        "CA": null
+        "CA": "2026-09-11"
       },
       "price": {
         "JPY": null,
@@ -23492,7 +24134,7 @@
       "manufacturer": "hasbro",
       "owner": {
         "page": "DranSword 3-60F",
-        "revid": 649798
+        "revid": 651059
       },
       "productType": null,
       "names": {
@@ -23528,7 +24170,7 @@
       "manufacturer": "hasbro",
       "owner": {
         "page": "KnightShield 3-80N",
-        "revid": 649807
+        "revid": 650773
       },
       "productType": null,
       "names": {
@@ -23564,7 +24206,7 @@
       "manufacturer": "hasbro",
       "owner": {
         "page": "WizardArrow 4-80B",
-        "revid": 649794
+        "revid": 651089
       },
       "productType": null,
       "names": {
@@ -23600,7 +24242,7 @@
       "manufacturer": "hasbro",
       "owner": {
         "page": "HellsScythe 4-60T",
-        "revid": 649796
+        "revid": 651121
       },
       "productType": null,
       "names": {
@@ -23962,7 +24604,7 @@
       "manufacturer": "hasbro",
       "owner": {
         "page": "LeonClaw 5-60P",
-        "revid": 648968
+        "revid": 650038
       },
       "productType": null,
       "names": {
@@ -24783,7 +25425,7 @@
       "manufacturer": "hasbro",
       "owner": {
         "page": "CobaltDragoon 2-60C",
-        "revid": 649697
+        "revid": 650464
       },
       "productType": null,
       "names": {
@@ -24792,7 +25434,7 @@
         "ja": "コバルトドラグーン2-60C",
         "romaji": "KobarutoDoragūn Tsū Shikusutī Saikuron"
       },
-      "series": "Beyblade X",
+      "series": "Beyblade X (Season 1)",
       "release": {
         "US": "2025-02-15",
         "CA": "2025-02-01",
@@ -24994,7 +25636,7 @@
       "manufacturer": "hasbro",
       "owner": {
         "page": "WizardRod 5-70DB",
-        "revid": 649805
+        "revid": 649852
       },
       "productType": null,
       "names": {
@@ -25584,7 +26226,7 @@
       "manufacturer": "hasbro",
       "owner": {
         "page": "PerseusDark B6-80W",
-        "revid": 649724
+        "revid": 650237
       },
       "productType": null,
       "names": {
@@ -26715,7 +27357,7 @@
       "manufacturer": "hasbro",
       "owner": {
         "page": "DracielShield 7-60D",
-        "revid": 649289
+        "revid": 649836
       },
       "productType": null,
       "names": {
@@ -26797,7 +27439,7 @@
       "manufacturer": "hasbro",
       "owner": {
         "page": "SharkScale 4-50UF",
-        "revid": 648967
+        "revid": 651152
       },
       "productType": null,
       "names": {
@@ -26905,7 +27547,7 @@
       "manufacturer": "hasbro",
       "owner": {
         "page": "MummyCurse 7-55W",
-        "revid": 648995
+        "revid": 650178
       },
       "productType": null,
       "names": {
@@ -26941,7 +27583,7 @@
       "manufacturer": "hasbro",
       "owner": {
         "page": "BearScratch 5-60F",
-        "revid": 649002
+        "revid": 649992
       },
       "productType": null,
       "names": {
@@ -26976,7 +27618,7 @@
       "manufacturer": "hasbro",
       "owner": {
         "page": "CobaltDrake 4-60F",
-        "revid": 649704
+        "revid": 650158
       },
       "productType": null,
       "names": {
@@ -27011,7 +27653,7 @@
       "manufacturer": "hasbro",
       "owner": {
         "page": "ClockMirage 9-65B",
-        "revid": 649732
+        "revid": 650239
       },
       "productType": null,
       "names": {
@@ -27151,7 +27793,7 @@
       "manufacturer": "hasbro",
       "owner": {
         "page": "DranStrike 4-50FF",
-        "revid": 649702
+        "revid": 650413
       },
       "productType": null,
       "names": {
@@ -27211,17 +27853,17 @@
       "code": "G2745",
       "manufacturer": "hasbro",
       "owner": {
-        "page": "Suppress Superion 0-70LP",
-        "revid": 646750
+        "page": "SiegSuperion 0-70LP",
+        "revid": 651139
       },
       "productType": null,
       "names": {
         "tt": null,
         "hasbro": "Suppress Superion 0-70LP",
-        "ja": null,
-        "romaji": null
+        "ja": "ジークスペリオン0-70LP",
+        "romaji": "JīkuSuperion Zero Sebunti Rō Pointo"
       },
-      "series": "Beyblade X (Season 3)",
+      "series": "Beyblade X (Season 4)",
       "release": {
         "US": "2026-08-11",
         "CA": "2026-08-17"
@@ -27233,7 +27875,7 @@
       },
       "contiene": [
         {
-          "titolo": "Suppress Superion 0-70LP",
+          "titolo": "SiegSuperion 0-70LP",
           "kind": "product",
           "variant": null,
           "nota": null
@@ -27282,7 +27924,7 @@
       "manufacturer": "hasbro",
       "owner": {
         "page": "CerberusFlame W5-80WB",
-        "revid": 646832
+        "revid": 650235
       },
       "productType": null,
       "names": {
@@ -27387,7 +28029,7 @@
       "manufacturer": "hasbro",
       "owner": {
         "page": "UnicornDelta PO3-60GU",
-        "revid": 649716
+        "revid": 650411
       },
       "productType": null,
       "names": {
@@ -28462,7 +29104,7 @@
       "manufacturer": "hasbro",
       "owner": {
         "page": "Optimus Prime and Bumblebee Multipack Set",
-        "revid": 647060
+        "revid": 650683
       },
       "productType": "Collab Multipack",
       "names": {
@@ -28474,7 +29116,7 @@
       "series": "Beyblade X (Season 3)",
       "release": {
         "US": null,
-        "CA": null
+        "CA": "2026-09-11"
       },
       "listino": {
         "amount": 29.99,
@@ -28503,7 +29145,7 @@
       "manufacturer": "hasbro",
       "owner": {
         "page": "BulletGriffon H",
-        "revid": 649734
+        "revid": 650485
       },
       "productType": null,
       "names": {
@@ -28537,7 +29179,7 @@
       "manufacturer": "hasbro",
       "owner": {
         "page": "RagnaRage FE4-55Y",
-        "revid": 649710
+        "revid": 650593
       },
       "productType": null,
       "names": {
@@ -28572,7 +29214,7 @@
       "manufacturer": "hasbro",
       "owner": {
         "page": "KnightFortress GV8-70UN",
-        "revid": 649736
+        "revid": 650575
       },
       "productType": null,
       "names": {
@@ -28606,7 +29248,7 @@
       "manufacturer": "hasbro",
       "owner": {
         "page": "HellsNether Z",
-        "revid": 649711
+        "revid": 650101
       },
       "productType": null,
       "names": {
@@ -28676,7 +29318,7 @@
       "manufacturer": "hasbro",
       "owner": {
         "page": "BrachioWhip OW5-70Nr",
-        "revid": 649004
+        "revid": 650559
       },
       "productType": null,
       "names": {
@@ -28744,7 +29386,7 @@
       "manufacturer": "hasbro",
       "owner": {
         "page": "GloryValkyrie LF",
-        "revid": 648368
+        "revid": 650601
       },
       "productType": null,
       "names": {
@@ -28851,7 +29493,7 @@
       "manufacturer": "hasbro",
       "owner": {
         "page": "HeavensRing 0-80DS",
-        "revid": 649735
+        "revid": 650635
       },
       "productType": null,
       "names": {
@@ -28886,7 +29528,7 @@
       "manufacturer": "hasbro",
       "owner": {
         "page": "BahamutBlitz BK1-50I",
-        "revid": 648935
+        "revid": 650911
       },
       "productType": null,
       "names": {
@@ -28914,6 +29556,61 @@
         }
       ],
       "flags": []
+    },
+    {
+      "id": "hasbro:G4905",
+      "code": "G4905",
+      "manufacturer": "hasbro",
+      "owner": {
+        "page": "Rock Leone 6-80GN",
+        "revid": 649945
+      },
+      "productType": null,
+      "names": {
+        "tt": null,
+        "hasbro": null,
+        "ja": "ロックレオーネ6-80GN",
+        "romaji": "Rokku Reōne Shikkusu Eitī Giya Nīdoru"
+      },
+      "series": "Beyblade X (Season 2)",
+      "release": {},
+      "listino": null,
+      "contiene": [
+        {
+          "titolo": "Rock Leone 6-80GN",
+          "kind": "product",
+          "variant": null,
+          "nota": null
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": "hasbro:G5289",
+      "code": "G5289",
+      "manufacturer": "hasbro",
+      "owner": null,
+      "productType": null,
+      "names": {
+        "tt": null,
+        "hasbro": null,
+        "ja": null,
+        "romaji": null
+      },
+      "series": null,
+      "release": {},
+      "listino": null,
+      "contiene": [
+        {
+          "titolo": "CobaltDragoon 2-60C",
+          "kind": "accessory",
+          "variant": null,
+          "nota": null
+        }
+      ],
+      "flags": [
+        "senzaPaginaPropria"
+      ]
     },
     {
       "id": "tt:BX-00#Beyblade 25th Anniversary Set",
@@ -29131,7 +29828,7 @@
       "manufacturer": "tt",
       "owner": {
         "page": "CobaltDrake 4-60F",
-        "revid": 649704
+        "revid": 650158
       },
       "productType": null,
       "names": {
@@ -29236,7 +29933,7 @@
       "manufacturer": "tt",
       "owner": {
         "page": "DracielShield 7-60D",
-        "revid": 649289
+        "revid": 649836
       },
       "productType": null,
       "names": {
@@ -30400,7 +31097,7 @@
       "manufacturer": "tt",
       "owner": {
         "page": "Rock Leone 6-80GN",
-        "revid": 645250
+        "revid": 649945
       },
       "productType": null,
       "names": {
@@ -30456,6 +31153,41 @@
       "contiene": [
         {
           "titolo": "SamuraiSteel 5-70GF",
+          "kind": "product",
+          "variant": null,
+          "nota": null
+        }
+      ],
+      "flags": [],
+      "codePlaceholder": true
+    },
+    {
+      "id": "tt:BX-00#SharkEdge 2-60GP",
+      "code": "BX-00",
+      "manufacturer": "tt",
+      "owner": {
+        "page": "SharkEdge 2-60GP",
+        "revid": 629251
+      },
+      "productType": null,
+      "names": {
+        "tt": "SharkEdge 2-60GP",
+        "hasbro": null,
+        "ja": "シャークエッジ2-60GP",
+        "romaji": "ShākuEjji Tsū Shikusutī Giya Pointo"
+      },
+      "series": "Beyblade X (Season 3)",
+      "release": {
+        "JP": "2026-02-18"
+      },
+      "listino": {
+        "amount": 2220,
+        "currency": "JPY",
+        "fonte": "infobox"
+      },
+      "contiene": [
+        {
+          "titolo": "SharkEdge 2-60GP",
           "kind": "product",
           "variant": null,
           "nota": null
@@ -31041,6 +31773,41 @@
       "codePlaceholder": true
     },
     {
+      "id": "tt:BX-00#WhaleWave 1-80GF",
+      "code": "BX-00",
+      "manufacturer": "tt",
+      "owner": {
+        "page": "WhaleWave 1-80GF",
+        "revid": 649756
+      },
+      "productType": null,
+      "names": {
+        "tt": "WhaleWave 1-80GF",
+        "hasbro": null,
+        "ja": "ホエールウェーブ1-80GF",
+        "romaji": "HoēruUēbu Wan Eitī Giya Furatto"
+      },
+      "series": "Beyblade X (Season 3)",
+      "release": {
+        "JP": "2026-03-05"
+      },
+      "listino": {
+        "amount": 2980,
+        "currency": "JPY",
+        "fonte": "infobox"
+      },
+      "contiene": [
+        {
+          "titolo": "WhaleWave 1-80GF",
+          "kind": "product",
+          "variant": null,
+          "nota": null
+        }
+      ],
+      "flags": [],
+      "codePlaceholder": true
+    },
+    {
       "id": "tt:BX-00#Winder Launcher L",
       "code": "BX-00",
       "manufacturer": "tt",
@@ -31109,7 +31876,7 @@
       "manufacturer": "tt",
       "owner": {
         "page": "DranSword 3-60F",
-        "revid": 649798
+        "revid": 651059
       },
       "productType": null,
       "names": {
@@ -31143,7 +31910,7 @@
       "manufacturer": "tt",
       "owner": {
         "page": "HellsScythe 4-60T",
-        "revid": 649796
+        "revid": 651121
       },
       "productType": null,
       "names": {
@@ -31177,7 +31944,7 @@
       "manufacturer": "tt",
       "owner": {
         "page": "WizardArrow 4-80B",
-        "revid": 649794
+        "revid": 651089
       },
       "productType": null,
       "names": {
@@ -31211,7 +31978,7 @@
       "manufacturer": "tt",
       "owner": {
         "page": "KnightShield 3-80N",
-        "revid": 649807
+        "revid": 650773
       },
       "productType": null,
       "names": {
@@ -31604,7 +32371,7 @@
       "manufacturer": "tt",
       "owner": {
         "page": "LeonClaw 5-60P",
-        "revid": 648968
+        "revid": 650038
       },
       "productType": null,
       "names": {
@@ -32271,7 +33038,7 @@
       "manufacturer": "tt",
       "owner": {
         "page": "CobaltDragoon 2-60C",
-        "revid": 649697
+        "revid": 650464
       },
       "productType": null,
       "names": {
@@ -32280,7 +33047,7 @@
         "ja": "コバルトドラグーン2-60C",
         "romaji": "KobarutoDoragūn Tsū Shikusutī Saikuron"
       },
-      "series": "Beyblade X",
+      "series": "Beyblade X (Season 1)",
       "release": {
         "JP": "2024-07-13"
       },
@@ -32764,7 +33531,7 @@
       "manufacturer": "tt",
       "owner": {
         "page": "DranStrike 4-50FF",
-        "revid": 649702
+        "revid": 650413
       },
       "productType": null,
       "names": {
@@ -32868,7 +33635,7 @@
       "manufacturer": "tt",
       "owner": {
         "page": "LusterDragoon 6-60LC",
-        "revid": 649196
+        "revid": 651060
       },
       "productType": null,
       "names": {
@@ -32902,7 +33669,7 @@
       "manufacturer": "tt",
       "owner": {
         "page": "All In One Set",
-        "revid": 649206
+        "revid": 650678
       },
       "productType": "Battle Set",
       "names": {
@@ -32956,6 +33723,40 @@
           "kind": "accessory",
           "variant": null,
           "nota": "Clear Black×Green"
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": "tt:BX-54",
+      "code": "BX-54",
+      "manufacturer": "tt",
+      "owner": {
+        "page": "SiegSuperion 0-70LP",
+        "revid": 651139
+      },
+      "productType": null,
+      "names": {
+        "tt": "SiegSuperion 0-70LP",
+        "hasbro": null,
+        "ja": "ジークスペリオン0-70LP",
+        "romaji": "JīkuSuperion Zero Sebunti Rō Pointo"
+      },
+      "series": "Beyblade X (Season 4)",
+      "release": {
+        "JP": "2026-11-01"
+      },
+      "listino": {
+        "amount": 1600,
+        "currency": "JPY",
+        "fonte": "infobox"
+      },
+      "contiene": [
+        {
+          "titolo": "SiegSuperion 0-70LP",
+          "kind": "product",
+          "variant": null,
+          "nota": null
         }
       ],
       "flags": []
@@ -33057,7 +33858,7 @@
       "manufacturer": "tt",
       "owner": {
         "page": "DrakeBrave G4-70I",
-        "revid": 649493
+        "revid": 650236
       },
       "productType": null,
       "names": {
@@ -33078,6 +33879,37 @@
       "contiene": [
         {
           "titolo": "DrakeBrave G4-70I",
+          "kind": "product",
+          "variant": null,
+          "nota": null
+        }
+      ],
+      "flags": [],
+      "codePlaceholder": true
+    },
+    {
+      "id": "tt:CX-00#DranArc S2-70K",
+      "code": "CX-00",
+      "manufacturer": "tt",
+      "owner": {
+        "page": "DranArc S2-70K",
+        "revid": 612189
+      },
+      "productType": null,
+      "names": {
+        "tt": "DranArc S2-70K",
+        "hasbro": null,
+        "ja": "ドランアークS2-70K",
+        "romaji": "DoranĀku Surasshu Tsū Sebuntī Kikku"
+      },
+      "series": "Beyblade X",
+      "release": {
+        "JP": null
+      },
+      "listino": null,
+      "contiene": [
+        {
+          "titolo": "DranArc S2-70K",
           "kind": "product",
           "variant": null,
           "nota": null
@@ -33508,7 +34340,7 @@
       "manufacturer": "tt",
       "owner": {
         "page": "ValkyrieVolt S4-70V",
-        "revid": 649725
+        "revid": 651151
       },
       "productType": null,
       "names": {
@@ -33635,7 +34467,7 @@
       "manufacturer": "tt",
       "owner": {
         "page": "PerseusDark B6-80W",
-        "revid": 649724
+        "revid": 650237
       },
       "productType": null,
       "names": {
@@ -33855,7 +34687,7 @@
       "manufacturer": "tt",
       "owner": {
         "page": "PegasusBlast ATr",
-        "revid": 649715
+        "revid": 650831
       },
       "productType": null,
       "names": {
@@ -33953,7 +34785,7 @@
       "manufacturer": "tt",
       "owner": {
         "page": "SolEclipse D5-70TK",
-        "revid": 649000
+        "revid": 650238
       },
       "productType": null,
       "names": {
@@ -34067,7 +34899,7 @@
       "manufacturer": "tt",
       "owner": {
         "page": "PhoenixFlare Z9-80WW",
-        "revid": 648974
+        "revid": 650957
       },
       "productType": null,
       "names": {
@@ -34101,7 +34933,7 @@
       "manufacturer": "tt",
       "owner": {
         "page": "BahamutBlitz BK1-50I",
-        "revid": 648935
+        "revid": 650911
       },
       "productType": null,
       "names": {
@@ -34135,7 +34967,7 @@
       "manufacturer": "tt",
       "owner": {
         "page": "KnightFortress GV8-70UN",
-        "revid": 649736
+        "revid": 650575
       },
       "productType": null,
       "names": {
@@ -34169,7 +35001,7 @@
       "manufacturer": "tt",
       "owner": {
         "page": "RagnaRage FE4-55Y",
-        "revid": 649710
+        "revid": 650593
       },
       "productType": null,
       "names": {
@@ -34394,12 +35226,112 @@
       "flags": []
     },
     {
+      "id": "tt:CX-20",
+      "code": "CX-20",
+      "manufacturer": "tt",
+      "owner": {
+        "page": "Customize Set C",
+        "revid": 651141
+      },
+      "productType": "set",
+      "names": {
+        "tt": "Customize Set C",
+        "hasbro": null,
+        "ja": "カスタマイズセットC",
+        "romaji": "Kasutamaizu Setto Kasutamu"
+      },
+      "series": "Beyblade X (Season 4)",
+      "release": {
+        "JP": "2026-11-21"
+      },
+      "listino": {
+        "amount": 6600,
+        "currency": "JPY",
+        "fonte": "infobox"
+      },
+      "contiene": [
+        {
+          "titolo": "Bit - High Needle",
+          "kind": "part",
+          "variant": null,
+          "nota": null
+        },
+        {
+          "titolo": "Bit - Kick",
+          "kind": "part",
+          "variant": null,
+          "nota": null
+        },
+        {
+          "titolo": "Bit - Low Orb",
+          "kind": "part",
+          "variant": null,
+          "nota": null
+        },
+        {
+          "titolo": "Bit - Low Rush",
+          "kind": "part",
+          "variant": null,
+          "nota": null
+        },
+        {
+          "titolo": "Bit - Under Flat",
+          "kind": "part",
+          "variant": null,
+          "nota": null
+        },
+        {
+          "titolo": "Blade - HellsScythe",
+          "kind": "part",
+          "variant": null,
+          "nota": "Version 2.0"
+        },
+        {
+          "titolo": "Blade - SharkScale",
+          "kind": "part",
+          "variant": null,
+          "nota": null
+        },
+        {
+          "titolo": "Blade - WizardRod",
+          "kind": "part",
+          "variant": null,
+          "nota": "Metal Coat: Blue"
+        },
+        {
+          "titolo": "HellsScythe 4-60T",
+          "kind": "product",
+          "variant": null,
+          "nota": null
+        },
+        {
+          "titolo": "PhoenixForce WHM-65MT",
+          "kind": "product",
+          "variant": null,
+          "nota": null
+        },
+        {
+          "titolo": "Ratchet - 1-70",
+          "kind": "part",
+          "variant": null,
+          "nota": null
+        },
+        {
+          "titolo": "Ratchet - 8-80",
+          "kind": "part",
+          "variant": null,
+          "nota": null
+        }
+      ],
+      "flags": []
+    },
+    {
       "id": "tt:UX-00#AeroPegasus 3-70A",
       "code": "UX-00",
       "manufacturer": "tt",
       "owner": {
         "page": "AeroPegasus 3-70A",
-        "revid": 649723
+        "revid": 650029
       },
       "productType": null,
       "names": {
@@ -34423,6 +35355,53 @@
           "kind": "product",
           "variant": null,
           "nota": null
+        }
+      ],
+      "flags": [],
+      "codePlaceholder": true
+    },
+    {
+      "id": "tt:UX-00#Bey Kick Off Set",
+      "code": "UX-00",
+      "manufacturer": "tt",
+      "owner": {
+        "page": "Bey Kick Off Set",
+        "revid": 599877
+      },
+      "productType": "set",
+      "names": {
+        "tt": "Bey Kick Off Set",
+        "hasbro": null,
+        "ja": "ベイキックオフセット",
+        "romaji": "Bei Kikku Ofu Setto"
+      },
+      "series": "Beyblade X",
+      "release": {
+        "JP": "2024-01-25"
+      },
+      "listino": {
+        "amount": 6501,
+        "currency": "JPY",
+        "fonte": "infobox"
+      },
+      "contiene": [
+        {
+          "titolo": "HellsHammer 3-70H",
+          "kind": "product",
+          "variant": null,
+          "nota": "Metal Coat: Red FC Barcelona Ver."
+        },
+        {
+          "titolo": "Winder Launcher",
+          "kind": "accessory",
+          "variant": null,
+          "nota": "Red×Blue Ver."
+        },
+        {
+          "titolo": "Xtreme Stadium",
+          "kind": "accessory",
+          "variant": null,
+          "nota": "FC Barcelona Ver."
         }
       ],
       "flags": [],
@@ -34704,7 +35683,7 @@
       "manufacturer": "tt",
       "owner": {
         "page": "OrochiCluster 6-60LF",
-        "revid": 647954
+        "revid": 650179
       },
       "productType": null,
       "names": {
@@ -34825,6 +35804,34 @@
       "codePlaceholder": true
     },
     {
+      "id": "tt:UX-00#SharkScale 4-50UF",
+      "code": "UX-00",
+      "manufacturer": "tt",
+      "owner": null,
+      "productType": null,
+      "names": {
+        "tt": null,
+        "hasbro": null,
+        "ja": null,
+        "romaji": null
+      },
+      "series": null,
+      "release": {},
+      "listino": null,
+      "contiene": [
+        {
+          "titolo": "SharkScale 4-50UF",
+          "kind": "product",
+          "variant": null,
+          "nota": null
+        }
+      ],
+      "flags": [
+        "senzaPaginaPropria"
+      ],
+      "codePlaceholder": true
+    },
+    {
       "id": "tt:UX-00#WizardRod 5-70DB",
       "code": "UX-00",
       "manufacturer": "tt",
@@ -34850,6 +35857,41 @@
       "flags": [
         "senzaPaginaPropria"
       ],
+      "codePlaceholder": true
+    },
+    {
+      "id": "tt:UX-00#WyvernHover 2-80GN",
+      "code": "UX-00",
+      "manufacturer": "tt",
+      "owner": {
+        "page": "WyvernHover 2-80GN",
+        "revid": 633919
+      },
+      "productType": null,
+      "names": {
+        "tt": "WyvernHover 2-80GN",
+        "hasbro": null,
+        "ja": "ワイバーンホバー2-80GN",
+        "romaji": "WaibānHobā Tsū Eitī Giya Nīdoru"
+      },
+      "series": "Beyblade X",
+      "release": {
+        "JP": "2025-10-24"
+      },
+      "listino": {
+        "amount": 770,
+        "currency": "JPY",
+        "fonte": "infobox"
+      },
+      "contiene": [
+        {
+          "titolo": "WyvernHover 2-80GN",
+          "kind": "product",
+          "variant": null,
+          "nota": null
+        }
+      ],
+      "flags": [],
       "codePlaceholder": true
     },
     {
@@ -34926,7 +35968,7 @@
       "manufacturer": "tt",
       "owner": {
         "page": "WizardRod 5-70DB",
-        "revid": 649805
+        "revid": 649852
       },
       "productType": null,
       "names": {
@@ -35564,7 +36606,7 @@
       "manufacturer": "tt",
       "owner": {
         "page": "MeteorDragoon 3-70J",
-        "revid": 649738
+        "revid": 650351
       },
       "productType": null,
       "names": {
@@ -35668,7 +36710,7 @@
       "manufacturer": "tt",
       "owner": {
         "page": "BulletGriffon H",
-        "revid": 649734
+        "revid": 650485
       },
       "productType": null,
       "names": {
@@ -35702,7 +36744,7 @@
       "manufacturer": "tt",
       "owner": {
         "page": "GloryValkyrie LF",
-        "revid": 648368
+        "revid": 650601
       },
       "productType": null,
       "names": {
@@ -35797,18 +36839,28 @@
       "valore": "G1889",
       "nota": "nessuna pagina-prodotto lo dichiara: lo cita solo l'infobox di una pagina-parte",
       "primaVisto": "2026-09-22",
-      "ultimoVisto": "2026-09-22"
+      "ultimoVisto": "2026-10-15"
+    },
+    {
+      "chiave": "data_non_parsata|DranArc S2-70K|ReleaseJP|2025",
+      "tipo": "data_non_parsata",
+      "pagina": "DranArc S2-70K",
+      "revid": 612189,
+      "campo": "ReleaseJP",
+      "valore": "2025",
+      "primaVisto": "2026-10-15",
+      "ultimoVisto": "2026-10-15"
     },
     {
       "chiave": "hasbro_nome_discorde|CobaltDragoon 2-60C|AKA|Cobalt Dragoon 2-60C",
       "tipo": "hasbro_nome_discorde",
       "pagina": "CobaltDragoon 2-60C",
-      "revid": 649697,
+      "revid": 650464,
       "campo": "AKA",
       "valore": "Cobalt Dragoon 2-60C",
       "nota": "il redirect dice \"Cobalt Dragoon Deluxe Left-Spin String Launcher Set\"",
       "primaVisto": "2026-09-22",
-      "ultimoVisto": "2026-09-22"
+      "ultimoVisto": "2026-10-15"
     },
     {
       "chiave": "hasbro_nome_discorde|PhoenixWing 9-60GF|AKA|Soar Phoenix 9-60GF",
@@ -35838,7 +36890,7 @@
       "pagina": "Infinity Rail Beystadium",
       "revid": null,
       "primaVisto": "2026-09-22",
-      "ultimoVisto": "2026-09-22"
+      "ultimoVisto": "2026-10-15"
     },
     {
       "chiave": "parte_non_risolta|Quetzalcoatlus 4-55D|blade|Quetzalcoatlus",
@@ -35886,17 +36938,18 @@
     }
   ],
   "stats": {
-    "beys": 199,
-    "contenitori": 110,
-    "products": 315,
-    "productsTt": 178,
-    "productsHasbro": 137,
-    "productsConOwner": 287,
-    "productsConListino": 286,
-    "beyConEntrambiICodici": 80,
+    "beys": 205,
+    "contenitori": 112,
+    "products": 325,
+    "productsTt": 186,
+    "productsHasbro": 139,
+    "productsConOwner": 295,
+    "productsConListino": 292,
+    "beyConEntrambiICodici": 81,
     "unresolvedPerTipo": {
       "codice_produttore_discorde": 1,
       "codice_solo_nelle_parti": 1,
+      "data_non_parsata": 1,
       "hasbro_nome_discorde": 3,
       "pagina_non_trovata": 1,
       "parte_non_risolta": 4

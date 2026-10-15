@@ -47,3 +47,7 @@ sessions-index.md
 # jetbrains setting folder
 .idea/
 .vercel
+
+# Python tools
+__pycache__/
+*.pyc

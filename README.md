@@ -98,6 +98,18 @@ lo storico fino a un cutoff di 365 giorni** (capped + resumable via cursori in `
 **pruning** deterministico (`prune:combos`, dry-run di default + guardrail) archivia le combo senza
 evidenza fresca in `combos-archive.json`. Dettagli completi e scheduling in `CLAUDE.md`.
 
+## Riconoscimento prodotti da foto
+
+Prototipo locale in [`tools/photo-recognition/`](tools/photo-recognition/README.md): prepara
+ritagli, confronti visivi e un database derivato che collega le lame a prodotti completi con
+ratchet e bit di vendita. Le fonti e le ricolorazioni aggiunte sono salvate in
+`data/recognition/`; il catalogo persistente resta `data/products-wiki.json`.
+Il riconoscimento è assistito da Codex: il ranking automatico è sperimentale e richiede revisione.
+La forma precede il colore; le versioni TT/Hasbro con combinazioni diverse restano distinte.
+
+Lo scraper supporta ora `npx --yes tsx scripts/build-products-wiki.ts --pagina "GhostCircle 4-60H"`
+per aggiungere un prodotto al bisogno senza perdere quelli già censiti.
+
 ## Deploy
 
 Push su `master` → GitHub Actions builda e pubblica su GitHub Pages. Origine e base path del sito

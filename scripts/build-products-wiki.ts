@@ -43,6 +43,7 @@
  *
  * Esegui: npm run build:products-wiki
  * Opzioni: --offline (solo cache, nessuna rete)  --limite N (prime N pagine, per provare)
+ *          --pagina "Titolo wiki" (aggiunge una pagina all'inventario completo e la conserva)
  */
 import { readFileSync, existsSync } from 'fs';
 import { join } from 'path';
@@ -66,6 +67,12 @@ const PARSER_VERSION = 2;
 
 const argv = process.argv.slice(2);
 const OFFLINE = argv.includes('--offline');
+// Aggiunge prodotti al bisogno senza limitare o sostituire l'inventario esistente.
+const PAGINE_EXTRA = argv.flatMap((v, i) => v === '--pagina' && argv[i + 1] ? [argv[i + 1]] : []);
+if (argv.some((v, i) => v === '--pagina' && (!argv[i + 1] || argv[i + 1].startsWith('--')))) {
+  throw new Error('--pagina richiede un titolo wiki');
+}
+if (PAGINE_EXTRA.length && argv.includes('--limite')) throw new Error('--pagina non si combina con --limite');
 const LIMITE = (() => {
   const i = argv.indexOf('--limite');
   return i >= 0 && argv[i + 1] ? parseInt(argv[i + 1], 10) : 0;
@@ -846,6 +853,14 @@ function inventario(): { titolo: string; kind: string; via: string }[] {
     if (!nome || visti.has(nome) || RE_PAGINA_PARTE.test(nome) || LISTE.has(nome)) continue;
     visti.add(nome);
     out.push({ titolo: nome, kind: classifyKind(nome), via: 'releases' });
+  }
+  // Le pagine richieste in precedenza restano anche nei run successivi, pur non essendo
+  // ancora incluse in wiki-scan. Una ricolorazione può avere una pagina propria.
+  const precedente = readJson<{ beys?: Bey[]; contenitori?: Contenitore[] }>(OUT_PATH, {});
+  for (const nome of [...PAGINE_EXTRA, ...(precedente.beys ?? []).map(b => b.id), ...(precedente.contenitori ?? []).map(c => c.id)]) {
+    if (!nome || visti.has(nome) || RE_PAGINA_PARTE.test(nome) || LISTE.has(nome)) continue;
+    visti.add(nome);
+    out.push({ titolo: nome, kind: classifyKind(nome), via: 'richiesta-o-catalogo' });
   }
   out.sort((a, b) => a.titolo.localeCompare(b.titolo));
   return out;
