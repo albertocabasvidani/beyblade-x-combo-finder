@@ -2,23 +2,23 @@
   "version": 1,
   "lists": {
     "List of Beyblade X products (Takara Tomy)": {
-      "revid": 650558,
-      "timestamp": "2026-10-06T05:39:13.000Z",
-      "lastScannedDate": "2026-10-14"
+      "revid": 650994,
+      "timestamp": "2026-10-14T15:22:34.000Z",
+      "lastScannedDate": "2026-10-15"
     },
     "List of Beyblade X products (Hasbro)": {
       "revid": 648918,
       "timestamp": "2026-09-14T01:43:54.000Z",
-      "lastScannedDate": "2026-10-14"
+      "lastScannedDate": "2026-10-15"
     }
   },
   "pages": {
     "List of Beyblade X products (Takara Tomy)": {
-      "revid": 650558,
-      "timestamp": "2026-10-06T05:39:13.000Z",
-      "lastScannedDate": "2026-10-07",
+      "revid": 650994,
+      "timestamp": "2026-10-14T15:22:34.000Z",
+      "lastScannedDate": "2026-10-15",
       "kind": "product",
-      "kindSource": "ai",
+      "kindSource": "heuristic",
       "notes": "pagina-lista"
     },
     "List of Beyblade X products (Hasbro)": {
@@ -30,11 +30,11 @@
       "notes": "pagina lista: aggiunta riga NFL CX Top Pack, nessuna parte da estrarre da qui"
     },
     "DranSword 3-60F": {
-      "revid": 650772,
-      "timestamp": "2026-10-09T11:41:43.000Z",
-      "lastScannedDate": "2026-10-10",
+      "revid": 651059,
+      "timestamp": "2026-10-14T17:37:57.000Z",
+      "lastScannedDate": "2026-10-15",
       "kind": "product",
-      "kindSource": "ai",
+      "kindSource": "heuristic",
       "redirects": [
         "Sword Dran 3-60F"
       ],
@@ -362,9 +362,9 @@
       "notes": "Solo refuso hyphen in Ratchet-Integrated Bit, nessun dato struttura cambiato."
     },
     "Bit - High Needle": {
-      "revid": 645428,
-      "timestamp": "2026-08-03T05:11:10.000Z",
-      "lastScannedDate": "2026-08-09",
+      "revid": 650989,
+      "timestamp": "2026-10-14T15:19:39.000Z",
+      "lastScannedDate": "2026-10-15",
       "kind": "part",
       "kindSource": "heuristic",
       "notes": "Solo aggiunta descrizione completa (era draft placeholder), Products invariati."
@@ -1045,11 +1045,11 @@
       "kindSource": "heuristic"
     },
     "WizardArrow 4-80B": {
-      "revid": 650753,
-      "timestamp": "2026-10-09T10:52:59.000Z",
-      "lastScannedDate": "2026-10-10",
+      "revid": 651089,
+      "timestamp": "2026-10-15T01:05:35.000Z",
+      "lastScannedDate": "2026-10-15",
       "kind": "product",
-      "kindSource": "ai",
+      "kindSource": "heuristic",
       "redirects": [
         "Arrow Wizard 4-80B"
       ],
@@ -1169,9 +1169,9 @@
       "notes": "pagina modificata; parti gia presenti nel master, nessuna nuova"
     },
     "PhoenixFlare Z9-80WW": {
-      "revid": 648974,
-      "timestamp": "2026-09-14T12:15:10.000Z",
-      "lastScannedDate": "2026-09-15",
+      "revid": 650957,
+      "timestamp": "2026-10-14T14:30:35.000Z",
+      "lastScannedDate": "2026-10-15",
       "kind": "product",
       "kindSource": "heuristic"
     },
@@ -1348,9 +1348,9 @@
       "kindSource": "heuristic"
     },
     "Ratchet - 8-80": {
-      "revid": 646061,
-      "timestamp": "2026-08-12T07:50:19.000Z",
-      "lastScannedDate": "2026-08-13",
+      "revid": 650986,
+      "timestamp": "2026-10-14T15:18:58.000Z",
+      "lastScannedDate": "2026-10-15",
       "kind": "part",
       "kindSource": "heuristic"
     },
@@ -1523,9 +1523,9 @@
       "kindSource": "heuristic"
     },
     "Blade - WizardRod": {
-      "revid": 647153,
-      "timestamp": "2026-08-26T06:22:15.000Z",
-      "lastScannedDate": "2026-08-27",
+      "revid": 650983,
+      "timestamp": "2026-10-14T15:18:32.000Z",
+      "lastScannedDate": "2026-10-15",
       "kind": "part",
       "kindSource": "heuristic"
     },
@@ -2994,11 +2994,11 @@
       "kindSource": "heuristic"
     },
     "LusterDragoon 6-60LC": {
-      "revid": 650675,
-      "timestamp": "2026-10-09T03:00:34.000Z",
-      "lastScannedDate": "2026-10-10",
+      "revid": 651060,
+      "timestamp": "2026-10-14T17:38:37.000Z",
+      "lastScannedDate": "2026-10-15",
       "kind": "product",
-      "kindSource": "ai",
+      "kindSource": "heuristic",
       "notes": "gia nel master come Luster Dragoon"
     },
     "All In One Set": {
@@ -3036,17 +3036,17 @@
     "Blade - SiegSuperion": {
       "revid": 650337,
       "timestamp": "2026-10-02T21:23:29.000Z",
-      "lastScannedDate": "2026-10-14",
+      "lastScannedDate": "2026-10-15",
       "kind": "part",
-      "kindSource": "ai",
+      "kindSource": "heuristic",
       "notes": "gia' nel master, modifica wiki"
     },
     "SiegSuperion 0-70LP": {
-      "revid": 650333,
-      "timestamp": "2026-10-02T21:19:02.000Z",
-      "lastScannedDate": "2026-10-14",
+      "revid": 650980,
+      "timestamp": "2026-10-14T15:08:39.000Z",
+      "lastScannedDate": "2026-10-15",
       "kind": "product",
-      "kindSource": "ai",
+      "kindSource": "heuristic",
       "notes": "gia' nel master"
     },
     "Bey Kick Off Set": {
@@ -3104,6 +3104,71 @@
       "kind": "product",
       "kindSource": "ai",
       "notes": "parti gia nel master"
+    },
+    "Customize Set C": {
+      "revid": 650981,
+      "timestamp": "2026-10-14T15:09:50.000Z",
+      "lastScannedDate": "2026-10-15",
+      "kind": "set",
+      "kindSource": "ai",
+      "notes": "set CX-20: contenuti gia' nel master tranne le 4 parti di PhoenixForce WHM-65MT"
+    },
+    "PhoenixForce WHM-65MT": {
+      "revid": 651061,
+      "timestamp": "2026-10-14T17:39:04.000Z",
+      "lastScannedDate": "2026-10-15",
+      "kind": "product",
+      "kindSource": "ai",
+      "notes": "CX Expand: Force (Metal Blade), Weight (Over Blade), M-65, Metal Taper nuovi"
+    },
+    "Blade - HellsScythe": {
+      "revid": 650982,
+      "timestamp": "2026-10-14T15:18:16.000Z",
+      "lastScannedDate": "2026-10-15",
+      "kind": "part",
+      "kindSource": "heuristic"
+    },
+    "Blade - SharkScale": {
+      "revid": 650984,
+      "timestamp": "2026-10-14T15:18:40.000Z",
+      "lastScannedDate": "2026-10-15",
+      "kind": "part",
+      "kindSource": "heuristic"
+    },
+    "Ratchet - 1-70": {
+      "revid": 650985,
+      "timestamp": "2026-10-14T15:18:50.000Z",
+      "lastScannedDate": "2026-10-15",
+      "kind": "part",
+      "kindSource": "heuristic"
+    },
+    "Bit - Kick": {
+      "revid": 650987,
+      "timestamp": "2026-10-14T15:19:12.000Z",
+      "lastScannedDate": "2026-10-15",
+      "kind": "part",
+      "kindSource": "heuristic"
+    },
+    "Bit - Low Rush": {
+      "revid": 650988,
+      "timestamp": "2026-10-14T15:19:30.000Z",
+      "lastScannedDate": "2026-10-15",
+      "kind": "part",
+      "kindSource": "heuristic"
+    },
+    "Bit - Low Orb": {
+      "revid": 650990,
+      "timestamp": "2026-10-14T15:20:10.000Z",
+      "lastScannedDate": "2026-10-15",
+      "kind": "part",
+      "kindSource": "heuristic"
+    },
+    "Bit - Under Flat": {
+      "revid": 650991,
+      "timestamp": "2026-10-14T15:20:19.000Z",
+      "lastScannedDate": "2026-10-15",
+      "kind": "part",
+      "kindSource": "heuristic"
     }
   }
 }

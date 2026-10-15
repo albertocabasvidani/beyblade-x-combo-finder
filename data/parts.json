@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-14",
+  "version": "2026-10-15",
   "blades": [
     {
       "id": "aero-pegasus",
@@ -2130,6 +2130,13 @@
       "image": "flare.png"
     },
     {
+      "id": "force",
+      "name": "Force",
+      "type": "balance",
+      "line": "cx",
+      "metal": true
+    },
+    {
       "id": "fort",
       "name": "Fort",
       "nameWestern": "Fort",
@@ -2420,6 +2427,11 @@
       "name": "Tough",
       "line": "cx",
       "image": "tough.png"
+    },
+    {
+      "id": "weight",
+      "name": "Weight",
+      "line": "cx"
     }
   ],
   "ratchets": [
@@ -2809,6 +2821,12 @@
         "sta": 7
       },
       "image": "9-80.png"
+    },
+    {
+      "id": "M-65",
+      "name": "M-65",
+      "sides": null,
+      "height": 65
     },
     {
       "id": "M-85",
@@ -3297,6 +3315,14 @@
         "sta": 30
       },
       "image": "metal-needle.png"
+    },
+    {
+      "id": "metal-taper",
+      "name": "Metal Taper",
+      "type": "balance",
+      "aliases": [
+        "Metaru Tēpā"
+      ]
     },
     {
       "id": "narrow",

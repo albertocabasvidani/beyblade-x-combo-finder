@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-14",
+  "version": "2026-10-15",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -7152,6 +7152,40 @@
       }
     },
     {
+      "id": "force",
+      "category": "mainBlade",
+      "line": "cx",
+      "names": {
+        "tt": "Force",
+        "ja": "フォース",
+        "romaji": "Fōsu"
+      },
+      "aliases": [
+        {
+          "value": "フォース",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "Fōsu",
+          "lang": "ja",
+          "kind": "romaji"
+        }
+      ],
+      "products": [
+        "CX-20"
+      ],
+      "firstReleaseSet": "CX-20",
+      "source": {
+        "page": "PhoenixForce WHM-65MT",
+        "url": "https://beyblade.fandom.com/wiki/PhoenixForce_WHM-65MT"
+      },
+      "lastVerified": "2026-10-15",
+      "status": "verified",
+      "type": "balance",
+      "metal": true
+    },
+    {
       "id": "fort",
       "category": "mainBlade",
       "line": "cx",
@@ -8701,6 +8735,39 @@
         "wikiFile": "OverBladeTough.png",
         "fetchedAt": "2026-08-19"
       }
+    },
+    {
+      "id": "weight",
+      "category": "overBlade",
+      "line": "cx",
+      "names": {
+        "tt": "Weight",
+        "ja": "ウエイト",
+        "romaji": "Ueito"
+      },
+      "aliases": [
+        {
+          "value": "ウエイト",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "Ueito",
+          "lang": "ja",
+          "kind": "romaji"
+        }
+      ],
+      "products": [
+        "CX-20"
+      ],
+      "firstReleaseSet": "CX-20",
+      "source": {
+        "page": "PhoenixForce WHM-65MT",
+        "url": "https://beyblade.fandom.com/wiki/PhoenixForce_WHM-65MT"
+      },
+      "lastVerified": "2026-10-15",
+      "status": "verified",
+      "type": "balance"
     }
   ],
   "ratchets": [
@@ -10586,6 +10653,38 @@
       }
     },
     {
+      "id": "M-65",
+      "category": "ratchet",
+      "line": "cx",
+      "names": {
+        "tt": "M-65",
+        "ja": "エムエシックスティファイブ",
+        "romaji": "Emu Shikkusuti Faibu"
+      },
+      "aliases": [
+        {
+          "value": "エムエシックスティファイブ",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "Emu Shikkusuti Faibu",
+          "lang": "ja",
+          "kind": "romaji"
+        }
+      ],
+      "products": [
+        "CX-20"
+      ],
+      "firstReleaseSet": "CX-20",
+      "source": {
+        "page": "PhoenixForce WHM-65MT",
+        "url": "https://beyblade.fandom.com/wiki/PhoenixForce_WHM-65MT"
+      },
+      "lastVerified": "2026-10-15",
+      "status": "verified"
+    },
+    {
       "id": "M-85",
       "category": "ratchet",
       "line": "bx",
@@ -12281,6 +12380,39 @@
         "wikiFile": "BitMetalNeedle.png",
         "fetchedAt": "2026-08-19"
       }
+    },
+    {
+      "id": "metal-taper",
+      "category": "bit",
+      "line": "cx",
+      "names": {
+        "tt": "Metal Taper",
+        "ja": "メタルテーパー",
+        "romaji": "Metaru Tēpā"
+      },
+      "aliases": [
+        {
+          "value": "メタルテーパー",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "Metaru Tēpā",
+          "lang": "ja",
+          "kind": "romaji"
+        }
+      ],
+      "products": [
+        "CX-20"
+      ],
+      "firstReleaseSet": "CX-20",
+      "source": {
+        "page": "PhoenixForce WHM-65MT",
+        "url": "https://beyblade.fandom.com/wiki/PhoenixForce_WHM-65MT"
+      },
+      "lastVerified": "2026-10-15",
+      "status": "verified",
+      "type": "balance"
     },
     {
       "id": "narrow",
