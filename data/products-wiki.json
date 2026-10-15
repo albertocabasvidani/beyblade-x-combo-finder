@@ -1,17 +1,17 @@
 {
   "version": "2026-10-15",
   "parserVersion": 2,
-  "generated": "2026-10-15T07:09:55.683Z",
+  "generated": "2026-10-15T08:38:24.265Z",
   "fonte": {
     "inventario": {
-      "considerate": 380,
-      "pagineUniche": 380
+      "considerate": 381,
+      "pagineUniche": 319
     },
     "fetch": {
-      "daCache": 317,
-      "scaricate": 0,
+      "daCache": 314,
+      "scaricate": 4,
       "fallite": 0,
-      "nonTrovate": 0
+      "nonTrovate": 1
     }
   },
   "pagine": {
@@ -54,6 +54,42 @@
       "revid": 641745,
       "kind": "product",
       "redirects": [],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
+    "WizardArc R4-55LO": {
+      "revid": 649729,
+      "kind": "product",
+      "redirects": [
+        "Arc Wizard R 4-55LO"
+      ],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
+    "KnightFortress GV8-70UN": {
+      "revid": 650575,
+      "kind": "product",
+      "redirects": [
+        "Armor Knight GV 8-70UN"
+      ],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
+    "WizardArrow 4-80B": {
+      "revid": 651089,
+      "kind": "product",
+      "redirects": [
+        "Arrow Wizard 4-80B"
+      ],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
+    "WizardArrow 4-80GB": {
+      "revid": 646145,
+      "kind": "product",
+      "redirects": [
+        "Arrow Wizard 4-80GB"
+      ],
       "parserVersion": 2,
       "resa": "bey"
     },
@@ -205,6 +241,15 @@
       "parserVersion": 2,
       "resa": "bey"
     },
+    "FoxBrush J9-70GR": {
+      "revid": 649698,
+      "kind": "product",
+      "redirects": [
+        "Brush Fox J 9-70GR"
+      ],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
     "BucksAntlers B2-60D": {
       "revid": 643145,
       "kind": "product",
@@ -241,6 +286,15 @@
       "redirects": [],
       "parserVersion": 2,
       "resa": "contenitore"
+    },
+    "DranBuster 1-60A": {
+      "revid": 649700,
+      "kind": "product",
+      "redirects": [
+        "Buster Dran 1-60A"
+      ],
+      "parserVersion": 2,
+      "resa": "bey"
     },
     "Buster Dran 5-70DB": {
       "revid": 646352,
@@ -342,6 +396,15 @@
       "parserVersion": 2,
       "resa": "contenitore"
     },
+    "LeonClaw 5-60P": {
+      "revid": 650038,
+      "kind": "product",
+      "redirects": [
+        "Claw Leon 5-60P"
+      ],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
     "Clip & Rip Launcher Set": {
       "revid": 643968,
       "kind": "accessory",
@@ -367,19 +430,19 @@
       "parserVersion": 2,
       "resa": "bey"
     },
-    "CobaltDragoon 9-60F": {
-      "revid": 633924,
-      "kind": "product",
-      "redirects": [],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
     "CobaltDrake 4-60F": {
       "revid": 650158,
       "kind": "product",
       "redirects": [
         "Cobalt Drake 4-60F"
       ],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
+    "CobaltDragoon 9-60F": {
+      "revid": 633924,
+      "kind": "product",
+      "redirects": [],
       "parserVersion": 2,
       "resa": "bey"
     },
@@ -396,6 +459,24 @@
       "redirects": [],
       "parserVersion": 2,
       "resa": "contenitore"
+    },
+    "DranBrave S6-60V": {
+      "revid": 649701,
+      "kind": "product",
+      "redirects": [
+        "Courage Dran S 6-60V"
+      ],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
+    "SphinxCowl 9-80GN": {
+      "revid": 648976,
+      "kind": "product",
+      "redirects": [
+        "Cowl Sphinx 9-80GN"
+      ],
+      "parserVersion": 2,
+      "resa": "bey"
     },
     "Cowl Sphinx and Crest Leon Dual Pack": {
       "revid": 609816,
@@ -432,6 +513,15 @@
       "kind": "product",
       "redirects": [
         "Tread Croc TQ 5-50GN"
+      ],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
+    "MummyCurse 7-55W": {
+      "revid": 650178,
+      "kind": "product",
+      "redirects": [
+        "Curse Mummy 7-55W"
       ],
       "parserVersion": 2,
       "resa": "bey"
@@ -485,10 +575,28 @@
       "parserVersion": 2,
       "resa": "bey"
     },
+    "PerseusDark B6-80W": {
+      "revid": 650237,
+      "kind": "product",
+      "redirects": [
+        "Dark Perseus B 6-80W"
+      ],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
     "Darth Vader 4-60P": {
       "revid": 610266,
       "kind": "product",
       "redirects": [],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
+    "UnicornDelta PO3-60GU": {
+      "revid": 650411,
+      "kind": "product",
+      "redirects": [
+        "Delta Unicorn PO 3-60GU"
+      ],
       "parserVersion": 2,
       "resa": "bey"
     },
@@ -556,24 +664,6 @@
       "revid": 612189,
       "kind": "product",
       "redirects": [],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
-    "DranBrave S6-60V": {
-      "revid": 649701,
-      "kind": "product",
-      "redirects": [
-        "Courage Dran S 6-60V"
-      ],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
-    "DranBuster 1-60A": {
-      "revid": 649700,
-      "kind": "product",
-      "redirects": [
-        "Buster Dran 1-60A"
-      ],
       "parserVersion": 2,
       "resa": "bey"
     },
@@ -741,19 +831,19 @@
       "parserVersion": 2,
       "resa": "bey"
     },
+    "PhoenixFeather 2-60N": {
+      "revid": 635041,
+      "kind": "product",
+      "redirects": [
+        "Feather Phoenix 2-60N"
+      ],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
     "Fort Hornet R 7-60T": {
       "revid": 645020,
       "kind": "product",
       "redirects": [],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
-    "FoxBrush J9-70GR": {
-      "revid": 649698,
-      "kind": "product",
-      "redirects": [
-        "Brush Fox J 9-70GR"
-      ],
       "parserVersion": 2,
       "resa": "bey"
     },
@@ -880,6 +970,15 @@
       "parserVersion": 2,
       "resa": "bey"
     },
+    "HellsHammer 3-70H": {
+      "revid": 649708,
+      "kind": "product",
+      "redirects": [
+        "Hammer Incendio 3-70H"
+      ],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
     "HeavensRing 0-80DS": {
       "revid": 650635,
       "kind": "product",
@@ -902,15 +1001,6 @@
       "redirects": [],
       "parserVersion": 2,
       "resa": "contenitore"
-    },
-    "HellsHammer 3-70H": {
-      "revid": 649708,
-      "kind": "product",
-      "redirects": [
-        "Hammer Incendio 3-70H"
-      ],
-      "parserVersion": 2,
-      "resa": "bey"
     },
     "HellsNether Deck Set": {
       "revid": 646065,
@@ -958,6 +1048,24 @@
       "kind": "product",
       "redirects": [
         "Scythe Incendio 4-60T"
+      ],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
+    "KnightShield 3-80N": {
+      "revid": 650773,
+      "kind": "product",
+      "redirects": [
+        "Helm Knight 3-80N"
+      ],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
+    "RhinoHorn 3-80S": {
+      "revid": 649712,
+      "kind": "product",
+      "redirects": [
+        "Horn Rhino 3-80S"
       ],
       "parserVersion": 2,
       "resa": "bey"
@@ -1025,6 +1133,24 @@
       "parserVersion": 2,
       "resa": "contenitore"
     },
+    "SharkEdge 1-60Q": {
+      "revid": 646572,
+      "kind": "product",
+      "redirects": [
+        "Keel Shark 1-60Q"
+      ],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
+    "SharkEdge 3-60LF": {
+      "revid": 648966,
+      "kind": "product",
+      "redirects": [
+        "Keel Shark 3-60LF"
+      ],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
     "Knife Shinobi 4-80HN": {
       "revid": 624429,
       "kind": "product",
@@ -1038,15 +1164,6 @@
       "redirects": [],
       "parserVersion": 2,
       "resa": "contenitore"
-    },
-    "KnightFortress GV8-70UN": {
-      "revid": 650575,
-      "kind": "product",
-      "redirects": [
-        "Armor Knight GV 8-70UN"
-      ],
-      "parserVersion": 2,
-      "resa": "bey"
     },
     "KnightLance 3-60LF": {
       "revid": 645834,
@@ -1070,15 +1187,6 @@
       "revid": 650019,
       "kind": "product",
       "redirects": [],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
-    "KnightShield 3-80N": {
-      "revid": 650773,
-      "kind": "product",
-      "redirects": [
-        "Helm Knight 3-80N"
-      ],
       "parserVersion": 2,
       "resa": "bey"
     },
@@ -1109,15 +1217,6 @@
       "redirects": [],
       "parserVersion": 2,
       "resa": "contenitore"
-    },
-    "LeonClaw 5-60P": {
-      "revid": 650038,
-      "kind": "product",
-      "redirects": [
-        "Claw Leon 5-60P"
-      ],
-      "parserVersion": 2,
-      "resa": "bey"
     },
     "LeonCrest 7-60GN": {
       "revid": 648969,
@@ -1224,15 +1323,6 @@
       "parserVersion": 2,
       "resa": "bey"
     },
-    "MummyCurse 7-55W": {
-      "revid": 650178,
-      "kind": "product",
-      "redirects": [
-        "Curse Mummy 7-55W"
-      ],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
     "NFC 9-60LO": {
       "revid": 648791,
       "kind": "product",
@@ -1335,24 +1425,6 @@
       "revid": 650831,
       "kind": "product",
       "redirects": [],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
-    "PerseusDark B6-80W": {
-      "revid": 650237,
-      "kind": "product",
-      "redirects": [
-        "Dark Perseus B 6-80W"
-      ],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
-    "PhoenixFeather 2-60N": {
-      "revid": 635041,
-      "kind": "product",
-      "redirects": [
-        "Feather Phoenix 2-60N"
-      ],
       "parserVersion": 2,
       "resa": "bey"
     },
@@ -1595,28 +1667,19 @@
       "parserVersion": 2,
       "resa": "contenitore"
     },
-    "Red Hulk 1-80R": {
-      "revid": 636518,
-      "kind": "product",
-      "redirects": [],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
-    "RhinoHorn 3-80S": {
-      "revid": 649712,
-      "kind": "product",
-      "redirects": [
-        "Horn Rhino 3-80S"
-      ],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
     "RhinoReaper C4-55D": {
       "revid": 648947,
       "kind": "product",
       "redirects": [
         "Reaper Rhino C 4-55D"
       ],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
+    "Red Hulk 1-80R": {
+      "revid": 636518,
+      "kind": "product",
+      "redirects": [],
       "parserVersion": 2,
       "resa": "bey"
     },
@@ -1699,6 +1762,15 @@
       "parserVersion": 2,
       "resa": "bey"
     },
+    "SharkScale 4-50UF": {
+      "revid": 651152,
+      "kind": "product",
+      "redirects": [
+        "Scale Shark 4-50UF"
+      ],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
     "ScorpioSpear 0-70Z": {
       "revid": 648994,
       "kind": "product",
@@ -1713,11 +1785,11 @@
       "parserVersion": 2,
       "resa": "bey"
     },
-    "SharkEdge 1-60Q": {
-      "revid": 646572,
+    "ShinobiShadow 1-80MN": {
+      "revid": 649718,
       "kind": "product",
       "redirects": [
-        "Keel Shark 1-60Q"
+        "Shadow Shinobi 1-80MN"
       ],
       "parserVersion": 2,
       "resa": "bey"
@@ -1726,15 +1798,6 @@
       "revid": 629251,
       "kind": "product",
       "redirects": [],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
-    "SharkEdge 3-60LF": {
-      "revid": 648966,
-      "kind": "product",
-      "redirects": [
-        "Keel Shark 3-60LF"
-      ],
       "parserVersion": 2,
       "resa": "bey"
     },
@@ -1756,15 +1819,6 @@
       "revid": 650240,
       "kind": "product",
       "redirects": [],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
-    "SharkScale 4-50UF": {
-      "revid": 651152,
-      "kind": "product",
-      "redirects": [
-        "Scale Shark 4-50UF"
-      ],
       "parserVersion": 2,
       "resa": "bey"
     },
@@ -1807,12 +1861,10 @@
       "parserVersion": 2,
       "resa": "bey"
     },
-    "ShinobiShadow 1-80MN": {
-      "revid": 649718,
+    "ShinobiShadow 3-70GP": {
+      "revid": 599611,
       "kind": "product",
-      "redirects": [
-        "Shadow Shinobi 1-80MN"
-      ],
+      "redirects": [],
       "parserVersion": 2,
       "resa": "bey"
     },
@@ -1880,15 +1932,6 @@
       "revid": 647286,
       "kind": "product",
       "redirects": [],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
-    "SphinxCowl 9-80GN": {
-      "revid": 648976,
-      "kind": "product",
-      "redirects": [
-        "Cowl Sphinx 9-80GN"
-      ],
       "parserVersion": 2,
       "resa": "bey"
     },
@@ -1966,6 +2009,15 @@
       "revid": 631994,
       "kind": "product",
       "redirects": [],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
+    "UnicornSting 5-60GP": {
+      "revid": 649714,
+      "kind": "product",
+      "redirects": [
+        "Sting Unicorn 5-60GP"
+      ],
       "parserVersion": 2,
       "resa": "bey"
     },
@@ -2074,6 +2126,15 @@
       "parserVersion": 2,
       "resa": "contenitore"
     },
+    "WhaleWave 5-80E": {
+      "revid": 649722,
+      "kind": "product",
+      "redirects": [
+        "Tide Whale 5-80E"
+      ],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
     "TigaRage FT3-60T": {
       "revid": 647172,
       "kind": "product",
@@ -2099,24 +2160,6 @@
       "revid": 648978,
       "kind": "product",
       "redirects": [],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
-    "UnicornDelta PO3-60GU": {
-      "revid": 650411,
-      "kind": "product",
-      "redirects": [
-        "Delta Unicorn PO 3-60GU"
-      ],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
-    "UnicornSting 5-60GP": {
-      "revid": 649714,
-      "kind": "product",
-      "redirects": [
-        "Sting Unicorn 5-60GP"
-      ],
       "parserVersion": 2,
       "resa": "bey"
     },
@@ -2162,6 +2205,24 @@
       "parserVersion": 2,
       "resa": "bey"
     },
+    "WizardRod 1-60R": {
+      "revid": 647152,
+      "kind": "product",
+      "redirects": [
+        "Wand Wizard 1-60R"
+      ],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
+    "WizardRod 5-70DB": {
+      "revid": 649852,
+      "kind": "product",
+      "redirects": [
+        "Wand Wizard 5-70DB"
+      ],
+      "parserVersion": 2,
+      "resa": "bey"
+    },
     "WeissTiger 3-60U": {
       "revid": 648980,
       "kind": "product",
@@ -2173,15 +2234,6 @@
       "revid": 649756,
       "kind": "product",
       "redirects": [],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
-    "WhaleWave 5-80E": {
-      "revid": 649722,
-      "kind": "product",
-      "redirects": [
-        "Tide Whale 5-80E"
-      ],
       "parserVersion": 2,
       "resa": "bey"
     },
@@ -2208,15 +2260,6 @@
       "parserVersion": 2,
       "resa": "contenitore"
     },
-    "WizardArc R4-55LO": {
-      "revid": 649729,
-      "kind": "product",
-      "redirects": [
-        "Arc Wizard R 4-55LO"
-      ],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
     "WizardArrow 4-60N": {
       "revid": 614266,
       "kind": "product",
@@ -2224,46 +2267,10 @@
       "parserVersion": 2,
       "resa": "bey"
     },
-    "WizardArrow 4-80B": {
-      "revid": 651089,
-      "kind": "product",
-      "redirects": [
-        "Arrow Wizard 4-80B"
-      ],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
-    "WizardArrow 4-80GB": {
-      "revid": 646145,
-      "kind": "product",
-      "redirects": [
-        "Arrow Wizard 4-80GB"
-      ],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
     "WizardArrow 4-80N": {
       "revid": 613488,
       "kind": "product",
       "redirects": [],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
-    "WizardRod 1-60R": {
-      "revid": 647152,
-      "kind": "product",
-      "redirects": [
-        "Wand Wizard 1-60R"
-      ],
-      "parserVersion": 2,
-      "resa": "bey"
-    },
-    "WizardRod 5-70DB": {
-      "revid": 649852,
-      "kind": "product",
-      "redirects": [
-        "Wand Wizard 5-70DB"
-      ],
       "parserVersion": 2,
       "resa": "bey"
     },
@@ -11894,7 +11901,7 @@
       "spinDirection": "Right-Spin",
       "series": "Beyblade X",
       "parts": {
-        "blade": null,
+        "blade": "ptera-swing",
         "lockChip": null,
         "mainBlade": null,
         "assistBlade": null,
@@ -14055,6 +14062,66 @@
       "flags": []
     },
     {
+      "id": "ShinobiShadow 3-70GP",
+      "page": {
+        "title": "ShinobiShadow 3-70GP",
+        "revid": 599611,
+        "url": "https://beyblade.fandom.com/wiki/ShinobiShadow_3-70GP",
+        "redirects": []
+      },
+      "codes": {
+        "tt": "UX-05",
+        "hasbro": null
+      },
+      "codesAnnunciati": {
+        "tt": [],
+        "hasbro": []
+      },
+      "names": {
+        "tt": "ShinobiShadow 3-70GP",
+        "hasbro": null,
+        "hasbroDaRedirect": null,
+        "ja": "シノビシャドウ3-70GP",
+        "romaji": "ShinobiShadou Surī Sebuntī Giya Pointo",
+        "letture": [
+          "ShinobiShadow Three Seventy Gear Point"
+        ],
+        "altri": []
+      },
+      "system": "Unique Line",
+      "system2": null,
+      "beyType": "defense",
+      "spinDirection": "Right-Spin",
+      "series": "Beyblade X",
+      "parts": {
+        "blade": "shinobi-shadow",
+        "lockChip": null,
+        "mainBlade": null,
+        "assistBlade": null,
+        "overBlade": null,
+        "ratchet": "3-70",
+        "bit": "gear-point"
+      },
+      "partsRaw": {
+        "BladeX": "ShinobiShadow",
+        "Ratchet": "3-70",
+        "Bit": "Gear Point"
+      },
+      "release": {
+        "JP": "2024-05-18"
+      },
+      "price": {
+        "JPY": 1400,
+        "USD": null,
+        "CAD": null,
+        "GBP": null,
+        "AUD": null,
+        "EUR": null
+      },
+      "releases": [],
+      "flags": []
+    },
+    {
       "id": "Shockwave 5-80O",
       "page": {
         "title": "Shockwave 5-80O",
@@ -14745,7 +14812,7 @@
       "spinDirection": "Right-Spin",
       "series": "Beyblade X",
       "parts": {
-        "blade": null,
+        "blade": "tyranno-roar",
         "lockChip": null,
         "mainBlade": null,
         "assistBlade": null,
@@ -15284,7 +15351,7 @@
       "spinDirection": "Right-Spin",
       "series": "Beyblade X",
       "parts": {
-        "blade": null,
+        "blade": "tyranno-beat",
         "lockChip": null,
         "mainBlade": null,
         "assistBlade": null,
@@ -36893,17 +36960,6 @@
       "ultimoVisto": "2026-10-15"
     },
     {
-      "chiave": "parte_non_risolta|Quetzalcoatlus 4-55D|blade|Quetzalcoatlus",
-      "tipo": "parte_non_risolta",
-      "pagina": "Quetzalcoatlus 4-55D",
-      "revid": 613330,
-      "campo": "blade",
-      "valore": "Quetzalcoatlus",
-      "nota": "nessuna corrispondenza in parts-master (tt/hasbro/id/alias)",
-      "primaVisto": "2026-09-22",
-      "ultimoVisto": "2026-09-22"
-    },
-    {
       "chiave": "parte_non_risolta|Snowtrooper 7-60O|blade|Snowtrooper",
       "tipo": "parte_non_risolta",
       "pagina": "Snowtrooper 7-60O",
@@ -36913,32 +36969,10 @@
       "nota": "nessuna corrispondenza in parts-master (tt/hasbro/id/alias)",
       "primaVisto": "2026-09-22",
       "ultimoVisto": "2026-09-22"
-    },
-    {
-      "chiave": "parte_non_risolta|Spinosaurus 3-85A|blade|Spinosaurus",
-      "tipo": "parte_non_risolta",
-      "pagina": "Spinosaurus 3-85A",
-      "revid": 613329,
-      "campo": "blade",
-      "valore": "Spinosaurus",
-      "nota": "nessuna corrispondenza in parts-master (tt/hasbro/id/alias)",
-      "primaVisto": "2026-09-22",
-      "ultimoVisto": "2026-09-22"
-    },
-    {
-      "chiave": "parte_non_risolta|T. Rex 1-80GB|blade|T. Rex",
-      "tipo": "parte_non_risolta",
-      "pagina": "T. Rex 1-80GB",
-      "revid": 613327,
-      "campo": "blade",
-      "valore": "T. Rex",
-      "nota": "nessuna corrispondenza in parts-master (tt/hasbro/id/alias)",
-      "primaVisto": "2026-09-22",
-      "ultimoVisto": "2026-09-22"
     }
   ],
   "stats": {
-    "beys": 205,
+    "beys": 206,
     "contenitori": 112,
     "products": 325,
     "productsTt": 186,
@@ -36952,7 +36986,7 @@
       "data_non_parsata": 1,
       "hasbro_nome_discorde": 3,
       "pagina_non_trovata": 1,
-      "parte_non_risolta": 4
+      "parte_non_risolta": 1
     }
   }
 }
