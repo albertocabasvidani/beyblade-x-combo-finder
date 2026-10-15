@@ -1,8 +1,10 @@
 import unittest
+from tempfile import TemporaryDirectory
+from pathlib import Path
 from unittest.mock import patch
 from PIL import Image
 
-from recognize import build_catalog, crop_boxes, lookup, stock_result
+from recognize import build_catalog, crop_boxes, lookup, stock_result, render
 
 
 class ProductRecognitionTests(unittest.TestCase):
@@ -83,6 +85,37 @@ class ProductRecognitionTests(unittest.TestCase):
             for variant in catalog['variants']:
                 self.assertTrue(stock_result(catalog, variant['id'])['name'])
             self.assertEqual(lookup(catalog, 'Rhino Reaper')['status'], 'resolved_stock')
+
+    def test_fixed_preview_handles_confirmed_proposed_and_pending_rows(self):
+        image = Image.new('RGB', (20, 20), 'white')
+        rows = []
+        for obj_id, variant, confirmed in [('01', 'scorpio-spear-orange', True), ('02', 'ghost-circle-green', False)]:
+            rows.append({'id': obj_id, 'result': stock_result(self.catalog, variant),
+                         'position': 'Posizione di prova', 'ownerConfirmed': confirmed,
+                         'reviewedBladeRank': 1, 'review': {'confidence': 'media', 'reason': '<script>prova</script>'}})
+        rows.append({'id': '03', 'result': None})
+        report = {'objects': rows, 'validation': 'Verifica del formato fisso',
+                  'counts': {'products': 325, 'assemblies': 205},
+                  'developmentBenchmark': {'ownerConfirmedLabels': 1, 'labels': 2, 'top1': 1, 'top5': 2}}
+        with TemporaryDirectory() as directory:
+            out = Path(directory)
+            for obj_id in ('01', '02', '03'):
+                image.save(out / f'crop-{obj_id}.jpg')
+            render(report, self.catalog, image, image, out)
+            page = (out / 'report.html').read_text(encoding='utf-8')
+        self.assertIn('data-preview-template="recognition-v1"', page)
+        self.assertIn('<h1>3 prodotti dalla foto</h1>', page)
+        self.assertIn('Modelli confermati dall’utente: 1/3.', page)
+        self.assertEqual(page.count('<article '), 3)
+        self.assertIn('id="obj-01" data-status="confirmed"', page)
+        self.assertIn('id="obj-02" data-status="proposed" data-stock-ambiguous="true"', page)
+        self.assertIn('id="obj-03" data-status="pending"', page)
+        self.assertLess(page.index('id="obj-01"'), page.index('id="obj-02"'))
+        self.assertLess(page.index('Ritaglio della foto'), page.index('Ratchet <b>0-70</b>'))
+        self.assertIn('Alternativa con la stessa lama:', page)
+        self.assertIn('&lt;script&gt;prova&lt;/script&gt;', page)
+        self.assertNotIn('<script>', page)
+        self.assertNotIn('Dieci prodotti', page)
 
 
 if __name__ == '__main__':

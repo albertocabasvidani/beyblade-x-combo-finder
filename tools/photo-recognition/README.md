@@ -48,6 +48,22 @@ Il database derivato contiene prodotti, combinazioni e offerte commerciali separ
 condiviso come `BX-00` non è una chiave sufficiente: l’identità include il prodotto.
 Le righe Hasbro non si deducono traducendo il nome: usano i codici e le parti dichiarati dal wiki.
 
+## Preview fissa
+
+La preview usa il formato `recognition-v1`, salvato in `templates/report.html`,
+`templates/card.html` e `templates/pending-card.html`. Il renderer inserisce soltanto i dati:
+non ricrea HTML o CSS per ogni lotto. Riutilizzare questi template; modificare il formato
+soltanto su richiesta dell’utente.
+
+La struttura rimane: riepilogo e conteggio conferme, foto con riquadri numerati, schede nello
+stesso ordine dei riquadri. Ogni scheda presenta ritaglio e riferimento affiancati, prodotto
+completo, codice, ratchet e bit, eventuali parti CX e alternative, fonti e stato di conferma.
+Gli oggetti senza proposta restano nello stesso elenco come «da rivedere». Il numero di
+oggetti, le immagini, le identificazioni e le conferme sono variabili; layout e campi sono fissi.
+
+Il file generato `tmp/recognition/<caso>/report.html` è autocontenuto e funziona senza rete.
+I test verificano lo stesso formato con oggetti confermati, proposti e ancora da rivedere.
+
 ## Comandi PowerShell dalla radice del repository
 
 Python 3.10+ con Pillow, NumPy e OpenCV; Node.js per il fetch delle fonti. Le dipendenze Python

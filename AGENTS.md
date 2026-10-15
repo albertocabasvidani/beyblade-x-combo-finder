@@ -16,5 +16,6 @@ Prima di lavorare sul riconoscimento leggere `tools/photo-recognition/README.md`
 - Le fonti e i riferimenti visivi aggiunti al bisogno stanno in `data/recognition/`. Ritagli, foto dell’utente e report locali stanno in `tmp/recognition/`.
 - Riutilizzare prima i prodotti e le fonti locali. `index`, `lookup` e `run` funzionano senza rete; `sync-references.mjs` consulta la wiki solo per fonti assenti o con `--refresh` esplicito.
 - Il ranking OpenCV è sperimentale. Non presentare le sue distanze come probabilità o le proposte di Codex come etichette confermate.
+- Generare ogni preview con `recognize.py` e i template versionati in `tools/photo-recognition/templates/`. Riutilizzare struttura, stile e numerazione; cambiare il formato solo su richiesta dell’utente.
 
 Verifica del modulo: `python -m unittest discover -s tools/photo-recognition -p test_recognize.py -v`.

@@ -13,6 +13,7 @@ import io
 import json
 import math
 from pathlib import Path
+from string import Template
 
 import cv2
 import numpy as np
@@ -22,6 +23,12 @@ ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / 'data/recognition'
 PARTS = ROOT / 'public/images/parts'
 FIELDS = ('blade', 'lockChip', 'mainBlade', 'assistBlade', 'overBlade', 'ratchet', 'bit')
+TEMPLATES = Path(__file__).resolve().parent / 'templates'
+
+
+def preview_template(name, **values):
+    """La struttura della preview vive nei template versionati, i risultati sono dati."""
+    return Template((TEMPLATES / name).read_text(encoding='utf-8')).substitute(values)
 
 
 def read(path):
@@ -389,15 +396,14 @@ def run(image_path, fixture_path, out):
 
 
 def render(report, catalog, image, annotated, out):
-    esc = lambda x: html.escape(str(x or ''))
+    esc = lambda x: html.escape('' if x is None else str(x))
     cards = []
     for row in report['objects']:
         r = row['result']
         crop = Image.open(out / f"crop-{row['id']}.jpg")
         if not r:
-            cards.append(f'<article><h2>{esc(row["id"])} — da rivedere</h2><img src="{embed(crop)}"></article>')
+            cards.append(preview_template('pending-card.html', id=esc(row['id']), crop_image=embed(crop)))
             continue
-        variant = next(v for v in catalog['variants'] if v['id'] == r['variant'])
         part = catalog['parts'][r['stockParts']['blade'] or r['stockParts']['mainBlade']]
         ref_path = PARTS / part['image']['file']
         reference_label = 'Riferimento della lama base (può avere un colore diverso)'
@@ -422,42 +428,24 @@ def render(report, catalog, image, annotated, out):
                                f" · Bit {esc(catalog['parts'].get(a['stockParts']['bit'], {}).get('names', {}).get('tt'))}.</p>"
                                for a in r['alternativeStockProducts'])
         ambiguity = '<p><b>Combinazione di vendita da distinguere tra i due prodotti.</b></p>' if r['stockAmbiguous'] else ''
-        cards.append(f'''<article id="obj-{row['id']}"><h2>{esc(row['id'])} · {esc(r['name'])}</h2>
-          <p>{esc(row['position'])} · Confidenza visiva: <b>{esc(row['review']['confidence'])}</b></p>
-          <div class="photos"><figure><img src="{embed(crop)}"><figcaption>Ritaglio della foto</figcaption></figure>
-          <figure><img src="{embed(ref)}"><figcaption>{reference_label}</figcaption></figure></div>
-          <p><b>{esc(r['preferredCode'])}{('-' + esc(r['variantNumber'])) if r['variantNumber'] else ''}</b>
-          · Ratchet <b>{esc(parts['ratchet'])}</b> · Bit <b>{esc(r['bitName'])} ({esc(r['bitCode'])})</b></p>
-          {f'<p>{cx_parts}</p>' if cx_parts else ''}
-          {alternatives}{ambiguity}
-          <p>{esc(row['review']['reason'])}</p>
-          <p><a href="{esc(r['source']['url'])}">Scheda prodotto wiki</a> ·
-          <a href="{esc(r['officialUrl'])}">Fonte del prodotto candidato</a></p>
-          <details><summary>Confezioni e uscite della stessa combinazione</summary><p>{offers}</p>
-          <p>L’elenco comprende anche ricolorazioni: il codice principale sopra indica il candidato coerente con la variante proposta.
-          Produttore e confezione d’origine restano da confermare.</p></details>
-          <p class="small">Revisione wiki {esc(snapshot['revid'] if snapshot else r['source']['revid'])} ·
-          Baseline: identità al posto {esc(row['reviewedBladeRank'])} · {'Modello confermato dall’utente.' if row['ownerConfirmed'] else 'Proposta in attesa di conferma.'}</p></article>''')
+        cards.append(preview_template('card.html',
+            id=esc(row['id']), status='confirmed' if row['ownerConfirmed'] else 'proposed',
+            stock_ambiguous=str(r['stockAmbiguous']).lower(),
+            product_name=esc(r['name']), position=esc(row['position']), confidence=esc(row['review']['confidence']),
+            crop_image=embed(crop), reference_image=embed(ref), reference_label=esc(reference_label),
+            product_code=esc(r['preferredCode']) + ('-' + esc(r['variantNumber']) if r['variantNumber'] else ''),
+            ratchet=esc(parts['ratchet']), bit_name=esc(r['bitName']), bit_code=esc(r['bitCode']),
+            cx_parts=f'<p>{cx_parts}</p>' if cx_parts else '', alternatives=alternatives, ambiguity=ambiguity,
+            reason=esc(row['review']['reason']), wiki_url=esc(r['source']['url']), product_url=esc(r['officialUrl']),
+            offers=offers, revision=esc(snapshot['revid'] if snapshot else r['source']['revid']),
+            rank=esc(row['reviewedBladeRank']),
+            confirmation='Modello confermato dall’utente.' if row['ownerConfirmed'] else 'Proposta in attesa di conferma.'))
     bench = report['developmentBenchmark']
-    page = f'''<!doctype html><html lang="it"><meta charset="utf-8"><meta name="viewport" content="width=device-width">
-      <title>Beyblade X · prova di riconoscimento</title><style>
-      body{{font:16px/1.5 system-ui,sans-serif;background:#f2f5f7;color:#172f3a;margin:0}}main{{max-width:1180px;margin:auto;padding:24px}}
-      h1{{font-size:32px}}.banner,article{{background:white;border-radius:14px;padding:22px;margin:18px 0}}
-      .grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px}}.grid article{{margin:0}}
-      .overview{{width:100%;max-height:900px;object-fit:contain}}.photos{{display:flex;gap:12px}}
-      figure{{margin:0;width:50%}}figure img{{width:100%;height:205px;object-fit:contain;background:#f7f7f7}}
-      figcaption,.small{{font-size:13px;color:#526874}}a{{color:#006a85}}summary{{cursor:pointer}}h2{{font-size:21px}}
-      </style><main><h1>Dieci prodotti dalla foto</h1><div class="banner">
-      <p>Ogni ritaglio è collegato a una combinazione commerciale completa. Ratchet e bit provengono dalla scheda del prodotto riconosciuto.</p>
-      <p>Modelli confermati dall’utente: {bench['ownerConfirmedLabels']}/{bench['labels']}. {esc(report['validation'])} La combinazione di vendita non certifica eventuali parti cambiate dal proprietario;
-      una vista superiore può lasciare indistinguibili confezioni Takara Tomy e Hasbro equivalenti.</p>
-      <p>Catalogo: <b>{report['counts']['products']} prodotti / {report['counts']['assemblies']} Beyblade</b>.
-      Baseline automatica: <b>{bench['top1']}/{bench['labels']}</b> identità al primo posto,
-      <b>{bench['top5']}/{bench['labels']}</b> nei primi cinque. Confronto sul campione di sviluppo; non è un test su foto nuove.</p></div>
-      <img class="overview" src="{embed(annotated, (1700,1700))}" alt="Foto con dieci riquadri numerati">
-      <div class="grid">{''.join(cards)}</div>
-      <p class="small">Fonti: Beyblade Wiki/Fandom (autori e licenza nelle pagine immagine e nei metadati salvati);
-      catalogo locale delle parti; pagine ufficiali Takara Tomy. Le immagini non vengono inviate ad API LLM esterne.</p></main></html>'''
+    page = preview_template('report.html', object_count=len(report['objects']),
+        confirmed_count=bench['ownerConfirmedLabels'], label_count=bench['labels'],
+        validation=esc(report['validation']), product_count=report['counts']['products'],
+        assembly_count=report['counts']['assemblies'], top1=bench['top1'], top5=bench['top5'],
+        overview_image=embed(annotated, (1700, 1700)), cards=''.join(cards))
     (out / 'report.html').write_text(page, encoding='utf-8')
 
 

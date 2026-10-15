@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="it" data-preview-template="recognition-v1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Beyblade X · prova di riconoscimento</title>
+<style>
+body{font:16px/1.5 system-ui,sans-serif;background:#f2f5f7;color:#172f3a;margin:0}main{max-width:1180px;margin:auto;padding:24px}
+h1{font-size:32px}.banner,article{background:white;border-radius:14px;padding:22px;margin:18px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px}.grid article{margin:0}
+.overview{width:100%;max-height:900px;object-fit:contain}.photos{display:flex;gap:12px}
+figure{margin:0;width:50%}figure img{width:100%;height:205px;object-fit:contain;background:#f7f7f7}
+figcaption,.small{font-size:13px;color:#526874}a{color:#006a85}summary{cursor:pointer}h2{font-size:21px}
+</style>
+<main>
+  <h1>$object_count prodotti dalla foto</h1>
+  <div class="banner">
+    <p>Ogni ritaglio è collegato a una combinazione commerciale completa. Ratchet e bit provengono dalla scheda del prodotto riconosciuto.</p>
+    <p>Modelli confermati dall’utente: $confirmed_count/$object_count. $validation La combinazione di vendita non certifica eventuali parti cambiate dal proprietario;
+    una vista superiore può lasciare indistinguibili confezioni Takara Tomy e Hasbro equivalenti.</p>
+    <p>Catalogo: <b>$product_count prodotti / $assembly_count Beyblade</b>.
+    Baseline automatica: <b>$top1/$label_count</b> identità al primo posto,
+    <b>$top5/$label_count</b> nei primi cinque. Confronto sul campione di sviluppo; non è un test su foto nuove.</p>
+  </div>
+  <img class="overview" src="$overview_image" alt="Foto con $object_count riquadri numerati">
+  <div class="grid">$cards</div>
+  <p class="small">Fonti: Beyblade Wiki/Fandom (autori e licenza nelle pagine immagine e nei metadati salvati);
+  catalogo locale delle parti; pagine ufficiali Takara Tomy. Le immagini non vengono inviate ad API LLM esterne.</p>
+</main>
+</html>

@@ -108,6 +108,7 @@ Il riconoscimento è assistito da Codex: il ranking automatico è sperimentale e
 La forma precede il colore; le versioni TT/Hasbro con combinazioni diverse restano distinte.
 Le lame componibili CX sono rappresentate dai loro componenti e hanno un atlante di confronto dedicato.
 I prodotti già censiti si riusano senza rete; le fonti salvate vengono riscaricate solo con `--refresh` esplicito.
+La preview mantiene il formato fisso dei template in `tools/photo-recognition/templates/`: cambiano soltanto i dati del lotto.
 
 Lo scraper supporta ora `npx --yes tsx scripts/build-products-wiki.ts --pagina "GhostCircle 4-60H"`
 per aggiungere un prodotto al bisogno senza perdere quelli già censiti.
