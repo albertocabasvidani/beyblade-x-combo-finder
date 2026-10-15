@@ -21,6 +21,12 @@ riconoscitore autonomo affidabile.
 Le correzioni confermate prevalgono sui suggerimenti automatici e sulle review precedenti.
 La regola generale del confronto visivo si applica soltanto ai pezzi non già confermati.
 
+Prima di ogni ricerca usare i dati locali. `index`, `lookup` e `run` non effettuano richieste
+di rete. Il salvataggio delle fonti salta completamente le pagine già acquisite, anche se
+qualche immagine aveva dato errore: torna online soltanto per una fonte assente oppure con
+`--refresh` richiesto esplicitamente. L’aggiornamento completo del catalogo è un’operazione
+separata dal riconoscimento di una foto.
+
 ## Dati persistenti
 
 - `data/parts-master.json` e `public/images/parts/`: registro parti e immagini esistenti.
@@ -53,9 +59,12 @@ python -m pip install -r tools/photo-recognition/requirements.txt
 # Aggiornamento del catalogo; --pagina aggiunge una pagina al bisogno e la conserva nei run futuri.
 npx --yes tsx scripts/build-products-wiki.ts --pagina "GhostCircle 4-60H"
 
-# Salva testi e riferimenti delle varianti registrate; i download mancanti sono espliciti.
+# Salva soltanto le fonti assenti; riusa quelle già salvate senza interrogare la wiki.
 node tools/photo-recognition/sync-references.mjs
 node tools/photo-recognition/sync-references.mjs --only ghost-circle-green
+
+# Solo quando si vuole aggiornare una fonte o riprovare un'immagine mancante.
+node tools/photo-recognition/sync-references.mjs --only ghost-circle-green --refresh
 
 # Deriva il database parallelo di riconoscimento senza modificare i cataloghi di origine.
 python tools/photo-recognition/recognize.py index
@@ -68,6 +77,7 @@ python tools/photo-recognition/recognize.py lookup --part "Ghost Circle" --color
 python tools/photo-recognition/recognize.py run --image "C:\foto\lotto.png"
 
 python -m unittest discover -s tools/photo-recognition -p test_recognize.py -v
+node tools/photo-recognition/test-local-cache.mjs
 ```
 
 Per una nuova foto creare un JSON con `id`, `referenceSize: [larghezza, altezza]` e `objects`.

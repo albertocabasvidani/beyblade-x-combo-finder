@@ -14,6 +14,7 @@ Prima di lavorare sul riconoscimento leggere `tools/photo-recognition/README.md`
 - Una correzione dell’utente prevale sul riconoscimento visivo: salvarla nel caso di prova, mantenendo traccia dell’errore precedente.
 - `data/products-wiki.json` è il catalogo prodotti persistente. Lo scraper supporta `--pagina "Titolo wiki"` per aggiungere una pagina senza perdere quelle già salvate.
 - Le fonti e i riferimenti visivi aggiunti al bisogno stanno in `data/recognition/`. Ritagli, foto dell’utente e report locali stanno in `tmp/recognition/`.
+- Riutilizzare prima i prodotti e le fonti locali. `index`, `lookup` e `run` funzionano senza rete; `sync-references.mjs` consulta la wiki solo per fonti assenti o con `--refresh` esplicito.
 - Il ranking OpenCV è sperimentale. Non presentare le sue distanze come probabilità o le proposte di Codex come etichette confermate.
 
 Verifica del modulo: `python -m unittest discover -s tools/photo-recognition -p test_recognize.py -v`.

@@ -1,4 +1,5 @@
 import unittest
+from unittest.mock import patch
 from PIL import Image
 
 from recognize import build_catalog, crop_boxes, lookup, stock_result
@@ -75,6 +76,13 @@ class ProductRecognitionTests(unittest.TestCase):
         self.assertEqual(r['candidates'][0]['identity'], 'cx:rhino/reaper')
         western = lookup(self.catalog, 'Reaper Rhino')
         self.assertEqual(western['candidates'][0]['assembly'], 'RhinoReaper C4-55D')
+
+    def test_known_products_resolve_without_network(self):
+        with patch('socket.socket', side_effect=AssertionError('Rete disabilitata')):
+            catalog = build_catalog()
+            for variant in catalog['variants']:
+                self.assertTrue(stock_result(catalog, variant['id'])['name'])
+            self.assertEqual(lookup(catalog, 'Rhino Reaper')['status'], 'resolved_stock')
 
 
 if __name__ == '__main__':

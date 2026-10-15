@@ -21,11 +21,19 @@ async function get(params) {
 }
 const only = process.argv.indexOf('--only');
 const wanted = only >= 0 ? process.argv[only + 1] : null;
+const refresh = process.argv.includes('--refresh');
 mkdirSync(join(dir, 'sources'), { recursive: true });
 mkdirSync(join(dir, 'images'), { recursive: true });
 for (const v of manifest.variants.filter(v => !wanted || v.id === wanted)) {
   const target = join(dir, `sources/${v.id}.json`);
   const previous = existsSync(target) ? JSON.parse(readFileSync(target, 'utf8')) : null;
+  // Una fonte già acquisita si riusa senza neppure interrogare la revisione online.
+  // Anche i download mancanti restano registrati: un retry richiede --refresh.
+  if (!refresh && previous?.title === v.assembly && Number.isInteger(previous.revid)
+      && typeof previous.wikitext === 'string' && previous.wikitext.trim()) {
+    console.log(`${v.id}: cache locale, revisione ${previous.revid}, nessuna richiesta online`);
+    continue;
+  }
   const q = await get({ action: 'query', titles: v.assembly, redirects: '1', prop: 'revisions', rvprop: 'ids|timestamp' });
   const pg = Object.values(q.query?.pages ?? {})[0];
   const rev = pg?.revisions?.[0];
