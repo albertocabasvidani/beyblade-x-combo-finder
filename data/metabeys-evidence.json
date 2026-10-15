@@ -1,7 +1,1302 @@
 {
-  "generatedAt": "2026-10-13",
+  "generatedAt": "2026-10-15",
   "source": "metabeys",
   "combos": {
+    "shark-scale-3-60-narrow": {
+      "id": "shark-scale-3-60-narrow",
+      "line": "bx",
+      "blade": "shark-scale",
+      "ratchet": "3-60",
+      "bit": "narrow",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Shark Scale 3-60 Narrow",
+      "type": "attack",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1791944570844",
+          "eventName": "InBeysion Thanksgiving",
+          "date": "2026-10-12",
+          "placement": 1,
+          "topCutSize": 4,
+          "players": 33,
+          "deckScore": "C",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1791944570844"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1791087724005",
+          "eventName": "InBEYsion Weekly September 28th (Beyblade X)",
+          "date": "2026-09-28",
+          "placement": 3,
+          "topCutSize": 4,
+          "players": 53,
+          "deckScore": "A",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1791087724005"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1789790133135",
+          "eventName": "NRG Locals (9/17/26)",
+          "date": "2026-09-17",
+          "placement": 3,
+          "topCutSize": 4,
+          "players": 36,
+          "deckScore": "C",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1789790133135"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1789513399657",
+          "eventName": "InBEYsion Weekly September 14th",
+          "date": "2026-09-14",
+          "placement": 2,
+          "topCutSize": 4,
+          "players": 52,
+          "deckScore": "C",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1789513399657"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1788906953373",
+          "eventName": "InBeysion Ranked Weekly September 7th",
+          "date": "2026-09-07",
+          "placement": 1,
+          "topCutSize": 4,
+          "players": 70,
+          "deckScore": "A",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1788906953373"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1788906953373",
+          "eventName": "InBeysion Ranked Weekly September 7th",
+          "date": "2026-09-07",
+          "placement": 3,
+          "topCutSize": 4,
+          "players": 70,
+          "deckScore": "A",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1788906953373"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1788535593384",
+          "eventName": "Invasion Ranked Weekly Aug 31st",
+          "date": "2026-08-31",
+          "placement": 1,
+          "topCutSize": 3,
+          "players": 64,
+          "deckScore": "B",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1788535593384"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1787087519747",
+          "eventName": "InBEYsion Ranked Weekly August 17th",
+          "date": "2026-08-17",
+          "placement": 3,
+          "topCutSize": 4,
+          "players": 32,
+          "deckScore": "B",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1787087519747"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1785873030219",
+          "eventName": "InBEYsion Weekly August 3rd",
+          "date": "2026-08-03",
+          "placement": 3,
+          "topCutSize": 8,
+          "players": 37,
+          "deckScore": "C",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1785873030219"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1785719212944",
+          "eventName": "InBEYsion weekly July 28th",
+          "date": "2026-07-28",
+          "placement": 2,
+          "topCutSize": 4,
+          "players": 30,
+          "deckScore": "B",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1785719212944"
+        }
+      ],
+      "usage": []
+    },
+    "aero-pegasus-1-80-low-rush": {
+      "id": "aero-pegasus-1-80-low-rush",
+      "line": "bx",
+      "blade": "aero-pegasus",
+      "ratchet": "1-80",
+      "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Aero Pegasus 1-80 Low Rush",
+      "type": "attack",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1791944570844",
+          "eventName": "InBeysion Thanksgiving",
+          "date": "2026-10-12",
+          "placement": 2,
+          "topCutSize": 4,
+          "players": 33,
+          "deckScore": "C",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1791944570844"
+        }
+      ],
+      "usage": []
+    },
+    "suppress-superion-1-60-low-point": {
+      "id": "suppress-superion-1-60-low-point",
+      "line": "bx",
+      "blade": "suppress-superion",
+      "ratchet": "1-60",
+      "bit": "low-point",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "SiegSuperion 1-60 Low Point",
+      "type": "balance",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1791944570844",
+          "eventName": "InBeysion Thanksgiving",
+          "date": "2026-10-12",
+          "placement": 2,
+          "topCutSize": 4,
+          "players": 33,
+          "deckScore": "C",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1791944570844"
+        }
+      ],
+      "usage": []
+    },
+    "aero-pegasus-7-60-level": {
+      "id": "aero-pegasus-7-60-level",
+      "line": "bx",
+      "blade": "aero-pegasus",
+      "ratchet": "7-60",
+      "bit": "level",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Aero Pegasus 7-60 Level",
+      "type": "attack",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1791944570844",
+          "eventName": "InBeysion Thanksgiving",
+          "date": "2026-10-12",
+          "placement": 3,
+          "topCutSize": 4,
+          "players": 33,
+          "deckScore": "C",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1791944570844"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1784757878198",
+          "eventName": "InBEYsion Weekly July 21st",
+          "date": "2026-07-21",
+          "placement": 3,
+          "topCutSize": 4,
+          "players": 18,
+          "deckScore": "S",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1784757878198"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1764083776163",
+          "eventName": "New Realm Games League Week 5",
+          "date": "2025-11-21",
+          "placement": 5,
+          "topCutSize": 8,
+          "players": 18,
+          "deckScore": "B",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1764083776163"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1764353373766",
+          "eventName": "Cardboard Classics Locals",
+          "date": "2025-11-24",
+          "placement": 2,
+          "topCutSize": 7,
+          "players": 18,
+          "deckScore": "B",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1764353373766"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1775004102800",
+          "eventName": "LGHS Ranked Season 2 #6",
+          "date": "2026-03-29",
+          "placement": 2,
+          "topCutSize": 16,
+          "players": 60,
+          "deckScore": "B",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1775004102800"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1772755340067",
+          "eventName": "LGHS Ranked Season 2 #4",
+          "date": "2026-02-22",
+          "placement": 6,
+          "topCutSize": 16,
+          "players": 75,
+          "deckScore": "B",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1772755340067"
+        }
+      ],
+      "usage": [
+        {
+          "source": "metabeys-leaderboard",
+          "date": "2026-10-15",
+          "window": "30d",
+          "appearances": 35,
+          "sharePct": 0.64,
+          "uniqueEvents": 31,
+          "uniquePlayers": 17,
+          "lang": "en"
+        }
+      ]
+    },
+    "wizard-rod-9-60-free-ball": {
+      "id": "wizard-rod-9-60-free-ball",
+      "line": "bx",
+      "blade": "wizard-rod",
+      "ratchet": "9-60",
+      "bit": "free-ball",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Wizard Rod 9-60 Free Ball",
+      "type": "stamina",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1791944570844",
+          "eventName": "InBeysion Thanksgiving",
+          "date": "2026-10-12",
+          "placement": 3,
+          "topCutSize": 4,
+          "players": 33,
+          "deckScore": "C",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1791944570844"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1790114759532",
+          "eventName": "InBEYsion Weekly September 21st",
+          "date": "2026-09-22",
+          "placement": 2,
+          "topCutSize": 4,
+          "players": 24,
+          "deckScore": "B",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1790114759532"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1790114757797",
+          "eventName": "The InBEYsion: MaltLiquor's Birthday Bash",
+          "date": "2026-09-20",
+          "placement": 2,
+          "topCutSize": 4,
+          "players": 95,
+          "deckScore": "C",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1790114757797"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1785719212944",
+          "eventName": "InBEYsion weekly July 28th",
+          "date": "2026-07-28",
+          "placement": 4,
+          "topCutSize": 4,
+          "players": 30,
+          "deckScore": "C",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1785719212944"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1784673692244",
+          "eventName": "Korekuta x MaveriX",
+          "date": "2026-07-12",
+          "placement": 7,
+          "topCutSize": 8,
+          "players": 48,
+          "deckScore": "A",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1784673692244"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1761071546128",
+          "eventName": "LGHS BBX Locals",
+          "date": "2025-10-19",
+          "placement": 8,
+          "topCutSize": 8,
+          "players": 55,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1761071546128"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1765914049150",
+          "eventName": "LGHS Ranked",
+          "date": "2025-11-16",
+          "placement": 4,
+          "topCutSize": 16,
+          "players": 65,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1765914049150"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1763404229101",
+          "eventName": "Untouchables Locals",
+          "date": "2025-11-10",
+          "placement": 7,
+          "topCutSize": 8,
+          "players": 0,
+          "deckScore": "C",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1763404229101"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1765913314681",
+          "eventName": "LGHS Ranked",
+          "date": "2025-11-02",
+          "placement": 4,
+          "topCutSize": 16,
+          "players": 51,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1765913314681"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1762181480640",
+          "eventName": "Game 3 - Kenzo's Halloween Costume Bash",
+          "date": "2025-10-30",
+          "placement": 4,
+          "topCutSize": 8,
+          "players": 29,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1762181480640"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1762182271945",
+          "eventName": "Game 3 Locals",
+          "date": "2025-10-23",
+          "placement": 3,
+          "topCutSize": 8,
+          "players": 18,
+          "deckScore": "B",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1762182271945"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1769736608304",
+          "eventName": "LGHS Ranked Season 2 #2",
+          "date": "2026-01-25",
+          "placement": 5,
+          "topCutSize": 16,
+          "players": 68,
+          "deckScore": "B",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1769736608304"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1769736608304",
+          "eventName": "LGHS Ranked Season 2 #2",
+          "date": "2026-01-25",
+          "placement": 13,
+          "topCutSize": 16,
+          "players": 68,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1769736608304"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1768407130792",
+          "eventName": "LGHS Ranked Season 2",
+          "date": "2026-01-11",
+          "placement": 3,
+          "topCutSize": 16,
+          "players": 53,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1768407130792"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1765914657782",
+          "eventName": "LGHS Ranked Invitational",
+          "date": "2025-11-30",
+          "placement": 15,
+          "topCutSize": 16,
+          "players": 32,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1765914657782"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1764353373766",
+          "eventName": "Cardboard Classics Locals",
+          "date": "2025-11-24",
+          "placement": 7,
+          "topCutSize": 7,
+          "players": 18,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1764353373766"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1775004102800",
+          "eventName": "LGHS Ranked Season 2 #6",
+          "date": "2026-03-29",
+          "placement": 14,
+          "topCutSize": 16,
+          "players": 60,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1775004102800"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1773081328148",
+          "eventName": "LGHS Ranked Season 2 #5",
+          "date": "2026-03-08",
+          "placement": 6,
+          "topCutSize": 16,
+          "players": 60,
+          "deckScore": "B",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1773081328148"
+        }
+      ],
+      "usage": [
+        {
+          "source": "metabeys-leaderboard",
+          "date": "2026-10-15",
+          "window": "30d",
+          "appearances": 22,
+          "sharePct": 0.4,
+          "uniqueEvents": 21,
+          "uniquePlayers": 19,
+          "lang": "en"
+        }
+      ]
+    },
+    "shark-scale-1-50-rush": {
+      "id": "shark-scale-1-50-rush",
+      "line": "bx",
+      "blade": "shark-scale",
+      "ratchet": "1-50",
+      "bit": "rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Shark Scale 1-50 Rush",
+      "type": "attack",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1791944570844",
+          "eventName": "InBeysion Thanksgiving",
+          "date": "2026-10-12",
+          "placement": 4,
+          "topCutSize": 4,
+          "players": 33,
+          "deckScore": "A",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1791944570844"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1784493089162",
+          "eventName": "Team Xtreme Grand Prix (Car Event)",
+          "date": "2026-07-18",
+          "placement": 4,
+          "topCutSize": 4,
+          "players": 187,
+          "deckScore": "A",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1784493089162"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1782597731334",
+          "eventName": "InBEYsion weekly June 23rd",
+          "date": "2026-06-23",
+          "placement": 1,
+          "topCutSize": 4,
+          "players": 29,
+          "deckScore": "C",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1782597731334"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1775883214638",
+          "eventName": "New Realm Games S1",
+          "date": "2026-04-09",
+          "placement": 7,
+          "topCutSize": 8,
+          "players": 17,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1775883214638"
+        }
+      ],
+      "usage": []
+    },
+    "wizard-rod-9-60-narrow": {
+      "id": "wizard-rod-9-60-narrow",
+      "line": "bx",
+      "blade": "wizard-rod",
+      "ratchet": "9-60",
+      "bit": "narrow",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Wizard Rod 9-60 Narrow",
+      "type": "stamina",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1791944570844",
+          "eventName": "InBeysion Thanksgiving",
+          "date": "2026-10-12",
+          "placement": 4,
+          "topCutSize": 4,
+          "players": 33,
+          "deckScore": "A",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1791944570844"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1786832356398",
+          "eventName": "InBEYsion Weekly August 10th",
+          "date": "2026-08-10",
+          "placement": 2,
+          "topCutSize": 8,
+          "players": 32,
+          "deckScore": "A",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1786832356398"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1785873030219",
+          "eventName": "InBEYsion Weekly August 3rd",
+          "date": "2026-08-03",
+          "placement": 2,
+          "topCutSize": 8,
+          "players": 37,
+          "deckScore": "A",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1785873030219"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1785719212944",
+          "eventName": "InBEYsion weekly July 28th",
+          "date": "2026-07-28",
+          "placement": 3,
+          "topCutSize": 4,
+          "players": 30,
+          "deckScore": "A",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1785719212944"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1784673692244",
+          "eventName": "Korekuta x MaveriX",
+          "date": "2026-07-12",
+          "placement": 1,
+          "topCutSize": 8,
+          "players": 48,
+          "deckScore": "B",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1784673692244"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1784673692244",
+          "eventName": "Korekuta x MaveriX",
+          "date": "2026-07-12",
+          "placement": 2,
+          "topCutSize": 8,
+          "players": 48,
+          "deckScore": "C",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1784673692244"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1783975372256",
+          "eventName": "InBEYsion New Genesis at the New Store + Jude and Busy's Birthday Bash!!",
+          "date": "2026-07-11",
+          "placement": 3,
+          "topCutSize": 4,
+          "players": 88,
+          "deckScore": "C",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1783975372256"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1782933766329",
+          "eventName": "InBEYsion Ranked weekly June 30th",
+          "date": "2026-06-30",
+          "placement": 1,
+          "topCutSize": 4,
+          "players": 22,
+          "deckScore": "B",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1782933766329"
+        }
+      ],
+      "usage": []
+    },
+    "silver-wolf-9-60-free-ball": {
+      "id": "silver-wolf-9-60-free-ball",
+      "line": "bx",
+      "blade": "silver-wolf",
+      "ratchet": "9-60",
+      "bit": "free-ball",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Silver Wolf 9-60 Free Ball",
+      "type": "stamina",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1791944570844",
+          "eventName": "InBeysion Thanksgiving",
+          "date": "2026-10-12",
+          "placement": 4,
+          "topCutSize": 4,
+          "players": 33,
+          "deckScore": "A",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1791944570844"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1791408670031",
+          "eventName": "InBEYsion Weekly October 5th (Beyblade X)",
+          "date": "2026-10-05",
+          "placement": 4,
+          "topCutSize": 4,
+          "players": 58,
+          "deckScore": "S",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1791408670031"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1791087724005",
+          "eventName": "InBEYsion Weekly September 28th (Beyblade X)",
+          "date": "2026-09-28",
+          "placement": 2,
+          "topCutSize": 4,
+          "players": 53,
+          "deckScore": "S",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1791087724005"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1791087724005",
+          "eventName": "InBEYsion Weekly September 28th (Beyblade X)",
+          "date": "2026-09-28",
+          "placement": 3,
+          "topCutSize": 4,
+          "players": 53,
+          "deckScore": "A",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1791087724005"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1790212059347",
+          "eventName": "Korekuta Games Valor Bison Tourney",
+          "date": "2026-09-16",
+          "placement": 1,
+          "topCutSize": 4,
+          "players": 22,
+          "deckScore": "B",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1790212059347"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1790114759532",
+          "eventName": "InBEYsion Weekly September 21st",
+          "date": "2026-09-22",
+          "placement": 1,
+          "topCutSize": 4,
+          "players": 24,
+          "deckScore": "B",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1790114759532"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1789790133135",
+          "eventName": "NRG Locals (9/17/26)",
+          "date": "2026-09-17",
+          "placement": 1,
+          "topCutSize": 4,
+          "players": 36,
+          "deckScore": "B",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1789790133135"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1789513399657",
+          "eventName": "InBEYsion Weekly September 14th",
+          "date": "2026-09-14",
+          "placement": 2,
+          "topCutSize": 4,
+          "players": 52,
+          "deckScore": "C",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1789513399657"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1789046946666",
+          "eventName": "Korekuta Games (Sept 9th 2026)",
+          "date": "2026-09-09",
+          "placement": 1,
+          "topCutSize": 4,
+          "players": 26,
+          "deckScore": "B",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1789046946666"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1788906953373",
+          "eventName": "InBeysion Ranked Weekly September 7th",
+          "date": "2026-09-07",
+          "placement": 1,
+          "topCutSize": 4,
+          "players": 70,
+          "deckScore": "A",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1788906953373"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1788535593384",
+          "eventName": "Invasion Ranked Weekly Aug 31st",
+          "date": "2026-08-31",
+          "placement": 1,
+          "topCutSize": 3,
+          "players": 64,
+          "deckScore": "B",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1788535593384"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1787708167497",
+          "eventName": "InBEYsion Ranked Weekly August 24th",
+          "date": "2026-08-24",
+          "placement": 2,
+          "topCutSize": 4,
+          "players": 32,
+          "deckScore": "A",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1787708167497"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1787087519747",
+          "eventName": "InBEYsion Ranked Weekly August 17th",
+          "date": "2026-08-17",
+          "placement": 3,
+          "topCutSize": 4,
+          "players": 32,
+          "deckScore": "B",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1787087519747"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1784493089162",
+          "eventName": "Team Xtreme Grand Prix (Car Event)",
+          "date": "2026-07-18",
+          "placement": 4,
+          "topCutSize": 4,
+          "players": 187,
+          "deckScore": "A",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1784493089162"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1761070509947",
+          "eventName": "Stop Spandy Showdown",
+          "date": "2025-10-19",
+          "placement": 2,
+          "topCutSize": 3,
+          "players": 28,
+          "deckScore": "C",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1761070509947"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1781895952986",
+          "eventName": "Team Spin City x HIVE Tag Team Tournament",
+          "date": "2026-06-14",
+          "placement": 1,
+          "topCutSize": 3,
+          "players": 48,
+          "deckScore": "A",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1781895952986"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1765914049150",
+          "eventName": "LGHS Ranked",
+          "date": "2025-11-16",
+          "placement": 11,
+          "topCutSize": 16,
+          "players": 65,
+          "deckScore": "C",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1765914049150"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1763404569890",
+          "eventName": "New Realm Games Leagu",
+          "date": "2025-11-14",
+          "placement": 4,
+          "topCutSize": 7,
+          "players": 0,
+          "deckScore": "A",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1763404569890"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1762665518152",
+          "eventName": "Untouchables Locals",
+          "date": "2025-11-03",
+          "placement": 1,
+          "topCutSize": 8,
+          "players": 27,
+          "deckScore": "A",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1762665518152"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1769736608304",
+          "eventName": "LGHS Ranked Season 2 #2",
+          "date": "2026-01-25",
+          "placement": 2,
+          "topCutSize": 16,
+          "players": 68,
+          "deckScore": "B",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1769736608304"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1769736608304",
+          "eventName": "LGHS Ranked Season 2 #2",
+          "date": "2026-01-25",
+          "placement": 16,
+          "topCutSize": 16,
+          "players": 68,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1769736608304"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1768407130792",
+          "eventName": "LGHS Ranked Season 2",
+          "date": "2026-01-11",
+          "placement": 1,
+          "topCutSize": 16,
+          "players": 53,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1768407130792"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1768407130792",
+          "eventName": "LGHS Ranked Season 2",
+          "date": "2026-01-11",
+          "placement": 11,
+          "topCutSize": 16,
+          "players": 53,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1768407130792"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1767069906057",
+          "eventName": "LGHS Aero Pegasus Tournament",
+          "date": "2026-01-01",
+          "placement": 3,
+          "topCutSize": 16,
+          "players": 58,
+          "deckScore": "B",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1767069906057"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1767069906057",
+          "eventName": "LGHS Aero Pegasus Tournament",
+          "date": "2026-01-01",
+          "placement": 5,
+          "topCutSize": 16,
+          "players": 58,
+          "deckScore": "C",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1767069906057"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1765911550258",
+          "eventName": "Chaewon Cup",
+          "date": "2025-12-07",
+          "placement": 10,
+          "topCutSize": 16,
+          "players": 25,
+          "deckScore": "B",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1765911550258"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1765914657782",
+          "eventName": "LGHS Ranked Invitational",
+          "date": "2025-11-30",
+          "placement": 5,
+          "topCutSize": 16,
+          "players": 32,
+          "deckScore": "C",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1765914657782"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1776824082695",
+          "eventName": "LGHS Ranked Season 2 #7",
+          "date": "2026-04-12",
+          "placement": 1,
+          "topCutSize": 16,
+          "players": 57,
+          "deckScore": "C",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1776824082695"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1775004102800",
+          "eventName": "LGHS Ranked Season 2 #6",
+          "date": "2026-03-29",
+          "placement": 7,
+          "topCutSize": 16,
+          "players": 60,
+          "deckScore": "A",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1775004102800"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1775004102800",
+          "eventName": "LGHS Ranked Season 2 #6",
+          "date": "2026-03-29",
+          "placement": 10,
+          "topCutSize": 16,
+          "players": 60,
+          "deckScore": "C",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1775004102800"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1775004102800",
+          "eventName": "LGHS Ranked Season 2 #6",
+          "date": "2026-03-29",
+          "placement": 15,
+          "topCutSize": 16,
+          "players": 60,
+          "deckScore": "A",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1775004102800"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1773081328148",
+          "eventName": "LGHS Ranked Season 2 #5",
+          "date": "2026-03-08",
+          "placement": 8,
+          "topCutSize": 16,
+          "players": 60,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1773081328148"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1773081328148",
+          "eventName": "LGHS Ranked Season 2 #5",
+          "date": "2026-03-08",
+          "placement": 13,
+          "topCutSize": 16,
+          "players": 60,
+          "deckScore": "A",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1773081328148"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1772755340067",
+          "eventName": "LGHS Ranked Season 2 #4",
+          "date": "2026-02-22",
+          "placement": 1,
+          "topCutSize": 16,
+          "players": 75,
+          "deckScore": "A",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1772755340067"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1772755340067",
+          "eventName": "LGHS Ranked Season 2 #4",
+          "date": "2026-02-22",
+          "placement": 2,
+          "topCutSize": 16,
+          "players": 75,
+          "deckScore": "A",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1772755340067"
+        }
+      ],
+      "usage": [
+        {
+          "source": "metabeys-leaderboard",
+          "date": "2026-10-15",
+          "window": "30d",
+          "appearances": 40,
+          "sharePct": 0.74,
+          "uniqueEvents": 31,
+          "uniquePlayers": 29,
+          "lang": "en"
+        }
+      ]
+    },
+    "hover-wyvern-3-60-kick": {
+      "id": "hover-wyvern-3-60-kick",
+      "line": "bx",
+      "blade": "hover-wyvern",
+      "ratchet": "3-60",
+      "bit": "kick",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Wyvern Hover 3-60 Kick",
+      "type": "defense",
+      "placements": [
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1791944570844",
+          "eventName": "InBeysion Thanksgiving",
+          "date": "2026-10-12",
+          "placement": 4,
+          "topCutSize": 4,
+          "players": 33,
+          "deckScore": "A",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1791944570844"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1765914049150",
+          "eventName": "LGHS Ranked",
+          "date": "2025-11-16",
+          "placement": 9,
+          "topCutSize": 16,
+          "players": 65,
+          "deckScore": "D",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1765914049150"
+        },
+        {
+          "source": "metabeys",
+          "tier": "structured",
+          "eventId": "1761595833499",
+          "eventName": "Toronto Cup 2025",
+          "date": "2025-10-25",
+          "placement": 12,
+          "topCutSize": 16,
+          "players": 59,
+          "deckScore": "C",
+          "lang": "en",
+          "url": "https://www.metabeys.com/events/1761595833499"
+        }
+      ],
+      "usage": []
+    },
     "aero-pegasus-1-70-kick": {
       "id": "aero-pegasus-1-70-kick",
       "line": "bx",
@@ -5269,7 +6564,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 775,
           "sharePct": 14,
@@ -6009,7 +7304,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 64,
           "sharePct": 1.2,
@@ -7082,7 +8377,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 121,
           "sharePct": 2.2,
@@ -8473,481 +9768,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 177,
           "sharePct": 3.3,
           "uniqueEvents": 101,
           "uniquePlayers": 110,
-          "lang": "en"
-        }
-      ]
-    },
-    "silver-wolf-9-60-free-ball": {
-      "id": "silver-wolf-9-60-free-ball",
-      "line": "bx",
-      "blade": "silver-wolf",
-      "ratchet": "9-60",
-      "bit": "free-ball",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Silver Wolf 9-60 Free Ball",
-      "type": "stamina",
-      "placements": [
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1791408670031",
-          "eventName": "InBEYsion Weekly October 5th (Beyblade X)",
-          "date": "2026-10-05",
-          "placement": 4,
-          "topCutSize": 4,
-          "players": 58,
-          "deckScore": "S",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1791408670031"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1791087724005",
-          "eventName": "InBEYsion Weekly September 28th (Beyblade X)",
-          "date": "2026-09-28",
-          "placement": 2,
-          "topCutSize": 4,
-          "players": 53,
-          "deckScore": "S",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1791087724005"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1791087724005",
-          "eventName": "InBEYsion Weekly September 28th (Beyblade X)",
-          "date": "2026-09-28",
-          "placement": 3,
-          "topCutSize": 4,
-          "players": 53,
-          "deckScore": "A",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1791087724005"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1790212059347",
-          "eventName": "Korekuta Games Valor Bison Tourney",
-          "date": "2026-09-16",
-          "placement": 1,
-          "topCutSize": 4,
-          "players": 22,
-          "deckScore": "B",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1790212059347"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1790114759532",
-          "eventName": "InBEYsion Weekly September 21st",
-          "date": "2026-09-22",
-          "placement": 1,
-          "topCutSize": 4,
-          "players": 24,
-          "deckScore": "B",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1790114759532"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1789790133135",
-          "eventName": "NRG Locals (9/17/26)",
-          "date": "2026-09-17",
-          "placement": 1,
-          "topCutSize": 4,
-          "players": 36,
-          "deckScore": "B",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1789790133135"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1789513399657",
-          "eventName": "InBEYsion Weekly September 14th",
-          "date": "2026-09-14",
-          "placement": 2,
-          "topCutSize": 4,
-          "players": 52,
-          "deckScore": "C",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1789513399657"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1789046946666",
-          "eventName": "Korekuta Games (Sept 9th 2026)",
-          "date": "2026-09-09",
-          "placement": 1,
-          "topCutSize": 4,
-          "players": 26,
-          "deckScore": "B",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1789046946666"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1788906953373",
-          "eventName": "InBeysion Ranked Weekly September 7th",
-          "date": "2026-09-07",
-          "placement": 1,
-          "topCutSize": 4,
-          "players": 70,
-          "deckScore": "A",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1788906953373"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1788535593384",
-          "eventName": "Invasion Ranked Weekly Aug 31st",
-          "date": "2026-08-31",
-          "placement": 1,
-          "topCutSize": 3,
-          "players": 64,
-          "deckScore": "B",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1788535593384"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1787708167497",
-          "eventName": "InBEYsion Ranked Weekly August 24th",
-          "date": "2026-08-24",
-          "placement": 2,
-          "topCutSize": 4,
-          "players": 32,
-          "deckScore": "A",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1787708167497"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1787087519747",
-          "eventName": "InBEYsion Ranked Weekly August 17th",
-          "date": "2026-08-17",
-          "placement": 3,
-          "topCutSize": 4,
-          "players": 32,
-          "deckScore": "B",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1787087519747"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1784493089162",
-          "eventName": "Team Xtreme Grand Prix (Car Event)",
-          "date": "2026-07-18",
-          "placement": 4,
-          "topCutSize": 4,
-          "players": 187,
-          "deckScore": "A",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1784493089162"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1761070509947",
-          "eventName": "Stop Spandy Showdown",
-          "date": "2025-10-19",
-          "placement": 2,
-          "topCutSize": 3,
-          "players": 28,
-          "deckScore": "C",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761070509947"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1781895952986",
-          "eventName": "Team Spin City x HIVE Tag Team Tournament",
-          "date": "2026-06-14",
-          "placement": 1,
-          "topCutSize": 3,
-          "players": 48,
-          "deckScore": "A",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1781895952986"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1765914049150",
-          "eventName": "LGHS Ranked",
-          "date": "2025-11-16",
-          "placement": 11,
-          "topCutSize": 16,
-          "players": 65,
-          "deckScore": "C",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1765914049150"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1763404569890",
-          "eventName": "New Realm Games Leagu",
-          "date": "2025-11-14",
-          "placement": 4,
-          "topCutSize": 7,
-          "players": 0,
-          "deckScore": "A",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1763404569890"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1762665518152",
-          "eventName": "Untouchables Locals",
-          "date": "2025-11-03",
-          "placement": 1,
-          "topCutSize": 8,
-          "players": 27,
-          "deckScore": "A",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1762665518152"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1769736608304",
-          "eventName": "LGHS Ranked Season 2 #2",
-          "date": "2026-01-25",
-          "placement": 2,
-          "topCutSize": 16,
-          "players": 68,
-          "deckScore": "B",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1769736608304"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1769736608304",
-          "eventName": "LGHS Ranked Season 2 #2",
-          "date": "2026-01-25",
-          "placement": 16,
-          "topCutSize": 16,
-          "players": 68,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1769736608304"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1768407130792",
-          "eventName": "LGHS Ranked Season 2",
-          "date": "2026-01-11",
-          "placement": 1,
-          "topCutSize": 16,
-          "players": 53,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1768407130792"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1768407130792",
-          "eventName": "LGHS Ranked Season 2",
-          "date": "2026-01-11",
-          "placement": 11,
-          "topCutSize": 16,
-          "players": 53,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1768407130792"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1767069906057",
-          "eventName": "LGHS Aero Pegasus Tournament",
-          "date": "2026-01-01",
-          "placement": 3,
-          "topCutSize": 16,
-          "players": 58,
-          "deckScore": "B",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1767069906057"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1767069906057",
-          "eventName": "LGHS Aero Pegasus Tournament",
-          "date": "2026-01-01",
-          "placement": 5,
-          "topCutSize": 16,
-          "players": 58,
-          "deckScore": "C",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1767069906057"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1765911550258",
-          "eventName": "Chaewon Cup",
-          "date": "2025-12-07",
-          "placement": 10,
-          "topCutSize": 16,
-          "players": 25,
-          "deckScore": "B",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1765911550258"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1765914657782",
-          "eventName": "LGHS Ranked Invitational",
-          "date": "2025-11-30",
-          "placement": 5,
-          "topCutSize": 16,
-          "players": 32,
-          "deckScore": "C",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1765914657782"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1776824082695",
-          "eventName": "LGHS Ranked Season 2 #7",
-          "date": "2026-04-12",
-          "placement": 1,
-          "topCutSize": 16,
-          "players": 57,
-          "deckScore": "C",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1776824082695"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1775004102800",
-          "eventName": "LGHS Ranked Season 2 #6",
-          "date": "2026-03-29",
-          "placement": 7,
-          "topCutSize": 16,
-          "players": 60,
-          "deckScore": "A",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1775004102800"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1775004102800",
-          "eventName": "LGHS Ranked Season 2 #6",
-          "date": "2026-03-29",
-          "placement": 10,
-          "topCutSize": 16,
-          "players": 60,
-          "deckScore": "C",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1775004102800"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1775004102800",
-          "eventName": "LGHS Ranked Season 2 #6",
-          "date": "2026-03-29",
-          "placement": 15,
-          "topCutSize": 16,
-          "players": 60,
-          "deckScore": "A",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1775004102800"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1773081328148",
-          "eventName": "LGHS Ranked Season 2 #5",
-          "date": "2026-03-08",
-          "placement": 8,
-          "topCutSize": 16,
-          "players": 60,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1773081328148"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1773081328148",
-          "eventName": "LGHS Ranked Season 2 #5",
-          "date": "2026-03-08",
-          "placement": 13,
-          "topCutSize": 16,
-          "players": 60,
-          "deckScore": "A",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1773081328148"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1772755340067",
-          "eventName": "LGHS Ranked Season 2 #4",
-          "date": "2026-02-22",
-          "placement": 1,
-          "topCutSize": 16,
-          "players": 75,
-          "deckScore": "A",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1772755340067"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1772755340067",
-          "eventName": "LGHS Ranked Season 2 #4",
-          "date": "2026-02-22",
-          "placement": 2,
-          "topCutSize": 16,
-          "players": 75,
-          "deckScore": "A",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1772755340067"
-        }
-      ],
-      "usage": [
-        {
-          "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
-          "window": "30d",
-          "appearances": 39,
-          "sharePct": 0.72,
-          "uniqueEvents": 30,
-          "uniquePlayers": 29,
           "lang": "en"
         }
       ]
@@ -9411,7 +10237,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 129,
           "sharePct": 2.4,
@@ -9645,7 +10471,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 24,
           "sharePct": 0.44,
@@ -9654,139 +10480,6 @@
           "lang": "en"
         }
       ]
-    },
-    "shark-scale-3-60-narrow": {
-      "id": "shark-scale-3-60-narrow",
-      "line": "bx",
-      "blade": "shark-scale",
-      "ratchet": "3-60",
-      "bit": "narrow",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Shark Scale 3-60 Narrow",
-      "type": "attack",
-      "placements": [
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1791087724005",
-          "eventName": "InBEYsion Weekly September 28th (Beyblade X)",
-          "date": "2026-09-28",
-          "placement": 3,
-          "topCutSize": 4,
-          "players": 53,
-          "deckScore": "A",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1791087724005"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1789790133135",
-          "eventName": "NRG Locals (9/17/26)",
-          "date": "2026-09-17",
-          "placement": 3,
-          "topCutSize": 4,
-          "players": 36,
-          "deckScore": "C",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1789790133135"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1789513399657",
-          "eventName": "InBEYsion Weekly September 14th",
-          "date": "2026-09-14",
-          "placement": 2,
-          "topCutSize": 4,
-          "players": 52,
-          "deckScore": "C",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1789513399657"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1788906953373",
-          "eventName": "InBeysion Ranked Weekly September 7th",
-          "date": "2026-09-07",
-          "placement": 1,
-          "topCutSize": 4,
-          "players": 70,
-          "deckScore": "A",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1788906953373"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1788906953373",
-          "eventName": "InBeysion Ranked Weekly September 7th",
-          "date": "2026-09-07",
-          "placement": 3,
-          "topCutSize": 4,
-          "players": 70,
-          "deckScore": "A",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1788906953373"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1788535593384",
-          "eventName": "Invasion Ranked Weekly Aug 31st",
-          "date": "2026-08-31",
-          "placement": 1,
-          "topCutSize": 3,
-          "players": 64,
-          "deckScore": "B",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1788535593384"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1787087519747",
-          "eventName": "InBEYsion Ranked Weekly August 17th",
-          "date": "2026-08-17",
-          "placement": 3,
-          "topCutSize": 4,
-          "players": 32,
-          "deckScore": "B",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1787087519747"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1785873030219",
-          "eventName": "InBEYsion Weekly August 3rd",
-          "date": "2026-08-03",
-          "placement": 3,
-          "topCutSize": 8,
-          "players": 37,
-          "deckScore": "C",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1785873030219"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1785719212944",
-          "eventName": "InBEYsion weekly July 28th",
-          "date": "2026-07-28",
-          "placement": 2,
-          "topCutSize": 4,
-          "players": 30,
-          "deckScore": "B",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1785719212944"
-        }
-      ],
-      "usage": []
     },
     "aero-pegasus-7-60-rush": {
       "id": "aero-pegasus-7-60-rush",
@@ -10141,7 +10834,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 34,
           "sharePct": 0.63,
@@ -10973,7 +11666,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 77,
           "sharePct": 1.4,
@@ -11396,7 +12089,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 92,
           "sharePct": 1.7,
@@ -11819,260 +12512,12 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 42,
           "sharePct": 0.77,
           "uniqueEvents": 33,
           "uniquePlayers": 22,
-          "lang": "en"
-        }
-      ]
-    },
-    "wizard-rod-9-60-free-ball": {
-      "id": "wizard-rod-9-60-free-ball",
-      "line": "bx",
-      "blade": "wizard-rod",
-      "ratchet": "9-60",
-      "bit": "free-ball",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Wizard Rod 9-60 Free Ball",
-      "type": "stamina",
-      "placements": [
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1790114759532",
-          "eventName": "InBEYsion Weekly September 21st",
-          "date": "2026-09-22",
-          "placement": 2,
-          "topCutSize": 4,
-          "players": 24,
-          "deckScore": "B",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1790114759532"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1790114757797",
-          "eventName": "The InBEYsion: MaltLiquor's Birthday Bash",
-          "date": "2026-09-20",
-          "placement": 2,
-          "topCutSize": 4,
-          "players": 95,
-          "deckScore": "C",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1790114757797"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1785719212944",
-          "eventName": "InBEYsion weekly July 28th",
-          "date": "2026-07-28",
-          "placement": 4,
-          "topCutSize": 4,
-          "players": 30,
-          "deckScore": "C",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1785719212944"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1784673692244",
-          "eventName": "Korekuta x MaveriX",
-          "date": "2026-07-12",
-          "placement": 7,
-          "topCutSize": 8,
-          "players": 48,
-          "deckScore": "A",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1784673692244"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1761071546128",
-          "eventName": "LGHS BBX Locals",
-          "date": "2025-10-19",
-          "placement": 8,
-          "topCutSize": 8,
-          "players": 55,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761071546128"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1765914049150",
-          "eventName": "LGHS Ranked",
-          "date": "2025-11-16",
-          "placement": 4,
-          "topCutSize": 16,
-          "players": 65,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1765914049150"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1763404229101",
-          "eventName": "Untouchables Locals",
-          "date": "2025-11-10",
-          "placement": 7,
-          "topCutSize": 8,
-          "players": 0,
-          "deckScore": "C",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1763404229101"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1765913314681",
-          "eventName": "LGHS Ranked",
-          "date": "2025-11-02",
-          "placement": 4,
-          "topCutSize": 16,
-          "players": 51,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1765913314681"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1762181480640",
-          "eventName": "Game 3 - Kenzo's Halloween Costume Bash",
-          "date": "2025-10-30",
-          "placement": 4,
-          "topCutSize": 8,
-          "players": 29,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1762181480640"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1762182271945",
-          "eventName": "Game 3 Locals",
-          "date": "2025-10-23",
-          "placement": 3,
-          "topCutSize": 8,
-          "players": 18,
-          "deckScore": "B",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1762182271945"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1769736608304",
-          "eventName": "LGHS Ranked Season 2 #2",
-          "date": "2026-01-25",
-          "placement": 5,
-          "topCutSize": 16,
-          "players": 68,
-          "deckScore": "B",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1769736608304"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1769736608304",
-          "eventName": "LGHS Ranked Season 2 #2",
-          "date": "2026-01-25",
-          "placement": 13,
-          "topCutSize": 16,
-          "players": 68,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1769736608304"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1768407130792",
-          "eventName": "LGHS Ranked Season 2",
-          "date": "2026-01-11",
-          "placement": 3,
-          "topCutSize": 16,
-          "players": 53,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1768407130792"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1765914657782",
-          "eventName": "LGHS Ranked Invitational",
-          "date": "2025-11-30",
-          "placement": 15,
-          "topCutSize": 16,
-          "players": 32,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1765914657782"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1764353373766",
-          "eventName": "Cardboard Classics Locals",
-          "date": "2025-11-24",
-          "placement": 7,
-          "topCutSize": 7,
-          "players": 18,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1764353373766"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1775004102800",
-          "eventName": "LGHS Ranked Season 2 #6",
-          "date": "2026-03-29",
-          "placement": 14,
-          "topCutSize": 16,
-          "players": 60,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1775004102800"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1773081328148",
-          "eventName": "LGHS Ranked Season 2 #5",
-          "date": "2026-03-08",
-          "placement": 6,
-          "topCutSize": 16,
-          "players": 60,
-          "deckScore": "B",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1773081328148"
-        }
-      ],
-      "usage": [
-        {
-          "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
-          "window": "30d",
-          "appearances": 21,
-          "sharePct": 0.39,
-          "uniqueEvents": 20,
-          "uniquePlayers": 18,
           "lang": "en"
         }
       ]
@@ -12636,7 +13081,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 98,
           "sharePct": 1.8,
@@ -13305,7 +13750,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 25,
           "sharePct": 0.46,
@@ -13595,7 +14040,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 24,
           "sharePct": 0.44,
@@ -14298,7 +14743,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 134,
           "sharePct": 2.5,
@@ -15144,7 +15589,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 25,
           "sharePct": 0.46,
@@ -15153,113 +15598,6 @@
           "lang": "en"
         }
       ]
-    },
-    "wizard-rod-9-60-narrow": {
-      "id": "wizard-rod-9-60-narrow",
-      "line": "bx",
-      "blade": "wizard-rod",
-      "ratchet": "9-60",
-      "bit": "narrow",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Wizard Rod 9-60 Narrow",
-      "type": "stamina",
-      "placements": [
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1786832356398",
-          "eventName": "InBEYsion Weekly August 10th",
-          "date": "2026-08-10",
-          "placement": 2,
-          "topCutSize": 8,
-          "players": 32,
-          "deckScore": "A",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1786832356398"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1785873030219",
-          "eventName": "InBEYsion Weekly August 3rd",
-          "date": "2026-08-03",
-          "placement": 2,
-          "topCutSize": 8,
-          "players": 37,
-          "deckScore": "A",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1785873030219"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1785719212944",
-          "eventName": "InBEYsion weekly July 28th",
-          "date": "2026-07-28",
-          "placement": 3,
-          "topCutSize": 4,
-          "players": 30,
-          "deckScore": "A",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1785719212944"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1784673692244",
-          "eventName": "Korekuta x MaveriX",
-          "date": "2026-07-12",
-          "placement": 1,
-          "topCutSize": 8,
-          "players": 48,
-          "deckScore": "B",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1784673692244"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1784673692244",
-          "eventName": "Korekuta x MaveriX",
-          "date": "2026-07-12",
-          "placement": 2,
-          "topCutSize": 8,
-          "players": 48,
-          "deckScore": "C",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1784673692244"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1783975372256",
-          "eventName": "InBEYsion New Genesis at the New Store + Jude and Busy's Birthday Bash!!",
-          "date": "2026-07-11",
-          "placement": 3,
-          "topCutSize": 4,
-          "players": 88,
-          "deckScore": "C",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1783975372256"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1782933766329",
-          "eventName": "InBEYsion Ranked weekly June 30th",
-          "date": "2026-06-30",
-          "placement": 1,
-          "topCutSize": 4,
-          "players": 22,
-          "deckScore": "B",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1782933766329"
-        }
-      ],
-      "usage": []
     },
     "aero-pegasus-1-60-rush": {
       "id": "aero-pegasus-1-60-rush",
@@ -15434,7 +15772,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 27,
           "sharePct": 0.5,
@@ -15639,7 +15977,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 17,
           "sharePct": 0.31,
@@ -16057,98 +16395,6 @@
       ],
       "usage": []
     },
-    "aero-pegasus-7-60-level": {
-      "id": "aero-pegasus-7-60-level",
-      "line": "bx",
-      "blade": "aero-pegasus",
-      "ratchet": "7-60",
-      "bit": "level",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Aero Pegasus 7-60 Level",
-      "type": "attack",
-      "placements": [
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1784757878198",
-          "eventName": "InBEYsion Weekly July 21st",
-          "date": "2026-07-21",
-          "placement": 3,
-          "topCutSize": 4,
-          "players": 18,
-          "deckScore": "S",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1784757878198"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1764083776163",
-          "eventName": "New Realm Games League Week 5",
-          "date": "2025-11-21",
-          "placement": 5,
-          "topCutSize": 8,
-          "players": 18,
-          "deckScore": "B",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1764083776163"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1764353373766",
-          "eventName": "Cardboard Classics Locals",
-          "date": "2025-11-24",
-          "placement": 2,
-          "topCutSize": 7,
-          "players": 18,
-          "deckScore": "B",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1764353373766"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1775004102800",
-          "eventName": "LGHS Ranked Season 2 #6",
-          "date": "2026-03-29",
-          "placement": 2,
-          "topCutSize": 16,
-          "players": 60,
-          "deckScore": "B",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1775004102800"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1772755340067",
-          "eventName": "LGHS Ranked Season 2 #4",
-          "date": "2026-02-22",
-          "placement": 6,
-          "topCutSize": 16,
-          "players": 75,
-          "deckScore": "B",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1772755340067"
-        }
-      ],
-      "usage": [
-        {
-          "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
-          "window": "30d",
-          "appearances": 35,
-          "sharePct": 0.65,
-          "uniqueEvents": 31,
-          "uniquePlayers": 17,
-          "lang": "en"
-        }
-      ]
-    },
     "wizard-rod-9-60-hexa": {
       "id": "wizard-rod-9-60-hexa",
       "line": "bx",
@@ -16244,10 +16490,10 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 41,
-          "sharePct": 0.76,
+          "sharePct": 0.75,
           "uniqueEvents": 37,
           "uniquePlayers": 32,
           "lang": "en"
@@ -16492,7 +16738,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 30,
           "sharePct": 0.55,
@@ -16779,10 +17025,10 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 29,
-          "sharePct": 0.54,
+          "sharePct": 0.53,
           "uniqueEvents": 22,
           "uniquePlayers": 17,
           "lang": "en"
@@ -17084,10 +17330,10 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 22,
-          "sharePct": 0.41,
+          "sharePct": 0.4,
           "uniqueEvents": 20,
           "uniquePlayers": 10,
           "lang": "en"
@@ -17226,7 +17472,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 19,
           "sharePct": 0.35,
@@ -17261,61 +17507,6 @@
           "deckScore": "B",
           "lang": "en",
           "url": "https://www.metabeys.com/events/1784493089162"
-        }
-      ],
-      "usage": []
-    },
-    "shark-scale-1-50-rush": {
-      "id": "shark-scale-1-50-rush",
-      "line": "bx",
-      "blade": "shark-scale",
-      "ratchet": "1-50",
-      "bit": "rush",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Shark Scale 1-50 Rush",
-      "type": "attack",
-      "placements": [
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1784493089162",
-          "eventName": "Team Xtreme Grand Prix (Car Event)",
-          "date": "2026-07-18",
-          "placement": 4,
-          "topCutSize": 4,
-          "players": 187,
-          "deckScore": "A",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1784493089162"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1782597731334",
-          "eventName": "InBEYsion weekly June 23rd",
-          "date": "2026-06-23",
-          "placement": 1,
-          "topCutSize": 4,
-          "players": 29,
-          "deckScore": "C",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1782597731334"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1775883214638",
-          "eventName": "New Realm Games S1",
-          "date": "2026-04-09",
-          "placement": 7,
-          "topCutSize": 8,
-          "players": 17,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1775883214638"
         }
       ],
       "usage": []
@@ -17712,7 +17903,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 84,
           "sharePct": 1.5,
@@ -18500,10 +18691,10 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 29,
-          "sharePct": 0.54,
+          "sharePct": 0.53,
           "uniqueEvents": 27,
           "uniquePlayers": 21,
           "lang": "en"
@@ -18579,7 +18770,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 21,
           "sharePct": 0.39,
@@ -18687,7 +18878,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 25,
           "sharePct": 0.46,
@@ -18740,7 +18931,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 20,
           "sharePct": 0.37,
@@ -18965,7 +19156,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 70,
           "sharePct": 1.3,
@@ -19483,7 +19674,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 21,
           "sharePct": 0.39,
@@ -19695,7 +19886,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 26,
           "sharePct": 0.48,
@@ -20157,7 +20348,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 43,
           "sharePct": 0.79,
@@ -20479,7 +20670,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 20,
           "sharePct": 0.37,
@@ -20807,7 +20998,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 49,
           "sharePct": 0.9,
@@ -20886,7 +21077,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 23,
           "sharePct": 0.42,
@@ -21502,7 +21693,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 53,
           "sharePct": 0.98,
@@ -22876,7 +23067,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 36,
           "sharePct": 0.66,
@@ -23389,7 +23580,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 28,
           "sharePct": 0.52,
@@ -24289,7 +24480,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 58,
           "sharePct": 1.1,
@@ -26326,48 +26517,6 @@
       ],
       "usage": []
     },
-    "hover-wyvern-3-60-kick": {
-      "id": "hover-wyvern-3-60-kick",
-      "line": "bx",
-      "blade": "hover-wyvern",
-      "ratchet": "3-60",
-      "bit": "kick",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Wyvern Hover 3-60 Kick",
-      "type": "defense",
-      "placements": [
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1765914049150",
-          "eventName": "LGHS Ranked",
-          "date": "2025-11-16",
-          "placement": 9,
-          "topCutSize": 16,
-          "players": 65,
-          "deckScore": "D",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1765914049150"
-        },
-        {
-          "source": "metabeys",
-          "tier": "structured",
-          "eventId": "1761595833499",
-          "eventName": "Toronto Cup 2025",
-          "date": "2025-10-25",
-          "placement": 12,
-          "topCutSize": 16,
-          "players": 59,
-          "deckScore": "C",
-          "lang": "en",
-          "url": "https://www.metabeys.com/events/1761595833499"
-        }
-      ],
-      "usage": []
-    },
     "unicorn-sting-5-60-level": {
       "id": "unicorn-sting-5-60-level",
       "line": "bx",
@@ -26557,7 +26706,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 21,
           "sharePct": 0.39,
@@ -26678,7 +26827,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 18,
           "sharePct": 0.33,
@@ -27874,10 +28023,10 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 57,
-          "sharePct": 1.1,
+          "sharePct": 1,
           "uniqueEvents": 48,
           "uniquePlayers": 35,
           "lang": "en"
@@ -29268,7 +29417,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 66,
           "sharePct": 1.2,
@@ -29993,7 +30142,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 19,
           "sharePct": 0.35,
@@ -30705,10 +30854,10 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 22,
-          "sharePct": 0.41,
+          "sharePct": 0.4,
           "uniqueEvents": 18,
           "uniquePlayers": 14,
           "lang": "en"
@@ -30813,7 +30962,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 18,
           "sharePct": 0.33,
@@ -31825,7 +31974,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 18,
           "sharePct": 0.33,
@@ -38005,7 +38154,7 @@
       "usage": [
         {
           "source": "metabeys-leaderboard",
-          "date": "2026-10-13",
+          "date": "2026-10-15",
           "window": "30d",
           "appearances": 19,
           "sharePct": 0.35,
@@ -38017,6 +38166,26 @@
     }
   },
   "unresolved": [
+    {
+      "line": "Glory Valkyrie / - / Rush",
+      "reason": "nome parte non risolto",
+      "ctx": "1791944570844 1°"
+    },
+    {
+      "line": "WizardRod / 1-60 / Free Ball",
+      "reason": "nome parte non risolto",
+      "ctx": "1791944570844 1°"
+    },
+    {
+      "line": "Hells Nether / - / Level",
+      "reason": "nome parte non risolto",
+      "ctx": "1791944570844 2°"
+    },
+    {
+      "line": "SharkScale / 3-60 / Rush",
+      "reason": "nome parte non risolto",
+      "ctx": "1791944570844 3°"
+    },
     {
       "line": "/ /",
       "reason": "segmento vuoto (incompleto)",
@@ -38463,14 +38632,6 @@
       "ctx": "1761056183959 13°"
     },
     {
-      "line": "event 1760558253065",
-      "reason": "oltre-cutoff (2025-10-13)"
-    },
-    {
-      "line": "event 1760535996295",
-      "reason": "oltre-cutoff (2025-10-13)"
-    },
-    {
       "line": "/ /",
       "reason": "segmento vuoto (incompleto)",
       "ctx": "1781895957351 1°"
@@ -38777,10 +38938,10 @@
     }
   ],
   "stats": {
-    "events": 118,
-    "combosResolved": 536,
-    "placements": 2224,
+    "events": 117,
+    "combosResolved": 538,
+    "placements": 2233,
     "usageRows": 50,
-    "unresolved": 152
+    "unresolved": 154
   }
 }
