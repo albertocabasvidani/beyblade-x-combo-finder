@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-15T02:04:01.288Z",
+  "lastUpdated": "2026-10-16T02:02:00.930Z",
   "combos": [
     {
       "id": "aero-pegasus-1-70-low-flat",
@@ -5434,6 +5434,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "hells-blast-wheel-7-60-hexa",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "7-60",
+      "bit": "hexa",
+      "lockChip": "hells",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Hells Blast W 7-60 Hexa",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Oct. 15, 2025  7:38 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-15"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-10-16",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-16"
     },
     {
       "id": "hells-blast-wheel-9-60-low-rush",
@@ -11555,6 +11599,56 @@
       "archivedDate": "2026-09-27"
     },
     {
+      "id": "pegasus-blast-wheel-5-60-level",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "5-60",
+      "bit": "level",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Pegasus Blast W 5-60 Level",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Summer Gold Rush Vol 1 (August 9th 2025)",
+          "url": "https://www.metabeys.com/events/1754919719389",
+          "weight": 1,
+          "date": "2025-08-09"
+        },
+        {
+          "name": "WBO — Oct. 15, 2025  1:33 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-15"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-10-16",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-16"
+    },
+    {
       "id": "pegasus-blast-wheel-5-60-low-rush",
       "line": "cx",
       "blade": null,
@@ -11966,6 +12060,68 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-17"
+    },
+    {
+      "id": "pegasus-blast-wheel-7-60-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "7-60",
+      "bit": "rush",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Pegasus Blast W 7-60 Rush",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Banana 10k Quali @ CMB",
+          "url": "https://www.metabeys.com/events/1761056183959",
+          "weight": 1,
+          "date": "2025-10-15"
+        },
+        {
+          "name": "MetaBeys — Mancala Monk Locals (October 10th 2025)",
+          "url": "https://www.metabeys.com/events/1760582276223",
+          "weight": 1,
+          "date": "2025-10-10"
+        },
+        {
+          "name": "WBO — Blades Bandits",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-05"
+        },
+        {
+          "name": "WBO — Sep. 09, 2025  1:21 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-09"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-10-16",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-16"
     },
     {
       "id": "pegasus-blast-wheel-9-60-elevate",
@@ -16617,6 +16773,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 365d)",
       "archivedDate": "2026-10-12"
+    },
+    {
+      "id": "sol-eclipse-turn-5-60-hexa",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "5-60",
+      "bit": "hexa",
+      "lockChip": "sol",
+      "mainBlade": "eclipse",
+      "assistBlade": "turn",
+      "overBlade": null,
+      "displayName": "Sol Eclipse T 5-60 Hexa",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Oct. 15, 2025  7:38 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-15"
+        }
+      ],
+      "dateAdded": "2026-07-26",
+      "dateUpdated": "2026-10-16",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-16"
     },
     {
       "id": "sol-eclipse-wheel-7-70-level",
