@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-16T02:02:00.930Z",
+  "lastUpdated": "2026-10-17T02:01:57.985Z",
   "combos": [
     {
       "id": "aero-pegasus-1-70-low-flat",
@@ -6859,6 +6859,50 @@
       "archivedDate": "2026-09-29"
     },
     {
+      "id": "hornet-blast-wheel-3-60-hexa",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "3-60",
+      "bit": "hexa",
+      "lockChip": "hornet",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Hornet Blast W 3-60 Hexa",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — We Can Be Heroes",
+          "url": "https://www.metabeys.com/events/1761069191128",
+          "weight": 1,
+          "date": "2025-10-16"
+        }
+      ],
+      "dateAdded": "2026-06-21",
+      "dateUpdated": "2026-10-17",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-17"
+    },
+    {
       "id": "hornet-volt-turn-1-60-rush",
       "line": "cx",
       "blade": null,
@@ -9385,6 +9429,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "pegasus-blast-dual-9-60-low-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "low-rush",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "dual",
+      "overBlade": null,
+      "displayName": "Pegasus Blast D 9-60 Low Rush",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Oct. 16, 2025  2:56 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-16"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-10-17",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-17"
     },
     {
       "id": "pegasus-blast-heavy-1-70-kick",
@@ -13579,6 +13667,50 @@
       "archivedDate": "2026-09-13"
     },
     {
+      "id": "phoenix-wing-5-60-flat",
+      "line": "bx",
+      "blade": "phoenix-wing",
+      "ratchet": "5-60",
+      "bit": "flat",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Phoenix Wing 5-60 Flat",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — We Can Be Heroes",
+          "url": "https://www.metabeys.com/events/1761069191128",
+          "weight": 1,
+          "date": "2025-10-16"
+        }
+      ],
+      "dateAdded": "2026-06-21",
+      "dateUpdated": "2026-10-17",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-17"
+    },
+    {
       "id": "phoenix-wing-5-60-level",
       "line": "bx",
       "blade": "phoenix-wing",
@@ -16731,6 +16863,50 @@
       "archivedDate": "2026-10-12"
     },
     {
+      "id": "sol-eclipse-jaggy-5-60-kick",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "5-60",
+      "bit": "kick",
+      "lockChip": "sol",
+      "mainBlade": "eclipse",
+      "assistBlade": "jaggy",
+      "overBlade": null,
+      "displayName": "Sol Eclipse J 5-60 Kick",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Oct. 16, 2025  2:56 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-16"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-10-17",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-17"
+    },
+    {
       "id": "sol-eclipse-massive-5-60-unite",
       "line": "cx",
       "blade": null,
@@ -18620,6 +18796,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "valkyrie-blast-wheel-5-60-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "5-60",
+      "bit": "rush",
+      "lockChip": "valkyrie",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Valkyrie Blast W 5-60 Rush",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — We Can Be Heroes",
+          "url": "https://www.metabeys.com/events/1761069191128",
+          "weight": 1,
+          "date": "2025-10-16"
+        }
+      ],
+      "dateAdded": "2026-06-21",
+      "dateUpdated": "2026-10-17",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-17"
     },
     {
       "id": "valkyrie-blast-wheel-7-60-rubber-accel",
@@ -21269,6 +21489,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-23"
+    },
+    {
+      "id": "wizard-rod-6-80-free-ball",
+      "line": "bx",
+      "blade": "wizard-rod",
+      "ratchet": "6-80",
+      "bit": "free-ball",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Wizard Rod 6-80 Free Ball",
+      "type": "stamina",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — We Can Be Heroes",
+          "url": "https://www.metabeys.com/events/1761069191128",
+          "weight": 1,
+          "date": "2025-10-16"
+        }
+      ],
+      "dateAdded": "2026-06-21",
+      "dateUpdated": "2026-10-17",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-17"
     },
     {
       "id": "wizard-rod-7-70-rush",
