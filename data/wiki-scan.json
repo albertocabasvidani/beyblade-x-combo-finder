@@ -4,12 +4,12 @@
     "List of Beyblade X products (Takara Tomy)": {
       "revid": 650994,
       "timestamp": "2026-10-14T15:22:34.000Z",
-      "lastScannedDate": "2026-10-16"
+      "lastScannedDate": "2026-10-17"
     },
     "List of Beyblade X products (Hasbro)": {
       "revid": 648918,
       "timestamp": "2026-09-14T01:43:54.000Z",
-      "lastScannedDate": "2026-10-16"
+      "lastScannedDate": "2026-10-17"
     }
   },
   "pages": {
@@ -30,15 +30,15 @@
       "notes": "pagina lista: aggiunta riga NFL CX Top Pack, nessuna parte da estrarre da qui"
     },
     "DranSword 3-60F": {
-      "revid": 651059,
-      "timestamp": "2026-10-14T17:37:57.000Z",
-      "lastScannedDate": "2026-10-15",
+      "revid": 651346,
+      "timestamp": "2026-10-16T20:31:35.000Z",
+      "lastScannedDate": "2026-10-17",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Sword Dran 3-60F"
       ],
-      "notes": "revisione V2.0, parti gia nel master"
+      "notes": "parti gia nel master; cambio date/versione 2.0"
     },
     "HeavensRing 0-80DS": {
       "revid": 650635,
@@ -304,11 +304,12 @@
       "notes": "parti gia' nel master, solo metadati"
     },
     "ImpactDrake 9-60LR": {
-      "revid": 649705,
-      "timestamp": "2026-09-20T21:41:05.000Z",
-      "lastScannedDate": "2026-09-21",
+      "revid": 651355,
+      "timestamp": "2026-10-16T21:45:07.000Z",
+      "lastScannedDate": "2026-10-17",
       "kind": "product",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "parti gia nel master; cambio date/versione 2.0"
     },
     "MeteorDragoon 3-70J": {
       "revid": 650351,
@@ -462,15 +463,15 @@
       "kindSource": "heuristic"
     },
     "CrocoTread TQ5-50GN": {
-      "revid": 649317,
-      "timestamp": "2026-09-17T05:14:00.000Z",
-      "lastScannedDate": "2026-09-18",
+      "revid": 651285,
+      "timestamp": "2026-10-16T12:24:11.000Z",
+      "lastScannedDate": "2026-10-17",
       "kind": "product",
       "kindSource": "ai",
       "redirects": [
         "Tread Croc TQ 5-50GN"
       ],
-      "notes": "gia' registrato (croco/CX-19); edit minore pagina"
+      "notes": "parti gia nel master; cambio date/versione 2.0"
     },
     "Gust Bat 3-85GP": {
       "revid": 641666,
@@ -508,15 +509,15 @@
       "kindSource": "heuristic"
     },
     "BulletGriffon H": {
-      "revid": 650485,
-      "timestamp": "2026-10-05T18:24:40.000Z",
-      "lastScannedDate": "2026-10-06",
+      "revid": 651207,
+      "timestamp": "2026-10-16T05:20:26.000Z",
+      "lastScannedDate": "2026-10-17",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Rocket Griffon H"
       ],
-      "notes": "pagina modificata; parti gia presenti nel master, nessuna nuova"
+      "notes": "parti gia nel master; cambio date/versione 2.0"
     },
     "Bumblebee 3-60GP": {
       "revid": 639473,
@@ -610,15 +611,15 @@
       "kindSource": "heuristic"
     },
     "DranStrike 4-50FF": {
-      "revid": 650413,
-      "timestamp": "2026-10-04T10:29:09.000Z",
-      "lastScannedDate": "2026-10-06",
+      "revid": 651281,
+      "timestamp": "2026-10-16T11:23:56.000Z",
+      "lastScannedDate": "2026-10-17",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Strike Dran 4-50FF"
       ],
-      "notes": "aggiunta localizzazione Hasbro (Strike Dran, G2742); parti gia' nel master, products gia' include G2742/G2743"
+      "notes": "parti gia nel master; cambio date/versione 2.0"
     },
     "General Grievous 3-80HN": {
       "revid": 636189,
@@ -642,14 +643,15 @@
       "kindSource": "heuristic"
     },
     "GolemRock 1-60UN": {
-      "revid": 649726,
-      "timestamp": "2026-09-20T21:51:57.000Z",
-      "lastScannedDate": "2026-09-21",
+      "revid": 651284,
+      "timestamp": "2026-10-16T12:22:16.000Z",
+      "lastScannedDate": "2026-10-17",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Rock Golem 1-60UN"
-      ]
+      ],
+      "notes": "parti gia nel master; cambio date/versione 2.0"
     },
     "Green Goblin 9-80HT": {
       "revid": 637375,
@@ -740,15 +742,15 @@
       "kindSource": "heuristic"
     },
     "KnightShield 3-80N": {
-      "revid": 651190,
-      "timestamp": "2026-10-15T15:07:20.000Z",
-      "lastScannedDate": "2026-10-16",
+      "revid": 651345,
+      "timestamp": "2026-10-16T20:31:28.000Z",
+      "lastScannedDate": "2026-10-17",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Helm Knight 3-80N"
       ],
-      "notes": "gia nel master"
+      "notes": "parti gia nel master; cambio date/versione 2.0"
     },
     "Blade - Lightning L-Drago (Rapid-Hit Type)": {
       "revid": 632018,
@@ -1031,11 +1033,12 @@
       "kindSource": "heuristic"
     },
     "ViperTail 5-80O": {
-      "revid": 648970,
-      "timestamp": "2026-09-14T12:10:53.000Z",
-      "lastScannedDate": "2026-09-15",
+      "revid": 651282,
+      "timestamp": "2026-10-16T12:21:55.000Z",
+      "lastScannedDate": "2026-10-17",
       "kind": "product",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "parti gia nel master; cambio date/versione 2.0"
     },
     "Random Booster WhaleWave Select": {
       "revid": 599603,
@@ -1045,15 +1048,15 @@
       "kindSource": "heuristic"
     },
     "WizardArrow 4-80B": {
-      "revid": 651089,
-      "timestamp": "2026-10-15T01:05:35.000Z",
-      "lastScannedDate": "2026-10-15",
+      "revid": 651328,
+      "timestamp": "2026-10-16T18:57:06.000Z",
+      "lastScannedDate": "2026-10-17",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Arrow Wizard 4-80B"
       ],
-      "notes": "gia nel master"
+      "notes": "parti gia nel master; cambio date/versione 2.0"
     },
     "WizardRod 5-70DB": {
       "revid": 651196,
@@ -1716,15 +1719,15 @@
       "kindSource": "heuristic"
     },
     "HellsNether Z": {
-      "revid": 650101,
-      "timestamp": "2026-09-29T04:28:44.000Z",
-      "lastScannedDate": "2026-09-30",
+      "revid": 651324,
+      "timestamp": "2026-10-16T18:43:19.000Z",
+      "lastScannedDate": "2026-10-17",
       "kind": "product",
       "kindSource": "ai",
       "redirects": [
         "Nether Incendio Z"
       ],
-      "notes": "parti gia' nel master, solo metadati"
+      "notes": "parti gia nel master; cambio date/versione 2.0"
     },
     "Seize Jaguar HN": {
       "revid": 646465,
@@ -3036,18 +3039,18 @@
     "Blade - SiegSuperion": {
       "revid": 650337,
       "timestamp": "2026-10-02T21:23:29.000Z",
-      "lastScannedDate": "2026-10-16",
+      "lastScannedDate": "2026-10-17",
       "kind": "part",
-      "kindSource": "heuristic",
-      "notes": "gia' nel master, modifica wiki"
+      "kindSource": "ai",
+      "notes": "parti gia nel master; cambio date/versione 2.0"
     },
     "SiegSuperion 0-70LP": {
-      "revid": 651197,
-      "timestamp": "2026-10-16T01:07:13.000Z",
-      "lastScannedDate": "2026-10-16",
+      "revid": 651351,
+      "timestamp": "2026-10-16T20:45:32.000Z",
+      "lastScannedDate": "2026-10-17",
       "kind": "product",
-      "kindSource": "heuristic",
-      "notes": "gia' nel master"
+      "kindSource": "ai",
+      "notes": "parti gia nel master; cambio date/versione 2.0"
     },
     "Bey Kick Off Set": {
       "revid": 599877,
