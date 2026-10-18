@@ -4,12 +4,12 @@
     "List of Beyblade X products (Takara Tomy)": {
       "revid": 650994,
       "timestamp": "2026-10-14T15:22:34.000Z",
-      "lastScannedDate": "2026-10-17"
+      "lastScannedDate": "2026-10-18"
     },
     "List of Beyblade X products (Hasbro)": {
       "revid": 648918,
       "timestamp": "2026-09-14T01:43:54.000Z",
-      "lastScannedDate": "2026-10-17"
+      "lastScannedDate": "2026-10-18"
     }
   },
   "pages": {
@@ -304,11 +304,11 @@
       "notes": "parti gia' nel master, solo metadati"
     },
     "ImpactDrake 9-60LR": {
-      "revid": 651355,
-      "timestamp": "2026-10-16T21:45:07.000Z",
-      "lastScannedDate": "2026-10-17",
+      "revid": 651364,
+      "timestamp": "2026-10-17T02:56:15.000Z",
+      "lastScannedDate": "2026-10-18",
       "kind": "product",
-      "kindSource": "ai",
+      "kindSource": "heuristic",
       "notes": "parti gia nel master; cambio date/versione 2.0"
     },
     "MeteorDragoon 3-70J": {
@@ -604,9 +604,9 @@
       ]
     },
     "DranDagger 4-60R": {
-      "revid": 649695,
-      "timestamp": "2026-09-20T21:34:23.000Z",
-      "lastScannedDate": "2026-09-21",
+      "revid": 651377,
+      "timestamp": "2026-10-17T13:07:28.000Z",
+      "lastScannedDate": "2026-10-18",
       "kind": "product",
       "kindSource": "heuristic"
     },
@@ -852,9 +852,9 @@
       "notes": "set gia' noto (UX-10), contents = parti gia' registrate (ptera-swing, hells-hammer, tyranno-beat)"
     },
     "Ratchet-Integrated Blade - Rampart Aegis": {
-      "revid": 647024,
-      "timestamp": "2026-08-24T23:26:18.000Z",
-      "lastScannedDate": "2026-08-25",
+      "revid": 651371,
+      "timestamp": "2026-10-17T10:46:50.000Z",
+      "lastScannedDate": "2026-10-18",
       "kind": "product",
       "kindSource": "heuristic"
     },
@@ -3039,17 +3039,17 @@
     "Blade - SiegSuperion": {
       "revid": 650337,
       "timestamp": "2026-10-02T21:23:29.000Z",
-      "lastScannedDate": "2026-10-17",
+      "lastScannedDate": "2026-10-18",
       "kind": "part",
-      "kindSource": "ai",
+      "kindSource": "heuristic",
       "notes": "parti gia nel master; cambio date/versione 2.0"
     },
     "SiegSuperion 0-70LP": {
       "revid": 651351,
       "timestamp": "2026-10-16T20:45:32.000Z",
-      "lastScannedDate": "2026-10-17",
+      "lastScannedDate": "2026-10-18",
       "kind": "product",
-      "kindSource": "ai",
+      "kindSource": "heuristic",
       "notes": "parti gia nel master; cambio date/versione 2.0"
     },
     "Bey Kick Off Set": {
