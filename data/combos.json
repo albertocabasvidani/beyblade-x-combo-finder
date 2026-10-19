@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-19T02:01:53.009Z",
+  "lastUpdated": "2026-10-19T02:03:09.741Z",
   "combos": [
     {
       "id": "wizard-rod-1-60-hexa",
@@ -173402,7 +173402,7 @@
           "stadiums": [
             "xtreme"
           ],
-          "score": 2.1,
+          "score": 2.09,
           "tags": [
             "tournament-proven"
           ]
@@ -173628,7 +173628,7 @@
       },
       "windows": {
         "30": {
-          "performance": 0.316,
+          "performance": 0.315,
           "presence": 0,
           "corroboration": 0.333,
           "tournamentEvents": 4,
@@ -333953,6 +333953,138 @@
       }
     },
     {
+      "id": "valkyrie-tough-fortress-jaggy-9-60-elevate",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "elevate",
+      "lockChip": "valkyrie",
+      "mainBlade": "fortress",
+      "assistBlade": "jaggy",
+      "overBlade": "tough",
+      "displayName": "Valkyrie Fortress Tough J 9-60 Elevate",
+      "type": "defense",
+      "score": 0.79,
+      "scoreBreakdown": {
+        "performance": 0.119,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 1,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-10-17",
+        "stadiums": [
+          "xtreme"
+        ]
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Jurassic Games #3",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-10-17"
+        }
+      ],
+      "dateAdded": "2026-10-19",
+      "dateUpdated": "2026-10-19",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-129434",
+            "eventName": "Jurassic Games #3",
+            "date": "2026-10-17",
+            "placement": 1,
+            "players": 11,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-jurassic-games-3",
+            "date": "2026-10-17",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      },
+      "windows": {
+        "30": {
+          "performance": 0.119,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-17",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.79,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "90": {
+          "performance": 0.119,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-17",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.79,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "180": {
+          "performance": 0.119,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-17",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.79,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "365": {
+          "performance": 0.119,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-17",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.79,
+          "tags": [
+            "tournament-proven"
+          ]
+        }
+      }
+    },
+    {
       "id": "emperor-might-heavy-9-60-low-rush",
       "line": "cx",
       "blade": null,
@@ -366138,130 +366270,6 @@
       }
     },
     {
-      "id": "valkyrie-tough-fortress-jaggy-9-60-elevate",
-      "line": "cx",
-      "blade": null,
-      "ratchet": "9-60",
-      "bit": "elevate",
-      "lockChip": "valkyrie",
-      "mainBlade": "fortress",
-      "assistBlade": "jaggy",
-      "overBlade": "tough",
-      "displayName": "Valkyrie Fortress Tough J 9-60 Elevate",
-      "type": "defense",
-      "score": 0.69,
-      "scoreBreakdown": {
-        "performance": 0.119,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 1,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-10-17",
-        "stadiums": [
-          "xtreme"
-        ]
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — Jurassic Games #3",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-10-17"
-        }
-      ],
-      "dateAdded": "2026-10-19",
-      "dateUpdated": "2026-10-19",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-129434",
-            "eventName": "Jurassic Games #3",
-            "date": "2026-10-17",
-            "placement": 1,
-            "players": 11,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      },
-      "windows": {
-        "30": {
-          "performance": 0.119,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-17",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.69,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "90": {
-          "performance": 0.119,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-17",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.69,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "180": {
-          "performance": 0.119,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-17",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.69,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "365": {
-          "performance": 0.119,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-17",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.69,
-          "tags": [
-            "tournament-proven"
-          ]
-        }
-      }
-    },
-    {
       "id": "golem-rock-9-60-kick",
       "line": "bx",
       "blade": "golem-rock",
@@ -382503,6 +382511,138 @@
           "wins": 0,
           "topCutAppearances": 3,
           "lastPlacementDate": "2025-10-20",
+          "score": 0.65,
+          "tags": [
+            "tournament-proven"
+          ]
+        }
+      }
+    },
+    {
+      "id": "leon-outer-blitz-heavy-5-50-level",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "5-50",
+      "bit": "level",
+      "lockChip": "leon",
+      "mainBlade": "blitz",
+      "assistBlade": "heavy",
+      "overBlade": "outer",
+      "displayName": "Leon Blitz Outer H 5-50 Level",
+      "type": "attack",
+      "score": 0.65,
+      "scoreBreakdown": {
+        "performance": 0.077,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 0,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-10-18",
+        "stadiums": [
+          "xtreme"
+        ]
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — BBX Up North",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-10-18"
+        }
+      ],
+      "dateAdded": "2026-10-19",
+      "dateUpdated": "2026-10-19",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-128971",
+            "eventName": "BBX Up North",
+            "date": "2026-10-18",
+            "placement": 3,
+            "players": 20,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-bbx-up-north",
+            "date": "2026-10-18",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      },
+      "windows": {
+        "30": {
+          "performance": 0.077,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-18",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.65,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "90": {
+          "performance": 0.077,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-18",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.65,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "180": {
+          "performance": 0.077,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-18",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.65,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "365": {
+          "performance": 0.077,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-18",
+          "stadiums": [
+            "xtreme"
+          ],
           "score": 0.65,
           "tags": [
             "tournament-proven"
@@ -441442,130 +441582,6 @@
           "wins": 0,
           "topCutAppearances": 2,
           "lastPlacementDate": "2025-11-21",
-          "score": 0.55,
-          "tags": [
-            "tournament-proven"
-          ]
-        }
-      }
-    },
-    {
-      "id": "leon-outer-blitz-heavy-5-50-level",
-      "line": "cx",
-      "blade": null,
-      "ratchet": "5-50",
-      "bit": "level",
-      "lockChip": "leon",
-      "mainBlade": "blitz",
-      "assistBlade": "heavy",
-      "overBlade": "outer",
-      "displayName": "Leon Blitz Outer H 5-50 Level",
-      "type": "attack",
-      "score": 0.55,
-      "scoreBreakdown": {
-        "performance": 0.077,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 0,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-10-18",
-        "stadiums": [
-          "xtreme"
-        ]
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — BBX Up North",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-10-18"
-        }
-      ],
-      "dateAdded": "2026-10-19",
-      "dateUpdated": "2026-10-19",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-128971",
-            "eventName": "BBX Up North",
-            "date": "2026-10-18",
-            "placement": 3,
-            "players": 20,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      },
-      "windows": {
-        "30": {
-          "performance": 0.077,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-18",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.55,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "90": {
-          "performance": 0.077,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-18",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.55,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "180": {
-          "performance": 0.077,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-18",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.55,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "365": {
-          "performance": 0.077,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-18",
-          "stadiums": [
-            "xtreme"
-          ],
           "score": 0.55,
           "tags": [
             "tournament-proven"
@@ -685874,5 +685890,5 @@
       "solid": 5.5
     }
   },
-  "windowsRef": "2026-10-19T02:01:38.267Z"
+  "windowsRef": "2026-10-19T02:03:08.962Z"
 }
