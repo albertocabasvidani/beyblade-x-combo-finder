@@ -4,12 +4,12 @@
     "List of Beyblade X products (Takara Tomy)": {
       "revid": 650994,
       "timestamp": "2026-10-14T15:22:34.000Z",
-      "lastScannedDate": "2026-10-18"
+      "lastScannedDate": "2026-10-19"
     },
     "List of Beyblade X products (Hasbro)": {
       "revid": 648918,
       "timestamp": "2026-09-14T01:43:54.000Z",
-      "lastScannedDate": "2026-10-18"
+      "lastScannedDate": "2026-10-19"
     }
   },
   "pages": {
@@ -266,15 +266,15 @@
       "notes": "Revid cambiato, verificato: nessun nuovo componente (solo modifiche testuali/gallery/date release)."
     },
     "BahamutBlitz BK1-50I": {
-      "revid": 650911,
-      "timestamp": "2026-10-11T10:54:30.000Z",
-      "lastScannedDate": "2026-10-12",
+      "revid": 651398,
+      "timestamp": "2026-10-18T12:00:29.000Z",
+      "lastScannedDate": "2026-10-19",
       "kind": "product",
       "kindSource": "ai",
       "redirects": [
         "Blitz Bahamut BK 1-50I"
       ],
-      "notes": "parti gia' nel master, nessuna novita'"
+      "notes": "gia' nel master, nessuna parte nuova"
     },
     "RagnaRage FE4-55Y": {
       "revid": 651186,
@@ -3039,18 +3039,18 @@
     "Blade - SiegSuperion": {
       "revid": 650337,
       "timestamp": "2026-10-02T21:23:29.000Z",
-      "lastScannedDate": "2026-10-18",
+      "lastScannedDate": "2026-10-19",
       "kind": "part",
-      "kindSource": "heuristic",
-      "notes": "parti gia nel master; cambio date/versione 2.0"
+      "kindSource": "ai",
+      "notes": "gia' nel master"
     },
     "SiegSuperion 0-70LP": {
       "revid": 651351,
       "timestamp": "2026-10-16T20:45:32.000Z",
-      "lastScannedDate": "2026-10-18",
+      "lastScannedDate": "2026-10-19",
       "kind": "product",
-      "kindSource": "heuristic",
-      "notes": "parti gia nel master; cambio date/versione 2.0"
+      "kindSource": "ai",
+      "notes": "gia' nel master"
     },
     "Bey Kick Off Set": {
       "revid": 599877,
