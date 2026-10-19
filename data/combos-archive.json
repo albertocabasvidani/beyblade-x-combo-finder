@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-18T02:01:54.638Z",
+  "lastUpdated": "2026-10-19T02:01:53.264Z",
   "combos": [
     {
       "id": "aero-pegasus-1-70-low-flat",
@@ -1007,6 +1007,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "clock-mirage-9-65-low-orb",
+      "line": "bx",
+      "blade": "clock-mirage",
+      "ratchet": "9-65",
+      "bit": "low-orb",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Clock Mirage 9-65 Low Orb",
+      "type": "stamina",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — The InBeysion",
+          "url": "https://www.metabeys.com/events/1761054202506",
+          "weight": 1,
+          "date": "2025-10-18"
+        }
+      ],
+      "dateAdded": "2026-06-21",
+      "dateUpdated": "2026-10-19",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-19"
     },
     {
       "id": "cobalt-dragoon-1-60-gear-point",
@@ -2782,6 +2826,50 @@
       "archivedDate": "2026-09-15"
     },
     {
+      "id": "dran-brave-wheel-9-60-kick",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "kick",
+      "lockChip": "dran",
+      "mainBlade": "brave",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Dran Brave W 9-60 Kick",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Untouchables Locals",
+          "url": "https://www.metabeys.com/events/1761055032256",
+          "weight": 1,
+          "date": "2025-10-18"
+        }
+      ],
+      "dateAdded": "2026-06-21",
+      "dateUpdated": "2026-10-19",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-19"
+    },
+    {
       "id": "dran-buster-1-70-hexa",
       "line": "bx",
       "blade": "dran-buster",
@@ -3973,6 +4061,50 @@
       "archivedDate": "2026-07-18"
     },
     {
+      "id": "fox-brush-jaggy-3-60-trans-kick",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "3-60",
+      "bit": "trans-kick",
+      "lockChip": "fox",
+      "mainBlade": "brush",
+      "assistBlade": "jaggy",
+      "overBlade": null,
+      "displayName": "Fox Brush J 3-60 Trans Kick",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Untouchables Locals",
+          "url": "https://www.metabeys.com/events/1761055032256",
+          "weight": 1,
+          "date": "2025-10-18"
+        }
+      ],
+      "dateAdded": "2026-06-21",
+      "dateUpdated": "2026-10-19",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-19"
+    },
+    {
       "id": "fox-brush-jaggy-3-60-unite",
       "line": "cx",
       "blade": null,
@@ -4052,6 +4184,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "fox-brush-jaggy-7-70-point",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "7-70",
+      "bit": "point",
+      "lockChip": "fox",
+      "mainBlade": "brush",
+      "assistBlade": "jaggy",
+      "overBlade": null,
+      "displayName": "Fox Brush J 7-70 Point",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Untouchables Locals",
+          "url": "https://www.metabeys.com/events/1761055032256",
+          "weight": 1,
+          "date": "2025-10-18"
+        }
+      ],
+      "dateAdded": "2026-06-21",
+      "dateUpdated": "2026-10-19",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-19"
     },
     {
       "id": "fox-brush-jaggy-9-60-kick",
@@ -7778,6 +7954,50 @@
       "archivedDate": "2026-09-12"
     },
     {
+      "id": "impact-drake-5-60-low-flat",
+      "line": "bx",
+      "blade": "impact-drake",
+      "ratchet": "5-60",
+      "bit": "low-flat",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Impact Drake 5-60 Low Flat",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Oct. 18, 2025  6:59 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-18"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-10-19",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-19"
+    },
+    {
       "id": "impact-drake-5-60-point",
       "line": "bx",
       "blade": "impact-drake",
@@ -9086,6 +9306,50 @@
       "archivedDate": "2026-09-12"
     },
     {
+      "id": "pegasus-blast-assault-5-60-under-needle",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "5-60",
+      "bit": "under-needle",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "assault",
+      "overBlade": null,
+      "displayName": "Pegasus Blast A 5-60 Under Needle",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Oct. 18, 2025  9:30 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-18"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-10-19",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-19"
+    },
+    {
       "id": "pegasus-blast-assault-6-60-hexa",
       "line": "cx",
       "blade": null,
@@ -9473,6 +9737,94 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "pegasus-blast-dual-1-70-level",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "1-70",
+      "bit": "level",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "dual",
+      "overBlade": null,
+      "displayName": "Pegasus Blast D 1-70 Level",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Untouchables Locals",
+          "url": "https://www.metabeys.com/events/1761055032256",
+          "weight": 1,
+          "date": "2025-10-18"
+        }
+      ],
+      "dateAdded": "2026-06-21",
+      "dateUpdated": "2026-10-19",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-19"
+    },
+    {
+      "id": "pegasus-blast-dual-6-60-hexa",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "6-60",
+      "bit": "hexa",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "dual",
+      "overBlade": null,
+      "displayName": "Pegasus Blast D 6-60 Hexa",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Untouchables Locals",
+          "url": "https://www.metabeys.com/events/1761055032256",
+          "weight": 1,
+          "date": "2025-10-18"
+        }
+      ],
+      "dateAdded": "2026-06-21",
+      "dateUpdated": "2026-10-19",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-19"
     },
     {
       "id": "pegasus-blast-dual-9-60-low-rush",
@@ -10325,6 +10677,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "pegasus-blast-jaggy-7-60-level",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "7-60",
+      "bit": "level",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "jaggy",
+      "overBlade": null,
+      "displayName": "Pegasus Blast J 7-60 Level",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Untouchables Locals",
+          "url": "https://www.metabeys.com/events/1761055032256",
+          "weight": 1,
+          "date": "2025-10-18"
+        }
+      ],
+      "dateAdded": "2026-06-21",
+      "dateUpdated": "2026-10-19",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-19"
     },
     {
       "id": "pegasus-blast-jaggy-9-60-free-ball",
@@ -13848,6 +14244,50 @@
       "archivedDate": "2026-07-03"
     },
     {
+      "id": "phoenix-wing-5-60-rubber-accel",
+      "line": "bx",
+      "blade": "phoenix-wing",
+      "ratchet": "5-60",
+      "bit": "rubber-accel",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Phoenix Wing 5-60 Rubber Accel",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Untouchables Locals",
+          "url": "https://www.metabeys.com/events/1761055032256",
+          "weight": 1,
+          "date": "2025-10-18"
+        }
+      ],
+      "dateAdded": "2026-06-21",
+      "dateUpdated": "2026-10-19",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-19"
+    },
+    {
       "id": "phoenix-wing-5-60-taper",
       "line": "bx",
       "blade": "phoenix-wing",
@@ -15287,6 +15727,50 @@
       "archivedDate": "2026-09-12"
     },
     {
+      "id": "scorpio-spear-5-60-taper",
+      "line": "bx",
+      "blade": "scorpio-spear",
+      "ratchet": "5-60",
+      "bit": "taper",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Scorpio Spear 5-60 Taper",
+      "type": "stamina",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Oct. 22, 2025  7:08 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-18"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-10-19",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-19"
+    },
+    {
       "id": "scorpio-spear-6-60-low-flat",
       "line": "bx",
       "blade": "scorpio-spear",
@@ -16205,6 +16689,50 @@
       "archivedDate": "2026-09-30"
     },
     {
+      "id": "shark-scale-9-60-low-flat",
+      "line": "bx",
+      "blade": "shark-scale",
+      "ratchet": "9-60",
+      "bit": "low-flat",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Shark Scale 9-60 Low Flat",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Oct. 18, 2025  2:04 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-17"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-10-19",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-19"
+    },
+    {
       "id": "shelter-drake-5-60-wedge",
       "line": "bx",
       "blade": "shelter-drake",
@@ -16511,6 +17039,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "silver-wolf-7-60-low-rush",
+      "line": "bx",
+      "blade": "silver-wolf",
+      "ratchet": "7-60",
+      "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Silver Wolf 7-60 Low Rush",
+      "type": "stamina",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Oct. 18, 2025  6:59 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-18"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-10-19",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-19"
     },
     {
       "id": "silver-wolf-7-60-unite",
@@ -16949,6 +17521,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 365d)",
       "archivedDate": "2026-10-12"
+    },
+    {
+      "id": "sol-eclipse-dual-9-60-hexa",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "hexa",
+      "lockChip": "sol",
+      "mainBlade": "eclipse",
+      "assistBlade": "dual",
+      "overBlade": null,
+      "displayName": "Sol Eclipse D 9-60 Hexa",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Oct. 18, 2025  11:52 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-18"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-10-19",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-19"
     },
     {
       "id": "sol-eclipse-jaggy-5-60-kick",
@@ -19882,6 +20498,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "whale-wave-1-60-gear-flat",
+      "line": "bx",
+      "blade": "whale-wave",
+      "ratchet": "1-60",
+      "bit": "gear-flat",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Whale Wave 1-60 Gear Flat",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Oct. 18, 2025  2:04 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-17"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-10-19",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-19"
     },
     {
       "id": "whale-wave-1-70-taper",
