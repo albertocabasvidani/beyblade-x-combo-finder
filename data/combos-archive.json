@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-19T02:01:53.264Z",
+  "lastUpdated": "2026-10-20T02:02:06.497Z",
   "combos": [
     {
       "id": "aero-pegasus-1-70-low-flat",
@@ -18260,6 +18260,51 @@
       },
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-07-18"
+    },
+    {
+      "id": "tyranno-beat-5-60-kick",
+      "line": "bx",
+      "blade": "tyranno-beat",
+      "ratchet": "5-60",
+      "bit": "kick",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Tyranno Beat 5-60 Kick",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "Combo segnalata su Reddit r/Beyblade.",
+      "sources": [
+        {
+          "name": "Reddit r/Beyblade",
+          "url": "https://reddit.com/r/Beyblade/comments/1n30j3b/yesterday_i_won_a_local_tournament_and_also_won_a/",
+          "weight": 0.6,
+          "date": "2025-08-29"
+        }
+      ],
+      "amazon": {},
+      "dateAdded": "2026-06-16",
+      "dateUpdated": "2026-10-20",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-20"
     },
     {
       "id": "tyranno-beat-5-60-low-orb",
