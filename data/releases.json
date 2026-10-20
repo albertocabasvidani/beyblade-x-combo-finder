@@ -1,11 +1,11 @@
 {
   "fetchedAt": "2026-10-15T02:00:18.065Z",
-  "checkedAt": "2026-10-19T02:00:17.325Z",
+  "checkedAt": "2026-10-20T02:00:18.411Z",
   "fx": {
-    "date": "2026-10-16",
+    "date": "2026-10-19",
     "rates": {
-      "JPY": 177.82,
-      "USD": 1.1253
+      "JPY": 177.63,
+      "USD": 1.1225
     }
   },
   "pages": {
@@ -26,7 +26,7 @@
         "amount": 1980,
         "currency": "JPY"
       },
-      "listinoEur": 11.13
+      "listinoEur": 11.15
     },
     "BX-02": {
       "name": "HellsScythe 4-60T",
@@ -35,7 +35,7 @@
         "amount": 1980,
         "currency": "JPY"
       },
-      "listinoEur": 11.13
+      "listinoEur": 11.15
     },
     "BX-03": {
       "name": "WizardArrow 4-80B",
@@ -44,7 +44,7 @@
         "amount": 1980,
         "currency": "JPY"
       },
-      "listinoEur": 11.13
+      "listinoEur": 11.15
     },
     "BX-04": {
       "name": "KnightShield 3-80N",
@@ -53,7 +53,7 @@
         "amount": 1980,
         "currency": "JPY"
       },
-      "listinoEur": 11.13
+      "listinoEur": 11.15
     },
     "BX-05": {
       "name": "WizardArrow 4-80B",
@@ -62,7 +62,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     "BX-06": {
       "name": "KnightShield 3-80N",
@@ -71,7 +71,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     "BX-07": {
       "name": "Start Dash Set",
@@ -80,7 +80,7 @@
         "amount": 5720,
         "currency": "JPY"
       },
-      "listinoEur": 32.17
+      "listinoEur": 32.2
     },
     "BX-08": {
       "name": "3on3 Deck Set",
@@ -89,7 +89,7 @@
         "amount": 3960,
         "currency": "JPY"
       },
-      "listinoEur": 22.27
+      "listinoEur": 22.29
     },
     "BX-09": {
       "name": "Beybattle Pass",
@@ -98,7 +98,7 @@
         "amount": 3300,
         "currency": "JPY"
       },
-      "listinoEur": 18.56
+      "listinoEur": 18.58
     },
     "BX-10": {
       "name": "Xtreme Stadium",
@@ -107,7 +107,7 @@
         "amount": 2700,
         "currency": "JPY"
       },
-      "listinoEur": 15.18
+      "listinoEur": 15.2
     },
     "BX-11": {
       "name": "Launcher Grip (Beyblade X)",
@@ -134,7 +134,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     "BX-14": {
       "name": "Random Booster Vol. 1",
@@ -143,7 +143,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     "BX-15": {
       "name": "LeonClaw 5-60P",
@@ -152,7 +152,7 @@
         "amount": 1980,
         "currency": "JPY"
       },
-      "listinoEur": 11.13
+      "listinoEur": 11.15
     },
     "BX-16": {
       "name": "Random Booster ViperTail Select",
@@ -161,7 +161,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     "BX-17": {
       "name": "Battle Entry Set",
@@ -170,7 +170,7 @@
         "amount": 6050,
         "currency": "JPY"
       },
-      "listinoEur": 34.02
+      "listinoEur": 34.06
     },
     "BX-18": {
       "name": "String Launcher (Beyblade X)",
@@ -188,7 +188,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     "BX-20": {
       "name": "DranDagger Deck Set",
@@ -197,7 +197,7 @@
         "amount": 3960,
         "currency": "JPY"
       },
-      "listinoEur": 22.27
+      "listinoEur": 22.29
     },
     "BX-21": {
       "name": "HellsChain Deck Set",
@@ -206,7 +206,7 @@
         "amount": 3960,
         "currency": "JPY"
       },
-      "listinoEur": 22.27
+      "listinoEur": 22.29
     },
     "BX-22": {
       "name": "DranSword 3-60F",
@@ -215,7 +215,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     "BX-23": {
       "name": "PhoenixWing 9-60GF",
@@ -224,7 +224,7 @@
         "amount": 2420,
         "currency": "JPY"
       },
-      "listinoEur": 13.61
+      "listinoEur": 13.62
     },
     "BX-24": {
       "name": "Random Booster Vol. 2",
@@ -233,7 +233,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     "BX-25": {
       "name": "Gear Case",
@@ -242,7 +242,7 @@
         "amount": 4000,
         "currency": "JPY"
       },
-      "listinoEur": 22.49
+      "listinoEur": 22.52
     },
     "BX-26": {
       "name": "UnicornSting 5-60GP",
@@ -251,7 +251,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     "BX-27": {
       "name": "Random Booster SphinxCowl Select",
@@ -260,7 +260,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     "BX-28": {
       "name": "String Launcher (Beyblade X)",
@@ -296,7 +296,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     "BX-32": {
       "name": "Wide Xtreme Stadium",
@@ -305,7 +305,7 @@
         "amount": 4400,
         "currency": "JPY"
       },
-      "listinoEur": 24.74
+      "listinoEur": 24.77
     },
     "BX-33": {
       "name": "WeissTiger 3-60U",
@@ -314,7 +314,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     "BX-34": {
       "name": "CobaltDragoon 2-60C",
@@ -323,7 +323,7 @@
         "amount": 2321,
         "currency": "JPY"
       },
-      "listinoEur": 13.05
+      "listinoEur": 13.07
     },
     "BX-35": {
       "name": "Random Booster Vol. 4",
@@ -332,7 +332,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     "BX-36": {
       "name": "Random Booster WhaleWave Select",
@@ -341,7 +341,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     "BX-37": {
       "name": "Double Xtreme Stadium Set",
@@ -350,7 +350,7 @@
         "amount": 8200,
         "currency": "JPY"
       },
-      "listinoEur": 46.11
+      "listinoEur": 46.16
     },
     "BX-38": {
       "name": "CrimsonGaruda 4-70TP",
@@ -359,7 +359,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     "BX-39": {
       "name": "Random Booster ShelterDrake Select",
@@ -368,7 +368,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     "BX-40": {
       "name": "Winder Launcher L",
@@ -386,7 +386,7 @@
         "amount": 1320,
         "currency": "JPY"
       },
-      "listinoEur": 7.42
+      "listinoEur": 7.43
     },
     "BX-42": {
       "name": "Rubber Custom Grip",
@@ -395,7 +395,7 @@
         "amount": 1320,
         "currency": "JPY"
       },
-      "listinoEur": 7.42
+      "listinoEur": 7.43
     },
     "BX-43": {
       "name": "Gear Case",
@@ -404,7 +404,7 @@
         "amount": 4000,
         "currency": "JPY"
       },
-      "listinoEur": 22.49
+      "listinoEur": 22.52
     },
     "BX-44": {
       "name": "TriceraPress M-85BS",
@@ -431,7 +431,7 @@
         "amount": 7500,
         "currency": "JPY"
       },
-      "listinoEur": 42.18
+      "listinoEur": 42.22
     },
     "BX-47": {
       "name": "String Launcher L",
@@ -449,7 +449,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     "BX-49": {
       "name": "DranStrike 4-50FF",
@@ -458,7 +458,7 @@
         "amount": 2200,
         "currency": "JPY"
       },
-      "listinoEur": 12.37
+      "listinoEur": 12.39
     },
     "BX-50": {
       "name": "Random Booster Vol. 11",
@@ -467,7 +467,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     "BX-51": {
       "name": "String Launcher (Beyblade X)",
@@ -485,7 +485,7 @@
         "amount": 2300,
         "currency": "JPY"
       },
-      "listinoEur": 12.93
+      "listinoEur": 12.95
     },
     "BX-53": {
       "name": "All In One Set",
@@ -494,7 +494,7 @@
         "amount": 7480,
         "currency": "JPY"
       },
-      "listinoEur": 42.07
+      "listinoEur": 42.11
     },
     "BX-54": {
       "name": "SiegSuperion 0-70LP",
@@ -503,7 +503,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     "BX-56": {
       "name": "String Launcher L",
@@ -530,7 +530,7 @@
         "amount": 1980,
         "currency": "JPY"
       },
-      "listinoEur": 11.13
+      "listinoEur": 11.15
     },
     "UX-02": {
       "name": "HellsHammer 3-70H",
@@ -539,7 +539,7 @@
         "amount": 1980,
         "currency": "JPY"
       },
-      "listinoEur": 11.13
+      "listinoEur": 11.15
     },
     "UX-03": {
       "name": "WizardRod 5-70DB",
@@ -548,7 +548,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     "UX-04": {
       "name": "Battle Entry Set U",
@@ -557,7 +557,7 @@
         "amount": 6050,
         "currency": "JPY"
       },
-      "listinoEur": 34.02
+      "listinoEur": 34.06
     },
     "UX-05": {
       "name": "Random Booster ShinobiShadow Select",
@@ -566,7 +566,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     "UX-06": {
       "name": "LeonCrest 7-60GN",
@@ -575,7 +575,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     "UX-07": {
       "name": "PhoenixRudder Deck Set",
@@ -584,7 +584,7 @@
         "amount": 4100,
         "currency": "JPY"
       },
-      "listinoEur": 23.06
+      "listinoEur": 23.08
     },
     "UX-08": {
       "name": "SilverWolf 3-80FB",
@@ -593,7 +593,7 @@
         "amount": 2080,
         "currency": "JPY"
       },
-      "listinoEur": 11.7
+      "listinoEur": 11.71
     },
     "UX-09": {
       "name": "SamuraiSaber 2-70L",
@@ -602,7 +602,7 @@
         "amount": 3300,
         "currency": "JPY"
       },
-      "listinoEur": 18.56
+      "listinoEur": 18.58
     },
     "UX-10": {
       "name": "Customize Set U",
@@ -611,7 +611,7 @@
         "amount": 5700,
         "currency": "JPY"
       },
-      "listinoEur": 32.05
+      "listinoEur": 32.09
     },
     "UX-11": {
       "name": "ImpactDrake 9-60LR",
@@ -620,7 +620,7 @@
         "amount": 2420,
         "currency": "JPY"
       },
-      "listinoEur": 13.61
+      "listinoEur": 13.62
     },
     "UX-12": {
       "name": "Random Booster Vol. 5",
@@ -629,7 +629,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     "UX-13": {
       "name": "GolemRock 1-60UN",
@@ -638,7 +638,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     "UX-14": {
       "name": "ScorpioSpear 0-70Z",
@@ -647,7 +647,7 @@
         "amount": 2200,
         "currency": "JPY"
       },
-      "listinoEur": 12.37
+      "listinoEur": 12.39
     },
     "UX-15": {
       "name": "SharkScale Deck Set",
@@ -656,7 +656,7 @@
         "amount": 4200,
         "currency": "JPY"
       },
-      "listinoEur": 23.62
+      "listinoEur": 23.64
     },
     "UX-16": {
       "name": "Random Booster ClockMirage Select",
@@ -665,7 +665,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     "UX-17": {
       "name": "MeteorDragoon 3-70J",
@@ -674,7 +674,7 @@
         "amount": 2300,
         "currency": "JPY"
       },
-      "listinoEur": 12.93
+      "listinoEur": 12.95
     },
     "UX-18": {
       "name": "Random Booster Vol. 8",
@@ -683,7 +683,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     "UX-19": {
       "name": "BulletGriffon H",
@@ -692,7 +692,7 @@
         "amount": 2600,
         "currency": "JPY"
       },
-      "listinoEur": 14.62
+      "listinoEur": 14.64
     },
     "UX-20": {
       "name": "GloryValkyrie LF",
@@ -701,7 +701,7 @@
         "amount": 2700,
         "currency": "JPY"
       },
-      "listinoEur": 15.18
+      "listinoEur": 15.2
     },
     "UX-21": {
       "name": "HellsNether Deck Set",
@@ -710,7 +710,7 @@
         "amount": 4500,
         "currency": "JPY"
       },
-      "listinoEur": 25.31
+      "listinoEur": 25.33
     },
     "CX-01": {
       "name": "DranBrave S6-60V",
@@ -719,7 +719,7 @@
         "amount": 2200,
         "currency": "JPY"
       },
-      "listinoEur": 12.37
+      "listinoEur": 12.39
     },
     "CX-02": {
       "name": "WizardArc R4-55LO",
@@ -728,7 +728,7 @@
         "amount": 2200,
         "currency": "JPY"
       },
-      "listinoEur": 12.37
+      "listinoEur": 12.39
     },
     "CX-03": {
       "name": "PerseusDark B6-80W",
@@ -737,7 +737,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     "CX-04": {
       "name": "Battle Entry Set C",
@@ -746,7 +746,7 @@
         "amount": 6501,
         "currency": "JPY"
       },
-      "listinoEur": 36.56
+      "listinoEur": 36.6
     },
     "CX-05": {
       "name": "Random Booster Vol. 6",
@@ -755,7 +755,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     "CX-06": {
       "name": "Random Booster FoxBrush Select",
@@ -764,7 +764,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     "CX-07": {
       "name": "PegasusBlast ATr",
@@ -773,7 +773,7 @@
         "amount": 2600,
         "currency": "JPY"
       },
-      "listinoEur": 14.62
+      "listinoEur": 14.64
     },
     "CX-08": {
       "name": "Random Booster Vol. 7",
@@ -782,7 +782,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     "CX-09": {
       "name": "SolEclipse D5-70TK",
@@ -791,7 +791,7 @@
         "amount": 2500,
         "currency": "JPY"
       },
-      "listinoEur": 14.06
+      "listinoEur": 14.07
     },
     "CX-10": {
       "name": "WolfHunt F0-60DB",
@@ -800,7 +800,7 @@
         "amount": 1700,
         "currency": "JPY"
       },
-      "listinoEur": 9.56
+      "listinoEur": 9.57
     },
     "CX-11": {
       "name": "EmperorMight Deck Set",
@@ -809,7 +809,7 @@
         "amount": 5000,
         "currency": "JPY"
       },
-      "listinoEur": 28.12
+      "listinoEur": 28.15
     },
     "CX-12": {
       "name": "PhoenixFlare Z9-80WW",
@@ -818,7 +818,7 @@
         "amount": 1700,
         "currency": "JPY"
       },
-      "listinoEur": 9.56
+      "listinoEur": 9.57
     },
     "CX-13": {
       "name": "BahamutBlitz BK1-50I",
@@ -827,7 +827,7 @@
         "amount": 2200,
         "currency": "JPY"
       },
-      "listinoEur": 12.37
+      "listinoEur": 12.39
     },
     "CX-14": {
       "name": "KnightFortress GV8-70UN",
@@ -836,7 +836,7 @@
         "amount": 2200,
         "currency": "JPY"
       },
-      "listinoEur": 12.37
+      "listinoEur": 12.39
     },
     "CX-15": {
       "name": "RagnaRage FE4-55Y",
@@ -845,7 +845,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     "CX-16": {
       "name": "Start Dash Set C",
@@ -854,7 +854,7 @@
         "amount": 5650,
         "currency": "JPY"
       },
-      "listinoEur": 31.77
+      "listinoEur": 31.81
     },
     "CX-17": {
       "name": "Random Booster Vol. 10",
@@ -863,7 +863,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     "CX-18": {
       "name": "Random Booster BrachioWhip Select",
@@ -872,7 +872,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     "CX-19": {
       "name": "Random Booster CrocoTread Select",
@@ -881,7 +881,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     "CX-20": {
       "name": "Customize Set C",
@@ -890,7 +890,7 @@
         "amount": 6600,
         "currency": "JPY"
       },
-      "listinoEur": 37.12
+      "listinoEur": 37.16
     },
     "BX-00": {
       "name": "DranSword 3-60F",
@@ -899,7 +899,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     "UX-00": {
       "name": "GloryValkyrie LF",
@@ -908,7 +908,7 @@
         "amount": 2800,
         "currency": "JPY"
       },
-      "listinoEur": 15.75
+      "listinoEur": 15.76
     },
     "CX-00": {
       "name": "TigaRage FT3-60T",
@@ -917,7 +917,7 @@
         "amount": 2750,
         "currency": "JPY"
       },
-      "listinoEur": 15.47
+      "listinoEur": 15.48
     }
   },
   "byName": [
@@ -930,7 +930,7 @@
         "amount": 24.99,
         "currency": "USD"
       },
-      "listinoEur": 22.21
+      "listinoEur": 22.26
     },
     {
       "norm": "cobaltdragoondeluxeleftspinstringlauncherset",
@@ -941,7 +941,7 @@
         "amount": 19.99,
         "currency": "USD"
       },
-      "listinoEur": 17.76
+      "listinoEur": 17.81
     },
     {
       "norm": "obiwankenobiandgeneralgrievousmultipackset",
@@ -952,7 +952,7 @@
         "amount": 24.99,
         "currency": "USD"
       },
-      "listinoEur": 22.21
+      "listinoEur": 22.26
     },
     {
       "norm": "bitecrocdeluxestringlaunchercustomgripset",
@@ -963,7 +963,7 @@
         "amount": 29.99,
         "currency": "USD"
       },
-      "listinoEur": 26.65
+      "listinoEur": 26.72
     },
     {
       "norm": "spinosaurusandquetzalcoatlusmultipackset",
@@ -974,7 +974,7 @@
         "amount": 24.99,
         "currency": "USD"
       },
-      "listinoEur": 22.21
+      "listinoEur": 22.26
     },
     {
       "norm": "misterfantasticanddoctordoommultipackset",
@@ -985,7 +985,7 @@
         "amount": 29.99,
         "currency": "USD"
       },
-      "listinoEur": 26.65
+      "listinoEur": 26.72
     },
     {
       "norm": "themandalorianandmoffgideonmultipackset",
@@ -996,7 +996,7 @@
         "amount": 24.99,
         "currency": "USD"
       },
-      "listinoEur": 22.21
+      "listinoEur": 22.26
     },
     {
       "norm": "calibursamuraiandobsidianshelldualpack",
@@ -1007,7 +1007,7 @@
         "amount": 17.99,
         "currency": "USD"
       },
-      "listinoEur": 15.99
+      "listinoEur": 16.03
     },
     {
       "norm": "lukeskywalkeranddarthvadermultipackset",
@@ -1018,7 +1018,7 @@
         "amount": 24.99,
         "currency": "USD"
       },
-      "listinoEur": 22.21
+      "listinoEur": 22.26
     },
     {
       "norm": "optimusprimalandstarscreammultipackset",
@@ -1029,7 +1029,7 @@
         "amount": 24.99,
         "currency": "USD"
       },
-      "listinoEur": 22.21
+      "listinoEur": 22.26
     },
     {
       "norm": "milesmoralesandgreengoblinmultipackset",
@@ -1040,7 +1040,7 @@
         "amount": 29.99,
         "currency": "USD"
       },
-      "listinoEur": 26.65
+      "listinoEur": 26.72
     },
     {
       "norm": "bracetriceratopsanddaggerdrandualpack",
@@ -1051,7 +1051,7 @@
         "amount": 17.99,
         "currency": "USD"
       },
-      "listinoEur": 15.99
+      "listinoEur": 16.03
     },
     {
       "norm": "captainamericaandredhulkmultipackset",
@@ -1062,7 +1062,7 @@
         "amount": 24.99,
         "currency": "USD"
       },
-      "listinoEur": 22.21
+      "listinoEur": 22.26
     },
     {
       "norm": "chewbaccaandstormtroopermultipackset",
@@ -1073,7 +1073,7 @@
         "amount": 29.99,
         "currency": "USD"
       },
-      "listinoEur": 26.65
+      "listinoEur": 26.72
     },
     {
       "norm": "optimusprimeandbumblebeemultipackset",
@@ -1084,7 +1084,7 @@
         "amount": 29.99,
         "currency": "USD"
       },
-      "listinoEur": 26.65
+      "listinoEur": 26.72
     },
     {
       "norm": "chainincendioandarrowwizarddualpack",
@@ -1095,7 +1095,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "norm": "circleghostandchainincendiodualpack",
@@ -1106,7 +1106,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "norm": "optimusprimeandmegatronmultipackset",
@@ -1117,7 +1117,7 @@
         "amount": 24.99,
         "currency": "USD"
       },
-      "listinoEur": 22.21
+      "listinoEur": 22.26
     },
     {
       "norm": "beattyrannoandknifeshinobidualpack",
@@ -1128,7 +1128,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "norm": "soarphoenixdeluxestringlauncherset",
@@ -1139,7 +1139,7 @@
         "amount": 19.99,
         "currency": "USD"
       },
-      "listinoEur": 17.76
+      "listinoEur": 17.81
     },
     {
       "norm": "bumblebeeandshockwavemultipackset",
@@ -1150,7 +1150,7 @@
         "amount": 29.99,
         "currency": "USD"
       },
-      "listinoEur": 26.65
+      "listinoEur": 26.72
     },
     {
       "norm": "knifeshinobiandkeelsharkdualpack",
@@ -1161,7 +1161,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "norm": "circleghostandhackvikingdualpack",
@@ -1172,7 +1172,7 @@
         "amount": 17.99,
         "currency": "USD"
       },
-      "listinoEur": 15.99
+      "listinoEur": 16.03
     },
     {
       "norm": "spearscorpioandtailviperdualpack",
@@ -1183,7 +1183,7 @@
         "amount": 17.99,
         "currency": "USD"
       },
-      "listinoEur": 15.99
+      "listinoEur": 16.03
     },
     {
       "norm": "bitecrocandstingunicorndualpack",
@@ -1194,7 +1194,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "norm": "coilorochiandpearltigerdualpack",
@@ -1205,7 +1205,7 @@
         "amount": 17.99,
         "currency": "USD"
       },
-      "listinoEur": 15.99
+      "listinoEur": 16.03
     },
     {
       "norm": "groguandsnowtroopermultipackset",
@@ -1216,7 +1216,7 @@
         "amount": 29.99,
         "currency": "USD"
       },
-      "listinoEur": 26.65
+      "listinoEur": 26.72
     },
     {
       "norm": "doublextrememotorizedbeystadium",
@@ -1227,7 +1227,7 @@
         "amount": 89.99,
         "currency": "USD"
       },
-      "listinoEur": 79.97
+      "listinoEur": 80.17
     },
     {
       "norm": "galewyvernandtailviperdualpack",
@@ -1238,7 +1238,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "norm": "galewyvernandsworddrandualpack",
@@ -1249,7 +1249,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "norm": "cowlsphinxandcrestleondualpack",
@@ -1260,7 +1260,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "norm": "pearltigerandgillsharkdualpack",
@@ -1271,7 +1271,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "norm": "tacklegoatandsworddrandualpack",
@@ -1282,7 +1282,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "norm": "tailviperandsworddrandualpack",
@@ -1293,7 +1293,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "norm": "yellkongandhelmknightdualpack",
@@ -1304,7 +1304,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "norm": "clampcrabandcrestleondualpack",
@@ -1315,7 +1315,7 @@
         "amount": 17.99,
         "currency": "USD"
       },
-      "listinoEur": 15.99
+      "listinoEur": 16.03
     },
     {
       "norm": "spidermanandvenommultipackset",
@@ -1326,7 +1326,7 @@
         "amount": 24.99,
         "currency": "USD"
       },
-      "listinoEur": 22.21
+      "listinoEur": 22.26
     },
     {
       "norm": "trexandmosasaurusmultipackset",
@@ -1337,7 +1337,7 @@
         "amount": 24.99,
         "currency": "USD"
       },
-      "listinoEur": 22.21
+      "listinoEur": 22.26
     },
     {
       "norm": "ironmanandthanosmultipackset",
@@ -1348,7 +1348,7 @@
         "amount": 24.99,
         "currency": "USD"
       },
-      "listinoEur": 22.21
+      "listinoEur": 22.26
     },
     {
       "norm": "spidermanandhulkmultipackset",
@@ -1359,7 +1359,7 @@
         "amount": 29.99,
         "currency": "USD"
       },
-      "listinoEur": 26.65
+      "listinoEur": 26.72
     },
     {
       "norm": "beyblade25thanniversaryset",
@@ -1370,7 +1370,7 @@
         "amount": 79.99,
         "currency": "USD"
       },
-      "listinoEur": 71.08
+      "listinoEur": 71.26
     },
     {
       "norm": "deluxestringlauncher2pack",
@@ -1389,7 +1389,7 @@
         "amount": 24.99,
         "currency": "USD"
       },
-      "listinoEur": 22.21
+      "listinoEur": 22.26
     },
     {
       "norm": "suppresssuperion070lp",
@@ -1400,7 +1400,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "norm": "ridgetriceratops980gn",
@@ -1411,7 +1411,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "norm": "infinityrailbattleset",
@@ -1422,7 +1422,7 @@
         "amount": 54.99,
         "currency": "USD"
       },
-      "listinoEur": 48.87
+      "listinoEur": 48.99
     },
     {
       "norm": "hurricaneenlilis755t",
@@ -1433,7 +1433,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "norm": "clashcarrybeystadium",
@@ -1444,7 +1444,7 @@
         "amount": 29.99,
         "currency": "USD"
       },
-      "listinoEur": 26.65
+      "listinoEur": 26.72
     },
     {
       "norm": "sneakattackbattleset",
@@ -1455,7 +1455,7 @@
         "amount": 54.99,
         "currency": "USD"
       },
-      "listinoEur": 48.87
+      "listinoEur": 48.99
     },
     {
       "norm": "reaperincendiot470k",
@@ -1466,7 +1466,7 @@
         "amount": 12.99,
         "currency": "USD"
       },
-      "listinoEur": 11.54
+      "listinoEur": 11.57
     },
     {
       "norm": "flamecerberusw580wb",
@@ -1477,7 +1477,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "norm": "deltaunicornpo360gu",
@@ -1488,7 +1488,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "norm": "xtremeexpansionpack",
@@ -1499,7 +1499,7 @@
         "amount": 29.99,
         "currency": "USD"
       },
-      "listinoEur": 26.65
+      "listinoEur": 26.72
     },
     {
       "norm": "dropattackbattleset",
@@ -1510,7 +1510,7 @@
         "amount": 49.99,
         "currency": "USD"
       },
-      "listinoEur": 44.42
+      "listinoEur": 44.53
     },
     {
       "norm": "scytheincendio460t",
@@ -1521,7 +1521,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "norm": "shadowshinobi180mn",
@@ -1532,7 +1532,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "norm": "scarletgaruda470tp",
@@ -1543,7 +1543,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "norm": "hammerincendio370h",
@@ -1554,7 +1554,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "norm": "rudderphoenix470lf",
@@ -1565,7 +1565,7 @@
         "amount": 12.99,
         "currency": "USD"
       },
-      "listinoEur": 11.54
+      "listinoEur": 11.57
     },
     {
       "norm": "featherphoenix260n",
@@ -1576,7 +1576,7 @@
         "amount": 12.99,
         "currency": "USD"
       },
-      "listinoEur": 11.54
+      "listinoEur": 11.57
     },
     {
       "norm": "wrigglekrakens385o",
@@ -1587,7 +1587,7 @@
         "amount": 12.99,
         "currency": "USD"
       },
-      "listinoEur": 11.54
+      "listinoEur": 11.57
     },
     {
       "norm": "armorknightgv870un",
@@ -1598,7 +1598,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "norm": "whipbrachioow570nr",
@@ -1609,7 +1609,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "norm": "blitzbahamutbk150i",
@@ -1620,7 +1620,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "norm": "scytheincendio380b",
@@ -1631,7 +1631,7 @@
         "amount": 7.99,
         "currency": "USD"
       },
-      "listinoEur": 7.1
+      "listinoEur": 7.12
     },
     {
       "norm": "xtremebattlerspack",
@@ -1650,7 +1650,7 @@
         "amount": 29.99,
         "currency": "USD"
       },
-      "listinoEur": 26.65
+      "listinoEur": 26.72
     },
     {
       "norm": "sterlingwolf380fb",
@@ -1661,7 +1661,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "norm": "shelterdrake780gp",
@@ -1672,7 +1672,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "norm": "shatterhorus965gb",
@@ -1683,7 +1683,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "norm": "glarecyclops755fb",
@@ -1694,7 +1694,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "norm": "stingunicorn560gp",
@@ -1705,7 +1705,7 @@
         "amount": 7.99,
         "currency": "USD"
       },
-      "listinoEur": 7.1
+      "listinoEur": 7.12
     },
     {
       "norm": "obsidianshell460d",
@@ -1716,7 +1716,7 @@
         "amount": 7.99,
         "currency": "USD"
       },
-      "listinoEur": 7.1
+      "listinoEur": 7.12
     },
     {
       "norm": "yggdrasilteampack",
@@ -1727,7 +1727,7 @@
         "amount": 29.99,
         "currency": "USD"
       },
-      "listinoEur": 26.65
+      "listinoEur": 26.72
     },
     {
       "norm": "dranzerspiral380t",
@@ -1738,7 +1738,7 @@
         "amount": 12.99,
         "currency": "USD"
       },
-      "listinoEur": 11.54
+      "listinoEur": 11.57
     },
     {
       "norm": "dranzerspiral380t",
@@ -1757,7 +1757,7 @@
         "amount": 12.99,
         "currency": "USD"
       },
-      "listinoEur": 11.54
+      "listinoEur": 11.57
     },
     {
       "norm": "dracielshield760d",
@@ -1768,7 +1768,7 @@
         "amount": 12.99,
         "currency": "USD"
       },
-      "listinoEur": 11.54
+      "listinoEur": 11.57
     },
     {
       "norm": "lanceknight480hn",
@@ -1779,7 +1779,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "norm": "couragedrans660v",
@@ -1790,7 +1790,7 @@
         "amount": 12.99,
         "currency": "USD"
       },
-      "listinoEur": 11.54
+      "listinoEur": 11.57
     },
     {
       "norm": "darkperseusb680w",
@@ -1801,7 +1801,7 @@
         "amount": 12.99,
         "currency": "USD"
       },
-      "listinoEur": 11.54
+      "listinoEur": 11.57
     },
     {
       "norm": "antlerstagb260hn",
@@ -1812,7 +1812,7 @@
         "amount": 12.99,
         "currency": "USD"
       },
-      "listinoEur": 11.54
+      "listinoEur": 11.57
     },
     {
       "norm": "reaperrhinoc455d",
@@ -1823,7 +1823,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "norm": "treadcroctq550gn",
@@ -1834,7 +1834,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "norm": "gloryvalkerionlf",
@@ -1845,7 +1845,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "norm": "steelsamurai480t",
@@ -1856,7 +1856,7 @@
         "amount": 7.99,
         "currency": "USD"
       },
-      "listinoEur": 7.1
+      "listinoEur": 7.12
     },
     {
       "norm": "roartyranno960gf",
@@ -1867,7 +1867,7 @@
         "amount": 7.99,
         "currency": "USD"
       },
-      "listinoEur": 7.1
+      "listinoEur": 7.12
     },
     {
       "norm": "arrowwizard480gb",
@@ -1878,7 +1878,7 @@
         "amount": 7.99,
         "currency": "USD"
       },
-      "listinoEur": 7.1
+      "listinoEur": 7.12
     },
     {
       "norm": "lanceknight360lf",
@@ -1889,7 +1889,7 @@
         "amount": 7.99,
         "currency": "USD"
       },
-      "listinoEur": 7.1
+      "listinoEur": 7.12
     },
     {
       "norm": "shelterdrake570o",
@@ -1900,7 +1900,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "norm": "arrowwizard480b",
@@ -1911,7 +1911,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "norm": "wandwizard570db",
@@ -1922,7 +1922,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "norm": "busterdran570db",
@@ -1933,7 +1933,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "norm": "stunmedusa960gb",
@@ -1944,7 +1944,7 @@
         "amount": 12.99,
         "currency": "USD"
       },
-      "listinoEur": 11.54
+      "listinoEur": 11.57
     },
     {
       "norm": "arcwizardr455lo",
@@ -1955,7 +1955,7 @@
         "amount": 12.99,
         "currency": "USD"
       },
-      "listinoEur": 11.54
+      "listinoEur": 11.57
     },
     {
       "norm": "forthornetr760t",
@@ -1966,7 +1966,7 @@
         "amount": 12.99,
         "currency": "USD"
       },
-      "listinoEur": 11.54
+      "listinoEur": 11.57
     },
     {
       "norm": "strikedran450ff",
@@ -1977,7 +1977,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "norm": "rageragnafe455y",
@@ -1988,7 +1988,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "norm": "netherincendioz",
@@ -1999,7 +1999,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "norm": "ringaether080ds",
@@ -2010,7 +2010,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "norm": "cowlsphinx980gn",
@@ -2021,7 +2021,7 @@
         "amount": 7.99,
         "currency": "USD"
       },
-      "listinoEur": 7.1
+      "listinoEur": 7.12
     },
     {
       "norm": "arrowwizard480o",
@@ -2032,7 +2032,7 @@
         "amount": 7.99,
         "currency": "USD"
       },
-      "listinoEur": 7.1
+      "listinoEur": 7.12
     },
     {
       "norm": "soarphoenix580h",
@@ -2043,7 +2043,7 @@
         "amount": 7.99,
         "currency": "USD"
       },
-      "listinoEur": 7.1
+      "listinoEur": 7.12
     },
     {
       "norm": "scaleshark450uf",
@@ -2054,7 +2054,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "norm": "cobaltdrake460f",
@@ -2065,7 +2065,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "norm": "mirageclock965b",
@@ -2076,7 +2076,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "norm": "busterdran570db",
@@ -2087,7 +2087,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "norm": "rivalrumblepack",
@@ -2106,7 +2106,7 @@
         "amount": 12.99,
         "currency": "USD"
       },
-      "listinoEur": 11.54
+      "listinoEur": 11.57
     },
     {
       "norm": "xtremebattleset",
@@ -2117,7 +2117,7 @@
         "amount": 49.99,
         "currency": "USD"
       },
-      "listinoEur": 44.42
+      "listinoEur": 44.53
     },
     {
       "norm": "helmknight380n",
@@ -2128,7 +2128,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "norm": "busterdran160a",
@@ -2139,7 +2139,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "norm": "wandwizard160r",
@@ -2150,7 +2150,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "norm": "rockgolem160un",
@@ -2161,7 +2161,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "norm": "brushfoxj970gr",
@@ -2172,7 +2172,7 @@
         "amount": 12.99,
         "currency": "USD"
       },
-      "listinoEur": 11.54
+      "listinoEur": 11.57
     },
     {
       "norm": "rocketgriffonh",
@@ -2183,7 +2183,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "norm": "keelshark360lf",
@@ -2194,7 +2194,7 @@
         "amount": 7.99,
         "currency": "USD"
       },
-      "listinoEur": 7.1
+      "listinoEur": 7.12
     },
     {
       "norm": "talonptera380b",
@@ -2205,7 +2205,7 @@
         "amount": 7.99,
         "currency": "USD"
       },
-      "listinoEur": 7.1
+      "listinoEur": 7.12
     },
     {
       "norm": "savagebear360s",
@@ -2216,7 +2216,7 @@
         "amount": 7.99,
         "currency": "USD"
       },
-      "listinoEur": 7.1
+      "listinoEur": 7.12
     },
     {
       "norm": "daggerdran470q",
@@ -2227,7 +2227,7 @@
         "amount": 7.99,
         "currency": "USD"
       },
-      "listinoEur": 7.1
+      "listinoEur": 7.12
     },
     {
       "norm": "cursemummy755w",
@@ -2238,7 +2238,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "norm": "savagebear560f",
@@ -2249,7 +2249,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "norm": "beystadium2024",
@@ -2260,7 +2260,7 @@
         "amount": 12.99,
         "currency": "USD"
       },
-      "listinoEur": 11.54
+      "listinoEur": 11.57
     },
     {
       "norm": "beystadium2026",
@@ -2271,7 +2271,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "norm": "widebeystadium",
@@ -2282,7 +2282,7 @@
         "amount": 59.99,
         "currency": "USD"
       },
-      "listinoEur": 53.31
+      "listinoEur": 53.44
     },
     {
       "norm": "winderlauncher",
@@ -2293,7 +2293,7 @@
         "amount": 7.99,
         "currency": "USD"
       },
-      "listinoEur": 7.1
+      "listinoEur": 7.12
     },
     {
       "norm": "sworddran360f",
@@ -2304,7 +2304,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "norm": "fangleont460u",
@@ -2315,7 +2315,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "norm": "seizejaguarhn",
@@ -2326,7 +2326,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "norm": "hornrhino380s",
@@ -2337,7 +2337,7 @@
         "amount": 7.99,
         "currency": "USD"
       },
-      "listinoEur": 7.1
+      "listinoEur": 7.12
     },
     {
       "norm": "keelshark160q",
@@ -2348,7 +2348,7 @@
         "amount": 7.99,
         "currency": "USD"
       },
-      "listinoEur": 7.1
+      "listinoEur": 7.12
     },
     {
       "norm": "tidewhale580e",
@@ -2359,7 +2359,7 @@
         "amount": 7.99,
         "currency": "USD"
       },
-      "listinoEur": 7.1
+      "listinoEur": 7.12
     },
     {
       "norm": "yellkong360gb",
@@ -2370,7 +2370,7 @@
         "amount": 7.99,
         "currency": "USD"
       },
-      "listinoEur": 7.1
+      "listinoEur": 7.12
     },
     {
       "norm": "xtremestadium",
@@ -2381,7 +2381,7 @@
         "amount": 49.99,
         "currency": "USD"
       },
-      "listinoEur": 44.42
+      "listinoEur": 44.53
     },
     {
       "norm": "clawleon560p",
@@ -2392,7 +2392,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "norm": "valorbisonfb",
@@ -2403,7 +2403,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "norm": "gustbat385gp",
@@ -2414,7 +2414,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "norm": "nflcxtoppack",
@@ -2425,7 +2425,7 @@
         "amount": 34.99,
         "currency": "USD"
       },
-      "listinoEur": 31.09
+      "listinoEur": 31.17
     }
   ],
   "products": [
@@ -2444,7 +2444,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "BX-00",
@@ -2461,7 +2461,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "BX-00",
@@ -2479,7 +2479,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "BX-00",
@@ -2497,7 +2497,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "BX-00",
@@ -2515,7 +2515,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "BX-00",
@@ -2533,7 +2533,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "BX-00",
@@ -2551,7 +2551,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "BX-00",
@@ -2569,7 +2569,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "BX-00",
@@ -2586,7 +2586,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "BX-00",
@@ -2604,7 +2604,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "BX-00",
@@ -2622,7 +2622,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "BX-00",
@@ -2639,7 +2639,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "BX-00",
@@ -2657,7 +2657,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "BX-00",
@@ -2676,7 +2676,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "BX-00",
@@ -2693,7 +2693,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "BX-00",
@@ -2710,7 +2710,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "BX-00",
@@ -2730,7 +2730,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "BX-00",
@@ -2747,7 +2747,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "BX-00",
@@ -2764,7 +2764,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "BX-00",
@@ -2781,7 +2781,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "BX-00",
@@ -2799,7 +2799,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "BX-00",
@@ -2817,7 +2817,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "BX-00",
@@ -2834,7 +2834,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "BX-00",
@@ -2852,7 +2852,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "BX-00",
@@ -2869,7 +2869,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "BX-00",
@@ -2887,7 +2887,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "BX-00",
@@ -2904,7 +2904,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "BX-01",
@@ -2922,7 +2922,7 @@
         "amount": 1980,
         "currency": "JPY"
       },
-      "listinoEur": 11.13
+      "listinoEur": 11.15
     },
     {
       "code": "BX-02",
@@ -2940,7 +2940,7 @@
         "amount": 1980,
         "currency": "JPY"
       },
-      "listinoEur": 11.13
+      "listinoEur": 11.15
     },
     {
       "code": "BX-03",
@@ -2958,7 +2958,7 @@
         "amount": 1980,
         "currency": "JPY"
       },
-      "listinoEur": 11.13
+      "listinoEur": 11.15
     },
     {
       "code": "BX-04",
@@ -2976,7 +2976,7 @@
         "amount": 1980,
         "currency": "JPY"
       },
-      "listinoEur": 11.13
+      "listinoEur": 11.15
     },
     {
       "code": "BX-05",
@@ -2994,7 +2994,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-06",
@@ -3012,7 +3012,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-07",
@@ -3030,7 +3030,7 @@
         "amount": 5720,
         "currency": "JPY"
       },
-      "listinoEur": 32.17
+      "listinoEur": 32.2
     },
     {
       "code": "BX-08",
@@ -3048,7 +3048,7 @@
         "amount": 3960,
         "currency": "JPY"
       },
-      "listinoEur": 22.27
+      "listinoEur": 22.29
     },
     {
       "code": "BX-08",
@@ -3066,7 +3066,7 @@
         "amount": 3960,
         "currency": "JPY"
       },
-      "listinoEur": 22.27
+      "listinoEur": 22.29
     },
     {
       "code": "BX-08",
@@ -3084,7 +3084,7 @@
         "amount": 3960,
         "currency": "JPY"
       },
-      "listinoEur": 22.27
+      "listinoEur": 22.29
     },
     {
       "code": "BX-13",
@@ -3102,7 +3102,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-14",
@@ -3120,7 +3120,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-14",
@@ -3138,7 +3138,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-14",
@@ -3156,7 +3156,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-14",
@@ -3174,7 +3174,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-14",
@@ -3192,7 +3192,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-14",
@@ -3210,7 +3210,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-15",
@@ -3228,7 +3228,7 @@
         "amount": 1980,
         "currency": "JPY"
       },
-      "listinoEur": 11.13
+      "listinoEur": 11.15
     },
     {
       "code": "BX-16",
@@ -3246,7 +3246,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-16",
@@ -3264,7 +3264,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-16",
@@ -3282,7 +3282,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-17",
@@ -3300,7 +3300,7 @@
         "amount": 6050,
         "currency": "JPY"
       },
-      "listinoEur": 34.02
+      "listinoEur": 34.06
     },
     {
       "code": "BX-17",
@@ -3318,7 +3318,7 @@
         "amount": 6050,
         "currency": "JPY"
       },
-      "listinoEur": 34.02
+      "listinoEur": 34.06
     },
     {
       "code": "BX-19",
@@ -3336,7 +3336,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-20",
@@ -3354,7 +3354,7 @@
         "amount": 3960,
         "currency": "JPY"
       },
-      "listinoEur": 22.27
+      "listinoEur": 22.29
     },
     {
       "code": "BX-20",
@@ -3372,7 +3372,7 @@
         "amount": 3960,
         "currency": "JPY"
       },
-      "listinoEur": 22.27
+      "listinoEur": 22.29
     },
     {
       "code": "BX-20",
@@ -3390,7 +3390,7 @@
         "amount": 3960,
         "currency": "JPY"
       },
-      "listinoEur": 22.27
+      "listinoEur": 22.29
     },
     {
       "code": "BX-21",
@@ -3408,7 +3408,7 @@
         "amount": 3960,
         "currency": "JPY"
       },
-      "listinoEur": 22.27
+      "listinoEur": 22.29
     },
     {
       "code": "BX-21",
@@ -3426,7 +3426,7 @@
         "amount": 3960,
         "currency": "JPY"
       },
-      "listinoEur": 22.27
+      "listinoEur": 22.29
     },
     {
       "code": "BX-21",
@@ -3444,7 +3444,7 @@
         "amount": 3960,
         "currency": "JPY"
       },
-      "listinoEur": 22.27
+      "listinoEur": 22.29
     },
     {
       "code": "BX-22",
@@ -3462,7 +3462,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-23",
@@ -3481,7 +3481,7 @@
         "amount": 2420,
         "currency": "JPY"
       },
-      "listinoEur": 13.61
+      "listinoEur": 13.62
     },
     {
       "code": "BX-24",
@@ -3499,7 +3499,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-24",
@@ -3517,7 +3517,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-24",
@@ -3535,7 +3535,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-24",
@@ -3553,7 +3553,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-24",
@@ -3571,7 +3571,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-24",
@@ -3589,7 +3589,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-26",
@@ -3607,7 +3607,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-27",
@@ -3625,7 +3625,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-27",
@@ -3643,7 +3643,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-27",
@@ -3661,7 +3661,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-31",
@@ -3680,7 +3680,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-31",
@@ -3699,7 +3699,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-31",
@@ -3717,7 +3717,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-31",
@@ -3735,7 +3735,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-31",
@@ -3753,7 +3753,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-31",
@@ -3771,7 +3771,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-33",
@@ -3789,7 +3789,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-34",
@@ -3806,7 +3806,7 @@
         "amount": 2321,
         "currency": "JPY"
       },
-      "listinoEur": 13.05
+      "listinoEur": 13.07
     },
     {
       "code": "BX-35",
@@ -3824,7 +3824,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-35",
@@ -3842,7 +3842,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-35",
@@ -3860,7 +3860,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-35",
@@ -3878,7 +3878,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-35",
@@ -3897,7 +3897,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-35",
@@ -3915,7 +3915,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-36",
@@ -3933,7 +3933,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-36",
@@ -3951,7 +3951,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-36",
@@ -3969,7 +3969,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-38",
@@ -3987,7 +3987,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-39",
@@ -4004,7 +4004,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-39",
@@ -4021,7 +4021,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-39",
@@ -4038,7 +4038,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "BX-44",
@@ -4092,7 +4092,7 @@
         "amount": 7500,
         "currency": "JPY"
       },
-      "listinoEur": 42.18
+      "listinoEur": 42.22
     },
     {
       "code": "BX-46",
@@ -4109,7 +4109,7 @@
         "amount": 7500,
         "currency": "JPY"
       },
-      "listinoEur": 42.18
+      "listinoEur": 42.22
     },
     {
       "code": "BX-48",
@@ -4126,7 +4126,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "BX-48",
@@ -4144,7 +4144,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "BX-48",
@@ -4162,7 +4162,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "BX-48",
@@ -4180,7 +4180,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "BX-48",
@@ -4198,7 +4198,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "CX-00",
@@ -4217,7 +4217,7 @@
         "amount": 2750,
         "currency": "JPY"
       },
-      "listinoEur": 15.47
+      "listinoEur": 15.48
     },
     {
       "code": "CX-00",
@@ -4236,7 +4236,7 @@
         "amount": 2750,
         "currency": "JPY"
       },
-      "listinoEur": 15.47
+      "listinoEur": 15.48
     },
     {
       "code": "CX-00",
@@ -4255,7 +4255,7 @@
         "amount": 2750,
         "currency": "JPY"
       },
-      "listinoEur": 15.47
+      "listinoEur": 15.48
     },
     {
       "code": "CX-00",
@@ -4274,7 +4274,7 @@
         "amount": 2750,
         "currency": "JPY"
       },
-      "listinoEur": 15.47
+      "listinoEur": 15.48
     },
     {
       "code": "CX-00",
@@ -4294,7 +4294,7 @@
         "amount": 2750,
         "currency": "JPY"
       },
-      "listinoEur": 15.47
+      "listinoEur": 15.48
     },
     {
       "code": "CX-01",
@@ -4314,7 +4314,7 @@
         "amount": 2200,
         "currency": "JPY"
       },
-      "listinoEur": 12.37
+      "listinoEur": 12.39
     },
     {
       "code": "CX-02",
@@ -4333,7 +4333,7 @@
         "amount": 2200,
         "currency": "JPY"
       },
-      "listinoEur": 12.37
+      "listinoEur": 12.39
     },
     {
       "code": "CX-03",
@@ -4352,7 +4352,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "CX-04",
@@ -4372,7 +4372,7 @@
         "amount": 6501,
         "currency": "JPY"
       },
-      "listinoEur": 36.56
+      "listinoEur": 36.6
     },
     {
       "code": "CX-04",
@@ -4391,7 +4391,7 @@
         "amount": 6501,
         "currency": "JPY"
       },
-      "listinoEur": 36.56
+      "listinoEur": 36.6
     },
     {
       "code": "CX-05",
@@ -4411,7 +4411,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "CX-05",
@@ -4430,7 +4430,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "CX-05",
@@ -4450,7 +4450,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "CX-05",
@@ -4468,7 +4468,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "CX-05",
@@ -4486,7 +4486,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "CX-05",
@@ -4504,7 +4504,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "CX-06",
@@ -4523,7 +4523,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "CX-06",
@@ -4542,7 +4542,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "CX-06",
@@ -4561,7 +4561,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "CX-07",
@@ -4580,7 +4580,7 @@
         "amount": 2600,
         "currency": "JPY"
       },
-      "listinoEur": 14.62
+      "listinoEur": 14.64
     },
     {
       "code": "CX-08",
@@ -4600,7 +4600,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "CX-08",
@@ -4619,7 +4619,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "CX-08",
@@ -4639,7 +4639,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "CX-08",
@@ -4657,7 +4657,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "CX-08",
@@ -4675,7 +4675,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "CX-08",
@@ -4692,7 +4692,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "CX-09",
@@ -4711,7 +4711,7 @@
         "amount": 2500,
         "currency": "JPY"
       },
-      "listinoEur": 14.06
+      "listinoEur": 14.07
     },
     {
       "code": "CX-10",
@@ -4730,7 +4730,7 @@
         "amount": 1700,
         "currency": "JPY"
       },
-      "listinoEur": 9.56
+      "listinoEur": 9.57
     },
     {
       "code": "CX-11",
@@ -4749,7 +4749,7 @@
         "amount": 5000,
         "currency": "JPY"
       },
-      "listinoEur": 28.12
+      "listinoEur": 28.15
     },
     {
       "code": "CX-11",
@@ -4768,7 +4768,7 @@
         "amount": 5000,
         "currency": "JPY"
       },
-      "listinoEur": 28.12
+      "listinoEur": 28.15
     },
     {
       "code": "CX-11",
@@ -4786,7 +4786,7 @@
         "amount": 5000,
         "currency": "JPY"
       },
-      "listinoEur": 28.12
+      "listinoEur": 28.15
     },
     {
       "code": "CX-12",
@@ -4806,7 +4806,7 @@
         "amount": 1700,
         "currency": "JPY"
       },
-      "listinoEur": 9.56
+      "listinoEur": 9.57
     },
     {
       "code": "CX-13",
@@ -4826,7 +4826,7 @@
         "amount": 2200,
         "currency": "JPY"
       },
-      "listinoEur": 12.37
+      "listinoEur": 12.39
     },
     {
       "code": "CX-14",
@@ -4847,7 +4847,7 @@
         "amount": 2200,
         "currency": "JPY"
       },
-      "listinoEur": 12.37
+      "listinoEur": 12.39
     },
     {
       "code": "CX-15",
@@ -4867,7 +4867,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "CX-16",
@@ -4887,7 +4887,7 @@
         "amount": 5650,
         "currency": "JPY"
       },
-      "listinoEur": 31.77
+      "listinoEur": 31.81
     },
     {
       "code": "F9580",
@@ -4905,7 +4905,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "code": "F9581",
@@ -4923,7 +4923,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "code": "F9582",
@@ -4941,7 +4941,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "code": "F9583",
@@ -4959,7 +4959,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "code": "F9584",
@@ -4976,7 +4976,7 @@
         "amount": 12.99,
         "currency": "USD"
       },
-      "listinoEur": 11.54
+      "listinoEur": 11.57
     },
     {
       "code": "F9585",
@@ -5007,7 +5007,7 @@
         "amount": 24.99,
         "currency": "USD"
       },
-      "listinoEur": 22.21
+      "listinoEur": 22.26
     },
     {
       "code": "F9589",
@@ -5024,7 +5024,7 @@
         "amount": 24.99,
         "currency": "USD"
       },
-      "listinoEur": 22.21
+      "listinoEur": 22.26
     },
     {
       "code": "G0000",
@@ -5057,7 +5057,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "code": "G0188",
@@ -5075,7 +5075,7 @@
         "amount": 7.99,
         "currency": "USD"
       },
-      "listinoEur": 7.1
+      "listinoEur": 7.12
     },
     {
       "code": "G0190",
@@ -5093,7 +5093,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "code": "G0190",
@@ -5111,7 +5111,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "code": "G0192",
@@ -5129,7 +5129,7 @@
         "amount": 7.99,
         "currency": "USD"
       },
-      "listinoEur": 7.1
+      "listinoEur": 7.12
     },
     {
       "code": "G0193",
@@ -5147,7 +5147,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "code": "G0194",
@@ -5165,7 +5165,7 @@
         "amount": 7.99,
         "currency": "USD"
       },
-      "listinoEur": 7.1
+      "listinoEur": 7.12
     },
     {
       "code": "G0195",
@@ -5184,7 +5184,7 @@
         "amount": 7.99,
         "currency": "USD"
       },
-      "listinoEur": 7.1
+      "listinoEur": 7.12
     },
     {
       "code": "G0196",
@@ -5202,7 +5202,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "code": "G0196",
@@ -5220,7 +5220,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "code": "G0197",
@@ -5238,7 +5238,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "code": "G0197",
@@ -5256,7 +5256,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "code": "G0198",
@@ -5274,7 +5274,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "code": "G0198",
@@ -5292,7 +5292,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "code": "G0199",
@@ -5312,7 +5312,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "code": "G0199",
@@ -5330,7 +5330,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "code": "G0282",
@@ -5348,7 +5348,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "code": "G0282",
@@ -5366,7 +5366,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "code": "G0283",
@@ -5384,7 +5384,7 @@
         "amount": 7.99,
         "currency": "USD"
       },
-      "listinoEur": 7.1
+      "listinoEur": 7.12
     },
     {
       "code": "G0284",
@@ -5403,7 +5403,7 @@
         "amount": 7.99,
         "currency": "USD"
       },
-      "listinoEur": 7.1
+      "listinoEur": 7.12
     },
     {
       "code": "G0285",
@@ -5421,7 +5421,7 @@
         "amount": 7.99,
         "currency": "USD"
       },
-      "listinoEur": 7.1
+      "listinoEur": 7.12
     },
     {
       "code": "G0286",
@@ -5439,7 +5439,7 @@
         "amount": 7.99,
         "currency": "USD"
       },
-      "listinoEur": 7.1
+      "listinoEur": 7.12
     },
     {
       "code": "G0287",
@@ -5456,7 +5456,7 @@
         "amount": 24.99,
         "currency": "USD"
       },
-      "listinoEur": 22.21
+      "listinoEur": 22.26
     },
     {
       "code": "G0287",
@@ -5473,7 +5473,7 @@
         "amount": 24.99,
         "currency": "USD"
       },
-      "listinoEur": 22.21
+      "listinoEur": 22.26
     },
     {
       "code": "G0288",
@@ -5490,7 +5490,7 @@
         "amount": 24.99,
         "currency": "USD"
       },
-      "listinoEur": 22.21
+      "listinoEur": 22.26
     },
     {
       "code": "G0288",
@@ -5507,7 +5507,7 @@
         "amount": 24.99,
         "currency": "USD"
       },
-      "listinoEur": 22.21
+      "listinoEur": 22.26
     },
     {
       "code": "G0290",
@@ -5524,7 +5524,7 @@
         "amount": 24.99,
         "currency": "USD"
       },
-      "listinoEur": 22.21
+      "listinoEur": 22.26
     },
     {
       "code": "G0290",
@@ -5541,7 +5541,7 @@
         "amount": 24.99,
         "currency": "USD"
       },
-      "listinoEur": 22.21
+      "listinoEur": 22.26
     },
     {
       "code": "G0352",
@@ -5558,7 +5558,7 @@
         "amount": 24.99,
         "currency": "USD"
       },
-      "listinoEur": 22.21
+      "listinoEur": 22.26
     },
     {
       "code": "G0352",
@@ -5575,7 +5575,7 @@
         "amount": 24.99,
         "currency": "USD"
       },
-      "listinoEur": 22.21
+      "listinoEur": 22.26
     },
     {
       "code": "G0353",
@@ -5592,7 +5592,7 @@
         "amount": 24.99,
         "currency": "USD"
       },
-      "listinoEur": 22.21
+      "listinoEur": 22.26
     },
     {
       "code": "G0353",
@@ -5609,7 +5609,7 @@
         "amount": 24.99,
         "currency": "USD"
       },
-      "listinoEur": 22.21
+      "listinoEur": 22.26
     },
     {
       "code": "G1530",
@@ -5627,7 +5627,7 @@
         "amount": 7.99,
         "currency": "USD"
       },
-      "listinoEur": 7.1
+      "listinoEur": 7.12
     },
     {
       "code": "G1531",
@@ -5645,7 +5645,7 @@
         "amount": 7.99,
         "currency": "USD"
       },
-      "listinoEur": 7.1
+      "listinoEur": 7.12
     },
     {
       "code": "G1533",
@@ -5663,7 +5663,7 @@
         "amount": 7.99,
         "currency": "USD"
       },
-      "listinoEur": 7.1
+      "listinoEur": 7.12
     },
     {
       "code": "G1534",
@@ -5681,7 +5681,7 @@
         "amount": 7.99,
         "currency": "USD"
       },
-      "listinoEur": 7.1
+      "listinoEur": 7.12
     },
     {
       "code": "G1536",
@@ -5699,7 +5699,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "code": "G1537",
@@ -5717,7 +5717,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "code": "G1538",
@@ -5735,7 +5735,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "code": "G1539",
@@ -5753,7 +5753,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "code": "G1542",
@@ -5772,7 +5772,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "code": "G1542",
@@ -5790,7 +5790,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "code": "G1543",
@@ -5808,7 +5808,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "code": "G1543",
@@ -5826,7 +5826,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "code": "G1669",
@@ -5844,7 +5844,7 @@
         "amount": 7.99,
         "currency": "USD"
       },
-      "listinoEur": 7.1
+      "listinoEur": 7.12
     },
     {
       "code": "G1670",
@@ -5862,7 +5862,7 @@
         "amount": 7.99,
         "currency": "USD"
       },
-      "listinoEur": 7.1
+      "listinoEur": 7.12
     },
     {
       "code": "G1671",
@@ -5880,7 +5880,7 @@
         "amount": 7.99,
         "currency": "USD"
       },
-      "listinoEur": 7.1
+      "listinoEur": 7.12
     },
     {
       "code": "G1673",
@@ -5898,7 +5898,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "code": "G1674",
@@ -5916,7 +5916,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "code": "G1675",
@@ -5933,7 +5933,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "code": "G1676",
@@ -5952,7 +5952,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "code": "G1677",
@@ -5972,7 +5972,7 @@
         "amount": 12.99,
         "currency": "USD"
       },
-      "listinoEur": 11.54
+      "listinoEur": 11.57
     },
     {
       "code": "G1678",
@@ -5992,7 +5992,7 @@
         "amount": 12.99,
         "currency": "USD"
       },
-      "listinoEur": 11.54
+      "listinoEur": 11.57
     },
     {
       "code": "G1679",
@@ -6011,7 +6011,7 @@
         "amount": 12.99,
         "currency": "USD"
       },
-      "listinoEur": 11.54
+      "listinoEur": 11.57
     },
     {
       "code": "G1680",
@@ -6030,7 +6030,7 @@
         "amount": 12.99,
         "currency": "USD"
       },
-      "listinoEur": 11.54
+      "listinoEur": 11.57
     },
     {
       "code": "G1681",
@@ -6049,7 +6049,7 @@
         "amount": 12.99,
         "currency": "USD"
       },
-      "listinoEur": 11.54
+      "listinoEur": 11.57
     },
     {
       "code": "G1682",
@@ -6068,7 +6068,7 @@
         "amount": 12.99,
         "currency": "USD"
       },
-      "listinoEur": 11.54
+      "listinoEur": 11.57
     },
     {
       "code": "G1683",
@@ -6087,7 +6087,7 @@
         "amount": 12.99,
         "currency": "USD"
       },
-      "listinoEur": 11.54
+      "listinoEur": 11.57
     },
     {
       "code": "G1684",
@@ -6108,7 +6108,7 @@
         "amount": 12.99,
         "currency": "USD"
       },
-      "listinoEur": 11.54
+      "listinoEur": 11.57
     },
     {
       "code": "G1685",
@@ -6126,7 +6126,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "code": "G1685",
@@ -6144,7 +6144,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "code": "G1686",
@@ -6162,7 +6162,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "code": "G1686",
@@ -6180,7 +6180,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "code": "G1687",
@@ -6198,7 +6198,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "code": "G1687",
@@ -6216,7 +6216,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "code": "G1688",
@@ -6233,7 +6233,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "code": "G1688",
@@ -6251,7 +6251,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "code": "G1690",
@@ -6268,7 +6268,7 @@
         "amount": 24.99,
         "currency": "USD"
       },
-      "listinoEur": 22.21
+      "listinoEur": 22.26
     },
     {
       "code": "G1690",
@@ -6285,7 +6285,7 @@
         "amount": 24.99,
         "currency": "USD"
       },
-      "listinoEur": 22.21
+      "listinoEur": 22.26
     },
     {
       "code": "G1691",
@@ -6302,7 +6302,7 @@
         "amount": 29.99,
         "currency": "USD"
       },
-      "listinoEur": 26.65
+      "listinoEur": 26.72
     },
     {
       "code": "G1691",
@@ -6319,7 +6319,7 @@
         "amount": 29.99,
         "currency": "USD"
       },
-      "listinoEur": 26.65
+      "listinoEur": 26.72
     },
     {
       "code": "G1692",
@@ -6336,7 +6336,7 @@
         "amount": 29.99,
         "currency": "USD"
       },
-      "listinoEur": 26.65
+      "listinoEur": 26.72
     },
     {
       "code": "G1692",
@@ -6353,7 +6353,7 @@
         "amount": 29.99,
         "currency": "USD"
       },
-      "listinoEur": 26.65
+      "listinoEur": 26.72
     },
     {
       "code": "G1694",
@@ -6370,7 +6370,7 @@
         "amount": 24.99,
         "currency": "USD"
       },
-      "listinoEur": 22.21
+      "listinoEur": 22.26
     },
     {
       "code": "G1694",
@@ -6387,7 +6387,7 @@
         "amount": 24.99,
         "currency": "USD"
       },
-      "listinoEur": 22.21
+      "listinoEur": 22.26
     },
     {
       "code": "G1695",
@@ -6404,7 +6404,7 @@
         "amount": 29.99,
         "currency": "USD"
       },
-      "listinoEur": 26.65
+      "listinoEur": 26.72
     },
     {
       "code": "G1695",
@@ -6421,7 +6421,7 @@
         "amount": 29.99,
         "currency": "USD"
       },
-      "listinoEur": 26.65
+      "listinoEur": 26.72
     },
     {
       "code": "G1751",
@@ -6439,7 +6439,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "code": "G1752",
@@ -6457,7 +6457,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "code": "G1754",
@@ -6475,7 +6475,7 @@
         "amount": 7.99,
         "currency": "USD"
       },
-      "listinoEur": 7.1
+      "listinoEur": 7.12
     },
     {
       "code": "G1755",
@@ -6493,7 +6493,7 @@
         "amount": 7.99,
         "currency": "USD"
       },
-      "listinoEur": 7.1
+      "listinoEur": 7.12
     },
     {
       "code": "G1756",
@@ -6512,7 +6512,7 @@
         "amount": 7.99,
         "currency": "USD"
       },
-      "listinoEur": 7.1
+      "listinoEur": 7.12
     },
     {
       "code": "G1842",
@@ -6529,7 +6529,7 @@
         "amount": 12.99,
         "currency": "USD"
       },
-      "listinoEur": 11.54
+      "listinoEur": 11.57
     },
     {
       "code": "G1843",
@@ -6546,7 +6546,7 @@
         "amount": 12.99,
         "currency": "USD"
       },
-      "listinoEur": 11.54
+      "listinoEur": 11.57
     },
     {
       "code": "G1898",
@@ -6565,7 +6565,7 @@
         "amount": 24.99,
         "currency": "USD"
       },
-      "listinoEur": 22.21
+      "listinoEur": 22.26
     },
     {
       "code": "G2218",
@@ -6582,7 +6582,7 @@
         "amount": 12.99,
         "currency": "USD"
       },
-      "listinoEur": 11.54
+      "listinoEur": 11.57
     },
     {
       "code": "G2731",
@@ -6601,7 +6601,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "code": "G2732",
@@ -6618,7 +6618,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "code": "G2734",
@@ -6636,7 +6636,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "code": "G2738",
@@ -6653,7 +6653,7 @@
         "amount": 12.99,
         "currency": "USD"
       },
-      "listinoEur": 11.54
+      "listinoEur": 11.57
     },
     {
       "code": "G2739",
@@ -6671,7 +6671,7 @@
         "amount": 12.99,
         "currency": "USD"
       },
-      "listinoEur": 11.54
+      "listinoEur": 11.57
     },
     {
       "code": "G2740",
@@ -6689,7 +6689,7 @@
         "amount": 12.99,
         "currency": "USD"
       },
-      "listinoEur": 11.54
+      "listinoEur": 11.57
     },
     {
       "code": "G2742",
@@ -6707,7 +6707,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "code": "G2746",
@@ -6726,7 +6726,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "code": "G2747",
@@ -6746,7 +6746,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "code": "G2748",
@@ -6765,7 +6765,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "code": "G2754",
@@ -6783,7 +6783,7 @@
         "amount": 17.99,
         "currency": "USD"
       },
-      "listinoEur": 15.99
+      "listinoEur": 16.03
     },
     {
       "code": "G2754",
@@ -6801,7 +6801,7 @@
         "amount": 17.99,
         "currency": "USD"
       },
-      "listinoEur": 15.99
+      "listinoEur": 16.03
     },
     {
       "code": "G2755",
@@ -6819,7 +6819,7 @@
         "amount": 17.99,
         "currency": "USD"
       },
-      "listinoEur": 15.99
+      "listinoEur": 16.03
     },
     {
       "code": "G2755",
@@ -6837,7 +6837,7 @@
         "amount": 17.99,
         "currency": "USD"
       },
-      "listinoEur": 15.99
+      "listinoEur": 16.03
     },
     {
       "code": "G2758",
@@ -6857,7 +6857,7 @@
         "amount": 17.99,
         "currency": "USD"
       },
-      "listinoEur": 15.99
+      "listinoEur": 16.03
     },
     {
       "code": "G2758",
@@ -6875,7 +6875,7 @@
         "amount": 17.99,
         "currency": "USD"
       },
-      "listinoEur": 15.99
+      "listinoEur": 16.03
     },
     {
       "code": "G3392",
@@ -6894,7 +6894,7 @@
         "amount": 9.99,
         "currency": "USD"
       },
-      "listinoEur": 8.88
+      "listinoEur": 8.9
     },
     {
       "code": "G3393",
@@ -6912,7 +6912,7 @@
         "amount": 29.99,
         "currency": "USD"
       },
-      "listinoEur": 26.65
+      "listinoEur": 26.72
     },
     {
       "code": "G3393",
@@ -6930,7 +6930,7 @@
         "amount": 29.99,
         "currency": "USD"
       },
-      "listinoEur": 26.65
+      "listinoEur": 26.72
     },
     {
       "code": "G3393",
@@ -6948,7 +6948,7 @@
         "amount": 29.99,
         "currency": "USD"
       },
-      "listinoEur": 26.65
+      "listinoEur": 26.72
     },
     {
       "code": "G3497",
@@ -6965,7 +6965,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "code": "G4561",
@@ -6985,7 +6985,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "code": "G4562",
@@ -7005,7 +7005,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "code": "G4563",
@@ -7026,7 +7026,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "code": "G4571",
@@ -7044,7 +7044,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "code": "G4572",
@@ -7064,7 +7064,7 @@
         "amount": 14.99,
         "currency": "USD"
       },
-      "listinoEur": 13.32
+      "listinoEur": 13.35
     },
     {
       "code": "UX-00",
@@ -7082,7 +7082,7 @@
         "amount": 2800,
         "currency": "JPY"
       },
-      "listinoEur": 15.75
+      "listinoEur": 15.76
     },
     {
       "code": "UX-00",
@@ -7102,7 +7102,7 @@
         "amount": 2800,
         "currency": "JPY"
       },
-      "listinoEur": 15.75
+      "listinoEur": 15.76
     },
     {
       "code": "UX-00",
@@ -7120,7 +7120,7 @@
         "amount": 2800,
         "currency": "JPY"
       },
-      "listinoEur": 15.75
+      "listinoEur": 15.76
     },
     {
       "code": "UX-00",
@@ -7138,7 +7138,7 @@
         "amount": 2800,
         "currency": "JPY"
       },
-      "listinoEur": 15.75
+      "listinoEur": 15.76
     },
     {
       "code": "UX-00",
@@ -7156,7 +7156,7 @@
         "amount": 2800,
         "currency": "JPY"
       },
-      "listinoEur": 15.75
+      "listinoEur": 15.76
     },
     {
       "code": "UX-00",
@@ -7174,7 +7174,7 @@
         "amount": 2800,
         "currency": "JPY"
       },
-      "listinoEur": 15.75
+      "listinoEur": 15.76
     },
     {
       "code": "UX-00",
@@ -7193,7 +7193,7 @@
         "amount": 2800,
         "currency": "JPY"
       },
-      "listinoEur": 15.75
+      "listinoEur": 15.76
     },
     {
       "code": "UX-00",
@@ -7213,7 +7213,7 @@
         "amount": 2800,
         "currency": "JPY"
       },
-      "listinoEur": 15.75
+      "listinoEur": 15.76
     },
     {
       "code": "UX-01",
@@ -7231,7 +7231,7 @@
         "amount": 1980,
         "currency": "JPY"
       },
-      "listinoEur": 11.13
+      "listinoEur": 11.15
     },
     {
       "code": "UX-02",
@@ -7249,7 +7249,7 @@
         "amount": 1980,
         "currency": "JPY"
       },
-      "listinoEur": 11.13
+      "listinoEur": 11.15
     },
     {
       "code": "UX-03",
@@ -7267,7 +7267,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "UX-04",
@@ -7285,7 +7285,7 @@
         "amount": 6050,
         "currency": "JPY"
       },
-      "listinoEur": 34.02
+      "listinoEur": 34.06
     },
     {
       "code": "UX-04",
@@ -7303,7 +7303,7 @@
         "amount": 6050,
         "currency": "JPY"
       },
-      "listinoEur": 34.02
+      "listinoEur": 34.06
     },
     {
       "code": "UX-05",
@@ -7321,7 +7321,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "UX-05",
@@ -7339,7 +7339,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "UX-05",
@@ -7357,7 +7357,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "UX-06",
@@ -7375,7 +7375,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "UX-07",
@@ -7393,7 +7393,7 @@
         "amount": 4100,
         "currency": "JPY"
       },
-      "listinoEur": 23.06
+      "listinoEur": 23.08
     },
     {
       "code": "UX-07",
@@ -7411,7 +7411,7 @@
         "amount": 4100,
         "currency": "JPY"
       },
-      "listinoEur": 23.06
+      "listinoEur": 23.08
     },
     {
       "code": "UX-07",
@@ -7429,7 +7429,7 @@
         "amount": 4100,
         "currency": "JPY"
       },
-      "listinoEur": 23.06
+      "listinoEur": 23.08
     },
     {
       "code": "UX-08",
@@ -7447,7 +7447,7 @@
         "amount": 2080,
         "currency": "JPY"
       },
-      "listinoEur": 11.7
+      "listinoEur": 11.71
     },
     {
       "code": "UX-09",
@@ -7466,7 +7466,7 @@
         "amount": 3300,
         "currency": "JPY"
       },
-      "listinoEur": 18.56
+      "listinoEur": 18.58
     },
     {
       "code": "UX-10",
@@ -7484,7 +7484,7 @@
         "amount": 5700,
         "currency": "JPY"
       },
-      "listinoEur": 32.05
+      "listinoEur": 32.09
     },
     {
       "code": "UX-11",
@@ -7502,7 +7502,7 @@
         "amount": 2420,
         "currency": "JPY"
       },
-      "listinoEur": 13.61
+      "listinoEur": 13.62
     },
     {
       "code": "UX-12",
@@ -7520,7 +7520,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "UX-12",
@@ -7538,7 +7538,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "UX-12",
@@ -7556,7 +7556,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "UX-12",
@@ -7574,7 +7574,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "UX-12",
@@ -7592,7 +7592,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "UX-12",
@@ -7610,7 +7610,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "UX-13",
@@ -7629,7 +7629,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "UX-14",
@@ -7649,7 +7649,7 @@
         "amount": 2200,
         "currency": "JPY"
       },
-      "listinoEur": 12.37
+      "listinoEur": 12.39
     },
     {
       "code": "UX-15",
@@ -7668,7 +7668,7 @@
         "amount": 4200,
         "currency": "JPY"
       },
-      "listinoEur": 23.62
+      "listinoEur": 23.64
     },
     {
       "code": "UX-15",
@@ -7687,7 +7687,7 @@
         "amount": 4200,
         "currency": "JPY"
       },
-      "listinoEur": 23.62
+      "listinoEur": 23.64
     },
     {
       "code": "UX-15",
@@ -7708,7 +7708,7 @@
         "amount": 4200,
         "currency": "JPY"
       },
-      "listinoEur": 23.62
+      "listinoEur": 23.64
     },
     {
       "code": "UX-16",
@@ -7726,7 +7726,7 @@
         "amount": 1400,
         "currency": "JPY"
       },
-      "listinoEur": 7.87
+      "listinoEur": 7.88
     },
     {
       "code": "UX-17",
@@ -7745,7 +7745,7 @@
         "amount": 2300,
         "currency": "JPY"
       },
-      "listinoEur": 12.93
+      "listinoEur": 12.95
     },
     {
       "code": "UX-18",
@@ -7763,7 +7763,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "UX-18",
@@ -7781,7 +7781,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "UX-18",
@@ -7800,7 +7800,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "UX-18",
@@ -7820,7 +7820,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "UX-18",
@@ -7838,7 +7838,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     },
     {
       "code": "UX-18",
@@ -7856,7 +7856,7 @@
         "amount": 1600,
         "currency": "JPY"
       },
-      "listinoEur": 9
+      "listinoEur": 9.01
     }
   ]
 }
