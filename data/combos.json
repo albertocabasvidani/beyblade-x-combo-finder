@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-20T02:02:06.236Z",
+  "lastUpdated": "2026-10-20T02:03:27.386Z",
   "combos": [
     {
       "id": "wizard-rod-1-60-hexa",
@@ -137062,7 +137062,7 @@
           ]
         },
         "90": {
-          "performance": 0.386,
+          "performance": 0.385,
           "presence": 0,
           "corroboration": 0.565,
           "tournamentEvents": 8,
@@ -172298,7 +172298,7 @@
       "type": "attack",
       "score": 2.98,
       "scoreBreakdown": {
-        "performance": 0.366,
+        "performance": 0.365,
         "presence": 0,
         "corroboration": 0.821,
         "tournamentEvents": 21,
@@ -172762,7 +172762,7 @@
           ]
         },
         "365": {
-          "performance": 0.366,
+          "performance": 0.365,
           "presence": 0,
           "corroboration": 0.821,
           "tournamentEvents": 21,
@@ -269740,7 +269740,7 @@
       },
       "windows": {
         "90": {
-          "performance": 0.138,
+          "performance": 0.137,
           "presence": 0,
           "corroboration": 0.333,
           "tournamentEvents": 1,
@@ -269756,7 +269756,7 @@
           ]
         },
         "180": {
-          "performance": 0.138,
+          "performance": 0.137,
           "presence": 0,
           "corroboration": 0.524,
           "tournamentEvents": 1,
@@ -294413,7 +294413,7 @@
       "type": "stamina",
       "score": 0.97,
       "scoreBreakdown": {
-        "performance": 0.111,
+        "performance": 0.11,
         "presence": 0,
         "corroboration": 0.565,
         "tournamentEvents": 2,
@@ -294495,7 +294495,7 @@
           ]
         },
         "180": {
-          "performance": 0.111,
+          "performance": 0.11,
           "presence": 0,
           "corroboration": 0.565,
           "tournamentEvents": 2,
@@ -294511,7 +294511,7 @@
           ]
         },
         "365": {
-          "performance": 0.111,
+          "performance": 0.11,
           "presence": 0,
           "corroboration": 0.565,
           "tournamentEvents": 2,
@@ -315945,7 +315945,7 @@
       "type": "stamina",
       "score": 0.85,
       "scoreBreakdown": {
-        "performance": 0.138,
+        "performance": 0.137,
         "presence": 0,
         "corroboration": 0.444,
         "tournamentEvents": 1,
@@ -315998,7 +315998,7 @@
       },
       "windows": {
         "90": {
-          "performance": 0.138,
+          "performance": 0.137,
           "presence": 0,
           "corroboration": 0.444,
           "tournamentEvents": 1,
@@ -316014,7 +316014,7 @@
           ]
         },
         "180": {
-          "performance": 0.138,
+          "performance": 0.137,
           "presence": 0,
           "corroboration": 0.444,
           "tournamentEvents": 1,
@@ -316030,7 +316030,7 @@
           ]
         },
         "365": {
-          "performance": 0.138,
+          "performance": 0.137,
           "presence": 0,
           "corroboration": 0.444,
           "tournamentEvents": 1,
@@ -369527,6 +369527,138 @@
           "wins": 0,
           "topCutAppearances": 3,
           "lastPlacementDate": "2025-11-17",
+          "score": 0.67,
+          "tags": [
+            "tournament-proven"
+          ]
+        }
+      }
+    },
+    {
+      "id": "silver-wolf-9-70-under-needle",
+      "line": "bx",
+      "blade": "silver-wolf",
+      "ratchet": "9-70",
+      "bit": "under-needle",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Silver Wolf 9-70 Under Needle",
+      "type": "stamina",
+      "score": 0.67,
+      "scoreBreakdown": {
+        "performance": 0.08,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 0,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-10-17",
+        "stadiums": [
+          "xtreme"
+        ]
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Evento 4 rios",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-10-17"
+        }
+      ],
+      "dateAdded": "2026-10-20",
+      "dateUpdated": "2026-10-20",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-challonge-3gbnqkud",
+            "eventName": "Evento 4 rios",
+            "date": "2026-10-17",
+            "placement": 3,
+            "players": 23,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-evento-4-rios",
+            "date": "2026-10-17",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      },
+      "windows": {
+        "30": {
+          "performance": 0.08,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-17",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.67,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "90": {
+          "performance": 0.08,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-17",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.67,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "180": {
+          "performance": 0.08,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-17",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.67,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "365": {
+          "performance": 0.08,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-17",
+          "stadiums": [
+            "xtreme"
+          ],
           "score": 0.67,
           "tags": [
             "tournament-proven"
@@ -425330,130 +425462,6 @@
           "wins": 1,
           "topCutAppearances": 2,
           "lastPlacementDate": "2025-11-28",
-          "score": 0.57,
-          "tags": [
-            "tournament-proven"
-          ]
-        }
-      }
-    },
-    {
-      "id": "silver-wolf-9-70-under-needle",
-      "line": "bx",
-      "blade": "silver-wolf",
-      "ratchet": "9-70",
-      "bit": "under-needle",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Silver Wolf 9-70 Under Needle",
-      "type": "stamina",
-      "score": 0.57,
-      "scoreBreakdown": {
-        "performance": 0.08,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 0,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-10-17",
-        "stadiums": [
-          "xtreme"
-        ]
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — Evento 4 rios",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-10-17"
-        }
-      ],
-      "dateAdded": "2026-10-20",
-      "dateUpdated": "2026-10-20",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-challonge-3gbnqkud",
-            "eventName": "Evento 4 rios",
-            "date": "2026-10-17",
-            "placement": 3,
-            "players": 23,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      },
-      "windows": {
-        "30": {
-          "performance": 0.08,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-17",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.57,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "90": {
-          "performance": 0.08,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-17",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.57,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "180": {
-          "performance": 0.08,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-17",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.57,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "365": {
-          "performance": 0.08,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-17",
-          "stadiums": [
-            "xtreme"
-          ],
           "score": 0.57,
           "tags": [
             "tournament-proven"
@@ -682698,5 +682706,5 @@
       "solid": 5.5
     }
   },
-  "windowsRef": "2026-10-20T02:01:55.342Z"
+  "windowsRef": "2026-10-20T02:03:26.539Z"
 }
