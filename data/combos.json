@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-21T02:01:54.272Z",
+  "lastUpdated": "2026-10-21T02:03:10.413Z",
   "combos": [
     {
       "id": "wizard-rod-1-60-hexa",
@@ -338453,6 +338453,138 @@
       }
     },
     {
+      "id": "shark-scale-1-60-trans-point",
+      "line": "bx",
+      "blade": "shark-scale",
+      "ratchet": "1-60",
+      "bit": "trans-point",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Shark Scale 1-60 Trans Point",
+      "type": "attack",
+      "score": 0.76,
+      "scoreBreakdown": {
+        "performance": 0.108,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 0,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-10-10",
+        "stadiums": [
+          "xtreme"
+        ]
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — 4o4Esports Beyblade Monthly #4",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-10-10"
+        }
+      ],
+      "dateAdded": "2026-10-21",
+      "dateUpdated": "2026-10-21",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-thread-129057",
+            "eventName": "4o4Esports Beyblade Monthly #4",
+            "date": "2026-10-10",
+            "placement": 3,
+            "players": 51,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-4o4esports-beyblade-monthly-4",
+            "date": "2026-10-10",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      },
+      "windows": {
+        "30": {
+          "performance": 0.108,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-10",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.76,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "90": {
+          "performance": 0.108,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-10",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.76,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "180": {
+          "performance": 0.108,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-10",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.76,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "365": {
+          "performance": 0.108,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-10",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.76,
+          "tags": [
+            "tournament-proven"
+          ]
+        }
+      }
+    },
+    {
       "id": "meteor-dragoon-0-70-level",
       "line": "bx",
       "blade": "meteor-dragoon",
@@ -373344,130 +373476,6 @@
           "wins": 0,
           "topCutAppearances": 2,
           "lastPlacementDate": "2026-05-17",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.66,
-          "tags": [
-            "tournament-proven"
-          ]
-        }
-      }
-    },
-    {
-      "id": "shark-scale-1-60-trans-point",
-      "line": "bx",
-      "blade": "shark-scale",
-      "ratchet": "1-60",
-      "bit": "trans-point",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Shark Scale 1-60 Trans Point",
-      "type": "attack",
-      "score": 0.66,
-      "scoreBreakdown": {
-        "performance": 0.108,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 0,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-10-10",
-        "stadiums": [
-          "xtreme"
-        ]
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — 4o4Esports Beyblade Monthly #4",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-10-10"
-        }
-      ],
-      "dateAdded": "2026-10-21",
-      "dateUpdated": "2026-10-21",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-thread-129057",
-            "eventName": "4o4Esports Beyblade Monthly #4",
-            "date": "2026-10-10",
-            "placement": 3,
-            "players": 51,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      },
-      "windows": {
-        "30": {
-          "performance": 0.108,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-10",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.66,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "90": {
-          "performance": 0.108,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-10",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.66,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "180": {
-          "performance": 0.108,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-10",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.66,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "365": {
-          "performance": 0.108,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-10",
           "stadiums": [
             "xtreme"
           ],
@@ -681047,5 +681055,5 @@
       "solid": 5.5
     }
   },
-  "windowsRef": "2026-10-21T02:01:43.849Z"
+  "windowsRef": "2026-10-21T02:03:09.616Z"
 }
