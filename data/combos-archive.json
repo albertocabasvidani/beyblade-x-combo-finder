@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-20T02:02:06.497Z",
+  "lastUpdated": "2026-10-21T02:01:54.515Z",
   "combos": [
     {
       "id": "aero-pegasus-1-70-low-flat",
@@ -1195,6 +1195,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "cobalt-dragoon-4-55-level",
+      "line": "bx",
+      "blade": "cobalt-dragoon",
+      "ratchet": "4-55",
+      "bit": "level",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Cobalt Dragoon 4-55 Level",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Oct. 20, 2025  12:02 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-19"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-10-21",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-21"
     },
     {
       "id": "cobalt-dragoon-4-60-hexa",
@@ -2611,6 +2655,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 365d)",
       "archivedDate": "2026-10-12"
+    },
+    {
+      "id": "dran-brave-slash-3-60-vortex",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "3-60",
+      "bit": "vortex",
+      "lockChip": "dran",
+      "mainBlade": "brave",
+      "assistBlade": "slash",
+      "overBlade": null,
+      "displayName": "Dran Brave S 3-60 Vortex",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Oct. 20, 2025  1:59 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-20"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-10-21",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-21"
     },
     {
       "id": "dran-brave-slash-6-60-kick",
@@ -9739,6 +9827,50 @@
       "archivedDate": "2026-09-12"
     },
     {
+      "id": "pegasus-blast-dual-1-60-kick",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "1-60",
+      "bit": "kick",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "dual",
+      "overBlade": null,
+      "displayName": "Pegasus Blast D 1-60 Kick",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Untouchables Locals",
+          "url": "https://www.metabeys.com/events/1761060643913",
+          "weight": 1,
+          "date": "2025-10-20"
+        }
+      ],
+      "dateAdded": "2026-06-20",
+      "dateUpdated": "2026-10-21",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-21"
+    },
+    {
       "id": "pegasus-blast-dual-1-70-level",
       "line": "cx",
       "blade": null,
@@ -12031,6 +12163,62 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "pegasus-blast-wheel-3-60-kick",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "3-60",
+      "bit": "kick",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Pegasus Blast W 3-60 Kick",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — LGHS BBX Locals",
+          "url": "https://www.metabeys.com/events/1761071546128",
+          "weight": 1,
+          "date": "2025-10-19"
+        },
+        {
+          "name": "MetaBeys — Stop Spandy Showdown",
+          "url": "https://www.metabeys.com/events/1761070509947",
+          "weight": 1,
+          "date": "2025-10-19"
+        },
+        {
+          "name": "WBO — Oct. 20, 2025  1:52 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-20"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-10-21",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-21"
     },
     {
       "id": "pegasus-blast-wheel-3-60-rubber-accel",
@@ -17567,6 +17755,50 @@
       "archivedDate": "2026-10-19"
     },
     {
+      "id": "sol-eclipse-jaggy-3-70-kick",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "3-70",
+      "bit": "kick",
+      "lockChip": "sol",
+      "mainBlade": "eclipse",
+      "assistBlade": "jaggy",
+      "overBlade": null,
+      "displayName": "Sol Eclipse J 3-70 Kick",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Oct. 20, 2025  2:25 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-20"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-10-21",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-21"
+    },
+    {
       "id": "sol-eclipse-jaggy-5-60-kick",
       "line": "cx",
       "blade": null,
@@ -18349,6 +18581,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "tyranno-beat-6-60-orb",
+      "line": "bx",
+      "blade": "tyranno-beat",
+      "ratchet": "6-60",
+      "bit": "orb",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "displayName": "Tyranno Beat 6-60 Orb",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "Defensive stamina combo, hard to KO. Orbit bit provides free-spinning movement.",
+      "sources": [
+        {
+          "name": "WBO Forum",
+          "url": "https://worldbeyblade.org/",
+          "weight": 0.7,
+          "date": "2025-10-20"
+        }
+      ],
+      "amazon": {},
+      "dateAdded": "2025-09-10",
+      "dateUpdated": "2026-10-21",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-21"
     },
     {
       "id": "tyranno-beat-6-60-point",
