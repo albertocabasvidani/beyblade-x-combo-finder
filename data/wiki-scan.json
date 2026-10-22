@@ -4,12 +4,12 @@
     "List of Beyblade X products (Takara Tomy)": {
       "revid": 650994,
       "timestamp": "2026-10-14T15:22:34.000Z",
-      "lastScannedDate": "2026-10-21"
+      "lastScannedDate": "2026-10-22"
     },
     "List of Beyblade X products (Hasbro)": {
       "revid": 648918,
       "timestamp": "2026-09-14T01:43:54.000Z",
-      "lastScannedDate": "2026-10-21"
+      "lastScannedDate": "2026-10-22"
     }
   },
   "pages": {
@@ -463,15 +463,15 @@
       "kindSource": "heuristic"
     },
     "CrocoTread TQ5-50GN": {
-      "revid": 651448,
-      "timestamp": "2026-10-19T16:42:52.000Z",
-      "lastScannedDate": "2026-10-20",
+      "revid": 651522,
+      "timestamp": "2026-10-21T21:29:39.000Z",
+      "lastScannedDate": "2026-10-22",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Tread Croc TQ 5-50GN"
       ],
-      "notes": "parti gia nel master; cambio date/versione 2.0"
+      "notes": "parti gia' nel master, cambiate solo date/uscite"
     },
     "Gust Bat 3-85GP": {
       "revid": 641666,
@@ -3039,18 +3039,18 @@
     "Blade - SiegSuperion": {
       "revid": 650337,
       "timestamp": "2026-10-02T21:23:29.000Z",
-      "lastScannedDate": "2026-10-21",
+      "lastScannedDate": "2026-10-22",
       "kind": "part",
       "kindSource": "ai",
-      "notes": "parte gia' nel master, solo date di uscita"
+      "notes": "blade gia' presente (suppress-superion)"
     },
     "SiegSuperion 0-70LP": {
       "revid": 651351,
       "timestamp": "2026-10-16T20:45:32.000Z",
-      "lastScannedDate": "2026-10-21",
+      "lastScannedDate": "2026-10-22",
       "kind": "product",
       "kindSource": "ai",
-      "notes": "blade/ratchet/bit gia' nel master, solo date"
+      "notes": "parti gia' nel master"
     },
     "Bey Kick Off Set": {
       "revid": 599877,
