@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-15",
+  "version": "2026-10-23",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -4438,7 +4438,7 @@
         "revid": 650337
       },
       "status": "verified",
-      "lastVerified": "2026-10-14",
+      "lastVerified": "2026-10-23",
       "image": {
         "file": "suppress-superion.png",
         "wikiFile": "BladeSiegSuperion.png",
@@ -7173,7 +7173,8 @@
       "names": {
         "tt": "Force",
         "ja": "フォース",
-        "romaji": "Fōsu"
+        "romaji": "Fōsu",
+        "hasbro": null
       },
       "aliases": [
         {
@@ -8758,7 +8759,8 @@
       "names": {
         "tt": "Weight",
         "ja": "ウエイト",
-        "romaji": "Ueito"
+        "romaji": "Ueito",
+        "hasbro": null
       },
       "aliases": [
         {
@@ -10674,7 +10676,8 @@
       "names": {
         "tt": "M-65",
         "ja": "エムエシックスティファイブ",
-        "romaji": "Emu Shikkusuti Faibu"
+        "romaji": "Emu Shikkusuti Faibu",
+        "hasbro": null
       },
       "aliases": [
         {
@@ -12403,7 +12406,8 @@
       "names": {
         "tt": "Metal Taper",
         "ja": "メタルテーパー",
-        "romaji": "Metaru Tēpā"
+        "romaji": "Metaru Tēpā",
+        "hasbro": null
       },
       "aliases": [
         {
