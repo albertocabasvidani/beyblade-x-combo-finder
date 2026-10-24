@@ -4,12 +4,12 @@
     "List of Beyblade X products (Takara Tomy)": {
       "revid": 650994,
       "timestamp": "2026-10-14T15:22:34.000Z",
-      "lastScannedDate": "2026-10-23"
+      "lastScannedDate": "2026-10-24"
     },
     "List of Beyblade X products (Hasbro)": {
       "revid": 648918,
       "timestamp": "2026-09-14T01:43:54.000Z",
-      "lastScannedDate": "2026-10-23"
+      "lastScannedDate": "2026-10-24"
     }
   },
   "pages": {
@@ -463,15 +463,15 @@
       "kindSource": "heuristic"
     },
     "CrocoTread TQ5-50GN": {
-      "revid": 651522,
-      "timestamp": "2026-10-21T21:29:39.000Z",
-      "lastScannedDate": "2026-10-22",
+      "revid": 651697,
+      "timestamp": "2026-10-23T19:54:47.000Z",
+      "lastScannedDate": "2026-10-24",
       "kind": "product",
       "kindSource": "ai",
       "redirects": [
         "Tread Croc TQ 5-50GN"
       ],
-      "notes": "parti gia' nel master, cambiate solo date/uscite"
+      "notes": "CX Expand, parti gia' nel master"
     },
     "Gust Bat 3-85GP": {
       "revid": 641666,
@@ -1408,12 +1408,12 @@
       "kindSource": "heuristic"
     },
     "Bit - Low Point": {
-      "revid": 650340,
-      "timestamp": "2026-10-02T21:24:58.000Z",
-      "lastScannedDate": "2026-10-03",
+      "revid": 651641,
+      "timestamp": "2026-10-23T06:33:49.000Z",
+      "lastScannedDate": "2026-10-24",
       "kind": "part",
       "kindSource": "ai",
-      "notes": "gia' nel master"
+      "notes": "pagina parte, gia' nel master"
     },
     "Bit - Needle": {
       "revid": 649588,
@@ -1880,14 +1880,15 @@
       "notes": "pagina modificata; parti gia presenti nel master, nessuna nuova"
     },
     "BearScratch 5-60F": {
-      "revid": 649992,
-      "timestamp": "2026-09-26T04:11:44.000Z",
-      "lastScannedDate": "2026-09-27",
+      "revid": 651682,
+      "timestamp": "2026-10-23T12:36:17.000Z",
+      "lastScannedDate": "2026-10-24",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Savage Bear 5-60F"
-      ]
+      ],
+      "notes": "parti gia' nel master"
     },
     "ClockMirage 9-65B": {
       "revid": 650239,
@@ -3037,20 +3038,20 @@
       "notes": "falso positivo: gia' registrato come tyranno-beat, riscoperto via contents di Customize Set U"
     },
     "Blade - SiegSuperion": {
-      "revid": 650337,
-      "timestamp": "2026-10-02T21:23:29.000Z",
-      "lastScannedDate": "2026-10-23",
+      "revid": 651639,
+      "timestamp": "2026-10-23T06:33:31.000Z",
+      "lastScannedDate": "2026-10-24",
       "kind": "part",
       "kindSource": "ai",
-      "notes": "parte gia' nel master"
+      "notes": "pagina parte, gia' nel master"
     },
     "SiegSuperion 0-70LP": {
-      "revid": 651351,
-      "timestamp": "2026-10-16T20:45:32.000Z",
-      "lastScannedDate": "2026-10-23",
+      "revid": 651640,
+      "timestamp": "2026-10-23T06:33:39.000Z",
+      "lastScannedDate": "2026-10-24",
       "kind": "product",
       "kindSource": "ai",
-      "notes": "prodotto gia' noto, blade SiegSuperion"
+      "notes": "parti gia' nel master"
     },
     "Bey Kick Off Set": {
       "revid": 599877,
