@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-24T02:03:18.548Z",
+  "lastUpdated": "2026-10-25T03:02:05.664Z",
   "combos": [
     {
       "id": "aero-pegasus-1-70-low-flat",
@@ -137,6 +137,50 @@
       },
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-07-18"
+    },
+    {
+      "id": "aero-pegasus-3-60-low-flat",
+      "line": "bx",
+      "blade": "aero-pegasus",
+      "ratchet": "3-60",
+      "bit": "low-flat",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Aero Pegasus 3-60 Low Flat",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Banana Games 10k Qualifier",
+          "url": "https://www.metabeys.com/events/1761576064672",
+          "weight": 1,
+          "date": "2025-10-24"
+        }
+      ],
+      "dateAdded": "2026-06-20",
+      "dateUpdated": "2026-10-25",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-25"
     },
     {
       "id": "aero-pegasus-7-70-point",
@@ -3924,6 +3968,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "fox-blast-jaggy-3-60-kick",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "3-60",
+      "bit": "kick",
+      "lockChip": "fox",
+      "mainBlade": "blast",
+      "assistBlade": "jaggy",
+      "overBlade": null,
+      "displayName": "Fox Blast J 3-60 Kick",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Oct. 24, 2025  1:19 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-24"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-10-25",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-25"
     },
     {
       "id": "fox-blast-jaggy-3-60-level",
@@ -19701,6 +19789,50 @@
       "archivedDate": "2026-09-12"
     },
     {
+      "id": "tyranno-beat-5-70-high-taper",
+      "line": "bx",
+      "blade": "tyranno-beat",
+      "ratchet": "5-70",
+      "bit": "high-taper",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Tyranno Beat 5-70 High Taper",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Banana Games 10k Qualifier",
+          "url": "https://www.metabeys.com/events/1761576064672",
+          "weight": 1,
+          "date": "2025-10-24"
+        }
+      ],
+      "dateAdded": "2026-06-20",
+      "dateUpdated": "2026-10-25",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-25"
+    },
+    {
       "id": "tyranno-beat-6-60-orb",
       "line": "bx",
       "blade": "tyranno-beat",
@@ -21263,6 +21395,92 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 365d)",
       "archivedDate": "2026-10-17"
+    },
+    {
+      "id": "valkyrie-blast-wheel-7-60-low-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "7-60",
+      "bit": "low-rush",
+      "lockChip": "valkyrie",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Valkyrie Blast W 7-60 Low Rush",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — BeyCon 2025 Beyblade X",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-15"
+        },
+        {
+          "name": "WBO — Oct. 03, 2025  12:35 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-03"
+        },
+        {
+          "name": "WBO — Oct. 11, 2025  7:39 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-11"
+        },
+        {
+          "name": "WBO — Sep. 20, 2025  8:24 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-20"
+        },
+        {
+          "name": "WBO — Sep. 22, 2025  3:21 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-22"
+        },
+        {
+          "name": "WBO — Sep. 28, 2025  9:51 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-28"
+        },
+        {
+          "name": "WBO — Sep. 28, 2025  2:04 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-28"
+        },
+        {
+          "name": "WBO — Oct. 24, 2025  1:19 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-24"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-10-25",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-25"
     },
     {
       "id": "valkyrie-blast-wheel-7-60-rubber-accel",
