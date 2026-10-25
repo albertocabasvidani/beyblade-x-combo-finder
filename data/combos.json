@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-25T03:02:05.073Z",
+  "lastUpdated": "2026-10-25T03:03:32.884Z",
   "combos": [
     {
       "id": "wizard-rod-1-60-hexa",
@@ -80097,7 +80097,7 @@
       "score": 6.54,
       "scoreBreakdown": {
         "performance": 0.611,
-        "presence": 0.703,
+        "presence": 0.702,
         "corroboration": 0.8,
         "tournamentEvents": 104,
         "wins": 33,
@@ -81629,7 +81629,7 @@
       "windows": {
         "30": {
           "performance": 0,
-          "presence": 0.703,
+          "presence": 0.702,
           "corroboration": 0.333,
           "tournamentEvents": 0,
           "wins": 0,
@@ -81641,7 +81641,7 @@
         },
         "90": {
           "performance": 0.081,
-          "presence": 0.703,
+          "presence": 0.702,
           "corroboration": 0.667,
           "tournamentEvents": 1,
           "wins": 0,
@@ -81656,7 +81656,7 @@
         },
         "180": {
           "performance": 0.392,
-          "presence": 0.703,
+          "presence": 0.702,
           "corroboration": 0.756,
           "tournamentEvents": 14,
           "wins": 6,
@@ -81674,7 +81674,7 @@
         },
         "365": {
           "performance": 0.611,
-          "presence": 0.703,
+          "presence": 0.702,
           "corroboration": 0.8,
           "tournamentEvents": 104,
           "wins": 33,
@@ -168962,7 +168962,7 @@
       "overBlade": null,
       "displayName": "Emperor Blast H 3-60 Kick",
       "type": "balance",
-      "score": 2.99,
+      "score": 2.98,
       "scoreBreakdown": {
         "performance": 0.38,
         "presence": 0,
@@ -169373,7 +169373,7 @@
           "stadiums": [
             "xtreme"
           ],
-          "score": 2.99,
+          "score": 2.98,
           "tags": [
             "tournament-proven"
           ]
@@ -175997,7 +175997,7 @@
       "type": "stamina",
       "score": 2.81,
       "scoreBreakdown": {
-        "performance": 0.407,
+        "performance": 0.406,
         "presence": 0,
         "corroboration": 0.5,
         "tournamentEvents": 30,
@@ -176436,7 +176436,7 @@
           ]
         },
         "365": {
-          "performance": 0.407,
+          "performance": 0.406,
           "presence": 0,
           "corroboration": 0.5,
           "tournamentEvents": 30,
@@ -213949,7 +213949,7 @@
           ]
         },
         "180": {
-          "performance": 0.2,
+          "performance": 0.199,
           "presence": 0,
           "corroboration": 0.63,
           "tournamentEvents": 4,
@@ -264899,6 +264899,138 @@
       }
     },
     {
+      "id": "suppress-superion-1-60-hexa",
+      "line": "bx",
+      "blade": "suppress-superion",
+      "ratchet": "1-60",
+      "bit": "hexa",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "SiegSuperion 1-60 Hexa",
+      "type": "balance",
+      "score": 1.14,
+      "scoreBreakdown": {
+        "performance": 0.225,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 1,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-10-10",
+        "stadiums": [
+          "xtreme"
+        ]
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Neophoenix @ QACL #2",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-10-10"
+        }
+      ],
+      "dateAdded": "2026-10-25",
+      "dateUpdated": "2026-10-25",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-pid-1940644",
+            "eventName": "Neophoenix @ QACL #2",
+            "date": "2026-10-10",
+            "placement": 1,
+            "players": 64,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-neophoenix-qacl-2",
+            "date": "2026-10-10",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      },
+      "windows": {
+        "30": {
+          "performance": 0.225,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-10",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 1.14,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "90": {
+          "performance": 0.225,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-10",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 1.14,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "180": {
+          "performance": 0.225,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-10",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 1.14,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "365": {
+          "performance": 0.225,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-10",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 1.14,
+          "tags": [
+            "tournament-proven"
+          ]
+        }
+      }
+    },
+    {
       "id": "meteor-dragoon-1-50-level",
       "line": "bx",
       "blade": "meteor-dragoon",
@@ -279185,130 +279317,6 @@
           "wins": 2,
           "topCutAppearances": 4,
           "lastPlacementDate": "2026-05-31",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 1.04,
-          "tags": [
-            "tournament-proven"
-          ]
-        }
-      }
-    },
-    {
-      "id": "suppress-superion-1-60-hexa",
-      "line": "bx",
-      "blade": "suppress-superion",
-      "ratchet": "1-60",
-      "bit": "hexa",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "SiegSuperion 1-60 Hexa",
-      "type": "balance",
-      "score": 1.04,
-      "scoreBreakdown": {
-        "performance": 0.225,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 1,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-10-10",
-        "stadiums": [
-          "xtreme"
-        ]
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — Neophoenix @ QACL #2",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-10-10"
-        }
-      ],
-      "dateAdded": "2026-10-25",
-      "dateUpdated": "2026-10-25",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-pid-1940644",
-            "eventName": "Neophoenix @ QACL #2",
-            "date": "2026-10-10",
-            "placement": 1,
-            "players": 64,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      },
-      "windows": {
-        "30": {
-          "performance": 0.225,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-10",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 1.04,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "90": {
-          "performance": 0.225,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-10",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 1.04,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "180": {
-          "performance": 0.225,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-10",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 1.04,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "365": {
-          "performance": 0.225,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-10",
           "stadiums": [
             "xtreme"
           ],
@@ -301323,6 +301331,138 @@
       }
     },
     {
+      "id": "hellsnether-wall-wedge",
+      "line": "ux",
+      "blade": "hellsnether",
+      "ratchet": null,
+      "bit": "wall-wedge",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "HellsNether Wall Wedge",
+      "type": "balance",
+      "score": 0.92,
+      "scoreBreakdown": {
+        "performance": 0.159,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 0,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-10-10",
+        "stadiums": [
+          "xtreme"
+        ]
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Neophoenix @ QACL #2",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-10-10"
+        }
+      ],
+      "dateAdded": "2026-10-25",
+      "dateUpdated": "2026-10-25",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-pid-1940644",
+            "eventName": "Neophoenix @ QACL #2",
+            "date": "2026-10-10",
+            "placement": 2,
+            "players": 64,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-neophoenix-qacl-2",
+            "date": "2026-10-10",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      },
+      "windows": {
+        "30": {
+          "performance": 0.159,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-10",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.92,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "90": {
+          "performance": 0.159,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-10",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.92,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "180": {
+          "performance": 0.159,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-10",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.92,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "365": {
+          "performance": 0.159,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-10",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.92,
+          "tags": [
+            "tournament-proven"
+          ]
+        }
+      }
+    },
+    {
       "id": "meteor-dragoon-0-60-free-flat",
       "line": "bx",
       "blade": "meteor-dragoon",
@@ -309972,7 +310112,7 @@
       "type": "stamina",
       "score": 0.86,
       "scoreBreakdown": {
-        "performance": 0.06,
+        "performance": 0.059,
         "presence": 0,
         "corroboration": 0.583,
         "tournamentEvents": 3,
@@ -310075,7 +310215,7 @@
       },
       "windows": {
         "365": {
-          "performance": 0.06,
+          "performance": 0.059,
           "presence": 0,
           "corroboration": 0.583,
           "tournamentEvents": 3,
@@ -320295,130 +320435,6 @@
       }
     },
     {
-      "id": "hellsnether-wall-wedge",
-      "line": "ux",
-      "blade": "hellsnether",
-      "ratchet": null,
-      "bit": "wall-wedge",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "HellsNether Wall Wedge",
-      "type": "balance",
-      "score": 0.82,
-      "scoreBreakdown": {
-        "performance": 0.159,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 0,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-10-10",
-        "stadiums": [
-          "xtreme"
-        ]
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — Neophoenix @ QACL #2",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-10-10"
-        }
-      ],
-      "dateAdded": "2026-10-25",
-      "dateUpdated": "2026-10-25",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-pid-1940644",
-            "eventName": "Neophoenix @ QACL #2",
-            "date": "2026-10-10",
-            "placement": 2,
-            "players": 64,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      },
-      "windows": {
-        "30": {
-          "performance": 0.159,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-10",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.82,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "90": {
-          "performance": 0.159,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-10",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.82,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "180": {
-          "performance": 0.159,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-10",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.82,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "365": {
-          "performance": 0.159,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-10",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.82,
-          "tags": [
-            "tournament-proven"
-          ]
-        }
-      }
-    },
-    {
       "id": "heavens-ring-9-70-point",
       "line": "bx",
       "blade": "heavens-ring",
@@ -329086,6 +329102,270 @@
           "wins": 2,
           "topCutAppearances": 3,
           "lastPlacementDate": "2026-03-12",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.78,
+          "tags": [
+            "tournament-proven"
+          ]
+        }
+      }
+    },
+    {
+      "id": "brachio-peak-whip-heavy-9-60-free-ball",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "free-ball",
+      "lockChip": "brachio",
+      "mainBlade": "whip",
+      "assistBlade": "heavy",
+      "overBlade": "peak",
+      "displayName": "Brachio Whip Peak H 9-60 Free Ball",
+      "type": "balance",
+      "score": 0.78,
+      "scoreBreakdown": {
+        "performance": 0.115,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 0,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-10-10",
+        "stadiums": [
+          "xtreme"
+        ]
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Neophoenix @ QACL #2",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-10-10"
+        }
+      ],
+      "dateAdded": "2026-10-25",
+      "dateUpdated": "2026-10-25",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-pid-1940644",
+            "eventName": "Neophoenix @ QACL #2",
+            "date": "2026-10-10",
+            "placement": 3,
+            "players": 64,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-neophoenix-qacl-2",
+            "date": "2026-10-10",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      },
+      "windows": {
+        "30": {
+          "performance": 0.115,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-10",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.78,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "90": {
+          "performance": 0.115,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-10",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.78,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "180": {
+          "performance": 0.115,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-10",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.78,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "365": {
+          "performance": 0.115,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-10",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.78,
+          "tags": [
+            "tournament-proven"
+          ]
+        }
+      }
+    },
+    {
+      "id": "tricera-press-8-70-rubber-accel",
+      "line": "bx",
+      "blade": "tricera-press",
+      "ratchet": "8-70",
+      "bit": "rubber-accel",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Tricera Press 8-70 Rubber Accel",
+      "type": "defense",
+      "score": 0.78,
+      "scoreBreakdown": {
+        "performance": 0.115,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 0,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-10-10",
+        "stadiums": [
+          "xtreme"
+        ]
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Neophoenix @ QACL #2",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-10-10"
+        }
+      ],
+      "dateAdded": "2026-10-25",
+      "dateUpdated": "2026-10-25",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-pid-1940644",
+            "eventName": "Neophoenix @ QACL #2",
+            "date": "2026-10-10",
+            "placement": 3,
+            "players": 64,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-neophoenix-qacl-2",
+            "date": "2026-10-10",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      },
+      "windows": {
+        "30": {
+          "performance": 0.115,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-10",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.78,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "90": {
+          "performance": 0.115,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-10",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.78,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "180": {
+          "performance": 0.115,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-10",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.78,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "365": {
+          "performance": 0.115,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 0,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-10",
           "stadiums": [
             "xtreme"
           ],
@@ -360909,254 +361189,6 @@
           "wins": 1,
           "topCutAppearances": 2,
           "lastPlacementDate": "2026-01-09",
-          "score": 0.68,
-          "tags": [
-            "tournament-proven"
-          ]
-        }
-      }
-    },
-    {
-      "id": "brachio-peak-whip-heavy-9-60-free-ball",
-      "line": "cx",
-      "blade": null,
-      "ratchet": "9-60",
-      "bit": "free-ball",
-      "lockChip": "brachio",
-      "mainBlade": "whip",
-      "assistBlade": "heavy",
-      "overBlade": "peak",
-      "displayName": "Brachio Whip Peak H 9-60 Free Ball",
-      "type": "balance",
-      "score": 0.68,
-      "scoreBreakdown": {
-        "performance": 0.115,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 0,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-10-10",
-        "stadiums": [
-          "xtreme"
-        ]
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — Neophoenix @ QACL #2",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-10-10"
-        }
-      ],
-      "dateAdded": "2026-10-25",
-      "dateUpdated": "2026-10-25",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-pid-1940644",
-            "eventName": "Neophoenix @ QACL #2",
-            "date": "2026-10-10",
-            "placement": 3,
-            "players": 64,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      },
-      "windows": {
-        "30": {
-          "performance": 0.115,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-10",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.68,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "90": {
-          "performance": 0.115,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-10",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.68,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "180": {
-          "performance": 0.115,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-10",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.68,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "365": {
-          "performance": 0.115,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-10",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.68,
-          "tags": [
-            "tournament-proven"
-          ]
-        }
-      }
-    },
-    {
-      "id": "tricera-press-8-70-rubber-accel",
-      "line": "bx",
-      "blade": "tricera-press",
-      "ratchet": "8-70",
-      "bit": "rubber-accel",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Tricera Press 8-70 Rubber Accel",
-      "type": "defense",
-      "score": 0.68,
-      "scoreBreakdown": {
-        "performance": 0.115,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 0,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-10-10",
-        "stadiums": [
-          "xtreme"
-        ]
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — Neophoenix @ QACL #2",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-10-10"
-        }
-      ],
-      "dateAdded": "2026-10-25",
-      "dateUpdated": "2026-10-25",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-pid-1940644",
-            "eventName": "Neophoenix @ QACL #2",
-            "date": "2026-10-10",
-            "placement": 3,
-            "players": 64,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      },
-      "windows": {
-        "30": {
-          "performance": 0.115,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-10",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.68,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "90": {
-          "performance": 0.115,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-10",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.68,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "180": {
-          "performance": 0.115,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-10",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.68,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "365": {
-          "performance": 0.115,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 0,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-10",
-          "stadiums": [
-            "xtreme"
-          ],
           "score": 0.68,
           "tags": [
             "tournament-proven"
@@ -674743,5 +674775,5 @@
       "solid": 5.5
     }
   },
-  "windowsRef": "2026-10-25T03:01:54.236Z"
+  "windowsRef": "2026-10-25T03:03:32.092Z"
 }
