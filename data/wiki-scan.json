@@ -4,12 +4,12 @@
     "List of Beyblade X products (Takara Tomy)": {
       "revid": 650994,
       "timestamp": "2026-10-14T15:22:34.000Z",
-      "lastScannedDate": "2026-10-24"
+      "lastScannedDate": "2026-10-25"
     },
     "List of Beyblade X products (Hasbro)": {
       "revid": 648918,
       "timestamp": "2026-09-14T01:43:54.000Z",
-      "lastScannedDate": "2026-10-24"
+      "lastScannedDate": "2026-10-25"
     }
   },
   "pages": {
@@ -30,15 +30,15 @@
       "notes": "pagina lista: aggiunta riga NFL CX Top Pack, nessuna parte da estrarre da qui"
     },
     "DranSword 3-60F": {
-      "revid": 651346,
-      "timestamp": "2026-10-16T20:31:35.000Z",
-      "lastScannedDate": "2026-10-17",
+      "revid": 651779,
+      "timestamp": "2026-10-24T07:29:06.000Z",
+      "lastScannedDate": "2026-10-25",
       "kind": "product",
       "kindSource": "ai",
       "redirects": [
         "Sword Dran 3-60F"
       ],
-      "notes": "parti gia nel master; cambio date/versione 2.0"
+      "notes": "parte gia' nel master, nessuna novita'"
     },
     "HeavensRing 0-80DS": {
       "revid": 650635,
@@ -355,12 +355,12 @@
       "notes": "gia nel master"
     },
     "EmperorMight HOp": {
-      "revid": 649731,
-      "timestamp": "2026-09-20T21:53:27.000Z",
-      "lastScannedDate": "2026-09-21",
+      "revid": 651804,
+      "timestamp": "2026-10-25T00:37:59.000Z",
+      "lastScannedDate": "2026-10-25",
       "kind": "product",
-      "kindSource": "heuristic",
-      "notes": "Solo refuso hyphen in Ratchet-Integrated Bit, nessun dato struttura cambiato."
+      "kindSource": "ai",
+      "notes": "parti gia' nel master"
     },
     "Bit - High Needle": {
       "revid": 650989,
@@ -1498,11 +1498,12 @@
       "notes": "gia nel master"
     },
     "Blade - KnightShield": {
-      "revid": 649056,
-      "timestamp": "2026-09-14T15:44:06.000Z",
-      "lastScannedDate": "2026-09-15",
+      "revid": 651790,
+      "timestamp": "2026-10-24T20:47:30.000Z",
+      "lastScannedDate": "2026-10-25",
       "kind": "part",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "gia' nel master"
     },
     "Blade - PhoenixFeather": {
       "revid": 644465,
@@ -1549,11 +1550,12 @@
       "notes": "aggiunto riferimento prodotto Buster Dran 5-70DB alla lista Products; parte gia' in master"
     },
     "Blade - DranSword": {
-      "revid": 643853,
-      "timestamp": "2026-08-14T06:19:28.677Z",
-      "lastScannedDate": "2026-08-14",
+      "revid": 651785,
+      "timestamp": "2026-10-24T18:20:26.000Z",
+      "lastScannedDate": "2026-10-25",
       "kind": "part",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "gia' nel master"
     },
     "PhoenixWing 9-80DB": {
       "revid": 610291,
@@ -3040,15 +3042,15 @@
     "Blade - SiegSuperion": {
       "revid": 651639,
       "timestamp": "2026-10-23T06:33:31.000Z",
-      "lastScannedDate": "2026-10-24",
+      "lastScannedDate": "2026-10-25",
       "kind": "part",
       "kindSource": "ai",
-      "notes": "pagina parte, gia' nel master"
+      "notes": "gia' nel master (suppress-superion); stats ora sul wiki ma il merge non le importa"
     },
     "SiegSuperion 0-70LP": {
       "revid": 651640,
       "timestamp": "2026-10-23T06:33:39.000Z",
-      "lastScannedDate": "2026-10-24",
+      "lastScannedDate": "2026-10-25",
       "kind": "product",
       "kindSource": "ai",
       "notes": "parti gia' nel master"
