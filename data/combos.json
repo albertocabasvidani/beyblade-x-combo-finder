@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-26T03:03:22.568Z",
+  "lastUpdated": "2026-10-26T03:04:34.643Z",
   "combos": [
     {
       "id": "wizard-rod-1-60-hexa",
@@ -175133,7 +175133,7 @@
           ]
         },
         "180": {
-          "performance": 0.282,
+          "performance": 0.281,
           "presence": 0,
           "corroboration": 0.333,
           "tournamentEvents": 5,
@@ -251017,7 +251017,7 @@
       "type": "defense",
       "score": 1.25,
       "scoreBreakdown": {
-        "performance": 0.11,
+        "performance": 0.109,
         "presence": 0,
         "corroboration": 0.667,
         "tournamentEvents": 5,
@@ -251184,7 +251184,7 @@
           ]
         },
         "365": {
-          "performance": 0.11,
+          "performance": 0.109,
           "presence": 0,
           "corroboration": 0.667,
           "tournamentEvents": 5,
@@ -274990,7 +274990,7 @@
       "type": "defense",
       "score": 1.05,
       "scoreBreakdown": {
-        "performance": 0.165,
+        "performance": 0.164,
         "presence": 0,
         "corroboration": 0.444,
         "tournamentEvents": 2,
@@ -275067,7 +275067,7 @@
           ]
         },
         "90": {
-          "performance": 0.165,
+          "performance": 0.164,
           "presence": 0,
           "corroboration": 0.444,
           "tournamentEvents": 2,
@@ -275083,7 +275083,7 @@
           ]
         },
         "180": {
-          "performance": 0.165,
+          "performance": 0.164,
           "presence": 0,
           "corroboration": 0.444,
           "tournamentEvents": 2,
@@ -275099,7 +275099,7 @@
           ]
         },
         "365": {
-          "performance": 0.165,
+          "performance": 0.164,
           "presence": 0,
           "corroboration": 0.444,
           "tournamentEvents": 2,
@@ -371184,6 +371184,666 @@
       }
     },
     {
+      "id": "gust-bat-9-70-taper",
+      "line": "bx",
+      "blade": "gust-bat",
+      "ratchet": "9-70",
+      "bit": "taper",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Gust Bat 9-70 Taper",
+      "type": "balance",
+      "score": 0.65,
+      "scoreBreakdown": {
+        "performance": 0.077,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 1,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-10-26",
+        "stadiums": [
+          "xtreme"
+        ]
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Dallas Beyblade Association - Xtreme Gear Sports Team #7",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-10-26"
+        }
+      ],
+      "dateAdded": "2026-10-26",
+      "dateUpdated": "2026-10-26",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-dallas-beyblade-association-xtreme-gear-sports-team-7-2026-10-26",
+            "eventName": "Dallas Beyblade Association - Xtreme Gear Sports Team #7",
+            "date": "2026-10-26",
+            "placement": 1,
+            "players": 4,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-dallas-beyblade-association-xtreme-gear-sports-team-7",
+            "date": "2026-10-26",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      },
+      "windows": {
+        "30": {
+          "performance": 0.077,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-26",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.65,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "90": {
+          "performance": 0.077,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-26",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.65,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "180": {
+          "performance": 0.077,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-26",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.65,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "365": {
+          "performance": 0.077,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-26",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.65,
+          "tags": [
+            "tournament-proven"
+          ]
+        }
+      }
+    },
+    {
+      "id": "heavens-ring-5-60-unite",
+      "line": "bx",
+      "blade": "heavens-ring",
+      "ratchet": "5-60",
+      "bit": "unite",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Heavens Ring 5-60 Unite",
+      "type": "defense",
+      "score": 0.65,
+      "scoreBreakdown": {
+        "performance": 0.077,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 1,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-10-26",
+        "stadiums": [
+          "xtreme"
+        ]
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Dallas Beyblade Association - Xtreme Gear Sports Team #7",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-10-26"
+        }
+      ],
+      "dateAdded": "2026-10-26",
+      "dateUpdated": "2026-10-26",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-dallas-beyblade-association-xtreme-gear-sports-team-7-2026-10-26",
+            "eventName": "Dallas Beyblade Association - Xtreme Gear Sports Team #7",
+            "date": "2026-10-26",
+            "placement": 1,
+            "players": 4,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-dallas-beyblade-association-xtreme-gear-sports-team-7",
+            "date": "2026-10-26",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      },
+      "windows": {
+        "30": {
+          "performance": 0.077,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-26",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.65,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "90": {
+          "performance": 0.077,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-26",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.65,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "180": {
+          "performance": 0.077,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-26",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.65,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "365": {
+          "performance": 0.077,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-26",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.65,
+          "tags": [
+            "tournament-proven"
+          ]
+        }
+      }
+    },
+    {
+      "id": "knight-lance-0-60-low-point",
+      "line": "bx",
+      "blade": "knight-lance",
+      "ratchet": "0-60",
+      "bit": "low-point",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Knight Lance 0-60 Low Point",
+      "type": "defense",
+      "score": 0.65,
+      "scoreBreakdown": {
+        "performance": 0.077,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 1,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-10-26",
+        "stadiums": [
+          "xtreme"
+        ]
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Dallas Beyblade Association - Xtreme Gear Sports Team #7",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-10-26"
+        }
+      ],
+      "dateAdded": "2026-10-26",
+      "dateUpdated": "2026-10-26",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-dallas-beyblade-association-xtreme-gear-sports-team-7-2026-10-26",
+            "eventName": "Dallas Beyblade Association - Xtreme Gear Sports Team #7",
+            "date": "2026-10-26",
+            "placement": 1,
+            "players": 4,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-dallas-beyblade-association-xtreme-gear-sports-team-7",
+            "date": "2026-10-26",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      },
+      "windows": {
+        "30": {
+          "performance": 0.077,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-26",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.65,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "90": {
+          "performance": 0.077,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-26",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.65,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "180": {
+          "performance": 0.077,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-26",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.65,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "365": {
+          "performance": 0.077,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-26",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.65,
+          "tags": [
+            "tournament-proven"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phoenix-flare-wheel-7-60-kick",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "7-60",
+      "bit": "kick",
+      "lockChip": "phoenix",
+      "mainBlade": "flare",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Phoenix Flare W 7-60 Kick",
+      "type": "balance",
+      "score": 0.65,
+      "scoreBreakdown": {
+        "performance": 0.077,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 1,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-10-26",
+        "stadiums": [
+          "xtreme"
+        ]
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Dallas Beyblade Association - Xtreme Gear Sports Team #7",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-10-26"
+        }
+      ],
+      "dateAdded": "2026-10-26",
+      "dateUpdated": "2026-10-26",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-dallas-beyblade-association-xtreme-gear-sports-team-7-2026-10-26",
+            "eventName": "Dallas Beyblade Association - Xtreme Gear Sports Team #7",
+            "date": "2026-10-26",
+            "placement": 1,
+            "players": 4,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-dallas-beyblade-association-xtreme-gear-sports-team-7",
+            "date": "2026-10-26",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      },
+      "windows": {
+        "30": {
+          "performance": 0.077,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-26",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.65,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "90": {
+          "performance": 0.077,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-26",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.65,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "180": {
+          "performance": 0.077,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-26",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.65,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "365": {
+          "performance": 0.077,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-26",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.65,
+          "tags": [
+            "tournament-proven"
+          ]
+        }
+      }
+    },
+    {
+      "id": "tricera-press-5-50-high-taper",
+      "line": "bx",
+      "blade": "tricera-press",
+      "ratchet": "5-50",
+      "bit": "high-taper",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Tricera Press 5-50 High Taper",
+      "type": "defense",
+      "score": 0.65,
+      "scoreBreakdown": {
+        "performance": 0.077,
+        "presence": 0,
+        "corroboration": 0.444,
+        "tournamentEvents": 1,
+        "wins": 1,
+        "topCutAppearances": 1,
+        "lastPlacementDate": "2026-10-26",
+        "stadiums": [
+          "xtreme"
+        ]
+      },
+      "tags": [
+        "tournament-proven"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Dallas Beyblade Association - Xtreme Gear Sports Team #7",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2026-10-26"
+        }
+      ],
+      "dateAdded": "2026-10-26",
+      "dateUpdated": "2026-10-26",
+      "evidence": {
+        "placements": [
+          {
+            "source": "wbo-winning-combos",
+            "tier": "structured",
+            "eventId": "wbo-dallas-beyblade-association-xtreme-gear-sports-team-7-2026-10-26",
+            "eventName": "Dallas Beyblade Association - Xtreme Gear Sports Team #7",
+            "date": "2026-10-26",
+            "placement": 1,
+            "players": 4,
+            "stadium": "xtreme",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ],
+        "usage": [],
+        "mentions": [
+          {
+            "source": "wbo-dallas-beyblade-association-xtreme-gear-sports-team-7",
+            "date": "2026-10-26",
+            "kind": "recommendation",
+            "lang": "en",
+            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+          }
+        ]
+      },
+      "windows": {
+        "30": {
+          "performance": 0.077,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-26",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.65,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "90": {
+          "performance": 0.077,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-26",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.65,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "180": {
+          "performance": 0.077,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-26",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.65,
+          "tags": [
+            "tournament-proven"
+          ]
+        },
+        "365": {
+          "performance": 0.077,
+          "presence": 0,
+          "corroboration": 0.444,
+          "tournamentEvents": 1,
+          "wins": 1,
+          "topCutAppearances": 1,
+          "lastPlacementDate": "2026-10-26",
+          "stadiums": [
+            "xtreme"
+          ],
+          "score": 0.65,
+          "tags": [
+            "tournament-proven"
+          ]
+        }
+      }
+    },
+    {
       "id": "hellsnether-high-taper",
       "line": "ux",
       "blade": "hellsnether",
@@ -427848,626 +428508,6 @@
           "wins": 0,
           "topCutAppearances": 2,
           "lastPlacementDate": "2025-11-21",
-          "score": 0.55,
-          "tags": [
-            "tournament-proven"
-          ]
-        }
-      }
-    },
-    {
-      "id": "gust-bat-9-70-taper",
-      "line": "bx",
-      "blade": "gust-bat",
-      "ratchet": "9-70",
-      "bit": "taper",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Gust Bat 9-70 Taper",
-      "type": "balance",
-      "score": 0.55,
-      "scoreBreakdown": {
-        "performance": 0.077,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 1,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-10-26",
-        "stadiums": [
-          "xtreme"
-        ]
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — Dallas Beyblade Association - Xtreme Gear Sports Team #7",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-10-26"
-        }
-      ],
-      "dateAdded": "2026-10-26",
-      "dateUpdated": "2026-10-26",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-dallas-beyblade-association-xtreme-gear-sports-team-7-2026-10-26",
-            "eventName": "Dallas Beyblade Association - Xtreme Gear Sports Team #7",
-            "date": "2026-10-26",
-            "placement": 1,
-            "players": 4,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      },
-      "windows": {
-        "30": {
-          "performance": 0.077,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-26",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.55,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "90": {
-          "performance": 0.077,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-26",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.55,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "180": {
-          "performance": 0.077,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-26",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.55,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "365": {
-          "performance": 0.077,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-26",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.55,
-          "tags": [
-            "tournament-proven"
-          ]
-        }
-      }
-    },
-    {
-      "id": "heavens-ring-5-60-unite",
-      "line": "bx",
-      "blade": "heavens-ring",
-      "ratchet": "5-60",
-      "bit": "unite",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Heavens Ring 5-60 Unite",
-      "type": "defense",
-      "score": 0.55,
-      "scoreBreakdown": {
-        "performance": 0.077,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 1,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-10-26",
-        "stadiums": [
-          "xtreme"
-        ]
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — Dallas Beyblade Association - Xtreme Gear Sports Team #7",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-10-26"
-        }
-      ],
-      "dateAdded": "2026-10-26",
-      "dateUpdated": "2026-10-26",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-dallas-beyblade-association-xtreme-gear-sports-team-7-2026-10-26",
-            "eventName": "Dallas Beyblade Association - Xtreme Gear Sports Team #7",
-            "date": "2026-10-26",
-            "placement": 1,
-            "players": 4,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      },
-      "windows": {
-        "30": {
-          "performance": 0.077,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-26",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.55,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "90": {
-          "performance": 0.077,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-26",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.55,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "180": {
-          "performance": 0.077,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-26",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.55,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "365": {
-          "performance": 0.077,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-26",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.55,
-          "tags": [
-            "tournament-proven"
-          ]
-        }
-      }
-    },
-    {
-      "id": "knight-lance-0-60-low-point",
-      "line": "bx",
-      "blade": "knight-lance",
-      "ratchet": "0-60",
-      "bit": "low-point",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Knight Lance 0-60 Low Point",
-      "type": "defense",
-      "score": 0.55,
-      "scoreBreakdown": {
-        "performance": 0.077,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 1,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-10-26",
-        "stadiums": [
-          "xtreme"
-        ]
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — Dallas Beyblade Association - Xtreme Gear Sports Team #7",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-10-26"
-        }
-      ],
-      "dateAdded": "2026-10-26",
-      "dateUpdated": "2026-10-26",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-dallas-beyblade-association-xtreme-gear-sports-team-7-2026-10-26",
-            "eventName": "Dallas Beyblade Association - Xtreme Gear Sports Team #7",
-            "date": "2026-10-26",
-            "placement": 1,
-            "players": 4,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      },
-      "windows": {
-        "30": {
-          "performance": 0.077,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-26",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.55,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "90": {
-          "performance": 0.077,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-26",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.55,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "180": {
-          "performance": 0.077,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-26",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.55,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "365": {
-          "performance": 0.077,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-26",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.55,
-          "tags": [
-            "tournament-proven"
-          ]
-        }
-      }
-    },
-    {
-      "id": "phoenix-flare-wheel-7-60-kick",
-      "line": "cx",
-      "blade": null,
-      "ratchet": "7-60",
-      "bit": "kick",
-      "lockChip": "phoenix",
-      "mainBlade": "flare",
-      "assistBlade": "wheel",
-      "overBlade": null,
-      "displayName": "Phoenix Flare W 7-60 Kick",
-      "type": "balance",
-      "score": 0.55,
-      "scoreBreakdown": {
-        "performance": 0.077,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 1,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-10-26",
-        "stadiums": [
-          "xtreme"
-        ]
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — Dallas Beyblade Association - Xtreme Gear Sports Team #7",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-10-26"
-        }
-      ],
-      "dateAdded": "2026-10-26",
-      "dateUpdated": "2026-10-26",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-dallas-beyblade-association-xtreme-gear-sports-team-7-2026-10-26",
-            "eventName": "Dallas Beyblade Association - Xtreme Gear Sports Team #7",
-            "date": "2026-10-26",
-            "placement": 1,
-            "players": 4,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      },
-      "windows": {
-        "30": {
-          "performance": 0.077,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-26",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.55,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "90": {
-          "performance": 0.077,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-26",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.55,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "180": {
-          "performance": 0.077,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-26",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.55,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "365": {
-          "performance": 0.077,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-26",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.55,
-          "tags": [
-            "tournament-proven"
-          ]
-        }
-      }
-    },
-    {
-      "id": "tricera-press-5-50-high-taper",
-      "line": "bx",
-      "blade": "tricera-press",
-      "ratchet": "5-50",
-      "bit": "high-taper",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Tricera Press 5-50 High Taper",
-      "type": "defense",
-      "score": 0.55,
-      "scoreBreakdown": {
-        "performance": 0.077,
-        "presence": 0,
-        "corroboration": 0.333,
-        "tournamentEvents": 1,
-        "wins": 1,
-        "topCutAppearances": 1,
-        "lastPlacementDate": "2026-10-26",
-        "stadiums": [
-          "xtreme"
-        ]
-      },
-      "tags": [
-        "tournament-proven"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — Dallas Beyblade Association - Xtreme Gear Sports Team #7",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2026-10-26"
-        }
-      ],
-      "dateAdded": "2026-10-26",
-      "dateUpdated": "2026-10-26",
-      "evidence": {
-        "placements": [
-          {
-            "source": "wbo-winning-combos",
-            "tier": "structured",
-            "eventId": "wbo-dallas-beyblade-association-xtreme-gear-sports-team-7-2026-10-26",
-            "eventName": "Dallas Beyblade Association - Xtreme Gear Sports Team #7",
-            "date": "2026-10-26",
-            "placement": 1,
-            "players": 4,
-            "stadium": "xtreme",
-            "lang": "en",
-            "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-          }
-        ],
-        "usage": [],
-        "mentions": []
-      },
-      "windows": {
-        "30": {
-          "performance": 0.077,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-26",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.55,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "90": {
-          "performance": 0.077,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-26",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.55,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "180": {
-          "performance": 0.077,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-26",
-          "stadiums": [
-            "xtreme"
-          ],
-          "score": 0.55,
-          "tags": [
-            "tournament-proven"
-          ]
-        },
-        "365": {
-          "performance": 0.077,
-          "presence": 0,
-          "corroboration": 0.333,
-          "tournamentEvents": 1,
-          "wins": 1,
-          "topCutAppearances": 1,
-          "lastPlacementDate": "2026-10-26",
-          "stadiums": [
-            "xtreme"
-          ],
           "score": 0.55,
           "tags": [
             "tournament-proven"
@@ -672774,5 +672814,5 @@
       "solid": 5.5
     }
   },
-  "windowsRef": "2026-10-26T03:03:12.388Z"
+  "windowsRef": "2026-10-26T03:04:33.835Z"
 }
