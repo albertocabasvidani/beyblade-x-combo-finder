@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25",
+  "generatedAt": "2026-10-26",
   "source": "wbo-winning-combos",
   "combos": {
     "aero-pegasus-0-60-rush": {
@@ -139,7 +139,7 @@
           "tier": "structured",
           "eventId": "wbo-thread-127300",
           "eventName": "Mata Nui's X Extravaganza 2",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 2,
           "stadium": "xtreme",
           "lang": "en",
@@ -3220,7 +3220,7 @@
           "tier": "structured",
           "eventId": "wbo-thread-127300",
           "eventName": "Mata Nui's X Extravaganza 2",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 1,
           "stadium": "xtreme",
           "lang": "en",
@@ -3231,7 +3231,7 @@
           "tier": "structured",
           "eventId": "wbo-thread-127300",
           "eventName": "Mata Nui's X Extravaganza 2",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 3,
           "stadium": "xtreme",
           "lang": "en",
@@ -8463,9 +8463,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-25",
+          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-26",
           "eventName": "Dallas Beyblade Association - Beycon 26 Dallas Regionals",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 1,
           "players": 31,
           "stadium": "xtreme",
@@ -22470,18 +22470,6 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-thread-121411",
-          "eventName": "Spooky Beys At The Park",
-          "date": "2025-10-25",
-          "placement": 2,
-          "players": 9,
-          "stadium": "xtreme",
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
           "eventId": "wbo-challonge-xlmbs2",
           "eventName": "Mothers Bey Special II",
           "date": "2026-03-15",
@@ -22983,16 +22971,6 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-thread-121354",
-          "eventName": "VBS #3 - A New Rhythm",
-          "date": "2025-10-26",
-          "placement": 1,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
           "eventId": "wbo-thread-121736",
           "eventName": "Food XDrive",
           "date": "2025-11-17",
@@ -23341,26 +23319,6 @@
       "displayName": "Clock Mirage 4-55 Low Orb",
       "type": "stamina",
       "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-challonge-nookarena7",
-          "eventName": "Event: Nook Arena 7",
-          "date": "2025-10-25",
-          "placement": 3,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-121481",
-          "eventName": "\"The Crimson Guild's Fun Friday Standard - #5\"",
-          "date": "2025-10-25",
-          "placement": 3,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
@@ -26303,32 +26261,6 @@
       ],
       "usage": []
     },
-    "clock-mirage-9-65-orb": {
-      "id": "clock-mirage-9-65-orb",
-      "line": "bx",
-      "blade": "clock-mirage",
-      "ratchet": "9-65",
-      "bit": "orb",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Clock Mirage 9-65 Orb",
-      "type": "stamina",
-      "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-120961",
-          "eventName": "[Edmonton, AB] 2025 Spooktober BeyBattle",
-          "date": "2025-10-26",
-          "placement": 1,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        }
-      ],
-      "usage": []
-    },
     "clock-mirage-9-65-rubber-accel": {
       "id": "clock-mirage-9-65-rubber-accel",
       "line": "bx",
@@ -27307,32 +27239,6 @@
       ],
       "usage": []
     },
-    "cobalt-dragoon-1-80-elevate": {
-      "id": "cobalt-dragoon-1-80-elevate",
-      "line": "bx",
-      "blade": "cobalt-dragoon",
-      "ratchet": "1-80",
-      "bit": "elevate",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Cobalt Dragoon 1-80 Elevate",
-      "type": "attack",
-      "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-121063",
-          "eventName": "Summit's Crown: Unlimited Stars #1",
-          "date": "2025-10-26",
-          "placement": 1,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        }
-      ],
-      "usage": []
-    },
     "cobalt-dragoon-2-60-cyclone": {
       "id": "cobalt-dragoon-2-60-cyclone",
       "line": "bx",
@@ -28114,26 +28020,6 @@
       "displayName": "Cobalt Dragoon 5-60 Elevate",
       "type": "attack",
       "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-challonge-nookarena7",
-          "eventName": "Event: Nook Arena 7",
-          "date": "2025-10-25",
-          "placement": 1,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-challonge-rftp5",
-          "eventName": "Reach for the Peak! #5 - We made it to the summit! Wow, what a view, LET'S BATTLE!",
-          "date": "2025-10-26",
-          "placement": 2,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
@@ -32944,9 +32830,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-10-25",
+          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-10-26",
           "eventName": "Dallas Beyblade Association - Breaking Limits - Limited #8",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 1,
           "players": 7,
           "stadium": "xtreme",
@@ -32956,9 +32842,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-25",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-26",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 2,
           "players": 17,
           "stadium": "xtreme",
@@ -32968,9 +32854,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-25",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-26",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 3,
           "players": 17,
           "stadium": "xtreme",
@@ -33064,20 +32950,20 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-challonge-rmnfan8c",
-          "eventName": "(Stage)",
-          "date": "2025-10-26",
-          "placement": 2,
+          "eventId": "wbo-pid-1902761",
+          "eventName": "Big Bean Oozaru",
+          "date": "2025-11-04",
+          "placement": 3,
           "lang": "en",
           "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
         },
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-pid-1902761",
-          "eventName": "Big Bean Oozaru",
-          "date": "2025-11-04",
-          "placement": 3,
+          "eventId": "wbo-challonge-rmnfan8c",
+          "eventName": "Taste the Spooky Painbow",
+          "date": "2025-11-19",
+          "placement": 2,
           "lang": "en",
           "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
         },
@@ -33596,9 +33482,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-10-25",
+          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-10-26",
           "eventName": "Dallas Beyblade Association - Breaking Limits - Limited #8",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 1,
           "players": 7,
           "stadium": "xtreme",
@@ -34085,16 +33971,6 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-thread-121354",
-          "eventName": "VBS #3 - A New Rhythm",
-          "date": "2025-10-26",
-          "placement": 2,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
           "eventId": "wbo-thread-121459",
           "eventName": "The GMI Games Beyblade Arena Challenge - October 2025",
           "date": "2025-10-27",
@@ -34567,9 +34443,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-10-25",
+          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-10-26",
           "eventName": "Dallas Beyblade Association - Breaking Limits - Limited #8",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 1,
           "players": 7,
           "stadium": "xtreme",
@@ -34750,16 +34626,6 @@
       "displayName": "Cobalt Dragoon 9-60 Elevate",
       "type": "attack",
       "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-challonge-qs36v6ni",
-          "eventName": "Edmonton Alberta, Neophoenix's Boundless Battlefront",
-          "date": "2025-10-26",
-          "placement": 3,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
@@ -37946,7 +37812,7 @@
           "tier": "structured",
           "eventId": "wbo-thread-127300",
           "eventName": "Mata Nui's X Extravaganza 2",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 3,
           "stadium": "xtreme",
           "lang": "en",
@@ -41989,33 +41855,6 @@
           "date": "2026-05-16",
           "placement": 1,
           "stadium": "xtreme",
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        }
-      ],
-      "usage": []
-    },
-    "dran-brave-jaggy-3-60-low-rush": {
-      "id": "dran-brave-jaggy-3-60-low-rush",
-      "line": "cx",
-      "blade": null,
-      "ratchet": "3-60",
-      "bit": "low-rush",
-      "lockChip": "dran",
-      "mainBlade": "brave",
-      "assistBlade": "jaggy",
-      "overBlade": null,
-      "displayName": "Dran Brave J 3-60 Low Rush",
-      "type": "attack",
-      "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-pid-1901415",
-          "eventName": "X Masters 28",
-          "date": "2025-10-25",
-          "placement": 3,
-          "players": 16,
           "lang": "en",
           "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
         }
@@ -46865,9 +46704,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-25",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-26",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 2,
           "players": 17,
           "stadium": "xtreme",
@@ -48946,32 +48785,6 @@
       ],
       "usage": []
     },
-    "dran-sword-1-80-rush": {
-      "id": "dran-sword-1-80-rush",
-      "line": "bx",
-      "blade": "dran-sword",
-      "ratchet": "1-80",
-      "bit": "rush",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Dran Sword 1-80 Rush",
-      "type": "attack",
-      "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-pid-1903152",
-          "eventName": "Challonge",
-          "date": "2025-10-25",
-          "placement": 1,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        }
-      ],
-      "usage": []
-    },
     "dran-sword-3-60-cyclone": {
       "id": "dran-sword-3-60-cyclone",
       "line": "bx",
@@ -49313,16 +49126,6 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-challonge-rftp5",
-          "eventName": "Reach for the Peak! #5 - We made it to the summit! Wow, what a view, LET'S BATTLE!",
-          "date": "2025-10-26",
-          "placement": 3,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
           "eventId": "wbo-jingle-bxls-jingle-bxls-jingle-the-beybladexlegacy-way-2025-12-21",
           "eventName": "Jingle BXLs, Jingle BXLs, Jingle the BeybladeXLegacy way!",
           "date": "2025-12-21",
@@ -49445,32 +49248,6 @@
           "placement": 3,
           "players": 16,
           "stadium": "xtreme",
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        }
-      ],
-      "usage": []
-    },
-    "dran-sword-5-60-ball": {
-      "id": "dran-sword-5-60-ball",
-      "line": "bx",
-      "blade": "dran-sword",
-      "ratchet": "5-60",
-      "bit": "ball",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Dran Sword 5-60 Ball",
-      "type": "attack",
-      "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-challonge-e0j1is4c",
-          "eventName": "Challonge",
-          "date": "2025-10-25",
-          "placement": 1,
           "lang": "en",
           "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
         }
@@ -53159,9 +52936,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-25",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-26",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 1,
           "players": 17,
           "stadium": "xtreme",
@@ -63641,6 +63418,18 @@
           "stadium": "xtreme",
           "lang": "en",
           "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+        },
+        {
+          "source": "wbo-winning-combos",
+          "tier": "structured",
+          "eventId": "wbo-thread-129399",
+          "eventName": "The BeyIsland Tour #2",
+          "date": "2026-10-25",
+          "placement": 3,
+          "players": 18,
+          "stadium": "xtreme",
+          "lang": "en",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
         }
       ],
       "usage": []
@@ -66037,16 +65826,6 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-challonge-nookarena7",
-          "eventName": "Event: Nook Arena 7",
-          "date": "2025-10-25",
-          "placement": 2,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
           "eventId": "wbo-halsper-s-stock-shock-2025-12-30",
           "eventName": "Halsper’s Stock Shock",
           "date": "2025-12-30",
@@ -67145,16 +66924,6 @@
       "displayName": "Golem Rock 3-60 Wall Ball",
       "type": "defense",
       "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-challonge-nookarena7",
-          "eventName": "Event: Nook Arena 7",
-          "date": "2025-10-25",
-          "placement": 3,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
@@ -69683,26 +69452,6 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-challonge-qs36v6ni",
-          "eventName": "Edmonton Alberta, Neophoenix's Boundless Battlefront",
-          "date": "2025-10-26",
-          "placement": 2,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-120961",
-          "eventName": "[Edmonton, AB] 2025 Spooktober BeyBattle",
-          "date": "2025-10-26",
-          "placement": 1,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
           "eventId": "wbo-back-alley-beyblades-12-2025-10-27",
           "eventName": "Back Alley Beyblades 12",
           "date": "2025-10-27",
@@ -71438,9 +71187,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-25",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-26",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 2,
           "players": 17,
           "stadium": "xtreme",
@@ -71471,6 +71220,34 @@
           "date": "2026-06-08",
           "placement": 1,
           "players": 21,
+          "stadium": "xtreme",
+          "lang": "en",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+        }
+      ],
+      "usage": []
+    },
+    "gust-bat-9-70-taper": {
+      "id": "gust-bat-9-70-taper",
+      "line": "bx",
+      "blade": "gust-bat",
+      "ratchet": "9-70",
+      "bit": "taper",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Gust Bat 9-70 Taper",
+      "type": "balance",
+      "placements": [
+        {
+          "source": "wbo-winning-combos",
+          "tier": "structured",
+          "eventId": "wbo-dallas-beyblade-association-xtreme-gear-sports-team-7-2026-10-26",
+          "eventName": "Dallas Beyblade Association - Xtreme Gear Sports Team #7",
+          "date": "2026-10-26",
+          "placement": 1,
+          "players": 4,
           "stadium": "xtreme",
           "lang": "en",
           "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
@@ -71937,6 +71714,34 @@
           "date": "2026-08-28",
           "placement": 1,
           "players": 16,
+          "stadium": "xtreme",
+          "lang": "en",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+        }
+      ],
+      "usage": []
+    },
+    "heavens-ring-5-60-unite": {
+      "id": "heavens-ring-5-60-unite",
+      "line": "bx",
+      "blade": "heavens-ring",
+      "ratchet": "5-60",
+      "bit": "unite",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Heavens Ring 5-60 Unite",
+      "type": "defense",
+      "placements": [
+        {
+          "source": "wbo-winning-combos",
+          "tier": "structured",
+          "eventId": "wbo-dallas-beyblade-association-xtreme-gear-sports-team-7-2026-10-26",
+          "eventName": "Dallas Beyblade Association - Xtreme Gear Sports Team #7",
+          "date": "2026-10-26",
+          "placement": 1,
+          "players": 4,
           "stadium": "xtreme",
           "lang": "en",
           "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
@@ -73224,8 +73029,8 @@
           "source": "wbo-winning-combos",
           "tier": "structured",
           "eventId": "wbo-challonge-rmnfan8c",
-          "eventName": "(Stage)",
-          "date": "2025-10-26",
+          "eventName": "Taste the Spooky Painbow",
+          "date": "2025-11-19",
           "placement": 3,
           "lang": "en",
           "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
@@ -74740,34 +74545,6 @@
       ],
       "usage": []
     },
-    "hells-hammer-7-70-vortex": {
-      "id": "hells-hammer-7-70-vortex",
-      "line": "bx",
-      "blade": "hells-hammer",
-      "ratchet": "7-70",
-      "bit": "vortex",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Hells Hammer 7-70 Vortex",
-      "type": "balance",
-      "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-121411",
-          "eventName": "Spooky Beys At The Park",
-          "date": "2025-10-25",
-          "placement": 2,
-          "players": 9,
-          "stadium": "xtreme",
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        }
-      ],
-      "usage": []
-    },
     "hells-hammer-9-60-ball": {
       "id": "hells-hammer-9-60-ball",
       "line": "bx",
@@ -75896,34 +75673,6 @@
           "eventName": "CHAOS ROUNDS 2 [14DEC25]",
           "date": "2025-12-22",
           "placement": 3,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        }
-      ],
-      "usage": []
-    },
-    "hells-scythe-7-60-level": {
-      "id": "hells-scythe-7-60-level",
-      "line": "bx",
-      "blade": "hells-scythe",
-      "ratchet": "7-60",
-      "bit": "level",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Hells Scythe 7-60 Level",
-      "type": "balance",
-      "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-121411",
-          "eventName": "Spooky Beys At The Park",
-          "date": "2025-10-25",
-          "placement": 3,
-          "players": 9,
-          "stadium": "xtreme",
           "lang": "en",
           "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
         }
@@ -77231,6 +76980,18 @@
           "date": "2026-09-20",
           "placement": 1,
           "players": 10,
+          "lang": "en",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+        },
+        {
+          "source": "wbo-winning-combos",
+          "tier": "structured",
+          "eventId": "wbo-thread-129399",
+          "eventName": "The BeyIsland Tour #2",
+          "date": "2026-10-25",
+          "placement": 1,
+          "players": 18,
+          "stadium": "xtreme",
           "lang": "en",
           "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
         }
@@ -79071,27 +78832,6 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-pid-1901415",
-          "eventName": "X Masters 28",
-          "date": "2025-10-25",
-          "placement": 3,
-          "players": 16,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-challonge-rftp5",
-          "eventName": "Reach for the Peak! #5 - We made it to the summit! Wow, what a view, LET'S BATTLE!",
-          "date": "2025-10-26",
-          "placement": 2,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
           "eventId": "wbo-back-alley-beyblades-12-2025-10-27",
           "eventName": "Back Alley Beyblades 12",
           "date": "2025-10-27",
@@ -79971,17 +79711,6 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-thread-121011",
-          "eventName": "TopCut Battle League 10/20",
-          "date": "2025-10-25",
-          "placement": 1,
-          "players": 53,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
           "eventId": "wbo-thread-121529",
           "eventName": "The InBEYsion Vol. 4",
           "date": "2025-11-09",
@@ -80226,16 +79955,6 @@
       "displayName": "Wyvern Hover 1-60 Low Rush",
       "type": "defense",
       "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-120961",
-          "eventName": "[Edmonton, AB] 2025 Spooktober BeyBattle",
-          "date": "2025-10-26",
-          "placement": 1,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
@@ -80690,16 +80409,6 @@
       "displayName": "Wyvern Hover 1-60 Rush",
       "type": "defense",
       "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-challonge-qs36v6ni",
-          "eventName": "Edmonton Alberta, Neophoenix's Boundless Battlefront",
-          "date": "2025-10-26",
-          "placement": 1,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
@@ -82634,58 +82343,6 @@
       ],
       "usage": []
     },
-    "hover-wyvern-3-60-dot": {
-      "id": "hover-wyvern-3-60-dot",
-      "line": "bx",
-      "blade": "hover-wyvern",
-      "ratchet": "3-60",
-      "bit": "dot",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Wyvern Hover 3-60 Dot",
-      "type": "defense",
-      "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-pid-1903152",
-          "eventName": "Challonge",
-          "date": "2025-10-25",
-          "placement": 2,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        }
-      ],
-      "usage": []
-    },
-    "hover-wyvern-3-60-flat": {
-      "id": "hover-wyvern-3-60-flat",
-      "line": "bx",
-      "blade": "hover-wyvern",
-      "ratchet": "3-60",
-      "bit": "flat",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Wyvern Hover 3-60 Flat",
-      "type": "defense",
-      "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-challonge-qs36v6ni",
-          "eventName": "Edmonton Alberta, Neophoenix's Boundless Battlefront",
-          "date": "2025-10-26",
-          "placement": 3,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        }
-      ],
-      "usage": []
-    },
     "hover-wyvern-3-60-free-ball": {
       "id": "hover-wyvern-3-60-free-ball",
       "line": "bx",
@@ -84177,9 +83834,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-25",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-26",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 1,
           "players": 17,
           "stadium": "xtreme",
@@ -84721,16 +84378,6 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-thread-121354",
-          "eventName": "VBS #3 - A New Rhythm",
-          "date": "2025-10-26",
-          "placement": 3,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
           "eventId": "wbo-thread-123604",
           "eventName": "Battle of the Sage’s #2",
           "date": "2026-02-28",
@@ -84829,32 +84476,6 @@
           "eventId": "wbo-pid-1907550",
           "eventName": "“Winter Is Coming” - Beybladin’ X Spokane",
           "date": "2025-12-13",
-          "placement": 3,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        }
-      ],
-      "usage": []
-    },
-    "hover-wyvern-5-80-hexa": {
-      "id": "hover-wyvern-5-80-hexa",
-      "line": "bx",
-      "blade": "hover-wyvern",
-      "ratchet": "5-80",
-      "bit": "hexa",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Wyvern Hover 5-80 Hexa",
-      "type": "defense",
-      "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-pid-1903152",
-          "eventName": "Challonge",
-          "date": "2025-10-25",
           "placement": 3,
           "lang": "en",
           "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
@@ -85290,17 +84911,6 @@
       "displayName": "Wyvern Hover 7-60 Kick",
       "type": "defense",
       "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-pid-1901415",
-          "eventName": "X Masters 28",
-          "date": "2025-10-25",
-          "placement": 1,
-          "players": 16,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
@@ -87113,16 +86723,6 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-challonge-e0j1is4c",
-          "eventName": "Challonge",
-          "date": "2025-10-25",
-          "placement": 2,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
           "eventId": "wbo-challonge-4csrieop",
           "eventName": "DFW Beyblades Weekly Tournament #65 Results",
           "date": "2025-10-30",
@@ -88027,16 +87627,6 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-thread-121481",
-          "eventName": "\"The Crimson Guild's Fun Friday Standard - #5\"",
-          "date": "2025-10-25",
-          "placement": 2,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
           "eventId": "wbo-thread-120948",
           "eventName": "View All Faces",
           "date": "2025-10-26",
@@ -88051,16 +87641,6 @@
           "eventName": "View All Faces",
           "date": "2025-10-26",
           "placement": 2,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-121354",
-          "eventName": "VBS #3 - A New Rhythm",
-          "date": "2025-10-26",
-          "placement": 1,
           "lang": "en",
           "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
         },
@@ -92784,9 +92364,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-25",
+          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-26",
           "eventName": "Dallas Beyblade Association - Beycon 26 Dallas Regionals",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 3,
           "players": 31,
           "stadium": "xtreme",
@@ -92809,16 +92389,6 @@
       "displayName": "Wyvern Hover 9-60 Level",
       "type": "defense",
       "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-challonge-rftp5",
-          "eventName": "Reach for the Peak! #5 - We made it to the summit! Wow, what a view, LET'S BATTLE!",
-          "date": "2025-10-26",
-          "placement": 1,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
@@ -93979,16 +93549,6 @@
       "displayName": "Wyvern Hover 9-60 Rush",
       "type": "defense",
       "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-121481",
-          "eventName": "\"The Crimson Guild's Fun Friday Standard - #5\"",
-          "date": "2025-10-25",
-          "placement": 4,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
@@ -97058,16 +96618,6 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-pid-1903152",
-          "eventName": "Challonge",
-          "date": "2025-10-25",
-          "placement": 3,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
           "eventId": "wbo-thread-125863",
           "eventName": "PRO LEAGUE CDMX: RANKED ROUND 05",
           "date": "2026-05-17",
@@ -97647,33 +97197,6 @@
           "placement": 3,
           "players": 9,
           "stadium": "xtreme",
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        }
-      ],
-      "usage": []
-    },
-    "impact-drake-5-60-wedge": {
-      "id": "impact-drake-5-60-wedge",
-      "line": "bx",
-      "blade": "impact-drake",
-      "ratchet": "5-60",
-      "bit": "wedge",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Impact Drake 5-60 Wedge",
-      "type": "attack",
-      "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-pid-1901415",
-          "eventName": "X Masters 28",
-          "date": "2025-10-25",
-          "placement": 2,
-          "players": 16,
           "lang": "en",
           "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
         }
@@ -99368,6 +98891,34 @@
       ],
       "usage": []
     },
+    "knight-lance-0-60-low-point": {
+      "id": "knight-lance-0-60-low-point",
+      "line": "bx",
+      "blade": "knight-lance",
+      "ratchet": "0-60",
+      "bit": "low-point",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Knight Lance 0-60 Low Point",
+      "type": "defense",
+      "placements": [
+        {
+          "source": "wbo-winning-combos",
+          "tier": "structured",
+          "eventId": "wbo-dallas-beyblade-association-xtreme-gear-sports-team-7-2026-10-26",
+          "eventName": "Dallas Beyblade Association - Xtreme Gear Sports Team #7",
+          "date": "2026-10-26",
+          "placement": 1,
+          "players": 4,
+          "stadium": "xtreme",
+          "lang": "en",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+        }
+      ],
+      "usage": []
+    },
     "knight-lance-1-60-level": {
       "id": "knight-lance-1-60-level",
       "line": "bx",
@@ -100127,8 +99678,8 @@
           "source": "wbo-winning-combos",
           "tier": "structured",
           "eventId": "wbo-challonge-rmnfan8c",
-          "eventName": "(Stage)",
-          "date": "2025-10-26",
+          "eventName": "Taste the Spooky Painbow",
+          "date": "2025-11-19",
           "placement": 1,
           "lang": "en",
           "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
@@ -100823,32 +100374,6 @@
           "placement": 3,
           "players": 64,
           "stadium": "xtreme",
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        }
-      ],
-      "usage": []
-    },
-    "knight-mail-1-70-rush": {
-      "id": "knight-mail-1-70-rush",
-      "line": "bx",
-      "blade": "knight-mail",
-      "ratchet": "1-70",
-      "bit": "rush",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Knight Mail 1-70 Rush",
-      "type": "defense",
-      "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-120961",
-          "eventName": "[Edmonton, AB] 2025 Spooktober BeyBattle",
-          "date": "2025-10-26",
-          "placement": 1,
           "lang": "en",
           "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
         }
@@ -101921,16 +101446,6 @@
       "displayName": "Knight Mail 7-60 Low Rush",
       "type": "defense",
       "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-121063",
-          "eventName": "Summit's Crown: Unlimited Stars #1",
-          "date": "2025-10-26",
-          "placement": 1,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
@@ -104381,32 +103896,6 @@
       ],
       "usage": []
     },
-    "leon-crest-7-60-hexa": {
-      "id": "leon-crest-7-60-hexa",
-      "line": "bx",
-      "blade": "leon-crest",
-      "ratchet": "7-60",
-      "bit": "hexa",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Leon Crest 7-60 Hexa",
-      "type": "defense",
-      "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-challonge-e0j1is4c",
-          "eventName": "Challonge",
-          "date": "2025-10-25",
-          "placement": 3,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        }
-      ],
-      "usage": []
-    },
     "leon-crest-7-60-wedge": {
       "id": "leon-crest-7-60-wedge",
       "line": "bx",
@@ -105783,9 +105272,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-10-25",
+          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-10-26",
           "eventName": "Dallas Beyblade Association - Breaking Limits - Limited #8",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 1,
           "players": 7,
           "stadium": "xtreme",
@@ -107886,9 +107375,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-10-25",
+          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-10-26",
           "eventName": "Dallas Beyblade Association - Breaking Limits - Limited #8",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 1,
           "players": 7,
           "stadium": "xtreme",
@@ -108175,9 +107664,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-25",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-26",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 2,
           "players": 17,
           "stadium": "xtreme",
@@ -111164,9 +110653,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-25",
+          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-26",
           "eventName": "Dallas Beyblade Association - Beycon 26 Dallas Regionals",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 3,
           "players": 31,
           "stadium": "xtreme",
@@ -111176,9 +110665,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-25",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-26",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 2,
           "players": 17,
           "stadium": "xtreme",
@@ -112980,9 +112469,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-25",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-26",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 3,
           "players": 17,
           "stadium": "xtreme",
@@ -124201,16 +123690,6 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-thread-121063",
-          "eventName": "Summit's Crown: Unlimited Stars #1",
-          "date": "2025-10-26",
-          "placement": 3,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
           "eventId": "wbo-thread-121068",
           "eventName": "Curio Halloween Clash",
           "date": "2025-10-27",
@@ -125412,33 +124891,6 @@
       ],
       "usage": []
     },
-    "perseus-blast-wheel-5-60-free-ball": {
-      "id": "perseus-blast-wheel-5-60-free-ball",
-      "line": "cx",
-      "blade": null,
-      "ratchet": "5-60",
-      "bit": "free-ball",
-      "lockChip": "perseus",
-      "mainBlade": "blast",
-      "assistBlade": "wheel",
-      "overBlade": null,
-      "displayName": "Perseus Blast W 5-60 Free Ball",
-      "type": "attack",
-      "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-pid-1901415",
-          "eventName": "X Masters 28",
-          "date": "2025-10-25",
-          "placement": 3,
-          "players": 16,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        }
-      ],
-      "usage": []
-    },
     "perseus-blast-wheel-7-60-rush": {
       "id": "perseus-blast-wheel-7-60-rush",
       "line": "cx",
@@ -125561,9 +125013,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-25",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-26",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 3,
           "players": 17,
           "stadium": "xtreme",
@@ -125972,9 +125424,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-25",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-26",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 3,
           "players": 17,
           "stadium": "xtreme",
@@ -127034,6 +126486,34 @@
           "eventName": "Dark DepthsGames back From the Depths",
           "date": "2026-04-24",
           "placement": 3,
+          "lang": "en",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+        }
+      ],
+      "usage": []
+    },
+    "phoenix-flare-wheel-7-60-kick": {
+      "id": "phoenix-flare-wheel-7-60-kick",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "7-60",
+      "bit": "kick",
+      "lockChip": "phoenix",
+      "mainBlade": "flare",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Phoenix Flare W 7-60 Kick",
+      "type": "balance",
+      "placements": [
+        {
+          "source": "wbo-winning-combos",
+          "tier": "structured",
+          "eventId": "wbo-dallas-beyblade-association-xtreme-gear-sports-team-7-2026-10-26",
+          "eventName": "Dallas Beyblade Association - Xtreme Gear Sports Team #7",
+          "date": "2026-10-26",
+          "placement": 1,
+          "players": 4,
+          "stadium": "xtreme",
           "lang": "en",
           "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
         }
@@ -129697,36 +129177,6 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-challonge-e0j1is4c",
-          "eventName": "Challonge",
-          "date": "2025-10-25",
-          "placement": 1,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-challonge-e0j1is4c",
-          "eventName": "Challonge",
-          "date": "2025-10-25",
-          "placement": 2,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-121063",
-          "eventName": "Summit's Crown: Unlimited Stars #1",
-          "date": "2025-10-26",
-          "placement": 2,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
           "eventId": "wbo-thread-121033",
           "eventName": "Santa Rosa Spin ver 0.3: HALLOWEEN HAVOC",
           "date": "2025-10-27",
@@ -130870,9 +130320,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-25",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-26",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 3,
           "players": 17,
           "stadium": "xtreme",
@@ -132132,16 +131582,6 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-pid-1903152",
-          "eventName": "Challonge",
-          "date": "2025-10-25",
-          "placement": 3,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
           "eventId": "wbo-thread-121107",
           "eventName": "icnmy6b6",
           "date": "2025-10-28",
@@ -133195,9 +132635,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-25",
+          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-26",
           "eventName": "Dallas Beyblade Association - Beycon 26 Dallas Regionals",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 2,
           "players": 31,
           "stadium": "xtreme",
@@ -135176,32 +134616,6 @@
       ],
       "usage": []
     },
-    "phoenix-wing-4-50-low-rush": {
-      "id": "phoenix-wing-4-50-low-rush",
-      "line": "bx",
-      "blade": "phoenix-wing",
-      "ratchet": "4-50",
-      "bit": "low-rush",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Phoenix Wing 4-50 Low Rush",
-      "type": "attack",
-      "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-challonge-rftp5",
-          "eventName": "Reach for the Peak! #5 - We made it to the summit! Wow, what a view, LET'S BATTLE!",
-          "date": "2025-10-26",
-          "placement": 1,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        }
-      ],
-      "usage": []
-    },
     "phoenix-wing-4-50-rush": {
       "id": "phoenix-wing-4-50-rush",
       "line": "bx",
@@ -135337,16 +134751,6 @@
       "displayName": "Phoenix Wing 5-60 Kick",
       "type": "attack",
       "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-120961",
-          "eventName": "[Edmonton, AB] 2025 Spooktober BeyBattle",
-          "date": "2025-10-26",
-          "placement": 1,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
@@ -135751,32 +135155,6 @@
           "date": "2026-10-11",
           "placement": 2,
           "players": 5,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        }
-      ],
-      "usage": []
-    },
-    "phoenix-wing-6-60-kick": {
-      "id": "phoenix-wing-6-60-kick",
-      "line": "bx",
-      "blade": "phoenix-wing",
-      "ratchet": "6-60",
-      "bit": "kick",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Phoenix Wing 6-60 Kick",
-      "type": "attack",
-      "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-120961",
-          "eventName": "[Edmonton, AB] 2025 Spooktober BeyBattle",
-          "date": "2025-10-26",
-          "placement": 1,
           "lang": "en",
           "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
         }
@@ -137815,16 +137193,6 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-challonge-nookarena7",
-          "eventName": "Event: Nook Arena 7",
-          "date": "2025-10-25",
-          "placement": 2,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
           "eventId": "wbo-thread-123166",
           "eventName": "Nook Arena 19",
           "date": "2026-01-31",
@@ -138425,16 +137793,6 @@
       "displayName": "Phoenix Wing 9-60 Point",
       "type": "attack",
       "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-121481",
-          "eventName": "\"The Crimson Guild's Fun Friday Standard - #5\"",
-          "date": "2025-10-25",
-          "placement": 1,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
@@ -139084,28 +138442,6 @@
       "displayName": "Phoenix Wing 9-60 Wedge",
       "type": "attack",
       "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-pid-1901415",
-          "eventName": "X Masters 28",
-          "date": "2025-10-25",
-          "placement": 1,
-          "players": 16,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-pid-1901415",
-          "eventName": "X Masters 28",
-          "date": "2025-10-25",
-          "placement": 3,
-          "players": 16,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
@@ -143617,16 +142953,6 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-thread-121481",
-          "eventName": "\"The Crimson Guild's Fun Friday Standard - #5\"",
-          "date": "2025-10-25",
-          "placement": 3,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
           "eventId": "wbo-challonge-hhg1025",
           "eventName": "Kyo’s Kolosseum: All Saints' Wake 10/25/25",
           "date": "2025-10-27",
@@ -145039,32 +144365,6 @@
           "placement": 2,
           "players": 54,
           "stadium": "xtreme",
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        }
-      ],
-      "usage": []
-    },
-    "samurai-saber-9-60-ball": {
-      "id": "samurai-saber-9-60-ball",
-      "line": "bx",
-      "blade": "samurai-saber",
-      "ratchet": "9-60",
-      "bit": "ball",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Samurai Saber 9-60 Ball",
-      "type": "attack",
-      "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-pid-1903152",
-          "eventName": "Challonge",
-          "date": "2025-10-25",
-          "placement": 2,
           "lang": "en",
           "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
         }
@@ -147606,16 +146906,6 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-thread-120961",
-          "eventName": "[Edmonton, AB] 2025 Spooktober BeyBattle",
-          "date": "2025-10-26",
-          "placement": 4,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
           "eventId": "wbo-thread-126186",
           "eventName": "The Time Shift Tumble",
           "date": "2026-06-07",
@@ -147782,7 +147072,7 @@
           "tier": "structured",
           "eventId": "wbo-thread-127300",
           "eventName": "Mata Nui's X Extravaganza 2",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 2,
           "stadium": "xtreme",
           "lang": "en",
@@ -150002,28 +149292,6 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-thread-121411",
-          "eventName": "Spooky Beys At The Park",
-          "date": "2025-10-25",
-          "placement": 1,
-          "players": 9,
-          "stadium": "xtreme",
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-121354",
-          "eventName": "VBS #3 - A New Rhythm",
-          "date": "2025-10-26",
-          "placement": 3,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
           "eventId": "wbo-29-players-2025-10-29",
           "eventName": "29 players",
           "date": "2025-10-29",
@@ -150365,32 +149633,6 @@
           "eventName": "Howl at the Moon 2",
           "date": "2025-11-16",
           "placement": 1,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        }
-      ],
-      "usage": []
-    },
-    "shark-edge-4-80-flat": {
-      "id": "shark-edge-4-80-flat",
-      "line": "bx",
-      "blade": "shark-edge",
-      "ratchet": "4-80",
-      "bit": "flat",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Shark Edge 4-80 Flat",
-      "type": "attack",
-      "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-challonge-rftp5",
-          "eventName": "Reach for the Peak! #5 - We made it to the summit! Wow, what a view, LET'S BATTLE!",
-          "date": "2025-10-26",
-          "placement": 3,
           "lang": "en",
           "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
         }
@@ -150767,9 +150009,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-25",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-26",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 3,
           "players": 17,
           "stadium": "xtreme",
@@ -151208,34 +150450,6 @@
           "date": "2026-03-12",
           "placement": 2,
           "players": 12,
-          "stadium": "xtreme",
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        }
-      ],
-      "usage": []
-    },
-    "shark-gill-9-60-hexa": {
-      "id": "shark-gill-9-60-hexa",
-      "line": "bx",
-      "blade": "shark-gill",
-      "ratchet": "9-60",
-      "bit": "hexa",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Shark Gill 9-60 Hexa",
-      "type": "stamina",
-      "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-121411",
-          "eventName": "Spooky Beys At The Park",
-          "date": "2025-10-25",
-          "placement": 1,
-          "players": 9,
           "stadium": "xtreme",
           "lang": "en",
           "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
@@ -156963,37 +156177,6 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-pid-1901415",
-          "eventName": "X Masters 28",
-          "date": "2025-10-25",
-          "placement": 1,
-          "players": 16,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-121481",
-          "eventName": "\"The Crimson Guild's Fun Friday Standard - #5\"",
-          "date": "2025-10-25",
-          "placement": 4,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-challonge-qs36v6ni",
-          "eventName": "Edmonton Alberta, Neophoenix's Boundless Battlefront",
-          "date": "2025-10-26",
-          "placement": 2,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
           "eventId": "wbo-challonge-hhg1025",
           "eventName": "Kyo’s Kolosseum: All Saints' Wake 10/25/25",
           "date": "2025-10-27",
@@ -161217,16 +160400,6 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-challonge-rftp5",
-          "eventName": "Reach for the Peak! #5 - We made it to the summit! Wow, what a view, LET'S BATTLE!",
-          "date": "2025-10-26",
-          "placement": 1,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
           "eventId": "wbo-thread-125616",
           "eventName": "RC games Bi-Weekly Tournament 5/16/2026",
           "date": "2026-05-16",
@@ -163078,16 +162251,6 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-thread-120961",
-          "eventName": "[Edmonton, AB] 2025 Spooktober BeyBattle",
-          "date": "2025-10-26",
-          "placement": 4,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
           "eventId": "wbo-challonge-o0uvfozy",
           "eventName": "Decks and Dice weekly 10/29/25",
           "date": "2025-10-30",
@@ -163458,16 +162621,6 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-thread-121354",
-          "eventName": "VBS #3 - A New Rhythm",
-          "date": "2025-10-26",
-          "placement": 2,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
           "eventId": "wbo-thread-121459",
           "eventName": "The GMI Games Beyblade Arena Challenge - October 2025",
           "date": "2025-10-27",
@@ -163759,27 +162912,6 @@
       "displayName": "Shark Scale 1-70 Low Rush",
       "type": "attack",
       "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-121011",
-          "eventName": "TopCut Battle League 10/20",
-          "date": "2025-10-25",
-          "placement": 2,
-          "players": 53,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-challonge-qs36v6ni",
-          "eventName": "Edmonton Alberta, Neophoenix's Boundless Battlefront",
-          "date": "2025-10-26",
-          "placement": 1,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
@@ -171714,9 +170846,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-25",
+          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-26",
           "eventName": "Dallas Beyblade Association - Beycon 26 Dallas Regionals",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 1,
           "players": 31,
           "stadium": "xtreme",
@@ -171726,9 +170858,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-25",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-26",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 1,
           "players": 17,
           "stadium": "xtreme",
@@ -171738,9 +170870,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-25",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-26",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 2,
           "players": 17,
           "stadium": "xtreme",
@@ -171752,7 +170884,7 @@
           "tier": "structured",
           "eventId": "wbo-thread-127300",
           "eventName": "Mata Nui's X Extravaganza 2",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 1,
           "stadium": "xtreme",
           "lang": "en",
@@ -175788,16 +174920,6 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-thread-121481",
-          "eventName": "\"The Crimson Guild's Fun Friday Standard - #5\"",
-          "date": "2025-10-25",
-          "placement": 3,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
           "eventId": "wbo-thread-120948",
           "eventName": "View All Faces",
           "date": "2025-10-26",
@@ -176551,39 +175673,6 @@
       "displayName": "Shark Scale 3-60 Low Rush",
       "type": "attack",
       "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-pid-1901415",
-          "eventName": "X Masters 28",
-          "date": "2025-10-25",
-          "placement": 2,
-          "players": 16,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-121411",
-          "eventName": "Spooky Beys At The Park",
-          "date": "2025-10-25",
-          "placement": 3,
-          "players": 9,
-          "stadium": "xtreme",
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-121063",
-          "eventName": "Summit's Crown: Unlimited Stars #1",
-          "date": "2025-10-26",
-          "placement": 2,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
@@ -181157,17 +180246,6 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-thread-121011",
-          "eventName": "TopCut Battle League 10/20",
-          "date": "2025-10-25",
-          "placement": 1,
-          "players": 53,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
           "eventId": "wbo-back-alley-beyblades-12-2025-10-27",
           "eventName": "Back Alley Beyblades 12",
           "date": "2025-10-27",
@@ -182797,16 +181875,6 @@
       "displayName": "Shark Scale 3-60 Under Needle",
       "type": "attack",
       "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-121481",
-          "eventName": "\"The Crimson Guild's Fun Friday Standard - #5\"",
-          "date": "2025-10-25",
-          "placement": 2,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
@@ -184838,9 +183906,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-25",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-26",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 1,
           "players": 17,
           "stadium": "xtreme",
@@ -185000,26 +184068,6 @@
       "displayName": "Shark Scale 4-50 Low Rush",
       "type": "attack",
       "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-challonge-nookarena7",
-          "eventName": "Event: Nook Arena 7",
-          "date": "2025-10-25",
-          "placement": 1,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-challonge-nookarena7",
-          "eventName": "Event: Nook Arena 7",
-          "date": "2025-10-25",
-          "placement": 3,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
@@ -186508,18 +185556,6 @@
       "displayName": "Shark Scale 4-50 Rush",
       "type": "attack",
       "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-121411",
-          "eventName": "Spooky Beys At The Park",
-          "date": "2025-10-25",
-          "placement": 1,
-          "players": 9,
-          "stadium": "xtreme",
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
@@ -188749,32 +187785,6 @@
       ],
       "usage": []
     },
-    "shark-scale-5-70-level": {
-      "id": "shark-scale-5-70-level",
-      "line": "bx",
-      "blade": "shark-scale",
-      "ratchet": "5-70",
-      "bit": "level",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Shark Scale 5-70 Level",
-      "type": "attack",
-      "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-121063",
-          "eventName": "Summit's Crown: Unlimited Stars #1",
-          "date": "2025-10-26",
-          "placement": 3,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        }
-      ],
-      "usage": []
-    },
     "shark-scale-5-70-low-flat": {
       "id": "shark-scale-5-70-low-flat",
       "line": "bx",
@@ -189707,9 +188717,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-25",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-26",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 2,
           "players": 17,
           "stadium": "xtreme",
@@ -192685,9 +191695,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-25",
+          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-26",
           "eventName": "Dallas Beyblade Association - Beycon 26 Dallas Regionals",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 3,
           "players": 31,
           "stadium": "xtreme",
@@ -196472,6 +195482,18 @@
           "stadium": "xtreme",
           "lang": "en",
           "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+        },
+        {
+          "source": "wbo-winning-combos",
+          "tier": "structured",
+          "eventId": "wbo-thread-129399",
+          "eventName": "The BeyIsland Tour #2",
+          "date": "2026-10-25",
+          "placement": 1,
+          "players": 18,
+          "stadium": "xtreme",
+          "lang": "en",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
         }
       ],
       "usage": []
@@ -197342,9 +196364,21 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-25",
-          "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
+          "eventId": "wbo-thread-129399",
+          "eventName": "The BeyIsland Tour #2",
           "date": "2026-10-25",
+          "placement": 2,
+          "players": 18,
+          "stadium": "xtreme",
+          "lang": "en",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+        },
+        {
+          "source": "wbo-winning-combos",
+          "tier": "structured",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-26",
+          "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
+          "date": "2026-10-26",
           "placement": 2,
           "players": 17,
           "stadium": "xtreme",
@@ -199447,9 +198481,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-10-25",
+          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-10-26",
           "eventName": "Dallas Beyblade Association - Breaking Limits - Limited #8",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 1,
           "players": 7,
           "stadium": "xtreme",
@@ -199475,9 +198509,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-10-25",
+          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-10-26",
           "eventName": "Dallas Beyblade Association - Breaking Limits - Limited #8",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 1,
           "players": 7,
           "stadium": "xtreme",
@@ -200811,17 +199845,6 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-pid-1901415",
-          "eventName": "X Masters 28",
-          "date": "2025-10-25",
-          "placement": 2,
-          "players": 16,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
           "eventId": "wbo-thread-123120",
           "eventName": "TTTs BBX Tournament TT XStadiums [22FEB26]",
           "date": "2026-02-22",
@@ -201201,16 +200224,6 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-challonge-nookarena7",
-          "eventName": "Event: Nook Arena 7",
-          "date": "2025-10-25",
-          "placement": 2,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
           "eventId": "wbo-thread-121326",
           "eventName": "Tournament: GamesPlus Tarxien Beyblade X Tournament #19 -",
           "date": "2025-10-28",
@@ -201508,18 +200521,6 @@
       "displayName": "Silver Wolf 3-60 Hexa",
       "type": "stamina",
       "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-121411",
-          "eventName": "Spooky Beys At The Park",
-          "date": "2025-10-25",
-          "placement": 2,
-          "players": 9,
-          "stadium": "xtreme",
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
@@ -202542,32 +201543,6 @@
       ],
       "usage": []
     },
-    "silver-wolf-4-60-level": {
-      "id": "silver-wolf-4-60-level",
-      "line": "bx",
-      "blade": "silver-wolf",
-      "ratchet": "4-60",
-      "bit": "level",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Silver Wolf 4-60 Level",
-      "type": "stamina",
-      "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-challonge-e0j1is4c",
-          "eventName": "Challonge",
-          "date": "2025-10-25",
-          "placement": 1,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        }
-      ],
-      "usage": []
-    },
     "silver-wolf-5-60-ball": {
       "id": "silver-wolf-5-60-ball",
       "line": "bx",
@@ -202884,32 +201859,6 @@
       ],
       "usage": []
     },
-    "silver-wolf-5-60-under-needle": {
-      "id": "silver-wolf-5-60-under-needle",
-      "line": "bx",
-      "blade": "silver-wolf",
-      "ratchet": "5-60",
-      "bit": "under-needle",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Silver Wolf 5-60 Under Needle",
-      "type": "stamina",
-      "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-pid-1903152",
-          "eventName": "Challonge",
-          "date": "2025-10-25",
-          "placement": 1,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        }
-      ],
-      "usage": []
-    },
     "silver-wolf-5-60-wedge": {
       "id": "silver-wolf-5-60-wedge",
       "line": "bx",
@@ -202932,32 +201881,6 @@
           "placement": 2,
           "players": 18,
           "stadium": "xtreme",
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        }
-      ],
-      "usage": []
-    },
-    "silver-wolf-5-70-ball": {
-      "id": "silver-wolf-5-70-ball",
-      "line": "bx",
-      "blade": "silver-wolf",
-      "ratchet": "5-70",
-      "bit": "ball",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Silver Wolf 5-70 Ball",
-      "type": "stamina",
-      "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-challonge-e0j1is4c",
-          "eventName": "Challonge",
-          "date": "2025-10-25",
-          "placement": 3,
           "lang": "en",
           "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
         }
@@ -203055,16 +201978,6 @@
       "displayName": "Silver Wolf 6-60 Hexa",
       "type": "stamina",
       "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-challonge-rftp5",
-          "eventName": "Reach for the Peak! #5 - We made it to the summit! Wow, what a view, LET'S BATTLE!",
-          "date": "2025-10-26",
-          "placement": 2,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
@@ -203692,9 +202605,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-25",
+          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-26",
           "eventName": "Dallas Beyblade Association - Beycon 26 Dallas Regionals",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 2,
           "players": 31,
           "stadium": "xtreme",
@@ -204919,18 +203832,6 @@
       "displayName": "Silver Wolf 9-60 Free Ball",
       "type": "stamina",
       "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-121411",
-          "eventName": "Spooky Beys At The Park",
-          "date": "2025-10-25",
-          "placement": 3,
-          "players": 9,
-          "stadium": "xtreme",
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
@@ -209768,16 +208669,6 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-thread-121481",
-          "eventName": "\"The Crimson Guild's Fun Friday Standard - #5\"",
-          "date": "2025-10-25",
-          "placement": 4,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
           "eventId": "wbo-thread-121108",
           "eventName": "Event: TTT Presents Teams 2 [25OCT25]",
           "date": "2025-11-02",
@@ -211044,32 +209935,6 @@
           "placement": 3,
           "players": 27,
           "stadium": "xtreme",
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        }
-      ],
-      "usage": []
-    },
-    "silver-wolf-9-80-hexa": {
-      "id": "silver-wolf-9-80-hexa",
-      "line": "bx",
-      "blade": "silver-wolf",
-      "ratchet": "9-80",
-      "bit": "hexa",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Silver Wolf 9-80 Hexa",
-      "type": "stamina",
-      "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-121481",
-          "eventName": "\"The Crimson Guild's Fun Friday Standard - #5\"",
-          "date": "2025-10-25",
-          "placement": 1,
           "lang": "en",
           "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
         }
@@ -214236,6 +213101,18 @@
           "stadium": "xtreme",
           "lang": "en",
           "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+        },
+        {
+          "source": "wbo-winning-combos",
+          "tier": "structured",
+          "eventId": "wbo-thread-129399",
+          "eventName": "The BeyIsland Tour #2",
+          "date": "2026-10-25",
+          "placement": 2,
+          "players": 18,
+          "stadium": "xtreme",
+          "lang": "en",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
         }
       ],
       "usage": []
@@ -214611,6 +213488,34 @@
           "date": "2026-06-07",
           "placement": 1,
           "players": 36,
+          "stadium": "xtreme",
+          "lang": "en",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+        }
+      ],
+      "usage": []
+    },
+    "tricera-press-5-50-high-taper": {
+      "id": "tricera-press-5-50-high-taper",
+      "line": "bx",
+      "blade": "tricera-press",
+      "ratchet": "5-50",
+      "bit": "high-taper",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Tricera Press 5-50 High Taper",
+      "type": "defense",
+      "placements": [
+        {
+          "source": "wbo-winning-combos",
+          "tier": "structured",
+          "eventId": "wbo-dallas-beyblade-association-xtreme-gear-sports-team-7-2026-10-26",
+          "eventName": "Dallas Beyblade Association - Xtreme Gear Sports Team #7",
+          "date": "2026-10-26",
+          "placement": 1,
+          "players": 4,
           "stadium": "xtreme",
           "lang": "en",
           "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
@@ -215741,16 +214646,6 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-challonge-e0j1is4c",
-          "eventName": "Challonge",
-          "date": "2025-10-25",
-          "placement": 3,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
           "eventId": "wbo-challonge-hhg1025",
           "eventName": "Kyo’s Kolosseum: All Saints' Wake 10/25/25",
           "date": "2025-10-27",
@@ -216229,17 +215124,6 @@
       "displayName": "Tyranno Beat 1-70 Kick",
       "type": "attack",
       "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-121011",
-          "eventName": "TopCut Battle League 10/20",
-          "date": "2025-10-25",
-          "placement": 1,
-          "players": 53,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
@@ -218150,32 +217034,6 @@
       ],
       "usage": []
     },
-    "tyranno-beat-6-60-rush": {
-      "id": "tyranno-beat-6-60-rush",
-      "line": "bx",
-      "blade": "tyranno-beat",
-      "ratchet": "6-60",
-      "bit": "rush",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Tyranno Beat 6-60 Rush",
-      "type": "attack",
-      "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-120961",
-          "eventName": "[Edmonton, AB] 2025 Spooktober BeyBattle",
-          "date": "2025-10-26",
-          "placement": 1,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        }
-      ],
-      "usage": []
-    },
     "tyranno-beat-6-60-wall-ball": {
       "id": "tyranno-beat-6-60-wall-ball",
       "line": "bx",
@@ -219875,33 +218733,6 @@
           "placement": 2,
           "players": 33,
           "stadium": "xtreme",
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        }
-      ],
-      "usage": []
-    },
-    "tyranno-roar-1-60-cyclone": {
-      "id": "tyranno-roar-1-60-cyclone",
-      "line": "bx",
-      "blade": "tyranno-roar",
-      "ratchet": "1-60",
-      "bit": "cyclone",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Tyranno Roar 1-60 Cyclone",
-      "type": "attack",
-      "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-pid-1901415",
-          "eventName": "X Masters 28",
-          "date": "2025-10-25",
-          "placement": 2,
-          "players": 16,
           "lang": "en",
           "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
         }
@@ -226725,33 +225556,6 @@
       ],
       "usage": []
     },
-    "valkyrie-volt-massive-6-60-point": {
-      "id": "valkyrie-volt-massive-6-60-point",
-      "line": "cx",
-      "blade": null,
-      "ratchet": "6-60",
-      "bit": "point",
-      "lockChip": "valkyrie",
-      "mainBlade": "volt",
-      "assistBlade": "massive",
-      "overBlade": null,
-      "displayName": "Valkyrie Volt M 6-60 Point",
-      "type": "balance",
-      "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-121011",
-          "eventName": "TopCut Battle League 10/20",
-          "date": "2025-10-25",
-          "placement": 2,
-          "players": 53,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        }
-      ],
-      "usage": []
-    },
     "venom-1-60-low-rush": {
       "id": "venom-1-60-low-rush",
       "line": "bx",
@@ -226796,9 +225600,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-10-25",
+          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-10-26",
           "eventName": "Dallas Beyblade Association - Breaking Limits - Limited #8",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 1,
           "players": 7,
           "stadium": "xtreme",
@@ -226852,9 +225656,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-10-25",
+          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-10-26",
           "eventName": "Dallas Beyblade Association - Breaking Limits - Limited #8",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 1,
           "players": 7,
           "stadium": "xtreme",
@@ -230177,33 +228981,6 @@
       ],
       "usage": []
     },
-    "wizard-arc-wheel-1-70-rubber-accel": {
-      "id": "wizard-arc-wheel-1-70-rubber-accel",
-      "line": "cx",
-      "blade": null,
-      "ratchet": "1-70",
-      "bit": "rubber-accel",
-      "lockChip": "wizard",
-      "mainBlade": "arc",
-      "assistBlade": "wheel",
-      "overBlade": null,
-      "displayName": "Wizard Arc W 1-70 Rubber Accel",
-      "type": "balance",
-      "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-pid-1901415",
-          "eventName": "X Masters 28",
-          "date": "2025-10-25",
-          "placement": 1,
-          "players": 16,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        }
-      ],
-      "usage": []
-    },
     "wizard-arc-wheel-7-70-hexa": {
       "id": "wizard-arc-wheel-7-70-hexa",
       "line": "cx",
@@ -231713,26 +230490,6 @@
       "displayName": "Wizard Rod 1-60 Ball",
       "type": "stamina",
       "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-challonge-nookarena7",
-          "eventName": "Event: Nook Arena 7",
-          "date": "2025-10-25",
-          "placement": 1,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-challonge-rftp5",
-          "eventName": "Reach for the Peak! #5 - We made it to the summit! Wow, what a view, LET'S BATTLE!",
-          "date": "2025-10-26",
-          "placement": 3,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
@@ -235678,9 +234435,21 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-25",
-          "eventName": "Dallas Beyblade Association - Beycon 26 Dallas Regionals",
+          "eventId": "wbo-thread-129399",
+          "eventName": "The BeyIsland Tour #2",
           "date": "2026-10-25",
+          "placement": 2,
+          "players": 18,
+          "stadium": "xtreme",
+          "lang": "en",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+        },
+        {
+          "source": "wbo-winning-combos",
+          "tier": "structured",
+          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-26",
+          "eventName": "Dallas Beyblade Association - Beycon 26 Dallas Regionals",
+          "date": "2026-10-26",
           "placement": 2,
           "players": 31,
           "stadium": "xtreme",
@@ -235706,91 +234475,10 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-pid-1903152",
-          "eventName": "Challonge",
-          "date": "2025-10-25",
-          "placement": 2,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-121011",
-          "eventName": "TopCut Battle League 10/20",
-          "date": "2025-10-25",
-          "placement": 2,
-          "players": 53,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-121481",
-          "eventName": "\"The Crimson Guild's Fun Friday Standard - #5\"",
-          "date": "2025-10-25",
-          "placement": 2,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-challonge-qs36v6ni",
-          "eventName": "Edmonton Alberta, Neophoenix's Boundless Battlefront",
-          "date": "2025-10-26",
-          "placement": 3,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
           "eventId": "wbo-thread-120948",
           "eventName": "View All Faces",
           "date": "2025-10-26",
           "placement": 1,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-120961",
-          "eventName": "[Edmonton, AB] 2025 Spooktober BeyBattle",
-          "date": "2025-10-26",
-          "placement": 1,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-120961",
-          "eventName": "[Edmonton, AB] 2025 Spooktober BeyBattle",
-          "date": "2025-10-26",
-          "placement": 4,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-121354",
-          "eventName": "VBS #3 - A New Rhythm",
-          "date": "2025-10-26",
-          "placement": 1,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-121354",
-          "eventName": "VBS #3 - A New Rhythm",
-          "date": "2025-10-26",
-          "placement": 2,
           "lang": "en",
           "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
         },
@@ -256899,9 +255587,33 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-25",
-          "eventName": "Dallas Beyblade Association - Beycon 26 Dallas Regionals",
+          "eventId": "wbo-thread-129399",
+          "eventName": "The BeyIsland Tour #2",
           "date": "2026-10-25",
+          "placement": 1,
+          "players": 18,
+          "stadium": "xtreme",
+          "lang": "en",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+        },
+        {
+          "source": "wbo-winning-combos",
+          "tier": "structured",
+          "eventId": "wbo-thread-129399",
+          "eventName": "The BeyIsland Tour #2",
+          "date": "2026-10-25",
+          "placement": 3,
+          "players": 18,
+          "stadium": "xtreme",
+          "lang": "en",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
+        },
+        {
+          "source": "wbo-winning-combos",
+          "tier": "structured",
+          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-26",
+          "eventName": "Dallas Beyblade Association - Beycon 26 Dallas Regionals",
+          "date": "2026-10-26",
           "placement": 3,
           "players": 31,
           "stadium": "xtreme",
@@ -256911,9 +255623,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-25",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-26",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 2,
           "players": 17,
           "stadium": "xtreme",
@@ -256923,9 +255635,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-25",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-26",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 3,
           "players": 17,
           "stadium": "xtreme",
@@ -256937,7 +255649,7 @@
           "tier": "structured",
           "eventId": "wbo-thread-127300",
           "eventName": "Mata Nui's X Extravaganza 2",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 1,
           "stadium": "xtreme",
           "lang": "en",
@@ -256948,7 +255660,7 @@
           "tier": "structured",
           "eventId": "wbo-thread-127300",
           "eventName": "Mata Nui's X Extravaganza 2",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 2,
           "stadium": "xtreme",
           "lang": "en",
@@ -256959,7 +255671,7 @@
           "tier": "structured",
           "eventId": "wbo-thread-127300",
           "eventName": "Mata Nui's X Extravaganza 2",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 3,
           "stadium": "xtreme",
           "lang": "en",
@@ -259261,26 +257973,6 @@
       "displayName": "Wizard Rod 1-60 Rush",
       "type": "stamina",
       "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-121481",
-          "eventName": "\"The Crimson Guild's Fun Friday Standard - #5\"",
-          "date": "2025-10-25",
-          "placement": 1,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-121063",
-          "eventName": "Summit's Crown: Unlimited Stars #1",
-          "date": "2025-10-26",
-          "placement": 1,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
@@ -262269,16 +260961,6 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-thread-121063",
-          "eventName": "Summit's Crown: Unlimited Stars #1",
-          "date": "2025-10-26",
-          "placement": 2,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
           "eventId": "wbo-thread-121255",
           "eventName": "Monster Mayhem Bash: Unranked 3on3",
           "date": "2025-11-16",
@@ -262498,16 +261180,6 @@
       "displayName": "Wizard Rod 3-60 Ball",
       "type": "stamina",
       "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-121063",
-          "eventName": "Summit's Crown: Unlimited Stars #1",
-          "date": "2025-10-26",
-          "placement": 3,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
@@ -262936,17 +261608,6 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-pid-1901415",
-          "eventName": "X Masters 28",
-          "date": "2025-10-25",
-          "placement": 1,
-          "players": 16,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
           "eventId": "wbo-thread-121545",
           "eventName": "Portland Trail-Bladers Tournament #6",
           "date": "2025-10-30",
@@ -263132,9 +261793,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-25",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-26",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 1,
           "players": 17,
           "stadium": "xtreme",
@@ -263183,16 +261844,6 @@
       "displayName": "Wizard Rod 3-60 Hexa",
       "type": "stamina",
       "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-120961",
-          "eventName": "[Edmonton, AB] 2025 Spooktober BeyBattle",
-          "date": "2025-10-26",
-          "placement": 1,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
@@ -264902,32 +263553,6 @@
       ],
       "usage": []
     },
-    "wizard-rod-5-80-low-orb": {
-      "id": "wizard-rod-5-80-low-orb",
-      "line": "bx",
-      "blade": "wizard-rod",
-      "ratchet": "5-80",
-      "bit": "low-orb",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Wizard Rod 5-80 Low Orb",
-      "type": "stamina",
-      "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-challonge-e0j1is4c",
-          "eventName": "Challonge",
-          "date": "2025-10-25",
-          "placement": 2,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        }
-      ],
-      "usage": []
-    },
     "wizard-rod-5-80-taper": {
       "id": "wizard-rod-5-80-taper",
       "line": "bx",
@@ -265037,16 +263662,6 @@
       "displayName": "Wizard Rod 6-60 Hexa",
       "type": "stamina",
       "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-challonge-qs36v6ni",
-          "eventName": "Edmonton Alberta, Neophoenix's Boundless Battlefront",
-          "date": "2025-10-26",
-          "placement": 2,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
@@ -267599,9 +266214,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-25",
+          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-26",
           "eventName": "Dallas Beyblade Association - Beycon 26 Dallas Regionals",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 1,
           "players": 31,
           "stadium": "xtreme",
@@ -268062,17 +266677,6 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-pid-1901415",
-          "eventName": "X Masters 28",
-          "date": "2025-10-25",
-          "placement": 3,
-          "players": 16,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
           "eventId": "wbo-challonge-7bmre1hz",
           "eventName": "Tournament: Featherweight Frenzy #3",
           "date": "2025-10-28",
@@ -268351,37 +266955,6 @@
       "displayName": "Wizard Rod 9-60 Ball",
       "type": "stamina",
       "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-pid-1901415",
-          "eventName": "X Masters 28",
-          "date": "2025-10-25",
-          "placement": 2,
-          "players": 16,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-pid-1903152",
-          "eventName": "Challonge",
-          "date": "2025-10-25",
-          "placement": 1,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-thread-121354",
-          "eventName": "VBS #3 - A New Rhythm",
-          "date": "2025-10-26",
-          "placement": 3,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
@@ -271863,9 +270436,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-25",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-26",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "placement": 1,
           "players": 17,
           "stadium": "xtreme",
@@ -272006,16 +270579,6 @@
       "displayName": "Wizard Rod 9-60 Low Orb",
       "type": "stamina",
       "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-challonge-qs36v6ni",
-          "eventName": "Edmonton Alberta, Neophoenix's Boundless Battlefront",
-          "date": "2025-10-26",
-          "placement": 1,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
@@ -276102,66 +274665,6 @@
       "ctx": "wbo-thread-119662"
     },
     {
-      "line": "Title: Beyblade X: Tournament of Champions Vol. X REMAKE!",
-      "reason": "oltre-cutoff (2025-10-18)",
-      "ctx": "wbo-thread-120935"
-    },
-    {
-      "line": "Forgot to post months ago due to wedding planning but here is combos so I can host another 🤘🏽🤘🏽",
-      "reason": "oltre-cutoff (2025-10-22)",
-      "ctx": "wbo-thread-118469"
-    },
-    {
-      "line": "Momentum #3: 6-7 Factory Production Line | Challonge Bracket",
-      "reason": "oltre-cutoff (2025-10-23)",
-      "ctx": "wbo-momentum-3-6-7-factory-production-line-challonge-bracket-2025-10-23"
-    },
-    {
-      "line": "GCBC Experimental: Garuda with Nuts (BX1 Limited Format)",
-      "reason": "oltre-cutoff (2025-10-23)",
-      "ctx": "wbo-challonge-s732i73w"
-    },
-    {
-      "line": "NYO4 Beyblade X Ranked 3on3",
-      "reason": "oltre-cutoff (2025-10-23)",
-      "ctx": "wbo-thread-120931"
-    },
-    {
-      "line": "Dave & Boosters: Beyblade X Event - 39 Players 10/22/2025",
-      "reason": "oltre-cutoff (2025-10-23)",
-      "ctx": "wbo-thread-121085"
-    },
-    {
-      "line": "**1st Place - ECC_DAVID:**",
-      "reason": "oltre-cutoff (2025-10-23)",
-      "ctx": "wbo-thread-121004"
-    },
-    {
-      "line": "BeyKnights #9",
-      "reason": "oltre-cutoff (2025-10-23)",
-      "ctx": "wbo-beyknights-9-2025-10-23"
-    },
-    {
-      "line": "Peter Piper Throwdown! #10",
-      "reason": "oltre-cutoff (2025-10-24)",
-      "ctx": "wbo-thread-120889"
-    },
-    {
-      "line": "Event",
-      "reason": "oltre-cutoff (2025-10-24)",
-      "ctx": "wbo-thread-121104"
-    },
-    {
-      "line": "PXS #27 -- Spooky Spinning Spectacle Pt. 2",
-      "reason": "oltre-cutoff (2025-10-24)",
-      "ctx": "wbo-thread-121295"
-    },
-    {
-      "line": "View All Faces",
-      "reason": "nessun marcatore di piazzamento (deck list senza podio)",
-      "ctx": "wbo-view-all-faces-2025-10-25"
-    },
-    {
       "line": "SJBBA Presents: SJBBA Championship Open",
       "reason": "nessun marcatore di piazzamento (deck list senza podio)",
       "ctx": "wbo-thread-121200"
@@ -276477,6 +274980,11 @@
       "ctx": "wbo-thread-122920"
     },
     {
+      "line": "Spooky Beys At The Park",
+      "reason": "oltre-cutoff (2025-10-25)",
+      "ctx": "wbo-thread-121411"
+    },
+    {
       "line": "This was a misclick. Delete this message plz",
       "reason": "nessun marcatore di piazzamento (deck list senza podio)",
       "ctx": "wbo-this-was-a-misclick-delete-this-message-plz-2026-01-22"
@@ -276714,7 +275222,7 @@
     {
       "line": "FIRST BEYBLADE X TOURNAMENT IN NEW BRAUNFELS",
       "reason": "nessun marcatore di piazzamento (deck list senza podio)",
-      "ctx": "wbo-first-beyblade-x-tournament-in-new-braunfels-2026-10-25"
+      "ctx": "wbo-first-beyblade-x-tournament-in-new-braunfels-2026-10-26"
     },
     {
       "line": "BucksBlast Wheel7-60Hexa (First Stage & Final Stage)",
@@ -276815,13 +275323,18 @@
       "line": "HellsRage FW7-60L",
       "reason": "blade non risolto: \"HellsRage FW\" (CX o nome ignoto)",
       "ctx": "wbo-pid-1938122 3°"
+    },
+    {
+      "line": "EmperorDelta FH9-60Nr",
+      "reason": "blade non risolto: \"EmperorDelta FH\" (CX o nome ignoto)",
+      "ctx": "wbo-thread-129399 3°"
     }
   ],
   "stats": {
-    "events": 1929,
-    "eventsWithPodium": 1681,
-    "combosResolved": 3862,
-    "placements": 18583,
-    "unresolved": 306
+    "events": 1907,
+    "eventsWithPodium": 1670,
+    "combosResolved": 3838,
+    "placements": 18479,
+    "unresolved": 296
   }
 }
