@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-26T03:03:22.815Z",
+  "lastUpdated": "2026-10-27T03:02:23.747Z",
   "combos": [
     {
       "id": "aero-pegasus-1-70-low-flat",
@@ -1327,6 +1327,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "cobalt-dragoon-1-80-elevate",
+      "line": "bx",
+      "blade": "cobalt-dragoon",
+      "ratchet": "1-80",
+      "bit": "elevate",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Cobalt Dragoon 1-80 Elevate",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Oct. 26, 2025  1:31 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-25"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-10-27",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-27"
     },
     {
       "id": "cobalt-dragoon-2-60-elevate",
@@ -17955,6 +17999,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "shark-scale-5-70-level",
+      "line": "bx",
+      "blade": "shark-scale",
+      "ratchet": "5-70",
+      "bit": "level",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Shark Scale 5-70 Level",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Oct. 26, 2025  1:31 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-25"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-10-27",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-27"
     },
     {
       "id": "shark-scale-5-80-kick",
