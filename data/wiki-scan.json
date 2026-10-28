@@ -4,12 +4,12 @@
     "List of Beyblade X products (Takara Tomy)": {
       "revid": 650994,
       "timestamp": "2026-10-14T15:22:34.000Z",
-      "lastScannedDate": "2026-10-27"
+      "lastScannedDate": "2026-10-28"
     },
     "List of Beyblade X products (Hasbro)": {
       "revid": 648918,
       "timestamp": "2026-09-14T01:43:54.000Z",
-      "lastScannedDate": "2026-10-27"
+      "lastScannedDate": "2026-10-28"
     }
   },
   "pages": {
@@ -3001,12 +3001,12 @@
       "kindSource": "heuristic"
     },
     "LusterDragoon 6-60LC": {
-      "revid": 651421,
-      "timestamp": "2026-10-19T02:13:31.000Z",
-      "lastScannedDate": "2026-10-20",
+      "revid": 651828,
+      "timestamp": "2026-10-27T17:51:25.000Z",
+      "lastScannedDate": "2026-10-28",
       "kind": "product",
-      "kindSource": "heuristic",
-      "notes": "gia nel master come Luster Dragoon"
+      "kindSource": "ai",
+      "notes": "parti gia' nel master"
     },
     "All In One Set": {
       "revid": 650678,
@@ -3043,18 +3043,18 @@
     "Blade - SiegSuperion": {
       "revid": 651639,
       "timestamp": "2026-10-23T06:33:31.000Z",
-      "lastScannedDate": "2026-10-27",
+      "lastScannedDate": "2026-10-28",
       "kind": "part",
       "kindSource": "ai",
-      "notes": "gia in master, nessuna novita"
+      "notes": "parte gia' nel master (suppress-superion)"
     },
     "SiegSuperion 0-70LP": {
       "revid": 651640,
       "timestamp": "2026-10-23T06:33:39.000Z",
-      "lastScannedDate": "2026-10-27",
+      "lastScannedDate": "2026-10-28",
       "kind": "product",
       "kindSource": "ai",
-      "notes": "gia in master, nessuna novita"
+      "notes": "parti gia' nel master"
     },
     "Bey Kick Off Set": {
       "revid": 599877,
@@ -3121,12 +3121,12 @@
       "notes": "set CX-20: contenuti gia' nel master tranne le 4 parti di PhoenixForce WHM-65MT"
     },
     "PhoenixForce WHM-65MT": {
-      "revid": 651198,
-      "timestamp": "2026-10-16T01:08:17.000Z",
-      "lastScannedDate": "2026-10-16",
+      "revid": 651837,
+      "timestamp": "2026-10-28T00:56:46.000Z",
+      "lastScannedDate": "2026-10-28",
       "kind": "product",
-      "kindSource": "heuristic",
-      "notes": "CX Expand: Force (Metal Blade), Weight (Over Blade), M-65, Metal Taper nuovi"
+      "kindSource": "ai",
+      "notes": "CX-20 non rilasciato, parti gia' nel master"
     },
     "Blade - HellsScythe": {
       "revid": 650982,
