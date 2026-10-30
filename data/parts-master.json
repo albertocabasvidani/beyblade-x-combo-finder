@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-26",
+  "version": "2026-10-30",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -4438,7 +4438,7 @@
         "revid": 650337
       },
       "status": "verified",
-      "lastVerified": "2026-10-26",
+      "lastVerified": "2026-10-30",
       "image": {
         "file": "suppress-superion.png",
         "wikiFile": "BladeSiegSuperion.png",
