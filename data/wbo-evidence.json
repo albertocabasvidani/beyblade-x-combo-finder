@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29",
+  "generatedAt": "2026-10-30",
   "source": "wbo-winning-combos",
   "combos": {
     "aero-pegasus-0-60-rush": {
@@ -139,7 +139,7 @@
           "tier": "structured",
           "eventId": "wbo-thread-127300",
           "eventName": "Mata Nui's X Extravaganza 2",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 2,
           "stadium": "xtreme",
           "lang": "en",
@@ -3280,7 +3280,7 @@
           "tier": "structured",
           "eventId": "wbo-thread-127300",
           "eventName": "Mata Nui's X Extravaganza 2",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 1,
           "stadium": "xtreme",
           "lang": "en",
@@ -3291,7 +3291,7 @@
           "tier": "structured",
           "eventId": "wbo-thread-127300",
           "eventName": "Mata Nui's X Extravaganza 2",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 3,
           "stadium": "xtreme",
           "lang": "en",
@@ -8456,9 +8456,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-30",
           "eventName": "Dallas Beyblade Association - Beycon 26 Dallas Regionals",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 1,
           "players": 31,
           "stadium": "xtreme",
@@ -9712,16 +9712,6 @@
       "displayName": "Aero Pegasus 1-70 Rush",
       "type": "attack",
       "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-pid-1904438",
-          "eventName": "Tournament: Bladers Network 10/26/25",
-          "date": "2025-10-29",
-          "placement": 2,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
@@ -32694,9 +32684,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-10-30",
           "eventName": "Dallas Beyblade Association - Breaking Limits - Limited #8",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 1,
           "players": 7,
           "stadium": "xtreme",
@@ -32706,9 +32696,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-30",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 2,
           "players": 17,
           "stadium": "xtreme",
@@ -32718,9 +32708,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-30",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 3,
           "players": 17,
           "stadium": "xtreme",
@@ -33346,9 +33336,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-10-30",
           "eventName": "Dallas Beyblade Association - Breaking Limits - Limited #8",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 1,
           "players": 7,
           "stadium": "xtreme",
@@ -34277,9 +34267,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-10-30",
           "eventName": "Dallas Beyblade Association - Breaking Limits - Limited #8",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 1,
           "players": 7,
           "stadium": "xtreme",
@@ -37650,7 +37640,7 @@
           "tier": "structured",
           "eventId": "wbo-thread-127300",
           "eventName": "Mata Nui's X Extravaganza 2",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 3,
           "stadium": "xtreme",
           "lang": "en",
@@ -44353,32 +44343,6 @@
       ],
       "usage": []
     },
-    "dran-dagger-9-60-low-orb": {
-      "id": "dran-dagger-9-60-low-orb",
-      "line": "bx",
-      "blade": "dran-dagger",
-      "ratchet": "9-60",
-      "bit": "low-orb",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Dran Dagger 9-60 Low Orb",
-      "type": "attack",
-      "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-29-players-2025-10-29",
-          "eventName": "29 players",
-          "date": "2025-10-29",
-          "placement": 4,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        }
-      ],
-      "usage": []
-    },
     "dran-dagger-9-60-wedge": {
       "id": "dran-dagger-9-60-wedge",
       "line": "bx",
@@ -46416,9 +46380,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-30",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 2,
           "players": 17,
           "stadium": "xtreme",
@@ -52648,9 +52612,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-30",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 1,
           "players": 17,
           "stadium": "xtreme",
@@ -67232,16 +67196,6 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-pid-1904438",
-          "eventName": "Tournament: Bladers Network 10/26/25",
-          "date": "2025-10-29",
-          "placement": 3,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
           "eventId": "wbo-top-cut-clash-millennium-cup-from-10-25-2025-11-03",
           "eventName": "Top Cut Clash Millennium Cup from 10/25.",
           "date": "2025-11-03",
@@ -70726,9 +70680,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-30",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 2,
           "players": 17,
           "stadium": "xtreme",
@@ -73258,32 +73212,6 @@
       ],
       "usage": []
     },
-    "hells-hammer-1-60-taper": {
-      "id": "hells-hammer-1-60-taper",
-      "line": "bx",
-      "blade": "hells-hammer",
-      "ratchet": "1-60",
-      "bit": "taper",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Hells Hammer 1-60 Taper",
-      "type": "balance",
-      "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-29-players-2025-10-29",
-          "eventName": "29 players",
-          "date": "2025-10-29",
-          "placement": 3,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        }
-      ],
-      "usage": []
-    },
     "hells-hammer-1-70-rush": {
       "id": "hells-hammer-1-70-rush",
       "line": "bx",
@@ -74788,32 +74716,6 @@
       ],
       "usage": []
     },
-    "hells-scythe-5-60-ball": {
-      "id": "hells-scythe-5-60-ball",
-      "line": "bx",
-      "blade": "hells-scythe",
-      "ratchet": "5-60",
-      "bit": "ball",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Hells Scythe 5-60 Ball",
-      "type": "balance",
-      "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-29-players-2025-10-29",
-          "eventName": "29 players",
-          "date": "2025-10-29",
-          "placement": 1,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        }
-      ],
-      "usage": []
-    },
     "hells-scythe-5-60-level": {
       "id": "hells-scythe-5-60-level",
       "line": "bx",
@@ -75103,16 +75005,6 @@
       "displayName": "Hells Scythe 9-60 Ball",
       "type": "balance",
       "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-29-players-2025-10-29",
-          "eventName": "29 players",
-          "date": "2025-10-29",
-          "placement": 2,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
@@ -83043,9 +82935,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-30",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 1,
           "players": 17,
           "stadium": "xtreme",
@@ -91403,9 +91295,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-30",
           "eventName": "Dallas Beyblade Association - Beycon 26 Dallas Regionals",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 3,
           "players": 31,
           "stadium": "xtreme",
@@ -103560,32 +103452,6 @@
       ],
       "usage": []
     },
-    "lightning-l-drago-upper-type-4-50-kick": {
-      "id": "lightning-l-drago-upper-type-4-50-kick",
-      "line": "bx",
-      "blade": "lightning-l-drago-upper-type",
-      "ratchet": "4-50",
-      "bit": "kick",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Lightning L-Drago (Upper Type) 4-50 Kick",
-      "type": "attack",
-      "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-29-players-2025-10-29",
-          "eventName": "29 players",
-          "date": "2025-10-29",
-          "placement": 2,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        }
-      ],
-      "usage": []
-    },
     "lightning-l-drago-upper-type-4-55-elevate": {
       "id": "lightning-l-drago-upper-type-4-55-elevate",
       "line": "bx",
@@ -104038,9 +103904,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-10-30",
           "eventName": "Dallas Beyblade Association - Breaking Limits - Limited #8",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 1,
           "players": 7,
           "stadium": "xtreme",
@@ -106141,9 +106007,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-10-30",
           "eventName": "Dallas Beyblade Association - Breaking Limits - Limited #8",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 1,
           "players": 7,
           "stadium": "xtreme",
@@ -106430,9 +106296,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-30",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 2,
           "players": 17,
           "stadium": "xtreme",
@@ -109419,9 +109285,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-30",
           "eventName": "Dallas Beyblade Association - Beycon 26 Dallas Regionals",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 3,
           "players": 31,
           "stadium": "xtreme",
@@ -109431,9 +109297,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-30",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 2,
           "players": 17,
           "stadium": "xtreme",
@@ -111235,9 +111101,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-30",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 3,
           "players": 17,
           "stadium": "xtreme",
@@ -123637,9 +123503,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-30",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 3,
           "players": 17,
           "stadium": "xtreme",
@@ -124048,9 +123914,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-30",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 3,
           "players": 17,
           "stadium": "xtreme",
@@ -128857,9 +128723,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-30",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 3,
           "players": 17,
           "stadium": "xtreme",
@@ -131106,9 +130972,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-30",
           "eventName": "Dallas Beyblade Association - Beycon 26 Dallas Regionals",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 2,
           "players": 31,
           "stadium": "xtreme",
@@ -139296,32 +139162,6 @@
       ],
       "usage": []
     },
-    "rock-leone-9-60-free-ball": {
-      "id": "rock-leone-9-60-free-ball",
-      "line": "bx",
-      "blade": "rock-leone",
-      "ratchet": "9-60",
-      "bit": "free-ball",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Rock Leone 9-60 Free Ball",
-      "type": "defense",
-      "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-29-players-2025-10-29",
-          "eventName": "29 players",
-          "date": "2025-10-29",
-          "placement": 3,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        }
-      ],
-      "usage": []
-    },
     "samurai-calibur-0-60-free-ball": {
       "id": "samurai-calibur-0-60-free-ball",
       "line": "bx",
@@ -145401,7 +145241,7 @@
           "tier": "structured",
           "eventId": "wbo-thread-127300",
           "eventName": "Mata Nui's X Extravaganza 2",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 2,
           "stadium": "xtreme",
           "lang": "en",
@@ -147539,26 +147379,6 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-29-players-2025-10-29",
-          "eventName": "29 players",
-          "date": "2025-10-29",
-          "placement": 1,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-29-players-2025-10-29",
-          "eventName": "29 players",
-          "date": "2025-10-29",
-          "placement": 4,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
           "eventId": "wbo-pid-1919788",
           "eventName": "Nook Arena 26",
           "date": "2026-03-21",
@@ -148256,9 +148076,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-30",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 3,
           "players": 17,
           "stadium": "xtreme",
@@ -154381,16 +154201,6 @@
       "displayName": "Shark Scale 1-60 Low Rush",
       "type": "attack",
       "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-pid-1904438",
-          "eventName": "Tournament: Bladers Network 10/26/25",
-          "date": "2025-10-29",
-          "placement": 3,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
@@ -161131,16 +160941,6 @@
       "displayName": "Shark Scale 1-70 Low Rush",
       "type": "attack",
       "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-pid-1904438",
-          "eventName": "Tournament: Bladers Network 10/26/25",
-          "date": "2025-10-29",
-          "placement": 1,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
@@ -169070,9 +168870,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-30",
           "eventName": "Dallas Beyblade Association - Beycon 26 Dallas Regionals",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 1,
           "players": 31,
           "stadium": "xtreme",
@@ -169082,9 +168882,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-30",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 1,
           "players": 17,
           "stadium": "xtreme",
@@ -169094,9 +168894,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-30",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 2,
           "players": 17,
           "stadium": "xtreme",
@@ -169108,7 +168908,7 @@
           "tier": "structured",
           "eventId": "wbo-thread-127300",
           "eventName": "Mata Nui's X Extravaganza 2",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 1,
           "stadium": "xtreme",
           "lang": "en",
@@ -172132,16 +171932,6 @@
       "displayName": "Shark Scale 3-60 Hexa",
       "type": "attack",
       "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-pid-1904438",
-          "eventName": "Tournament: Bladers Network 10/26/25",
-          "date": "2025-10-29",
-          "placement": 2,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
@@ -182014,9 +181804,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-30",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 1,
           "players": 17,
           "stadium": "xtreme",
@@ -186709,9 +186499,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-30",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 2,
           "players": 17,
           "stadium": "xtreme",
@@ -189647,9 +189437,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-30",
           "eventName": "Dallas Beyblade Association - Beycon 26 Dallas Regionals",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 3,
           "players": 31,
           "stadium": "xtreme",
@@ -194278,9 +194068,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-30",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 2,
           "players": 17,
           "stadium": "xtreme",
@@ -196440,9 +196230,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-10-30",
           "eventName": "Dallas Beyblade Association - Breaking Limits - Limited #8",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 1,
           "players": 7,
           "stadium": "xtreme",
@@ -196468,9 +196258,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-10-30",
           "eventName": "Dallas Beyblade Association - Breaking Limits - Limited #8",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 1,
           "players": 7,
           "stadium": "xtreme",
@@ -198805,16 +198595,6 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-pid-1904438",
-          "eventName": "Tournament: Bladers Network 10/26/25",
-          "date": "2025-10-29",
-          "placement": 3,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
           "eventId": "wbo-thread-121108",
           "eventName": "Event: TTT Presents Teams 2 [25OCT25]",
           "date": "2025-11-02",
@@ -200488,9 +200268,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-30",
           "eventName": "Dallas Beyblade Association - Beycon 26 Dallas Regionals",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 2,
           "players": 31,
           "stadium": "xtreme",
@@ -211464,16 +211244,6 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-29-players-2025-10-29",
-          "eventName": "29 players",
-          "date": "2025-10-29",
-          "placement": 2,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
           "eventId": "wbo-rmba-beybonded-showdown-2026-01-06",
           "eventName": "RMBA BeyBonded Showdown",
           "date": "2026-01-06",
@@ -211606,16 +211376,6 @@
       "displayName": "Tricera Press 7-60 Kick",
       "type": "defense",
       "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-29-players-2025-10-29",
-          "eventName": "29 players",
-          "date": "2025-10-29",
-          "placement": 4,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
@@ -218988,32 +218748,6 @@
       ],
       "usage": []
     },
-    "unicorn-sting-3-60-rush": {
-      "id": "unicorn-sting-3-60-rush",
-      "line": "bx",
-      "blade": "unicorn-sting",
-      "ratchet": "3-60",
-      "bit": "rush",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Unicorn Sting 3-60 Rush",
-      "type": "balance",
-      "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-29-players-2025-10-29",
-          "eventName": "29 players",
-          "date": "2025-10-29",
-          "placement": 3,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        }
-      ],
-      "usage": []
-    },
     "unicorn-sting-3-60-unite": {
       "id": "unicorn-sting-3-60-unite",
       "line": "bx",
@@ -219367,16 +219101,6 @@
       "displayName": "Unicorn Sting 6-60 Point",
       "type": "balance",
       "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-29-players-2025-10-29",
-          "eventName": "29 players",
-          "date": "2025-10-29",
-          "placement": 1,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
@@ -222229,16 +221953,6 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-pid-1904438",
-          "eventName": "Tournament: Bladers Network 10/26/25",
-          "date": "2025-10-29",
-          "placement": 1,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
           "eventId": "wbo-challonge-snpqvnqi",
           "eventName": "Virginia All-Star Qualifyer SW",
           "date": "2025-11-11",
@@ -223324,9 +223038,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-10-30",
           "eventName": "Dallas Beyblade Association - Breaking Limits - Limited #8",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 1,
           "players": 7,
           "stadium": "xtreme",
@@ -223380,9 +223094,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-breaking-limits-limited-8-2026-10-30",
           "eventName": "Dallas Beyblade Association - Breaking Limits - Limited #8",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 1,
           "players": 7,
           "stadium": "xtreme",
@@ -228181,16 +227895,6 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-pid-1904438",
-          "eventName": "Tournament: Bladers Network 10/26/25",
-          "date": "2025-10-29",
-          "placement": 2,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
           "eventId": "wbo-challonge-nookarena8",
           "eventName": "Event: Nook Arena 8",
           "date": "2025-11-01",
@@ -232149,9 +231853,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-30",
           "eventName": "Dallas Beyblade Association - Beycon 26 Dallas Regionals",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 2,
           "players": 31,
           "stadium": "xtreme",
@@ -232174,16 +231878,6 @@
       "displayName": "Wizard Rod 1-60 Hexa",
       "type": "stamina",
       "placements": [
-        {
-          "source": "wbo-winning-combos",
-          "tier": "structured",
-          "eventId": "wbo-pid-1904438",
-          "eventName": "Tournament: Bladers Network 10/26/25",
-          "date": "2025-10-29",
-          "placement": 1,
-          "lang": "en",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX"
-        },
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
@@ -253162,9 +252856,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-30",
           "eventName": "Dallas Beyblade Association - Beycon 26 Dallas Regionals",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 3,
           "players": 31,
           "stadium": "xtreme",
@@ -253174,9 +252868,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-30",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 2,
           "players": 17,
           "stadium": "xtreme",
@@ -253186,9 +252880,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-30",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 3,
           "players": 17,
           "stadium": "xtreme",
@@ -253200,7 +252894,7 @@
           "tier": "structured",
           "eventId": "wbo-thread-127300",
           "eventName": "Mata Nui's X Extravaganza 2",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 1,
           "stadium": "xtreme",
           "lang": "en",
@@ -253211,7 +252905,7 @@
           "tier": "structured",
           "eventId": "wbo-thread-127300",
           "eventName": "Mata Nui's X Extravaganza 2",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 2,
           "stadium": "xtreme",
           "lang": "en",
@@ -253222,7 +252916,7 @@
           "tier": "structured",
           "eventId": "wbo-thread-127300",
           "eventName": "Mata Nui's X Extravaganza 2",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 3,
           "stadium": "xtreme",
           "lang": "en",
@@ -259305,9 +258999,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-30",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 1,
           "players": 17,
           "stadium": "xtreme",
@@ -263706,9 +263400,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-beycon-26-dallas-regionals-2026-10-30",
           "eventName": "Dallas Beyblade Association - Beycon 26 Dallas Regionals",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 1,
           "players": 31,
           "stadium": "xtreme",
@@ -267847,9 +267541,9 @@
         {
           "source": "wbo-winning-combos",
           "tier": "structured",
-          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-29",
+          "eventId": "wbo-dallas-beyblade-association-the-beycon-blitz-standard-180-2026-10-30",
           "eventName": "Dallas Beyblade Association - The Beycon Blitz - Standard#180",
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "placement": 1,
           "players": 17,
           "stadium": "xtreme",
@@ -272053,8 +271747,18 @@
       "ctx": "wbo-challonge-7bmre1hz"
     },
     {
+      "line": "Tournament: Bladers Network 10/26/25",
+      "reason": "oltre-cutoff (2025-10-29)",
+      "ctx": "wbo-pid-1904438"
+    },
+    {
+      "line": "29 players",
+      "reason": "oltre-cutoff (2025-10-29)",
+      "ctx": "wbo-29-players-2025-10-29"
+    },
+    {
       "line": "GatorLAN Fall 2025 - Take Your UF to UF Day",
-      "reason": "nessun marcatore di piazzamento (deck list senza podio)",
+      "reason": "oltre-cutoff (2025-10-29)",
       "ctx": "wbo-thread-121439"
     },
     {
@@ -272605,7 +272309,7 @@
     {
       "line": "FIRST BEYBLADE X TOURNAMENT IN NEW BRAUNFELS",
       "reason": "nessun marcatore di piazzamento (deck list senza podio)",
-      "ctx": "wbo-first-beyblade-x-tournament-in-new-braunfels-2026-10-29"
+      "ctx": "wbo-first-beyblade-x-tournament-in-new-braunfels-2026-10-30"
     },
     {
       "line": "BucksBlast Wheel7-60Hexa (First Stage & Final Stage)",
@@ -272730,9 +272434,9 @@
   ],
   "stats": {
     "events": 1890,
-    "eventsWithPodium": 1652,
-    "combosResolved": 3795,
-    "placements": 18278,
-    "unresolved": 299
+    "eventsWithPodium": 1650,
+    "combosResolved": 3789,
+    "placements": 18257,
+    "unresolved": 301
   }
 }
