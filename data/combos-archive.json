@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-30T03:03:28.047Z",
+  "lastUpdated": "2026-10-31T03:03:22.615Z",
   "combos": [
     {
       "id": "aero-pegasus-1-70-low-flat",
@@ -11435,6 +11435,56 @@
       "archivedDate": "2026-09-12"
     },
     {
+      "id": "pegasus-blast-dual-1-60-hexa",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "1-60",
+      "bit": "hexa",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "dual",
+      "overBlade": null,
+      "displayName": "Pegasus Blast D 1-60 Hexa",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Game 3 - Kenzo's Halloween Costume Bash",
+          "url": "https://www.metabeys.com/events/1762181480640",
+          "weight": 1,
+          "date": "2025-10-30"
+        },
+        {
+          "name": "MetaBeys — Game 3 Locals",
+          "url": "https://www.metabeys.com/events/1762182271945",
+          "weight": 1,
+          "date": "2025-10-23"
+        }
+      ],
+      "dateAdded": "2026-06-20",
+      "dateUpdated": "2026-10-31",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-31"
+    },
+    {
       "id": "pegasus-blast-dual-1-60-kick",
       "line": "cx",
       "blade": null,
@@ -11771,6 +11821,62 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "pegasus-blast-jaggy-1-60-low-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "1-60",
+      "bit": "low-rush",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "jaggy",
+      "overBlade": null,
+      "displayName": "Pegasus Blast J 1-60 Low Rush",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Sep. 03, 2025  4:14 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-03"
+        },
+        {
+          "name": "WBO — Sep. 15, 2025  1:13 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-15"
+        },
+        {
+          "name": "WBO — Oct. 30, 2025  12:26 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-30"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-10-31",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-31"
     },
     {
       "id": "pegasus-blast-jaggy-1-60-rush",
@@ -13821,6 +13927,56 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "pegasus-blast-wheel-1-60-level",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "1-60",
+      "bit": "level",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Pegasus Blast W 1-60 Level",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Aug. 24, 2025  3:10 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-08-24"
+        },
+        {
+          "name": "WBO — Oct. 30, 2025  4:31 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-30"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-10-31",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-31"
     },
     {
       "id": "pegasus-blast-wheel-1-60-low-rush",
@@ -16653,6 +16809,62 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "rhino-blast-jaggy-9-60-low-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "low-rush",
+      "lockChip": "rhino",
+      "mainBlade": "blast",
+      "assistBlade": "jaggy",
+      "overBlade": null,
+      "displayName": "Rhino Blast J 9-60 Low Rush",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Aug. 29, 2025  11:55 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-08-29"
+        },
+        {
+          "name": "WBO — Oct. 14, 2025  6:38 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-14"
+        },
+        {
+          "name": "WBO — Oct. 30, 2025  6:12 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-30"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-10-31",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-31"
     },
     {
       "id": "rhino-blast-slash-3-60-taper",
@@ -19809,6 +20021,56 @@
       "archivedDate": "2026-10-15"
     },
     {
+      "id": "sol-eclipse-dual-1-60-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "1-60",
+      "bit": "rush",
+      "lockChip": "sol",
+      "mainBlade": "eclipse",
+      "assistBlade": "dual",
+      "overBlade": null,
+      "displayName": "Sol Eclipse D 1-60 Rush",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Game 3 - Kenzo's Halloween Costume Bash",
+          "url": "https://www.metabeys.com/events/1762181480640",
+          "weight": 1,
+          "date": "2025-10-30"
+        },
+        {
+          "name": "MetaBeys — Untouchables Locals",
+          "url": "https://www.metabeys.com/events/1761060643913",
+          "weight": 1,
+          "date": "2025-10-20"
+        }
+      ],
+      "dateAdded": "2026-06-20",
+      "dateUpdated": "2026-10-31",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-31"
+    },
+    {
       "id": "sol-eclipse-dual-5-60-level",
       "line": "cx",
       "blade": null,
@@ -20209,6 +20471,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 365d)",
       "archivedDate": "2026-10-12"
+    },
+    {
+      "id": "sol-eclipse-massive-9-60-low-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "low-rush",
+      "lockChip": "sol",
+      "mainBlade": "eclipse",
+      "assistBlade": "massive",
+      "overBlade": null,
+      "displayName": "Sol Eclipse M 9-60 Low Rush",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Game 3 - Kenzo's Halloween Costume Bash",
+          "url": "https://www.metabeys.com/events/1762181480640",
+          "weight": 1,
+          "date": "2025-10-30"
+        }
+      ],
+      "dateAdded": "2026-06-20",
+      "dateUpdated": "2026-10-31",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-31"
     },
     {
       "id": "sol-eclipse-slash-9-60-low-rush",
@@ -25043,6 +25349,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "wizard-arc-wheel-7-70-hexa",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "7-70",
+      "bit": "hexa",
+      "lockChip": "wizard",
+      "mainBlade": "arc",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Wizard Arc W 7-70 Hexa",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Oct. 30, 2025  6:12 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-30"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-10-31",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-10-31"
     },
     {
       "id": "wizard-arc-wheel-9-60-elevate",
