@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-30",
+  "version": "2026-10-31",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -102,7 +102,7 @@
         "revid": 590065
       },
       "status": "verified",
-      "lastVerified": "2026-10-24",
+      "lastVerified": "2026-10-31",
       "stats": {
         "atk": 25,
         "def": 45,
@@ -1090,7 +1090,7 @@
         "revid": 645640
       },
       "status": "verified",
-      "lastVerified": "2026-09-15",
+      "lastVerified": "2026-10-31",
       "stats": {
         "atk": 55,
         "def": 25,
@@ -2174,7 +2174,7 @@
         "revid": 642425
       },
       "status": "verified",
-      "lastVerified": "2026-09-15",
+      "lastVerified": "2026-10-31",
       "stats": {
         "atk": 20,
         "def": 55,
@@ -2266,7 +2266,7 @@
         "lastVerified": "2026-07-28"
       },
       "status": "verified",
-      "lastVerified": "2026-09-15",
+      "lastVerified": "2026-10-31",
       "stats": {
         "atk": 40,
         "def": 40,
@@ -2498,7 +2498,7 @@
         "page": "LusterDragoon 6-60LC",
         "url": "https://beyblade.fandom.com/wiki/LusterDragoon_6-60LC"
       },
-      "lastVerified": "2026-10-04",
+      "lastVerified": "2026-10-31",
       "status": "verified",
       "type": "attack"
     },
@@ -4438,7 +4438,7 @@
         "revid": 650337
       },
       "status": "verified",
-      "lastVerified": "2026-10-30",
+      "lastVerified": "2026-10-31",
       "image": {
         "file": "suppress-superion.png",
         "wikiFile": "BladeSiegSuperion.png",
@@ -8867,7 +8867,7 @@
         "url": "https://beyblade.fandom.com/wiki/ScorpioSpear_0-70Z",
         "revid": 644111
       },
-      "lastVerified": "2026-10-26",
+      "lastVerified": "2026-10-31",
       "status": "verified",
       "image": {
         "file": "0-70.png",
@@ -9299,7 +9299,7 @@
         "lastVerified": "2026-07-28"
       },
       "status": "verified",
-      "lastVerified": "2026-09-15",
+      "lastVerified": "2026-10-31",
       "products": [
         "BX-01",
         "G1692",
@@ -9426,7 +9426,7 @@
         "lastVerified": "2026-07-28"
       },
       "status": "verified",
-      "lastVerified": "2026-09-15",
+      "lastVerified": "2026-10-31",
       "products": [
         "BX-04",
         "G1694",
@@ -9893,7 +9893,7 @@
         "revid": 646147
       },
       "status": "verified",
-      "lastVerified": "2026-09-15",
+      "lastVerified": "2026-10-31",
       "products": [
         "BX-15",
         "CX-11",
@@ -10063,7 +10063,7 @@
         "revid": 644390
       },
       "status": "verified",
-      "lastVerified": "2026-09-15",
+      "lastVerified": "2026-10-31",
       "products": [
         "CX-01",
         "UX-00",
@@ -11196,7 +11196,7 @@
         "revid": 645833
       },
       "status": "verified",
-      "lastVerified": "2026-09-15",
+      "lastVerified": "2026-10-31",
       "products": [
         "BX-01",
         "BX-48",
@@ -12081,7 +12081,7 @@
         "page": "LusterDragoon 6-60LC",
         "url": "https://beyblade.fandom.com/wiki/LusterDragoon_6-60LC"
       },
-      "lastVerified": "2026-09-15",
+      "lastVerified": "2026-10-31",
       "status": "verified",
       "image": {
         "file": "low-cyclone.png",
@@ -12239,7 +12239,7 @@
         "revid": 646219
       },
       "status": "verified",
-      "lastVerified": "2026-10-26",
+      "lastVerified": "2026-10-31",
       "image": {
         "file": "low-point.png",
         "wikiFile": "BitLowPoint.png",
@@ -12503,7 +12503,7 @@
         "revid": 645840
       },
       "status": "verified",
-      "lastVerified": "2026-09-15",
+      "lastVerified": "2026-10-31",
       "products": [
         "BX-04",
         "UX-12",
@@ -12667,7 +12667,7 @@
         "revid": 636212
       },
       "status": "verified",
-      "lastVerified": "2026-09-15",
+      "lastVerified": "2026-10-31",
       "products": [
         "BX-15",
         "G1694",
