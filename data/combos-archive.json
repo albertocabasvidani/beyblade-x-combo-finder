@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-31T03:03:22.615Z",
+  "lastUpdated": "2026-11-01T03:02:03.130Z",
   "combos": [
     {
       "id": "aero-pegasus-1-70-low-flat",
@@ -7518,6 +7518,51 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 365d)",
       "archivedDate": "2026-10-22"
+    },
+    {
+      "id": "hells-hammer-5-60-point",
+      "line": "bx",
+      "blade": "hells-hammer",
+      "ratchet": "5-60",
+      "bit": "point",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "displayName": "Hells Hammer 5-60 Point",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only",
+        "creator-pick"
+      ],
+      "notes": "HobbyTalk Haru Ren's #1 favorite Hells Hammer combo. Point bit for balanced movement.",
+      "sources": [
+        {
+          "name": "HobbyTalk Haru Ren",
+          "url": "https://www.youtube.com/@HobbyTalkHaruRen",
+          "weight": 0.8,
+          "date": "2025-10-31"
+        }
+      ],
+      "amazon": {},
+      "dateAdded": "2026-03-04",
+      "dateUpdated": "2026-11-01",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-01"
     },
     {
       "id": "hells-hammer-6-60-low-flat",
@@ -15712,6 +15757,56 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 365d)",
       "archivedDate": "2026-10-18"
+    },
+    {
+      "id": "perseus-blast-wheel-9-60-low-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "low-rush",
+      "lockChip": "perseus",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Perseus Blast W 9-60 Low Rush",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Oct. 31, 2025  2:03 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-31"
+        },
+        {
+          "name": "WBO — Oct. 21, 2025  9:55 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-21"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-01",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-01"
     },
     {
       "id": "perseus-blast-wheel-9-60-taper",
