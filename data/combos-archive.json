@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-02T03:02:02.438Z",
+  "lastUpdated": "2026-11-03T03:04:48.158Z",
   "combos": [
     {
       "id": "aero-pegasus-1-70-low-flat",
@@ -1227,6 +1227,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 365d)",
       "archivedDate": "2026-10-24"
+    },
+    {
+      "id": "clock-mirage-4-55-unite",
+      "line": "bx",
+      "blade": "clock-mirage",
+      "ratchet": "4-55",
+      "bit": "unite",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Clock Mirage 4-55 Unite",
+      "type": "stamina",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Spook and Spin Showdown",
+          "url": "https://www.metabeys.com/events/1765912676927",
+          "weight": 1,
+          "date": "2025-11-02"
+        }
+      ],
+      "dateAdded": "2026-06-20",
+      "dateUpdated": "2026-11-03",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-03"
     },
     {
       "id": "clock-mirage-9-65-low-orb",
@@ -5685,6 +5729,50 @@
       "archivedDate": "2026-10-22"
     },
     {
+      "id": "goat-tackle-9-60-low-orb",
+      "line": "bx",
+      "blade": "goat-tackle",
+      "ratchet": "9-60",
+      "bit": "low-orb",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Goat Tackle 9-60 Low Orb",
+      "type": "defense",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Costumed Clash 3: Hallowheel of Mystery",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-02"
+        }
+      ],
+      "dateAdded": "2026-09-12",
+      "dateUpdated": "2026-11-03",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-03"
+    },
+    {
       "id": "golem-rock-4-50-ball",
       "line": "bx",
       "blade": "golem-rock",
@@ -9254,6 +9342,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-30"
+    },
+    {
+      "id": "hover-wyvern-9-60-metal-needle",
+      "line": "bx",
+      "blade": "hover-wyvern",
+      "ratchet": "9-60",
+      "bit": "metal-needle",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Wyvern Hover 9-60 Metal Needle",
+      "type": "defense",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Costumed Clash 3: Hallowheel of Mystery",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-02"
+        }
+      ],
+      "dateAdded": "2026-09-12",
+      "dateUpdated": "2026-11-03",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-03"
     },
     {
       "id": "hover-wyvern-9-70-zap",
@@ -14112,6 +14244,62 @@
       "archivedDate": "2026-09-12"
     },
     {
+      "id": "pegasus-blast-wheel-3-60-free-ball",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "3-60",
+      "bit": "free-ball",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Pegasus Blast W 3-60 Free Ball",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Aug. 10, 2025  7:59 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-08-10"
+        },
+        {
+          "name": "WBO — Nov. 02, 2025  2:08 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-02"
+        },
+        {
+          "name": "WBO — Sep. 29, 2025  12:44 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-29"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-03",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-03"
+    },
+    {
       "id": "pegasus-blast-wheel-3-60-kick",
       "line": "cx",
       "blade": null,
@@ -14961,6 +15149,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 365d)",
       "archivedDate": "2026-10-29"
+    },
+    {
+      "id": "pegasus-blast-wheel-9-60-orb",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "orb",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Pegasus Blast W 9-60 Orb",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — LGHS Ranked",
+          "url": "https://www.metabeys.com/events/1765913314681",
+          "weight": 1,
+          "date": "2025-11-02"
+        }
+      ],
+      "dateAdded": "2026-06-20",
+      "dateUpdated": "2026-11-03",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-03"
     },
     {
       "id": "pegasus-blast-wheel-9-60-point",
@@ -18625,6 +18857,50 @@
       "archivedDate": "2026-07-03"
     },
     {
+      "id": "scorpio-spear-7-70-wedge",
+      "line": "bx",
+      "blade": "scorpio-spear",
+      "ratchet": "7-70",
+      "bit": "wedge",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Scorpio Spear 7-70 Wedge",
+      "type": "stamina",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — LGHS Ranked",
+          "url": "https://www.metabeys.com/events/1765913314681",
+          "weight": 1,
+          "date": "2025-11-02"
+        }
+      ],
+      "dateAdded": "2026-06-20",
+      "dateUpdated": "2026-11-03",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-03"
+    },
+    {
       "id": "scorpio-spear-9-60-low-flat",
       "line": "bx",
       "blade": "scorpio-spear",
@@ -19368,6 +19644,94 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 365d)",
       "archivedDate": "2026-10-29"
+    },
+    {
+      "id": "shark-scale-6-70-rubber-accel",
+      "line": "bx",
+      "blade": "shark-scale",
+      "ratchet": "6-70",
+      "bit": "rubber-accel",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Shark Scale 6-70 Rubber Accel",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Costumed Clash 3: Hallowheel of Mystery",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-02"
+        }
+      ],
+      "dateAdded": "2026-09-12",
+      "dateUpdated": "2026-11-03",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-03"
+    },
+    {
+      "id": "shark-scale-6-70-rush",
+      "line": "bx",
+      "blade": "shark-scale",
+      "ratchet": "6-70",
+      "bit": "rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Shark Scale 6-70 Rush",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Costumed Clash 3: Hallowheel of Mystery",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-02"
+        }
+      ],
+      "dateAdded": "2026-09-12",
+      "dateUpdated": "2026-11-03",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-03"
     },
     {
       "id": "shark-scale-7-70-unite",
@@ -26359,6 +26723,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "wizard-rod-1-60-metal-needle",
+      "line": "bx",
+      "blade": "wizard-rod",
+      "ratchet": "1-60",
+      "bit": "metal-needle",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Wizard Rod 1-60 Metal Needle",
+      "type": "stamina",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Costumed Clash 3: Hallowheel of Mystery",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-02"
+        }
+      ],
+      "dateAdded": "2026-09-12",
+      "dateUpdated": "2026-11-03",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-03"
     },
     {
       "id": "wizard-rod-1-70-unite",
