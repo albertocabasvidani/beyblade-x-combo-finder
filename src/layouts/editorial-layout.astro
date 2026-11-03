@@ -8,6 +8,7 @@
 import BaseLayout from './base-layout.astro';
 import Breadcrumb from '../components/seo/breadcrumb.astro';
 import JsonLd from '../components/seo/json-ld.astro';
+import { t } from '../i18n/ui';
 
 interface Crumb { name: string; href: string }
 interface Props {
@@ -21,6 +22,7 @@ interface Props {
 }
 const { title, description, breadcrumb, jsonLd, author = 'Alberto', publishedAt, updatedAt } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const locale = 'en';
 const fmt = (d: Date) => d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
 ---
 
@@ -40,6 +42,12 @@ const fmt = (d: Date) => d.toLocaleDateString('en-GB', { day: 'numeric', month: 
           )}
         </p>
       )}
+      {/* Come nascono numeri e testo: Google chiede di dichiarare l'uso dell'IA, e chi legge
+          deve poter distinguere le tabelle (ricalcolate a ogni build) dalla prosa. */}
+      <p data-testid="editorial-method" class="mt-1 text-xs text-muted">
+        {t(locale, 'editorial.method')}{' '}
+        <a href={`${base}/about/`} class="text-gold hover:underline">{t(locale, 'editorial.methodLink')}</a>
+      </p>
     </header>
     <div class="prose-editorial">
       <slot />

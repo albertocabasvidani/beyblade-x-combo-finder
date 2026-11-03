@@ -32,8 +32,9 @@ const releases = releasesData as {
 /** Tutte le combo, indicizzate per id. */
 export const comboById = new Map<string, Combo>(db.combos.map((c) => [c.id, c]));
 
-/** Combo per parte, categoria per categoria (blade/ratchet/bit), ordinate per score decrescente. */
-function buildCombosByPart(category: 'blade' | 'ratchet' | 'bit'): Map<string, Combo[]> {
+/** Combo per parte, categoria per categoria (blade/mainBlade/ratchet/bit), ordinate per score decrescente.
+ *  Una CX ha `blade` null: la sua lama è la Main Blade, indicizzata a parte. */
+function buildCombosByPart(category: 'blade' | 'mainBlade' | 'ratchet' | 'bit'): Map<string, Combo[]> {
   const map = new Map<string, Combo[]>();
   for (const c of db.combos) {
     const id = c[category];
@@ -46,6 +47,7 @@ function buildCombosByPart(category: 'blade' | 'ratchet' | 'bit'): Map<string, C
   return map;
 }
 export const combosByBlade = buildCombosByPart('blade');
+export const combosByMainBlade = buildCombosByPart('mainBlade');
 export const combosByRatchet = buildCombosByPart('ratchet');
 export const combosByBit = buildCombosByPart('bit');
 
@@ -54,15 +56,18 @@ export interface PartAggregate {
   events: number;
   wins: number;
   combos: number;
+  /** Top cut nella finestra di 30 giorni (`windows['30']`): cambia a ogni build, a differenza del testo. */
+  recentTopCuts: number;
   placements: PlacementEvidence[];
 }
-function buildPlacementsByPart(category: 'blade' | 'ratchet' | 'bit'): Map<string, PartAggregate> {
+function buildPlacementsByPart(category: 'blade' | 'mainBlade' | 'ratchet' | 'bit'): Map<string, PartAggregate> {
   const map = new Map<string, PartAggregate>();
   for (const c of db.combos) {
     const id = c[category];
     if (!id) continue;
-    const agg = map.get(id) ?? { events: 0, wins: 0, combos: 0, placements: [] };
+    const agg = map.get(id) ?? { events: 0, wins: 0, combos: 0, recentTopCuts: 0, placements: [] };
     agg.events += c.scoreBreakdown?.tournamentEvents ?? 0;
+    agg.recentTopCuts += c.windows?.['30']?.topCutAppearances ?? 0;
     agg.wins += c.scoreBreakdown?.wins ?? 0;
     agg.combos += 1;
     agg.placements.push(...(c.evidence?.placements ?? []));
@@ -71,6 +76,7 @@ function buildPlacementsByPart(category: 'blade' | 'ratchet' | 'bit'): Map<strin
   return map;
 }
 export const placementsByBlade = buildPlacementsByPart('blade');
+export const placementsByMainBlade = buildPlacementsByPart('mainBlade');
 export const placementsByRatchet = buildPlacementsByPart('ratchet');
 export const placementsByBit = buildPlacementsByPart('bit');
 

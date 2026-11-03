@@ -12,7 +12,7 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
 |---|---|
 | [parts-database](projects/parts-database.md) | DB parti master multilingua: scrape wiki, derivazione, update, verify, Over Blade |
 | [combo-pipeline](projects/combo-pipeline.md) | Raccolta fonti → estrazione IA → scoring CAS → scheduling |
-| [web-frontend](projects/web-frontend.md) | Sito Astro/Preact (redesign "Arena"): ricerca unica parti, ranking unico BX+CX per score, top cut o vittorie, vista per lama, temi chiaro/scuro, badge CAS. Header a quattro voci (Home, Meta, Guides, How scoring works). Monolingua EN su root |
+| [web-frontend](projects/web-frontend.md) | Sito Astro/Preact (redesign "Arena"): ricerca unica parti, ranking unico BX+CX per score, top cut o vittorie, vista per lama, temi chiaro/scuro, badge CAS. Home con H1, intro e link alle pagine «Best <lama> combos». Header a quattro voci (Home, Meta, Guides, How scoring works). Monolingua EN su root |
 
 ## Tech Stack
 
@@ -524,6 +524,17 @@ perché ogni 5 min altrimenti compariva una finestra cmd nella sessione utente. 
 - Traduzioni in `src/i18n/en.json` (attiva) e `src/i18n/it.json` (dormiente, vedi i18n in Tech Stack): ogni chiave nuova o riscritta va in **tutte e due** nello stesso giro, `npm run test:i18n` controlla le chiavi. Nessun testo visibile cablato nei componenti
 - Pagine editoriali in `src/content/{meta-reports,parts,combos,buying-guides}/*.mdx`: il body **non**
   contiene un H1, lo renderizza da solo il layout editoriale (`src/layouts/editorial-layout.astro`)
+- Il body di una pagina editoriale non cita numeri che invecchiano (piazzamenti, score, quote, posizioni in
+  classifica): i numeri li danno le tabelle di `src/pages/parts/[part].astro`, ricalcolate a ogni build, colonna
+  degli ultimi 30 giorni compresa. Il testo porta i fatti stabili: stile, build, matchup, set d'uscita. Ogni fatto
+  si ricava da `data/` o da una fonte riletta, mai dalla memoria. Sotto la byline il layout stampa la riga sul
+  metodo (`editorial.method`): tabelle dai tornei, testo preparato con l'aiuto dell'IA
+- Pagine lama («Best <Nome> Combos»): sono le pagine parte `/parts/<id>/`, anche per le Main Blade CX
+  (`category: "mainBlade"`, raggruppate per Main Blade come `blast`). Title 50-60 caratteri che comincia con
+  «Best <Nome> Combos» e prosegue con un angolo diverso per ogni lama. La home le linka da un blocco statico sotto
+  l'H1 e dalle card dell'isola (prop `bladeGuides`); nella vista lame no, perché la riga è un `<button>`. Le prime
+  10 sono le lame con più piazzamenti a 365 giorni (03/11/2026); allargare solo dopo aver visto in Search Console
+  come vanno queste. Ricerca keyword e metodo: `C:\Users\cinqu\.claude\references\seo-standards\seo-google-search-central.md` §11
 
 ## Amazon Affiliate (riattivato l'11/09/2026)
 

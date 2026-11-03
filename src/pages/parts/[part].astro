@@ -3,7 +3,7 @@ import { getCollection, render } from 'astro:content';
 import EditorialLayout from '../../layouts/editorial-layout.astro';
 import BuyRow from '../../components/buy/buy-row.astro';
 import AffiliateDisclosure from '../../components/buy/affiliate-disclosure.astro';
-import { combosByBlade, combosByRatchet, combosByBit, placementsByBlade, placementsByRatchet, placementsByBit, partMasterById, comboExists } from '../../lib/build-data';
+import { combosByBlade, combosByMainBlade, combosByRatchet, combosByBit, placementsByBlade, placementsByMainBlade, placementsByRatchet, placementsByBit, partMasterById, comboExists } from '../../lib/build-data';
 
 export async function getStaticPaths() {
   // Solo le entry non-draft: una pagina nasce dal testo scritto, non dal dataset (4.925 combo,
@@ -17,8 +17,9 @@ const { Content } = await render(entry);
 const { partId, category, title, description, author, publishedAt, updatedAt, relatedCombos } = entry.data;
 
 const master = partMasterById.get(`${category}:${partId}`);
-const combosByCat = { blade: combosByBlade, ratchet: combosByRatchet, bit: combosByBit }[category as 'blade' | 'ratchet' | 'bit'];
-const placementsByCat = { blade: placementsByBlade, ratchet: placementsByRatchet, bit: placementsByBit }[category as 'blade' | 'ratchet' | 'bit'];
+type DataCategory = 'blade' | 'mainBlade' | 'ratchet' | 'bit';
+const combosByCat = { blade: combosByBlade, mainBlade: combosByMainBlade, ratchet: combosByRatchet, bit: combosByBit }[category as DataCategory];
+const placementsByCat = { blade: placementsByBlade, mainBlade: placementsByMainBlade, ratchet: placementsByRatchet, bit: placementsByBit }[category as DataCategory];
 const topCombos = (combosByCat?.get(partId) ?? []).slice(0, 8);
 const agg = placementsByCat?.get(partId);
 
@@ -45,9 +46,14 @@ const jsonLd = [
   },
 ];
 
-// Nome della parte nei titoli di sezione: la parte del titolo prima dei due punti («Hover Wyvern»),
-// non il titolo intero («Hover Wyvern: the defensive blade that beats attackers»).
-const partLabel = title.split(':')[0].trim();
+// Nome della parte nei titoli di sezione: dal registro, non dal titolo, che comincia con
+// «Best <Nome> Combos» e darebbe «Best combos using Best … Combos». Il nome Hasbro, se diverso,
+// compare una volta nel paragrafo dati: è il nome sulla scatola fuori dal Giappone.
+const partLabel: string = master?.names?.tt ?? title.split(':')[0].trim();
+// Alcuni nomi Hasbro del registro portano in coda la combo del prodotto («Meteoroid Dragoon 3-70J»):
+// qui serve solo il nome della lama.
+const hasbroRaw: string | undefined = master?.names?.hasbro?.replace(/\s+\d-\d{2}\S*$/, '');
+const hasbroName: string | undefined = hasbroRaw && hasbroRaw !== partLabel ? hasbroRaw : undefined;
 
 // Link "Buy" per il set d'uscita, se conosciuto e presente nei dati.
 const buyParts = master?.firstReleaseSet
@@ -69,8 +75,10 @@ const buyParts = master?.firstReleaseSet
   {agg && (
     <h2>Tournament record</h2>
     <p>
-      {agg.events.toLocaleString('en-US')} tournament placements across {agg.combos} distinct combo{agg.combos === 1 ? '' : 's'},
-      {' '}{agg.wins.toLocaleString('en-US')} of them wins.
+      {partLabel}{hasbroName && <> (sold by Hasbro as {hasbroName})</>}: {agg.events.toLocaleString('en-US')} tournament
+      placements over the last 12 months across {agg.combos} distinct combo{agg.combos === 1 ? '' : 's'},
+      {' '}{agg.wins.toLocaleString('en-US')} of them wins; {agg.recentTopCuts.toLocaleString('en-US')} top cut
+      {agg.recentTopCuts === 1 ? ' appearance' : ' appearances'} in the last 30 days.
     </p>
   )}
 
@@ -78,7 +86,7 @@ const buyParts = master?.firstReleaseSet
     <>
       <h2>Best combos using {partLabel}</h2>
       <table>
-        <thead><tr><th>Combo</th><th>Score</th><th>Events</th><th>Wins</th></tr></thead>
+        <thead><tr><th>Combo</th><th>Score</th><th>Events</th><th>Wins</th><th>Top cuts, last 30 days</th></tr></thead>
         <tbody>
           {topCombos.map((c) => (
             <tr>
@@ -88,6 +96,7 @@ const buyParts = master?.firstReleaseSet
               <td>{c.score.toFixed(2)}</td>
               <td>{c.scoreBreakdown.tournamentEvents}</td>
               <td>{c.scoreBreakdown.wins}</td>
+              <td>{c.windows?.['30']?.topCutAppearances ?? 0}</td>
             </tr>
           ))}
         </tbody>

@@ -20,6 +20,8 @@ interface Props {
   amazon: { config: AmazonConfigFile; lookup: PartLookup; asins: AsinIndex };
   locale: Locale;
   translations: Record<string, string>;
+  /** Lame (Blade o Main Blade) con una pagina guida pubblicata in `/parts/<id>/`: la card le linka. */
+  bladeGuides?: { base: string; ids: string[] };
 }
 
 const PERIODS: WindowKey[] = ['30', '90', '180', '365'];
@@ -51,7 +53,7 @@ const COMBO_PART_CATEGORY: Record<string, PartCategory> = {
   overBlade: 'overBlades',
 };
 
-export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, translations }: Props) {
+export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, translations, bladeGuides }: Props) {
   const [db, setDb] = useState<SlimDatabase>(initial);
   const [dataset, setDataset] = useState<DatasetState>('loading');
   const [period, setPeriod] = useState<WindowKey>(INLINE_PERIOD);
@@ -190,6 +192,14 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
   };
 
   const bladeName = (id: string, line: 'bx' | 'cx') => resolveName(line === 'cx' ? 'mainBlades' : 'blades', id);
+  // Link alla guida della lama, solo se la pagina esiste: un link a /parts/<id>/ senza pagina sarebbe un 404.
+  const guideIds = new Set(bladeGuides?.ids ?? []);
+  const guideFor = (combo: SlimCombo) => {
+    const id = bladeOf(combo);
+    if (!id || !guideIds.has(id)) return undefined;
+    const name = bladeName(id, combo.line === 'cx' ? 'cx' : 'bx');
+    return { href: `${bladeGuides!.base}/parts/${id}/`, label: t('home.bladeGuideLink').replace('{name}', name) };
+  };
   const rankingTitle = view === 'combos' && bladeFocus
     ? `${t('search.bestForBlade')} ${bladeName(bladeFocus.id, bladeFocus.line)}`
     : view === 'combos' && onlyBlade
@@ -383,6 +393,7 @@ export default function ComboSearch({ parts, initial, dataUrl, amazon, locale, t
                   sort={sort}
                   partName={partName}
                   partImage={partImage}
+                  guide={guideFor(combo)}
                   amazon={{ ...amazon, market, keepStore: marketSource === 'user' }}
                   t={t}
                 />

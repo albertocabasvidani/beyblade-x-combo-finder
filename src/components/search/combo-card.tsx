@@ -24,6 +24,8 @@ interface Props {
   partName: (category: string, id: string | null) => string;
   /** File della foto di una parte (campo `image` del registro); undefined = nessuna foto. */
   partImage: (category: string, id: string | null) => string | undefined;
+  /** Pagina guida della lama («Best Wizard Rod combos»), se pubblicata. */
+  guide?: { href: string; label: string };
   t: (key: string) => string;
 }
 
@@ -54,7 +56,7 @@ export const countLabel = (n: number, key: string, t: (k: string) => string) => 
 export const metricClass = (on: boolean) =>
   on ? 'font-bold text-gold underline decoration-2 underline-offset-4' : '';
 
-export function ComboCard({ combo, view, thresholds, amazon, displayName, locale, rank, sort, partName, partImage, t }: Props) {
+export function ComboCard({ combo, view, thresholds, amazon, displayName, locale, rank, sort, partName, partImage, guide, t }: Props) {
   const [buyOpen, setBuyOpen] = useState(false);
   const b = view;
   const tier = scoreTier(view.score, view.tags, thresholds);
@@ -105,6 +107,12 @@ export function ComboCard({ combo, view, thresholds, amazon, displayName, locale
   const Sources = () => (
     <span class="text-[10.5px] text-muted-2">
       {countLabel(combo.sourceCount, 'search.sources', t)}
+      {guide && (
+        <>
+          {' · '}
+          <a data-testid="blade-guide-link" href={guide.href} class="font-semibold text-gold hover:underline">{guide.label}</a>
+        </>
+      )}
     </span>
   );
 
