@@ -104,7 +104,7 @@ for (const p of releases.products) {
   releaseByCode.set(p.code, arr);
 }
 
-/** Tutti i placement (22.275 record) raggruppati per mese YYYY-MM, per i report mensili. */
+/** Tutti i placement raggruppati per mese YYYY-MM, per i report mensili. */
 export const placementsByMonth = new Map<string, PlacementEvidence[]>();
 for (const c of db.combos) {
   for (const p of c.evidence?.placements ?? []) {

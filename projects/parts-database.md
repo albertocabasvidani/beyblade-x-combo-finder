@@ -1,7 +1,7 @@
 ---
 name: parts-database
 status: active
-updated: 03/10/2026
+updated: 04/11/2026
 health: green
 next-step: "products-wiki.json: qualche giorno di run a mano guardando il diff, poi agganciarlo a /update-parts e farlo confluire in releases.json"
 blocked-by: null
@@ -29,6 +29,7 @@ contro il wiki e modellazione delle categorie (incl. Over Blade per CX Expand).
 <!-- Bug noti, problemi aperti, debiti tecnici. Formato: `- gg/mm/aaaa — testo` -->
 - 16/06/2026 — pagina `/wiki/` dà 403 (Cloudflare): si accede solo via API MediaWiki (`api.php?action=parse&prop=wikitext`)
 - 20/08/2026 — 3 parti senza immagine dopo il backfill di `sync-part-images.ts`, non risolvibili dalla catena di fallback: `tiga` (Lock Chip), `i` (Over Blade), `low-point` (Bit). Tutte e tre pagine `Beyblade X (Season 3)`: l'infobox referenzia un file (rispettivamente `LockChipTiga.png`, `OverBladeI.png`, `BitLowPoint.png`) mai caricato sulla wiki — `action=query&prop=imageinfo` risponde `missing` — e non c'è nessun'altra immagine embedded nella pagina (`Lock Chip - Tiga` ha anche l'icona `Icon Unreleased.svg`). Non è un bug dello script: sul wiki non esiste ancora nessuna foto per queste 3 parti. Nessun override possibile finché qualcuno non carica il file; da riverificare nei prossimi `/update-parts` (`npm run sync:part-images` è idempotente, riprova da solo quando la pagina cambia)
+- 03/11/2026 — Il nome Hasbro di Meteor Dragoon nel registro porta in coda il codice della combo: `names.hasbro` in `parts-master.json` e `nameWestern` in `parts.json` valgono «Meteoroid Dragoon 3-70J». La pagina `/parts/meteor-dragoon/` lo ripulisce a vista (regex in `src/pages/parts/[part].astro`) e mostra «Meteoroid Dragoon», ma il dato va corretto alla fonte e il nome verificato sul wiki: non è stato controllato su una fonte esterna. In `parts.json` `nameWestern` coincide col nome per Cobalt Dragoon, Blitz e Rage (misurato il 03/11/2026): prima di usarlo nei titoli va trattato come assente quando è uguale
 
 ## In progress
 

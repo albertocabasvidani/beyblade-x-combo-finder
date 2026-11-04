@@ -1,7 +1,7 @@
 ---
 name: web-frontend
 status: active
-updated: 12/10/2026
+updated: 04/11/2026
 health: yellow
 next-step: "Ricandidare Amazon.fr: ogni tag ora e' nell'HTML di ogni pagina; poi fase 7 (scalare i contenuti)"
 blocked-by: null
@@ -23,10 +23,14 @@ GitHub Pages via Actions. L'infrastruttura i18n IT resta in repo (dormiente), ri
 <!-- Idee, feature, task non avviati. Formato: `- gg/mm/aaaa — testo` -->
 - 26/09/2026 — Richiedere di nuovo la revisione AdSense (pagina Siti → «I confirm I have fixed the issues» → «Request review», click dell'utente) dopo la fase 7 dei contenuti e qualche settimana di traffico vero; all'approvazione rimettere gli id in `AD_SLOTS`
 - 01/10/2026 — Collegare Bing Webmaster Tools a PostHog (fonte «Bing Webmaster Tools», beta, già nell'elenco del data warehouse): serve una chiave API generata in Bing Webmaster → Settings → API access, da incollare nella fonte. Passo dell'utente; poi aggiungere 1-2 insight Bing alla dashboard
-- 16/06/2026 — pagine dettaglio combo `/combo/[id]` (SSG) per SEO (non ancora implementate)
-- 16/06/2026 — SEO: structured data JSON-LD (la sitemap c'è dall'11/09/2026)
+- 16/06/2026 — pagine dettaglio combo `/combos/<id>/` per SEO: **esistono dal 19/09/2026 per 4 combo** scritte a mano; altre solo come pagine scritte, mai generate dal dataset (rischio contenuto in serie, reference SEO §6 e §10)
+- 16/06/2026 — SEO: structured data JSON-LD. Le pagine editoriali lo hanno dal 19/09/2026 (Article, BlogPosting, BreadcrumbList); **mancano home e `/about/`**: `WebSite` sulla home, e un `ItemList` delle combo in pagina
 - ~~16/06/2026 — registrare Amazon Associates US~~ **chiuso il 19/09/2026**: esisteva già un account US (`albertocabasv-20`, tag storico diverso dai `-21`/`-22`), lista siti vuota. Aggiunto `com` in config, dichiarato beybladexcombos.com nella sitelist, `defaultMarketplace` tornato `com`. Resta l'informativa fiscale USA (Incomplete, la può compilare solo il titolare): blocca solo il pagamento, non il tracciamento
 - 11/09/2026 — Vale la pena rendere `INITIAL_COMBOS`/`PAGE` scroll-infinito invece del bottone «Show more»? Guardare l'evento `load_more` in PostHog prima di toccare
+- 03/11/2026 — Report meta di ottobre 2026 e riscrittura di quello di settembre, fermo a «September 2026 so far» (scritto il 19/09). Va riscritto davvero con il mese chiuso, non solo tolto «so far»: cambiare la data per sembrare aggiornati è il caso che Google segnala. Punta a «beyblade x meta», 1.000-10.000 ricerche al mese (Keyword Planner). Idea da valutare: generare la parte numerica dai `*.stats.json` dentro la pipeline
+- 03/11/2026 — Title e description di `/combos/wizard-rod-1-60-hexa/`: 105 impressioni e 1 clic nei 28 giorni fino al 01/11/2026 (Search Console). Riscriverli sul modello delle pagine lama
+- 03/11/2026 — Link al sito dai canali propri (bio e didascalie dei caroselli Instagram, descrizioni YouTube, post Reddit): Google trova le pagine soprattutto dai link, e 13 URL su 19 erano «Discovered – currently not indexed» il 03/11/2026. Nessun link aggiunto finora
+- 03/11/2026 — Firma delle 11 guide pubblicate il 19/09/2026: dicono «By Alberto» ma le hanno scritte agenti Claude (commit `c0d434a`, tradotte in `4b7fddf`). Dal 03/11 il layout stampa sotto la byline la riga sul metodo (testo preparato con l'IA); resta da decidere se Alberto le rilegge o se cambia la firma
 
 ## Known issues
 
@@ -38,6 +42,7 @@ GitHub Pages via Actions. L'infrastruttura i18n IT resta in repo (dormiente), ri
 ## In progress
 
 <!-- Lavori in corso. Se collegati a un piano in plans/, linkalo. -->
+- 03/11/2026 — **Pagine «Best <lama> combos» in osservazione** (piano locale `plans/seo-pagine-lama-2026-11-03-2209.md`, commit `5052342`). Online dal 03/11: home con H1 e link, 10 pagine lama. I testi sono **pubblicati senza revisione dell'utente**, che ha chiesto di procedere in autonomia: contenuto IA non rivisto su un dominio nuovo può reggere qualche mese e poi crollare (esperimento SE Ranking, reference SEO §10). Indicizzazione chiesta in Search Console il 03/11 per la home e 9 pagine. Resta: (1) chiederla per `/parts/wizard-rod/`, saltata per quota giornaliera esaurita (Todoist, 04/11/2026); (2) il 15/12/2026 leggere in Search Console impressioni, query e stato di indicizzazione delle 10 pagine (Todoist), e solo dopo decidere se allargare ad altre lame
 - 19/09/2026 — **Contenuti editoriali per reggere la revisione Associates** (piano: `C:\Users\cinqu\.claude\plans\mi-hanno-espulso-dall-affiliazione-zany-squid.md`). Amazon ha chiuso l'account ES il 19/09 contestando, sul sito combo, contenuto insufficiente e link senza tracking ID; il sito dichiarato è lo stesso su tutti i portali. Fatto: fasi 0-6 complete — content collections, rotte `/meta/`, `/parts/`, `/combos/`, `/buy/` con link Amazon pre-renderizzati lato server, JSON-LD, breadcrumb, disclosure nel contenuto, 11 pubblicazioni scritte (7 da agenti Sonnet in parallelo, 2 report mensili a mano), sitemap da 3 a 18 URL, `test:content` verde. Fatto anche: rimosso `trottolebeybladex.it` dalla sitelist di DE/FR/UK (dove conviveva con beybladexcombos.com — stesso sito citato nel rifiuto ES), ri-candidata la Spagna lo stesso giorno con account nuovo `beybladexcomb-21` (l'utente ha scelto di sottomettere subito, non aspettare oltre). Il passo "Finalizar" del modulo Amazon richiede un click umano vero: un click automatico via JS o via coordinate dà «No se puede cargar el paso de verificación» — è l'utente che ha confermato. Fase 5 chiusa il 19/09: sezione `[14] Editoriale` in `e2e-smoke.ts` (sitemap vs conteggio pagine in `dist/`, H1 unico, canonical, JSON-LD valido, disclosure nel contenuto, ogni link Amazon con tag/sponsored/nofollow, nessun fetch di `combos.json`) — 199 OK / 0 KO sia in locale sia sul dominio pubblicato. Resta solo la fase 7: le altre ~27 pagine parte e ~100 combo
 - 12/09/2026 — **Associates IT in approvazione temporanea** (account nuovo `albertocv0b-21`, solo beybladexcombos.com dichiarato): Amazon rivede il sito dopo 3 vendite idonee da amazon.it, entro 180 giorni. Resta: portare traffico italiano al sito (canale WhatsApp, social) finché le 3 vendite non arrivano; se scade, ricandidarsi
 
