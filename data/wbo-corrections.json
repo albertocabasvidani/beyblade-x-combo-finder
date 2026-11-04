@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11",
+  "generatedAt": "2026-11-04",
   "note": "Mappa norm(riga-combo WBO) -> riga corretta. Curata dal subagent typo di /update-combos: per ogni riga refuso del ledger (categoria blade-unresolved/bit-unresolved) propone la riga corretta usando la lista nomi del registro; ogni proposta passa il gate deterministico (la riga corretta DEVE risolvere con parseComboLine) ed e' confermata dal subagent giudice. parse-wbo applica questa mappa PRIMA del parsing, cosi' i refusi risolvono in contesto (data/evento) e spariscono dal ledger. Vuota = nessuna correzione attiva.",
   "corrections": {
     "* acordz: aeropegasus 1-60r": "Aero Pegasus 1-60 Rush",
@@ -78,6 +78,7 @@
     "golemrock 9-60bounce spike (first stage & final stage)": "Golem Rock 9-60 Bound Spike",
     "hellscythe 3-80ball": "Hells Scythe 3-80Ball",
     "hellscythe 4-60hn": "Hells Scythe 4-60HN",
+    "hellsscythe 9-60ball (mold 1) (first & final stage)": "HellsScythe 9-60Ball (First & Final Stage)",
     "hoover wyvern 9-60 gp": "Hover Wyvern 9-60 GP",
     "hoover wyvern 9-60fb": "Hover Wyvern 9-60FB",
     "hover wyvern / 9-60 / kick": "Hover Wyvern 9-60 Kick",

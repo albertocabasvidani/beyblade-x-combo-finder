@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-03T03:04:48.158Z",
+  "lastUpdated": "2026-11-04T03:05:10.661Z",
   "combos": [
     {
       "id": "aero-pegasus-1-70-low-flat",
@@ -2469,6 +2469,94 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-15"
+    },
+    {
+      "id": "dran-blast-wheel-7-60-low-orb",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "7-60",
+      "bit": "low-orb",
+      "lockChip": "dran",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Dran Blast W 7-60 Low Orb",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Nov. 03, 2025  12:19 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-03"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-04",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-04"
+    },
+    {
+      "id": "dran-blast-wheel-9-60-low-orb",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "low-orb",
+      "lockChip": "dran",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Dran Blast W 9-60 Low Orb",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Nov. 03, 2025  12:19 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-03"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-04",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-04"
     },
     {
       "id": "dran-brave-assault-3-60-low-flat",
@@ -6816,6 +6904,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 365d)",
       "archivedDate": "2026-10-16"
+    },
+    {
+      "id": "hells-blast-wheel-7-60-kick",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "7-60",
+      "bit": "kick",
+      "lockChip": "hells",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Hells Blast W 7-60 Kick",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Nov. 03, 2025  1:01 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-03"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-04",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-04"
     },
     {
       "id": "hells-blast-wheel-9-60-low-rush",
@@ -11794,6 +11926,50 @@
       "archivedDate": "2026-10-19"
     },
     {
+      "id": "pegasus-blast-dual-5-60-hexa",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "5-60",
+      "bit": "hexa",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "dual",
+      "overBlade": null,
+      "displayName": "Pegasus Blast D 5-60 Hexa",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Untouchables Locals",
+          "url": "https://www.metabeys.com/events/1762665518152",
+          "weight": 1,
+          "date": "2025-11-03"
+        }
+      ],
+      "dateAdded": "2026-06-20",
+      "dateUpdated": "2026-11-04",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-04"
+    },
+    {
       "id": "pegasus-blast-dual-6-60-hexa",
       "line": "cx",
       "blade": null,
@@ -15425,6 +15601,94 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 365d)",
       "archivedDate": "2026-10-04"
+    },
+    {
+      "id": "pegasus-eclipse-massive-5-60-low-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "5-60",
+      "bit": "low-rush",
+      "lockChip": "pegasus",
+      "mainBlade": "eclipse",
+      "assistBlade": "massive",
+      "overBlade": null,
+      "displayName": "Pegasus Eclipse M 5-60 Low Rush",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Nov. 03, 2025  12:19 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-03"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-04",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-04"
+    },
+    {
+      "id": "pegasus-eclipse-massive-7-60-low-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "7-60",
+      "bit": "low-rush",
+      "lockChip": "pegasus",
+      "mainBlade": "eclipse",
+      "assistBlade": "massive",
+      "overBlade": null,
+      "displayName": "Pegasus Eclipse M 7-60 Low Rush",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Nov. 03, 2025  12:19 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-03"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-04",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-04"
     },
     {
       "id": "pegasus-flame-jaggy-9-60-low-rush",
@@ -20480,6 +20744,50 @@
       "archivedDate": "2026-09-30"
     },
     {
+      "id": "sol-brave-dual-1-60-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "1-60",
+      "bit": "rush",
+      "lockChip": "sol",
+      "mainBlade": "brave",
+      "assistBlade": "dual",
+      "overBlade": null,
+      "displayName": "Sol Brave D 1-60 Rush",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Nov. 03, 2025  12:19 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-03"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-04",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-04"
+    },
+    {
       "id": "sol-eclipse-dual-1-60-level",
       "line": "cx",
       "blade": null,
@@ -20836,6 +21144,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 365d)",
       "archivedDate": "2026-10-29"
+    },
+    {
+      "id": "sol-eclipse-dual-9-60-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "rush",
+      "lockChip": "sol",
+      "mainBlade": "eclipse",
+      "assistBlade": "dual",
+      "overBlade": null,
+      "displayName": "Sol Eclipse D 9-60 Rush",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Untouchables Locals",
+          "url": "https://www.metabeys.com/events/1762665518152",
+          "weight": 1,
+          "date": "2025-11-03"
+        }
+      ],
+      "dateAdded": "2026-06-20",
+      "dateUpdated": "2026-11-04",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-04"
     },
     {
       "id": "sol-eclipse-jaggy-3-70-kick",
