@@ -35,6 +35,16 @@ del /q "%USERPROFILE%\.playwright-beyblade\SingletonSocket" 2>nul
 set REDDIT_HEADED=1
 set WBO_HEADED=1
 
+REM --- Claude dei job: configurazione del progetto piu' il pacchetto minimo ---
+REM Sul server i progetti stanno sotto C:\Users\server: senza claudeMdExcludes Claude carica
+REM ~\.claude\CLAUDE.md e le rule globali come memoria di una cartella superiore (+68k token
+REM a sessione, misurato il 05/11/2026). Il pacchetto sta in claude-config, cartella headless.
+REM Se manca, si parte con la configurazione completa e lo si scrive nel log.
+set "JOBCFG=%USERPROFILE%\.claude\headless"
+set "CLAUDE_JOB="
+if exist "%JOBCFG%\impostazioni-job.json" if exist "%JOBCFG%\regole-job.md" set CLAUDE_JOB=--setting-sources project,local --settings "%JOBCFG%\impostazioni-job.json" --append-system-prompt-file "%JOBCFG%\regole-job.md"
+if not defined CLAUDE_JOB echo [WARN] pacchetto job assente in %JOBCFG%: configurazione completa>> "%LOG%"
+
 REM --- limite di sessione Claude ---
 REM Con questa variabile ogni claude -p, arrivato al limite, aspetta l'orario di azzeramento
 REM che il 429 riporta e poi riprende, invece di morire: senza, uno step al limite falliva e il
@@ -68,7 +78,7 @@ call :log "--- 1/4 update-parts START ---"
 REM Modello fissato a Sonnet/effort medium: e' un lavoro meccanico e ripetitivo (diff revid, estrazione
 REM strutturata, merge), non serve il modello di punta. I flag CLI rendono la scelta deterministica anche
 REM se cambia il modello di default della sessione; il frontmatter del comando dice la stessa cosa.
-claude --model sonnet --effort medium --dangerously-skip-permissions -p "/update-parts" >> "%LOG%" 2>&1
+claude %CLAUDE_JOB% --model sonnet --effort medium --dangerously-skip-permissions -p "/update-parts" >> "%LOG%" 2>&1
 set "RC=!errorlevel!"
 call :log "--- 1/4 update-parts END exit=!RC! ---"
 call :conta "!RC!" "update-parts"
@@ -89,7 +99,7 @@ for %%f in (reddit-cache.json wbo-cache.json metabeys-cache.json arca-cache.json
 )
 
 call :log "--- 2/4 judge-youtube START ---"
-claude --model sonnet --effort medium --dangerously-skip-permissions -p "/judge-youtube" >> "%LOG%" 2>&1
+claude %CLAUDE_JOB% --model sonnet --effort medium --dangerously-skip-permissions -p "/judge-youtube" >> "%LOG%" 2>&1
 set "RC=!errorlevel!"
 call :log "--- 2/4 judge-youtube END exit=!RC! ---"
 call :conta "!RC!" "judge-youtube"
@@ -103,14 +113,14 @@ if exist "%~dp0.pausa-update-combos" (
   call :log "--- 3/4 update-combos SALTATO: esiste .pausa-update-combos ---"
 ) else (
   call :log "--- 3/4 update-combos START ---"
-  claude --model sonnet --effort medium --dangerously-skip-permissions -p "/update-combos" >> "%LOG%" 2>&1
+  claude %CLAUDE_JOB% --model sonnet --effort medium --dangerously-skip-permissions -p "/update-combos" >> "%LOG%" 2>&1
   set "RC=!errorlevel!"
   call :log "--- 3/4 update-combos END exit=!RC! ---"
   call :conta "!RC!" "update-combos"
 )
 
 call :log "--- 4/4 mine-reddit START ---"
-claude --model sonnet --effort medium --dangerously-skip-permissions -p "/mine-reddit" >> "%LOG%" 2>&1
+claude %CLAUDE_JOB% --model sonnet --effort medium --dangerously-skip-permissions -p "/mine-reddit" >> "%LOG%" 2>&1
 set "RC=!errorlevel!"
 call :log "--- 4/4 mine-reddit END exit=!RC! ---"
 call :conta "!RC!" "mine-reddit"

@@ -21,6 +21,16 @@ del /q "%USERPROFILE%\.playwright-beyblade\SingletonSocket" 2>nul
 set REDDIT_HEADED=1
 set WBO_HEADED=1
 
+REM --- Claude dei job: configurazione del progetto piu' il pacchetto minimo ---
+REM Sul server i progetti stanno sotto C:\Users\server: senza claudeMdExcludes Claude carica
+REM ~\.claude\CLAUDE.md e le rule globali come memoria di una cartella superiore (+68k token
+REM a sessione, misurato il 05/11/2026). Il pacchetto sta in claude-config, cartella headless.
+REM Se manca, si parte con la configurazione completa e lo si scrive nel log.
+set "JOBCFG=%USERPROFILE%\.claude\headless"
+set "CLAUDE_JOB="
+if exist "%JOBCFG%\impostazioni-job.json" if exist "%JOBCFG%\regole-job.md" set CLAUDE_JOB=--setting-sources project,local --settings "%JOBCFG%\impostazioni-job.json" --append-system-prompt-file "%JOBCFG%\regole-job.md"
+if not defined CLAUDE_JOB echo [WARN] pacchetto job assente in %JOBCFG%: configurazione completa>> "%LOG%"
+
 REM Il log da solo non basta: l'esito degli step deve arrivare al dispatcher, che legge
 REM l'exit code del bat. Senza il contatore qui sotto il file esce 0 anche con tutti gli
 REM step falliti, e la verifica delle 09:00 registra "esito=ok" (02/09/2026: tre step morti
@@ -58,12 +68,12 @@ if defined COMBOS_DA_FARE (
   REM a /update-combos - cioe' proprio il recupero che doveva garantire. Si elabora
   REM la cache gia' presente: se il task del mattino e' andato, e' fresca di poche ore.
   call :log "--- judge-youtube START ---"
-  claude --model sonnet --effort medium --dangerously-skip-permissions -p "/judge-youtube" >> "%LOG%" 2>&1
+  claude %CLAUDE_JOB% --model sonnet --effort medium --dangerously-skip-permissions -p "/judge-youtube" >> "%LOG%" 2>&1
   set "RC=!errorlevel!"
   call :log "--- judge-youtube END exit=!RC! ---"
   call :conta "!RC!" "judge-youtube"
   call :log "--- update-combos START ---"
-  claude --model sonnet --effort medium --dangerously-skip-permissions -p "/update-combos" >> "%LOG%" 2>&1
+  claude %CLAUDE_JOB% --model sonnet --effort medium --dangerously-skip-permissions -p "/update-combos" >> "%LOG%" 2>&1
   set "RC=!errorlevel!"
   call :log "--- update-combos END exit=!RC! ---"
   call :conta "!RC!" "update-combos"
@@ -81,7 +91,7 @@ if defined COMBOS_DA_FARE (
 findstr /c:"mine reddit combos" "%CHECK%" >nul
 if errorlevel 1 (
   call :log "--- mine-reddit START ---"
-  claude --model sonnet --effort medium --dangerously-skip-permissions -p "/mine-reddit" >> "%LOG%" 2>&1
+  claude %CLAUDE_JOB% --model sonnet --effort medium --dangerously-skip-permissions -p "/mine-reddit" >> "%LOG%" 2>&1
   set "RC=!errorlevel!"
   call :log "--- mine-reddit END exit=!RC! ---"
   call :conta "!RC!" "mine-reddit"
