@@ -4,12 +4,12 @@
     "List of Beyblade X products (Takara Tomy)": {
       "revid": 650994,
       "timestamp": "2026-10-14T15:22:34.000Z",
-      "lastScannedDate": "2026-11-04"
+      "lastScannedDate": "2026-11-05"
     },
     "List of Beyblade X products (Hasbro)": {
       "revid": 648918,
       "timestamp": "2026-09-14T01:43:54.000Z",
-      "lastScannedDate": "2026-11-04"
+      "lastScannedDate": "2026-11-05"
     }
   },
   "pages": {
@@ -30,15 +30,15 @@
       "notes": "pagina lista: aggiunta riga NFL CX Top Pack, nessuna parte da estrarre da qui"
     },
     "DranSword 3-60F": {
-      "revid": 652213,
-      "timestamp": "2026-10-30T12:56:05.000Z",
-      "lastScannedDate": "2026-10-31",
+      "revid": 652348,
+      "timestamp": "2026-11-04T10:44:45.000Z",
+      "lastScannedDate": "2026-11-05",
       "kind": "product",
       "kindSource": "ai",
       "redirects": [
         "Sword Dran 3-60F"
       ],
-      "notes": "modifica a pagina nota"
+      "notes": "modifica di contenuto (Version 2.0), nessuna parte nuova"
     },
     "HeavensRing 0-80DS": {
       "revid": 651861,
@@ -743,15 +743,15 @@
       "kindSource": "heuristic"
     },
     "KnightShield 3-80N": {
-      "revid": 652212,
-      "timestamp": "2026-10-30T12:45:20.000Z",
-      "lastScannedDate": "2026-10-31",
+      "revid": 652352,
+      "timestamp": "2026-11-04T11:14:15.000Z",
+      "lastScannedDate": "2026-11-05",
       "kind": "product",
       "kindSource": "ai",
       "redirects": [
         "Helm Knight 3-80N"
       ],
-      "notes": "modifica a pagina nota"
+      "notes": "modifica di contenuto, nessuna parte nuova"
     },
     "Blade - Lightning L-Drago (Rapid-Hit Type)": {
       "revid": 632018,
@@ -1049,15 +1049,15 @@
       "kindSource": "heuristic"
     },
     "WizardArrow 4-80B": {
-      "revid": 651328,
-      "timestamp": "2026-10-16T18:57:06.000Z",
-      "lastScannedDate": "2026-10-17",
+      "revid": 652349,
+      "timestamp": "2026-11-04T10:44:47.000Z",
+      "lastScannedDate": "2026-11-05",
       "kind": "product",
       "kindSource": "ai",
       "redirects": [
         "Arrow Wizard 4-80B"
       ],
-      "notes": "parti gia nel master; cambio date/versione 2.0"
+      "notes": "pagina provvisoria, nessuna parte nuova"
     },
     "WizardRod 5-70DB": {
       "revid": 651956,
@@ -1303,11 +1303,12 @@
       "kindSource": "heuristic"
     },
     "Over Blade - Tough": {
-      "revid": 646069,
-      "timestamp": "2026-08-12T08:00:07.000Z",
-      "lastScannedDate": "2026-08-13",
+      "revid": 652340,
+      "timestamp": "2026-11-04T03:12:51.000Z",
+      "lastScannedDate": "2026-11-05",
       "kind": "part",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "bozza, parte gia presente"
     },
     "Ratchet - 1-60": {
       "revid": 651496,
@@ -3044,18 +3045,18 @@
     "Blade - SiegSuperion": {
       "revid": 651639,
       "timestamp": "2026-10-23T06:33:31.000Z",
-      "lastScannedDate": "2026-11-04",
+      "lastScannedDate": "2026-11-05",
       "kind": "part",
       "kindSource": "ai",
-      "notes": "parte gia' presente (id suppress-superion)"
+      "notes": "date di uscita, parte gia presente (suppress-superion)"
     },
     "SiegSuperion 0-70LP": {
       "revid": 651640,
       "timestamp": "2026-10-23T06:33:39.000Z",
-      "lastScannedDate": "2026-11-04",
+      "lastScannedDate": "2026-11-05",
       "kind": "product",
       "kindSource": "ai",
-      "notes": "BX-54/G2745: blade, ratchet 0-70, bit Low Point gia' presenti"
+      "notes": "Series Season 4, parte gia presente"
     },
     "Bey Kick Off Set": {
       "revid": 599877,
