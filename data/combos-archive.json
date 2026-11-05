@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-04T03:05:10.661Z",
+  "lastUpdated": "2026-11-05T03:05:40.208Z",
   "combos": [
     {
       "id": "aero-pegasus-1-70-low-flat",
@@ -3795,6 +3795,50 @@
       },
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-07-18"
+    },
+    {
+      "id": "dran-dagger-1-60-under-flat",
+      "line": "bx",
+      "blade": "dran-dagger",
+      "ratchet": "1-60",
+      "bit": "under-flat",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Dran Dagger 1-60 Under Flat",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — BeyKnights 11",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-31"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-05",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-05"
     },
     {
       "id": "dran-dagger-9-60-low-orb",
@@ -7827,6 +7871,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 365d)",
       "archivedDate": "2026-10-22"
+    },
+    {
+      "id": "hells-hammer-6-60-under-needle",
+      "line": "bx",
+      "blade": "hells-hammer",
+      "ratchet": "6-60",
+      "bit": "under-needle",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Hells Hammer 6-60 Under Needle",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — BeyKnights 11",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-31"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-05",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-05"
     },
     {
       "id": "hells-hammer-9-60-low-rush",
@@ -21460,6 +21548,50 @@
       "archivedDate": "2026-10-31"
     },
     {
+      "id": "sol-eclipse-round-5-60-low-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "5-60",
+      "bit": "low-rush",
+      "lockChip": "sol",
+      "mainBlade": "eclipse",
+      "assistBlade": "round",
+      "overBlade": null,
+      "displayName": "Sol Eclipse R 5-60 Low Rush",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Nov. 04, 2025  8:26 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-04"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-05",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-05"
+    },
+    {
       "id": "sol-eclipse-slash-9-60-low-rush",
       "line": "cx",
       "blade": null,
@@ -24388,6 +24520,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 365d)",
       "archivedDate": "2026-11-02"
+    },
+    {
+      "id": "valkyrie-blast-wheel-9-60-high-taper",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "high-taper",
+      "lockChip": "valkyrie",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Valkyrie Blast W 9-60 High Taper",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Nov. 04, 2025  8:07 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-04"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-05",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-05"
     },
     {
       "id": "valkyrie-blast-wheel-9-60-kick",
