@@ -73,6 +73,7 @@ set "FALLITI=0"
 set "FALLITI_ELENCO="
 
 call :log "=== PIPELINE START ==="
+call :conta_allarmi ALLARMI_PRIMA
 
 call :log "--- 1/4 update-parts START ---"
 REM Modello fissato a Sonnet/effort medium: e' un lavoro meccanico e ripetitivo (diff revid, estrazione
@@ -98,11 +99,20 @@ for %%f in (reddit-cache.json wbo-cache.json metabeys-cache.json arca-cache.json
   )
 )
 
-call :log "--- 2/4 judge-youtube START ---"
-claude %CLAUDE_JOB% --model sonnet --effort medium --dangerously-skip-permissions -p "/judge-youtube" >> "%LOG%" 2>&1
-set "RC=!errorlevel!"
-call :log "--- 2/4 judge-youtube END exit=!RC! ---"
-call :conta "!RC!" "judge-youtube"
+REM Gate: senza elementi nuovi lo step non ha niente da fare e Claude non parte. Il conteggio lo
+REM stampa lo script del batch col comando count. Se non si legge, per un errore o la cache assente, PEND resta vuoto,
+REM diverso da "0", e lo step parte comunque. Niente parentesi nei messaggi dentro i blocchi.
+set "PEND="
+for /f "delims=" %%n in ('npx tsx scripts\youtube-judge-batch.ts count 2^>nul') do set "PEND=%%n"
+if "!PEND!"=="0" (
+  call :log "--- 2/4 judge-youtube SALTATO: niente da elaborare ---"
+) else (
+  call :log "--- 2/4 judge-youtube START, da elaborare: !PEND! ---"
+  claude %CLAUDE_JOB% --model sonnet --effort medium --dangerously-skip-permissions -p "/judge-youtube" >> "%LOG%" 2>&1
+  set "RC=!errorlevel!"
+  call :log "--- 2/4 judge-youtube END exit=!RC! ---"
+  call :conta "!RC!" "judge-youtube"
+)
 
 REM Interruttore manuale per il solo /update-combos: se il file esiste, lo step viene saltato
 REM e il resto della pipeline prosegue. E' lo step piu' lungo (~20 min: legge combos.json da
@@ -119,11 +129,32 @@ if exist "%~dp0.pausa-update-combos" (
   call :conta "!RC!" "update-combos"
 )
 
-call :log "--- 4/4 mine-reddit START ---"
-claude %CLAUDE_JOB% --model sonnet --effort medium --dangerously-skip-permissions -p "/mine-reddit" >> "%LOG%" 2>&1
-set "RC=!errorlevel!"
-call :log "--- 4/4 mine-reddit END exit=!RC! ---"
-call :conta "!RC!" "mine-reddit"
+REM Gate: senza elementi nuovi lo step non ha niente da fare e Claude non parte. Il conteggio lo
+REM stampa lo script del batch col comando count. Se non si legge, per un errore o la cache assente, PEND resta vuoto,
+REM diverso da "0", e lo step parte comunque. Niente parentesi nei messaggi dentro i blocchi.
+set "PEND="
+for /f "delims=" %%n in ('npx tsx scripts\reddit-batch.ts count 2^>nul') do set "PEND=%%n"
+if "!PEND!"=="0" (
+  call :log "--- 4/4 mine-reddit SALTATO: niente da elaborare ---"
+) else (
+  call :log "--- 4/4 mine-reddit START, da elaborare: !PEND! ---"
+  claude %CLAUDE_JOB% --model sonnet --effort medium --dangerously-skip-permissions -p "/mine-reddit" >> "%LOG%" 2>&1
+  set "RC=!errorlevel!"
+  call :log "--- 4/4 mine-reddit END exit=!RC! ---"
+  call :conta "!RC!" "mine-reddit"
+)
+
+REM Allarmi degli script che lancia il modello (guardrail del prune, invariante dello score):
+REM claude esce 0 anche quando uno di loro fallisce, quindi lo script scrive in
+REM logs\allarmi-DATA.log (scripts\lib\allarme-step.ts) e qui conta lo step come fallito.
+REM Si contano solo le righe nuove di questo giro, non quelle di un giro precedente della giornata.
+call :conta_allarmi ALLARMI_DOPO
+if !ALLARMI_DOPO! GTR !ALLARMI_PRIMA! (
+  call :log "--- allarmi degli script: vedi logs\allarmi-%TODAY%.log ---"
+  type "logs\allarmi-%TODAY%.log" >> "%LOG%"
+  set /a FALLITI+=1
+  set "FALLITI_ELENCO=!FALLITI_ELENCO! allarmi-script"
+)
 
 call :guardia_push
 
@@ -147,6 +178,12 @@ exit /b 1
 :log
 echo [%date% %time%] %~1
 echo [%date% %time%] %~1>> "%LOG%"
+goto :eof
+
+REM %~1 = nome della variabile in cui scrivere quante righe ha oggi logs\allarmi-DATA.log.
+:conta_allarmi
+set "%~1=0"
+if exist "logs\allarmi-%TODAY%.log" for /f %%c in ('type "logs\allarmi-%TODAY%.log" ^| %SystemRoot%\System32\find.exe /c /v ""') do set "%~1=%%c"
 goto :eof
 
 REM %~1 = exit code dello step, %~2 = nome. Il contatore decide l'exit code del bat.

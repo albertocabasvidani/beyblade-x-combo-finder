@@ -53,6 +53,13 @@ function cmdDone() {
   console.log(`Marcati ${added} post come scansionati (blocco di ${batch.posts.length}).`);
 }
 
+/** Stampa solo il numero di post non scansionati: lo leggono i .bat per saltare /mine-reddit a 0. */
+function cmdCount() {
+  const cache = readJson(CACHE, { posts: [] });
+  const scanned = readJson(HIST, {}).scannedRedditPosts ?? {};
+  console.log(String((cache.posts ?? []).filter((p: any) => !scanned[p.id]).length));
+}
+
 const [cmd, ...rest] = process.argv.slice(2);
 if (cmd === 'next') {
   const i = rest.indexOf('--size');
@@ -60,7 +67,9 @@ if (cmd === 'next') {
   cmdNext(size);
 } else if (cmd === 'done') {
   cmdDone();
+} else if (cmd === 'count') {
+  cmdCount();
 } else {
-  console.error('Uso: reddit-batch.ts next [--size N] | done');
+  console.error('Uso: reddit-batch.ts next [--size N] | done | count');
   process.exit(1);
 }

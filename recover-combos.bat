@@ -39,6 +39,7 @@ set "FALLITI=0"
 set "FALLITI_ELENCO="
 
 call :log "=== RECOVER START ==="
+call :conta_allarmi ALLARMI_PRIMA
 
 git log --since="%TODAY% 00:00" --pretty=format:%%s > "%CHECK%" 2>nul
 
@@ -67,11 +68,20 @@ if defined COMBOS_DA_FARE (
   REM a farla, e i suoi browser headed uccidevano questo bat prima di arrivare
   REM a /update-combos - cioe' proprio il recupero che doveva garantire. Si elabora
   REM la cache gia' presente: se il task del mattino e' andato, e' fresca di poche ore.
-  call :log "--- judge-youtube START ---"
-  claude %CLAUDE_JOB% --model sonnet --effort medium --dangerously-skip-permissions -p "/judge-youtube" >> "%LOG%" 2>&1
-  set "RC=!errorlevel!"
-  call :log "--- judge-youtube END exit=!RC! ---"
-  call :conta "!RC!" "judge-youtube"
+  REM Gate: senza elementi nuovi lo step non ha niente da fare e Claude non parte. Il conteggio lo
+  REM stampa lo script del batch col comando count. Se non si legge, per un errore o la cache assente, PEND resta vuoto,
+  REM diverso da "0", e lo step parte comunque. Niente parentesi nei messaggi dentro i blocchi.
+  set "PEND="
+  for /f "delims=" %%n in ('npx tsx scripts\youtube-judge-batch.ts count 2^>nul') do set "PEND=%%n"
+  if "!PEND!"=="0" (
+    call :log "--- judge-youtube SALTATO: niente da elaborare ---"
+  ) else (
+    call :log "--- judge-youtube START, da elaborare: !PEND! ---"
+    claude %CLAUDE_JOB% --model sonnet --effort medium --dangerously-skip-permissions -p "/judge-youtube" >> "%LOG%" 2>&1
+    set "RC=!errorlevel!"
+    call :log "--- judge-youtube END exit=!RC! ---"
+    call :conta "!RC!" "judge-youtube"
+  )
   call :log "--- update-combos START ---"
   claude %CLAUDE_JOB% --model sonnet --effort medium --dangerously-skip-permissions -p "/update-combos" >> "%LOG%" 2>&1
   set "RC=!errorlevel!"
@@ -88,15 +98,34 @@ if defined COMBOS_DA_FARE (
   )
 )
 
-findstr /c:"mine reddit combos" "%CHECK%" >nul
-if errorlevel 1 (
-  call :log "--- mine-reddit START ---"
+REM /mine-reddit si rifa' se restano post non scansionati, non se manca il commit di oggi: lo step
+REM committa solo quando trova qualcosa, e il controllo sul commit lo rilanciava a vuoto nei
+REM giorni senza novita'. scan-history dice cosa e' gia' fatto, ed e' idempotente.
+REM Gate: senza elementi nuovi lo step non ha niente da fare e Claude non parte. Il conteggio lo
+REM stampa lo script del batch col comando count. Se non si legge, per un errore o la cache assente, PEND resta vuoto,
+REM diverso da "0", e lo step parte comunque. Niente parentesi nei messaggi dentro i blocchi.
+set "PEND="
+for /f "delims=" %%n in ('npx tsx scripts\reddit-batch.ts count 2^>nul') do set "PEND=%%n"
+if "!PEND!"=="0" (
+  call :log "--- mine-reddit SALTATO: niente da elaborare ---"
+) else (
+  call :log "--- mine-reddit START, da elaborare: !PEND! ---"
   claude %CLAUDE_JOB% --model sonnet --effort medium --dangerously-skip-permissions -p "/mine-reddit" >> "%LOG%" 2>&1
   set "RC=!errorlevel!"
   call :log "--- mine-reddit END exit=!RC! ---"
   call :conta "!RC!" "mine-reddit"
-) else (
-  call :log "mine-reddit gia' committato oggi: skip"
+)
+
+REM Allarmi degli script che lancia il modello (guardrail del prune, invariante dello score):
+REM claude esce 0 anche quando uno di loro fallisce, quindi lo script scrive in
+REM logs\allarmi-DATA.log (scripts\lib\allarme-step.ts) e qui conta lo step come fallito.
+REM Si contano solo le righe nuove di questo giro, non quelle di un giro precedente della giornata.
+call :conta_allarmi ALLARMI_DOPO
+if !ALLARMI_DOPO! GTR !ALLARMI_PRIMA! (
+  call :log "--- allarmi degli script: vedi logs\allarmi-%TODAY%.log ---"
+  type "logs\allarmi-%TODAY%.log" >> "%LOG%"
+  set /a FALLITI+=1
+  set "FALLITI_ELENCO=!FALLITI_ELENCO! allarmi-script"
 )
 
 call :guardia_push
@@ -119,6 +148,12 @@ exit /b 1
 :log
 echo [%date% %time%] %~1
 echo [%date% %time%] %~1>> "%LOG%"
+goto :eof
+
+REM %~1 = nome della variabile in cui scrivere quante righe ha oggi logs\allarmi-DATA.log.
+:conta_allarmi
+set "%~1=0"
+if exist "logs\allarmi-%TODAY%.log" for /f %%c in ('type "logs\allarmi-%TODAY%.log" ^| %SystemRoot%\System32\find.exe /c /v ""') do set "%~1=%%c"
 goto :eof
 
 REM %~1 = exit code dello step, %~2 = nome. Il contatore decide l'exit code del bat.

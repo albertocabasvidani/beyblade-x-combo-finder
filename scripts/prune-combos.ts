@@ -20,6 +20,7 @@ import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { join } from 'path';
 import { pathToFileURL } from 'url';
 import { isFresh, CUTOFF_DAYS } from './lib/freshness';
+import { segnalaAllarme } from './lib/allarme-step';
 import type { Combo, CombosDatabase, ComboEvidence } from '../src/lib/types';
 
 const ROOT = join(import.meta.dirname, '..');
@@ -68,6 +69,7 @@ function main() {
   // Guardrail PRE: evidenza torneo a zero ⇒ fetch/parse rotto, non meta vuoto davvero. Non potare.
   if (structuredPlacements(mb) + structuredPlacements(wbo) === 0) {
     console.error('GUARDRAIL: evidenza torneo (metabeys+wbo) a 0 piazzamenti — probabile fetch/parse rotto. Niente pruning.');
+    segnalaAllarme('prune-combos', 'guardrail: evidenza torneo a 0 piazzamenti, niente pruning');
     process.exit(1);
   }
 
@@ -92,6 +94,7 @@ function main() {
   const pct = db.combos.length ? (orphans.length / db.combos.length) * 100 : 0;
   if (pct > GUARD_PCT) {
     console.error(`\nGUARDRAIL: archivierebbe ${orphans.length}/${db.combos.length} combo (${pct.toFixed(0)}% > ${GUARD_PCT}%). combos.json NON modificato. Verifica cutoff/evidenze.`);
+    segnalaAllarme('prune-combos', `guardrail: archivierebbe ${orphans.length}/${db.combos.length} combo (${pct.toFixed(0)}%), combos.json non modificato`);
     process.exit(1);
   }
 

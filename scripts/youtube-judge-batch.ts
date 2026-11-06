@@ -92,6 +92,12 @@ function cmdDone() {
   console.log(`Rimanenti da giudicare: ${stillPending}.`);
 }
 
+/** Stampa solo il numero di video da giudicare: lo leggono i .bat per saltare /judge-youtube a 0. */
+function cmdCount() {
+  const cache = readJson(CACHE, { videos: [] });
+  console.log(String(((cache.videos ?? []) as VideoEntry[]).filter(isPending).length));
+}
+
 const [cmd, ...rest] = process.argv.slice(2);
 if (cmd === 'next') {
   const i = rest.indexOf('--size');
@@ -99,7 +105,9 @@ if (cmd === 'next') {
   cmdNext(size);
 } else if (cmd === 'done') {
   cmdDone();
+} else if (cmd === 'count') {
+  cmdCount();
 } else {
-  console.error('Uso: youtube-judge-batch.ts next [--size N] | done');
+  console.error('Uso: youtube-judge-batch.ts next [--size N] | done | count');
   process.exit(1);
 }

@@ -15,6 +15,7 @@ import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { join } from 'path';
 import { scoreCombo, WINDOW_DAYS, WINDOW_KEYS, windowCutoff, windowTags, evidenceInWindow, qualifiesForWindow, windowThresholds, retagTiers } from '../src/lib/scoring';
 import { isFresh, cutoffISO, CUTOFF_DAYS } from './lib/freshness';
+import { segnalaAllarme } from './lib/allarme-step';
 import type {
   Combo, CombosDatabase, ComboEvidence, ComboWindows, MentionEvidence, PlacementEvidence, TierThresholds,
   UsageEvidence, WindowKey,
@@ -192,6 +193,7 @@ function main() {
 
   const mismatch = db.combos.filter((c) => c.windows?.['365'] && c.windows['365'].score !== c.score).length;
   console.log(`\nFinestre temporali (invariante windows[365]==score: ${mismatch} violazioni):`);
+  if (mismatch > 0) segnalaAllarme('score-combos', `invariante windows[365]==score violata su ${mismatch} combo`);
   for (const k of WINDOW_KEYS) {
     const rows = db.combos.filter((c) => c.windows?.[k]).sort((a, b) => b.windows![k]!.score - a.windows![k]!.score);
     const th = thresholds[k];

@@ -156,9 +156,9 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
 - `/update-combos` — aggiorna database combo dalle cache (master multilingua, X-filter, dedup id-set)
 - `/mine-reddit` — mina la cache Reddit **a blocchi** (idempotente via scan-history): legge tutta la cache, non la skimma. Per backfill e marcia normale
 - `/judge-youtube` — giudica la rilevanza dei video YouTube **a blocchi** (idempotente, flag in cache): per ogni video `prefilter:"pass"` decide `relevant` (combo/meta/torneo competitivo Beyblade X? Burst/unboxing/casual → false) e `lang` (lingua reale del parlato), leggendo titolo+descrizione+tag multilingua. I transcript si scaricano solo dei `relevant`
-- `npm run youtube:judge -- next|done` — batcher deterministico per `/judge-youtube` (serve un blocco / fonde i verdetti IA da `tmp/youtube-judge-extracted.json` nella cache)
+- `npm run youtube:judge -- next|done|count` — batcher deterministico per `/judge-youtube` (serve un blocco / fonde i verdetti IA da `tmp/youtube-judge-extracted.json` nella cache); `count` stampa i video da giudicare e a 0 i `.bat` saltano lo step
 - `/discover-sources` — cerca NUOVE fonti tornei (YouTube/siti/blog/forum/social), le valuta, esclude le note (dedup vs `sources.json` + `source-candidates.json`) e manda una proposta motivata via email (corpo leggibile, no allegati). Loop di feedback: rispondi all'email in linguaggio naturale (approva/scarta) e il **run successivo** promuove gli approvati in `sources.json` (o `manualVerification` per i social) e marca i rifiutati. Staging in `data/source-candidates.json` (campo `lastProposal` per ritrovare il thread del feedback)
-- `npm run reddit:batch -- next|done` — batcher deterministico per `/mine-reddit` (serve/marca blocchi)
+- `npm run reddit:batch -- next|done|count` — batcher deterministico per `/mine-reddit` (serve/marca blocchi); `count` stampa i post non scansionati e a 0 i `.bat` saltano lo step
 - `npx tsx scripts/reddit-merge.ts` — merge deterministico dei combo estratti da `/mine-reddit` (`tmp/reddit-extracted.json`, prodotto dall'IA) in `combos.json`: deriva id/line/type/displayName da `parts.json`, X-filter su blade/mainBlade, dedup dell'evidence per chiave stabile (idempotente). Lo score lo ricalcola poi `score:combos`
 - `npm run parse:metabeys` — parser deterministico MetaBeys (eventi+leaderboard) → `metabeys-evidence.json`. Risolve **BX (3 segmenti) e CX (4 segmenti** `lockChip mainBlade [over] / assist / ratchet / bit`, via `cx-resolve.ts`); solo typo/incompleti restano in `unresolved` (placements+usage)
 - `npm run parse:wbo` — parser deterministico WBO (segmentazione regex + risoluzione **BX e CX**) → `wbo-evidence.json`. Risolve le CX (lockChip+mainBlade+assist[+over], order-agnostic + Western) via `scripts/lib/cx-resolve.ts`; il residuo va nel ledger `wbo-unresolved.json` (delta nuovo segnalato). Applica `wbo-corrections.json` (refusi) prima del parsing
@@ -428,9 +428,9 @@ ha portato i combo da 204 a 457). Nella marcia normale è 1 blocco → pochi min
 
 Recupero combo — job SEPARATO `beyblade-recover`, **giornaliero nel pomeriggio** (soglia 14:00,
 utente al PC): `recover-combos.bat`
-controlla via `git log --since=midnight` se gli step che committano sono già passati **oggi**; se
-`update combos database` manca rifà `/judge-youtube` → `/update-combos`, se
-`mine reddit combos` manca rifà `/mine-reddit`. **Non rifà la raccolta** (è il job `beyblade-collect`):
+controlla via `git log --since=midnight` se `update combos database` è già passato **oggi**, e se
+manca rifà `/judge-youtube` → `/update-combos`; rifà `/mine-reddit` se `reddit:batch -- count`
+dice che restano post non scansionati. **Non rifà la raccolta** (è il job `beyblade-collect`):
 elabora la cache presente. **Idempotente**: se la mattina è andata, non fa nulla
 (solo log in `logs/recover-YYYY-MM-DD.log`). Rete di sicurezza per le interruzioni della sequenza
 mattutina interattiva (caso 25-26/06/2026: pipeline morta a metà, `combos.json` fermo 2 giorni).
