@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-06T03:01:40.480Z",
+  "lastUpdated": "2026-11-07T03:02:03.739Z",
   "combos": [
     {
       "id": "aero-pegasus-1-70-low-flat",
@@ -4592,6 +4592,50 @@
       "archivedDate": "2026-09-12"
     },
     {
+      "id": "fox-blast-wheel-7-60-rubber-accel",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "7-60",
+      "bit": "rubber-accel",
+      "lockChip": "fox",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Fox Blast W 7-60 Rubber Accel",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — X Masters 29",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-06"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-07",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-07"
+    },
+    {
       "id": "fox-blast-wheel-7-80-hexa",
       "line": "cx",
       "blade": null,
@@ -8900,6 +8944,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 365d)",
       "archivedDate": "2026-10-29"
+    },
+    {
+      "id": "hornet-blast-jaggy-6-60-low-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "6-60",
+      "bit": "low-rush",
+      "lockChip": "hornet",
+      "mainBlade": "blast",
+      "assistBlade": "jaggy",
+      "overBlade": null,
+      "displayName": "Hornet Blast J 6-60 Low Rush",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Nov. 06, 2025  2:11 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-06"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-07",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-07"
     },
     {
       "id": "hornet-blast-wheel-3-60-hexa",
@@ -21006,6 +21094,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 365d)",
       "archivedDate": "2026-11-06"
+    },
+    {
+      "id": "sol-blast-wheel-1-80-kick",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "1-80",
+      "bit": "kick",
+      "lockChip": "sol",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Sol Blast W 1-80 Kick",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — X Masters 29",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-06"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-07",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-07"
     },
     {
       "id": "sol-brave-dual-1-60-rush",
