@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-07T03:02:03.739Z",
+  "lastUpdated": "2026-11-08T03:03:08.118Z",
   "combos": [
     {
       "id": "aero-pegasus-1-70-low-flat",
@@ -12190,6 +12190,50 @@
       "archivedDate": "2026-11-04"
     },
     {
+      "id": "pegasus-blast-dual-5-70-hexa",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "5-70",
+      "bit": "hexa",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "dual",
+      "overBlade": null,
+      "displayName": "Pegasus Blast D 5-70 Hexa",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — New Realm Games League Week 3",
+          "url": "https://www.metabeys.com/events/1762786814737",
+          "weight": 1,
+          "date": "2025-11-07"
+        }
+      ],
+      "dateAdded": "2026-06-20",
+      "dateUpdated": "2026-11-08",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-08"
+    },
+    {
       "id": "pegasus-blast-dual-6-60-hexa",
       "line": "cx",
       "blade": null,
@@ -13811,6 +13855,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "pegasus-blast-slash-5-60-kick",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "5-60",
+      "bit": "kick",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "slash",
+      "overBlade": null,
+      "displayName": "Pegasus Blast S 5-60 Kick",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Nov. 07, 2025  8:06 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-07"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-08",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-08"
     },
     {
       "id": "pegasus-blast-slash-5-60-low-rush",
@@ -18028,6 +18116,56 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "rhino-blast-wheel-9-60-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "rush",
+      "lockChip": "rhino",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Rhino Blast W 9-60 Rush",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Koopa Cup 3",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-19"
+        },
+        {
+          "name": "WBO — Nov. 07, 2025  8:06 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-07"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-08",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-08"
     },
     {
       "id": "rhino-blast-wheel-9-70-taper",
