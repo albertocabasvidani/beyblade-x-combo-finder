@@ -594,6 +594,18 @@
       "weight": 0.3,
       "lang": "en",
       "channelId": "UCud8jsn9yM2z4FI8BPTpWYg"
+    },
+    {
+      "id": "website-beywatch-gg",
+      "name": "BEYWATCH.GG",
+      "type": "website",
+      "provides": "combos",
+      "weight": 0.6,
+      "lang": "en",
+      "urls": [
+        "https://beywatch.gg/tournaments"
+      ],
+      "notes": "Aggregatore di tornei Beyblade X: solo il deck vincitore per evento, con tag di provenienza. Il 76% degli eventi ha tag wbo e l'8% metabeys (già coperti): raccogliere SOLO gli eventi con altri tag (athlete-cup, itabashi, iloilo...) per non contare doppio. Approvato dall'utente via email il 02/11/2026."
     }
   ],
   "manualVerification": [
