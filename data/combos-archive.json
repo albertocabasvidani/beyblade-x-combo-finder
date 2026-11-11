@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-10T03:01:57.982Z",
+  "lastUpdated": "2026-11-11T03:01:33.169Z",
   "combos": [
     {
       "id": "aero-pegasus-1-70-low-flat",
@@ -137,6 +137,50 @@
       },
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-07-18"
+    },
+    {
+      "id": "aero-pegasus-1-80-rubber-accel",
+      "line": "bx",
+      "blade": "aero-pegasus",
+      "ratchet": "1-80",
+      "bit": "rubber-accel",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Aero Pegasus 1-80 Rubber Accel",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Untouchables Locals",
+          "url": "https://www.metabeys.com/events/1763404229101",
+          "weight": 1,
+          "date": "2025-11-10"
+        }
+      ],
+      "dateAdded": "2026-06-20",
+      "dateUpdated": "2026-11-11",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-11"
     },
     {
       "id": "aero-pegasus-3-60-low-flat",
@@ -970,6 +1014,62 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "cerberus-blast-wheel-9-60-level",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "level",
+      "lockChip": "cerberus",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Cerberus Blast W 9-60 Level",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Sep. 08, 2025  2:50 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-09-08"
+        },
+        {
+          "name": "WBO — Nov. 10, 2025  2:53 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-10"
+        },
+        {
+          "name": "WBO — Aug. 21, 2025  6:44 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-08-21"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-11",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-11"
     },
     {
       "id": "cerberus-blast-wheel-9-60-point",
@@ -3762,6 +3862,50 @@
       "archivedDate": "2026-09-12"
     },
     {
+      "id": "dran-buster-4-80-flat",
+      "line": "bx",
+      "blade": "dran-buster",
+      "ratchet": "4-80",
+      "bit": "flat",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "displayName": "Dran Buster 4-80 Flat",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "High KO potential with aggressive movement. 1-60 Low Rush build now preferred.",
+      "sources": [
+        {
+          "name": "WBO Forum",
+          "url": "https://worldbeyblade.org/",
+          "weight": 0.7,
+          "date": "2025-11-10"
+        }
+      ],
+      "amazon": {},
+      "dateAdded": "2025-10-01",
+      "dateUpdated": "2026-11-11",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-11"
+    },
+    {
       "id": "dran-buster-5-60-kick",
       "line": "bx",
       "blade": "dran-buster",
@@ -4598,6 +4742,50 @@
       "archivedDate": "2026-11-09"
     },
     {
+      "id": "emperor-might-wheel-0-60-hexa",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "0-60",
+      "bit": "hexa",
+      "lockChip": "emperor",
+      "mainBlade": "might",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Emperor Might W 0-60 Hexa",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Nov. 10, 2025  9:57 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-10"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-11",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-11"
+    },
+    {
       "id": "fox-blast-jaggy-1-60-kick",
       "line": "cx",
       "blade": null,
@@ -4860,6 +5048,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "fox-blast-slash-7-60-level",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "7-60",
+      "bit": "level",
+      "lockChip": "fox",
+      "mainBlade": "blast",
+      "assistBlade": "slash",
+      "overBlade": null,
+      "displayName": "Fox Blast S 7-60 Level",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Nov. 10, 2025  12:38 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-10"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-11",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-11"
     },
     {
       "id": "fox-blast-wheel-7-60-rubber-accel",
@@ -10280,6 +10512,95 @@
       "archivedDate": "2026-10-06"
     },
     {
+      "id": "impact-drake-1-70-under-needle",
+      "line": "bx",
+      "blade": "impact-drake",
+      "ratchet": "1-70",
+      "bit": "under-needle",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Impact Drake 1-70 Under Needle",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "Combo segnalata su Reddit r/Beyblade.",
+      "sources": [
+        {
+          "name": "Reddit r/Beyblade",
+          "url": "https://reddit.com/r/Beyblade/comments/1otobj0/shark_scale_160_w_the_single_most_cracked_combo/",
+          "weight": 0.6,
+          "date": "2025-11-10"
+        }
+      ],
+      "amazon": {},
+      "dateAdded": "2026-06-16",
+      "dateUpdated": "2026-11-11",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-11"
+    },
+    {
+      "id": "impact-drake-1-80-low-rush",
+      "line": "bx",
+      "blade": "impact-drake",
+      "ratchet": "1-80",
+      "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Impact Drake 1-80 Low Rush",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Nov. 10, 2025  2:53 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-09"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-11",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-11"
+    },
+    {
       "id": "impact-drake-1-80-wedge",
       "line": "bx",
       "blade": "impact-drake",
@@ -10368,6 +10689,96 @@
       "archivedDate": "2026-09-12"
     },
     {
+      "id": "impact-drake-4-50-kick",
+      "line": "bx",
+      "blade": "impact-drake",
+      "ratchet": "4-50",
+      "bit": "kick",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Impact Drake 4-50 Kick",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "Combo segnalata su Reddit r/Beyblade.",
+      "sources": [
+        {
+          "name": "Reddit r/Beyblade",
+          "url": "https://reddit.com/r/Beyblade/comments/1otobj0/shark_scale_160_w_the_single_most_cracked_combo/",
+          "weight": 0.6,
+          "date": "2025-11-10"
+        }
+      ],
+      "amazon": {},
+      "dateAdded": "2026-06-16",
+      "dateUpdated": "2026-11-11",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-11"
+    },
+    {
+      "id": "impact-drake-4-70-kick",
+      "line": "bx",
+      "blade": "impact-drake",
+      "ratchet": "4-70",
+      "bit": "kick",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Impact Drake 4-70 Kick",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "Combo segnalata su Reddit r/Beyblade.",
+      "sources": [
+        {
+          "name": "Reddit r/Beyblade",
+          "url": "https://reddit.com/r/Beyblade/comments/1otobj0/shark_scale_160_w_the_single_most_cracked_combo/",
+          "weight": 0.6,
+          "date": "2025-11-10"
+        }
+      ],
+      "amazon": {},
+      "dateAdded": "2026-06-16",
+      "dateUpdated": "2026-11-11",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-11"
+    },
+    {
       "id": "impact-drake-4-70-point",
       "line": "bx",
       "blade": "impact-drake",
@@ -10403,6 +10814,51 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "impact-drake-4-70-zap",
+      "line": "bx",
+      "blade": "impact-drake",
+      "ratchet": "4-70",
+      "bit": "zap",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Impact Drake 4-70 Zap",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "Combo segnalata su Reddit r/Beyblade.",
+      "sources": [
+        {
+          "name": "Reddit r/Beyblade",
+          "url": "https://reddit.com/r/Beyblade/comments/1otobj0/shark_scale_160_w_the_single_most_cracked_combo/",
+          "weight": 0.6,
+          "date": "2025-11-10"
+        }
+      ],
+      "amazon": {},
+      "dateAdded": "2026-06-16",
+      "dateUpdated": "2026-11-11",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-11"
     },
     {
       "id": "impact-drake-5-60-low-flat",
@@ -11630,6 +12086,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "optimus-prime-3-60-low-rush",
+      "line": "bx",
+      "blade": "optimus-prime",
+      "ratchet": "3-60",
+      "bit": "low-rush",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Optimus Prime 3-60 Low Rush",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Untouchables Locals",
+          "url": "https://www.metabeys.com/events/1763404229101",
+          "weight": 1,
+          "date": "2025-11-10"
+        }
+      ],
+      "dateAdded": "2026-06-20",
+      "dateUpdated": "2026-11-11",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-11"
     },
     {
       "id": "pegasus-blast-assault-1-60-point",
@@ -16175,6 +16675,74 @@
       "archivedDate": "2026-09-12"
     },
     {
+      "id": "pegasus-blast-wheel-9-60-rubber-accel",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "rubber-accel",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Pegasus Blast W 9-60 Rubber Accel",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Untouchables Locals",
+          "url": "https://www.metabeys.com/events/1763404229101",
+          "weight": 1,
+          "date": "2025-11-10"
+        },
+        {
+          "name": "WBO — Aug. 10, 2025  3:32 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-08-10"
+        },
+        {
+          "name": "WBO — Oct. 10, 2025  7:42 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-10"
+        },
+        {
+          "name": "WBO — Oct. 21, 2025  9:55 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-21"
+        },
+        {
+          "name": "WBO — Oct. 30, 2025  12:26 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-10-30"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-11",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-11"
+    },
+    {
       "id": "pegasus-blast-wheel-9-70-kick",
       "line": "cx",
       "blade": null,
@@ -18306,6 +18874,50 @@
       "archivedDate": "2026-10-31"
     },
     {
+      "id": "rhino-blast-jaggy-9-60-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "rush",
+      "lockChip": "rhino",
+      "mainBlade": "blast",
+      "assistBlade": "jaggy",
+      "overBlade": null,
+      "displayName": "Rhino Blast J 9-60 Rush",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — The Trinity",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-10"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-11",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-11"
+    },
+    {
       "id": "rhino-blast-slash-3-60-taper",
       "line": "cx",
       "blade": null,
@@ -18618,6 +19230,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 365d)",
       "archivedDate": "2026-10-07"
+    },
+    {
+      "id": "rhino-blast-wheel-9-70-unite",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-70",
+      "bit": "unite",
+      "lockChip": "rhino",
+      "mainBlade": "blast",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Rhino Blast W 9-70 Unite",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — The Trinity",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-10"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-11",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-11"
     },
     {
       "id": "rhino-brave-jaggy-5-60-rush",
@@ -19457,6 +20113,51 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-28"
+    },
+    {
+      "id": "samurai-steel-4-80-rubber-accel",
+      "line": "bx",
+      "blade": "samurai-steel",
+      "ratchet": "4-80",
+      "bit": "rubber-accel",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Samurai Steel 4-80 Rubber Accel",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "Combo segnalata su Reddit r/Beyblade.",
+      "sources": [
+        {
+          "name": "Reddit r/Beyblade",
+          "url": "https://reddit.com/r/Beyblade/comments/1otsdrq/did_a_64_bey_tournament_everything_was_stock/",
+          "weight": 0.6,
+          "date": "2025-11-10"
+        }
+      ],
+      "amazon": {},
+      "dateAdded": "2026-06-16",
+      "dateUpdated": "2026-11-11",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-11"
     },
     {
       "id": "scorpio-spear-1-60-rubber-accel",
@@ -21028,6 +21729,51 @@
       "archivedDate": "2026-06-17"
     },
     {
+      "id": "shinobi-knife-1-70-wall-ball",
+      "line": "bx",
+      "blade": "shinobi-knife",
+      "ratchet": "1-70",
+      "bit": "wall-ball",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Shinobi Knife 1-70 Wall Ball",
+      "type": "defense",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "Combo segnalata su Reddit r/Beyblade.",
+      "sources": [
+        {
+          "name": "Reddit r/Beyblade",
+          "url": "https://reddit.com/r/Beyblade/comments/1otsdrq/did_a_64_bey_tournament_everything_was_stock/",
+          "weight": 0.6,
+          "date": "2025-11-10"
+        }
+      ],
+      "amazon": {},
+      "dateAdded": "2026-06-16",
+      "dateUpdated": "2026-11-11",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-11"
+    },
+    {
       "id": "shinobi-shadow-3-60-wedge",
       "line": "bx",
       "blade": "shinobi-shadow",
@@ -22044,6 +22790,52 @@
       "archivedDate": "2026-10-12"
     },
     {
+      "id": "sol-eclipse-dual-7-60-low-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "7-60",
+      "bit": "low-rush",
+      "lockChip": "sol",
+      "mainBlade": "eclipse",
+      "assistBlade": "dual",
+      "displayName": "Sol Eclipse Dual 7-60 Low Rush",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only",
+        "cx",
+        "creator-pick"
+      ],
+      "notes": "HobbyTalk Haru Ren favorite Sol Eclipse combo (Upper Mode). Dual assist blade for balanced performance.",
+      "sources": [
+        {
+          "name": "HobbyTalk Haru Ren",
+          "url": "https://www.youtube.com/@HobbyTalkHaruRen",
+          "weight": 0.8,
+          "date": "2025-11-10"
+        }
+      ],
+      "amazon": {},
+      "dateAdded": "2026-03-04",
+      "dateUpdated": "2026-11-11",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-11"
+    },
+    {
       "id": "sol-eclipse-dual-9-60-hexa",
       "line": "cx",
       "blade": null,
@@ -22620,6 +23412,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 365d)",
       "archivedDate": "2026-10-29"
+    },
+    {
+      "id": "sol-eclipse-wheel-5-60-level",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "5-60",
+      "bit": "level",
+      "lockChip": "sol",
+      "mainBlade": "eclipse",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Sol Eclipse W 5-60 Level",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Nov. 10, 2025  7:36 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-10"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-11",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-11"
     },
     {
       "id": "sol-eclipse-wheel-7-70-level",
