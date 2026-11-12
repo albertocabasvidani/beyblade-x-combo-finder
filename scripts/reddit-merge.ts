@@ -12,6 +12,9 @@
  * duplica nulla.
  *
  * Uso: npx tsx scripts/reddit-merge.ts            (legge tmp/reddit-extracted.json)
+ *
+ * `mergeExtracted` è riusata da youtube-mine-batch.ts per i transcript YouTube: stesso merge, con
+ * un'altra etichetta di fonte (`MergeFonte`).
  */
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { join } from 'path';
@@ -20,6 +23,21 @@ const ROOT = join(import.meta.dirname, '..');
 const COMBOS = join(ROOT, 'data', 'combos.json');
 const PARTS = join(ROOT, 'data', 'parts.json');
 const EXTRACTED = join(ROOT, 'tmp', 'reddit-extracted.json');
+
+/** Ciò che cambia fra una fonte narrativa e l'altra: l'etichetta scritta nei dati. */
+export interface MergeFonte {
+  source: string;       // valore di default di `source` nei placement
+  sourceName: string;   // nome nella lista `sources[]` mostrata dal sito
+  sourceUrl: string;    // url di ripiego per `sources[]`
+  notes: string;        // nota di default di una combo nuova
+}
+
+const FONTE_REDDIT: MergeFonte = {
+  source: 'reddit',
+  sourceName: 'Reddit r/Beyblade',
+  sourceUrl: 'https://reddit.com/r/Beyblade',
+  notes: 'Combo segnalata su Reddit r/Beyblade.',
+};
 
 const today = () => new Date().toISOString().slice(0, 10);
 
@@ -81,15 +99,15 @@ function deriveType(c: any): string {
 // e validiamo lo schema minimo, scartando le entry malformate. La veridicità del testo resta non
 // verificabile a codice, ma il tier basso confina l'impatto (niente pilastro performance pieno,
 // niente badge tournament-proven).
-function sanitizePlacements(places: any[]): any[] {
+function sanitizePlacements(places: any[], fonte: MergeFonte): any[] {
   const out: any[] = [];
   for (const p of places ?? []) {
     if (!p || typeof p !== 'object') continue;
     if (typeof p.placement !== 'number' || !p.date) {
-      console.warn(`SKIP placement Reddit malformato (placement/date mancanti): ${JSON.stringify(p)}`);
+      console.warn(`SKIP placement ${fonte.source} malformato (placement/date mancanti): ${JSON.stringify(p)}`);
       continue;
     }
-    out.push({ ...p, tier: 'narrative', source: p.source || 'reddit', lang: p.lang || 'en' });
+    out.push({ ...p, tier: 'narrative', source: p.source || fonte.source, lang: p.lang || 'en' });
   }
   return out;
 }
@@ -112,24 +130,19 @@ function mergeArray(target: any[], incoming: any[], keyFn: (x: any) => string) {
   return added;
 }
 
-function sourceEntryFor(ev: any): { name: string; url: string; weight: number; date: string } | null {
-  // costruisce una voce sources[] da una qualunque entry reddit (per il display del sito)
+function sourceEntryFor(ev: any, fonte: MergeFonte): { name: string; url: string; weight: number; date: string } | null {
+  // costruisce una voce sources[] da una qualunque entry della fonte (per il display del sito)
   const first = (ev.placements?.[0] ?? ev.usage?.[0] ?? ev.mentions?.[0]);
   if (!first) return null;
   return {
-    name: 'Reddit r/Beyblade',
-    url: first.url ?? 'https://reddit.com/r/Beyblade',
+    name: fonte.sourceName,
+    url: first.url ?? fonte.sourceUrl,
     weight: 0.6,
     date: first.date ?? today(),
   };
 }
 
-function main() {
-  if (!existsSync(EXTRACTED)) {
-    console.error(`Nessun file ${EXTRACTED}. Niente da mergere.`);
-    process.exit(0);
-  }
-  const extracted: any[] = JSON.parse(readFileSync(EXTRACTED, 'utf-8'));
+export function mergeExtracted(extracted: any[], fonte: MergeFonte = FONTE_REDDIT): { created: number; updated: number; skipped: number } {
   const db = JSON.parse(readFileSync(COMBOS, 'utf-8'));
   const combos: any[] = db.combos;
   const index = new Map(combos.map((c) => [comboKey(c), c]));
@@ -163,7 +176,7 @@ function main() {
     const key = comboKey(raw);
     let combo = index.get(key);
     const ev = raw.evidence ?? {};
-    ev.placements = sanitizePlacements(ev.placements);   // guardrail: forza tier narrative + valida
+    ev.placements = sanitizePlacements(ev.placements, fonte);   // guardrail: forza tier narrative + valida
 
     if (!combo) {
       combo = {
@@ -181,7 +194,7 @@ function main() {
         score: 0,
         scoreBreakdown: { performance: 0, presence: 0, corroboration: 0, tournamentEvents: 0, wins: 0, topCutAppearances: 0 },
         tags: [],
-        notes: raw.notes ?? 'Combo segnalata su Reddit r/Beyblade.',
+        notes: raw.notes ?? fonte.notes,
         sources: [],
         amazon: {},
         dateAdded: today(),
@@ -208,7 +221,7 @@ function main() {
     touched += mergeArray(combo.evidence.mentions, ev.mentions ?? [], meKey);
 
     // sources[] per il display (dedup per url)
-    const se = sourceEntryFor(ev);
+    const se = sourceEntryFor(ev, fonte);
     if (se) {
       combo.sources = combo.sources ?? [];
       if (!combo.sources.some((s: any) => s.url === se.url)) combo.sources.push(se);
@@ -221,6 +234,16 @@ function main() {
   writeFileSync(COMBOS, JSON.stringify(db, null, 2));
   console.log(`Merge completato: ${created} nuovi, ${updated} aggiornati, ${skipped} skip. Totale combo: ${combos.length}.`);
   if (newCombos.length) console.log('Nuovi combo:\n  - ' + newCombos.join('\n  - '));
+  return { created, updated, skipped };
 }
 
-main();
+function main() {
+  if (!existsSync(EXTRACTED)) {
+    console.error(`Nessun file ${EXTRACTED}. Niente da mergere.`);
+    process.exit(0);
+  }
+  mergeExtracted(JSON.parse(readFileSync(EXTRACTED, 'utf-8')));
+}
+
+// Solo se lanciato direttamente: importato da youtube-mine-batch.ts non deve mergere Reddit.
+if (process.argv[1] && /reddit-merge\.ts$/.test(process.argv[1])) main();

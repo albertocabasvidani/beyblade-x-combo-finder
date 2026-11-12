@@ -82,6 +82,12 @@ if defined COMBOS_DA_FARE (
     call :log "--- judge-youtube END exit=!RC! ---"
     call :conta "!RC!" "judge-youtube"
   )
+  REM Transcript YouTube: al massimo YT_BLOCCHI blocchi per giro, dal video piu' recente. Sta prima
+  REM di /update-combos, che ricalcola lo score e committa anche le combo trovate qui.
+  set "YT_STOP="
+  if not defined YT_BLOCCHI set "YT_BLOCCHI=4"
+  for /l %%i in (1,1,!YT_BLOCCHI!) do call :mine_youtube_blocco %%i
+
   call :log "--- update-combos START ---"
   claude %CLAUDE_JOB% --model sonnet --effort medium --dangerously-skip-permissions -p "/update-combos" >> "%LOG%" 2>&1
   set "RC=!errorlevel!"
@@ -154,6 +160,37 @@ REM %~1 = nome della variabile in cui scrivere quante righe ha oggi logs\allarmi
 :conta_allarmi
 set "%~1=0"
 if exist "logs\allarmi-%TODAY%.log" for /f %%c in ('type "logs\allarmi-%TODAY%.log" ^| %SystemRoot%\System32\find.exe /c /v ""') do set "%~1=%%c"
+goto :eof
+
+REM Un blocco di transcript YouTube per chiamata: contesto nuovo a ogni blocco, e il tetto di
+REM blocchi per giro lo decide il for /l che chiama questa etichetta. %~1 = numero del blocco.
+REM L'esito si legge dall'effetto: quanti video risultano letti in data\youtube-mined.json prima
+REM e dopo. claude esce 0 anche quando non ha letto niente, ed e' cosi' che l'estrazione dalle
+REM fonti narrative e' rimasta ferma dal 06/10 al 12/11/2026 con la pipeline sempre verde.
+:mine_youtube_blocco
+if defined YT_STOP goto :eof
+set "PEND="
+for /f "delims=" %%n in ('npx tsx scripts\youtube-mine-batch.ts count 2^>nul') do set "PEND=%%n"
+if "!PEND!"=="0" (
+  if "%~1"=="1" call :log "--- mine-youtube SALTATO: niente da leggere ---"
+  set "YT_STOP=1"
+  goto :eof
+)
+set "LETTI_PRIMA=0"
+for /f "delims=" %%n in ('npx tsx scripts\youtube-mine-batch.ts letti 2^>nul') do set "LETTI_PRIMA=%%n"
+call :log "--- mine-youtube blocco %~1 START, da leggere: !PEND! ---"
+claude %CLAUDE_JOB% --model sonnet --effort medium --dangerously-skip-permissions -p "/mine-youtube" >> "%LOG%" 2>&1
+set "RC=!errorlevel!"
+set "LETTI_DOPO=0"
+for /f "delims=" %%n in ('npx tsx scripts\youtube-mine-batch.ts letti 2^>nul') do set "LETTI_DOPO=%%n"
+call :log "--- mine-youtube blocco %~1 END exit=!RC!, video letti da !LETTI_PRIMA! a !LETTI_DOPO! ---"
+call :conta "!RC!" "mine-youtube"
+if !LETTI_DOPO! LEQ !LETTI_PRIMA! (
+  call :log "mine-youtube blocco %~1: nessun video letto, mi fermo"
+  set /a FALLITI+=1
+  set "FALLITI_ELENCO=!FALLITI_ELENCO! mine-youtube-fermo"
+  set "YT_STOP=1"
+)
 goto :eof
 
 REM %~1 = exit code dello step, %~2 = nome. Il contatore decide l'exit code del bat.

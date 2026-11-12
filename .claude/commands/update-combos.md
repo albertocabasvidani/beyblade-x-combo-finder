@@ -55,8 +55,10 @@ derivazione. Solo Beyblade X.
        report. Non forzare combo inventate.
      Se `threads.bbx-winning.blocked` è true o `raw` è vuoto, il parser scrive evidence vuota (no-op).
      NON ri-estrarre a mano ciò che il parser ha già risolto.
-   - YouTube: combo da titoli/descrizioni (`youtube-cache.json`) e dai transcript
-     (`youtube-transcripts.json`). Reddit: body + commenti. Sheets: tabelle WBO.
+   - YouTube: **non leggerlo qui**. I transcript li legge `/mine-youtube` a blocchi, nello step
+     prima di questo, e le sue combo sono già in `combos.json` quando parti: `score:combos` le
+     ricalcola e il `git add data/` finale le committa insieme a `data/youtube-mined.json`.
+     Reddit lo legge `/mine-reddit`. Sheets: tabelle WBO.
 5. **Combo BX/UX** = blade+ratchet+bit; **CX** = lockChip+mainBlade+assistBlade+ratchet+bit; **CX Expand**
    aggiunge `overBlade` tra lockChip e mainBlade (es. BahamutBlitz = lockChip Bahamut + overBlade Break +
    mainBlade Blitz + assistBlade Knuckle + ratchet 1-50 + bit Ignition). Il "Metal Blade" È il main blade;
@@ -74,8 +76,9 @@ derivazione. Solo Beyblade X.
    data+posizione+nome evento) con l'`evidence` di ogni combo, e calcola `score` + `scoreBreakdown`
    (CAS) e i tag. Algoritmo e costanti in `src/lib/scoring.ts`; spec in `docs/scoring-algorithm.md`.
    NON scrivere score/tag a mano.
-8. **Finalizza**: aggiorna `scan-history.json` (`scannedVideos`, `scannedSheets`, `scannedRedditPosts`,
-   `scannedPages` con contentHash, `scannedEvents`, `scannedPosts`). `npm run score:combos`, poi
+8. **Finalizza**: aggiorna `scan-history.json` (`scannedSheets`, `scannedPages` con contentHash,
+   `scannedEvents`, `scannedPosts`). `scannedVideos` lo scrive `fetch-youtube.ts` alla scoperta del
+   video e `scannedRedditPosts` lo scrive `reddit:batch`: non toccarli. `npm run score:combos`, poi
    `npm run prune:combos -- --apply` (archivia in `data/combos-archive.json` le combo rimaste senza
    evidenza fresca entro il cutoff di 365 giorni; senza `--apply` è un dry-run da ispezionare prima — il
    guardrail aborta se le orfane superano il 60% o se l'evidenza torneo è a zero), poi `npm run build`,
