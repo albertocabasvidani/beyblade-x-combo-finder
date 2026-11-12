@@ -23,6 +23,9 @@ const scripts = [
   // profondo (META_MAX_PAGES/WBO_MAX_PAGES alti) è un run dedicato one-off, NON questa raccolta giornaliera.
   { name: 'MetaBeys fetcher', cmd: 'npx tsx scripts/fetch-metabeys.ts', timeout: 360_000, summary: /^MetaBeys: (\d+ nuovi eventi.*|pagina 1 non leggibile.*)$/im },
   { name: 'WBO fetcher', cmd: 'npx tsx scripts/fetch-wbo.ts', timeout: 300_000, summary: /^WBO \S+: (ultima pagina = \d+\.|.*intatti\.)$/im },
+  // Fonti web con combo complete (sources.json, campo `mine`): richieste HTTP semplici, niente browser.
+  // Esce 1 solo se una pagina non ha una lettura buona da più di 3 giorni.
+  { name: 'Web fetcher', cmd: 'npx tsx scripts/fetch-web.ts', timeout: 300_000, summary: /^Web: \d+ pagine lette.*$/im },
   // BBX Weekly: cross-check usage per-parte (NON alimenta il CAS). fetch + parse deterministico.
   { name: 'BBX Weekly fetcher', cmd: 'npx tsx scripts/fetch-bbx-weekly.ts', timeout: 120_000, summary: /^Salvate \d+ pagine.*$/im },
   { name: 'BBX Weekly parser', cmd: 'npx tsx scripts/parse-bbx-weekly.ts', timeout: 60_000, summary: /^bbx-weekly: \d+ parti.*$/im },

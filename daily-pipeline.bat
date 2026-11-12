@@ -119,6 +119,7 @@ REM di /update-combos, che ricalcola lo score e committa anche le combo trovate 
 set "YT_STOP="
 if not defined YT_BLOCCHI set "YT_BLOCCHI=8"
 for /l %%i in (1,1,!YT_BLOCCHI!) do call :mine_youtube_blocco %%i
+call :mine_web
 
 REM Interruttore manuale per il solo /update-combos: se il file esiste, lo step viene saltato
 REM e il resto della pipeline prosegue. E' lo step piu' lungo (~20 min: legge combos.json da
@@ -220,6 +221,32 @@ if !LETTI_DOPO! LEQ !LETTI_PRIMA! (
   set /a FALLITI+=1
   set "FALLITI_ELENCO=!FALLITI_ELENCO! mine-youtube-fermo"
   set "YT_STOP=1"
+)
+goto :eof
+
+REM Fonti web: una chiamata per giro, le pagine cambiate dall'ultima lettura stanno in un blocco.
+REM Stessa prova sull'effetto di mine-youtube: le letture registrate in data\web-mined.json
+REM devono essere aumentate.
+:mine_web
+set "PEND="
+for /f "delims=" %%n in ('npx tsx scripts\web-mine-batch.ts count 2^>nul') do set "PEND=%%n"
+if "!PEND!"=="0" (
+  call :log "--- mine-web SALTATO: nessuna pagina cambiata ---"
+  goto :eof
+)
+set "LETTI_PRIMA=0"
+for /f "delims=" %%n in ('npx tsx scripts\web-mine-batch.ts letti 2^>nul') do set "LETTI_PRIMA=%%n"
+call :log "--- mine-web START, pagine da leggere: !PEND! ---"
+claude %CLAUDE_JOB% --model sonnet --effort medium --dangerously-skip-permissions -p "/mine-web" >> "%LOG%" 2>&1
+set "RC=!errorlevel!"
+set "LETTI_DOPO=0"
+for /f "delims=" %%n in ('npx tsx scripts\web-mine-batch.ts letti 2^>nul') do set "LETTI_DOPO=%%n"
+call :log "--- mine-web END exit=!RC!, letture da !LETTI_PRIMA! a !LETTI_DOPO! ---"
+call :conta "!RC!" "mine-web"
+if !LETTI_DOPO! LEQ !LETTI_PRIMA! (
+  call :log "mine-web: nessuna pagina letta"
+  set /a FALLITI+=1
+  set "FALLITI_ELENCO=!FALLITI_ELENCO! mine-web-fermo"
 )
 goto :eof
 

@@ -221,7 +221,8 @@ export function mergeExtracted(extracted: any[], fonte: MergeFonte = FONTE_REDDI
     touched += mergeArray(combo.evidence.mentions, ev.mentions ?? [], meKey);
 
     // sources[] per il display (dedup per url)
-    const se = sourceEntryFor(ev, fonte);
+    // `sourceName` sulla voce vince: le fonti web hanno ciascuna il suo nome.
+    const se = sourceEntryFor(ev, raw.sourceName ? { ...fonte, sourceName: raw.sourceName } : fonte);
     if (se) {
       combo.sources = combo.sources ?? [];
       if (!combo.sources.some((s: any) => s.url === se.url)) combo.sources.push(se);

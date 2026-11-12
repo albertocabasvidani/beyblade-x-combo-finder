@@ -14,6 +14,8 @@
     "reddit:batch": "npx tsx scripts/reddit-batch.ts",
     "youtube:judge": "npx tsx scripts/youtube-judge-batch.ts",
     "youtube:mine": "npx tsx scripts/youtube-mine-batch.ts",
+    "fetch:web": "npx tsx scripts/fetch-web.ts",
+    "web:mine": "npx tsx scripts/web-mine-batch.ts",
     "fetch:youtube": "npx tsx scripts/fetch-youtube.ts",
     "discover:youtube": "npx tsx scripts/discover-youtube.ts",
     "fetch:sheets": "npx tsx scripts/fetch-sheets.ts",

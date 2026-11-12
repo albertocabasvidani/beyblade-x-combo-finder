@@ -19,9 +19,8 @@ derivazione. Solo Beyblade X.
 ## Flusso
 
 1. **Carica**: `data/sources.json` (pesi, lang), `data/combos.json`, `data/parts-master.json`,
-   `data/scan-history.json` e tutte le cache grezze. Inoltre leggi via WebFetch le fonti web dirette
-   (type `website` con `provides:"combos"`): SBBL, note.com (kamen_a, bey_bee), okuyama3093, probladers,
-   polishbladers. Per ognuna: se `scannedPages[url].contentHash` non è cambiato, salta.
+   `data/scan-history.json` e le cache grezze di MetaBeys, WBO e Sheets. **Non aprire le fonti web**:
+   le pagine con combo le scarica `fetch-web.ts` e le legge `/mine-web`, nello step prima di questo.
 2. **Riconoscimento parti (IA, multilingua)**: per ogni combo citata in una fonte, risolvi i nomi agli
    `id` del master usando `names` (tt/hasbro/ja/romaji) e `aliases` di OGNI lingua. Esempi: "Wizard Rod"
    (en) / "ウィザードロッド" (ja) / "Vara del Mago" → `wizard-rod`. Le parti TT/Hasbro coprono EN; per le

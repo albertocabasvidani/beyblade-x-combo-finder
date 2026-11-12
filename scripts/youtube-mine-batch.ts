@@ -22,18 +22,17 @@
  *   npx tsx scripts/youtube-mine-batch.ts count                  → stampa quanti video restano
  *   npx tsx scripts/youtube-mine-batch.ts stats                  → per canale: video letti, con combo, combo trovate
  */
-import { readFileSync, writeFileSync, existsSync, mkdirSync, rmSync } from 'fs';
+import { writeFileSync, mkdirSync, rmSync } from 'fs';
 import { join, dirname } from 'path';
 import { randomBytes } from 'crypto';
 import { cutoffISO } from './lib/freshness';
 import { mergeExtracted, type MergeFonte } from './reddit-merge';
+import { scriviDizionario, chiaveCombo, voceDaFondere, readJson, today } from './lib/mine-comune';
 
 const ROOT = join(import.meta.dirname, '..');
 const CACHE = join(ROOT, 'data', 'youtube-cache.json');
 const TRANSCRIPTS = join(ROOT, 'data', 'youtube-transcripts.json');
 const MINED = join(ROOT, 'data', 'youtube-mined.json');
-const MASTER = join(ROOT, 'data', 'parts-master.json');
-const PARTS = join(ROOT, 'data', 'parts.json');
 const BATCH = join(ROOT, 'tmp', 'youtube-mining-batch.json');
 const DICT = join(ROOT, 'tmp', 'youtube-mining-parts.json');
 const EXTRACTED = join(ROOT, 'tmp', 'youtube-extracted.json');
@@ -45,11 +44,6 @@ const FONTE_YOUTUBE: MergeFonte = {
   notes: 'Combo mostrata o raccomandata in un video YouTube.',
 };
 
-const KINDS = new Set(['tournament-report', 'recommendation']);
-const CATEGORIE = ['blades', 'lockChips', 'mainBlades', 'assistBlades', 'overBlades', 'ratchets', 'bits'] as const;
-
-const today = () => new Date().toISOString().slice(0, 10);
-const readJson = (p: string, fb: any) => (existsSync(p) ? JSON.parse(readFileSync(p, 'utf-8')) : fb);
 const videoUrl = (id: string) => `https://youtube.com/watch?v=${id}`;
 
 interface Pending {
@@ -92,24 +86,6 @@ function pending(): Pending[] {
   return out;
 }
 
-/** Dizionario nomi → id, compatto: tutto ciò che serve al modello per risolvere una parte. */
-function scriviDizionario() {
-  const master = readJson(MASTER, {});
-  const dict: Record<string, any[]> = {};
-  for (const cat of CATEGORIE) {
-    dict[cat] = (master[cat] ?? []).map((p: any) => {
-      const nomi = new Set<string>();
-      for (const n of Object.values(p.names ?? {})) if (n) nomi.add(String(n));
-      for (const a of p.aliases ?? []) if (a?.value) nomi.add(String(a.value));
-      if (p.shortName) nomi.add(String(p.shortName));
-      const voce: any = { id: p.id, nomi: [...nomi] };
-      if (p.integratedRatchet) voce.ratchetIntegrato = true;
-      return voce;
-    });
-  }
-  writeFileSync(DICT, JSON.stringify(dict));
-}
-
 function cmdNext(maxChars: number) {
   const all = pending();
   const batch: Pending[] = [];
@@ -124,7 +100,7 @@ function cmdNext(maxChars: number) {
   const batchId = randomBytes(6).toString('hex');
   writeFileSync(BATCH, JSON.stringify({ batchId, servedAt: today(), videos: batch }, null, 2));
   rmSync(EXTRACTED, { force: true });
-  scriviDizionario();
+  scriviDizionario(DICT);
   console.log(`Blocco ${batchId}: ${batch.length} video, ${chars} caratteri di transcript, in ${BATCH}`);
   console.log(`Dizionario parti in ${DICT}`);
   console.log(`Rimanenti dopo questo blocco: ${all.length - batch.length}`);
@@ -164,24 +140,10 @@ function cmdDone() {
     const v = serviti.get(id)!;
     const viste = new Set<string>();
     for (const c of r.combos) {
-      const kind = KINDS.has(c?.kind) ? c.kind : 'recommendation';
-      const chiave = [c.blade, c.lockChip, c.overBlade, c.mainBlade, c.assistBlade, c.ratchet, c.bit, kind].join('|');
+      const chiave = chiaveCombo(c);
       if (viste.has(chiave)) continue;
       viste.add(chiave);
-      daFondere.push({
-        blade: c.blade ?? null,
-        ratchet: c.ratchet ?? null,
-        bit: c.bit ?? null,
-        lockChip: c.lockChip ?? null,
-        mainBlade: c.mainBlade ?? null,
-        assistBlade: c.assistBlade ?? null,
-        overBlade: c.overBlade ?? null,
-        evidence: {
-          placements: [],
-          usage: [],
-          mentions: [{ tier: 'narrative', source: 'youtube', sourceId: v.sourceId, url: videoUrl(id), lang: v.lang, date: v.date, kind }],
-        },
-      });
+      daFondere.push(voceDaFondere(c, { source: 'youtube', sourceId: v.sourceId, url: videoUrl(id), lang: v.lang, date: v.date }));
     }
     perVideo[id] = viste.size;
   }
