@@ -132,6 +132,7 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
 - `data/scan-history.json` — dedup: scannedVideos/Sheets/RedditPosts/Pages(+revid)/Events(+`eventDate`)/Posts; cursori di backfill `metabeysBackfill`/`wboBackfill` (`nextPage`/`done`). Le pagine **wiki** non stanno più qui: `scannedPages` resta solo per le fonti web di `/update-combos` (dedup per `contentHash`)
 - `scannedVideos` di scan-history lo scrive `fetch-youtube.ts` alla **scoperta** del video: non dice quali transcript sono stati letti
 - `data/youtube-mined.json` — video il cui transcript è già stato letto da `/mine-youtube` (`sourceId`, `minedDate`, `combosFound`), scritto solo da `scripts/youtube-mine-batch.ts`
+- `data/web-cache.json` (gitignorato) — testo e sha256 delle pagine web con combo, scritto da `fetch-web.ts`; `data/web-mined.json` — impronta dell'ultima lettura di ogni pagina, scritto solo da `scripts/web-mine-batch.ts`
 - `data/wiki-scan.json` — stato del diff wiki per `/update-parts`, scritto **solo** da `scripts/scan-wiki-updates.ts`: una voce per pagina canonica (`revid`, `timestamp`, `kind`, i titoli-redirect assorbiti in `redirects[]`). File separato da scan-history apposta: quello lo riscrivono per intero anche i job delle 07:30, e due read-modify-write da 900 KB sovrapposti si perdono a vicenda
 - `data/releases.json` — date di uscita per prodotto, estratte dalla colonna Release Date delle
   stesse due pagine-lista lette per scoprire le parti. Scritto dallo stesso `scan-wiki-updates.ts`,
@@ -161,6 +162,9 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
 - `npm run youtube:judge -- next|done|count` — batcher deterministico per `/judge-youtube` (serve un blocco / fonde i verdetti IA da `tmp/youtube-judge-extracted.json` nella cache); `count` stampa i video da giudicare e a 0 i `.bat` saltano lo step
 - `/mine-youtube` — estrae le combo da **un blocco** di transcript YouTube (solo `mentions`, mai `placements`); il ciclo sui blocchi lo fanno i `.bat`
 - `npm run youtube:mine -- next|done|count|letti|stats` — batcher di `/mine-youtube`: `done` rifiuta una risposta che non copre il blocco servito e fonde col merge di Reddit; `stats` dice per canale quanti video letti e quante combo trovate
+- `npm run fetch:web` — scarica le pagine web elencate nel campo `mine.pages` delle fonti `website` di `sources.json` (opzioni `startAfter`, `maxChars`, `parser`); dentro `collect:sources`
+- `/mine-web` + `npm run web:mine -- next|done|count|letti|stats` — estrae le combo dalle pagine la cui impronta è cambiata (solo `mentions`); stesso schema di `/mine-youtube`
+- Una fonte web nuova entra nella pipeline solo col campo `mine`: prima si guarda la pagina e si verifica che riporti combo complete (blade + ratchet + bit), non classifiche di giocatori o punteggi per parte
 - `/discover-sources` — cerca NUOVE fonti tornei (YouTube/siti/blog/forum/social), le valuta, esclude le note (dedup vs `sources.json` + `source-candidates.json`) e manda una proposta motivata via email (corpo leggibile, no allegati). Loop di feedback: rispondi all'email in linguaggio naturale (approva/scarta) e il **run successivo** promuove gli approvati in `sources.json` (o `manualVerification` per i social) e marca i rifiutati. Staging in `data/source-candidates.json` (campo `lastProposal` per ritrovare il thread del feedback)
 - `npm run reddit:batch -- next|done|count` — batcher deterministico per `/mine-reddit` (serve/marca blocchi); `count` stampa i post non scansionati e a 0 i `.bat` saltano lo step
 - `npx tsx scripts/reddit-merge.ts` — merge deterministico dei combo estratti da `/mine-reddit` (`tmp/reddit-extracted.json`, prodotto dall'IA) in `combos.json`: deriva id/line/type/displayName da `parts.json`, X-filter su blade/mainBlade, dedup dell'evidence per chiave stabile (idempotente). Lo score lo ricalcola poi `score:combos`
@@ -330,6 +334,9 @@ Cult Bistrot (it), BeyMac/Beybreakr/Casual Beyblader X (en), LBP/Galaxy (pt), Fl
 CAS**: BBX Weekly (`parts-usage`, ranking per-parte). **BBX.gg escluso** (championship/belt + eventi
 sovrapposti a WBO senza id condiviso → rischio doppioni). Facebook PH/MY e Instagram restano in
 `manualVerification` (non automatizzabili senza login/API).
+Web lette da `/mine-web` (campo `mine`): SBBL, Polish Bladers, okuyama3093, BEYWATCH.GG (solo eventi
+senza slug `wbo-`/`metabeys-`). Web **non lette** perché senza combo complete: probladers (classifica e
+podi per giocatore), `wbo-overseas-note` (punteggi per parte), `note-bey-bee` (notizie di prodotto).
 
 ## Automazione (job del dispatcher generale)
 
@@ -342,7 +349,7 @@ Weekly headless). Reddit riusa il login del profilo `.playwright-beyblade`; WBO 
 dedicato** `.playwright-wbo` (vedi sotto) e può chiedere il captcha Cloudflare.
 
 **Soglia 08:00 — `daily-pipeline.bat`** (job `beyblade-pipeline`): `/update-parts` →
-`/judge-youtube` → `/mine-youtube` → `/update-combos` → `/mine-reddit`. **Nessuno di questi step apre browser**: lavorano
+`/judge-youtube` → `/mine-youtube` → `/mine-web` → `/update-combos` → `/mine-reddit`. **Nessuno di questi step apre browser**: lavorano
 sulle cache raccolte poco prima, di cui il log riporta la data di ultima scrittura.
 `/mine-youtube` gira fino a `YT_BLOCCHI` volte per giro (8 nella pipeline, 4 nel recupero), un blocco da
 120.000 caratteri per chiamata, dal video più recente. Lo step conta come fallito se dopo la chiamata i
@@ -362,6 +369,7 @@ lavoro di punta. Il vincolo sta in due posti — flag `--model`/`--effort` in tu
 | `/update-parts` | sonnet | medium | diff revid, estrazione strutturata, merge |
 | `/judge-youtube` | sonnet | medium | classificazione a blocchi (rilevanza + lingua) |
 | `/mine-youtube` | sonnet | medium | estrazione da transcript + match nomi parte, merge deterministico a valle |
+| `/mine-web` | sonnet | medium | estrazione da pagine web già scaricate, merge deterministico a valle |
 | `/mine-reddit` | sonnet | medium | estrazione + match nomi parte, merge deterministico a valle |
 | `/update-combos` | sonnet | medium | scrive `combos.json` da fonti narrative: estrazione, ma delicata |
 | `/discover-sources` | opus | medium | giudica fonti nuove e **manda una email** in autonomia |

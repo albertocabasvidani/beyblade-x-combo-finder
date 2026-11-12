@@ -7,6 +7,7 @@ import { join, dirname } from 'path';
 
 const ROOT = join(import.meta.dirname, '..', '..');
 const MASTER = join(ROOT, 'data', 'parts-master.json');
+const PARTS = join(ROOT, 'data', 'parts.json');
 
 export const KINDS = new Set(['tournament-report', 'recommendation']);
 const CATEGORIE = ['blades', 'lockChips', 'mainBlades', 'assistBlades', 'overBlades', 'ratchets', 'bits'] as const;
@@ -17,6 +18,10 @@ export const readJson = (p: string, fb: any) => (existsSync(p) ? JSON.parse(read
 /** Dizionario nomi → id, compatto: tutto ciò che serve al modello per risolvere una parte. */
 export function scriviDizionario(dest: string): void {
   const master = readJson(MASTER, {});
+  // Il flag del ratchet integrato si legge da parts.json, dove build-parts.ts lo deriva anche dal
+  // titolo della pagina wiki: nel master lo ha un blade solo su sei, e senza il flag il modello
+  // scarta come incomplete le combo di Glory Valkyrie e Hells Nether.
+  const integrati = new Set<string>((readJson(PARTS, {}).blades ?? []).filter((b: any) => b.integratedRatchet).map((b: any) => b.id));
   const dict: Record<string, any[]> = {};
   for (const cat of CATEGORIE) {
     dict[cat] = (master[cat] ?? []).map((p: any) => {
@@ -25,7 +30,7 @@ export function scriviDizionario(dest: string): void {
       for (const a of p.aliases ?? []) if (a?.value) nomi.add(String(a.value));
       if (p.shortName) nomi.add(String(p.shortName));
       const voce: any = { id: p.id, nomi: [...nomi] };
-      if (p.integratedRatchet) voce.ratchetIntegrato = true;
+      if (p.integratedRatchet || integrati.has(p.id)) voce.ratchetIntegrato = true;
       return voce;
     });
   }
