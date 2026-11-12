@@ -130,6 +130,8 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
 - `data/metabeys-cache.json` — cache eventi+leaderboard MetaBeys (Playwright headless); eventi potati per data (entro 12 mesi)
 - `data/wbo-cache.json` — cache thread WBO (Playwright; Cloudflare può bloccare headless); `threads[key].pages` per pagina + `raw` concatenato (entro 12 mesi)
 - `data/scan-history.json` — dedup: scannedVideos/Sheets/RedditPosts/Pages(+revid)/Events(+`eventDate`)/Posts; cursori di backfill `metabeysBackfill`/`wboBackfill` (`nextPage`/`done`). Le pagine **wiki** non stanno più qui: `scannedPages` resta solo per le fonti web di `/update-combos` (dedup per `contentHash`)
+- `scannedVideos` di scan-history lo scrive `fetch-youtube.ts` alla **scoperta** del video: non dice quali transcript sono stati letti
+- `data/youtube-mined.json` — video il cui transcript è già stato letto da `/mine-youtube` (`sourceId`, `minedDate`, `combosFound`), scritto solo da `scripts/youtube-mine-batch.ts`
 - `data/wiki-scan.json` — stato del diff wiki per `/update-parts`, scritto **solo** da `scripts/scan-wiki-updates.ts`: una voce per pagina canonica (`revid`, `timestamp`, `kind`, i titoli-redirect assorbiti in `redirects[]`). File separato da scan-history apposta: quello lo riscrivono per intero anche i job delle 07:30, e due read-modify-write da 900 KB sovrapposti si perdono a vicenda
 - `data/releases.json` — date di uscita per prodotto, estratte dalla colonna Release Date delle
   stesse due pagine-lista lette per scoprire le parti. Scritto dallo stesso `scan-wiki-updates.ts`,
@@ -157,6 +159,8 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
 - `/mine-reddit` — mina la cache Reddit **a blocchi** (idempotente via scan-history): legge tutta la cache, non la skimma. Per backfill e marcia normale
 - `/judge-youtube` — giudica la rilevanza dei video YouTube **a blocchi** (idempotente, flag in cache): per ogni video `prefilter:"pass"` decide `relevant` (combo/meta/torneo competitivo Beyblade X? Burst/unboxing/casual → false) e `lang` (lingua reale del parlato), leggendo titolo+descrizione+tag multilingua. I transcript si scaricano solo dei `relevant`
 - `npm run youtube:judge -- next|done|count` — batcher deterministico per `/judge-youtube` (serve un blocco / fonde i verdetti IA da `tmp/youtube-judge-extracted.json` nella cache); `count` stampa i video da giudicare e a 0 i `.bat` saltano lo step
+- `/mine-youtube` — estrae le combo da **un blocco** di transcript YouTube (solo `mentions`, mai `placements`); il ciclo sui blocchi lo fanno i `.bat`
+- `npm run youtube:mine -- next|done|count|letti|stats` — batcher di `/mine-youtube`: `done` rifiuta una risposta che non copre il blocco servito e fonde col merge di Reddit; `stats` dice per canale quanti video letti e quante combo trovate
 - `/discover-sources` — cerca NUOVE fonti tornei (YouTube/siti/blog/forum/social), le valuta, esclude le note (dedup vs `sources.json` + `source-candidates.json`) e manda una proposta motivata via email (corpo leggibile, no allegati). Loop di feedback: rispondi all'email in linguaggio naturale (approva/scarta) e il **run successivo** promuove gli approvati in `sources.json` (o `manualVerification` per i social) e marca i rifiutati. Staging in `data/source-candidates.json` (campo `lastProposal` per ritrovare il thread del feedback)
 - `npm run reddit:batch -- next|done|count` — batcher deterministico per `/mine-reddit` (serve/marca blocchi); `count` stampa i post non scansionati e a 0 i `.bat` saltano lo step
 - `npx tsx scripts/reddit-merge.ts` — merge deterministico dei combo estratti da `/mine-reddit` (`tmp/reddit-extracted.json`, prodotto dall'IA) in `combos.json`: deriva id/line/type/displayName da `parts.json`, X-filter su blade/mainBlade, dedup dell'evidence per chiave stabile (idempotente). Lo score lo ricalcola poi `score:combos`
@@ -338,8 +342,11 @@ Weekly headless). Reddit riusa il login del profilo `.playwright-beyblade`; WBO 
 dedicato** `.playwright-wbo` (vedi sotto) e può chiedere il captcha Cloudflare.
 
 **Soglia 08:00 — `daily-pipeline.bat`** (job `beyblade-pipeline`): `/update-parts` →
-`/judge-youtube` → `/update-combos` → `/mine-reddit`. **Nessuno di questi step apre browser**: lavorano
+`/judge-youtube` → `/mine-youtube` → `/update-combos` → `/mine-reddit`. **Nessuno di questi step apre browser**: lavorano
 sulle cache raccolte poco prima, di cui il log riporta la data di ultima scrittura.
+`/mine-youtube` gira fino a `YT_BLOCCHI` volte per giro (8 nella pipeline, 4 nel recupero), un blocco da
+120.000 caratteri per chiamata, dal video più recente. Lo step conta come fallito se dopo la chiamata i
+video letti (`youtube:mine -- letti`) non sono aumentati: `claude` esce 0 anche quando non legge niente.
 **Modello fissato per ogni comando della pipeline.** Senza vincolo esplicito ogni run ereditava il
 default di sessione del momento (Opus a effort variabile, a volte Fable): lavoro meccanico pagato come
 lavoro di punta. Il vincolo sta in due posti — flag `--model`/`--effort` in tutti i `.bat` e frontmatter
@@ -354,6 +361,7 @@ lavoro di punta. Il vincolo sta in due posti — flag `--model`/`--effort` in tu
 |---|---|---|---|
 | `/update-parts` | sonnet | medium | diff revid, estrazione strutturata, merge |
 | `/judge-youtube` | sonnet | medium | classificazione a blocchi (rilevanza + lingua) |
+| `/mine-youtube` | sonnet | medium | estrazione da transcript + match nomi parte, merge deterministico a valle |
 | `/mine-reddit` | sonnet | medium | estrazione + match nomi parte, merge deterministico a valle |
 | `/update-combos` | sonnet | medium | scrive `combos.json` da fonti narrative: estrazione, ma delicata |
 | `/discover-sources` | opus | medium | giudica fonti nuove e **manda una email** in autonomia |

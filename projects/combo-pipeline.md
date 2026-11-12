@@ -1,7 +1,7 @@
 ---
 name: combo-pipeline
 status: active
-updated: 06/11/2026
+updated: 12/11/2026
 health: yellow
 blocked-by: null
 current-plan: plans/pipeline-dati-beyblade-x-combo-da-tornei-db-parti--2026-06-15-1107.md
@@ -38,6 +38,9 @@ Scheduled Task propri ma di **job del dispatcher generale** della macchina
 - 25/07/2026 — `/mine-reddit` non ha (ancora) un passaggio deterministico di dedup id come `scripts/reddit-merge.ts`: creando a mano due nuove combo da un report Reddit ho duplicato l'`id` di due combo già esistenti (`shark-scale-3-60-low-rush`, `meteor-dragoon-9-60-elevate`), non essendomi accorto che esistevano già sotto un nome pieno del bit invece della sigla che avevo ipotizzato. Prevenzione: prima di creare una combo nuova a mano, cercare sempre `blade+ratchet+bit` (non solo l'id ipotizzato) in `combos.json`. *Aggiornamento 11/09/2026*: è ricapitato tre volte (06/08, 09/09); ora `score:combos` unisce da sé le voci con lo stesso id (vedi Changelog), quindi il difetto residuo è solo il lavoro sprecato dal comando, non il dato
 
 - 06/11/2026 — **`scannedPages[url].contentHash` delle fonti web dirette non è un hash**: in `scan-history.json` ci sono etichette scelte dal modello (es. `"sbbl-winrate-leaderboard-2026-09-15"`), perché le pagine le legge `/update-combos` con WebFetch e nessuno script calcola l'impronta. Il controllo «pagina invariata → salta» quindi dipende da cosa il modello decide di scrivere. Rimedio: uno script che scarichi le pagine, normalizzi il testo e scriva lo sha256, da valutare insieme agli orchestratori della pipeline (piano `plans/job-headless-deterministici-2026-11-05-1829.md` del repo homeserver, verifica fissata al 27/11/2026)
+- 12/11/2026 — **Le fonti web dirette non vengono lette dal 06/10/2026.** `/update-combos` (Sonnet, effort medium dal 05/10) scrive ogni giorno nel log che ha saltato l'estrazione dalle fonti narrative, ed esce 0. Sono 7 fonti `website` con `provides: "combos"` (kamen_a, sbbl, probladers, polishbladers, okuyama3093, bey_bee, beywatch.gg): nessuno script le scarica. Misurato il 12/11 con `curl`: 7 pagine su 8 rispondono 200, `https://sbbl.es/beyblade-stats` risponde 404. Sono pagine indice: le combo stanno negli articoli collegati. Rimedio da progettare come per YouTube (uno script che scarica e un comando a blocchi), insieme alla voce del 06/11 qui sopra
+- 12/11/2026 — **Reddit non raccoglie dal 14/10/2026: login scaduto sul server.** `scrape-reddit.ts` in tre casi di fallimento (login non completato, blocco del WAF, nessuna risposta utile) fa `return` ed esce 0; `collect-sources.ts` lo segna «ok — (nessuna riga di riepilogo)» e il dispatcher non vede niente. Rimedio immediato: login a mano sul server con `REDDIT_HEADED=1 npm run scrape:reddit`. Rimedio al silenzio: uscita diversa da 0 in quei tre casi, da provare sul server guardando che il nuovo tentativo del dispatcher non riapra ogni volta la finestra che aspetta 3 minuti
+- 12/11/2026 — **`dedupMentions` in `score-combos.ts` tiene una sola mention per `source` in ogni combo, la prima inserita.** Lo score non cambia (conta le fonti distinte), ma quando quella mention esce dal cutoff la combo perde la fonte anche se ne esistevano di più recenti, scartate dal dedup. Tutti i canali YouTube hanno `source: "youtube"`, quindi contano come una fonte sola nella corroboration: scelta lasciata com'era
 
 ## In progress
 
@@ -47,6 +50,14 @@ Scheduled Task propri ma di **job del dispatcher generale** della macchina
 ## Changelog
 
 <!-- Cose completate, dalla più recente. Formato: `- gg/mm/aaaa — testo` -->
+- 12/11/2026 — **I transcript YouTube tornano a produrre combo: `/mine-youtube` a blocchi.**
+  - **Sintomo:** in `combos.json` l'evidenza YouTube più recente era del 03/10; dei 45 canali in `sources.json`, 38 non avevano mai prodotto una menzione (contato sul server: 48 video con evidenza su circa 1900 rilevanti).
+  - **Cause, lette nel codice e nei dati:** `fetch-youtube.ts` scrive ogni video in `scan-history.scannedVideos` alla scoperta, quindi per `/update-combos` erano tutti «già scansionati»; `youtube-transcripts.json` pesa 17 MB e nessun Read lo apre. Il passaggio di `/update-combos` da effort high a medium (05/10) coincide con l'ultimo giorno di estrazione: coincidenza di date, non provata come causa.
+  - **Rimedio:** `scripts/youtube-mine-batch.ts` serve i video rilevanti con transcript, entro il cutoff, dal più recente, a blocchi di 120.000 caratteri, e tiene lo stato in `data/youtube-mined.json`. `/mine-youtube` legge un blocco per invocazione; `daily-pipeline.bat` ne chiama fino a 8 per giro prima di `/update-combos`, `recover-combos.bat` fino a 4. Il merge è quello di Reddit (`mergeExtracted` in `reddit-merge.ts`).
+  - **Scelte mie:** YouTube produce solo `mentions`, mai `placements` (un video di torneo racconta un evento che WBO può già avere; alternativa scartata: placements narrativi come Reddit). Url, data, lingua e canale della mention li scrive il codice dalla cache, non il modello. Arretrato smaltito dal più recente con un tetto di 8 blocchi per notte, invece di un backfill in un colpo.
+  - **Allarme:** lo step è fallito se dopo la chiamata i video letti non sono aumentati. Provato eseguendo `daily-pipeline.bat` con `claude` sostituito da uno stub: un blocco, nessun video letto, ciclo fermo, uscita 1.
+  - **Prova sul server, un blocco vero:** 32 video letti, 30 con combo, 169 menzioni, 30 combo nuove e 139 aggiornate, 0 scartate dal registro; da leggere da 1497 a 1465. Due video confrontati a mano col testo: le combo estratte sono quelle dette nel video. Il giro notturno intero (8 blocchi, score, commit) non è ancora stato visto: prima notte utile 13/11/2026.
+  - **Per sapere se un canale rende:** `npm run youtube:mine -- stats`.
 - 06/11/2026 — **Quattro difetti dei job notturni corretti in codice.**
   - **Refusi WBO ripassati ogni notte:** `typo-candidates.ts` serviva ogni volta tutte le righe `new` del ledger (51 su 60 nel clone locale), perché nessuno le marcava. Ora `typo-apply.ts` porta a `triaged` i candidati serviti senza una correzione accettata. Provato sul clone locale: 51 candidati, poi `typo-apply` con zero correzioni, poi 0 candidati; dati ripristinati dopo la prova.
   - **`/judge-youtube` e `/mine-reddit` partivano anche senza niente da fare:** nuovo comando `count` in `youtube-judge-batch.ts` e `reddit-batch.ts`. `daily-pipeline.bat` e `recover-combos.bat` saltano lo step a 0. Se il conteggio non si legge, lo step parte come prima.
