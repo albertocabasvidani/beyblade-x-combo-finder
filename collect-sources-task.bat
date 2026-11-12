@@ -38,9 +38,11 @@ set ARCA_HEADED=1
 
 call :log "=== COLLECT START ==="
 call npm run collect:sources >> "%LOG%" 2>&1
-call :log "=== COLLECT END exit=!errorlevel! ==="
-endlocal
-goto :eof
+set "RC=!errorlevel!"
+call :log "=== COLLECT END exit=!RC! ==="
+REM L'esito va restituito al dispatcher, che giudica il job dall'exit code. Prima il bat
+REM usciva sempre 0: dal 14/09 al 12/11/2026 sei raccolte finite con exit 1 sono risultate riuscite.
+endlocal & exit /b %RC%
 
 :log
 echo [%date% %time%] %~1

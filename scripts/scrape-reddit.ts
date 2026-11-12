@@ -75,6 +75,14 @@ function toPost(d: any): RedditPost {
   };
 }
 
+// Un fallimento a browser visibile deve arrivare alla raccolta come errore: con `return` e basta
+// lo script usciva 0, collect-sources lo segnava «ok» e il login scaduto è rimasto invisibile dal
+// 14/10 al 12/11/2026. In headless il blocco è il comportamento previsto e l'uscita resta 0.
+function fallito(msg: string): void {
+  console.error(msg);
+  if (HEADED) process.exitCode = 2;
+}
+
 async function main() {
   console.log(`Reddit scraper r/Beyblade (browser ${HEADED ? 'headed' : 'headless'})\n`);
   const existing = loadCache();
@@ -95,7 +103,7 @@ async function main() {
         await sleep(8000);
         if (await loggedIn(page)) { ok = true; console.log('Login rilevato.'); break; }
       }
-      if (!ok) { console.error(`Login non completato. Cache preservata (${existing.posts.length} post).`); return; }
+      if (!ok) { fallito(`Login non completato. Cache preservata (${existing.posts.length} post).`); return; }
     }
 
     const found = new Map<string, RedditPost>();
@@ -126,11 +134,11 @@ async function main() {
     }
 
     if (blockedFirst) {
-      console.error('Bloccato dal WAF di Reddit (headless). Usa REDDIT_HEADED=1 con login. Cache preservata.');
+      fallito('Bloccato dal WAF di Reddit (headless). Usa REDDIT_HEADED=1 con login. Cache preservata.');
       return;
     }
     if (!anyOk) {
-      console.error(`Nessuna risposta utile (probabile sessione non loggata). Cache preservata (${existing.posts.length} post).`);
+      fallito(`Nessuna risposta utile (probabile sessione non loggata). Cache preservata (${existing.posts.length} post).`);
       return;
     }
     if (found.size === 0) {
@@ -175,4 +183,4 @@ async function main() {
   }
 }
 
-main().catch((e) => { console.error('scrape-reddit fallito:', e.message); });
+main().catch((e) => { console.error('scrape-reddit fallito:', e.message); process.exitCode = 1; });
