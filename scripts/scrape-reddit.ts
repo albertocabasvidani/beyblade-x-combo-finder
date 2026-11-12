@@ -1,42 +1,32 @@
 /**
  * scrape-reddit.ts — Raccoglie i post r/Beyblade su combo competitive (cache grezza).
  *
- * Reddit blocca l'accesso NON autenticato a livello edge ("blocked by network security"): curl,
- * headless e perfino .json restituiscono pagina di blocco o listing vuoto. Strada scelta: browser
- * reale loggato. Si usa Playwright col Chrome di sistema e un profilo persistente in cui l'utente fa
- * login UNA volta; il fetcher gira headed (REDDIT_HEADED=1, come WBO) e legge gli endpoint .json
- * autenticati (estrazione pulita, niente DOM scraping). Lo schema cache resta { lastScraped, posts }.
+ * Solo API ufficiale di Reddit. Le regole di Reddit (Responsible Builder Policy, lette il
+ * 12/11/2026) chiedono un'approvazione esplicita prima di ogni accesso ai dati via API e vietano
+ * la raccolta automatica senza approvazione: la vecchia via, un browser loggato pilotato da
+ * Playwright, è stata tolta per questo.
  *
- * Modalità:
- *  - API ufficiale (dal 12/11/2026, la via da preferire): se nel `.env` o nell'ambiente ci sono
- *    REDDIT_CLIENT_ID, REDDIT_CLIENT_SECRET e REDDIT_USERNAME, lo script non apre nessun browser.
- *    Chiede un token con le credenziali dell'app (grant `client_credentials`) e legge gli stessi
- *    endpoint su oauth.reddit.com. Niente login da rifare. Scritta sulla documentazione OAuth2
- *    archiviata di Reddit (2016): le condizioni attuali non sono state lette.
- *  - REDDIT_HEADED=1 npm run scrape:reddit  → headed, riusa il login del profilo (se non loggato,
- *    attende che l'utente entri, fino a 3 min). È il modo che funziona.
- *  - npm run scrape:reddit (headless, es. da collect:sources/scheduler) → quasi sempre bloccato:
- *    NON sovrascrive la cache, esce come no-op.
+ * Lo script lavora solo se nel `.env` o nell'ambiente ci sono REDDIT_CLIENT_ID,
+ * REDDIT_CLIENT_SECRET e REDDIT_USERNAME, cioè le credenziali di un'app approvata da Reddit.
+ * Chiede un token con il grant `client_credentials` e legge ricerca e commenti su
+ * oauth.reddit.com. Senza credenziali non contatta Reddit: stampa che la fonte è spenta ed esce 0.
+ * La parte OAuth è scritta sulla documentazione archiviata di Reddit (2016) e non è ancora stata
+ * provata con credenziali vere.
  *
- * Non distruttivo: in caso di blocco/errore/0 risultati preserva la cache; i post nuovi vengono
- * uniti agli esistenti (dedup per id).
+ * Non distruttivo: in caso di errore o di zero risultati preserva la cache; i post nuovi vengono
+ * uniti agli esistenti (dedup per id). Lo schema cache resta { lastScraped, posts }.
  */
-import { chromium } from 'playwright-core';
 import { readFileSync, writeFileSync, existsSync } from 'fs';
-import { spawn } from 'child_process';
 import { join } from 'path';
 
 const ROOT = join(import.meta.dirname, '..');
 const CACHE_PATH = join(ROOT, 'data', 'reddit-cache.json');
-const USER_DIR = `${(process.env.USERPROFILE || '').replace(/\\/g, '/')}/.playwright-beyblade`;
-const HEADED = process.env.REDDIT_HEADED === '1';
 // Backfill storico (one-off): pagina a fondo tutte le query (cursore `after`, fino a ~1000/query, il
 // limite di Reddit) e NON applica KEEP_TOP (tiene tutto). Va seguito SUBITO da /update-combos, prima
 // che un run normale (KEEP_TOP) poti la cache. Marcia normale: REDDIT_BACKFILL non settato.
 const BACKFILL = process.env.REDDIT_BACKFILL === '1';
 const KEEP_TOP = 150;
 const MAX_PAGES = BACKFILL ? 15 : 1;
-const BLOCK = /blocked by network security|whoa there|too many requests|just a moment/i;
 // Query orientate ai risultati di torneo. Il giudizio "ha davvero vinto / è in top cut" lo fa l'IA
 // in /update-combos: qui si raccoglie grezzo, ampio e non filtrato. Recall misurato (16/06/2026):
 // le 5 query danno 401 post distinti; `tourney` da solo ne porta 97 unici (~24%), quasi disgiunto
@@ -50,20 +40,6 @@ const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 function loadCache(): RedditCache {
   if (!existsSync(CACHE_PATH)) return { lastScraped: '', posts: [] };
   try { return JSON.parse(readFileSync(CACHE_PATH, 'utf-8')); } catch { return { lastScraped: '', posts: [] }; }
-}
-
-// Naviga a un endpoint .json e ne fa il parse dal body. {__blocked:true} se WAF, null se non-JSON.
-async function getJson(page: any, url: string): Promise<any> {
-  // page.goto lancia su HTTP 4xx/5xx (post rimossi/locked, 403, timeout): NON deve abbattere l'intero
-  // run — un singolo post problematico va saltato (return null), non far perdere l'harvest già raccolto.
-  try {
-    await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 45000 });
-  } catch {
-    return null;
-  }
-  const text = (await page.locator('body').innerText().catch(() => '')) || '';
-  if (BLOCK.test(text.slice(0, 400))) return { __blocked: true };
-  try { return JSON.parse(text); } catch { return null; }
 }
 
 // ---- API ufficiale ----
@@ -104,7 +80,7 @@ async function tokenApi(c: CredApi): Promise<string> {
   return j.access_token;
 }
 
-/** Stesso contratto di getJson: l'url www.reddit.com/….json diventa oauth.reddit.com/… col token. */
+/** L'url www.reddit.com/….json diventa oauth.reddit.com/… col token. {__blocked:true} su 401/403/429, null sugli altri errori. */
 function lettoreApi(c: CredApi, token: string): (url: string) => Promise<any> {
   return async (url: string) => {
     const u = new URL(url);
@@ -125,8 +101,7 @@ function lettoreApi(c: CredApi, token: string): (url: string) => Promise<any> {
   };
 }
 
-// "Loggato" = una ricerca autenticata rende risultati (ground truth: la sessione a cookie del profilo
-// abilita search.json). Niente OAuth /api/v1/me.json (richiede bearer, non i cookie del browser).
+// Le credenziali funzionano se una ricerca rende risultati.
 async function loggedIn(leggi: (url: string) => Promise<any>): Promise<boolean> {
   const d = await leggi('https://www.reddit.com/r/Beyblade/search.json?q=beyblade&restrict_sr=on&sort=top&t=all&limit=5');
   return !!(d && !d.__blocked && d.data?.children?.length);
@@ -140,101 +115,27 @@ function toPost(d: any): RedditPost {
   };
 }
 
-// Un fallimento a browser visibile deve arrivare alla raccolta come errore: con `return` e basta
-// lo script usciva 0, collect-sources lo segnava «ok» e il login scaduto è rimasto invisibile dal
-// 14/10 al 12/11/2026. In headless il blocco è il comportamento previsto e l'uscita resta 0.
-let VIA_API = false;
+// Con le credenziali presenti ogni fallimento deve arrivare alla raccolta come errore: quando lo
+// script usciva sempre 0, un mese senza post è rimasto invisibile (14/10 - 12/11/2026).
 function fallito(msg: string): void {
   console.error(msg);
-  if (HEADED || VIA_API) process.exitCode = 2;
-}
-
-const PORTA_CDP = 9333;
-
-function trovaChrome(): string | null {
-  const basi = [process.env.PROGRAMFILES, process.env['PROGRAMFILES(X86)'], process.env.LOCALAPPDATA];
-  for (const b of basi) {
-    if (!b) continue;
-    const exe = join(b, 'Google', 'Chrome', 'Application', 'chrome.exe');
-    if (existsSync(exe)) return exe;
-  }
-  return null;
-}
-
-/**
- * Apre il browser. A finestra visibile Chrome parte come lo avvia una persona, con la sola porta
- * di debug in più, e Playwright ci si collega dopo: misurato il 12/11/2026 sul server, il Chrome
- * lanciato da Playwright riceve «blocked by network security» anche col login valido nel profilo,
- * mentre lo stesso profilo aperto a mano entra. REDDIT_CDP=0 torna al lancio di Playwright.
- */
-async function apriBrowser(): Promise<{ ctx: any; chiudi: () => Promise<void> }> {
-  if (!HEADED || process.env.REDDIT_CDP === '0') {
-    const ctx = await chromium.launchPersistentContext(USER_DIR, {
-      channel: 'chrome', headless: !HEADED, chromiumSandbox: true,
-      ignoreDefaultArgs: ['--enable-automation'], args: ['--disable-blink-features=AutomationControlled'],
-    });
-    return { ctx, chiudi: () => ctx.close() };
-  }
-  const exe = trovaChrome();
-  if (!exe) throw new Error('chrome.exe non trovato nelle cartelle standard');
-  const proc = spawn(exe, [`--user-data-dir=${USER_DIR}`, `--remote-debugging-port=${PORTA_CDP}`, '--no-first-run', '--no-default-browser-check', 'about:blank'], { stdio: 'ignore' });
-  const endpoint = `http://127.0.0.1:${PORTA_CDP}`;
-  let pronto = false;
-  for (let i = 0; i < 40 && !pronto; i++) {
-    await sleep(500);
-    pronto = await fetch(`${endpoint}/json/version`).then((r) => r.ok).catch(() => false);
-  }
-  if (!pronto) {
-    proc.kill();
-    // Se il profilo è già aperto in un'altra finestra, Chrome passa la richiesta a quella ed esce:
-    // la porta di debug non si apre mai.
-    throw new Error(`Chrome non ha aperto la porta ${PORTA_CDP}: chiudi ogni finestra di Chrome che usa il profilo ${USER_DIR} e rilancia`);
-  }
-  const browser = await chromium.connectOverCDP(endpoint);
-  const ctx = browser.contexts()[0];
-  const chiudi = async () => {
-    // Browser.close fa chiudere Chrome da sé, così salva i cookie; kill solo se non risponde.
-    const chiuso = new Promise<void>((r) => proc.once('exit', () => r()));
-    try { const s = await browser.newBrowserCDPSession(); await s.send('Browser.close'); } catch { /* già chiuso */ }
-    await Promise.race([chiuso, sleep(8000)]);
-    if (proc.exitCode === null) proc.kill();
-  };
-  return { ctx, chiudi };
+  process.exitCode = 2;
 }
 
 async function main() {
   const cred = credenzialiApi();
-  VIA_API = !!cred;
-  console.log(`Reddit scraper r/Beyblade (${cred ? 'API ufficiale' : `browser ${HEADED ? 'headed' : 'headless'}`})\n`);
-  const existing = loadCache();
-
-  let leggi: (url: string) => Promise<any>;
-  let chiudi: () => Promise<void> = async () => {};
-  let page: any = null;
-  if (cred) {
-    leggi = lettoreApi(cred, await tokenApi(cred));
-  } else {
-    const b = await apriBrowser();
-    chiudi = b.chiudi;
-    page = b.ctx.pages()[0] ?? (await b.ctx.newPage());
-    leggi = (url: string) => getJson(page, url);
+  if (!cred) {
+    console.log('Reddit: fonte spenta, mancano le credenziali API (REDDIT_CLIENT_ID, REDDIT_CLIENT_SECRET, REDDIT_USERNAME). Cache invariata.');
+    return;
   }
+  console.log('Reddit scraper r/Beyblade (API ufficiale)\n');
+  const existing = loadCache();
+  const leggi = lettoreApi(cred, await tokenApi(cred));
 
-  try {
-    if (cred && !(await loggedIn(leggi))) {
+  {
+    if (!(await loggedIn(leggi))) {
       fallito(`L'API Reddit non restituisce risultati con queste credenziali. Cache preservata (${existing.posts.length} post).`);
       return;
-    }
-    if (!cred && HEADED && !(await loggedIn(leggi))) {
-      console.log('Sessione Reddit non attiva. Apro reddit.com: fai login nella finestra (attendo fino a 3 min)...');
-      await page.goto('https://www.reddit.com/login/', { waitUntil: 'domcontentloaded', timeout: 45000 }).catch(() => {});
-      const start = Date.now();
-      let ok = false;
-      while (Date.now() - start < 180_000) {
-        await sleep(8000);
-        if (await loggedIn(leggi)) { ok = true; console.log('Login rilevato.'); break; }
-      }
-      if (!ok) { fallito(`Login non completato. Cache preservata (${existing.posts.length} post).`); return; }
     }
 
     const found = new Map<string, RedditPost>();
@@ -265,11 +166,11 @@ async function main() {
     }
 
     if (blockedFirst) {
-      fallito('Bloccato dal WAF di Reddit (headless). Usa REDDIT_HEADED=1 con login. Cache preservata.');
+      fallito(`L'API Reddit ha rifiutato la prima ricerca. Cache preservata (${existing.posts.length} post).`);
       return;
     }
     if (!anyOk) {
-      fallito(`Nessuna risposta utile (probabile sessione non loggata). Cache preservata (${existing.posts.length} post).`);
+      fallito(`Nessuna risposta utile dall'API Reddit. Cache preservata (${existing.posts.length} post).`);
       return;
     }
     if (found.size === 0) {
@@ -309,9 +210,7 @@ async function main() {
 
     writeFileSync(CACHE_PATH, JSON.stringify({ lastScraped: new Date().toISOString().slice(0, 10), posts: top }, null, 2));
     console.log(`\nSalvati ${top.length} post in ${CACHE_PATH}`);
-  } finally {
-    await chiudi();
   }
 }
 
-main().catch((e) => { console.error('scrape-reddit fallito:', e.message); process.exitCode = VIA_API ? 2 : 1; });
+main().catch((e) => { console.error('scrape-reddit fallito:', e.message); process.exitCode = 2; });
