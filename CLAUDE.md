@@ -257,9 +257,10 @@ mai via API a pagamento. L'IA non calcola mai lo score né ri-parsa ciò che il 
   server e con le utility Tailwind superava il tetto di 400 KB del test e2e.
 
 ### Script raccolta combo (`npm run collect:sources`)
-- `scrape:reddit` (Playwright; Reddit blocca l'accesso non autenticato → serve sessione browser loggata:
-  `REDDIT_HEADED=1 npm run scrape:reddit`, login una tantum nel profilo `.playwright-beyblade`, poi riusa
-  la sessione e legge gli endpoint `.json`; headless = no-op non distruttivo, preserva la cache),
+- `scrape:reddit` (**solo API ufficiale**: lavora con `REDDIT_CLIENT_ID`/`REDDIT_CLIENT_SECRET`/`REDDIT_USERNAME`
+  nel `.env`, credenziali di un'app approvata da Reddit; senza, stampa «fonte spenta», esce 0 e non
+  contatta Reddit. Le regole di Reddit vietano la raccolta automatica senza approvazione: mai più un
+  browser pilotato, comunque avviato. Stato della richiesta di accesso in `projects/combo-pipeline.md`),
   `fetch:youtube` (API key; discovery + **arricchimento** via `videos?part=snippet`: tags, descrizione
   completa, `defaultAudioLanguage` → cache **cumulativa** + **pre-filtro deterministico**
   `scripts/lib/youtube-relevance.ts` che scarta off-topic/franchise estranei), `fetch:sheets`,
@@ -282,9 +283,9 @@ mai via API a pagamento. L'IA non calcola mai lo score né ri-parsa ciò che il 
   `fetch:transcripts` gira SEPARATO (ogni 5 min, `--batch 1`):
   scarica solo i video `relevant:true` (giudicati da `/judge-youtube`), nella lingua reale del video
   (`youtube_transcript_api.list()` + `.translate('en')` se non-EN e traducibile).
-- `collect-sources-task.bat` restituisce l'exit code di `collect:sources`: una fonte in errore fa fallire il job `beyblade-collect`. A browser visibile `scrape-reddit.ts` esce 2 se il login manca o Reddit non risponde; va rifatto il login a mano sul server
-- Reddit/WBO girano headed+manuale (lo scheduler headless li lascia no-op): rieseguire a mano quando serve dato fresco.
-- Reddit backfill storico (one-off): `REDDIT_BACKFILL=1` (con `REDDIT_HEADED=1`) pagina a fondo ogni query
+- `collect-sources-task.bat` restituisce l'exit code di `collect:sources`: una fonte in errore fa fallire il job `beyblade-collect`. Con le credenziali API presenti `scrape-reddit.ts` esce 2 a ogni fallimento
+- WBO gira headed (lo scheduler headless lo lascia no-op): rieseguire a mano quando serve dato fresco.
+- Reddit backfill storico (one-off, solo con le credenziali API): `REDDIT_BACKFILL=1` pagina a fondo ogni query
   (cursore `after`, ~1000/query) e NON pota la cache (no `KEEP_TOP`). Seguire SUBITO con `/update-combos`,
   prima che un run normale (che applica `KEEP_TOP`) la poti.
 - Le cache grezze le interpreta `/update-combos` (estrazione, match multilingua, dedup id-set, scoring).
