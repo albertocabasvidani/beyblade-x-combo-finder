@@ -8,6 +8,11 @@
  * autenticati (estrazione pulita, niente DOM scraping). Lo schema cache resta { lastScraped, posts }.
  *
  * Modalità:
+ *  - API ufficiale (dal 12/11/2026, la via da preferire): se nel `.env` o nell'ambiente ci sono
+ *    REDDIT_CLIENT_ID, REDDIT_CLIENT_SECRET e REDDIT_USERNAME, lo script non apre nessun browser.
+ *    Chiede un token con le credenziali dell'app (grant `client_credentials`) e legge gli stessi
+ *    endpoint su oauth.reddit.com. Niente login da rifare. Scritta sulla documentazione OAuth2
+ *    archiviata di Reddit (2016): le condizioni attuali non sono state lette.
  *  - REDDIT_HEADED=1 npm run scrape:reddit  → headed, riusa il login del profilo (se non loggato,
  *    attende che l'utente entri, fino a 3 min). È il modo che funziona.
  *  - npm run scrape:reddit (headless, es. da collect:sources/scheduler) → quasi sempre bloccato:
@@ -61,10 +66,69 @@ async function getJson(page: any, url: string): Promise<any> {
   try { return JSON.parse(text); } catch { return null; }
 }
 
+// ---- API ufficiale ----
+interface CredApi { id: string; secret: string; user: string }
+
+function credenzialiApi(): CredApi | null {
+  const env: Record<string, string> = {};
+  const envPath = join(ROOT, '.env');
+  if (existsSync(envPath)) {
+    for (const riga of readFileSync(envPath, 'utf-8').split(/\r?\n/)) {
+      const m = riga.match(/^\s*(REDDIT_[A-Z_]+)\s*=\s*(.*?)\s*$/);
+      if (m) env[m[1]] = m[2].replace(/^["']|["']$/g, '');
+    }
+  }
+  const leggiVar = (k: string) => (process.env[k] ?? env[k] ?? '').trim();
+  const c = { id: leggiVar('REDDIT_CLIENT_ID'), secret: leggiVar('REDDIT_CLIENT_SECRET'), user: leggiVar('REDDIT_USERNAME') };
+  return c.id && c.secret && c.user ? c : null;
+}
+
+/** Reddit chiede uno User-Agent che dica chi è il client: mai quello di un browser. */
+const userAgent = (c: CredApi) => `windows:beyblade-x-combo-finder:v1.0 (by /u/${c.user})`;
+
+async function tokenApi(c: CredApi): Promise<string> {
+  const r = await fetch('https://www.reddit.com/api/v1/access_token', {
+    method: 'POST',
+    headers: {
+      authorization: 'Basic ' + Buffer.from(`${c.id}:${c.secret}`).toString('base64'),
+      'content-type': 'application/x-www-form-urlencoded',
+      'user-agent': userAgent(c),
+    },
+    body: 'grant_type=client_credentials',
+  });
+  const corpo = await r.text();
+  let j: any = null;
+  try { j = JSON.parse(corpo); } catch { /* non JSON */ }
+  // Il corpo dell'errore non contiene il secret: si può stampare. Il token no, e non si stampa.
+  if (!r.ok || !j?.access_token) throw new Error(`token rifiutato: HTTP ${r.status} ${corpo.slice(0, 200)}`);
+  return j.access_token;
+}
+
+/** Stesso contratto di getJson: l'url www.reddit.com/….json diventa oauth.reddit.com/… col token. */
+function lettoreApi(c: CredApi, token: string): (url: string) => Promise<any> {
+  return async (url: string) => {
+    const u = new URL(url);
+    u.host = 'oauth.reddit.com';
+    u.pathname = u.pathname.replace(/\.json$/, '');
+    u.searchParams.set('raw_json', '1');
+    try {
+      const r = await fetch(u, { headers: { authorization: `Bearer ${token}`, 'user-agent': userAgent(c) } });
+      if (r.status === 401 || r.status === 403 || r.status === 429) {
+        console.error(`  API Reddit: HTTP ${r.status} su ${u.pathname}`);
+        return { __blocked: true };
+      }
+      if (!r.ok) return null;
+      return await r.json();
+    } catch {
+      return null;
+    }
+  };
+}
+
 // "Loggato" = una ricerca autenticata rende risultati (ground truth: la sessione a cookie del profilo
 // abilita search.json). Niente OAuth /api/v1/me.json (richiede bearer, non i cookie del browser).
-async function loggedIn(page: any): Promise<boolean> {
-  const d = await getJson(page, 'https://www.reddit.com/r/Beyblade/search.json?q=beyblade&restrict_sr=on&sort=top&t=all&limit=5');
+async function loggedIn(leggi: (url: string) => Promise<any>): Promise<boolean> {
+  const d = await leggi('https://www.reddit.com/r/Beyblade/search.json?q=beyblade&restrict_sr=on&sort=top&t=all&limit=5');
   return !!(d && !d.__blocked && d.data?.children?.length);
 }
 
@@ -79,9 +143,10 @@ function toPost(d: any): RedditPost {
 // Un fallimento a browser visibile deve arrivare alla raccolta come errore: con `return` e basta
 // lo script usciva 0, collect-sources lo segnava «ok» e il login scaduto è rimasto invisibile dal
 // 14/10 al 12/11/2026. In headless il blocco è il comportamento previsto e l'uscita resta 0.
+let VIA_API = false;
 function fallito(msg: string): void {
   console.error(msg);
-  if (HEADED) process.exitCode = 2;
+  if (HEADED || VIA_API) process.exitCode = 2;
 }
 
 const PORTA_CDP = 9333;
@@ -138,21 +203,36 @@ async function apriBrowser(): Promise<{ ctx: any; chiudi: () => Promise<void> }>
 }
 
 async function main() {
-  console.log(`Reddit scraper r/Beyblade (browser ${HEADED ? 'headed' : 'headless'})\n`);
+  const cred = credenzialiApi();
+  VIA_API = !!cred;
+  console.log(`Reddit scraper r/Beyblade (${cred ? 'API ufficiale' : `browser ${HEADED ? 'headed' : 'headless'}`})\n`);
   const existing = loadCache();
 
-  const { ctx, chiudi } = await apriBrowser();
-  const page = ctx.pages()[0] ?? (await ctx.newPage());
+  let leggi: (url: string) => Promise<any>;
+  let chiudi: () => Promise<void> = async () => {};
+  let page: any = null;
+  if (cred) {
+    leggi = lettoreApi(cred, await tokenApi(cred));
+  } else {
+    const b = await apriBrowser();
+    chiudi = b.chiudi;
+    page = b.ctx.pages()[0] ?? (await b.ctx.newPage());
+    leggi = (url: string) => getJson(page, url);
+  }
 
   try {
-    if (HEADED && !(await loggedIn(page))) {
+    if (cred && !(await loggedIn(leggi))) {
+      fallito(`L'API Reddit non restituisce risultati con queste credenziali. Cache preservata (${existing.posts.length} post).`);
+      return;
+    }
+    if (!cred && HEADED && !(await loggedIn(leggi))) {
       console.log('Sessione Reddit non attiva. Apro reddit.com: fai login nella finestra (attendo fino a 3 min)...');
       await page.goto('https://www.reddit.com/login/', { waitUntil: 'domcontentloaded', timeout: 45000 }).catch(() => {});
       const start = Date.now();
       let ok = false;
       while (Date.now() - start < 180_000) {
         await sleep(8000);
-        if (await loggedIn(page)) { ok = true; console.log('Login rilevato.'); break; }
+        if (await loggedIn(leggi)) { ok = true; console.log('Login rilevato.'); break; }
       }
       if (!ok) { fallito(`Login non completato. Cache preservata (${existing.posts.length} post).`); return; }
     }
@@ -166,7 +246,7 @@ async function main() {
       for (let p = 0; p < MAX_PAGES; p++) {
         const params = new URLSearchParams({ q, restrict_sr: 'on', sort: 'new', limit: '100' });
         if (after) params.set('after', after);
-        const data = await getJson(page, `https://www.reddit.com/r/Beyblade/search.json?${params}`);
+        const data = await leggi(`https://www.reddit.com/r/Beyblade/search.json?${params}`);
         if (data?.__blocked) { if (!anyOk) blockedFirst = true; break outer; }
         const children = data?.data?.children ?? [];
         if (children.length) {
@@ -209,7 +289,7 @@ async function main() {
     let done = 0;
     for (const p of top) {
       if (p.comments.length || !found.has(p.id)) continue;
-      const c = await getJson(page, `https://www.reddit.com/r/Beyblade/comments/${p.id}.json?sort=top&limit=100`);
+      const c = await leggi(`https://www.reddit.com/r/Beyblade/comments/${p.id}.json?sort=top&limit=100`);
       // Tutti i commenti, anche annidati (flatten ricorsivo): un torneo si discute nelle risposte.
       const flat: string[] = [];
       const walk = (nodes: any[]) => {
@@ -234,4 +314,4 @@ async function main() {
   }
 }
 
-main().catch((e) => { console.error('scrape-reddit fallito:', e.message); process.exitCode = 1; });
+main().catch((e) => { console.error('scrape-reddit fallito:', e.message); process.exitCode = VIA_API ? 2 : 1; });
