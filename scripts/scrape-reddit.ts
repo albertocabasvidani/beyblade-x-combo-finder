@@ -18,6 +18,7 @@
  */
 import { chromium } from 'playwright-core';
 import { readFileSync, writeFileSync, existsSync } from 'fs';
+import { spawn } from 'child_process';
 import { join } from 'path';
 
 const ROOT = join(import.meta.dirname, '..');
@@ -83,14 +84,64 @@ function fallito(msg: string): void {
   if (HEADED) process.exitCode = 2;
 }
 
+const PORTA_CDP = 9333;
+
+function trovaChrome(): string | null {
+  const basi = [process.env.PROGRAMFILES, process.env['PROGRAMFILES(X86)'], process.env.LOCALAPPDATA];
+  for (const b of basi) {
+    if (!b) continue;
+    const exe = join(b, 'Google', 'Chrome', 'Application', 'chrome.exe');
+    if (existsSync(exe)) return exe;
+  }
+  return null;
+}
+
+/**
+ * Apre il browser. A finestra visibile Chrome parte come lo avvia una persona, con la sola porta
+ * di debug in più, e Playwright ci si collega dopo: misurato il 12/11/2026 sul server, il Chrome
+ * lanciato da Playwright riceve «blocked by network security» anche col login valido nel profilo,
+ * mentre lo stesso profilo aperto a mano entra. REDDIT_CDP=0 torna al lancio di Playwright.
+ */
+async function apriBrowser(): Promise<{ ctx: any; chiudi: () => Promise<void> }> {
+  if (!HEADED || process.env.REDDIT_CDP === '0') {
+    const ctx = await chromium.launchPersistentContext(USER_DIR, {
+      channel: 'chrome', headless: !HEADED, chromiumSandbox: true,
+      ignoreDefaultArgs: ['--enable-automation'], args: ['--disable-blink-features=AutomationControlled'],
+    });
+    return { ctx, chiudi: () => ctx.close() };
+  }
+  const exe = trovaChrome();
+  if (!exe) throw new Error('chrome.exe non trovato nelle cartelle standard');
+  const proc = spawn(exe, [`--user-data-dir=${USER_DIR}`, `--remote-debugging-port=${PORTA_CDP}`, '--no-first-run', '--no-default-browser-check', 'about:blank'], { stdio: 'ignore' });
+  const endpoint = `http://127.0.0.1:${PORTA_CDP}`;
+  let pronto = false;
+  for (let i = 0; i < 40 && !pronto; i++) {
+    await sleep(500);
+    pronto = await fetch(`${endpoint}/json/version`).then((r) => r.ok).catch(() => false);
+  }
+  if (!pronto) {
+    proc.kill();
+    // Se il profilo è già aperto in un'altra finestra, Chrome passa la richiesta a quella ed esce:
+    // la porta di debug non si apre mai.
+    throw new Error(`Chrome non ha aperto la porta ${PORTA_CDP}: chiudi ogni finestra di Chrome che usa il profilo ${USER_DIR} e rilancia`);
+  }
+  const browser = await chromium.connectOverCDP(endpoint);
+  const ctx = browser.contexts()[0];
+  const chiudi = async () => {
+    // Browser.close fa chiudere Chrome da sé, così salva i cookie; kill solo se non risponde.
+    const chiuso = new Promise<void>((r) => proc.once('exit', () => r()));
+    try { const s = await browser.newBrowserCDPSession(); await s.send('Browser.close'); } catch { /* già chiuso */ }
+    await Promise.race([chiuso, sleep(8000)]);
+    if (proc.exitCode === null) proc.kill();
+  };
+  return { ctx, chiudi };
+}
+
 async function main() {
   console.log(`Reddit scraper r/Beyblade (browser ${HEADED ? 'headed' : 'headless'})\n`);
   const existing = loadCache();
 
-  const ctx = await chromium.launchPersistentContext(USER_DIR, {
-    channel: 'chrome', headless: !HEADED, chromiumSandbox: true,
-    ignoreDefaultArgs: ['--enable-automation'], args: ['--disable-blink-features=AutomationControlled'],
-  });
+  const { ctx, chiudi } = await apriBrowser();
   const page = ctx.pages()[0] ?? (await ctx.newPage());
 
   try {
@@ -179,7 +230,7 @@ async function main() {
     writeFileSync(CACHE_PATH, JSON.stringify({ lastScraped: new Date().toISOString().slice(0, 10), posts: top }, null, 2));
     console.log(`\nSalvati ${top.length} post in ${CACHE_PATH}`);
   } finally {
-    await ctx.close();
+    await chiudi();
   }
 }
 
