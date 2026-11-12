@@ -282,6 +282,7 @@ mai via API a pagamento. L'IA non calcola mai lo score né ri-parsa ciò che il 
   `fetch:transcripts` gira SEPARATO (ogni 5 min, `--batch 1`):
   scarica solo i video `relevant:true` (giudicati da `/judge-youtube`), nella lingua reale del video
   (`youtube_transcript_api.list()` + `.translate('en')` se non-EN e traducibile).
+- `collect-sources-task.bat` restituisce l'exit code di `collect:sources`: una fonte in errore fa fallire il job `beyblade-collect`. A browser visibile `scrape-reddit.ts` esce 2 se il login manca o Reddit non risponde; va rifatto il login a mano sul server
 - Reddit/WBO girano headed+manuale (lo scheduler headless li lascia no-op): rieseguire a mano quando serve dato fresco.
 - Reddit backfill storico (one-off): `REDDIT_BACKFILL=1` (con `REDDIT_HEADED=1`) pagina a fondo ogni query
   (cursore `after`, ~1000/query) e NON pota la cache (no `KEEP_TOP`). Seguire SUBITO con `/update-combos`,
