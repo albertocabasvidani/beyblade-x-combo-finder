@@ -1,7 +1,7 @@
 ---
 name: combo-pipeline
 status: active
-updated: 12/11/2026
+updated: 13/11/2026
 health: yellow
 blocked-by: null
 current-plan: plans/pipeline-dati-beyblade-x-combo-da-tornei-db-parti--2026-06-15-1107.md
@@ -37,7 +37,7 @@ Scheduled Task propri ma di **job del dispatcher generale** della macchina
 - 16/06/2026 — Reddit blocca l'accesso non autenticato. *Aggiornamento 12/11/2026*: la sessione loggata nel profilo Playwright non è più una via: vedi la voce del 12/11 su Reddit
 - 25/07/2026 — `/mine-reddit` non ha (ancora) un passaggio deterministico di dedup id come `scripts/reddit-merge.ts`: creando a mano due nuove combo da un report Reddit ho duplicato l'`id` di due combo già esistenti (`shark-scale-3-60-low-rush`, `meteor-dragoon-9-60-elevate`), non essendomi accorto che esistevano già sotto un nome pieno del bit invece della sigla che avevo ipotizzato. Prevenzione: prima di creare una combo nuova a mano, cercare sempre `blade+ratchet+bit` (non solo l'id ipotizzato) in `combos.json`. *Aggiornamento 11/09/2026*: è ricapitato tre volte (06/08, 09/09); ora `score:combos` unisce da sé le voci con lo stesso id (vedi Changelog), quindi il difetto residuo è solo il lavoro sprecato dal comando, non il dato
 
-- 12/11/2026 — **Reddit è spento in attesa dell'approvazione di Reddit.** Richiesta di accesso ai dati inviata il 12/11/2026 dal modulo sviluppatori di support.reddithelp.com (ruolo «developer», app fuori da Devvit), con email e account dell'utente; Reddit ha risposto «Your request was successfully submitted». Nel testo sono dichiarati i link affiliati e la pubblicità: Reddit può rimandare al modulo commerciale, che chiede un budget per i dati. Se approva e fornisce le credenziali di un'app, vanno nel `.env` del server (`REDDIT_CLIENT_ID`, `REDDIT_CLIENT_SECRET`, `REDDIT_USERNAME`) e la modalità API di `scrape-reddit.ts` va provata: è scritta sulla documentazione OAuth2 archiviata del 2016 e non ha mai girato con credenziali vere. Se rifiuta, togliere Reddit da `collect-sources.ts`, da `sources.json` e dai due `.bat`
+- 13/11/2026 — **Reddit via Bright Data: il giro notturno intero non è ancora stato visto.** Lo scraper è provato a pezzi (vedi Changelog del 13/11), non il ciclo ritira-e-lancia su due notti né il conteggio dei crediti contro il pannello di Bright Data. Serve `BRIGHTDATA_API_KEY` nel `.env` del server; la chiave usata nelle prove è comparsa in una sessione e va rigenerata. I commenti arrivano in parte: nei post con 20 o più commenti ne arrivano fra 11 e 21 (9 casi)
 - 12/11/2026 — **`dedupMentions` in `score-combos.ts` tiene una sola mention per `source` in ogni combo, la prima inserita.** Lo score non cambia (conta le fonti distinte), ma quando quella mention esce dal cutoff la combo perde la fonte anche se ne esistevano di più recenti, scartate dal dedup. Tutti i canali YouTube hanno `source: "youtube"`, quindi contano come una fonte sola nella corroboration: scelta lasciata com'era
 
 ## In progress
@@ -48,6 +48,13 @@ Scheduled Task propri ma di **job del dispatcher generale** della macchina
 ## Changelog
 
 <!-- Cose completate, dalla più recente. Formato: `- gg/mm/aaaa — testo` -->
+- 13/11/2026 — **Reddit torna in raccolta passando da Bright Data.**
+  - **Antefatto:** Reddit ha respinto la richiesta di accesso ai dati il 12/11/2026, un'ora dopo l'invio (richiesta 18735677), con una formula standard: «not in compliance with Reddit's Responsible Builder Policy and/or lacks necessary details». L'utente ha scelto di leggere Reddit tramite un servizio esterno.
+  - **Scelta dell'utente, col mio parere contrario dichiarato:** resta una raccolta che Reddit ha negato, fatta da un intermediario. Scartati: gli scraper su Apify (quello con 5.000 post gratis aveva 0 recensioni e 2 utenti), i repository GitHub che leggono Reddit dalla nostra macchina, l'API ufficiale.
+  - **Misure sulla risposta vera (13/11, 105 post letti):** quota gratuita di 5.000 crediti al mese valida per Reddit (documentazione Bright Data); 100 post coprono 45,8 ore, cioè circa 52 post al giorno; 7 su 100 contengono le parole di torneo; una raccolta da 100 post dura 47 minuti; il testo arriva intero con un'etichetta «Read more» in coda; i commenti stanno nel record del post, 441 arrivati su 779 dichiarati.
+  - **Comportamento nuovo:** `scrape-reddit.ts` non contatta Reddit. In due tempi, uno per notte: ritira la richiesta lanciata nel giro prima, la filtra sulle parole di torneo e la fonde in `reddit-cache.json`, poi lancia la richiesta nuova (70 post, `REDDIT_BD_LIMIT`). Stato in `data/reddit-bd-state.json`, tetto a 4.500 crediti al mese. `/mine-reddit` non cambia. Tolta la modalità API ufficiale, mai servita.
+  - **Stime, non misure:** 2.100 crediti al mese (70 post per 30 notti, un credito per post: il costo per record non è stato letto dal pannello).
+  - **Prove:** golden test `npm run test:reddit-bd`; conversione sui 100 record veri: 100 convertiti, 100 id unici, 7 di torneo. Il ciclo su due notti non è provato.
 - 12/11/2026 — **Reddit: tolto il browser pilotato, resta solo l'API ufficiale.**
   - **Cosa è successo:** dal 13/10 Reddit blocca lo scraper («blocked by network security»): quella notte il giro si è fermato alla quarta ricerca su cinque, dal 14/10 la sessione risulta non attiva. Il 12/11 il login a mano nel profilo entra, ma la finestra pilotata no, né lanciata da Playwright né avviata come un Chrome normale con la porta di debug.
   - **Perché si è tolto:** la Responsible Builder Policy di Reddit (letta il 12/11/2026 nel browser dell'utente, pagina aggiornata «10/05/2026») chiede un'approvazione esplicita prima di ogni accesso via API e vieta mining e scraping senza approvazione scritta, anche non commerciali. Applicarla al nostro scraper col browser è una deduzione di chi scrive: la pagina non nomina i browser pilotati.

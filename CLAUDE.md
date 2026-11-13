@@ -257,10 +257,10 @@ mai via API a pagamento. L'IA non calcola mai lo score né ri-parsa ciò che il 
   server e con le utility Tailwind superava il tetto di 400 KB del test e2e.
 
 ### Script raccolta combo (`npm run collect:sources`)
-- `scrape:reddit` (**solo API ufficiale**: lavora con `REDDIT_CLIENT_ID`/`REDDIT_CLIENT_SECRET`/`REDDIT_USERNAME`
-  nel `.env`, credenziali di un'app approvata da Reddit; senza, stampa «fonte spenta», esce 0 e non
-  contatta Reddit. Le regole di Reddit vietano la raccolta automatica senza approvazione: mai più un
-  browser pilotato, comunque avviato. Stato della richiesta di accesso in `projects/combo-pipeline.md`),
+- `scrape:reddit` (**via Bright Data**, non contatta Reddit: chiede gli ultimi `REDDIT_BD_LIMIT` post di r/Beyblade,
+  default 70, e li riceve con i commenti. In due tempi, uno per notte: ritira la richiesta del giro prima e ne lancia
+  una nuova, stato in `data/reddit-bd-state.json`. Filtro sulle parole di torneo nel codice. Serve
+  `BRIGHTDATA_API_KEY` nel `.env`: senza, «fonte spenta» ed exit 0. Golden test `npm run test:reddit-bd`),
   `fetch:youtube` (API key; discovery + **arricchimento** via `videos?part=snippet`: tags, descrizione
   completa, `defaultAudioLanguage` → cache **cumulativa** + **pre-filtro deterministico**
   `scripts/lib/youtube-relevance.ts` che scarta off-topic/franchise estranei), `fetch:sheets`,
@@ -283,11 +283,11 @@ mai via API a pagamento. L'IA non calcola mai lo score né ri-parsa ciò che il 
   `fetch:transcripts` gira SEPARATO (ogni 5 min, `--batch 1`):
   scarica solo i video `relevant:true` (giudicati da `/judge-youtube`), nella lingua reale del video
   (`youtube_transcript_api.list()` + `.translate('en')` se non-EN e traducibile).
-- `collect-sources-task.bat` restituisce l'exit code di `collect:sources`: una fonte in errore fa fallire il job `beyblade-collect`. Con le credenziali API presenti `scrape-reddit.ts` esce 2 a ogni fallimento
+- `collect-sources-task.bat` restituisce l'exit code di `collect:sources`: una fonte in errore fa fallire il job `beyblade-collect`. Con `BRIGHTDATA_API_KEY` presente `scrape-reddit.ts` esce 2 a ogni fallimento
 - WBO gira headed (lo scheduler headless lo lascia no-op): rieseguire a mano quando serve dato fresco.
-- Reddit backfill storico (one-off, solo con le credenziali API): `REDDIT_BACKFILL=1` pagina a fondo ogni query
-  (cursore `after`, ~1000/query) e NON pota la cache (no `KEEP_TOP`). Seguire SUBITO con `/update-combos`,
-  prima che un run normale (che applica `KEEP_TOP`) la poti.
+- Bright Data: quota gratuita di 5.000 crediti al mese, un credito per post; lo script si ferma a 4.500 (`TETTO_MENSILE`).
+  Non caricare fondi sull'account: senza fondi, a quota finita arriva un errore e nessun addebito.
+- Reddit ha negato l'accesso alla sua API il 12/11/2026 e vieta la raccolta diretta: niente browser pilotato né app OAuth.
 - Le cache grezze le interpreta `/update-combos` (estrazione, match multilingua, dedup id-set, scoring).
 
 ### Cutoff temporale e pruning (deterministici)

@@ -8,14 +8,9 @@ const ROOT = join(import.meta.dirname, '..');
 // coda al run, così il log della raccolta dice cosa è entrato per fonte e non solo chi è uscito 0
 // (dal 06/08 al 26/09/2026 WBO usciva 0 in 38 run su 52 senza scaricare nulla: «Done. 8/8» ogni giorno).
 const scripts = [
-  // Reddit: 15 min, non 2. Il ciclo commenti fa `await sleep(2000)` per post (rate-limit voluto):
-  // con KEEP_TOP=150 post da arricchire sono ~3s l'uno, cioè ~7,5 min — il vecchio timeout di
-  // 120_000 era matematicamente insufficiente sopra i ~40 post e falliva SEMPRE. Il fallimento era
-  // mascherato: execSync uccide solo il figlio diretto (cmd.exe), non i nipoti, così lo scraper
-  // orfano proseguiva e scriveva la cache minuti dopo che collect l'aveva dato per morto
-  // (22/07/2026: "Salvati 150 post" comparso DOPO "Done. 6/8 succeeded"). Sotto carico l'orfano non
-  // ce la faceva e la cache non veniva scritta affatto.
-  { name: 'Reddit scraper', cmd: 'npx tsx scripts/scrape-reddit.ts', timeout: 900_000, summary: /^(Salvati \d+ post.*|.*0 nuovi post.*|Reddit: fonte spenta.*|.*API Reddit.*|scrape-reddit fallito.*)$/im },
+  // Reddit passa da Bright Data in due tempi (scrape-reddit.ts): ritira la richiesta della notte
+  // prima e ne lancia una nuova. Sono poche chiamate HTTP, nessun browser e nessuna attesa lunga.
+  { name: 'Reddit scraper', cmd: 'npx tsx scripts/scrape-reddit.ts', timeout: 180_000, summary: /^(Reddit: .*|scrape-reddit fallito.*)$/im },
   { name: 'arca.live scraper (KR)', cmd: 'npx tsx scripts/scrape-arca.ts', timeout: 180_000, summary: /^Salvati \d+ post.*$/im },
   { name: 'YouTube fetcher', cmd: 'npx tsx scripts/fetch-youtube.ts', timeout: 120_000, summary: /^(Saved \d+ new videos.*|Nessun canale letto.*)$/im },
   { name: 'Sheets fetcher', cmd: 'npx tsx scripts/fetch-sheets.ts', timeout: 120_000, summary: /^(Saved to .*|fetch-sheets fallito.*)$/im },

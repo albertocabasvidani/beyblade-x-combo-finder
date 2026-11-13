@@ -12,6 +12,7 @@
     "fetch:bbx-weekly": "npx tsx scripts/fetch-bbx-weekly.ts",
     "parse:bbx-weekly": "npx tsx scripts/parse-bbx-weekly.ts",
     "reddit:batch": "npx tsx scripts/reddit-batch.ts",
+    "test:reddit-bd": "npx tsx scripts/test-reddit-bd.ts",
     "youtube:judge": "npx tsx scripts/youtube-judge-batch.ts",
     "youtube:mine": "npx tsx scripts/youtube-mine-batch.ts",
     "fetch:web": "npx tsx scripts/fetch-web.ts",
