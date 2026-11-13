@@ -79,7 +79,11 @@
       ],
       "mine": {
         "pages": [
-          { "url": "https://sbbl.es/beyblade-database/beyblade-stats", "startAfter": "COMBOS EN RADAR", "maxChars": 40000 }
+          {
+            "url": "https://sbbl.es/beyblade-database/beyblade-stats",
+            "startAfter": "COMBOS EN RADAR",
+            "maxChars": 40000
+          }
         ]
       }
     },
@@ -106,7 +110,9 @@
       ],
       "mine": {
         "pages": [
-          { "url": "https://polishbladers.pl/zwyciezcy" }
+          {
+            "url": "https://polishbladers.pl/zwyciezcy"
+          }
         ]
       }
     },
@@ -122,9 +128,15 @@
       ],
       "mine": {
         "pages": [
-          { "url": "https://okuyama3093.com/beyblade-3on3deck-strongest/" },
-          { "url": "https://okuyama3093.com/beybladex-customize-rankings/" },
-          { "url": "https://okuyama3093.com/beyblade-onebey-strongest/" }
+          {
+            "url": "https://okuyama3093.com/beyblade-3on3deck-strongest/"
+          },
+          {
+            "url": "https://okuyama3093.com/beybladex-customize-rankings/"
+          },
+          {
+            "url": "https://okuyama3093.com/beyblade-onebey-strongest/"
+          }
         ]
       }
     },
@@ -625,8 +637,12 @@
       "mine": {
         "parser": "beywatch",
         "pages": [
-          { "url": "https://beywatch.gg/tournaments" },
-          { "url": "https://beywatch.gg/tournaments?page=2" }
+          {
+            "url": "https://beywatch.gg/tournaments"
+          },
+          {
+            "url": "https://beywatch.gg/tournaments?page=2"
+          }
         ]
       },
       "notes": "Aggregatore di tornei Beyblade X: solo il deck vincitore per evento, con tag di provenienza. Il 76% degli eventi ha tag wbo e l'8% metabeys (già coperti): raccogliere SOLO gli eventi con altri tag (athlete-cup, itabashi, iloilo...) per non contare doppio. Approvato dall'utente via email il 02/11/2026."

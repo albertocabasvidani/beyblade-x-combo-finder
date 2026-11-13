@@ -1,0 +1,48 @@
+{
+  "pages": {
+    "https://beywatch.gg/tournaments": {
+      "sourceId": "website-beywatch-gg",
+      "hash": "a70dd85827d0ccec7984c77187a4d9a37c1fbe5b99a252ac5c786859ceaa7a93",
+      "minedDate": "2026-11-13",
+      "combosFound": 7
+    },
+    "https://beywatch.gg/tournaments?page=2": {
+      "sourceId": "website-beywatch-gg",
+      "hash": "e5468c1f5208b5fff8a6ec1caa806e19013228377183bdadc1fe60148c521025",
+      "minedDate": "2026-11-12",
+      "combosFound": 9
+    },
+    "https://okuyama3093.com/beyblade-3on3deck-strongest/": {
+      "sourceId": "okuyama3093",
+      "hash": "9f952bf12a98043f3e4a5cb6fb746a3f1fcc1c49ef8ea21257c29bdbcfb2cd3b",
+      "minedDate": "2026-11-13",
+      "combosFound": 2
+    },
+    "https://okuyama3093.com/beyblade-onebey-strongest/": {
+      "sourceId": "okuyama3093",
+      "hash": "2eda87f0320e248fda1c94840a709259129c0ed8bd875ccb28435a7a558849af",
+      "minedDate": "2026-11-13",
+      "combosFound": 2
+    },
+    "https://okuyama3093.com/beybladex-customize-rankings/": {
+      "sourceId": "okuyama3093",
+      "hash": "d05a5f73a957693197de56e7ef0d6ef99bcf8d189e633f641d032e293f0e73e5",
+      "minedDate": "2026-11-13",
+      "combosFound": 4
+    },
+    "https://polishbladers.pl/zwyciezcy": {
+      "sourceId": "polishbladers",
+      "hash": "0817d3dce07162890628914e0b5a717650b6a058d9e86043fdf18c802090f0a3",
+      "minedDate": "2026-11-12",
+      "combosFound": 53
+    },
+    "https://sbbl.es/beyblade-database/beyblade-stats": {
+      "sourceId": "sbbl",
+      "hash": "2ec9c3afa74f79947dc4a3d29534f2199e5de44e3f68c453b1d6ba7aebf49b39",
+      "minedDate": "2026-11-12",
+      "combosFound": 62
+    }
+  },
+  "letture": 11,
+  "lastRun": "2026-11-13"
+}
