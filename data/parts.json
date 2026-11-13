@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-09",
+  "version": "2026-11-13",
   "blades": [
     {
       "id": "aero-pegasus",
@@ -1633,6 +1633,18 @@
       "line": "ux",
       "releaseSet": "G3497",
       "image": "valor-bison.png"
+    },
+    {
+      "id": "vanish-lucifer",
+      "name": "Vanish Lucifer",
+      "aliases": [
+        "BanisshuRushifā",
+        "VanishLucifer"
+      ],
+      "type": "defense",
+      "line": "ux",
+      "integratedRatchet": true,
+      "releaseSet": "UX-22"
     },
     {
       "id": "venom",
@@ -3318,6 +3330,20 @@
         "sta": 30
       },
       "image": "metal-needle.png"
+    },
+    {
+      "id": "metal-orb",
+      "name": "Metal Orb",
+      "type": "stamina",
+      "shortName": "MO",
+      "aliases": [
+        "Metaru Ōbu"
+      ],
+      "stats": {
+        "atk": 5,
+        "def": 30,
+        "sta": 55
+      }
     },
     {
       "id": "metal-taper",

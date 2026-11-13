@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-09",
+  "version": "2026-11-13",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -4903,6 +4903,46 @@
         "wikiFile": "RatchetBladeValorBison.png",
         "fetchedAt": "2026-08-19"
       }
+    },
+    {
+      "id": "vanish-lucifer",
+      "category": "blade",
+      "line": "ux",
+      "names": {
+        "tt": "Vanish Lucifer",
+        "ja": "バニッシュルシファー",
+        "romaji": "BanisshuRushifā",
+        "hasbro": null
+      },
+      "aliases": [
+        {
+          "value": "バニッシュルシファー",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "BanisshuRushifā",
+          "lang": "ja",
+          "kind": "romaji"
+        },
+        {
+          "value": "VanishLucifer",
+          "lang": "en",
+          "kind": "community"
+        }
+      ],
+      "products": [
+        "UX-22"
+      ],
+      "firstReleaseSet": "UX-22",
+      "source": {
+        "page": "VanishLucifer WW",
+        "url": "https://beyblade.fandom.com/wiki/VanishLucifer_WW"
+      },
+      "lastVerified": "2026-11-13",
+      "status": "verified",
+      "type": "defense",
+      "integratedRatchet": true
     },
     {
       "id": "venom",
@@ -12397,6 +12437,44 @@
         "file": "metal-needle.png",
         "wikiFile": "BitMetalNeedle.png",
         "fetchedAt": "2026-08-19"
+      }
+    },
+    {
+      "id": "metal-orb",
+      "category": "bit",
+      "names": {
+        "tt": "Metal Orb",
+        "ja": "メタルオーブ",
+        "romaji": "Metaru Ōbu"
+      },
+      "aliases": [
+        {
+          "value": "メタルオーブ",
+          "lang": "ja",
+          "kind": "native"
+        },
+        {
+          "value": "Metaru Ōbu",
+          "lang": "ja",
+          "kind": "romaji"
+        }
+      ],
+      "products": [
+        "BX-55"
+      ],
+      "firstReleaseSet": "BX-55",
+      "source": {
+        "page": "Bit - Metal Orb",
+        "url": "https://beyblade.fandom.com/wiki/Bit_-_Metal_Orb"
+      },
+      "lastVerified": "2026-11-13",
+      "status": "verified",
+      "type": "stamina",
+      "shortName": "MO",
+      "stats": {
+        "atk": 5,
+        "def": 30,
+        "sta": 55
       }
     },
     {
