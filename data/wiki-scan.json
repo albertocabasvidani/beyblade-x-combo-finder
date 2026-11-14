@@ -2,43 +2,43 @@
   "version": 1,
   "lists": {
     "List of Beyblade X products (Takara Tomy)": {
-      "revid": 652944,
-      "timestamp": "2026-11-12T16:13:33.000Z",
-      "lastScannedDate": "2026-11-13"
+      "revid": 653199,
+      "timestamp": "2026-11-13T07:21:44.000Z",
+      "lastScannedDate": "2026-11-14"
     },
     "List of Beyblade X products (Hasbro)": {
-      "revid": 648918,
-      "timestamp": "2026-09-14T01:43:54.000Z",
-      "lastScannedDate": "2026-11-13"
+      "revid": 653016,
+      "timestamp": "2026-11-13T03:23:04.000Z",
+      "lastScannedDate": "2026-11-14"
     }
   },
   "pages": {
     "List of Beyblade X products (Takara Tomy)": {
-      "revid": 652944,
-      "timestamp": "2026-11-12T16:13:33.000Z",
-      "lastScannedDate": "2026-11-13",
+      "revid": 653199,
+      "timestamp": "2026-11-13T07:21:44.000Z",
+      "lastScannedDate": "2026-11-14",
       "kind": "product",
       "kindSource": "heuristic",
       "notes": "pagina-lista"
     },
     "List of Beyblade X products (Hasbro)": {
-      "revid": 648918,
-      "timestamp": "2026-09-14T01:43:54.000Z",
-      "lastScannedDate": "2026-09-14",
+      "revid": 653016,
+      "timestamp": "2026-11-13T03:23:04.000Z",
+      "lastScannedDate": "2026-11-14",
       "kind": "product",
       "kindSource": "heuristic",
       "notes": "pagina lista: aggiunta riga NFL CX Top Pack, nessuna parte da estrarre da qui"
     },
     "DranSword 3-60F": {
-      "revid": 652348,
-      "timestamp": "2026-11-04T10:44:45.000Z",
-      "lastScannedDate": "2026-11-05",
+      "revid": 653295,
+      "timestamp": "2026-11-14T00:50:20.000Z",
+      "lastScannedDate": "2026-11-14",
       "kind": "product",
       "kindSource": "ai",
       "redirects": [
         "Sword Dran 3-60F"
       ],
-      "notes": "modifica di contenuto (Version 2.0), nessuna parte nuova"
+      "notes": "parti già nel master"
     },
     "HeavensRing 0-80DS": {
       "revid": 651861,
@@ -76,20 +76,20 @@
       "notes": "pagina modificata; parti gia presenti nel master, nessuna nuova"
     },
     "Random Booster Vol. 11": {
-      "revid": 652893,
-      "timestamp": "2026-11-12T15:21:26.000Z",
-      "lastScannedDate": "2026-11-13",
+      "revid": 653018,
+      "timestamp": "2026-11-13T03:25:58.000Z",
+      "lastScannedDate": "2026-11-14",
       "kind": "randombooster",
       "kindSource": "ai",
-      "notes": "nessuna parte nuova"
+      "notes": "solo bey già registrati"
     },
     "Random Booster Vol. 10": {
-      "revid": 640573,
-      "timestamp": null,
-      "lastScannedDate": "2026-07-26",
+      "revid": 653017,
+      "timestamp": "2026-11-13T03:25:49.000Z",
+      "lastScannedDate": "2026-11-14",
       "kind": "randombooster",
-      "kindSource": "heuristic",
-      "notes": "CX-17 (25/04/2026). 6 slot: UnicornDelta PO3-60GU/PO1-80GR (CX Expand, lockChip Unicorn/overBlade Peak/mainBlade Delta/assist Odd), SamuraiSaber 9-65LO, HellsHammer 3-85GU, TyrannoBeat 3-60N, CrimsonGaruda 7-80GU. Tutte ricombinazioni di parti già registrate (bit Low Orb/Gear Unite/Gear Rush, ratchet 9-65/3-85/3-60/7-80/1-80 già noti)."
+      "kindSource": "ai",
+      "notes": "solo bey già registrati"
     },
     "Random Booster BrachioWhip Select": {
       "revid": 645916,
@@ -266,15 +266,15 @@
       "notes": "Revid cambiato, verificato: nessun nuovo componente (solo modifiche testuali/gallery/date release)."
     },
     "BahamutBlitz BK1-50I": {
-      "revid": 651398,
-      "timestamp": "2026-10-18T12:00:29.000Z",
-      "lastScannedDate": "2026-10-19",
+      "revid": 653198,
+      "timestamp": "2026-11-13T07:15:35.000Z",
+      "lastScannedDate": "2026-11-14",
       "kind": "product",
       "kindSource": "ai",
       "redirects": [
         "Blitz Bahamut BK 1-50I"
       ],
-      "notes": "gia' nel master, nessuna parte nuova"
+      "notes": "parti già nel master"
     },
     "RagnaRage FE4-55Y": {
       "revid": 651186,
@@ -463,15 +463,15 @@
       "kindSource": "heuristic"
     },
     "CrocoTread TQ5-50GN": {
-      "revid": 652874,
-      "timestamp": "2026-11-12T02:42:06.000Z",
-      "lastScannedDate": "2026-11-12",
+      "revid": 653291,
+      "timestamp": "2026-11-14T00:47:21.000Z",
+      "lastScannedDate": "2026-11-14",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Tread Croc TQ 5-50GN"
       ],
-      "notes": "CX Expand, parti gia' nel master"
+      "notes": "parti già nel master"
     },
     "Gust Bat 3-85GP": {
       "revid": 641666,
@@ -705,11 +705,12 @@
       "notes": "gia nel master"
     },
     "Ratchet-Integrated Blade - HellsNether": {
-      "revid": 646461,
-      "timestamp": "2026-08-17T22:36:12.000Z",
-      "lastScannedDate": "2026-08-18",
-      "kind": "product",
-      "kindSource": "heuristic"
+      "revid": 653189,
+      "timestamp": "2026-11-13T06:07:00.000Z",
+      "lastScannedDate": "2026-11-14",
+      "kind": "part",
+      "kindSource": "ai",
+      "notes": "già nel master"
     },
     "Blade - Hover Wyvern": {
       "revid": 643699,
@@ -2758,9 +2759,9 @@
       "kindSource": "heuristic"
     },
     "Winder Launcher": {
-      "revid": 652900,
-      "timestamp": "2026-11-12T15:30:47.000Z",
-      "lastScannedDate": "2026-11-13",
+      "revid": 653197,
+      "timestamp": "2026-11-13T07:13:47.000Z",
+      "lastScannedDate": "2026-11-14",
       "kind": "accessory",
       "kindSource": "heuristic"
     },
@@ -3048,18 +3049,18 @@
     "Blade - SiegSuperion": {
       "revid": 651639,
       "timestamp": "2026-10-23T06:33:31.000Z",
-      "lastScannedDate": "2026-11-13",
+      "lastScannedDate": "2026-11-14",
       "kind": "part",
-      "kindSource": "heuristic",
-      "notes": "parte già nel master, nessun cambio di nome/tipo"
+      "kindSource": "ai",
+      "notes": "già nel master (id suppress-superion)"
     },
     "SiegSuperion 0-70LP": {
       "revid": 651640,
       "timestamp": "2026-10-23T06:33:39.000Z",
-      "lastScannedDate": "2026-11-13",
+      "lastScannedDate": "2026-11-14",
       "kind": "product",
-      "kindSource": "heuristic",
-      "notes": "prodotto BX-54, parti già nel master"
+      "kindSource": "ai",
+      "notes": "parti già nel master"
     },
     "Bey Kick Off Set": {
       "revid": 599877,
@@ -3183,20 +3184,20 @@
       "kindSource": "heuristic"
     },
     "Random Booster Vol. 12": {
-      "revid": 652896,
-      "timestamp": "2026-11-12T15:26:57.000Z",
-      "lastScannedDate": "2026-11-13",
+      "revid": 653019,
+      "timestamp": "2026-11-13T03:26:18.000Z",
+      "lastScannedDate": "2026-11-14",
       "kind": "randombooster",
       "kindSource": "ai",
-      "notes": "assortimento di bey già noti, nessuna parte nuova"
+      "notes": "solo bey già registrati"
     },
     "VanishLucifer WW": {
-      "revid": 652986,
-      "timestamp": "2026-11-13T01:36:02.000Z",
-      "lastScannedDate": "2026-11-13",
+      "revid": 653012,
+      "timestamp": "2026-11-13T03:17:07.000Z",
+      "lastScannedDate": "2026-11-14",
       "kind": "product",
       "kindSource": "ai",
-      "notes": "UX-22 Expand Blade, lama con cricchetto integrato nuova + bit Wall Wedge già nel master"
+      "notes": "unreleased, già nel master"
     },
     "Bit - Metal Orb": {
       "revid": 652902,
@@ -3205,6 +3206,14 @@
       "kind": "part",
       "kindSource": "ai",
       "notes": "recupero verify:wiki"
+    },
+    "Lightning Hunters Multipack": {
+      "revid": 652958,
+      "timestamp": "2026-11-13T00:54:40.000Z",
+      "lastScannedDate": "2026-11-14",
+      "kind": "multipack",
+      "kindSource": "ai",
+      "notes": "3 bey Hasbro già esistenti, solo recolor"
     }
   }
 }
