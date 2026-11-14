@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-14T03:14:02.826Z",
+  "lastUpdated": "2026-11-14T03:15:34.395Z",
   "combos": [
     {
       "id": "wizard-rod-1-60-hexa",
@@ -128297,7 +128297,7 @@
       "type": "attack",
       "score": 4.22,
       "scoreBreakdown": {
-        "performance": 0.641,
+        "performance": 0.64,
         "presence": 0,
         "corroboration": 0.615,
         "tournamentEvents": 35,
@@ -128841,7 +128841,7 @@
           ]
         },
         "365": {
-          "performance": 0.641,
+          "performance": 0.64,
           "presence": 0,
           "corroboration": 0.615,
           "tournamentEvents": 35,
@@ -134533,7 +134533,7 @@
             "xtreme",
             "infinity"
           ],
-          "score": 3.15,
+          "score": 3.14,
           "tags": [
             "tournament-proven"
           ]
@@ -145667,7 +145667,7 @@
       "type": "attack",
       "score": 3.39,
       "scoreBreakdown": {
-        "performance": 0.507,
+        "performance": 0.506,
         "presence": 0,
         "corroboration": 0.583,
         "tournamentEvents": 23,
@@ -146064,7 +146064,7 @@
           ]
         },
         "365": {
-          "performance": 0.507,
+          "performance": 0.506,
           "presence": 0,
           "corroboration": 0.583,
           "tournamentEvents": 23,
@@ -206641,7 +206641,7 @@
       },
       "windows": {
         "180": {
-          "performance": 0.153,
+          "performance": 0.152,
           "presence": 0,
           "corroboration": 0.5,
           "tournamentEvents": 5,
@@ -274518,7 +274518,7 @@
       "type": "balance",
       "score": 0.96,
       "scoreBreakdown": {
-        "performance": 0.085,
+        "performance": 0.084,
         "presence": 0,
         "corroboration": 0.583,
         "tournamentEvents": 3,
@@ -274653,7 +274653,7 @@
           ]
         },
         "365": {
-          "performance": 0.085,
+          "performance": 0.084,
           "presence": 0,
           "corroboration": 0.583,
           "tournamentEvents": 3,
@@ -661854,5 +661854,5 @@
       "solid": 5.5
     }
   },
-  "windowsRef": "2026-11-14T03:13:51.344Z"
+  "windowsRef": "2026-11-14T03:15:33.531Z"
 }
