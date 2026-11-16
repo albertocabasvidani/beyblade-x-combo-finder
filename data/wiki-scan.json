@@ -4,12 +4,12 @@
     "List of Beyblade X products (Takara Tomy)": {
       "revid": 653199,
       "timestamp": "2026-11-13T07:21:44.000Z",
-      "lastScannedDate": "2026-11-15"
+      "lastScannedDate": "2026-11-16"
     },
     "List of Beyblade X products (Hasbro)": {
       "revid": 653016,
       "timestamp": "2026-11-13T03:23:04.000Z",
-      "lastScannedDate": "2026-11-15"
+      "lastScannedDate": "2026-11-16"
     }
   },
   "pages": {
@@ -151,12 +151,12 @@
       "notes": "parti già nel master"
     },
     "LeonCrest 7-60GN": {
-      "revid": 652946,
-      "timestamp": "2026-11-12T17:14:32.000Z",
-      "lastScannedDate": "2026-11-13",
+      "revid": 653393,
+      "timestamp": "2026-11-15T04:37:35.000Z",
+      "lastScannedDate": "2026-11-16",
       "kind": "product",
-      "kindSource": "heuristic",
-      "notes": "Aggiunto G3084 Rival Rumble Pack (stesso combo): nessuna parte nuova."
+      "kindSource": "ai",
+      "notes": "parti già nel master"
     },
     "Ratchet - 3-60": {
       "revid": 652976,
@@ -266,9 +266,9 @@
       "notes": "Revid cambiato, verificato: nessun nuovo componente (solo modifiche testuali/gallery/date release)."
     },
     "BahamutBlitz BK1-50I": {
-      "revid": 653325,
-      "timestamp": "2026-11-14T04:09:51.000Z",
-      "lastScannedDate": "2026-11-15",
+      "revid": 653502,
+      "timestamp": "2026-11-16T01:18:04.000Z",
+      "lastScannedDate": "2026-11-16",
       "kind": "product",
       "kindSource": "ai",
       "redirects": [
@@ -481,11 +481,12 @@
       "kindSource": "heuristic"
     },
     "Fang Leon T 4-60U": {
-      "revid": 652945,
-      "timestamp": "2026-11-12T16:15:38.000Z",
-      "lastScannedDate": "2026-11-13",
+      "revid": 653391,
+      "timestamp": "2026-11-15T03:50:50.000Z",
+      "lastScannedDate": "2026-11-16",
       "kind": "product",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "parti già nel master"
     },
     "AeroPegasus 3-70A": {
       "revid": 650029,
@@ -744,15 +745,15 @@
       "kindSource": "heuristic"
     },
     "KnightShield 3-80N": {
-      "revid": 652352,
-      "timestamp": "2026-11-04T11:14:15.000Z",
-      "lastScannedDate": "2026-11-05",
+      "revid": 653464,
+      "timestamp": "2026-11-15T11:43:57.000Z",
+      "lastScannedDate": "2026-11-16",
       "kind": "product",
       "kindSource": "ai",
       "redirects": [
         "Helm Knight 3-80N"
       ],
-      "notes": "modifica di contenuto, nessuna parte nuova"
+      "notes": "parti già nel master"
     },
     "Blade - Lightning L-Drago (Rapid-Hit Type)": {
       "revid": 632018,
@@ -1051,15 +1052,15 @@
       "kindSource": "heuristic"
     },
     "WizardArrow 4-80B": {
-      "revid": 652349,
-      "timestamp": "2026-11-04T10:44:47.000Z",
-      "lastScannedDate": "2026-11-05",
+      "revid": 653465,
+      "timestamp": "2026-11-15T11:46:28.000Z",
+      "lastScannedDate": "2026-11-16",
       "kind": "product",
       "kindSource": "ai",
       "redirects": [
         "Arrow Wizard 4-80B"
       ],
-      "notes": "pagina provvisoria, nessuna parte nuova"
+      "notes": "parti già nel master"
     },
     "WizardRod 5-70DB": {
       "revid": 651956,
@@ -1158,11 +1159,12 @@
       "notes": "parti gia nel master"
     },
     "LeonFang T4-60A": {
-      "revid": 652947,
-      "timestamp": "2026-11-12T17:35:32.000Z",
-      "lastScannedDate": "2026-11-13",
+      "revid": 653390,
+      "timestamp": "2026-11-15T03:49:32.000Z",
+      "lastScannedDate": "2026-11-16",
       "kind": "product",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "parti già nel master"
     },
     "PerseusDark B6-80W": {
       "revid": 651927,
@@ -1225,12 +1227,12 @@
       "notes": "aggiunta localizzazione Hasbro (Delta Unicorn, G2752); tutte le 6 parti CX Expand gia' nel master"
     },
     "ValkyrieVolt S4-70V": {
-      "revid": 651184,
-      "timestamp": "2026-10-15T14:36:06.000Z",
-      "lastScannedDate": "2026-10-16",
+      "revid": 653499,
+      "timestamp": "2026-11-15T22:00:16.000Z",
+      "lastScannedDate": "2026-11-16",
       "kind": "product",
-      "kindSource": "heuristic",
-      "notes": "parti gia' nel master"
+      "kindSource": "ai",
+      "notes": "parti già nel master"
     },
     "WizardArc R4-55LO": {
       "revid": 651922,
@@ -1243,11 +1245,12 @@
       ]
     },
     "WolfHunt F0-60DB": {
-      "revid": 652963,
-      "timestamp": "2026-11-13T00:57:57.000Z",
-      "lastScannedDate": "2026-11-13",
+      "revid": 653505,
+      "timestamp": "2026-11-16T02:25:27.000Z",
+      "lastScannedDate": "2026-11-16",
       "kind": "product",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "parti già nel master"
     },
     "Metal Blade - Tread": {
       "revid": 646068,
@@ -3049,7 +3052,7 @@
     "Blade - SiegSuperion": {
       "revid": 651639,
       "timestamp": "2026-10-23T06:33:31.000Z",
-      "lastScannedDate": "2026-11-15",
+      "lastScannedDate": "2026-11-16",
       "kind": "part",
       "kindSource": "ai",
       "notes": "già nel master come suppress-superion"
@@ -3057,7 +3060,7 @@
     "SiegSuperion 0-70LP": {
       "revid": 653377,
       "timestamp": "2026-11-14T13:40:09.000Z",
-      "lastScannedDate": "2026-11-15",
+      "lastScannedDate": "2026-11-16",
       "kind": "product",
       "kindSource": "ai",
       "notes": "parti già nel master"
@@ -3184,12 +3187,12 @@
       "kindSource": "heuristic"
     },
     "Random Booster Vol. 12": {
-      "revid": 653019,
-      "timestamp": "2026-11-13T03:26:18.000Z",
-      "lastScannedDate": "2026-11-14",
+      "revid": 653388,
+      "timestamp": "2026-11-15T03:47:21.000Z",
+      "lastScannedDate": "2026-11-16",
       "kind": "randombooster",
       "kindSource": "ai",
-      "notes": "solo bey già registrati"
+      "notes": "assortimento di bey già noti"
     },
     "VanishLucifer WW": {
       "revid": 653012,
@@ -3208,12 +3211,12 @@
       "notes": "recupero verify:wiki"
     },
     "Lightning Hunters Multipack": {
-      "revid": 652958,
-      "timestamp": "2026-11-13T00:54:40.000Z",
-      "lastScannedDate": "2026-11-14",
+      "revid": 653504,
+      "timestamp": "2026-11-16T02:18:07.000Z",
+      "lastScannedDate": "2026-11-16",
       "kind": "multipack",
       "kindSource": "ai",
-      "notes": "3 bey Hasbro già esistenti, solo recolor"
+      "notes": "membri già noti"
     }
   }
 }
