@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-13",
+  "version": "2026-11-17",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -4438,7 +4438,7 @@
         "revid": 650337
       },
       "status": "verified",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "image": {
         "file": "suppress-superion.png",
         "wikiFile": "BladeSiegSuperion.png",
@@ -6633,10 +6633,11 @@
         "revid": 643064
       },
       "status": "verified",
-      "lastVerified": "2026-09-15",
+      "lastVerified": "2026-11-17",
       "products": [
         "CX-10",
-        "BX-50"
+        "BX-50",
+        "G4706"
       ],
       "firstReleaseSet": "CX-10",
       "image": {
@@ -7350,9 +7351,10 @@
         "revid": 643064
       },
       "status": "verified",
-      "lastVerified": "2026-09-15",
+      "lastVerified": "2026-11-17",
       "products": [
-        "CX-10"
+        "CX-10",
+        "G4706"
       ],
       "firstReleaseSet": "CX-10",
       "stats": {
@@ -7364,7 +7366,8 @@
         "file": "hunt.png",
         "wikiFile": "MainBladeHunt.png",
         "fetchedAt": "2026-08-19"
-      }
+      },
+      "type": "stamina"
     },
     {
       "id": "hurricane",
@@ -7942,9 +7945,10 @@
         "revid": 643064
       },
       "status": "verified",
-      "lastVerified": "2026-09-15",
+      "lastVerified": "2026-11-17",
       "products": [
-        "CX-10"
+        "CX-10",
+        "G4706"
       ],
       "firstReleaseSet": "CX-10",
       "image": {
@@ -8851,7 +8855,8 @@
         }
       ],
       "products": [
-        "CX-10"
+        "CX-10",
+        "G4706"
       ],
       "firstReleaseSet": "CX-10",
       "source": {
@@ -8859,7 +8864,7 @@
         "url": "https://beyblade.fandom.com/wiki/WolfHunt_F0-60DB",
         "revid": 643064
       },
-      "lastVerified": "2026-09-15",
+      "lastVerified": "2026-11-17",
       "status": "verified",
       "stats": {
         "atk": 3,
@@ -8907,7 +8912,7 @@
         "url": "https://beyblade.fandom.com/wiki/ScorpioSpear_0-70Z",
         "revid": 644111
       },
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "status": "verified",
       "image": {
         "file": "0-70.png",
@@ -11036,7 +11041,7 @@
         "revid": 633671
       },
       "status": "verified",
-      "lastVerified": "2026-09-15",
+      "lastVerified": "2026-11-17",
       "products": [
         "UX-03",
         "CX-06",
@@ -11044,7 +11049,8 @@
         "G1537",
         "BX-00",
         "G1751",
-        "UX-00"
+        "UX-00",
+        "G4706"
       ],
       "firstReleaseSet": "UX-03",
       "shortName": "DB",
@@ -12279,7 +12285,7 @@
         "revid": 646219
       },
       "status": "verified",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "image": {
         "file": "low-point.png",
         "wikiFile": "BitLowPoint.png",
@@ -12445,7 +12451,8 @@
       "names": {
         "tt": "Metal Orb",
         "ja": "メタルオーブ",
-        "romaji": "Metaru Ōbu"
+        "romaji": "Metaru Ōbu",
+        "hasbro": null
       },
       "aliases": [
         {

@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-13",
+  "version": "2026-11-17",
   "blades": [
     {
       "id": "aero-pegasus",
@@ -2176,6 +2176,7 @@
     {
       "id": "hunt",
       "name": "Hunt",
+      "type": "stamina",
       "line": "cx",
       "stats": {
         "atk": 20,
