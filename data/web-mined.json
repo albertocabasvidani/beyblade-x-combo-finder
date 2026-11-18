@@ -8,9 +8,9 @@
     },
     "https://beywatch.gg/tournaments?page=2": {
       "sourceId": "website-beywatch-gg",
-      "hash": "e4c0823115368fceb6c6a35ac9c59e7b72733e7c62afee98e0f1eaeabd9fc707",
-      "minedDate": "2026-11-14",
-      "combosFound": 11
+      "hash": "5e3d598f7d4ad4a012000218e05b21185276bbe19d94db7862da6b59a6310550",
+      "minedDate": "2026-11-18",
+      "combosFound": 3
     },
     "https://okuyama3093.com/beyblade-3on3deck-strongest/": {
       "sourceId": "okuyama3093",
@@ -38,11 +38,11 @@
     },
     "https://sbbl.es/beyblade-database/beyblade-stats": {
       "sourceId": "sbbl",
-      "hash": "374ec0d37e872e1d7e78e27ed90f01a8d8c088803b8ffc2df6bdfa30be954981",
-      "minedDate": "2026-11-16",
-      "combosFound": 65
+      "hash": "43e74f6c7e71757d27b48de3d71fbe4ac90c424a9e9012e67314d52b5911343a",
+      "minedDate": "2026-11-18",
+      "combosFound": 54
     }
   },
-  "letture": 21,
-  "lastRun": "2026-11-16"
+  "letture": 23,
+  "lastRun": "2026-11-18"
 }
