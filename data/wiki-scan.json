@@ -4,12 +4,12 @@
     "List of Beyblade X products (Takara Tomy)": {
       "revid": 653199,
       "timestamp": "2026-11-13T07:21:44.000Z",
-      "lastScannedDate": "2026-11-17"
+      "lastScannedDate": "2026-11-18"
     },
     "List of Beyblade X products (Hasbro)": {
       "revid": 653016,
       "timestamp": "2026-11-13T03:23:04.000Z",
-      "lastScannedDate": "2026-11-17"
+      "lastScannedDate": "2026-11-18"
     }
   },
   "pages": {
@@ -1193,12 +1193,12 @@
       "kindSource": "heuristic"
     },
     "SolEclipse D5-70TK": {
-      "revid": 650238,
-      "timestamp": "2026-10-01T03:16:15.000Z",
-      "lastScannedDate": "2026-10-02",
+      "revid": 653515,
+      "timestamp": "2026-11-17T11:32:30.000Z",
+      "lastScannedDate": "2026-11-18",
       "kind": "product",
       "kindSource": "ai",
-      "notes": "pagina modificata; parti gia presenti nel master, nessuna nuova"
+      "notes": "CX-09, parti già nel master"
     },
     "Antler Stag B 2-60HN": {
       "revid": 641745,
@@ -3052,15 +3052,15 @@
     "Blade - SiegSuperion": {
       "revid": 651639,
       "timestamp": "2026-10-23T06:33:31.000Z",
-      "lastScannedDate": "2026-11-17",
+      "lastScannedDate": "2026-11-18",
       "kind": "part",
       "kindSource": "ai",
-      "notes": "parte già nel master"
+      "notes": "parte già nel master (suppress-superion), nessun dato nuovo"
     },
     "SiegSuperion 0-70LP": {
       "revid": 653377,
       "timestamp": "2026-11-14T13:40:09.000Z",
-      "lastScannedDate": "2026-11-17",
+      "lastScannedDate": "2026-11-18",
       "kind": "product",
       "kindSource": "ai",
       "notes": "BX-54, parti già nel master"
