@@ -259,7 +259,7 @@ mai via API a pagamento. L'IA non calcola mai lo score né ri-parsa ciò che il 
 ### Script raccolta combo (`npm run collect:sources`)
 - `scrape:reddit` (**via Bright Data**, non contatta Reddit: chiede gli ultimi `REDDIT_BD_LIMIT` post di r/Beyblade,
   default 70, e li riceve con i commenti. In due tempi, uno per notte: ritira la richiesta del giro prima e ne lancia
-  una nuova, stato in `data/reddit-bd-state.json`. Filtro sulle parole di torneo nel codice. Serve
+  una nuova, stato in `data/reddit-bd-state.json` (gitignorato, vive solo sul server). Filtro sulle parole di torneo nel codice. Serve
   `BRIGHTDATA_API_KEY` nel `.env`: senza, «fonte spenta» ed exit 0. Golden test `npm run test:reddit-bd`),
   `fetch:youtube` (API key; discovery + **arricchimento** via `videos?part=snippet`: tags, descrizione
   completa, `defaultAudioLanguage` → cache **cumulativa** + **pre-filtro deterministico**
