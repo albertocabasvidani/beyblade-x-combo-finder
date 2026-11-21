@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-19T03:12:36.119Z",
+  "lastUpdated": "2026-11-21T03:14:15.740Z",
   "combos": [
     {
       "id": "aero-pegasus-1-70-low-flat",
@@ -4916,6 +4916,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 365d)",
       "archivedDate": "2026-11-09"
+    },
+    {
+      "id": "emperor-might-heavy-9-60-level",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "level",
+      "lockChip": "emperor",
+      "mainBlade": "might",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Emperor Might H 9-60 Level",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Nov. 20, 2025  5:08 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-20"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-21",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-21"
     },
     {
       "id": "emperor-might-wheel-0-60-hexa",
@@ -26578,6 +26622,51 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 365d)",
       "archivedDate": "2026-10-10"
+    },
+    {
+      "id": "tyranno-roar-1-70-kick",
+      "line": "bx",
+      "blade": "tyranno-roar",
+      "ratchet": "1-70",
+      "bit": "kick",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Tyranno Roar 1-70 Kick",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "Combo segnalata su Reddit r/Beyblade.",
+      "sources": [
+        {
+          "name": "Reddit r/Beyblade",
+          "url": "https://reddit.com/r/Beyblade/comments/1p2bmg2/good_deck_combo/",
+          "weight": 0.6,
+          "date": "2025-11-20"
+        }
+      ],
+      "amazon": {},
+      "dateAdded": "2026-06-16",
+      "dateUpdated": "2026-11-21",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-21"
     },
     {
       "id": "tyranno-roar-3-60-point",
