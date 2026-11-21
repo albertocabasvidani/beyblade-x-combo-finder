@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-20",
+  "version": "2026-11-21",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -1763,7 +1763,8 @@
         "BX-00",
         "F9583",
         "BX-08",
-        "G0285"
+        "G0285",
+        "CX-20"
       ],
       "source": {
         "page": "HellsScythe 4-60T",
@@ -1771,7 +1772,7 @@
         "revid": 640400
       },
       "status": "verified",
-      "lastVerified": "2026-09-15",
+      "lastVerified": "2026-11-21",
       "stats": {
         "atk": 30,
         "def": 35,
@@ -3797,7 +3798,8 @@
       "firstReleaseSet": "UX-15",
       "products": [
         "UX-15",
-        "G2731"
+        "G2731",
+        "CX-20"
       ],
       "source": {
         "page": "SharkScale Deck Set",
@@ -3805,7 +3807,7 @@
         "revid": 634335
       },
       "status": "verified",
-      "lastVerified": "2026-09-15",
+      "lastVerified": "2026-11-21",
       "stats": {
         "atk": 70,
         "def": 15,
@@ -5344,7 +5346,8 @@
         "UX-03",
         "G1537",
         "BX-35",
-        "G1538"
+        "G1538",
+        "CX-20"
       ],
       "source": {
         "page": "WizardRod 5-70DB",
@@ -5352,7 +5355,7 @@
         "revid": 633671
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-11-21",
       "stats": {
         "atk": 15,
         "def": 25,
@@ -6242,9 +6245,10 @@
         "revid": 643472
       },
       "status": "verified",
-      "lastVerified": "2026-09-15",
+      "lastVerified": "2026-11-21",
       "products": [
-        "CX-12"
+        "CX-12",
+        "CX-20"
       ],
       "firstReleaseSet": "CX-12",
       "image": {
@@ -7237,7 +7241,7 @@
         "page": "PhoenixForce WHM-65MT",
         "url": "https://beyblade.fandom.com/wiki/PhoenixForce_WHM-65MT"
       },
-      "lastVerified": "2026-10-15",
+      "lastVerified": "2026-11-21",
       "status": "verified",
       "type": "balance",
       "metal": true
@@ -8032,10 +8036,11 @@
         "revid": 646155
       },
       "status": "verified",
-      "lastVerified": "2026-11-08",
+      "lastVerified": "2026-11-21",
       "products": [
         "CX-11",
-        "G3028"
+        "G3028",
+        "CX-20"
       ],
       "firstReleaseSet": "EmperorMight Deck Set",
       "image": {
@@ -8826,7 +8831,7 @@
         "page": "PhoenixForce WHM-65MT",
         "url": "https://beyblade.fandom.com/wiki/PhoenixForce_WHM-65MT"
       },
-      "lastVerified": "2026-10-15",
+      "lastVerified": "2026-11-21",
       "status": "verified",
       "type": "balance"
     }
@@ -9105,10 +9110,11 @@
         "revid": 634335
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-11-21",
       "products": [
         "UX-15",
-        "CX-00"
+        "CX-00",
+        "CX-20"
       ],
       "firstReleaseSet": "SharkScale Deck Set",
       "stats": {
@@ -10486,7 +10492,8 @@
         }
       ],
       "products": [
-        "UX-21"
+        "UX-21",
+        "CX-20"
       ],
       "firstReleaseSet": "UX-21",
       "source": {
@@ -10494,8 +10501,8 @@
         "url": "https://beyblade.fandom.com/wiki/Ratchet_-_8-80",
         "revid": 646061
       },
-      "lastVerified": "2026-08-13",
-      "status": "unverified",
+      "lastVerified": "2026-11-21",
+      "status": "verified",
       "stats": {
         "atk": 8,
         "def": 9,
@@ -10744,7 +10751,7 @@
         "page": "PhoenixForce WHM-65MT",
         "url": "https://beyblade.fandom.com/wiki/PhoenixForce_WHM-65MT"
       },
-      "lastVerified": "2026-10-15",
+      "lastVerified": "2026-11-21",
       "status": "verified"
     },
     {
@@ -11837,7 +11844,7 @@
         "revid": 645428
       },
       "status": "verified",
-      "lastVerified": "2026-09-15",
+      "lastVerified": "2026-11-21",
       "products": [
         "BX-13",
         "G1694",
@@ -11849,7 +11856,8 @@
         "G0190",
         "BX-16",
         "G0282",
-        "G3028"
+        "G3028",
+        "CX-20"
       ],
       "firstReleaseSet": "BX-13",
       "shortName": "HN",
@@ -12041,12 +12049,13 @@
         "revid": 641562
       },
       "status": "verified",
-      "lastVerified": "2026-08-14",
+      "lastVerified": "2026-11-21",
       "products": [
         "CX-05",
         "UX-00",
         "G2763",
-        "G1678"
+        "G1678",
+        "CX-20"
       ],
       "firstReleaseSet": "Random Booster Vol. 6",
       "shortName": "K",
@@ -12231,12 +12240,13 @@
         "revid": 643067
       },
       "status": "verified",
-      "lastVerified": "2026-09-15",
+      "lastVerified": "2026-11-21",
       "products": [
         "CX-02",
         "CX-17",
         "G1679",
-        "G2758"
+        "G2758",
+        "CX-20"
       ],
       "firstReleaseSet": "WizardArc R4-55LO",
       "shortName": "LO",
@@ -12325,11 +12335,12 @@
         "revid": 646178
       },
       "status": "verified",
-      "lastVerified": "2026-08-25",
+      "lastVerified": "2026-11-21",
       "products": [
         "UX-11",
         "G0842",
-        "G2755"
+        "G2755",
+        "CX-20"
       ],
       "firstReleaseSet": "ImpactDrake 9-60LR",
       "shortName": "LR",
@@ -12514,7 +12525,7 @@
         "page": "PhoenixForce WHM-65MT",
         "url": "https://beyblade.fandom.com/wiki/PhoenixForce_WHM-65MT"
       },
-      "lastVerified": "2026-10-15",
+      "lastVerified": "2026-11-21",
       "status": "verified",
       "type": "balance"
     },
@@ -13209,7 +13220,8 @@
       ],
       "products": [
         "UX-15",
-        "G2731"
+        "G2731",
+        "CX-20"
       ],
       "firstReleaseSet": "SharkScale Deck Set",
       "source": {
@@ -13217,7 +13229,7 @@
         "url": "https://beyblade.fandom.com/wiki/SharkScale_Deck_Set",
         "revid": 634335
       },
-      "lastVerified": "2026-09-15",
+      "lastVerified": "2026-11-21",
       "status": "verified",
       "type": "attack",
       "shortName": "UF",

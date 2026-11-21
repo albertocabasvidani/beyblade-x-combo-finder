@@ -4,12 +4,12 @@
     "List of Beyblade X products (Takara Tomy)": {
       "revid": 653199,
       "timestamp": "2026-11-13T07:21:44.000Z",
-      "lastScannedDate": "2026-11-20"
+      "lastScannedDate": "2026-11-21"
     },
     "List of Beyblade X products (Hasbro)": {
       "revid": 653016,
       "timestamp": "2026-11-13T03:23:04.000Z",
-      "lastScannedDate": "2026-11-20"
+      "lastScannedDate": "2026-11-21"
     }
   },
   "pages": {
@@ -510,15 +510,15 @@
       "kindSource": "heuristic"
     },
     "BulletGriffon H": {
-      "revid": 651207,
-      "timestamp": "2026-10-16T05:20:26.000Z",
-      "lastScannedDate": "2026-10-17",
+      "revid": 653727,
+      "timestamp": "2026-11-20T17:20:39.000Z",
+      "lastScannedDate": "2026-11-21",
       "kind": "product",
       "kindSource": "ai",
       "redirects": [
         "Rocket Griffon H"
       ],
-      "notes": "parti gia nel master; cambio date/versione 2.0"
+      "notes": "parti già nel master; aggiornamento di contenuto"
     },
     "Bumblebee 3-60GP": {
       "revid": 639473,
@@ -696,15 +696,15 @@
       "notes": "solo trivia/gallery aggiornate, parti gia' in master"
     },
     "HellsScythe 4-60T": {
-      "revid": 651121,
-      "timestamp": "2026-10-15T03:34:43.000Z",
-      "lastScannedDate": "2026-10-16",
+      "revid": 653741,
+      "timestamp": "2026-11-21T01:26:33.000Z",
+      "lastScannedDate": "2026-11-21",
       "kind": "product",
-      "kindSource": "heuristic",
+      "kindSource": "ai",
       "redirects": [
         "Scythe Incendio 4-60T"
       ],
-      "notes": "gia nel master"
+      "notes": "parti già nel master; aggiornamento di contenuto"
     },
     "Ratchet-Integrated Blade - HellsNether": {
       "revid": 653189,
@@ -1053,15 +1053,15 @@
       "kindSource": "heuristic"
     },
     "WizardArrow 4-80B": {
-      "revid": 653465,
-      "timestamp": "2026-11-15T11:46:28.000Z",
-      "lastScannedDate": "2026-11-16",
+      "revid": 653683,
+      "timestamp": "2026-11-20T11:15:50.000Z",
+      "lastScannedDate": "2026-11-21",
       "kind": "product",
       "kindSource": "ai",
       "redirects": [
         "Arrow Wizard 4-80B"
       ],
-      "notes": "parti già nel master"
+      "notes": "parti già nel master; aggiornamento di contenuto"
     },
     "WizardRod 5-70DB": {
       "revid": 651956,
@@ -2865,11 +2865,12 @@
       "notes": "Hasbro battle set (G3745): Beystadium + Cutter Shinobi GF + Rampart Aegis B + 2 launchers. Le due bey sono pagine-prodotto separate, gia' in worklist."
     },
     "CobaltDrake 9-60R": {
-      "revid": 634354,
-      "timestamp": "2026-04-03T05:49:24.000Z",
-      "lastScannedDate": "2026-08-25",
+      "revid": 653705,
+      "timestamp": "2026-11-20T11:28:17.000Z",
+      "lastScannedDate": "2026-11-21",
       "kind": "product",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "parti già nel master; aggiornamento di contenuto"
     },
     "GoatTackle 7-70T": {
       "revid": 650241,
@@ -3053,18 +3054,18 @@
     "Blade - SiegSuperion": {
       "revid": 651639,
       "timestamp": "2026-10-23T06:33:31.000Z",
-      "lastScannedDate": "2026-11-20",
+      "lastScannedDate": "2026-11-21",
       "kind": "part",
       "kindSource": "ai",
-      "notes": "modifica di revid (Series, date); parte già nel master"
+      "notes": "parti già nel master; aggiornamento di contenuto"
     },
     "SiegSuperion 0-70LP": {
-      "revid": 653377,
-      "timestamp": "2026-11-14T13:40:09.000Z",
-      "lastScannedDate": "2026-11-20",
+      "revid": 653743,
+      "timestamp": "2026-11-21T02:56:38.000Z",
+      "lastScannedDate": "2026-11-21",
       "kind": "product",
       "kindSource": "ai",
-      "notes": "BX-54, Series Season 4; parti già nel master"
+      "notes": "parti già nel master; aggiornamento di contenuto"
     },
     "Bey Kick Off Set": {
       "revid": 599877,
@@ -3123,27 +3124,28 @@
       "notes": "parti gia nel master"
     },
     "Customize Set C": {
-      "revid": 651141,
-      "timestamp": "2026-10-15T04:32:33.000Z",
-      "lastScannedDate": "2026-10-16",
+      "revid": 653733,
+      "timestamp": "2026-11-20T22:43:12.000Z",
+      "lastScannedDate": "2026-11-21",
       "kind": "set",
-      "kindSource": "heuristic",
-      "notes": "set CX-20: contenuti gia' nel master tranne le 4 parti di PhoenixForce WHM-65MT"
+      "kindSource": "ai",
+      "notes": "parti già nel master; aggiornamento di contenuto"
     },
     "PhoenixForce WHM-65MT": {
-      "revid": 652460,
-      "timestamp": "2026-11-06T10:47:05.000Z",
-      "lastScannedDate": "2026-11-07",
+      "revid": 653744,
+      "timestamp": "2026-11-21T02:56:45.000Z",
+      "lastScannedDate": "2026-11-21",
       "kind": "product",
       "kindSource": "ai",
-      "notes": "parti già nel master"
+      "notes": "parti già nel master; aggiornamento di contenuto"
     },
     "Blade - HellsScythe": {
-      "revid": 650982,
-      "timestamp": "2026-10-14T15:18:16.000Z",
-      "lastScannedDate": "2026-10-15",
+      "revid": 653734,
+      "timestamp": "2026-11-20T22:55:50.000Z",
+      "lastScannedDate": "2026-11-21",
       "kind": "part",
-      "kindSource": "heuristic"
+      "kindSource": "ai",
+      "notes": "parti già nel master; aggiornamento di contenuto"
     },
     "Blade - SharkScale": {
       "revid": 651153,
