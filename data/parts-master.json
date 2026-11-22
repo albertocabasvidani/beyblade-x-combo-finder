@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-21",
+  "version": "2026-11-22",
   "generator": "scripts/bootstrap-master.ts (base) — arricchito da /scrape-parts-master",
   "blades": [
     {
@@ -1772,7 +1772,7 @@
         "revid": 640400
       },
       "status": "verified",
-      "lastVerified": "2026-11-21",
+      "lastVerified": "2026-11-22",
       "stats": {
         "atk": 30,
         "def": 35,
@@ -4440,7 +4440,7 @@
         "revid": 650337
       },
       "status": "verified",
-      "lastVerified": "2026-11-20",
+      "lastVerified": "2026-11-22",
       "image": {
         "file": "suppress-superion.png",
         "wikiFile": "BladeSiegSuperion.png",
@@ -6245,7 +6245,7 @@
         "revid": 643472
       },
       "status": "verified",
-      "lastVerified": "2026-11-21",
+      "lastVerified": "2026-11-22",
       "products": [
         "CX-12",
         "CX-20"
@@ -7241,7 +7241,7 @@
         "page": "PhoenixForce WHM-65MT",
         "url": "https://beyblade.fandom.com/wiki/PhoenixForce_WHM-65MT"
       },
-      "lastVerified": "2026-11-21",
+      "lastVerified": "2026-11-22",
       "status": "verified",
       "type": "balance",
       "metal": true
@@ -8036,7 +8036,7 @@
         "revid": 646155
       },
       "status": "verified",
-      "lastVerified": "2026-11-21",
+      "lastVerified": "2026-11-22",
       "products": [
         "CX-11",
         "G3028",
@@ -8831,7 +8831,7 @@
         "page": "PhoenixForce WHM-65MT",
         "url": "https://beyblade.fandom.com/wiki/PhoenixForce_WHM-65MT"
       },
-      "lastVerified": "2026-11-21",
+      "lastVerified": "2026-11-22",
       "status": "verified",
       "type": "balance"
     }
@@ -8917,7 +8917,7 @@
         "url": "https://beyblade.fandom.com/wiki/ScorpioSpear_0-70Z",
         "revid": 644111
       },
-      "lastVerified": "2026-11-20",
+      "lastVerified": "2026-11-22",
       "status": "verified",
       "image": {
         "file": "0-70.png",
@@ -10751,7 +10751,7 @@
         "page": "PhoenixForce WHM-65MT",
         "url": "https://beyblade.fandom.com/wiki/PhoenixForce_WHM-65MT"
       },
-      "lastVerified": "2026-11-21",
+      "lastVerified": "2026-11-22",
       "status": "verified"
     },
     {
@@ -12295,7 +12295,7 @@
         "revid": 646219
       },
       "status": "verified",
-      "lastVerified": "2026-11-20",
+      "lastVerified": "2026-11-22",
       "image": {
         "file": "low-point.png",
         "wikiFile": "BitLowPoint.png",
@@ -12525,7 +12525,7 @@
         "page": "PhoenixForce WHM-65MT",
         "url": "https://beyblade.fandom.com/wiki/PhoenixForce_WHM-65MT"
       },
-      "lastVerified": "2026-11-21",
+      "lastVerified": "2026-11-22",
       "status": "verified",
       "type": "balance"
     },
