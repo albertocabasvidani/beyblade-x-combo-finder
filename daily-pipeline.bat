@@ -75,6 +75,15 @@ set "FALLITI_ELENCO="
 call :log "=== PIPELINE START ==="
 call :conta_allarmi ALLARMI_PRIMA
 
+REM Statistiche ATK/DEF/STA dalle pagine dedicate del wiki, PRIMA di update-parts: il master aggiornato
+REM va poi in parts.json con build:parts. Non fa mai fallire la pipeline e non toglie stat esistenti:
+REM se il wiki non risponde lo script esce 1 prima di scrivere e il master resta com'era (si logga WARN).
+call :log "--- 0/4 enrich-stats START ---"
+call npm run enrich:stats >> "%LOG%" 2>&1
+set "RC=!errorlevel!"
+call :log "--- 0/4 enrich-stats END exit=!RC! ---"
+if not "!RC!"=="0" call :log "[WARN] enrich-stats non riuscito: statistiche invariate, pipeline prosegue"
+
 call :log "--- 1/4 update-parts START ---"
 REM Modello fissato a Sonnet/effort medium: e' un lavoro meccanico e ripetitivo (diff revid, estrazione
 REM strutturata, merge), non serve il modello di punta. I flag CLI rendono la scelta deterministica anche

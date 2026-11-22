@@ -147,6 +147,7 @@ Tracking di backlog/issue/changelog per area in [`projects/`](projects/INDEX.md)
 - `npm run dev` — server sviluppo
 - `npm run build` — build produzione
 - `npm run build:parts` — rigenera `parts.json` da `parts-master.json` (guardrail: aborta se rompe i riferimenti di combos.json)
+- `npm run enrich:stats` — stat ATK/DEF/STA dalle pagine dedicate del wiki (Blades, Bits, Ratchets, Main Blades, Metal Blades, Ratchet-Integrated Blades/Bits) nel master; `-- --dry` non scrive e elenca guadagni, cambi e valori a due modalità (non applicati). Gira da `daily-pipeline.bat` prima di `/update-parts`; test `npm run test:enrich-stats`
 - `npm run sync:part-images` — scarica da Fandom Wiki (API MediaWiki) l'immagine di ogni parte senza `image` in `public/images/parts/<id>.png` (idempotente, resize 512×512 via sharp, report a stampa con i mancanti e il motivo). `--force <id>` forza il ri-download di una parte sola
 - `npm run verify:wiki` — verifica completezza del master contro la fonte affidabile (category per-tipo del Fandom Wiki, X-pure; blade filtrati su `Category:Beyblade X` perché `Category:Blades` è mista X+Burst). Riporta mancanti/extra. Obiettivo: 0 mancanti.
 - `npm run collect:sources` — raccoglie le cache grezze (Reddit, arca.live, YouTube, Sheets, MetaBeys, WBO, BBX Weekly)
