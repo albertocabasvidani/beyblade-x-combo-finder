@@ -83,6 +83,11 @@
   --c-track: #2a2430;
   --c-knob: #e8e2e6;
 
+  /* barre ATK / DEF / STA della scheda parte (part-stats.astro) */
+  --c-stat-atk: #ff3a4f;
+  --c-stat-def: #3abfff;
+  --c-stat-sta: #2ee6a8;
+
   /* gradienti per fascia CAS (notch) + ink */
   --grad-tier-meta: linear-gradient(180deg, #3bdc86, #1f9d5b);
   --ink-tier-meta: #052413;
@@ -149,6 +154,10 @@
   --c-rank-other: #b0a594;
   --c-track: #e0d8ca;
   --c-knob: #ffffff;
+
+  --c-stat-atk: #d9223a;
+  --c-stat-def: #0877b8;
+  --c-stat-sta: #0a7d59;
 
   --grad-tier-meta: linear-gradient(180deg, #34c87f, #15914f);
   --ink-tier-meta: #ffffff;

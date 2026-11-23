@@ -3,7 +3,8 @@ import { getCollection, render } from 'astro:content';
 import EditorialLayout from '../../layouts/editorial-layout.astro';
 import BuyRow from '../../components/buy/buy-row.astro';
 import AffiliateDisclosure from '../../components/buy/affiliate-disclosure.astro';
-import { combosByBlade, combosByMainBlade, combosByRatchet, combosByBit, placementsByBlade, placementsByMainBlade, placementsByRatchet, placementsByBit, partMasterById, comboExists } from '../../lib/build-data';
+import PartStats from '../../components/parts/part-stats.astro';
+import { combosByBlade, combosByMainBlade, combosByRatchet, combosByBit, placementsByBlade, placementsByMainBlade, placementsByRatchet, placementsByBit, partMasterById, statMaxByCategory, comboExists } from '../../lib/build-data';
 
 export async function getStaticPaths() {
   // Solo le entry non-draft: una pagina nasce dal testo scritto, non dal dataset (4.925 combo,
@@ -17,6 +18,8 @@ const { Content } = await render(entry);
 const { partId, category, title, description, author, publishedAt, updatedAt, relatedCombos } = entry.data;
 
 const master = partMasterById.get(`${category}:${partId}`);
+// Scala delle barre «Stats»: il massimo del catalogo per la categoria della parte, su entrambi gli stati.
+const statScale = statMaxByCategory.get(category);
 type DataCategory = 'blade' | 'mainBlade' | 'ratchet' | 'bit';
 const combosByCat = { blade: combosByBlade, mainBlade: combosByMainBlade, ratchet: combosByRatchet, bit: combosByBit }[category as DataCategory];
 const placementsByCat = { blade: placementsByBlade, mainBlade: placementsByMainBlade, ratchet: placementsByRatchet, bit: placementsByBit }[category as DataCategory];
@@ -71,6 +74,10 @@ const buyParts = master?.firstReleaseSet
   updatedAt={updatedAt}
 >
   <Content />
+
+  {master?.stats && statScale && (
+    <PartStats name={partLabel} stats={master.stats} statsAlt={master.statsAlt} scale={statScale} />
+  )}
 
   {agg && (
     <h2>Tournament record</h2>

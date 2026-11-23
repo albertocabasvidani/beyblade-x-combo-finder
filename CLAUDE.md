@@ -552,6 +552,7 @@ perché ogni 5 min altrimenti compariva una finestra cmd nella sessione utente. 
   degli ultimi 30 giorni compresa. Il testo porta i fatti stabili: stile, build, matchup, set d'uscita. Ogni fatto
   si ricava da `data/` o da una fonte riletta, mai dalla memoria. Sotto la byline il layout stampa la riga sul
   metodo (`editorial.method`): tabelle dai tornei, testo preparato con l'aiuto dell'IA
+- La scheda parte mostra le statistiche in una sezione «Stats» (`src/components/parts/part-stats.astro`, dati da `parts-master.json`): scala = massimo del catalogo per categoria, due righe per statistica se la parte ha `statsAlt`, nessuna sezione se manca `stats`
 - Pagine lama («Best <Nome> Combos»): sono le pagine parte `/parts/<id>/`, anche per le Main Blade CX
   (`category: "mainBlade"`, raggruppate per Main Blade come `blast`). Title 50-60 caratteri che comincia con
   «Best <Nome> Combos» e prosegue con un angolo diverso per ogni lama. La home le linka da un blocco statico sotto
