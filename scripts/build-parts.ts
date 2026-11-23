@@ -24,6 +24,8 @@ const productsPath = join(DATA, 'products.json');
 type Names = { tt: string; ttRaw?: string; hasbro?: string | null; ja?: string; romaji?: string };
 type Alias = { value: string; lang?: string; kind?: string };
 type Stats = { atk: number; def: number; sta: number };
+// Secondo stato di una parte a due stati (stesso schema di PartStatsAlt in src/lib/types.ts).
+type StatsAlt = { kind: 'mode' | 'shift'; stats: Stats; labels?: [string, string] };
 interface MasterPart {
   id: string;
   category?: string;
@@ -37,6 +39,7 @@ interface MasterPart {
   integratedRatchet?: boolean;
   metal?: boolean;
   stats?: Stats;
+  statsAlt?: StatsAlt;
   source?: { page?: string; url?: string; revid?: number };
   image?: { file?: string; wikiFile?: string; fetchedAt?: string };
 }
@@ -83,7 +86,8 @@ const withShort = (p: MasterPart) => {
 };
 // Stat 3 assi dall'infobox Fandom (pagina dedicata della parte). Pass-through verbatim: se il
 // master non le ha (caso attuale per quasi tutte) il campo resta assente e parts.json non cambia.
-const withStats = (p: MasterPart) => (p.stats ? { stats: p.stats } : {});
+// `statsAlt` (secondo stato, opzionale) viaggia accanto a `stats` e mai da solo: `stats` resta il primo stato.
+const withStats = (p: MasterPart) => (p.stats ? { stats: p.stats, ...(p.statsAlt ? { statsAlt: p.statsAlt } : {}) } : {});
 // Filename dell'immagine (public/images/parts/<file> nel repo combo finder), scritto da
 // sync-part-images.ts. Solo il nome: ogni consumatore compone la propria base URL.
 const withImage = (p: MasterPart) => (p.image?.file ? { image: p.image.file } : {});

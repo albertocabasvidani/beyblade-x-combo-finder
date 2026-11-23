@@ -86,6 +86,10 @@ Se non hai estratto nessun record, salta merge e build — riscriverebbero il ma
 cambiare il campo `version` — e vai **al punto 6**: la verifica di completezza si fa comunque,
 anche nei giorni in cui non c'era niente da estrarre.
 
+Eccezione: lo step `enrich-stats` del `.bat` (gira prima di questo comando) puo' aver scritto
+statistiche nuove in `data/parts-master.json`. Se `git diff --quiet data/parts-master.json` esce 1,
+esegui comunque `npm run build:parts && npm run build` (punto 4) e committa master e parts.json al punto 8.
+
 ### 3. Consolidare
 
 ```

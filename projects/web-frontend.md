@@ -1,7 +1,7 @@
 ---
 name: web-frontend
 status: active
-updated: 04/11/2026
+updated: 23/11/2026
 health: yellow
 next-step: "Ricandidare Amazon.fr: ogni tag ora e' nell'HTML di ogni pagina; poi fase 7 (scalare i contenuti)"
 blocked-by: null
@@ -49,6 +49,7 @@ GitHub Pages via Actions. L'infrastruttura i18n IT resta in repo (dormiente), ri
 ## Changelog
 
 <!-- Cose completate, dalla più recente. Formato: `- gg/mm/aaaa — testo` -->
+- 23/11/2026 — **Sezione «Stats» nella scheda parte** (`src/components/parts/part-stats.astro`, fra il testo e «Tournament record»): tre barre ATK/DEF/STA col numero, scala = massimo del catalogo per la categoria della parte su entrambi gli stati (`statMaxByCategory` in `build-data.ts`). Una parte a due stati (`statsAlt`) ha due righe per statistica sempre visibili, etichettate con `labels` o «Mode 1/2» (`mode`) e «Start / After the shift» (`shift`), più una frase che spiega cosa significa; una parte senza `stats` non mostra la sezione. Verificato a 375 e 1100 px in tema scuro e chiaro sulle 10 pagine esistenti e su pagine temporanee di Operate, Turbo e Scorpio Spear: numeri uguali al catalogo, nessun overflow. Oggi Operate, Turbo e Scorpio Spear non hanno una pagina (le pagine nascono solo da `src/content/parts/`), quindi i due stati non si vedono ancora sul sito.
 
 - 03/11/2026 — **SEO dalla ricerca keyword: home e 10 pagine «Best <lama> combos»** (piano `plans/seo-pagine-lama-2026-11-03-2209.md`). Keyword Planner: «best <lama> combo» ha 100-1.000 ricerche al mese per decine di lame, e in prima pagina Google mostra solo Reddit, forum e TikTok. Home: title «Beyblade X Meta & Best Combos: Tournament Tier List», H1, intro e blocco di link statico alle pagine lama; le card linkano la guida della propria lama. `/parts/`: supporto Main Blade CX (`blast`), nome Hasbro nella riga dati, colonna top cut a 30 giorni; 3 pagine riscritte senza numeri che invecchiano e 7 nuove (aero-pegasus, blast, cobalt-dragoon, phoenix-wing, silver-wolf, meteor-dragoon, golem-rock). Riga sul metodo sotto la byline (testo preparato con l’IA), tolto «Hand-written» da `/guides/`. Pubblicate senza revisione dell’utente, che ha chiesto di procedere in autonomia. Verifica: `test:content`, `test:i18n`, `test:amazon-tags` verdi, `test:e2e` 352 OK / 0 KO, home 377 KB
 - 12/10/2026 — **Account Associates amazon.co.jp approvato** (Store ID `albertocv01-22`), mail di associates@amazon.co.jp del 12/10 alle 10:49: il tag del sito `bxcombos-22` è un tracking ID di quell'account, quindi il link JP non rischia più la chiusura per mancate vendite. Nessuna modifica a `amazon-config.json`. Resta da compilare payment e tax info su Associates Central.

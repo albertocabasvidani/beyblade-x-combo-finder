@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-22",
+  "version": "2026-11-23",
   "blades": [
     {
       "id": "aero-pegasus",
@@ -67,6 +67,11 @@
       "line": "ux",
       "integratedRatchet": true,
       "releaseSet": "BulletGriffon H",
+      "stats": {
+        "atk": 45,
+        "def": 45,
+        "sta": 40
+      },
       "image": "bullet-griffon.png"
     },
     {
@@ -226,6 +231,11 @@
       "line": "ux",
       "integratedRatchet": true,
       "releaseSet": "G1940",
+      "stats": {
+        "atk": 48,
+        "def": 48,
+        "sta": 34
+      },
       "image": "cutter-shinobi.png"
     },
     {
@@ -260,7 +270,12 @@
       "name": "Doctor Doom",
       "type": "stamina",
       "line": "bx",
-      "releaseSet": "G3063"
+      "releaseSet": "G3063",
+      "stats": {
+        "atk": 19,
+        "def": 55,
+        "sta": 26
+      }
     },
     {
       "id": "draciel-shield",
@@ -833,7 +848,12 @@
       ],
       "type": "attack",
       "line": "bx",
-      "releaseSet": "BX-52"
+      "releaseSet": "BX-52",
+      "stats": {
+        "atk": 75,
+        "def": 15,
+        "sta": 10
+      }
     },
     {
       "id": "mammoth-tusk",
@@ -906,7 +926,12 @@
       "name": "Mister Fantastic",
       "type": "attack",
       "line": "bx",
-      "releaseSet": "G3063"
+      "releaseSet": "G3063",
+      "stats": {
+        "atk": 31,
+        "def": 55,
+        "sta": 14
+      }
     },
     {
       "id": "moff-gideon",
@@ -999,6 +1024,11 @@
       "type": "attack",
       "line": "ux",
       "releaseSet": "UX-00",
+      "stats": {
+        "atk": 65,
+        "def": 15,
+        "sta": 20
+      },
       "image": "orochi-cluster.png"
     },
     {
@@ -1083,6 +1113,11 @@
       "line": "ux",
       "integratedRatchet": true,
       "releaseSet": "G1940",
+      "stats": {
+        "atk": 25,
+        "def": 70,
+        "sta": 35
+      },
       "image": "rampart-aegis.png"
     },
     {
@@ -1200,6 +1235,14 @@
         "atk": 25,
         "def": 55,
         "sta": 30
+      },
+      "statsAlt": {
+        "kind": "shift",
+        "stats": {
+          "atk": 55,
+          "def": 25,
+          "sta": 30
+        }
       },
       "image": "scorpio-spear.png"
     },
@@ -1483,6 +1526,11 @@
       "type": "balance",
       "line": "bx",
       "releaseSet": "G2745",
+      "stats": {
+        "atk": 38,
+        "def": 35,
+        "sta": 27
+      },
       "image": "suppress-superion.png"
     },
     {
@@ -1632,6 +1680,11 @@
       "type": "stamina",
       "line": "ux",
       "releaseSet": "G3497",
+      "stats": {
+        "atk": 36,
+        "def": 58,
+        "sta": 36
+      },
       "image": "valor-bison.png"
     },
     {
@@ -1644,7 +1697,12 @@
       "type": "defense",
       "line": "ux",
       "integratedRatchet": true,
-      "releaseSet": "UX-22"
+      "releaseSet": "UX-22",
+      "stats": {
+        "atk": 25,
+        "def": 80,
+        "sta": 25
+      }
     },
     {
       "id": "venom",
@@ -2055,6 +2113,11 @@
       "type": "attack",
       "line": "cx",
       "metal": true,
+      "stats": {
+        "atk": 25,
+        "def": 10,
+        "sta": 5
+      },
       "image": "blitz.png"
     },
     {
@@ -2101,6 +2164,11 @@
       "type": "balance",
       "line": "cx",
       "metal": true,
+      "stats": {
+        "atk": 15,
+        "def": 15,
+        "sta": 10
+      },
       "image": "delta.png"
     },
     {
@@ -2171,6 +2239,11 @@
       "type": "defense",
       "line": "cx",
       "metal": true,
+      "stats": {
+        "atk": 10,
+        "def": 20,
+        "sta": 10
+      },
       "image": "fortress.png"
     },
     {
@@ -2211,6 +2284,11 @@
       "type": "stamina",
       "line": "cx",
       "metal": true,
+      "stats": {
+        "atk": 10,
+        "def": 10,
+        "sta": 20
+      },
       "image": "rage.png"
     },
     {
@@ -2468,6 +2546,11 @@
       "name": "0-70",
       "sides": 0,
       "height": 70,
+      "stats": {
+        "atk": 3,
+        "def": 13,
+        "sta": 14
+      },
       "image": "0-70.png"
     },
     {
@@ -2499,6 +2582,11 @@
       "name": "1-60",
       "sides": 1,
       "height": 60,
+      "stats": {
+        "atk": 17,
+        "def": 9,
+        "sta": 4
+      },
       "image": "1-60.png"
     },
     {
@@ -2518,6 +2606,11 @@
       "name": "1-80",
       "sides": 1,
       "height": 80,
+      "stats": {
+        "atk": 17,
+        "def": 4,
+        "sta": 9
+      },
       "image": "1-80.png"
     },
     {
@@ -2640,6 +2733,11 @@
       "name": "4-70",
       "sides": 4,
       "height": 70,
+      "stats": {
+        "atk": 11,
+        "def": 12,
+        "sta": 7
+      },
       "image": "4-70.png"
     },
     {
@@ -2750,6 +2848,11 @@
       "name": "7-60",
       "sides": 7,
       "height": 60,
+      "stats": {
+        "atk": 8,
+        "def": 14,
+        "sta": 8
+      },
       "image": "7-60.png"
     },
     {
@@ -2805,6 +2908,11 @@
       "name": "9-60",
       "sides": 9,
       "height": 60,
+      "stats": {
+        "atk": 13,
+        "def": 10,
+        "sta": 7
+      },
       "image": "9-60.png"
     },
     {
@@ -2824,6 +2932,11 @@
       "name": "9-70",
       "sides": 9,
       "height": 70,
+      "stats": {
+        "atk": 13,
+        "def": 10,
+        "sta": 7
+      },
       "image": "9-70.png"
     },
     {
@@ -2842,7 +2955,12 @@
       "id": "M-65",
       "name": "M-65",
       "sides": null,
-      "height": 65
+      "height": 65,
+      "stats": {
+        "atk": 10,
+        "def": 11,
+        "sta": 19
+      }
     },
     {
       "id": "M-85",
@@ -2959,6 +3077,11 @@
       "aliases": [
         "Dotto"
       ],
+      "stats": {
+        "atk": 10,
+        "def": 55,
+        "sta": 25
+      },
       "image": "dot.png"
     },
     {
@@ -3241,6 +3364,11 @@
     {
       "id": "low-cyclone",
       "name": "Low Cyclone",
+      "stats": {
+        "atk": 45,
+        "def": 5,
+        "sta": 5
+      },
       "image": "low-cyclone.png"
     },
     {
@@ -3283,6 +3411,11 @@
       "aliases": [
         "Rō Pointo"
       ],
+      "stats": {
+        "atk": 30,
+        "def": 15,
+        "sta": 30
+      },
       "image": "low-point.png"
     },
     {
@@ -3352,7 +3485,12 @@
       "type": "balance",
       "aliases": [
         "Metaru Tēpā"
-      ]
+      ],
+      "stats": {
+        "atk": 40,
+        "def": 22,
+        "sta": 18
+      }
     },
     {
       "id": "narrow",
@@ -3362,6 +3500,11 @@
       "aliases": [
         "Narō"
       ],
+      "stats": {
+        "atk": 15,
+        "def": 20,
+        "sta": 60
+      },
       "image": "narrow.png"
     },
     {
@@ -3387,6 +3530,19 @@
         "Operēto"
       ],
       "integratedRatchet": true,
+      "stats": {
+        "atk": 20,
+        "def": 50,
+        "sta": 50
+      },
+      "statsAlt": {
+        "kind": "mode",
+        "stats": {
+          "atk": 50,
+          "def": 35,
+          "sta": 10
+        }
+      },
       "image": "operate.png"
     },
     {
@@ -3443,6 +3599,11 @@
       "aliases": [
         "Rabā"
       ],
+      "stats": {
+        "atk": 60,
+        "def": 17,
+        "sta": 3
+      },
       "image": "rubber-accel.png"
     },
     {
@@ -3468,6 +3629,11 @@
       "aliases": [
         "Supaiku"
       ],
+      "stats": {
+        "atk": 10,
+        "def": 45,
+        "sta": 35
+      },
       "image": "spike.png"
     },
     {
@@ -3495,6 +3661,11 @@
         "Toransu",
         "Toransu Kikku"
       ],
+      "stats": {
+        "atk": 35,
+        "def": 30,
+        "sta": 20
+      },
       "image": "trans-kick.png"
     },
     {
@@ -3522,6 +3693,19 @@
         "Tābo"
       ],
       "integratedRatchet": true,
+      "stats": {
+        "atk": 30,
+        "def": 30,
+        "sta": 60
+      },
+      "statsAlt": {
+        "kind": "shift",
+        "stats": {
+          "atk": 55,
+          "def": 20,
+          "sta": 10
+        }
+      },
       "image": "turbo.png"
     },
     {

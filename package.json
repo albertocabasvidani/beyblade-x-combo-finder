@@ -44,6 +44,7 @@
     "ig:generate": "npx tsx scripts/ig-generate.ts",
     "test:freshness": "npx tsx scripts/test-freshness.ts",
     "test:prune": "npx tsx scripts/test-prune.ts",
+    "test:enrich-stats": "npx tsx scripts/test-enrich-stats.ts",
     "test:wiki-scan": "npx tsx scripts/test-wiki-scan.ts",
     "test:e2e": "npx tsx scripts/e2e-smoke.ts",
     "test:amazon": "npx tsx scripts/test-amazon.ts",

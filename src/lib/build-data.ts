@@ -82,6 +82,12 @@ export const placementsByBit = buildPlacementsByPart('bit');
 
 /** Parte per categoria e id (nome TT/Hasbro, produttore, set d'uscita, stats). */
 export const partMasterById = new Map<string, any>();
+/**
+ * Massimo di ogni statistica nel catalogo, per categoria (`blade`, `mainBlade`, `ratchet`, `bit`, ...):
+ * e' la scala delle barre nella scheda parte. Conta `stats` e `statsAlt` di tutte le parti della
+ * categoria, cosi' nessuna barra esce dalla pista. Una categoria senza stat non compare.
+ */
+export const statMaxByCategory = new Map<string, { atk: number; def: number; sta: number }>();
 for (const [key, cat] of [
   ['blades', 'blade'],
   ['ratchets', 'ratchet'],
@@ -93,6 +99,14 @@ for (const [key, cat] of [
 ] as const) {
   for (const p of (partsMasterData as any)[key] ?? []) {
     partMasterById.set(`${cat}:${p.id}`, p);
+    for (const st of [p.stats, p.statsAlt?.stats]) {
+      if (!st) continue;
+      const max = statMaxByCategory.get(cat) ?? { atk: 0, def: 0, sta: 0 };
+      max.atk = Math.max(max.atk, st.atk);
+      max.def = Math.max(max.def, st.def);
+      max.sta = Math.max(max.sta, st.sta);
+      statMaxByCategory.set(cat, max);
+    }
   }
 }
 
