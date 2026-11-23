@@ -222,6 +222,11 @@
         "file": "bullet-griffon.png",
         "wikiFile": "RatchetBladeBulletGriffon.png",
         "fetchedAt": "2026-08-19"
+      },
+      "stats": {
+        "atk": 45,
+        "def": 45,
+        "sta": 40
       }
     },
     {
@@ -681,6 +686,11 @@
         "file": "cutter-shinobi.png",
         "wikiFile": "RatchetBladeCutterShinobi.png",
         "fetchedAt": "2026-08-19"
+      },
+      "stats": {
+        "atk": 48,
+        "def": 48,
+        "sta": 34
       }
     },
     {
@@ -790,7 +800,12 @@
       },
       "lastVerified": "2026-09-04",
       "status": "verified",
-      "type": "stamina"
+      "type": "stamina",
+      "stats": {
+        "atk": 19,
+        "def": 55,
+        "sta": 26
+      }
     },
     {
       "id": "draciel-shield",
@@ -2501,7 +2516,12 @@
       },
       "lastVerified": "2026-10-31",
       "status": "verified",
-      "type": "attack"
+      "type": "attack",
+      "stats": {
+        "atk": 75,
+        "def": 15,
+        "sta": 10
+      }
     },
     {
       "id": "mammoth-tusk",
@@ -2715,7 +2735,12 @@
       },
       "lastVerified": "2026-09-04",
       "status": "verified",
-      "type": "attack"
+      "type": "attack",
+      "stats": {
+        "atk": 31,
+        "def": 55,
+        "sta": 14
+      }
     },
     {
       "id": "moff-gideon",
@@ -2995,6 +3020,11 @@
         "file": "orochi-cluster.png",
         "wikiFile": "BladeOrochiCluster.png",
         "fetchedAt": "2026-08-19"
+      },
+      "stats": {
+        "atk": 65,
+        "def": 15,
+        "sta": 20
       }
     },
     {
@@ -3268,6 +3298,11 @@
         "file": "rampart-aegis.png",
         "wikiFile": "RatchetBladeRampartAegis.png",
         "fetchedAt": "2026-08-19"
+      },
+      "stats": {
+        "atk": 25,
+        "def": 70,
+        "sta": 35
       }
     },
     {
@@ -3614,6 +3649,14 @@
         "atk": 25,
         "def": 55,
         "sta": 30
+      },
+      "statsAlt": {
+        "kind": "shift",
+        "stats": {
+          "atk": 55,
+          "def": 25,
+          "sta": 30
+        }
       },
       "image": {
         "file": "scorpio-spear.png",
@@ -4445,6 +4488,11 @@
         "file": "suppress-superion.png",
         "wikiFile": "BladeSiegSuperion.png",
         "fetchedAt": "2026-08-19"
+      },
+      "stats": {
+        "atk": 38,
+        "def": 35,
+        "sta": 27
       }
     },
     {
@@ -4904,6 +4952,11 @@
         "file": "valor-bison.png",
         "wikiFile": "RatchetBladeValorBison.png",
         "fetchedAt": "2026-08-19"
+      },
+      "stats": {
+        "atk": 36,
+        "def": 58,
+        "sta": 36
       }
     },
     {
@@ -4944,7 +4997,12 @@
       "lastVerified": "2026-11-13",
       "status": "verified",
       "type": "defense",
-      "integratedRatchet": true
+      "integratedRatchet": true,
+      "stats": {
+        "atk": 25,
+        "def": 80,
+        "sta": 25
+      }
     },
     {
       "id": "venom",
@@ -6839,6 +6897,11 @@
         "file": "blitz.png",
         "wikiFile": "BahamutBlitz_BK1-50I.png",
         "fetchedAt": "2026-08-19"
+      },
+      "stats": {
+        "atk": 25,
+        "def": 10,
+        "sta": 5
       }
     },
     {
@@ -7028,6 +7091,11 @@
         "file": "delta.png",
         "wikiFile": "UnicornDelta_PO3-60GU.png",
         "fetchedAt": "2026-08-19"
+      },
+      "stats": {
+        "atk": 15,
+        "def": 15,
+        "sta": 10
       }
     },
     {
@@ -7325,6 +7393,11 @@
         "file": "fortress.png",
         "wikiFile": "KnightFortress_GV8-70UN.png",
         "fetchedAt": "2026-08-19"
+      },
+      "stats": {
+        "atk": 10,
+        "def": 20,
+        "sta": 10
       }
     },
     {
@@ -7487,6 +7560,11 @@
         "file": "rage.png",
         "wikiFile": "RagnaRage_FE4-55Y.jpeg",
         "fetchedAt": "2026-08-19"
+      },
+      "stats": {
+        "atk": 10,
+        "def": 10,
+        "sta": 20
       }
     },
     {
@@ -8923,6 +9001,11 @@
         "file": "0-70.png",
         "wikiFile": "Ratchet0-70.png",
         "fetchedAt": "2026-08-19"
+      },
+      "stats": {
+        "atk": 3,
+        "def": 13,
+        "sta": 14
       }
     },
     {
@@ -9076,6 +9159,11 @@
         "file": "1-60.png",
         "wikiFile": "Ratchet1-60.png",
         "fetchedAt": "2026-08-19"
+      },
+      "stats": {
+        "atk": 17,
+        "def": 9,
+        "sta": 4
       }
     },
     {
@@ -9171,6 +9259,11 @@
         "file": "1-80.png",
         "wikiFile": "Ratchet1-80.png",
         "fetchedAt": "2026-08-19"
+      },
+      "stats": {
+        "atk": 17,
+        "def": 4,
+        "sta": 9
       }
     },
     {
@@ -9809,6 +9902,11 @@
         "file": "4-70.png",
         "wikiFile": "Ratchet4-70.png",
         "fetchedAt": "2026-08-19"
+      },
+      "stats": {
+        "atk": 11,
+        "def": 12,
+        "sta": 7
       }
     },
     {
@@ -10325,6 +10423,11 @@
         "file": "7-60.png",
         "wikiFile": "Ratchet7-60.png",
         "fetchedAt": "2026-08-19"
+      },
+      "stats": {
+        "atk": 8,
+        "def": 14,
+        "sta": 8
       }
     },
     {
@@ -10562,6 +10665,11 @@
         "file": "9-60.png",
         "wikiFile": "Ratchet9-60.png",
         "fetchedAt": "2026-08-19"
+      },
+      "stats": {
+        "atk": 13,
+        "def": 10,
+        "sta": 7
       }
     },
     {
@@ -10663,6 +10771,11 @@
         "file": "9-70.png",
         "wikiFile": "Ratchet9-70.png",
         "fetchedAt": "2026-08-19"
+      },
+      "stats": {
+        "atk": 13,
+        "def": 10,
+        "sta": 7
       }
     },
     {
@@ -10752,7 +10865,12 @@
         "url": "https://beyblade.fandom.com/wiki/PhoenixForce_WHM-65MT"
       },
       "lastVerified": "2026-11-22",
-      "status": "verified"
+      "status": "verified",
+      "stats": {
+        "atk": 10,
+        "def": 11,
+        "sta": 19
+      }
     },
     {
       "id": "M-85",
@@ -11169,6 +11287,11 @@
         "file": "dot.png",
         "wikiFile": "BitDot.png",
         "fetchedAt": "2026-08-19"
+      },
+      "stats": {
+        "atk": 10,
+        "def": 55,
+        "sta": 25
       }
     },
     {
@@ -12142,6 +12265,11 @@
         "file": "low-cyclone.png",
         "wikiFile": "LusterDragoon_6-60LC_(Angled_View).jpeg",
         "fetchedAt": "2026-09-15"
+      },
+      "stats": {
+        "atk": 45,
+        "def": 5,
+        "sta": 5
       }
     },
     {
@@ -12300,6 +12428,11 @@
         "file": "low-point.png",
         "wikiFile": "BitLowPoint.png",
         "fetchedAt": "2026-08-25"
+      },
+      "stats": {
+        "atk": 30,
+        "def": 15,
+        "sta": 30
       }
     },
     {
@@ -12527,7 +12660,12 @@
       },
       "lastVerified": "2026-11-22",
       "status": "verified",
-      "type": "balance"
+      "type": "balance",
+      "stats": {
+        "atk": 40,
+        "def": 22,
+        "sta": 18
+      }
     },
     {
       "id": "narrow",
@@ -12569,6 +12707,11 @@
         "file": "narrow.png",
         "wikiFile": "BitNarrow.png",
         "fetchedAt": "2026-08-19"
+      },
+      "stats": {
+        "atk": 15,
+        "def": 20,
+        "sta": 60
       }
     },
     {
@@ -12671,6 +12814,19 @@
         "file": "operate.png",
         "wikiFile": "RatchetBitOperate_(Defense_Mode).png",
         "fetchedAt": "2026-08-19"
+      },
+      "stats": {
+        "atk": 20,
+        "def": 50,
+        "sta": 50
+      },
+      "statsAlt": {
+        "kind": "mode",
+        "stats": {
+          "atk": 50,
+          "def": 35,
+          "sta": 10
+        }
       }
     },
     {
@@ -12881,6 +13037,11 @@
         "file": "rubber-accel.png",
         "wikiFile": "BitRubberAccel.png",
         "fetchedAt": "2026-08-19"
+      },
+      "stats": {
+        "atk": 60,
+        "def": 17,
+        "sta": 3
       }
     },
     {
@@ -12979,6 +13140,11 @@
         "file": "spike.png",
         "wikiFile": "BitSpike.png",
         "fetchedAt": "2026-08-19"
+      },
+      "stats": {
+        "atk": 10,
+        "def": 45,
+        "sta": 35
       }
     },
     {
@@ -13093,6 +13259,11 @@
         "file": "trans-kick.png",
         "wikiFile": "BitTransKick.png",
         "fetchedAt": "2026-08-19"
+      },
+      "stats": {
+        "atk": 35,
+        "def": 30,
+        "sta": 20
       }
     },
     {
@@ -13189,6 +13360,19 @@
         "file": "turbo.png",
         "wikiFile": "RatchetBitTurbo.png",
         "fetchedAt": "2026-08-19"
+      },
+      "stats": {
+        "atk": 30,
+        "def": 30,
+        "sta": 60
+      },
+      "statsAlt": {
+        "kind": "shift",
+        "stats": {
+          "atk": 55,
+          "def": 20,
+          "sta": 10
+        }
       }
     },
     {

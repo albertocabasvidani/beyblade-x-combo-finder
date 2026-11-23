@@ -14,6 +14,19 @@ export interface PartStats {
   sta: number;
 }
 
+/**
+ * Secondo stato di una parte che ne ha due. `stats` resta il primo: le app gia' installate scartano
+ * l'intero catalogo se `stats` cambia forma, quindi il secondo va in un campo affiancato e opzionale.
+ * Le parti a due stati sono elencate in data/parts-due-stati.json (scripts/enrich-stats.ts).
+ */
+export interface PartStatsAlt {
+  /** mode: il giocatore sceglie il modo prima dello scontro. shift: la parte cambia durante lo scontro. */
+  kind: 'mode' | 'shift';
+  stats: PartStats;
+  /** Nomi propri dei due stati quando il produttore li nomina (inglese, non tradotti), nell'ordine [primo, secondo]. */
+  labels?: [string, string];
+}
+
 // Piatto/formato di gioco. Recuperabile dai placement WBO (Xtreme overseas vs Infinity, soprattutto
 // tornei ufficiali JP); MetaBeys non lo espone → resta undefined ("unknown"). Esposto come
 // filtro/badge in UI, NON usato nel calcolo dello score (vedi scoring.ts).
@@ -30,6 +43,8 @@ export interface Blade {
   line: 'bx' | 'ux';
   releaseSet?: string;
   stats?: PartStats;
+  /** Secondo stato, se la parte ne ha due (vedi PartStatsAlt). */
+  statsAlt?: PartStatsAlt;
   /** Blade UX col ratchet fuso nella lama (es. Bullet Griffon): combo senza slot ratchet. */
   integratedRatchet?: boolean;
 }
@@ -51,6 +66,8 @@ export interface MainBlade {
   nameWestern?: string;
   line: 'cx';
   stats?: PartStats;
+  /** Secondo stato, se la parte ne ha due (vedi PartStatsAlt). */
+  statsAlt?: PartStatsAlt;
 }
 
 export interface AssistBlade {
@@ -80,6 +97,8 @@ export interface Ratchet {
   sides: number;
   height: number;
   stats?: PartStats;
+  /** Secondo stato, se la parte ne ha due (vedi PartStatsAlt). */
+  statsAlt?: PartStatsAlt;
 }
 
 export interface Bit {
@@ -91,6 +110,8 @@ export interface Bit {
   shortName?: string;   // codice ufficiale stampato sui prodotti (es. "H" = Hexa, "FB" = Free Ball)
   aliases?: string[];
   stats?: PartStats;
+  /** Secondo stato, se la parte ne ha due (vedi PartStatsAlt). */
+  statsAlt?: PartStatsAlt;
   /** Ratchet Integrated Bit (es. Operate, Turbo): ratchet+bit in un'unica parte → combo senza slot ratchet. */
   integratedRatchet?: boolean;
 }
