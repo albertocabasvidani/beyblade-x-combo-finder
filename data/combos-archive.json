@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-22T03:13:29.793Z",
+  "lastUpdated": "2026-11-23T03:13:50.159Z",
   "combos": [
     {
       "id": "aero-pegasus-1-70-low-flat",
@@ -574,6 +574,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 365d)",
       "archivedDate": "2026-10-22"
+    },
+    {
+      "id": "cerberus-blast-heavy-1-60-level",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "1-60",
+      "bit": "level",
+      "lockChip": "cerberus",
+      "mainBlade": "blast",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Cerberus Blast H 1-60 Level",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Nov. 22, 2025  5:37 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-22"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-23",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-23"
     },
     {
       "id": "cerberus-blast-jaggy-7-60-low-rush",
@@ -1246,6 +1290,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-23"
+    },
+    {
+      "id": "cerberus-eclipse-massive-1-60-level",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "1-60",
+      "bit": "level",
+      "lockChip": "cerberus",
+      "mainBlade": "eclipse",
+      "assistBlade": "massive",
+      "overBlade": null,
+      "displayName": "Cerberus Eclipse M 1-60 Level",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Nov. 22, 2025  5:37 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-22"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-23",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-23"
     },
     {
       "id": "cerberus-flame-bumper-1-60-level",
@@ -10244,6 +10332,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 365d)",
       "archivedDate": "2026-10-29"
+    },
+    {
+      "id": "hornet-blast-heavy-1-60-kick",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "1-60",
+      "bit": "kick",
+      "lockChip": "hornet",
+      "mainBlade": "blast",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Hornet Blast H 1-60 Kick",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Nov. 22, 2025  12:28 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-22"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-23",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-23"
     },
     {
       "id": "hornet-blast-jaggy-6-60-low-rush",
@@ -25489,6 +25621,50 @@
       "archivedDate": "2026-11-11"
     },
     {
+      "id": "sol-eclipse-wheel-6-60-hexa",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "6-60",
+      "bit": "hexa",
+      "lockChip": "sol",
+      "mainBlade": "eclipse",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Sol Eclipse W 6-60 Hexa",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Nov. 22, 2025  12:12 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-22"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-23",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-23"
+    },
+    {
       "id": "sol-eclipse-wheel-7-70-level",
       "line": "cx",
       "blade": null,
@@ -26228,16 +26404,16 @@
       "archivedDate": "2026-07-18"
     },
     {
-      "id": "tyranno-beat-5-60-kick",
+      "id": "tyranno-beat-5-60-hexa",
       "line": "bx",
       "blade": "tyranno-beat",
       "ratchet": "5-60",
-      "bit": "kick",
+      "bit": "hexa",
       "lockChip": null,
       "mainBlade": null,
       "assistBlade": null,
       "overBlade": null,
-      "displayName": "Tyranno Beat 5-60 Kick",
+      "displayName": "Tyranno Beat 5-60 Hexa",
       "type": "attack",
       "score": 0,
       "scoreBreakdown": {
@@ -26251,18 +26427,18 @@
       "tags": [
         "theory-only"
       ],
-      "notes": "Combo segnalata su Reddit r/Beyblade.",
+      "notes": "Combo riportata da una fonte web.",
       "sources": [
         {
-          "name": "Reddit r/Beyblade",
-          "url": "https://reddit.com/r/Beyblade/comments/1n30j3b/yesterday_i_won_a_local_tournament_and_also_won_a/",
+          "name": "Polish Bladers",
+          "url": "https://polishbladers.pl/zwyciezcy",
           "weight": 0.6,
-          "date": "2025-08-29"
+          "date": "2025-11-22"
         }
       ],
       "amazon": {},
-      "dateAdded": "2026-06-16",
-      "dateUpdated": "2026-10-20",
+      "dateAdded": "2026-11-12",
+      "dateUpdated": "2026-11-23",
       "evidence": {
         "placements": [],
         "usage": [],
@@ -26270,7 +26446,7 @@
       },
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 365d)",
-      "archivedDate": "2026-10-20"
+      "archivedDate": "2026-11-23"
     },
     {
       "id": "tyranno-beat-5-60-low-orb",
@@ -32081,6 +32257,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 365d)",
       "archivedDate": "2026-11-14"
+    },
+    {
+      "id": "wolf-hunt-free-3-60-point",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "3-60",
+      "bit": "point",
+      "lockChip": "wolf",
+      "mainBlade": "hunt",
+      "assistBlade": "free",
+      "overBlade": null,
+      "displayName": "Wolf Hunt F 3-60 Point",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Nov. 22, 2025  12:28 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-22"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-23",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-23"
     },
     {
       "id": "wolf-might-free-9-70-hexa",
