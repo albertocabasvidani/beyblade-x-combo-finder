@@ -152,7 +152,13 @@ async function ritira(key: string, stato: Stato): Promise<string> {
   const m = pend.triggeredAt.slice(0, 7);
   stato.crediti[m] = (stato.crediti[m] ?? 0) + records.length;
   delete stato.pending;
-  if (esito.ricevuti === 0) throw new Fallimento(`la richiesta ${pend.snapshotId} non ha restituito post`);
+  if (esito.ricevuti === 0) {
+    // Il perché lo dice Bright Data nello stato della richiesta (errors, error_codes): senza,
+    // il log dice solo che la risposta è vuota.
+    const codici = j.error_codes && typeof j.error_codes === 'object' ? Object.keys(j.error_codes).join(', ') : '';
+    const perche = j.errors || codici ? ` (Bright Data: ${j.errors ?? '?'} errori${codici ? `, codice ${codici}` : ''}, ${j.records ?? '?'} record)` : '';
+    throw new Fallimento(`la richiesta ${pend.snapshotId} non ha restituito post${perche}`);
+  }
   stato.lastOk = adesso();
   return `${esito.ricevuti} post ricevuti, ${esito.rilevanti} di torneo, ${esito.nuovi} nuovi, ${esito.inCache} in cache`;
 }
