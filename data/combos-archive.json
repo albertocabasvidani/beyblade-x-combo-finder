@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-23T03:13:50.159Z",
+  "lastUpdated": "2026-11-24T03:11:00.806Z",
   "combos": [
     {
       "id": "aero-pegasus-1-70-low-flat",
@@ -4918,6 +4918,94 @@
       "archivedDate": "2026-11-17"
     },
     {
+      "id": "emperor-brave-heavy-1-60-level",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "1-60",
+      "bit": "level",
+      "lockChip": "emperor",
+      "mainBlade": "brave",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Emperor Brave H 1-60 Level",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Mugen Drive",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-23"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-24",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-24"
+    },
+    {
+      "id": "emperor-brave-heavy-9-60-low-flat",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "low-flat",
+      "lockChip": "emperor",
+      "mainBlade": "brave",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Emperor Brave H 9-60 Low Flat",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Nov. 23, 2025  8:04 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-23"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-24",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-24"
+    },
+    {
       "id": "emperor-eclipse-heavy-9-60-level",
       "line": "cx",
       "blade": null,
@@ -4960,6 +5048,182 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 365d)",
       "archivedDate": "2026-11-10"
+    },
+    {
+      "id": "emperor-hunt-turn-6-60-low-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "6-60",
+      "bit": "low-rush",
+      "lockChip": "emperor",
+      "mainBlade": "hunt",
+      "assistBlade": "turn",
+      "overBlade": null,
+      "displayName": "Emperor Hunt T 6-60 Low Rush",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Nov. 23, 2025  11:46 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-23"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-24",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-24"
+    },
+    {
+      "id": "emperor-might-heavy-0-60-low-rush",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "0-60",
+      "bit": "low-rush",
+      "lockChip": "emperor",
+      "mainBlade": "might",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Emperor Might H 0-60 Low Rush",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — The Bey Dojo",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-23"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-24",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-24"
+    },
+    {
+      "id": "emperor-might-heavy-3-60-kick",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "3-60",
+      "bit": "kick",
+      "lockChip": "emperor",
+      "mainBlade": "might",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Emperor Might H 3-60 Kick",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — The Bey Dojo",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-23"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-24",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-24"
+    },
+    {
+      "id": "emperor-might-heavy-5-60-taper",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "5-60",
+      "bit": "taper",
+      "lockChip": "emperor",
+      "mainBlade": "might",
+      "assistBlade": "heavy",
+      "overBlade": null,
+      "displayName": "Emperor Might H 5-60 Taper",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Cardboard Classics BBBBXXXXL",
+          "url": "https://www.metabeys.com/events/1764353066224",
+          "weight": 1,
+          "date": "2025-11-23"
+        }
+      ],
+      "dateAdded": "2026-06-18",
+      "dateUpdated": "2026-11-24",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-24"
     },
     {
       "id": "emperor-might-heavy-9-60-hexa",
@@ -13897,6 +14161,50 @@
       "archivedDate": "2026-10-06"
     },
     {
+      "id": "pegasus-blast-bumper-3-60-taper",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "3-60",
+      "bit": "taper",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "bumper",
+      "overBlade": null,
+      "displayName": "Pegasus Blast B 3-60 Taper",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — The Bey Dojo",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-23"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-24",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-24"
+    },
+    {
       "id": "pegasus-blast-charge-3-60-low-rush",
       "line": "cx",
       "blade": null,
@@ -14378,6 +14686,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 365d)",
       "archivedDate": "2026-10-17"
+    },
+    {
+      "id": "pegasus-blast-free-7-60-hexa",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "7-60",
+      "bit": "hexa",
+      "lockChip": "pegasus",
+      "mainBlade": "blast",
+      "assistBlade": "free",
+      "overBlade": null,
+      "displayName": "Pegasus Blast F 7-60 Hexa",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Cardboard Classics BBBBXXXXL",
+          "url": "https://www.metabeys.com/events/1764353066224",
+          "weight": 1,
+          "date": "2025-11-23"
+        }
+      ],
+      "dateAdded": "2026-06-18",
+      "dateUpdated": "2026-11-24",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-24"
     },
     {
       "id": "pegasus-blast-heavy-1-70-kick",
@@ -19887,6 +20239,50 @@
       "archivedDate": "2026-11-18"
     },
     {
+      "id": "perseus-might-wheel-9-60-low-orb",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "low-orb",
+      "lockChip": "perseus",
+      "mainBlade": "might",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Perseus Might W 9-60 Low Orb",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Nov. 23, 2025  10:33 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-23"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-24",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-24"
+    },
+    {
       "id": "phoenix-feather-3-60-low-flat",
       "line": "bx",
       "blade": "phoenix-feather",
@@ -20107,6 +20503,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 365d)",
       "archivedDate": "2026-11-18"
+    },
+    {
+      "id": "phoenix-wing-1-70-level",
+      "line": "bx",
+      "blade": "phoenix-wing",
+      "ratchet": "1-70",
+      "bit": "level",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Phoenix Wing 1-70 Level",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Cardboard Classics BBBBXXXXL",
+          "url": "https://www.metabeys.com/events/1764353066224",
+          "weight": 1,
+          "date": "2025-11-23"
+        }
+      ],
+      "dateAdded": "2026-06-18",
+      "dateUpdated": "2026-11-24",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-24"
     },
     {
       "id": "phoenix-wing-1-80-low-flat",
@@ -20589,6 +21029,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-12"
+    },
+    {
+      "id": "red-hulk-7-60-high-taper",
+      "line": "bx",
+      "blade": "red-hulk",
+      "ratchet": "7-60",
+      "bit": "high-taper",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Red Hulk 7-60 High Taper",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Cardboard Classics BBBBXXXXL",
+          "url": "https://www.metabeys.com/events/1764353066224",
+          "weight": 1,
+          "date": "2025-11-23"
+        }
+      ],
+      "dateAdded": "2026-06-18",
+      "dateUpdated": "2026-11-24",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-24"
     },
     {
       "id": "red-hulk-7-60-kick",
@@ -21610,6 +22094,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 365d)",
       "archivedDate": "2026-10-30"
+    },
+    {
+      "id": "samurai-calibur-0-60-level",
+      "line": "bx",
+      "blade": "samurai-calibur",
+      "ratchet": "0-60",
+      "bit": "level",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Samurai Calibur 0-60 Level",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Nov. 23, 2025  8:04 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-21"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-24",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-24"
     },
     {
       "id": "samurai-calibur-1-70-level",
@@ -23055,6 +23583,50 @@
       "archivedDate": "2026-09-28"
     },
     {
+      "id": "shark-scale-1-70-trans-kick",
+      "line": "bx",
+      "blade": "shark-scale",
+      "ratchet": "1-70",
+      "bit": "trans-kick",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Shark Scale 1-70 Trans Kick",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Nov. 23, 2025  3:51 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-22"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-24",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-24"
+    },
+    {
       "id": "shark-scale-1-80-high-taper",
       "line": "bx",
       "blade": "shark-scale",
@@ -23141,6 +23713,56 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-19"
+    },
+    {
+      "id": "shark-scale-4-50-free-ball",
+      "line": "bx",
+      "blade": "shark-scale",
+      "ratchet": "4-50",
+      "bit": "free-ball",
+      "lockChip": null,
+      "mainBlade": null,
+      "assistBlade": null,
+      "overBlade": null,
+      "displayName": "Shark Scale 4-50 Free Ball",
+      "type": "attack",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Aug. 28, 2025  6:56 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-08-22"
+        },
+        {
+          "name": "WBO — Nov. 23, 2025  8:04 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-21"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-24",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-24"
     },
     {
       "id": "shark-scale-4-50-trans-point",
@@ -31777,6 +32399,50 @@
       "archivedDate": "2026-10-08"
     },
     {
+      "id": "wizard-might-jaggy-9-60-wedge",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "wedge",
+      "lockChip": "wizard",
+      "mainBlade": "might",
+      "assistBlade": "jaggy",
+      "overBlade": null,
+      "displayName": "Wizard Might J 9-60 Wedge",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Nov. 23, 2025  4:08 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-23"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-24",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-24"
+    },
+    {
       "id": "wizard-rod-1-60-bound-spike",
       "line": "bx",
       "blade": "wizard-rod",
@@ -32301,6 +32967,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 365d)",
       "archivedDate": "2026-11-23"
+    },
+    {
+      "id": "wolf-hunt-jaggy-3-60-kick",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "3-60",
+      "bit": "kick",
+      "lockChip": "wolf",
+      "mainBlade": "hunt",
+      "assistBlade": "jaggy",
+      "overBlade": null,
+      "displayName": "Wolf Hunt J 3-60 Kick",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "MetaBeys — Cardboard Classics BBBBXXXXL",
+          "url": "https://www.metabeys.com/events/1764353066224",
+          "weight": 1,
+          "date": "2025-11-23"
+        }
+      ],
+      "dateAdded": "2026-06-18",
+      "dateUpdated": "2026-11-24",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-24"
     },
     {
       "id": "wolf-might-free-9-70-hexa",
