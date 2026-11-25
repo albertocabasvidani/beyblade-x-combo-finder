@@ -4,12 +4,12 @@
     "List of Beyblade X products (Takara Tomy)": {
       "revid": 654085,
       "timestamp": "2026-11-22T08:43:03.000Z",
-      "lastScannedDate": "2026-11-24"
+      "lastScannedDate": "2026-11-25"
     },
     "List of Beyblade X products (Hasbro)": {
       "revid": 653016,
       "timestamp": "2026-11-13T03:23:04.000Z",
-      "lastScannedDate": "2026-11-24"
+      "lastScannedDate": "2026-11-25"
     }
   },
   "pages": {
@@ -3054,18 +3054,18 @@
     "Blade - SiegSuperion": {
       "revid": 651639,
       "timestamp": "2026-10-23T06:33:31.000Z",
-      "lastScannedDate": "2026-11-24",
+      "lastScannedDate": "2026-11-25",
       "kind": "part",
-      "kindSource": "heuristic",
-      "notes": "gia' nel master"
+      "kindSource": "ai",
+      "notes": "già nel master (suppress-superion), nessun dato nuovo"
     },
     "SiegSuperion 0-70LP": {
       "revid": 654119,
       "timestamp": "2026-11-23T00:17:10.000Z",
-      "lastScannedDate": "2026-11-24",
+      "lastScannedDate": "2026-11-25",
       "kind": "product",
-      "kindSource": "heuristic",
-      "notes": "gia' nel master"
+      "kindSource": "ai",
+      "notes": "parti già nel master (suppress-superion, 0-70, low-point)"
     },
     "Bey Kick Off Set": {
       "revid": 599877,
