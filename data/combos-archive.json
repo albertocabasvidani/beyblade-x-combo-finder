@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-27T03:13:32.418Z",
+  "lastUpdated": "2026-11-28T03:15:59.691Z",
   "combos": [
     {
       "id": "aero-pegasus-1-70-low-flat",
@@ -19570,6 +19570,50 @@
       "archivedDate": "2026-10-08"
     },
     {
+      "id": "pegasus-might-wheel-9-60-rubber-accel",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "9-60",
+      "bit": "rubber-accel",
+      "lockChip": "pegasus",
+      "mainBlade": "might",
+      "assistBlade": "wheel",
+      "overBlade": null,
+      "displayName": "Pegasus Might W 9-60 Rubber Accel",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Nov. 27, 2025  8:46 PM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-27"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-28",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-28"
+    },
+    {
       "id": "pegasus-volt-jaggy-7-60-level",
       "line": "cx",
       "blade": null,
@@ -27155,50 +27199,6 @@
       "archivedDate": "2026-09-12"
     },
     {
-      "id": "tricera-press-3-60-level",
-      "line": "bx",
-      "blade": "tricera-press",
-      "ratchet": "3-60",
-      "bit": "level",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Tricera Press 3-60 Level",
-      "type": "defense",
-      "score": 0,
-      "scoreBreakdown": {
-        "performance": 0,
-        "presence": 0,
-        "corroboration": 0,
-        "tournamentEvents": 0,
-        "wins": 0,
-        "topCutAppearances": 0
-      },
-      "tags": [
-        "theory-only"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "MetaBeys — New Realm Games League (August 8th 2025)",
-          "url": "https://www.metabeys.com/events/1754918565423",
-          "weight": 1,
-          "date": "2025-08-08"
-        }
-      ],
-      "dateAdded": "2026-06-24",
-      "dateUpdated": "2026-09-12",
-      "evidence": {
-        "placements": [],
-        "usage": [],
-        "mentions": []
-      },
-      "windows": {},
-      "archivedReason": "no-fresh-evidence (cutoff 12m)",
-      "archivedDate": "2026-09-12"
-    },
-    {
       "id": "tricera-press-5-60-rush",
       "line": "bx",
       "blade": "tricera-press",
@@ -27240,50 +27240,6 @@
       },
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-07-18"
-    },
-    {
-      "id": "tricera-press-5-60-taper",
-      "line": "bx",
-      "blade": "tricera-press",
-      "ratchet": "5-60",
-      "bit": "taper",
-      "lockChip": null,
-      "mainBlade": null,
-      "assistBlade": null,
-      "overBlade": null,
-      "displayName": "Tricera Press 5-60 Taper",
-      "type": "defense",
-      "score": 0,
-      "scoreBreakdown": {
-        "performance": 0,
-        "presence": 0,
-        "corroboration": 0,
-        "tournamentEvents": 0,
-        "wins": 0,
-        "topCutAppearances": 0
-      },
-      "tags": [
-        "theory-only"
-      ],
-      "notes": "",
-      "sources": [
-        {
-          "name": "WBO — Aug. 10, 2025  3:32 AM",
-          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
-          "weight": 0.95,
-          "date": "2025-08-09"
-        }
-      ],
-      "dateAdded": "2026-06-17",
-      "dateUpdated": "2026-09-12",
-      "evidence": {
-        "placements": [],
-        "usage": [],
-        "mentions": []
-      },
-      "windows": {},
-      "archivedReason": "no-fresh-evidence (cutoff 12m)",
-      "archivedDate": "2026-09-12"
     },
     {
       "id": "tricera-press-6-60-hexa",
@@ -30239,6 +30195,50 @@
       "windows": {},
       "archivedReason": "no-fresh-evidence (cutoff 12m)",
       "archivedDate": "2026-09-26"
+    },
+    {
+      "id": "valkyrie-eclipse-assault-0-60-level",
+      "line": "cx",
+      "blade": null,
+      "ratchet": "0-60",
+      "bit": "level",
+      "lockChip": "valkyrie",
+      "mainBlade": "eclipse",
+      "assistBlade": "assault",
+      "overBlade": null,
+      "displayName": "Valkyrie Eclipse A 0-60 Level",
+      "type": "balance",
+      "score": 0,
+      "scoreBreakdown": {
+        "performance": 0,
+        "presence": 0,
+        "corroboration": 0,
+        "tournamentEvents": 0,
+        "wins": 0,
+        "topCutAppearances": 0
+      },
+      "tags": [
+        "theory-only"
+      ],
+      "notes": "",
+      "sources": [
+        {
+          "name": "WBO — Nov. 27, 2025  6:40 AM",
+          "url": "https://worldbeyblade.org/Thread-Winning-Combinations-at-WBO-Organized-Events-Beyblade-X-BBX",
+          "weight": 0.95,
+          "date": "2025-11-27"
+        }
+      ],
+      "dateAdded": "2026-06-17",
+      "dateUpdated": "2026-11-28",
+      "evidence": {
+        "placements": [],
+        "usage": [],
+        "mentions": []
+      },
+      "windows": {},
+      "archivedReason": "no-fresh-evidence (cutoff 365d)",
+      "archivedDate": "2026-11-28"
     },
     {
       "id": "valkyrie-eclipse-jaggy-9-60-rush",
