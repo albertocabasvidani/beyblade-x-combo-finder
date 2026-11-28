@@ -4,12 +4,12 @@
     "List of Beyblade X products (Takara Tomy)": {
       "revid": 654085,
       "timestamp": "2026-11-22T08:43:03.000Z",
-      "lastScannedDate": "2026-11-27"
+      "lastScannedDate": "2026-11-28"
     },
     "List of Beyblade X products (Hasbro)": {
       "revid": 653016,
       "timestamp": "2026-11-13T03:23:04.000Z",
-      "lastScannedDate": "2026-11-27"
+      "lastScannedDate": "2026-11-28"
     }
   },
   "pages": {
@@ -510,15 +510,15 @@
       "kindSource": "heuristic"
     },
     "BulletGriffon H": {
-      "revid": 653727,
-      "timestamp": "2026-11-20T17:20:39.000Z",
-      "lastScannedDate": "2026-11-21",
+      "revid": 654482,
+      "timestamp": "2026-11-27T13:27:39.000Z",
+      "lastScannedDate": "2026-11-28",
       "kind": "product",
       "kindSource": "ai",
       "redirects": [
         "Rocket Griffon H"
       ],
-      "notes": "parti già nel master; aggiornamento di contenuto"
+      "notes": "modifica di pagina, parti già nel master"
     },
     "Bumblebee 3-60GP": {
       "revid": 639473,
@@ -841,12 +841,12 @@
       "kindSource": "heuristic"
     },
     "PhoenixWing 9-60GF": {
-      "revid": 652561,
-      "timestamp": "2026-11-07T02:15:42.000Z",
-      "lastScannedDate": "2026-11-07",
+      "revid": 654515,
+      "timestamp": "2026-11-27T21:34:56.000Z",
+      "lastScannedDate": "2026-11-28",
       "kind": "product",
       "kindSource": "ai",
-      "notes": "parti già nel master, modifica di contenuto"
+      "notes": "modifica di pagina, parti già nel master"
     },
     "Customize Set U": {
       "revid": 649319,
@@ -3054,18 +3054,18 @@
     "Blade - SiegSuperion": {
       "revid": 651639,
       "timestamp": "2026-10-23T06:33:31.000Z",
-      "lastScannedDate": "2026-11-27",
+      "lastScannedDate": "2026-11-28",
       "kind": "part",
-      "kindSource": "heuristic",
-      "notes": "parte gia' nel master"
+      "kindSource": "ai",
+      "notes": "già nel master come suppress-superion"
     },
     "SiegSuperion 0-70LP": {
       "revid": 654119,
       "timestamp": "2026-11-23T00:17:10.000Z",
-      "lastScannedDate": "2026-11-27",
+      "lastScannedDate": "2026-11-28",
       "kind": "product",
-      "kindSource": "heuristic",
-      "notes": "BX-54, Expand Blade BX"
+      "kindSource": "ai",
+      "notes": "parti già nel master"
     },
     "Bey Kick Off Set": {
       "revid": 599877,
@@ -3132,12 +3132,12 @@
       "notes": "parti già nel master; aggiornamento di contenuto"
     },
     "PhoenixForce WHM-65MT": {
-      "revid": 654124,
-      "timestamp": "2026-11-23T05:07:53.000Z",
-      "lastScannedDate": "2026-11-24",
+      "revid": 654509,
+      "timestamp": "2026-11-27T16:37:43.000Z",
+      "lastScannedDate": "2026-11-28",
       "kind": "product",
-      "kindSource": "heuristic",
-      "notes": "CX-20, parti gia' nel master"
+      "kindSource": "ai",
+      "notes": "CX Expand, parti già nel master"
     },
     "Blade - HellsScythe": {
       "revid": 654108,
@@ -3198,12 +3198,12 @@
       "notes": "assortimento di bey già noti"
     },
     "VanishLucifer WW": {
-      "revid": 653012,
-      "timestamp": "2026-11-13T03:17:07.000Z",
-      "lastScannedDate": "2026-11-14",
+      "revid": 654555,
+      "timestamp": "2026-11-28T02:46:14.000Z",
+      "lastScannedDate": "2026-11-28",
       "kind": "product",
       "kindSource": "ai",
-      "notes": "unreleased, già nel master"
+      "notes": "non ancora uscito, parti già nel master"
     },
     "Bit - Metal Orb": {
       "revid": 654051,
