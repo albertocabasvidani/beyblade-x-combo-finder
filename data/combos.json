@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-28T03:15:59.407Z",
+  "lastUpdated": "2026-11-28T03:17:34.560Z",
   "combos": [
     {
       "id": "wizard-rod-1-60-hexa",
@@ -65919,7 +65919,7 @@
           "tags": []
         },
         "90": {
-          "performance": 0.454,
+          "performance": 0.453,
           "presence": 0.609,
           "corroboration": 0.655,
           "tournamentEvents": 7,
@@ -84133,7 +84133,7 @@
           "metaSharePct": 0.47,
           "lastPlacementDate": "2026-11-09",
           "usageTrend": "stable",
-          "score": 3.12,
+          "score": 3.11,
           "tags": [
             "tournament-proven"
           ]
@@ -134484,7 +134484,7 @@
       },
       "windows": {
         "90": {
-          "performance": 0.266,
+          "performance": 0.265,
           "presence": 0,
           "corroboration": 0.524,
           "tournamentEvents": 5,
@@ -170085,7 +170085,7 @@
       "type": "attack",
       "score": 2.63,
       "scoreBreakdown": {
-        "performance": 0.376,
+        "performance": 0.375,
         "presence": 0,
         "corroboration": 0.667,
         "tournamentEvents": 10,
@@ -170356,7 +170356,7 @@
           ]
         },
         "365": {
-          "performance": 0.376,
+          "performance": 0.375,
           "presence": 0,
           "corroboration": 0.667,
           "tournamentEvents": 10,
@@ -267804,7 +267804,7 @@
       },
       "windows": {
         "90": {
-          "performance": 0.147,
+          "performance": 0.146,
           "presence": 0,
           "corroboration": 0.333,
           "tournamentEvents": 2,
@@ -267820,7 +267820,7 @@
           ]
         },
         "180": {
-          "performance": 0.147,
+          "performance": 0.146,
           "presence": 0,
           "corroboration": 0.333,
           "tournamentEvents": 2,
@@ -355882,7 +355882,7 @@
       "type": "defense",
       "score": 0.63,
       "scoreBreakdown": {
-        "performance": 0.044,
+        "performance": 0.043,
         "presence": 0,
         "corroboration": 0.545,
         "tournamentEvents": 1,
@@ -355950,7 +355950,7 @@
       },
       "windows": {
         "90": {
-          "performance": 0.044,
+          "performance": 0.043,
           "presence": 0,
           "corroboration": 0.545,
           "tournamentEvents": 1,
@@ -355966,7 +355966,7 @@
           ]
         },
         "180": {
-          "performance": 0.044,
+          "performance": 0.043,
           "presence": 0,
           "corroboration": 0.545,
           "tournamentEvents": 1,
@@ -355982,7 +355982,7 @@
           ]
         },
         "365": {
-          "performance": 0.044,
+          "performance": 0.043,
           "presence": 0,
           "corroboration": 0.545,
           "tournamentEvents": 1,
@@ -495597,7 +495597,7 @@
       "type": "stamina",
       "score": 0.44,
       "scoreBreakdown": {
-        "performance": 0.044,
+        "performance": 0.043,
         "presence": 0,
         "corroboration": 0.333,
         "tournamentEvents": 1,
@@ -495642,7 +495642,7 @@
       },
       "windows": {
         "90": {
-          "performance": 0.044,
+          "performance": 0.043,
           "presence": 0,
           "corroboration": 0.333,
           "tournamentEvents": 1,
@@ -495658,7 +495658,7 @@
           ]
         },
         "180": {
-          "performance": 0.044,
+          "performance": 0.043,
           "presence": 0,
           "corroboration": 0.333,
           "tournamentEvents": 1,
@@ -495674,7 +495674,7 @@
           ]
         },
         "365": {
-          "performance": 0.044,
+          "performance": 0.043,
           "presence": 0,
           "corroboration": 0.333,
           "tournamentEvents": 1,
@@ -689062,5 +689062,5 @@
       "solid": 5.5
     }
   },
-  "windowsRef": "2026-11-28T03:15:53.465Z"
+  "windowsRef": "2026-11-28T03:17:33.732Z"
 }
